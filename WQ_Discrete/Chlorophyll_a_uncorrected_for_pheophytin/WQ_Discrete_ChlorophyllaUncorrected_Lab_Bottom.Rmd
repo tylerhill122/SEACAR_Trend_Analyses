@@ -37,7 +37,7 @@ APP_Plots <- TRUE
 in_dir <- "data/"
 out_dir <- "output/"
 file_pref <- "Combined_WQ_WC_NUT_"
-file_date <- "2022-Apr-01"
+file_date <- "2022-Apr-05"
 param_name <- "Chlorophyll_a_uncorrected_for_pheophytin"
 depth <- "Bottom"
 activity <- "Sample"
@@ -116,6 +116,11 @@ data$ActivityType <- gsub("Field Msr/Obs", "Field", data$ActivityType)
 data <- data[!is.na(data$ResultValue),]
 data <- data[!is.na(data$RelativeDepth) & data$RelativeDepth==depth,]
 data <- data[!is.na(data$ActivityType) & data$ActivityType==activity,]
+if(param_name == "Water_Temperature"){
+   data <- data[data$ResultValue>=-2,]
+} else{
+   data <- data[data$ResultValue>=0,]
+}
 data$Include[grep("H", data$ValueQualifier[data$ProgramID==476])] <- TRUE
 
 MA_Years <- data[data$Include == TRUE, ] %>%
@@ -211,7 +216,7 @@ MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ManagedAreaName,
                                                MA_YM_Stats$Month), ])
 fwrite(MA_YM_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
                            activity, "-", depth,
-                           "-ManagedArea_YearMonth_Stats.txt"), sep = "|")
+                           "_ManagedArea_YearMonth_Stats.txt"), sep = "|")
 
 MA_Y_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
    group_by(ManagedAreaName, Year) %>%
@@ -227,7 +232,7 @@ MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ManagedAreaName,
                                              MA_Y_Stats$Year), ])
 fwrite(MA_Y_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
                            activity, "-", depth,
-                          "-ManagedArea_Year_Stats.txt"), sep = "|")
+                          "_ManagedArea_Year_Stats.txt"), sep = "|")
 
 MA_M_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
    group_by(ManagedAreaName, Month) %>%
@@ -243,7 +248,7 @@ MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ManagedAreaName,
                                              MA_M_Stats$Month), ])
 fwrite(MA_M_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
                            activity, "-", depth,
-                          "-ManagedArea_Month_Stats.txt"), sep = "|")
+                          "_ManagedArea_Month_Stats.txt"), sep = "|")
 ```
 
 ---
@@ -277,33 +282,103 @@ Mon_Stats <- as.data.table(Mon_Stats[order(Mon_Stats$ManagedAreaName,
                                               Mon_Stats$ProgramLocationID), ])
 fwrite(Mon_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
                            activity, "-", depth,
-                          "-MonitoringLoc_Stats.txt"), sep = "|")
+                          "_MonitoringLoc_Stats.txt"), sep = "|")
 ```
 
 ---
 
 # Seasonal Kendall Tau Analysis
 
-Gets seasonal Kendall Tau statistics using the `kendallSeasonalTrendTest` from the `EnvStats` package. The `Trend` parameter is determined from a user-defined function based on the median, Senn slope, and p values from the data. Analysis modified from that performed at The Water Atlas:
+Gets seasonal Kendall Tau statistics using the `kendallSeasonalTrendTest` from the `EnvStats` package. The `Trend` parameter is determined from a user-defined function based on the median, Senn slope, and p values from the data. Analysis modified from code created by Jason Scolaro that performed at The Water Atlas:
 [https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview](https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview)
 
 The following steps are performed:
 
-1. Define the trend function.
-2. Check to see if there are any groups to run analsis on.
+1. Define the functions used in the analysis
+2. Check to see if there are any groups to run analysis on.
 3. Take the `data` variable and only include rows that have a `Use_In_Analysis` value of `TRUE`
 4. Group data that have the same `ManagedAreaName`.
-5. For each group, provides the following information: Earliest Sample Date (EarliestSampleDate), Latest Sample Date (LastSampleDate), Number of Entries (N), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation,
-
-6. For each group, a temporary variable is created to run the `kendallSeasonalTrendTest` function using the `Year` values for year, and `Month` as the seasonal qualifier, and Trend.
+5. For each group, provides the following information: Earliest Sample Date (EarliestSampleDate), Latest Sample Date (LastSampleDate), Number of Entries (N), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, tau, Senn Slope (SennSlope), Senn Intercept (SennIntercept), and p.
+   + The analysis is run with the `kendallSeasonalTrendTest` function using the `Year` values for year, and `Month` as the seasonal qualifier, and Trend.
    + An independent.obs value of `TRUE` indicates that the data should be treated as not being serially auto-correlated. An independent.obs value of `FALSE` indicates that it is treated as being serially auto-correlated, but also requires one observation per season per year for the full time of observation.
-   + tau, Senn Slope (SennSlope), Senn Intercept (SennIntercept), and p are extracted from the model results.
 
-7. The two stats tables are merged based on similar groups, and then Trend is determined from the user-defined function.
-8. Write summary stats to a pipe-delimited .txt file in the output directory
+6. Reformat columns in the data frame from export.
+7. Write summary stats to a pipe-delimited .txt file in the output directory
    + [Click this text to open Git directory with output files](https://github.com/FloridaSEACAR/SEACAR_Panzik/tree/main/output/WQ)
 
 ```{r SKT_analysis}
+tauSeasonal <- function(data, independent, stats.median, stats.minYear,
+                        stats.maxYear) {
+   tau <- NULL
+   tryCatch({
+      ken <-
+         kendallSeasonalTrendTest(
+            y = data$ResultValue,
+            season = data$Month,
+            year = data$Year,
+            independent.obs = independent
+         )
+      tau <- ken$estimate[1]
+      p <- ken$p.value[2]
+      slope <- ken$estimate[2]
+      intercept <- ken$estimate[3]
+      trend <- trend_calculator(slope, stats.median, p)
+   }, warning = function(w) {
+      print(w)
+   }, error = function(e) {
+      print(e)
+   }, finally = {
+      7
+      if (!exists("tau")) {
+         tau <- NULL
+      }
+      if (!exists("p")) {
+         p <- NULL
+      }
+      if (!exists("slope")) {
+         slope <- NULL
+      }
+      if (!exists("intercept")) {
+         intercept <- NULL
+      }
+      if (!exists("trend")) {
+         trend <- NULL
+      }
+   })
+   KT <-c(unique(data$ManagedAreaName),
+          independent,
+          stats.median,
+          nrow(data),
+          stats.minYear,
+          stats.maxYear,
+          tau,
+          p,
+          slope,
+          intercept,
+          trend)
+   return(KT)
+}
+runStats <- function(data) {
+   data$Index <- as.Date(data$SampleDate) # , "%Y-%m-%d")
+   data$ResultValue <- as.numeric(data$ResultValue)
+   # Calculate basic stats
+   stats.median <- median(data$ResultValue, na.rm = TRUE)
+   stats.minYear <- min(data$Year, na.rm = TRUE)
+   stats.maxYear <- max(data$Year, na.rm = TRUE)
+   # Calculate Kendall Tau and Slope stats, then update appropriate columns and table
+   KT <- tauSeasonal(data, TRUE, stats.median,
+                     stats.minYear, stats.maxYear)
+   if (is.null(KT[11])) {
+      KT <- tauSeasonal(data, FALSE, stats.median,
+                        stats.minYear, stats.maxYear)
+   }
+   if (is.null(KT.Stats) == TRUE) {
+      KT.Stats <- KT
+   } else{
+      KT.Stats <- rbind(KT.Stats, KT)
+   }
+   return(KT.Stats)
+}
 trend_calculator <- function(slope, median_value, p) {
    trend <-
       if (p < .05 & abs(slope) > abs(median_value) / 10.) {
@@ -324,50 +399,44 @@ trend_calculator <- function(slope, median_value, p) {
    }
    else
       0
-   
    return(trend)
 }
-
+KT.Stats <- NULL
+# Loop that goes through each managed area. List of managed areas stored in MA_Years$ManagedAreaName
+c_names <- c("ManagedAreaName", "Independent", "Median", "N", "EarliestYear",
+             "LatestYear", "tau", "p", "SennSlope", "SennIntercept", "Trend")
 if(n==0){
-   KT.Stats <- data.frame(matrix(ncol=14, nrow=0))
-   colnames(KT.Stats) <- c("ManagedAreaName", "EarliestSampleDate", 
-                           "LastSampleDate", "N", "Min", "Max", "Median",
-                           "Mean", "StandardDeviation", "tau", "SennSlope",
-                           "SennIntercept", "p", "Trend")
-   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
-                           activity, "-", depth,
-                        "-KendallTau_Stats.txt"), sep = "|")
-} else {
-KT.Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
-      group_by(ManagedAreaName) %>%
-      summarize(EarliestSampleDate = min(SampleDate),
-                LastSampleDate = max(SampleDate), N = length(ResultValue),
-                Min = min(ResultValue), Max = max(ResultValue),
-                Median = median(ResultValue), Mean = mean(ResultValue),
-                StandardDeviation = sd(ResultValue))
-
-temp.stat <- data[data$Use_In_Analysis == TRUE, ] %>%
-   group_by(ManagedAreaName) %>%
-   summarize(z=kendallSeasonalTrendTest(y=ResultValue, season=Month, year=Year,
-                                        independent.obs=TRUE)[c("estimate",
-                                                                "p.value")]) %>%
-   unnest_wider(z)
-
-colnames(temp.stat)[6] <- "p"
-temp.stat <- temp.stat %>% group_by(ManagedAreaName) %>%
-   summarize(tau = unique(na.omit(tau)), SennSlope = unique(na.omit(slope)),
-             SennIntercept = unique(na.omit(intercept)), p = unique(na.omit(p)))
-
-KT.Stats <- merge(KT.Stats, temp.stat, by="ManagedAreaName")
-rm(temp.stat)
-KT.Stats <- KT.Stats %>% group_by(ManagedAreaName) %>%
-   mutate(Trend = trend_calculator(slope=SennSlope, median_value=Median, p=p))
-KT.Stats$tau <- round(KT.Stats$tau, digits=4)
-KT.Stats$p <- round(KT.Stats$p, digits=4)
-
-fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
-                           activity, "-", depth,
-                        "-KendallTau_Stats.txt"), sep = "|")
+   KT.Stats <- data.frame(matrix(ncol=11, nrow=0))
+   colnames(KT.Stats) <- c_names
+   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+                           "_KendallTau_Stats.txt"), sep = "|")
+} else{
+   for (i in 1:n) {
+      values <- data[data$Use_In_Analysis == TRUE &
+                        data$ManagedAreaName == MA_names[i], ]
+      if (nrow(values) > 0) {
+         KT.Stats <- runStats(values)
+      }
+   }
+   KT.Stats <- as.data.frame(KT.Stats)
+   c_names <- c("ManagedAreaName", "Independent", "Median", "N", "EarliestYear",
+                "LatestYear", "tau", "p", "SennSlope", "SennIntercept", "Trend")
+   if(dim(KT.Stats)[2]==1){
+      KT.Stats <- as.data.frame(t(KT.Stats))
+   }
+   colnames(KT.Stats) <- c_names
+   rownames(KT.Stats) <- seq(1:nrow(KT.Stats))
+   KT.Stats$Median <- as.numeric(KT.Stats$Median)
+   KT.Stats$N <- as.integer(KT.Stats$N)
+   KT.Stats$EarliestYear <- as.integer(KT.Stats$EarliestYear)
+   KT.Stats$LatestYear <- as.integer(KT.Stats$LatestYear)
+   KT.Stats$tau <- round(as.numeric(KT.Stats$tau), digits=4)
+   KT.Stats$p <- round(as.numeric(KT.Stats$p), digits=4)
+   KT.Stats$SennSlope <- as.numeric(KT.Stats$SennSlope)
+   KT.Stats$SennIntercept <- as.numeric(KT.Stats$SennIntercept)
+   KT.Stats$Trend <- as.integer(KT.Stats$Trend)
+   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+                           "_KendallTau_Stats.txt"), sep = "|")
 }
 ```
 
