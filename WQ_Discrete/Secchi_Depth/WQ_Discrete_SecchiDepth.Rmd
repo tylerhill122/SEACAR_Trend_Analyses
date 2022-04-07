@@ -79,10 +79,10 @@ if(!file.exists("output")){
 
 file_in <- paste0(in_dir, file_pref, param_name, "-", file_date, ".txt")
 data <-fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-             select = c("ManagedAreaName", "ProgramID", "ProgramName",
-                        "ProgramLocationID", "SampleDate", "Year", "Month",
-                        "RelativeDepth", "ResultValue", "ParameterUnits",
-                        "ValueQualifier", "SEACAR_QAQCFlagCode", "Include"),
+             # select = c("ManagedAreaName", "ProgramID", "ProgramName",
+             #            "ProgramLocationID", "SampleDate", "Year", "Month",
+             #            "RelativeDepth", "ResultValue", "ParameterUnits",
+             #            "ValueQualifier", "SEACAR_QAQCFlagCode", "Include"),
              na.strings = "")
 
 unit <- unique(data$ParameterUnits)
@@ -102,7 +102,7 @@ The filtering that is performed by the script at this point removes rows that ar
 
 After the initial filtering, a second filter variable is created to determine whether enough time is represented in the managed area, which is that each managed area has 10 year or more of unique year entries for observation that pass the initial filter. If data passes the first set of filtering criteria and the time criteria, they are used in the analysis.
 
-After filtering, the amount of data impacted by the H (for dissolved oxygen & pH in program 476), I, Q, and U value qualifiers. A variable is also created that determines if scatter plot points should be a different color based on value qualifiers of interest.
+After filtering, the amount of data impacted by the H (for dissolved oxygen & pH in program 476), I, Q, and U value qualifiers. A variable is also created that determines if scatter plot points should be a different color based on value qualifiers of interest. The value qualifier S indicates that the Secchi depth was visible on bottom.
 
 ```{r filtering}
 if(depth=="Bottom"){
@@ -165,7 +165,19 @@ if (inc_H==TRUE){
               "I Codes: ", count_I, " (", round(perc_I, 6), "%)\n",
               "Q Codes: ", count_Q, " (", round(perc_Q, 6), "%)\n",
               "U Codes: ", count_U, " (", round(perc_U, 6), "%)"))
-} else{
+} else if (param_name=="Secchi_Depth") {
+   count_S <- length(grep("S", data$ValueQualifier))
+   perc_S <- 100*count_S/length(data$ValueQualifier)
+   data$VQ_Plot <- gsub("[^SU]+", "", data$VQ_Plot)
+   data$VQ_Plot <- gsub("US", "SU", data$VQ_Plot)
+   data$VQ_Plot[data$VQ_Plot==""] <- NA
+   cat(paste0("Number of Measurements: ", total,
+              ", Number Passed Filter: ", pass_filter, "\n",
+              "I Codes: ", count_I, " (", round(perc_I, 6), "%)\n",
+              "Q Codes: ", count_Q, " (", round(perc_Q, 6), "%)\n",
+              "S Codes: ", count_S, " (", round(perc_S, 6), "%)\n",
+              "U Codes: ", count_U, " (", round(perc_U, 6), "%)"))
+} else {
    data$VQ_Plot <- gsub("[^U]+", "", data$VQ_Plot)
    data$VQ_Plot[data$VQ_Plot==""] <- NA
    cat(paste0("Number of Measurements: ", total,
@@ -206,6 +218,7 @@ MA_YM_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
              Median = median(ResultValue),
              Mean = mean(ResultValue),
              StandardDeviation = sd(ResultValue),
+             N_VoB = length(grep("S", ValueQualifier)),
              ProgramIDs = paste(sort(unique(ProgramID), decreasing = FALSE),
                                 collapse = ', '))
 MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ManagedAreaName,
@@ -222,6 +235,7 @@ MA_Y_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
              Median = median(ResultValue),
              Mean = mean(ResultValue),
              StandardDeviation = sd(ResultValue),
+             N_VoB = length(grep("S", ValueQualifier)),
              ProgramIDs = paste(sort(unique(ProgramID), decreasing = FALSE),
                                 collapse = ', '))
 MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ManagedAreaName,
@@ -237,6 +251,7 @@ MA_M_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
              Median = median(ResultValue),
              Mean = mean(ResultValue),
              StandardDeviation = sd(ResultValue),
+             N_VoB = length(grep("S", ValueQualifier)),
              ProgramIDs = paste(sort(unique(ProgramID), decreasing = FALSE),
                                 collapse = ', '))
 MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ManagedAreaName,
@@ -268,7 +283,8 @@ Mon_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
              Max = max(ResultValue),
              Median = median(ResultValue),
              Mean = mean(ResultValue),
-             StandardDeviation = sd(ResultValue))
+             StandardDeviation = sd(ResultValue),
+             N_VoB = length(grep("S", ValueQualifier)))
 
 Mon_Stats <- as.data.table(Mon_Stats[order(Mon_Stats$ManagedAreaName,
                                               Mon_Stats$ProgramName,
@@ -466,6 +482,9 @@ p1 <- ggplot(data = data[data$Include==TRUE,],
    {if(inc_H==TRUE){
       scale_color_manual(values = c("H"= "#F8766D", "U"= "#00BFC4",
                                     "HU" = "#7CAE00"), na.value="black")
+   } else if (param_name=="Secchi_Depth") {
+      scale_color_manual(values = c("S"= "#F8766D", "U"= "#00BFC4",
+                                    "SU" = "#7CAE00"), na.value="black")
    } else {
       scale_color_manual(values = c("U"= "#00BFC4"), na.value="black")
    }}
@@ -485,6 +504,9 @@ p2 <- ggplot(data = data[data$Include==TRUE,],
    {if(inc_H==TRUE){
       scale_color_manual(values = c("H"= "#F8766D", "U"= "#00BFC4",
                                     "HU" = "#7CAE00"), na.value="black")
+   } else if (param_name=="Secchi_Depth") {
+      scale_color_manual(values = c("S"= "#F8766D", "U"= "#00BFC4",
+                                    "SU" = "#7CAE00"), na.value="black")
    } else {
       scale_color_manual(values = c("U"= "#00BFC4"), na.value="black")
    }}
@@ -708,6 +730,9 @@ if(z==0){
          {if(inc_H==TRUE){
             scale_color_manual(values = c("H"= "#F8766D", "U"= "#00BFC4",
                                           "HU" = "#7CAE00"), na.value="black")
+         } else if (param_name=="Secchi_Depth") {
+            scale_color_manual(values = c("S"= "#F8766D", "U"= "#00BFC4",
+                                          "SU" = "#7CAE00"), na.value="black")
          } else {
             scale_color_manual(values = c("U"= "#00BFC4"), na.value="black")
          }}
@@ -788,6 +813,9 @@ if(n==0){
          {if(inc_H==TRUE){
             scale_color_manual(values = c("H"= "#F8766D", "U"= "#00BFC4",
                                           "HU" = "#7CAE00"), na.value="black")
+         } else if (param_name=="Secchi_Depth") {
+            scale_color_manual(values = c("S"= "#F8766D", "U"= "#00BFC4",
+                                          "SU" = "#7CAE00"), na.value="black")
          } else {
             scale_color_manual(values = c("U"= "#00BFC4"), na.value="black")
          }}
@@ -808,6 +836,9 @@ if(n==0){
          {if(inc_H==TRUE){
             scale_color_manual(values = c("H"= "#F8766D", "U"= "#00BFC4",
                                           "HU" = "#7CAE00"), na.value="black")
+         } else if (param_name=="Secchi_Depth") {
+            scale_color_manual(values = c("S"= "#F8766D", "U"= "#00BFC4",
+                                          "SU" = "#7CAE00"), na.value="black")
          } else {
             scale_color_manual(values = c("U"= "#00BFC4"), na.value="black")
          }}
