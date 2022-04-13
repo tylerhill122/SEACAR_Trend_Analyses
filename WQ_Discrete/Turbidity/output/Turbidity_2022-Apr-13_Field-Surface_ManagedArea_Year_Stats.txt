@@ -17,8 +17,8 @@ Apalachicola Bay Aquatic Preserve|2014|116|0.75|27.5|4.4|6.12870689655172|4.8314
 Apalachicola Bay Aquatic Preserve|2015|129|0.4|41.5|5.4|6.84356589147287|5.889533592321|129, 355
 Apalachicola Bay Aquatic Preserve|2016|118|1.5|36.8|5.75|9.44152542372881|8.31347712613071|129, 355
 Apalachicola Bay Aquatic Preserve|2017|222|0.1|23.8|4.2|5.54328828828829|4.26418946139447|129, 355
-Apalachicola Bay Aquatic Preserve|2018|168|1.01|46.7|4|6.55910714285714|7.26569099708337|129, 355
-Apalachicola Bay Aquatic Preserve|2019|173|1.27|34.53|4.44|5.77947976878613|4.52858328710549|129, 355
+Apalachicola Bay Aquatic Preserve|2018|169|1.01|46.7|4|6.57355029585799|7.24646755890597|129, 355, 5002
+Apalachicola Bay Aquatic Preserve|2019|174|1.27|34.53|4.45|5.79511494252874|4.52018347605848|129, 355, 5002
 Apalachicola Bay Aquatic Preserve|2020|45|0.3|48|10.45|11.8082222222222|9.4885125017017|129
 Apalachicola National Estuarine Research Reserve|2000|47|1.2|45.9|5.7|8.50234042553192|8.41889495298624|129
 Apalachicola National Estuarine Research Reserve|2001|126|0.85|85.3|6.255|9.56365079365079|10.6984444927793|129
@@ -38,8 +38,8 @@ Apalachicola National Estuarine Research Reserve|2014|140|0.75|27.5|4.8|6.350214
 Apalachicola National Estuarine Research Reserve|2015|157|0.4|41.5|5.4|6.97974522292994|5.56079337968924|129, 355
 Apalachicola National Estuarine Research Reserve|2016|146|0.2|36.8|6.1|9.85958904109589|8.64548180797444|129, 355
 Apalachicola National Estuarine Research Reserve|2017|268|0.1|23.8|4.7|5.86018656716418|4.22748917906005|129, 355
-Apalachicola National Estuarine Research Reserve|2018|203|1.01|46.7|4|6.19896551724138|6.69514967140895|129, 355
-Apalachicola National Estuarine Research Reserve|2019|209|1.27|34.53|4.51|5.90143540669857|4.31385122051964|129, 355
+Apalachicola National Estuarine Research Reserve|2018|204|1.01|46.7|4|6.21269607843137|6.68151748830949|129, 355, 5002
+Apalachicola National Estuarine Research Reserve|2019|211|1.27|34.53|4.51|5.90995260663507|4.29735051238721|129, 355, 5002
 Apalachicola National Estuarine Research Reserve|2020|45|0.3|48|10.45|11.8082222222222|9.4885125017017|129
 Banana River Aquatic Preserve|2003|20|2.19|9|5.165|5.455|1.72883745545046|5002
 Banana River Aquatic Preserve|2004|85|1.03|13.3|4.45|5.09870588235294|2.63505163418972|3013, 5002
@@ -194,6 +194,7 @@ Indian River-Malabar to Vero Beach Aquatic Preserve|2016|69|1.57|19.7|3.58|4.824
 Indian River-Malabar to Vero Beach Aquatic Preserve|2017|33|1.56|15.5|3.18|3.7169696969697|2.63898830620809|3013
 Indian River-Malabar to Vero Beach Aquatic Preserve|2018|31|1.51|15.1|4.43|5.8141935483871|3.48810624283297|3013
 Indian River-Malabar to Vero Beach Aquatic Preserve|2019|30|1.89|17|3.955|5.43166666666667|4.08785845909679|3013
+Indian River-Malabar to Vero Beach Aquatic Preserve|2020|1|3.7|3.7|3.7|3.7||540
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2004|13|2.47|8.96|5.21|5.71692307692308|2.09464549353578|3013
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2005|28|1.21|27.8|4.045|5.23357142857143|5.62031975779797|3013, 5002
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2006|26|2.04|24|4.115|5.57769230769231|4.62225166575106|3013
@@ -210,6 +211,7 @@ Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2016|24|1.97|11|4.715|5.2
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|14|2.15|4.18|2.645|2.92|0.707672240518165|3013
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2018|14|1.48|8.7|4.875|4.91928571428571|2.21510709685772|3013
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|14|2.27|7.65|6.13|5.48071428571429|1.89151329032405|3013
+Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|1|5.2|5.2|5.2|5.2||540
 Jensen Beach to Jupiter Inlet Aquatic Preserve|2004|14|0.44|7.61|3.44|3.68857142857143|2.3265288013984|3013
 Jensen Beach to Jupiter Inlet Aquatic Preserve|2005|25|1.76|21.2|3.46|5.8872|5.57257160863217|3013, 10001
 Jensen Beach to Jupiter Inlet Aquatic Preserve|2006|34|0.71|17|4.575|5.34205882352941|3.04759197480893|3013, 10001
@@ -281,6 +283,9 @@ Nassau River-St. Johns River Marshes Aquatic Preserve|1992|11|6.4|16|7.8|8.6|2.6
 Nassau River-St. Johns River Marshes Aquatic Preserve|1997|9792|0.1|794|21.8|27.8138276143791|34.4849900779193|103
 Nassau River-St. Johns River Marshes Aquatic Preserve|1998|5076|0.1|853|10.9|18.5710795902285|38.9905225682421|103
 Nassau River-St. Johns River Marshes Aquatic Preserve|2005|2|4.54|7.4|5.97|5.97|2.02232539419353|103
+Nassau River-St. Johns River Marshes Aquatic Preserve|2019|1|11|11|11|11||5002
+Nassau River-St. Johns River Marshes Aquatic Preserve|2020|1|8|8|8|8||5002
+Nassau River-St. Johns River Marshes Aquatic Preserve|2021|2|3.4|4.4|3.9|3.9|0.707106781186548|5002
 Pine Island Sound Aquatic Preserve|1996|10|0.5|1.3|0.59|0.717|0.271990604412889|5002
 Pine Island Sound Aquatic Preserve|1997|15|0.76|5|1.75|2.08|1.15855205197818|5002
 Pine Island Sound Aquatic Preserve|1998|20|1.13|2.4|1.57|1.62|0.303939052062122|5002
@@ -306,6 +311,7 @@ Pine Island Sound Aquatic Preserve|2017|75|0.2|13.3|2.69|3.13106666666667|2.2657
 Pine Island Sound Aquatic Preserve|2019|138|0.29792|558.84579|4.548185|39.4085302898551|86.8675598240965|303
 Pine Island Sound Aquatic Preserve|2020|155|0.53343|847.26257|2.95486|27.6131396129032|106.127959061305|303, 5002
 Pine Island Sound Aquatic Preserve|2021|59|0.02452|138.69217|2.9475|7.26623288135593|18.302335230141|303, 5002
+Pine Island Sound Aquatic Preserve|2022|1|16|16|16|16||476
 Pinellas County Aquatic Preserve|1999|1|16|16|16|16||5002
 Pinellas County Aquatic Preserve|2000|1|3.8|3.8|3.8|3.8||95
 Pinellas County Aquatic Preserve|2001|2|7.8|28|17.9|17.9|14.2835569799683|5002
@@ -320,8 +326,8 @@ Pinellas County Aquatic Preserve|2014|126|0.4|25|1.635|2.06873015873016|2.396738
 Pinellas County Aquatic Preserve|2015|63|0.58|5.7|1.59|1.9252380952381|1.26578658082742|5002
 Pinellas County Aquatic Preserve|2016|78|0.3|5.08|1.18|1.73730769230769|1.19997042504348|95, 5002
 Pinellas County Aquatic Preserve|2017|55|0.61|5.83|1.7|2.10381818181818|1.26824826829516|5002
-Pinellas County Aquatic Preserve|2020|39|0.7|12|1.5|2.23230769230769|2.13512043483619|5002
-Pinellas County Aquatic Preserve|2021|20|0.68|7.98|1.58|2.59|2.50236730023056|5002
+Pinellas County Aquatic Preserve|2020|45|0.7|12|1.7|2.27244444444444|2.02572451186725|5002
+Pinellas County Aquatic Preserve|2021|25|0.68|12|1.65|2.982|3.03556282535326|5002
 Rocky Bayou State Park Aquatic Preserve|2001|2|0|0.4|0.2|0.2|0.282842712474619|5002
 Rocky Bayou State Park Aquatic Preserve|2002|11|0|1|0.5|0.445454545454545|0.307777960106426|5002
 Rocky Bayou State Park Aquatic Preserve|2003|12|0.1|2.5|1.25|1.26666666666667|0.727802837104232|5002
@@ -350,7 +356,8 @@ Rookery Bay Aquatic Preserve|2015|10|5.81|7.23|6.72|6.542|0.588761411778999|354
 Rookery Bay Aquatic Preserve|2016|24|3.42|11.68|7.325|7.04833333333333|3.04062874886195|354
 Rookery Bay Aquatic Preserve|2017|22|2.22|8.18|6.06|5.97090909090909|1.58496179641779|354
 Rookery Bay Aquatic Preserve|2018|20|1.82|7.01|4.865|4.488|1.5619407630792|354
-Rookery Bay Aquatic Preserve|2019|24|2.43|16.83|7.63|7.81833333333333|4.22905649531662|354
+Rookery Bay Aquatic Preserve|2019|26|2.43|16.83|7.1|7.68230769230769|4.08886811496024|354, 5002
+Rookery Bay Aquatic Preserve|2020|2|7.2|11|9.1|9.1|2.68700576850888|5002
 Rookery Bay National Estuarine Research Reserve|2000|1|0|0|0|0||572
 Rookery Bay National Estuarine Research Reserve|2002|166|1.63|89.8|6.93|8.30903614457831|8.81241068582572|354
 Rookery Bay National Estuarine Research Reserve|2003|109|1.01|26.95|8.2|8.48981651376147|4.46055863086166|95, 354, 572
@@ -362,4 +369,5 @@ Rookery Bay National Estuarine Research Reserve|2015|42|3.62|14.48|6.31|6.876666
 Rookery Bay National Estuarine Research Reserve|2016|120|2.3|12.49|6.63|6.93433333333333|2.59287800687642|354
 Rookery Bay National Estuarine Research Reserve|2017|118|0.62|20.44|7.23|7.21101694915254|3.33198623801308|354
 Rookery Bay National Estuarine Research Reserve|2018|106|1.51|14.45|5.51|5.97622641509434|3.22801500345548|354
-Rookery Bay National Estuarine Research Reserve|2019|120|2.43|30.72|8.515|9.57441666666667|5.82032555557068|354
+Rookery Bay National Estuarine Research Reserve|2019|122|2.43|30.72|8.4|9.51663934426229|5.79009365040175|354, 5002
+Rookery Bay National Estuarine Research Reserve|2020|2|7.2|11|9.1|9.1|2.68700576850888|5002

@@ -1,10 +1,10 @@
 ManagedAreaName|Month|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
 Apalachicola Bay Aquatic Preserve|1|274|0.65|50|5.745|8.1107299270073|7.40033388367019|129, 355, 5002
 Apalachicola Bay Aquatic Preserve|2|284|0.39|39.6|6.225|7.88834507042254|6.16319851858153|129, 355
-Apalachicola Bay Aquatic Preserve|3|282|0.1|85.3|7.875|13.2458865248227|13.5103950789725|129, 355
+Apalachicola Bay Aquatic Preserve|3|283|0.1|85.3|7.9|13.2308833922262|13.4887806912263|129, 355, 5002
 Apalachicola Bay Aquatic Preserve|4|301|0.44|75|7.18|10.3341860465116|10.000660165806|129, 355
 Apalachicola Bay Aquatic Preserve|5|278|0.31|50|7.43|9.65187050359712|8.12894428057815|129, 355
-Apalachicola Bay Aquatic Preserve|6|297|0.27|59.8|7.2|9.76360269360269|9.43453987855225|129, 355
+Apalachicola Bay Aquatic Preserve|6|298|0.27|59.8|7.2|9.75936241610738|9.41892785560121|129, 355, 5002
 Apalachicola Bay Aquatic Preserve|7|255|0.24|29.5|6.02|6.99682352941177|4.93599463329496|129, 355
 Apalachicola Bay Aquatic Preserve|8|264|0.18|41.5|5.86|7.0617803030303|5.25419646270103|103, 129, 355
 Apalachicola Bay Aquatic Preserve|9|311|0.4|40|6|7.49987138263666|5.8467548194608|129, 355
@@ -13,14 +13,14 @@ Apalachicola Bay Aquatic Preserve|11|323|0.17|101.6|4.8|6.89792569659443|9.09222
 Apalachicola Bay Aquatic Preserve|12|216|0.89|38.5|5.5|7.55898148148148|6.220010758955|129, 355
 Apalachicola National Estuarine Research Reserve|1|338|0.65|50|5.71|8.07417159763314|7.37231629349269|129, 355, 5002
 Apalachicola National Estuarine Research Reserve|2|352|0.39|39.6|6.4|7.94482954545455|6.17316894193552|129, 355
-Apalachicola National Estuarine Research Reserve|3|340|0.1|85.3|8.1|12.8262941176471|12.9997762098492|129, 355
+Apalachicola National Estuarine Research Reserve|3|341|0.1|85.3|8.1|12.815073313783|12.9822984826135|129, 355, 5002
 Apalachicola National Estuarine Research Reserve|4|367|0.41|75|6.86|10.4240054495913|10.1327361340761|129, 355
 Apalachicola National Estuarine Research Reserve|5|343|0.31|50|7.4|9.50583090379009|7.97719507970965|129, 355
-Apalachicola National Estuarine Research Reserve|6|361|0.05|59.8|7|9.45349030470914|8.85285023189583|129, 355
+Apalachicola National Estuarine Research Reserve|6|362|0.05|59.8|7|9.45085635359116|8.84072220300589|129, 355, 5002
 Apalachicola National Estuarine Research Reserve|7|317|0.24|29.5|5.8|6.90498422712934|4.8805895981633|129, 355
 Apalachicola National Estuarine Research Reserve|8|327|0.18|41.5|5.8|6.85990825688073|5.02739736093003|103, 129, 355
 Apalachicola National Estuarine Research Reserve|9|377|0.4|40|6.1|7.49358090185676|5.72791820677147|129, 355
-Apalachicola National Estuarine Research Reserve|10|349|0.4|56.8|5.82|8.63661891117479|8.50569738238293|129, 355
+Apalachicola National Estuarine Research Reserve|10|350|0.4|56.8|5.815|8.62651428571429|8.495606305434|129, 355, 5002
 Apalachicola National Estuarine Research Reserve|11|398|0|101.6|4.65|6.93155778894472|9.3922449164031|129, 355
 Apalachicola National Estuarine Research Reserve|12|257|0.2|38.5|5.5|7.26260700389105|5.94536109648581|129, 355
 Banana River Aquatic Preserve|1|40|1.7|13.3|4.805|5.02575|2.37786252594798|95, 3013, 5002
@@ -109,7 +109,7 @@ Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|41|0.041|2.8|0.8|0.8767073
 Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|39|0.25|10.2|1.32|1.82779487179487|1.82052622784974|5002
 Indian River-Malabar to Vero Beach Aquatic Preserve|1|195|0.68|29|3.84|5.21548717948718|3.81058024420366|3013, 5002
 Indian River-Malabar to Vero Beach Aquatic Preserve|2|152|0.78|29.9|3.715|4.565|3.81374648497454|3013, 5002
-Indian River-Malabar to Vero Beach Aquatic Preserve|3|104|1.31|21|4.2|5.26230769230769|3.48230233815348|3013, 5002
+Indian River-Malabar to Vero Beach Aquatic Preserve|3|105|1.31|21|4.2|5.24742857142857|3.46887230306119|540, 3013, 5002
 Indian River-Malabar to Vero Beach Aquatic Preserve|4|100|1.53|19.7|3.645|4.2836|2.42033077295337|3013, 5002
 Indian River-Malabar to Vero Beach Aquatic Preserve|5|94|0.93|37.3|3.7|4.96829787234043|5.48724613899248|3013, 5002
 Indian River-Malabar to Vero Beach Aquatic Preserve|6|185|1.03|15.4|3.62|4.33659459459459|2.50688200000063|3013, 5002
@@ -119,7 +119,7 @@ Indian River-Malabar to Vero Beach Aquatic Preserve|9|89|1.43|35|4.77|6.24617977
 Indian River-Malabar to Vero Beach Aquatic Preserve|10|87|1.13|73.6|4.27|5.94505747126437|8.09157570442121|3013, 5002
 Indian River-Malabar to Vero Beach Aquatic Preserve|11|77|1.58|22.9|4.73|6.10532467532468|4.40848421987457|95, 3013, 5002
 Indian River-Malabar to Vero Beach Aquatic Preserve|12|81|1.81|23.4|3.77|4.68938271604938|3.25058969483962|3013, 5002
-Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1|35|1.97|24|4.09|5.48857142857143|4.64179360798815|3013
+Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1|36|1.97|24|4.385|5.48055555555556|4.57525452496951|540, 3013
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2|47|1.23|11.4|3.78|4.43063829787234|2.37795711031578|3013
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|3|28|1.69|8.96|3.97|4.93142857142857|2.32653726842612|3013
 Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|4|24|2.59|27.8|4.63|5.71875|5.01912716515531|3013, 5002
@@ -178,18 +178,18 @@ Mosquito Lagoon Aquatic Preserve|9|4|7.68|22.6|11.55|13.345|6.54207663258897|103
 Mosquito Lagoon Aquatic Preserve|11|4|8.08|12.2|9.835|9.9875|1.90163745230262|103, 3013
 Mosquito Lagoon Aquatic Preserve|12|2|8.08|13.3|10.69|10.69|3.69109739779378|3013
 Nassau River-St. Johns River Marshes Aquatic Preserve|1|795|0.1|696|10.1|20.2277987421384|45.1772645676268|103
-Nassau River-St. Johns River Marshes Aquatic Preserve|2|2247|0.1|644|11.5|17.6473965287049|36.7270349267417|103
+Nassau River-St. Johns River Marshes Aquatic Preserve|2|2248|0.1|644|11.5|17.6410587188612|36.7200911131424|103, 5002
 Nassau River-St. Johns River Marshes Aquatic Preserve|3|2667|0.1|853|14.3|18.1498312710911|33.8083540561356|103
-Nassau River-St. Johns River Marshes Aquatic Preserve|4|1929|0.1|498|26.5|24.8524624157595|22.0279757858444|103
+Nassau River-St. Johns River Marshes Aquatic Preserve|4|1930|0.1|498|26.5|24.8418652849741|22.0271856783555|103, 5002
 Nassau River-St. Johns River Marshes Aquatic Preserve|5|153|0.1|605|10.8|17.5986928104575|51.002973322677|103
 Nassau River-St. Johns River Marshes Aquatic Preserve|6|2231|0.1|789|13.1|19.0919766920663|32.213252059415|103
 Nassau River-St. Johns River Marshes Aquatic Preserve|7|31|3.5|21|7|7.33677419354839|3.68675863697528|103
-Nassau River-St. Johns River Marshes Aquatic Preserve|8|28|2.9|73|7.7|10.8035714285714|13.0091273412129|103
+Nassau River-St. Johns River Marshes Aquatic Preserve|8|30|2.9|73|7.85|10.7166666666667|12.5630570443205|103, 5002
 Nassau River-St. Johns River Marshes Aquatic Preserve|9|44|3|38|21.8|18.8318181818182|8.74905370902378|103
 Nassau River-St. Johns River Marshes Aquatic Preserve|10|2073|0.3|739|26.6|34.5025084418717|40.723981596872|103
 Nassau River-St. Johns River Marshes Aquatic Preserve|11|2067|0|308|31.3|33.5224479922593|24.6185322257683|103
 Nassau River-St. Johns River Marshes Aquatic Preserve|12|873|2.6|794|18.1|33.0983963344788|58.0954339597063|103
-Pine Island Sound Aquatic Preserve|1|176|0.3|29.00077|1.875|2.73157806818182|3.07495761828256|303, 5002
+Pine Island Sound Aquatic Preserve|1|177|0.3|29.00077|1.88|2.8065409039548|3.22432616640623|303, 476, 5002
 Pine Island Sound Aquatic Preserve|2|172|0.55|634.29333|2.30941|11.3313105232558|54.1569740866554|303, 5002
 Pine Island Sound Aquatic Preserve|3|146|0.08923|26.8|1.82|2.63281349315069|3.11216065163241|303, 5002
 Pine Island Sound Aquatic Preserve|4|145|0.092|24.8|2.36|3.45998110344828|3.72390477253643|303, 5002
@@ -202,17 +202,17 @@ Pine Island Sound Aquatic Preserve|10|171|0.2|185.32931|1.88|7.4729869005848|25.
 Pine Island Sound Aquatic Preserve|11|191|0|614.57741|1.55|11.6372255497382|59.7964310520702|303, 5002
 Pine Island Sound Aquatic Preserve|12|174|0.2|48.6881|1.875|3.76565362068966|6.20091870981057|303, 5002
 Pinellas County Aquatic Preserve|1|18|0.3|5|1.6|1.85|1.21425358336135|95
-Pinellas County Aquatic Preserve|2|75|0.61|12|1.55|2.534|2.43545433909935|95, 5002
+Pinellas County Aquatic Preserve|2|77|0.61|12|1.61|2.6538961038961|2.63448644543274|95, 5002
 Pinellas County Aquatic Preserve|3|63|0.68|7.98|2.2|2.62619047619048|1.61558880564954|95, 5002
 Pinellas County Aquatic Preserve|4|33|0.8|6|1.09|1.82333333333333|1.33353305795794|95, 5002
-Pinellas County Aquatic Preserve|5|79|0.4|22|1.87|2.23405063291139|2.47587048612606|95, 5002
-Pinellas County Aquatic Preserve|6|79|0.73|28|2|2.50139240506329|3.49942439742237|95, 5002
-Pinellas County Aquatic Preserve|7|62|0.4|13|2|2.86145161290323|2.53027494571222|95, 103, 5002
-Pinellas County Aquatic Preserve|8|80|0.65|70|1.81|4.038875|9.60425538514905|95, 5002
-Pinellas County Aquatic Preserve|9|52|0.4|9|2|2.33192307692308|1.74236152397869|95, 5002
-Pinellas County Aquatic Preserve|10|53|0.53|26|1.83|2.47150943396226|3.51397834820308|95, 5002
+Pinellas County Aquatic Preserve|5|81|0.4|22|1.95|2.28012345679012|2.48431705596687|95, 5002
+Pinellas County Aquatic Preserve|6|80|0.73|28|2|2.518875|3.48071976906494|95, 5002
+Pinellas County Aquatic Preserve|7|63|0.4|13|2|2.84460317460318|2.51334684036839|95, 103, 5002
+Pinellas County Aquatic Preserve|8|82|0.65|70|1.81|4.00134146341463|9.48982349836452|95, 5002
+Pinellas County Aquatic Preserve|9|53|0.4|9|2|2.30584905660377|1.73593627360244|95, 5002
+Pinellas County Aquatic Preserve|10|54|0.53|26|1.82|2.44240740740741|3.48723328468729|95, 5002
 Pinellas County Aquatic Preserve|11|22|0.68|6|1.465|1.88045454545455|1.31891541760186|95, 5002
-Pinellas County Aquatic Preserve|12|53|0.4|6|1|1.36264150943396|1.15188499516661|95, 5002
+Pinellas County Aquatic Preserve|12|54|0.4|6|1|1.39111111111111|1.15998807194041|95, 5002
 Rocky Bayou State Park Aquatic Preserve|1|11|0|40|1|5.31818181818182|11.849204039244|537, 5002
 Rocky Bayou State Park Aquatic Preserve|2|14|0|22.3|1.05|3.21428571428571|6.03041740395589|537, 5002
 Rocky Bayou State Park Aquatic Preserve|3|14|0|3.7|1.3|1.32857142857143|1.0246414543098|537, 5002
@@ -226,26 +226,26 @@ Rocky Bayou State Park Aquatic Preserve|10|14|0|15.4|0.2|1.73571428571429|4.1179
 Rocky Bayou State Park Aquatic Preserve|11|12|0|6.1|0|1.04166666666667|2.17984917465462|537, 5002
 Rocky Bayou State Park Aquatic Preserve|12|12|0|18.4|1.25|4.04166666666667|6.32835729558675|537, 5002
 Rookery Bay Aquatic Preserve|1|40|1.82|10.88|4.265|5.0435|2.23601585930801|354
-Rookery Bay Aquatic Preserve|2|39|2|21.8|6.39|7.79666666666667|4.88710027754772|354
+Rookery Bay Aquatic Preserve|2|40|2|21.8|6.695|7.78175|4.82496068138623|354, 5002
 Rookery Bay Aquatic Preserve|3|63|3.15|16.83|9.5|10.0693650793651|3.27977422168242|95, 354
 Rookery Bay Aquatic Preserve|4|52|4.7|89.8|9.125|14.0453846153846|15.3205376014744|354
 Rookery Bay Aquatic Preserve|5|33|2.6|30|5.34|8.78878787878788|6.2767406736975|95, 354
 Rookery Bay Aquatic Preserve|6|55|4.36|21|10.6|11.2261818181818|4.24055005643664|354
 Rookery Bay Aquatic Preserve|7|36|0|60.2|10.65|13.4066666666667|11.3232274551031|354, 572
 Rookery Bay Aquatic Preserve|8|54|3.47|237|9.55|47.587037037037|80.7466387554336|354
-Rookery Bay Aquatic Preserve|9|54|2.09|19.1|7.2|8.01148148148148|4.32067098536808|354
+Rookery Bay Aquatic Preserve|9|56|2.09|19.1|7.2|8.04142857142857|4.26404734263818|354, 5002
 Rookery Bay Aquatic Preserve|10|59|4.2|371.5|9.4|34.8637288135593|78.9642616434214|354
-Rookery Bay Aquatic Preserve|11|57|2.43|15.5|8.18|8.1880701754386|3.54179304801784|354
+Rookery Bay Aquatic Preserve|11|58|2.43|15.5|8.18|8.14|3.52962400462643|354, 5002
 Rookery Bay Aquatic Preserve|12|63|2.1|16.6|6.6|6.6215873015873|2.50580629374492|354
 Rookery Bay National Estuarine Research Reserve|1|88|1.82|14.74|4.8|5.72284090909091|2.95252899539565|354
-Rookery Bay National Estuarine Research Reserve|2|89|2|21.8|6.39|7.3738202247191|3.95098650098301|354
+Rookery Bay National Estuarine Research Reserve|2|90|2|21.8|6.395|7.37188888888889|3.92876996917123|354, 5002
 Rookery Bay National Estuarine Research Reserve|3|113|3.07|30.72|8.9|9.82557522123894|5.15949435819419|95, 354
 Rookery Bay National Estuarine Research Reserve|4|102|2.52|89.8|8.3|11.243137254902|11.5831470253415|354
 Rookery Bay National Estuarine Research Reserve|5|83|2.46|30|7.34|8.01192771084337|4.51242524641314|95, 354
 Rookery Bay National Estuarine Research Reserve|6|105|1.51|21|8.5|8.8547619047619|4.47763611553576|354
 Rookery Bay National Estuarine Research Reserve|7|78|0|60.2|9.15|10.8907692307692|8.89163663213933|354, 572
 Rookery Bay National Estuarine Research Reserve|8|111|1.68|237|6.21|26.5118018018018|59.7943305338953|354
-Rookery Bay National Estuarine Research Reserve|9|110|1.01|19.1|6.085|7.39190909090909|4.0387936466351|354
+Rookery Bay National Estuarine Research Reserve|9|112|1.01|19.1|6.24|7.41794642857143|4.01731974169522|354, 5002
 Rookery Bay National Estuarine Research Reserve|10|117|1.53|371.5|8.95|22.027264957265|57.4291151172009|354
-Rookery Bay National Estuarine Research Reserve|11|101|2.43|15.5|7.6|7.84059405940594|3.34345175583025|354
+Rookery Bay National Estuarine Research Reserve|11|102|2.43|15.5|7.6|7.81666666666667|3.33562389946467|354, 5002
 Rookery Bay National Estuarine Research Reserve|12|121|0.62|16.6|6.55|6.44710743801653|2.55454250242469|354
