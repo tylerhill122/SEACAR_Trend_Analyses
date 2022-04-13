@@ -37,7 +37,7 @@ APP_Plots <- TRUE
 in_dir <- "data/"
 out_dir <- "output/"
 file_pref <- "Combined_WQ_WC_NUT_"
-file_date <- "2022-Apr-05"
+file_date <- "2022-Apr-13"
 param_name <- "Chlorophyll_a_uncorrected_for_pheophytin"
 depth <- "Bottom"
 activity <- "Field"
@@ -112,10 +112,11 @@ if(depth=="Bottom"){
 }
 
 data$Include <- as.logical(data$Include)
-data$ActivityType <- gsub("Field Msr/Obs", "Field", data$ActivityType)
 data <- data[!is.na(data$ResultValue),]
 data <- data[!is.na(data$RelativeDepth) & data$RelativeDepth==depth,]
-data <- data[!is.na(data$ActivityType) & data$ActivityType==activity,]
+data <- data[!grep("Blank", data$ActivityType),]
+data <- data[grep(activity, data$ActivityType[!is.na(data$ActivityType)]),]
+
 if(param_name == "Water_Temperature"){
    data <- data[data$ResultValue>=-2,]
 } else{
@@ -328,7 +329,6 @@ tauSeasonal <- function(data, independent, stats.median, stats.minYear,
    }, error = function(e) {
       print(e)
    }, finally = {
-      7
       if (!exists("tau")) {
          tau <- NULL
       }
@@ -408,7 +408,8 @@ c_names <- c("ManagedAreaName", "Independent", "Median", "N", "EarliestYear",
 if(n==0){
    KT.Stats <- data.frame(matrix(ncol=11, nrow=0))
    colnames(KT.Stats) <- c_names
-   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
+                           activity, "-", depth,
                            "_KendallTau_Stats.txt"), sep = "|")
 } else{
    for (i in 1:n) {
@@ -435,7 +436,8 @@ if(n==0){
    KT.Stats$SennSlope <- as.numeric(KT.Stats$SennSlope)
    KT.Stats$SennIntercept <- as.numeric(KT.Stats$SennIntercept)
    KT.Stats$Trend <- as.integer(KT.Stats$Trend)
-   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
+                           activity, "-", depth,
                            "_KendallTau_Stats.txt"), sep = "|")
 }
 ```
