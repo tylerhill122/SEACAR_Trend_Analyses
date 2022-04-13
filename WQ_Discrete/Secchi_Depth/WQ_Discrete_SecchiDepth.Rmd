@@ -37,7 +37,7 @@ APP_Plots <- TRUE
 in_dir <- "data/"
 out_dir <- "output/"
 file_pref <- "Combined_WQ_WC_NUT_"
-file_date <- "2022-Apr-05"
+file_date <- "2022-Apr-13"
 param_name <- "Secchi_Depth"
 depth <- "Surface"
 ```
@@ -79,11 +79,11 @@ if(!file.exists("output")){
 
 file_in <- paste0(in_dir, file_pref, param_name, "-", file_date, ".txt")
 data <-fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-             # select = c("ManagedAreaName", "ProgramID", "ProgramName",
-             #            "ProgramLocationID", "SampleDate", "Year", "Month",
-             #            "RelativeDepth", "ResultValue", "ParameterUnits",
-             #            "ValueQualifier", "SEACAR_QAQCFlagCode", "Include"),
-             na.strings = "")
+             select = c("ManagedAreaName", "ProgramID", "ProgramName",
+                        "ProgramLocationID", "SampleDate", "Year", "Month",
+                        "RelativeDepth", "ActivityType", "ResultValue",
+                        "ParameterUnits", "ValueQualifier",
+                        "SEACAR_QAQCFlagCode", "Include"), na.strings = "")
 
 unit <- unique(data$ParameterUnits)
 data$SampleDate <- as.Date(data$SampleDate)
@@ -113,6 +113,8 @@ if(depth=="Bottom"){
 data$Include <- as.logical(data$Include)
 data <- data[!is.na(data$ResultValue),]
 data <- data[!is.na(data$RelativeDepth) & data$RelativeDepth==depth,]
+data <- data[!grep("Blank", data$ActivityType),]
+
 if(param_name == "Water_Temperature"){
    data <- data[data$ResultValue>=-2,]
 } else{
@@ -224,7 +226,7 @@ MA_YM_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
 MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ManagedAreaName,
                                                MA_YM_Stats$Year,
                                                MA_YM_Stats$Month), ])
-fwrite(MA_YM_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+fwrite(MA_YM_Stats, paste0(out_dir,"/", param_name, "_", file_date,
                            "_ManagedArea_YearMonth_Stats.txt"), sep = "|")
 
 MA_Y_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
@@ -240,7 +242,7 @@ MA_Y_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
                                 collapse = ', '))
 MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ManagedAreaName,
                                              MA_Y_Stats$Year), ])
-fwrite(MA_Y_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+fwrite(MA_Y_Stats, paste0(out_dir,"/", param_name, "_", file_date,
                           "_ManagedArea_Year_Stats.txt"), sep = "|")
 
 MA_M_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
@@ -256,7 +258,7 @@ MA_M_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
                                 collapse = ', '))
 MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ManagedAreaName,
                                              MA_M_Stats$Month), ])
-fwrite(MA_M_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+fwrite(MA_M_Stats, paste0(out_dir,"/", param_name, "_", file_date,
                           "_ManagedArea_Month_Stats.txt"), sep = "|")
 ```
 
@@ -337,7 +339,6 @@ tauSeasonal <- function(data, independent, stats.median, stats.minYear,
    }, error = function(e) {
       print(e)
    }, finally = {
-      7
       if (!exists("tau")) {
          tau <- NULL
       }
@@ -417,7 +418,7 @@ c_names <- c("ManagedAreaName", "Independent", "Median", "N", "EarliestYear",
 if(n==0){
    KT.Stats <- data.frame(matrix(ncol=11, nrow=0))
    colnames(KT.Stats) <- c_names
-   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date,
                            "_KendallTau_Stats.txt"), sep = "|")
 } else{
    for (i in 1:n) {
@@ -444,7 +445,7 @@ if(n==0){
    KT.Stats$SennSlope <- as.numeric(KT.Stats$SennSlope)
    KT.Stats$SennIntercept <- as.numeric(KT.Stats$SennIntercept)
    KT.Stats$Trend <- as.integer(KT.Stats$Trend)
-   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date,
                            "_KendallTau_Stats.txt"), sep = "|")
 }
 ```
