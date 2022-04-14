@@ -37,7 +37,7 @@ APP_Plots <- TRUE
 in_dir <- "data/"
 out_dir <- "output/"
 file_pref <- "Combined_WQ_WC_NUT_"
-file_date <- "2022-Apr-05"
+file_date <- "2022-Apr-13"
 param_name <- "Water_Temperature"
 depth <- "Surface"
 ```
@@ -81,9 +81,9 @@ file_in <- paste0(in_dir, file_pref, param_name, "-", file_date, ".txt")
 data <-fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
              select = c("ManagedAreaName", "ProgramID", "ProgramName",
                         "ProgramLocationID", "SampleDate", "Year", "Month",
-                        "RelativeDepth", "ResultValue", "ParameterUnits",
-                        "ValueQualifier", "SEACAR_QAQCFlagCode", "Include"),
-             na.strings = "")
+                        "RelativeDepth", "ActivityType", "ResultValue",
+                        "ParameterUnits", "ValueQualifier",
+                        "SEACAR_QAQCFlagCode", "Include"), na.strings = "")
 
 unit <- unique(data$ParameterUnits)
 data$SampleDate <- as.Date(data$SampleDate)
@@ -113,6 +113,7 @@ if(depth=="Bottom"){
 data$Include <- as.logical(data$Include)
 data <- data[!is.na(data$ResultValue),]
 data <- data[!is.na(data$RelativeDepth) & data$RelativeDepth==depth,]
+data <- data[!grep("Blank", data$ActivityType),]
 
 if(param_name == "Water_Temperature"){
    data <- data[data$ResultValue>=-2,]
@@ -322,7 +323,6 @@ tauSeasonal <- function(data, independent, stats.median, stats.minYear,
    }, error = function(e) {
       print(e)
    }, finally = {
-      7
       if (!exists("tau")) {
          tau <- NULL
       }
