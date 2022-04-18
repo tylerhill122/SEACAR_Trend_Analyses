@@ -11,7 +11,7 @@ output:
 
 # Purpose
 
-The purpose of this script is to analyze the continuous salinity data that is created from the SEACAR database, apply filtering criteria, create summary plots, and perform seasonal Kendall Tau analysis for each program location and summary statistics for values measured at the desired depth.
+The purpose of this script is to analyze the continuous turbidity data that is created from the SEACAR database, apply filtering criteria, create summary plots, and perform seasonal Kendall Tau analysis for each program location and summary statistics for values measured at the desired depth.
 
 All scripts and outputs can be found on the SEACAR GitHub repository:
 
