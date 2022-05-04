@@ -24,10 +24,10 @@ BB <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
       #            "ParameterUnits", "ValueQualifier",
       #            "SEACAR_QAQCFlagCode", "Include"),
       na.strings = "")
-BB$BB <- BB$ResultValue
-BB <- BB[!is.na(BB$BB),]
-BB <- BB %>% filter(BB >= 0 & BB <= 5 | is.na(BB))
+BB <- BB[!is.na(BB$ResultValue),]
+BB <- BB %>% filter(ResultValue >= 0 & ResultValue <= 5 | is.na(ResultValue))
 BB$QuadIdentifier <- as.character(BB$QuadIdentifier)
+BB$BB <- BB$ResultValue
 
 file_in <- "SAV/data/Combined_SAV_Modified_Braun_Blanquet_Score-2022-Apr-25.txt"
 mBB <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
@@ -37,10 +37,10 @@ mBB <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             #            "ParameterUnits", "ValueQualifier",
             #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-mBB$mBB <- mBB$ResultValue
-mBB <- mBB[!is.na(mBB$mBB),]
-mBB <- mBB %>% filter(mBB >= 0 & mBB <= 5 | is.na(mBB))
+mBB <- mBB[!is.na(mBB$ResultValue),]
+mBB <- mBB %>% filter(ResultValue >= 0 & ResultValue <= 5 | is.na(ResultValue))
 mBB$QuadIdentifier <- as.character(mBB$QuadIdentifier)
+mBB$mBB <- mBB$ResultValue
 
 file_in <- "SAV/data/Combined_SAV_Percent_Cover-2022-Apr-25.txt"
 PC <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
@@ -50,10 +50,10 @@ PC <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             #            "ParameterUnits", "ValueQualifier",
             #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-PC$PC <- PC$ResultValue
-PC <- PC[!is.na(PC$PC),]
-PC <- PC %>% filter(PC >= 0 & PC <= 100 | is.na(PC))
+PC <- PC[!is.na(PC$ResultValue),]
+PC <- PC %>% filter(ResultValue >= 0 & ResultValue <= 100 | is.na(ResultValue))
 PC$QuadIdentifier <- as.character(PC$QuadIdentifier)
+PC$PC <- PC$ResultValue
 
 file_in <- "SAV/data/Combined_SAV_Percent_Occurrence-2022-Apr-25.txt"
 PO <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
@@ -63,10 +63,10 @@ PO <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             #            "ParameterUnits", "ValueQualifier",
             #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-PO$PO <- PO$ResultValue
-PO <- PO[!is.na(PO$PO),]
-PO <- PO %>% filter(PO >= 0 & PO <= 100 | is.na(PO))
+PO <- PO[!is.na(PO$ResultValue),]
+PO <- PO %>% filter(ResultValue >= 0 & ResultValue <= 100 | is.na(ResultValue))
 PO$QuadIdentifier <- as.character(PO$QuadIdentifier)
+PO$PO <- PO$ResultValue
 
 file_in <- "SAV/data/Combined_SAV_Shoot_Count-2022-Apr-25.txt"
 SC <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
@@ -76,9 +76,9 @@ SC <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             #            "ParameterUnits", "ValueQualifier",
             #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-SC$SC <- SC$ResultValue
-SC <- SC[!is.na(SC$SC),]
+SC <- SC[!is.na(SC$ResultValue),]
 SC$QuadIdentifier <- as.character(SC$QuadIdentifier)
+SC$SC <- SC$ResultValue
 
 file_in <- "SAV/data/Combined_SAV_Presence_Absence-2022-Apr-25.txt"
 PA <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
@@ -88,9 +88,9 @@ PA <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             #            "ParameterUnits", "ValueQualifier",
             #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-PA$PA <- PA$ResultValue
-PA <- PA[!is.na(PA$PA),]
+PA <- PA[!is.na(PA$ResultValue),]
 PA$QuadIdentifier <- as.character(PA$QuadIdentifier)
+PA$PA <- PA$ResultValue
 
 SAV <- bind_rows(BB, mBB, PC, PO, SC, PA)
 rm(BB)
@@ -111,7 +111,7 @@ SAV[, `:=` (BB = as.numeric(BB),
 
 ##### This section was created by J. Panzik to perform analysis and export to data files #####
 MA_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName) %>%
+  group_by(ParameterName, ManagedAreaName, CommonIdentifier) %>%
   summarize(EarliestSampleDate = min(SampleDate),
             LastSampleDate = max(SampleDate),
             N = length(ResultValue),
@@ -127,7 +127,7 @@ MA_Stats <- as.data.table(MA_Stats[order(MA_Stats$ParameterName,
 fwrite(MA_Stats, "SAV/output/SAV_ManagedAreaStats.txt", sep = "|")
 
 MA_YM_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, Year, Month) %>%
+  group_by(ParameterName, ManagedAreaName, Year, Month, CommonIdentifier) %>%
   summarize(EarliestSampleDate = min(SampleDate),
             LastSampleDate = max(SampleDate),
             N = length(ResultValue),
@@ -145,7 +145,7 @@ MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ParameterName,
 fwrite(MA_YM_Stats, "SAV/output/SAV_ManagedAreaStats_YearMonth.txt", sep = "|")
 
 MA_Y_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, Year) %>%
+  group_by(ParameterName, ManagedAreaName, Year, CommonIdentifier) %>%
   summarize(EarliestSampleDate = min(SampleDate),
             LastSampleDate = max(SampleDate),
             N = length(ResultValue),
@@ -162,7 +162,7 @@ MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ParameterName,
 fwrite(MA_Y_Stats, "SAV/output/SAV_ManagedAreaStats_Year.txt", sep = "|")
 
 MA_M_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, Month) %>%
+  group_by(ParameterName, ManagedAreaName, Month, CommonIdentifier) %>%
   summarize(EarliestSampleDate = min(SampleDate),
             LastSampleDate = max(SampleDate),
             N = length(ResultValue),
@@ -181,7 +181,7 @@ fwrite(MA_M_Stats, "SAV/output/SAV_ManagedAreaStats_Month.txt", sep = "|")
 ###
 ML_Stats <- SAV %>%
   group_by(ParameterName, ManagedAreaName, ProgramID, ProgramName,
-           ProgramLocationID) %>%
+           ProgramLocationID, CommonIdentifier) %>%
   summarize(EarliestSampleDate = min(SampleDate),
             LastSampleDate = max(SampleDate),
             N = length(ResultValue),
@@ -199,7 +199,7 @@ fwrite(ML_Stats, "SAV/output/SAV_MonitoringLocationStats.txt", sep = "|")
 
 ML_YM_Stats <- SAV %>%
   group_by(ParameterName, ManagedAreaName, ProgramID, ProgramName,
-           ProgramLocationID, Year, Month) %>%
+           ProgramLocationID, Year, Month, CommonIdentifier) %>%
   summarize(EarliestSampleDate = min(SampleDate),
             LastSampleDate = max(SampleDate),
             N = length(ResultValue),
@@ -219,7 +219,7 @@ fwrite(ML_YM_Stats, "SAV/output/SAV_MonitoringLocationStats_YearMonth.txt", sep 
 
 ML_Y_Stats <- SAV %>%
   group_by(ParameterName, ManagedAreaName, ProgramID, ProgramName,
-           ProgramLocationID, Year) %>%
+           ProgramLocationID, Year, CommonIdentifier) %>%
   summarize(EarliestSampleDate = min(SampleDate),
             LastSampleDate = max(SampleDate),
             N = length(ResultValue),
@@ -238,7 +238,7 @@ fwrite(ML_Y_Stats, "SAV/output/SAV_MonitoringLocationStats_Year.txt", sep = "|")
 
 ML_M_Stats <- SAV %>%
   group_by(ParameterName, ManagedAreaName, ProgramID, ProgramName,
-           ProgramLocationID, Month) %>%
+           ProgramLocationID, Month, CommonIdentifier) %>%
   summarize(EarliestSampleDate = min(SampleDate),
             LastSampleDate = max(SampleDate),
             N = length(ResultValue),
@@ -331,18 +331,19 @@ SAV3 <- SAV2 %>% filter(SpeciesGroup1 == "Seagrass" | SpeciesGroup1 == "Macroalg
 rm(SAV2)
 
 species_reject <- c("Total_SAV", "All", "NA")
+SAV3$analysisunit <- NA
+SAV3$analysisunit <- as.character(SAV3$analysisunit)
 SAV3[, analysisunit := ifelse(CommonIdentifier %in% species_reject, NA, 
                               ifelse(str_detect(CommonIdentifier, "Halophila"), "Halophila spp.", 
                                      ifelse(SpeciesGroup1 == "Seagrass", CommonIdentifier, Drift_Attached)))]
-SAV3$analysisunit <- NA
-SAV3$analysisunit <- as.character(SAV3$analysisunit)
+
 SAV3[!is.na(Drift_Attached), analysisunit := paste0(analysisunit, " algae")]
 
 SAV4 <- subset(SAV3, !is.na(SAV3$analysisunit))
 
 rm(SAV3)
 
-saveRDS(SAV4, here::here("SAV4.rds"))
+saveRDS(SAV4, here::here("SAV/output/SAV4.rds"))
 fwrite(SAV4, "SAV/output/SAV_Used.txt", sep = "|")
 
 SAV4_sum <- SAV4 %>% group_by(method, ManagedAreaName) %>% summarize(n_yr = length(unique(Year)), yrs = list(sort(unique(Year))))
@@ -517,6 +518,9 @@ failedmods <- data.table(model = character(),
 #Create a table of the proportion of present SAV types by managed area and year
 props <- SAV4 %>% group_by(ManagedAreaName, analysisunit, relyear) %>% summarize(n1 = sum(PA), ntot = n(), prop = n1/ntot)
 setDT(props)
+props$sp_prop <- NA
+props$sp_prop <- as.numeric(props$sp_prop)
+
 for(m in unique(props$ManagedAreaName)){
   props[ManagedAreaName == m, sp_prop := n1/sum(n1), by = c("relyear")]
 }
@@ -579,7 +583,7 @@ for(p in parameters$column){
                        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
                                           aesthetics = c("color", "fill"))
     
-    saveRDS(parvYear_bysp, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(parvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                              ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"), 
                                                     ifelse(stringr::str_detect(i, "NMS"), paste0("MS_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"), paste0("AP_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"))))))
@@ -594,7 +598,7 @@ for(p in parameters$column){
                        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
                                           aesthetics = c("color", "fill"))
     
-    saveRDS(parvYear_bypr, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(parvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                              ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"), 
                                                     ifelse(stringr::str_detect(i, "NMS"), paste0("MS_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"), paste0("AP_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"))))))
@@ -609,7 +613,7 @@ for(p in parameters$column){
                       scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
                                          aesthetics = c("color", "fill"))
     
-    saveRDS(spvYear_bypr, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(spvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA003_spvYear_bypr.rds", 
                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_EDA003_spvYear_bypr.rds", "AP_EDA003_spvYear_bypr.rds")))))
@@ -624,7 +628,7 @@ for(p in parameters$column){
                       scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
                                          aesthetics = c("color", "fill"))
     
-    saveRDS(qsvYear_bysp, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(qsvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA004_qsvYear_bysp.rds", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA004_qsvYear_bysp.rds", "AP_EDA004_qsvYear_bysp.rds")))))
@@ -639,7 +643,7 @@ for(p in parameters$column){
                       scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
                                          aesthetics = c("color", "fill"))
     
-    saveRDS(qsvYear_bypr, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(qsvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA005_qsvYear_bypr.rds", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA005_qsvYear_bypr.rds", "AP_EDA005_qsvYear_bypr.rds")))))
@@ -654,7 +658,7 @@ for(p in parameters$column){
                        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
                                           aesthetics = c("color", "fill"))
     
-    saveRDS(metvYear_bysp, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(metvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA006_metvYear_bysp.rds", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA006_metvYear_bysp.rds", "AP_EDA006_metvYear_bysp.rds")))))
@@ -669,7 +673,7 @@ for(p in parameters$column){
                        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
                                           aesthetics = c("color", "fill"))
     
-    saveRDS(metvYear_bypr, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(metvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA007_metvYear_bypr.rds", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA007_metvYear_bypr.rds", "AP_EDA007_metvYear_bypr.rds")))))
@@ -685,7 +689,7 @@ for(p in parameters$column){
       scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
                          aesthetics = c("color", "fill"))
     
-    saveRDS(metvqs_bysp, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(metvqs_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA008_metvqs_bysp.rds", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA008_metvqs_bysp.rds", "AP_EDA008_metvqs_bysp.rds")))))
@@ -701,7 +705,7 @@ for(p in parameters$column){
       scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
                          aesthetics = c("color", "fill"))
     
-    saveRDS(metvqs_bypr, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(metvqs_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA009_metvqs_bypr.rds", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA009_metvqs_bypr.rds", "AP_EDA009_metvqs_bypr.rds")))))
@@ -717,7 +721,7 @@ for(p in parameters$column){
                         scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
                                            aesthetics = c("color", "fill"))
       
-      saveRDS(grvYear_bysp, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+      saveRDS(grvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA010_grvYear_bysp.rds", 
                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_EDA010_grvYear_bysp.rds", "AP_EDA010_grvYear_bysp.rds")))))
@@ -732,7 +736,7 @@ for(p in parameters$column){
                         scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
                                            aesthetics = c("color", "fill"))
       
-      saveRDS(grvYear_bypr, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+      saveRDS(grvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA011_grvYear_bypr.rds", 
                                                      ifelse(stringr::str_detect(i, "NMS"), "MS__EDA011_grvYear_bypr.rds", "AP_EDA011_grvYear_bypr.rds")))))
@@ -749,7 +753,7 @@ for(p in parameters$column){
                         scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
                                            aesthetics = c("color", "fill"))
       
-      saveRDS(dpvYear_bysp, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+      saveRDS(dpvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA012_dpvYear_bysp.rds", 
                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_EDA012_dpvYear_bysp.rds", "AP_EDA012_dpvYear_bysp.rds")))))
@@ -764,7 +768,7 @@ for(p in parameters$column){
                         scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
                                            aesthetics = c("color", "fill"))
       
-      saveRDS(dpvYear_bypr, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+      saveRDS(dpvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA013_dpvYear_bypr.rds", 
                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_EDA013_dpvYear_bypr.rds", "AP_EDA013_dpvYear_bypr.rds")))))
@@ -785,7 +789,7 @@ for(p in parameters$column){
     
     legend = gtable::gtable_filter(ggplotGrob(plotall), "guide-box")
     
-    saveRDS(legend, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(legend, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_specieslegend.rds", 
                                              ifelse(stringr::str_detect(i, "NMS"), "MS_hist_specieslegend.rds", "AP_hist_specieslegend.rds")))))
@@ -809,7 +813,7 @@ for(p in parameters$column){
           #legend.text = element_text(size = 7),
           legend.position = "none")
       
-      saveRDS(plot, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+      saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_", 
                                              ifelse(stringr::str_detect(i, "NMS"), "MS_hist_", "AP_hist_")), 
@@ -834,7 +838,7 @@ for(p in parameters$column){
         legend.position = "none",
         legend.title = element_blank())
     
-    saveRDS(plot, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_SGvMA.rds", 
                                            ifelse(stringr::str_detect(i, "NMS"), "MS_hist_SGvMA.rds", "AP_hist_SGvMA.rds")))))  
@@ -853,7 +857,7 @@ for(p in parameters$column){
     
     legend = gtable::gtable_filter(ggplotGrob(plotall), "guide-box")
     
-    saveRDS(legend, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(legend, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_specieslegend.rds", 
                                              ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_specieslegend.rds", "AP_boxplot_specieslegend.rds")))))
@@ -877,7 +881,7 @@ for(p in parameters$column){
           #legend.text = element_text(size = 7),
           legend.position = "none")
       
-      saveRDS(plot, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+      saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_", 
                                              ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_", "AP_boxplot_")), 
@@ -901,7 +905,7 @@ for(p in parameters$column){
         legend.position = "none",
         legend.title = element_blank())
     
-    saveRDS(plot, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_SGvMA.rds", 
                                            ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_SGvMA.rds", "AP_boxplot_SGvMA.rds")))))  
@@ -991,7 +995,7 @@ for(p in parameters$column){
       ystart <- ystart + maxydist
     }        
     
-    saveRDS(base, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+    saveRDS(base, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_map_bypr.rds", 
                                            ifelse(stringr::str_detect(i, "NMS"), "MS_map_bypr.rds", "AP_map_bypr.rds")))))
@@ -1012,7 +1016,7 @@ for(p in parameters$column){
             legend.justification='top',
             legend.direction='vertical')
 
-    ggsave(filename = here::here(paste0("Figures/BB/img/SAV_", parameters[column == p, type], "_", 
+    ggsave(filename = here::here(paste0("SAV/output/Figures/BB/img/SAV_", parameters[column == p, type], "_", 
                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
                                         ifelse(stringr::str_detect(i, "NERR"), "ERR_map_bypr.jpg", 
                                                ifelse(stringr::str_detect(i, "NMS"), "MS_map_bypr.jpg", "AP_map_bypr.jpg")))), 
@@ -1115,7 +1119,7 @@ for(p in parameters$column){
                     model_j))
           
           #Save the model object as .rds
-          saveRDS(model_j, here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+          saveRDS(model_j, here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
@@ -1180,7 +1184,7 @@ for(p in parameters$column){
                          family = cumulative("logit"), prior = c(set_prior("normal(0, 50)", class = "Intercept"), set_prior("normal(0, 50)", class = "b")), cores = 4, 
                          control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, backend = "cmdstanr", 
                          threads = threading(2), sample_prior = "only", seed = seed + n,
-                         file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+                         file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
                                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                   ifelse(stringr::str_detect(i, "NERR"), "ERR_olr_priorpc_", 
                                                          ifelse(stringr::str_detect(i, "NMS"), "MS_olr_priorpc_", "AP_olr_priorpc_")), 
@@ -1228,7 +1232,7 @@ for(p in parameters$column){
                                          ifelse(stringr::str_detect(i, "NMS"), "MS_priorpcplot_", "AP_priorpcplot_")), 
                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
             
-            saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(priorpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
                                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_priorpcplot_", 
                                                            ifelse(stringr::str_detect(i, "NMS"), "MS_priorpcplot_", "AP_priorpcplot_")), 
@@ -1240,7 +1244,7 @@ for(p in parameters$column){
             # brm_i <- brm(formula =  BB_all ~ relyear + (1 | LocationID), data = SAV4[ManagedAreaName == i & !is.na(BB_all) & analysisunit == j, ],
             #              family = cumulative("logit"), prior = c(set_prior("normal(0, 50)", class = "Intercept"), set_prior("normal(0, 50)", class = "b")), cores = 6, 
             #              control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 6, inits = 0, thin = 3, backend = "cmdstanr",
-            #              threads = threading(2), seed = seed + n, file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+            #              threads = threading(2), seed = seed + n, file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
             #                                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
             #                                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_olr_", 
             #                                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_olr_", "AP_olr_")), 
@@ -1248,7 +1252,7 @@ for(p in parameters$column){
             #                                                               ".rds")))
             
             brm_i <- update(ppctest, cores = 6, iter = 9000, warmup = 3000, chains = 6, seed = seed + n, sample_prior = "no", 
-                            file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+                            file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
                                                      gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_olr_", 
                                                             ifelse(stringr::str_detect(i, "NMS"), "MS_olr_", "AP_olr_")), 
@@ -1287,7 +1291,7 @@ for(p in parameters$column){
             }
             
             ##save diagnostic plots-----------------------------------------------------
-            saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(diag, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
                                                    gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                    ifelse(stringr::str_detect(i, "NERR"), "ERR_chainsplots_", 
                                                           ifelse(stringr::str_detect(i, "NMS"), "MS_chainsplots_", "AP_chainsplots_")), 
@@ -1325,7 +1329,7 @@ for(p in parameters$column){
                                          ifelse(stringr::str_detect(i, "NMS"), "MS_olr_postpcplot_", "AP_olr_postpcplot_")), 
                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
             
-            saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(postpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
                                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_olr_postpcplot_", 
                                                            ifelse(stringr::str_detect(i, "NMS"), "MS_olr_postpcplot_", "AP_olr_postpcplot_")), 
@@ -1355,7 +1359,7 @@ for(p in parameters$column){
                    fill = "Braun\nBlanquet\nScore", 
                    x = "Year")
             
-            saveRDS(ceplot_i, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+            saveRDS(ceplot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                 ifelse(stringr::str_detect(i, "NERR"), "ERR_olrplot_", 
                                                        ifelse(stringr::str_detect(i, "NMS"), "MS_olrplot_", "AP_olrplot_")), 
@@ -1376,7 +1380,7 @@ for(p in parameters$column){
         #   #                    family = bernoulli, prior = set_prior("normal(0,1)", class = "b"), cores = 4,
         #   #                    control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, warmup = 3000,
         #   #                    chains = 5, inits = 0, thin = 3, sample_prior = "only",
-        #   #                    file = here::here(paste0("models/SAV_", parameters[column == p, type], "_",
+        #   #                    file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_",
         #   #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
         #   #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
         #   #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")),
@@ -1394,7 +1398,7 @@ for(p in parameters$column){
         #                      family = binomial, prior = c(set_prior("normal(0, 200)")), cores = 4, chains = 4, 
         #                      control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, inits = 0, 
         #                      thin = 3, seed = seed + n, sample_prior = "only", backend = "cmdstanr", threads = threading(2),
-        #                      file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+        #                      file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
         #                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
         #                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")), 
@@ -1443,7 +1447,7 @@ for(p in parameters$column){
         #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
         #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
         #     
-        #     saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+        #     saveRDS(priorpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
         #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpcplot_", 
         #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
@@ -1459,7 +1463,7 @@ for(p in parameters$column){
         #     #                       family = bernoulli, prior = c(set_prior("normal(0,1)", class = "b")), 
         #     #                       cores = 15, control = list(adapt_delta = 0.99, max_treedepth = 10), 
         #     #                       iter = 9000, warmup = 3000, chains = 5, inits = 0, thin = 3, seed = seed + n,
-        #     #                       file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+        #     #                       file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
         #     #                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #     #                                                ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
         #     #                                                       ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_"), 
@@ -1471,7 +1475,7 @@ for(p in parameters$column){
         #     # brm_i <- brm(formula =  CoverObs | trials(Grid) ~ relyear + (1 + relyear | LocationID), data = SAV4[ManagedAreaName == i & analysisunit == j, ],
         #     #              family = binomial, cores = 6, control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, 
         #     #              warmup = 3000, chains = 6, inits = 0, thin = 3, seed = seed + n, backend = "cmdstanr", threads = threading(2),
-        #     #              file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+        #     #              file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
         #     #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #     #                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
         #     #                                              ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
@@ -1480,7 +1484,7 @@ for(p in parameters$column){
         #     # toc()
         #     
         #     brm_i <- update(ppctest, cores = 6, iter = 9000, warmup = 3000, chains = 6, seed = seed + n, sample_prior = "no", 
-        #                     file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+        #                     file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
         #                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
         #                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
@@ -1519,7 +1523,7 @@ for(p in parameters$column){
         #     }
         #     
         #     #save diagnostic plots
-        #     saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+        #     saveRDS(diag, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
         #                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_chainsplots_", 
         #                                            ifelse(stringr::str_detect(i, "NMS), "MS_chainsplots_", "AP_chainsplots_")), 
@@ -1556,7 +1560,7 @@ for(p in parameters$column){
         #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
         #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
         #     
-        #     saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+        #     saveRDS(postpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
         #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_postpcplot_", 
         #                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
@@ -1588,7 +1592,7 @@ for(p in parameters$column){
         #       scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
         #                          aesthetics = c("color", "fill"))
         #     
-        #     saveRDS(ceplot_i, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_",
+        #     saveRDS(ceplot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_",
         #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
         #                                         ifelse(stringr::str_detect(i, "NERR"), "ERR_blrplot_", 
         #                                                ifelse(stringr::str_detect(i, "NMS"), "MS_blrplot_", "AP_blrplot_")),
@@ -1609,7 +1613,7 @@ for(p in parameters$column){
                              family = bernoulli, prior = set_prior("normal(0,1)", class = "b"), cores = 4, 
                              control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, 
                              chains = 4, inits = 0, thin = 3, sample_prior = "only", backend = "cmdstanr", threads = threading(2),
-                             file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+                             file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
                                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_priorpc_", 
                                                              ifelse(stringr::str_detect(i, "NMS"), "MS_belr_priorpc_", "AP_belr_priorpc_")), 
@@ -1655,7 +1659,7 @@ for(p in parameters$column){
                                          ifelse(stringr::str_detect(i, "NMS"), "MS_belr_priorpcplot_", "AP_belr_priorpcplot_")), 
                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
             
-            saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(priorpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
                                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_priorpcplot_", 
                                                            ifelse(stringr::str_detect(i, "NMS"), "MS_belr_priorpcplot_", "AP_belr_priorpcplot_")), 
@@ -1669,7 +1673,7 @@ for(p in parameters$column){
             #              family = bernoulli, prior = c(set_prior("normal(0,1)", class = "b")), cores = 6, 
             #              control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, warmup = 3000, chains = 6, 
             #              inits = 0, thin = 3, seed = seed + n, backend = "cmdstanr", threads = threading(2),
-            #              file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+            #              file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
             #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
             #                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_", "AP_belr_"), 
             #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
@@ -1677,7 +1681,7 @@ for(p in parameters$column){
             # toc()
             
             brm_i <- update(ppctest, cores = 6, iter = 9000, warmup = 3000, chains = 6, seed = seed + n, sample_prior = "no",
-                            file = here::here(paste0("models/SAV_", parameters[column == p, type], "_", 
+                            file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
                                                      gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_", 
                                                             ifelse(stringr::str_detect(i, "NMS"), "MS_belr_", "AP_belr_")), 
@@ -1715,7 +1719,7 @@ for(p in parameters$column){
             }
             
             ##save diagnostic plots--------------------------------------------------------------
-            saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(diag, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_chainsplots_", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_belr_chainsplots_", "AP_belr_chainsplots_")), 
@@ -1754,7 +1758,7 @@ for(p in parameters$column){
                                          ifelse(stringr::str_detect(i, "NMS"), "MS_belr_postpcplot_", "AP_belr_postpcplot_")), 
                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
             
-            saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(postpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
                                                    gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                    ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_postpcplot_", 
                                                           ifelse(stringr::str_detect(i, "NMS"), "MS_belr_postpcplot_", "AP_belr_postpcplot_")), 
@@ -1788,7 +1792,7 @@ for(p in parameters$column){
               scale_color_manual(values = subset(spcols, names(spcols) %in% unique(props[ManagedAreaName == i, analysisunit])), 
                                  aesthetics = c("color", "fill"))
             
-            saveRDS(ceplot_i, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+            saveRDS(ceplot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                 ifelse(stringr::str_detect(i, "NERR"), "ERR_belrplot_", 
                                                        ifelse(stringr::str_detect(i, "NMS"), "MS_belrplot_", "AP_belrplot_")), 
@@ -1825,7 +1829,7 @@ for(p in parameters$column){
         }
         
         #Save the plot object as .rds
-        saveRDS(plot_i, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+        saveRDS(plot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                            ifelse(stringr::str_detect(i, "NERR"), 
                                                   paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_trendplot.rds"),
                                                   ifelse(stringr::str_detect(i, "NMS"), 
@@ -1833,7 +1837,7 @@ for(p in parameters$column){
                                                          paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_trendplot.rds"))))))
         
         #Save the results table objects as .rds
-        saveRDS(lmemodresults, here::here(paste0("tables/SAV_", parameters[column == p, type], "_", 
+        saveRDS(lmemodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
                                           ifelse(stringr::str_detect(i, "NERR"), 
                                                  paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_lmeresults.rds"), 
                                                  ifelse(stringr::str_detect(i, "NMS"),
@@ -1842,7 +1846,7 @@ for(p in parameters$column){
       }
       
       if(paste0(p) == "BB_all"){
-        saveRDS(olrmodresults, here::here(paste0("tables/SAV_", parameters[column == p, type], "_", 
+        saveRDS(olrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
                                                  ifelse(stringr::str_detect(i, "NERR"), 
                                                         paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_olrresults.rds"),
                                                         ifelse(stringr::str_detect(i, "NMS"),
@@ -1851,7 +1855,7 @@ for(p in parameters$column){
       }
       
       if(paste0(p) == "PO"){
-        saveRDS(blrmodresults, here::here(paste0("tables/SAV_", parameters[column == p, type], "_", 
+        saveRDS(blrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
                                                  ifelse(stringr::str_detect(i, "NERR"), 
                                                         paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_blrresults.rds"), 
                                                         ifelse(stringr::str_detect(i, "NMS"),
@@ -1884,13 +1888,13 @@ for(p in parameters$column){
           scale_color_manual(values = subset(spcols, names(spcols) %in% unique(props[ManagedAreaName == i, analysisunit])), 
                              aesthetics = c("color", "fill"))
         
-        saveRDS(barplot_sp, here::here(paste0("Figures/BB/SAV_", parameters[column == p, type], "_", 
+        saveRDS(barplot_sp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_barplot_sp", 
                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_barplot_sp", "AP_barplot_sp")), 
                                               ".rds")))
         
-        saveRDS(belrmodresults, here::here(paste0("tables/SAV_", parameters[column == p, type], "_", 
+        saveRDS(belrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
                                                  ifelse(stringr::str_detect(i, "NERR"), 
                                                         paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_belrresults.rds"),
                                                         ifelse(stringr::str_detect(i, "NMS"),
@@ -1906,19 +1910,19 @@ for(p in parameters$column){
 }
 
 #Save failedmodslist-----------------------------------------------------
-saveRDS(failedmods, here::here("models/failedmodslist.rds"))
+saveRDS(failedmods, here::here("SAV/output/models/failedmodslist.rds"))
 
 
 #Get rid of eval(p)'s from plot file mappings---------------------------------------
-files <- list.files(here::here("Figures/BB/")) #get file list
+files <- list.files(here::here("SAV/output/Figures/BB/")) #get file list
 files <- str_subset(files, ".rds") #exclude non-.RDS files
 
 filesupdated <- list()
 for(i in seq_along(files)){
-  file_i <- readRDS(here::here(paste0("Figures/BB/", files[i])))
+  file_i <- readRDS(here::here(paste0("SAV/output/Figures/BB/", files[i])))
   if(paste0(as_label(file_i$mapping$y)) == "eval(p)"){
     file_i$mapping$y <- parameters[name %in% file_i$labels$y, column][[1]]
-    saveRDS(file_i, here::here(paste0("Figures/BB/", files[i])))
+    saveRDS(file_i, here::here(paste0("SAV/output/Figures/BB/", files[i])))
     rm(file_i)
     filesupdated <- append(filesupdated, files[i])
   } else {
@@ -1931,9 +1935,9 @@ for(i in seq_along(files)){
 
 
 #Save .jpg versions of specified "trendplot" .rds files --------------------------------------------------
-files <- list.files(here::here("Figures/BB/")) #get file list
+files <- list.files(here::here("SAV/output/Figures/BB/")) #get file list
 plots <- stringr::str_subset(files, "_trendplot") #identify map file
-mods <- list.files(here::here("models/"))
+mods <- list.files(here::here("SAV/output/models/"))
 #models <- str_subset(mods, paste0(str_sub(plots[1], 1, str_locate_all(plots[1], "_")[[1]][2])))
 models <- str_subset(mods, "_lme")
 
@@ -1943,7 +1947,7 @@ for(p in plots){
   malist <- append(malist, ma_p)
 }
 
-failedmodslist <- readRDS(here::here("models/failedmodslist.rds"))
+failedmodslist <- readRDS(here::here("SAV/output/models/failedmodslist.rds"))
 
 for(m in malist){
   mods_m <- str_subset(models, m)
@@ -1961,12 +1965,12 @@ for(m in malist){
                                                       ifelse(str_detect(w, "NERR_"), str_locate(w, "NERR_"), str_locate(w, "NMS_")))), 
                                        "_", 
                                        str_sub(w, -6, -5))), 
-                  readRDS(here::here(paste0("models/", w)))))
+                  readRDS(here::here(paste0("SAV/output/models/", w)))))
       }
       
-      plot_m2 <- readRDS(here::here(paste0("Figures/BB/", plot_m)))
+      plot_m2 <- readRDS(here::here(paste0("SAV/output/Figures/BB/", plot_m)))
       
-      jpeg(here::here(paste0("Figures/BB/img/", str_sub(plot_m, 1, -5), ".jpg")),
+      jpeg(here::here(paste0("SAV/output/Figures/BB/img/", str_sub(plot_m, 1, -5), ".jpg")),
            width = 10,
            height = 6,
            units = "in",
@@ -1984,5 +1988,5 @@ toc()
 
 #Save session info-----------------------------------------------------
 session <- sessionInfo()
-saveRDS(session, here::here(paste0("SessionInfo_", Sys.Date())))
+saveRDS(session, here::here(paste0("SAV/SessionInfo_", Sys.Date())))
 
