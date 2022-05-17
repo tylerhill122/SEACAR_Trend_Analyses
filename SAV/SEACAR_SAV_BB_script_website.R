@@ -143,8 +143,8 @@ SAV3[!is.na(Drift_Attached), analysisunit := paste0(analysisunit, " algae")]
 
 SAV4 <- subset(SAV3, !is.na(SAV3$analysisunit))
 
-saveRDS(SAV4, here::here("SAV/output/SAV4.rds"))
-fwrite(SAV4, "SAV/output/website/SAV_Used.txt", sep = "|")
+saveRDS(SAV4, here::here("SAV/output/data/SAV4.rds"))
+fwrite(SAV4, "SAV/output/data/SAV_Used.txt", sep = "|")
 
 SAV4_sum <- SAV4 %>% group_by(method, ManagedAreaName) %>% summarize(n_yr = length(unique(Year)), yrs = list(sort(unique(Year))))
 
