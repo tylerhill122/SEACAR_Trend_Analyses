@@ -12,83 +12,42 @@ library(grid)
 library(gridExtra)
 library(tictoc)
 library(nlme)
-library(here)
 #library(future)
 
 #Load and wrangle data------------------------------------------------------------
-file_in <- "SAV/data/Combined_SAV_Braun_Blanquet_Score-2022-Apr-25.txt"
+file_in <- "SAV/data/Combined_SAV_Braun_Blanquet_Score-2022-May-12.txt"
 BB <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-      # select = c("ManagedAreaName", "ProgramID", "ProgramName",
-      #            "ProgramLocationID", "SampleDate", "Year", "Month",
-      #            "RelativeDepth", "ActivityType", "ResultValue",
-      #            "ParameterUnits", "ValueQualifier",
-      #            "SEACAR_QAQCFlagCode", "Include"),
-      na.strings = "")
-BB <- BB[!is.na(BB$ResultValue),]
-BB <- BB %>% filter(ResultValue >= 0 & ResultValue <= 5 | is.na(ResultValue))
+            na.strings = "")
 BB$QuadIdentifier <- as.character(BB$QuadIdentifier)
 BB$BB <- BB$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Modified_Braun_Blanquet_Score-2022-Apr-25.txt"
+file_in <- "SAV/data/Combined_SAV_Modified_Braun_Blanquet_Score-2022-May-12.txt"
 mBB <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-            # select = c("ManagedAreaName", "ProgramID", "ProgramName",
-            #            "ProgramLocationID", "SampleDate", "Year", "Month",
-            #            "RelativeDepth", "ActivityType", "ResultValue",
-            #            "ParameterUnits", "ValueQualifier",
-            #            "SEACAR_QAQCFlagCode", "Include"),
-            na.strings = "")
-mBB <- mBB[!is.na(mBB$ResultValue),]
-mBB <- mBB %>% filter(ResultValue >= 0 & ResultValue <= 5 | is.na(ResultValue))
+             na.strings = "")
 mBB$QuadIdentifier <- as.character(mBB$QuadIdentifier)
 mBB$mBB <- mBB$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Percent_Cover-2022-Apr-25.txt"
+file_in <- "SAV/data/Combined_SAV_Percent_Cover-2022-May-12.txt"
 PC <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-            # select = c("ManagedAreaName", "ProgramID", "ProgramName",
-            #            "ProgramLocationID", "SampleDate", "Year", "Month",
-            #            "RelativeDepth", "ActivityType", "ResultValue",
-            #            "ParameterUnits", "ValueQualifier",
-            #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-PC <- PC[!is.na(PC$ResultValue),]
-PC <- PC %>% filter(ResultValue >= 0 & ResultValue <= 100 | is.na(ResultValue))
 PC$QuadIdentifier <- as.character(PC$QuadIdentifier)
 PC$PC <- PC$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Percent_Occurrence-2022-Apr-25.txt"
+file_in <- "SAV/data/Combined_SAV_Percent_Occurrence-2022-May-12.txt"
 PO <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-            # select = c("ManagedAreaName", "ProgramID", "ProgramName",
-            #            "ProgramLocationID", "SampleDate", "Year", "Month",
-            #            "RelativeDepth", "ActivityType", "ResultValue",
-            #            "ParameterUnits", "ValueQualifier",
-            #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-PO <- PO[!is.na(PO$ResultValue),]
-PO <- PO %>% filter(ResultValue >= 0 & ResultValue <= 100 | is.na(ResultValue))
 PO$QuadIdentifier <- as.character(PO$QuadIdentifier)
 PO$PO <- PO$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Shoot_Count-2022-Apr-25.txt"
+file_in <- "SAV/data/Combined_SAV_Shoot_Count-2022-May-12.txt"
 SC <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-            # select = c("ManagedAreaName", "ProgramID", "ProgramName",
-            #            "ProgramLocationID", "SampleDate", "Year", "Month",
-            #            "RelativeDepth", "ActivityType", "ResultValue",
-            #            "ParameterUnits", "ValueQualifier",
-            #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-SC <- SC[!is.na(SC$ResultValue),]
 SC$QuadIdentifier <- as.character(SC$QuadIdentifier)
 SC$SC <- SC$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Presence_Absence-2022-Apr-25.txt"
+file_in <- "SAV/data/Combined_SAV_Presence_Absence-2022-May-12.txt"
 PA <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-            # select = c("ManagedAreaName", "ProgramID", "ProgramName",
-            #            "ProgramLocationID", "SampleDate", "Year", "Month",
-            #            "RelativeDepth", "ActivityType", "ResultValue",
-            #            "ParameterUnits", "ValueQualifier",
-            #            "SEACAR_QAQCFlagCode", "Include"),
             na.strings = "")
-PA <- PA[!is.na(PA$ResultValue),]
 PA$QuadIdentifier <- as.character(PA$QuadIdentifier)
 PA$PA <- PA$ResultValue
 
@@ -99,175 +58,24 @@ rm(PC)
 rm(PO)
 rm(SC)
 rm(PA)
-# SAV_Comp <- fread("SAV/data/Combined_SAV_column_All-2021-Sep-20.csv")
-# 
-# setnames(SAV_Comp, c("[BraunBlanquetScore]", "[ModifiedBraunBlanquetScore]", "[PercentCover_%]", "[PercentOccurrence]", "[ShootCount_#]", "[Presence/Absence_Y/N]"), c("BB", "mBB", "PC", "PO", "SC", "PA"))
+#SAV <- fread(here::here("SAV/data/Combined_SAV_column_All-2021-Sep-20.csv"))
+
+#setnames(SAV, c("[BraunBlanquetScore]", "[ModifiedBraunBlanquetScore]", "[PercentCover_%]", "[PercentOccurrence]"), c("BB", "mBB", "PC", "PO"))
 
 SAV[, `:=` (BB = as.numeric(BB),
             mBB = as.numeric(mBB),
             PC = as.numeric(PC),
             PO = as.numeric(PO))]
-#SAV[ SAV == "NA" ] <- NA
+SAV[ SAV == "NA" ] <- NA
 
-##### This section was created by J. Panzik to perform analysis and export to data files #####
-MA_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, CommonIdentifier) %>%
-  summarize(EarliestSampleDate = min(SampleDate),
-            LastSampleDate = max(SampleDate),
-            N = length(ResultValue),
-            Min = min(ResultValue),
-            Max = max(ResultValue),
-            Median = median(ResultValue),
-            Mean = mean(ResultValue),
-            StandardDeviation = sd(ResultValue),
-            ProgramIDs = paste(sort(unique(ProgramID), decreasing = FALSE),
-                               collapse = ', '))
-MA_Stats <- as.data.table(MA_Stats[order(MA_Stats$ParameterName,
-                                         MA_Stats$ManagedAreaName), ])
-fwrite(MA_Stats, "SAV/output/SAV_ManagedAreaStats.txt", sep = "|")
-
-MA_YM_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, Year, Month, CommonIdentifier) %>%
-  summarize(EarliestSampleDate = min(SampleDate),
-            LastSampleDate = max(SampleDate),
-            N = length(ResultValue),
-            Min = min(ResultValue),
-            Max = max(ResultValue),
-            Median = median(ResultValue),
-            Mean = mean(ResultValue),
-            StandardDeviation = sd(ResultValue),
-            ProgramIDs = paste(sort(unique(ProgramID), decreasing = FALSE),
-                               collapse = ', '))
-MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ParameterName,
-                                               MA_YM_Stats$ManagedAreaName,
-                                               MA_YM_Stats$Year,
-                                               MA_YM_Stats$Month), ])
-fwrite(MA_YM_Stats, "SAV/output/SAV_ManagedAreaStats_YearMonth.txt", sep = "|")
-
-MA_Y_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, Year, CommonIdentifier) %>%
-  summarize(EarliestSampleDate = min(SampleDate),
-            LastSampleDate = max(SampleDate),
-            N = length(ResultValue),
-            Min = min(ResultValue),
-            Max = max(ResultValue),
-            Median = median(ResultValue),
-            Mean = mean(ResultValue),
-            StandardDeviation = sd(ResultValue),
-            ProgramIDs = paste(sort(unique(ProgramID), decreasing = FALSE),
-                               collapse = ', '))
-MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ParameterName,
-                                             MA_Y_Stats$ManagedAreaName,
-                                             MA_Y_Stats$Year), ])
-fwrite(MA_Y_Stats, "SAV/output/SAV_ManagedAreaStats_Year.txt", sep = "|")
-
-MA_M_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, Month, CommonIdentifier) %>%
-  summarize(EarliestSampleDate = min(SampleDate),
-            LastSampleDate = max(SampleDate),
-            N = length(ResultValue),
-            Min = min(ResultValue),
-            Max = max(ResultValue),
-            Median = median(ResultValue),
-            Mean = mean(ResultValue),
-            StandardDeviation = sd(ResultValue),
-            ProgramIDs = paste(sort(unique(ProgramID), decreasing = FALSE),
-                               collapse = ', '))
-MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ParameterName,
-                                             MA_M_Stats$ManagedAreaName,
-                                             MA_M_Stats$Month), ])
-fwrite(MA_M_Stats, "SAV/output/SAV_ManagedAreaStats_Month.txt", sep = "|")
-
-###
-ML_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, ProgramID, ProgramName,
-           ProgramLocationID, CommonIdentifier) %>%
-  summarize(EarliestSampleDate = min(SampleDate),
-            LastSampleDate = max(SampleDate),
-            N = length(ResultValue),
-            Min = min(ResultValue),
-            Max = max(ResultValue),
-            Median = median(ResultValue),
-            Mean = mean(ResultValue),
-            StandardDeviation = sd(ResultValue))
-ML_Stats <- as.data.table(ML_Stats[order(ML_Stats$ParameterName,
-                                         ML_Stats$ManagedAreaName,
-                                         ML_Stats$ProgramName,
-                                         ML_Stats$ProgramID, 
-                                         ML_Stats$ProgramLocationID), ])
-fwrite(ML_Stats, "SAV/output/SAV_MonitoringLocationStats.txt", sep = "|")
-
-ML_YM_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, ProgramID, ProgramName,
-           ProgramLocationID, Year, Month, CommonIdentifier) %>%
-  summarize(EarliestSampleDate = min(SampleDate),
-            LastSampleDate = max(SampleDate),
-            N = length(ResultValue),
-            Min = min(ResultValue),
-            Max = max(ResultValue),
-            Median = median(ResultValue),
-            Mean = mean(ResultValue),
-            StandardDeviation = sd(ResultValue))
-ML_YM_Stats <- as.data.table(ML_YM_Stats[order(ML_YM_Stats$ParameterName,
-                                               ML_YM_Stats$ManagedAreaName,
-                                               ML_YM_Stats$ProgramName,
-                                               ML_YM_Stats$ProgramID, 
-                                               ML_YM_Stats$ProgramLocationID,
-                                               ML_YM_Stats$Year,
-                                               ML_YM_Stats$Month), ])
-fwrite(ML_YM_Stats, "SAV/output/SAV_MonitoringLocationStats_YearMonth.txt", sep = "|")
-
-ML_Y_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, ProgramID, ProgramName,
-           ProgramLocationID, Year, CommonIdentifier) %>%
-  summarize(EarliestSampleDate = min(SampleDate),
-            LastSampleDate = max(SampleDate),
-            N = length(ResultValue),
-            Min = min(ResultValue),
-            Max = max(ResultValue),
-            Median = median(ResultValue),
-            Mean = mean(ResultValue),
-            StandardDeviation = sd(ResultValue))
-ML_Y_Stats <- as.data.table(ML_Y_Stats[order(ML_Y_Stats$ParameterName,
-                                             ML_Y_Stats$ManagedAreaName,
-                                             ML_Y_Stats$ProgramName,
-                                             ML_Y_Stats$ProgramID, 
-                                             ML_Y_Stats$ProgramLocationID,
-                                             ML_Y_Stats$Year), ])
-fwrite(ML_Y_Stats, "SAV/output/SAV_MonitoringLocationStats_Year.txt", sep = "|")
-
-ML_M_Stats <- SAV %>%
-  group_by(ParameterName, ManagedAreaName, ProgramID, ProgramName,
-           ProgramLocationID, Month, CommonIdentifier) %>%
-  summarize(EarliestSampleDate = min(SampleDate),
-            LastSampleDate = max(SampleDate),
-            N = length(ResultValue),
-            Min = min(ResultValue),
-            Max = max(ResultValue),
-            Median = median(ResultValue),
-            Mean = mean(ResultValue),
-            StandardDeviation = sd(ResultValue),
-            ProgramIDs = paste(sort(unique(ProgramID), decreasing = FALSE),
-                               collapse = ', '))
-ML_M_Stats <- as.data.table(ML_M_Stats[order(ML_M_Stats$ParameterName,
-                                             ML_M_Stats$ManagedAreaName,
-                                             ML_M_Stats$ProgramName,
-                                             ML_M_Stats$ProgramID, 
-                                             ML_M_Stats$ProgramLocationID,
-                                             ML_M_Stats$Month), ])
-fwrite(ML_M_Stats, "SAV/output/SAV_MonitoringLocationStats_Month.txt", sep = "|")
-##########################################################################
-##########################################################################
 SAV_sum <- SAV %>% group_by(ManagedAreaName) %>% summarize(n_yr = length(unique(Year)), yrs = list(sort(unique(Year))))
 
 SAV2 <- subset(SAV, !is.na(SAV$BB) | !is.na(SAV$mBB) | !is.na(SAV$PC) | !is.na(SAV$PO))
-
-rm(SAV)
-
+SAV2 <- SAV2 %>% filter(BB >= 0 & BB <= 5 | is.na(BB))
+SAV2 <- SAV2 %>% filter(mBB >= 0 & mBB <= 5 | is.na(mBB))
+SAV2 <- SAV2 %>% filter(PC >= 0 & PC <= 100 | is.na(PC))
+SAV2 <- SAV2 %>% filter(PO >= 0 & PO <= 100 | is.na(PO))
 SAV2 <- SAV2 %>% filter(Month %in% c(4:10))
-
-SAV2$BB_all <- NA
-SAV2$BB_all <- as.numeric(SAV2$BB_all)
 
 SAV2[!is.na(BB), BB_all := fcase(BB == 0, 0, 
                                  BB > 0 & BB <= 1, 1,
@@ -295,8 +103,6 @@ SAV2[!is.na(PC), BB_all := fcase(PC == 0, 0,
 
 
 #Create a column for BB_converted to median percent cover. ***I think this can probably be condensed to just use the BB_all variable created earlier.
-SAV2$BB_pct <- NA
-SAV2$BB_pct <- as.numeric(SAV2$BB_pct)
 SAV2[!is.na(BB) & is.na(PC), BB_pct := fcase(BB == 0, 0, 
                                              BB > 0 & BB <= 0.1, rescale(BB, from=c(0, 0.1), to=c(0,0.02)), #Added by SRD 8/31/2021
                                              BB > 0.1 & BB <= 0.5, rescale(BB, from=c(0.1, 0.5), to=c(0.02,0.1)),
@@ -328,23 +134,16 @@ SAV2[, relyear := Year - min(Year)]
 
 SAV3 <- SAV2 %>% filter(SpeciesGroup1 == "Seagrass" | SpeciesGroup1 == "Macroalgae")
 
-rm(SAV2)
-
 species_reject <- c("Total_SAV", "All", "NA")
-SAV3$analysisunit <- NA
-SAV3$analysisunit <- as.character(SAV3$analysisunit)
 SAV3[, analysisunit := ifelse(CommonIdentifier %in% species_reject, NA, 
                               ifelse(str_detect(CommonIdentifier, "Halophila"), "Halophila spp.", 
                                      ifelse(SpeciesGroup1 == "Seagrass", CommonIdentifier, Drift_Attached)))]
-
 SAV3[!is.na(Drift_Attached), analysisunit := paste0(analysisunit, " algae")]
 
 SAV4 <- subset(SAV3, !is.na(SAV3$analysisunit))
 
-rm(SAV3)
-
 saveRDS(SAV4, here::here("SAV/output/SAV4.rds"))
-fwrite(SAV4, "SAV/output/SAV_Used.txt", sep = "|")
+fwrite(SAV4, "SAV/output/website/SAV_Used.txt", sep = "|")
 
 SAV4_sum <- SAV4 %>% group_by(method, ManagedAreaName) %>% summarize(n_yr = length(unique(Year)), yrs = list(sort(unique(Year))))
 
@@ -488,11 +287,11 @@ rotate_sf <- function(data, x_add = 0, y_add = 0, coast = "Atlantic") {
 #Create model objects, tables and plots for all MAs w/ >5 yrs of data-------------------------------------------------
 
 #Load geospatial data
-locs_pts <- st_read(here::here("mapping/SEACAR_SampleLocations_07oct21/seacar_dbo_SampleLocation_Point.shp"))
-locs_lns <- st_read(here::here("mapping/SEACAR_SampleLocations_07oct21/seacar_dbo_SampleLocation_Line.shp"))
-rcp <- st_read(here::here("mapping/orcp_all_sites/orcp_all_sites/ORCP_Managed_Areas.shp"))
-counties <- st_read(here::here("mapping/FLCounties/Counties_-_Detailed_Shoreline.shp"))
-corners <- fread(here::here("mapping/MApolygons_corners.csv"))
+locs_pts <- st_read(here::here("SAV/mapping/SEACAR_SampleLocations_07oct21/seacar_dbo_SampleLocation_Point.shp"))
+locs_lns <- st_read(here::here("SAV/mapping/SEACAR_SampleLocations_07oct21/seacar_dbo_SampleLocation_Line.shp"))
+rcp <- st_read(here::here("SAV/mapping/orcp_all_sites/orcp_all_sites/ORCP_Managed_Areas.shp"))
+counties <- st_read(here::here("SAV/mapping/FLCounties/Counties_-_Detailed_Shoreline.shp"))
+corners <- fread(here::here("SAV/mapping/MApolygons_corners.csv"))
 #add 20% of difference (xmax-xmin) to xmax to help prevent year labels from getting cut off map images and 10% to ymax
 corners[, `:=` (xmax = xmax + (xmax-xmin)*0.25, ymax = ymax + (ymax-ymin)*0.1)]
 
@@ -518,9 +317,6 @@ failedmods <- data.table(model = character(),
 #Create a table of the proportion of present SAV types by managed area and year
 props <- SAV4 %>% group_by(ManagedAreaName, analysisunit, relyear) %>% summarize(n1 = sum(PA), ntot = n(), prop = n1/ntot)
 setDT(props)
-props$sp_prop <- NA
-props$sp_prop <- as.numeric(props$sp_prop)
-
 for(m in unique(props$ManagedAreaName)){
   props[ManagedAreaName == m, sp_prop := n1/sum(n1), by = c("relyear")]
 }
@@ -1232,7 +1028,7 @@ for(p in parameters$column){
                                          ifelse(stringr::str_detect(i, "NMS"), "MS_priorpcplot_", "AP_priorpcplot_")), 
                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
             
-            saveRDS(priorpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
                                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_priorpcplot_", 
                                                            ifelse(stringr::str_detect(i, "NMS"), "MS_priorpcplot_", "AP_priorpcplot_")), 
@@ -1291,7 +1087,7 @@ for(p in parameters$column){
             }
             
             ##save diagnostic plots-----------------------------------------------------
-            saveRDS(diag, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
                                                    gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                    ifelse(stringr::str_detect(i, "NERR"), "ERR_chainsplots_", 
                                                           ifelse(stringr::str_detect(i, "NMS"), "MS_chainsplots_", "AP_chainsplots_")), 
@@ -1329,7 +1125,7 @@ for(p in parameters$column){
                                          ifelse(stringr::str_detect(i, "NMS"), "MS_olr_postpcplot_", "AP_olr_postpcplot_")), 
                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
             
-            saveRDS(postpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
                                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_olr_postpcplot_", 
                                                            ifelse(stringr::str_detect(i, "NMS"), "MS_olr_postpcplot_", "AP_olr_postpcplot_")), 
@@ -1447,7 +1243,7 @@ for(p in parameters$column){
         #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
         #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
         #     
-        #     saveRDS(priorpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+        #     saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
         #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpcplot_", 
         #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
@@ -1523,7 +1319,7 @@ for(p in parameters$column){
         #     }
         #     
         #     #save diagnostic plots
-        #     saveRDS(diag, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+        #     saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
         #                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_chainsplots_", 
         #                                            ifelse(stringr::str_detect(i, "NMS), "MS_chainsplots_", "AP_chainsplots_")), 
@@ -1560,7 +1356,7 @@ for(p in parameters$column){
         #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
         #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
         #     
-        #     saveRDS(postpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+        #     saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
         #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
         #                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_postpcplot_", 
         #                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
@@ -1659,7 +1455,7 @@ for(p in parameters$column){
                                          ifelse(stringr::str_detect(i, "NMS"), "MS_belr_priorpcplot_", "AP_belr_priorpcplot_")), 
                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
             
-            saveRDS(priorpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
                                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_priorpcplot_", 
                                                            ifelse(stringr::str_detect(i, "NMS"), "MS_belr_priorpcplot_", "AP_belr_priorpcplot_")), 
@@ -1719,7 +1515,7 @@ for(p in parameters$column){
             }
             
             ##save diagnostic plots--------------------------------------------------------------
-            saveRDS(diag, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_chainsplots_", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_belr_chainsplots_", "AP_belr_chainsplots_")), 
@@ -1758,7 +1554,7 @@ for(p in parameters$column){
                                          ifelse(stringr::str_detect(i, "NMS"), "MS_belr_postpcplot_", "AP_belr_postpcplot_")), 
                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
             
-            saveRDS(postpc_plot, here::here(paste0("SAV/output/diagnostics/SAV_", parameters[column == p, type], "_", 
+            saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
                                                    gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
                                                    ifelse(stringr::str_detect(i, "NERR"), "ERR_belr_postpcplot_", 
                                                           ifelse(stringr::str_detect(i, "NMS"), "MS_belr_postpcplot_", "AP_belr_postpcplot_")), 
@@ -1988,5 +1784,5 @@ toc()
 
 #Save session info-----------------------------------------------------
 session <- sessionInfo()
-saveRDS(session, here::here(paste0("SAV/SessionInfo_", Sys.Date())))
+saveRDS(session, here::here(paste0("SAV/output/SessionInfo_", Sys.Date())))
 
