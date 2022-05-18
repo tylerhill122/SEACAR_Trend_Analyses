@@ -227,7 +227,8 @@ MA_YM_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
 MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ManagedAreaName,
                                                MA_YM_Stats$Year,
                                                MA_YM_Stats$Month), ])
-fwrite(MA_YM_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+fwrite(MA_YM_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", 
+                           activity, "_", depth,
                            "_ManagedArea_YearMonth_Stats.txt"), sep = "|")
 
 MA_Y_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
@@ -242,7 +243,8 @@ MA_Y_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
                                 collapse = ', '))
 MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ManagedAreaName,
                                              MA_Y_Stats$Year), ])
-fwrite(MA_Y_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+fwrite(MA_Y_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", 
+                          activity, "_", depth,
                           "_ManagedArea_Year_Stats.txt"), sep = "|")
 
 MA_M_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
@@ -257,7 +259,8 @@ MA_M_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
                                 collapse = ', '))
 MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ManagedAreaName,
                                              MA_M_Stats$Month), ])
-fwrite(MA_M_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+fwrite(MA_M_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", 
+                          activity, "_", depth,
                           "_ManagedArea_Month_Stats.txt"), sep = "|")
 ```
 
@@ -290,7 +293,8 @@ Mon_Stats <- as.data.table(Mon_Stats[order(Mon_Stats$ManagedAreaName,
                                               Mon_Stats$ProgramName,
                                               Mon_Stats$ProgramID, 
                                               Mon_Stats$ProgramLocationID), ])
-fwrite(Mon_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", depth,
+fwrite(Mon_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", 
+                         activity, "_", depth,
                           "_MonitoringLoc_Stats.txt"), sep = "|")
 ```
 
