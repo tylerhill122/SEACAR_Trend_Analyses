@@ -79,13 +79,19 @@ if(!file.exists("output")){
    dir.create("output")}
 
 file_in <- paste0(in_dir, file_pref, param_name, "-", file_date, ".txt")
-data <-fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
+data <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
              select = c("ManagedAreaName", "ProgramID", "ProgramName",
                         "ProgramLocationID", "SampleDate", "Year", "Month",
-                        "RelativeDepth", "ActivityType", "ResultValue",
-                        "ParameterUnits", "ValueQualifier",
+                        "RelativeDepth", "ActivityType", "ParameterName",
+                        "ResultValue", "ParameterUnits", "ValueQualifier",
                         "SEACAR_QAQCFlagCode", "Include"), na.strings = "")
 
+MA_All <- fread("../../ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
+             na.strings = "")
+data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
+                          data, by = "ManagedAreaName")
+
+parameter <- unique(data$ParameterName)
 unit <- unique(data$ParameterUnits)
 data$SampleDate <- as.Date(data$SampleDate)
 data$YearMonth <- paste0(data$Month, "-", data$Year)
@@ -99,7 +105,7 @@ data$DecDate <- decimal_date(data$SampleDate)
 
 Most data filtering is performed on export from the database, and is indicated by the `Include` variable. `Include` values of 1 indicate the data should be used for analysis, values of 0 indicate the data should not be used for analysis. Documentation on the database filtering is provided here: [SEACAR Documentation- Analysis Filters and Calculations.docx](https://github.com/FloridaSEACAR/SEACAR_Panzik/blob/main/SEACAR%20Documentation%20-%20Analysis%20Filters%20and%20Calculations.docx)
 
-The filtering that is performed by the script at this point removes rows that are missing values for `ResultValue`, and only keeps data that is measured at the relative depth (surface, bottom, etc.) and activity type (field or sample) of interest. This is partly handled on export with the `RelativeDepth` variable, but there are some measurements that are considered both surface and bottom based on measurement depth and total depth. By default, these are marked as `Surface` for `RelativeDepth` and receive a `SEACAR_QAQCFlag` indicator of `12Q`. Data passes the filtering the process if it is from the correct depth and has an `Include` value of 1. The script also only looks at data of the desired `ActivityType` which indicates whether it was measured in the field (`Field`) or in the lab (`Sample`).
+The filtering that is performed by the script at this point removes rows that are missing values for `ResultValue`, and only keeps data that is measured at the relative depth (surface, bottom, etc.) of interest. This is partly handled on export with the `RelativeDepth` variable, but there are some measurements that are considered both surface and bottom based on measurement depth and total depth. By default, these are marked as `Surface` for `RelativeDepth` and receive a `SEACAR_QAQCFlag` indicator of `12Q`. Data passes the filtering the process if it is from the correct depth and has an `Include` value of 1.
 
 After the initial filtering, a second filter variable is created to determine whether enough time is represented in the managed area, which is that each managed area has 10 year or more of unique year entries for observation that pass the initial filter. If data passes the first set of filtering criteria and the time criteria, they are used in the analysis.
 
@@ -113,9 +119,15 @@ if(depth=="Bottom"){
 
 data$Include <- as.logical(data$Include)
 data <- data[!is.na(data$ResultValue),]
-data <- data[!is.na(data$RelativeDepth) & data$RelativeDepth==depth,]
-data <- data[!grep("Blank", data$ActivityType),]
-data <- data[grep(activity, data$ActivityType[!is.na(data$ActivityType)]),]
+data <- data[!is.na(data$RelativeDepth),]
+data <- data[data$RelativeDepth==depth,]
+if(length(grep("Blank", data$ActivityType)) >0){
+      data <- data[-grep("Blank", data$ActivityType),]
+}
+if(param_name == "Chlorophyll_a_uncorrected_for_pheophytin" |
+   param_name == "Salinity" | param_name == "Turbidity"){
+   data <- data[grep(activity, data$ActivityType[!is.na(data$ActivityType)]),]
+}
 
 if(param_name == "Water_Temperature"){
    data <- data[data$ResultValue>=-2,]
@@ -129,13 +141,13 @@ MA_Years <- data[data$Include == TRUE, ] %>%
    summarize(N = length(unique(Year)))
 MA_Years <- as.data.table(MA_Years[order(MA_Years$ManagedAreaName), ])
 MA_Years$Enough_Time <- ifelse(MA_Years$N < 10, FALSE, TRUE)
-data$Exclude_ManagedArea <- is.element(data$ManagedAreaName,
-                                       MA_Years$ManagedAreaName[
-                                          MA_Years$Enough_Time == FALSE])
+data <- merge.data.frame(data, MA_Years[,c("ManagedAreaName", "Enough_Time")],
+                         by = "ManagedAreaName")
 
 data$Use_In_Analysis <- ifelse(data$Include == TRUE &
-                                  data$Exclude_ManagedArea == FALSE,
+                                  data$Enough_Time == TRUE,
                                TRUE, FALSE)
+
 total <- length(data$Include)
 pass_filter <- length(data$Include[data$Include==TRUE])
 
@@ -215,8 +227,8 @@ MA_YM_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
 MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ManagedAreaName,
                                                MA_YM_Stats$Year,
                                                MA_YM_Stats$Month), ])
-fwrite(MA_YM_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
-                           activity, "-", depth,
+fwrite(MA_YM_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", 
+                           activity, "_", depth,
                            "_ManagedArea_YearMonth_Stats.txt"), sep = "|")
 
 MA_Y_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
@@ -231,8 +243,8 @@ MA_Y_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
                                 collapse = ', '))
 MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ManagedAreaName,
                                              MA_Y_Stats$Year), ])
-fwrite(MA_Y_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
-                           activity, "-", depth,
+fwrite(MA_Y_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", 
+                          activity, "_", depth,
                           "_ManagedArea_Year_Stats.txt"), sep = "|")
 
 MA_M_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
@@ -247,8 +259,8 @@ MA_M_Stats <- data[data$Use_In_Analysis == TRUE, ] %>%
                                 collapse = ', '))
 MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ManagedAreaName,
                                              MA_M_Stats$Month), ])
-fwrite(MA_M_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
-                           activity, "-", depth,
+fwrite(MA_M_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", 
+                          activity, "_", depth,
                           "_ManagedArea_Month_Stats.txt"), sep = "|")
 ```
 
@@ -281,8 +293,8 @@ Mon_Stats <- as.data.table(Mon_Stats[order(Mon_Stats$ManagedAreaName,
                                               Mon_Stats$ProgramName,
                                               Mon_Stats$ProgramID, 
                                               Mon_Stats$ProgramLocationID), ])
-fwrite(Mon_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
-                           activity, "-", depth,
+fwrite(Mon_Stats, paste0(out_dir,"/", param_name, "_", file_date, "_", 
+                         activity, "_", depth,
                           "_MonitoringLoc_Stats.txt"), sep = "|")
 ```
 
@@ -345,7 +357,11 @@ tauSeasonal <- function(data, independent, stats.median, stats.minYear,
          trend <- NULL
       }
    })
-   KT <-c(unique(data$ManagedAreaName),
+   KT <-c(unique(data$AreaID),
+          unique(data$ManagedAreaName),
+          parameter,
+          depth,
+          activity,
           independent,
           stats.median,
           nrow(data),
@@ -403,10 +419,11 @@ trend_calculator <- function(slope, median_value, p) {
 }
 KT.Stats <- NULL
 # Loop that goes through each managed area. List of managed areas stored in MA_Years$ManagedAreaName
-c_names <- c("ManagedAreaName", "Independent", "Median", "N", "EarliestYear",
+c_names <- c("AreaID", "ManagedAreaName", "ParameterName", "RelativeDepth",
+             "ActivityType", "Independent", "Median", "N", "EarliestYear",
              "LatestYear", "tau", "p", "SennSlope", "SennIntercept", "Trend")
 if(n==0){
-   KT.Stats <- data.frame(matrix(ncol=11, nrow=0))
+   KT.Stats <- data.frame(matrix(ncol=15, nrow=0))
    colnames(KT.Stats) <- c_names
    fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
                            activity, "-", depth,
@@ -420,7 +437,8 @@ if(n==0){
       }
    }
    KT.Stats <- as.data.frame(KT.Stats)
-   c_names <- c("ManagedAreaName", "Independent", "Median", "N", "EarliestYear",
+   c_names <- c("AreaID", "ManagedAreaName", "ParameterName", "RelativeDepth",
+                "ActivityType", "Independent", "Median", "N", "EarliestYear",
                 "LatestYear", "tau", "p", "SennSlope", "SennIntercept", "Trend")
    if(dim(KT.Stats)[2]==1){
       KT.Stats <- as.data.frame(t(KT.Stats))
@@ -437,7 +455,7 @@ if(n==0){
    KT.Stats$SennIntercept <- as.numeric(KT.Stats$SennIntercept)
    KT.Stats$Trend <- as.integer(KT.Stats$Trend)
    fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", file_date, "_",
-                           activity, "-", depth,
+                           activity, "_", depth,
                            "_KendallTau_Stats.txt"), sep = "|")
 }
 ```
@@ -750,21 +768,14 @@ if(n==0){
    print("There are no managed areas that qualify.")
 } else {
    for (i in 1:n) {
-      year_lower <- min(data$Year[data$Use_In_Analysis == TRUE &
-                                     data$ManagedAreaName ==
-                                     MA_names[i]])
-      year_upper <- max(data$Year[data$Use_In_Analysis == TRUE &
-                                     data$ManagedAreaName ==
-                                     MA_names[i]])
-      min_RV <- min(data$ResultValue[data$Use_In_Analysis == TRUE &
-                                        data$ManagedAreaName == MA_names[i]])
-      mn_RV <- mean(data$ResultValue[data$Use_In_Analysis == TRUE &
-                                        data$ManagedAreaName == MA_names[i] &
-                                        data$ResultValue <
+      plot_data <- data[data$Use_In_Analysis == TRUE &
+                                     data$ManagedAreaName == MA_names[i],]
+      year_lower <- min(plot_data$Year)
+      year_upper <- max(plot_data$Year)
+      min_RV <- min(plot_data$ResultValue)
+      mn_RV <- mean(plot_data$ResultValue[data$ResultValue <
                                         quantile(data$ResultValue, 0.98)])
-      sd_RV <- sd(data$ResultValue[data$Use_In_Analysis == TRUE &
-                                      data$ManagedAreaName == MA_names[i] &
-                                      data$ResultValue <
+      sd_RV <- sd(plot_data$ResultValue[data$ResultValue <
                                       quantile(data$ResultValue, 0.98)])
       x_scale <- ifelse(year_upper - year_lower > 30, 10, 5)
       y_scale <- mn_RV + 4 * sd_RV
@@ -776,12 +787,10 @@ if(n==0){
       p <- KT.Stats$p[KT.Stats$ManagedAreaName==MA_names[i]]
       
       model <- lm(ResultValue ~ DecDate,
-                  data = data[data$Use_In_Analysis == TRUE &
-                                 data$ManagedAreaName == MA_names[i]])
+                  data = plot_data)
       m_int <- coef(model)[[1]]
       m_slope <- coef(model)[[2]]
-      p1 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
-                                  data$ManagedAreaName == MA_names[i], ],
+      p1 <- ggplot(data = plot_data,
                    aes(x = DecDate, y = ResultValue,
                        color=VQ_Plot)) +
          geom_point(size = 1.5) +
@@ -801,8 +810,7 @@ if(n==0){
             scale_color_manual(values = c("U"= "#00BFC4"), na.value="black")
          }}
       
-      p2 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
-                                  data$ManagedAreaName == MA_names[i], ],
+      p2 <- ggplot(data = plot_data,
                    aes(x = DecDate, y = ResultValue,
                        color=VQ_Plot)) +
          geom_point(size = 1.5) +
