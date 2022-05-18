@@ -121,8 +121,9 @@ data$Include <- as.logical(data$Include)
 data <- data[!is.na(data$ResultValue),]
 data <- data[!is.na(data$RelativeDepth),]
 data <- data[data$RelativeDepth==depth,]
+
 if(length(grep("Blank", data$ActivityType)) >0){
-      data <- data[!grep("Blank", data$ActivityType),]
+      data <- data[-grep("Blank", data$ActivityType),]
 }
 if(param_name == "Chlorophyll_a_uncorrected_for_pheophytin" |
    param_name == "Salinity" | param_name == "Turbidity"){
