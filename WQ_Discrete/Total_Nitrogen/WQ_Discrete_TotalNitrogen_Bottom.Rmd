@@ -78,13 +78,19 @@ if(!file.exists("output")){
    dir.create("output")}
 
 file_in <- paste0(in_dir, file_pref, param_name, "-", file_date, ".txt")
-data <-fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
+data <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
              select = c("ManagedAreaName", "ProgramID", "ProgramName",
                         "ProgramLocationID", "SampleDate", "Year", "Month",
-                        "RelativeDepth", "ActivityType", "ResultValue",
-                        "ParameterUnits", "ValueQualifier",
+                        "RelativeDepth", "ActivityType", "ParameterName",
+                        "ResultValue", "ParameterUnits", "ValueQualifier",
                         "SEACAR_QAQCFlagCode", "Include"), na.strings = "")
 
+MA_All <- fread("../../ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
+             na.strings = "")
+data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
+                          data, by = "ManagedAreaName")
+
+parameter <- unique(data$ParameterName)
 unit <- unique(data$ParameterUnits)
 data$SampleDate <- as.Date(data$SampleDate)
 data$YearMonth <- paste0(data$Month, "-", data$Year)
