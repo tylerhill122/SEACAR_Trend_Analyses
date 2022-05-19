@@ -96,4 +96,8 @@ for (param_name in all_params){
       }
    }
 }
+
+#Returns space to normal
 setwd(wd_start)
+rm(list = ls())
+gc()
