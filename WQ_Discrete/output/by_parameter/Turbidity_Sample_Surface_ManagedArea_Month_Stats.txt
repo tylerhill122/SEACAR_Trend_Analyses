@@ -1,0 +1,444 @@
+AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
+1|Alligator Harbor Aquatic Preserve|1|Turbidity|Surface|Sample|149|0.3|2.8|1|1.12281879194631|0.602758389739399|5002
+1|Alligator Harbor Aquatic Preserve|2|Turbidity|Surface|Sample|291|0.5|16|2|2.68243986254296|2.24929534383211|5002
+1|Alligator Harbor Aquatic Preserve|3|Turbidity|Surface|Sample|240|0.4|27|3.4|3.95120833333333|3.05863353797011|5002
+1|Alligator Harbor Aquatic Preserve|4|Turbidity|Surface|Sample|370|1.6|35|7|7.78810810810811|4.8021245511839|5002
+1|Alligator Harbor Aquatic Preserve|5|Turbidity|Surface|Sample|356|1.4|30|6.3|7.25814606741573|4.35872651527281|5002
+1|Alligator Harbor Aquatic Preserve|6|Turbidity|Surface|Sample|431|0.9|22|5.3|6.10742459396752|3.24094310179431|5002
+1|Alligator Harbor Aquatic Preserve|7|Turbidity|Surface|Sample|440|1|24|6|6.83340909090909|3.69544412191979|5002
+1|Alligator Harbor Aquatic Preserve|8|Turbidity|Surface|Sample|296|2|31|7.8|8.78445945945946|4.60271420054626|5002
+1|Alligator Harbor Aquatic Preserve|9|Turbidity|Surface|Sample|375|1.4|39|7|8.74853333333333|5.91215024930947|5002
+1|Alligator Harbor Aquatic Preserve|10|Turbidity|Surface|Sample|318|1.1|23|5.55|6.8188679245283|4.08370107711533|5002
+1|Alligator Harbor Aquatic Preserve|11|Turbidity|Surface|Sample|129|0.6|12|4.3|4.46798449612403|2.47262208364072|5002
+1|Alligator Harbor Aquatic Preserve|12|Turbidity|Surface|Sample|145|0.44|19|3.8|4.22372413793103|2.85935743190173|5002
+2|Apalachicola Bay Aquatic Preserve|1|Turbidity|Surface|Sample|1234|0.32|164|5.4|8.6118152350081|9.83532640669622|5002
+2|Apalachicola Bay Aquatic Preserve|2|Turbidity|Surface|Sample|1246|0.64|47|7.2|9.75640449438202|8.0678659083408|5002
+2|Apalachicola Bay Aquatic Preserve|3|Turbidity|Surface|Sample|1567|0.8|52|9.1|11.6391065730696|9.0013889501952|5002
+2|Apalachicola Bay Aquatic Preserve|4|Turbidity|Surface|Sample|1098|0.72|47|8.6|11.1522950819672|8.64379900697142|5002
+2|Apalachicola Bay Aquatic Preserve|5|Turbidity|Surface|Sample|1211|0.34|120|5.4|7.62605284888522|7.07009802336676|5002
+2|Apalachicola Bay Aquatic Preserve|6|Turbidity|Surface|Sample|1276|0.03|46|4.8|5.87887931034483|4.78622229332371|5002
+2|Apalachicola Bay Aquatic Preserve|7|Turbidity|Surface|Sample|1628|0.8|37|5.4|6.04231572481573|3.62899721077586|5002
+2|Apalachicola Bay Aquatic Preserve|8|Turbidity|Surface|Sample|2079|0.7|30|5.1|5.82159692159692|3.35410916141805|5002
+2|Apalachicola Bay Aquatic Preserve|9|Turbidity|Surface|Sample|1253|0.3|64|5.8|7.89350359138069|6.82468004839541|5002
+2|Apalachicola Bay Aquatic Preserve|10|Turbidity|Surface|Sample|935|0.1|39|5.3|7.15732620320856|5.99669196062007|5002
+2|Apalachicola Bay Aquatic Preserve|11|Turbidity|Surface|Sample|1000|0.78|40|3.4|4.8043|4.36174629486181|5002
+2|Apalachicola Bay Aquatic Preserve|12|Turbidity|Surface|Sample|977|0.7|95|5.2|7.18368474923234|6.98533014455179|5002
+3|Apalachicola National Estuarine Research Reserve|1|Turbidity|Surface|Sample|2108|0.32|164|4.9|7.71538425047438|8.68012861872269|5002
+3|Apalachicola National Estuarine Research Reserve|2|Turbidity|Surface|Sample|2123|0.56|50|6.4|8.95067357512953|7.7941870403268|5002
+3|Apalachicola National Estuarine Research Reserve|3|Turbidity|Surface|Sample|2514|0.8|52|7|9.95144789180589|8.56504739160289|5002
+3|Apalachicola National Estuarine Research Reserve|4|Turbidity|Surface|Sample|1912|0.4|49|6.9|9.86963389121339|8.3431161001422|5002
+3|Apalachicola National Estuarine Research Reserve|5|Turbidity|Surface|Sample|1767|0.34|120|5.1|7.07594227504245|6.41613424104869|5002
+3|Apalachicola National Estuarine Research Reserve|6|Turbidity|Surface|Sample|1624|0.03|46|4.6|5.69715517241379|4.71865985920255|5002
+3|Apalachicola National Estuarine Research Reserve|7|Turbidity|Surface|Sample|1891|0.8|37|5.3|5.9286039132734|3.62577478779576|5002
+3|Apalachicola National Estuarine Research Reserve|8|Turbidity|Surface|Sample|2526|0.7|30|4.9|5.59931116389549|3.32120736732924|5002
+3|Apalachicola National Estuarine Research Reserve|9|Turbidity|Surface|Sample|1748|0.3|64|5.2|7.03715102974828|6.2649730622858|5002
+3|Apalachicola National Estuarine Research Reserve|10|Turbidity|Surface|Sample|1597|0.1|39|4.6|6.14745147150908|5.36520950310528|5002
+3|Apalachicola National Estuarine Research Reserve|11|Turbidity|Surface|Sample|1511|0.5|40|3|4.16566512243547|3.86457241336139|5002
+3|Apalachicola National Estuarine Research Reserve|12|Turbidity|Surface|Sample|1540|0.48|95|4.6|6.55190909090909|6.4522320050879|5002
+4|Banana River Aquatic Preserve|1|Turbidity|Surface|Sample|861|0.22|16.03841|3.9|4.21388744483159|2.36326827511674|5002
+4|Banana River Aquatic Preserve|2|Turbidity|Surface|Sample|1267|0.19|33|3.8|4.39616298342541|2.93515510292672|5002
+4|Banana River Aquatic Preserve|3|Turbidity|Surface|Sample|990|0.5|32|3.4|4.45835477777778|3.82792631180468|540, 5002
+4|Banana River Aquatic Preserve|4|Turbidity|Surface|Sample|1157|0.45|16.5|2.9|3.65297844425238|2.42113411990668|5002
+4|Banana River Aquatic Preserve|5|Turbidity|Surface|Sample|1417|0.30542|23|2.8|3.45343616090332|2.32967850316582|5002
+4|Banana River Aquatic Preserve|6|Turbidity|Surface|Sample|1136|0.2|18|2.56352|2.9631076584507|1.86431994967006|5002
+4|Banana River Aquatic Preserve|7|Turbidity|Surface|Sample|1107|0.43406|23|2.8|3.23997142728094|2.29103445388438|5002
+4|Banana River Aquatic Preserve|8|Turbidity|Surface|Sample|1350|0.5|13|3.4|3.84564805925926|2.0756644526608|5002
+4|Banana River Aquatic Preserve|9|Turbidity|Surface|Sample|775|0.15|14.53331|2.9|3.33402949677419|1.94886529395149|5002
+4|Banana River Aquatic Preserve|10|Turbidity|Surface|Sample|1262|0.04|34.76726|3.1|3.39511275752773|1.97355343483502|5002
+4|Banana River Aquatic Preserve|11|Turbidity|Surface|Sample|906|0.1|55.12259|3.2|3.72742695364238|3.23620101880431|5002
+4|Banana River Aquatic Preserve|12|Turbidity|Surface|Sample|625|0.3|55.45407|4|4.650067168|4.13065855564399|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|1|Turbidity|Surface|Sample|2997|0.1|40|2.6|3.87025025025025|4.18712111301518|5002
+5|Big Bend Seagrasses Aquatic Preserve|2|Turbidity|Surface|Sample|3118|0.1|98.8|2.9|4.37055955099423|5.65453303929639|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|3|Turbidity|Surface|Sample|3851|0.03|124|3.7|5.8215432407167|6.80481246733443|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|4|Turbidity|Surface|Sample|3553|0.01|49|4.1|6.40344068111455|6.57255641590071|5002
+5|Big Bend Seagrasses Aquatic Preserve|5|Turbidity|Surface|Sample|3475|0.1|131.4|4.2|6.43509090071942|6.89127516375746|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|6|Turbidity|Surface|Sample|2968|0.02|41|3.6|5.1860455828841|5.01305364469201|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|7|Turbidity|Surface|Sample|3642|0.07|38|3.4|5.00722570840198|4.64823906979734|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|8|Turbidity|Surface|Sample|4072|0.1|54.1|3.9|5.747638521611|5.55030761466353|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|9|Turbidity|Surface|Sample|3461|0.1|43.5|4.6|6.89063519503034|6.53236522472959|477, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|10|Turbidity|Surface|Sample|3876|0|129.1|4|6.00628173374613|6.5042251171032|5002
+5|Big Bend Seagrasses Aquatic Preserve|11|Turbidity|Surface|Sample|3194|0.1|46|2.9|4.48739523481528|4.69158076366556|477, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|12|Turbidity|Surface|Sample|3009|0.03|50|2.5|3.61177473579262|3.65690297196136|477, 540, 5002
+6|Biscayne Bay Aquatic Preserve|1|Turbidity|Surface|Sample|720|0.1|25.4|0.9|1.32813888888889|1.54694706120424|5002
+6|Biscayne Bay Aquatic Preserve|2|Turbidity|Surface|Sample|607|0.1|23.8|0.7|1.15728171334432|1.65346910780747|5002
+6|Biscayne Bay Aquatic Preserve|3|Turbidity|Surface|Sample|746|0.002|32|0.8|1.24227211796247|1.76596474451574|5002
+6|Biscayne Bay Aquatic Preserve|4|Turbidity|Surface|Sample|668|0.1|24|0.7|1.11013473053892|1.36956503227213|5002
+6|Biscayne Bay Aquatic Preserve|5|Turbidity|Surface|Sample|760|0.1|18.8|0.83|1.30207894736842|1.37639698599671|5002
+6|Biscayne Bay Aquatic Preserve|6|Turbidity|Surface|Sample|664|0.1|5.6|0.7|1.02147590361446|0.876931398771603|5002
+6|Biscayne Bay Aquatic Preserve|7|Turbidity|Surface|Sample|761|0.1|13.1|0.9|1.16203679369251|1.05814705410833|5002
+6|Biscayne Bay Aquatic Preserve|8|Turbidity|Surface|Sample|699|0.01|23.8|0.8|1.19189413447783|1.64943270449452|5002
+6|Biscayne Bay Aquatic Preserve|9|Turbidity|Surface|Sample|809|0.01|9.6|0.7|1.03639307787392|1.03888767689272|5002
+6|Biscayne Bay Aquatic Preserve|10|Turbidity|Surface|Sample|686|0.1|64.3|0.7|1.13818221574344|3.0175677715339|5002
+6|Biscayne Bay Aquatic Preserve|11|Turbidity|Surface|Sample|787|0.08|17.8|0.9|1.26843710292249|1.50950263013264|5002
+6|Biscayne Bay Aquatic Preserve|12|Turbidity|Surface|Sample|676|0.1|8.6|0.7|1.14152366863905|1.1391467441134|5002
+8|Boca Ciega Bay Aquatic Preserve|1|Turbidity|Surface|Sample|435|0.43|28|2.8|3.85503448275862|3.7581171364462|5002
+8|Boca Ciega Bay Aquatic Preserve|2|Turbidity|Surface|Sample|379|0.31|40|3|4.14775725593668|4.12159264231358|5002
+8|Boca Ciega Bay Aquatic Preserve|3|Turbidity|Surface|Sample|511|0.34|29|2.9|4.4987084148728|4.79029143727468|5002
+8|Boca Ciega Bay Aquatic Preserve|4|Turbidity|Surface|Sample|385|0.23|32|2|2.75374025974026|2.86889606292374|5002
+8|Boca Ciega Bay Aquatic Preserve|5|Turbidity|Surface|Sample|588|0.1|29|2.1|3.48251700680272|3.59357951854397|5002
+8|Boca Ciega Bay Aquatic Preserve|6|Turbidity|Surface|Sample|489|0.3|27.4|2.4|3.09775051124744|2.63234060497091|5002
+8|Boca Ciega Bay Aquatic Preserve|7|Turbidity|Surface|Sample|468|0.03|18|2.7|3.56363247863248|2.65763053359109|5002
+8|Boca Ciega Bay Aquatic Preserve|8|Turbidity|Surface|Sample|449|0.2|38|2.3|3.19420935412027|3.1889012831339|5002
+8|Boca Ciega Bay Aquatic Preserve|9|Turbidity|Surface|Sample|640|0.12|18|2|2.921828125|2.74791289731435|5002
+8|Boca Ciega Bay Aquatic Preserve|10|Turbidity|Surface|Sample|527|0.21|25|2.1|3.07899430740038|2.94898866694367|5002
+8|Boca Ciega Bay Aquatic Preserve|11|Turbidity|Surface|Sample|407|0.5|27|1.9|2.63808353808354|2.40332933336857|5002
+8|Boca Ciega Bay Aquatic Preserve|12|Turbidity|Surface|Sample|548|0.14|38|2.7|3.8381204379562|4.26894910282455|5002
+9|Cape Haze Aquatic Preserve|1|Turbidity|Surface|Sample|104|0.52|34|2.15|3.68894230769231|5.25052413810227|476, 479, 5002
+9|Cape Haze Aquatic Preserve|2|Turbidity|Surface|Sample|111|0.5|17.7|2|2.88855855855856|2.85245471539127|479, 5002
+9|Cape Haze Aquatic Preserve|3|Turbidity|Surface|Sample|113|0.6|15.6|2.2|3.07353982300885|2.5556551160242|476, 479, 513, 5002
+9|Cape Haze Aquatic Preserve|4|Turbidity|Surface|Sample|136|0.5|32|2|3.50963235294118|4.46995938470043|476, 479, 5002
+9|Cape Haze Aquatic Preserve|5|Turbidity|Surface|Sample|147|0.64|13|2|2.61761904761905|2.25405459127693|476, 479, 5002
+9|Cape Haze Aquatic Preserve|6|Turbidity|Surface|Sample|148|0.1|11.4|2.4|2.90601351351351|2.19089946423864|476, 479, 5002
+9|Cape Haze Aquatic Preserve|7|Turbidity|Surface|Sample|209|0.9|15|2.4|2.83133971291866|1.87510541355011|479, 5002
+9|Cape Haze Aquatic Preserve|8|Turbidity|Surface|Sample|144|0.8|24|2.4|3.22020833333333|2.86011160933139|479, 5002
+9|Cape Haze Aquatic Preserve|9|Turbidity|Surface|Sample|143|0.29|10|2.18|2.70853146853147|1.89706962980824|476, 479, 5002
+9|Cape Haze Aquatic Preserve|10|Turbidity|Surface|Sample|127|0.65|13|2.2|2.57267716535433|1.7802650278972|476, 479, 5002
+9|Cape Haze Aquatic Preserve|11|Turbidity|Surface|Sample|111|0.63|11|2.24|2.71279279279279|1.74623916469401|476, 479, 513, 5002
+9|Cape Haze Aquatic Preserve|12|Turbidity|Surface|Sample|104|0.29|11|1.8|2.40817307692308|2.20678730787104|476, 479, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1|Turbidity|Surface|Sample|301|0.15|31|3|4.42893687707641|4.78192841498095|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2|Turbidity|Surface|Sample|249|0.5|39|3.5|6.04074297188755|6.88242295386794|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|3|Turbidity|Surface|Sample|177|0.42|40|4.6|7.83440677966102|9.09145937652222|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|4|Turbidity|Surface|Sample|334|0.2|26|3.8|4.78958083832335|3.62206258384824|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5|Turbidity|Surface|Sample|333|0.22|23|2.4|3.82512012012012|3.63515268948763|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|6|Turbidity|Surface|Sample|339|0.1|19|2.6|3.1893215339233|2.92009204582208|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|Turbidity|Surface|Sample|221|0.27|20.9|3.9|4.14891402714932|2.89007536813215|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|8|Turbidity|Surface|Sample|323|0.2|39|3.4|3.75465944272446|3.1495210680665|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|9|Turbidity|Surface|Sample|243|0.3|15.85|2.39|3.12588477366255|2.52971904556177|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|10|Turbidity|Surface|Sample|289|0.25|28.7|3|3.62378892733564|2.99149113118066|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|11|Turbidity|Surface|Sample|280|0.37|35|2.8|3.86271428571429|3.71504026189023|509, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|12|Turbidity|Surface|Sample|301|0.14|29|4.29|5.97460132890365|5.26049185031193|509, 5002
+11|Cockroach Bay Aquatic Preserve|1|Turbidity|Surface|Sample|71|0.8|12.3|2.7|3.23943661971831|2.18491443920348|5002
+11|Cockroach Bay Aquatic Preserve|2|Turbidity|Surface|Sample|76|1.2|15.3|2.7|3.20394736842105|2.13488115450478|5002
+11|Cockroach Bay Aquatic Preserve|3|Turbidity|Surface|Sample|62|1.4|17.2|3.8|4.49048387096774|2.97570624069029|5002
+11|Cockroach Bay Aquatic Preserve|4|Turbidity|Surface|Sample|71|1.8|13.3|3.6|4.00985915492958|2.12085932244304|5002
+11|Cockroach Bay Aquatic Preserve|5|Turbidity|Surface|Sample|72|1.1|14|3.25|3.80694444444444|2.51868098662039|5002
+11|Cockroach Bay Aquatic Preserve|6|Turbidity|Surface|Sample|65|1.4|14.5|3.6|4.24461538461538|2.68590247689387|5002
+11|Cockroach Bay Aquatic Preserve|7|Turbidity|Surface|Sample|68|1.5|14.6|3.6|4.33529411764706|2.59699968711786|5002
+11|Cockroach Bay Aquatic Preserve|8|Turbidity|Surface|Sample|70|1.4|18.9|4.2|4.86571428571429|2.94622754192178|5002
+11|Cockroach Bay Aquatic Preserve|9|Turbidity|Surface|Sample|72|1.8|16.7|3.85|4.52041666666667|2.62815440919889|5002
+11|Cockroach Bay Aquatic Preserve|10|Turbidity|Surface|Sample|75|1.3|17.1|3.5|4.15146666666667|2.36803356288608|5002
+11|Cockroach Bay Aquatic Preserve|11|Turbidity|Surface|Sample|66|1.3|14.3|3.1|3.54287878787879|1.93949062714257|5002
+11|Cockroach Bay Aquatic Preserve|12|Turbidity|Surface|Sample|61|1.1|10.8|2.3|2.76459016393443|1.59531874951945|5002
+14|Estero Bay Aquatic Preserve|1|Turbidity|Surface|Sample|40|0.9|99|3.41|6.5095|15.3309591166338|476, 5002
+14|Estero Bay Aquatic Preserve|2|Turbidity|Surface|Sample|42|0.7|13.9|6.15|6.67190476190476|3.5924414132706|476, 4063, 5002
+14|Estero Bay Aquatic Preserve|3|Turbidity|Surface|Sample|36|1.23|15.9|5.015|5.72527777777778|3.14419145737579|476, 4063, 5002
+14|Estero Bay Aquatic Preserve|4|Turbidity|Surface|Sample|36|1.34|25.7|6.08|6.72833333333333|4.86920087312663|476, 5002
+14|Estero Bay Aquatic Preserve|5|Turbidity|Surface|Sample|13|1.6|21|3|6.1|6.36775732368417|476, 5002
+14|Estero Bay Aquatic Preserve|6|Turbidity|Surface|Sample|37|0.2|12.6|3.1|3.55351351351351|2.34292222118758|476, 4063, 5002
+14|Estero Bay Aquatic Preserve|7|Turbidity|Surface|Sample|48|1|9.94|3.755|4.21916666666667|2.25455740180067|476, 5002
+14|Estero Bay Aquatic Preserve|8|Turbidity|Surface|Sample|53|0.97|7.62|3.6|3.72924528301887|1.59157861771625|476, 4063, 5002
+14|Estero Bay Aquatic Preserve|9|Turbidity|Surface|Sample|52|0.84|7.7|2.555|3.01673076923077|1.50131148046887|476, 5002
+14|Estero Bay Aquatic Preserve|10|Turbidity|Surface|Sample|48|0.634|9.69|2.285|2.78841666666667|1.93057931811829|476, 4063, 5002
+14|Estero Bay Aquatic Preserve|11|Turbidity|Surface|Sample|55|0.48|13.6|3.38|4.15654545454545|2.91707820473248|476, 4063, 5002
+14|Estero Bay Aquatic Preserve|12|Turbidity|Surface|Sample|30|0.78|23.3|3.5|4.20233333333333|3.97864271028349|476, 5002
+15|Florida Keys National Marine Sanctuary|1|Turbidity|Surface|Sample|115|0.13|33.2|0.7|1.55321739130435|3.33941914999361|5002
+15|Florida Keys National Marine Sanctuary|2|Turbidity|Surface|Sample|116|0.1|16|0.55|1.2976724137931|2.19665332712748|5002
+15|Florida Keys National Marine Sanctuary|3|Turbidity|Surface|Sample|138|0.1|28|0.755|1.4981884057971|2.99182639224345|5002
+15|Florida Keys National Marine Sanctuary|4|Turbidity|Surface|Sample|126|0.1|7.2|0.565|0.869920634920635|1.08685270099071|5002
+15|Florida Keys National Marine Sanctuary|5|Turbidity|Surface|Sample|160|0.1|9.3|0.6|1.0349375|1.18485463210211|5002
+15|Florida Keys National Marine Sanctuary|6|Turbidity|Surface|Sample|150|0.1|3.4|0.55|0.746266666666667|0.658124798620508|5002
+15|Florida Keys National Marine Sanctuary|7|Turbidity|Surface|Sample|129|0.11|6.3|0.6|0.937519379844961|0.960880968668655|5002
+15|Florida Keys National Marine Sanctuary|8|Turbidity|Surface|Sample|138|0.01|4.6|0.6|0.883652173913043|0.786129673486115|5002
+15|Florida Keys National Marine Sanctuary|9|Turbidity|Surface|Sample|143|0.01|8.8|0.6|1.01539160839161|1.22289774793354|5002
+15|Florida Keys National Marine Sanctuary|10|Turbidity|Surface|Sample|124|0.1|39|0.6|1.22043548387097|3.51608720593023|5002
+15|Florida Keys National Marine Sanctuary|11|Turbidity|Surface|Sample|137|0.1|23.2|0.6|1.27824817518248|2.37016904888853|5002
+15|Florida Keys National Marine Sanctuary|12|Turbidity|Surface|Sample|114|0.1|5.2|0.6|1.00008771929825|1.02750707476757|5002
+17|Fort Pickens State Park Aquatic Preserve|1|Turbidity|Surface|Sample|22|1|8|2.97495|3.00121818181818|2.03536643445617|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|2|Turbidity|Surface|Sample|20|1|8|2|2.745785|1.95797458487753|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|3|Turbidity|Surface|Sample|24|0.3|8|1.945|2.1515625|2.03649098948946|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|4|Turbidity|Surface|Sample|22|0.7|8|2.02975|2.66739090909091|1.70932150418677|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|5|Turbidity|Surface|Sample|36|0.26|5|1|1.55598888888889|1.12212959775542|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|6|Turbidity|Surface|Sample|35|0.45|10|1.7|2.40185428571429|2.28424033676057|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|7|Turbidity|Surface|Sample|37|0.0588|10|1.3145|2.37118108108108|2.30095452558255|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|8|Turbidity|Surface|Sample|26|0.36|10|1|2.11256923076923|2.52336041052708|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|9|Turbidity|Surface|Sample|22|0.4271|6|1|1.27434090909091|1.17986619768397|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|10|Turbidity|Surface|Sample|20|0.5|6|1|1.872405|1.64060925668837|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|11|Turbidity|Surface|Sample|21|0.2842|6|1|1.88581428571429|1.78491240633419|505, 5002
+17|Fort Pickens State Park Aquatic Preserve|12|Turbidity|Surface|Sample|24|0.5|5|1|1.59769166666667|1.26018633712454|505, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Turbidity|Surface|Sample|657|0.17|67|1.9|3.01822678843227|4.17201314569092|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Turbidity|Surface|Sample|774|0.29|24|1.9|2.44696382428941|2.14152131396031|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Turbidity|Surface|Sample|697|0.1|20|2.2|2.83944045911047|2.51983895038739|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Turbidity|Surface|Sample|843|0.14|29|2|3.08458600237248|3.48708295023205|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Turbidity|Surface|Sample|801|0.28|28|1.8|2.44058052434457|2.22737989436473|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Turbidity|Surface|Sample|830|0.07|17|1.8|2.26857108433735|1.71451389408511|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Turbidity|Surface|Sample|720|0.31|21|2.2|2.78954166666667|2.24313322392855|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Turbidity|Surface|Sample|571|0.23|31|2.4|3.04772504378284|2.76270629136299|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Turbidity|Surface|Sample|669|0.3|64.9|2.2|2.83282511210762|3.43380952370934|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Turbidity|Surface|Sample|837|0.24|68|2.2|3.09287933094385|3.97554223691899|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Turbidity|Surface|Sample|665|0.09|25|1.7|2.37813533834586|2.34072724765638|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Turbidity|Surface|Sample|722|0.18|20|1.72|2.26349030470914|1.95328089313306|476, 479, 513, 5002
+19|Guana River Marsh Aquatic Preserve|1|Turbidity|Surface|Sample|453|0.7|24|3.3|3.98076075055188|2.75001657331335|5002
+19|Guana River Marsh Aquatic Preserve|2|Turbidity|Surface|Sample|375|0.42|25|3.7|4.55789912|3.15537012548729|5002, 5014
+19|Guana River Marsh Aquatic Preserve|3|Turbidity|Surface|Sample|316|0.66|40.8|5.15|6.34614939873418|4.63771144027926|5002
+19|Guana River Marsh Aquatic Preserve|4|Turbidity|Surface|Sample|480|1.5|73|5.5|6.51055929166667|4.76713266212087|5002
+19|Guana River Marsh Aquatic Preserve|5|Turbidity|Surface|Sample|436|0.8|70|6.3|7.48492901376147|6.08425474039621|5002, 5014
+19|Guana River Marsh Aquatic Preserve|6|Turbidity|Surface|Sample|373|1.4|33.7|6.3|7.97872080428954|5.61302208798365|5002
+19|Guana River Marsh Aquatic Preserve|7|Turbidity|Surface|Sample|504|1.1|41.7|6.16|7.74591382936508|5.97241661578434|5002, 5014
+19|Guana River Marsh Aquatic Preserve|8|Turbidity|Surface|Sample|443|1|39.4|6.7|7.8213279006772|5.49088826653781|5002
+19|Guana River Marsh Aquatic Preserve|9|Turbidity|Surface|Sample|326|0.044|29|4.865|6.46558711656442|4.94833000551446|5002, 5014
+19|Guana River Marsh Aquatic Preserve|10|Turbidity|Surface|Sample|451|1.5|33|5.74846|6.90613736141907|4.32615605832321|5002, 5014
+19|Guana River Marsh Aquatic Preserve|11|Turbidity|Surface|Sample|345|1.27429|38.6|4.7|5.45431284057971|3.72882573097869|5002, 5014
+19|Guana River Marsh Aquatic Preserve|12|Turbidity|Surface|Sample|267|0.9|34|4.60101|5.64266486891386|3.92328738403412|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|Turbidity|Surface|Sample|1278|0.3|25|2.7|3.40503165884194|2.62807605445396|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|Turbidity|Surface|Sample|1061|0.42|25|3.1|4.02023695570217|3.00485541854919|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|Turbidity|Surface|Sample|1247|0.66|40.8|4.5|5.57576776263031|3.92704521840854|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|Turbidity|Surface|Sample|1154|1.1|73|4.8|5.85631873483536|4.21768307139981|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|Turbidity|Surface|Sample|1126|0.8|70|4.8|6.14685279751332|4.68433161415352|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|Turbidity|Surface|Sample|1173|0.78|34|5.3|6.7402773998295|4.8450005769807|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|Turbidity|Surface|Sample|1581|0.66|47|5|6.27879433902593|4.66093114843122|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|Turbidity|Surface|Sample|1375|0.44|39.4|4.8|6.10737466909091|4.55620466557505|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|Turbidity|Surface|Sample|1234|0.044|29|4.7|5.7139079821718|4.05148457671676|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|Turbidity|Surface|Sample|1162|0.2|33|5.1|6.14397667814114|3.93388249730961|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|Turbidity|Surface|Sample|995|0.3|38.6|4.5|5.25239524623116|3.31509602879227|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|Turbidity|Surface|Sample|841|0.86|36|3.48448|4.44417015457788|3.57470180106555|4054, 5002, 5014
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|1|Turbidity|Surface|Sample|1098|0.34|19|2.5|3.11673720400729|2.08657965610477|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2|Turbidity|Surface|Sample|1161|0.2|20|2.4|2.97702591731266|1.94003759558351|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3|Turbidity|Surface|Sample|1009|0.1|43|2.94|3.8404085728444|3.70404357607157|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|4|Turbidity|Surface|Sample|1408|0.5|23|3|3.72472855113636|2.54771255574449|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5|Turbidity|Surface|Sample|1051|0.11|26|2.4|2.95900819219791|2.12358309363064|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|6|Turbidity|Surface|Sample|1075|0.11525|35|2.3|2.89932709767442|2.35759860448136|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|7|Turbidity|Surface|Sample|1322|0.17|39|2.377305|3.03298857791225|3.57736435994546|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|8|Turbidity|Surface|Sample|1097|0.13728|17|2.7|3.31179293527803|2.23200870342916|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|9|Turbidity|Surface|Sample|1309|0.1|39.9|3.1|3.98705410236822|3.97770839891414|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|10|Turbidity|Surface|Sample|1360|0.35|26|3.4|4.10138205147059|2.73973947465093|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|11|Turbidity|Surface|Sample|1022|0.6938|20|3.4|4.4962031702544|3.11612383783013|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|12|Turbidity|Surface|Sample|886|0.24|35|3|4.12612400677201|4.07647831360724|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1|Turbidity|Surface|Sample|343|0.5|12.16165|2|2.20087827988338|1.33656192323592|540, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2|Turbidity|Surface|Sample|289|0.52|16.9|2.5|2.8126937716263|1.88246692014649|540, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|3|Turbidity|Surface|Sample|313|0.91|40|3.1|4.96746920127796|5.14768521297552|540, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|4|Turbidity|Surface|Sample|388|0.57|15|2.5|3.1618712371134|2.05909793343606|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|5|Turbidity|Surface|Sample|330|0.5|12|1.9|2.46174448484849|1.81467106146029|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|6|Turbidity|Surface|Sample|246|0.66|9.5|2|2.34018004065041|1.28119823460999|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|7|Turbidity|Surface|Sample|377|0.59|9.31|2.2|2.41812047745358|1.30630675512528|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|8|Turbidity|Surface|Sample|258|0.8|12|3.1|3.4961061627907|1.88449316974758|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|9|Turbidity|Surface|Sample|271|0.53962|18.4|3.1|4.07234808118081|2.74875121643535|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|10|Turbidity|Surface|Sample|372|1.1|39|3.9|6.01450897849462|5.63153064313732|540, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|11|Turbidity|Surface|Sample|277|1|16|3.7|4.50575335740072|3.00247457808952|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|12|Turbidity|Surface|Sample|280|0.5|11|2.9|3.21942596428571|1.93757872308908|5002
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1|Turbidity|Surface|Sample|63|0.3|16.8|2.6|3.23571428571429|3.06397628764392|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2|Turbidity|Surface|Sample|21|0.84|6|2.8|2.92809523809524|1.48036353321615|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|3|Turbidity|Surface|Sample|50|0.2|7.68|2.61|2.832|1.61951869897403|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|4|Turbidity|Surface|Sample|22|0.4|6.2|2|2.60363636363636|1.49923963412107|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|5|Turbidity|Surface|Sample|59|0.24|10.2|2.3|2.88762711864407|2.18737390886491|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|6|Turbidity|Surface|Sample|16|1.3|5|2.7|2.85625|1.3716018615716|5002
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|7|Turbidity|Surface|Sample|65|0.1|3.89|1.4|1.51230769230769|0.760472240680851|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|8|Turbidity|Surface|Sample|31|0.5|33|2.1|3.68064516129032|5.86517515253317|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|9|Turbidity|Surface|Sample|49|0.4|24.7|1.2|2.29734693877551|3.69522032242903|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|10|Turbidity|Surface|Sample|41|0.6|11|3.3|3.80731707317073|2.26024227063189|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|11|Turbidity|Surface|Sample|57|0.6|40.2|3.3|4.52701754385965|5.46639701295635|5002, 10000
+25|Lemon Bay Aquatic Preserve|1|Turbidity|Surface|Sample|346|0.31|25|2.1|2.61479768786127|2.1736793330685|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2|Turbidity|Surface|Sample|323|0.7|27|2.8|4.0825386996904|3.80038855412411|476, 479, 513, 5002
+25|Lemon Bay Aquatic Preserve|3|Turbidity|Surface|Sample|302|0.18|15|2.7|3.28311258278146|2.31133540248159|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|4|Turbidity|Surface|Sample|410|0.26|13|2.9|3.22621951219512|1.96418870330985|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|5|Turbidity|Surface|Sample|340|0.655|14|3|3.38310294117647|1.97750904916244|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|6|Turbidity|Surface|Sample|425|0.26|32|2.8|3.24536470588235|2.30872788650808|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|7|Turbidity|Surface|Sample|476|0.6|30|2.7|3.08493697478992|2.02593526062162|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|8|Turbidity|Surface|Sample|433|0.21|13|2.75|3.21249422632794|2.11649359869645|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|9|Turbidity|Surface|Sample|344|0.36|10.7|2.2|2.63607558139535|1.54171896985991|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|10|Turbidity|Surface|Sample|419|0.36|9.5|2.9|3.10575178997613|1.45596203597694|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|11|Turbidity|Surface|Sample|297|0.21|19|2.5|3.23225589225589|2.51694365585135|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|12|Turbidity|Surface|Sample|291|0.26|22|2.2|2.68051546391753|2.09989656779797|476, 479, 5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1|Turbidity|Surface|Sample|464|0.4|26|3|3.16189655172414|1.87880317301346|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2|Turbidity|Surface|Sample|137|0.4|12.8|2.5|2.70248175182482|1.55036512825675|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|3|Turbidity|Surface|Sample|453|0.35|26.7|2.9|3.20792494481236|1.91909446373177|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|4|Turbidity|Surface|Sample|163|0.62|15.5|3.04|3.31171779141104|1.78483688610196|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5|Turbidity|Surface|Sample|475|0.41|22|2.8|3.21901052631579|2.12486099567567|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|6|Turbidity|Surface|Sample|135|0.4|11.5|2.7|2.97451851851852|1.48881186652587|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|7|Turbidity|Surface|Sample|504|0.2|33.1|2.44|2.84168650793651|1.99407106604501|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|8|Turbidity|Surface|Sample|151|0.3|24.8|2.5|3.49324503311258|3.57587817646125|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|9|Turbidity|Surface|Sample|469|0.4|21.2|2.35|2.82336886993603|2.13775896976005|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10|Turbidity|Surface|Sample|188|0.8|13.5|2.4|2.69436170212766|1.50006242901149|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|11|Turbidity|Surface|Sample|454|0.51|36.9|2.5|2.89733480176211|2.27022646472243|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|12|Turbidity|Surface|Sample|123|0.6|8.5|2.45|2.76650406504065|1.35255070735516|5002, 10000
+28|Matlacha Pass Aquatic Preserve|1|Turbidity|Surface|Sample|116|0.4|36|1.3|2.68448275862069|4.84491043482119|476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|2|Turbidity|Surface|Sample|175|0.4|5.6|1.4|1.59297142857143|0.880086381788099|476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|3|Turbidity|Surface|Sample|141|0.44|15|1.8|2.95049645390071|3.03778216237747|476, 5002
+28|Matlacha Pass Aquatic Preserve|4|Turbidity|Surface|Sample|181|0.344|15|1.6|2.52937016574586|2.62773400924203|476, 5002
+28|Matlacha Pass Aquatic Preserve|5|Turbidity|Surface|Sample|185|0.14|11|1.8|2.10043243243243|1.63424355158555|476, 5002
+28|Matlacha Pass Aquatic Preserve|6|Turbidity|Surface|Sample|184|0.21|9.9|2|2.38510869565217|1.56238642922963|476, 5002
+28|Matlacha Pass Aquatic Preserve|7|Turbidity|Surface|Sample|208|0.2|7.2|1.8|2.02586538461538|1.08007434936149|476, 5002
+28|Matlacha Pass Aquatic Preserve|8|Turbidity|Surface|Sample|158|0.4|30|2.1|3.2920253164557|4.06099745512912|476, 5002
+28|Matlacha Pass Aquatic Preserve|9|Turbidity|Surface|Sample|111|0.26|8.1|1.99|2.39081081081081|1.51918526917025|476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|10|Turbidity|Surface|Sample|133|0.39|12|1.5|1.94157894736842|1.65087297480677|476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|11|Turbidity|Surface|Sample|120|0.02|9.6|1.5|1.93325|1.50538035758688|476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|12|Turbidity|Surface|Sample|115|0.02|5.4|1.3|1.4675652173913|0.811126130006645|476, 513, 5002
+29|Mosquito Lagoon Aquatic Preserve|1|Turbidity|Surface|Sample|298|0.19|13.9|1.8|2.27685583892617|1.62828961054317|5002
+29|Mosquito Lagoon Aquatic Preserve|2|Turbidity|Surface|Sample|240|0.14|13|1.8|2.29854241666667|1.66918790993388|5002
+29|Mosquito Lagoon Aquatic Preserve|3|Turbidity|Surface|Sample|289|0.9|12.4|2.6|2.81334076124567|1.41273734207894|5002
+29|Mosquito Lagoon Aquatic Preserve|4|Turbidity|Surface|Sample|267|1|13.8|4|4.27766498127341|1.91832008016714|5002
+29|Mosquito Lagoon Aquatic Preserve|5|Turbidity|Surface|Sample|199|1.8|15|5.4|5.61930125628141|2.56432814752457|5002
+29|Mosquito Lagoon Aquatic Preserve|6|Turbidity|Surface|Sample|346|1.64943|25.6|5.5|6.03782552023121|2.89882018941048|5002
+29|Mosquito Lagoon Aquatic Preserve|7|Turbidity|Surface|Sample|333|1.8|20|7.1|7.23657807807808|3.10390359124699|5002
+29|Mosquito Lagoon Aquatic Preserve|8|Turbidity|Surface|Sample|326|0.9|24|6.65|7.26671463190184|3.25278372111695|5002
+29|Mosquito Lagoon Aquatic Preserve|9|Turbidity|Surface|Sample|329|2.1|27|7.1|7.68951756838906|3.86443448000435|5002
+29|Mosquito Lagoon Aquatic Preserve|10|Turbidity|Surface|Sample|289|0.49|26|7.5|8.3092384083045|3.94823296635663|5002
+29|Mosquito Lagoon Aquatic Preserve|11|Turbidity|Surface|Sample|209|1.2|15.8|4.4|5.14071066985646|2.66700080370678|5002
+29|Mosquito Lagoon Aquatic Preserve|12|Turbidity|Surface|Sample|275|1.1|12|3.38|3.9342264|1.95495152380108|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1|Turbidity|Surface|Sample|28|1.6|29|6.79301|9.04844892857143|6.57358669891883|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2|Turbidity|Surface|Sample|25|3.3|24|5.7|8.0979572|5.01100854400798|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|3|Turbidity|Surface|Sample|36|2|24|6.85116|8.82126666666667|5.40382359064236|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|4|Turbidity|Surface|Sample|34|1.7|18.13702|7|7.70094735294118|3.63182197570837|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5|Turbidity|Surface|Sample|41|1.2|30|3.8|6.12922853658537|5.44942587737119|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|6|Turbidity|Surface|Sample|31|1.55|22|8.91873|9.9852564516129|4.02302848531596|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|7|Turbidity|Surface|Sample|24|2.1|22|7.672355|9.22536166666667|5.20122544481141|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|8|Turbidity|Surface|Sample|26|4.15906|22|8.8|9.89528153846154|4.50276555508962|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|9|Turbidity|Surface|Sample|21|3.5|26|7.82333|9.70746095238095|6.08685220348244|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|10|Turbidity|Surface|Sample|32|1.9|23|7.15|7.60072875|4.18192745451706|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|11|Turbidity|Surface|Sample|25|3.60074|39.4|9|10.667976|7.14948147281675|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|12|Turbidity|Surface|Sample|21|1.17637|12.35126|6.95991|6.91470476190476|3.01619306301937|5002
+48|Nature Coast Aquatic Preserve|1|Turbidity|Surface|Sample|116|0.08|8.9|1.015|1.47224137931034|1.31287145382664|479, 5002
+48|Nature Coast Aquatic Preserve|2|Turbidity|Surface|Sample|105|0.3|11.9|0.9|1.39495238095238|1.53889828461888|479, 5002
+48|Nature Coast Aquatic Preserve|3|Turbidity|Surface|Sample|63|0.3|9|1.1|1.47126984126984|1.30182810924149|5002
+48|Nature Coast Aquatic Preserve|4|Turbidity|Surface|Sample|134|0.3|5.5|1|1.31298507462687|0.999261403817348|479, 5002
+48|Nature Coast Aquatic Preserve|5|Turbidity|Surface|Sample|89|0.2|13.4|0.76|1.24078651685393|1.7328806971991|479, 5002
+48|Nature Coast Aquatic Preserve|6|Turbidity|Surface|Sample|67|0.05|2.4|0.76|0.911044776119403|0.583409867693629|5002
+48|Nature Coast Aquatic Preserve|7|Turbidity|Surface|Sample|111|0.1|8.2|1.1|1.73693693693694|1.49233178908518|479, 5002
+48|Nature Coast Aquatic Preserve|8|Turbidity|Surface|Sample|45|0.2|4.6|1.2|1.59133333333333|1.11088744213395|479, 5002
+48|Nature Coast Aquatic Preserve|9|Turbidity|Surface|Sample|58|0.2|5.2|1.35|1.5251724137931|0.962874427292792|5002
+48|Nature Coast Aquatic Preserve|10|Turbidity|Surface|Sample|130|0.2|9.44|1.2|1.58553846153846|1.26114631105558|479, 5002
+48|Nature Coast Aquatic Preserve|11|Turbidity|Surface|Sample|54|0.1|4.1|0.91|1.11814814814815|0.829173432649407|479, 5002
+48|Nature Coast Aquatic Preserve|12|Turbidity|Surface|Sample|51|0.2|16|0.7|1.13039215686275|2.18186063788164|5002
+31|North Fork St. Lucie Aquatic Preserve|1|Turbidity|Surface|Sample|9|2|9|5|5.26666666666667|2.69118932815958|5002
+31|North Fork St. Lucie Aquatic Preserve|2|Turbidity|Surface|Sample|20|2|5.9|3.1|3.18|1.18614812246239|5002
+31|North Fork St. Lucie Aquatic Preserve|3|Turbidity|Surface|Sample|19|1.6|9|4.6|4.93684210526316|2.2128941648428|5002
+31|North Fork St. Lucie Aquatic Preserve|4|Turbidity|Surface|Sample|21|3|12|5|5.67142857142857|2.33605283697584|5002
+31|North Fork St. Lucie Aquatic Preserve|5|Turbidity|Surface|Sample|34|2|16|5.2|6.00882352941177|3.26861731930118|5002
+31|North Fork St. Lucie Aquatic Preserve|6|Turbidity|Surface|Sample|26|2|17|4.65|5.73076923076923|3.32995726468304|5002
+31|North Fork St. Lucie Aquatic Preserve|7|Turbidity|Surface|Sample|15|3|8.9|6|5.82|2.01324187745607|5002
+31|North Fork St. Lucie Aquatic Preserve|8|Turbidity|Surface|Sample|25|2.4|9|5.4|5.532|1.75801023887803|5002
+31|North Fork St. Lucie Aquatic Preserve|9|Turbidity|Surface|Sample|27|1|9|4|4.06296296296296|1.81195774873226|5002
+31|North Fork St. Lucie Aquatic Preserve|10|Turbidity|Surface|Sample|22|2|12|4.2|5.03636363636364|2.57118565471179|5002
+31|North Fork St. Lucie Aquatic Preserve|11|Turbidity|Surface|Sample|21|2.4|13|5.4|6.38571428571429|3.17478908185815|5002
+31|North Fork St. Lucie Aquatic Preserve|12|Turbidity|Surface|Sample|15|2.2|17|6.2|6.85333333333333|3.88658253604935|5002
+34|Pine Island Sound Aquatic Preserve|1|Turbidity|Surface|Sample|311|0.4|40|1.8|2.94344051446945|4.37029401042757|476, 5002
+34|Pine Island Sound Aquatic Preserve|2|Turbidity|Surface|Sample|223|0.5|9.9|2|2.43452914798206|1.59718999524268|476, 5002
+34|Pine Island Sound Aquatic Preserve|3|Turbidity|Surface|Sample|442|0.27|25|2|2.97246606334842|3.24543705919479|476, 5002
+34|Pine Island Sound Aquatic Preserve|4|Turbidity|Surface|Sample|404|0.14|25|1.9|2.9947301980198|3.56413571967552|476, 5002
+34|Pine Island Sound Aquatic Preserve|5|Turbidity|Surface|Sample|329|0.26|22|2|2.61768996960486|2.09511965166852|476, 5002
+34|Pine Island Sound Aquatic Preserve|6|Turbidity|Surface|Sample|517|0.14|25|2|2.72597678916828|2.65573535843349|476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|7|Turbidity|Surface|Sample|418|0.4|17.2|2.2|2.62181818181818|1.9147917332522|476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|8|Turbidity|Surface|Sample|437|0.31|23|1.9|2.49138215102975|2.25930793433692|476, 5002
+34|Pine Island Sound Aquatic Preserve|9|Turbidity|Surface|Sample|366|0.37|11.4|1.8|2.28628415300546|1.73232486627755|476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|10|Turbidity|Surface|Sample|290|0.23|19.4|1.3|1.91996551724138|1.96949917197906|476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|11|Turbidity|Surface|Sample|247|0.24|27|2|3.92457489878543|5.14049044288102|476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|12|Turbidity|Surface|Sample|268|0.3|40|1.6|4.73029850746269|7.37083151441751|476, 5002
+35|Pinellas County Aquatic Preserve|1|Turbidity|Surface|Sample|1153|0.3|33|2.3|3.80571552471813|4.54065816733815|5002
+35|Pinellas County Aquatic Preserve|2|Turbidity|Surface|Sample|1159|0.1|64|2.3|4.10881794650561|5.18870763712043|5002
+35|Pinellas County Aquatic Preserve|3|Turbidity|Surface|Sample|1250|0.34|37|2.6|4.53828|5.69267633127426|5002
+35|Pinellas County Aquatic Preserve|4|Turbidity|Surface|Sample|1116|0.23|62|2.2|4.30172043010753|6.76195230762239|5002
+35|Pinellas County Aquatic Preserve|5|Turbidity|Surface|Sample|1716|0.1|67|2.4|4.61703962703963|6.94871220156918|5002
+35|Pinellas County Aquatic Preserve|6|Turbidity|Surface|Sample|1448|0.3|44|2.8|4.29988950276243|5.66371106872703|5002
+35|Pinellas County Aquatic Preserve|7|Turbidity|Surface|Sample|1152|0.03|36|3|4.58314236111111|5.06908164531723|5002
+35|Pinellas County Aquatic Preserve|8|Turbidity|Surface|Sample|1284|0.2|38|2.7|3.90080218068536|3.81166549189454|5002
+35|Pinellas County Aquatic Preserve|9|Turbidity|Surface|Sample|1778|0.05|26.3|2.5|3.61949381327334|3.49961896345618|5002
+35|Pinellas County Aquatic Preserve|10|Turbidity|Surface|Sample|1352|0.21|26|2.4|3.49235946745562|3.48154225476638|5002
+35|Pinellas County Aquatic Preserve|11|Turbidity|Surface|Sample|1003|0.4|31|2.2|3.57141575274177|4.14777734164689|5002
+35|Pinellas County Aquatic Preserve|12|Turbidity|Surface|Sample|1569|0.14|54|2.1|3.58953473550032|4.45827768293842|5002
+37|Rocky Bayou State Park Aquatic Preserve|1|Turbidity|Surface|Sample|6|0|40|3.6|9.88333333333333|15.3420229000829|537
+37|Rocky Bayou State Park Aquatic Preserve|2|Turbidity|Surface|Sample|11|0|22.3|0.8|3.75454545454546|6.7354827052504|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|3|Turbidity|Surface|Sample|11|0|3.7|0.8|1.21363636363636|1.17006215841102|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|4|Turbidity|Surface|Sample|11|0|38.6|1.2|5.24545454545455|11.623111772358|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|5|Turbidity|Surface|Sample|11|0|56.8|1|9.49090909090909|18.2497372334757|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|6|Turbidity|Surface|Sample|8|0|24.1|1.35|4.925|8.41898365090975|537
+37|Rocky Bayou State Park Aquatic Preserve|7|Turbidity|Surface|Sample|8|0|12.2|1.2|2.2875|4.05583794407166|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|8|Turbidity|Surface|Sample|10|0|4.4|1.15|1.3|1.329995822884|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|9|Turbidity|Surface|Sample|13|0|22.8|0|1.97692307692308|6.27085239370133|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|10|Turbidity|Surface|Sample|13|0|1.9|0.1|0.480769230769231|0.625012820381331|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|11|Turbidity|Surface|Sample|7|0|5.2|0|0.742857142857143|1.96541525964798|537
+37|Rocky Bayou State Park Aquatic Preserve|12|Turbidity|Surface|Sample|10|0|18.4|0.75|3.17|6.0452093061825|537, 5002
+38|Rookery Bay Aquatic Preserve|1|Turbidity|Surface|Sample|58|0.47|34|3.6475|5.45965517241379|5.95605477438708|509, 5002
+38|Rookery Bay Aquatic Preserve|2|Turbidity|Surface|Sample|49|0.65|35|6.755|7.56387755102041|6.35409401040205|509, 5002
+38|Rookery Bay Aquatic Preserve|3|Turbidity|Surface|Sample|49|0.34|40|5.3|7.80142857142857|7.88077248751669|509, 5002
+38|Rookery Bay Aquatic Preserve|4|Turbidity|Surface|Sample|81|0.2|42|5.6|7.11506172839506|6.51725035453158|509, 5002
+38|Rookery Bay Aquatic Preserve|5|Turbidity|Surface|Sample|62|0.39|13|3.9275|4.60620967741936|3.53145986223734|509, 5002
+38|Rookery Bay Aquatic Preserve|6|Turbidity|Surface|Sample|67|0.16|13|3.6|4.27611940298508|3.09316350527666|509, 5002
+38|Rookery Bay Aquatic Preserve|7|Turbidity|Surface|Sample|42|0.37|11.995|4.8325|4.72107142857143|2.64524067228026|509, 5002
+38|Rookery Bay Aquatic Preserve|8|Turbidity|Surface|Sample|73|0.32|16|5.3|5.69143835616438|3.44690979552822|509, 5002
+38|Rookery Bay Aquatic Preserve|9|Turbidity|Surface|Sample|60|0.4|24|3.37|4.36225|3.91277638055605|509, 5002
+38|Rookery Bay Aquatic Preserve|10|Turbidity|Surface|Sample|58|0.3|15.48|4.0925|4.27379310344828|2.88843327142248|509, 5002
+38|Rookery Bay Aquatic Preserve|11|Turbidity|Surface|Sample|56|0.24|30|4.45|5.10571428571429|4.50422957074504|509, 5002
+38|Rookery Bay Aquatic Preserve|12|Turbidity|Surface|Sample|56|0.42|20|4.2|5.34366071428571|3.95724714819319|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|1|Turbidity|Surface|Sample|349|0.15|34|3.1|4.68716332378224|5.18757905124383|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|2|Turbidity|Surface|Sample|288|0.5|39|3.615|6.30060763888889|6.86188422499924|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|3|Turbidity|Surface|Sample|223|0.34|40|5|7.827533632287|8.71564795870508|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|4|Turbidity|Surface|Sample|404|0.2|42|4|5.2070297029703|4.45008383271846|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|5|Turbidity|Surface|Sample|384|0.22|23|2.6|3.984453125|3.65787547134323|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|6|Turbidity|Surface|Sample|392|0.1|24|2.8|3.46410714285714|3.16332008462636|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|7|Turbidity|Surface|Sample|255|0.27|20.9|4|4.27354901960784|2.87942912043264|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|8|Turbidity|Surface|Sample|387|0.2|39|3.7|4.15966408268734|3.31505214767272|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|9|Turbidity|Surface|Sample|295|0.3|24|2.455|3.37777966101695|2.91689622265424|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|10|Turbidity|Surface|Sample|335|0.25|28.7|3.1|3.74897014925373|3.0128064580383|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|11|Turbidity|Surface|Sample|326|0.24|35|3|4.19196319018405|4.21986871598861|509, 5002
+39|Rookery Bay National Estuarine Research Reserve|12|Turbidity|Surface|Sample|344|0.14|29|4.23|5.84985465116279|5.05988316241552|509, 5002
+40|St. Andrews State Park Aquatic Preserve|1|Turbidity|Surface|Sample|10|0.45|1.8|0.8|0.91|0.431277173056957|470
+40|St. Andrews State Park Aquatic Preserve|2|Turbidity|Surface|Sample|13|0.3|1.6|0.75|0.780769230769231|0.359130002888034|470
+40|St. Andrews State Park Aquatic Preserve|3|Turbidity|Surface|Sample|15|0.25|1.6|0.65|0.833333333333333|0.449470588051999|470, 5002
+40|St. Andrews State Park Aquatic Preserve|4|Turbidity|Surface|Sample|9|0.45|2.4|1|1.23333333333333|0.761987532706409|470, 5002
+40|St. Andrews State Park Aquatic Preserve|5|Turbidity|Surface|Sample|16|0.1|7|0.975|1.71875|1.96238587778585|470, 5002
+40|St. Andrews State Park Aquatic Preserve|6|Turbidity|Surface|Sample|11|0.35|1.5|0.6|0.65|0.305777697028413|470, 5002
+40|St. Andrews State Park Aquatic Preserve|7|Turbidity|Surface|Sample|11|0.2|2.3|1.2|1.13181818181818|0.697234798067598|470, 5002
+40|St. Andrews State Park Aquatic Preserve|8|Turbidity|Surface|Sample|10|0.35|2|0.475|0.765|0.573996709243374|470
+40|St. Andrews State Park Aquatic Preserve|9|Turbidity|Surface|Sample|13|0.35|3|0.95|1.21538461538462|0.765229980513651|470, 5002
+40|St. Andrews State Park Aquatic Preserve|10|Turbidity|Surface|Sample|10|0.5|3.7|0.975|1.29|0.987083245391863|470
+40|St. Andrews State Park Aquatic Preserve|11|Turbidity|Surface|Sample|13|0.35|0.95|0.55|0.557692307692308|0.184668795692624|470, 5002
+40|St. Andrews State Park Aquatic Preserve|12|Turbidity|Surface|Sample|10|0.1|1.1|0.475|0.555|0.301339601704714|470
+41|St. Joseph Bay Aquatic Preserve|1|Turbidity|Surface|Sample|160|0.26|3.2|0.8|0.8764375|0.444267961062257|5002
+41|St. Joseph Bay Aquatic Preserve|2|Turbidity|Surface|Sample|146|0.3|6|0.8|0.954657534246575|0.590105968722698|5002
+41|St. Joseph Bay Aquatic Preserve|3|Turbidity|Surface|Sample|233|0.06|6.1|1.1|1.25386266094421|0.896912144443248|5002
+41|St. Joseph Bay Aquatic Preserve|4|Turbidity|Surface|Sample|173|0.3|3.7|0.94|1.02815028901734|0.504708113276847|5002
+41|St. Joseph Bay Aquatic Preserve|5|Turbidity|Surface|Sample|228|0.34|5.2|0.92|1.17030701754386|0.861967523200183|5002
+41|St. Joseph Bay Aquatic Preserve|6|Turbidity|Surface|Sample|359|0.1|3.9|0.9|1.01172701949861|0.503410517110222|5002
+41|St. Joseph Bay Aquatic Preserve|7|Turbidity|Surface|Sample|368|0.1|4.7|0.9|1.03285326086957|0.568604353033869|5002
+41|St. Joseph Bay Aquatic Preserve|8|Turbidity|Surface|Sample|343|0.35|4.8|1|1.12472303206997|0.581858156505977|5002
+41|St. Joseph Bay Aquatic Preserve|9|Turbidity|Surface|Sample|121|0.2|4.9|0.82|1.00735537190083|0.661160304055229|5002
+41|St. Joseph Bay Aquatic Preserve|10|Turbidity|Surface|Sample|122|0.1|6|0.85|1.13606557377049|1.046557961086|5002
+41|St. Joseph Bay Aquatic Preserve|11|Turbidity|Surface|Sample|139|0.3|7.3|0.68|0.83021582733813|0.833098344513862|5002
+41|St. Joseph Bay Aquatic Preserve|12|Turbidity|Surface|Sample|145|0.25|6.9|0.8|1.06441379310345|0.928887383933409|5002
+43|St. Martins Marsh Aquatic Preserve|1|Turbidity|Surface|Sample|262|0.3|12|0.8|1.21347328244275|1.33060200029591|479, 5002
+43|St. Martins Marsh Aquatic Preserve|2|Turbidity|Surface|Sample|387|0.3|9.1|0.86|1.18090439276486|1.03823258481036|479, 5002
+43|St. Martins Marsh Aquatic Preserve|3|Turbidity|Surface|Sample|225|0.3|8.5|1.1|1.62004444444444|1.23895423131833|479, 5002
+43|St. Martins Marsh Aquatic Preserve|4|Turbidity|Surface|Sample|297|0.3|5.22|1.3|1.58306397306397|1.01545508334885|479, 5002
+43|St. Martins Marsh Aquatic Preserve|5|Turbidity|Surface|Sample|302|0.2|6.5|0.96|1.28493377483444|1.01811066743642|479, 5002
+43|St. Martins Marsh Aquatic Preserve|6|Turbidity|Surface|Sample|263|0.1|4.88|1|1.17254752851711|0.717278553628768|479, 5002
+43|St. Martins Marsh Aquatic Preserve|7|Turbidity|Surface|Sample|155|0.4|10.1|2.2|2.38077419354839|1.50313807484774|479, 5002
+43|St. Martins Marsh Aquatic Preserve|8|Turbidity|Surface|Sample|173|0.2|9.5|1.6|1.89450867052023|1.21749524433672|479, 5002
+43|St. Martins Marsh Aquatic Preserve|9|Turbidity|Surface|Sample|202|0.25|6.7|1.6|1.7450495049505|0.951759955273619|479, 5002
+43|St. Martins Marsh Aquatic Preserve|10|Turbidity|Surface|Sample|293|0.4|6|1.4|1.79351535836177|1.13597595355616|479, 5002
+43|St. Martins Marsh Aquatic Preserve|11|Turbidity|Surface|Sample|152|0.1|17|1|1.515|2.25017497480053|479, 5002
+43|St. Martins Marsh Aquatic Preserve|12|Turbidity|Surface|Sample|232|0.2|3.92|0.7|0.853577586206897|0.544335372985557|479, 5002
+44|Terra Ceia Aquatic Preserve|1|Turbidity|Surface|Sample|536|0.4|25|1.9|2.88298507462687|3.41155694548694|5002
+44|Terra Ceia Aquatic Preserve|2|Turbidity|Surface|Sample|494|0.2|33|2|2.9969028340081|3.63231159846577|5002
+44|Terra Ceia Aquatic Preserve|3|Turbidity|Surface|Sample|605|0.02|32|1.8|2.68571900826446|3.04437702612609|5002
+44|Terra Ceia Aquatic Preserve|4|Turbidity|Surface|Sample|601|0.26|31|1.9|3.04066555740433|3.44429076728844|5002
+44|Terra Ceia Aquatic Preserve|5|Turbidity|Surface|Sample|630|0|17|1.6|2.08271428571429|1.78151828683117|5002
+44|Terra Ceia Aquatic Preserve|6|Turbidity|Surface|Sample|588|0.2|27|1.6|2.27654761904762|2.26083418130202|5002
+44|Terra Ceia Aquatic Preserve|7|Turbidity|Surface|Sample|694|0.12|22|1.8|2.56296829971182|2.28650412927525|5002
+44|Terra Ceia Aquatic Preserve|8|Turbidity|Surface|Sample|723|0.16|62.4|1.9|2.40055325034578|2.88382814856278|5002
+44|Terra Ceia Aquatic Preserve|9|Turbidity|Surface|Sample|485|0.2|41.5|2.1|2.94463917525773|3.08463978563783|5002
+44|Terra Ceia Aquatic Preserve|10|Turbidity|Surface|Sample|535|0.15|68|1.9|2.61132710280374|3.75964899891607|5002
+44|Terra Ceia Aquatic Preserve|11|Turbidity|Surface|Sample|423|0.4|21.2|2|2.47957446808511|2.08494815840414|5002
+44|Terra Ceia Aquatic Preserve|12|Turbidity|Surface|Sample|591|0.2|39|1.6|2.692910321489|4.35549786880495|5002
+45|Tomoka Marsh Aquatic Preserve|1|Turbidity|Surface|Sample|15|1.24742|9|3.21146|4.382276|2.69522316600208|5002
+45|Tomoka Marsh Aquatic Preserve|2|Turbidity|Surface|Sample|34|2.6|18.6|6|6.89191411764706|3.5398252323621|5002
+45|Tomoka Marsh Aquatic Preserve|3|Turbidity|Surface|Sample|10|4.04582|19.52709|6.77643|9.919551|5.85095770901074|5002
+45|Tomoka Marsh Aquatic Preserve|4|Turbidity|Surface|Sample|29|4.3|17|8.7|9.23837931034483|2.91755366425236|5002
+45|Tomoka Marsh Aquatic Preserve|5|Turbidity|Surface|Sample|17|5.84069|18.44074|10.02144|10.0095017647059|3.0754455952029|5002
+45|Tomoka Marsh Aquatic Preserve|6|Turbidity|Surface|Sample|31|2.9|22|9.29081|10.4807722580645|4.94661180554105|5002
+45|Tomoka Marsh Aquatic Preserve|7|Turbidity|Surface|Sample|18|5.11073|15.5537|8.90943|9.05508166666667|3.17739961951732|5002
+45|Tomoka Marsh Aquatic Preserve|8|Turbidity|Surface|Sample|29|4.1|34.45737|10.1|11.3538527586207|5.91777543824288|5002
+45|Tomoka Marsh Aquatic Preserve|9|Turbidity|Surface|Sample|15|3.71353|13.37716|9.3144|8.817016|3.34164143581478|5002
+45|Tomoka Marsh Aquatic Preserve|10|Turbidity|Surface|Sample|29|1.92013|77.5|5.41|9.10605448275862|13.7694407816991|5002
+45|Tomoka Marsh Aquatic Preserve|11|Turbidity|Surface|Sample|15|2.08222|25.75857|5.40451|6.945164|5.41357038643207|5002
+45|Tomoka Marsh Aquatic Preserve|12|Turbidity|Surface|Sample|33|2.6|15.6|5.8|6.24296272727273|2.81557502542917|5002
+47|Yellow River Marsh Aquatic Preserve|1|Turbidity|Surface|Sample|62|0.8|8.9|1.8|2.38193548387097|1.64086226703401|505, 5002
+47|Yellow River Marsh Aquatic Preserve|2|Turbidity|Surface|Sample|54|0.66|14|1.9|2.57851851851852|2.31273293158941|540, 5002
+47|Yellow River Marsh Aquatic Preserve|3|Turbidity|Surface|Sample|76|0.7|30|3.3|4.92631578947368|4.40158663578041|540, 5002
+47|Yellow River Marsh Aquatic Preserve|4|Turbidity|Surface|Sample|72|0.5|22|2.65|4.00833333333333|3.48718983678068|5002
+47|Yellow River Marsh Aquatic Preserve|5|Turbidity|Surface|Sample|80|0.8|14|2.65|3.51675|2.59742363833127|505, 5002
+47|Yellow River Marsh Aquatic Preserve|6|Turbidity|Surface|Sample|56|0.81|6.7|2.4|2.64642857142857|1.33885898309844|505, 5002
+47|Yellow River Marsh Aquatic Preserve|7|Turbidity|Surface|Sample|4|2.11|9.2|5.8|5.7275|2.89684167096972|505, 540, 5002
+47|Yellow River Marsh Aquatic Preserve|8|Turbidity|Surface|Sample|8|1.1|5.8|2.395|2.91125|1.84480302858753|505, 5002
+47|Yellow River Marsh Aquatic Preserve|9|Turbidity|Surface|Sample|32|0.7|5.3|2.3|2.3459375|1.21850479336423|5002
+47|Yellow River Marsh Aquatic Preserve|10|Turbidity|Surface|Sample|50|0.68|10|2.05|2.693|2.11133022195071|505, 540, 5002
+47|Yellow River Marsh Aquatic Preserve|11|Turbidity|Surface|Sample|35|0.6|6.8|1.4|2.03028571428571|1.50387242441224|505, 540, 5002
+47|Yellow River Marsh Aquatic Preserve|12|Turbidity|Surface|Sample|34|0.7|9.4|2.2|2.99411764705882|2.16821965459873|5002
