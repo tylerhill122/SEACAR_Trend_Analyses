@@ -5,17 +5,6 @@ library(data.table)
 library(dplyr)
 library(ggplot2)
 
-#List all of the trendplot jpg files
-files <- list.files("SAV/output/Figures/BB/img", pattern="trendplot", full.names=TRUE)
-
-#Include only those that are BBpct
-files <- files[grep("BBpct", files)]
-
-#Copy BBpct trendplots to website file directory
-file.copy(from = files, to = "SAV/output/website/images/trendplots",
-          overwrite = TRUE)
-
-
 ###Bar Plot
 #List all of the trendplot jpg files
 files <- list.files("SAV/output/Figures/BB", pattern="barplot")
@@ -28,13 +17,18 @@ out_dir <- "SAV/output/website/images/barplots/"
 for(i in 1:length(files)){
       #Imports the barplot object
       barplot <- readRDS(paste0(in_dir, files[i]))
-      
+      barplot <- barplot + theme(plot.title = element_text(face="bold", hjust = 0.5))
       #Changes output name from ending in rds to png
       outname <- substr(files[i], 1, nchar(files[i])-3)
       outname <- paste0(outname, "png")
       
       #Creates and saves png file of plot
-      png(paste0(out_dir,outname))
+      png(paste0(out_dir,outname),
+          width = 8,
+          height = 4,
+          units = "in",
+          res = 100)
+      
       print(barplot)
       dev.off()
 }

@@ -59,9 +59,9 @@ rm(PO)
 rm(SC)
 rm(PA)
 
-#SAV <- fread(here::here("Combined_SAV_column_All-2021-Sep-20.csv"))
-
-#setnames(SAV, c("[BraunBlanquetScore]", "[ModifiedBraunBlanquetScore]", "[PercentCover_%]", "[PercentOccurrence]"), c("BB", "mBB", "PC", "PO"))
+# SAV <- fread(here::here("Combined_SAV_column_All-2021-Sep-20.csv"))
+# 
+# setnames(SAV, c("[BraunBlanquetScore]", "[ModifiedBraunBlanquetScore]", "[PercentCover_%]", "[PercentOccurrence]"), c("BB", "mBB", "PC", "PO"))
 
 SAV[, `:=` (BB = as.numeric(BB),
             mBB = as.numeric(mBB),
@@ -89,7 +89,7 @@ SAV2[!is.na(PC), BB_all := fcase(PC == 0, 0,
                                  PC <= (2.5 + (15-2.5) + (37.5-15)/2), 2,
                                  PC <= (2.5 + (15-2.5) + (37.5-15) + (62.5 - 37.5)/2), 3,
                                  PC <= (2.5 + (15-2.5) + (37.5-15) + (62.5 - 37.5) + (87.5 - 62.5)/2), 4, 
-                                 PC > (2.5 + (15-2.5) + (37.5-15) + (62.5 - 37.5) + (87.5 - 62.5)/2), 5)][, BB_all := as.ordered(BB_all)]
+                                 PC > (2.5 + (15-2.5) + (37.5-15) + (62.5 - 37.5) + (87.5 - 62.5)/2), 5)]
 
 #Create a collapsed version of the long-form combined-table-style data.table.
 # SAV2b <- SAV2[, c(2:34)] %>%
@@ -104,25 +104,36 @@ SAV2[!is.na(PC), BB_all := fcase(PC == 0, 0,
 
 
 #Create a column for BB_converted to median percent cover. ***I think this can probably be condensed to just use the BB_all variable created earlier.
-SAV2[!is.na(BB) & is.na(PC), BB_pct := fcase(BB == 0, 0, 
-                                             BB > 0 & BB <= 0.1, rescale(BB, from=c(0, 0.1), to=c(0,0.02)), #Added by SRD 8/31/2021
-                                             BB > 0.1 & BB <= 0.5, rescale(BB, from=c(0.1, 0.5), to=c(0.02,0.1)),
-                                             BB > 0.5 & BB <= 1, rescale(BB, from=c(0.5,1), to=c(0.1,2.5)),
-                                             BB > 1 & BB <= 2, rescale(BB, from=c(1,2), to=c(2.5,15)),
-                                             BB > 2 & BB <= 3, rescale(BB, from=c(2,3), to=c(15,37.5)),
-                                             BB > 3 & BB <= 4, rescale(BB, from=c(3,4), to=c(37.5,62.5)),
-                                             BB > 4 & BB <= 5, rescale(BB, from=c(4,5), to=c(62.5,87.5)))]  #Modified by SRD 8/31/2021
+# SAV2[!is.na(BB) & is.na(PC), BB_pct := fcase(BB == 0, 0, 
+#                                              BB > 0 & BB <= 0.1, rescale(BB, from=c(0, 0.1), to=c(0,0.02)), #Added by SRD 8/31/2021
+#                                              BB > 0.1 & BB <= 0.5, rescale(BB, from=c(0.1, 0.5), to=c(0.02,0.1)),
+#                                              BB > 0.5 & BB <= 1, rescale(BB, from=c(0.5,1), to=c(0.1,2.5)),
+#                                              BB > 1 & BB <= 2, rescale(BB, from=c(1,2), to=c(2.5,15)),
+#                                              BB > 2 & BB <= 3, rescale(BB, from=c(2,3), to=c(15,37.5)),
+#                                              BB > 3 & BB <= 4, rescale(BB, from=c(3,4), to=c(37.5,62.5)),
+#                                              BB > 4 & BB <= 5, rescale(BB, from=c(4,5), to=c(62.5,87.5)))]  #Modified by SRD 8/31/2021
+# 
+# SAV2[!is.na(mBB) & is.na(PC), BB_pct := fcase(mBB == 0, 0, 
+#                                               mBB > 0 & mBB <= 0.1, rescale(mBB, from=c(0, 0.1), to=c(0,0.02)), #Added by SRD 8/31/2021
+#                                               mBB > 0.1 & mBB <= 0.5, rescale(mBB, from=c(0.1, 0.5), to=c(0.02,0.1)),
+#                                               mBB > 0.5 & mBB <= 1, rescale(mBB, from=c(0.5,1), to=c(0.1,2.5)),
+#                                               mBB > 1 & mBB <= 2, rescale(mBB, from=c(1,2), to=c(2.5,15)),
+#                                               mBB > 2 & mBB <= 3, rescale(mBB, from=c(2,3), to=c(15,37.5)),
+#                                               mBB > 3 & mBB <= 4, rescale(mBB, from=c(3,4), to=c(37.5,62.5)),
+#                                               mBB > 4 & mBB <= 5, rescale(mBB, from=c(4,5), to=c(62.5,87.5)))]  #Modified by SRD 8/31/2021
 
-SAV2[!is.na(mBB) & is.na(PC), BB_pct := fcase(mBB == 0, 0, 
-                                              mBB > 0 & mBB <= 0.1, rescale(mBB, from=c(0, 0.1), to=c(0,0.02)), #Added by SRD 8/31/2021
-                                              mBB > 0.1 & mBB <= 0.5, rescale(mBB, from=c(0.1, 0.5), to=c(0.02,0.1)),
-                                              mBB > 0.5 & mBB <= 1, rescale(mBB, from=c(0.5,1), to=c(0.1,2.5)),
-                                              mBB > 1 & mBB <= 2, rescale(mBB, from=c(1,2), to=c(2.5,15)),
-                                              mBB > 2 & mBB <= 3, rescale(mBB, from=c(2,3), to=c(15,37.5)),
-                                              mBB > 3 & mBB <= 4, rescale(mBB, from=c(3,4), to=c(37.5,62.5)),
-                                              mBB > 4 & mBB <= 5, rescale(mBB, from=c(4,5), to=c(62.5,87.5)))]  #Modified by SRD 8/31/2021
+#Replaces two blocks of code above by using the BB_all variable to create all estimates at once.
+SAV2[!is.na(BB_all), BB_pct := fcase(BB_all == 0, 0, 
+                                     BB_all > 0 & BB_all <= 0.1, rescale(BB_all, from=c(0, 0.1), to=c(0,0.02)), #Added by SRD 8/31/2021
+                                     BB_all > 0.1 & BB_all <= 0.5, rescale(BB_all, from=c(0.1, 0.5), to=c(0.02,0.1)),
+                                     BB_all > 0.5 & BB_all <= 1, rescale(BB_all, from=c(0.5,1), to=c(0.1,2.5)),
+                                     BB_all > 1 & BB_all <= 2, rescale(BB_all, from=c(1,2), to=c(2.5,15)),
+                                     BB_all > 2 & BB_all <= 3, rescale(BB_all, from=c(2,3), to=c(15,37.5)),
+                                     BB_all > 3 & BB_all <= 4, rescale(BB_all, from=c(3,4), to=c(37.5,62.5)),
+                                     BB_all > 4 & BB_all <= 5, rescale(BB_all, from=c(4,5), to=c(62.5,87.5)))]
 
 SAV2[, BB_pct := as.numeric(BB_pct)]
+SAV2[, BB_all := as.ordered(BB_all)]
 SAV2[!is.na(PO), method := "Percent Occurrence"]
 SAV2[!is.na(BB), method := "Braun Blanquet"]
 SAV2[!is.na(mBB), method := "Modified Braun Blanquet"]
@@ -340,6 +351,7 @@ parameters <- data.table(column = c(as.name("BB_all"), as.name("BB_pct"), as.nam
 
 #start script----------------------------------------------------------------------
 n <- 0
+EDA <- TRUE #Create and export Exploratory Data Analysis plots (TRUE = yes, FALSE = no)
 seed <- 352
 set.seed(seed)
 for(p in parameters$column){
@@ -369,7 +381,7 @@ for(p in parameters$column){
     cat(paste0("\nStarting MA: ", i, "\n"))
     
     #create data exploration plots-----------------------------------------------------
-    
+   if(EDA){ 
     parvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = eval(p), color = analysisunit)) +
                        geom_jitter() +
                        theme_bw() +
@@ -822,7 +834,7 @@ for(p in parameters$column){
            #height = 8 + nlayers - 5,
            height = yadd/maxydist,
            limitsize = FALSE)
-    
+   }  
     
     
       species <- unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])
@@ -842,17 +854,17 @@ for(p in parameters$column){
                                   statistic = numeric(),
                                   p.value = numeric())
       
-      # olrmodresults <- data.table(managed_area = character(),
-      #                             species = character(),
-      #                             filename = character(),
-      #                             effect = character(),
-      #                             component = character(),
-      #                             group = character(),
-      #                             term = character(),
-      #                             estimate = numeric(),
-      #                             std.error = numeric(),
-      #                             conf.low = numeric(),
-      #                             conf.high = numeric())
+      olrmodresults <- data.table(managed_area = character(),
+                                  species = character(),
+                                  filename = character(),
+                                  effect = character(),
+                                  component = character(),
+                                  group = character(),
+                                  term = character(),
+                                  estimate = numeric(),
+                                  std.error = numeric(),
+                                  conf.low = numeric(),
+                                  conf.high = numeric())
       
       blrmodresults <- data.table(managed_area = character(),
                                   species = character(),
@@ -969,6 +981,245 @@ for(p in parameters$column){
             lmemodresults <- rbind(lmemodresults, modj_i)
           }
         }
+        
+        #Indicator == "BB_all"------------------------------------------------------
+        if(paste0(p) == "BB_all") next
+        
+        #Indicator == "PO"--------------------------------------------------------
+        if(paste0(p) == "PO") next #Temporarily blocking the percent occurrence analyses because the binomial model doesn't seem to fit the data very well. Will probably have to figure something else out.
+        # if(paste0(p) == "PO"){
+        #   #I think binomial logistic regression is the best fit for the percent cover data (0/1 outcomes x 100 "trials" for each quad)
+        # 
+        #   #set.seed(seed + n)
+        #   # datlist <- split(POdat[ManagedAreaName == i & analysisunit == j, ], by = "Ind250")
+        # 
+        #   # ppctest <- try(brm_multiple(formula = CoverObs ~ relyear + (1 | LocationID), data = datlist,
+        #   #                    family = bernoulli, prior = set_prior("normal(0,1)", class = "b"), cores = 4,
+        #   #                    control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, warmup = 3000,
+        #   #                    chains = 5, inits = 0, thin = 3, sample_prior = "only",
+        #   #                    file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_",
+        #   #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+        #   #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
+        #   #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")),
+        #   #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE),
+        #   #                                             ".rds"))),
+        #   #                silent = TRUE)
+        #   
+        #   SAV4[, Grid := as.integer(Grid)]
+        #   SAV4[, CoverObs := as.integer((PO/100)*Grid)]
+        #   #SAV4[, LocMaYrMoQiCi := paste0(LocationID, gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', ManagedAreaName, perl = TRUE), Year, Month, QuadIdentifier, gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', CommonIdentifier, perl = TRUE))]
+        #   
+        #   #Prior doesn't seem to make a difference for some reason; I am still investigating, but left this in here anyway to catch failed models.
+        #   ppctest <- try(brm(formula = CoverObs | trials(Grid) ~ relyear + (1 + relyear | LocationID), 
+        #                      data = SAV4[ManagedAreaName == i & analysisunit == j & ProgramID != 10001, ], 
+        #                      family = binomial, prior = c(set_prior("normal(0, 200)")), cores = 4, chains = 4, 
+        #                      control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, inits = 0, 
+        #                      thin = 3, seed = seed + n, sample_prior = "only", backend = "cmdstanr", threads = threading(2),
+        #                      file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+        #                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
+        #                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")), 
+        #                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+        #                                               ".rds"))), 
+        #                  silent = TRUE)
+        #   
+        #   n <- n + 1
+        #   
+        #   if(class(ppctest) == "try-error"){
+        #     failedmod <- data.table(model = paste0("SAV_", parameters[column == p, type], "_", 
+        #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
+        #                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")), 
+        #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+        #                                            ".rds"),
+        #                             error = ppctest[1])
+        #     
+        #     failedmods <- rbind(failedmods, failedmod)
+        #     
+        #     blrmodj_i <- data.table(managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+        #                                                   ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+        #                             species = j,
+        #                             filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_blr_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"), paste0("AP_blr_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"))),
+        #                             effect = NA,
+        #                             component = NA,
+        #                             group = NA,
+        #                             term = NA,
+        #                             estimate = NA,
+        #                             std.error = NA,
+        #                             conf.low = NA,
+        #                             conf.high = NA)
+        #     blrmodresults <- rbind(blrmodresults, blrmodj_i)
+        #     
+        #   } else{
+        #     set.seed(seed + n)
+        #     # priorpc_plot <- ppc_dens_overlay(y = datlist[[1]]$CoverObs, 
+        #     #                                  yrep = posterior_predict(ppctest, ndraws=100))
+        #     
+        #     priorpc_plot <- ppc_dens_overlay(y = SAV4[ManagedAreaName == i & analysisunit == j, CoverObs], 
+        #                                      yrep = posterior_predict(ppctest, ndraws=100))
+        #     
+        #     priorpc_plot <- priorpc_plot +
+        #       labs(title = paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                           ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpcplot_", 
+        #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
+        #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
+        #     
+        #     saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+        #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpcplot_", 
+        #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
+        #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+        #                                             ".rds")))
+        #     n <- n + 1
+        #     
+        #     #binomial logistic regression model
+        #     #originally tried this as a bernoulli model, but the data get very unwieldy so it is better as a binomial
+        #     # tic()
+        #     # plan(multisession, workers = availableCores(omit = 1))
+        #     # brm_i <- brm_multiple(formula =  CoverObs ~ relyear + (1 | LocationID), data = datlist,
+        #     #                       family = bernoulli, prior = c(set_prior("normal(0,1)", class = "b")), 
+        #     #                       cores = 15, control = list(adapt_delta = 0.99, max_treedepth = 10), 
+        #     #                       iter = 9000, warmup = 3000, chains = 5, inits = 0, thin = 3, seed = seed + n,
+        #     #                       file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+        #     #                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #     #                                                ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
+        #     #                                                       ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_"), 
+        #     #                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+        #     #                                                ".rds")))
+        #     # toc()
+        #     
+        #     # tic()
+        #     # brm_i <- brm(formula =  CoverObs | trials(Grid) ~ relyear + (1 + relyear | LocationID), data = SAV4[ManagedAreaName == i & analysisunit == j, ],
+        #     #              family = binomial, cores = 6, control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, 
+        #     #              warmup = 3000, chains = 6, inits = 0, thin = 3, seed = seed + n, backend = "cmdstanr", threads = threading(2),
+        #     #              file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+        #     #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #     #                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
+        #     #                                              ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
+        #     #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+        #     #                                       ".rds")))
+        #     # toc()
+        #     
+        #     brm_i <- update(ppctest, cores = 6, iter = 9000, warmup = 3000, chains = 6, seed = seed + n, sample_prior = "no", 
+        #                     file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+        #                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
+        #                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
+        #                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+        #                                              ".rds")))
+        #     
+        #     n <- n + 1
+        #     
+        #     #diagnostic plots
+        #     diag <- plot(brm_i, plot = FALSE)
+        #     
+        #     #add title
+        #     title <- textGrob(paste0(j, ", ", ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+        #                                              ifelse(stringr::str_detect(i, "NMS), paste0(str_sub(i, 1, -5), "National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))),
+        #                       just = "left",
+        #                       gp=gpar(fontsize=12))
+        #     
+        #     diag[[1]] <- gtable_add_rows(
+        #       diag[[1]],
+        #       heights = grobHeight(title) + unit(5, "mm"),
+        #       pos = 0
+        #     )
+        #     
+        #     diag[[1]] <- gtable_add_grob(
+        #       diag[[1]],
+        #       title,
+        #       clip = "off",
+        #       1, 1, 1, 1)
+        #     
+        #     if(class(try(diag[[2]])) != "try-error"){
+        #       diag[[2]] <- gtable_add_rows(
+        #         diag[[2]],
+        #         heights = grobHeight(title) + unit(5, "mm"),
+        #         pos = 0
+        #       )
+        #     }
+        #     
+        #     #save diagnostic plots
+        #     saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+        #                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_chainsplots_", 
+        #                                            ifelse(stringr::str_detect(i, "NMS), "MS_chainsplots_", "AP_chainsplots_")), 
+        #                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+        #                                     ".rds")))
+        #     
+        #     #Model results table
+        #     blrmodj_i <- setDT(broom.mixed::tidy(brm_i))
+        #     blrmodj_i[, `:=` (managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), paste0(i, " Aquatic Preserve")),
+        #                       species = j,
+        #                       filename = paste0("SAV_", parameters[column == p, type], "_", 
+        #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                                         ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
+        #                                                ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
+        #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"))]
+        #     blrmodresults <- rbind(blrmodresults, blrmodj_i)
+        #     
+        #     #posterior predictive check
+        #     set.seed(seed + n)
+        #     postpc_plot <- try(pp_check(brm_i))
+        #     x <- 1
+        #     
+        #     while(class(postpc_plot) == "try-error" & x < 1000){
+        #       print(paste0("x = ", x))
+        #       set.seed(seed + n)
+        #       postpc_plot <- try(pp_check(brm_i))
+        #       x <- x + 1
+        #       n <- n + 1
+        #     }
+        #     
+        #     postpc_plot <- postpc_plot +
+        #       labs(title = paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                           ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_postpcplot_", 
+        #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
+        #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
+        #     
+        #     saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+        #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+        #                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_postpcplot_", 
+        #                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
+        #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+        #                                            ".rds")))
+        #
+        #     n <- n + 1
+        #     
+        #     #conditional effects plot
+        #     ceplot_i <- plot(conditional_effects(brm_i, categorical = TRUE), plot = FALSE)[[1]]
+        #     
+        #     nyrs <- (max(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1) - (min(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1)
+        #     minyr <- min(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1
+        #     breaks <- c(round(minyr + nyrs/5),
+        #                 round(minyr + 2*(nyrs/5)),
+        #                 round(minyr + 3*(nyrs/5)),
+        #                 round(minyr + 4*(nyrs/5)))
+        #     yrlist <- sort(unique(SAV4$Year))
+        #     
+        #     ceplot_i <- ceplot_i +
+        #       geom_hline(yintercept = 0, color = "grey10") +
+        #       scale_x_continuous(breaks = breaks, labels = c(yrlist[breaks[1]], yrlist[breaks[2]], yrlist[breaks[3]], yrlist[breaks[4]])) +
+        #       theme_bw() +
+        #       labs(title = paste0(j, ", ", ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+        #                                           ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))), 
+        #            color = "Species", 
+        #            y = "Percent occurrence", 
+        #            x = "Year") +
+        #       scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+        #                          aesthetics = c("color", "fill"))
+        #     
+        #     saveRDS(ceplot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_",
+        #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+        #                                         ifelse(stringr::str_detect(i, "NERR"), "ERR_blrplot_", 
+        #                                                ifelse(stringr::str_detect(i, "NMS"), "MS_blrplot_", "AP_blrplot_")),
+        #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE),
+        #                                         ".rds")))
+        #   }
+        # }
+        
+        #Indicator == "PA"------------------------------------------------------------
+        if(paste0(p) == "PA") next
       }
       
       #Final results tables and plots--------------------------------------------------------------------
@@ -1014,6 +1265,23 @@ for(p in parameters$column){
                                                         paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_lmeresults.rds"))))))
       }
       
+      if(paste0(p) == "BB_all"){
+        saveRDS(olrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
+                                                 ifelse(stringr::str_detect(i, "NERR"), 
+                                                        paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_olrresults.rds"),
+                                                        ifelse(stringr::str_detect(i, "NMS"),
+                                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_olrresults.rds"),
+                                                               paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_olrresults.rds"))))))
+      }
+      
+      if(paste0(p) == "PO"){
+        saveRDS(blrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
+                                                 ifelse(stringr::str_detect(i, "NERR"), 
+                                                        paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_blrresults.rds"), 
+                                                        ifelse(stringr::str_detect(i, "NMS"),
+                                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_blrresults.rds"),
+                                                               paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_blrresults.rds"))))))
+      }
       
       if(paste0(p) == "PA"){
         #Bar chart of proportions by analysisunit
@@ -1045,6 +1313,13 @@ for(p in parameters$column){
                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_barplot_sp", 
                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_barplot_sp", "AP_barplot_sp")), 
                                               ".rds")))
+        
+        saveRDS(belrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
+                                                 ifelse(stringr::str_detect(i, "NERR"), 
+                                                        paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_belrresults.rds"),
+                                                        ifelse(stringr::str_detect(i, "NMS"),
+                                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_belrresults.rds"),
+                                                               paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_belrresults.rds"))))))
       }
         
       print(paste0("  Plot objects and results tables saved: ", 
@@ -1114,12 +1389,18 @@ for(m in malist){
       }
       
       plot_m2 <- readRDS(here::here(paste0("SAV/output/Figures/BB/", plot_m)))
+      plot_m2 <- plot_m2 + theme(plot.title = element_text(face="bold", hjust = 0.5))
       
-      jpeg(here::here(paste0("SAV/output/Figures/BB/img/", str_sub(plot_m, 1, -5), ".jpg")),
-           width = 10,
-           height = 6,
+      png(here::here(paste0("SAV/output/website/images/trendplots/", str_sub(plot_m, 1, -5), ".png")),
+           width = 8,
+           height = 4,
            units = "in",
-           res = 300)
+           res = 100)
+      # jpeg(here::here(paste0("SAV/output/Figures/BB/img/", str_sub(plot_m, 1, -5), ".jpg")),
+      #      width = 10,
+      #      height = 6,
+      #      units = "in",
+      #      res = 300)
       print(plot_m2)
       dev.off()
       

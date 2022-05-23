@@ -1,48 +1,96 @@
 ManagedAreaName|Species|LME_Intercept|LME_Slope|p
-St. Andrews Aquatic Preserve|Thalassia testudinum|2.84198478902422|2.12554174843695|0.12317151306399
-Apalachicola Bay Aquatic Preserve|Halodule wrightii|-20.5903125587689|3.11693201062046|0.333594555852987
-Alligator Harbor Aquatic Preserve|Drift algae|191.176662711255|-7.18819737578804|0.00496642177424606
-Alligator Harbor Aquatic Preserve|Halodule wrightii|158.449627740584|-5.84653607449612|0.311455590343535
-Alligator Harbor Aquatic Preserve|Syringodium filiforme|146.896362783082|-5.14306324903748|0.0770318275413492
-Alligator Harbor Aquatic Preserve|Thalassia testudinum|78.7335562550211|-2.19651902537004|0.353154038868889
-Apalachicola National Estuarine Research Reserve|Halodule wrightii|4.97920619807961|2.02514896810622|0.328362766222382
-Biscayne Bay Aquatic Preserve|Halodule wrightii|5.68558072027587|-0.0469302078889549|0.757181343013597
-Biscayne Bay Aquatic Preserve|Halophila spp.|0.347654054429976|-0.0116486312587643|0.521743110516839
-Biscayne Bay Aquatic Preserve|Syringodium filiforme|17.4875427349436|-0.0794141172604366|0.779297380151414
-Biscayne Bay Aquatic Preserve|Total seagrass|-89.4172771800476|9.90591256836346|3.44873383067477e-168
-Big Bend Seagrasses Aquatic Preserve|Halodule wrightii|24.6380904879242|-0.495946259115206|0.0534297962289467
-Big Bend Seagrasses Aquatic Preserve|Halophila spp.|11.9832220474225|0.0885508789697174|0.670414524032176
-Big Bend Seagrasses Aquatic Preserve|Syringodium filiforme|32.9411846775568|-0.496187845115111|0.0330426902714912
-Big Bend Seagrasses Aquatic Preserve|Thalassia testudinum|42.5254465733657|-0.523146130329173|0.0861269362751716
-Cape Haze Aquatic Preserve|Thalassia testudinum|18.3632316089414|0.583271807030557|0.0149918935642392
-Estero Bay Aquatic Preserve|Halodule wrightii|32.7443645111332|-0.660471452225736|0.0038808567017846
-Estero Bay Aquatic Preserve|Thalassia testudinum|27.6290505341447|-0.964613454747649|0.0437681777548547
-Florida Keys National Marine Sanctuary|Drift algae|-0.24527697427633|0.167987048991663|9.10689935509146e-05
-Florida Keys National Marine Sanctuary|Halodule wrightii|3.21438420969596|0.00223382988902188|0.858457823828343
-Florida Keys National Marine Sanctuary|Halophila spp.|0.0279282948443729|-0.000128310336391767|0.94792176563805
-Florida Keys National Marine Sanctuary|Syringodium filiforme|1.17579489810735|-0.0306512297903303|0.210053365120757
-Florida Keys National Marine Sanctuary|Thalassia testudinum|34.8654938176822|-1.15487065035201|2.16731322121648e-50
-Florida Keys National Marine Sanctuary|Total seagrass|19.603010971204|-0.151247707755645|0.172227975149476
+St. Andrews Aquatic Preserve|Halodule wrightii|35.9167427979896|3.14308012787625|0.238683365161432
+St. Andrews Aquatic Preserve|Syringodium filiforme|16.1037688885107|1.1144435876635|0.50623681426597
+St. Andrews Aquatic Preserve|Thalassia testudinum|11.4481216274149|2.43098918972577|0.0180361896465774
+Apalachicola Bay Aquatic Preserve|Drift algae|68.6681041289069|-2.2682315934453|0.231423820040675
+Apalachicola Bay Aquatic Preserve|Halodule wrightii|-18.9542167024152|3.05084489814924|0.343078253886444
+Apalachicola Bay Aquatic Preserve|Hydrilla verticillata|-192.499999999997|28.7499999999996|
+Apalachicola Bay Aquatic Preserve|Najas guadalupensis|189.071190511908|-18.1022202060595|0.000255842829180323
+Apalachicola Bay Aquatic Preserve|Vallisneria americana|48.7139338764491|-0.322733863781926|0.944760887597885
+Apalachicola Bay Aquatic Preserve|Zannichellia palustris|99.7392714847043|-4.57958417049057|0.565563716918641
+Alligator Harbor Aquatic Preserve|Drift algae|78.9053999047245|-2.7335641075339|0.0502108909289129
+Alligator Harbor Aquatic Preserve|Halodule wrightii|40.4114221162045|-1.06929376442386|0.484874244025156
+Alligator Harbor Aquatic Preserve|Syringodium filiforme|76.7501898760535|-2.60974362186661|0.013925461645253
+Alligator Harbor Aquatic Preserve|Thalassia testudinum|30.7147339840827|-0.468161047095468|0.584688038419856
+Apalachicola National Estuarine Research Reserve|Drift algae|44.0493441742718|-1.34774781174906|0.272764219577069
+Apalachicola National Estuarine Research Reserve|Halodule wrightii|22.3931809318817|0.565483159749093|0.638297952251704
+Apalachicola National Estuarine Research Reserve|Hydrilla verticillata|-192.499999999997|28.7499999999996|
+Apalachicola National Estuarine Research Reserve|Najas guadalupensis|189.071190511908|-18.1022202060595|0.000255842829180323
+Apalachicola National Estuarine Research Reserve|Vallisneria americana|48.7139338764491|-0.322733863781926|0.944760887597885
+Apalachicola National Estuarine Research Reserve|Zannichellia palustris|99.7392714847043|-4.57958417049057|0.565563716918641
+Biscayne Bay Aquatic Preserve|Halodule wrightii|12.1653004484842|-0.558796366249423|5.53962148025003e-06
+Biscayne Bay Aquatic Preserve|Halophila spp.|0.737660496175254|-0.0436124189463825|0.0338114096596283
+Biscayne Bay Aquatic Preserve|Syringodium filiforme|20.134352598176|-0.264960982265155|0.350045930330051
+Biscayne Bay Aquatic Preserve|Thalassia testudinum|37.027733347845|-1.63390962331092|1.61507751542309e-17
+Biscayne Bay Aquatic Preserve|Total seagrass|-41.6890104993347|5.66578076634075|4.99649930955094e-55
+Big Bend Seagrasses Aquatic Preserve|Halodule wrightii|24.6453597362845|-0.493702433509874|0.0544619474472625
+Big Bend Seagrasses Aquatic Preserve|Halophila spp.|11.7413525692743|0.109190707016915|0.598842668831707
+Big Bend Seagrasses Aquatic Preserve|Syringodium filiforme|32.8594933431427|-0.486056599440698|0.0371069171071892
+Big Bend Seagrasses Aquatic Preserve|Thalassia testudinum|42.692581504877|-0.519647550486111|0.0887022038802245
+Cape Haze Aquatic Preserve|Thalassia testudinum|19.0016934216973|0.584960452742402|0.0130456239691428
+Estero Bay Aquatic Preserve|Halodule wrightii|32.9995633868717|-0.645146550913932|0.00392243222265229
+Estero Bay Aquatic Preserve|Thalassia testudinum|27.4286205413175|-0.892344331288537|0.0707645541727174
+Florida Keys National Marine Sanctuary|Drift algae|-0.33261590069493|0.179898245349433|2.93971122923421e-05
+Florida Keys National Marine Sanctuary|Halodule wrightii|3.90609954559251|-0.0178101963908999|0.152728424783174
+Florida Keys National Marine Sanctuary|Halophila spp.|0.0327046576939543|-0.000245469780091645|0.901616692552843
+Florida Keys National Marine Sanctuary|Syringodium filiforme|1.7446713539402|-0.0545878999682544|0.0711374110163479
+Florida Keys National Marine Sanctuary|Thalassia testudinum|35.8349482934569|-1.17973375452485|8.30418734195598e-54
+Florida Keys National Marine Sanctuary|Total seagrass|19.5307235033932|-0.131450491519346|0.232443768362031
 Fort Pickens Aquatic Preserve|Halodule wrightii|92.804575051979|-1.9880525380997|0.0511351685447955
 Fort Pickens Aquatic Preserve|Thalassia testudinum|-17.8318492458074|2.82800414224554|0.0177953115112834
 Fort Pickens Aquatic Preserve|Total seagrass|106.461088804588|-1.92999248873909|0.0812872437423836
-Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Halodule wrightii|17.5048097648494|0.0707756537222409|0.481991497289517
-Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Syringodium filiforme|47.045462888599|-0.415339882510656|0.516694277202841
-Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Thalassia testudinum|27.4134565666442|0.119711382640112|0.613505641952831
-St. Joseph Bay Aquatic Preserve|Drift algae|4.17479799234937|0.2747004030218|0.618919044165048
+Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Halodule wrightii|18.40137572945|0.0696172678115738|0.473741805865637
+Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Syringodium filiforme|47.0836168467606|-0.403405848778533|0.5269071391999
+Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Thalassia testudinum|27.9195381916874|0.118127578847591|0.616820965140324
+St. Joseph Bay Aquatic Preserve|Drift algae|6.22932296527779|0.215151119371949|0.68867436305656
 St. Joseph Bay Aquatic Preserve|Halodule wrightii|35.7035458504881|0.13567854927587|0.808227072367573
-St. Joseph Bay Aquatic Preserve|Thalassia testudinum|48.3034302777221|0.510250072616936|0.324030187934857
-Lemon Bay Aquatic Preserve|Halodule wrightii|26.4105553796335|0.053680337775113|0.873135318059956
-Lemon Bay Aquatic Preserve|Syringodium filiforme|26.3607317035665|-0.324152052201452|0.664967218530708
+St. Joseph Bay Aquatic Preserve|Thalassia testudinum|48.2744526926975|0.51225887833555|0.32201718858873
+Lemon Bay Aquatic Preserve|Halodule wrightii|27.0064373853941|0.0599932563604376|0.855242330563901
+Lemon Bay Aquatic Preserve|Syringodium filiforme|27.2857283499736|-0.342443965207049|0.635356064645167
 St. Martins Marsh Aquatic Preserve|Halodule wrightii|24.5540011719283|-0.054338818737959|0.756498451397868
 St. Martins Marsh Aquatic Preserve|Halophila spp.|15.7526849358268|0.237827424002926|0.64935340011984
 St. Martins Marsh Aquatic Preserve|Thalassia testudinum|34.0369024177117|0.0699973279428264|0.715394766453357
-Matlacha Pass Aquatic Preserve|Halodule wrightii|13.8637399263308|0.494326389375654|0.479162105831327
+Matlacha Pass Aquatic Preserve|Halodule wrightii|14.4379026764673|0.488461016018198|0.475699933527365
 Nature Coast Aquatic Preserve|Halodule wrightii|4.90243301479305|0.451690895934606|8.7224737007016e-07
 Nature Coast Aquatic Preserve|Ruppia maritima|20.9972137533453|-0.67822870038223|0.29270462386415
 Nature Coast Aquatic Preserve|Syringodium filiforme|19.3763643054641|-0.0568124375933224|0.761508166482165
 Nature Coast Aquatic Preserve|Thalassia testudinum|49.6537204140528|0.148683677908454|0.484985672731967
-Pine Island Sound Aquatic Preserve|Attached algae|17.1325435360244|-0.631424902213871|0.00493361675300198
-Pine Island Sound Aquatic Preserve|Halodule wrightii|8.5595064739055|0.910364045421593|0.0880455554266407
-Pine Island Sound Aquatic Preserve|Syringodium filiforme|12.6064145458262|1.06113664837865|0.0184225573032747
-Pine Island Sound Aquatic Preserve|Thalassia testudinum|8.49318770734084|0.0862005590173381|0.624747899786083
+Pinellas County Aquatic Preserve|Halodule wrightii|40.9707483959291|-0.7001982429589|0.407018198542518
+Pinellas County Aquatic Preserve|Syringodium filiforme|57.9153788683566|-1.68865406115912|0.0331250666599311
+Pinellas County Aquatic Preserve|Thalassia testudinum|44.6523055286967|-0.287240022784054|0.750201070114838
+Pine Island Sound Aquatic Preserve|Attached algae|17.8675363317739|-0.607752121902957|0.00358981253048523
+Pine Island Sound Aquatic Preserve|Halodule wrightii|9.23633639249894|0.91829225488563|0.0779830727182013
+Pine Island Sound Aquatic Preserve|Syringodium filiforme|12.9678492523289|1.06066693593705|0.0167707390463468
+Pine Island Sound Aquatic Preserve|Thalassia testudinum|9.14782866285387|0.10600722940439|0.521853442300349
+Rookery Bay Aquatic Preserve|Halodule wrightii|25.9472934208973|-0.936599585047075|0.44651416003688
+Rookery Bay Aquatic Preserve|Halophila spp.|6.751848815029|-0.746068385140806|0.219517510613839
+Rookery Bay Aquatic Preserve|Total seagrass|54.7889905896534|-3.70463426111943|0.0104548854549557
+Rookery Bay National Estuarine Research Reserve|Halodule wrightii|25.9472934208973|-0.936599585047075|0.44651416003688
+Rookery Bay National Estuarine Research Reserve|Halophila spp.|6.751848815029|-0.746068385140806|0.219517510613839
+Rookery Bay National Estuarine Research Reserve|Total seagrass|54.7889905896534|-3.70463426111943|0.0104548854549557
+St. Andrews Aquatic Preserve|Halodule wrightii|-31.2890299152615|12.4385513969112|1.18298970648097e-11
+St. Andrews Aquatic Preserve|Thalassia testudinum|47.4718019108889|4.27890883268245|0.0160350486155161
+Alligator Harbor Aquatic Preserve|Drift algae|30.2061750306209|-0.703018228547263|0.864917119469252
+Alligator Harbor Aquatic Preserve|Halodule wrightii|15.5543628733314|-0.132973410889325|0.881042021361813
+Alligator Harbor Aquatic Preserve|Syringodium filiforme|51.4751151074321|-2.02653767543526|0.0315139929249239
+Alligator Harbor Aquatic Preserve|Thalassia testudinum|20.6922554149698|-0.326797003183554|0.63999724623521
+Apalachicola National Estuarine Research Reserve|Halodule wrightii|65.9761688165159|-2.41491276156848|0.0110403653657113
+Apalachicola National Estuarine Research Reserve|Hydrilla verticillata|-254.999999999998|37.4999999999997|
+Apalachicola National Estuarine Research Reserve|Najas guadalupensis|220.225979034735|-21.6341673099105|0.00404402031469352
+Apalachicola National Estuarine Research Reserve|Vallisneria americana|52.9484482929373|-0.333683594362419|0.952883387679936
+Apalachicola National Estuarine Research Reserve|Zannichellia palustris|167.268683626855|-12.7493593370041|0.170755281586594
+Biscayne Bay Aquatic Preserve|Halodule wrightii|13.3667779204649|0.0259378403729467|0.958430487101439
+Biscayne Bay Aquatic Preserve|Syringodium filiforme|31.4340428000529|-0.0685772134210729|0.961653286449608
+Biscayne Bay Aquatic Preserve|Thalassia testudinum|59.1245931244121|-0.949496922762409|0.331248862129902
+Biscayne Bay Aquatic Preserve|Total seagrass|-32.2475384263078|1.6872604532087|0.05399112744312
+Florida Keys National Marine Sanctuary|Syringodium filiforme|30.6065006536779|2.73884396550127|0.498031524265852
+Florida Keys National Marine Sanctuary|Thalassia testudinum|50.1456824640816|-0.722721986377377|0.676913161580765
+Pinellas County Aquatic Preserve|Halodule wrightii|51.2190184801475|-1.13905161377594|0.223850700709721
+Pinellas County Aquatic Preserve|Syringodium filiforme|71.5838705702082|-2.35964424926758|0.006021262031753
+Pinellas County Aquatic Preserve|Thalassia testudinum|57.974211785219|-0.867854593002618|0.38842476482761
+Rookery Bay Aquatic Preserve|Halodule wrightii|26.0435540128121|-0.884524579761465|0.453390247106888
+Rookery Bay Aquatic Preserve|Halophila spp.|6.81197685976841|-0.742540480704106|0.215729620343958
+Rookery Bay Aquatic Preserve|Total seagrass|56.8305259660556|-3.71440927843604|0.00875781787981513
+Rookery Bay National Estuarine Research Reserve|Halodule wrightii|26.0435540128121|-0.884524579761465|0.453390247106888
+Rookery Bay National Estuarine Research Reserve|Halophila spp.|6.81197685976841|-0.742540480704106|0.215729620343958
+Rookery Bay National Estuarine Research Reserve|Total seagrass|56.8305259660556|-3.71440927843604|0.00875781787981513
