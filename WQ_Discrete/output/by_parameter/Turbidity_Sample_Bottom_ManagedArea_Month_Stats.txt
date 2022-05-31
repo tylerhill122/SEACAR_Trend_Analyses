@@ -1,181 +1,90 @@
 AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
-3|Apalachicola National Estuarine Research Reserve|1|Turbidity|Bottom|Sample|2|2.4|6.7|4.55|4.55|3.04055915910215|5002
-3|Apalachicola National Estuarine Research Reserve|2|Turbidity|Bottom|Sample|1|3.3|3.3|3.3|3.3||5002
-3|Apalachicola National Estuarine Research Reserve|3|Turbidity|Bottom|Sample|1|1|1|1|1||5002
-3|Apalachicola National Estuarine Research Reserve|4|Turbidity|Bottom|Sample|6|2.6|14|4.3|5.6|4.34142833638884|5002
-3|Apalachicola National Estuarine Research Reserve|5|Turbidity|Bottom|Sample|3|2.8|7.4|4.4|4.86666666666667|2.33523731841827|5002
-3|Apalachicola National Estuarine Research Reserve|6|Turbidity|Bottom|Sample|1|12|12|12|12||5002
-3|Apalachicola National Estuarine Research Reserve|8|Turbidity|Bottom|Sample|1|5.3|5.3|5.3|5.3||5002
-3|Apalachicola National Estuarine Research Reserve|10|Turbidity|Bottom|Sample|1|16|16|16|16||5002
-3|Apalachicola National Estuarine Research Reserve|11|Turbidity|Bottom|Sample|1|1.2|1.2|1.2|1.2||5002
-4|Banana River Aquatic Preserve|1|Turbidity|Bottom|Sample|2|4.9|6.17275|5.536375|5.536375|0.899970155755178|5002
-4|Banana River Aquatic Preserve|2|Turbidity|Bottom|Sample|5|2.74206|10.97373|3.86|4.979356|3.38769370741069|5002
-4|Banana River Aquatic Preserve|3|Turbidity|Bottom|Sample|18|1.17639|11|3.1|4.28069277777778|2.86857054055686|5002
-4|Banana River Aquatic Preserve|4|Turbidity|Bottom|Sample|19|1.00813|7.3|2.01667|2.93375|1.97188355880587|5002
-4|Banana River Aquatic Preserve|5|Turbidity|Bottom|Sample|17|1.03224|7.5|2.4|3.31258941176471|1.93453087194438|5002
-4|Banana River Aquatic Preserve|6|Turbidity|Bottom|Sample|10|1|4.1|1.93175|2.333798|1.05323105316503|5002
-4|Banana River Aquatic Preserve|7|Turbidity|Bottom|Sample|7|0.5|14|2.9|4.12409428571429|4.47557576283714|5002
-4|Banana River Aquatic Preserve|8|Turbidity|Bottom|Sample|14|0.5|7.3|2.65|3.01973142857143|1.74160613276656|5002
-4|Banana River Aquatic Preserve|9|Turbidity|Bottom|Sample|7|1.7|20.38341|4.1|6.37448428571429|6.59724402492904|5002
-4|Banana River Aquatic Preserve|10|Turbidity|Bottom|Sample|14|1.5|47.10395|3.45|6.67521714285714|11.8766920348234|5002
-4|Banana River Aquatic Preserve|11|Turbidity|Bottom|Sample|13|1|56.73264|2.8|7.24866461538462|14.9492520386677|5002
-4|Banana River Aquatic Preserve|12|Turbidity|Bottom|Sample|7|2.17|14.83871|2.6|5.36500571428571|4.72280299421102|5002
-5|Big Bend Seagrasses Aquatic Preserve|1|Turbidity|Bottom|Sample|12|0.55|8.8|1.65|2.40416666666667|2.51336955403528|5002
-5|Big Bend Seagrasses Aquatic Preserve|2|Turbidity|Bottom|Sample|17|0.5|28|5.2|5.58070764705882|6.52977586032106|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|3|Turbidity|Bottom|Sample|15|0.2|11|1.51294|2.473106|2.91566039312782|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|4|Turbidity|Bottom|Sample|27|0.35|13|4.8|5.48333333333333|3.51143735636738|5002
-5|Big Bend Seagrasses Aquatic Preserve|5|Turbidity|Bottom|Sample|17|0.8|9.3|3.7|4.06548117647059|2.52261212498543|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|6|Turbidity|Bottom|Sample|16|0.5|11|2.65|3.427415|2.8103046066693|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|7|Turbidity|Bottom|Sample|16|0.35|3.4263|1.55|1.70226875|0.756753122859981|5002
-5|Big Bend Seagrasses Aquatic Preserve|8|Turbidity|Bottom|Sample|21|0.6|16|2.8|5.07259761904762|4.69682053520667|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|9|Turbidity|Bottom|Sample|27|0.05|16|2.1|3.63417666666667|4.0826180875653|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|10|Turbidity|Bottom|Sample|36|0.2|18|5|6.09583333333333|4.97405231461948|5002
-5|Big Bend Seagrasses Aquatic Preserve|11|Turbidity|Bottom|Sample|33|0.5|13|2.9|3.34725424242424|2.61521905348174|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|12|Turbidity|Bottom|Sample|28|0.5|15|2.3|3.85057821428571|3.57162369677688|477, 5002
-6|Biscayne Bay Aquatic Preserve|3|Turbidity|Bottom|Sample|2|0.45|0.7|0.575|0.575|0.176776695296637|509, 5002
-6|Biscayne Bay Aquatic Preserve|4|Turbidity|Bottom|Sample|3|0.4|3.28|1.865|1.84833333333333|1.44007233614612|509, 5002
-6|Biscayne Bay Aquatic Preserve|5|Turbidity|Bottom|Sample|1|0.7|0.7|0.7|0.7||5002
-6|Biscayne Bay Aquatic Preserve|6|Turbidity|Bottom|Sample|1|1.02|1.02|1.02|1.02||509
-6|Biscayne Bay Aquatic Preserve|8|Turbidity|Bottom|Sample|2|0.5|0.8|0.65|0.65|0.212132034355964|5002
-6|Biscayne Bay Aquatic Preserve|9|Turbidity|Bottom|Sample|2|0.925|1.9|1.4125|1.4125|0.689429111656884|509, 5002
-6|Biscayne Bay Aquatic Preserve|10|Turbidity|Bottom|Sample|1|1.9|1.9|1.9|1.9||5002
-6|Biscayne Bay Aquatic Preserve|11|Turbidity|Bottom|Sample|2|0.8|1.5|1.15|1.15|0.494974746830583|5002
-6|Biscayne Bay Aquatic Preserve|12|Turbidity|Bottom|Sample|1|2|2|2|2||5002
-8|Boca Ciega Bay Aquatic Preserve|1|Turbidity|Bottom|Sample|10|1.3|11|3.45|4.55|3.27829562764285|5002
-8|Boca Ciega Bay Aquatic Preserve|2|Turbidity|Bottom|Sample|8|1.1|16|8.95|8.4125|5.6939661045707|5002
-8|Boca Ciega Bay Aquatic Preserve|3|Turbidity|Bottom|Sample|12|1.2|16|2.65|4.95833333333333|5.38389151811103|5002
-8|Boca Ciega Bay Aquatic Preserve|4|Turbidity|Bottom|Sample|11|0.59|21|6.2|6.46272727272727|5.68280580507392|5002
-8|Boca Ciega Bay Aquatic Preserve|5|Turbidity|Bottom|Sample|18|0.55|9.3|4.7|4.31944444444444|2.49217238621536|5002
-8|Boca Ciega Bay Aquatic Preserve|6|Turbidity|Bottom|Sample|8|0.66|6.8|1.85|2.7575|2.38881769919766|5002
-8|Boca Ciega Bay Aquatic Preserve|7|Turbidity|Bottom|Sample|19|1.2|9.5|2.4|2.98947368421053|2.33211747770659|5002
-8|Boca Ciega Bay Aquatic Preserve|8|Turbidity|Bottom|Sample|13|0.39|11|2.4|3.15538461538462|2.97426633918522|5002
-8|Boca Ciega Bay Aquatic Preserve|9|Turbidity|Bottom|Sample|8|0.72|8.3|4|4.24|2.43362163980235|5002
-8|Boca Ciega Bay Aquatic Preserve|10|Turbidity|Bottom|Sample|15|1|11|3.1|3.72666666666667|2.60150139800261|5002
-8|Boca Ciega Bay Aquatic Preserve|11|Turbidity|Bottom|Sample|4|0.7|3.3|1.36|1.68|1.20731106182293|5002
-8|Boca Ciega Bay Aquatic Preserve|12|Turbidity|Bottom|Sample|12|0.45|8.6|1.6|2.45083333333333|2.37741440275444|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2|Turbidity|Bottom|Sample|1|1.8|1.8|1.8|1.8||5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|3|Turbidity|Bottom|Sample|1|3.1|3.1|3.1|3.1||5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|4|Turbidity|Bottom|Sample|4|1.2|14.5|6.5575|7.20375|5.64243353970607|509, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5|Turbidity|Bottom|Sample|3|0.96|5.9|5.2|4.02|2.67305069162558|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|6|Turbidity|Bottom|Sample|4|0.71|7.19|3.05|3.5|3.01386794667583|509, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|Turbidity|Bottom|Sample|2|1.9|5|3.45|3.45|2.1920310216783|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|9|Turbidity|Bottom|Sample|2|2.3|7.305|4.8025|4.8025|3.53906943983867|509, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|10|Turbidity|Bottom|Sample|2|6.5|6.69|6.595|6.595|0.134350288425444|509
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|12|Turbidity|Bottom|Sample|4|4.71|8.7|5.765|6.235|1.71973350648679|509, 5002
-15|Florida Keys National Marine Sanctuary|2|Turbidity|Bottom|Sample|2|0.95|3.465|2.2075|2.2075|1.77837355468417|509, 5002
-15|Florida Keys National Marine Sanctuary|4|Turbidity|Bottom|Sample|1|0.3|0.3|0.3|0.3||5002
-15|Florida Keys National Marine Sanctuary|5|Turbidity|Bottom|Sample|1|1.2|1.2|1.2|1.2||5002
-15|Florida Keys National Marine Sanctuary|6|Turbidity|Bottom|Sample|5|0.3|2.7|0.81|1.442|1.16396735349407|509, 5002
-15|Florida Keys National Marine Sanctuary|7|Turbidity|Bottom|Sample|2|0.9|1.6|1.25|1.25|0.494974746830583|5002
-15|Florida Keys National Marine Sanctuary|9|Turbidity|Bottom|Sample|4|0.8|3.285|1.245|1.64375|1.11499906576941|509, 5002
-15|Florida Keys National Marine Sanctuary|11|Turbidity|Bottom|Sample|1|0.3|0.3|0.3|0.3||5002
-15|Florida Keys National Marine Sanctuary|12|Turbidity|Bottom|Sample|1|3.19|3.19|3.19|3.19||509
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Turbidity|Bottom|Sample|38|0.49|84|2.15|4.97736842105263|13.3571968017671|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Turbidity|Bottom|Sample|36|0.48|15|1.7|2.86083333333333|2.97662548630396|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Turbidity|Bottom|Sample|45|0.3|15.1|2.6|3.79288888888889|3.55864735680581|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Turbidity|Bottom|Sample|38|0.13|15|2.7|3.61736842105263|3.54524400426637|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Turbidity|Bottom|Sample|29|0.26|12.1|2|2.79379310344828|2.59177326746588|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Turbidity|Bottom|Sample|33|0.29|10|2|2.99272727272727|2.19369305157888|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Turbidity|Bottom|Sample|35|1.1|5.8|2.7|2.88285714285714|1.27105461406376|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Turbidity|Bottom|Sample|37|0.96|11|2.4|2.98810810810811|1.98015408749173|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Turbidity|Bottom|Sample|34|1|5.7|2.2|2.60588235294118|1.1969509689638|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Turbidity|Bottom|Sample|26|0.76|9.7|2.75|3.48692307692308|2.30619300012947|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Turbidity|Bottom|Sample|35|0.76|8|2.2|3.082|2.25498637011663|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Turbidity|Bottom|Sample|33|0.37|14|2.6|3.47121212121212|3.19997632567|476, 479, 5002
-19|Guana River Marsh Aquatic Preserve|1|Turbidity|Bottom|Sample|1|4|4|4|4||5002
-19|Guana River Marsh Aquatic Preserve|2|Turbidity|Bottom|Sample|9|3.2|16|5.2|7.31777777777778|4.50098260876938|5002, 5014
-19|Guana River Marsh Aquatic Preserve|3|Turbidity|Bottom|Sample|1|7.66|7.66|7.66|7.66||5002
-19|Guana River Marsh Aquatic Preserve|4|Turbidity|Bottom|Sample|6|2.6|11|7.388565|7.29618833333333|3.60635427721912|5002
-19|Guana River Marsh Aquatic Preserve|5|Turbidity|Bottom|Sample|9|1.4|50|6.3|12.0333333333333|14.9820726203019|5002, 5014
-19|Guana River Marsh Aquatic Preserve|6|Turbidity|Bottom|Sample|3|3.6|24|7.4|11.6666666666667|10.8486558307162|5002
-19|Guana River Marsh Aquatic Preserve|7|Turbidity|Bottom|Sample|7|2.4|16|9.63|9.46142857142857|4.99443833536007|5002, 5014
-19|Guana River Marsh Aquatic Preserve|8|Turbidity|Bottom|Sample|6|7|20|13.6202|13.6234|5.35786574673162|5002
-19|Guana River Marsh Aquatic Preserve|9|Turbidity|Bottom|Sample|5|1.5|37|13|17|15.4636670941921|5014
-19|Guana River Marsh Aquatic Preserve|10|Turbidity|Bottom|Sample|6|6.5|27|14.3|16.0166666666667|7.38116973566295|5002, 5014
-19|Guana River Marsh Aquatic Preserve|11|Turbidity|Bottom|Sample|5|2.65|18|11|10.33|6.13347373027716|5002, 5014
-19|Guana River Marsh Aquatic Preserve|12|Turbidity|Bottom|Sample|8|0.65|11|6.15|6.29375|4.14008604983037|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|Turbidity|Bottom|Sample|15|1|6.9|2|3.06666666666667|1.8626657804136|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|Turbidity|Bottom|Sample|19|1.2|16|2.97|4.9721052631579|4.44832125506961|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|Turbidity|Bottom|Sample|26|1|40.8|3.7|5.75427884615385|7.62828558862571|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|Turbidity|Bottom|Sample|20|1.1|14|4.55|5.696424|3.66489533476943|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|Turbidity|Bottom|Sample|23|1.4|50|4.6|7.28173913043478|9.93699408188408|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|Turbidity|Bottom|Sample|16|0.78|24|5.45|8.79875|7.30552473588767|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|Turbidity|Bottom|Sample|27|1.4|47|4.5|8.37777777777778|9.59644699207967|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|Turbidity|Bottom|Sample|20|0.7|21.3|5.35|8.0075|6.43265262056347|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|Turbidity|Bottom|Sample|24|1.5|37|5.865|8.1425|8.39900524648216|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|Turbidity|Bottom|Sample|26|0.2|27|5.45|7.97692307692308|6.69025008156243|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|Turbidity|Bottom|Sample|18|1.8|18|4.05|6.03333333333333|4.64859244983962|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|Turbidity|Bottom|Sample|17|0.65|18.2|4.1|5.85939294117647|4.42386729738213|4054, 5002, 5014
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|1|Turbidity|Bottom|Sample|14|1.2|8.8|2.3|3.187025|2.24854459655317|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2|Turbidity|Bottom|Sample|20|0.64|11|3.335|3.787809|2.88797037984865|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3|Turbidity|Bottom|Sample|19|1.2|4.7471|2.8|2.84461052631579|1.12498292562585|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|4|Turbidity|Bottom|Sample|23|0.8|10.1|3.6|4.05218739130435|2.45539742245568|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5|Turbidity|Bottom|Sample|29|0.8|8.1|2.8|3.36119344827586|1.9653604971649|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|6|Turbidity|Bottom|Sample|19|0.90445|7.8|2.4|3.04480789473684|1.92286204814183|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|7|Turbidity|Bottom|Sample|23|0.42|5.3|2|2.34869565217391|1.24096481653967|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|8|Turbidity|Bottom|Sample|19|0.15561|8.7|2.4|2.82283105263158|1.974665691849|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|9|Turbidity|Bottom|Sample|16|0.9|12|3.9|4.6|3.06202547344074|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|10|Turbidity|Bottom|Sample|19|1.4|12|3|4.19210526315789|2.8496716749427|540, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|11|Turbidity|Bottom|Sample|14|1.9|9.2|2.95|3.5|2.04826380512487|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|12|Turbidity|Bottom|Sample|15|0.37301|8.9|3|3.737534|2.28672926817134|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2|Turbidity|Bottom|Sample|1|2.3|2.3|2.3|2.3||5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|5|Turbidity|Bottom|Sample|1|0.93848|0.93848|0.93848|0.93848||5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|6|Turbidity|Bottom|Sample|1|1.2|1.2|1.2|1.2||5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|7|Turbidity|Bottom|Sample|5|0.88|10.39016|2.207|3.535432|3.90205960655652|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|9|Turbidity|Bottom|Sample|2|2.4|2.7|2.55|2.55|0.212132034355964|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|10|Turbidity|Bottom|Sample|2|3.6|4|3.8|3.8|0.282842712474619|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|11|Turbidity|Bottom|Sample|1|2.6|2.6|2.6|2.6||5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|12|Turbidity|Bottom|Sample|1|1.48|1.48|1.48|1.48||5002
-25|Lemon Bay Aquatic Preserve|1|Turbidity|Bottom|Sample|4|1.1|11|3.6|4.825|4.2944731923718|476, 479
-25|Lemon Bay Aquatic Preserve|2|Turbidity|Bottom|Sample|3|1.8|3.8|2.2|2.6|1.05830052442584|476, 479
-25|Lemon Bay Aquatic Preserve|3|Turbidity|Bottom|Sample|6|2.4|7.5|3.65|4.1|1.75954539583382|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|4|Turbidity|Bottom|Sample|3|1.2|18|2.8|7.33333333333333|9.27218061371398|479, 5002
-25|Lemon Bay Aquatic Preserve|5|Turbidity|Bottom|Sample|4|3.4|8.9|6|6.075|2.82651139510646|479, 5002
-25|Lemon Bay Aquatic Preserve|6|Turbidity|Bottom|Sample|3|1.7|5.1|3|3.26666666666667|1.7156145643277|479
-25|Lemon Bay Aquatic Preserve|7|Turbidity|Bottom|Sample|6|2.5|3.3|2.6|2.73333333333333|0.320416395751944|479, 5002
-25|Lemon Bay Aquatic Preserve|8|Turbidity|Bottom|Sample|10|2.2|11|3.3|4.36|2.66258020223492|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|9|Turbidity|Bottom|Sample|6|1.3|3.6|2.5|2.38333333333333|0.832866535926775|476, 479
-25|Lemon Bay Aquatic Preserve|10|Turbidity|Bottom|Sample|6|1.2|4.8|3.45|3.25|1.17601020403736|479, 5002
-25|Lemon Bay Aquatic Preserve|11|Turbidity|Bottom|Sample|13|1.7|7|3.8|3.61538461538462|1.62933839018897|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|12|Turbidity|Bottom|Sample|9|0.55|5.8|2|2.33888888888889|1.51405452712612|476, 479, 5002
-48|Nature Coast Aquatic Preserve|1|Turbidity|Bottom|Sample|7|0.6|3.84|2.35|2.16285714285714|1.14167587761317|479, 5002
-48|Nature Coast Aquatic Preserve|2|Turbidity|Bottom|Sample|1|0.5|0.5|0.5|0.5||5002
-48|Nature Coast Aquatic Preserve|3|Turbidity|Bottom|Sample|2|0.5|2.8|1.65|1.65|1.62634559672906|5002
-48|Nature Coast Aquatic Preserve|4|Turbidity|Bottom|Sample|11|0.59|4|0.98|1.45636363636364|1.2139215191047|479, 5002
-48|Nature Coast Aquatic Preserve|5|Turbidity|Bottom|Sample|1|0.5|0.5|0.5|0.5||5002
-48|Nature Coast Aquatic Preserve|6|Turbidity|Bottom|Sample|4|0.6|1.5|1|1.025|0.442530601578392|5002
-48|Nature Coast Aquatic Preserve|7|Turbidity|Bottom|Sample|10|0.55|3.8|2.685|2.534|1.04196609029917|479, 5002
-48|Nature Coast Aquatic Preserve|8|Turbidity|Bottom|Sample|3|1.16|1.3|1.18|1.21333333333333|0.0757187779440037|479, 5002
-48|Nature Coast Aquatic Preserve|9|Turbidity|Bottom|Sample|1|1.2|1.2|1.2|1.2||5002
-48|Nature Coast Aquatic Preserve|10|Turbidity|Bottom|Sample|7|0.73|6.2|2.98|2.88571428571429|1.9193389238907|479, 5002
-48|Nature Coast Aquatic Preserve|11|Turbidity|Bottom|Sample|1|0.43|0.43|0.43|0.43||479
-48|Nature Coast Aquatic Preserve|12|Turbidity|Bottom|Sample|1|1.1|1.1|1.1|1.1||5002
-34|Pine Island Sound Aquatic Preserve|1|Turbidity|Bottom|Sample|4|1.6|8.2|1.85|3.375|3.22115403750478|5002
-34|Pine Island Sound Aquatic Preserve|2|Turbidity|Bottom|Sample|7|1|3.2|2.3|2.29428571428571|0.830398642076145|476, 5002
-34|Pine Island Sound Aquatic Preserve|3|Turbidity|Bottom|Sample|11|0.8|8.6|3.5|3.81818181818182|2.1132052346226|476, 5002
-34|Pine Island Sound Aquatic Preserve|4|Turbidity|Bottom|Sample|5|0.16|3|2.1|1.952|1.06701452661152|476, 5002
-34|Pine Island Sound Aquatic Preserve|5|Turbidity|Bottom|Sample|3|0.8|2.09|1|1.29666666666667|0.694286204193439|509, 5002
-34|Pine Island Sound Aquatic Preserve|6|Turbidity|Bottom|Sample|1|1.1|1.1|1.1|1.1||476
-34|Pine Island Sound Aquatic Preserve|7|Turbidity|Bottom|Sample|10|1.4|4.5|2.2|2.608|1.04252684484488|5002
-34|Pine Island Sound Aquatic Preserve|8|Turbidity|Bottom|Sample|5|0.75|4.7|1.5|2.17|1.58808060248843|476, 5002
-34|Pine Island Sound Aquatic Preserve|9|Turbidity|Bottom|Sample|6|0.8|4.3|1.35|1.775|1.31367804274868|476, 5002
-34|Pine Island Sound Aquatic Preserve|10|Turbidity|Bottom|Sample|6|1|2.8|2.1175|1.93916666666667|0.744583216750597|476, 509, 5002
-34|Pine Island Sound Aquatic Preserve|11|Turbidity|Bottom|Sample|3|0.58|14|2.8|5.79333333333333|7.19333951189108|5002
-34|Pine Island Sound Aquatic Preserve|12|Turbidity|Bottom|Sample|7|1|8.8|1.6|2.71428571428571|2.78473731342148|476, 5002
-35|Pinellas County Aquatic Preserve|1|Turbidity|Bottom|Sample|14|0.5|11|1.85|2.67857142857143|2.70872623241955|5002
-35|Pinellas County Aquatic Preserve|2|Turbidity|Bottom|Sample|25|0.7|16|3.5|5.9616|5.16986756761396|5002
-35|Pinellas County Aquatic Preserve|3|Turbidity|Bottom|Sample|15|1.4|8.8|3.9|4|2.2887925700184|5002
-35|Pinellas County Aquatic Preserve|4|Turbidity|Bottom|Sample|9|2.1|21|2.8|5.6|6.26637853947557|5002
-35|Pinellas County Aquatic Preserve|5|Turbidity|Bottom|Sample|24|0.66|23|3.85|4.53583333333333|4.52146947704881|5002
-35|Pinellas County Aquatic Preserve|6|Turbidity|Bottom|Sample|14|0.8|14|3.55|4.83571428571429|3.65462975981407|5002
-35|Pinellas County Aquatic Preserve|7|Turbidity|Bottom|Sample|18|1|16|4.9|4.70555555555556|3.6674197087682|5002
-35|Pinellas County Aquatic Preserve|8|Turbidity|Bottom|Sample|24|1.5|8.3|2.6|3.3625|1.95644142347229|5002
-35|Pinellas County Aquatic Preserve|9|Turbidity|Bottom|Sample|20|0.4|26.3|4|5.325|5.39462451744424|5002
-35|Pinellas County Aquatic Preserve|10|Turbidity|Bottom|Sample|10|0.32|4.9|2.5|2.572|1.44031478040971|5002
-35|Pinellas County Aquatic Preserve|11|Turbidity|Bottom|Sample|7|1.6|3.6|2.7|2.71428571428571|0.674360367134594|5002
-35|Pinellas County Aquatic Preserve|12|Turbidity|Bottom|Sample|24|0.8|10|2.7|3.62083333333333|2.64574788747113|5002
+4|Banana River Aquatic Preserve|1|Turbidity|Bottom|Sample|7|0.8|6.17275|4.2|3.86753571428571|1.83521184306569|5002
+4|Banana River Aquatic Preserve|2|Turbidity|Bottom|Sample|3|1.26|4.00409|2.74206|2.66871666666667|1.37351443947027|5002
+4|Banana River Aquatic Preserve|3|Turbidity|Bottom|Sample|3|1.17639|2.12375|1.95233|1.75082333333333|0.504803372545522|5002
+4|Banana River Aquatic Preserve|4|Turbidity|Bottom|Sample|4|1.00813|2.01667|1.28247|1.397435|0.44016994858047|5002
+4|Banana River Aquatic Preserve|5|Turbidity|Bottom|Sample|3|1.03224|4.0253|1.75648|2.27134|1.56154175595787|5002
+4|Banana River Aquatic Preserve|6|Turbidity|Bottom|Sample|4|1.50151|2.05434|1.666165|1.722045|0.262167848333849|5002
+4|Banana River Aquatic Preserve|7|Turbidity|Bottom|Sample|2|0.5|2.66866|1.58433|1.58433|1.53347419208802|5002
+4|Banana River Aquatic Preserve|8|Turbidity|Bottom|Sample|4|0.5|2.09056|1.46255|1.378915|0.657226837172677|5002
+4|Banana River Aquatic Preserve|9|Turbidity|Bottom|Sample|2|8.13798|20.38341|14.260695|14.260695|8.65882659154519|5002
+4|Banana River Aquatic Preserve|10|Turbidity|Bottom|Sample|1|47.10395|47.10395|47.10395|47.10395||5002
+4|Banana River Aquatic Preserve|11|Turbidity|Bottom|Sample|1|56.73264|56.73264|56.73264|56.73264||5002
+4|Banana River Aquatic Preserve|12|Turbidity|Bottom|Sample|2|1.8|14.83871|8.319355|8.319355|9.21976025892485|5002
+5|Big Bend Seagrasses Aquatic Preserve|1|Turbidity|Bottom|Sample|8|0.55|8.8|1.45|2.25|2.71332689831927|5002
+5|Big Bend Seagrasses Aquatic Preserve|2|Turbidity|Bottom|Sample|6|0.5|5.21016|2.587785|2.930955|1.98883165594024|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|3|Turbidity|Bottom|Sample|9|0.2|3.2|1|1.36418777777778|1.10372817638422|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|4|Turbidity|Bottom|Sample|8|0.35|9.9|2.2|4.54375|4.3041041460448|5002
+5|Big Bend Seagrasses Aquatic Preserve|5|Turbidity|Bottom|Sample|3|4.7|8.9|5.6|6.4|2.2113344387496|5002
+5|Big Bend Seagrasses Aquatic Preserve|6|Turbidity|Bottom|Sample|6|0.5|3.7|2.25|2.21666666666667|1.07594919334821|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|7|Turbidity|Bottom|Sample|7|0.35|2.3|1.5|1.43571428571429|0.597713898752492|5002
+5|Big Bend Seagrasses Aquatic Preserve|8|Turbidity|Bottom|Sample|4|2.2|3.3|2.7|2.725|0.457347424467075|5002
+5|Big Bend Seagrasses Aquatic Preserve|9|Turbidity|Bottom|Sample|9|0.05|2.9|2.1|1.75463666666667|1.00844688164524|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|10|Turbidity|Bottom|Sample|9|0.2|9.1|0.55|2.05555555555556|2.99107468609157|5002
+5|Big Bend Seagrasses Aquatic Preserve|11|Turbidity|Bottom|Sample|12|0.5|5.9|2.3|2.515|1.37714130786139|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|12|Turbidity|Bottom|Sample|8|0.5|4.1|1.9|2.32320125|1.34371152771969|477, 5002
+6|Biscayne Bay Aquatic Preserve|1|Turbidity|Bottom|Sample|4|0.29|0.43|0.4|0.38|0.0616441400296898|5002
+6|Biscayne Bay Aquatic Preserve|2|Turbidity|Bottom|Sample|3|0.12|1|0.9|0.673333333333333|0.481802172404124|5002
+6|Biscayne Bay Aquatic Preserve|3|Turbidity|Bottom|Sample|4|0.3|1.2|0.705|0.7275|0.376419535447706|5002
+6|Biscayne Bay Aquatic Preserve|4|Turbidity|Bottom|Sample|6|0.6|2.1|0.61|0.92|0.599332962550868|5002
+6|Biscayne Bay Aquatic Preserve|5|Turbidity|Bottom|Sample|7|0.1|1.4|0.7|0.642857142857143|0.407664661444276|5002
+6|Biscayne Bay Aquatic Preserve|6|Turbidity|Bottom|Sample|6|0.47|1.9|0.7|0.95|0.584944441806228|5002
+6|Biscayne Bay Aquatic Preserve|7|Turbidity|Bottom|Sample|4|0.3|0.83|0.65|0.6075|0.225591814272297|5002
+6|Biscayne Bay Aquatic Preserve|8|Turbidity|Bottom|Sample|5|0.2|2|0.9|0.902|0.725272362633515|5002
+6|Biscayne Bay Aquatic Preserve|9|Turbidity|Bottom|Sample|5|0.21|1.1|0.6|0.582|0.353723055510946|5002
+6|Biscayne Bay Aquatic Preserve|10|Turbidity|Bottom|Sample|9|0.19|2.9|0.6|0.876666666666667|0.814647162887099|5002
+6|Biscayne Bay Aquatic Preserve|11|Turbidity|Bottom|Sample|7|0.19|1.4|0.5|0.684285714285714|0.411981275580058|5002
+6|Biscayne Bay Aquatic Preserve|12|Turbidity|Bottom|Sample|5|0.4|1.6|0.6|0.78|0.47116875957559|5002
+9|Cape Haze Aquatic Preserve|1|Turbidity|Bottom|Sample|4|1|3.1|1.8|1.925|0.869386757049665|479
+9|Cape Haze Aquatic Preserve|2|Turbidity|Bottom|Sample|4|1.52|2.2|1.805|1.8325|0.28998563182797|479
+9|Cape Haze Aquatic Preserve|3|Turbidity|Bottom|Sample|1|1.3|1.3|1.3|1.3||479
+9|Cape Haze Aquatic Preserve|4|Turbidity|Bottom|Sample|4|1.1|2.6|1.65|1.75|0.635085296108588|479
+9|Cape Haze Aquatic Preserve|5|Turbidity|Bottom|Sample|7|2.1|13|5.1|5.85714285714286|3.74382030500804|479
+9|Cape Haze Aquatic Preserve|6|Turbidity|Bottom|Sample|2|1.4|2.4|1.9|1.9|0.707106781186548|479
+9|Cape Haze Aquatic Preserve|7|Turbidity|Bottom|Sample|7|2.1|6.4|2.6|3.24285714285714|1.4717983816374|479, 5002
+9|Cape Haze Aquatic Preserve|8|Turbidity|Bottom|Sample|5|1.9|10|3.6|4.81|3.47318297819162|479
+9|Cape Haze Aquatic Preserve|9|Turbidity|Bottom|Sample|4|1.5|4.5|1.85|2.425|1.40801278403287|479
+9|Cape Haze Aquatic Preserve|10|Turbidity|Bottom|Sample|8|0.65|6.3|1.48|2.68125|2.25315294959879|479
+9|Cape Haze Aquatic Preserve|11|Turbidity|Bottom|Sample|6|1.08|4.1|1.51|1.98333333333333|1.13401352137735|479
+9|Cape Haze Aquatic Preserve|12|Turbidity|Bottom|Sample|5|2|9.3|4.1|4.38|2.96428743545561|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Turbidity|Bottom|Sample|67|0.33|84|1.88|3.67014925373134|10.1537408381192|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Turbidity|Bottom|Sample|48|0.48|15|1.755|2.650625|2.63560756954413|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Turbidity|Bottom|Sample|64|0.3|15.1|2.55|3.450625|3.1577839703144|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Turbidity|Bottom|Sample|45|0.13|15|2.8|3.798|3.61283293527141|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Turbidity|Bottom|Sample|51|0.26|12.1|1.63|2.56421568627451|2.27733097562674|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Turbidity|Bottom|Sample|57|0.29|17|2.5|3.09105263157895|2.77473981033134|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Turbidity|Bottom|Sample|53|0.98|5.8|2.4|2.70641509433962|1.15596129549862|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Turbidity|Bottom|Sample|60|0.9|15|2.725|3.201|2.27471339226487|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Turbidity|Bottom|Sample|57|1|8.2|2.5|3.04245614035088|1.59821248442233|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Turbidity|Bottom|Sample|37|0.6|9.7|2.4|3.02378378378378|2.22053591047966|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Turbidity|Bottom|Sample|57|0.4|10.2|2|2.7659649122807|2.28448795423232|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Turbidity|Bottom|Sample|51|0.37|14|2.6|3.39137254901961|2.92915006075677|476, 479, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|Turbidity|Bottom|Sample|11|0.65|10.4|2.3|3.08636363636364|2.70204468033848|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|Turbidity|Bottom|Sample|16|1.6|16|5.25|6.16875|4.30468252797656|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|Turbidity|Bottom|Sample|17|1.3|22|5.8|6.76470588235294|4.92213637261182|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|Turbidity|Bottom|Sample|24|1.4|11|4.35|4.82083333333333|2.20394491501167|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|Turbidity|Bottom|Sample|15|0.88|50|5|8.97866666666667|11.9962124181323|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|Turbidity|Bottom|Sample|10|2.3|24|8.4|9.32|6.67496150633928|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|Turbidity|Bottom|Sample|14|1.2|27|7.9|9.00714285714286|7.12227970047991|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|Turbidity|Bottom|Sample|16|0.6|20|3.9|6.6075|6.53040835884965|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|Turbidity|Bottom|Sample|18|1.5|37|6.25|9.04444444444444|9.34969154711233|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|Turbidity|Bottom|Sample|11|1.4|27|5.9|8.89090909090909|8.56124459940896|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|Turbidity|Bottom|Sample|13|2.7|18|5|7.26153846153846|4.85859006666517|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|Turbidity|Bottom|Sample|8|0.65|11|6.15|6.33125|4.10513071829457|5002, 5014
+29|Mosquito Lagoon Aquatic Preserve|1|Turbidity|Bottom|Sample|2|1.1|1.6|1.35|1.35|0.353553390593274|5002
+29|Mosquito Lagoon Aquatic Preserve|2|Turbidity|Bottom|Sample|11|0.1|4.5|1.6|1.99090909090909|1.29031356301834|5002
+29|Mosquito Lagoon Aquatic Preserve|3|Turbidity|Bottom|Sample|15|0.9|11.97387|2.7|3.13959133333333|2.57760210649595|5002
+29|Mosquito Lagoon Aquatic Preserve|4|Turbidity|Bottom|Sample|8|1.9|6.2|3.7|3.925|1.46653137904181|5002
+29|Mosquito Lagoon Aquatic Preserve|5|Turbidity|Bottom|Sample|9|2.4|7.5|5.4|5.38269888888889|1.79510061964813|5002
+29|Mosquito Lagoon Aquatic Preserve|6|Turbidity|Bottom|Sample|6|2.6|10.43928|8.55|7.57321333333333|2.95015951315631|5002
+29|Mosquito Lagoon Aquatic Preserve|7|Turbidity|Bottom|Sample|9|3.4501|12|8.3|7.56112222222222|2.94932336891777|5002
+29|Mosquito Lagoon Aquatic Preserve|8|Turbidity|Bottom|Sample|8|3.4|14|7.056645|7.84922|3.43415610714731|5002
+29|Mosquito Lagoon Aquatic Preserve|9|Turbidity|Bottom|Sample|11|2.6|13|7.1|6.54545454545455|3.17564596148993|5002
+29|Mosquito Lagoon Aquatic Preserve|10|Turbidity|Bottom|Sample|17|3.6|16.5|6.7|8.04705882352941|3.73850198058307|5002
+29|Mosquito Lagoon Aquatic Preserve|11|Turbidity|Bottom|Sample|8|3|13.47031|3.7|5.82128875|4.09250237471067|5002
+29|Mosquito Lagoon Aquatic Preserve|12|Turbidity|Bottom|Sample|8|1.8|6.6|3.5|3.825|1.61577049289628|5002
 37|Rocky Bayou State Park Aquatic Preserve|1|Turbidity|Bottom|Sample|6|0.1|16.5|1.65|6.1|8.05108688314814|537
-37|Rocky Bayou State Park Aquatic Preserve|2|Turbidity|Bottom|Sample|11|0|16|0.9|2.89090909090909|4.76601606070616|537
+37|Rocky Bayou State Park Aquatic Preserve|2|Turbidity|Bottom|Sample|10|0|16|0.55|2.99|5.01186370303281|537
 37|Rocky Bayou State Park Aquatic Preserve|3|Turbidity|Bottom|Sample|8|0|28.1|1.65|6.4|10.1949567364037|537
 37|Rocky Bayou State Park Aquatic Preserve|4|Turbidity|Bottom|Sample|10|0|40.6|1.05|6.96|13.4243725282703|537
 37|Rocky Bayou State Park Aquatic Preserve|5|Turbidity|Bottom|Sample|9|0|44.1|1.4|11.5222222222222|18.4501204452558|537
@@ -186,12 +95,3 @@ AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|
 37|Rocky Bayou State Park Aquatic Preserve|10|Turbidity|Bottom|Sample|10|0|6.7|2.75|2.68|2.36116731959239|537
 37|Rocky Bayou State Park Aquatic Preserve|11|Turbidity|Bottom|Sample|6|0|6|0.4|1.31666666666667|2.34300377009229|537
 37|Rocky Bayou State Park Aquatic Preserve|12|Turbidity|Bottom|Sample|8|0|14.2|2.35|4.4625|5.45525631190427|537
-39|Rookery Bay National Estuarine Research Reserve|1|Turbidity|Bottom|Sample|6|0.39|3.7|3.2|2.6125|1.37830239787936|509, 5002
-39|Rookery Bay National Estuarine Research Reserve|2|Turbidity|Bottom|Sample|2|1|14|7.5|7.5|9.19238815542512|5002
-39|Rookery Bay National Estuarine Research Reserve|3|Turbidity|Bottom|Sample|3|1.1|10|9.2|6.76666666666667|4.92375195692607|5002
-39|Rookery Bay National Estuarine Research Reserve|4|Turbidity|Bottom|Sample|5|0.66|154|14.5|38.472|64.8429866677962|5002
-39|Rookery Bay National Estuarine Research Reserve|5|Turbidity|Bottom|Sample|2|1.565|4.85|3.2075|3.2075|2.32284577619781|509
-39|Rookery Bay National Estuarine Research Reserve|6|Turbidity|Bottom|Sample|1|8.685|8.685|8.685|8.685||509
-39|Rookery Bay National Estuarine Research Reserve|7|Turbidity|Bottom|Sample|1|8.555|8.555|8.555|8.555||509
-39|Rookery Bay National Estuarine Research Reserve|9|Turbidity|Bottom|Sample|5|0.71|16.7|4.99|6.9|6.50181128609559|5002
-39|Rookery Bay National Estuarine Research Reserve|10|Turbidity|Bottom|Sample|1|12|12|12|12||509

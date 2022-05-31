@@ -1,4 +1,4 @@
-AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
+AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Data|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
 1|Alligator Harbor Aquatic Preserve|2001|6|Colored dissolved organic matter, CDOM|Surface|Field|6|4|20|9.5|11.1666666666667|5.81090928054007|514
 1|Alligator Harbor Aquatic Preserve|2001|7|Colored dissolved organic matter, CDOM|Surface|Field|6|9|20|12|13.8333333333333|4.21505239192429|514
 1|Alligator Harbor Aquatic Preserve|2001|9|Colored dissolved organic matter, CDOM|Surface|Field|6|9|24|11.5|13|5.69209978830308|514
@@ -735,7 +735,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N|Min
 48|Nature Coast Aquatic Preserve|2003|12|Colored dissolved organic matter, CDOM|Surface|Field|37|9|24|12|12.6756756756757|2.91599091270926|479
 48|Nature Coast Aquatic Preserve|2004|1|Colored dissolved organic matter, CDOM|Surface|Field|37|6.936|20.2198|9.8434|10.5946594594595|3.13750606156647|479
 48|Nature Coast Aquatic Preserve|2004|2|Colored dissolved organic matter, CDOM|Surface|Field|37|6.4171|37.9011|9.3254|12.8027297297297|7.17714735492935|479
-48|Nature Coast Aquatic Preserve|2004|3|Colored dissolved organic matter, CDOM|Surface|Field|37|6|41|10|12.4054054054054|6.2825130298289|479
+48|Nature Coast Aquatic Preserve|2004|3|Colored dissolved organic matter, CDOM|Surface|Field|37|6|41|10|12.4054054054054|6.28251302982891|479
 48|Nature Coast Aquatic Preserve|2004|4|Colored dissolved organic matter, CDOM|Surface|Field|37|2|28|8|10.2702702702703|6.31421961681484|479
 48|Nature Coast Aquatic Preserve|2004|5|Colored dissolved organic matter, CDOM|Surface|Field|37|5|27|10|11.8108108108108|5.76790852638708|479
 48|Nature Coast Aquatic Preserve|2004|6|Colored dissolved organic matter, CDOM|Surface|Field|37|0|25|5|8|7.52772652709081|479

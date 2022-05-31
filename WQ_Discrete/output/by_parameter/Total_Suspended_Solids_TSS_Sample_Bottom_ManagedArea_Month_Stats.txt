@@ -1,81 +1,65 @@
 AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
-3|Apalachicola National Estuarine Research Reserve|1|Total Suspended Solids, TSS|Bottom|Sample|3|5|17|9|10.3333333333333|6.11010092660779|355, 5002
-3|Apalachicola National Estuarine Research Reserve|2|Total Suspended Solids, TSS|Bottom|Sample|1|20|20|20|20||355
-3|Apalachicola National Estuarine Research Reserve|5|Total Suspended Solids, TSS|Bottom|Sample|1|3|3|3|3||355
-3|Apalachicola National Estuarine Research Reserve|6|Total Suspended Solids, TSS|Bottom|Sample|4|4|46|17.5|21.25|17.7270979012358|355, 5002
-3|Apalachicola National Estuarine Research Reserve|8|Total Suspended Solids, TSS|Bottom|Sample|2|5|6|5.5|5.5|0.707106781186548|5002
-3|Apalachicola National Estuarine Research Reserve|9|Total Suspended Solids, TSS|Bottom|Sample|2|7|14|10.5|10.5|4.94974746830583|355, 5002
-3|Apalachicola National Estuarine Research Reserve|10|Total Suspended Solids, TSS|Bottom|Sample|4|4|22|18.5|15.75|8.0983537421709|355, 5002
-3|Apalachicola National Estuarine Research Reserve|11|Total Suspended Solids, TSS|Bottom|Sample|2|2|6|4|4|2.82842712474619|5002
-3|Apalachicola National Estuarine Research Reserve|12|Total Suspended Solids, TSS|Bottom|Sample|1|9|9|9|9||5002
-5|Big Bend Seagrasses Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|9|2|23|4|5.44444444444445|6.71027404639913|5002
-5|Big Bend Seagrasses Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|14|2|4|4|3.57142857142857|0.755928946018454|5002
-5|Big Bend Seagrasses Aquatic Preserve|3|Total Suspended Solids, TSS|Bottom|Sample|15|2|11|4|3.8|2.30527345759364|5002
-5|Big Bend Seagrasses Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|16|2|8|4|3.6875|1.44769932421526|5002
-5|Big Bend Seagrasses Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|11|2|14|4|5.18181818181818|3.42981579150198|5002
-5|Big Bend Seagrasses Aquatic Preserve|6|Total Suspended Solids, TSS|Bottom|Sample|16|2|7|4|3.5625|1.36473440639562|5002
-5|Big Bend Seagrasses Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|19|0.6|10|3|3.34736842105263|2.21694695497425|5002
-5|Big Bend Seagrasses Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|8|2|5|4|3.75|1.03509833901353|5002
-5|Big Bend Seagrasses Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|14|2|7|3.5|3.64285714285714|1.44686094473747|5002
-5|Big Bend Seagrasses Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|19|2|13|4|4.42105263157895|2.52357307257618|5002
-5|Big Bend Seagrasses Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|8|2|6980|5|876.625|2466.13688285951|5002
-5|Big Bend Seagrasses Aquatic Preserve|12|Total Suspended Solids, TSS|Bottom|Sample|9|3|8|4|4.22222222222222|1.48136573621927|5002
-6|Biscayne Bay Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|35|0.34|14.8|4|4.15857142857143|2.55495843509088|3, 5026
-6|Biscayne Bay Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|27|0|30|3|4.33148148148148|6.99942014285343|3, 5026
-6|Biscayne Bay Aquatic Preserve|3|Total Suspended Solids, TSS|Bottom|Sample|23|0|9|3|2.94130434782609|1.87563396397016|3, 5026
-6|Biscayne Bay Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|39|0|16|5|5.61589743589744|3.19246457998627|3, 5026
-6|Biscayne Bay Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|34|0.75|20|3.5|5.47058823529412|4.48798256706526|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|6|Total Suspended Solids, TSS|Bottom|Sample|49|0|11|3|3.99612244897959|2.40112110648905|3, 5026
-6|Biscayne Bay Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|25|1.32|11|3|4.4128|2.41455917301689|3, 5026
-6|Biscayne Bay Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|42|0|22|3|3.6297619047619|3.18090835936977|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|36|0|11|3|3.32694444444444|2.59203595592835|3, 5026
-6|Biscayne Bay Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|36|0|12|3|3.31611111111111|2.32569286484422|3, 5026
-6|Biscayne Bay Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|34|0|10|3|3.78941176470588|1.85632569826505|3, 5026
-6|Biscayne Bay Aquatic Preserve|12|Total Suspended Solids, TSS|Bottom|Sample|34|3|12|3|3.57941176470588|1.63369434694845|3, 5026
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|39|2|27.4|6.3|8.37384615384615|5.92316310205985|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|37|2.01|20.5|5.85|6.75918918918919|3.72856419966064|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Total Suspended Solids, TSS|Bottom|Sample|48|2|30.2|8.16|9.62041666666667|5.97636727286249|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|36|2.16|42.8|8.355|11.3366666666667|9.38662483080504|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|22|2|16.5|6.675|6.96136363636364|3.90600794314964|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Total Suspended Solids, TSS|Bottom|Sample|27|2|19.8|7|7.56740740740741|4.48290392885322|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|39|2.8|29.2|7.4|8.80384615384615|4.94226062454942|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|39|1.5|24|7.2|7.68435897435897|4.57932355086816|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|40|1.67|15.9|4.92|5.425|3.13327550410355|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|31|1.44|26.1|6.51|8.21193548387097|5.98781675257064|476, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|41|1.44|77.1|6.42|10.1163414634146|12.9811678511792|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Total Suspended Solids, TSS|Bottom|Sample|38|2|20.6|7.465|8.62631578947369|4.76941348371714|479, 513, 5002
-19|Guana River Marsh Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|1|42|42|42|42||4054
-19|Guana River Marsh Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|6|6|36|17|17.6666666666667|10.3666130759601|4054, 5002, 5014
-19|Guana River Marsh Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|1|39|39|39|39||4054
-19|Guana River Marsh Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|3|24|126|29|59.6666666666667|57.5007246331151|4054, 5014
-19|Guana River Marsh Aquatic Preserve|6|Total Suspended Solids, TSS|Bottom|Sample|6|15|105|34|52|40.6841492475878|4054, 5002
-19|Guana River Marsh Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|9|4|38|16|17|10.9544511501033|4054, 5014
-19|Guana River Marsh Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|3|13|32|23.8|22.9333333333333|9.52960299977566|4054, 5002
-19|Guana River Marsh Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|7|3|77|20|27.3428571428571|27.0633120135518|4054, 5014
-19|Guana River Marsh Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|10|6|34|12.5|15.4|9.0086378301914|4054, 5002, 5014
-19|Guana River Marsh Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|7|9|47|23.8|23.8285714285714|12.4286918439706|4054, 5002, 5014
-19|Guana River Marsh Aquatic Preserve|12|Total Suspended Solids, TSS|Bottom|Sample|8|2|25|9|12|8.315218406203|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|Total Suspended Solids, TSS|Bottom|Sample|11|7|67|22|25.8272727272727|18.8442081770018|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|Total Suspended Solids, TSS|Bottom|Sample|21|2|84.3|20|25.5095238095238|23.1093466969948|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|Total Suspended Solids, TSS|Bottom|Sample|6|6|31|15|16.3333333333333|9.72967967955095|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|Total Suspended Solids, TSS|Bottom|Sample|26|5|74|15.5|23.6230769230769|18.0710886820315|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|Total Suspended Solids, TSS|Bottom|Sample|14|13|126|26.5|41.8785714285714|38.4572525634018|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|Total Suspended Solids, TSS|Bottom|Sample|16|3|113|71.95|58.20625|40.1485154354014|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|Total Suspended Solids, TSS|Bottom|Sample|20|2|78|24.5|30.41|22.6155489128957|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|Total Suspended Solids, TSS|Bottom|Sample|25|3|186|30|40.452|39.3989966031285|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|Total Suspended Solids, TSS|Bottom|Sample|22|2|82|19.5|25.0545454545455|23.5940615464939|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|Total Suspended Solids, TSS|Bottom|Sample|16|3|63.2|16.5|25.3625|20.4262861692151|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|Total Suspended Solids, TSS|Bottom|Sample|17|3.3|73.7|26|26.7117647058824|17.1104822533199|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|Total Suspended Solids, TSS|Bottom|Sample|18|4|102|12.5|19.3333333333333|22.9167290551735|4054, 5014
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|21|1.1|25|4.8|5.96666666666667|5.28217127073075|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|4|2.5|6.3|4.3|4.35|1.62788205960997|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|3|Total Suspended Solids, TSS|Bottom|Sample|36|1.6|24.4|4.9|6.09722222222222|4.5093227943331|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|11|1.4|7.9|3|3.7|2.24499443206437|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|40|1.4|20|5.85|7.755|5.17335134149655|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|6|Total Suspended Solids, TSS|Bottom|Sample|5|1.6|9|5.2|5.14|3.06724632202893|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|31|1.2|40.4|4|6.03870967741936|7.36666715321363|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|15|1|5.6|3.5|3.55333333333333|1.48124786517829|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|28|1|20.2|3.25|5.29285714285714|4.36161103190676|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|13|1.1|25|4.2|8.05384615384615|7.43074865952453|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|23|1.4|20|4|4.92608695652174|3.87265675676676|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|12|Total Suspended Solids, TSS|Bottom|Sample|12|1|11|3.4|4.325|3.04962739899931|10000
+5|Big Bend Seagrasses Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|4|2|4|2|2.5|1|5002
+5|Big Bend Seagrasses Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|3|3|4|3|3.33333333333333|0.577350269189626|5002
+5|Big Bend Seagrasses Aquatic Preserve|3|Total Suspended Solids, TSS|Bottom|Sample|2|2|5|3.5|3.5|2.12132034355964|5002
+5|Big Bend Seagrasses Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|4|2|4|3|3|1.15470053837925|5002
+5|Big Bend Seagrasses Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|3|2|3|3|2.66666666666667|0.577350269189626|5002
+5|Big Bend Seagrasses Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|1|5|5|5|5||5002
+5|Big Bend Seagrasses Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|4|3|6|4|4.25|1.25830573921179|5002
+5|Big Bend Seagrasses Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|8|2|7|3|3.625|1.99553072067128|5002
+5|Big Bend Seagrasses Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|1|2|2|2|2||5002
+9|Cape Haze Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|6|7|28.6|10|13.0333333333333|8.23010733020334|479
+9|Cape Haze Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|4|6|8.11|7.725|7.39|0.945339445208263|479
+9|Cape Haze Aquatic Preserve|3|Total Suspended Solids, TSS|Bottom|Sample|6|7.5|30.5|17.9|20.3166666666667|8.84090870140998|479
+9|Cape Haze Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|5|8|24.1|10.9|12.54|6.61536091230101|479
+9|Cape Haze Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|7|7.33|20.9|11.6|12.2957142857143|5.14619230481093|479
+9|Cape Haze Aquatic Preserve|6|Total Suspended Solids, TSS|Bottom|Sample|5|4|37.1|10|13.64|13.6909824337043|479
+9|Cape Haze Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|10|2.87|29.2|9.805|12.422|9.30141184026501|479
+9|Cape Haze Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|2|12.8|14.5|13.65|13.65|1.20208152801713|479
+9|Cape Haze Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|7|2.89|42.3|5.1|11|14.1472388354289|479
+9|Cape Haze Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|10|1.6|13.6|3.945|5.886|4.0265513228513|479
+9|Cape Haze Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|8|1.33|29.7|5.485|8.69625|9.7476780202115|479
+9|Cape Haze Aquatic Preserve|12|Total Suspended Solids, TSS|Bottom|Sample|6|5.41|10.3|8.705|8.27833333333333|2.27894200599021|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|53|2.16|39.4|6.3|8.96566037735849|7.95883676981707|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|39|2.01|13.8|6.49|6.94076923076923|3.33679438400594|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Total Suspended Solids, TSS|Bottom|Sample|43|2|30.2|7.9|9.86674418604651|6.71015176924743|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|41|2|42.8|6.85|10.9914634146341|10.1515588854559|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|37|2.46|16.5|6.38|7.20864864864865|3.59167723290183|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Total Suspended Solids, TSS|Bottom|Sample|36|2.16|27.6|6.85|7.92944444444444|5.24602703791542|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|47|4|29.2|8.21|9.30468085106383|5.87656985540842|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|42|3|17.1|6.8|7.68380952380952|3.71332271979833|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|53|1.67|15.4|4.87|5.59320754716981|3.15886833045835|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|31|1.11|23.2|6.63|9.11903225806452|6.38944147524581|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|42|1.79|77.1|6.7|10.45|12.8135833034|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Total Suspended Solids, TSS|Bottom|Sample|34|3.33|25.4|7.465|9.02941176470588|5.25526687681264|479, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|Total Suspended Solids, TSS|Bottom|Sample|14|5|17|8|9.35714285714286|3.43303281162798|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|Total Suspended Solids, TSS|Bottom|Sample|16|2|86.3|6|16.08125|26.7394644361725|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|Total Suspended Solids, TSS|Bottom|Sample|9|4|59.3|10|15.1444444444444|16.8645420269208|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|Total Suspended Solids, TSS|Bottom|Sample|5|14|48.3|27.4|27.06|13.6984670675226|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|Total Suspended Solids, TSS|Bottom|Sample|11|15|126|43.3|50.4818181818182|34.4707649518202|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|Total Suspended Solids, TSS|Bottom|Sample|7|3|105|13|39.5714285714286|45.2616730536891|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|Total Suspended Solids, TSS|Bottom|Sample|8|4|50|20|21.125|14.4166322597993|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|Total Suspended Solids, TSS|Bottom|Sample|7|10|32|14|16.8571428571429|7.47057720725272|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|Total Suspended Solids, TSS|Bottom|Sample|8|3|77|16.5|22|23.089886468817|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|Total Suspended Solids, TSS|Bottom|Sample|21|3|34|13|14.7761904761905|8.58381644502635|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|Total Suspended Solids, TSS|Bottom|Sample|17|7|73.3|18|27.9411764705882|23.451680612046|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|Total Suspended Solids, TSS|Bottom|Sample|16|3|30|10|12.3125|7.95586785544691|4054, 5014
+33|Pellicer Creek Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|6|6|17|8.5|9.66666666666667|4.08248290463863|4054
+33|Pellicer Creek Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|9|2|48.7|8|11.8555555555556|14.1275538497568|4054, 5002
+33|Pellicer Creek Aquatic Preserve|3|Total Suspended Solids, TSS|Bottom|Sample|9|10|71.3|47.7|39|25.2184456301335|4054, 5002
+33|Pellicer Creek Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|2|32.3|35|33.65|33.65|1.90918830920368|4054
+33|Pellicer Creek Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|5|13|63.3|43.3|39.12|23.7429357915149|4054
+33|Pellicer Creek Aquatic Preserve|6|Total Suspended Solids, TSS|Bottom|Sample|2|0|6.7|3.35|3.35|4.73761543394987|4054
+33|Pellicer Creek Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|2|14|21|17.5|17.5|4.94974746830583|4054
+33|Pellicer Creek Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|13|3|41|14|16.1538461538462|10.7248632768764|4054, 5002
+33|Pellicer Creek Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|8|7|73.3|18.5|33.0875|29.8319309992306|4054
+33|Pellicer Creek Aquatic Preserve|12|Total Suspended Solids, TSS|Bottom|Sample|9|3|30|6|8.77777777777778|8.257992761225|4054
+43|St. Martins Marsh Aquatic Preserve|1|Total Suspended Solids, TSS|Bottom|Sample|4|2.76|3.43|3.25|3.1725|0.309663796183323|479
+43|St. Martins Marsh Aquatic Preserve|2|Total Suspended Solids, TSS|Bottom|Sample|6|2.81|4.19|3.095|3.31166666666667|0.591486827128607|479
+43|St. Martins Marsh Aquatic Preserve|4|Total Suspended Solids, TSS|Bottom|Sample|3|2.83|4.37|3.01|3.40333333333333|0.841981789193409|479
+43|St. Martins Marsh Aquatic Preserve|5|Total Suspended Solids, TSS|Bottom|Sample|3|1.87|4.64|2.36|2.95666666666667|1.4782534739798|479
+43|St. Martins Marsh Aquatic Preserve|7|Total Suspended Solids, TSS|Bottom|Sample|5|3.41|20.5|4.59|8.35|7.23842178931292|479
+43|St. Martins Marsh Aquatic Preserve|8|Total Suspended Solids, TSS|Bottom|Sample|4|3.28|6.92|5.065|5.0825|1.48710849189515|479
+43|St. Martins Marsh Aquatic Preserve|9|Total Suspended Solids, TSS|Bottom|Sample|2|3.07|3.15|3.11|3.11|0.0565685424949239|479
+43|St. Martins Marsh Aquatic Preserve|10|Total Suspended Solids, TSS|Bottom|Sample|5|3.75|7.43|4.25|4.784|1.51805138252959|479
+43|St. Martins Marsh Aquatic Preserve|11|Total Suspended Solids, TSS|Bottom|Sample|1|2.86|2.86|2.86|2.86||479

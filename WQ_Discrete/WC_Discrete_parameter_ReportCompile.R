@@ -2,13 +2,10 @@
 #parameter, relative depth, and activity type for WC data.
 
 #Load libraries
+library(data.table)
 library(knitr)
 library(readr)
 library(dplyr)
-
-#For use if WQ_Discrete is a subdirectory in the overall project folder
-wd_start <- getwd()
-setwd("WQ_Discrete")
 
 #Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
 APP_Plots <- TRUE
@@ -56,7 +53,6 @@ for (param_name in all_params){
    #Gets the file with the filename containing the desired parameter
    file_in <- list.files("data", pattern=param_name, full=TRUE)
    
-   
    #Since Dissolved_Oxygen will return both Dissolved_Oxygen and Dissolved_Oxygen_Saturation,
    #the if statement removes the entry for Dissolved_Oxygen_Saturation when trying to get Dissolved_Oxygen
    if(param_name=="Dissolved_Oxygen" & length(grep("Saturation", file_in))>0){
@@ -74,7 +70,8 @@ for (param_name in all_params){
       #Starts for loop that cycles through activity types.
       for (activity in all_activity){
          #Skips Field loops for parameters that only have Sample measurements
-         if ((param_name=="Total_Nitrogen" | param_name=="Total_Phosphorus" |
+         if ((param_name=="Chlorophyll_a_uncorrected_for_pheophytin" |
+              param_name=="Total_Nitrogen" | param_name=="Total_Phosphorus" |
               param_name=="Total_Suspended_Solids_TSS") & activity=="Field") {
             next
          #Skips Sample loops for parameters that only have Field measurements
@@ -96,8 +93,3 @@ for (param_name in all_params){
       }
    }
 }
-
-#Returns space to normal
-setwd(wd_start)
-rm(list = ls())
-gc()

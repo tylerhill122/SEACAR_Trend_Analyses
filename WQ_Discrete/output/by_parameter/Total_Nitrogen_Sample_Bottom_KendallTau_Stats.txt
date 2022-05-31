@@ -1,22 +1,49 @@
-AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|Independent|Median|N|EarliestYear|LatestYear|tau|p|SennSlope|SennIntercept|Trend
-2|Apalachicola Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.568|65|2000|2021|-0.0753|0.1112|-0.0178|-3.826|0
-3|Apalachicola National Estuarine Research Reserve|Total Nitrogen|Bottom|Sample|TRUE|0.5375|84|2000|2020|-0.0173|0.8334|0.00136666666666667|6.30816666666667|0
-4|Banana River Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|1.1245|35|2008|2021|0.5052|0.0515|0.0169769230769231|-47.6185964285715|0
-5|Big Bend Seagrasses Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.51|147|1990|2021|0.1184|0.1069|0.00699999999999999|-19.3246295454545|0
-6|Biscayne Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.3385|350|1997|2021|0.1301|0|0.019|-16.8255842105263|1
-8|Boca Ciega Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.54|132|1999|2021|0.4543|0|0.0133333333333333|-26.1592857142857|1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.3534|26|1994|2019|0.2273|1|0.010375|-40.0934850649351|0
-11|Cockroach Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.538|20|2000|2021|0.4118|0.0857|0.036|-69.1166571428572|0
-14|Estero Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.584|29|1992|2020|0.0133|1|0|-33.6022943181818|0
-15|Florida Keys National Marine Sanctuary|Total Nitrogen|Bottom|Sample|TRUE|0.129254845|8052|1995|2021|-0.0733|0|-0.000923836587301587|1.8081684785|-1
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.641|625|1996|2021|0.0775|0.004|0.00474999999999998|-7.96653312969926|1
-19|Guana River Marsh Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.557|69|1998|2021|0.122|0.4169|0.00238333333333334|-13.2301704634979|0
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Total Nitrogen|Bottom|Sample|TRUE|0.651|94|1998|2021|0.196|0.0103|0.0193588235294118|-46.6856090909091|1
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.69868|254|1997|2021|-0.2612|0|-0.0177774725274725|35.44453875|-1
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.59201|26|1997|2020|-0.4|0.1408|-0.0117311282051282|10.0011461538462|0
-25|Lemon Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.705|15|1999|2021|-0.2|0.7434|-0.0134615384615385|6.64461538461538|0
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.64|116|1992|2019|-0.1239|0.0127|-0.0373529411764706|10.57876825|-1
-28|Matlacha Pass Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.655|67|1999|2021|0.2164|0.0372|0.00855714285714286|-26.0038771929825|1
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.4327|24|1989|2021|0.0667|0.5403|0.0330768049155146|-11.03975|0
-48|Nature Coast Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.43|293|1997|2020|0.1413|0.0001|0.01|-19.735|1
-35|Pinellas County Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|0.58|187|1999|2021|-0.0429|0.3357|-0.00333333333333334|0.478035714285714|0
+AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
+1|Alligator Harbor Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|87|10|2001|2016|0.4|TRUE|-0.0965|0.0932|-0.014|16.9967857142857|0
+2|Apalachicola Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|87|9|2000|2020|||||||
+3|Apalachicola National Estuarine Research Reserve|Total Nitrogen|Bottom|Sample|FALSE|119|9|2000|2020|||||||
+4|Banana River Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|23|2|2020|2021|||||||
+5|Big Bend Seagrasses Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|18|7|1995|2021|||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+6|Biscayne Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|622|11|2000|2021|0.404|TRUE|-0.2443|0|-0.031|83.956375|-1
+8|Boca Ciega Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|2|2|1999|2001|||||||
+9|Cape Haze Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|100|12|2007|2021|0.5045|TRUE|0.1779|0.0551|0.015|-33.824|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|2|1|1994|1994|||||||
+11|Cockroach Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|5|4|2003|2014|||||||
+13|Coupon Bight Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+14|Estero Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|27|12|1994|2016|0.01|TRUE|0.697|0.0041|0.0283333333333333|-56.6283333333333|2
+15|Florida Keys National Marine Sanctuary|Total Nitrogen|Bottom|Sample|TRUE|7716|26|1995|2020|0.129410725|TRUE|-0.0715|0|-0.000899393333333333|2.08823015753846|-1
+16|Fort Clinch State Park Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+17|Fort Pickens State Park Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|563|21|1996|2020|0.639|TRUE|0.0915|0.0011|0.00563961038961039|-5.41799999999999|1
+19|Guana River Marsh Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|4|2|2013|2014|||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Total Nitrogen|Bottom|Sample|FALSE|24|3|2013|2015|||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|2|2|2001|2002|||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|31|16|2001|2019|0.206|TRUE|-0.3036|0.112|-0.001|12.9051875|0
+24|Lake Jackson Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+25|Lemon Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|1|1|2020|2020|||||||
+26|Lignumvitae Key Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|737|28|1992|2019|0.72|TRUE|-0.2493|0|-0.0301666666666667|54.5074578088578|-1
+28|Matlacha Pass Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|10|2|2008|2021|||||||
+29|Mosquito Lagoon Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|1|1|2002|2002|||||||
+48|Nature Coast Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|497|12|1997|2015|0.43|TRUE|-0.0287|0.5363|0|2.09875|0
+31|North Fork St. Lucie Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|9|1|2002|2002|||||||
+32|Oklawaha River Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+33|Pellicer Creek Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|22|2|2013|2014|||||||
+34|Pine Island Sound Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|72|13|1997|2014|0.05|TRUE|0.2777|0|0.00363636363636364|-6.65333333333333|1
+35|Pinellas County Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|6|2|1999|2001|||||||
+36|Rainbow Springs Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+37|Rocky Bayou State Park Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+38|Rookery Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+39|Rookery Bay National Estuarine Research Reserve|Total Nitrogen|Bottom|Sample|FALSE|2|1|1994|1994|||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|Total Nitrogen|Bottom|Sample|FALSE|134|3|2009|2011|||||||
+40|St. Andrews State Park Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+41|St. Joseph Bay Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|40|14|2001|2016|0.225|TRUE|0.1869|0.1535|0.00555555555555556|-10.762380952381|0
+42|St. Joseph Bay State Buffer Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+43|St. Martins Marsh Aquatic Preserve|Total Nitrogen|Bottom|Sample|TRUE|168|18|1996|2015|0.4|TRUE|0.0901|0.1801|0.0025|-13.3898035714286|0
+44|Terra Ceia Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+45|Tomoka Marsh Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+46|Wekiva River Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
+47|Yellow River Marsh Aquatic Preserve|Total Nitrogen|Bottom|Sample|FALSE|0|0|||||||||
