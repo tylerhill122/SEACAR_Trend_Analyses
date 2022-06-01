@@ -31,6 +31,7 @@ library(scales)
 library(EnvStats)
 library(tidyr)
 options(scipen = 999)
+opts_chunk$set(warning=FALSE, message=FALSE)
 ```
 
 
@@ -98,7 +99,7 @@ data <- data %>%
              ResultValue = mean(ResultValue), Include = unique(Include))
 
 data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
-                          data, by = "ManagedAreaName")
+                          data, by = "ManagedAreaName", all=TRUE)
 
 data$SampleDate <- as.Date(data$SampleDate)
 data$YearMonth <- paste0(data$Month, "-", data$Year)
@@ -111,27 +112,38 @@ data <- data %>%
 # data <- data %>%
 #    mutate(MonitoringID = group_indices(., ManagedAreaName, ProgramID,
 #                                        ProgramName, ProgramLocationID))
-Mon_Years <- data[data$Include == TRUE, ] %>%
-   group_by(MonitoringID) %>%
-   summarize(AreaID = unique(AreaID),
-             ManagedAreaName = unique(ManagedAreaName),
-             ProgramID = unique(ProgramID),
-             ProgramName = unique(ProgramName),
-             ProgramLocationID = unique(ProgramLocationID),
-             ParameterName = parameter,
-             RelativeDepth = unique(RelativeDepth),
-             Y = length(unique(Year)))
-Mon_Years <- as.data.table(Mon_Years[
-   order(Mon_Years$MonitoringID), ])
-Mon_Years$Enough_Time <- ifelse(Mon_Years$Y < 5, FALSE, TRUE)
-data <- merge.data.frame(data, Mon_Years[,c("MonitoringID", "Enough_Time")],
+
+Mon_Summ <- data %>%
+   group_by(MonitoringID, AreaID, ManagedAreaName, ProgramID, ProgramName,
+            ProgramLocationID) %>%
+   summarize(ParameterName=parameter,
+             RelativeDepth=unique(RelativeDepth),
+             N_Data=length(ResultValue[Include==TRUE & !is.na(ResultValue)]),
+             N_Years=length(unique(Year[Include==TRUE & !is.na(Year)])),
+             EarliestYear=min(Year[Include==TRUE]),
+             LatestYear=max(Year[Include==TRUE]),
+             SufficientData=ifelse(N_Data>0 & N_Years>=10, TRUE, FALSE))
+# 
+# Mon_Years <- data[data$Include == TRUE, ] %>%
+#    group_by(MonitoringID) %>%
+#    summarize(AreaID = unique(AreaID),
+#              ManagedAreaName = unique(ManagedAreaName),
+#              ProgramID = unique(ProgramID),
+#              ProgramName = unique(ProgramName),
+#              ProgramLocationID = unique(ProgramLocationID),
+#              ParameterName = parameter,
+#              RelativeDepth = unique(RelativeDepth),
+#              Y = length(unique(Year)))
+Mon_Summ <- as.data.table(Mon_Summ[order(Mon_Summ$MonitoringID), ])
+
+data <- merge.data.frame(data, Mon_Summ[,c("MonitoringID", "SufficientData")],
                          by = "MonitoringID")
 # data$Exclude_MonitoringID <- is.element(data$MonitoringID,
 #                                         Mon_Years$MonitoringID[
 #                                            Mon_Years$Enough_Time == FALSE])
 data$Use_In_Analysis <- ifelse(data$Include == TRUE &
-                                  data$Enough_Time == TRUE,
-                               TRUE, FALSE)
+                                  data$SufficientData == TRUE, TRUE, FALSE)
+
 Mon_IDs <- unique(data$MonitoringID[data$Use_In_Analysis == TRUE])
 Mon_IDs <- Mon_IDs[order(Mon_IDs)]
 n <- length(Mon_IDs)
@@ -240,46 +252,42 @@ The following steps are performed:
 tauSeasonal <- function(data, independent, stats.median, stats.minYear,
                         stats.maxYear) {
    tau <- NULL
-   tryCatch({
-      ken <-
-         kendallSeasonalTrendTest(
-            y = data$ResultValue,
-            season = data$Month,
-            year = data$Year,
-            independent.obs = independent
-         )
-      tau <- ken$estimate[1]
-      p <- ken$p.value[2]
-      slope <- ken$estimate[2]
-      intercept <- ken$estimate[3]
-      trend <- trend_calculator(slope, stats.median, p)
+   tryCatch({ken <- kendallSeasonalTrendTest(
+      y = data$ResultValue,
+      season = data$Month,
+      year = data$Year,
+      independent.obs = independent)
+   
+   tau <- ken$estimate[1]
+   p <- ken$p.value[2]
+   slope <- ken$estimate[2]
+   intercept <- ken$estimate[3]
+   trend <- trend_calculator(slope, stats.median, p)
+   rm(ken)
    }, warning = function(w) {
       print(w)
    }, error = function(e) {
       print(e)
    }, finally = {
       if (!exists("tau")) {
-         tau <- NULL
+         tau <- NA
       }
       if (!exists("p")) {
-         p <- NULL
+         p <- NA
       }
       if (!exists("slope")) {
-         slope <- NULL
+         slope <- NA
       }
       if (!exists("intercept")) {
-         intercept <- NULL
+         intercept <- NA
       }
       if (!exists("trend")) {
-         trend <- NULL
+         trend <- NA
       }
    })
    KT <-c(unique(data$MonitoringID),
-          independent,
           stats.median,
-          nrow(data),
-          stats.minYear,
-          stats.maxYear,
+          independent,
           tau,
           p,
           slope,
@@ -297,7 +305,7 @@ runStats <- function(data) {
    # Calculate Kendall Tau and Slope stats, then update appropriate columns and table
    KT <- tauSeasonal(data, TRUE, stats.median,
                      stats.minYear, stats.maxYear)
-   if (is.null(KT[11])) {
+   if (is.null(KT[8])) {
       KT <- tauSeasonal(data, FALSE, stats.median,
                         stats.minYear, stats.maxYear)
    }
@@ -333,51 +341,47 @@ trend_calculator <- function(slope, median_value, p) {
 KT.Stats <- NULL
 # Loop that goes through each managed area.
 # List of managed areas stored in MA_Years$ManagedAreaName
-c_names <- c("MonitoringID", "Independent", "Median", "N", "EarliestYear",
-             "LatestYear", "tau", "p", "SennSlope", "SennIntercept", "Trend")
+c_names <- c("MonitoringID", "Median", "Independent", "tau", "p",
+             "SennSlope", "SennIntercept", "Trend")
 if(n==0){
-   c_names <- c("AreaID", "ManagedAreaName", "ProgramID", "ProgramName",
-                "ProgramLocationID", "ParameterName", "RelativeDepth",
-                "Independent", "Median", "N", "EarliestYear", "LatestYear",
-                "tau", "p", "SennSlope", "SennIntercept", "Trend")
-   KT.Stats <- data.frame(matrix(ncol=17, nrow=0))
+   KT.Stats <- data.frame(matrix(ncol=length(c_names),
+                                 nrow=nrow(Mon_Summ)))
    colnames(KT.Stats) <- c_names
-   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", region,
-                           "_KendallTau_Stats.txt"), sep = "|")
+   KT.Stats[, c("MonitoringID")] <- Mon_Summ[, c("MonitoringID")]
 } else{
    for (i in 1:n) {
-      values <- data[data$Use_In_Analysis == TRUE &
-                        data$MonitoringID == Mon_IDs[i], ]
-      if (nrow(values) > 0) {
-         KT.Stats <- runStats(values)
+      x <- nrow(data[data$Use_In_Analysis == TRUE &
+                        data$MonitoringID == Mon_IDs[i], ])
+      if (x>0) {
+         KT.Stats <- runStats(data[data$Use_In_Analysis == TRUE &
+                                      data$MonitoringID == Mon_IDs[i], ])
       }
    }
    KT.Stats <- as.data.frame(KT.Stats)
+  
    if(dim(KT.Stats)[2]==1){
       KT.Stats <- as.data.frame(t(KT.Stats))
    }
-   
-   c_names <- c("MonitoringID", "Independent", "Median", "N", "EarliestYear",
-                "LatestYear", "tau", "p", "SennSlope", "SennIntercept", "Trend")
    colnames(KT.Stats) <- c_names
    rownames(KT.Stats) <- seq(1:nrow(KT.Stats))
-   KT.Stats$Independent <- as.logical(KT.Stats$Independent)
-   KT.Stats$Median <- as.numeric(KT.Stats$Median)
-   KT.Stats$N <- as.integer(KT.Stats$N)
-   KT.Stats$EarliestYear <- as.integer(KT.Stats$EarliestYear)
-   KT.Stats$LatestYear <- as.integer(KT.Stats$LatestYear)
    KT.Stats$tau <- round(as.numeric(KT.Stats$tau), digits=4)
    KT.Stats$p <- round(as.numeric(KT.Stats$p), digits=4)
    KT.Stats$SennSlope <- as.numeric(KT.Stats$SennSlope)
    KT.Stats$SennIntercept <- as.numeric(KT.Stats$SennIntercept)
    KT.Stats$Trend <- as.integer(KT.Stats$Trend)
-   KT.Stats <- merge.data.frame(Mon_Years[,-c("Y", "Enough_Time")],
-                                KT.Stats, by = "MonitoringID")
-   KT.Stats$MonitoringID <- NULL
-   fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", region,
-                           "_KendallTau_Stats.txt"), sep = "|")
-   KT.Stats$MonitoringID <- Mon_IDs
 }
+
+KT.Stats <-  merge.data.frame(Mon_Summ, KT.Stats,
+                              by=c("MonitoringID"), all=TRUE)
+
+KT.Stats <- as.data.table(KT.Stats[order(KT.Stats$MonitoringID), ])
+
+KT.Stats$MonitoringID <- NULL
+fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", region,
+                           "_KendallTau_Stats.txt"), sep = "|")
+
+KT.Stats$MonitoringID <- Mon_Summ$MonitoringID
+data <- data[!is.na(data$ResultValue),]
 ```
 
 
@@ -397,159 +401,163 @@ Box plots are created by using the entire data set and excludes any data that ha
 This set of box plots are grouped by year.
 
 ```{r Boxplot_All_Y, warning=FALSE, eval=APP_Plots}
-   min_RV <- min(data$ResultValue[data$Include == TRUE])
-   mn_RV <- mean(data$ResultValue[data$Include == TRUE &
-                                     data$ResultValue <
-                                     quantile(data$ResultValue, 0.98)])
-   sd_RV <- sd(data$ResultValue[data$Include == TRUE &
-                                   data$ResultValue <
-                                   quantile(data$ResultValue, 0.98)])
-   y_scale <- mn_RV + 4 * sd_RV
-   
-   p1 <- ggplot(data = data[data$Include == TRUE, ],
-                aes(x = Year, y = ResultValue, group = Year)) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Autoscale", x = "Year",
-           y = paste0("Values (", unit, ")")) +
-      theme_bw() +
-      theme(axis.text.x = element_text(face = "bold"),
-            axis.text.y = element_text(face = "bold"))
-   
-   p2 <- ggplot(data = data[data$Include == TRUE, ],
-                aes(x = Year, y = ResultValue, group = Year)) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Scaled to 4x Standard Deviation", x = "Year",
-           y = paste0("Values (", unit, ")")) +
-      ylim(0, y_scale) + 
-      theme_bw() + theme(axis.text.x = element_text(face = "bold"),
-                               axis.text.y = element_text(face = "bold"))
-   
-   p3 <- ggplot(data = data[data$Include == TRUE, ],
-                aes(x = as.integer(Year), y = ResultValue, group = Year)) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Scaled to 4x Standard Deviation, Last 10 Years",
-           x = "Year", y = paste0("Values (", unit, ")")) +
-      ylim(0, y_scale) +
-      scale_x_continuous(limits = c(max(data$Year) - 10.5, max(data$Year)+0.5),
-                         breaks = seq(max(data$Year) - 10, max(data$Year), 2)) +
-      theme_bw() +
-      theme(axis.text.x = element_text(face = "bold"),
-            axis.text.y = element_text(face = "bold"))
-   
-   set <- ggarrange(p1, p2, p3, ncol = 1)
-   
-   p0 <- ggplot() + labs(title = "Summary Box Plots for Entire Data",
-                         subtitle = "By Year") + theme_bw() +
-      theme(plot.title = element_text(face="bold", hjust=0.5),
-            panel.border = element_blank(), panel.grid.major = element_blank(),
-            panel.grid.minor = element_blank(), axis.line = element_blank())
-   
-   Yset <- ggarrange(p0, set, ncol=1, heights = c(0.07, 1))
+plot_theme <- theme_bw() + theme(text=element_text(family="Segoe UI"),
+                                 title=element_text(face="bold"),
+                                 plot.title=element_text(hjust=0.5,
+                                                         size=14,
+                                                         color="#314963"),
+                                 plot.subtitle=element_text(hjust=0.5,
+                                                            size=10,
+                                                            color="#314963"),
+                                 axis.text.x=element_text(face="bold"),
+                                 axis.text.y=element_text(face="bold"))
+
+min_RV <- min(data$ResultValue[data$Include == TRUE])
+mn_RV <- mean(data$ResultValue[data$Include == TRUE &
+                                  data$ResultValue <
+                                  quantile(data$ResultValue, 0.98)])
+sd_RV <- sd(data$ResultValue[data$Include == TRUE &
+                                data$ResultValue <
+                                quantile(data$ResultValue, 0.98)])
+y_scale <- mn_RV + 4 * sd_RV
+
+p1 <- ggplot(data = data[data$Include == TRUE, ],
+             aes(x = Year, y = ResultValue, group = Year)) +
+   geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+                outlier.size=3, outlier.color="#333333",
+                outlier.fill="#cccccc", outlier.alpha=0.75) +
+   labs(subtitle = "Autoscale", x = "Year",
+        y = paste0("Values (", unit, ")")) +
+   plot_theme
+
+p2 <- ggplot(data = data[data$Include == TRUE, ],
+             aes(x = Year, y = ResultValue, group = Year)) +
+   geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+                outlier.size=3, outlier.color="#333333",
+                outlier.fill="#cccccc", outlier.alpha=0.75) +
+   labs(subtitle = "Scaled to 4x Standard Deviation", x = "Year",
+        y = paste0("Values (", unit, ")")) +
+   ylim(0, y_scale) + 
+   plot_theme
+
+p3 <- ggplot(data = data[data$Include == TRUE, ],
+             aes(x = as.integer(Year), y = ResultValue, group = Year)) +
+   geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+                outlier.size=3, outlier.color="#333333",
+                outlier.fill="#cccccc", outlier.alpha=0.75) +
+   labs(subtitle = "Scaled to 4x Standard Deviation, Last 10 Years",
+        x = "Year", y = paste0("Values (", unit, ")")) +
+   ylim(0, y_scale) +
+   scale_x_continuous(limits = c(max(data$Year) - 10.5, max(data$Year)+0.5),
+                      breaks = seq(max(data$Year) - 10, max(data$Year), 2)) +
+   plot_theme
+
+set <- ggarrange(p1, p2, p3, ncol = 1)
+
+p0 <- ggplot() + labs(title = "Summary Box Plots for Entire Data",
+                      subtitle = "By Year") + plot_theme +
+   theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(), axis.line = element_blank())
+
+Yset <- ggarrange(p0, set, ncol=1, heights = c(0.07, 1))
 
 ```
 
 This set of box plots are grouped by year and month with the color being related to the month.
 
 ```{r Boxplot_All_YM, warning=FALSE, eval=APP_Plots}
-   p1 <- ggplot(data = data[data$Include == TRUE, ],
-                aes(x = YearMonthDec, y = ResultValue,
-                    group = YearMonth, color = as.factor(Month))) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Autoscale", x = "Year",
-           y = paste0("Values (", unit, ")"), color="Month") +
-      theme_bw() +
-      theme(legend.position = "top", legend.box = "horizontal",
-            axis.text.x = element_text(face = "bold"),
-            axis.text.y = element_text(face = "bold")) +
-      guides(color = guide_legend(nrow = 1))
-   
-   p2 <- ggplot(data = data[data$Include == TRUE, ],
-                aes(x = YearMonthDec, y = ResultValue,
-                    group = YearMonth, color = as.factor(Month))) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Scaled to 5x Standard Deviation",
-           x = "Year", y = paste0("Values (", unit, ")")) +
-      ylim(0, y_scale) +
-      theme_bw() +
-      theme(legend.position = "none", axis.text.x = element_text(face = "bold"),
-            axis.text.y = element_text(face = "bold"))
-   
-   p3 <- ggplot(data = data[data$Include == TRUE, ],
-                aes(x = YearMonthDec, y = ResultValue,
-                    group = YearMonth, color = as.factor(Month))) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Scaled to 5x Standard Deviation, Last 10 Years",
-           x = "Year", y = paste0("Values (", unit, ")")) +
-      ylim(0, y_scale) +
-      scale_x_continuous(limits = c(max(data$Year) - 10.5, max(data$Year)+0.5),
-                         breaks = seq(max(data$Year) - 10, max(data$Year), 2)) +
-      theme_bw() +
-      theme(legend.position = "none", axis.text.x = element_text(face = "bold"),
-            axis.text.y = element_text(face = "bold"))
-   leg <- get_legend(p1)
-   set <- ggarrange(leg, p1 + theme(legend.position = "none"), p2, p3, ncol = 1,
-                    heights = c(0.1, 1, 1, 1))
-   
-   p0 <- ggplot() + labs(title = "Summary Box Plots for Entire Data",
-                         subtitle = "By Year & Month") + theme_bw() +
-      theme(plot.title = element_text(face="bold", hjust=0.5),
-            panel.border = element_blank(), panel.grid.major = element_blank(),
-            panel.grid.minor = element_blank(), axis.line = element_blank())
-   
-   YMset <- ggarrange(p0, set, ncol=1, heights = c(0.07, 1))
+p1 <- ggplot(data = data[data$Include == TRUE, ],
+             aes(x = YearMonthDec, y = ResultValue,
+                 group = YearMonth, color = as.factor(Month))) +
+   geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+   labs(subtitle = "Autoscale", x = "Year",
+        y = paste0("Values (", unit, ")"), color="Month") +
+   plot_theme +
+   theme(legend.position = "top", legend.box = "horizontal") +
+   guides(color = guide_legend(nrow = 1))
+
+p2 <- ggplot(data = data[data$Include == TRUE, ],
+             aes(x = YearMonthDec, y = ResultValue,
+                 group = YearMonth, color = as.factor(Month))) +
+   geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+   labs(subtitle = "Scaled to 5x Standard Deviation",
+        x = "Year", y = paste0("Values (", unit, ")")) +
+   ylim(0, y_scale) +
+   plot_theme +
+   theme(legend.position = "none")
+
+p3 <- ggplot(data = data[data$Include == TRUE, ],
+             aes(x = YearMonthDec, y = ResultValue,
+                 group = YearMonth, color = as.factor(Month))) +
+   geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+   labs(subtitle = "Scaled to 5x Standard Deviation, Last 10 Years",
+        x = "Year", y = paste0("Values (", unit, ")")) +
+   ylim(0, y_scale) +
+   scale_x_continuous(limits = c(max(data$Year) - 10.5, max(data$Year)+0.5),
+                      breaks = seq(max(data$Year) - 10, max(data$Year), 2)) +
+   plot_theme +
+   theme(legend.position = "none")
+leg <- get_legend(p1)
+set <- ggarrange(leg, p1 + theme(legend.position = "none"), p2, p3, ncol = 1,
+                 heights = c(0.1, 1, 1, 1))
+
+p0 <- ggplot() + labs(title = "Summary Box Plots for Entire Data",
+                      subtitle = "By Year & Month") + plot_theme +
+   theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(), axis.line = element_blank())
+
+YMset <- ggarrange(p0, set, ncol=1, heights = c(0.07, 1))
 ```
 
 The following box plots are grouped by month with fill color being related to the month. This is designed to view potential seasonal trends.
 
 ```{r Boxplot_All_M, warning=FALSE, eval=APP_Plots}
-   p1 <- ggplot(data = data[data$Include == TRUE, ],
-                aes(x = Month, y = ResultValue,
-                    group = Month, fill = as.factor(Month))) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Autoscale", x = "Month",
-           y = paste0("Values (", unit, ")"), fill="Month") +
-      scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
-      theme_bw() +
-      theme(legend.position = "top", legend.box = "horizontal",
-            axis.text.x = element_text(face = "bold"),
-            axis.text.y = element_text(face = "bold")) +
-      guides(fill = guide_legend(nrow = 1))
-   
-   p2 <- ggplot(data = data[data$Include == TRUE, ],
-                aes(x = Month, y = ResultValue,
-                    group = Month, fill = as.factor(Month))) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Scaled to 5x Standard Deviation",
-           x = "Month", y = paste0("Values (", unit, ")")) +
-      ylim(0, y_scale) +
-      scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
-      theme_bw() +
-      theme(legend.position = "none", axis.text.x = element_text(face = "bold"),
-            axis.text.y = element_text(face = "bold"))
-   
-   p3 <- ggplot(data = data[data$Include == TRUE &
-                               data$Year >= max(data$Year) - 10, ],
-                aes(x = Month, y = ResultValue,
-                    group = Month, fill = as.factor(Month))) +
-      geom_boxplot(outlier.size = 0.5) +
-      labs(subtitle = "Scaled to 5x Standard Deviation, Last 10 Years",
-           x = "Month", y = paste0("Values (", unit, ")")) +
-      ylim(0, y_scale) +
-      scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
-      theme_bw() +
-      theme(legend.position = "none", axis.text.x = element_text(face = "bold"),
-            axis.text.y = element_text(face = "bold"))
-   leg <- get_legend(p1)
-   set <- ggarrange(leg, p1 + theme(legend.position = "none"), p2, p3, ncol = 1,
-                    heights = c(0.1, 1, 1, 1))
-   
-   p0 <- ggplot() + labs(title = "Summary Box Plots for Entire Data",
-                         subtitle = "By Month") + theme_bw() +
-      theme(plot.title = element_text(face="bold", hjust=0.5),
-            panel.border = element_blank(), panel.grid.major = element_blank(),
-            panel.grid.minor = element_blank(), axis.line = element_blank())
-   
-   Mset <- ggarrange(p0, set, ncol=1, heights = c(0.07, 1))
+p1 <- ggplot(data = data[data$Include == TRUE, ],
+             aes(x = Month, y = ResultValue,
+                 group = Month, fill = as.factor(Month))) +
+   geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+                outlier.color="#333333", outlier.alpha=0.75) +
+   labs(subtitle = "Autoscale", x = "Month",
+        y = paste0("Values (", unit, ")"), fill="Month") +
+   scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
+   plot_theme +
+   theme(legend.position = "top", legend.box = "horizontal") +
+   guides(fill = guide_legend(nrow = 1))
+
+p2 <- ggplot(data = data[data$Include == TRUE, ],
+             aes(x = Month, y = ResultValue,
+                 group = Month, fill = as.factor(Month))) +
+   geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+                outlier.color="#333333", outlier.alpha=0.75) +
+   labs(subtitle = "Scaled to 5x Standard Deviation",
+        x = "Month", y = paste0("Values (", unit, ")")) +
+   ylim(0, y_scale) +
+   scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
+   plot_theme +
+   theme(legend.position = "none")
+
+p3 <- ggplot(data = data[data$Include == TRUE &
+                            data$Year >= max(data$Year) - 10, ],
+             aes(x = Month, y = ResultValue,
+                 group = Month, fill = as.factor(Month))) +
+   geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+                outlier.color="#333333", outlier.alpha=0.75) +
+   labs(subtitle = "Scaled to 5x Standard Deviation, Last 10 Years",
+        x = "Month", y = paste0("Values (", unit, ")")) +
+   ylim(0, y_scale) +
+   scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
+   plot_theme +
+   theme(legend.position = "none")
+leg <- get_legend(p1)
+set <- ggarrange(leg, p1 + theme(legend.position = "none"), p2, p3, ncol = 1,
+                 heights = c(0.1, 1, 1, 1))
+
+p0 <- ggplot() + labs(title = "Summary Box Plots for Entire Data",
+                      subtitle = "By Month") + plot_theme +
+   theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(), axis.line = element_blank())
+
+Mset <- ggarrange(p0, set, ncol=1, heights = c(0.07, 1))
 
 ```
 
@@ -561,6 +569,7 @@ if(nrow(data[data$Include==TRUE,])==0){
    print(YMset)
    print(Mset)
 }
+rm(Yset, YMset, Mset)
 ```
 
 
@@ -570,9 +579,9 @@ if(nrow(data[data$Include==TRUE,])==0){
 Scatter plots of data values are created for monitoring locationss that have fewer than 5 separate years of data entries.
 
 ```{r Scatter_Excluded, warning=FALSE , fig.width=10, fig.height=5, eval=APP_Plots}
-Mon_Exclude <- Mon_Years[Mon_Years$Enough_Time==FALSE,]
+Mon_Exclude <- Mon_Summ[Mon_Summ$N_Years<5 & Mon_Summ$N_Years>0,]
 Mon_Exclude <- Mon_Exclude[order(Mon_Exclude$MonitoringID),]
-z=length(Mon_Exclude$MonitoringID)
+z=nrow(Mon_Exclude)
 
 if(z==0){
    print("There are no monitoring locations that qualify.")
@@ -591,16 +600,15 @@ if(z==0){
       p1<-ggplot(data=data[data$MonitoringID==Mon_Exclude$MonitoringID[i]&
                               data$Include == TRUE, ],
                  aes(x = SampleDate, y = ResultValue)) +
-         geom_point() +
+         geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
+                    alpha=0.75) +
          labs(title=
                  paste0("Scatter Plot of Excluded Monitoring Location ",
                         MA_name, "\n", Mon_name, "\n(", Mon_Exclude$Y[i],
                         " Unique Years)"),
               subtitle="Autoscale", x = "Year",
               y = paste0("Values (", unit, ")")) +
-         theme_bw() +
-         theme(plot.title = element_text(face="bold", hjust=0.5),
-               axis.text.x = element_text(face = "bold")) +
+         plot_theme +
          scale_x_date(labels = date_format("%m-%Y"))
       print(p1)
    }
@@ -654,6 +662,7 @@ if(n==0){
                   data = plot_data)
       m_int <- coef(model)[[1]]
       m_slope <- coef(model)[[2]]
+      rm(model)
       MA_name <- KT.Stats$ManagedAreaName[KT.Stats$MonitoringID == Mon_IDs[i]]
       Mon_name <- paste(KT.Stats$ProgramID[KT.Stats$MonitoringID == Mon_IDs[i]],
          KT.Stats$ProgramName[KT.Stats$MonitoringID == Mon_IDs[i]],
@@ -662,26 +671,25 @@ if(n==0){
       
       p1 <- ggplot(data = plot_data,
                    aes(x = DecDate, y = ResultValue)) +
-         geom_point(size = 1.5) +
+         geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
+                    alpha=0.75) +
          geom_abline(aes(slope=s_slope, intercept=s_int),
-                     color="red", size=1.5) +
+                     color="#000099", size=1.2, alpha=0.7) +
          labs(subtitle = "Autoscale",
               x = "Year", y = paste0("Values (", unit, ")")) +
-         theme_bw() +
-         theme(axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face="bold"))
+         plot_theme
       
       p2 <- ggplot(data = plot_data,
                    aes(x = DecDate, y = ResultValue)) +
-         geom_point(size = 1.5) +
+         geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
+                    alpha=0.75) +
          geom_abline(aes(slope=s_slope, intercept=s_int),
-                     color="red", size=1.5) +
+                     color="#000099", size=1.2, alpha=0.7) +
          ylim(min_RV-0.1*y_scale, y_scale) +
          labs(subtitle = "Scaled to 4x Standard Deviation",
               x = "Year", y = paste0("Values (", unit, ")")) +
-         theme_bw() +
-         theme(axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face="bold"))
+         plot_theme
+      
       KTset <- ggarrange(p1, p2, ncol = 1, heights = c(1, 1))
       
       p0 <- ggplot() + labs(title = paste0("Data Points with Trendlines for ",
@@ -693,13 +701,14 @@ if(n==0){
                                              ",     p = ", p,
                                              "\nLinear Trendline: ",
                                              "y = ", m_slope,"x + ",m_int)) +
-         theme_bw() + theme(plot.title = element_text(face="bold", hjust=0.5),
-                            panel.border = element_blank(),
+         plot_theme + theme(panel.border = element_blank(),
                             panel.grid.major = element_blank(),
                             panel.grid.minor = element_blank(),
                             axis.line = element_blank())
       
       print(ggarrange(p0, KTset, ncol = 1, heights = c(0.20, 1)))
+      rm(plot_data)
+      rm(KTset, leg)
    }
 }
 ```
@@ -751,61 +760,61 @@ if(n==0){
       y_scale <- mn_RV + 4 * sd_RV
       MA_name <- KT.Stats$ManagedAreaName[KT.Stats$MonitoringID == Mon_IDs[i]]
       Mon_name <- paste(KT.Stats$ProgramID[KT.Stats$MonitoringID == Mon_IDs[i]],
-         KT.Stats$ProgramName[KT.Stats$MonitoringID == Mon_IDs[i]],
-         KT.Stats$ProgramLocationID[KT.Stats$MonitoringID == Mon_IDs[i]],
-         sep = " | ")
+                        KT.Stats$ProgramName[KT.Stats$MonitoringID == Mon_IDs[i]],
+                        KT.Stats$ProgramLocationID[KT.Stats$MonitoringID == Mon_IDs[i]],
+                        sep = " | ")
       
       ##Year plots
       p1 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
                                   data$MonitoringID == Mon_IDs[i], ],
                    aes(x = Year, y = ResultValue, group = Year)) +
-         geom_boxplot(outlier.size = 0.5) +
+         geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+                      outlier.size=3, outlier.color="#333333",
+                      outlier.fill="#cccccc", outlier.alpha=0.75) +
          labs(subtitle = "Autoscale",
               x = "Year", y = paste0("Values (", unit, ")")) +
          scale_x_continuous(limits = c(year_lower - 1, year_upper + 1),
                             breaks = rev(seq(year_upper,
                                              year_lower, -x_scale))) +
-         theme_bw() +
-         theme(axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold"))
+         plot_theme
       
       p2 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
                                   data$MonitoringID == Mon_IDs[i], ],
                    aes(x = Year, y = ResultValue, group = Year)) +
-         geom_boxplot(outlier.size = 0.5) +
+         geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+                      outlier.size=3, outlier.color="#333333",
+                      outlier.fill="#cccccc", outlier.alpha=0.75) +
          labs(subtitle = "Scaled to 4x Standard Deviation",
               x = "Year", y = paste0("Values (", unit, ")")) +
          ylim(min_RV, y_scale) +
          scale_x_continuous(limits = c(year_lower - 1, year_upper + 1),
                             breaks = rev(seq(year_upper,
                                              year_lower, -x_scale))) +
-         theme_bw() +
-         theme(axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold"))
+         plot_theme
       
       p3 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
                                   data$MonitoringID == Mon_IDs[i] &
                                   data$Year>=year_upper-10, ],
                    aes(x = Year, y = ResultValue, group = Year)) +
-         geom_boxplot(outlier.size = 0.5) +
+         geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+                      outlier.size=3, outlier.color="#333333",
+                      outlier.fill="#cccccc", outlier.alpha=0.75) +
          labs(subtitle = "Scaled to 4x Standard Deviation, Last 10 Years",
               x = "Year", y = paste0("Values (", unit, ")")) +
          ylim(min_RV, y_scale) +
          scale_x_continuous(limits = c(year_upper - 10.5, year_upper + 1),
                             breaks = rev(seq(year_upper, year_upper - 10,-2))) +
-         theme_bw() +
-         theme(axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold"))
+         plot_theme
       
       Yset <- ggarrange(p1, p2, p3, ncol = 1)
       
       p0 <- ggplot() + labs(title = paste0("Summary Box Plots for ",
                                            MA_name, "\n", Mon_name),
                             subtitle = "By Year") +
-         theme_bw() + theme(plot.title = element_text(face="bold", hjust=0.5),
-               panel.border = element_blank(),
-               panel.grid.major = element_blank(),
-               panel.grid.minor = element_blank(), axis.line = element_blank())
+         plot_theme + theme(panel.border = element_blank(),
+                            panel.grid.major = element_blank(),
+                            panel.grid.minor = element_blank(),
+                            axis.line = element_blank())
       
       
       ## Year & Month Plots
@@ -813,59 +822,51 @@ if(n==0){
                                   data$MonitoringID == Mon_IDs[i], ],
                    aes(x = YearMonthDec, y = ResultValue,
                        group = YearMonth, color = as.factor(Month))) +
-         geom_boxplot(outlier.size = 0.5) +
+         geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
          labs(subtitle = "Autoscale",
               x = "Year", y = paste0("Values (", unit, ")"), color = "Month") +
          scale_x_continuous(limits = c(year_lower - 1, year_upper + 1),
                             breaks = rev(seq(year_upper,
                                              year_lower, -x_scale))) +
-         theme_bw() +
-         theme(legend.position = "none",
-               axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold"))
+         plot_theme +
+         theme(legend.position = "none")
       
       p5 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
                                   data$MonitoringID == Mon_IDs[i], ],
                    aes(x = YearMonthDec, y = ResultValue,
                        group = YearMonth, color = as.factor(Month))) +
-         geom_boxplot(outlier.size = 0.5) +
+         geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
          labs(subtitle = "Scaled to 4x Standard Deviation",
               x = "Year", y = paste0("Values (", unit, ")"), color = "Month") +
          ylim(min_RV, y_scale) +
          scale_x_continuous(limits = c(year_lower - 1, year_upper + 1),
                             breaks = rev(seq(year_upper,
                                              year_lower, -x_scale))) +
-         theme_bw() +
-         theme(legend.position = "top", legend.box = "horizontal",
-               axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold")) +
+         plot_theme +
+         theme(legend.position = "top", legend.box = "horizontal") +
          guides(color = guide_legend(nrow = 1))
       
       p6 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
                                   data$MonitoringID == Mon_IDs[i], ],
                    aes(x = YearMonthDec, y = ResultValue,
-                       group = YearMonth, color = as.factor(Month)
-                   )) +
-         geom_boxplot(outlier.size = 0.5) +
+                       group = YearMonth, color = as.factor(Month))) +
+         geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
          labs(subtitle = "Scaled to 4x Standard Deviation, Last 10 Years",
               x = "Year", y = paste0("Values (", unit, ")"), color = "Month") +
          ylim(min_RV, y_scale) +
          scale_x_continuous(limits = c(year_upper - 10.5, year_upper + 1),
                             breaks = rev(seq(year_upper, year_upper - 10,-2))) +
-         theme_bw() +
-         theme(legend.position = "none",
-               axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold"))
+         plot_theme +
+         theme(legend.position = "none")
       
       leg1 <- get_legend(p5)
       YMset <- ggarrange(leg1, p4, p5 + theme(legend.position = "none"), p6,
                          ncol = 1, heights = c(0.1, 1, 1, 1))
       
       p00 <- ggplot() + labs(title = paste0("Summary Box Plots for ",
-                                           MA_name, "\n", Mon_name),
-                             subtitle = "By Year & Month") + theme_bw() +
-         theme(plot.title = element_text(face="bold", hjust=0.5),
-               panel.border = element_blank(),
+                                            MA_name, "\n", Mon_name),
+                             subtitle = "By Year & Month") + plot_theme +
+         theme(panel.border = element_blank(),
                panel.grid.major = element_blank(),
                panel.grid.minor = element_blank(), axis.line = element_blank())
       
@@ -874,28 +875,26 @@ if(n==0){
                                   data$MonitoringID == Mon_IDs[i], ],
                    aes(x = Month, y = ResultValue,
                        group = Month, fill = as.factor(Month))) +
-         geom_boxplot(outlier.size = 0.5) +
+         geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+                      outlier.color="#333333", outlier.alpha=0.75) +
          labs(subtitle = "Autoscale",
               x = "Month", y = paste0("Values (", unit, ")"), fill = "Month") +
          scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
-         theme_bw() +
-         theme(legend.position = "none",
-               axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold"))
+         plot_theme +
+         theme(legend.position = "none")
       
       p8 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
                                   data$MonitoringID == Mon_IDs[i], ],
                    aes(x = Month, y = ResultValue,
                        group = Month, fill = as.factor(Month))) +
-         geom_boxplot(outlier.size = 0.5) +
+         geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+                      outlier.color="#333333", outlier.alpha=0.75) +
          labs(subtitle = "Scaled to 4x Standard Deviation",
               x = "Month", y = paste0("Values (", unit, ")"), fill = "Month") +
          ylim(min_RV, y_scale) +
          scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
-         theme_bw() +
-         theme(legend.position = "top", legend.box = "horizontal",
-               axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold")) +
+         plot_theme +
+         theme(legend.position = "top", legend.box = "horizontal") +
          guides(fill = guide_legend(nrow = 1))
       
       p9 <- ggplot(data = data[data$Use_In_Analysis == TRUE &
@@ -903,31 +902,33 @@ if(n==0){
                                   data$Year >= year_upper - 10, ],
                    aes(x = Month, y = ResultValue,
                        group = Month, fill = as.factor(Month))) +
-         geom_boxplot(outlier.size = 0.5) +
+         geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+                      outlier.color="#333333", outlier.alpha=0.75) +
          labs(subtitle = "Scaled to 4x Standard Deviation, Last 10 Years",
               x = "Month", y = paste0("Values (", unit, ")"), fill = "Month") +
          ylim(min_RV, y_scale) +
          scale_x_continuous(limits = c(0, 13), breaks = seq(3, 12, 3)) +
-         theme_bw() +
-         theme(legend.position = "none",
-               axis.text.x = element_text(face = "bold"),
-               axis.text.y = element_text(face = "bold"))
+         plot_theme +
+         theme(legend.position = "none")
       
       leg2 <- get_legend(p8)
       Mset <- ggarrange(leg2, p7, p8 + theme(legend.position = "none"), p9,
                         ncol = 1, heights = c(0.1, 1, 1, 1))
       
       p000 <- ggplot() + labs(title = paste0("Summary Box Plots for ",
-                                           MA_name, "\n", Mon_name),
-                              subtitle = "By Month") + theme_bw() +
-         theme(plot.title = element_text(face="bold", hjust=0.5),
-               panel.border = element_blank(),
+                                             MA_name, "\n", Mon_name),
+                              subtitle = "By Month") + plot_theme +
+         theme(panel.border = element_blank(),
                panel.grid.major = element_blank(),
                panel.grid.minor = element_blank(), axis.line = element_blank())
       
       print(ggarrange(p0, Yset, ncol = 1, heights = c(0.1, 1)))
       print(ggarrange(p00, YMset, ncol = 1, heights = c(0.1, 1)))
       print(ggarrange(p000, Mset, ncol = 1, heights = c(0.1, 1)))
+      
+      rm(plot_data)
+      rm(p1, p2, p3, p4, p5, p6, p7, p8, p9, p0, p00, p000, leg1, leg2,
+         Yset, YMset, Mset)
    }
 }
 ```

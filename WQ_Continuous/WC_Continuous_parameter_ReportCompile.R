@@ -6,10 +6,6 @@ library(knitr)
 library(readr)
 library(dplyr)
 
-#For use if WQ_Continuous is a subdirectory in the overall project folder
-wd_start <- getwd()
-setwd("WQ_Continuous")
-
 #Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
 APP_Plots <- TRUE
 #Set output directory
@@ -67,8 +63,3 @@ for (param_name in all_params){
                            clean=TRUE)
    }
 }
-
-#Returns space to normal
-setwd(wd_start)
-rm(list = ls())
-gc()

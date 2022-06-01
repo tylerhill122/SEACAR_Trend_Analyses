@@ -1,17 +1,63 @@
-AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|Independent|Median|N|EarliestYear|LatestYear|tau|p|SennSlope|SennIntercept|Trend
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Turbidity|bottom|TRUE|8.71875|6665|2002|2022|-0.2843|0|-0.279356060606061|574.073232323232|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Turbidity|bottom|TRUE|7.13541666666667|6352|2002|2022|-0.0623|0|-0.0401785714285714|81.8357279693486|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Turbidity|bottom|TRUE|10.4583333333333|7234|2000|2022|-0.0966|0|-0.0920138888888888|219.111849937343|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Turbidity|bottom|TRUE|11.59375|2058|2016|2022|-0.0837|0|-0.241522606382979|747.842859100878|-1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Turbidity|bottom|TRUE|6.17894736842105|3985|2004|2021|-0.0712|0|-0.0763888888888889|155.361644345238|-1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Turbidity|bottom|TRUE|6.29166666666667|4300|2004|2021|-0.0652|0|-0.0657894736842105|137.191322055138|-1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Turbidity|bottom|TRUE|3.33333333333333|4356|2005|2019|0.0013|0.9178|-0.000582072965793896|81.3654967225446|0
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Turbidity|bottom|TRUE|1.40625|4793|2005|2019|-0.0154|0.0749|-0.00686274509803922|72.2443246580548|0
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Turbidity|bottom|TRUE|1.53125|3986|2009|2021|-0.1083|0|-0.0590277777777778|133.51810515873|-1
-38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Turbidity|bottom|TRUE|8.59895833333333|6528|2001|2022|-0.2197|0|-0.200231481481482|483.441671364366|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Turbidity|bottom|TRUE|8.71875|6665|2002|2022|-0.2843|0|-0.279356060606061|574.073232323232|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Turbidity|bottom|TRUE|7.13541666666667|6352|2002|2022|-0.0623|0|-0.0401785714285714|81.8357279693486|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Turbidity|bottom|TRUE|8.59895833333333|6528|2001|2022|-0.2197|0|-0.200231481481482|483.441671364366|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Turbidity|bottom|TRUE|10.4583333333333|7234|2000|2022|-0.0966|0|-0.0920138888888888|219.111849937343|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Turbidity|bottom|TRUE|11.59375|2058|2016|2022|-0.0837|0|-0.241522606382979|747.842859100878|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Turbidity|bottom|TRUE|5.59375|1368|1996|2000|-0.1333|0|-0.708333333333334|1427.95077804218|-2
+AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
+1|Alligator Harbor Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+2|Apalachicola Bay Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+3|Apalachicola National Estuarine Research Reserve||||Turbidity||0|0|||FALSE|||||||
+4|Banana River Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+5|Big Bend Seagrasses Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+6|Biscayne Bay Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+8|Boca Ciega Bay Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+9|Cape Haze Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Turbidity|bottom|6665|21|2002|2022|TRUE|8.71875|1|-0.2843|0|-0.279356060606061|574.073232323232|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Turbidity|bottom|6352|21|2002|2022|TRUE|7.13541666666667|1|-0.0623|0|-0.0401785714285714|81.8357279693486|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Turbidity|bottom|7234|23|2000|2022|TRUE|10.4583333333333|1|-0.0966|0|-0.0920138888888888|219.111849937343|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Turbidity|bottom|2058|7|2016|2022|FALSE|||||||
+11|Cockroach Bay Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+13|Coupon Bight Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Turbidity|bottom|3985|17|2004|2021|TRUE|6.17894736842105|1|-0.0712|0|-0.0763888888888889|155.361644345238|-1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Turbidity|bottom|4300|18|2004|2021|TRUE|6.29166666666667|1|-0.0652|0|-0.0657894736842105|137.191322055138|-1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB04|Turbidity|bottom|102|1|2021|2021|FALSE|||||||
+15|Florida Keys National Marine Sanctuary||||Turbidity||0|0|||FALSE|||||||
+16|Fort Clinch State Park Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+17|Fort Pickens State Park Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+19|Guana River Marsh Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Turbidity||0|0|||FALSE|||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+24|Lake Jackson Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+25|Lemon Bay Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+26|Lignumvitae Key Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Turbidity|bottom|4356|15|2005|2019|TRUE|3.33333333333333|1|0.0013|0.9178|-0.000582072965793896|81.3654967225446|0
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Turbidity|bottom|4793|15|2005|2019|TRUE|1.40625|1|-0.0154|0.0749|-0.00686274509803922|72.2443246580548|0
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Turbidity|bottom|3986|13|2009|2021|TRUE|1.53125|1|-0.1083|0|-0.0590277777777778|133.51810515873|-1
+29|Mosquito Lagoon Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+48|Nature Coast Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+31|North Fork St. Lucie Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+32|Oklawaha River Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+33|Pellicer Creek Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+34|Pine Island Sound Aquatic Preserve|7|National Water Information System|02293249|Turbidity|surface|142|4|2010|2013|FALSE|||||||
+35|Pinellas County Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+36|Rainbow Springs Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+37|Rocky Bayou State Park Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Turbidity|bottom|240|2|1997|1998|FALSE|||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Turbidity|bottom|6528|22|2001|2022|TRUE|8.59895833333333|1|-0.2197|0|-0.200231481481482|483.441671364366|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Turbidity|bottom|240|2|1997|1998|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Turbidity|bottom|6665|21|2002|2022|TRUE|8.71875|1|-0.2843|0|-0.279356060606061|574.073232323232|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Turbidity|bottom|6352|21|2002|2022|TRUE|7.13541666666667|1|-0.0623|0|-0.0401785714285714|81.8357279693486|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Turbidity|bottom|6528|22|2001|2022|TRUE|8.59895833333333|1|-0.2197|0|-0.200231481481482|483.441671364366|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Turbidity|bottom|7234|23|2000|2022|TRUE|10.4583333333333|1|-0.0966|0|-0.0920138888888888|219.111849937343|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Turbidity|bottom|2058|7|2016|2022|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Turbidity|bottom|1368|5|1996|2000|FALSE|||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Turbidity||0|0|||FALSE|||||||
+40|St. Andrews State Park Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+41|St. Joseph Bay Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+42|St. Joseph Bay State Buffer Preserve||||Turbidity||0|0|||FALSE|||||||
+43|St. Martins Marsh Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+44|Terra Ceia Aquatic Preserve|473|Terra Ceia Aquatic Preserve Continuous Water Quality Monitoring|TCBH|Turbidity|bottom|95|2|2008|2009|FALSE|||||||
+45|Tomoka Marsh Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+46|Wekiva River Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||
+47|Yellow River Marsh Aquatic Preserve||||Turbidity||0|0|||FALSE|||||||

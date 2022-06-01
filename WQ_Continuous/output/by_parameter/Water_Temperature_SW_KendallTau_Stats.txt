@@ -1,26 +1,87 @@
-AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|Independent|Median|N|EarliestYear|LatestYear|tau|p|SennSlope|SennIntercept|Trend
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255123081321300|Water Temperature|surface|TRUE|22.2|320|2008|2017|0.0053|0.9509|0|-92.598888888889|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255432081303900|Water Temperature|surface|TRUE|22.95|718|2007|2019|0.0386|0.3429|0.0250000000000004|-240.426666666667|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255534081324000|Water Temperature|surface|TRUE|24.3|653|2008|2019|0.0321|0.5943|0.0200000000000003|-175.900000000001|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255654081350200|Water Temperature|surface|TRUE|22.8|643|2008|2019|0.0265|0.8005|0|-110.341666666669|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Water Temperature|bottom|TRUE|26.8333333333333|6989|2002|2022|0.0776|0|0.0375578703703704|-32.9927546296299|1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Water Temperature|bottom|TRUE|26.8947916666667|7084|2002|2022|0.1283|0|0.0610677083333333|-92.5501844618057|1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Water Temperature|bottom|TRUE|26.703125|7734|2000|2022|0.0872|0|0.0374999999999999|-41.4436708257019|1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Water Temperature|bottom|TRUE|27.19375|2110|2016|2022|0.0378|0.008|0.0583333333333326|-65.6595844414901|1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Water Temperature|bottom|TRUE|26.5302083333333|5289|2004|2021|0.1427|0|0.0688060659789383|-95.4519196428573|1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Water Temperature|bottom|TRUE|26.5083333333333|5817|2004|2021|0.0747|0|0.0419270833333334|-56.2465010181697|1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Water Temperature|bottom|TRUE|26.1010416666667|5048|2005|2019|0.0705|0|0.0460416666666667|-74.2225694444441|1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Water Temperature|bottom|TRUE|26.0135416666667|5029|2005|2019|0.0759|0|0.048854166666667|-81.6283001893943|1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Water Temperature|bottom|TRUE|26.659375|4338|2009|2021|0.0927|0|0.0633680555555555|-234.623090277777|1
-35|Pinellas County Aquatic Preserve|5|National Data Buoy Center|CWBF1|Water Temperature|surface|TRUE|25.0917724247821|5360|2005|2021|0.0984|0|0.0594880045080392|-133.32746184113|1
-38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Water Temperature|bottom|TRUE|26.7197916666667|7321|2001|2022|0.0993|0|0.0451388888888893|-61.4456539351849|1
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255123081321300|Water Temperature|surface|TRUE|22.2|320|2008|2017|0.0053|0.9509|0|-92.598888888889|0
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255432081303900|Water Temperature|surface|TRUE|22.95|718|2007|2019|0.0386|0.3429|0.0250000000000004|-240.426666666667|0
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255534081324000|Water Temperature|surface|TRUE|24.3|653|2008|2019|0.0321|0.5943|0.0200000000000003|-175.900000000001|0
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255654081350200|Water Temperature|surface|TRUE|22.8|643|2008|2019|0.0265|0.8005|0|-110.341666666669|0
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Water Temperature|bottom|TRUE|26.8333333333333|6989|2002|2022|0.0776|0|0.0375578703703704|-32.9927546296299|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Water Temperature|bottom|TRUE|26.8947916666667|7084|2002|2022|0.1283|0|0.0610677083333333|-92.5501844618057|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Water Temperature|bottom|TRUE|26.7197916666667|7321|2001|2022|0.0993|0|0.0451388888888893|-61.4456539351849|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Water Temperature|bottom|TRUE|26.703125|7734|2000|2022|0.0872|0|0.0374999999999999|-41.4436708257019|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Water Temperature|bottom|TRUE|27.19375|2110|2016|2022|0.0378|0.008|0.0583333333333326|-65.6595844414901|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Water Temperature|bottom|TRUE|26.7541666666667|1443|1996|2000|-0.0323|0.0938|-0.0687500000000014|353.253038194444|0
+AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
+1|Alligator Harbor Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+2|Apalachicola Bay Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+3|Apalachicola National Estuarine Research Reserve||||Water Temperature||0|0|||FALSE|||||||
+4|Banana River Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+5|Big Bend Seagrasses Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+6|Biscayne Bay Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+8|Boca Ciega Bay Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+9|Cape Haze Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255123081321300|Water Temperature|surface|320|5|2008|2017|FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255138081321701|Water Temperature|surface|130|2|2018|2019|FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255432081303900|Water Temperature|surface|718|11|2007|2019|TRUE|22.95|1|0.0386|0.3429|0.0250000000000004|-240.426666666667|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255443081314700|Water Temperature|surface|137|3|2007|2011|FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255532081314300|Water Temperature|surface|130|2|2010|2011|FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255534081324000|Water Temperature|surface|653|10|2008|2019|TRUE|24.3|1|0.0321|0.5943|0.0200000000000003|-175.900000000001|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255654081350200|Water Temperature|surface|643|10|2008|2019|TRUE|22.8|1|0.0265|0.8005|0|-110.341666666669|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255732081363700|Water Temperature|surface|261|4|2012|2015|FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Water Temperature|bottom|6989|21|2002|2022|TRUE|26.8333333333333|1|0.0776|0|0.0375578703703704|-32.9927546296299|1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Water Temperature|bottom|7084|21|2002|2022|TRUE|26.8947916666667|1|0.1283|0|0.0610677083333333|-92.5501844618057|1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Water Temperature|bottom|7734|23|2000|2022|TRUE|26.703125|1|0.0872|0|0.0374999999999999|-41.4436708257019|1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Water Temperature|bottom|2110|7|2016|2022|FALSE|||||||
+11|Cockroach Bay Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+13|Coupon Bight Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Water Temperature|bottom|5289|18|2004|2021|TRUE|26.5302083333333|1|0.1427|0|0.0688060659789383|-95.4519196428573|1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Water Temperature|bottom|5817|18|2004|2021|TRUE|26.5083333333333|1|0.0747|0|0.0419270833333334|-56.2465010181697|1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB04|Water Temperature|bottom|143|1|2021|2021|FALSE|||||||
+15|Florida Keys National Marine Sanctuary||||Water Temperature||0|0|||FALSE|||||||
+16|Fort Clinch State Park Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+17|Fort Pickens State Park Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|National Water Information System|02293252|Water Temperature|surface|194|3|2012|2014|FALSE|||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|National Water Information System|02293254|Water Temperature|surface|196|3|2012|2014|FALSE|||||||
+19|Guana River Marsh Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Water Temperature||0|0|||FALSE|||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+24|Lake Jackson Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+25|Lemon Bay Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+26|Lignumvitae Key Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Water Temperature|bottom|5048|15|2005|2019|TRUE|26.1010416666667|1|0.0705|0|0.0460416666666667|-74.2225694444441|1
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Water Temperature|bottom|5029|15|2005|2019|TRUE|26.0135416666667|1|0.0759|0|0.048854166666667|-81.6283001893943|1
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Water Temperature|bottom|4338|13|2009|2021|TRUE|26.659375|1|0.0927|0|0.0633680555555555|-234.623090277777|1
+29|Mosquito Lagoon Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+48|Nature Coast Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+31|North Fork St. Lucie Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+32|Oklawaha River Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+33|Pellicer Creek Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+34|Pine Island Sound Aquatic Preserve|7|National Water Information System|02293249|Water Temperature|surface|191|4|2010|2013|FALSE|||||||
+35|Pinellas County Aquatic Preserve|5|National Data Buoy Center|CWBF1|Water Temperature|surface|5360|17|2005|2021|TRUE|25.0917724247821|1|0.0984|0|0.0594880045080392|-133.32746184113|1
+35|Pinellas County Aquatic Preserve|5|National Data Buoy Center|FHPF1|Water Temperature|surface|56|2|2013|2016|FALSE|||||||
+35|Pinellas County Aquatic Preserve|7|National Water Information System|02310175|Water Temperature|surface|196|3|2004|2006|FALSE|||||||
+35|Pinellas County Aquatic Preserve|7|National Water Information System|02310207|Water Temperature|surface|133|3|2004|2006|FALSE|||||||
+36|Rainbow Springs Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+37|Rocky Bayou State Park Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Water Temperature|bottom|267|2|1997|1998|FALSE|||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Water Temperature|bottom|7321|22|2001|2022|TRUE|26.7197916666667|1|0.0993|0|0.0451388888888893|-61.4456539351849|1
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|02291330|Water Temperature|surface|196|3|2012|2014|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255123081321300|Water Temperature|surface|320|5|2008|2017|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255138081321701|Water Temperature|surface|130|2|2018|2019|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255432081303900|Water Temperature|surface|718|11|2007|2019|TRUE|22.95|1|0.0386|0.3429|0.0250000000000004|-240.426666666667|0
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255443081314700|Water Temperature|surface|137|3|2007|2011|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255532081314300|Water Temperature|surface|130|2|2010|2011|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255534081324000|Water Temperature|surface|653|10|2008|2019|TRUE|24.3|1|0.0321|0.5943|0.0200000000000003|-175.900000000001|0
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255654081350200|Water Temperature|surface|643|10|2008|2019|TRUE|22.8|1|0.0265|0.8005|0|-110.341666666669|0
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255732081363700|Water Temperature|surface|261|4|2012|2015|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Water Temperature|bottom|267|2|1997|1998|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Water Temperature|bottom|6989|21|2002|2022|TRUE|26.8333333333333|1|0.0776|0|0.0375578703703704|-32.9927546296299|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Water Temperature|bottom|7084|21|2002|2022|TRUE|26.8947916666667|1|0.1283|0|0.0610677083333333|-92.5501844618057|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Water Temperature|bottom|7321|22|2001|2022|TRUE|26.7197916666667|1|0.0993|0|0.0451388888888893|-61.4456539351849|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Water Temperature|bottom|7734|23|2000|2022|TRUE|26.703125|1|0.0872|0|0.0374999999999999|-41.4436708257019|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Water Temperature|bottom|2110|7|2016|2022|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Water Temperature|bottom|1443|5|1996|2000|FALSE|||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Water Temperature||0|0|||FALSE|||||||
+40|St. Andrews State Park Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+41|St. Joseph Bay Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+42|St. Joseph Bay State Buffer Preserve||||Water Temperature||0|0|||FALSE|||||||
+43|St. Martins Marsh Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+44|Terra Ceia Aquatic Preserve|7|National Water Information System|023000825|Water Temperature|surface|65|1|2007|2007|FALSE|||||||
+44|Terra Ceia Aquatic Preserve|7|National Water Information System|02300084|Water Temperature|surface|65|1|2007|2007|FALSE|||||||
+44|Terra Ceia Aquatic Preserve|7|National Water Information System|023000842|Water Temperature|surface|65|1|2007|2007|FALSE|||||||
+44|Terra Ceia Aquatic Preserve|473|Terra Ceia Aquatic Preserve Continuous Water Quality Monitoring|TCBH|Water Temperature|bottom|95|2|2008|2009|FALSE|||||||
+45|Tomoka Marsh Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+46|Wekiva River Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||
+47|Yellow River Marsh Aquatic Preserve||||Water Temperature||0|0|||FALSE|||||||

@@ -1,17 +1,63 @@
-AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|Independent|Median|N|EarliestYear|LatestYear|tau|p|SennSlope|SennIntercept|Trend
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|pH|bottom|TRUE|7.82395833333333|6521|2002|2022|0.0254|0.0019|0.000833333333333375|5.85017607368025|1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|pH|bottom|TRUE|7.69583333333333|6722|2002|2022|-0.0479|0|-0.00156249999999991|12.2007599317816|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|pH|bottom|TRUE|7.66041666666667|7359|2000|2022|-0.0612|0|-0.0021577380952381|11.9969796479562|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|pH|bottom|TRUE|7.82604166666667|2013|2016|2022|0.1404|0|0.0125|-25.3097607877122|1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|pH|bottom|TRUE|8.04105263157895|4655|2004|2021|-0.0399|0.0001|-0.00123106060606062|10.9515190972223|-1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|pH|bottom|TRUE|7.94479166666667|5368|2004|2021|-0.0797|0|-0.003125|15.1985841987506|-1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|pH|bottom|TRUE|8.01041666666667|4225|2005|2019|-0.0922|0|-0.00520833333333333|13.5648437499993|-1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|pH|bottom|TRUE|8.00416666666667|4423|2005|2019|0.0118|0.2063|0.000694444444444997|7.14471034356724|0
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|pH|bottom|TRUE|7.93645833333333|3707|2009|2021|0.1648|0|0.01484375|-32.9970744680855|1
-38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|pH|bottom|TRUE|7.85208333333333|6682|2001|2022|0.053|0|0.00166666666666666|4.25260416666662|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|pH|bottom|TRUE|7.82395833333333|6521|2002|2022|0.0254|0.0019|0.000833333333333375|5.85017607368025|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|pH|bottom|TRUE|7.69583333333333|6722|2002|2022|-0.0479|0|-0.00156249999999991|12.2007599317816|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|pH|bottom|TRUE|7.85208333333333|6682|2001|2022|0.053|0|0.00166666666666666|4.25260416666662|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|pH|bottom|TRUE|7.66041666666667|7359|2000|2022|-0.0612|0|-0.0021577380952381|11.9969796479562|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|pH|bottom|TRUE|7.82604166666667|2013|2016|2022|0.1404|0|0.0125|-25.3097607877122|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|pH|bottom|TRUE|7.17291666666667|1381|1996|2000|0.1724|0|0.0479166666666666|-126.69532358156|1
+AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
+1|Alligator Harbor Aquatic Preserve||||pH||0|0|||FALSE|||||||
+2|Apalachicola Bay Aquatic Preserve||||pH||0|0|||FALSE|||||||
+3|Apalachicola National Estuarine Research Reserve||||pH||0|0|||FALSE|||||||
+4|Banana River Aquatic Preserve||||pH||0|0|||FALSE|||||||
+5|Big Bend Seagrasses Aquatic Preserve||||pH||0|0|||FALSE|||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||pH||0|0|||FALSE|||||||
+6|Biscayne Bay Aquatic Preserve||||pH||0|0|||FALSE|||||||
+8|Boca Ciega Bay Aquatic Preserve||||pH||0|0|||FALSE|||||||
+9|Cape Haze Aquatic Preserve||||pH||0|0|||FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|pH|bottom|6521|21|2002|2022|TRUE|7.82395833333333|1|0.0254|0.0019|0.000833333333333375|5.85017607368025|1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|pH|bottom|6722|21|2002|2022|TRUE|7.69583333333333|1|-0.0479|0|-0.00156249999999991|12.2007599317816|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|pH|bottom|7359|23|2000|2022|TRUE|7.66041666666667|1|-0.0612|0|-0.0021577380952381|11.9969796479562|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|pH|bottom|2013|7|2016|2022|FALSE|||||||
+11|Cockroach Bay Aquatic Preserve||||pH||0|0|||FALSE|||||||
+13|Coupon Bight Aquatic Preserve||||pH||0|0|||FALSE|||||||
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|pH|bottom|4655|17|2004|2021|TRUE|8.04105263157895|1|-0.0399|0.0001|-0.00123106060606062|10.9515190972223|-1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|pH|bottom|5368|18|2004|2021|TRUE|7.94479166666667|1|-0.0797|0|-0.003125|15.1985841987506|-1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB04|pH|bottom|143|1|2021|2021|FALSE|||||||
+15|Florida Keys National Marine Sanctuary||||pH||0|0|||FALSE|||||||
+16|Fort Clinch State Park Aquatic Preserve||||pH||0|0|||FALSE|||||||
+17|Fort Pickens State Park Aquatic Preserve||||pH||0|0|||FALSE|||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||pH||0|0|||FALSE|||||||
+19|Guana River Marsh Aquatic Preserve||||pH||0|0|||FALSE|||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve||||pH||0|0|||FALSE|||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve||||pH||0|0|||FALSE|||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||pH||0|0|||FALSE|||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||pH||0|0|||FALSE|||||||
+24|Lake Jackson Aquatic Preserve||||pH||0|0|||FALSE|||||||
+25|Lemon Bay Aquatic Preserve||||pH||0|0|||FALSE|||||||
+26|Lignumvitae Key Aquatic Preserve||||pH||0|0|||FALSE|||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||pH||0|0|||FALSE|||||||
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|pH|bottom|4225|15|2005|2019|TRUE|8.01041666666667|1|-0.0922|0|-0.00520833333333333|13.5648437499993|-1
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|pH|bottom|4423|15|2005|2019|TRUE|8.00416666666667|1|0.0118|0.2063|0.000694444444444997|7.14471034356724|0
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|pH|bottom|3707|13|2009|2021|TRUE|7.93645833333333|1|0.1648|0|0.01484375|-32.9970744680855|1
+29|Mosquito Lagoon Aquatic Preserve||||pH||0|0|||FALSE|||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve||||pH||0|0|||FALSE|||||||
+48|Nature Coast Aquatic Preserve||||pH||0|0|||FALSE|||||||
+31|North Fork St. Lucie Aquatic Preserve||||pH||0|0|||FALSE|||||||
+32|Oklawaha River Aquatic Preserve||||pH||0|0|||FALSE|||||||
+33|Pellicer Creek Aquatic Preserve||||pH||0|0|||FALSE|||||||
+34|Pine Island Sound Aquatic Preserve|7|National Water Information System|02293249|pH|surface|154|4|2010|2013|FALSE|||||||
+35|Pinellas County Aquatic Preserve||||pH||0|0|||FALSE|||||||
+36|Rainbow Springs Aquatic Preserve||||pH||0|0|||FALSE|||||||
+37|Rocky Bayou State Park Aquatic Preserve||||pH||0|0|||FALSE|||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|pH|bottom|267|2|1997|1998|FALSE|||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|pH|bottom|6682|22|2001|2022|TRUE|7.85208333333333|1|0.053|0|0.00166666666666666|4.25260416666662|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|pH|bottom|267|2|1997|1998|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|pH|bottom|6521|21|2002|2022|TRUE|7.82395833333333|1|0.0254|0.0019|0.000833333333333375|5.85017607368025|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|pH|bottom|6722|21|2002|2022|TRUE|7.69583333333333|1|-0.0479|0|-0.00156249999999991|12.2007599317816|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|pH|bottom|6682|22|2001|2022|TRUE|7.85208333333333|1|0.053|0|0.00166666666666666|4.25260416666662|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|pH|bottom|7359|23|2000|2022|TRUE|7.66041666666667|1|-0.0612|0|-0.0021577380952381|11.9969796479562|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|pH|bottom|2013|7|2016|2022|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|pH|bottom|1381|5|1996|2000|FALSE|||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||pH||0|0|||FALSE|||||||
+40|St. Andrews State Park Aquatic Preserve||||pH||0|0|||FALSE|||||||
+41|St. Joseph Bay Aquatic Preserve||||pH||0|0|||FALSE|||||||
+42|St. Joseph Bay State Buffer Preserve||||pH||0|0|||FALSE|||||||
+43|St. Martins Marsh Aquatic Preserve||||pH||0|0|||FALSE|||||||
+44|Terra Ceia Aquatic Preserve|473|Terra Ceia Aquatic Preserve Continuous Water Quality Monitoring|TCBH|pH|bottom|95|2|2008|2009|FALSE|||||||
+45|Tomoka Marsh Aquatic Preserve||||pH||0|0|||FALSE|||||||
+46|Wekiva River Aquatic Preserve||||pH||0|0|||FALSE|||||||
+47|Yellow River Marsh Aquatic Preserve||||pH||0|0|||FALSE|||||||

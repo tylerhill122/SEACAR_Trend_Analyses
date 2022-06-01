@@ -1,17 +1,63 @@
-AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|Independent|Median|N|EarliestYear|LatestYear|tau|p|SennSlope|SennIntercept|Trend
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Dissolved Oxygen|bottom|TRUE|5.37765957446809|5565|2002|2022|-0.0033|0.6105|-0.00104166666666661|0.790879498105976|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Dissolved Oxygen|bottom|TRUE|5.05416666666667|5931|2002|2022|-0.1416|0|-0.0229166666666667|55.5403461224233|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Dissolved Oxygen|bottom|TRUE|4.46614583333333|6416|2000|2022|-0.0766|0|-0.01328125|31.0265234375|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Dissolved Oxygen|bottom|TRUE|5.01614583333333|2098|2016|2022|-0.0169|0.2678|-0.00979166666666664|7.40881076388888|0
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Dissolved Oxygen|bottom|TRUE|5.99166666666667|4167|2004|2021|0.2249|0|0.0606770833333334|-98.7861796154954|1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Dissolved Oxygen|bottom|TRUE|5.80208333333333|4543|2004|2021|0.1465|0|0.0414539359950475|-84.2967636328725|1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Dissolved Oxygen|bottom|TRUE|6.21822916666667|4732|2005|2019|-0.0412|0|-0.0149739583333333|29.0736607142857|-1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Dissolved Oxygen|bottom|TRUE|6.51361293859649|4912|2005|2019|0.0065|0.4888|0.00208333333333322|-4.1716666666668|0
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Dissolved Oxygen|bottom|TRUE|5.58333333333333|4081|2009|2021|0.169|0|0.0897916666666666|-217.12125|1
-38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Dissolved Oxygen|bottom|TRUE|5.47725134408602|5898|2001|2022|0.0241|0.0035|0.00451388888888886|-18.1360367063492|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Dissolved Oxygen|bottom|TRUE|5.37765957446809|5565|2002|2022|-0.0033|0.6105|-0.00104166666666661|0.790879498105976|0
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Dissolved Oxygen|bottom|TRUE|5.05416666666667|5931|2002|2022|-0.1416|0|-0.0229166666666667|55.5403461224233|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Dissolved Oxygen|bottom|TRUE|5.47725134408602|5898|2001|2022|0.0241|0.0035|0.00451388888888886|-18.1360367063492|1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Dissolved Oxygen|bottom|TRUE|4.46614583333333|6416|2000|2022|-0.0766|0|-0.01328125|31.0265234375|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Dissolved Oxygen|bottom|TRUE|5.01614583333333|2098|2016|2022|-0.0169|0.2678|-0.00979166666666664|7.40881076388888|0
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Dissolved Oxygen|bottom|TRUE|3.67395833333333|1242|1996|2000|0.0183|0.1839|0.0489583333333332|154.917708333334|0
+AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
+1|Alligator Harbor Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+2|Apalachicola Bay Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+3|Apalachicola National Estuarine Research Reserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+4|Banana River Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+5|Big Bend Seagrasses Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+6|Biscayne Bay Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+8|Boca Ciega Bay Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+9|Cape Haze Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Dissolved Oxygen|bottom|5565|19|2002|2022|TRUE|5.37765957446809|1|-0.0033|0.6105|-0.00104166666666661|0.790879498105976|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Dissolved Oxygen|bottom|5931|18|2002|2022|TRUE|5.05416666666667|1|-0.1416|0|-0.0229166666666667|55.5403461224233|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Dissolved Oxygen|bottom|6416|20|2000|2022|TRUE|4.46614583333333|1|-0.0766|0|-0.01328125|31.0265234375|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Dissolved Oxygen|bottom|2098|7|2016|2022|FALSE|||||||
+11|Cockroach Bay Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+13|Coupon Bight Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Dissolved Oxygen|bottom|4167|17|2004|2021|TRUE|5.99166666666667|1|0.2249|0|0.0606770833333334|-98.7861796154954|1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Dissolved Oxygen|bottom|4543|18|2004|2021|TRUE|5.80208333333333|1|0.1465|0|0.0414539359950475|-84.2967636328725|1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB04|Dissolved Oxygen|bottom|94|1|2021|2021|FALSE|||||||
+15|Florida Keys National Marine Sanctuary||||Dissolved Oxygen||0|0|||FALSE|||||||
+16|Fort Clinch State Park Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+17|Fort Pickens State Park Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+19|Guana River Marsh Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+24|Lake Jackson Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+25|Lemon Bay Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+26|Lignumvitae Key Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Dissolved Oxygen|bottom|4732|15|2005|2019|TRUE|6.21822916666667|1|-0.0412|0|-0.0149739583333333|29.0736607142857|-1
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Dissolved Oxygen|bottom|4912|15|2005|2019|TRUE|6.51361293859649|1|0.0065|0.4888|0.00208333333333322|-4.1716666666668|0
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Dissolved Oxygen|bottom|4081|13|2009|2021|TRUE|5.58333333333333|1|0.169|0|0.0897916666666666|-217.12125|1
+29|Mosquito Lagoon Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+48|Nature Coast Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+31|North Fork St. Lucie Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+32|Oklawaha River Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+33|Pellicer Creek Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+34|Pine Island Sound Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+35|Pinellas County Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+36|Rainbow Springs Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+37|Rocky Bayou State Park Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Dissolved Oxygen|bottom|222|2|1997|1998|FALSE|||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Dissolved Oxygen|bottom|5898|19|2001|2022|TRUE|5.47725134408602|1|0.0241|0.0035|0.00451388888888886|-18.1360367063492|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Dissolved Oxygen|bottom|222|2|1997|1998|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Dissolved Oxygen|bottom|5565|19|2002|2022|TRUE|5.37765957446809|1|-0.0033|0.6105|-0.00104166666666661|0.790879498105976|0
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Dissolved Oxygen|bottom|5931|18|2002|2022|TRUE|5.05416666666667|1|-0.1416|0|-0.0229166666666667|55.5403461224233|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Dissolved Oxygen|bottom|5898|19|2001|2022|TRUE|5.47725134408602|1|0.0241|0.0035|0.00451388888888886|-18.1360367063492|1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Dissolved Oxygen|bottom|6416|20|2000|2022|TRUE|4.46614583333333|1|-0.0766|0|-0.01328125|31.0265234375|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Dissolved Oxygen|bottom|2098|7|2016|2022|FALSE|||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Dissolved Oxygen|bottom|1242|5|1996|2000|FALSE|||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Dissolved Oxygen||0|0|||FALSE|||||||
+40|St. Andrews State Park Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+41|St. Joseph Bay Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+42|St. Joseph Bay State Buffer Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+43|St. Martins Marsh Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+44|Terra Ceia Aquatic Preserve|473|Terra Ceia Aquatic Preserve Continuous Water Quality Monitoring|TCBH|Dissolved Oxygen|bottom|95|2|2008|2009|FALSE|||||||
+45|Tomoka Marsh Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+46|Wekiva River Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
+47|Yellow River Marsh Aquatic Preserve||||Dissolved Oxygen||0|0|||FALSE|||||||
