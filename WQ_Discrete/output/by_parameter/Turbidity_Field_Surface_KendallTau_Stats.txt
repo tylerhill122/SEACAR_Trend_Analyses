@@ -1,43 +1,43 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
 1|Alligator Harbor Aquatic Preserve|Turbidity|Surface|Field|FALSE|84|2|2021|2022|||||||
-2|Apalachicola Bay Aquatic Preserve|Turbidity|Surface|Field|TRUE|3368|21|2000|2020|6.3|TRUE|-0.1334|0|-0.166666666666667|294.747991071429|-1
-3|Apalachicola National Estuarine Research Reserve|Turbidity|Surface|Field|TRUE|4129|21|2000|2020|6.2|TRUE|-0.0985|0|-0.124666666666667|214.568084415584|-1
-4|Banana River Aquatic Preserve|Turbidity|Surface|Field|TRUE|445|17|2003|2019|4.21|TRUE|-0.0065|0.9832|-0.000416666666666676|64.7954545454545|0
+2|Apalachicola Bay Aquatic Preserve|Turbidity|Surface|Field|TRUE|3368|21|2000|2020|6.3|TRUE|-0.133428678680831|0.000000000000000000000000000000000908221904217281|-0.166666666666667|294.747991071429|-1
+3|Apalachicola National Estuarine Research Reserve|Turbidity|Surface|Field|TRUE|4129|21|2000|2020|6.2|TRUE|-0.0984771698937118|0.0000000000000000000000174776034316986|-0.124666666666667|214.568084415584|-1
+4|Banana River Aquatic Preserve|Turbidity|Surface|Field|TRUE|445|17|2003|2019|4.21|TRUE|-0.00654607250764029|0.983211545835487|-0.000416666666666676|64.7954545454545|0
 5|Big Bend Seagrasses Aquatic Preserve|Turbidity|Surface|Field|FALSE|170|9|2005|2021|||||||
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Turbidity|Surface|Field|FALSE|0|0|||||||||
-6|Biscayne Bay Aquatic Preserve|Turbidity|Surface|Field|TRUE|2610|14|1982|2020|2.575|TRUE|0.0097|0|0.07|699.7|1
+6|Biscayne Bay Aquatic Preserve|Turbidity|Surface|Field|TRUE|2610|14|1982|2020|2.575|TRUE|0.00966722235189869|0.000000000468727481441159|0.07|699.7|1
 8|Boca Ciega Bay Aquatic Preserve|Turbidity|Surface|Field|FALSE|35|5|2001|2021|||||||
 9|Cape Haze Aquatic Preserve|Turbidity|Surface|Field|FALSE|0|0|||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Turbidity|Surface|Field|TRUE|613|10|2002|2019|6.61|TRUE|0.0918|0.0012|0.0785164835164835|-190.41|1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Turbidity|Surface|Field|TRUE|613|10|2002|2019|6.61|TRUE|0.0917614604050386|0.00123996380357905|0.0785164835164835|-190.41|1
 11|Cockroach Bay Aquatic Preserve|Turbidity|Surface|Field|FALSE|0|0|||||||||
-13|Coupon Bight Aquatic Preserve|Turbidity|Surface|Field|TRUE|63|17|1995|2011|0.7|TRUE|0.1577|0.2472|0.0170260303030303|-36.4148362078671|0
-14|Estero Bay Aquatic Preserve|Turbidity|Surface|Field|TRUE|4969|31|1991|2021|3.2|TRUE|0.1338|0|0.059090909090909|-103.342516339869|1
-15|Florida Keys National Marine Sanctuary|Turbidity|Surface|Field|TRUE|16399|26|1995|2020|0.61|TRUE|-0.1214|0|-0.0159090909090909|25.8170263157895|-1
+13|Coupon Bight Aquatic Preserve|Turbidity|Surface|Field|TRUE|63|17|1995|2011|0.7|TRUE|0.157671957671958|0.247198249397975|0.0170260303030303|-36.4148362078671|0
+14|Estero Bay Aquatic Preserve|Turbidity|Surface|Field|TRUE|4969|31|1991|2021|3.2|TRUE|0.13378678910238|0.0000000000000000000000000000000000000000000305149209996341|0.059090909090909|-103.342516339869|1
+15|Florida Keys National Marine Sanctuary|Turbidity|Surface|Field|TRUE|16399|26|1995|2020|0.61|TRUE|-0.121425197202867|0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000217376227031119|-0.0159090909090909|25.8170263157895|-1
 16|Fort Clinch State Park Aquatic Preserve|Turbidity|Surface|Field|FALSE|5|2|2019|2020|||||||
 17|Fort Pickens State Park Aquatic Preserve|Turbidity|Surface|Field|FALSE|31|5|1999|2014|||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Turbidity|Surface|Field|TRUE|549|21|1996|2017|0.998|TRUE|0.0105|0.8672|0.000625000000000001|15.0709038461538|0
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Turbidity|Surface|Field|TRUE|549|21|1996|2017|0.998|TRUE|0.010516532594643|0.867232729603268|0.000625000000000001|15.0709038461538|0
 19|Guana River Marsh Aquatic Preserve|Turbidity|Surface|Field|FALSE|5|2|2012|2019|||||||
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|Turbidity|Surface|Field|FALSE|8|4|2009|2021|||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Turbidity|Surface|Field|TRUE|1418|18|2003|2020|4.065|TRUE|-0.0253|0.5729|-0.0076923076923077|41.4686423992673|0
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Turbidity|Surface|Field|TRUE|318|17|2004|2020|4.01|TRUE|-0.0043|0.4161|0.0270833333333333|-27.1855909090909|0
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Turbidity|Surface|Field|TRUE|243|14|2004|2018|3.43|TRUE|-0.2057|0.0005|-0.180833333333333|392.393571428571|-1
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Turbidity|Surface|Field|TRUE|1418|18|2003|2020|4.065|TRUE|-0.0252646353118511|0.572928196222063|-0.0076923076923077|41.4686423992673|0
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Turbidity|Surface|Field|TRUE|318|17|2004|2020|4.01|TRUE|-0.00430229251045703|0.416105436707654|0.0270833333333333|-27.1855909090909|0
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Turbidity|Surface|Field|TRUE|243|14|2004|2018|3.43|TRUE|-0.205726870394074|0.000494327314364882|-0.180833333333333|392.393571428571|-1
 24|Lake Jackson Aquatic Preserve|Turbidity|Surface|Field|FALSE|0|0|||||||||
 25|Lemon Bay Aquatic Preserve|Turbidity|Surface|Field|FALSE|22|5|2003|2021|||||||
 26|Lignumvitae Key Aquatic Preserve|Turbidity|Surface|Field|FALSE|9|2|2016|2017|||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Turbidity|Surface|Field|TRUE|582|15|2003|2018|2.47|TRUE|-0.1669|0|-0.0819999999999999|177.4025|-1
-28|Matlacha Pass Aquatic Preserve|Turbidity|Surface|Field|TRUE|638|21|1996|2019|1.3|TRUE|0.1015|0.0001|0.02|-26.2791857142857|1
-29|Mosquito Lagoon Aquatic Preserve|Turbidity|Surface|Field|TRUE|35|10|1991|2019|8.08|TRUE|0.3506|0.0041|0.303508771929825|-298.179671160131|1
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|Turbidity|Surface|Field|TRUE|15142|14|1985|2021|16.7|TRUE|-0.0507|0|-3.3|-852.471666666667|-2
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Turbidity|Surface|Field|TRUE|582|15|2003|2018|2.47|TRUE|-0.166944026523178|0.000000000274853909733091|-0.0819999999999999|177.4025|-1
+28|Matlacha Pass Aquatic Preserve|Turbidity|Surface|Field|TRUE|638|21|1996|2019|1.3|TRUE|0.10146954388235|0.00012587302243466|0.02|-26.2791857142857|1
+29|Mosquito Lagoon Aquatic Preserve|Turbidity|Surface|Field|TRUE|35|10|1991|2019|8.08|TRUE|0.350574712643678|0.00409791572749717|0.303508771929825|-298.179671160131|1
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|Turbidity|Surface|Field|TRUE|15142|14|1985|2021|16.7|TRUE|-0.0506546328268427|0.000000000000000000000000000000000000000000000000000000384634739865573|-3.3|-852.471666666667|-2
 48|Nature Coast Aquatic Preserve|Turbidity|Surface|Field|FALSE|2|2|2005|2020|||||||
 31|North Fork St. Lucie Aquatic Preserve|Turbidity|Surface|Field|FALSE|0|0|||||||||
 32|Oklawaha River Aquatic Preserve|Turbidity|Surface|Field|FALSE|0|0|||||||||
 33|Pellicer Creek Aquatic Preserve|Turbidity|Surface|Field|FALSE|2|1|2009|2009|||||||
-34|Pine Island Sound Aquatic Preserve|Turbidity|Surface|Field|TRUE|2053|26|1996|2022|1.96|TRUE|0.2578|0|0.0890909090909091|-166.9469185|1
-35|Pinellas County Aquatic Preserve|Turbidity|Surface|Field|TRUE|680|16|1999|2021|1.77|TRUE|-0.0766|0.0266|-0.0177777777777778|129.77875|-1
+34|Pine Island Sound Aquatic Preserve|Turbidity|Surface|Field|TRUE|2053|26|1996|2022|1.96|TRUE|0.257773138317056|0.0000000000000000000000000000000000000000000000000000000000000000000000751111078078001|0.0890909090909091|-166.9469185|1
+35|Pinellas County Aquatic Preserve|Turbidity|Surface|Field|TRUE|680|16|1999|2021|1.77|TRUE|-0.0766342616871003|0.0265517164102646|-0.0177777777777778|129.77875|-1
 36|Rainbow Springs Aquatic Preserve|Turbidity|Surface|Field|FALSE|0|0|||||||||
-37|Rocky Bayou State Park Aquatic Preserve|Turbidity|Surface|Field|TRUE|165|17|2001|2021|0.6|TRUE|-0.0443|0.5164|0|0.9|0
-38|Rookery Bay Aquatic Preserve|Turbidity|Surface|Field|TRUE|609|13|2000|2020|8.18|TRUE|-0.1188|0|-0.165384615384615|350.608125|-1
-39|Rookery Bay National Estuarine Research Reserve|Turbidity|Surface|Field|TRUE|1222|13|2000|2020|7.4|TRUE|-0.0535|0.0022|-0.052|115.880164835165|-1
+37|Rocky Bayou State Park Aquatic Preserve|Turbidity|Surface|Field|TRUE|165|17|2001|2021|0.6|TRUE|-0.0443013552104461|0.516370271173521|0|0.9|0
+38|Rookery Bay Aquatic Preserve|Turbidity|Surface|Field|TRUE|609|13|2000|2020|8.18|TRUE|-0.118809656063946|0.00000513868063117577|-0.165384615384615|350.608125|-1
+39|Rookery Bay National Estuarine Research Reserve|Turbidity|Surface|Field|TRUE|1222|13|2000|2020|7.4|TRUE|-0.0535495595247493|0.00224724011779882|-0.052|115.880164835165|-1
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|Turbidity|Surface|Field|FALSE|132|3|2009|2011|||||||
 40|St. Andrews State Park Aquatic Preserve|Turbidity|Surface|Field|FALSE|8|4|2005|2021|||||||
 41|St. Joseph Bay Aquatic Preserve|Turbidity|Surface|Field|FALSE|68|3|2005|2022|||||||

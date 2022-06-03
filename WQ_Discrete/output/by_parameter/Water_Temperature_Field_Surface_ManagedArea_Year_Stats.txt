@@ -181,17 +181,17 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 6|Biscayne Bay Aquatic Preserve|1999|Water Temperature|Surface|Field|132|17|31.3|24.45|25.0242424242424|4.35541465606641|509
 6|Biscayne Bay Aquatic Preserve|2000|Water Temperature|Surface|Field|132|16.4|32|25.35|25.4318181818182|3.9281586343688|509
 6|Biscayne Bay Aquatic Preserve|2001|Water Temperature|Surface|Field|133|17.1|31.77|25.9|25.7290977443609|3.4033525046161|509, 5002
-6|Biscayne Bay Aquatic Preserve|2002|Water Temperature|Surface|Field|152|14.3|32.376|27.27|25.7784868421053|4.73281015326472|3, 509
-6|Biscayne Bay Aquatic Preserve|2003|Water Temperature|Surface|Field|634|18.16|35.3|28.295|26.8751498422713|3.44503428533257|3, 103, 509, 5002
-6|Biscayne Bay Aquatic Preserve|2004|Water Temperature|Surface|Field|192|18.148|32.53|25.977|26.0873958333333|3.70734921312322|3, 115, 509
-6|Biscayne Bay Aquatic Preserve|2005|Water Temperature|Surface|Field|423|16.97|33.8|27|26.7288510638298|3.14853069833123|3, 509, 965, 4049, 5002
-6|Biscayne Bay Aquatic Preserve|2006|Water Temperature|Surface|Field|397|17.67|32.22|26.59|26.6537858942066|3.11638507754059|3, 509, 965, 4049, 5002
-6|Biscayne Bay Aquatic Preserve|2007|Water Temperature|Surface|Field|404|19.48|32.9|25.4|26.7147227722772|3.42721259062177|3, 509, 965, 4049, 5002
-6|Biscayne Bay Aquatic Preserve|2008|Water Temperature|Surface|Field|319|20.49|32.3|27.222|26.9097680250784|2.45247876457116|3, 509, 965, 5002
-6|Biscayne Bay Aquatic Preserve|2009|Water Temperature|Surface|Field|335|18.39|32.8|27.3|27.4566119402985|2.79099448588067|3, 965, 5002
-6|Biscayne Bay Aquatic Preserve|2010|Water Temperature|Surface|Field|320|12.31|32.2|28|26.23589375|4.18393662193719|3, 965, 5002
-6|Biscayne Bay Aquatic Preserve|2011|Water Temperature|Surface|Field|288|19.37|34|27.9|27.2288298611111|3.49308109188806|3, 965, 5002
-6|Biscayne Bay Aquatic Preserve|2012|Water Temperature|Surface|Field|52|20.91|33.342|24.9165|26.4628461538462|3.67017882443325|3, 95, 5002
+6|Biscayne Bay Aquatic Preserve|2002|Water Temperature|Surface|Field|132|14.3|32.18|27.09|25.427196969697|4.80888194055112|509
+6|Biscayne Bay Aquatic Preserve|2003|Water Temperature|Surface|Field|585|18.16|35.3|28.34|26.9078290598291|3.43545069497129|103, 509, 5002
+6|Biscayne Bay Aquatic Preserve|2004|Water Temperature|Surface|Field|133|18.15|32.53|26.84|26.3338345864662|3.56490760681933|115, 509
+6|Biscayne Bay Aquatic Preserve|2005|Water Temperature|Surface|Field|367|16.97|33.8|27.04|26.893242506812|2.91219315389964|509, 965, 4049, 5002
+6|Biscayne Bay Aquatic Preserve|2006|Water Temperature|Surface|Field|361|17.67|32.22|26.58|26.6154847645429|3.14535183518924|509, 965, 4049, 5002
+6|Biscayne Bay Aquatic Preserve|2007|Water Temperature|Surface|Field|374|19.48|32.9|25.36|26.7730748663102|3.42812385237101|509, 965, 4049, 5002
+6|Biscayne Bay Aquatic Preserve|2008|Water Temperature|Surface|Field|301|20.49|32.3|26.92|26.9002990033223|2.44704820350949|509, 965, 5002
+6|Biscayne Bay Aquatic Preserve|2009|Water Temperature|Surface|Field|300|18.39|32.8|27.2|27.4339666666667|2.71117011828037|965, 5002
+6|Biscayne Bay Aquatic Preserve|2010|Water Temperature|Surface|Field|290|12.31|32.2|28|26.1457586206897|4.2225725128949|965, 5002
+6|Biscayne Bay Aquatic Preserve|2011|Water Temperature|Surface|Field|254|19.37|34|28|27.3798818897638|3.56502969761657|965, 5002
+6|Biscayne Bay Aquatic Preserve|2012|Water Temperature|Surface|Field|28|20.91|30.39|24.725|25.6771428571429|3.56427319186442|95, 5002
 6|Biscayne Bay Aquatic Preserve|2013|Water Temperature|Surface|Field|38|18.07|30.7|27.515|26.2184210526316|3.40957120734018|95, 5002
 6|Biscayne Bay Aquatic Preserve|2014|Water Temperature|Surface|Field|27|18.88|31.7|26.36|26.5114814814815|3.28855556753991|5002
 6|Biscayne Bay Aquatic Preserve|2015|Water Temperature|Surface|Field|64|20.93|34.05|28.31|27.96296875|3.15826387896367|95, 4057, 5002
@@ -456,21 +456,21 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 15|Florida Keys National Marine Sanctuary|1995|Water Temperature|Surface|Field|472|17.3|32.7|26.2|26.882436440678|3.18073376747583|60, 95, 297, 509
 15|Florida Keys National Marine Sanctuary|1996|Water Temperature|Surface|Field|542|18.2|34.5|26.4|26.4086346863469|3.9183277558601|60, 95, 102, 297, 509
 15|Florida Keys National Marine Sanctuary|1997|Water Temperature|Surface|Field|710|17.8|39.6|27.9|27.9900422535211|2.91308678386722|60, 69, 297, 509
-15|Florida Keys National Marine Sanctuary|1998|Water Temperature|Surface|Field|658|17.9|33.6|26.7|26.6554012158055|3.63567248862775|3, 297, 509
-15|Florida Keys National Marine Sanctuary|1999|Water Temperature|Surface|Field|977|17.4|34.56|26.8|26.4211210849539|3.31914436524255|3, 69, 297, 509
-15|Florida Keys National Marine Sanctuary|2000|Water Temperature|Surface|Field|1207|15.8095|33.3|25.88|26.4126560894781|3.75748163030112|3, 69, 95, 115, 297, 509
-15|Florida Keys National Marine Sanctuary|2001|Water Temperature|Surface|Field|700|14.6|32.606|26.16|26.0738121428571|3.71523214584505|3, 60, 95, 115, 297, 509
-15|Florida Keys National Marine Sanctuary|2002|Water Temperature|Surface|Field|741|15.93|33.303|27.84|27.0357638326586|2.95381509322443|3, 60, 115, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|Water Temperature|Surface|Field|906|15.04|31.88|28.08|27.1021114790287|3.2862932430432|3, 60, 95, 103, 115, 297, 509, 5002
-15|Florida Keys National Marine Sanctuary|2004|Water Temperature|Surface|Field|943|15.95|32.98|26.4|26.0854454931071|3.87705656724864|3, 103, 115, 297, 509, 5002
-15|Florida Keys National Marine Sanctuary|2005|Water Temperature|Surface|Field|1166|17.01|33.8|26.12705|26.5332433962264|3.80013798156131|3, 95, 297, 509, 965, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2006|Water Temperature|Surface|Field|1374|15.2|35.5|26.46565|26.3962246724891|3.30732019855517|3, 60, 69, 95, 297, 509, 965, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2007|Water Temperature|Surface|Field|1160|18.8653|33.1639|26.02665|26.5116693103448|3.22560058052447|3, 69, 95, 297, 509, 965, 4049
-15|Florida Keys National Marine Sanctuary|2008|Water Temperature|Surface|Field|938|14|33.1|26.7338|26.6967910447761|3.09356686503055|3, 60, 69, 95, 297, 509, 965, 4049
-15|Florida Keys National Marine Sanctuary|2009|Water Temperature|Surface|Field|923|10.51|37.1694|28.7166|27.1781325027086|3.94386628908307|3, 60, 69, 95, 297, 965
-15|Florida Keys National Marine Sanctuary|2010|Water Temperature|Surface|Field|986|12.4|37.5473|27.48065|26.199347464503|4.51222066674714|3, 60, 95, 297, 965, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2011|Water Temperature|Surface|Field|863|16.5235|36.1|26.5417|25.8772867902665|3.73969968657444|3, 60, 95, 297, 965, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2012|Water Temperature|Surface|Field|617|15.7|33.342|26.0214|26.3903862236629|3.06944970582869|3, 60, 95, 297, 4049, 5002
+15|Florida Keys National Marine Sanctuary|1998|Water Temperature|Surface|Field|646|17.9|33.6|26.7|26.667213622291|3.6369554488941|297, 509
+15|Florida Keys National Marine Sanctuary|1999|Water Temperature|Surface|Field|966|17.4|34.56|26.8|26.4067798136646|3.3198891495628|69, 297, 509
+15|Florida Keys National Marine Sanctuary|2000|Water Temperature|Surface|Field|1196|15.8095|33.3|25.88|26.4066019230769|3.7560476312371|69, 95, 115, 297, 509
+15|Florida Keys National Marine Sanctuary|2001|Water Temperature|Surface|Field|687|14.6|32|26.17|26.0732248908297|3.71501016665819|60, 95, 115, 297, 509
+15|Florida Keys National Marine Sanctuary|2002|Water Temperature|Surface|Field|711|15.93|31.97|27.83|26.9770464135021|2.91866981989417|60, 115, 297, 509
+15|Florida Keys National Marine Sanctuary|2003|Water Temperature|Surface|Field|856|15.04|31.88|28.08|27.1020560747664|3.26731633019062|60, 95, 103, 115, 297, 509, 5002
+15|Florida Keys National Marine Sanctuary|2004|Water Temperature|Surface|Field|883|15.95|32.49|26.4|26.0907464326161|3.85855866645402|103, 115, 297, 509, 5002
+15|Florida Keys National Marine Sanctuary|2005|Water Temperature|Surface|Field|1118|17.05|33.8|26.12705|26.5567431127013|3.73973992996808|95, 297, 509, 965, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2006|Water Temperature|Surface|Field|1344|15.2|35.5|26.41|26.3619767113095|3.30724792201352|60, 69, 95, 297, 509, 965, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2007|Water Temperature|Surface|Field|1137|18.8653|33.1639|26|26.5077980650836|3.20944469666984|69, 95, 297, 509, 965, 4049
+15|Florida Keys National Marine Sanctuary|2008|Water Temperature|Surface|Field|923|14|33.1|26.7|26.6780498374865|3.09506617458885|60, 69, 95, 297, 509, 965, 4049
+15|Florida Keys National Marine Sanctuary|2009|Water Temperature|Surface|Field|894|10.51|37.1694|28.7|27.1446435123043|3.95112972344164|60, 69, 95, 297, 965
+15|Florida Keys National Marine Sanctuary|2010|Water Temperature|Surface|Field|961|12.4|37.5473|27.4746|26.1537186264308|4.51537353027555|60, 95, 297, 965, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2011|Water Temperature|Surface|Field|837|16.5235|36.1|26.5|25.8598201911589|3.76428040547131|60, 95, 297, 965, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2012|Water Temperature|Surface|Field|597|15.7|32.6071|25.9869|26.3312986599665|3.04208355780199|60, 95, 297, 4049, 5002
 15|Florida Keys National Marine Sanctuary|2013|Water Temperature|Surface|Field|552|20|31.9415|25.2645|25.9192327898551|2.79730174275026|95, 297, 4049, 5002
 15|Florida Keys National Marine Sanctuary|2014|Water Temperature|Surface|Field|601|17.8|33.7863|26.5432|27.0913783693844|3.03957286873743|95, 297, 982, 4049, 5002
 15|Florida Keys National Marine Sanctuary|2015|Water Temperature|Surface|Field|1056|0|35|28|27.0477184659091|3.70467913698466|95, 297, 982, 3000, 4049, 4057, 5002
@@ -787,7 +787,6 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 25|Lemon Bay Aquatic Preserve|2021|Water Temperature|Surface|Field|116|14.1|32|23.95|24.5293103448276|5.12875978298304|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|Water Temperature|Surface|Field|1|23.6|23.6|23.6|23.6||476
 26|Lignumvitae Key Aquatic Preserve|1997|Water Temperature|Surface|Field|5|26.5|33.8|30.3|30.34|2.78442094518771|69
-26|Lignumvitae Key Aquatic Preserve|1998|Water Temperature|Surface|Field|7|19.4|32.13|25.134|26.1162857142857|4.6709384037288|3
 26|Lignumvitae Key Aquatic Preserve|1999|Water Temperature|Surface|Field|7|20.8|28.7|26.9|25.0142857142857|3.56951377241055|69
 26|Lignumvitae Key Aquatic Preserve|2000|Water Temperature|Surface|Field|3|20.4|30.4|23.1|24.6333333333333|5.1733290377989|69
 26|Lignumvitae Key Aquatic Preserve|2001|Water Temperature|Surface|Field|2|29.4|29.4|29.4|29.4|0|115

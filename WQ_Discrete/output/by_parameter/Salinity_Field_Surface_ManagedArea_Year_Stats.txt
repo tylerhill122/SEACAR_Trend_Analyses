@@ -164,19 +164,6 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 5|Big Bend Seagrasses Aquatic Preserve|2019|Salinity|Surface|Field|198|0.05|34.59|20.94|18.1069696969697|10.4129490797347|477, 540, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2020|Salinity|Surface|Field|466|0.02|32.59|0.166|2.77460300429185|7.04792779330846|477, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2021|Salinity|Surface|Field|241|0.02|31.83|0.17|7.32205394190871|10.2611286835113|477, 540, 5002
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|1998|Salinity|Surface|Field|1|35.63|35.63|35.63|35.63||3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|1999|Salinity|Surface|Field|2|33.256|36.446|34.851|34.851|2.25567063198509|3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2000|Salinity|Surface|Field|1|34.337|34.337|34.337|34.337||3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2001|Salinity|Surface|Field|1|36.501|36.501|36.501|36.501||3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2002|Salinity|Surface|Field|4|34.978|36.181|35.638|35.60875|0.494477754808038|3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2003|Salinity|Surface|Field|2|35.826|36.218|36.022|36.022|0.277185858225129|3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2004|Salinity|Surface|Field|4|34.359|36.405|36.1835|35.78275|0.9661988666936|3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2005|Salinity|Surface|Field|1|36.537|36.537|36.537|36.537||3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2007|Salinity|Surface|Field|2|35.935|36.133|36.034|36.034|0.140007142674937|3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2009|Salinity|Surface|Field|3|35.216|36.767|35.434|35.8056666666667|0.839644170665965|3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2010|Salinity|Surface|Field|2|35.998|36.494|36.246|36.246|0.350724963468529|3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2011|Salinity|Surface|Field|4|35.494|37.323|36.24|36.32425|0.763023536115805|3
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|2012|Salinity|Surface|Field|1|35.651|35.651|35.651|35.651||3
 6|Biscayne Bay Aquatic Preserve|1993|Salinity|Surface|Field|8|31.4|34.7|32.4|32.6|1.08232553856433|509
 6|Biscayne Bay Aquatic Preserve|1994|Salinity|Surface|Field|24|24.3|37.4|34.1|33.9208333333333|3.03228700698889|509
 6|Biscayne Bay Aquatic Preserve|1995|Salinity|Surface|Field|70|0|36.3|31|28.48|7.98209227592924|102, 509
@@ -186,17 +173,17 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 6|Biscayne Bay Aquatic Preserve|1999|Salinity|Surface|Field|132|21.9|40.1|32.5|32.3818181818182|3.94521293036592|509
 6|Biscayne Bay Aquatic Preserve|2000|Salinity|Surface|Field|132|26.3|38.4|33.9|33.5606060606061|2.61185662886269|509
 6|Biscayne Bay Aquatic Preserve|2001|Salinity|Surface|Field|132|24.6|37.89|33.53|32.9280303030303|3.25040160510891|509
-6|Biscayne Bay Aquatic Preserve|2002|Salinity|Surface|Field|152|10.118|38.37|32.015|31.6849276315789|4.18234515331806|3, 509
-6|Biscayne Bay Aquatic Preserve|2003|Salinity|Surface|Field|627|0.1|39.1|30.2|26.1865933014354|10.0372447156228|3, 103, 509, 5002
-6|Biscayne Bay Aquatic Preserve|2004|Salinity|Surface|Field|192|21.349|42.183|34|34.2324114583333|3.65927031928583|3, 115, 509
-6|Biscayne Bay Aquatic Preserve|2005|Salinity|Surface|Field|420|0.1|40.2|32.285|30.5623595238095|7.89080592795374|3, 509, 965, 4049, 5002
-6|Biscayne Bay Aquatic Preserve|2006|Salinity|Surface|Field|395|0.1|39.09|33.14|31.1058506329114|7.04671799297777|3, 509, 965, 4049, 5002
-6|Biscayne Bay Aquatic Preserve|2007|Salinity|Surface|Field|403|0.14|39.59|34.207|32.6853523573201|6.27704022687953|3, 509, 965, 4049, 5002
-6|Biscayne Bay Aquatic Preserve|2008|Salinity|Surface|Field|318|0.23|39.91|34.135|31.808179245283|7.31634816959579|3, 509, 965, 5002
-6|Biscayne Bay Aquatic Preserve|2009|Salinity|Surface|Field|335|0.19|40.6|31.4|26.4350865671642|12.4320806105356|3, 965, 5002
-6|Biscayne Bay Aquatic Preserve|2010|Salinity|Surface|Field|295|0.27|36.9|30.39|25.2111593220339|11.937240718773|3, 965, 5002
-6|Biscayne Bay Aquatic Preserve|2011|Salinity|Surface|Field|286|0.23|40.173|32.15|30.2867412587413|8.57642753190459|3, 965, 5002
-6|Biscayne Bay Aquatic Preserve|2012|Salinity|Surface|Field|51|0.22|37.397|26.903|22.8009019607843|11.717900532527|3, 5002
+6|Biscayne Bay Aquatic Preserve|2002|Salinity|Surface|Field|132|21.05|38.37|33.04|32.2740909090909|3.56732498718459|509
+6|Biscayne Bay Aquatic Preserve|2003|Salinity|Surface|Field|578|0.1|39.1|30.075|25.863875432526|10.3080359625682|103, 509, 5002
+6|Biscayne Bay Aquatic Preserve|2004|Salinity|Surface|Field|133|23.62|41.71|34.06|34.361052631579|3.38187375513838|115, 509
+6|Biscayne Bay Aquatic Preserve|2005|Salinity|Surface|Field|364|0.1|40.2|32.255|30.6886538461539|7.90714473449799|509, 965, 4049, 5002
+6|Biscayne Bay Aquatic Preserve|2006|Salinity|Surface|Field|359|0.1|39.09|33.4|31.0861559888579|7.26661919024566|509, 965, 4049, 5002
+6|Biscayne Bay Aquatic Preserve|2007|Salinity|Surface|Field|373|0.14|39.59|34.5|32.9417962466488|6.28168152966174|509, 965, 4049, 5002
+6|Biscayne Bay Aquatic Preserve|2008|Salinity|Surface|Field|300|0.23|39.91|34.135|31.7465666666667|7.47041128014632|509, 965, 5002
+6|Biscayne Bay Aquatic Preserve|2009|Salinity|Surface|Field|300|0.19|40.6|31.4|25.7415333333333|12.9040301053102|965, 5002
+6|Biscayne Bay Aquatic Preserve|2010|Salinity|Surface|Field|265|0.27|36.9|30.4|24.7856603773585|12.4157278233787|965, 5002
+6|Biscayne Bay Aquatic Preserve|2011|Salinity|Surface|Field|252|0.23|37.9|32.025|29.9979365079365|8.87006374186777|965, 5002
+6|Biscayne Bay Aquatic Preserve|2012|Salinity|Surface|Field|27|0.22|35.8|24.76|18.3666666666667|13.9201853988538|5002
 6|Biscayne Bay Aquatic Preserve|2013|Salinity|Surface|Field|35|0.22|36.83|27.95|23.1808|12.5828869122733|95, 5002
 6|Biscayne Bay Aquatic Preserve|2014|Salinity|Surface|Field|26|0.29|38.28|27.505|23.1976923076923|12.6484308300096|5002
 6|Biscayne Bay Aquatic Preserve|2015|Salinity|Surface|Field|64|0.23|43|33.82|29.4996875|11.1129056918821|4057, 5002
@@ -331,7 +318,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2013|Salinity|Surface|Field|126|0.43|40.5|32.1|28.1465079365079|9.75488483314573|95, 354, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2014|Salinity|Surface|Field|115|9.4|41.9|31.4|30.4530434782609|6.54887591451442|95, 354, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2015|Salinity|Surface|Field|168|5.5|37.72|32.28|29.841130952381|6.43175174037483|95, 354, 4043, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2016|Salinity|Surface|Field|318|0.77|39.7|30.73|27.6999874213836|8.06232800876874|3, 95, 354, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2016|Salinity|Surface|Field|317|0.77|39.7|30.73|27.6811987381704|8.06809883501956|95, 354, 4043, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2017|Salinity|Surface|Field|293|0.26|42|25.1|23.6715358361775|11.7075844473586|95, 354, 4043, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2018|Salinity|Surface|Field|127|3|39.5|32.36|29.5344881889764|7.94324178240523|95, 354, 4043
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2019|Salinity|Surface|Field|104|5.86|37.63|30|28.2611538461538|7.54326437894528|354, 4043, 5002
@@ -446,25 +433,25 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 15|Florida Keys National Marine Sanctuary|1995|Salinity|Surface|Field|469|3.3|39.1|35.9|33.9217484008529|5.12217909989825|60, 95, 297, 509
 15|Florida Keys National Marine Sanctuary|1996|Salinity|Surface|Field|541|17.3|37.7|36.12|34.5828465804067|3.64453365818977|60, 95, 102, 297, 509
 15|Florida Keys National Marine Sanctuary|1997|Salinity|Surface|Field|708|12|40.3|36.3|35.5183474576271|3.34690943730286|60, 69, 297, 509
-15|Florida Keys National Marine Sanctuary|1998|Salinity|Surface|Field|809|3.6|39.019|35.516|34.6240741656366|3.48831708295352|3, 95, 297, 509
-15|Florida Keys National Marine Sanctuary|1999|Salinity|Surface|Field|1137|11|41|35.7|34.9155237467018|2.83554650848113|3, 69, 297, 509
-15|Florida Keys National Marine Sanctuary|2000|Salinity|Surface|Field|1383|21|39.1|36.3|35.8673274765004|2.17633549932268|3, 69, 95, 115, 297, 509
-15|Florida Keys National Marine Sanctuary|2001|Salinity|Surface|Field|878|6.8|40.9|36.3075|35.710983143508|2.87130722036062|3, 60, 95, 115, 297, 509
-15|Florida Keys National Marine Sanctuary|2002|Salinity|Surface|Field|968|5.645|40.39|36.2545|35.6017345041322|2.99958022274554|3, 60, 95, 115, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|Salinity|Surface|Field|1055|16.614|39.59|35.77|34.0144151658768|3.85191091221891|3, 60, 95, 115, 297, 509, 5002
-15|Florida Keys National Marine Sanctuary|2004|Salinity|Surface|Field|1123|6.5|43.8|36.2|34.8953390026714|5.53862062579654|3, 115, 297, 509, 5002
-15|Florida Keys National Marine Sanctuary|2005|Salinity|Surface|Field|1142|1.283|46.021|36.1589|34.9403945709282|4.25640226788045|3, 95, 297, 509, 965, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2006|Salinity|Surface|Field|1412|5.53|42|36.15065|35.2196986543909|2.83430441228168|3, 60, 69, 95, 297, 509, 965, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2007|Salinity|Surface|Field|1235|13.51|47.2889|36.28|35.5204189473684|3.06740419395978|3, 69, 95, 297, 509, 965, 4049
-15|Florida Keys National Marine Sanctuary|2008|Salinity|Surface|Field|1017|26.492|42.3691|36.43|36.4078962635202|2.1857383371191|3, 60, 69, 95, 297, 509, 965, 4049
-15|Florida Keys National Marine Sanctuary|2009|Salinity|Surface|Field|1062|20.774|46.2|36.5458|36.4058382297552|2.62898094897857|3, 60, 69, 95, 297, 965
-15|Florida Keys National Marine Sanctuary|2010|Salinity|Surface|Field|1032|19.644|40.4983|36.26635|35.0359196705426|3.02304558938983|3, 60, 95, 297, 965, 4049
-15|Florida Keys National Marine Sanctuary|2011|Salinity|Surface|Field|1004|7.1|40.173|36.1|34.8791651394422|3.67130865133671|3, 60, 95, 297, 965, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2012|Salinity|Surface|Field|697|10.923|39.4|36.1|35.4920766140603|2.38172916649074|3, 60, 95, 297, 4049, 5002
+15|Florida Keys National Marine Sanctuary|1998|Salinity|Surface|Field|646|3.6|38.7|35.5|34.4308359133127|3.83844852148672|95, 297, 509
+15|Florida Keys National Marine Sanctuary|1999|Salinity|Surface|Field|970|11|41|35.6|34.7927922680412|2.92478083520553|69, 297, 509
+15|Florida Keys National Marine Sanctuary|2000|Salinity|Surface|Field|1178|21|39.1|36.3|35.8760287775891|2.18198841181778|69, 95, 115, 297, 509
+15|Florida Keys National Marine Sanctuary|2001|Salinity|Surface|Field|692|6.8|40.9|36.4|35.6644222543353|3.05819599227145|60, 95, 115, 297, 509
+15|Florida Keys National Marine Sanctuary|2002|Salinity|Surface|Field|716|16.24|40.39|36.258|35.7546340782123|2.73876873620054|60, 95, 115, 297, 509
+15|Florida Keys National Marine Sanctuary|2003|Salinity|Surface|Field|852|16.7|39.59|35.73|33.9267136150235|3.88795307086191|60, 95, 115, 297, 509, 5002
+15|Florida Keys National Marine Sanctuary|2004|Salinity|Surface|Field|880|6.5|43.8|36.1839|34.6148064772727|6.07731061212798|115, 297, 509, 5002
+15|Florida Keys National Marine Sanctuary|2005|Salinity|Surface|Field|949|13.2|40.5|36.1163|34.7586855637513|4.28973984803395|95, 297, 509, 965, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2006|Salinity|Surface|Field|1263|5.53|42|36.1|35.1829742676168|2.85402386330957|60, 69, 95, 297, 509, 965, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2007|Salinity|Surface|Field|1127|13.51|47.2889|36.2983|35.6001937888199|2.96434020871702|69, 95, 297, 509, 965, 4049
+15|Florida Keys National Marine Sanctuary|2008|Salinity|Surface|Field|918|26.66|42.3691|36.49355|36.4537826797386|2.22777463898122|60, 69, 95, 297, 509, 965, 4049
+15|Florida Keys National Marine Sanctuary|2009|Salinity|Surface|Field|909|21.4|46.2|36.6548|36.5070255225523|2.61584530953203|60, 69, 95, 297, 965
+15|Florida Keys National Marine Sanctuary|2010|Salinity|Surface|Field|875|21.2|40.4983|36.267|35.0196744|3.00376705066369|60, 95, 297, 965, 4049
+15|Florida Keys National Marine Sanctuary|2011|Salinity|Surface|Field|837|7.1|39.7848|36.1101|34.8179388291517|3.85578556028775|60, 95, 297, 965, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2012|Salinity|Surface|Field|596|24.4|39.4|36.1181|35.6625644295302|1.82019520408793|60, 95, 297, 4049, 5002
 15|Florida Keys National Marine Sanctuary|2013|Salinity|Surface|Field|549|28.7138|38.6|36.149|35.9649965391621|1.00434315716393|95, 297, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2014|Salinity|Surface|Field|552|29.9262|41|36.11455|36.1676550724638|1.13001620752378|3, 95, 297, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2015|Salinity|Surface|Field|1120|0|47.5|36.10005|35.8401323214286|2.31382196740488|3, 95, 297, 3000, 4049, 4057
-15|Florida Keys National Marine Sanctuary|2016|Salinity|Surface|Field|1225|0|44.5|36.19|35.5664289795918|3.04146806427922|3, 60, 95, 297, 3000, 4049, 4057, 5002
+15|Florida Keys National Marine Sanctuary|2014|Salinity|Surface|Field|521|29.9262|41|36.1476|36.1842276391555|1.15864126425508|95, 297, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2015|Salinity|Surface|Field|963|0|47.5|36.01|35.8136035306334|2.46421564674169|95, 297, 3000, 4049, 4057
+15|Florida Keys National Marine Sanctuary|2016|Salinity|Surface|Field|1100|0|44.5|36.151|35.4778095454546|3.19560478062429|60, 95, 297, 3000, 4049, 4057, 5002
 15|Florida Keys National Marine Sanctuary|2017|Salinity|Surface|Field|1063|0|43.5|36.1|35.3920546566322|3.60736420678715|95, 297, 3000, 4049, 4057, 5002
 15|Florida Keys National Marine Sanctuary|2018|Salinity|Surface|Field|737|20|40|36.25|35.9557192401628|1.86488161635708|95, 297, 3000, 4049, 4057, 5002
 15|Florida Keys National Marine Sanctuary|2019|Salinity|Surface|Field|552|0.2|41.9294|36.36625|29.7598206521739|14.1121092364963|297, 4049, 5002
@@ -547,16 +534,16 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1998|Salinity|Surface|Field|755|0|35|18.4|18.3456953642384|9.28901789542095|69, 95, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|Salinity|Surface|Field|793|1.7|36.6|27.3|26.0621689785624|7.34617720532361|69, 95, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2000|Salinity|Surface|Field|742|2.8|37.8|30|29.0214285714286|5.81284924198158|69, 95, 115, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2001|Salinity|Surface|Field|1520|0.1|39.22|28.395|25.5507907894737|9.58246224119859|3, 69, 115, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2002|Salinity|Surface|Field|1804|1|40.5|26.78|25.3127904656319|7.9974626079602|3, 69, 95, 115, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2003|Salinity|Surface|Field|1958|0.31|39.1|23.19|22.2330148110317|8.34061049228665|3, 69, 95, 103, 115, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2004|Salinity|Surface|Field|2019|0.1|36.92|23.6|22.2409534422982|8.41374197321767|3, 69, 103, 115, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2005|Salinity|Surface|Field|1898|0.29|38.93|21.9|20.9057687038988|8.13874048433187|3, 69, 95, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2006|Salinity|Surface|Field|1759|0.29|44.75|26.8|25.9528868675384|7.41258385470324|3, 69, 95, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|Salinity|Surface|Field|1315|1.04|39.8|32.21|31.4943155893536|4.76024227013109|3, 69, 95, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|Salinity|Surface|Field|1285|2.8|39.3|31.7|30.3139214007782|6.39859284989838|3, 69, 95, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2009|Salinity|Surface|Field|1506|5.6|40.3|30.5|29.0772038512616|7.14234532576219|3, 69, 95, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Salinity|Surface|Field|1614|2.2|38.5|24.6|24.2904560099133|6.5333107114282|3, 69, 95, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2001|Salinity|Surface|Field|1517|0.1|39.22|28.3|25.5332498352011|9.5831084861574|69, 115, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2002|Salinity|Surface|Field|1799|1|40.5|26.71|25.2863535297387|7.99247731259908|69, 95, 115, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2003|Salinity|Surface|Field|1954|0.31|39.1|23.17|22.2110133060389|8.33387445842653|69, 95, 103, 115, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2004|Salinity|Surface|Field|2014|0.1|36.92|23.6|22.2158838133069|8.40740892764873|69, 103, 115, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2005|Salinity|Surface|Field|1893|0.29|38.93|21.9|20.8764764923402|8.12905591068549|69, 95, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2006|Salinity|Surface|Field|1755|0.29|44.75|26.8|25.9332991452991|7.40947252664573|69, 95, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|Salinity|Surface|Field|1312|1.04|39.8|32.205|31.4842225609756|4.76092801360553|69, 95, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|Salinity|Surface|Field|1282|2.8|39.3|31.7|30.2985725429017|6.39814112884121|69, 95, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2009|Salinity|Surface|Field|1501|5.6|40.3|30.5|29.0610926049301|7.14781895910111|69, 95, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Salinity|Surface|Field|1609|2.2|38.5|24.4|24.2648520820385|6.52703128104794|69, 95, 479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Salinity|Surface|Field|1436|4.9|38|28.5|27.8056545961003|5.51242087396843|69, 95, 479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Salinity|Surface|Field|1409|3.14|39.9|29.05|27.3279063165366|7.32498491910262|69, 95, 479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Salinity|Surface|Field|1194|0.9|41.5|27.7|24.4771440536013|9.28031061427475|69, 95, 479, 5002
@@ -777,7 +764,6 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 25|Lemon Bay Aquatic Preserve|2021|Salinity|Surface|Field|112|17.7|37.16|31.6|30.91|4.1962971665398|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|Salinity|Surface|Field|1|34.95|34.95|34.95|34.95||476
 26|Lignumvitae Key Aquatic Preserve|1997|Salinity|Surface|Field|5|35.2|38.4|35.8|36.54|1.38130373198656|69
-26|Lignumvitae Key Aquatic Preserve|1998|Salinity|Surface|Field|7|30.93|39.019|35.889|35.3334285714286|2.83094912571402|3
 26|Lignumvitae Key Aquatic Preserve|1999|Salinity|Surface|Field|7|32.1|38.2|35.7|35.5714285714286|2.05240857345241|69
 26|Lignumvitae Key Aquatic Preserve|2000|Salinity|Surface|Field|3|30.5|35.1|34.8|33.4666666666667|2.57358375292768|69
 26|Lignumvitae Key Aquatic Preserve|2001|Salinity|Surface|Field|2|34.1|34.1|34.1|34.1|0|115
@@ -1220,7 +1206,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 39|Rookery Bay National Estuarine Research Reserve|2013|Salinity|Surface|Field|177|0.43|40.5|33.6|29.5631638418079|8.94207458522775|95, 354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2014|Salinity|Surface|Field|189|9.4|41.9|32|30.9005291005291|5.66948248374198|95, 354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2015|Salinity|Surface|Field|244|5.5|37.72|32.28|30.5500819672131|5.63086204773844|95, 354, 4043, 5002
-39|Rookery Bay National Estuarine Research Reserve|2016|Salinity|Surface|Field|412|0.77|39.7|31.6|28.7627572815534|7.86497862477674|3, 95, 354, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|2016|Salinity|Surface|Field|411|0.77|39.7|31.6|28.7508515815085|7.87084620639658|95, 354, 4043, 5002
 39|Rookery Bay National Estuarine Research Reserve|2017|Salinity|Surface|Field|388|0.26|42|27.9|25.5525773195876|11.1721629910416|95, 354, 4043, 5002
 39|Rookery Bay National Estuarine Research Reserve|2018|Salinity|Surface|Field|188|3|39.5|33.23|30.7855319148936|7.24274132180564|95, 354, 4043
 39|Rookery Bay National Estuarine Research Reserve|2019|Salinity|Surface|Field|128|5.86|37.63|30.805|28.4753125|7.35183580239346|354, 4043, 5002
@@ -1236,25 +1222,22 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|1995|Salinity|Surface|Field|4|29|36|34|33.25|2.98607881119482|95, 102
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|1996|Salinity|Surface|Field|11|18|36|34.4|32.1636363636364|5.22594923956839|95, 5002
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|1997|Salinity|Surface|Field|9|28|35.8|34|33.4777777777778|2.44988661869166|69, 95, 5002
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|1998|Salinity|Surface|Field|43|16.6|37.2|34.4|32.6581395348837|4.46278337545717|3, 69, 95, 5002
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|1999|Salinity|Surface|Field|13|22.4|38|35.516|33.7924615384615|4.51635685804729|3, 95, 3001
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2000|Salinity|Surface|Field|23|22|39.2|34.25|32.5529130434783|4.62734007545513|3, 95, 3001
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2001|Salinity|Surface|Field|40|11.8|37.4|31.9|27.77505|7.75731797079377|3, 95, 3001
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2002|Salinity|Surface|Field|43|7.8|37|29.5|27.198488372093|8.25566433648839|3, 95, 3001
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2003|Salinity|Surface|Field|23|10|36.705|31.8|31.1814782608696|5.66619946275973|3, 3001, 5002
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2004|Salinity|Surface|Field|11|30|38|35|34.7391818181818|2.2023424719231|3, 5002
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2005|Salinity|Surface|Field|3|35.491|36.537|36.478|36.1686666666667|0.587617505979301|3
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2006|Salinity|Surface|Field|1|35.123|35.123|35.123|35.123||3
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2007|Salinity|Surface|Field|5|35.935|37|37|36.6136|0.533710876786298|3, 95
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2008|Salinity|Surface|Field|1|36.553|36.553|36.553|36.553||3
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2009|Salinity|Surface|Field|15|35.216|36.767|36.0599|36.0261733333333|0.351834696304685|3, 5058
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2010|Salinity|Surface|Field|68|31.3498|36.773|36.14945|35.8065147058824|0.893588749823072|3, 95, 5058
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2011|Salinity|Surface|Field|65|0|37.323|36.0114|35.1167784615385|4.50395694173094|3, 95, 5058
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2012|Salinity|Surface|Field|19|35|38|35.651|35.6132105263158|0.755692660848852|3, 95
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|1998|Salinity|Surface|Field|39|16.6|37.2|34.4|32.4|4.60594581406526|69, 95, 5002
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|1999|Salinity|Surface|Field|4|22.4|38|29.5|29.85|6.99213844256534|95, 3001
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2000|Salinity|Surface|Field|19|22|39.2|33.6|31.8973684210526|4.83977942806082|95, 3001
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2001|Salinity|Surface|Field|38|11.8|37.4|30.8|27.4026315789474|7.77384689779309|95, 3001
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2002|Salinity|Surface|Field|39|7.8|37|28.8|26.3358974358974|8.19157099448115|95, 3001
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2003|Salinity|Surface|Field|19|10|36|31.2|30.1157894736842|5.68558246384804|3001, 5002
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2004|Salinity|Surface|Field|7|30|38|34|34.1428571428571|2.54483604112141|5002
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2007|Salinity|Surface|Field|3|37|37|37|37|0|95
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2009|Salinity|Surface|Field|12|35.924|36.2823|36.061|36.0813|0.11309108155497|5058
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2010|Salinity|Surface|Field|63|31.3498|36.5359|36.1476|35.7626666666667|0.910273835261286|95, 5058
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2011|Salinity|Surface|Field|60|0|36.3055|36.011|35.01836|4.67406178879693|95, 5058
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2012|Salinity|Surface|Field|18|35|38|35.5|35.6111111111111|0.777544316035229|95
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|2013|Salinity|Surface|Field|22|34|37.1|36|35.9136363636364|0.874122937058003|95
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2014|Salinity|Surface|Field|8|33|37.1|35.15|35.117625|1.66387653538356|3, 95
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2015|Salinity|Surface|Field|6|33|37|33|34.3026666666667|2.01892116405437|3, 95
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2016|Salinity|Surface|Field|31|29.82|37.32|35.75|35.2446129032258|1.46711337161151|3, 95
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2014|Salinity|Surface|Field|7|33|37.1|34.5|34.9571428571429|1.72902394706488|95
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2015|Salinity|Surface|Field|5|33|37|33|33.8|1.78885438199983|95
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|2016|Salinity|Surface|Field|28|29.82|37.32|35.755|35.2703571428571|1.51123075214984|95
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|2018|Salinity|Surface|Field|3|28|33.5|30.2|30.5666666666667|2.76827262626594|95
 40|St. Andrews State Park Aquatic Preserve|1974|Salinity|Surface|Field|11|29|35|32|32.0109090909091|1.7944662412286|95
 40|St. Andrews State Park Aquatic Preserve|1982|Salinity|Surface|Field|1|32|32|32|32||95

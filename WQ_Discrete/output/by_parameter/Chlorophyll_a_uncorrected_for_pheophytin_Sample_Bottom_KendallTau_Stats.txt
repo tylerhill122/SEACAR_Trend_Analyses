@@ -1,11 +1,11 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
 1|Alligator Harbor Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
-2|Apalachicola Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|1|1|2019|2019|||||||
-3|Apalachicola National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|4|1|2019|2019|||||||
+2|Apalachicola Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
+3|Apalachicola National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 4|Banana River Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 5|Big Bend Seagrasses Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
-6|Biscayne Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
+6|Biscayne Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|5|2|2007|2019|||||||
 8|Boca Ciega Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 9|Cape Haze Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
@@ -24,11 +24,11 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 24|Lake Jackson Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 25|Lemon Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 26|Lignumvitae Key Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|6|1|2019|2019|||||||
 28|Matlacha Pass Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 29|Mosquito Lagoon Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
-48|Nature Coast Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|413|3|2007|2009|||||||
+48|Nature Coast Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|411|3|2007|2009|||||||
 31|North Fork St. Lucie Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 32|Oklawaha River Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 33|Pellicer Creek Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
@@ -36,13 +36,13 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 35|Pinellas County Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 36|Rainbow Springs Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 37|Rocky Bayou State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
-38|Rookery Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
-39|Rookery Bay National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
+38|Rookery Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|1|1|2007|2007|||||||
+39|Rookery Bay National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|1|1|2007|2007|||||||
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|134|3|2009|2011|||||||
 40|St. Andrews State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 41|St. Joseph Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 42|St. Joseph Bay State Buffer Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
-43|St. Martins Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|145|5|2005|2009|||||||
+43|St. Martins Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|139|4|2006|2009|||||||
 44|Terra Ceia Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 45|Tomoka Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||
 46|Wekiva River Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|Sample|FALSE|0|0|||||||||

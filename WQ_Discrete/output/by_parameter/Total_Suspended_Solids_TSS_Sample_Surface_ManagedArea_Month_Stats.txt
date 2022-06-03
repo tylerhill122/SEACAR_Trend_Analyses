@@ -35,18 +35,18 @@ AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|
 5|Big Bend Seagrasses Aquatic Preserve|10|Total Suspended Solids, TSS|Surface|Sample|164|2|52|4|6.18292682926829|7.498266546147|5002
 5|Big Bend Seagrasses Aquatic Preserve|11|Total Suspended Solids, TSS|Surface|Sample|121|2|24800|4|481.099173553719|3002.70512595159|5002
 5|Big Bend Seagrasses Aquatic Preserve|12|Total Suspended Solids, TSS|Surface|Sample|108|2|120|4|4.73148148148148|11.4202693074957|5002
-6|Biscayne Bay Aquatic Preserve|1|Total Suspended Solids, TSS|Surface|Sample|58|0|23.52|0.775|2.59655172413793|4.55895361637131|3, 5026
-6|Biscayne Bay Aquatic Preserve|2|Total Suspended Solids, TSS|Surface|Sample|63|0|10|0.8|1.37126984126984|1.72095106119945|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|3|Total Suspended Solids, TSS|Surface|Sample|62|0|19|0.895|2.30774193548387|3.59462185674191|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|4|Total Suspended Solids, TSS|Surface|Sample|82|0|16|1.6|2.01060975609756|2.4571454619412|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|5|Total Suspended Solids, TSS|Surface|Sample|105|0|17|1.5|2.48228571428571|3.16764449526011|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|6|Total Suspended Solids, TSS|Surface|Sample|104|0|15|2.675|3.19480769230769|3.44373188315337|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|7|Total Suspended Solids, TSS|Surface|Sample|87|0|9|1.5|1.97448275862069|2.14294231472388|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|8|Total Suspended Solids, TSS|Surface|Sample|90|0|13.55|1.275|2.02288888888889|2.3584108363279|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|9|Total Suspended Solids, TSS|Surface|Sample|91|0|17.4|1.4|2.27351648351648|3.13282278593262|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|10|Total Suspended Solids, TSS|Surface|Sample|65|0|13|1.25|1.79907692307692|2.55676169883221|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|11|Total Suspended Solids, TSS|Surface|Sample|66|0|12.56|1.735|2.20712121212121|2.45627971668946|3, 5002, 5026
-6|Biscayne Bay Aquatic Preserve|12|Total Suspended Solids, TSS|Surface|Sample|79|0|26.9|2.37|2.43645569620253|3.31146649594726|3, 5002, 5026
+6|Biscayne Bay Aquatic Preserve|1|Total Suspended Solids, TSS|Surface|Sample|32|0|9|0|1.40625|2.1229829136413|5026
+6|Biscayne Bay Aquatic Preserve|2|Total Suspended Solids, TSS|Surface|Sample|36|0|10|0|1.38888888888889|2.11495056041882|5002, 5026
+6|Biscayne Bay Aquatic Preserve|3|Total Suspended Solids, TSS|Surface|Sample|41|0|19|0|2.73170731707317|4.28966426567338|5002, 5026
+6|Biscayne Bay Aquatic Preserve|4|Total Suspended Solids, TSS|Surface|Sample|54|0|16|0|1.88888888888889|2.79937099853188|5002, 5026
+6|Biscayne Bay Aquatic Preserve|5|Total Suspended Solids, TSS|Surface|Sample|59|0|17|3|2.50847457627119|3.53491394498939|5002, 5026
+6|Biscayne Bay Aquatic Preserve|6|Total Suspended Solids, TSS|Surface|Sample|70|0|15|3|3.39142857142857|3.67958499775363|5002, 5026
+6|Biscayne Bay Aquatic Preserve|7|Total Suspended Solids, TSS|Surface|Sample|59|0|9|0|2.05762711864407|2.42147029927819|5002, 5026
+6|Biscayne Bay Aquatic Preserve|8|Total Suspended Solids, TSS|Surface|Sample|52|0|10|2|2.28846153846154|2.49969832267297|5002, 5026
+6|Biscayne Bay Aquatic Preserve|9|Total Suspended Solids, TSS|Surface|Sample|58|0|13.7|2.5|2.25689655172414|2.69314347530621|5002, 5026
+6|Biscayne Bay Aquatic Preserve|10|Total Suspended Solids, TSS|Surface|Sample|37|0|13|0|2.10810810810811|3.26414684943166|5002, 5026
+6|Biscayne Bay Aquatic Preserve|11|Total Suspended Solids, TSS|Surface|Sample|33|0|8|0|1.72727272727273|2.33549683248457|5002, 5026
+6|Biscayne Bay Aquatic Preserve|12|Total Suspended Solids, TSS|Surface|Sample|52|0|26.9|3|2.67307692307692|3.99190923826129|5002, 5026
 9|Cape Haze Aquatic Preserve|1|Total Suspended Solids, TSS|Surface|Sample|25|3.33|61.2|11.1|15.382|13.5924896542171|479, 513
 9|Cape Haze Aquatic Preserve|2|Total Suspended Solids, TSS|Surface|Sample|25|2|166|8.63|21.07|38.9190375437694|479, 513
 9|Cape Haze Aquatic Preserve|3|Total Suspended Solids, TSS|Surface|Sample|26|2|33.6|10.2|12.4465384615385|8.54783665838682|479, 513, 5002
@@ -59,18 +59,6 @@ AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|
 9|Cape Haze Aquatic Preserve|10|Total Suspended Solids, TSS|Surface|Sample|25|1.6|14.6|7.9|7.4092|3.86704228060672|479, 513
 9|Cape Haze Aquatic Preserve|11|Total Suspended Solids, TSS|Surface|Sample|25|2|34.3|7.22|10.0284|8.34933514319154|479, 513, 5002
 9|Cape Haze Aquatic Preserve|12|Total Suspended Solids, TSS|Surface|Sample|17|3.68|12.7|7.9|7.74941176470588|2.46926474529422|479
-15|Florida Keys National Marine Sanctuary|1|Total Suspended Solids, TSS|Surface|Sample|30|0.09|31|1.62|5.93433333333333|8.39658250814532|3, 5002
-15|Florida Keys National Marine Sanctuary|2|Total Suspended Solids, TSS|Surface|Sample|44|0.2|9|3|3.16659090909091|2.24607765938947|3, 5002
-15|Florida Keys National Marine Sanctuary|3|Total Suspended Solids, TSS|Surface|Sample|49|0.23|50|4|6.81857142857143|8.67302979548285|3, 5002
-15|Florida Keys National Marine Sanctuary|4|Total Suspended Solids, TSS|Surface|Sample|41|0.44|30|3|3.76951219512195|4.73289707854476|3, 5002
-15|Florida Keys National Marine Sanctuary|5|Total Suspended Solids, TSS|Surface|Sample|87|0.4|34.04|3|5.73505747126437|6.86709272521193|3, 5002
-15|Florida Keys National Marine Sanctuary|6|Total Suspended Solids, TSS|Surface|Sample|74|0.4|26.7|3|4.19432432432432|4.21102502117825|3, 5002
-15|Florida Keys National Marine Sanctuary|7|Total Suspended Solids, TSS|Surface|Sample|30|0.7|30|2.435|4.49633333333333|6.12772528157364|3, 5002
-15|Florida Keys National Marine Sanctuary|8|Total Suspended Solids, TSS|Surface|Sample|67|0.48|26.6|2.95|5.35059701492537|6.38823869134261|3, 5002
-15|Florida Keys National Marine Sanctuary|9|Total Suspended Solids, TSS|Surface|Sample|50|0.4|30|2.77|3.8392|5.22566540631674|3, 5002
-15|Florida Keys National Marine Sanctuary|10|Total Suspended Solids, TSS|Surface|Sample|35|0.36|18|2.88|4.67257142857143|4.65457481653148|3, 5002
-15|Florida Keys National Marine Sanctuary|11|Total Suspended Solids, TSS|Surface|Sample|43|0.7|28|3.14|4.55093023255814|4.92847982645547|3, 5002
-15|Florida Keys National Marine Sanctuary|12|Total Suspended Solids, TSS|Surface|Sample|30|0.56|6|2.25|2.53966666666667|1.42624533202617|3, 5002
 17|Fort Pickens State Park Aquatic Preserve|1|Total Suspended Solids, TSS|Surface|Sample|15|2.2|56|22|22.4666666666667|16.1630383753739|505, 5002
 17|Fort Pickens State Park Aquatic Preserve|2|Total Suspended Solids, TSS|Surface|Sample|13|1.7|43|15|17.7846153846154|13.6147497316848|505, 5002
 17|Fort Pickens State Park Aquatic Preserve|3|Total Suspended Solids, TSS|Surface|Sample|18|1.07|40|7.5|12.4983333333333|12.494339541898|505, 5002

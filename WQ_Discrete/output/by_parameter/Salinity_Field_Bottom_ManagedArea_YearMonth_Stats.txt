@@ -1515,10 +1515,10 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 6|Biscayne Bay Aquatic Preserve|2002|4|Salinity|Bottom|Field|11|32.61|37.59|35.17|35.3072727272727|1.65735386027904|509
 6|Biscayne Bay Aquatic Preserve|2002|5|Salinity|Bottom|Field|11|31.7|38.36|37.08|36.1963636363636|2.29930107957733|509
 6|Biscayne Bay Aquatic Preserve|2002|6|Salinity|Bottom|Field|11|28.28|36.02|34.55|33.3654545454545|2.46787910415548|509
-6|Biscayne Bay Aquatic Preserve|2002|7|Salinity|Bottom|Field|13|10.118|32.1|26.75|25.9845384615385|6.14310451665639|3, 509
+6|Biscayne Bay Aquatic Preserve|2002|7|Salinity|Bottom|Field|11|24.24|32.1|27.99|28.1809090909091|2.81528845607499|509
 6|Biscayne Bay Aquatic Preserve|2002|8|Salinity|Bottom|Field|11|29.55|34.34|32.75|32.2063636363636|1.68088829329776|509
-6|Biscayne Bay Aquatic Preserve|2002|9|Salinity|Bottom|Field|12|29.36|35.91|31.89|31.994|2.19401649119517|3, 509
-6|Biscayne Bay Aquatic Preserve|2002|10|Salinity|Bottom|Field|13|27.68|35.39|30.762|31.0409230769231|2.47651254998969|3, 509
+6|Biscayne Bay Aquatic Preserve|2002|9|Salinity|Bottom|Field|11|29.36|35.91|32.15|32.1918181818182|2.18598635943511|509
+6|Biscayne Bay Aquatic Preserve|2002|10|Salinity|Bottom|Field|11|27.68|35.39|31.2|31.2309090909091|2.64278434438172|509
 6|Biscayne Bay Aquatic Preserve|2002|11|Salinity|Bottom|Field|11|30.9|35.28|33.15|33.5081818181818|1.71910336037027|509
 6|Biscayne Bay Aquatic Preserve|2002|12|Salinity|Bottom|Field|11|29.36|34.75|32.63|32.2990909090909|1.63461588482098|509
 6|Biscayne Bay Aquatic Preserve|2003|1|Salinity|Bottom|Field|11|31.4|34.69|33.13|33.1336363636364|1.09705307736019|509
@@ -1526,122 +1526,114 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 6|Biscayne Bay Aquatic Preserve|2003|3|Salinity|Bottom|Field|11|32.39|36.32|33.69|34.2209090909091|1.41328308944425|509
 6|Biscayne Bay Aquatic Preserve|2003|4|Salinity|Bottom|Field|11|33.16|36.56|34.8|35.2118181818182|1.04765278772901|509
 6|Biscayne Bay Aquatic Preserve|2003|5|Salinity|Bottom|Field|11|31.39|36.43|34.15|33.7109090909091|1.67875819905938|509
-6|Biscayne Bay Aquatic Preserve|2003|6|Salinity|Bottom|Field|12|22.877|34.94|31.24|29.9514166666667|3.94628484569137|3, 509
+6|Biscayne Bay Aquatic Preserve|2003|6|Salinity|Bottom|Field|11|25.04|34.94|31.74|30.5945454545455|3.41625046984662|509
 6|Biscayne Bay Aquatic Preserve|2003|7|Salinity|Bottom|Field|11|29.8|36.9|33.61|33.5327272727273|2.48267634180975|509
-6|Biscayne Bay Aquatic Preserve|2003|8|Salinity|Bottom|Field|14|29.784|35.77|32.405|32.4560714285714|1.99718056902092|3, 509
-6|Biscayne Bay Aquatic Preserve|2003|9|Salinity|Bottom|Field|15|23.304|35.66|30.98|30.2534666666667|3.87378157557161|3, 509
-6|Biscayne Bay Aquatic Preserve|2003|10|Salinity|Bottom|Field|12|29.17|34.13|31.15|31.3851666666667|1.66754592867556|3, 509
-6|Biscayne Bay Aquatic Preserve|2003|11|Salinity|Bottom|Field|13|23.444|32.99|29.27|28.7876153846154|3.14159151647859|3, 509
+6|Biscayne Bay Aquatic Preserve|2003|8|Salinity|Bottom|Field|11|29.83|35.77|32.53|32.6054545454546|2.03895739845816|509
+6|Biscayne Bay Aquatic Preserve|2003|9|Salinity|Bottom|Field|11|24.67|35.66|32.06|31.7718181818182|3.13570029875885|509
+6|Biscayne Bay Aquatic Preserve|2003|10|Salinity|Bottom|Field|11|29.17|34.13|31.37|31.5827272727273|1.59486106547932|509
+6|Biscayne Bay Aquatic Preserve|2003|11|Salinity|Bottom|Field|11|25.35|32.99|29.63|29.7509090909091|2.28218515701708|509
 6|Biscayne Bay Aquatic Preserve|2003|12|Salinity|Bottom|Field|11|28.83|34.44|31.88|31.9445454545455|1.68145986354931|509
-6|Biscayne Bay Aquatic Preserve|2004|1|Salinity|Bottom|Field|12|29.95|34.45|32.04|32.2578333333333|1.320135656482|3, 509
+6|Biscayne Bay Aquatic Preserve|2004|1|Salinity|Bottom|Field|11|29.95|34.45|32.12|32.3518181818182|1.34180339977076|509
 6|Biscayne Bay Aquatic Preserve|2004|2|Salinity|Bottom|Field|11|30.91|34.47|32.44|32.3845454545455|1.11630070891641|509
-6|Biscayne Bay Aquatic Preserve|2004|3|Salinity|Bottom|Field|13|32.41|37|34.28|34.5997692307692|1.52868484619112|3, 509
+6|Biscayne Bay Aquatic Preserve|2004|3|Salinity|Bottom|Field|11|32.41|37|34.09|34.3909090909091|1.54989325145608|509
 6|Biscayne Bay Aquatic Preserve|2004|4|Salinity|Bottom|Field|11|31.4|37.4|35.33|35.3281818181818|1.93723936663396|509
-6|Biscayne Bay Aquatic Preserve|2004|5|Salinity|Bottom|Field|13|35|38.59|37.5|37.2560769230769|1.31490091271411|3, 509
+6|Biscayne Bay Aquatic Preserve|2004|5|Salinity|Bottom|Field|11|35|38.59|37.5|37.1790909090909|1.40743351207405|509
 6|Biscayne Bay Aquatic Preserve|2004|6|Salinity|Bottom|Field|11|35.43|40.65|38.49|38.0281818181818|1.8108385802264|509
 6|Biscayne Bay Aquatic Preserve|2004|7|Salinity|Bottom|Field|12|36.95|41.74|39.34|39.3691666666667|1.58306640493197|115, 509
-6|Biscayne Bay Aquatic Preserve|2004|8|Salinity|Bottom|Field|13|28.78|39.89|34.31|34.5563846153846|3.36958710473706|3, 509
+6|Biscayne Bay Aquatic Preserve|2004|8|Salinity|Bottom|Field|11|28.78|39.89|34.31|34.4172727272727|3.14702427988438|509
 6|Biscayne Bay Aquatic Preserve|2004|9|Salinity|Bottom|Field|11|29.41|39.71|33.87|33.9436363636364|3.46116533187097|509
 6|Biscayne Bay Aquatic Preserve|2004|10|Salinity|Bottom|Field|11|29.82|37.75|33.36|33.5954545454545|2.59862026327959|509
 6|Biscayne Bay Aquatic Preserve|2004|11|Salinity|Bottom|Field|11|31.83|34.8|33|33.15|0.913838060052217|509
-6|Biscayne Bay Aquatic Preserve|2004|12|Salinity|Bottom|Field|13|29.923|35.75|33.77|33.5830769230769|1.65630650653487|3, 509
+6|Biscayne Bay Aquatic Preserve|2004|12|Salinity|Bottom|Field|11|31.33|35.75|33.77|33.86|1.35290797913236|509
 6|Biscayne Bay Aquatic Preserve|2005|1|Salinity|Bottom|Field|11|34.09|36.19|35.11|35.1690909090909|0.718991718247915|509
-6|Biscayne Bay Aquatic Preserve|2005|2|Salinity|Bottom|Field|13|34.5|36.64|35.523|35.6082307692308|0.704020851235501|3, 509
+6|Biscayne Bay Aquatic Preserve|2005|2|Salinity|Bottom|Field|11|34.5|36.64|35.62|35.6336363636364|0.767831657686406|509
 6|Biscayne Bay Aquatic Preserve|2005|3|Salinity|Bottom|Field|11|32.75|37.82|36.04|35.8736363636364|1.81847888482255|509
-6|Biscayne Bay Aquatic Preserve|2005|4|Salinity|Bottom|Field|13|33.48|39.91|37.659|36.8383846153846|2.20951214594465|3, 509
+6|Biscayne Bay Aquatic Preserve|2005|4|Salinity|Bottom|Field|11|33.48|39.91|37.69|36.9627272727273|2.30110447789357|509
 6|Biscayne Bay Aquatic Preserve|2005|5|Salinity|Bottom|Field|163|26.8|40.79|35.8|35.8231901840491|2.91847302910811|509, 965, 4049
 6|Biscayne Bay Aquatic Preserve|2005|6|Salinity|Bottom|Field|11|24.78|35.21|29.77|30.2263636363636|3.5446671853004|509
-6|Biscayne Bay Aquatic Preserve|2005|7|Salinity|Bottom|Field|16|16.552|36.72|31.39|29.522625|5.96584773383744|3, 509
-6|Biscayne Bay Aquatic Preserve|2005|8|Salinity|Bottom|Field|12|30.01|37.86|32.98|33.47075|2.32675533444401|3, 509
+6|Biscayne Bay Aquatic Preserve|2005|7|Salinity|Bottom|Field|11|28.8|36.72|32.45|32.3336363636364|2.19247929398329|509
+6|Biscayne Bay Aquatic Preserve|2005|8|Salinity|Bottom|Field|11|30.01|37.86|33.01|33.5618181818182|2.41778749348167|509
 6|Biscayne Bay Aquatic Preserve|2005|9|Salinity|Bottom|Field|35|27|34.3|29.9|30.2402857142857|1.52360347959212|509, 965
 6|Biscayne Bay Aquatic Preserve|2005|10|Salinity|Bottom|Field|77|21.2|37|29|29.8725974025974|3.44931091615542|509, 965
-6|Biscayne Bay Aquatic Preserve|2005|11|Salinity|Bottom|Field|13|24.279|34.22|31.76|31.0863846153846|2.73644061810416|3, 509
+6|Biscayne Bay Aquatic Preserve|2005|11|Salinity|Bottom|Field|11|28.45|34.22|31.99|31.91|1.76016476501491|509
 6|Biscayne Bay Aquatic Preserve|2005|12|Salinity|Bottom|Field|11|30.51|36.27|32.08|32.2545454545455|1.63142492095937|509
-6|Biscayne Bay Aquatic Preserve|2006|1|Salinity|Bottom|Field|12|32.769|36.51|34.725|34.7165833333333|1.09020268827184|3, 509
+6|Biscayne Bay Aquatic Preserve|2006|1|Salinity|Bottom|Field|11|32.84|36.51|34.74|34.8936363636364|0.945307068917531|509
 6|Biscayne Bay Aquatic Preserve|2006|2|Salinity|Bottom|Field|11|32.67|36.55|34.43|34.5109090909091|1.17820587798105|509
 6|Biscayne Bay Aquatic Preserve|2006|3|Salinity|Bottom|Field|11|33.6|38.03|35.93|35.8245454545455|1.47301978015479|509
 6|Biscayne Bay Aquatic Preserve|2006|4|Salinity|Bottom|Field|99|30.5|38.18|35.1|35.4913131313131|1.50761580017863|509, 965
-6|Biscayne Bay Aquatic Preserve|2006|5|Salinity|Bottom|Field|81|27.45|39.2|34.05|35.042037037037|3.21541041876634|3, 509, 4049
+6|Biscayne Bay Aquatic Preserve|2006|5|Salinity|Bottom|Field|78|27.45|39.2|33.995|35.0132051282051|3.25221941943977|509, 4049
 6|Biscayne Bay Aquatic Preserve|2006|6|Salinity|Bottom|Field|11|31.71|39.09|37.58|36.3109090909091|2.54732587057665|509
 6|Biscayne Bay Aquatic Preserve|2006|7|Salinity|Bottom|Field|11|28.73|36.36|33.27|32.8454545454545|2.34444604815877|509
-6|Biscayne Bay Aquatic Preserve|2006|8|Salinity|Bottom|Field|1|35.055|35.055|35.055|35.055||3
 6|Biscayne Bay Aquatic Preserve|2006|9|Salinity|Bottom|Field|112|22.3|35.98|30.1|29.5725|3.11174135079287|509, 965
 6|Biscayne Bay Aquatic Preserve|2006|10|Salinity|Bottom|Field|11|31.41|35.33|33.12|33.0281818181818|1.27919363805343|509
-6|Biscayne Bay Aquatic Preserve|2006|11|Salinity|Bottom|Field|14|29.756|37.43|34.605|34.2787857142857|2.10985782162508|3, 509
+6|Biscayne Bay Aquatic Preserve|2006|11|Salinity|Bottom|Field|11|34.02|37.43|34.92|35.2081818181818|1.02955153520179|509
 6|Biscayne Bay Aquatic Preserve|2006|12|Salinity|Bottom|Field|10|32.99|36.73|35.005|35.004|1.18888556593513|509
 6|Biscayne Bay Aquatic Preserve|2007|1|Salinity|Bottom|Field|11|31.43|36.81|33.56|33.8154545454545|1.64594266993941|509
-6|Biscayne Bay Aquatic Preserve|2007|2|Salinity|Bottom|Field|12|33.11|36.59|35.04|34.8925|1.12343729848905|3, 509
+6|Biscayne Bay Aquatic Preserve|2007|2|Salinity|Bottom|Field|11|33.11|36.59|35.06|34.93|1.17036746366259|509
 6|Biscayne Bay Aquatic Preserve|2007|3|Salinity|Bottom|Field|11|34.57|37.69|36.33|36.0790909090909|0.970859974923825|509
 6|Biscayne Bay Aquatic Preserve|2007|4|Salinity|Bottom|Field|100|33.2|39.19|35.9|36.1304|1.42655403123765|509, 965
 6|Biscayne Bay Aquatic Preserve|2007|5|Salinity|Bottom|Field|55|23.69|40.81|33.89|34.4452727272727|4.00440861428605|509, 4049
 6|Biscayne Bay Aquatic Preserve|2007|6|Salinity|Bottom|Field|15|25.28|38.94|32.61|31.8273333333333|3.84763279111171|509, 4049
-6|Biscayne Bay Aquatic Preserve|2007|7|Salinity|Bottom|Field|13|27.322|38.78|37.58|36.3476153846154|3.43871413802848|3, 509
+6|Biscayne Bay Aquatic Preserve|2007|7|Salinity|Bottom|Field|11|36.33|38.78|37.7|37.7036363636364|0.742243527789536|509
 6|Biscayne Bay Aquatic Preserve|2007|8|Salinity|Bottom|Field|11|32.53|38.46|35.36|35.4445454545455|1.71474408374173|509
 6|Biscayne Bay Aquatic Preserve|2007|9|Salinity|Bottom|Field|99|29.3|37.2|33.5|33.6176767676768|2.11768588962287|509, 965
-6|Biscayne Bay Aquatic Preserve|2007|10|Salinity|Bottom|Field|12|23.852|34.72|29.04|28.8880833333333|3.21590825452393|3, 509
-6|Biscayne Bay Aquatic Preserve|2007|11|Salinity|Bottom|Field|11|25.694|34.27|31.69|30.7878181818182|2.95453528725523|3, 509
+6|Biscayne Bay Aquatic Preserve|2007|10|Salinity|Bottom|Field|9|27.65|34.72|29.92|30.2822222222222|2.24169454753417|509
+6|Biscayne Bay Aquatic Preserve|2007|11|Salinity|Bottom|Field|9|26.63|34.27|32.2|31.5111111111111|2.61325680160047|509
 6|Biscayne Bay Aquatic Preserve|2007|12|Salinity|Bottom|Field|9|30.72|36.56|32.5|33.0188888888889|2.0069781042929|509
 6|Biscayne Bay Aquatic Preserve|2008|1|Salinity|Bottom|Field|9|34.31|36.93|35.86|35.7044444444445|0.908090181522616|509
-6|Biscayne Bay Aquatic Preserve|2008|2|Salinity|Bottom|Field|10|33.11|37.07|35.395|35.2763|1.31858561008041|3, 509
+6|Biscayne Bay Aquatic Preserve|2008|2|Salinity|Bottom|Field|9|33.11|37.07|35.63|35.4766666666667|1.22651946580558|509
 6|Biscayne Bay Aquatic Preserve|2008|3|Salinity|Bottom|Field|9|33.96|37.46|35.96|35.8888888888889|1.21234735579829|509
 6|Biscayne Bay Aquatic Preserve|2008|4|Salinity|Bottom|Field|100|25.6|38.8|35.1|34.6284|3.17471313267002|509, 965
-6|Biscayne Bay Aquatic Preserve|2008|5|Salinity|Bottom|Field|39|33.45|39.92|37.17|37.0305384615385|1.33831089233198|3, 509, 4049
+6|Biscayne Bay Aquatic Preserve|2008|5|Salinity|Bottom|Field|38|33.45|39.92|37.175|37.0792105263158|1.32083180503178|509, 4049
 6|Biscayne Bay Aquatic Preserve|2008|6|Salinity|Bottom|Field|9|34.29|39.71|38.04|37.4622222222222|1.73992656294582|509
 6|Biscayne Bay Aquatic Preserve|2008|7|Salinity|Bottom|Field|9|32.62|38.44|33.89|34.8855555555556|2.19106202052287|509
 6|Biscayne Bay Aquatic Preserve|2008|8|Salinity|Bottom|Field|9|30.45|38.06|32.79|33.6222222222222|2.90011110898263|509
 6|Biscayne Bay Aquatic Preserve|2008|9|Salinity|Bottom|Field|100|22.9|38.4|31.8|31.0091|3.65587892263539|509, 965
-6|Biscayne Bay Aquatic Preserve|2009|1|Salinity|Bottom|Field|2|31.234|33.997|32.6155|32.6155|1.95373603641843|3
 6|Biscayne Bay Aquatic Preserve|2009|4|Salinity|Bottom|Field|90|34.3|40.6|36.7|37.0166666666667|1.58902485820707|965
-6|Biscayne Bay Aquatic Preserve|2009|5|Salinity|Bottom|Field|2|38.373|40.223|39.298|39.298|1.30814754519511|3
-6|Biscayne Bay Aquatic Preserve|2009|7|Salinity|Bottom|Field|4|23.953|31.8|28.7255|28.301|3.24150777674012|3
 6|Biscayne Bay Aquatic Preserve|2009|9|Salinity|Bottom|Field|90|26.5|35.8|31.9|31.65|2.35869179128858|965
-6|Biscayne Bay Aquatic Preserve|2009|11|Salinity|Bottom|Field|1|34.453|34.453|34.453|34.453||3
 6|Biscayne Bay Aquatic Preserve|2010|4|Salinity|Bottom|Field|60|27.8|35.2|31.75|31.9083333333333|1.6731470060801|965
 6|Biscayne Bay Aquatic Preserve|2010|5|Salinity|Bottom|Field|31|30.1|36.8|35.2|34.8709677419355|1.61723911824795|965
-6|Biscayne Bay Aquatic Preserve|2010|7|Salinity|Bottom|Field|1|28.844|28.844|28.844|28.844||3
 6|Biscayne Bay Aquatic Preserve|2010|9|Salinity|Bottom|Field|90|20.7|35|31.7|30.9766666666667|2.8820658165258|965
-6|Biscayne Bay Aquatic Preserve|2010|10|Salinity|Bottom|Field|2|20.409|25.677|23.043|23.043|3.72503852329073|3
-6|Biscayne Bay Aquatic Preserve|2011|3|Salinity|Bottom|Field|3|29.026|35.855|32.385|32.422|3.41465034813229|3
 6|Biscayne Bay Aquatic Preserve|2011|4|Salinity|Bottom|Field|90|26|38.2|36.6|36.5277777777778|1.30298083300792|965
-6|Biscayne Bay Aquatic Preserve|2011|6|Salinity|Bottom|Field|2|35.633|36.473|36.053|36.053|0.593969696196697|3
-6|Biscayne Bay Aquatic Preserve|2011|8|Salinity|Bottom|Field|5|24.63|37.755|30.111|30.6472|4.87181662216467|3
 6|Biscayne Bay Aquatic Preserve|2011|9|Salinity|Bottom|Field|60|25|33.9|29.3|29.1083333333333|2.44105365321066|965
 6|Biscayne Bay Aquatic Preserve|2011|10|Salinity|Bottom|Field|28|26.1|34.3|32.1|31.7785714285714|2.09096064097735|965
-6|Biscayne Bay Aquatic Preserve|2011|12|Salinity|Bottom|Field|1|33.702|33.702|33.702|33.702||3
-6|Biscayne Bay Aquatic Preserve|2012|2|Salinity|Bottom|Field|1|27.545|27.545|27.545|27.545||3
-6|Biscayne Bay Aquatic Preserve|2012|4|Salinity|Bottom|Field|1|35.929|35.929|35.929|35.929||3
-6|Biscayne Bay Aquatic Preserve|2012|8|Salinity|Bottom|Field|2|22.397|30.348|26.3725|26.3725|5.62220601721424|3
-6|Biscayne Bay Aquatic Preserve|2016|2|Salinity|Bottom|Field|1|30.5|30.5|30.5|30.5||4057
+6|Biscayne Bay Aquatic Preserve|2015|8|Salinity|Bottom|Field|2|41.5|43|42.25|42.25|1.06066017177982|4057
+6|Biscayne Bay Aquatic Preserve|2015|9|Salinity|Bottom|Field|1|40|40|40|40||4057
+6|Biscayne Bay Aquatic Preserve|2015|10|Salinity|Bottom|Field|3|30|34.5|32|32.1666666666667|2.25462487641145|4057
+6|Biscayne Bay Aquatic Preserve|2015|11|Salinity|Bottom|Field|1|30.25|30.25|30.25|30.25||4057
+6|Biscayne Bay Aquatic Preserve|2016|1|Salinity|Bottom|Field|1|30.5|30.5|30.5|30.5||4057
 6|Biscayne Bay Aquatic Preserve|2016|3|Salinity|Bottom|Field|1|31|31|31|31||4057
 6|Biscayne Bay Aquatic Preserve|2016|5|Salinity|Bottom|Field|1|35|35|35|35||4057
-6|Biscayne Bay Aquatic Preserve|2016|8|Salinity|Bottom|Field|6|14.2|35|29.3|27.0083333333333|8.24817656616702|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2016|9|Salinity|Bottom|Field|5|22|29.9|28.6|27.42|3.15230074707348|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2016|8|Salinity|Bottom|Field|4|14.2|29.6|24.5|23.2|7.43505211817644|4058
+6|Biscayne Bay Aquatic Preserve|2016|9|Salinity|Bottom|Field|5|24|29.9|28.6|27.82|2.30586209474895|4057, 4058
 6|Biscayne Bay Aquatic Preserve|2016|10|Salinity|Bottom|Field|4|16|33.5|31.125|27.9375|8.10384425236978|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2016|11|Salinity|Bottom|Field|10|31.6|34.6|33.2|33.07|1.03821427888894|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2016|12|Salinity|Bottom|Field|3|32.5|33.9|32.6|33|0.781024967590664|4058
-6|Biscayne Bay Aquatic Preserve|2017|1|Salinity|Bottom|Field|6|28.3|35.2|33.55|32.5|2.74226184016042|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2016|11|Salinity|Bottom|Field|10|31.6|34.6|33.35|33.22|0.97273954490512|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2016|12|Salinity|Bottom|Field|4|32.5|33.9|32.8|33|0.637704215656965|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2017|1|Salinity|Bottom|Field|7|28.3|40|34.4|33.8571428571429|3.80694853430633|4057, 4058
 6|Biscayne Bay Aquatic Preserve|2017|2|Salinity|Bottom|Field|5|34.6|35.4|35|34.98|0.286356421265526|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2017|3|Salinity|Bottom|Field|4|32.34|36.4|34|34.185|2.07193146604804|4058, 5002
-6|Biscayne Bay Aquatic Preserve|2017|4|Salinity|Bottom|Field|3|36.5|40|36.7|37.7333333333333|1.96553639837408|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2017|5|Salinity|Bottom|Field|7|33.5|37.6|35|35.5857142857143|1.64461603566362|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2017|6|Salinity|Bottom|Field|4|18.6|29.8|28.95|26.575|5.33190084929068|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2017|7|Salinity|Bottom|Field|4|27.9|31.5|28.05|28.875|1.75190372642639|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2017|8|Salinity|Bottom|Field|11|20.3|34.3|25.6|25.7363636363636|3.33174810790754|4058
+6|Biscayne Bay Aquatic Preserve|2017|3|Salinity|Bottom|Field|6|32.34|36.4|34.75|34.4566666666667|1.77563134311902|4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|2017|4|Salinity|Bottom|Field|2|36.7|40|38.35|38.35|2.33345237791561|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2017|5|Salinity|Bottom|Field|6|33.5|37.6|36|35.6833333333333|1.77923204407595|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2017|6|Salinity|Bottom|Field|5|18.6|35|29.8|28.56|6.04342618057009|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2017|7|Salinity|Bottom|Field|6|21.5|33.5|28.05|27.9166666666667|3.8138781662065|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2017|8|Salinity|Bottom|Field|12|20.3|34.3|25.45|25.425|3.35481336698075|4057, 4058
 6|Biscayne Bay Aquatic Preserve|2017|9|Salinity|Bottom|Field|9|20|36.8|21.5|25.7666666666667|6.15142259969188|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2017|10|Salinity|Bottom|Field|6|26.4|32.4|29.15|29.4166666666667|2.11037121537105|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2017|11|Salinity|Bottom|Field|5|30.7|32|31.1|31.22|0.476445169982864|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2017|12|Salinity|Bottom|Field|5|28.8|30.3|29.8|29.62|0.580517010947999|4058
+6|Biscayne Bay Aquatic Preserve|2017|10|Salinity|Bottom|Field|5|26.4|32.4|29.3|29.5|2.34840371316348|4058
+6|Biscayne Bay Aquatic Preserve|2017|11|Salinity|Bottom|Field|7|30.5|35|31.1|31.6571428571429|1.54796333166858|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2017|12|Salinity|Bottom|Field|7|28.8|32.5|29.9|30.3|1.28711563842052|4057, 4058
 6|Biscayne Bay Aquatic Preserve|2018|1|Salinity|Bottom|Field|9|26.7|31.2|30.7|30.3333333333333|1.38473824241262|4058
-6|Biscayne Bay Aquatic Preserve|2018|2|Salinity|Bottom|Field|2|37.2|37.6|37.4|37.4|0.282842712474618|4058
-6|Biscayne Bay Aquatic Preserve|2018|3|Salinity|Bottom|Field|3|37.5|40|40|39.1666666666667|1.44337567297406|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2018|4|Salinity|Bottom|Field|5|36.6|40.5|38.6|38.5|1.39821314541096|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2018|5|Salinity|Bottom|Field|6|21.3|39.5|21.85|25.95|7.38694794891639|4057, 4058
-6|Biscayne Bay Aquatic Preserve|2018|6|Salinity|Bottom|Field|5|22.1|24.3|24.2|23.64|0.934344690143846|4058
+6|Biscayne Bay Aquatic Preserve|2018|2|Salinity|Bottom|Field|5|31.5|39.5|37.2|35.96|3.18166623013791|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2018|3|Salinity|Bottom|Field|2|37.5|40|38.75|38.75|1.76776695296637|4058
+6|Biscayne Bay Aquatic Preserve|2018|4|Salinity|Bottom|Field|4|36.6|38.7|38.35|38|0.969535971483266|4058
+6|Biscayne Bay Aquatic Preserve|2018|5|Salinity|Bottom|Field|6|21.3|33|21.85|24.8666666666667|5.13601661471871|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2018|6|Salinity|Bottom|Field|6|22.1|35|24.2|25.5333333333333|4.71239500325118|4057, 4058
 6|Biscayne Bay Aquatic Preserve|2018|7|Salinity|Bottom|Field|6|36.4|38.6|38|37.7166666666667|0.943221430347439|4058
-6|Biscayne Bay Aquatic Preserve|2018|8|Salinity|Bottom|Field|5|23.7|30.1|28|27.54|2.35010638057089|4058
+6|Biscayne Bay Aquatic Preserve|2018|8|Salinity|Bottom|Field|6|23.7|30.1|27.8|27.2|2.26097324177001|4057, 4058
 6|Biscayne Bay Aquatic Preserve|2018|9|Salinity|Bottom|Field|2|25.1|25.8|25.45|25.45|0.494974746830583|4058
 6|Biscayne Bay Aquatic Preserve|2018|10|Salinity|Bottom|Field|7|25.2|30.8|29.9|29.4571428571429|1.9320603362362|4058
-6|Biscayne Bay Aquatic Preserve|2018|11|Salinity|Bottom|Field|2|29.6|30.6|30.1|30.1|0.707106781186548|4058
+6|Biscayne Bay Aquatic Preserve|2018|11|Salinity|Bottom|Field|4|28.5|39|30.1|31.925|4.79400667500578|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2018|12|Salinity|Bottom|Field|1|32|32|32|32||4057
+6|Biscayne Bay Aquatic Preserve|2019|8|Salinity|Bottom|Field|1|38.5|38.5|38.5|38.5||4057
 6|Biscayne Bay Aquatic Preserve|2020|2|Salinity|Bottom|Field|2|30.22|34.54|32.38|32.38|3.05470129472589|5002
 6|Biscayne Bay Aquatic Preserve|2020|5|Salinity|Bottom|Field|4|27.96|36.62|35.73|34.01|4.08079240671057|5002
 6|Biscayne Bay Aquatic Preserve|2020|6|Salinity|Bottom|Field|2|27.13|27.65|27.39|27.39|0.367695526217004|5002
@@ -2912,27 +2904,27 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|1998|2|Salinity|Bottom|Field|49|17.7|36.2|34.8|33.830612244898|4.10006118255329|297, 509
 15|Florida Keys National Marine Sanctuary|1998|3|Salinity|Bottom|Field|6|16.6|30.6|22.8|23.5166666666667|5.33757123293607|509
 15|Florida Keys National Marine Sanctuary|1998|4|Salinity|Bottom|Field|53|20.6|37.1|36|34.9358490566038|3.53292722059324|297, 509
-15|Florida Keys National Marine Sanctuary|1998|5|Salinity|Bottom|Field|91|19.8|37.6|36.2|35.7891318681319|2.53162743532821|3, 297, 509
+15|Florida Keys National Marine Sanctuary|1998|5|Salinity|Bottom|Field|90|19.8|37.6|36.2|35.7722222222222|2.54063726314313|297, 509
 15|Florida Keys National Marine Sanctuary|1998|6|Salinity|Bottom|Field|16|22.6|36.9|35.65|33.3|4.518849411078|297, 509
-15|Florida Keys National Marine Sanctuary|1998|7|Salinity|Bottom|Field|80|25|39.019|35.9|35.5677375|1.95502044887975|3, 297, 509
+15|Florida Keys National Marine Sanctuary|1998|7|Salinity|Bottom|Field|79|25|38.6|35.9|35.5240506329114|1.92781364070827|297, 509
 15|Florida Keys National Marine Sanctuary|1998|8|Salinity|Bottom|Field|66|26.9|36.4|34.8|34.7378787878788|1.61128378358234|102, 297, 509
 15|Florida Keys National Marine Sanctuary|1998|9|Salinity|Bottom|Field|25|3.7|35.3|34.7|31.144|7.72517960956249|297, 509
 15|Florida Keys National Marine Sanctuary|1998|10|Salinity|Bottom|Field|46|28.3|36.3|35.2|34.9391304347826|1.31782282755722|297, 509
-15|Florida Keys National Marine Sanctuary|1998|11|Salinity|Bottom|Field|49|25.5|36.1|35.6|34.5011632653061|2.73878311897622|3, 297, 509
-15|Florida Keys National Marine Sanctuary|1998|12|Salinity|Bottom|Field|7|21.2|35.807|25.4|27.201|5.97160561881532|3, 509
+15|Florida Keys National Marine Sanctuary|1998|11|Salinity|Bottom|Field|48|25.5|36.1|35.6|34.6166666666667|2.64441067185459|297, 509
+15|Florida Keys National Marine Sanctuary|1998|12|Salinity|Bottom|Field|6|21.2|33.8|24|25.7666666666667|5.05080851613548|509
 15|Florida Keys National Marine Sanctuary|1999|1|Salinity|Bottom|Field|85|23.7|36.2397|35.583|34.8654352941177|2.2149347749026|297, 509
 15|Florida Keys National Marine Sanctuary|1999|2|Salinity|Bottom|Field|61|25.7|37.1573|36.2482|35.425568852459|2.20896789561256|297, 509
 15|Florida Keys National Marine Sanctuary|1999|3|Salinity|Bottom|Field|6|28.3|36.4|31.7|32.25|3.06055550513301|509
 15|Florida Keys National Marine Sanctuary|1999|4|Salinity|Bottom|Field|6|33.1|39|34.75|35.6833333333333|2.36255511399558|509
 15|Florida Keys National Marine Sanctuary|1999|5|Salinity|Bottom|Field|72|35|38.5|36.42|36.6495833333333|0.609789706304963|297, 509
-15|Florida Keys National Marine Sanctuary|1999|6|Salinity|Bottom|Field|61|34|38.751|36.53|36.5837868852459|0.56554643530996|3, 297, 509
+15|Florida Keys National Marine Sanctuary|1999|6|Salinity|Bottom|Field|60|34|37.48|36.52|36.5476666666667|0.494297538429208|297, 509
 15|Florida Keys National Marine Sanctuary|1999|7|Salinity|Bottom|Field|57|25.4|36.74|36.03|35.4228070175439|1.81228225725185|297, 509
 15|Florida Keys National Marine Sanctuary|1999|8|Salinity|Bottom|Field|89|31.3|37.57|36.27|36.0815730337079|0.994598935702688|297, 509
 15|Florida Keys National Marine Sanctuary|1999|9|Salinity|Bottom|Field|6|29.7|36|30.6|32.1666666666667|2.99443929086343|509
 15|Florida Keys National Marine Sanctuary|1999|10|Salinity|Bottom|Field|42|15|35.7|34.395|32.325|5.26871032953847|297, 509
 15|Florida Keys National Marine Sanctuary|1999|11|Salinity|Bottom|Field|44|17.4|36.27|35.055|33.2834090909091|4.99127841347742|297, 509
 15|Florida Keys National Marine Sanctuary|1999|12|Salinity|Bottom|Field|84|18.7|36.26|34.665|33.2646428571429|3.76346688618916|297, 509
-15|Florida Keys National Marine Sanctuary|2000|1|Salinity|Bottom|Field|60|21.486|36.85|35.20365|34.3904|3.42532828826273|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2000|1|Salinity|Bottom|Field|59|22.1|36.85|35.2073|34.6091186440678|3.00256668027106|297, 509
 15|Florida Keys National Marine Sanctuary|2000|2|Salinity|Bottom|Field|26|24.6|36.47|36.165|34.5738461538462|3.40795431533121|297, 509
 15|Florida Keys National Marine Sanctuary|2000|3|Salinity|Bottom|Field|78|24.9|36.6535|36.1816|35.6030397435898|1.82155490438763|297, 509
 15|Florida Keys National Marine Sanctuary|2000|4|Salinity|Bottom|Field|58|27.6|37.27|36.5|36.0453327586207|1.77260164139704|297, 509
@@ -2942,9 +2934,9 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2000|8|Salinity|Bottom|Field|23|27|40.2|38.2|37.0304347826087|3.19920938849936|102, 115, 509
 15|Florida Keys National Marine Sanctuary|2000|9|Salinity|Bottom|Field|108|25.9|38.84|36.405|36.3160185185185|1.54114106276966|297, 509
 15|Florida Keys National Marine Sanctuary|2000|10|Salinity|Bottom|Field|44|24.5|37.33|35.9|34.6097636363636|3.71651519353321|297, 509
-15|Florida Keys National Marine Sanctuary|2000|11|Salinity|Bottom|Field|102|27.832|37.9|36.3|36.1110980392157|1.38409373079993|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2000|11|Salinity|Bottom|Field|101|30|37.9|36.3|36.1930693069307|1.11474278878516|297, 509
 15|Florida Keys National Marine Sanctuary|2000|12|Salinity|Bottom|Field|15|24.3|37.5|27.8|30.8266666666667|5.31190935091902|297, 509
-15|Florida Keys National Marine Sanctuary|2001|1|Salinity|Bottom|Field|92|24.6|39.1129|36.6|35.9926565217391|2.5626497234117|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2001|1|Salinity|Bottom|Field|91|24.6|39.1129|36.6|36.1149934065934|2.29083881361305|297, 509
 15|Florida Keys National Marine Sanctuary|2001|2|Salinity|Bottom|Field|46|28.5|38.3|36.8|36.4456521739131|2.23275679341722|297, 509
 15|Florida Keys National Marine Sanctuary|2001|3|Salinity|Bottom|Field|25|28.5|38.6|37.7|36.248|3.07802967280478|297, 509
 15|Florida Keys National Marine Sanctuary|2001|4|Salinity|Bottom|Field|6|29.4|36.6|31.9|32.5333333333333|2.95341610117279|509
@@ -2958,48 +2950,48 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2001|12|Salinity|Bottom|Field|70|20.3|36.84|35.205|33.7998571428571|3.47695539515188|297, 509
 15|Florida Keys National Marine Sanctuary|2002|1|Salinity|Bottom|Field|45|22.75|37.18|35.83|34.4735555555556|3.42758141310084|297, 509
 15|Florida Keys National Marine Sanctuary|2002|2|Salinity|Bottom|Field|48|21.86|36.85|36.195|35.2545833333333|3.09384836329053|297, 509
-15|Florida Keys National Marine Sanctuary|2002|3|Salinity|Bottom|Field|70|24.765|36.88|35.83|35.0929285714286|2.15561459221873|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2002|4|Salinity|Bottom|Field|74|28.931|37.9|36.135|36.0113648648649|1.4258710538861|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2002|3|Salinity|Bottom|Field|69|27.1|36.88|35.83|35.2426086956522|1.76738644878109|297, 509
+15|Florida Keys National Marine Sanctuary|2002|4|Salinity|Bottom|Field|73|29.7|37.9|36.15|36.1083561643836|1.16427494569061|297, 509
 15|Florida Keys National Marine Sanctuary|2002|5|Salinity|Bottom|Field|101|34.62|39.66|36.86|37.0471287128713|0.989114085061641|60, 297, 509
 15|Florida Keys National Marine Sanctuary|2002|6|Salinity|Bottom|Field|6|33.52|38.44|36.83|36.3283333333333|1.94533716015159|509
 15|Florida Keys National Marine Sanctuary|2002|7|Salinity|Bottom|Field|11|17.15|36.8|31.8|30.3781818181818|6.7267745884366|115, 509
-15|Florida Keys National Marine Sanctuary|2002|8|Salinity|Bottom|Field|69|21.55|37.14|36.32|35.4836666666667|3.21919158040843|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2002|8|Salinity|Bottom|Field|68|21.55|37.14|36.32|35.6286764705882|3.00753923531771|297, 509
 15|Florida Keys National Marine Sanctuary|2002|9|Salinity|Bottom|Field|87|20.01|37.33|36.25|35.6633333333333|2.57839848737349|297, 509
 15|Florida Keys National Marine Sanctuary|2002|10|Salinity|Bottom|Field|86|24.31|37.14|36.29|35.8577906976744|1.95456051998023|297, 509
 15|Florida Keys National Marine Sanctuary|2002|11|Salinity|Bottom|Field|56|26.84|38.72|36.79|36.4892857142857|2.15171631886806|297, 509
-15|Florida Keys National Marine Sanctuary|2002|12|Salinity|Bottom|Field|21|26.77|38.19|37.17|35.0722380952381|3.73821617760078|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|1|Salinity|Bottom|Field|44|28.562|36.78|36.485|35.4518636363636|2.08510827994904|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2002|12|Salinity|Bottom|Field|20|26.77|38.19|37.2|35.1925|3.79342072402649|297, 509
+15|Florida Keys National Marine Sanctuary|2003|1|Salinity|Bottom|Field|43|29.24|36.78|36.49|35.6120930232558|1.81512108757769|297, 509
 15|Florida Keys National Marine Sanctuary|2003|2|Salinity|Bottom|Field|61|30.25|36.49|35.84|35.3896721311475|1.38716733815489|297, 509
 15|Florida Keys National Marine Sanctuary|2003|3|Salinity|Bottom|Field|56|30.94|36.34|35.615|35.2664285714286|1.12076828936295|297, 509
 15|Florida Keys National Marine Sanctuary|2003|4|Salinity|Bottom|Field|42|29.26|36.46|36.265|35.577619047619|1.62500703116499|297, 509
-15|Florida Keys National Marine Sanctuary|2003|5|Salinity|Bottom|Field|48|26.39|36.99|36.02|35.4301875|2.15667553124583|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|6|Salinity|Bottom|Field|73|21.376|37.07|36.34|35.4391232876712|2.75462449520602|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2003|5|Salinity|Bottom|Field|47|26.39|36.99|36.02|35.4389361702128|2.17913049476815|297, 509
+15|Florida Keys National Marine Sanctuary|2003|6|Salinity|Bottom|Field|71|24.8|37.07|36.34|35.6887323943662|2.17370186520432|297, 509
 15|Florida Keys National Marine Sanctuary|2003|7|Salinity|Bottom|Field|39|24.44|38.1|36.11|35.1538461538462|3.0276329258355|115, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|8|Salinity|Bottom|Field|41|26.83|37.05|35.96|35.291512195122|2.20694067797428|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|9|Salinity|Bottom|Field|37|28.41|36.16|35.63|34.800945945946|2.29812781225097|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|10|Salinity|Bottom|Field|152|24.87|39.56|35.86|35.633552631579|1.72563431389476|3, 60, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|11|Salinity|Bottom|Field|72|24.28|37.25|35.855|34.8182361111111|3.12303104165302|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|12|Salinity|Bottom|Field|8|24.03|30.49|26.365|26.64125|2.23900135583446|3, 509
-15|Florida Keys National Marine Sanctuary|2004|1|Salinity|Bottom|Field|40|24.84|36.4693|36.3448|34.866645|3.23331912594949|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2003|8|Salinity|Bottom|Field|39|26.83|37.05|36.01|35.3248717948718|2.25513434282385|297, 509
+15|Florida Keys National Marine Sanctuary|2003|9|Salinity|Bottom|Field|36|28.41|36.16|35.655|34.9475|2.14823033481714|297, 509
+15|Florida Keys National Marine Sanctuary|2003|10|Salinity|Bottom|Field|151|24.87|39.56|35.86|35.6707947019868|1.66896395933877|60, 297, 509
+15|Florida Keys National Marine Sanctuary|2003|11|Salinity|Bottom|Field|70|25.35|37.25|35.87|35.0767142857143|2.74435690913564|297, 509
+15|Florida Keys National Marine Sanctuary|2003|12|Salinity|Bottom|Field|6|24.03|30.49|26.365|26.8316666666667|2.42581463979972|509
+15|Florida Keys National Marine Sanctuary|2004|1|Salinity|Bottom|Field|39|24.84|36.4693|36.3473|35.0426615384615|3.07531816159901|297, 509
 15|Florida Keys National Marine Sanctuary|2004|2|Salinity|Bottom|Field|44|25.26|36.3329|36.08715|34.8891568181818|2.64545522265426|297, 509
-15|Florida Keys National Marine Sanctuary|2004|3|Salinity|Bottom|Field|61|31.76|36.9896|35.95|35.6764606557377|0.956180012563654|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2004|4|Salinity|Bottom|Field|34|30.129|37.16|35.64965|35.50095|1.31707239216837|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2004|3|Salinity|Bottom|Field|60|31.76|36.9896|35.93815|35.6640683333333|0.959296600091091|297, 509
+15|Florida Keys National Marine Sanctuary|2004|4|Salinity|Bottom|Field|32|32.7|37.16|35.64965|35.650228125|0.938760536037906|297, 509
 15|Florida Keys National Marine Sanctuary|2004|5|Salinity|Bottom|Field|80|35.34|38.59|36.58095|36.68740625|0.723677214454025|297, 509
-15|Florida Keys National Marine Sanctuary|2004|6|Salinity|Bottom|Field|48|36.4258|41.98|36.62115|37.24375|1.31731639069416|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2004|6|Salinity|Bottom|Field|47|36.4258|41.98|36.6018|37.2462127659574|1.3314463622263|297, 509
 15|Florida Keys National Marine Sanctuary|2004|7|Salinity|Bottom|Field|46|36.3055|42.8|36.39205|37.4598934782609|1.85365747673825|115, 297, 509
-15|Florida Keys National Marine Sanctuary|2004|8|Salinity|Bottom|Field|95|30.577|39.89|36.0276|36.0737673684211|0.964610490173956|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2004|9|Salinity|Bottom|Field|22|34.48|39.71|35.985|36.4665|1.57868322918033|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2004|10|Salinity|Bottom|Field|114|35.15|39.0043|36.16965|36.429102631579|0.678064901409878|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2004|8|Salinity|Bottom|Field|94|35.1752|39.89|36.0408|36.1322436170213|0.782390997259828|297, 509
+15|Florida Keys National Marine Sanctuary|2004|9|Salinity|Bottom|Field|20|34.48|39.71|35.985|36.463|1.54674564982843|297, 509
+15|Florida Keys National Marine Sanctuary|2004|10|Salinity|Bottom|Field|113|35.15|39.0043|36.1674|36.4229265486726|0.677856826040945|297, 509
 15|Florida Keys National Marine Sanctuary|2004|11|Salinity|Bottom|Field|30|32.75|37.38|36.3244|36.0572866666667|1.21015384565803|297, 509
-15|Florida Keys National Marine Sanctuary|2004|12|Salinity|Bottom|Field|16|32.54|37.14|35.72|35.3804375|1.4851887856992|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2004|12|Salinity|Bottom|Field|15|32.54|37.14|35.88|35.4593333333333|1.50221011782481|297, 509
 15|Florida Keys National Marine Sanctuary|2005|1|Salinity|Bottom|Field|91|33.25|36.7026|36.2089|35.8669021978022|0.804288437616757|297, 509
-15|Florida Keys National Marine Sanctuary|2005|2|Salinity|Bottom|Field|63|35.01|38.1005|36.5446|36.4513063492064|0.627449027327735|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2005|2|Salinity|Bottom|Field|62|35.01|38.1005|36.55525|36.4680370967742|0.618241319862135|297, 509
 15|Florida Keys National Marine Sanctuary|2005|3|Salinity|Bottom|Field|6|35.33|37.86|36.98|36.6866666666667|1.0239075479098|509
 15|Florida Keys National Marine Sanctuary|2005|4|Salinity|Bottom|Field|39|35.4|38.45|36.66|36.858041025641|0.764857313393519|297, 509
 15|Florida Keys National Marine Sanctuary|2005|5|Salinity|Bottom|Field|279|36.1835|42.5|38.1|37.9973258064516|1.12973143573399|297, 509, 965, 4049
-15|Florida Keys National Marine Sanctuary|2005|6|Salinity|Bottom|Field|8|30.64|46.021|37.595|37.784875|4.5741174773314|3, 509
-15|Florida Keys National Marine Sanctuary|2005|7|Salinity|Bottom|Field|62|29.35|36.9201|36.1007|35.6755903225807|1.546868908866|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2005|8|Salinity|Bottom|Field|86|29.63|45.853|36.89115|36.9458279069768|1.67087293378614|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2005|6|Salinity|Bottom|Field|6|30.64|40.49|36.105|36.0616666666667|3.35810313520396|509
+15|Florida Keys National Marine Sanctuary|2005|7|Salinity|Bottom|Field|61|29.35|36.9201|36.1056|35.7739442622951|1.35015950483941|297, 509
+15|Florida Keys National Marine Sanctuary|2005|8|Salinity|Bottom|Field|84|29.63|39.17|36.89115|36.8542166666667|1.37004603333385|297, 509
 15|Florida Keys National Marine Sanctuary|2005|9|Salinity|Bottom|Field|94|19.6|39.7|25.7|27.1020212765957|3.84969251105201|297, 509, 965
 15|Florida Keys National Marine Sanctuary|2005|10|Salinity|Bottom|Field|30|15.43|36.4936|36.0691|33.7374866666667|5.38997595636204|297, 509
 15|Florida Keys National Marine Sanctuary|2005|11|Salinity|Bottom|Field|54|22.81|36.2619|35.83115|34.4215425925926|3.26086194801324|297, 509
@@ -3008,25 +3000,25 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2006|2|Salinity|Bottom|Field|32|27.32|38.1|36.2471|35.3912625|2.82974202434689|297, 509
 15|Florida Keys National Marine Sanctuary|2006|3|Salinity|Bottom|Field|77|27.57|38.03|36.1564|35.8983571428571|1.49732321199046|297, 509
 15|Florida Keys National Marine Sanctuary|2006|4|Salinity|Bottom|Field|139|29.5|39.05|36.3246|34.8746892086331|2.76954140089285|297, 509, 965
-15|Florida Keys National Marine Sanctuary|2006|5|Salinity|Bottom|Field|132|33.64|39.2|36.69845|37.0317|0.995044382147223|3, 60, 297, 509, 4049
+15|Florida Keys National Marine Sanctuary|2006|5|Salinity|Bottom|Field|131|33.64|39.2|36.7101|37.0443236641221|0.98819667069575|60, 297, 509, 4049
 15|Florida Keys National Marine Sanctuary|2006|6|Salinity|Bottom|Field|52|34.7797|37.8|36.48|36.4642576923077|0.535153696942694|60, 297, 509
 15|Florida Keys National Marine Sanctuary|2006|7|Salinity|Bottom|Field|45|34.43|37.54|36.4411|36.32366|0.542445509370631|297, 509
-15|Florida Keys National Marine Sanctuary|2006|8|Salinity|Bottom|Field|14|28.03|36.81|36.51|35.1139285714286|2.65286360414511|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2006|9|Salinity|Bottom|Field|185|21.8|36.5327|34.7982|32.8583637837838|3.5060593599784|3, 297, 509, 965
+15|Florida Keys National Marine Sanctuary|2006|8|Salinity|Bottom|Field|13|28.03|36.81|36.53|35.1184615384615|2.76113154990802|297, 509
+15|Florida Keys National Marine Sanctuary|2006|9|Salinity|Bottom|Field|183|21.8|36.5327|34.8|32.889449726776|3.51047727198583|297, 509, 965
 15|Florida Keys National Marine Sanctuary|2006|10|Salinity|Bottom|Field|28|27.68|36.8048|36.1828|34.6555678571429|2.73747197787837|297, 509
-15|Florida Keys National Marine Sanctuary|2006|11|Salinity|Bottom|Field|57|25.37|38.05|36.4798|35.8658421052632|2.30453376753206|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2006|11|Salinity|Bottom|Field|55|25.37|38.05|36.56|36.0203454545455|2.19341865106084|297, 509
 15|Florida Keys National Marine Sanctuary|2006|12|Salinity|Bottom|Field|71|29.43|37.45|36.2168|35.8324154929577|1.38388835425487|297, 509
 15|Florida Keys National Marine Sanctuary|2007|1|Salinity|Bottom|Field|66|29.19|36.7297|36.13925|35.8063363636364|1.38062338936899|297, 509
-15|Florida Keys National Marine Sanctuary|2007|2|Salinity|Bottom|Field|38|31.8|36.3024|35.4943|35.3358421052632|1.01317097850893|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2007|2|Salinity|Bottom|Field|37|31.8|36.3024|35.5072|35.3331081081081|1.02700429361279|297, 509
 15|Florida Keys National Marine Sanctuary|2007|3|Salinity|Bottom|Field|49|31.46|37.95|36.7071|36.5066285714286|1.15303037958677|297, 509
 15|Florida Keys National Marine Sanctuary|2007|4|Salinity|Bottom|Field|143|30.8|40.1|36.5579|36.4360482517483|1.38701218709946|297, 509, 965
-15|Florida Keys National Marine Sanctuary|2007|5|Salinity|Bottom|Field|45|34.19|40.81|36.8231|37.3328644444445|1.88689829363568|3, 297, 509, 4049
+15|Florida Keys National Marine Sanctuary|2007|5|Salinity|Bottom|Field|44|34.19|40.81|36.85655|37.3842477272727|1.87659556192004|297, 509, 4049
 15|Florida Keys National Marine Sanctuary|2007|6|Salinity|Bottom|Field|80|33.3|37.75|36.2759|36.35938875|0.728528132432272|297, 509
-15|Florida Keys National Marine Sanctuary|2007|7|Salinity|Bottom|Field|40|19.613|38.18|36.4306|35.5957875|3.02233774065006|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2007|7|Salinity|Bottom|Field|38|31.59|38.18|36.43415|36.1516184210526|1.30124507525205|297, 509
 15|Florida Keys National Marine Sanctuary|2007|8|Salinity|Bottom|Field|67|27.24|38.91|37.1067|36.6134641791045|2.09936702529101|297, 509
 15|Florida Keys National Marine Sanctuary|2007|9|Salinity|Bottom|Field|131|19.1|37.935|34.5382|32.3835129770992|4.49835885029875|297, 509, 965
 15|Florida Keys National Marine Sanctuary|2007|10|Salinity|Bottom|Field|65|18.63|37.51|36.1077|35.4602153846154|3.44473097866649|297, 509
-15|Florida Keys National Marine Sanctuary|2007|11|Salinity|Bottom|Field|60|22.92|38.85|36.2729|34.933035|3.68822115705261|3, 297, 509
+15|Florida Keys National Marine Sanctuary|2007|11|Salinity|Bottom|Field|58|24|38.85|36.2773|35.2821396551724|3.19917214082729|297, 509
 15|Florida Keys National Marine Sanctuary|2007|12|Salinity|Bottom|Field|19|24.29|37.89|37.41|34.4026315789474|5.10801531593595|297, 509
 15|Florida Keys National Marine Sanctuary|2008|1|Salinity|Bottom|Field|90|26.8|37.5753|36.44915|36.1673733333333|1.56717905230306|297, 509
 15|Florida Keys National Marine Sanctuary|2008|2|Salinity|Bottom|Field|37|29.54|37.6306|36.4414|35.9856675675676|1.669597870256|297, 509
@@ -3043,40 +3035,36 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2009|1|Salinity|Bottom|Field|100|34.5814|37.66|36.23655|36.300003|0.562222176050922|297
 15|Florida Keys National Marine Sanctuary|2009|2|Salinity|Bottom|Field|36|35.7232|37.165|36.2617|36.2991027777778|0.330424734880177|297
 15|Florida Keys National Marine Sanctuary|2009|4|Salinity|Bottom|Field|134|34.3|42.3|38.9|38.1790582089552|1.81014305214196|297, 965
-15|Florida Keys National Marine Sanctuary|2009|5|Salinity|Bottom|Field|147|35.5221|43.2|38.09|38.5131612244898|2.11905592462902|3, 297, 4049
+15|Florida Keys National Marine Sanctuary|2009|5|Salinity|Bottom|Field|144|35.5221|43.2|37.87525|38.4654493055556|2.11423916229554|297, 4049
 15|Florida Keys National Marine Sanctuary|2009|6|Salinity|Bottom|Field|63|36.2|36.52|36.37|36.3706349206349|0.0559629202088308|60
 15|Florida Keys National Marine Sanctuary|2009|7|Salinity|Bottom|Field|139|35.6323|38.817|37.0598|37.0721410071943|0.652225785660256|297
 15|Florida Keys National Marine Sanctuary|2009|9|Salinity|Bottom|Field|81|26|42.6|32|32.3234567901235|4.0993984804157|965
 15|Florida Keys National Marine Sanctuary|2009|10|Salinity|Bottom|Field|112|35.2339|38.93|35.9378|36.2402241071429|0.804292068688951|297
-15|Florida Keys National Marine Sanctuary|2009|12|Salinity|Bottom|Field|2|30.64|31.116|30.878|30.878|0.336582827844796|3
 15|Florida Keys National Marine Sanctuary|2010|1|Salinity|Bottom|Field|20|31.8005|36.2639|34.5502|34.391695|1.19590564073953|297
 15|Florida Keys National Marine Sanctuary|2010|2|Salinity|Bottom|Field|25|36.0208|36.6924|36.5223|36.504292|0.161568171679944|297
 15|Florida Keys National Marine Sanctuary|2010|3|Salinity|Bottom|Field|129|35.0222|36.9|36.4678|36.322788372093|0.376777279542385|60, 297
 15|Florida Keys National Marine Sanctuary|2010|4|Salinity|Bottom|Field|10|35.1499|36.57|36.53|36.30447|0.509045865757148|60, 297
 15|Florida Keys National Marine Sanctuary|2010|5|Salinity|Bottom|Field|267|23.92|38.68|36.2|33.5887513108614|4.07979037829807|297, 965, 4049
-15|Florida Keys National Marine Sanctuary|2010|7|Salinity|Bottom|Field|102|25.778|38.5399|36.2622|36.3586529411765|1.1568617821123|3, 297
+15|Florida Keys National Marine Sanctuary|2010|7|Salinity|Bottom|Field|101|36.0265|38.5399|36.2636|36.4634118811881|0.470240500443577|297
 15|Florida Keys National Marine Sanctuary|2010|8|Salinity|Bottom|Field|39|35.25|40.4907|37.3009|37.2697358974359|0.944167748946736|297
 15|Florida Keys National Marine Sanctuary|2010|9|Salinity|Bottom|Field|86|21.2|35.59|31.7|30.8963953488372|3.25752519300111|60, 965
-15|Florida Keys National Marine Sanctuary|2010|10|Salinity|Bottom|Field|92|24.292|37.05|35.7396|35.5023684782609|1.40449737909921|3, 297
+15|Florida Keys National Marine Sanctuary|2010|10|Salinity|Bottom|Field|91|33.1728|37.05|35.7414|35.6255593406593|0.763430826521961|297
 15|Florida Keys National Marine Sanctuary|2010|11|Salinity|Bottom|Field|31|32.22|37.16|35.8776|35.5612193548387|1.12152348687529|297
 15|Florida Keys National Marine Sanctuary|2011|1|Salinity|Bottom|Field|105|34.6384|36.5689|36.2805|36.0647076190476|0.453554108318028|297
 15|Florida Keys National Marine Sanctuary|2011|2|Salinity|Bottom|Field|25|34.7524|36.1|35.4507|35.438508|0.401914204070139|297
-15|Florida Keys National Marine Sanctuary|2011|3|Salinity|Bottom|Field|2|29.026|33.21|31.118|31.118|2.95853477248452|3
-15|Florida Keys National Marine Sanctuary|2011|4|Salinity|Bottom|Field|207|26.6|38.02|36.1193|34.8997144927536|2.44308059283559|3, 297, 965
+15|Florida Keys National Marine Sanctuary|2011|4|Salinity|Bottom|Field|206|26.6|38.02|36.1197|34.9002519417476|2.44901981001083|297, 965
 15|Florida Keys National Marine Sanctuary|2011|5|Salinity|Bottom|Field|67|34.27|39.7912|36.34|36.1371537313433|1.12767216455208|60, 297, 4049
-15|Florida Keys National Marine Sanctuary|2011|6|Salinity|Bottom|Field|1|39.047|39.047|39.047|39.047||3
 15|Florida Keys National Marine Sanctuary|2011|7|Salinity|Bottom|Field|140|36.1019|38.3478|36.6373|36.7434435714286|0.438893310188433|297
-15|Florida Keys National Marine Sanctuary|2011|8|Salinity|Bottom|Field|3|24.916|37.755|37.492|33.3876666666667|7.33785693055768|3
 15|Florida Keys National Marine Sanctuary|2011|10|Salinity|Bottom|Field|83|26.4|34.3|32.1|32.0204819277109|1.37971002928634|965
 15|Florida Keys National Marine Sanctuary|2011|11|Salinity|Bottom|Field|13|29.1362|36.0704|35.3915|34.8930769230769|1.83258686431405|297
 15|Florida Keys National Marine Sanctuary|2011|12|Salinity|Bottom|Field|62|34.5155|37.4262|35.90365|35.8831338709677|0.511152146976359|297
-15|Florida Keys National Marine Sanctuary|2012|2|Salinity|Bottom|Field|25|26.032|36.4849|35.3903|34.77786|2.15479961829401|3, 297
+15|Florida Keys National Marine Sanctuary|2012|2|Salinity|Bottom|Field|23|34.27|36.4849|35.4|35.3588913043478|0.515947306077105|297
 15|Florida Keys National Marine Sanctuary|2012|3|Salinity|Bottom|Field|77|31.6006|37.9222|36.1533|36.2543409090909|0.648015534491716|297
-15|Florida Keys National Marine Sanctuary|2012|4|Salinity|Bottom|Field|17|33.705|37.5639|36.3351|36.3433941176471|0.782002211050733|3, 297
+15|Florida Keys National Marine Sanctuary|2012|4|Salinity|Bottom|Field|16|35.9691|37.5639|36.3522|36.50829375|0.399019263476088|297
 15|Florida Keys National Marine Sanctuary|2012|5|Salinity|Bottom|Field|117|22.3|36.91|35.2313|32.1554102564103|4.95528074818594|297, 4049
-15|Florida Keys National Marine Sanctuary|2012|6|Salinity|Bottom|Field|14|25.608|36.1963|35.9638|34.6195|3.44873271083296|3, 297
+15|Florida Keys National Marine Sanctuary|2012|6|Salinity|Bottom|Field|12|35.5154|36.1963|35.9852|35.9670833333333|0.181283920127985|297
 15|Florida Keys National Marine Sanctuary|2012|7|Salinity|Bottom|Field|88|28.81|37.15|36.1725|36.1006965909091|0.817409314798455|60, 297
-15|Florida Keys National Marine Sanctuary|2012|8|Salinity|Bottom|Field|36|22.397|37.19|36.50645|35.9224972222222|2.64202326857777|3, 297
+15|Florida Keys National Marine Sanctuary|2012|8|Salinity|Bottom|Field|34|35.4427|37.19|36.511|36.5198205882353|0.312569832953167|297
 15|Florida Keys National Marine Sanctuary|2012|9|Salinity|Bottom|Field|22|35.5647|36.513|36.25585|36.20705|0.224262114393807|297
 15|Florida Keys National Marine Sanctuary|2012|10|Salinity|Bottom|Field|21|27.2084|36.2843|35.9773|35.3687476190476|1.90885983446115|297
 15|Florida Keys National Marine Sanctuary|2012|11|Salinity|Bottom|Field|46|32.1517|36.4124|35.80465|35.1898369565217|1.26823904675537|297
@@ -3097,44 +3085,48 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2014|12|Salinity|Bottom|Field|2|38|40|39|39|1.4142135623731|95
 15|Florida Keys National Marine Sanctuary|2015|1|Salinity|Bottom|Field|18|36.44|36.66|36.505|36.5194444444444|0.0546079311436615|899
 15|Florida Keys National Marine Sanctuary|2015|2|Salinity|Bottom|Field|139|34.4657|37.8789|36.32|36.2477302158273|0.444516724005934|297, 899
-15|Florida Keys National Marine Sanctuary|2015|5|Salinity|Bottom|Field|109|33.45|39.5255|36.5429|36.4872293577982|1.10011714202042|297, 4049
-15|Florida Keys National Marine Sanctuary|2015|6|Salinity|Bottom|Field|45|36.3772|39.936|37.1143|37.3505755555556|1.06223308008852|297
-15|Florida Keys National Marine Sanctuary|2015|9|Salinity|Bottom|Field|112|32|44.1604|34.9567|35.27085|1.45210998007528|297, 3000
-15|Florida Keys National Marine Sanctuary|2015|10|Salinity|Bottom|Field|1|37|37|37|37||3000
-15|Florida Keys National Marine Sanctuary|2015|11|Salinity|Bottom|Field|3|30|38.5|33.5|34|4.27200187265877|3000, 4057
-15|Florida Keys National Marine Sanctuary|2015|12|Salinity|Bottom|Field|103|25|36.9483|35.6242|35.0432922330097|1.59960003491616|297, 3000, 4057
-15|Florida Keys National Marine Sanctuary|2016|1|Salinity|Bottom|Field|2|27|38|32.5|32.5|7.77817459305202|3000, 4057
-15|Florida Keys National Marine Sanctuary|2016|2|Salinity|Bottom|Field|6|22|35.7487|35.55305|33.2656833333333|5.52583044669909|297, 3000, 4057
-15|Florida Keys National Marine Sanctuary|2016|3|Salinity|Bottom|Field|95|33.4437|37.7595|36.1966|35.9038652631579|0.688684521198177|297
-15|Florida Keys National Marine Sanctuary|2016|4|Salinity|Bottom|Field|2|26.5|38|32.25|32.25|8.1317279836453|3000, 4057
-15|Florida Keys National Marine Sanctuary|2016|5|Salinity|Bottom|Field|56|22.18|35|26.25|26.6248214285714|2.19214381667513|3000, 4049
-15|Florida Keys National Marine Sanctuary|2016|6|Salinity|Bottom|Field|105|30|40|36.29|36.41058|0.967536764994171|297, 3000
-15|Florida Keys National Marine Sanctuary|2016|7|Salinity|Bottom|Field|19|26|36.47|36.21|35.151052631579|3.15386516786562|60, 3000
-15|Florida Keys National Marine Sanctuary|2016|8|Salinity|Bottom|Field|3|30.5|37|36.7|34.7333333333333|3.66924152016917|3000, 5002
-15|Florida Keys National Marine Sanctuary|2016|9|Salinity|Bottom|Field|104|34.13|38.22|36.2|36.2415432692308|0.492719338327636|297
-15|Florida Keys National Marine Sanctuary|2016|10|Salinity|Bottom|Field|1|30|30|30|30||3000
-15|Florida Keys National Marine Sanctuary|2016|11|Salinity|Bottom|Field|89|32.38|38.67|36.32|36.1625539325843|0.885937498700488|297, 3000
-15|Florida Keys National Marine Sanctuary|2016|12|Salinity|Bottom|Field|21|35.96|40|36.36|36.5337142857143|0.81285746308053|297, 3000
-15|Florida Keys National Marine Sanctuary|2017|1|Salinity|Bottom|Field|3|36.434|36.498|36.444|36.4586666666667|0.0344286702231332|95
-15|Florida Keys National Marine Sanctuary|2017|2|Salinity|Bottom|Field|69|28.44|39.5|36.34|36.0082608695652|1.38336328915069|297, 3000, 4057, 5002
-15|Florida Keys National Marine Sanctuary|2017|3|Salinity|Bottom|Field|47|30|39.5|36.23|36.1482978723404|1.1158099400824|297, 3000, 4057
-15|Florida Keys National Marine Sanctuary|2017|5|Salinity|Bottom|Field|151|28.83|39|36.5544|36.5165066225166|1.0172037602938|297, 3000, 4049
-15|Florida Keys National Marine Sanctuary|2017|6|Salinity|Bottom|Field|26|34.9321|40.6041|37.3891|37.0785230769231|1.56748862587457|297
-15|Florida Keys National Marine Sanctuary|2017|7|Salinity|Bottom|Field|1|37.5|37.5|37.5|37.5||3000
-15|Florida Keys National Marine Sanctuary|2017|8|Salinity|Bottom|Field|83|35.7405|40.3884|36.5759|36.5840903614458|0.801262545598592|297, 3000
-15|Florida Keys National Marine Sanctuary|2017|9|Salinity|Bottom|Field|40|25|37.4581|35.64885|35.6367325|1.8512534369694|297, 4057
-15|Florida Keys National Marine Sanctuary|2017|11|Salinity|Bottom|Field|43|25.3495|36.0958|33.93|33.2639093023256|2.31454586914747|297
+15|Florida Keys National Marine Sanctuary|2015|4|Salinity|Bottom|Field|1|37|37|37|37||3000
+15|Florida Keys National Marine Sanctuary|2015|5|Salinity|Bottom|Field|111|33.45|39.5255|36.5464|36.4964684684685|1.09222136783729|297, 3000, 4049
+15|Florida Keys National Marine Sanctuary|2015|6|Salinity|Bottom|Field|46|36.3772|39.936|37.13|37.3538239130435|1.05059521123024|297, 3000
+15|Florida Keys National Marine Sanctuary|2015|7|Salinity|Bottom|Field|1|36|36|36|36||3000
+15|Florida Keys National Marine Sanctuary|2015|9|Salinity|Bottom|Field|111|33.0234|44.1604|34.9581|35.3093261261261|1.42590548990086|297, 3000
+15|Florida Keys National Marine Sanctuary|2015|10|Salinity|Bottom|Field|4|38|39.5|38.75|38.75|0.645497224367903|3000
+15|Florida Keys National Marine Sanctuary|2015|11|Salinity|Bottom|Field|5|30|38|35|34.6|3.07001628660175|3000, 4057
+15|Florida Keys National Marine Sanctuary|2015|12|Salinity|Bottom|Field|103|20|36.9483|35.6242|34.9656223300971|1.96304281669625|297, 3000, 4057
+15|Florida Keys National Marine Sanctuary|2016|1|Salinity|Bottom|Field|1|22|22|22|22||4057
+15|Florida Keys National Marine Sanctuary|2016|2|Salinity|Bottom|Field|9|21.5|36|35.5192|32.0104555555556|5.979493629922|297, 3000, 4057
+15|Florida Keys National Marine Sanctuary|2016|3|Salinity|Bottom|Field|97|25|37.7595|36.1848|35.6790432989691|1.70008767328502|297, 3000, 4057
+15|Florida Keys National Marine Sanctuary|2016|4|Salinity|Bottom|Field|2|25|38.5|31.75|31.75|9.54594154601839|3000
+15|Florida Keys National Marine Sanctuary|2016|5|Salinity|Bottom|Field|59|22.18|39|26.55|27.0506779661017|2.97267200390188|3000, 4049, 4057
+15|Florida Keys National Marine Sanctuary|2016|6|Salinity|Bottom|Field|104|35.267|39.7795|36.2914|36.4553932692308|0.665023446300215|297, 3000
+15|Florida Keys National Marine Sanctuary|2016|7|Salinity|Bottom|Field|19|26.5|40|36.27|35.8878947368421|2.45513425509203|60, 3000
+15|Florida Keys National Marine Sanctuary|2016|8|Salinity|Bottom|Field|4|0|36.7|36.25|27.3|18.2023807966614|3000, 5002
+15|Florida Keys National Marine Sanctuary|2016|9|Salinity|Bottom|Field|105|34.13|38.22|36.2|36.234480952381|0.495656141294477|297, 3000
+15|Florida Keys National Marine Sanctuary|2016|10|Salinity|Bottom|Field|3|27|39|30|32|6.2449979983984|3000, 4057
+15|Florida Keys National Marine Sanctuary|2016|11|Salinity|Bottom|Field|91|32.38|40|36.33|36.2249153846154|0.98216432206554|297, 3000
+15|Florida Keys National Marine Sanctuary|2016|12|Salinity|Bottom|Field|22|35.96|39|36.355|36.464|0.596022643385779|297, 3000
+15|Florida Keys National Marine Sanctuary|2017|1|Salinity|Bottom|Field|6|36.434|38.5|36.499|36.896|0.814444596028484|95, 3000
+15|Florida Keys National Marine Sanctuary|2017|2|Salinity|Bottom|Field|69|28.44|39|36.34|36.0517391304348|1.27735475348096|297, 3000, 5002
+15|Florida Keys National Marine Sanctuary|2017|3|Salinity|Bottom|Field|46|34.5|36.57|36.19|36.1080434782609|0.441414995290863|297, 3000
+15|Florida Keys National Marine Sanctuary|2017|4|Salinity|Bottom|Field|3|0|40|37|25.6666666666667|22.2785397486759|3000
+15|Florida Keys National Marine Sanctuary|2017|5|Salinity|Bottom|Field|150|28.83|38.4652|36.5543|36.49995|0.999988811598484|297, 4049
+15|Florida Keys National Marine Sanctuary|2017|6|Salinity|Bottom|Field|27|0|40.6041|37.2831|35.7052444444444|7.29942896846329|297, 3000
+15|Florida Keys National Marine Sanctuary|2017|7|Salinity|Bottom|Field|1|0|0|0|0||3000
+15|Florida Keys National Marine Sanctuary|2017|8|Salinity|Bottom|Field|83|22.5|40.3884|36.5759|36.4214397590361|1.74072606563901|297, 3000
+15|Florida Keys National Marine Sanctuary|2017|9|Salinity|Bottom|Field|41|18.5|37.4581|35.6406|35.2187634146341|3.24100065024339|297, 3000
+15|Florida Keys National Marine Sanctuary|2017|11|Salinity|Bottom|Field|44|14|36.0958|33.9281|32.8260931818182|3.69683491258166|297, 3000
 15|Florida Keys National Marine Sanctuary|2017|12|Salinity|Bottom|Field|67|32.1007|36.3114|35.2277|35.1795089552239|0.910488421994072|297
-15|Florida Keys National Marine Sanctuary|2018|2|Salinity|Bottom|Field|55|33.0195|37.0746|36.1561|35.8393036363636|0.838294591100297|297, 3000
+15|Florida Keys National Marine Sanctuary|2018|2|Salinity|Bottom|Field|54|33.0195|37.0746|36.1665|35.8548462962963|0.838128719279064|297
 15|Florida Keys National Marine Sanctuary|2018|3|Salinity|Bottom|Field|39|35.81|37.2048|36.26|36.2933307692308|0.279425959644191|297
-15|Florida Keys National Marine Sanctuary|2018|4|Salinity|Bottom|Field|44|36.1525|37.7404|36.8166|36.8224931818182|0.358417834895302|297
+15|Florida Keys National Marine Sanctuary|2018|4|Salinity|Bottom|Field|45|36.1525|38|36.8484|36.84866|0.395417917812626|297, 4057
 15|Florida Keys National Marine Sanctuary|2018|5|Salinity|Bottom|Field|91|33.2|38.5572|35.52|35.4979043956044|1.18033928238283|297, 4049, 4057
 15|Florida Keys National Marine Sanctuary|2018|6|Salinity|Bottom|Field|35|33.8564|36.458|35.6967|35.6631914285714|0.498298401841016|297
-15|Florida Keys National Marine Sanctuary|2018|7|Salinity|Bottom|Field|2|25|39|32|32|9.89949493661167|3000
-15|Florida Keys National Marine Sanctuary|2018|8|Salinity|Bottom|Field|17|23.5|38|36.323|34.9955764705882|4.08015051093851|297, 3000, 4057
-15|Florida Keys National Marine Sanctuary|2018|9|Salinity|Bottom|Field|85|34.1713|38.3051|36.108|36.21544|0.515820452381677|297
-15|Florida Keys National Marine Sanctuary|2018|11|Salinity|Bottom|Field|42|30|39.2143|36.2713|36.3661452380952|1.75115333342683|297, 3000, 4057
-15|Florida Keys National Marine Sanctuary|2018|12|Salinity|Bottom|Field|35|36.1841|38.9955|36.7533|36.9004942857143|0.635599912515661|297
+15|Florida Keys National Marine Sanctuary|2018|7|Salinity|Bottom|Field|1|25|25|25|25||4057
+15|Florida Keys National Marine Sanctuary|2018|8|Salinity|Bottom|Field|15|25|36.7613|36.323|35.5616533333333|2.93233898251566|297, 4057
+15|Florida Keys National Marine Sanctuary|2018|9|Salinity|Bottom|Field|86|33.5|38.3051|36.1043|36.1838651162791|0.590491487963243|297, 3000
+15|Florida Keys National Marine Sanctuary|2018|10|Salinity|Bottom|Field|1|36|36|36|36||3000
+15|Florida Keys National Marine Sanctuary|2018|11|Salinity|Bottom|Field|41|30|39.2143|36.29|36.5214170731707|1.45096321143964|297, 4057
+15|Florida Keys National Marine Sanctuary|2018|12|Salinity|Bottom|Field|36|30.5|38.9955|36.7327|36.7227027777778|1.23709267501004|297, 4057
 15|Florida Keys National Marine Sanctuary|2019|2|Salinity|Bottom|Field|103|0.66|37.0519|36.2968|34.8997786407767|6.80347945824451|297
 15|Florida Keys National Marine Sanctuary|2019|5|Salinity|Bottom|Field|159|33.9974|40.97|37.485|38.2234899371069|1.76187301188953|297, 4049
 15|Florida Keys National Marine Sanctuary|2019|6|Salinity|Bottom|Field|12|36.2861|36.7446|36.42245|36.4377833333333|0.117884842370027|297
@@ -4737,7 +4729,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2012|10|Salinity|Bottom|Field|1|31.8|31.8|31.8|31.8||10001
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|8|Salinity|Bottom|Field|5|20|36.4|36.2|33.02|7.27887353922295|3001, 10001
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|9|Salinity|Bottom|Field|1|33.04|33.04|33.04|33.04||3013
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|11|Salinity|Bottom|Field|9|0|37|0|16|18.9802528961023|3016
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|11|Salinity|Bottom|Field|23|0|39|35|21.5652173913043|17.7093352037755|3016
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2014|2|Salinity|Bottom|Field|5|32.5|35.42|34.78|34.458|1.14351213373536|3013, 10001
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2014|3|Salinity|Bottom|Field|2|32.51|34.3|33.405|33.405|1.26572113832392|3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2014|7|Salinity|Bottom|Field|1|31.6|31.6|31.6|31.6||3013
@@ -4747,6 +4739,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2015|7|Salinity|Bottom|Field|1|35.9|35.9|35.9|35.9||3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2015|8|Salinity|Bottom|Field|1|35.43|35.43|35.43|35.43||10001
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2016|2|Salinity|Bottom|Field|1|34.83|34.83|34.83|34.83||3013
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2016|3|Salinity|Bottom|Field|1|39.6|39.6|39.6|39.6||10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2016|7|Salinity|Bottom|Field|2|27.46|31.35|29.405|29.405|2.75064537881567|3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2017|2|Salinity|Bottom|Field|1|34.04|34.04|34.04|34.04||3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2017|7|Salinity|Bottom|Field|2|32.07|35.3|33.685|33.685|2.28395490323255|3013
@@ -4763,6 +4756,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2019|2|Salinity|Bottom|Field|2|33.94|35.11|34.525|34.525|0.827314933988262|3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2019|7|Salinity|Bottom|Field|1|33.3|33.3|33.3|33.3||3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2019|8|Salinity|Bottom|Field|1|28.62|28.62|28.62|28.62||3013
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2019|10|Salinity|Bottom|Field|1|36.9|36.9|36.9|36.9||10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2020|2|Salinity|Bottom|Field|2|33.71|35.16|34.435|34.435|1.02530483272049|3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2020|7|Salinity|Bottom|Field|1|26.59|26.59|26.59|26.59||3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2020|8|Salinity|Bottom|Field|2|28.39|33.12|30.755|30.755|3.34461507501237|3013
@@ -5058,20 +5052,45 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|4|Salinity|Bottom|Field|6|17.04|37.3|35.11|29.8583333333333|9.80562780584021|10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|6|Salinity|Bottom|Field|7|18.8|36.6|29.57|29.6371428571429|6.51957747681477|10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|8|Salinity|Bottom|Field|5|22.5|36.5|35.58|32.96|5.90840079886258|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|4|Salinity|Bottom|Field|5|35.06|38.5|36.9|37.008|1.27746624221542|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|6|Salinity|Bottom|Field|5|32.6|35.9|34.7|34.65|1.2747548783982|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|8|Salinity|Bottom|Field|4|32.7|36.2|34.9|34.675|1.45459043491057|10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|3|Salinity|Bottom|Field|2|33.8|34.2|34|34|0.282842712474623|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|4|Salinity|Bottom|Field|8|6.2|38.5|36.89|31.18|11.777756274314|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|5|Salinity|Bottom|Field|7|0.2|35.2|30.5|21.7285714285714|15.645842289643|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|6|Salinity|Bottom|Field|7|1.9|35.9|34.55|29.6785714285714|12.3170565052037|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|7|Salinity|Bottom|Field|6|18.4|35.5|27.95|28.5833333333333|6.21463326887972|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|8|Salinity|Bottom|Field|6|10.1|36.2|33.75|29.2666666666667|9.96788175424782|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|9|Salinity|Bottom|Field|2|35.4|36.4|35.9|35.9|0.707106781186548|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|11|Salinity|Bottom|Field|4|34.92|36.4|35.18|35.42|0.664931074122222|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|1|Salinity|Bottom|Field|2|33.2|37.4|35.3|35.3|2.9698484809835|10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|4|Salinity|Bottom|Field|5|24.6|38.2|34.9|33.94|5.57835101082748|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|6|Salinity|Bottom|Field|4|4.1|36.2|16.25|18.2|16.5897558752382|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|8|Salinity|Bottom|Field|5|17.7|37.3|31.3|30.16|7.72515372015341|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|4|Salinity|Bottom|Field|3|32.1|36.2|35.7|34.6666666666667|2.23681320930768|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|6|Salinity|Bottom|Field|1|32.2|32.2|32.2|32.2||10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|7|Salinity|Bottom|Field|1|10.18|10.18|10.18|10.18||3013
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|2|Salinity|Bottom|Field|1|35.59|35.59|35.59|35.59||3013
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|4|Salinity|Bottom|Field|3|35.5|37.12|35.8|36.14|0.861858457056609|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|6|Salinity|Bottom|Field|4|35.9|36.6|36.35|36.3|0.316227766016839|10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|5|Salinity|Bottom|Field|3|37.3|38.8|37.9|38|0.754983443527075|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|6|Salinity|Bottom|Field|7|4.1|36.2|14.7|18.1142857142857|14.760242609956|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|7|Salinity|Bottom|Field|3|22.7|35.4|35.3|31.1333333333333|7.30365205450899|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|8|Salinity|Bottom|Field|8|17.7|37.3|30.45|30.05|5.87391327335169|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|9|Salinity|Bottom|Field|1|0.2|0.2|0.2|0.2||10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|10|Salinity|Bottom|Field|1|5.2|5.2|5.2|5.2||10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|11|Salinity|Bottom|Field|2|1.82|14.9|8.36|8.36|9.24895669792004|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|12|Salinity|Bottom|Field|3|22|23.3|22.1|22.4666666666667|0.723417813807024|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|1|Salinity|Bottom|Field|3|6.7|30.1|26.8|21.2|12.6653069445632|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|3|Salinity|Bottom|Field|1|30.4|30.4|30.4|30.4||10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|4|Salinity|Bottom|Field|4|2.9|36.2|33.9|26.725|15.987990284377|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|6|Salinity|Bottom|Field|3|0.1|32.2|0.2|10.8333333333333|18.5041436800878|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|7|Salinity|Bottom|Field|2|10.18|19.9|15.04|15.04|6.87307791313324|3013, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|8|Salinity|Bottom|Field|3|4|37.3|11.77|17.69|17.4214609031505|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|9|Salinity|Bottom|Field|1|15|15|15|15||10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|10|Salinity|Bottom|Field|3|0.2|27.7|1.3|9.73333333333333|15.5693074134122|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|11|Salinity|Bottom|Field|1|24.1|24.1|24.1|24.1||10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|12|Salinity|Bottom|Field|2|31.33|37.3|34.315|34.315|4.22142748368369|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|1|Salinity|Bottom|Field|2|30.29|31.69|30.99|30.99|0.989949493661168|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|2|Salinity|Bottom|Field|3|0.2|35.59|23.8|19.8633333333333|18.0204337720637|3013, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|3|Salinity|Bottom|Field|1|0.4|0.4|0.4|0.4||10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|4|Salinity|Bottom|Field|7|29.3|37.12|32.3|33.2814285714286|2.86945075215582|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|6|Salinity|Bottom|Field|5|31.3|36.6|36.2|35.3|2.25277606521376|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|7|Salinity|Bottom|Field|2|24.5|31|27.75|27.75|4.59619407771256|10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|8|Salinity|Bottom|Field|3|32.6|36.9|33|34.1666666666667|2.37557010701291|10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|10|Salinity|Bottom|Field|2|34.8|35.3|35.05|35.05|0.353553390593274|10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|9|Salinity|Bottom|Field|2|4.9|26.23|15.565|15.565|15.0825876427091|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|10|Salinity|Bottom|Field|4|25.8|35.3|32.1|31.325|4.55|10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|11|Salinity|Bottom|Field|3|22|26.09|25.76|24.6166666666667|2.27209888282472|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|12|Salinity|Bottom|Field|2|0.2|8.2|4.2|4.2|5.65685424949238|10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2020|8|Salinity|Bottom|Field|1|22.22|22.22|22.22|22.22||3013
 28|Matlacha Pass Aquatic Preserve|1995|1|Salinity|Bottom|Field|1|16.2|16.2|16.2|16.2||5002
 28|Matlacha Pass Aquatic Preserve|1995|2|Salinity|Bottom|Field|1|15.7|15.7|15.7|15.7||5002

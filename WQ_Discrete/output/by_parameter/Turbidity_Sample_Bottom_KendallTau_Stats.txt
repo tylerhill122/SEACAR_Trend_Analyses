@@ -2,12 +2,12 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 1|Alligator Harbor Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
 2|Apalachicola Bay Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|2|2|2020|2022|||||||
 3|Apalachicola National Estuarine Research Reserve|Turbidity|Bottom|Sample|FALSE|4|4|1999|2022|||||||
-4|Banana River Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|36|10|1996|2021|2.035505|TRUE|0.3021|0.1544|0.116666666666667|-267.908945|0
-5|Big Bend Seagrasses Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|89|15|1993|2021|2|TRUE|-0.359|0.0001|-0.0651878027950311|121.977083333333|-1
+4|Banana River Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|36|10|1996|2021|2.035505|TRUE|0.302083333333333|0.154406531107647|0.116666666666667|-267.908945|0
+5|Big Bend Seagrasses Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|89|15|1993|2021|2|TRUE|-0.359020380368695|0.0000522812593782431|-0.0651878027950311|121.977083333333|-1
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
-6|Biscayne Bay Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|65|12|1994|2016|0.6|TRUE|-0.0977|0.2742|-0.00354066985645933|4.72773611111111|0
+6|Biscayne Bay Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|65|12|1994|2016|0.6|TRUE|-0.0976923076923077|0.274199742198071|-0.00354066985645933|4.72773611111111|0
 8|Boca Ciega Bay Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|29|4|1999|2021|||||||
-9|Cape Haze Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|57|11|2002|2020|2.1|TRUE|0.0571|0.7908|0.0229166666666667|-93.765|0
+9|Cape Haze Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|57|11|2002|2020|2.1|TRUE|0.0570578231292517|0.790771811826769|0.0229166666666667|-93.765|0
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|2|1|1994|1994|||||||
 11|Cockroach Bay Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|5|2|2020|2021|||||||
 13|Coupon Bight Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
@@ -15,9 +15,9 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 15|Florida Keys National Marine Sanctuary|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
 16|Fort Clinch State Park Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
 17|Fort Pickens State Park Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|647|24|1996|2022|2.4|TRUE|-0.0551|0.0706|-0.0155555555555556|60.0867647058824|0
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|647|24|1996|2022|2.4|TRUE|-0.0551039718184481|0.0706366590734155|-0.0155555555555556|60.0867647058824|0
 19|Guana River Marsh Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|32|4|2018|2021|||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Turbidity|Bottom|Sample|TRUE|173|22|1995|2021|5|TRUE|0.2812|0|0.227272727272727|-509.401709401709|1
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Turbidity|Bottom|Sample|TRUE|173|22|1995|2021|5|TRUE|0.281215280784342|0.00000187413579946519|0.227272727272727|-509.401709401709|1
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|7|2|2020|2021|||||||
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|3|2|2020|2021|||||||
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
@@ -26,7 +26,7 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 26|Lignumvitae Key Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
 28|Matlacha Pass Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|2|1|2021|2021|||||||
-29|Mosquito Lagoon Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|112|19|1995|2021|4.8|TRUE|-0.1524|0.0173|-0.0866666666666667|135.133333333333|-1
+29|Mosquito Lagoon Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|112|19|1995|2021|4.8|TRUE|-0.152402597402597|0.0173125704373261|-0.0866666666666667|135.133333333333|-1
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
 48|Nature Coast Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|21|2|2015|2020|||||||
 31|North Fork St. Lucie Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
@@ -35,7 +35,7 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 34|Pine Island Sound Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|12|2|2020|2021|||||||
 35|Pinellas County Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|123|4|1999|2021|||||||
 36|Rainbow Springs Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|0|0|||||||||
-37|Rocky Bayou State Park Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|102|11|2008|2018|1.45|TRUE|-0.2164|0.0066|-0.21875|669.637777777778|-2
+37|Rocky Bayou State Park Aquatic Preserve|Turbidity|Bottom|Sample|TRUE|102|11|2008|2018|1.45|TRUE|-0.216394335511983|0.00656163816843179|-0.21875|669.637777777778|-2
 38|Rookery Bay Aquatic Preserve|Turbidity|Bottom|Sample|FALSE|4|2|1992|1995|||||||
 39|Rookery Bay National Estuarine Research Reserve|Turbidity|Bottom|Sample|FALSE|8|3|1992|1995|||||||
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|Turbidity|Bottom|Sample|FALSE|3757|5|2017|2021|||||||

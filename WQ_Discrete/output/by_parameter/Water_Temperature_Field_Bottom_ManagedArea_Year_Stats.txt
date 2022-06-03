@@ -161,20 +161,21 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 6|Biscayne Bay Aquatic Preserve|1999|Water Temperature|Bottom|Field|132|16.8|31.3|24.6|25.0537878787879|4.37599986922126|509
 6|Biscayne Bay Aquatic Preserve|2000|Water Temperature|Bottom|Field|132|16.6|32|25.2|25.4159090909091|3.91247426731931|509
 6|Biscayne Bay Aquatic Preserve|2001|Water Temperature|Bottom|Field|132|17.2|33.15|25.64|25.785|3.48667638500341|509
-6|Biscayne Bay Aquatic Preserve|2002|Water Temperature|Bottom|Field|137|14.5|33.08|27.17|25.6563357664234|4.78262526707409|3, 509
-6|Biscayne Bay Aquatic Preserve|2003|Water Temperature|Bottom|Field|147|18.15|31.57|27.64|25.7656734693878|3.94342080509703|3, 509
-6|Biscayne Bay Aquatic Preserve|2004|Water Temperature|Bottom|Field|141|18.17|32.04|26.853|26.2740070921986|3.51817662290416|3, 115, 509
-6|Biscayne Bay Aquatic Preserve|2005|Water Temperature|Bottom|Field|382|16.94|34.2|27.085|26.98527486911|2.68684326683222|3, 509, 965, 4049
-6|Biscayne Bay Aquatic Preserve|2006|Water Temperature|Bottom|Field|378|19.85|31.7|27.625|26.9022830687831|2.93467484708631|3, 509, 965, 4049
-6|Biscayne Bay Aquatic Preserve|2007|Water Temperature|Bottom|Field|348|19.48|32.8|25.38|26.8029770114943|3.45057014702319|3, 509, 965, 4049
+6|Biscayne Bay Aquatic Preserve|2002|Water Temperature|Bottom|Field|132|14.5|33.08|27.09|25.495303030303|4.79113166752525|509
+6|Biscayne Bay Aquatic Preserve|2003|Water Temperature|Bottom|Field|132|18.15|31.57|27.69|25.6766666666667|4.02533402277512|509
+6|Biscayne Bay Aquatic Preserve|2004|Water Temperature|Bottom|Field|133|18.17|32.04|27.03|26.2621804511278|3.51272758096893|115, 509
+6|Biscayne Bay Aquatic Preserve|2005|Water Temperature|Bottom|Field|373|16.94|34.2|27.05|26.9294101876676|2.65906557999481|509, 965, 4049
+6|Biscayne Bay Aquatic Preserve|2006|Water Temperature|Bottom|Field|374|19.85|31.7|27.59|26.8759625668449|2.93897093271899|509, 965, 4049
+6|Biscayne Bay Aquatic Preserve|2007|Water Temperature|Bottom|Field|345|19.48|32.8|25.4|26.8522898550725|3.42448344900132|509, 965, 4049
 6|Biscayne Bay Aquatic Preserve|2008|Water Temperature|Bottom|Field|292|20.49|32.1|27.15|26.9591780821918|2.22985229253605|509, 965, 4049
-6|Biscayne Bay Aquatic Preserve|2009|Water Temperature|Bottom|Field|190|21.617|32.586|29.6|28.2128631578947|2.69242170691031|3, 965
-6|Biscayne Bay Aquatic Preserve|2010|Water Temperature|Bottom|Field|189|20.2|32.1|28.6|26.939582010582|3.57397158394777|3, 965
-6|Biscayne Bay Aquatic Preserve|2011|Water Temperature|Bottom|Field|182|25.231|34|28.1|28.8242417582418|1.85432320807743|3, 965
+6|Biscayne Bay Aquatic Preserve|2009|Water Temperature|Bottom|Field|180|23.8|32.3|28.5|28.1316666666667|2.64696463665639|965
+6|Biscayne Bay Aquatic Preserve|2010|Water Temperature|Bottom|Field|181|20.9|32.1|28.6|26.9419889502762|3.54687725250278|965
+6|Biscayne Bay Aquatic Preserve|2011|Water Temperature|Bottom|Field|178|25.9|34|28.1|28.8915730337079|1.8150304032419|965
 6|Biscayne Bay Aquatic Preserve|2014|Water Temperature|Bottom|Field|1|31.7|31.7|31.7|31.7||5002
-6|Biscayne Bay Aquatic Preserve|2016|Water Temperature|Bottom|Field|24|23.9|33.75|28.7|28.1241666666667|3.06390333124079|4057, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|2017|Water Temperature|Bottom|Field|50|20.5|33.07|28.02|27.5524|3.64563846763975|4057, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|2018|Water Temperature|Bottom|Field|40|19.33|32.3|25.725|26.681|3.40201584283081|4057, 4058
+6|Biscayne Bay Aquatic Preserve|2015|Water Temperature|Bottom|Field|9|22.9|34.05|28.6|28.5111111111111|3.72221185736534|4057
+6|Biscayne Bay Aquatic Preserve|2016|Water Temperature|Bottom|Field|32|20.85|33.75|26.65|27.555625|3.07334318071569|4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|2017|Water Temperature|Bottom|Field|62|20.5|33.07|28.07|27.6954838709677|3.50620371857213|4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|2018|Water Temperature|Bottom|Field|50|19.33|32.3|25.9|26.7538|3.45796028706791|4057, 4058
 6|Biscayne Bay Aquatic Preserve|2020|Water Temperature|Bottom|Field|4|27|30.4|28.75|28.725|1.87860764042593|5002
 8|Boca Ciega Bay Aquatic Preserve|1992|Water Temperature|Bottom|Field|5|24|30|29.5|28.5|2.54950975679639|102
 8|Boca Ciega Bay Aquatic Preserve|1995|Water Temperature|Bottom|Field|153|18.3|30.9|24.94|25.2152941176471|2.73443852093401|4067, 5002
@@ -329,27 +330,27 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 15|Florida Keys National Marine Sanctuary|1995|Water Temperature|Bottom|Field|437|17.7|32.7|25.9|26.6467276887872|3.14271351102416|60, 297, 509
 15|Florida Keys National Marine Sanctuary|1996|Water Temperature|Bottom|Field|454|18.2|34.5|25.75|26.0238325991189|3.88744890763116|60, 102, 297, 509
 15|Florida Keys National Marine Sanctuary|1997|Water Temperature|Bottom|Field|602|17.3|33.4|27.4|27.6416943521595|2.85260370068225|60, 297, 509
-15|Florida Keys National Marine Sanctuary|1998|Water Temperature|Bottom|Field|584|17.9|33.8|26|26.1461130136986|3.72464534937619|3, 102, 297, 509
-15|Florida Keys National Marine Sanctuary|1999|Water Temperature|Bottom|Field|598|17.4|36.8|25.6403|26.2929456521739|3.38665821247338|3, 297, 509
-15|Florida Keys National Marine Sanctuary|2000|Water Temperature|Bottom|Field|662|15.8052|32.827|26.105|26.5779333836858|3.53652800776422|3, 102, 115, 297, 509
-15|Florida Keys National Marine Sanctuary|2001|Water Temperature|Bottom|Field|3135|14.7|33.28|25.52|25.7599983094099|2.90700925897968|3, 60, 115, 296, 297, 509
-15|Florida Keys National Marine Sanctuary|2002|Water Temperature|Bottom|Field|79479|14.03|33.11|25.51|25.2600661558399|3.57148693498578|3, 60, 115, 296, 297, 509
-15|Florida Keys National Marine Sanctuary|2003|Water Temperature|Bottom|Field|194556|10.01|33.87|27.61|26.3348898980242|4.14884941685738|3, 60, 115, 296, 297, 509
-15|Florida Keys National Marine Sanctuary|2004|Water Temperature|Bottom|Field|236495|14.38|34.2|26.03|26.1161589272501|3.75212294725566|3, 115, 296, 297, 509
-15|Florida Keys National Marine Sanctuary|2005|Water Temperature|Bottom|Field|195265|13.165|34.88|25.3|25.6010370501626|3.94529562816087|3, 296, 297, 509, 965, 4049
-15|Florida Keys National Marine Sanctuary|2006|Water Temperature|Bottom|Field|154594|14.24|34.03|26.76|26.4270078981073|3.47446739309458|3, 60, 296, 297, 509, 965, 4049
-15|Florida Keys National Marine Sanctuary|2007|Water Temperature|Bottom|Field|218001|12.87|35.931|26.33|26.6881449539222|3.23085202279827|3, 296, 297, 509, 965, 4049
+15|Florida Keys National Marine Sanctuary|1998|Water Temperature|Bottom|Field|581|17.9|33.8|26|26.1549053356282|3.71105025560742|102, 297, 509
+15|Florida Keys National Marine Sanctuary|1999|Water Temperature|Bottom|Field|596|17.4|36.8|25.6153|26.2880377516779|3.38954372087136|297, 509
+15|Florida Keys National Marine Sanctuary|2000|Water Temperature|Bottom|Field|661|15.8052|32.4|26.1|26.5684794251135|3.53082468458475|102, 115, 297, 509
+15|Florida Keys National Marine Sanctuary|2001|Water Temperature|Bottom|Field|3131|14.7|33.28|25.52|25.7629159054615|2.90761420641137|60, 115, 296, 297, 509
+15|Florida Keys National Marine Sanctuary|2002|Water Temperature|Bottom|Field|79471|14.03|33.11|25.51|25.2597076291981|3.57138630357725|60, 115, 296, 297, 509
+15|Florida Keys National Marine Sanctuary|2003|Water Temperature|Bottom|Field|194540|10.01|33.87|27.61|26.3347804050581|4.14889871562081|60, 115, 296, 297, 509
+15|Florida Keys National Marine Sanctuary|2004|Water Temperature|Bottom|Field|236485|14.38|34.2|26.03|26.116153479079|3.75212631978538|115, 296, 297, 509
+15|Florida Keys National Marine Sanctuary|2005|Water Temperature|Bottom|Field|195252|13.165|34.88|25.3|25.6009274045849|3.94523228119778|296, 297, 509, 965, 4049
+15|Florida Keys National Marine Sanctuary|2006|Water Temperature|Bottom|Field|154590|14.24|34.03|26.76|26.4269041011708|3.47445136088259|60, 296, 297, 509, 965, 4049
+15|Florida Keys National Marine Sanctuary|2007|Water Temperature|Bottom|Field|218000|12.87|35.931|26.33|26.6881711655963|3.23083625356512|296, 297, 509, 965, 4049
 15|Florida Keys National Marine Sanctuary|2008|Water Temperature|Bottom|Field|192314|11.565|34.863|26.109|26.2520487010826|3.43763240587521|60, 296, 297, 509, 965, 4049
-15|Florida Keys National Marine Sanctuary|2009|Water Temperature|Bottom|Field|250484|12.1|37.1668|27.481|26.9422415791029|3.84051254948036|3, 60, 296, 297, 899, 965, 4049
-15|Florida Keys National Marine Sanctuary|2010|Water Temperature|Bottom|Field|249340|8.494|37.5498|26.451|25.5868718496832|5.01271708830548|3, 60, 296, 297, 899, 965, 4049
-15|Florida Keys National Marine Sanctuary|2011|Water Temperature|Bottom|Field|274042|13.112|35.636|27.075|26.6539777267718|3.61947292098157|3, 60, 296, 297, 899, 965, 4049
-15|Florida Keys National Marine Sanctuary|2012|Water Temperature|Bottom|Field|281310|12.727|34.44|26.402|26.5343533790125|3.24993064589673|3, 60, 296, 297, 899, 4049
+15|Florida Keys National Marine Sanctuary|2009|Water Temperature|Bottom|Field|250479|12.1|37.1668|27.481|26.9421469931611|3.84049161874941|60, 296, 297, 899, 965, 4049
+15|Florida Keys National Marine Sanctuary|2010|Water Temperature|Bottom|Field|249338|8.494|37.5498|26.451|25.5868393385685|5.01272202587491|60, 296, 297, 899, 965, 4049
+15|Florida Keys National Marine Sanctuary|2011|Water Temperature|Bottom|Field|274035|13.112|35.636|27.075|26.653954200011|3.61950239215579|60, 296, 297, 899, 965, 4049
+15|Florida Keys National Marine Sanctuary|2012|Water Temperature|Bottom|Field|281306|12.727|34.44|26.402|26.5343607532367|3.24994980858017|60, 296, 297, 899, 4049
 15|Florida Keys National Marine Sanctuary|2013|Water Temperature|Bottom|Field|279108|15.629|34.492|26.769|26.5807917386818|2.95747744720959|296, 297, 899, 4049
 15|Florida Keys National Marine Sanctuary|2014|Water Temperature|Bottom|Field|283227|15.27|34.492|26.842|26.9809839167876|3.36962364038802|95, 296, 297, 899, 982, 4049
-15|Florida Keys National Marine Sanctuary|2015|Water Temperature|Bottom|Field|294880|12.292|35.049|27.974|27.5803518502442|3.29118458354425|296, 297, 899, 982, 3000, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2016|Water Temperature|Bottom|Field|291883|14.314|35.529|26.818|26.880061233782|3.47314150046455|60, 95, 296, 297, 899, 982, 3000, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2017|Water Temperature|Bottom|Field|290772|16.118|35.582|26.304|26.7146269860922|3.2286160485098|95, 296, 297, 899, 982, 3000, 4049, 5002
-15|Florida Keys National Marine Sanctuary|2018|Water Temperature|Bottom|Field|302039|13.81|37.096|27.014|26.8481641231762|3.49562533811592|296, 297, 899, 982, 4049, 4057
+15|Florida Keys National Marine Sanctuary|2015|Water Temperature|Bottom|Field|294899|12.292|35.049|27.974|27.5804563718426|3.29116282146148|296, 297, 899, 982, 3000, 4049, 4057, 5002
+15|Florida Keys National Marine Sanctuary|2016|Water Temperature|Bottom|Field|291912|14.314|35.529|26.818|26.8801062070076|3.4731974897838|60, 95, 296, 297, 899, 982, 3000, 4049, 4057, 5002
+15|Florida Keys National Marine Sanctuary|2017|Water Temperature|Bottom|Field|290784|16.118|35.582|26.304|26.7146513150655|3.22859405037237|95, 296, 297, 899, 982, 3000, 4049, 4057, 5002
+15|Florida Keys National Marine Sanctuary|2018|Water Temperature|Bottom|Field|302045|13.81|37.096|27.014|26.8481810445463|3.49561901953348|296, 297, 899, 982, 3000, 4049, 4057
 15|Florida Keys National Marine Sanctuary|2019|Water Temperature|Bottom|Field|231891|13.2|35.288|28.221|27.6023210322954|3.25392691382727|296, 297, 899, 4049
 15|Florida Keys National Marine Sanctuary|2020|Water Temperature|Bottom|Field|1061|18.14|35.56|29.3|28.6268505183789|2.91079367383761|297, 982, 5002
 15|Florida Keys National Marine Sanctuary|2021|Water Temperature|Bottom|Field|442|17.6|33.7|26.35|25.107850678733|4.2609149843349|4049, 5002
@@ -527,12 +528,12 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2008|Water Temperature|Bottom|Field|2|28.04|30.27|29.155|29.155|1.576848122046|3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2009|Water Temperature|Bottom|Field|1|21.14|21.14|21.14|21.14||3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2010|Water Temperature|Bottom|Field|2|31.97|32.57|32.27|32.27|0.42426406871193|3013
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|Water Temperature|Bottom|Field|1|25.7|25.7|25.7|25.7||3016
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|Water Temperature|Bottom|Field|22|0|27.5|25.05|15.2636363636364|13.0133464622743|3016
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2014|Water Temperature|Bottom|Field|2|24.2|27.92|26.06|26.06|2.63043722601396|3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2015|Water Temperature|Bottom|Field|4|19.81|32.5|23.55|24.8525|5.55049772542968|3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2017|Water Temperature|Bottom|Field|8|22.55|33.1|29.915|28.0975|4.62587366265629|95, 3013
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2018|Water Temperature|Bottom|Field|20|20.9|31.9|26|26.1365|3.14774986466941|95, 3013
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2019|Water Temperature|Bottom|Field|4|23.2|26.17|24.39|24.5375|1.56308189164868|3013
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2019|Water Temperature|Bottom|Field|5|23.2|28.1|25.58|25.25|2.09062191703809|3013, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2020|Water Temperature|Bottom|Field|3|26.4|36.2|31.73|31.4433333333333|4.90628508480025|3013
 25|Lemon Bay Aquatic Preserve|1986|Water Temperature|Bottom|Field|1|29.8|29.8|29.8|29.8||60
 25|Lemon Bay Aquatic Preserve|1995|Water Temperature|Bottom|Field|93|14|32.1|26.7|25.9802150537634|4.04048613586518|5002
@@ -562,6 +563,16 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 25|Lemon Bay Aquatic Preserve|2020|Water Temperature|Bottom|Field|69|16.1|31.9|23.4|24.5072463768116|4.6535981916773|476, 479, 5002
 25|Lemon Bay Aquatic Preserve|2021|Water Temperature|Bottom|Field|84|14.1|31.4|21|23.3678571428571|5.52292398361082|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|Water Temperature|Bottom|Field|2|23.8|24.1|23.95|23.95|0.212132034355965|476
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1996|Water Temperature|Bottom|Field|1|28|28|28|28||5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1997|Water Temperature|Bottom|Field|2|20|21|20.5|20.5|0.707106781186548|5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1998|Water Temperature|Bottom|Field|15|11|27|21|20.6333333333333|3.94817619136928|5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1999|Water Temperature|Bottom|Field|1|27|27|27|27||5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2003|Water Temperature|Bottom|Field|1|19|19|19|19||5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2004|Water Temperature|Bottom|Field|10|22|28|24|24.9|2.55821118057999|5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|Water Temperature|Bottom|Field|5|16.1|24|23.4|21.48|3.37446292022894|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|Water Temperature|Bottom|Field|7|19.2|31.7|29.3|27.2714285714286|4.70025328598161|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|Water Temperature|Bottom|Field|2|21.6|29.9|25.75|25.75|5.86898628384834|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|Water Temperature|Bottom|Field|4|24.1|30.4|28.55|27.9|3.03644529013779|10000
 28|Matlacha Pass Aquatic Preserve|1995|Water Temperature|Bottom|Field|26|17.9|32.1|29.1|27.7423076923077|3.75171140435115|5002
 28|Matlacha Pass Aquatic Preserve|1996|Water Temperature|Bottom|Field|25|18.4|31.7|28.7|26.408|4.33973117446999|5002
 28|Matlacha Pass Aquatic Preserve|1997|Water Temperature|Bottom|Field|25|20.5|32.2|29.1|27.176|4.26021126236716|5002
