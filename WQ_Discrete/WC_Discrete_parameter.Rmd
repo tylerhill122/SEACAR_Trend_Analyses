@@ -5,7 +5,16 @@ output:
     toc: true
     toc_depth: 2
     dev: png
+    extra_dependencies: ["float"]
 ---
+
+# Important Notes
+All scripts and outputs can be found on the SEACAR GitHub repository:
+
+https://github.com/FloridaSEACAR/SEACAR_Panzik
+
+Note: The top 2% of data is excluded when computing mean and standard deviations in plotting sections solely for the purpose of getting y-axis scales. The exclusion of the top 2% is not used in any statistics that are exported.
+
 
 
 # Libraries
@@ -22,8 +31,10 @@ library(ggpubr)
 library(scales)
 library(EnvStats)
 library(tidyr)
+library(kableExtra)
+windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 options(scipen=999)
-opts_chunk$set(warning=FALSE, message=FALSE)
+opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
 ```
 
 # File Import
@@ -489,12 +500,18 @@ data <- data[!is.na(data$ResultValue),]
 This part will create a scatter plot of the all data that passed initial filtering criteria with points colored based on specific value qualifiers. The values determined at the beginning (`year_lower`, `year_upper`, `min_RV`, `mn_RV`, `x_scale`, and `y_scale`) are solely for use by the plotting functions and are not output as part of the computed statistics.
 
 ```{r Scatter_All, warning=FALSE, fig.height=12, fig.width=10, eval=APP_Plots}
-plot_theme <- theme_bw() + theme(text=element_text(family="Segoe UI"),
-                                 title=element_text(face="bold"),
-                                 plot.title=element_text(hjust=0.5, size=14, color="#314963"),
-                                 plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
-                                 axis.text.x=element_text(face="bold"),
-                                 axis.text.y=element_text(face="bold"))
+plot_theme <- theme_bw() +
+   theme(text=element_text(family="Segoe UI"),
+         title=element_text(face="bold"),
+         plot.title=element_text(hjust=0.5, size=14, color="#314963"),
+         plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
+         axis.title.x = element_text(margin = margin(t = 5, r = 0,
+                                                     b = 10, l = 0)),
+         axis.title.y = element_text(margin = margin(t = 0, r = 10,
+                                                     b = 0, l = 0)),
+         axis.text=element_text(size=10),
+         axis.text.x=element_text(face="bold", angle = 60, hjust = 1),
+         axis.text.y=element_text(face="bold"))
 
 year_lower <- min(data$Year)
 year_upper <- max(data$Year)
@@ -751,8 +768,7 @@ if(z==0){
                               data$Include==TRUE, ],
                  aes(x=SampleDate, y=ResultValue, fill=VQ_Plot)) +
          geom_point(shape=21, size=3, color="#333333", alpha=0.75) +
-         labs(title=paste0("Scatter Plot of Excluded Managed Area\n",
-                           MA_Exclude$ManagedAreaName[i], " (",
+         labs(title=paste0(MA_Exclude$ManagedAreaName[i], " (",
                            MA_Exclude$N_Years[i], " Unique Years)"),
               subtitle="Autoscale", x="Year",
               y=paste0("Values (", unit, ")"), fill="Value Qualifier") +
@@ -794,7 +810,7 @@ The plots created in this section are designed to show the general trend of the 
 10. Plot the arrangement as a set of panels
 
 
-```{r Trendlines_ManagedArea, warning=FALSE, fig.height=6.5, fig.width=10, eval=APP_Plots}
+```{r Trendlines_ManagedArea, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval=APP_Plots}
 if(n==0){
    print("There are no managed areas that qualify.")
 } else {
@@ -826,7 +842,7 @@ if(n==0){
                    aes(x=DecDate, y=ResultValue, fill=VQ_Plot)) +
          geom_point(shape=21, size=3, color="#333333", alpha=0.75) +
          geom_abline(aes(slope=s_slope, intercept=s_int),
-                     color="blue", size=1.2) +
+                     color="#000099", size=1.2, alpha=0.7) +
          labs(subtitle="Autoscale",
               x="Year", y=paste0("Values (", unit, ")"),
               fill="Value Qualifier") +
@@ -847,7 +863,7 @@ if(n==0){
                    aes(x=DecDate, y=ResultValue, fill=VQ_Plot)) +
          geom_point(shape=21, size=3, color="#333333", alpha=0.75) +
          geom_abline(aes(slope=s_slope, intercept=s_int),
-                     color="blue", size=1.2) +
+                     color="#000099", size=1.2, alpha=0.7) +
          ylim(min_RV, y_scale) +
          labs(subtitle="Scaled to 4x Standard Deviation",
               x="Year", y=paste0("Values (", unit, ")")) +
@@ -866,21 +882,22 @@ if(n==0){
       KTset <- ggarrange(leg, p1 + theme(legend.position="none"), p2,
                          ncol=1, heights=c(0.1, 1, 1))
       
-      p0 <- ggplot() + labs(title=paste0("Data Points with Trendlines for ",
-                                         MA_Include[i]),
-                            subtitle =paste0("Senn Slope=", s_slope,
-                                             ",     Senn Intercept=", s_int,
-                                             "\nTrend=", trend,
-                                             ",     tau=", tau,
-                                             ",     p=", p,
-                                             "\nLinear Trendline: ",
-                                             "y=", m_slope,"x + ",m_int)) +
+      p0 <- ggplot() + labs(title=paste0(MA_Include[i])) +
          plot_theme + theme(panel.border=element_blank(),
                             panel.grid.major=element_blank(),
                             panel.grid.minor=element_blank(),
                             axis.line=element_blank())
       
-      print(ggarrange(p0, KTset, ncol=1, heights=c(0.15, 1)))
+      print(ggarrange(p0, KTset, ncol=1, heights=c(0.1, 1)))
+      cat('\n')
+      print(KT.Stats[KT.Stats$ManagedAreaName==MA_Include[i], ] %>%
+         select(N_Data, Median, tau, SennSlope, SennIntercept, p, Trend) %>%
+         kable(format="latex") %>%
+            row_spec(0,bold=TRUE) %>%
+            kable_styling(latex_options = "HOLD_position") %>%
+            add_footnote(
+            "p < 0.00005 appear as 0 due to rounding"))
+      cat('\n')
       rm(plot_data)
       rm(KTset, leg)
    }
@@ -968,8 +985,7 @@ if(n==0){
       
       Yset <- ggarrange(p1, p2, p3, ncol=1)
       
-      p0 <- ggplot() + labs(title=paste0("Summary Box Plots for ",
-                                         MA_Include[i]),
+      p0 <- ggplot() + labs(title=paste0(MA_Include[i]),
                             subtitle="By Year") +
          plot_theme + theme(panel.border=element_blank(),
                             panel.grid.major=element_blank(),
@@ -1020,8 +1036,7 @@ if(n==0){
       YMset <- ggarrange(leg1, p4, p5 + theme(legend.position="none"), p6,
                          ncol=1, heights=c(0.1, 1, 1, 1))
       
-      p00 <- ggplot() + labs(title=paste0("Summary Box Plots for ",
-                                          MA_Include[i]),
+      p00 <- ggplot() + labs(title=paste0(MA_Include[i]),
                              subtitle="By Year & Month") + plot_theme +
          theme(panel.border=element_blank(),
                panel.grid.major=element_blank(),
@@ -1068,8 +1083,7 @@ if(n==0){
       Mset <- ggarrange(leg2, p7, p8 + theme(legend.position="none"), p9,
                         ncol=1, heights=c(0.1, 1, 1, 1))
       
-      p000 <- ggplot() + labs(title=paste0("Summary Box Plots for ",
-                                           MA_Include[i]),
+      p000 <- ggplot() + labs(title=paste0(MA_Include[i]),
                               subtitle="By Month") + plot_theme +
          theme(panel.border=element_blank(),
                panel.grid.major=element_blank(),

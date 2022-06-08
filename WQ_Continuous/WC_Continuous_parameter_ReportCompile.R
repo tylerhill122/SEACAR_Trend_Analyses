@@ -1,13 +1,20 @@
 #This script is created to automate the production of Rmd documents for each relevant combination of
 #parameter, relative depth, and activity type for continuous WC data.
 
+
+## WHEN RUNNING IN RSTUDIO:
+## Set working directory to "Source File Location" in "Session" menu
+
+
 #Load libraries
 library(knitr)
 library(readr)
 library(dplyr)
+library(data.table)
 
 #Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
 APP_Plots <- TRUE
+
 #Set output directory
 out_dir <- "output/by_parameter/"
 
@@ -42,17 +49,18 @@ for (param_name in all_params){
    #Starts for loop that cycles through each depth
    for (i in 1:length(all_regions)){
       #Gets the files with the file names containing the desired parameter
-      file_in <- list.files("data", pattern=param_name, full=TRUE)
+      file_list <- list.files("data", pattern=param_name, full=TRUE)
       
       #Since Dissolved_Oxygen will return both Dissolved_Oxygen and Dissolved_Oxygen_Saturation,
       #the if statement removes the entry for Dissolved_Oxygen_Saturation when trying to get Dissolved_Oxygen
-      if(param_name=="Dissolved_Oxygen" & length(grep("Saturation", file_in))>0){
-         file_in <- file_in[-grep("Saturation", file_in)]
+      if(param_name=="Dissolved_Oxygen" & length(grep("Saturation", file_list))>0){
+         file_list <- file_list[-grep("Saturation", file_list)]
       }
       
       #Filters list of file names for the desired region
-      file_in <- file_in[i]
       region <- all_regions[i]
+      file_in <- file_list[grep(paste0("_", region, "-"), file_list)]
+      
          #Renders WC_discrete_parameter.Rmd for each parameter combination and writes the report to a pdf
          #Stored in reports/by_parameter directory
          rmarkdown::render(input = "WC_Continuous_parameter.Rmd", 

@@ -1,6 +1,11 @@
 #This script is created to automate the production of Rmd documents for each relevant combination of
 #parameter, relative depth, and activity type for WC data.
 
+
+## WHEN RUNNING IN RSTUDIO:
+## Set working directory to "Source File Location" in "Session" menu
+
+
 #Load libraries
 library(data.table)
 library(knitr)
