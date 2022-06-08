@@ -39,5 +39,36 @@ for (i in 1:length(files)) {
 #Change column names to better match other outputs
 setnames(output, c("managed_area", "species"), c("ManagedAreaName", "Species"))
 
+output$ManagedAreaName[output$ManagedAreaName=="Fort Pickens Aquatic Preserve"] <-
+   "Fort Pickens State Park Aquatic Preserve"
+
+output$ManagedAreaName[output$ManagedAreaName=="St. Andrews Aquatic Preserve"] <-
+   "St. Andrews State Park Aquatic Preserve"
+
+#Loads data file with list on managed area names and corresponding area IDs and short names
+MA_All <- fread("ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
+                na.strings = "")
+
+stats <- fread("SAV/output/data/SAV_BBpct_Stats.txt", sep = "|", header = TRUE, stringsAsFactors = FALSE,
+               na.strings = "")
+setnames(stats, c("ManagedAreaName", "analysisunit"), c("ShortName","Species"))
+
+stats <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName", "ShortName")],
+                          stats, by="ShortName", all=TRUE)
+
+stats$ShortName <- NULL
+
+stats <-  merge.data.frame(stats, output,
+                              by=c("ManagedAreaName", "Species"), all=TRUE)
+
+
+stats <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
+                         stats, by=c("AreaID", "ManagedAreaName"), all=TRUE)
+
+stats <- as.data.table(stats[order(stats$ManagedAreaName, stats$Species), ])
+
+stats$EarliestYear[stats$EarliestYear=="Inf"] <- NA
+stats$LatestYear[stats$LatestYear=="-Inf"] <- NA
+
 #Write output table to a pipe-delimited txt file
-fwrite(output, "SAV/output/website/SAV_BBpct_LMEresults_All.txt", sep="|")
+fwrite(stats, "SAV/output/website/SAV_BBpct_LMEresults_All.txt", sep="|")

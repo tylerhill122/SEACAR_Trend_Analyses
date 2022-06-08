@@ -12,40 +12,44 @@ library(grid)
 library(gridExtra)
 library(tictoc)
 library(nlme)
+library(colorspace)
 #library(future)
 
 #Load and wrangle data------------------------------------------------------------
-file_in <- "SAV/data/Combined_SAV_Braun_Blanquet_Score-2022-May-12.txt"
+data_dir <- "SAV/data"
+
+file_in <- list.files(data_dir, pattern="Braun_Blanquet", full=TRUE)
+file_in <- file_in[-grep("Modified", file_in)]
 BB <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             na.strings = "")
 BB$QuadIdentifier <- as.character(BB$QuadIdentifier)
 BB$BB <- BB$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Modified_Braun_Blanquet_Score-2022-May-12.txt"
+file_in <- list.files(data_dir, pattern="Modified_Braun_Blanquet", full=TRUE)
 mBB <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
              na.strings = "")
 mBB$QuadIdentifier <- as.character(mBB$QuadIdentifier)
 mBB$mBB <- mBB$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Percent_Cover-2022-May-12.txt"
+file_in <- list.files(data_dir, pattern="Percent_Cover", full=TRUE)
 PC <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             na.strings = "")
 PC$QuadIdentifier <- as.character(PC$QuadIdentifier)
 PC$PC <- PC$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Percent_Occurrence-2022-May-12.txt"
+file_in <- list.files(data_dir, pattern="Percent_Occurrence", full=TRUE)
 PO <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             na.strings = "")
 PO$QuadIdentifier <- as.character(PO$QuadIdentifier)
 PO$PO <- PO$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Shoot_Count-2022-May-12.txt"
+file_in <- list.files(data_dir, pattern="Shoot_Count", full=TRUE)
 SC <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             na.strings = "")
 SC$QuadIdentifier <- as.character(SC$QuadIdentifier)
 SC$SC <- SC$ResultValue
 
-file_in <- "SAV/data/Combined_SAV_Presence_Absence-2022-May-12.txt"
+file_in <- list.files(data_dir, pattern="Presence_Absence", full=TRUE)
 PA <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
             na.strings = "")
 PA$QuadIdentifier <- as.character(PA$QuadIdentifier)
@@ -59,7 +63,7 @@ rm(PO)
 rm(SC)
 rm(PA)
 
-# SAV <- fread(here::here("Combined_SAV_column_All-2021-Sep-20.csv"))
+# SAV <- fread(here::here("SAV/data/Combined_SAV_column_All-2021-Sep-20.csv"))
 # 
 # setnames(SAV, c("[BraunBlanquetScore]", "[ModifiedBraunBlanquetScore]", "[PercentCover_%]", "[PercentOccurrence]"), c("BB", "mBB", "PC", "PO"))
 
@@ -146,13 +150,27 @@ SAV2[, relyear := Year - min(Year)]
 
 SAV3 <- SAV2 %>% filter(SpeciesGroup1 == "Seagrass" | SpeciesGroup1 == "Macroalgae")
 
-species_reject <- c("Total_SAV", "All", "NA")
+species_reject <- c("Total_SAV", "All", "NA",
+                    "Vallisneria americana", "Najas guadalupensis",
+                    "Hydrilla verticillata", "Potamogeton pusillus",
+                    "Zannichellia palustris")
 SAV3[, analysisunit := ifelse(CommonIdentifier %in% species_reject, NA, 
                               ifelse(str_detect(CommonIdentifier, "Halophila"), "Halophila spp.", 
                                      ifelse(SpeciesGroup1 == "Seagrass", CommonIdentifier, Drift_Attached)))]
 SAV3[!is.na(Drift_Attached), analysisunit := paste0(analysisunit, " algae")]
 
 SAV4 <- subset(SAV3, !is.na(SAV3$analysisunit))
+
+
+stats <- SAV4 %>%
+  group_by(ManagedAreaName, analysisunit) %>%
+  summarize(ParameterName="BB_pct",
+            N_Data=length(BB_pct[!is.na(BB_pct)]),
+            N_Years=length(unique(Year[!is.na(Year) & !is.na(BB_pct)])),
+            EarliestYear=min(Year[!is.na(BB_pct)]),
+            LatestYear=max(Year[!is.na(BB_pct)]),
+            SufficientData=ifelse(N_Data>0 & N_Years>=5, TRUE, FALSE))
+fwrite(stats, "SAV/output/data/SAV_BBpct_Stats.txt", sep = "|")
 
 saveRDS(SAV4, here::here("SAV/output/data/SAV4.rds"))
 fwrite(SAV4, "SAV/output/data/SAV_Used.txt", sep = "|")
@@ -260,7 +278,7 @@ addfits <- function(models, plot_i, param){
 #' #' @importFrom magrittr %>%
 
 rotate_sf <- function(data, x_add = 0, y_add = 0, coast = "Atlantic") {
-
+  
   if(coast == "Atlantic"){
     shear_matrix <- function (x) { 
       #matrix(c(2, 1.2, 0, 1), 2, 2)
@@ -333,10 +351,26 @@ for(m in unique(props$ManagedAreaName)){
   props[ManagedAreaName == m, sp_prop := n1/sum(n1), by = c("relyear")]
 }
 
-spcollist <- hcl.colors(n = 8, palette = "Dark 3")
+spcollist <- c("#032563",
+               "#1d3e78",
+               "#2f588d",
+               "#3f73a3",
+               "#4e90ba",
+               "#5cadd0",
+               "#6bcce7",
+               "#79ebff")
+spmarklist <- c(21, 24, 21, 24, 21, 24, 21, 24)
+splinelist <- c("solid", "dashed", "solid", "dashed",
+                "solid", "dashed", "solid", "dashed")
+
+# spcollist <- hcl.colors(n = 8, palette = "Blues 3")
 spp <- c("Thalassia testudinum", "Syringodium filiforme", "Halodule wrightii", "Ruppia maritima", "Halophila spp.", "Total seagrass", 
          "Attached algae", "Drift algae")
 spcols <- setNames(spcollist, spp)
+
+spmark <- setNames(spmarklist, spp)
+
+spline <- setNames(splinelist, spp)
 
 prcollist <- hcl.colors(n = 21, palette = "viridis")
 progs <- sort(unique(SAV4$ProgramID))
@@ -346,12 +380,25 @@ parameters <- data.table(column = c(as.name("BB_all"), as.name("BB_pct"), as.nam
                          name = c("Braun Blanquet score", "Median percent cover", "Visual percent cover", "Percent occurrence", "Frequency of occurrence"),
                          type = c("BBall", "BBpct", "PC", "PO", "PA"))
 
+plot_theme <- theme_bw() +
+  theme(text=element_text(family="Segoe UI"),
+        title=element_text(face="bold"),
+        plot.title=element_text(hjust=0.5, size=14, color="#314963"),
+        plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
+        axis.title.x = element_text(margin = margin(t = 5, r = 0,
+                                                    b = 10, l = 0)),
+        axis.title.y = element_text(margin = margin(t = 0, r = 10,
+                                                    b = 0, l = 0)),
+        axis.text=element_text(size=10),
+        axis.text.x=element_text(face="bold", angle = 60, hjust = 1),
+        axis.text.y=element_text(face="bold"))
+
 # #subset to run only part of the script------------------------------------------------------
 # parameters <- parameters[column == "PA", ]
 
 #start script----------------------------------------------------------------------
 n <- 0
-EDA <- TRUE #Create and export Exploratory Data Analysis plots (TRUE = yes, FALSE = no)
+EDA <- FALSE #Create and export Exploratory Data Analysis plots (TRUE = yes, FALSE = no)
 seed <- 352
 set.seed(seed)
 for(p in parameters$column){
@@ -381,951 +428,954 @@ for(p in parameters$column){
     cat(paste0("\nStarting MA: ", i, "\n"))
     
     #create data exploration plots-----------------------------------------------------
-   if(EDA){ 
-    parvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = eval(p), color = analysisunit)) +
-                       geom_jitter() +
-                       theme_bw() +
-                       labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                           ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                            y = parameters[column == p, name],
-                            color = "Species") +
-                       scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                                          aesthetics = c("color", "fill"))
-    
-    saveRDS(parvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+    if(EDA){ 
+      parvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ],
+                              aes(x = Year, y = eval(p), color = analysisunit)) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             y = parameters[column == p, name],
+             color = "Species") +
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(parvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                               ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"), 
+                                                      ifelse(stringr::str_detect(i, "NMS"), paste0("MS_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"), paste0("AP_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"))))))
+      
+      parvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = eval(p), color = as.factor(ProgramID))) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             y = parameters[column == p, name],
+             color = "Program ID") +
+        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(parvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                               ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"), 
+                                                      ifelse(stringr::str_detect(i, "NMS"), paste0("MS_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"), paste0("AP_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"))))))
+      
+      spvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = analysisunit, color = as.factor(ProgramID))) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             y = "Species",
+             color = "Program ID") +
+        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(spvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA003_spvYear_bypr.rds", 
+                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_EDA003_spvYear_bypr.rds", "AP_EDA003_spvYear_bypr.rds")))))
+      
+      qsvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = QuadSize_m2, color = analysisunit)) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             y = "Quadrat size (m^2)",
+             color = "Species") +
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(qsvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA004_qsvYear_bysp.rds", 
+                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_EDA004_qsvYear_bysp.rds", "AP_EDA004_qsvYear_bysp.rds")))))
+      
+      qsvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = QuadSize_m2, color = as.factor(ProgramID))) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             y = "Quadrat size (m^2)",
+             color = "Program ID") +
+        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(qsvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA005_qsvYear_bypr.rds", 
+                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_EDA005_qsvYear_bypr.rds", "AP_EDA005_qsvYear_bypr.rds")))))
+      
+      metvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i, ], aes(x = Year, y = method, color = analysisunit)) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             y = "Method",
+             color = "Species") +
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(metvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA006_metvYear_bysp.rds", 
+                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_EDA006_metvYear_bysp.rds", "AP_EDA006_metvYear_bysp.rds")))))
+      
+      metvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i, ], aes(x = Year, y = method, color = as.factor(ProgramID))) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             y = "Method",
+             color = "Program ID") +
+        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(metvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA007_metvYear_bypr.rds", 
+                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_EDA007_metvYear_bypr.rds", "AP_EDA007_metvYear_bypr.rds")))))
+      
+      metvqs_bysp <- ggplot(data = SAV4[ManagedAreaName == i, ], aes(x = QuadSize_m2, y = method, color = analysisunit)) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             x = "Quadrat size (m^2)",
+             y = "Method",
+             color = "Species") +
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(metvqs_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                             ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"), 
-                                                    ifelse(stringr::str_detect(i, "NMS"), paste0("MS_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"), paste0("AP_EDA001_", str_replace(p, "_", ""), "vYear_bysp.rds"))))))
-    
-    parvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = eval(p), color = as.factor(ProgramID))) +
-                       geom_jitter() +
-                       theme_bw() +
-                       labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                           ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                            y = parameters[column == p, name],
-                            color = "Program ID") +
-                       scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
-                                          aesthetics = c("color", "fill"))
-    
-    saveRDS(parvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA008_metvqs_bysp.rds", 
+                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA008_metvqs_bysp.rds", "AP_EDA008_metvqs_bysp.rds")))))
+      
+      metvqs_bypr <- ggplot(data = SAV4[ManagedAreaName == i, ], aes(x = QuadSize_m2, y = method, color = as.factor(ProgramID))) +
+        geom_jitter() +
+        theme_bw() +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             x = "Quadrat size (m^2)",
+             y = "Method",
+             color = "Program ID") +
+        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(metvqs_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                             ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"), 
-                                                    ifelse(stringr::str_detect(i, "NMS"), paste0("MS_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"), paste0("AP_EDA002_", str_replace(p, "_", ""), "vYear_bypr.rds"))))))
-    
-    spvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = analysisunit, color = as.factor(ProgramID))) +
-                      geom_jitter() +
-                      theme_bw() +
-                      labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                          ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                           y = "Species",
-                           color = "Program ID") +
-                      scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
-                                         aesthetics = c("color", "fill"))
-    
-    saveRDS(spvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA003_spvYear_bypr.rds", 
-                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA003_spvYear_bypr.rds", "AP_EDA003_spvYear_bypr.rds")))))
-    
-    qsvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = QuadSize_m2, color = analysisunit)) +
-                      geom_jitter() +
-                      theme_bw() +
-                      labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                          ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                           y = "Quadrat size (m^2)",
-                           color = "Species") +
-                      scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                                         aesthetics = c("color", "fill"))
-    
-    saveRDS(qsvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA004_qsvYear_bysp.rds", 
-                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_EDA004_qsvYear_bysp.rds", "AP_EDA004_qsvYear_bysp.rds")))))
-
-    qsvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = QuadSize_m2, color = as.factor(ProgramID))) +
-                      geom_jitter() +
-                      theme_bw() +
-                      labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                          ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                           y = "Quadrat size (m^2)",
-                           color = "Program ID") +
-                      scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
-                                         aesthetics = c("color", "fill"))
-    
-    saveRDS(qsvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA005_qsvYear_bypr.rds", 
-                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_EDA005_qsvYear_bypr.rds", "AP_EDA005_qsvYear_bypr.rds")))))
-    
-    metvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i, ], aes(x = Year, y = method, color = analysisunit)) +
-                       geom_jitter() +
-                       theme_bw() +
-                       labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                           ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                            y = "Method",
-                            color = "Species") +
-                       scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                                          aesthetics = c("color", "fill"))
-    
-    saveRDS(metvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA006_metvYear_bysp.rds", 
-                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_EDA006_metvYear_bysp.rds", "AP_EDA006_metvYear_bysp.rds")))))
-    
-    metvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i, ], aes(x = Year, y = method, color = as.factor(ProgramID))) +
-                       geom_jitter() +
-                       theme_bw() +
-                       labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                           ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                            y = "Method",
-                            color = "Program ID") +
-                       scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
-                                          aesthetics = c("color", "fill"))
-    
-    saveRDS(metvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA007_metvYear_bypr.rds", 
-                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_EDA007_metvYear_bypr.rds", "AP_EDA007_metvYear_bypr.rds")))))
-    
-    metvqs_bysp <- ggplot(data = SAV4[ManagedAreaName == i, ], aes(x = QuadSize_m2, y = method, color = analysisunit)) +
-      geom_jitter() +
-      theme_bw() +
-      labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                          ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-           x = "Quadrat size (m^2)",
-           y = "Method",
-           color = "Species") +
-      scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                         aesthetics = c("color", "fill"))
-    
-    saveRDS(metvqs_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA008_metvqs_bysp.rds", 
-                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_EDA008_metvqs_bysp.rds", "AP_EDA008_metvqs_bysp.rds")))))
-    
-    metvqs_bypr <- ggplot(data = SAV4[ManagedAreaName == i, ], aes(x = QuadSize_m2, y = method, color = as.factor(ProgramID))) +
-      geom_jitter() +
-      theme_bw() +
-      labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                          ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-           x = "Quadrat size (m^2)",
-           y = "Method",
-           color = "Program ID") +
-      scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
-                         aesthetics = c("color", "fill"))
-    
-    saveRDS(metvqs_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA009_metvqs_bypr.rds", 
-                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_EDA009_metvqs_bypr.rds", "AP_EDA009_metvqs_bypr.rds")))))
-    
-    if(length(SAV4[ManagedAreaName == i & !is.na(eval(p)) & !is.na(Grid), Grid]) > 0){              
-      grvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = Grid, color = analysisunit)) +
-                        geom_jitter() +
-                        theme_bw() +
-                        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                             y = "Grid number",
-                             color = "Species") +
-                        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                                           aesthetics = c("color", "fill"))
+                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA009_metvqs_bypr.rds", 
+                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_EDA009_metvqs_bypr.rds", "AP_EDA009_metvqs_bypr.rds")))))
       
-      saveRDS(grvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA010_grvYear_bysp.rds", 
-                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_EDA010_grvYear_bysp.rds", "AP_EDA010_grvYear_bysp.rds")))))
-                    
-      grvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = Grid, color = as.factor(ProgramID))) +
-                        geom_jitter() +
-                        theme_bw() +
-                        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                             y = "Grid number",
-                             color = "Program ID") +
-                        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
-                                           aesthetics = c("color", "fill"))
+      if(length(SAV4[ManagedAreaName == i & !is.na(eval(p)) & !is.na(Grid), Grid]) > 0){              
+        grvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = Grid, color = analysisunit)) +
+          geom_jitter() +
+          theme_bw() +
+          labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                              ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+               y = "Grid number",
+               color = "Species") +
+          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                             aesthetics = c("color", "fill"))
+        
+        saveRDS(grvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                                ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA010_grvYear_bysp.rds", 
+                                                       ifelse(stringr::str_detect(i, "NMS"), "MS_EDA010_grvYear_bysp.rds", "AP_EDA010_grvYear_bysp.rds")))))
+        
+        grvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = Grid, color = as.factor(ProgramID))) +
+          geom_jitter() +
+          theme_bw() +
+          labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                              ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+               y = "Grid number",
+               color = "Program ID") +
+          scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
+                             aesthetics = c("color", "fill"))
+        
+        saveRDS(grvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                                ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA011_grvYear_bypr.rds", 
+                                                       ifelse(stringr::str_detect(i, "NMS"), "MS__EDA011_grvYear_bypr.rds", "AP_EDA011_grvYear_bypr.rds")))))
+      }
       
-      saveRDS(grvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA011_grvYear_bypr.rds", 
-                                                     ifelse(stringr::str_detect(i, "NMS"), "MS__EDA011_grvYear_bypr.rds", "AP_EDA011_grvYear_bypr.rds")))))
-    }
-    
-    if(length(SAV4[ManagedAreaName == i & !is.na(eval(p)) & !is.na(Depth_M), Depth_M]) > 0){                
-      dpvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = Depth_M, color = analysisunit)) +
-                        geom_jitter() +
-                        theme_bw() +
-                        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), "National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                             y = "Depth (m)",
-                             color = "Species") +
-                        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                                           aesthetics = c("color", "fill"))
+      if(length(SAV4[ManagedAreaName == i & !is.na(eval(p)) & !is.na(Depth_M), Depth_M]) > 0){                
+        dpvYear_bysp <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = Depth_M, color = analysisunit)) +
+          geom_jitter() +
+          theme_bw() +
+          labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                              ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), "National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+               y = "Depth (m)",
+               color = "Species") +
+          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                             aesthetics = c("color", "fill"))
+        
+        saveRDS(dpvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                                ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA012_dpvYear_bysp.rds", 
+                                                       ifelse(stringr::str_detect(i, "NMS"), "MS_EDA012_dpvYear_bysp.rds", "AP_EDA012_dpvYear_bysp.rds")))))
+        
+        dpvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = Depth_M, color = as.factor(ProgramID))) +
+          geom_jitter() +
+          theme_bw() +
+          labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                              ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+               y = "Depth (m)",
+               color = "Program ID") +
+          scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
+                             aesthetics = c("color", "fill"))
+        
+        saveRDS(dpvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                                ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA013_dpvYear_bypr.rds", 
+                                                       ifelse(stringr::str_detect(i, "NMS"), "MS_EDA013_dpvYear_bypr.rds", "AP_EDA013_dpvYear_bypr.rds")))))
+      }
       
-      saveRDS(dpvYear_bysp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA012_dpvYear_bysp.rds", 
-                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_EDA012_dpvYear_bysp.rds", "AP_EDA012_dpvYear_bysp.rds")))))
-                    
-      dpvYear_bypr <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = Depth_M, color = as.factor(ProgramID))) +
-                        geom_jitter() +
-                        theme_bw() +
-                        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                             y = "Depth (m)",
-                             color = "Program ID") +
-                        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), as.factor(ProgramID)])), 
-                                           aesthetics = c("color", "fill"))
       
-      saveRDS(dpvYear_bypr, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_EDA013_dpvYear_bypr.rds", 
-                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_EDA013_dpvYear_bypr.rds", "AP_EDA013_dpvYear_bypr.rds")))))
-    }
-    
-    
-    #Generate the legend
-    plotall <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, fill = analysisunit)) +
-      geom_bar()  +
-      scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                         aesthetics = c("color", "fill")) +
-      labs(y="Frequency of data", x="Year") +
-      theme(legend.title = element_blank(),
+      #Generate the legend
+      plotall <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, fill = analysisunit)) +
+        geom_bar()  +
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                           aesthetics = c("color", "fill")) +
+        labs(y="Frequency of data", x="Year") +
+        theme(legend.title = element_blank(),
+              axis.text.x = element_text(angle = 45, hjust = 1),
+              axis.title = element_text(size = 7),
+              axis.text = element_text(size = 7),
+              legend.text = element_text(size = 7))
+      
+      legend = gtable::gtable_filter(ggplotGrob(plotall), "guide-box")
+      
+      saveRDS(legend, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                        gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                        ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_specieslegend.rds", 
+                                               ifelse(stringr::str_detect(i, "NMS"), "MS_hist_specieslegend.rds", "AP_hist_specieslegend.rds")))))
+      
+      #Create and save the hist objects---------------------------------------------------
+      for(a in setdiff(unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit]), c("Total seagrass", "Attached algae", "Drift algae"))){
+        dat <- filter(SAV4[ManagedAreaName == i & !is.na(eval(p)), ], analysisunit == a)
+        
+        plot <- ggplot(data = dat, aes(x = Year, fill = analysisunit)) +
+          geom_bar() +
+          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                             aesthetics = c("color", "fill")) +
+          scale_x_continuous(limits = c(min(dat$Year - 1), max(dat$Year + 1))) +
+          #scale_y_continuous(limits = c(0, 2600)) +
+          labs(y="Frequency of data", x="Year") +
+          theme(#legend.title = element_blank(),
             axis.text.x = element_text(angle = 45, hjust = 1),
-            axis.title = element_text(size = 7),
+            #axis.title = element_text(size = 7),
+            axis.title = element_blank(),
             axis.text = element_text(size = 7),
-            legend.text = element_text(size = 7))
-    
-    legend = gtable::gtable_filter(ggplotGrob(plotall), "guide-box")
-    
-    saveRDS(legend, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                      gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_specieslegend.rds", 
-                                             ifelse(stringr::str_detect(i, "NMS"), "MS_hist_specieslegend.rds", "AP_hist_specieslegend.rds")))))
-    
-    #Create and save the hist objects---------------------------------------------------
-    for(a in setdiff(unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit]), c("Total seagrass", "Attached algae", "Drift algae"))){
-      dat <- filter(SAV4[ManagedAreaName == i & !is.na(eval(p)), ], analysisunit == a)
+            #legend.text = element_text(size = 7),
+            legend.position = "none")
+        
+        saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                        gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                        ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_", 
+                                               ifelse(stringr::str_detect(i, "NMS"), "MS_hist_", "AP_hist_")), 
+                                        gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', a, perl = TRUE), ".rds")))
+      }
+      
+      dat <- filter(SAV4[ManagedAreaName == i & !is.na(eval(p)), ], analysisunit %in% c("Total seagrass", "Attached algae", "Drift algae"))
       
       plot <- ggplot(data = dat, aes(x = Year, fill = analysisunit)) +
         geom_bar() +
-        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(dat$analysisunit)), 
                            aesthetics = c("color", "fill")) +
         scale_x_continuous(limits = c(min(dat$Year - 1), max(dat$Year + 1))) +
         #scale_y_continuous(limits = c(0, 2600)) +
+        #paste0(as_label(BBAP_BB_EDAplots[[1]]$mapping$y))
         labs(y="Frequency of data", x="Year") +
-        theme(#legend.title = element_blank(),
-          axis.text.x = element_text(angle = 45, hjust = 1),
-          #axis.title = element_text(size = 7),
-          axis.title = element_blank(),
-          axis.text = element_text(size = 7),
-          #legend.text = element_text(size = 7),
-          legend.position = "none")
+        theme(axis.text.x = element_text(angle = 45, hjust = 1),
+              #axis.title = element_text(size = 7),
+              #axis.title = element_blank(),
+              axis.text = element_text(size = 7),
+              #legend.text = element_text(size = 7),
+              legend.position = "none",
+              legend.title = element_blank())
       
       saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_", 
-                                             ifelse(stringr::str_detect(i, "NMS"), "MS_hist_", "AP_hist_")), 
-                                      gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', a, perl = TRUE), ".rds")))
-    }
-    
-    dat <- filter(SAV4[ManagedAreaName == i & !is.na(eval(p)), ], analysisunit %in% c("Total seagrass", "Attached algae", "Drift algae"))
-    
-    plot <- ggplot(data = dat, aes(x = Year, fill = analysisunit)) +
-      geom_bar() +
-      scale_color_manual(values = subset(spcols, names(spcols) %in% unique(dat$analysisunit)), 
-                         aesthetics = c("color", "fill")) +
-      scale_x_continuous(limits = c(min(dat$Year - 1), max(dat$Year + 1))) +
-      #scale_y_continuous(limits = c(0, 2600)) +
-      #paste0(as_label(BBAP_BB_EDAplots[[1]]$mapping$y))
-      labs(y="Frequency of data", x="Year") +
-      theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        #axis.title = element_text(size = 7),
-        #axis.title = element_blank(),
-        axis.text = element_text(size = 7),
-        #legend.text = element_text(size = 7),
-        legend.position = "none",
-        legend.title = element_blank())
-    
-    saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                    gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                    ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_SGvMA.rds", 
-                                           ifelse(stringr::str_detect(i, "NMS"), "MS_hist_SGvMA.rds", "AP_hist_SGvMA.rds")))))  
-    
-    #Generate the legend
-    plotall <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = eval(p), color = analysisunit)) +
-      geom_boxplot() +
-      scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                         aesthetics = c("color", "fill")) +
-      labs(y = parameters[column == p, name], x = "Year") +
-      theme(legend.title = element_blank(),
-            axis.text.x = element_text(angle = 45, hjust = 1),
-            axis.title = element_text(size = 7),
-            axis.text = element_text(size = 7),
-            legend.text = element_text(size = 7))
-    
-    legend = gtable::gtable_filter(ggplotGrob(plotall), "guide-box")
-    
-    saveRDS(legend, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                      gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_specieslegend.rds", 
-                                             ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_specieslegend.rds", "AP_boxplot_specieslegend.rds")))))
-    
-    #Create and save the boxplot objects--------------------------------------------------
-    for(b in setdiff(unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit]), c("Total seagrass", "Attached algae", "Drift algae"))){
-      dat <- filter(SAV4[ManagedAreaName == i & !is.na(eval(p)), ], analysisunit == b)
+                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_hist_SGvMA.rds", 
+                                             ifelse(stringr::str_detect(i, "NMS"), "MS_hist_SGvMA.rds", "AP_hist_SGvMA.rds")))))  
       
-      plot <- ggplot(data = dat, aes(group=Year, x = Year, y = eval(p), color = analysisunit)) +
+      #Generate the legend
+      plotall <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ], aes(x = Year, y = eval(p), color = analysisunit)) +
         geom_boxplot() +
         scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
                            aesthetics = c("color", "fill")) +
-        scale_x_continuous(limits = c(min(dat$Year - 1), max(dat$Year + 1))) +
+        labs(y = parameters[column == p, name], x = "Year") +
+        theme(legend.title = element_blank(),
+              axis.text.x = element_text(angle = 45, hjust = 1),
+              axis.title = element_text(size = 7),
+              axis.text = element_text(size = 7),
+              legend.text = element_text(size = 7))
+      
+      legend = gtable::gtable_filter(ggplotGrob(plotall), "guide-box")
+      
+      saveRDS(legend, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                        gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                        ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_specieslegend.rds", 
+                                               ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_specieslegend.rds", "AP_boxplot_specieslegend.rds")))))
+      
+      #Create and save the boxplot objects--------------------------------------------------
+      for(b in setdiff(unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit]), c("Total seagrass", "Attached algae", "Drift algae"))){
+        dat <- filter(SAV4[ManagedAreaName == i & !is.na(eval(p)), ], analysisunit == b)
+        
+        plot <- ggplot(data = dat, aes(group=Year, x = Year, y = eval(p), color = analysisunit)) +
+          geom_boxplot() +
+          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                             aesthetics = c("color", "fill")) +
+          scale_x_continuous(limits = c(min(dat$Year - 1), max(dat$Year + 1))) +
+          #scale_y_continuous(limits = c(0, 100)) +
+          labs(y = parameters[column == p, name], x = "Year") +
+          theme(#legend.title = element_blank(),
+            axis.text.x = element_text(angle = 45, hjust = 1),
+            #axis.title = element_text(size = 7),
+            axis.title = element_blank(),
+            axis.text = element_text(size = 7),
+            #legend.text = element_text(size = 7),
+            legend.position = "none")
+        
+        saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                        gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                        ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_", 
+                                               ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_", "AP_boxplot_")), 
+                                        gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', b, perl = TRUE), ".rds")))
+      }
+      
+      dat <- filter(SAV4[ManagedAreaName == i & !is.na(eval(p)), ], analysisunit %in% c("Total seagrass", "Attached algae", "Drift algae"))
+      
+      plot <- ggplot(data = dat, aes(x = as.factor(Year), y = eval(p), color = analysisunit)) +
+        geom_boxplot() +
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(dat$analysisunit)), 
+                           aesthetics = c("color", "fill")) +
+        #scale_x_continuous(limits = c(min(dat$Year - 1), max(dat$Year + 1))) +
         #scale_y_continuous(limits = c(0, 100)) +
         labs(y = parameters[column == p, name], x = "Year") +
-        theme(#legend.title = element_blank(),
-          axis.text.x = element_text(angle = 45, hjust = 1),
-          #axis.title = element_text(size = 7),
-          axis.title = element_blank(),
-          axis.text = element_text(size = 7),
-          #legend.text = element_text(size = 7),
-          legend.position = "none")
+        theme(axis.text.x = element_text(angle = 45, hjust = 1),
+              #axis.title = element_text(size = 7),
+              #axis.title = element_blank(),
+              axis.text = element_text(size = 7),
+              #legend.text = element_text(size = 7),
+              legend.position = "none",
+              legend.title = element_blank())
       
       saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_", 
-                                             ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_", "AP_boxplot_")), 
-                                      gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', b, perl = TRUE), ".rds")))
-    }
-    
-    dat <- filter(SAV4[ManagedAreaName == i & !is.na(eval(p)), ], analysisunit %in% c("Total seagrass", "Attached algae", "Drift algae"))
-    
-    plot <- ggplot(data = dat, aes(x = as.factor(Year), y = eval(p), color = analysisunit)) +
-      geom_boxplot() +
-      scale_color_manual(values = subset(spcols, names(spcols) %in% unique(dat$analysisunit)), 
-                         aesthetics = c("color", "fill")) +
-      #scale_x_continuous(limits = c(min(dat$Year - 1), max(dat$Year + 1))) +
-      #scale_y_continuous(limits = c(0, 100)) +
-      labs(y = parameters[column == p, name], x = "Year") +
-      theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        #axis.title = element_text(size = 7),
-        #axis.title = element_blank(),
-        axis.text = element_text(size = 7),
-        #legend.text = element_text(size = 7),
-        legend.position = "none",
-        legend.title = element_blank())
-    
-    saveRDS(plot, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                    gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                    ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_SGvMA.rds", 
-                                           ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_SGvMA.rds", "AP_boxplot_SGvMA.rds")))))  
-    
-    
-    #Create map(s) for the managed area-------------------------------------------
-    
-    fl_i <- st_crop(counties, xmin = corners[ManagedAreaName == i, xmin], xmax = corners[ManagedAreaName == i, xmax], ymin = corners[ManagedAreaName == i, ymin], ymax = corners[ManagedAreaName == i, ymax])
-    rcp_i <- subset(rcp, rcp$LONG_NAME == ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                                 ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), 
-                                                        ifelse(str_detect(i, "Fort Clinch|Fort Pickens|Rocky Bayou|St. Andrews"), paste0(i, " State Park Aquatic Preserve"), paste0(i, " Aquatic Preserve")))))
-    
-    locs_pts_rcp_i <- locs_pts_rcp[rcp_i, , op = st_intersects]
-    locs_lns_rcp_i <- locs_lns_rcp[rcp_i, , op = st_intersects]
-    
-    yadd <- 0
-    startyear <- min(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year])
-    base <- ggplot() +
-      geom_sf(data = rotate_sf(fl_i, coast = corners[ManagedAreaName == i, Coast[1]]), fill = "beige", color = "navajowhite3", inherit.aes = FALSE) +
-      geom_sf(data = rotate_sf(rcp_i, coast = corners[ManagedAreaName == i, Coast[1]]), color = "grey50", fill = "mediumaquamarine", alpha = 0.4, lwd = 1, inherit.aes = FALSE) +
-      #scale_fill_brewer(palette = "Dark2") +
-      scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), ProgramID])), 
-                         aesthetics = c("color", "fill")) +
-      labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                          ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))), 
-           fill = "Program ID") +
-      theme(panel.grid.major = element_line(colour = NA),
-            panel.grid.minor = element_line(colour = NA),
-            axis.text = element_blank(),
-            axis.ticks = element_blank(),
-            axis.title = element_blank(),
-            panel.background = element_rect(fill = NA),
-            plot.background = element_rect(colour = NA))
-    ystart <- ifelse(corners[ManagedAreaName == i, Coast[1]] == "Atlantic", attributes(base$layers[[2]]$data$geometry)$bbox$ymax[[1]], attributes(base$layers[[2]]$data$geometry)$bbox$ymin[[1]])
-    xlab <- attributes(base$layers[[2]]$data$geometry)$bbox$xmax[[1]] + (attributes(base$layers[[2]]$data$geometry)$bbox$xmax[[1]] - attributes(base$layers[[2]]$data$geometry)$bbox$xmin[[1]])/50
-    MAcoords <- setDT(as.data.frame(st_coordinates(rcp_i)))
-    maxdist <- max(st_distance(st_as_sf(MAcoords[X == min(X), ], coords = c("X", "Y"), crs = 4326), st_as_sf(MAcoords[Y == max(Y), ], coords = c("X", "Y"), crs = 4326)),
-                   st_distance(st_as_sf(MAcoords[X == max(X), ], coords = c("X", "Y"), crs = 4326), st_as_sf(MAcoords[Y == min(Y), ], coords = c("X", "Y"), crs = 4326)),
-                   st_distance(st_as_sf(MAcoords[X == min(X), ], coords = c("X", "Y"), crs = 4326), st_as_sf(MAcoords[X == max(X), ], coords = c("X", "Y"), crs = 4326)),
-                   st_distance(st_as_sf(MAcoords[Y == min(Y), ], coords = c("X", "Y"), crs = 4326), st_as_sf(MAcoords[Y == max(Y), ], coords = c("X", "Y"), crs = 4326)))
-    area <- st_area(rcp_i)
-    xyratio <- as.numeric((area/maxdist)/maxdist)
-    
-    MApolycoords <- setDT(as.data.frame(st_coordinates(base$layers[[2]]$data)))
-    xmax_y <- MApolycoords[X == max(X), Y]
-    base <- base + annotate("text", x = xlab, y = xmax_y, label = paste0(startyear), hjust = "left")
-    
-    MApolycoords[, Xrnd := round(X, 3)][, ydists := max(Y) - min(Y), by = Xrnd]
-    maxydist <- max(MApolycoords$ydists) + ((max(MApolycoords$ydists)/25) / xyratio) 
-    
-    if(length(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID]))$LocationID) > 0){
-      base <- base +
-        geom_sf(data = rotate_sf(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID])),
-                                 coast = corners[ManagedAreaName == i, Coast[1]]),
-                aes(fill = droplevels(as.factor(ProgramID))), shape = 21, color = "black")
-    }
-    
-    if(length(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID]))$LocationID) > 0){
-      base <- base +
-        geom_sf(data = rotate_sf(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID])),
-                                 coast = corners[ManagedAreaName == i, Coast[1]]),
-                aes(color = droplevels(as.factor(ProgramID))), shape = 21)
-    }
-    
-    for(y in sort(unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year != startyear, Year]))){
-      base <- base +
-        geom_sf(data = rotate_sf(rcp_i, y_add = yadd + maxydist, coast = corners[ManagedAreaName == i, Coast[1]]), 
-                color = "grey50", fill = "mediumaquamarine", alpha = 0.85, lwd = 1, inherit.aes = FALSE) +
-        annotate("text", x = xlab, y = xmax_y + yadd + maxydist, label = y, hjust = "left")
+                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_boxplot_SGvMA.rds", 
+                                             ifelse(stringr::str_detect(i, "NMS"), "MS_boxplot_SGvMA.rds", "AP_boxplot_SGvMA.rds")))))  
       
-      if(length(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == y, LocationID]))$LocationID) > 0){
+      
+      #Create map(s) for the managed area-------------------------------------------
+      
+      fl_i <- st_crop(counties, xmin = corners[ManagedAreaName == i, xmin], xmax = corners[ManagedAreaName == i, xmax], ymin = corners[ManagedAreaName == i, ymin], ymax = corners[ManagedAreaName == i, ymax])
+      rcp_i <- subset(rcp, rcp$LONG_NAME == ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                                                   ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), 
+                                                          ifelse(str_detect(i, "Fort Clinch|Fort Pickens|Rocky Bayou|St. Andrews"), paste0(i, " State Park Aquatic Preserve"), paste0(i, " Aquatic Preserve")))))
+      
+      locs_pts_rcp_i <- locs_pts_rcp[rcp_i, , op = st_intersects]
+      locs_lns_rcp_i <- locs_lns_rcp[rcp_i, , op = st_intersects]
+      
+      yadd <- 0
+      startyear <- min(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year])
+      base <- ggplot() +
+        geom_sf(data = rotate_sf(fl_i, coast = corners[ManagedAreaName == i, Coast[1]]), fill = "beige", color = "navajowhite3", inherit.aes = FALSE) +
+        geom_sf(data = rotate_sf(rcp_i, coast = corners[ManagedAreaName == i, Coast[1]]), color = "grey50", fill = "mediumaquamarine", alpha = 0.4, lwd = 1, inherit.aes = FALSE) +
+        #scale_fill_brewer(palette = "Dark2") +
+        scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), ProgramID])), 
+                           aesthetics = c("color", "fill")) +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))), 
+             fill = "Program ID") +
+        theme(panel.grid.major = element_line(colour = NA),
+              panel.grid.minor = element_line(colour = NA),
+              axis.text = element_blank(),
+              axis.ticks = element_blank(),
+              axis.title = element_blank(),
+              panel.background = element_rect(fill = NA),
+              plot.background = element_rect(colour = NA))
+      ystart <- ifelse(corners[ManagedAreaName == i, Coast[1]] == "Atlantic", attributes(base$layers[[2]]$data$geometry)$bbox$ymax[[1]], attributes(base$layers[[2]]$data$geometry)$bbox$ymin[[1]])
+      xlab <- attributes(base$layers[[2]]$data$geometry)$bbox$xmax[[1]] + (attributes(base$layers[[2]]$data$geometry)$bbox$xmax[[1]] - attributes(base$layers[[2]]$data$geometry)$bbox$xmin[[1]])/50
+      MAcoords <- setDT(as.data.frame(st_coordinates(rcp_i)))
+      maxdist <- max(st_distance(st_as_sf(MAcoords[X == min(X), ], coords = c("X", "Y"), crs = 4326), st_as_sf(MAcoords[Y == max(Y), ], coords = c("X", "Y"), crs = 4326)),
+                     st_distance(st_as_sf(MAcoords[X == max(X), ], coords = c("X", "Y"), crs = 4326), st_as_sf(MAcoords[Y == min(Y), ], coords = c("X", "Y"), crs = 4326)),
+                     st_distance(st_as_sf(MAcoords[X == min(X), ], coords = c("X", "Y"), crs = 4326), st_as_sf(MAcoords[X == max(X), ], coords = c("X", "Y"), crs = 4326)),
+                     st_distance(st_as_sf(MAcoords[Y == min(Y), ], coords = c("X", "Y"), crs = 4326), st_as_sf(MAcoords[Y == max(Y), ], coords = c("X", "Y"), crs = 4326)))
+      area <- st_area(rcp_i)
+      xyratio <- as.numeric((area/maxdist)/maxdist)
+      
+      MApolycoords <- setDT(as.data.frame(st_coordinates(base$layers[[2]]$data)))
+      xmax_y <- MApolycoords[X == max(X), Y]
+      base <- base + annotate("text", x = xlab, y = xmax_y, label = paste0(startyear), hjust = "left")
+      
+      MApolycoords[, Xrnd := round(X, 3)][, ydists := max(Y) - min(Y), by = Xrnd]
+      maxydist <- max(MApolycoords$ydists) + ((max(MApolycoords$ydists)/25) / xyratio) 
+      
+      if(length(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID]))$LocationID) > 0){
         base <- base +
-          geom_sf(data = rotate_sf(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == y, LocationID])),
-                                   y_add = yadd + maxydist, coast = corners[ManagedAreaName == i, Coast[1]]), 
+          geom_sf(data = rotate_sf(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID])),
+                                   coast = corners[ManagedAreaName == i, Coast[1]]),
                   aes(fill = droplevels(as.factor(ProgramID))), shape = 21, color = "black")
       }
       
       if(length(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID]))$LocationID) > 0){
         base <- base +
           geom_sf(data = rotate_sf(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID])),
-                                   y_add = yadd + maxydist, coast = corners[ManagedAreaName == i, Coast[1]]),
+                                   coast = corners[ManagedAreaName == i, Coast[1]]),
                   aes(color = droplevels(as.factor(ProgramID))), shape = 21)
       }
       
-      yadd <- yadd + maxydist
-      startyear <- startyear + 1
-      ystart <- ystart + maxydist
-    }        
-    
-    saveRDS(base, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                    gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
-                                    ifelse(stringr::str_detect(i, "NERR"), "ERR_map_bypr.rds", 
-                                           ifelse(stringr::str_detect(i, "NMS"), "MS_map_bypr.rds", "AP_map_bypr.rds")))))
-    
-    #Save image file versions of the maps
-    # nlayers <- 0
-    # for(k in seq_along(base$layers)){
-    #   class_k <- class(base$layers[[k]])[2]
-    #   if(class_k == 'Layer'){
-    #     nlayers <- nlayers + 1
-    #   } else{
-    #     next
-    #   }
-    # }
-    
-    base <- base +
-      theme(legend.position='right', 
-            legend.justification='top',
-            legend.direction='vertical')
-
-    ggsave(filename = here::here(paste0("SAV/output/Figures/BB/img/SAV_", parameters[column == p, type], "_", 
-                                        gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
-                                        ifelse(stringr::str_detect(i, "NERR"), "ERR_map_bypr.jpg", 
-                                               ifelse(stringr::str_detect(i, "NMS"), "MS_map_bypr.jpg", "AP_map_bypr.jpg")))), 
-           plot = base,
-           width = 6,
-           #height = 8 + nlayers - 5,
-           height = yadd/maxydist,
-           limitsize = FALSE)
-   }  
-    
-    
-      species <- unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])
-      
-      models <- c()
-      
-      #Create data.tables to hold model results for managed area i----------------------------------------------------
-      lmemodresults <- data.table(managed_area = character(),
-                                  species = character(),
-                                  filename = character(),
-                                  effect = character(),
-                                  group = character(),
-                                  term = character(),
-                                  estimate = numeric(),
-                                  std.error = numeric(),
-                                  df = numeric(),
-                                  statistic = numeric(),
-                                  p.value = numeric())
-      
-      olrmodresults <- data.table(managed_area = character(),
-                                  species = character(),
-                                  filename = character(),
-                                  effect = character(),
-                                  component = character(),
-                                  group = character(),
-                                  term = character(),
-                                  estimate = numeric(),
-                                  std.error = numeric(),
-                                  conf.low = numeric(),
-                                  conf.high = numeric())
-      
-      blrmodresults <- data.table(managed_area = character(),
-                                  species = character(),
-                                  filename = character(),
-                                  effect = character(),
-                                  component = character(),
-                                  group = character(),
-                                  term = character(),
-                                  estimate = numeric(),
-                                  std.error = numeric(),
-                                  conf.low = numeric(),
-                                  conf.high = numeric())
-      
-      belrmodresults <- data.table(managed_area = character(),
-                                   species = character(),
-                                   filename = character(),
-                                   effect = character(),
-                                   component = character(),
-                                   group = character(),
-                                   term = character(),
-                                   estimate = numeric(),
-                                   std.error = numeric(),
-                                   conf.low = numeric(),
-                                   conf.high = numeric())
-      
-      #In case model doesn't converge on the first try, attempt each model up to 500 times before moving on
-      for(j in species){
+      for(y in sort(unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year != startyear, Year]))){
+        base <- base +
+          geom_sf(data = rotate_sf(rcp_i, y_add = yadd + maxydist, coast = corners[ManagedAreaName == i, Coast[1]]), 
+                  color = "grey50", fill = "mediumaquamarine", alpha = 0.85, lwd = 1, inherit.aes = FALSE) +
+          annotate("text", x = xlab, y = xmax_y + yadd + maxydist, label = y, hjust = "left")
         
-        cat(paste0("\n  Starting species: ", j, "\n"))
+        if(length(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == y, LocationID]))$LocationID) > 0){
+          base <- base +
+            geom_sf(data = rotate_sf(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == y, LocationID])),
+                                     y_add = yadd + maxydist, coast = corners[ManagedAreaName == i, Coast[1]]), 
+                    aes(fill = droplevels(as.factor(ProgramID))), shape = 21, color = "black")
+        }
         
-        if(paste0(p) %in% c("BB_pct", "PC")){
+        if(length(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID]))$LocationID) > 0){
+          base <- base +
+            geom_sf(data = rotate_sf(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)) & Year == startyear, LocationID])),
+                                     y_add = yadd + maxydist, coast = corners[ManagedAreaName == i, Coast[1]]),
+                    aes(color = droplevels(as.factor(ProgramID))), shape = 21)
+        }
         
-          formula_j <- as.formula(paste0(p, " ~ relyear"))
+        yadd <- yadd + maxydist
+        startyear <- startyear + 1
+        ystart <- ystart + maxydist
+      }        
+      
+      saveRDS(base, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                      gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+                                      ifelse(stringr::str_detect(i, "NERR"), "ERR_map_bypr.rds", 
+                                             ifelse(stringr::str_detect(i, "NMS"), "MS_map_bypr.rds", "AP_map_bypr.rds")))))
+      
+      #Save image file versions of the maps
+      # nlayers <- 0
+      # for(k in seq_along(base$layers)){
+      #   class_k <- class(base$layers[[k]])[2]
+      #   if(class_k == 'Layer'){
+      #     nlayers <- nlayers + 1
+      #   } else{
+      #     next
+      #   }
+      # }
+      
+      base <- base +
+        theme(legend.position='right', 
+              legend.justification='top',
+              legend.direction='vertical')
+      
+      ggsave(filename = here::here(paste0("SAV/output/Figures/BB/img/SAV_", parameters[column == p, type], "_", 
+                                          gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+                                          ifelse(stringr::str_detect(i, "NERR"), "ERR_map_bypr.jpg", 
+                                                 ifelse(stringr::str_detect(i, "NMS"), "MS_map_bypr.jpg", "AP_map_bypr.jpg")))), 
+             plot = base,
+             width = 6,
+             #height = 8 + nlayers - 5,
+             height = yadd/maxydist,
+             limitsize = FALSE)
+    }  
+    
+    
+    species <- unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])
+    
+    models <- c()
+    
+    #Create data.tables to hold model results for managed area i----------------------------------------------------
+    lmemodresults <- data.table(managed_area = character(),
+                                species = character(),
+                                filename = character(),
+                                effect = character(),
+                                group = character(),
+                                term = character(),
+                                estimate = numeric(),
+                                std.error = numeric(),
+                                df = numeric(),
+                                statistic = numeric(),
+                                p.value = numeric())
+    
+    olrmodresults <- data.table(managed_area = character(),
+                                species = character(),
+                                filename = character(),
+                                effect = character(),
+                                component = character(),
+                                group = character(),
+                                term = character(),
+                                estimate = numeric(),
+                                std.error = numeric(),
+                                conf.low = numeric(),
+                                conf.high = numeric())
+    
+    blrmodresults <- data.table(managed_area = character(),
+                                species = character(),
+                                filename = character(),
+                                effect = character(),
+                                component = character(),
+                                group = character(),
+                                term = character(),
+                                estimate = numeric(),
+                                std.error = numeric(),
+                                conf.low = numeric(),
+                                conf.high = numeric())
+    
+    belrmodresults <- data.table(managed_area = character(),
+                                 species = character(),
+                                 filename = character(),
+                                 effect = character(),
+                                 component = character(),
+                                 group = character(),
+                                 term = character(),
+                                 estimate = numeric(),
+                                 std.error = numeric(),
+                                 conf.low = numeric(),
+                                 conf.high = numeric())
+    
+    #In case model doesn't converge on the first try, attempt each model up to 500 times before moving on
+    for(j in species){
+      
+      cat(paste0("\n  Starting species: ", j, "\n"))
+      
+      if(paste0(p) %in% c("BB_pct", "PC")){
+        
+        formula_j <- as.formula(paste0(p, " ~ relyear"))
+        
+        set.seed(seed + n)
+        model_j <- try(lme(formula_j,
+                           random = list(LocationID = ~relyear),
+                           na.action = na.omit, 
+                           data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]), 
+                       silent = TRUE)
+        n <- n + 1
+        x <- 0
+        
+        while(class(model_j) == "try-error" & x < 500){
+          if(x %% 25 == 0) print(paste0("    Model failed, starting attempt ", x, " of 500"))
           
           set.seed(seed + n)
           model_j <- try(lme(formula_j,
                              random = list(LocationID = ~relyear),
                              na.action = na.omit, 
-                             data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]), 
+                             data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]),
                          silent = TRUE)
           n <- n + 1
-          x <- 0
-                              
-          while(class(model_j) == "try-error" & x < 500){
-            if(x %% 25 == 0) print(paste0("    Model failed, starting attempt ", x, " of 500"))
-            
-            set.seed(seed + n)
-            model_j <- try(lme(formula_j,
-                               random = list(LocationID = ~relyear),
-                               na.action = na.omit, 
-                               data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]),
-                           silent = TRUE)
-            n <- n + 1
-            x <- x + 1
-          }
-          
-          #Individual model objects are needed for plotting all species together
-          eval(call("<-", as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                         "_", 
-                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE))), 
-                    model_j))
-          
-          #Save the model object as .rds
-          saveRDS(model_j, here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
-                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
-                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
-                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-                                             ".rds")))
-          
-          print(paste0("  Model object saved: ", 
-                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                       "_", 
-                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
-          
-          #record lme model results------------------------------------------------------
-          if(class(try(eval(as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))), silent = TRUE)) != "try-error"){
-            models <- append(models, as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE))))
-            modj_i <- setDT(broom.mixed::tidy(eval(as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE))))))
-            modj_i[, `:=` (managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                                 ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                            species = j,
-                            filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
-                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
-                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"))]
-            lmemodresults <- rbind(lmemodresults, modj_i)
-      
-          } else{
-            failedmod <- data.table(model = paste0("SAV_", parameters[column == p, type], "_",
-                                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
-                                                   ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
-                                                          ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
-                                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"),
-                                    error = model_j[1])
-            
-            failedmods <- rbind(failedmods, failedmod)
-            
-            modj_i <- data.table(managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                                       ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                                 species = j,
-                                 filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                                   ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
-                                                          ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
-                                                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"),
-                                 effect = NA,
-                                 group = NA,
-                                 term = NA,
-                                 estimate = NA,
-                                 std.error = NA,
-                                 df = NA,
-                                 statistic = NA,
-                                 p.value = NA)
-            lmemodresults <- rbind(lmemodresults, modj_i)
-          }
+          x <- x + 1
         }
         
-        #Indicator == "BB_all"------------------------------------------------------
-        if(paste0(p) == "BB_all") next
+        #Individual model objects are needed for plotting all species together
+        eval(call("<-", as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                       "_", 
+                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE))), 
+                  model_j))
         
-        #Indicator == "PO"--------------------------------------------------------
-        if(paste0(p) == "PO") next #Temporarily blocking the percent occurrence analyses because the binomial model doesn't seem to fit the data very well. Will probably have to figure something else out.
-        # if(paste0(p) == "PO"){
-        #   #I think binomial logistic regression is the best fit for the percent cover data (0/1 outcomes x 100 "trials" for each quad)
-        # 
-        #   #set.seed(seed + n)
-        #   # datlist <- split(POdat[ManagedAreaName == i & analysisunit == j, ], by = "Ind250")
-        # 
-        #   # ppctest <- try(brm_multiple(formula = CoverObs ~ relyear + (1 | LocationID), data = datlist,
-        #   #                    family = bernoulli, prior = set_prior("normal(0,1)", class = "b"), cores = 4,
-        #   #                    control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, warmup = 3000,
-        #   #                    chains = 5, inits = 0, thin = 3, sample_prior = "only",
-        #   #                    file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_",
-        #   #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
-        #   #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
-        #   #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")),
-        #   #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE),
-        #   #                                             ".rds"))),
-        #   #                silent = TRUE)
-        #   
-        #   SAV4[, Grid := as.integer(Grid)]
-        #   SAV4[, CoverObs := as.integer((PO/100)*Grid)]
-        #   #SAV4[, LocMaYrMoQiCi := paste0(LocationID, gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', ManagedAreaName, perl = TRUE), Year, Month, QuadIdentifier, gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', CommonIdentifier, perl = TRUE))]
-        #   
-        #   #Prior doesn't seem to make a difference for some reason; I am still investigating, but left this in here anyway to catch failed models.
-        #   ppctest <- try(brm(formula = CoverObs | trials(Grid) ~ relyear + (1 + relyear | LocationID), 
-        #                      data = SAV4[ManagedAreaName == i & analysisunit == j & ProgramID != 10001, ], 
-        #                      family = binomial, prior = c(set_prior("normal(0, 200)")), cores = 4, chains = 4, 
-        #                      control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, inits = 0, 
-        #                      thin = 3, seed = seed + n, sample_prior = "only", backend = "cmdstanr", threads = threading(2),
-        #                      file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
-        #                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
-        #                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")), 
-        #                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-        #                                               ".rds"))), 
-        #                  silent = TRUE)
-        #   
-        #   n <- n + 1
-        #   
-        #   if(class(ppctest) == "try-error"){
-        #     failedmod <- data.table(model = paste0("SAV_", parameters[column == p, type], "_", 
-        #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
-        #                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")), 
-        #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-        #                                            ".rds"),
-        #                             error = ppctest[1])
-        #     
-        #     failedmods <- rbind(failedmods, failedmod)
-        #     
-        #     blrmodj_i <- data.table(managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-        #                                                   ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-        #                             species = j,
-        #                             filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_blr_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"), paste0("AP_blr_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"))),
-        #                             effect = NA,
-        #                             component = NA,
-        #                             group = NA,
-        #                             term = NA,
-        #                             estimate = NA,
-        #                             std.error = NA,
-        #                             conf.low = NA,
-        #                             conf.high = NA)
-        #     blrmodresults <- rbind(blrmodresults, blrmodj_i)
-        #     
-        #   } else{
-        #     set.seed(seed + n)
-        #     # priorpc_plot <- ppc_dens_overlay(y = datlist[[1]]$CoverObs, 
-        #     #                                  yrep = posterior_predict(ppctest, ndraws=100))
-        #     
-        #     priorpc_plot <- ppc_dens_overlay(y = SAV4[ManagedAreaName == i & analysisunit == j, CoverObs], 
-        #                                      yrep = posterior_predict(ppctest, ndraws=100))
-        #     
-        #     priorpc_plot <- priorpc_plot +
-        #       labs(title = paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                           ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpcplot_", 
-        #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
-        #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
-        #     
-        #     saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
-        #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpcplot_", 
-        #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
-        #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-        #                                             ".rds")))
-        #     n <- n + 1
-        #     
-        #     #binomial logistic regression model
-        #     #originally tried this as a bernoulli model, but the data get very unwieldy so it is better as a binomial
-        #     # tic()
-        #     # plan(multisession, workers = availableCores(omit = 1))
-        #     # brm_i <- brm_multiple(formula =  CoverObs ~ relyear + (1 | LocationID), data = datlist,
-        #     #                       family = bernoulli, prior = c(set_prior("normal(0,1)", class = "b")), 
-        #     #                       cores = 15, control = list(adapt_delta = 0.99, max_treedepth = 10), 
-        #     #                       iter = 9000, warmup = 3000, chains = 5, inits = 0, thin = 3, seed = seed + n,
-        #     #                       file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
-        #     #                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #     #                                                ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
-        #     #                                                       ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_"), 
-        #     #                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-        #     #                                                ".rds")))
-        #     # toc()
-        #     
-        #     # tic()
-        #     # brm_i <- brm(formula =  CoverObs | trials(Grid) ~ relyear + (1 + relyear | LocationID), data = SAV4[ManagedAreaName == i & analysisunit == j, ],
-        #     #              family = binomial, cores = 6, control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, 
-        #     #              warmup = 3000, chains = 6, inits = 0, thin = 3, seed = seed + n, backend = "cmdstanr", threads = threading(2),
-        #     #              file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
-        #     #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #     #                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
-        #     #                                              ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
-        #     #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-        #     #                                       ".rds")))
-        #     # toc()
-        #     
-        #     brm_i <- update(ppctest, cores = 6, iter = 9000, warmup = 3000, chains = 6, seed = seed + n, sample_prior = "no", 
-        #                     file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
-        #                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
-        #                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
-        #                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-        #                                              ".rds")))
-        #     
-        #     n <- n + 1
-        #     
-        #     #diagnostic plots
-        #     diag <- plot(brm_i, plot = FALSE)
-        #     
-        #     #add title
-        #     title <- textGrob(paste0(j, ", ", ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-        #                                              ifelse(stringr::str_detect(i, "NMS), paste0(str_sub(i, 1, -5), "National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))),
-        #                       just = "left",
-        #                       gp=gpar(fontsize=12))
-        #     
-        #     diag[[1]] <- gtable_add_rows(
-        #       diag[[1]],
-        #       heights = grobHeight(title) + unit(5, "mm"),
-        #       pos = 0
-        #     )
-        #     
-        #     diag[[1]] <- gtable_add_grob(
-        #       diag[[1]],
-        #       title,
-        #       clip = "off",
-        #       1, 1, 1, 1)
-        #     
-        #     if(class(try(diag[[2]])) != "try-error"){
-        #       diag[[2]] <- gtable_add_rows(
-        #         diag[[2]],
-        #         heights = grobHeight(title) + unit(5, "mm"),
-        #         pos = 0
-        #       )
-        #     }
-        #     
-        #     #save diagnostic plots
-        #     saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
-        #                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_chainsplots_", 
-        #                                            ifelse(stringr::str_detect(i, "NMS), "MS_chainsplots_", "AP_chainsplots_")), 
-        #                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-        #                                     ".rds")))
-        #     
-        #     #Model results table
-        #     blrmodj_i <- setDT(broom.mixed::tidy(brm_i))
-        #     blrmodj_i[, `:=` (managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), paste0(i, " Aquatic Preserve")),
-        #                       species = j,
-        #                       filename = paste0("SAV_", parameters[column == p, type], "_", 
-        #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                                         ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
-        #                                                ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
-        #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"))]
-        #     blrmodresults <- rbind(blrmodresults, blrmodj_i)
-        #     
-        #     #posterior predictive check
-        #     set.seed(seed + n)
-        #     postpc_plot <- try(pp_check(brm_i))
-        #     x <- 1
-        #     
-        #     while(class(postpc_plot) == "try-error" & x < 1000){
-        #       print(paste0("x = ", x))
-        #       set.seed(seed + n)
-        #       postpc_plot <- try(pp_check(brm_i))
-        #       x <- x + 1
-        #       n <- n + 1
-        #     }
-        #     
-        #     postpc_plot <- postpc_plot +
-        #       labs(title = paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                           ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_postpcplot_", 
-        #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
-        #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
-        #     
-        #     saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
-        #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-        #                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_postpcplot_", 
-        #                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
-        #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
-        #                                            ".rds")))
-        #
-        #     n <- n + 1
-        #     
-        #     #conditional effects plot
-        #     ceplot_i <- plot(conditional_effects(brm_i, categorical = TRUE), plot = FALSE)[[1]]
-        #     
-        #     nyrs <- (max(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1) - (min(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1)
-        #     minyr <- min(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1
-        #     breaks <- c(round(minyr + nyrs/5),
-        #                 round(minyr + 2*(nyrs/5)),
-        #                 round(minyr + 3*(nyrs/5)),
-        #                 round(minyr + 4*(nyrs/5)))
-        #     yrlist <- sort(unique(SAV4$Year))
-        #     
-        #     ceplot_i <- ceplot_i +
-        #       geom_hline(yintercept = 0, color = "grey10") +
-        #       scale_x_continuous(breaks = breaks, labels = c(yrlist[breaks[1]], yrlist[breaks[2]], yrlist[breaks[3]], yrlist[breaks[4]])) +
-        #       theme_bw() +
-        #       labs(title = paste0(j, ", ", ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-        #                                           ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))), 
-        #            color = "Species", 
-        #            y = "Percent occurrence", 
-        #            x = "Year") +
-        #       scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-        #                          aesthetics = c("color", "fill"))
-        #     
-        #     saveRDS(ceplot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_",
-        #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
-        #                                         ifelse(stringr::str_detect(i, "NERR"), "ERR_blrplot_", 
-        #                                                ifelse(stringr::str_detect(i, "NMS"), "MS_blrplot_", "AP_blrplot_")),
-        #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE),
-        #                                         ".rds")))
-        #   }
-        # }
+        #Save the model object as .rds
+        saveRDS(model_j, here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+                                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                           ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
+                                                  ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
+                                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+                                           ".rds")))
         
-        #Indicator == "PA"------------------------------------------------------------
-        if(paste0(p) == "PA") next
-      }
-      
-      #Final results tables and plots--------------------------------------------------------------------
-      if(paste0(p) %in% c("BB_pct", "PC")){
-        #create base plot of seagrass percent cover data over time for managed area i
-        plot_i <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ],
-                         aes(x = relyear, y = eval(p))) +
-                    geom_jitter(aes(fill = analysisunit), shape = 21, size = 2, color = "black", alpha = 0.6) +
-                    labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                        ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-                         x = "Year",
-                         y = parameters[column == p, name],
-                         color = "Species",
-                         fill = "Species") +
-                    scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
-                                       aesthetics = c("color", "fill")) +
-                    scale_x_continuous(breaks = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
-                                                      to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
-                                                      by = 3)),
-                                       labels = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
-                                                      to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
-                                                      by = 3))) +
-                    theme_bw()
+        print(paste0("  Model object saved: ", 
+                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                     "_", 
+                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
         
-        if(length(models) > 0){
-          plot_i <- addfits(models, plot_i, p)
+        #record lme model results------------------------------------------------------
+        if(class(try(eval(as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))), silent = TRUE)) != "try-error"){
+          models <- append(models, as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE))))
+          modj_i <- setDT(broom.mixed::tidy(eval(as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE))))))
+          modj_i[, `:=` (managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                                               ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+                         species = j,
+                         filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                           ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
+                                                  ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
+                                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"))]
+          lmemodresults <- rbind(lmemodresults, modj_i)
+          
+        } else{
+          failedmod <- data.table(model = paste0("SAV_", parameters[column == p, type], "_",
+                                                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+                                                 ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
+                                                        ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
+                                                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"),
+                                  error = model_j[1])
+          
+          failedmods <- rbind(failedmods, failedmod)
+          
+          modj_i <- data.table(managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                                                     ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+                               species = j,
+                               filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                                 ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
+                                                        ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
+                                                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"),
+                               effect = NA,
+                               group = NA,
+                               term = NA,
+                               estimate = NA,
+                               std.error = NA,
+                               df = NA,
+                               statistic = NA,
+                               p.value = NA)
+          lmemodresults <- rbind(lmemodresults, modj_i)
         }
-        
-        #Save the plot object as .rds
-        saveRDS(plot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                           ifelse(stringr::str_detect(i, "NERR"), 
-                                                  paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_trendplot.rds"),
-                                                  ifelse(stringr::str_detect(i, "NMS"), 
-                                                         paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_trendplot.rds"),
-                                                         paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_trendplot.rds"))))))
-        
-        #Save the results table objects as .rds
-        saveRDS(lmemodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
-                                          ifelse(stringr::str_detect(i, "NERR"), 
-                                                 paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_lmeresults.rds"), 
-                                                 ifelse(stringr::str_detect(i, "NMS"),
-                                                        paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_lmeresults.rds"),
-                                                        paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_lmeresults.rds"))))))
       }
       
-      if(paste0(p) == "BB_all"){
-        saveRDS(olrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
-                                                 ifelse(stringr::str_detect(i, "NERR"), 
-                                                        paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_olrresults.rds"),
-                                                        ifelse(stringr::str_detect(i, "NMS"),
-                                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_olrresults.rds"),
-                                                               paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_olrresults.rds"))))))
+      #Indicator == "BB_all"------------------------------------------------------
+      if(paste0(p) == "BB_all") next
+      
+      #Indicator == "PO"--------------------------------------------------------
+      if(paste0(p) == "PO") next #Temporarily blocking the percent occurrence analyses because the binomial model doesn't seem to fit the data very well. Will probably have to figure something else out.
+      # if(paste0(p) == "PO"){
+      #   #I think binomial logistic regression is the best fit for the percent cover data (0/1 outcomes x 100 "trials" for each quad)
+      # 
+      #   #set.seed(seed + n)
+      #   # datlist <- split(POdat[ManagedAreaName == i & analysisunit == j, ], by = "Ind250")
+      # 
+      #   # ppctest <- try(brm_multiple(formula = CoverObs ~ relyear + (1 | LocationID), data = datlist,
+      #   #                    family = bernoulli, prior = set_prior("normal(0,1)", class = "b"), cores = 4,
+      #   #                    control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, warmup = 3000,
+      #   #                    chains = 5, inits = 0, thin = 3, sample_prior = "only",
+      #   #                    file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_",
+      #   #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+      #   #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
+      #   #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")),
+      #   #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE),
+      #   #                                             ".rds"))),
+      #   #                silent = TRUE)
+      #   
+      #   SAV4[, Grid := as.integer(Grid)]
+      #   SAV4[, CoverObs := as.integer((PO/100)*Grid)]
+      #   #SAV4[, LocMaYrMoQiCi := paste0(LocationID, gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', ManagedAreaName, perl = TRUE), Year, Month, QuadIdentifier, gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', CommonIdentifier, perl = TRUE))]
+      #   
+      #   #Prior doesn't seem to make a difference for some reason; I am still investigating, but left this in here anyway to catch failed models.
+      #   ppctest <- try(brm(formula = CoverObs | trials(Grid) ~ relyear + (1 + relyear | LocationID), 
+      #                      data = SAV4[ManagedAreaName == i & analysisunit == j & ProgramID != 10001, ], 
+      #                      family = binomial, prior = c(set_prior("normal(0, 200)")), cores = 4, chains = 4, 
+      #                      control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, inits = 0, 
+      #                      thin = 3, seed = seed + n, sample_prior = "only", backend = "cmdstanr", threads = threading(2),
+      #                      file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+      #                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                                               ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
+      #                                                      ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")), 
+      #                                               gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+      #                                               ".rds"))), 
+      #                  silent = TRUE)
+      #   
+      #   n <- n + 1
+      #   
+      #   if(class(ppctest) == "try-error"){
+      #     failedmod <- data.table(model = paste0("SAV_", parameters[column == p, type], "_", 
+      #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpc_", 
+      #                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpc_", "AP_blr_priorpc_")), 
+      #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+      #                                            ".rds"),
+      #                             error = ppctest[1])
+      #     
+      #     failedmods <- rbind(failedmods, failedmod)
+      #     
+      #     blrmodj_i <- data.table(managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+      #                                                   ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+      #                             species = j,
+      #                             filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), ifelse(stringr::str_detect(i, "NERR"), paste0("ERR_blr_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"), paste0("AP_blr_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"))),
+      #                             effect = NA,
+      #                             component = NA,
+      #                             group = NA,
+      #                             term = NA,
+      #                             estimate = NA,
+      #                             std.error = NA,
+      #                             conf.low = NA,
+      #                             conf.high = NA)
+      #     blrmodresults <- rbind(blrmodresults, blrmodj_i)
+      #     
+      #   } else{
+      #     set.seed(seed + n)
+      #     # priorpc_plot <- ppc_dens_overlay(y = datlist[[1]]$CoverObs, 
+      #     #                                  yrep = posterior_predict(ppctest, ndraws=100))
+      #     
+      #     priorpc_plot <- ppc_dens_overlay(y = SAV4[ManagedAreaName == i & analysisunit == j, CoverObs], 
+      #                                      yrep = posterior_predict(ppctest, ndraws=100))
+      #     
+      #     priorpc_plot <- priorpc_plot +
+      #       labs(title = paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                           ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpcplot_", 
+      #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
+      #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
+      #     
+      #     saveRDS(priorpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+      #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_priorpcplot_", 
+      #                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_blr_priorpcplot_", "AP_blr_priorpcplot_")), 
+      #                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+      #                                             ".rds")))
+      #     n <- n + 1
+      #     
+      #     #binomial logistic regression model
+      #     #originally tried this as a bernoulli model, but the data get very unwieldy so it is better as a binomial
+      #     # tic()
+      #     # plan(multisession, workers = availableCores(omit = 1))
+      #     # brm_i <- brm_multiple(formula =  CoverObs ~ relyear + (1 | LocationID), data = datlist,
+      #     #                       family = bernoulli, prior = c(set_prior("normal(0,1)", class = "b")), 
+      #     #                       cores = 15, control = list(adapt_delta = 0.99, max_treedepth = 10), 
+      #     #                       iter = 9000, warmup = 3000, chains = 5, inits = 0, thin = 3, seed = seed + n,
+      #     #                       file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+      #     #                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #     #                                                ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
+      #     #                                                       ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_"), 
+      #     #                                                gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+      #     #                                                ".rds")))
+      #     # toc()
+      #     
+      #     # tic()
+      #     # brm_i <- brm(formula =  CoverObs | trials(Grid) ~ relyear + (1 + relyear | LocationID), data = SAV4[ManagedAreaName == i & analysisunit == j, ],
+      #     #              family = binomial, cores = 6, control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 9000, 
+      #     #              warmup = 3000, chains = 6, inits = 0, thin = 3, seed = seed + n, backend = "cmdstanr", threads = threading(2),
+      #     #              file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+      #     #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #     #                                       ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
+      #     #                                              ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
+      #     #                                       gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+      #     #                                       ".rds")))
+      #     # toc()
+      #     
+      #     brm_i <- update(ppctest, cores = 6, iter = 9000, warmup = 3000, chains = 6, seed = seed + n, sample_prior = "no", 
+      #                     file = here::here(paste0("SAV/output/models/SAV_", parameters[column == p, type], "_", 
+      #                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
+      #                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
+      #                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+      #                                              ".rds")))
+      #     
+      #     n <- n + 1
+      #     
+      #     #diagnostic plots
+      #     diag <- plot(brm_i, plot = FALSE)
+      #     
+      #     #add title
+      #     title <- textGrob(paste0(j, ", ", ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+      #                                              ifelse(stringr::str_detect(i, "NMS), paste0(str_sub(i, 1, -5), "National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))),
+      #                       just = "left",
+      #                       gp=gpar(fontsize=12))
+      #     
+      #     diag[[1]] <- gtable_add_rows(
+      #       diag[[1]],
+      #       heights = grobHeight(title) + unit(5, "mm"),
+      #       pos = 0
+      #     )
+      #     
+      #     diag[[1]] <- gtable_add_grob(
+      #       diag[[1]],
+      #       title,
+      #       clip = "off",
+      #       1, 1, 1, 1)
+      #     
+      #     if(class(try(diag[[2]])) != "try-error"){
+      #       diag[[2]] <- gtable_add_rows(
+      #         diag[[2]],
+      #         heights = grobHeight(title) + unit(5, "mm"),
+      #         pos = 0
+      #       )
+      #     }
+      #     
+      #     #save diagnostic plots
+      #     saveRDS(diag, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+      #                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                                     ifelse(stringr::str_detect(i, "NERR"), "ERR_chainsplots_", 
+      #                                            ifelse(stringr::str_detect(i, "NMS), "MS_chainsplots_", "AP_chainsplots_")), 
+      #                                     gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+      #                                     ".rds")))
+      #     
+      #     #Model results table
+      #     blrmodj_i <- setDT(broom.mixed::tidy(brm_i))
+      #     blrmodj_i[, `:=` (managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), paste0(i, " Aquatic Preserve")),
+      #                       species = j,
+      #                       filename = paste0("SAV_", parameters[column == p, type], "_", 
+      #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                                         ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_", 
+      #                                                ifelse(stringr::str_detect(i, "NMS"), "MS_blr_", "AP_blr_")), 
+      #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), ".rds"))]
+      #     blrmodresults <- rbind(blrmodresults, blrmodj_i)
+      #     
+      #     #posterior predictive check
+      #     set.seed(seed + n)
+      #     postpc_plot <- try(pp_check(brm_i))
+      #     x <- 1
+      #     
+      #     while(class(postpc_plot) == "try-error" & x < 1000){
+      #       print(paste0("x = ", x))
+      #       set.seed(seed + n)
+      #       postpc_plot <- try(pp_check(brm_i))
+      #       x <- x + 1
+      #       n <- n + 1
+      #     }
+      #     
+      #     postpc_plot <- postpc_plot +
+      #       labs(title = paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                           ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_postpcplot_", 
+      #                                  ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
+      #                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
+      #     
+      #     saveRDS(postpc_plot, here::here(paste0("diagnostics/SAV_", parameters[column == p, type], "_", 
+      #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+      #                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_blr_postpcplot_", 
+      #                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_blr_postpcplot_", "AP_blr_postpcplot_")), 
+      #                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE), 
+      #                                            ".rds")))
+      #
+      #     n <- n + 1
+      #     
+      #     #conditional effects plot
+      #     ceplot_i <- plot(conditional_effects(brm_i, categorical = TRUE), plot = FALSE)[[1]]
+      #     
+      #     nyrs <- (max(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1) - (min(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1)
+      #     minyr <- min(SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, relyear]) + 1
+      #     breaks <- c(round(minyr + nyrs/5),
+      #                 round(minyr + 2*(nyrs/5)),
+      #                 round(minyr + 3*(nyrs/5)),
+      #                 round(minyr + 4*(nyrs/5)))
+      #     yrlist <- sort(unique(SAV4$Year))
+      #     
+      #     ceplot_i <- ceplot_i +
+      #       geom_hline(yintercept = 0, color = "grey10") +
+      #       scale_x_continuous(breaks = breaks, labels = c(yrlist[breaks[1]], yrlist[breaks[2]], yrlist[breaks[3]], yrlist[breaks[4]])) +
+      #       theme_bw() +
+      #       labs(title = paste0(j, ", ", ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+      #                                           ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))), 
+      #            color = "Species", 
+      #            y = "Percent occurrence", 
+      #            x = "Year") +
+      #       scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+      #                          aesthetics = c("color", "fill"))
+      #     
+      #     saveRDS(ceplot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_",
+      #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+      #                                         ifelse(stringr::str_detect(i, "NERR"), "ERR_blrplot_", 
+      #                                                ifelse(stringr::str_detect(i, "NMS"), "MS_blrplot_", "AP_blrplot_")),
+      #                                         gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE),
+      #                                         ".rds")))
+      #   }
+      # }
+      
+      #Indicator == "PA"------------------------------------------------------------
+      if(paste0(p) == "PA") next
+    }
+    
+    #Final results tables and plots--------------------------------------------------------------------
+    if(paste0(p) %in% c("BB_pct", "PC")){
+      #create base plot of seagrass percent cover data over time for managed area i
+      plot_i <- ggplot(data = SAV4[ManagedAreaName == i & !is.na(eval(p)), ],
+                       aes(x = relyear, y = eval(p))) +
+        geom_jitter(aes(fill = analysisunit), shape = 21,
+                    size = 3, color = "#333333", alpha = 0.9) +
+        labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                            ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+             x = "Year",
+             y = parameters[column == p, name],
+             color = "Species",
+             fill = "Species") +
+        plot_theme + 
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(eval(p)), analysisunit])), 
+                           aesthetics = c("color", "fill")) +
+        scale_x_continuous(breaks = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
+                                          to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
+                                          by = 3)),
+                           labels = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
+                                          to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
+                                          by = 3))) +
+        theme_bw()
+      
+      if(length(models) > 0){
+        plot_i <- addfits(models, plot_i, p)
       }
       
-      if(paste0(p) == "PO"){
-        saveRDS(blrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
-                                                 ifelse(stringr::str_detect(i, "NERR"), 
-                                                        paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_blrresults.rds"), 
-                                                        ifelse(stringr::str_detect(i, "NMS"),
-                                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_blrresults.rds"),
-                                                               paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_blrresults.rds"))))))
+      #Save the plot object as .rds
+      saveRDS(plot_i, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                        ifelse(stringr::str_detect(i, "NERR"), 
+                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_trendplot.rds"),
+                                               ifelse(stringr::str_detect(i, "NMS"), 
+                                                      paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_trendplot.rds"),
+                                                      paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_trendplot.rds"))))))
+      
+      #Save the results table objects as .rds
+      saveRDS(lmemodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
+                                               ifelse(stringr::str_detect(i, "NERR"), 
+                                                      paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_lmeresults.rds"), 
+                                                      ifelse(stringr::str_detect(i, "NMS"),
+                                                             paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_lmeresults.rds"),
+                                                             paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_lmeresults.rds"))))))
+    }
+    
+    if(paste0(p) == "BB_all"){
+      saveRDS(olrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
+                                               ifelse(stringr::str_detect(i, "NERR"), 
+                                                      paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_olrresults.rds"),
+                                                      ifelse(stringr::str_detect(i, "NMS"),
+                                                             paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_olrresults.rds"),
+                                                             paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_olrresults.rds"))))))
+    }
+    
+    if(paste0(p) == "PO"){
+      saveRDS(blrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
+                                               ifelse(stringr::str_detect(i, "NERR"), 
+                                                      paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_blrresults.rds"), 
+                                                      ifelse(stringr::str_detect(i, "NMS"),
+                                                             paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_blrresults.rds"),
+                                                             paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_blrresults.rds"))))))
+    }
+    
+    if(paste0(p) == "PA"){
+      #Bar chart of proportions by analysisunit
+      breaks <- c(seq(min(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
+                      max(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
+                      by = 2))
+      yrlist <- sort(unique(SAV4$Year))
+      
+      labels <- c()
+      for(b in breaks){
+        labels <- append(labels, yrlist[b + 1])
       }
       
-      if(paste0(p) == "PA"){
-        #Bar chart of proportions by analysisunit
-        breaks <- c(seq(min(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
-                        max(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
-                        by = 2))
-        yrlist <- sort(unique(SAV4$Year))
-        
-        labels <- c()
-        for(b in breaks){
-          labels <- append(labels, yrlist[b + 1])
-        }
-        
-        barplot_sp <- ggplot(data = props[ManagedAreaName == i, ], aes(x = relyear, y = sp_prop, fill = analysisunit)) +
-          geom_col(color = "grey20") +
-          scale_x_continuous(breaks = breaks, labels = labels) +
-          theme_bw() +
-          labs(title = paste0(ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                     ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))), 
-               fill = "Species", 
-               x = "Year", 
-               y = "Proportion") +
-          theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(props[ManagedAreaName == i, analysisunit])), 
-                             aesthetics = c("color", "fill"))
-        
-        saveRDS(barplot_sp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                              gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                              ifelse(stringr::str_detect(i, "NERR"), "ERR_barplot_sp", 
-                                                     ifelse(stringr::str_detect(i, "NMS"), "MS_barplot_sp", "AP_barplot_sp")), 
-                                              ".rds")))
-        
-        saveRDS(belrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
-                                                 ifelse(stringr::str_detect(i, "NERR"), 
-                                                        paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_belrresults.rds"),
-                                                        ifelse(stringr::str_detect(i, "NMS"),
-                                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_belrresults.rds"),
-                                                               paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_belrresults.rds"))))))
-      }
-        
-      print(paste0("  Plot objects and results tables saved: ", 
-                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                   "_", 
-                   gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
+      barplot_sp <- ggplot(data = props[ManagedAreaName == i, ], aes(x = relyear, y = sp_prop, fill = analysisunit)) +
+        geom_col(color = "grey20") +
+        scale_x_continuous(breaks = breaks, labels = labels) +
+        plot_theme +
+        labs(title = paste0(ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
+                                   ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))), 
+             fill = "Species", 
+             x = "Year", 
+             y = "Proportion") +
+        theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(props[ManagedAreaName == i, analysisunit])), 
+                           aesthetics = c("color", "fill"))
+      
+      saveRDS(barplot_sp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
+                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_barplot_sp", 
+                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_barplot_sp", "AP_barplot_sp")), 
+                                            ".rds")))
+      
+      saveRDS(belrmodresults, here::here(paste0("SAV/output/tables/SAV_", parameters[column == p, type], "_", 
+                                                ifelse(stringr::str_detect(i, "NERR"), 
+                                                       paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_belrresults.rds"),
+                                                       ifelse(stringr::str_detect(i, "NMS"),
+                                                              paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_belrresults.rds"),
+                                                              paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_belrresults.rds"))))))
+    }
+    
+    print(paste0("  Plot objects and results tables saved: ", 
+                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
+                 "_", 
+                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', j, perl = TRUE)))
   }
 }
 
@@ -1389,13 +1439,14 @@ for(m in malist){
       }
       
       plot_m2 <- readRDS(here::here(paste0("SAV/output/Figures/BB/", plot_m)))
-      plot_m2 <- plot_m2 + theme(plot.title = element_text(face="bold", hjust = 0.5))
+      plot_m2 <- plot_m2 +
+        plot_theme
       
       png(here::here(paste0("SAV/output/website/images/trendplots/", str_sub(plot_m, 1, -5), ".png")),
-           width = 8,
-           height = 4,
-           units = "in",
-           res = 100)
+          width = 8,
+          height = 4,
+          units = "in",
+          res = 300)
       # jpeg(here::here(paste0("SAV/output/Figures/BB/img/", str_sub(plot_m, 1, -5), ".jpg")),
       #      width = 10,
       #      height = 6,
