@@ -1,0 +1,1297 @@
+AreaID,ManagedAreaName,ParameterName,RelativeDepth,ActivityType,SufficientData,N_Data,N_Years,EarliestYear,LatestYear,Median,Independent,tau,p,SennSlope,SennIntercept,Trend
+1,Alligator Harbor Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,678,13,2001,2019,5,TRUE,0.1885,0,0.153846153846154,-339.1,1
+1,Alligator Harbor Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+1,Alligator Harbor Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,284,15,2001,2021,8,TRUE,0.0505,0.1398,0,-64.5,0
+1,Alligator Harbor Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,2492,25,1998,2022,7.1,TRUE,-0.151,0,-0.0466666666666667,133.826666666667,-1
+1,Alligator Harbor Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,4777,25,1998,2022,7.3,TRUE,-0.1687,0,-0.05,135.46,-1
+1,Alligator Harbor Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,29,7,2016,2022,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,96,8,2013,2022,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Salinity,Bottom,Field,TRUE,2471,23,1998,2022,31.4,TRUE,0.0238,0.5773,0,20.8722222222221,0
+1,Alligator Harbor Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Salinity,Surface,Field,TRUE,5978,26,1996,2022,31,TRUE,-0.0586,0,-0.0400000000000001,111.171375,-1
+1,Alligator Harbor Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,2147,25,1998,2022,1.15825408,TRUE,-0.0357,0.0328,-0.0045912142857143,8.79107987999999,-1
+1,Alligator Harbor Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,87,10,2001,2016,0.4,TRUE,-0.0965,0.0932,-0.014,16.9967857142857,0
+1,Alligator Harbor Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1248,17,2001,2022,0.00073,TRUE,-0.0261,0.2659,-0.000002,0.00461041666666667,0
+1,Alligator Harbor Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,48,10,2001,2021,0.000036,TRUE,0.1022,0.5855,0.000000692307692307692,-0.0104575277777778,0
+1,Alligator Harbor Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,807,17,2001,2022,0.000031,TRUE,0.2947,0,0.00000166666666666667,-0.00340129195804196,1
+1,Alligator Harbor Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+1,Alligator Harbor Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,16,4,2019,2022,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Turbidity,Surface,Field,FALSE,84,2,2021,2022,,,,,,,
+1,Alligator Harbor Aquatic Preserve,Turbidity,Surface,Sample,TRUE,3540,18,1998,2022,5.3,TRUE,-0.1436,0,-0.15,264.0975,-1
+1,Alligator Harbor Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,2822,25,1998,2022,26.1,TRUE,-0.0349,0.5124,0,40.1724999999998,0
+1,Alligator Harbor Aquatic Preserve,Water Temperature,Surface,Field,TRUE,5844,26,1996,2022,25.8,TRUE,-0.0348,0.019,-0.00909090909090922,24.1833333333333,-1
+1,Alligator Harbor Aquatic Preserve,pH,Bottom,Field,TRUE,73,12,2005,2022,8.1,TRUE,-0.5452,0,-0.0227272727272726,88.8400000000001,-1
+1,Alligator Harbor Aquatic Preserve,pH,Surface,Field,TRUE,4228,25,1998,2022,8.1,TRUE,-0.2601,0,-0.0195238095238095,42.5235294117646,-1
+2,Apalachicola Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,2843,17,2002,2019,11,TRUE,-0.0178,0.0527,-0.0518333333333334,127.296,0
+2,Apalachicola Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,16,2,2007,2008,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,11652,30,1992,2022,7,TRUE,-0.145,0,-0.051111111111111,120.893461538462,-1
+2,Apalachicola Bay Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,30900,31,1992,2022,7.7,TRUE,-0.0743,0,-0.0250000000000001,64.3568627450981,-1
+2,Apalachicola Bay Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,2202,23,2000,2022,90.1,TRUE,0.0992,0,0.453846153846154,-857.540384615385,1
+2,Apalachicola Bay Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,3682,23,2000,2022,94.15,TRUE,0.1434,0,0.508333333333334,-848.780844155844,1
+2,Apalachicola Bay Aquatic Preserve,Salinity,Bottom,Field,TRUE,14909,30,1992,2022,20.2,TRUE,0.0574,0,0.109090909090909,-208.728214285714,1
+2,Apalachicola Bay Aquatic Preserve,Salinity,Bottom,Sample,FALSE,81,3,2000,2002,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,Salinity,Surface,Field,TRUE,35550,34,1964,2022,13.4,TRUE,-0.0029,0.8525,0,-8.42500000000005,0
+2,Apalachicola Bay Aquatic Preserve,Salinity,Surface,Sample,FALSE,285,4,2000,2003,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,22457,28,1992,2022,0.8,TRUE,-0.0002,0.6016,0,0.8,0
+2,Apalachicola Bay Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,87,9,2000,2020,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1870,21,1992,2022,0.605,TRUE,-0.013,0.6829,-0.000294117647058824,6.16702941176471,0
+2,Apalachicola Bay Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,79,4,2000,2020,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1900,21,1992,2022,0.031,TRUE,-0.057,0.0001,-0.000249999999999999,0.265369047619048,-1
+2,Apalachicola Bay Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,2,2,2020,2022,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,1523,13,2001,2022,9,TRUE,-0.0322,0.048,0,262.5,-1
+2,Apalachicola Bay Aquatic Preserve,Turbidity,Bottom,Field,TRUE,388,12,2000,2020,7.31,TRUE,-0.0406,0.5484,-0.0277777777777778,260.15,0
+2,Apalachicola Bay Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,2,2,2020,2022,,,,,,,
+2,Apalachicola Bay Aquatic Preserve,Turbidity,Surface,Field,TRUE,3368,21,2000,2020,6.3,TRUE,-0.1334,0,-0.166666666666667,294.747991071429,-1
+2,Apalachicola Bay Aquatic Preserve,Turbidity,Surface,Sample,TRUE,15504,24,1992,2022,5.6,TRUE,0.0155,0.0047,0.0111111111111111,-31.315,1
+2,Apalachicola Bay Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,14960,30,1992,2022,24.5,TRUE,0.0484,0,0.0166666666666663,-28.2607843137258,1
+2,Apalachicola Bay Aquatic Preserve,Water Temperature,Surface,Field,TRUE,36178,34,1964,2022,23.8,TRUE,0.0581,0,0.027272727272727,-29.9450000000001,1
+2,Apalachicola Bay Aquatic Preserve,pH,Bottom,Field,TRUE,807,21,1992,2022,8,TRUE,-0.012,0.6304,0,12.6706842105263,0
+2,Apalachicola Bay Aquatic Preserve,pH,Surface,Field,TRUE,29954,32,1964,2022,8,TRUE,-0.0626,0,0,8.05,-1
+3,Apalachicola National Estuarine Research Reserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,3429,19,2000,2019,9.8,TRUE,0.0125,0.5574,0,-14.4,0
+3,Apalachicola National Estuarine Research Reserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,100,8,2007,2022,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,TRUE,16530,30,1992,2022,7.2,TRUE,-0.1466,0,-0.0500000000000001,120.924375,-1
+3,Apalachicola National Estuarine Research Reserve,Dissolved Oxygen,Surface,Field,TRUE,46640,31,1992,2022,7.75,TRUE,-0.0736,0,-0.025,60.2482142857142,-1
+3,Apalachicola National Estuarine Research Reserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,2672,23,2000,2022,89.5,TRUE,0.0485,0.0001,0.200000000000003,-357.185,1
+3,Apalachicola National Estuarine Research Reserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,4642,23,2000,2022,92.8,TRUE,0.0966,0,0.350000000000001,-539.158333333334,1
+3,Apalachicola National Estuarine Research Reserve,Salinity,Bottom,Field,TRUE,21438,30,1992,2022,20.6,TRUE,0.0338,0,0.0799999999999997,-126.976923076923,1
+3,Apalachicola National Estuarine Research Reserve,Salinity,Bottom,Sample,FALSE,103,3,2000,2002,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,Salinity,Surface,Field,TRUE,53373,34,1964,2022,14.7,TRUE,-0.0275,0,-0.025,75.0821637426903,-1
+3,Apalachicola National Estuarine Research Reserve,Salinity,Surface,Sample,FALSE,368,4,2000,2003,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,Secchi Depth,Surface,Field,TRUE,37990,28,1992,2022,0.8,TRUE,-0.0149,0.0002,0,0.9,-1
+3,Apalachicola National Estuarine Research Reserve,Total Nitrogen,Bottom,Sample,FALSE,119,9,2000,2020,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,Total Nitrogen,Surface,Sample,TRUE,2608,25,1992,2022,0.624,TRUE,-0.0049,0.8624,0,6.56720588235291,0
+3,Apalachicola National Estuarine Research Reserve,Total Phosphorus,Bottom,Sample,FALSE,103,6,1999,2020,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,Total Phosphorus,Surface,Sample,TRUE,2663,25,1992,2022,0.031,TRUE,-0.0477,0.0002,-0.000166666666666666,0.102678571428571,-1
+3,Apalachicola National Estuarine Research Reserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,4,4,1999,2022,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,2216,24,1999,2022,10,TRUE,-0.1242,0,-0.294117647058824,748.133333333333,-1
+3,Apalachicola National Estuarine Research Reserve,Turbidity,Bottom,Field,TRUE,441,12,2000,2020,7.1,TRUE,-0.0192,0.857,-0.00588235294117648,65.4486111111111,0
+3,Apalachicola National Estuarine Research Reserve,Turbidity,Bottom,Sample,FALSE,4,4,1999,2022,,,,,,,
+3,Apalachicola National Estuarine Research Reserve,Turbidity,Surface,Field,TRUE,4129,21,2000,2020,6.2,TRUE,-0.0985,0,-0.124666666666667,214.568084415584,-1
+3,Apalachicola National Estuarine Research Reserve,Turbidity,Surface,Sample,TRUE,22861,29,1992,2022,5.1,TRUE,0.0494,0,0.0384615384615385,-72.175,1
+3,Apalachicola National Estuarine Research Reserve,Water Temperature,Bottom,Field,TRUE,21376,30,1992,2022,22.9,TRUE,0.0338,0,0.0149999999999999,5.29285714285719,1
+3,Apalachicola National Estuarine Research Reserve,Water Temperature,Surface,Field,TRUE,54386,34,1964,2022,23.2,TRUE,0.0561,0,0.0272727272727273,-40.0260416666667,1
+3,Apalachicola National Estuarine Research Reserve,pH,Bottom,Field,TRUE,1169,27,1992,2022,7.93,TRUE,-0.006,0.8969,0,17.1057900359874,0
+3,Apalachicola National Estuarine Research Reserve,pH,Surface,Field,TRUE,45869,32,1964,2022,8,TRUE,-0.0743,0,-0.00230769230769233,8.05,-1
+4,Banana River Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+4,Banana River Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,40,7,1999,2017,,,,,,,
+4,Banana River Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,43,6,2016,2021,,,,,,,
+4,Banana River Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,134,6,2016,2021,,,,,,,
+4,Banana River Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,5819,31,1991,2021,6.1,TRUE,-0.2145,0,-0.108571428571429,258.102222222222,-1
+4,Banana River Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,21877,32,1990,2021,6.5,TRUE,-0.1044,0,-0.0454545454545455,96.1706578947368,-1
+4,Banana River Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,155,10,2012,2021,90.3,TRUE,0.0939,0.0749,1.05,-1664.77583333333,0
+4,Banana River Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,6638,31,1991,2021,44,TRUE,0.2121,0,0.275,-528.937435185185,1
+4,Banana River Aquatic Preserve,Salinity,Bottom,Field,TRUE,6175,31,1991,2021,19.3,TRUE,0.3955,0,0.6,-1122.22332535885,1
+4,Banana River Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+4,Banana River Aquatic Preserve,Salinity,Surface,Field,TRUE,23220,32,1990,2021,19.9,TRUE,0.3486,0,0.5,-936.933991228071,1
+4,Banana River Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+4,Banana River Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,6476,31,1991,2021,0.8,TRUE,-0.0286,0,0,0.8,-1
+4,Banana River Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,23,2,2020,2021,,,,,,,
+4,Banana River Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1655,25,1997,2021,1.2158,TRUE,-0.2922,0,-0.0212666666666667,44.9366107142857,-1
+4,Banana River Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,63,5,2017,2021,,,,,,,
+4,Banana River Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,3414,25,1997,2021,0.0362,TRUE,0.1313,0,0.000781818181818181,-1.41066561919505,1
+4,Banana River Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,26,2,2020,2021,,,,,,,
+4,Banana River Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,111,6,2010,2021,,,,,,,
+4,Banana River Aquatic Preserve,Turbidity,Bottom,Field,TRUE,70,11,2003,2019,4.98,TRUE,-0.3047,0.0004,-0.304134615384615,602.708977272727,-1
+4,Banana River Aquatic Preserve,Turbidity,Bottom,Sample,TRUE,36,10,1996,2021,2.035505,TRUE,0.3021,0.1544,0.116666666666667,-267.908945,0
+4,Banana River Aquatic Preserve,Turbidity,Surface,Field,TRUE,445,17,2003,2019,4.21,TRUE,-0.0065,0.9832,-0.000416666666666676,64.7954545454545,0
+4,Banana River Aquatic Preserve,Turbidity,Surface,Sample,TRUE,12853,25,1996,2021,3.2,TRUE,-0.1118,0,-0.0571428571428571,112.03051,-1
+4,Banana River Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,6519,31,1991,2021,25.4,TRUE,0.0365,0,0.0153846153846153,-34.4141056149732,1
+4,Banana River Aquatic Preserve,Water Temperature,Surface,Field,TRUE,23394,32,1990,2021,25.4,TRUE,0.0311,0,0.0136363636363637,20.05,1
+4,Banana River Aquatic Preserve,pH,Bottom,Field,TRUE,864,27,1995,2021,8.22,TRUE,0.0637,0.0042,0.00428571428571428,-0.470000000000133,1
+4,Banana River Aquatic Preserve,pH,Surface,Field,TRUE,20667,32,1990,2021,8.2,TRUE,-0.076,0,-0.00190476190476186,15.0308686111111,-1
+5,Big Bend Seagrasses Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+5,Big Bend Seagrasses Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,3651,30,1990,2019,1,TRUE,-0.068,0,0,1,-1
+5,Big Bend Seagrasses Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,TRUE,112,15,2002,2021,16,TRUE,0.2126,0.0024,1.8392531372549,-3048.225,2
+5,Big Bend Seagrasses Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,1518,22,2001,2022,14,TRUE,0.3501,0,1,-2526.36785714286,1
+5,Big Bend Seagrasses Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,33163,37,1982,2021,6.6,TRUE,-0.1013,0,-0.03,60.04,-1
+5,Big Bend Seagrasses Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,92511,38,1982,2022,6.8,TRUE,-0.0581,0,-0.0190909090909091,45.2166666666667,-1
+5,Big Bend Seagrasses Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,175,7,2011,2021,,,,,,,
+5,Big Bend Seagrasses Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,599,18,1999,2022,74,TRUE,0.0221,0.7697,0.05,-569.980128205128,0
+5,Big Bend Seagrasses Aquatic Preserve,Salinity,Bottom,Field,TRUE,34241,36,1982,2021,23.2,TRUE,0.086,0,0.11,-187.9,1
+5,Big Bend Seagrasses Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+5,Big Bend Seagrasses Aquatic Preserve,Salinity,Surface,Field,TRUE,95882,39,1964,2021,22.6,TRUE,0.0322,0,0.0499999999999999,-91.4750000000001,1
+5,Big Bend Seagrasses Aquatic Preserve,Salinity,Surface,Sample,FALSE,1,1,2000,2000,,,,,,,
+5,Big Bend Seagrasses Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,47242,33,1986,2021,0.9,TRUE,0.015,0,0,0.9,-1
+5,Big Bend Seagrasses Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,18,7,1995,2021,,,,,,,
+5,Big Bend Seagrasses Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,7009,32,1990,2021,0.45,TRUE,0.115,0,0.00692307692307693,-14.4404306220096,1
+5,Big Bend Seagrasses Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,116,19,1999,2021,0.0205,TRUE,0.3668,0,0.00155316666666667,-3.79690029656863,1
+5,Big Bend Seagrasses Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,5100,30,1992,2021,0.028,TRUE,0.1886,0,0.000881,-2.051667,1
+5,Big Bend Seagrasses Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,TRUE,30,10,1999,2021,3,TRUE,-0.3448,0.0253,-0.105263157894737,174.321207430341,-1
+5,Big Bend Seagrasses Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,1578,24,1998,2021,4,TRUE,-0.2597,0,-0.0588235294117647,119.006535947712,-1
+5,Big Bend Seagrasses Aquatic Preserve,Turbidity,Bottom,Field,FALSE,9,3,2018,2020,,,,,,,
+5,Big Bend Seagrasses Aquatic Preserve,Turbidity,Bottom,Sample,TRUE,89,15,1993,2021,2,TRUE,-0.359,0.0001,-0.0651878027950311,121.977083333333,-1
+5,Big Bend Seagrasses Aquatic Preserve,Turbidity,Surface,Field,FALSE,170,9,2005,2021,,,,,,,
+5,Big Bend Seagrasses Aquatic Preserve,Turbidity,Surface,Sample,TRUE,41216,32,1990,2021,3.5,TRUE,0.0098,0.0008,0,-4.40714285714283,-1
+5,Big Bend Seagrasses Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,33576,37,1982,2021,24.3,TRUE,0.0835,0,0.0357142857142857,-24.527142857143,1
+5,Big Bend Seagrasses Aquatic Preserve,Water Temperature,Surface,Field,TRUE,97148,41,1964,2022,23.7,TRUE,0.0808,0,0.0399999999999999,-35.4100000000004,1
+5,Big Bend Seagrasses Aquatic Preserve,pH,Bottom,Field,TRUE,1140,32,1990,2021,7.44,TRUE,0.1547,0,0.0145833333333333,-22.7221969696969,1
+5,Big Bend Seagrasses Aquatic Preserve,pH,Surface,Field,TRUE,80689,35,1964,2022,8,TRUE,-0.0443,0,0,8,-1
+6,Biscayne Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,5,2,2007,2019,,,,,,,
+6,Biscayne Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,452,16,2000,2020,1.315,TRUE,0.0485,0.1212,0.01,24.4306060606061,0
+6,Biscayne Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,4,2,2001,2004,,,,,,,
+6,Biscayne Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,36,5,2001,2020,,,,,,,
+6,Biscayne Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,1888,26,1993,2020,6.31,TRUE,0.0082,0.7573,0,8.5883333333333,0
+6,Biscayne Bay Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,5416,34,1970,2021,5.99,TRUE,-0.0328,0.0001,-0.00540540540540541,12.7933928571429,-1
+6,Biscayne Bay Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,172,3,1995,2020,,,,,,,
+6,Biscayne Bay Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,1133,11,1995,2021,90.1,TRUE,0.1199,0,2.72083333333333,455.499999999997,1
+6,Biscayne Bay Aquatic Preserve,Salinity,Bottom,Field,TRUE,3460,26,1993,2021,33.5,TRUE,0.04,0.2048,0.0181818181818178,-51.6787499999994,0
+6,Biscayne Bay Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+6,Biscayne Bay Aquatic Preserve,Salinity,Surface,Field,TRUE,6270,29,1993,2021,31.5,TRUE,-0.067,0,-0.0545454545454547,204.371,-1
+6,Biscayne Bay Aquatic Preserve,Salinity,Surface,Sample,FALSE,128,3,2010,2016,,,,,,,
+6,Biscayne Bay Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,665,17,2000,2020,1.52401853,TRUE,-0.0698,0,-0.0233333333333333,1.31869492328947,-1
+6,Biscayne Bay Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,622,11,2000,2021,0.404,TRUE,-0.2443,0,-0.031,83.956375,-1
+6,Biscayne Bay Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,2512,28,1994,2021,0.415,TRUE,0.0658,0,0.00662142857142857,-14.0716363636364,1
+6,Biscayne Bay Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,347,4,2018,2021,,,,,,,
+6,Biscayne Bay Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,2273,21,1970,2021,0.023,TRUE,0.1524,0,0.0006,-1.09027495035461,1
+6,Biscayne Bay Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,338,3,2019,2021,,,,,,,
+6,Biscayne Bay Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,583,10,2009,2021,2,TRUE,0.202,0,2,-2900.75,2
+6,Biscayne Bay Aquatic Preserve,Turbidity,Bottom,Field,FALSE,21,3,2016,2018,,,,,,,
+6,Biscayne Bay Aquatic Preserve,Turbidity,Bottom,Sample,TRUE,65,12,1994,2016,0.6,TRUE,-0.0977,0.2742,-0.00354066985645933,4.72773611111111,0
+6,Biscayne Bay Aquatic Preserve,Turbidity,Surface,Field,TRUE,2610,14,1982,2020,2.575,TRUE,0.0097,0,0.07,699.7,1
+6,Biscayne Bay Aquatic Preserve,Turbidity,Surface,Sample,TRUE,8583,26,1994,2021,0.8,TRUE,-0.1249,0,-0.0166666666666667,35.0885714285714,-1
+6,Biscayne Bay Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,3402,25,1993,2020,27.2,TRUE,0.1104,0,0.0566666666666666,-94.4571428571427,1
+6,Biscayne Bay Aquatic Preserve,Water Temperature,Surface,Field,TRUE,7016,35,1969,2021,27.17,TRUE,0.1315,0,0.0335294117647059,-40.1056785714284,1
+6,Biscayne Bay Aquatic Preserve,pH,Bottom,Field,TRUE,261,21,1970,2020,8.12,TRUE,-0.3373,0,-0.0933333333333337,11.4517850970348,-1
+6,Biscayne Bay Aquatic Preserve,pH,Surface,Field,TRUE,3540,26,1970,2021,7.95,TRUE,-0.0137,0.0768,-0.00124999999999975,9.36999999999997,0
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Dissolved Oxygen,Bottom,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Dissolved Oxygen,Surface,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Salinity,Bottom,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Salinity,Surface,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Total Nitrogen,Surface,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Total Phosphorus,Surface,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Turbidity,Surface,Sample,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Water Temperature,Surface,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,pH,Bottom,Field,FALSE,0,0,,,,,,,,,
+7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,pH,Surface,Field,FALSE,0,0,,,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,35,7,2000,2016,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,6288,26,1995,2021,5.76,TRUE,-0.0459,0.0002,-0.0275,11.7960294117647,-1
+8,Boca Ciega Bay Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,16687,34,1974,2021,6.7,TRUE,0.0305,0,0.0100000000000001,3.03288461538454,1
+8,Boca Ciega Bay Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,3797,27,1992,2021,87.1,TRUE,-0.0654,0,-1.292,3289.32500000001,-1
+8,Boca Ciega Bay Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,2682,27,1992,2021,93.5,TRUE,0.0407,0,0.647058823529412,405.924999999998,1
+8,Boca Ciega Bay Aquatic Preserve,Salinity,Bottom,Field,TRUE,4214,27,1992,2021,31.9,TRUE,0.0335,0,-0.052857142857143,-61.2658333333341,-1
+8,Boca Ciega Bay Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Salinity,Surface,Field,TRUE,16366,55,1954,2021,32.7,TRUE,0.0271,0.0006,0.00600000000000023,7.54600000000028,1
+8,Boca Ciega Bay Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,7628,26,1994,2021,1,TRUE,0.1011,0,0.0117647058823529,-19,1
+8,Boca Ciega Bay Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,2,2,1999,2001,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1795,22,1999,2021,0.59,TRUE,0.2457,0,0.0133333333333333,-22.8285317460317,1
+8,Boca Ciega Bay Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,28,4,1999,2021,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1582,22,1999,2021,0.06,TRUE,-0.0678,0,0,0.06,-1
+8,Boca Ciega Bay Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,28,2,2020,2021,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,238,4,2001,2021,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Turbidity,Bottom,Field,FALSE,7,3,2016,2020,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,29,4,1999,2021,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Turbidity,Surface,Field,FALSE,35,5,2001,2021,,,,,,,
+8,Boca Ciega Bay Aquatic Preserve,Turbidity,Surface,Sample,TRUE,5826,25,1995,2021,2.4,TRUE,0.1792,0,0.06875,-133.557142857143,1
+8,Boca Ciega Bay Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,5680,27,1992,2021,28.505,TRUE,0.0002,0,-0.0284,13.5859090909092,-1
+8,Boca Ciega Bay Aquatic Preserve,Water Temperature,Surface,Field,TRUE,17567,57,1954,2021,26.26,TRUE,0.056,0,0.0177777777777778,-10.7081182795695,1
+8,Boca Ciega Bay Aquatic Preserve,pH,Bottom,Field,TRUE,4219,26,1995,2021,8.09,TRUE,0.1682,0,0.0199999999999996,-3.17878947368411,1
+8,Boca Ciega Bay Aquatic Preserve,pH,Surface,Field,TRUE,16132,33,1974,2021,8.1,TRUE,-0.0109,0.3225,0,8.1,0
+9,Cape Haze Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+9,Cape Haze Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,29,9,2001,2022,,,,,,,
+9,Cape Haze Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+9,Cape Haze Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,6,2,2006,2021,,,,,,,
+9,Cape Haze Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,654,25,1995,2020,6.49,TRUE,0.0228,0.1321,0.015,-18.8581052631578,0
+9,Cape Haze Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,7132,32,1989,2021,7,TRUE,-0.0716,0,-0.0285714285714286,60.3279545454544,-1
+9,Cape Haze Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,4,1,2021,2021,,,,,,,
+9,Cape Haze Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,6,3,2017,2021,,,,,,,
+9,Cape Haze Aquatic Preserve,Salinity,Bottom,Field,TRUE,704,26,1995,2021,31.265,TRUE,-0.0263,0.0024,-0.122111111111111,-105.903846153846,-1
+9,Cape Haze Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+9,Cape Haze Aquatic Preserve,Salinity,Surface,Field,TRUE,7419,36,1957,2021,30,TRUE,-0.0137,0.0231,-0.02,72.4833333333336,-1
+9,Cape Haze Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+9,Cape Haze Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,5831,26,1994,2021,0.9,TRUE,0.0033,0.7755,0,0.9,0
+9,Cape Haze Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,100,12,2007,2021,0.5045,TRUE,0.1779,0.0551,0.015,-33.824,0
+9,Cape Haze Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,326,22,1998,2022,0.501,TRUE,0.1798,0,0.0175549450549451,-35.6558660714286,1
+9,Cape Haze Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,65,11,2007,2021,0.07,TRUE,0.1595,0.2321,0.0034,-3.4125,0
+9,Cape Haze Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,358,22,1999,2022,0.052,TRUE,0.0427,0.2715,0.0008,-0.0715059523809525,0
+9,Cape Haze Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,TRUE,76,10,2007,2020,8.585,TRUE,0.0712,0.2761,0.48,-270.471944444445,0
+9,Cape Haze Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,296,15,2003,2021,8.78,TRUE,0.1616,0.0001,0.440833333333334,-625.185,1
+9,Cape Haze Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+9,Cape Haze Aquatic Preserve,Turbidity,Bottom,Sample,TRUE,57,11,2002,2020,2.1,TRUE,0.0571,0.7908,0.0229166666666667,-93.765,0
+9,Cape Haze Aquatic Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+9,Cape Haze Aquatic Preserve,Turbidity,Surface,Sample,TRUE,1597,25,1995,2021,2.2,TRUE,0.1127,0,0.0333333333333333,-69.6835,1
+9,Cape Haze Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,675,26,1995,2021,28.01,TRUE,-0.0772,0,-0.0516666666666667,74.0770454545455,-1
+9,Cape Haze Aquatic Preserve,Water Temperature,Surface,Field,TRUE,7414,37,1957,2021,26.8,TRUE,0.0249,0.0026,0.00999999999999979,-10.5987681159418,1
+9,Cape Haze Aquatic Preserve,pH,Bottom,Field,TRUE,413,21,1989,2021,8.05,TRUE,-0.1084,0.0008,-0.00999999999999979,22.4774206349207,-1
+9,Cape Haze Aquatic Preserve,pH,Surface,Field,TRUE,6975,32,1989,2021,8,TRUE,-0.0078,0.1721,0,8,0
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,393,16,1994,2017,2.9329,TRUE,0.075,0.0475,0.04125,-66.6063325,1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,8,1,2001,2001,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,4773,28,1990,2020,5.5,TRUE,-0.0126,0.0608,-0.00124999999999997,13.9327272727273,0
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,6460,31,1989,2021,5.9,TRUE,-0.1663,0,-0.05,99.7025,-1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,212,15,2002,2019,73.25,TRUE,-0.0675,0.3232,-0.488888888888889,1087.72678571429,0
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,1113,19,2002,2021,72.55,TRUE,-0.0814,0.0001,-0.41,889.433333333335,-1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Salinity,Bottom,Field,TRUE,4903,27,1994,2020,31.5,TRUE,-0.0372,0.0001,-0.0400000000000001,131.296153846154,-1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Salinity,Surface,Field,TRUE,6731,40,1956,2021,32,TRUE,0.0604,0,0.0611111111111112,-98.9625,1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,79,5,2001,2021,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,2,1,1994,1994,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1753,28,1989,2021,0.4927,TRUE,0.3438,0,0.0145384615384615,-29.7767333333333,1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,2,1,2001,2001,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1682,25,1994,2021,0.04675,TRUE,0.1807,0,0.000744097222222222,-1.36910666666667,1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,82,4,2016,2019,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,392,5,2002,2019,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,2,1,1994,1994,,,,,,,
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Turbidity,Surface,Field,TRUE,613,10,2002,2019,6.61,TRUE,0.0918,0.0012,0.0785164835164835,-190.41,1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Turbidity,Surface,Sample,TRUE,3390,27,1989,2021,3.2,TRUE,0.1862,0,0.130769230769231,-233.181818181818,1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,4894,27,1994,2020,26.9,TRUE,0.0565,0,0.0249999999999998,15.545987394958,1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Water Temperature,Surface,Field,TRUE,6837,39,1956,2021,26.5,TRUE,0.0128,0.0541,0.00588235294117635,41.5281368221943,0
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,pH,Bottom,Field,TRUE,265,24,1994,2018,7.8,TRUE,-0.2978,0,-0.0166666666666666,47.8925000000002,-1
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,pH,Surface,Field,TRUE,4263,32,1956,2021,7.8,TRUE,-0.2472,0,-0.0139130434782608,40.3947826086957,-1
+11,Cockroach Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,675,19,1999,2017,8.7,TRUE,-0.0204,0.4646,-0.0333333333333332,308.221875,0
+11,Cockroach Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,TRUE,70,13,2001,2021,45,TRUE,-0.0106,0.7059,0.761904761904762,652.043402777778,0
+11,Cockroach Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,154,14,2001,2021,55.65,TRUE,-0.0544,0.4711,-0.5,2956.5,0
+11,Cockroach Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,3874,25,1995,2021,4.01,TRUE,0.0512,0,0.0525,-8.65033333333332,1
+11,Cockroach Bay Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,14682,31,1989,2021,5.69,TRUE,0.0206,0,0.014,-10.766875,1
+11,Cockroach Bay Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,3861,25,1995,2021,53.4,TRUE,0.0672,0,0.928571428571429,440.587500000004,1
+11,Cockroach Bay Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,4655,27,1993,2021,62.1,TRUE,-0.0513,0,-0.399999999999999,240.262500000004,-1
+11,Cockroach Bay Aquatic Preserve,Salinity,Bottom,Field,TRUE,4168,25,1995,2021,7.05,TRUE,-0.1141,0,-0.172142857142857,566.836182692308,-1
+11,Cockroach Bay Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Salinity,Surface,Field,TRUE,14670,37,1958,2021,13.555,TRUE,-0.1057,0,-0.173684210526316,507.181176470588,-1
+11,Cockroach Bay Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,11474,25,1995,2021,0.8,TRUE,0.0788,0,0,-3.92857142857143,-1
+11,Cockroach Bay Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,5,4,2003,2014,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1274,21,1999,2021,0.62,TRUE,0.0298,0.1226,0.0000731666666666667,0.220775,0
+11,Cockroach Bay Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,9,2,2020,2021,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1090,20,2000,2021,0.2095,TRUE,0.2032,0,0.00699999999999999,-11.9089642857143,1
+11,Cockroach Bay Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+11,Cockroach Bay Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,86,7,2000,2020,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,5,2,2020,2021,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+11,Cockroach Bay Aquatic Preserve,Turbidity,Surface,Sample,TRUE,829,21,1999,2021,3.2,TRUE,-0.0426,0.0766,-0.02,41.5540178571429,0
+11,Cockroach Bay Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,3835,25,1995,2021,27.75,TRUE,0.023,0.0882,0.0171428571428573,-17.5542520703935,0
+11,Cockroach Bay Aquatic Preserve,Water Temperature,Surface,Field,TRUE,14864,37,1958,2021,26.3,TRUE,-0.0059,0.0072,-0.00740740740740738,36.1383333333334,-1
+11,Cockroach Bay Aquatic Preserve,pH,Bottom,Field,TRUE,3495,27,1993,2021,7.28,TRUE,-0.0308,0,0.00999999999999996,32.8294471153846,1
+11,Cockroach Bay Aquatic Preserve,pH,Surface,Field,TRUE,14349,31,1989,2021,7.6,TRUE,-0.1284,0,-0.0105555555555555,38.8809890109891,-1
+13,Coupon Bight Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,61,17,1995,2011,0.20439494,TRUE,-0.0294,0.3537,-0.00366114923076923,1.23763791741477,0
+13,Coupon Bight Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,54,18,1995,2020,6.0178,TRUE,0.15,0.3927,0.0278991666666667,-55.0089320833335,0
+13,Coupon Bight Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,79,19,1995,2021,6.02396,TRUE,-0.2046,0.0714,-0.0360846153846154,122.841163181818,0
+13,Coupon Bight Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,78,18,1995,2020,93.463120715,TRUE,-0.0017,0.8746,-0.106949936428571,309.405043612388,0
+13,Coupon Bight Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,79,19,1995,2021,93.61986995,TRUE,-0.0768,0.3152,-0.235259265652174,593.851891364668,0
+13,Coupon Bight Aquatic Preserve,Salinity,Bottom,Field,TRUE,51,18,1995,2020,36.51,TRUE,0.1733,0.3712,0.0234799999999989,-9.26713333333378,0
+13,Coupon Bight Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,Salinity,Surface,Field,TRUE,91,19,1995,2021,36.5,TRUE,0.0615,0.3186,0.018965,-14.3568223958336,0
+13,Coupon Bight Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,4,1,2000,2000,,,,,,,
+13,Coupon Bight Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,98,20,1995,2021,0.232451575,TRUE,0.2244,0.028,0.00374864015151515,-10.653143359125,1
+13,Coupon Bight Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,99,20,1995,2021,0.00704653,TRUE,0.3185,0.0001,0.0001184048,-0.277262343149038,1
+13,Coupon Bight Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,Turbidity,Bottom,Field,FALSE,15,6,1995,2010,,,,,,,
+13,Coupon Bight Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+13,Coupon Bight Aquatic Preserve,Turbidity,Surface,Field,TRUE,63,17,1995,2011,0.7,TRUE,0.1577,0.2472,0.0170260303030303,-36.4148362078671,0
+13,Coupon Bight Aquatic Preserve,Turbidity,Surface,Sample,FALSE,31,3,2019,2021,,,,,,,
+13,Coupon Bight Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,54,20,1995,2020,28.6864,TRUE,0.0428,0.7448,0.0168309523809527,10.395651428571,0
+13,Coupon Bight Aquatic Preserve,Water Temperature,Surface,Field,TRUE,108,24,1995,2021,28.95005,TRUE,-0.1481,0.0436,-0.0389999999999979,91.1205550480767,-1
+13,Coupon Bight Aquatic Preserve,pH,Bottom,Field,FALSE,2,1,2020,2020,,,,,,,
+13,Coupon Bight Aquatic Preserve,pH,Surface,Field,FALSE,32,3,2000,2021,,,,,,,
+14,Estero Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+14,Estero Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,144,16,2000,2018,3.12,TRUE,0.3399,0,0.307692307692308,-697.630625,1
+14,Estero Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,66,8,2011,2021,,,,,,,
+14,Estero Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,445,10,2011,2022,14.8,TRUE,0.0606,0.0332,0.433666666666667,-700.61875,1
+14,Estero Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,412,17,1999,2021,5.975,TRUE,-0.0903,0.0056,-0.0351470588235294,68.3235833333334,-1
+14,Estero Bay Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,8246,33,1971,2022,5.9,TRUE,-0.0819,0,-0.0263157894736842,68.71875,-1
+14,Estero Bay Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,50,5,2016,2021,,,,,,,
+14,Estero Bay Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,1151,11,2011,2022,85.4,TRUE,-0.2393,0,-1.7,3048.23573333333,-1
+14,Estero Bay Aquatic Preserve,Salinity,Bottom,Field,TRUE,423,18,1999,2021,33.75,TRUE,-0.0787,0.0168,-0.0558823529411762,167.429794117647,-1
+14,Estero Bay Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+14,Estero Bay Aquatic Preserve,Salinity,Surface,Field,TRUE,3538,31,1963,2022,31.8,TRUE,0.056,0,0.0925,-165.516331168832,1
+14,Estero Bay Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+14,Estero Bay Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,2551,18,2001,2022,0.9,TRUE,0.1165,0,0.0285714285714286,-55.6294871794872,1
+14,Estero Bay Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,27,12,1994,2016,0.01,TRUE,0.697,0.0041,0.0283333333333333,-56.6283333333333,2
+14,Estero Bay Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,5411,30,1991,2022,0.56,TRUE,0.163,0,0.0125,-26.7127777777778,1
+14,Estero Bay Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,58,8,2011,2021,,,,,,,
+14,Estero Bay Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,678,22,1998,2022,0.038,TRUE,-0.0151,0.5053,-0.000006,0.252482142857143,0
+14,Estero Bay Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+14,Estero Bay Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,334,3,2015,2021,,,,,,,
+14,Estero Bay Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+14,Estero Bay Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,22,2,2020,2021,,,,,,,
+14,Estero Bay Aquatic Preserve,Turbidity,Surface,Field,TRUE,4969,31,1991,2021,3.2,TRUE,0.1338,0,0.059090909090909,-103.342516339869,1
+14,Estero Bay Aquatic Preserve,Turbidity,Surface,Sample,TRUE,490,18,2003,2022,3.41,TRUE,0.0694,0.0373,0.0428571428571429,-98.9354761904762,1
+14,Estero Bay Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,412,18,1999,2022,25.555,TRUE,-0.0132,0.5626,-0.00915032679738573,41.7680194805193,0
+14,Estero Bay Aquatic Preserve,Water Temperature,Surface,Field,TRUE,7684,37,1963,2022,26.2,TRUE,0.0298,0.0004,0.0133333333333333,19.5205555555557,1
+14,Estero Bay Aquatic Preserve,pH,Bottom,Field,TRUE,76,11,2003,2022,7.925,TRUE,0.0178,0.7396,-0.00599999999999987,-27.4575000000001,0
+14,Estero Bay Aquatic Preserve,pH,Surface,Field,TRUE,7613,32,1991,2022,7.9,TRUE,-0.088,0,-0.00299999999999994,14.7508173076922,-1
+15,Florida Keys National Marine Sanctuary,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,15,1,2011,2011,,,,,,,
+15,Florida Keys National Marine Sanctuary,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,15978,26,1995,2020,0.26577653,TRUE,0.0669,0,0.00306666666666667,-5.85250926,1
+15,Florida Keys National Marine Sanctuary,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,9,4,2002,2020,,,,,,,
+15,Florida Keys National Marine Sanctuary,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,954,21,2001,2021,6,TRUE,0.144,0,0.117647058823529,-195.45,1
+15,Florida Keys National Marine Sanctuary,Dissolved Oxygen,Bottom,Field,TRUE,16347,34,1982,2021,6.27817,TRUE,0.1311,0,0.0168421052631579,-20.2616835694444,1
+15,Florida Keys National Marine Sanctuary,Dissolved Oxygen,Surface,Field,TRUE,22034,40,1970,2021,6.257745,TRUE,0.09,0,0.0109999999999999,-6.10544349999999,1
+15,Florida Keys National Marine Sanctuary,Dissolved Oxygen Saturation,Bottom,Field,TRUE,17731,27,1995,2021,93.98133682,TRUE,0.1598,0,0.268020442222222,-435.442142208089,1
+15,Florida Keys National Marine Sanctuary,Dissolved Oxygen Saturation,Surface,Field,TRUE,14337,27,1995,2021,94.70206356,TRUE,0.1734,0,0.270295072000002,-375.078394267913,1
+15,Florida Keys National Marine Sanctuary,Salinity,Bottom,Field,TRUE,17534,34,1982,2021,36.20855,TRUE,0.0508,0,0.00701999999999998,2.7699611111109,1
+15,Florida Keys National Marine Sanctuary,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+15,Florida Keys National Marine Sanctuary,Salinity,Surface,Field,TRUE,22740,46,1955,2021,36.16,TRUE,0.0496,0,0.00985000000000014,4.45111071428583,1
+15,Florida Keys National Marine Sanctuary,Salinity,Surface,Sample,FALSE,28,2,2011,2016,,,,,,,
+15,Florida Keys National Marine Sanctuary,Secchi Depth,Surface,Field,TRUE,5048,26,1996,2021,2,TRUE,-0.0052,0.8174,0,9.83553427447369,0
+15,Florida Keys National Marine Sanctuary,Total Nitrogen,Bottom,Sample,TRUE,7716,26,1995,2020,0.129410725,TRUE,-0.0715,0,-0.000899393333333333,2.08823015753846,-1
+15,Florida Keys National Marine Sanctuary,Total Nitrogen,Surface,Sample,TRUE,20963,27,1995,2021,0.15794312,TRUE,0.0025,0.5333,0.000004,0.124278812420635,0
+15,Florida Keys National Marine Sanctuary,Total Phosphorus,Bottom,Sample,TRUE,8244,27,1995,2021,0.005414615,TRUE,0.0349,0,0.00001537,-0.0613017982196971,1
+15,Florida Keys National Marine Sanctuary,Total Phosphorus,Surface,Sample,TRUE,18074,28,1970,2021,0.00586,TRUE,0.1291,0,0.00008775,-0.175069143971292,1
+15,Florida Keys National Marine Sanctuary,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+15,Florida Keys National Marine Sanctuary,"Total Suspended Solids, TSS",Surface,Sample,FALSE,238,5,2010,2020,,,,,,,
+15,Florida Keys National Marine Sanctuary,Turbidity,Bottom,Field,TRUE,8932,26,1995,2020,0.55,TRUE,-0.0487,0,-0.005,17.0393055555556,-1
+15,Florida Keys National Marine Sanctuary,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+15,Florida Keys National Marine Sanctuary,Turbidity,Surface,Field,TRUE,16399,26,1995,2020,0.61,TRUE,-0.1214,0,-0.0159090909090909,25.8170263157895,-1
+15,Florida Keys National Marine Sanctuary,Turbidity,Surface,Sample,TRUE,1590,27,1994,2021,0.6,TRUE,0.068,0.0001,0.00357142857142857,-6.33089498491704,1
+15,Florida Keys National Marine Sanctuary,Water Temperature,Bottom,Field,TRUE,4307859,34,1982,2021,,,,,,,
+15,Florida Keys National Marine Sanctuary,Water Temperature,Surface,Field,TRUE,24075,48,1955,2021,27.0481,TRUE,0.1339,0,0.0384615384615385,-45.5866633333334,1
+15,Florida Keys National Marine Sanctuary,pH,Bottom,Field,TRUE,1869,23,1970,2021,8.07,TRUE,-0.0935,0,-0.0109999999999999,14.778,-1
+15,Florida Keys National Marine Sanctuary,pH,Surface,Field,TRUE,3528,27,1970,2021,8.02,TRUE,-0.0661,0,-0.00181818181818178,12.49,-1
+16,Fort Clinch State Park Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,16,3,2004,2007,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,FALSE,17,4,1994,2014,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,798,22,1994,2021,7.29,TRUE,-0.0628,0.023,-0.0166666666666666,57.3749999999998,-1
+16,Fort Clinch State Park Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,7,2,2013,2014,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,26,4,2004,2020,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Salinity,Bottom,Field,FALSE,13,3,2008,2014,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Salinity,Surface,Field,TRUE,811,23,1994,2021,33.4,TRUE,-0.0503,0.0217,-0.0300000000000002,90.801666666667,-1
+16,Fort Clinch State Park Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,1245,18,2000,2017,0.9,TRUE,-0.0263,0.1077,0,0.95,0
+16,Fort Clinch State Park Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Total Nitrogen,Surface,Sample,FALSE,47,7,2004,2021,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Total Phosphorus,Surface,Sample,FALSE,46,7,2004,2021,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,3,1,2004,2004,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,29,4,2004,2014,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Turbidity,Surface,Field,FALSE,5,2,2019,2020,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Turbidity,Surface,Sample,FALSE,34,5,2013,2021,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,14,3,2008,2014,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,Water Temperature,Surface,Field,TRUE,813,22,1994,2021,23.6,TRUE,0.1011,0,0.0535897435897436,-149.925,1
+16,Fort Clinch State Park Aquatic Preserve,pH,Bottom,Field,FALSE,26,5,2007,2019,,,,,,,
+16,Fort Clinch State Park Aquatic Preserve,pH,Surface,Field,TRUE,803,22,1994,2021,7.8,TRUE,0.0093,0.8008,0,7.8,0
+17,Fort Pickens State Park Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,190,13,1998,2012,5,TRUE,-0.2417,0,0,5,-1
+17,Fort Pickens State Park Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,2,1,2021,2021,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,19,12,1982,2018,6.7,TRUE,0.098,1,0,-195.4,0
+17,Fort Pickens State Park Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,835,29,1982,2019,7.68,TRUE,0.102,0,0.0310526315789474,-4.68233904761903,1
+17,Fort Pickens State Park Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,24,8,2004,2018,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,145,13,1999,2018,98.8,TRUE,0.0839,0.2165,0.202941176470588,-216.188833333334,0
+17,Fort Pickens State Park Aquatic Preserve,Salinity,Bottom,Field,TRUE,21,11,1982,2018,30.65,TRUE,-0.2778,0.1693,-0.25,801.335642857142,0
+17,Fort Pickens State Park Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Salinity,Surface,Field,TRUE,771,29,1974,2019,25.8,TRUE,-0.0902,0,-0.1605,238.533848351648,-1
+17,Fort Pickens State Park Aquatic Preserve,Salinity,Surface,Sample,FALSE,9,1,1999,1999,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,253,19,1987,2021,2.6,TRUE,0.0096,0.4771,0.00885579937304076,-33.2253266666667,0
+17,Fort Pickens State Park Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,77,11,1999,2021,0.255,TRUE,-0.1847,0.0414,-0.00477272727272727,11.8242386363636,-1
+17,Fort Pickens State Park Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,104,16,1999,2021,0.016,TRUE,-0.0982,0.0583,-0.000591666666666667,-0.0432847222222222,0
+17,Fort Pickens State Park Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,23,5,2002,2011,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,240,13,1997,2012,12,TRUE,-0.4089,0,-1.67291666666667,3457.97222222222,-2
+17,Fort Pickens State Park Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Turbidity,Surface,Field,FALSE,31,5,1999,2014,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,Turbidity,Surface,Sample,TRUE,309,18,1996,2016,1.0699,TRUE,-0.2587,0,-0.0409090909090909,60.2005617857143,-1
+17,Fort Pickens State Park Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,26,13,1982,2019,25.48,TRUE,0.175,0.4785,0.582,-1059.428,0
+17,Fort Pickens State Park Aquatic Preserve,Water Temperature,Surface,Field,TRUE,872,32,1982,2019,25.15833335,TRUE,0.0763,0.0002,0.0352173913043478,-1.94142878181821,1
+17,Fort Pickens State Park Aquatic Preserve,pH,Bottom,Field,FALSE,38,8,1991,2017,,,,,,,
+17,Fort Pickens State Park Aquatic Preserve,pH,Surface,Field,TRUE,761,26,1991,2019,8.1,TRUE,-0.0247,0.5087,0,8.0675,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,161,7,1997,2007,,,,,,,
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,504,18,1997,2016,5,TRUE,-0.1581,0,-0.25,312.8835,-1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,34,3,2020,2022,,,,,,,
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,198,11,2001,2022,19,TRUE,-0.1234,0.0064,-0.521428571428571,1332.42307692308,-1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,4520,27,1995,2022,6.21,TRUE,0.0617,0,0.0166666666666667,-36.7580994152047,1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,35624,33,1989,2022,6.7,TRUE,-0.0268,0,-0.0083333333333333,26.45925,-1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,50,6,1992,2021,,,,,,,
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,143,11,1992,2022,68.6,TRUE,0.2321,0.0002,2.5,-4590.3715979064,1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Salinity,Bottom,Field,TRUE,4278,28,1992,2022,28.075,TRUE,-0.1408,0,-0.2,404.413055555555,-1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Salinity,Surface,Field,TRUE,35125,46,1954,2022,26.4,TRUE,-0.0456,0,-0.066666666666667,164.9925,-1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,32157,27,1994,2022,1.3,TRUE,0.0184,0,0,1.05,-1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,563,21,1996,2020,0.639,TRUE,0.0915,0.0011,0.00563961038961039,-5.41799999999999,1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,3807,29,1993,2022,0.58,TRUE,0.1399,0,0.0113333333333333,-20.3165389610389,1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,465,19,2000,2022,0.115,TRUE,0.2069,0,0.00483333333333333,-12.047653,1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,2957,22,1999,2022,0.094,TRUE,0.1904,0,0.005,-9.65770534583333,1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,TRUE,498,11,2007,2021,6.67,TRUE,0.0179,0.8542,0.00909090909090922,-30.9062499999999,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,2550,17,2001,2021,6.14,TRUE,0.1098,0,0.163636363636364,-244.250666666667,1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Turbidity,Bottom,Sample,TRUE,647,24,1996,2022,2.4,TRUE,-0.0551,0.0706,-0.0155555555555556,60.0867647058824,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Turbidity,Surface,Field,TRUE,549,21,1996,2017,0.998,TRUE,0.0105,0.8672,0.000625000000000001,15.0709038461538,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Turbidity,Surface,Sample,TRUE,8786,26,1995,2022,2,TRUE,-0.0149,0.0469,0,2.1,-1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,4388,28,1992,2022,25.79,TRUE,-0.002,0.7746,0,18.3047426470587,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Water Temperature,Surface,Field,TRUE,36277,45,1954,2022,26,TRUE,0.0368,0,0.0146153846153847,-22.9173611111112,1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,pH,Bottom,Field,TRUE,2707,24,1989,2022,7.92,TRUE,-0.0645,0,-0.00428571428571432,14.2043750000001,-1
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,pH,Surface,Field,TRUE,34853,34,1955,2022,7.9,TRUE,0.0264,0,0,7.9,-1
+19,Guana River Marsh Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,48,3,2006,2018,,,,,,,
+19,Guana River Marsh Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,1,1,2018,2018,,,,,,,
+19,Guana River Marsh Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,14,3,2018,2021,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,2168,28,1986,2021,5.5,TRUE,-0.2312,0,-0.1,129.951754385965,-1
+19,Guana River Marsh Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,4583,28,1986,2021,5.8,TRUE,-0.2137,0,-0.0868421052631579,155.237759103641,-1
+19,Guana River Marsh Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,211,12,2005,2021,81.5,TRUE,-0.0125,0.495,-0.176190476190477,-1018.63333333333,0
+19,Guana River Marsh Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,626,19,1999,2021,76.55,TRUE,0.0182,0.7075,0.0250000000000004,5.238461538462,0
+19,Guana River Marsh Aquatic Preserve,Salinity,Bottom,Field,TRUE,2318,28,1986,2021,31.595,TRUE,-0.0567,0.0087,-0.0311764705882354,121.633986928105,-1
+19,Guana River Marsh Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Salinity,Surface,Field,TRUE,5321,28,1986,2021,30.7,TRUE,-0.1154,0,-0.15,278.628409090909,-1
+19,Guana River Marsh Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,1283,22,1999,2021,0.7,TRUE,0.0012,0.9242,0,0.7,0
+19,Guana River Marsh Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,4,2,2013,2014,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1447,21,1997,2021,0.673,TRUE,0.2212,0,0.0171746666666667,-29.4743510620915,1
+19,Guana River Marsh Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,37,4,2018,2021,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1952,25,1997,2021,0.083,TRUE,-0.1962,0,-0.00151666666666667,2.97211535714286,-1
+19,Guana River Marsh Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,39,6,2009,2021,,,,,,,
+19,Guana River Marsh Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,141,9,2004,2021,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Turbidity,Bottom,Field,FALSE,5,3,2002,2004,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,32,4,2018,2021,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Turbidity,Surface,Field,FALSE,5,2,2012,2019,,,,,,,
+19,Guana River Marsh Aquatic Preserve,Turbidity,Surface,Sample,TRUE,4769,27,1995,2021,5.1,TRUE,0.1941,0,0.153333333333333,-281.25,1
+19,Guana River Marsh Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,2524,28,1986,2021,22.4,TRUE,-0.0103,0.0339,-0.016,85.623642857143,-1
+19,Guana River Marsh Aquatic Preserve,Water Temperature,Surface,Field,TRUE,5301,28,1986,2021,22.7,TRUE,0.0032,0.3051,0,67.2794957983192,0
+19,Guana River Marsh Aquatic Preserve,pH,Bottom,Field,TRUE,487,25,1997,2021,7.52,TRUE,0.1713,0,0.00999999999999995,-20.207380952381,1
+19,Guana River Marsh Aquatic Preserve,pH,Surface,Field,TRUE,5312,27,1995,2021,7.7,TRUE,-0.1815,0,-0.014,35.4769676086956,-1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,98,7,2006,2018,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,6,3,2018,2021,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,54,3,2018,2021,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,TRUE,5504,29,1986,2022,5.8,TRUE,-0.2301,0,-0.0888888888888889,159.88527972028,-1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Dissolved Oxygen,Surface,Field,TRUE,13155,29,1986,2022,6,TRUE,-0.2296,0,-0.082,138.937745098039,-1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,503,14,2004,2022,85,TRUE,-0.1649,0,-0.800000000000011,1887.75444444444,-1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,1082,21,1999,2022,79,TRUE,0.0036,0.8743,0.00454545454545461,-156.669322344322,0
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Salinity,Bottom,Field,TRUE,6228,29,1986,2022,32.5,TRUE,-0.0421,0,-0.0249999999999986,58.9312499999999,-1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Salinity,Surface,Field,TRUE,14831,30,1980,2022,32.1,TRUE,-0.1016,0,-0.0899999999999999,211.224318181819,-1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Secchi Depth,Surface,Field,TRUE,2841,24,1999,2022,0.8,TRUE,-0.0102,0.369,0,0.825,0
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Total Nitrogen,Bottom,Sample,FALSE,24,3,2013,2015,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Total Nitrogen,Surface,Sample,TRUE,2366,24,1997,2021,0.5718,TRUE,0.1324,0,0.009530625,-15.374909375,1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Total Phosphorus,Bottom,Sample,FALSE,55,6,2016,2021,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Total Phosphorus,Surface,Sample,TRUE,3942,25,1997,2021,0.078,TRUE,-0.1505,0,-0.00108181818181818,2.08657941176471,-1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,"Total Suspended Solids, TSS",Bottom,Sample,TRUE,139,11,2009,2021,13,TRUE,-0.0391,0.7344,0,838.411111111111,0
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,990,14,2004,2021,13,TRUE,-0.0099,0.37,0,10.5,0
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Turbidity,Bottom,Field,FALSE,99,5,2002,2006,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Turbidity,Bottom,Sample,TRUE,173,22,1995,2021,5,TRUE,0.2812,0,0.227272727272727,-509.401709401709,1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Turbidity,Surface,Field,FALSE,8,4,2009,2021,,,,,,,
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Turbidity,Surface,Sample,TRUE,14227,27,1995,2021,4.4,TRUE,0.1021,0,0.0666666666666667,-174.417974666667,1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Water Temperature,Bottom,Field,TRUE,6556,29,1986,2022,22.7,TRUE,0.059,0,0.0277777777777778,-27.1153947368423,1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Water Temperature,Surface,Field,TRUE,15446,29,1986,2022,23,TRUE,0.1043,0,0.0500000000000003,-52.1145454545455,1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,pH,Bottom,Field,TRUE,892,26,1997,2022,7.7,TRUE,0.0939,0.0002,0.00666666666666667,-6.38800000000001,1
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,pH,Surface,Field,TRUE,14866,28,1995,2022,7.8,TRUE,-0.1997,0,-0.0142857142857142,36.4014285714285,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,77,10,2000,2017,3.61,TRUE,0.1367,0.2513,0.0384615384615385,-234.179345285714,0
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,50,6,2016,2021,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,211,6,2016,2021,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,9814,31,1991,2021,5.6,TRUE,-0.2429,0,-0.1125,215.502222222222,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,39892,31,1991,2021,6.34,TRUE,-0.0445,0,-0.0181818181818181,37.7457589285715,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,459,10,2012,2021,77,TRUE,-0.1314,0.0001,-2.06666666666667,4436.47957142857,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,11474,31,1991,2021,65,TRUE,0.1963,0,0.45,-762.256042701863,1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Salinity,Bottom,Field,TRUE,10255,31,1991,2021,28.8,TRUE,0.1103,0,0.171428571428571,-333.296750000001,1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Salinity,Surface,Field,TRUE,42387,34,1972,2021,25.2,TRUE,-0.0079,0.0085,-0.0159999999999997,26.1302521008404,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,21196,31,1991,2021,0.8,TRUE,0.0595,0,0,0.8,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,2601,25,1997,2021,0.6383,TRUE,-0.2791,0,-0.0195384615384615,40.5637864508254,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,37,6,2016,2021,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,5228,25,1997,2021,0.054,TRUE,0.0043,0.4549,0.000035294117647059,-0.275743097527472,0
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,6,2,2020,2021,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,162,6,2005,2021,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Turbidity,Bottom,Field,TRUE,86,10,2004,2019,3.23,TRUE,-0.0266,0.626,-0.0549999999999998,22.8199999999998,0
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,7,2,2020,2021,,,,,,,
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Turbidity,Surface,Field,TRUE,1418,18,2003,2020,4.065,TRUE,-0.0253,0.5729,-0.0076923076923077,41.4686423992673,0
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Turbidity,Surface,Sample,TRUE,13798,26,1995,2021,2.8,TRUE,-0.0207,0,-0.00833333333333334,16.1057953571429,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,10754,31,1991,2021,25,TRUE,-0.0005,0.672,0,10.785,0
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Water Temperature,Surface,Field,TRUE,42288,33,1972,2021,25.2,TRUE,0.0536,0,0.0274999999999999,-32.6896428571427,1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,pH,Bottom,Field,TRUE,5807,28,1994,2021,8,TRUE,-0.2558,0,-0.01875,46.1844298245614,-1
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,pH,Surface,Field,TRUE,38932,32,1980,2021,8,TRUE,-0.1504,0,-0.0108333333333333,30.3294444444448,-1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,40,6,2001,2017,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,19,6,2016,2021,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,73,6,2016,2021,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,2001,26,1994,2021,6,TRUE,-0.2425,0,-0.12,214.929666666667,-1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,5300,30,1992,2021,6.38,TRUE,-0.1128,0,-0.04375,101.844807692308,-1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,3,2,2020,2021,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,632,22,1992,2021,81.4,TRUE,0.4343,0,2.44058823529412,-4618.69666666667,1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Salinity,Bottom,Field,TRUE,2216,27,1995,2021,29.4,TRUE,0.0188,0.0373,0.0333333333333338,31.8827747252747,1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Salinity,Surface,Field,TRUE,5788,30,1992,2021,28.9,TRUE,0.0002,0.8378,0,-11.9484926470588,0
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Salinity,Surface,Sample,FALSE,12,1,2007,2007,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,1628,28,1992,2021,1,TRUE,-0.0373,0.1128,0,1,0
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,2,2,2001,2002,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,829,25,1997,2021,0.493,TRUE,-0.3489,0,-0.01896,41.0536176470588,-1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,9,2,2020,2021,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1670,25,1997,2021,0.05925,TRUE,-0.0091,0.7572,0,0.410010775401069,0
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,3,2,2020,2021,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,49,5,2002,2021,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Turbidity,Bottom,Field,FALSE,10,1,2005,2005,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,3,2,2020,2021,,,,,,,
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Turbidity,Surface,Field,TRUE,318,17,2004,2020,4.01,TRUE,-0.0043,0.4161,0.0270833333333333,-27.1855909090909,0
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Turbidity,Surface,Sample,TRUE,3744,26,1995,2021,2.6,TRUE,-0.0009,0.2552,0,-39.1855555555555,0
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,2291,27,1993,2021,24.8,TRUE,0.0916,0,0.0393214285714285,-88.4600000000001,1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Water Temperature,Surface,Field,TRUE,5853,30,1992,2021,25.4,TRUE,0.0781,0,0.0333333333333326,-46.0582608695651,1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,pH,Bottom,Field,TRUE,856,25,1995,2021,8.1,TRUE,-0.0901,0,-0.00705882352941175,25.5924337121212,-1
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,pH,Surface,Field,TRUE,5345,30,1992,2021,8.03,TRUE,-0.128,0,-0.00647058823529408,18.8092105263158,-1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,301,23,1997,2019,2.4,TRUE,-0.1403,0.0019,-0.0285714285714286,164.465,-1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,83,2,2020,2021,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,415,28,1994,2021,6.3,TRUE,0.0491,0.2797,0.0066666666666667,-28.7635714285715,0
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,7256,32,1972,2021,6.35,TRUE,0.0909,0,0.0225,-42.796978021978,1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,61,14,2005,2019,94.6,TRUE,-0.1344,0.5069,-0.375,3644.48125,0
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,3832,29,1993,2021,74.1175,TRUE,0.2324,0,0.84375,-1279.85892941176,1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Salinity,Bottom,Field,TRUE,388,27,1994,2020,32.265,TRUE,0.2186,0,0.205625000000001,-494.522030542986,1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Salinity,Surface,Field,TRUE,7278,32,1972,2021,32.8,TRUE,0.1123,0,0.0999999999999998,-131.605,1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Salinity,Surface,Sample,FALSE,56,1,2007,2007,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,4929,29,1993,2021,1,TRUE,0.0173,0.0445,0,1,-1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,31,16,2001,2019,0.206,TRUE,-0.3036,0.112,-0.001,12.9051875,0
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,389,21,2000,2021,0.221,TRUE,-0.1361,0.0004,-0.000666666666666664,2.21499999999999,-1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,552,31,1991,2021,0.025,TRUE,-0.1253,0.0001,-0.000333333333333334,0.937545454545454,-1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,281,28,1994,2021,6.8,TRUE,-0.1641,0.0105,-0.1,299.92,-1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Turbidity,Bottom,Field,FALSE,18,5,2005,2009,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Turbidity,Surface,Field,TRUE,243,14,2004,2018,3.43,TRUE,-0.2057,0.0005,-0.180833333333333,392.393571428571,-1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Turbidity,Surface,Sample,TRUE,474,31,1991,2021,2.2,TRUE,-0.0412,0.3248,-0.00714285714285715,2,0
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,294,25,1993,2020,25.25,TRUE,0.1538,0.0001,0.075,-221.408337912088,1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Water Temperature,Surface,Field,TRUE,7136,32,1972,2021,25.5,TRUE,0.0965,0,0.0470588235294118,-67.9357142857142,1
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,pH,Bottom,Field,TRUE,125,24,1992,2021,8.04,TRUE,0.0015,1,0,9.85498581011348,0
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,pH,Surface,Field,TRUE,6521,32,1972,2021,8.1,TRUE,-0.1231,0,-0.00571428571428572,19.5964705882352,-1
+24,Lake Jackson Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Dissolved Oxygen,Bottom,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Dissolved Oxygen,Surface,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Salinity,Bottom,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Salinity,Surface,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Total Nitrogen,Surface,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Total Phosphorus,Surface,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Turbidity,Surface,Sample,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,Water Temperature,Surface,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,pH,Bottom,Field,FALSE,0,0,,,,,,,,,
+24,Lake Jackson Aquatic Preserve,pH,Surface,Field,FALSE,0,0,,,,,,,,,
+25,Lemon Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+25,Lemon Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,76,10,1999,2017,2.345,TRUE,0.236,0.0012,0.131,-201.23125,1
+25,Lemon Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,47,3,2020,2022,,,,,,,
+25,Lemon Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,120,4,2006,2022,,,,,,,
+25,Lemon Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,1842,27,1986,2021,5.9,TRUE,0.0545,0.0017,0.015,-11.9796714285714,1
+25,Lemon Bay Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,7744,35,1971,2022,6.3,TRUE,0.0012,0.4268,0,3.63428571428573,0
+25,Lemon Bay Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,122,3,2020,2022,,,,,,,
+25,Lemon Bay Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,2960,24,1998,2022,88,TRUE,0.059,0,0.171428571428572,-414.5,1
+25,Lemon Bay Aquatic Preserve,Salinity,Bottom,Field,TRUE,1936,28,1986,2022,33.3,TRUE,0.0001,0.9758,0,-26.9813051470593,0
+25,Lemon Bay Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+25,Lemon Bay Aquatic Preserve,Salinity,Surface,Field,TRUE,5907,54,1954,2022,34,TRUE,0.0083,0.7761,0,22.0612179487176,0
+25,Lemon Bay Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+25,Lemon Bay Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,1461,26,1995,2022,1.2,TRUE,0.1631,0,0.0272727272727273,-54.8279220779221,1
+25,Lemon Bay Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,1,1,2020,2020,,,,,,,
+25,Lemon Bay Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1529,25,1997,2022,0.515,TRUE,0.0472,0.0057,0.00181818181818182,-2.59789285714285,1
+25,Lemon Bay Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,81,9,2011,2022,,,,,,,
+25,Lemon Bay Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1550,25,1997,2022,0.14,TRUE,-0.299,0,-0.00646153846153846,13.5014848484848,-1
+25,Lemon Bay Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,42,7,2011,2020,,,,,,,
+25,Lemon Bay Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,186,14,2003,2020,10.1,TRUE,0.1127,0.0276,0.306,-286.878214285714,1
+25,Lemon Bay Aquatic Preserve,Turbidity,Bottom,Field,FALSE,10,2,2020,2021,,,,,,,
+25,Lemon Bay Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,69,9,2011,2022,,,,,,,
+25,Lemon Bay Aquatic Preserve,Turbidity,Surface,Field,FALSE,22,5,2003,2021,,,,,,,
+25,Lemon Bay Aquatic Preserve,Turbidity,Surface,Sample,TRUE,4406,26,1995,2022,2.6,TRUE,0.0758,0,0.025,-69.8336466165413,1
+25,Lemon Bay Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,1957,28,1986,2022,26.8,TRUE,0.0601,0.0002,0.0222222222222221,0.0356944444445038,1
+25,Lemon Bay Aquatic Preserve,Water Temperature,Surface,Field,TRUE,8557,55,1954,2022,26.4,TRUE,0.0497,0,0.0153846153846156,14.6662358974359,1
+25,Lemon Bay Aquatic Preserve,pH,Bottom,Field,TRUE,390,20,2001,2022,8.02,TRUE,-0.3016,0,-0.0183333333333334,39.076339285714,-1
+25,Lemon Bay Aquatic Preserve,pH,Surface,Field,TRUE,7485,34,1955,2022,8,TRUE,0.0773,0,0,7.95,-1
+26,Lignumvitae Key Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,15,3,2001,2017,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Dissolved Oxygen,Bottom,Field,FALSE,63,3,2001,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Dissolved Oxygen,Surface,Field,FALSE,127,9,1997,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,75,2,2020,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,96,5,2016,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Salinity,Bottom,Field,FALSE,71,4,2001,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Salinity,Surface,Field,TRUE,121,10,1997,2021,36.12,TRUE,0.0538,0.1788,0.0395833333333332,-13.772738095238,0
+26,Lignumvitae Key Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,47,6,1997,2017,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Total Nitrogen,Surface,Sample,FALSE,129,7,2001,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,5,2,2020,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Total Phosphorus,Surface,Sample,FALSE,121,7,2001,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,9,2,2016,2017,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Turbidity,Surface,Field,FALSE,9,2,2016,2017,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Turbidity,Surface,Sample,FALSE,54,5,2016,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,67,5,2001,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,Water Temperature,Surface,Field,TRUE,127,10,1997,2021,27.7,TRUE,0.1074,0.9365,0.00208333333333336,-59.4368983957219,0
+26,Lignumvitae Key Aquatic Preserve,pH,Bottom,Field,FALSE,66,4,2001,2021,,,,,,,
+26,Lignumvitae Key Aquatic Preserve,pH,Surface,Field,FALSE,124,9,1997,2021,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,6,1,2019,2019,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,3138,23,1997,2019,5.6,TRUE,0.0286,0.0008,0.0375000000000001,-54.0250000000001,1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,392,21,2001,2021,44,TRUE,0.0798,0.4284,0.125,-1222.45454545455,0
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,401,21,1996,2019,6.4,TRUE,-0.1071,0.0002,-0.0433333333333335,70.2825000000003,-1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,7718,31,1991,2021,5.805,TRUE,-0.1047,0,-0.0225,57.4445394736841,-1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,269,17,2003,2019,98.1,TRUE,-0.1176,0.0027,-0.555555555555556,-259.014583333335,-1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,6837,27,1995,2021,80.9,TRUE,-0.0385,0.0003,-0.122222222222222,318.863727272728,-1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Salinity,Bottom,Field,TRUE,410,22,1996,2020,33.85,TRUE,0.0465,0.3431,0.0555555555555556,-272.267500000003,0
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Salinity,Surface,Field,TRUE,7066,32,1972,2021,26.2,TRUE,0.0306,0,0.0666666666666668,-67.8530303030304,1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Salinity,Surface,Sample,FALSE,77,1,2007,2007,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,3439,28,1994,2021,1.2,TRUE,0.0247,0.0022,0,1.259607415,-1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,737,28,1992,2019,0.72,TRUE,-0.2493,0,-0.0301666666666667,54.5074578088578,-1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,4257,31,1991,2021,0.7,TRUE,-0.2009,0,-0.0254285714285714,43.4270833333333,-1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,48,5,2010,2015,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,3922,31,1991,2021,0.041,TRUE,-0.0028,0.1632,-0.0000105,-0.165116071428572,0
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,2759,28,1994,2021,4.1,TRUE,0.0028,0.6562,0,4.35,0
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Turbidity,Bottom,Field,FALSE,98,7,2003,2009,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Turbidity,Surface,Field,TRUE,582,15,2003,2018,2.47,TRUE,-0.1669,0,-0.0819999999999999,177.4025,-1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Turbidity,Surface,Sample,TRUE,3716,31,1991,2021,2.6,TRUE,0.169,0,0.04,-78.0430158730159,1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,48,10,1996,2019,23.85,TRUE,0.2007,0.1176,0.11578947368421,-203.502429149798,0
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Water Temperature,Surface,Field,TRUE,5588,32,1972,2021,25.7,TRUE,0.1549,0,0.0571428571428574,-137.775,1
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,pH,Bottom,Field,TRUE,347,22,1993,2021,7.99,TRUE,0.0255,0.068,0.00399999999999992,7.68400000000001,0
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,pH,Surface,Field,TRUE,7461,31,1991,2021,7.75,TRUE,0.0012,0.0346,0.00090909090909089,7.15468749999996,1
+28,Matlacha Pass Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,183,15,1999,2022,4.6,TRUE,0.1472,0.0072,0.0941176470588235,-97.4225000000001,1
+28,Matlacha Pass Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,5,2,2020,2021,,,,,,,
+28,Matlacha Pass Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,75,3,2020,2022,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,720,26,1995,2021,6.24,TRUE,0.0398,0.2334,0.00948684210526314,-6.85592105263158,0
+28,Matlacha Pass Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,6635,32,1990,2022,6.8,TRUE,0.0219,0.019,0.00615384615384616,-10.8842657342657,1
+28,Matlacha Pass Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,171,8,2007,2021,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,125,9,2008,2022,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Salinity,Bottom,Field,TRUE,726,26,1995,2021,24.25,TRUE,-0.107,0,-0.143618181818182,217.579708333333,-1
+28,Matlacha Pass Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Salinity,Surface,Field,TRUE,6042,39,1954,2022,26.2,TRUE,-0.0065,0.2176,-0.0125000000000002,82.3583333333331,0
+28,Matlacha Pass Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,4516,28,1994,2022,0.9,TRUE,0.0261,0.0098,0,0.9,-1
+28,Matlacha Pass Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,10,2,2008,2021,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1255,27,1996,2022,0.64,TRUE,0.1323,0,0.00750000000000001,-14.6521802884615,1
+28,Matlacha Pass Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,19,4,2007,2021,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,701,25,1998,2022,0.057,TRUE,-0.0129,0.8637,0,0.558590909090909,0
+28,Matlacha Pass Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,22,2,2020,2021,,,,,,,
+28,Matlacha Pass Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,111,12,2003,2021,3.45,TRUE,0.482,0,0.657142857142857,-1502.22692460317,2
+28,Matlacha Pass Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,2,1,2021,2021,,,,,,,
+28,Matlacha Pass Aquatic Preserve,Turbidity,Surface,Field,TRUE,638,21,1996,2019,1.3,TRUE,0.1015,0.0001,0.02,-26.2791857142857,1
+28,Matlacha Pass Aquatic Preserve,Turbidity,Surface,Sample,TRUE,1827,26,1995,2022,1.6,TRUE,0.0015,0.8667,0,1.6,0
+28,Matlacha Pass Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,765,26,1995,2021,26.5,TRUE,0.1128,0,0.0399999999999999,-27.2575077399381,1
+28,Matlacha Pass Aquatic Preserve,Water Temperature,Surface,Field,TRUE,6686,38,1954,2022,26.1,TRUE,0.0045,0.645,0,18.4999999999998,0
+28,Matlacha Pass Aquatic Preserve,pH,Bottom,Field,FALSE,197,9,2001,2021,,,,,,,
+28,Matlacha Pass Aquatic Preserve,pH,Surface,Field,TRUE,6427,31,1990,2022,7.93,TRUE,0.0685,0,0,6.46785714285717,-1
+29,Mosquito Lagoon Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,12,5,1991,2013,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,8,2,2020,2021,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,23,2,2020,2021,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,1093,25,1995,2021,5.2,TRUE,-0.1676,0,-0.0799999999999999,137.816666666667,-1
+29,Mosquito Lagoon Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,3451,30,1991,2021,5.4,TRUE,-0.1379,0,-0.0555555555555556,98.9397727272727,-1
+29,Mosquito Lagoon Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,11,3,2019,2021,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,262,14,2006,2021,91.05,TRUE,-0.1853,0.0001,-0.909401709401709,1683.46482948718,-1
+29,Mosquito Lagoon Aquatic Preserve,Salinity,Bottom,Field,TRUE,1194,27,1995,2021,32.6,TRUE,0.0669,0.0001,0.066666666666667,-101.625294117647,1
+29,Mosquito Lagoon Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Salinity,Surface,Field,TRUE,3808,27,1995,2021,32.3,TRUE,0.1005,0,0.0999999999999996,-138.403125,1
+29,Mosquito Lagoon Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,283,15,2006,2021,0.7,TRUE,0.181,0,0.01,-7.16538461538461,1
+29,Mosquito Lagoon Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,337,24,1997,2021,0.71753,TRUE,-0.4112,0,-0.0276166666666667,59.7540248076923,-1
+29,Mosquito Lagoon Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,16,2,2020,2021,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,698,27,1991,2021,0.04,TRUE,0.0387,0.134,0.000202105263157895,-0.225527980889725,0
+29,Mosquito Lagoon Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,13,4,1992,2021,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,37,6,1991,2021,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,Turbidity,Bottom,Sample,TRUE,112,19,1995,2021,4.8,TRUE,-0.1524,0.0173,-0.0866666666666667,135.133333333333,-1
+29,Mosquito Lagoon Aquatic Preserve,Turbidity,Surface,Field,TRUE,35,10,1991,2019,8.08,TRUE,0.3506,0.0041,0.303508771929825,-298.179671160131,1
+29,Mosquito Lagoon Aquatic Preserve,Turbidity,Surface,Sample,TRUE,3400,25,1995,2021,4.6,TRUE,-0.0585,0,-0.0307692307692308,30.4,-1
+29,Mosquito Lagoon Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,1284,27,1995,2021,24.1,TRUE,0.0761,0.0002,0.0363636363636364,-58.33625,1
+29,Mosquito Lagoon Aquatic Preserve,Water Temperature,Surface,Field,TRUE,3922,30,1991,2021,25.1,TRUE,0.1456,0,0.0692307692307694,-151.88125,1
+29,Mosquito Lagoon Aquatic Preserve,pH,Bottom,Field,FALSE,27,9,1993,2021,,,,,,,
+29,Mosquito Lagoon Aquatic Preserve,pH,Surface,Field,TRUE,3575,30,1991,2021,7.9,TRUE,-0.1011,0,-0.00419181818181815,11.0241071428572,-1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,66,8,2004,2017,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,115,2,2020,2021,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,2015,25,1986,2021,5.64,TRUE,0.0867,0,0.0788235294117646,-12.4333333333334,1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,26923,37,1982,2022,6.15,TRUE,0.2308,0,0.125294117647059,-202.809999999999,1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,183,11,2004,2021,87.3,TRUE,-0.2932,0,-1.34117647058824,2898.44166666667,-1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,377,15,2002,2022,88.3,TRUE,-0.161,0,-0.523529411764706,928.321428571428,-1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Salinity,Bottom,Field,TRUE,376,23,1986,2021,32.4,TRUE,0.0344,0.0512,0.0879166666666669,67.2306249999999,0
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Salinity,Surface,Field,TRUE,9178,28,1980,2022,30.4,TRUE,0.0152,0.0259,0.0249999999999986,-19.3000000000007,1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,14503,23,1982,2021,0.7,TRUE,-0.008,0.1862,0,0.7,0
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,1,1,2002,2002,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,414,24,1988,2021,0.4845,TRUE,-0.1673,0,-0.0072889880952381,29.9257166666667,-1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,1,1,2021,2021,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,768,27,1983,2021,0.0749,TRUE,-0.1205,0,-0.00058125,1.42003409090909,-1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,30,8,1987,1998,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,378,19,1983,2021,24.85,TRUE,-0.2881,0,-0.8,2045.92647152605,-1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Turbidity,Surface,Field,TRUE,15142,14,1985,2021,16.7,TRUE,-0.0507,0,-3.3,-852.471666666667,-2
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Turbidity,Surface,Sample,TRUE,344,17,1997,2021,7.5606,TRUE,0.0908,0.0054,0.106376363636364,-107.132885048077,1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,381,24,1986,2021,21.05,TRUE,-0.0161,0.1226,-0.0412500000000001,21.0368888888889,0
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Water Temperature,Surface,Field,TRUE,28421,37,1982,2022,21.29,TRUE,-0.013,0,-0.0161538461538459,-45.0024999999998,-1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,pH,Bottom,Field,TRUE,1259,31,1984,2021,7.66,TRUE,0.1053,0,0.0164285714285714,-12.5160000000001,1
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,pH,Surface,Field,TRUE,17534,37,1982,2022,7.66,TRUE,0.0507,0,0.004,6.77750000000002,1
+48,Nature Coast Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,411,3,2007,2009,,,,,,,
+48,Nature Coast Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,1161,6,2005,2016,,,,,,,
+48,Nature Coast Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,TRUE,120,13,1999,2022,14.916,TRUE,0.1536,0.0397,0.170588235294118,-296.558583333333,1
+48,Nature Coast Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,3150,13,1999,2022,10.089,TRUE,0.1005,0,0.0838047619047619,-191.359370634921,1
+48,Nature Coast Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,1204,32,1986,2022,7.27,TRUE,-0.0074,0.7402,0,4.07749999999999,0
+48,Nature Coast Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,5959,34,1982,2022,7,TRUE,0.004,0.5992,0.000666666666666652,-2.20178571428571,0
+48,Nature Coast Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,54,4,2014,2022,,,,,,,
+48,Nature Coast Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,556,6,2014,2022,,,,,,,
+48,Nature Coast Aquatic Preserve,Salinity,Bottom,Field,TRUE,1175,30,1986,2020,23.1,TRUE,0.1161,0,0.182,-371.998385416666,1
+48,Nature Coast Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+48,Nature Coast Aquatic Preserve,Salinity,Surface,Field,TRUE,5710,38,1975,2020,24.18,TRUE,0.0432,0,0.0727272727272728,-153.858125,1
+48,Nature Coast Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+48,Nature Coast Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,1446,17,1986,2021,1.7,TRUE,0.0521,0.0017,0.02,-45.3228571428571,1
+48,Nature Coast Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,497,12,1997,2015,0.43,TRUE,-0.0287,0.5363,0,2.09875,0
+48,Nature Coast Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,4237,20,1996,2021,0.395,TRUE,-0.0677,0,-0.0025,5.22137781954887,-1
+48,Nature Coast Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,524,13,1997,2020,0.009,TRUE,-0.0792,0.0072,-0.000125,0.302770833333333,-1
+48,Nature Coast Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,4259,20,1996,2021,0.009,TRUE,-0.1016,0,-0.000125,0.25946875,-1
+48,Nature Coast Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,82,3,2015,2020,,,,,,,
+48,Nature Coast Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,281,4,2015,2020,,,,,,,
+48,Nature Coast Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+48,Nature Coast Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,21,2,2015,2020,,,,,,,
+48,Nature Coast Aquatic Preserve,Turbidity,Surface,Field,FALSE,2,2,2005,2020,,,,,,,
+48,Nature Coast Aquatic Preserve,Turbidity,Surface,Sample,TRUE,1023,24,1995,2020,1,TRUE,-0.0687,0.0303,-0.005,28.4670833333333,-1
+48,Nature Coast Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,1045,32,1986,2022,23.3,TRUE,0.0165,0.5239,0.00545454545454566,28.5368382352942,0
+48,Nature Coast Aquatic Preserve,Water Temperature,Surface,Field,TRUE,4981,40,1974,2022,24.44,TRUE,0.0434,0,0.0199999999999999,-18.6174999999998,1
+48,Nature Coast Aquatic Preserve,pH,Bottom,Field,TRUE,419,20,1991,2022,8.14,TRUE,-0.2326,0,-0.0140000000000001,34.686,-1
+48,Nature Coast Aquatic Preserve,pH,Surface,Field,TRUE,4081,32,1991,2022,8.15,TRUE,-0.1109,0,-0.00555555555555554,14.794743083004,-1
+31,North Fork St. Lucie Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,216,9,1999,2017,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,17,2,2020,2021,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,70,11,1996,2021,5.6,TRUE,-0.3106,0.0373,-0.0729166666666667,230.629375,-1
+31,North Fork St. Lucie Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,3173,28,1989,2021,6.56,TRUE,-0.1923,0,-0.06,132.321190476191,-1
+31,North Fork St. Lucie Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,18,2,2020,2021,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,31,4,2009,2021,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Salinity,Bottom,Field,FALSE,21,5,1996,2021,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Salinity,Surface,Field,TRUE,2887,26,1994,2021,4.4,TRUE,-0.0737,0,-0.0384615384615385,154.881,-1
+31,North Fork St. Lucie Aquatic Preserve,Salinity,Surface,Sample,FALSE,36,1,2007,2007,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,1513,23,1996,2021,0.8,TRUE,-0.0625,0.0158,0,6.33888888888889,-1
+31,North Fork St. Lucie Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,9,1,2002,2002,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,252,16,1999,2021,1.075,TRUE,-0.0175,0.691,-0.00205,14.6007756410256,0
+31,North Fork St. Lucie Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,1,1,2021,2021,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,428,20,1999,2021,0.18,TRUE,-0.111,0.0016,-0.00175,3.23631904761905,-1
+31,North Fork St. Lucie Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,1,1,2021,2021,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,197,10,2002,2021,8,TRUE,-0.0953,0.1411,-0.08125,341.481370192308,0
+31,North Fork St. Lucie Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Turbidity,Surface,Sample,TRUE,254,12,1999,2021,5,TRUE,-0.1248,0.0009,-0.1,171.666666666667,-1
+31,North Fork St. Lucie Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,22,5,1996,2021,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,Water Temperature,Surface,Field,TRUE,3229,28,1989,2021,26.1,TRUE,0.0151,0.2068,0.00499999999999989,16.6375,0
+31,North Fork St. Lucie Aquatic Preserve,pH,Bottom,Field,FALSE,35,7,1996,2021,,,,,,,
+31,North Fork St. Lucie Aquatic Preserve,pH,Surface,Field,TRUE,3190,28,1989,2021,7.7,TRUE,-0.1314,0,-0.00800000000000001,26.0329166666666,-1
+32,Oklawaha River Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Dissolved Oxygen,Bottom,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Dissolved Oxygen,Surface,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Salinity,Bottom,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Salinity,Surface,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Total Nitrogen,Surface,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Total Phosphorus,Surface,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Turbidity,Surface,Sample,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,Water Temperature,Surface,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,pH,Bottom,Field,FALSE,0,0,,,,,,,,,
+32,Oklawaha River Aquatic Preserve,pH,Surface,Field,FALSE,0,0,,,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,21,2,2015,2017,,,,,,,
+33,Pellicer Creek Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+33,Pellicer Creek Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,56,10,2004,2022,5.245,TRUE,-0.0011,0.7394,-0.0207142857142855,41.9952472527473,0
+33,Pellicer Creek Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,750,13,2004,2022,5.42,TRUE,0.0782,0,0.086,-41.3713333333335,1
+33,Pellicer Creek Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,37,6,2004,2022,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,96,11,2004,2022,60.1,TRUE,0.1038,0.1515,0.846590909090909,-1271.55101809955,0
+33,Pellicer Creek Aquatic Preserve,Salinity,Bottom,Field,TRUE,87,11,2004,2022,13.03,TRUE,-0.1819,0.0122,-1.06833333333333,2256.0075,-1
+33,Pellicer Creek Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Salinity,Surface,Field,TRUE,222,13,2004,2022,12.755,TRUE,-0.1133,0.0097,-0.5,570.648214285715,-1
+33,Pellicer Creek Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,507,21,2002,2022,0.6,TRUE,-0.0682,0.0407,0,12.144495506536,-1
+33,Pellicer Creek Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,22,2,2013,2014,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Total Nitrogen,Surface,Sample,FALSE,146,9,2004,2021,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,11,7,2015,2021,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,760,12,2004,2021,0.082,TRUE,-0.1472,0,-0.00233333333333334,6.12775000000001,-1
+33,Pellicer Creek Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,TRUE,65,11,2009,2021,11,TRUE,-0.3629,0.0007,-2.33333333333333,6400.66666666667,-2
+33,Pellicer Creek Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,725,10,2009,2021,13,TRUE,-0.0358,0.0326,-0.333333333333333,268.625,-1
+33,Pellicer Creek Aquatic Preserve,Turbidity,Bottom,Field,FALSE,62,5,2002,2006,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,3,2,2020,2021,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Turbidity,Surface,Field,FALSE,2,1,2009,2009,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Turbidity,Surface,Sample,FALSE,139,9,2004,2021,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,56,8,2004,2022,,,,,,,
+33,Pellicer Creek Aquatic Preserve,Water Temperature,Surface,Field,TRUE,778,13,2004,2022,24.7,TRUE,0.0265,0.3223,0.0552500000000005,5.72958333333355,0
+33,Pellicer Creek Aquatic Preserve,pH,Bottom,Field,FALSE,55,9,2004,2022,,,,,,,
+33,Pellicer Creek Aquatic Preserve,pH,Surface,Field,TRUE,748,13,2004,2022,7.29,TRUE,-0.048,0.1017,-0.0166666666666666,50.03375,0
+34,Pine Island Sound Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,160,10,1999,2008,3.485,TRUE,-0.1362,0.2533,-0.08,1000.83166666667,0
+34,Pine Island Sound Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,47,4,2001,2021,,,,,,,
+34,Pine Island Sound Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,309,7,2001,2022,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,2346,26,1995,2021,6.3,TRUE,0.0499,0.0022,0.0142857142857142,-14.8850877192982,1
+34,Pine Island Sound Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,20201,36,1985,2022,7.1,TRUE,0.0336,0,0.0111111111111111,-10.9022727272727,1
+34,Pine Island Sound Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,15,2,2020,2021,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,626,7,2014,2022,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Salinity,Bottom,Field,TRUE,2383,26,1995,2021,32.82,TRUE,0.0468,0.0012,0.0333333333333338,-28.7186538461536,1
+34,Pine Island Sound Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Salinity,Surface,Field,TRUE,19710,61,1954,2022,32.8,TRUE,0.0117,0.0141,0.00555555555555563,25.3749999999999,1
+34,Pine Island Sound Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,15962,28,1994,2022,1.2,TRUE,0.004,0.3513,0,1.2,0
+34,Pine Island Sound Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,72,13,1997,2014,0.05,TRUE,0.2777,0,0.00363636363636364,-6.65333333333333,1
+34,Pine Island Sound Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,2638,27,1995,2022,0.48,TRUE,0.2551,0,0.0175,-31.3258333333333,1
+34,Pine Island Sound Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,14,3,2019,2021,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1003,23,1998,2022,0.039,TRUE,-0.0378,0.0308,-0.0002,0.580257575757576,-1
+34,Pine Island Sound Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,2,1,2020,2020,,,,,,,
+34,Pine Island Sound Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,192,3,2007,2021,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,12,2,2020,2021,,,,,,,
+34,Pine Island Sound Aquatic Preserve,Turbidity,Surface,Field,TRUE,2053,26,1996,2022,1.96,TRUE,0.2578,0,0.0890909090909091,-166.9469185,1
+34,Pine Island Sound Aquatic Preserve,Turbidity,Surface,Sample,TRUE,4252,25,1995,2022,1.9,TRUE,-0.0081,0.4879,0,1.85,0
+34,Pine Island Sound Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,2444,26,1995,2021,26.4,TRUE,0.0015,0.7149,0,12.0983333333334,0
+34,Pine Island Sound Aquatic Preserve,Water Temperature,Surface,Field,TRUE,21352,59,1954,2022,26.2,TRUE,0.0396,0,0.0142857142857135,-6.46193181818155,1
+34,Pine Island Sound Aquatic Preserve,pH,Bottom,Field,TRUE,110,16,1996,2021,8.03,TRUE,0.2418,0.0015,0.011764705882353,-13.245625,1
+34,Pine Island Sound Aquatic Preserve,pH,Surface,Field,TRUE,19557,36,1955,2022,8.1,TRUE,0.1028,0,0,8.1,-1
+35,Pinellas County Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+35,Pinellas County Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,1291,21,1999,2019,7,TRUE,0.1651,0,0.25,-551.498857142857,1
+35,Pinellas County Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,19,2,2020,2021,,,,,,,
+35,Pinellas County Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,312,17,2001,2022,14,TRUE,0.279,0,0.5,-959.8625,1
+35,Pinellas County Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,16451,28,1993,2021,5.89,TRUE,-0.0051,0,-0.0150000000000001,-17.9005357142857,-1
+35,Pinellas County Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,52097,36,1974,2022,6.8,TRUE,0.0317,0,0.00999999999999979,-14.04,1
+35,Pinellas County Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,10582,29,1992,2021,85.4,TRUE,-0.0149,0,-0.553333333333333,206.662499999997,-1
+35,Pinellas County Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,11550,30,1992,2022,93.8,TRUE,0.0837,0,0.392307692307692,-691.04090909091,1
+35,Pinellas County Aquatic Preserve,Salinity,Bottom,Field,TRUE,13201,29,1992,2021,28.36,TRUE,-0.0606,0.006,-0.0300000000000004,299.235238095238,-1
+35,Pinellas County Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+35,Pinellas County Aquatic Preserve,Salinity,Surface,Field,TRUE,54257,60,1954,2021,29.2,TRUE,-0.0743,0,-0.0625,177.461944444445,-1
+35,Pinellas County Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+35,Pinellas County Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,23817,28,1994,2021,1.2,TRUE,0.0863,0,0.0125,-21.1886111111111,1
+35,Pinellas County Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,6,2,1999,2001,,,,,,,
+35,Pinellas County Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,10859,23,1999,2021,0.64,TRUE,-0.0322,0.0045,-0.00142857142857143,5.36072115384615,-1
+35,Pinellas County Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,185,14,1999,2021,0.06,TRUE,0.4312,0,0.009899,-19.786145,2
+35,Pinellas County Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,10145,23,1999,2021,0.09,TRUE,-0.0587,0,-0.000857142857142858,1.41121328671329,-1
+35,Pinellas County Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,104,2,2020,2021,,,,,,,
+35,Pinellas County Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,1170,17,1999,2021,9,TRUE,0.0296,0.0102,0.111111111111111,-311.857683982684,1
+35,Pinellas County Aquatic Preserve,Turbidity,Bottom,Field,FALSE,24,7,2013,2021,,,,,,,
+35,Pinellas County Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,123,4,1999,2021,,,,,,,
+35,Pinellas County Aquatic Preserve,Turbidity,Surface,Field,TRUE,680,16,1999,2021,1.77,TRUE,-0.0766,0.0266,-0.0177777777777778,129.77875,-1
+35,Pinellas County Aquatic Preserve,Turbidity,Surface,Sample,TRUE,15980,25,1995,2021,2.4,TRUE,0.0626,0,0.026,-39.9588888888889,1
+35,Pinellas County Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,15438,29,1992,2021,28.07,TRUE,0.0099,0.2111,-0.00363636363636356,6.63922077922061,0
+35,Pinellas County Aquatic Preserve,Water Temperature,Surface,Field,TRUE,57277,64,1954,2022,26.13,TRUE,0.0686,0,0.0201754385964912,-18.9228571428572,1
+35,Pinellas County Aquatic Preserve,pH,Bottom,Field,TRUE,12766,28,1993,2021,8.09,TRUE,0.07,0,0.00499999999999989,1.23254807692304,1
+35,Pinellas County Aquatic Preserve,pH,Surface,Field,TRUE,51251,37,1955,2022,8.1,TRUE,-0.0167,0,0,8.115,-1
+36,Rainbow Springs Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Dissolved Oxygen,Bottom,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Dissolved Oxygen,Surface,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Salinity,Bottom,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Salinity,Surface,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Total Nitrogen,Surface,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Total Phosphorus,Surface,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Turbidity,Surface,Sample,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,Water Temperature,Surface,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,pH,Bottom,Field,FALSE,0,0,,,,,,,,,
+36,Rainbow Springs Aquatic Preserve,pH,Surface,Field,FALSE,0,0,,,,,,,,,
+37,Rocky Bayou State Park Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+37,Rocky Bayou State Park Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,386,19,2001,2019,3.5,TRUE,0.0235,0.4879,0,3,0
+37,Rocky Bayou State Park Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+37,Rocky Bayou State Park Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,111,21,2001,2021,15,TRUE,0.1263,0.1182,0.357142857142857,-1379.45192307692,0
+37,Rocky Bayou State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,260,19,1994,2018,4.25,TRUE,0.0997,0.0185,0.0499999999999999,-81.45525,1
+37,Rocky Bayou State Park Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,305,22,1994,2021,7.56,TRUE,0.1159,0.0024,0.03,-36.2495,1
+37,Rocky Bayou State Park Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,257,18,2001,2018,54.1,TRUE,0.0633,0.1722,0.45,-906,0
+37,Rocky Bayou State Park Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,293,21,2000,2021,97,TRUE,0.1356,0.0006,0.400000000000006,-920.317222222222,1
+37,Rocky Bayou State Park Aquatic Preserve,Salinity,Bottom,Field,TRUE,259,19,1994,2018,27.28,TRUE,-0.1155,0.0045,-0.161666666666666,420.750833333333,-1
+37,Rocky Bayou State Park Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+37,Rocky Bayou State Park Aquatic Preserve,Salinity,Surface,Field,TRUE,305,23,1994,2021,14.08,TRUE,-0.0693,0.0923,-0.129473684210526,533.003750000001,0
+37,Rocky Bayou State Park Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+37,Rocky Bayou State Park Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,409,22,1995,2021,2.4384,TRUE,-0.1296,0.0003,-0.0253938233333334,39.9702487488889,-1
+37,Rocky Bayou State Park Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+37,Rocky Bayou State Park Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,584,21,2001,2021,0.2,TRUE,0.0409,0.1348,0.00000352941176470588,0.181067045454545,0
+37,Rocky Bayou State Park Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,39,12,2001,2018,0.000011,TRUE,0.2886,0.0553,0.000000142857142857143,-0.0001171875,0
+37,Rocky Bayou State Park Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,415,21,2001,2021,0.005,TRUE,0.0453,0.1777,0.0000000909090909090908,0.00343125,0
+37,Rocky Bayou State Park Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+37,Rocky Bayou State Park Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,15,3,2013,2016,,,,,,,
+37,Rocky Bayou State Park Aquatic Preserve,Turbidity,Bottom,Field,TRUE,166,15,2001,2015,1.75,TRUE,-0.0949,0.0908,-0.05,93.21,0
+37,Rocky Bayou State Park Aquatic Preserve,Turbidity,Bottom,Sample,TRUE,102,11,2008,2018,1.45,TRUE,-0.2164,0.0066,-0.21875,669.637777777778,-2
+37,Rocky Bayou State Park Aquatic Preserve,Turbidity,Surface,Field,TRUE,165,17,2001,2021,0.6,TRUE,-0.0443,0.5164,0,0.9,0
+37,Rocky Bayou State Park Aquatic Preserve,Turbidity,Surface,Sample,TRUE,119,11,2008,2018,0.7,TRUE,-0.0763,0.2264,0,1.1,0
+37,Rocky Bayou State Park Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,106,12,1994,2018,24.19445,TRUE,0.0141,0.7867,0.00792857142857173,60.1082500000001,0
+37,Rocky Bayou State Park Aquatic Preserve,Water Temperature,Surface,Field,TRUE,151,15,1994,2021,25.0556,TRUE,0.061,0.1257,0.0575772727272727,-7.97840863095234,0
+37,Rocky Bayou State Park Aquatic Preserve,pH,Bottom,Field,TRUE,258,18,2001,2018,7.84,TRUE,0.0399,0.4283,0.00333333333333326,1.65708333333312,0
+37,Rocky Bayou State Park Aquatic Preserve,pH,Surface,Field,TRUE,303,23,1994,2021,8,TRUE,-0.0299,0.5482,-0.00272727272727267,18.8661538461539,0
+38,Rookery Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,1,1,2007,2007,,,,,,,
+38,Rookery Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,604,16,1999,2017,4.8343,TRUE,0.023,0.2752,0.01585,-18.9233334615384,0
+38,Rookery Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+38,Rookery Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,182,10,2001,2011,7,TRUE,0.1343,0.0306,0.333333333333333,-992,1
+38,Rookery Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,1661,27,1989,2021,5.8,TRUE,0.1273,0,0.0550000000000002,-100.3375,1
+38,Rookery Bay Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,2845,31,1989,2021,5.87,TRUE,0.0026,0.8516,0,1.79124999999993,0
+38,Rookery Bay Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,152,15,2002,2021,78.95,TRUE,0.023,0.531,0.27,-173.853928571427,0
+38,Rookery Bay Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,852,22,1998,2021,80.15,TRUE,0.0146,0.5961,0.0499999999999995,-127.759285714286,0
+38,Rookery Bay Aquatic Preserve,Salinity,Bottom,Field,TRUE,1671,28,1989,2021,34.4,TRUE,0.0565,0.0013,0.0571428571428569,-82.0149999999993,1
+38,Rookery Bay Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+38,Rookery Bay Aquatic Preserve,Salinity,Surface,Field,TRUE,3560,43,1954,2021,34,TRUE,0.0162,0.1451,0.00549999999999997,27.4699999999999,0
+38,Rookery Bay Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+38,Rookery Bay Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,320,18,1998,2021,1.2,TRUE,-0.0984,0.0255,-0.0126168104615385,25.391796243052,-1
+38,Rookery Bay Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+38,Rookery Bay Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1769,26,1989,2021,0.27,TRUE,0.2002,0,0.00878571428571429,-16.759075,1
+38,Rookery Bay Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,26,9,2001,2011,,,,,,,
+38,Rookery Bay Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,1245,23,1999,2021,0.027,TRUE,0.1281,0,0.0000081,-0.023356,1
+38,Rookery Bay Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,24,4,2016,2019,,,,,,,
+38,Rookery Bay Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,125,6,2002,2019,,,,,,,
+38,Rookery Bay Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+38,Rookery Bay Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,4,2,1992,1995,,,,,,,
+38,Rookery Bay Aquatic Preserve,Turbidity,Surface,Field,TRUE,609,13,2000,2020,8.18,TRUE,-0.1188,0,-0.165384615384615,350.608125,-1
+38,Rookery Bay Aquatic Preserve,Turbidity,Surface,Sample,TRUE,711,28,1989,2021,4.405,TRUE,0.1802,0,0.133333333333333,-196.8435,1
+38,Rookery Bay Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,1665,26,1989,2021,26.2,TRUE,-0.0171,0.2078,-0.0124999999999993,50.8405000000002,0
+38,Rookery Bay Aquatic Preserve,Water Temperature,Surface,Field,TRUE,3434,41,1954,2021,26.595,TRUE,0.0452,0.0001,0.0133333333333334,11.3017770034844,1
+38,Rookery Bay Aquatic Preserve,pH,Bottom,Field,TRUE,122,13,1989,2021,7.81,TRUE,-0.105,0.019,-0.00692307692307691,13.5839438502674,-1
+38,Rookery Bay Aquatic Preserve,pH,Surface,Field,TRUE,1501,34,1955,2021,7.84,TRUE,-0.1118,0,-0.00533333333333334,19.86725,-1
+39,Rookery Bay National Estuarine Research Reserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,1,1,2007,2007,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,1021,21,1994,2017,4,TRUE,0.1601,0,0.124133333333333,-217.0174125,1
+39,Rookery Bay National Estuarine Research Reserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,193,12,2001,2017,8,TRUE,0.1117,0.0735,0.222222222222222,-664,0
+39,Rookery Bay National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,TRUE,6337,32,1989,2021,5.6,TRUE,-0.0039,0.3447,0,5.35,0
+39,Rookery Bay National Estuarine Research Reserve,Dissolved Oxygen,Surface,Field,TRUE,9502,32,1989,2021,5.88,TRUE,-0.109,0,-0.0352941176470588,68.1821428571428,-1
+39,Rookery Bay National Estuarine Research Reserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,370,16,2002,2021,77.4,TRUE,-0.0511,0.211,-0.233333333333332,734.264583333332,0
+39,Rookery Bay National Estuarine Research Reserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,1971,23,1998,2021,75.6,TRUE,-0.0956,0,-0.401,863.532053571427,-1
+39,Rookery Bay National Estuarine Research Reserve,Salinity,Bottom,Field,TRUE,6478,32,1989,2021,32.4,TRUE,-0.0528,0,-0.0555555555555556,126.331108058608,-1
+39,Rookery Bay National Estuarine Research Reserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,Salinity,Surface,Field,TRUE,10872,49,1954,2021,32.7,TRUE,0.0596,0,0.0464285714285713,-55.5758181818176,1
+39,Rookery Bay National Estuarine Research Reserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,Secchi Depth,Surface,Field,TRUE,459,18,1998,2021,1.15825408,TRUE,-0.0549,0.0824,-0.00563720636363636,7.05801453333332,0
+39,Rookery Bay National Estuarine Research Reserve,Total Nitrogen,Bottom,Sample,FALSE,2,1,1994,1994,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,Total Nitrogen,Surface,Sample,TRUE,3607,31,1989,2021,0.38,TRUE,0.2675,0,0.016,-29.5074643239114,1
+39,Rookery Bay National Estuarine Research Reserve,Total Phosphorus,Bottom,Sample,FALSE,34,8,2001,2011,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,Total Phosphorus,Surface,Sample,TRUE,3126,28,1994,2021,0.041,TRUE,0.1403,0,0.000752086956521739,-1.18879318181818,1
+39,Rookery Bay National Estuarine Research Reserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,99,4,2016,2019,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,519,6,2002,2019,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,Turbidity,Bottom,Sample,FALSE,8,3,1992,1995,,,,,,,
+39,Rookery Bay National Estuarine Research Reserve,Turbidity,Surface,Field,TRUE,1222,13,2000,2020,7.4,TRUE,-0.0535,0.0022,-0.052,115.880164835165,-1
+39,Rookery Bay National Estuarine Research Reserve,Turbidity,Surface,Sample,TRUE,3982,29,1989,2021,3.4,TRUE,0.1908,0,0.135714285714286,-212.74756127451,1
+39,Rookery Bay National Estuarine Research Reserve,Water Temperature,Bottom,Field,TRUE,6439,32,1989,2021,26.72,TRUE,0.0434,0,0.0199999999999999,10.2625396825398,1
+39,Rookery Bay National Estuarine Research Reserve,Water Temperature,Surface,Field,TRUE,10726,47,1954,2021,26.5,TRUE,0.0269,0,0.00999999999999979,34.1979545454545,1
+39,Rookery Bay National Estuarine Research Reserve,pH,Bottom,Field,TRUE,376,27,1989,2021,7.8,TRUE,-0.2119,0,-0.0107692307692308,33.6287873931625,-1
+39,Rookery Bay National Estuarine Research Reserve,pH,Surface,Field,TRUE,5984,35,1955,2021,7.8,TRUE,-0.1951,0,-0.0103846153846154,30.2419298245614,-1
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,134,3,2009,2011,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,143,4,2009,2013,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Dissolved Oxygen,Bottom,Field,TRUE,151,10,1986,2018,6.5609,TRUE,0.0421,0.6311,0.00837619047619046,-223.165096428572,0
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Dissolved Oxygen,Surface,Field,TRUE,352,17,1970,2018,6.42,TRUE,0.0159,0.0883,0.0095366666666667,51.3434375,0
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Dissolved Oxygen Saturation,Bottom,Field,FALSE,1,1,1995,1995,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Dissolved Oxygen Saturation,Surface,Field,TRUE,165,11,1995,2016,0.9201,TRUE,-0.0936,0.0634,-0.111066666666667,365.011225,0
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Salinity,Bottom,Field,FALSE,150,8,1986,2018,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Salinity,Surface,Field,TRUE,481,27,1972,2018,35.2665,TRUE,0.0723,0.5654,0.00310437500000005,-72.3657111111111,0
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Secchi Depth,Surface,Field,TRUE,4904,13,1997,2021,5,TRUE,0.1202,0,0.3,-643.714285714286,1
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Total Nitrogen,Bottom,Sample,FALSE,134,3,2009,2011,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Total Nitrogen,Surface,Sample,FALSE,217,6,2009,2015,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Total Phosphorus,Bottom,Sample,FALSE,3879,8,2009,2021,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Total Phosphorus,Surface,Sample,TRUE,4801,11,2009,2021,0,TRUE,-0.0583,0,0,0.001,0
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,4099,6,2016,2021,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,"Total Suspended Solids, TSS",Surface,Sample,FALSE,4946,6,2016,2021,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Turbidity,Bottom,Field,FALSE,132,3,2009,2011,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Turbidity,Bottom,Sample,FALSE,3757,5,2017,2021,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Turbidity,Surface,Field,FALSE,132,3,2009,2011,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Turbidity,Surface,Sample,FALSE,4602,6,2011,2021,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Water Temperature,Bottom,Field,FALSE,148,8,1986,2018,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Water Temperature,Surface,Field,TRUE,593,28,1970,2018,26.1657,TRUE,0.1158,0.0006,0.0248780487804878,-33.8170576923076,1
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,pH,Bottom,Field,FALSE,10,3,2000,2002,,,,,,,
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,pH,Surface,Field,FALSE,146,8,1972,2011,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,670,28,1990,2019,1,TRUE,-0.1862,0,-0.025,84.1871825396825,-1
+40,St. Andrews State Park Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,143,20,2001,2021,6,TRUE,0.141,0.2173,0.0625,-226.884615384615,0
+40,St. Andrews State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,101,12,1983,2021,7.16,TRUE,0.2094,0.0003,0.5,-146.8728125,1
+40,St. Andrews State Park Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,993,24,1983,2022,7.09,TRUE,0.0299,0.8414,0,-65.3860416666666,0
+40,St. Andrews State Park Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,52,5,2015,2021,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,138,9,2005,2021,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Salinity,Bottom,Field,TRUE,101,12,1983,2021,29.8,TRUE,-0.2205,0.0002,-0.691666666666667,845.028080357143,-1
+40,St. Andrews State Park Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Salinity,Surface,Field,TRUE,902,27,1974,2021,31.6,TRUE,-0.212,0,-0.177332015810277,513.251428571428,-1
+40,St. Andrews State Park Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,1239,29,1991,2021,2,TRUE,-0.1831,0,-0.076687854354067,135.951510137143,-1
+40,St. Andrews State Park Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1132,31,1990,2022,0.18,TRUE,0.2474,0,0.00493333333333333,-10.6229240740741,1
+40,St. Andrews State Park Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,45,12,1990,2020,0.00001,TRUE,0.5915,0,0.000000916666666666667,-0.003420125,1
+40,St. Andrews State Park Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,817,31,1990,2022,0.008,TRUE,0.3213,0,0.000245336822660099,-0.583565865384615,1
+40,St. Andrews State Park Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,248,13,2003,2015,5,TRUE,-0.2138,0,-0.285714285714286,423.458333333333,-1
+40,St. Andrews State Park Aquatic Preserve,Turbidity,Bottom,Field,FALSE,3,1,2021,2021,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Turbidity,Surface,Field,FALSE,8,4,2005,2021,,,,,,,
+40,St. Andrews State Park Aquatic Preserve,Turbidity,Surface,Sample,TRUE,141,17,2003,2022,0.7,TRUE,-0.1358,0.0246,-0.0384615384615385,71.0884595959596,-1
+40,St. Andrews State Park Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,104,12,1983,2021,24.15,TRUE,0.1554,0.001,0.399999999999999,-94.7953431372548,1
+40,St. Andrews State Park Aquatic Preserve,Water Temperature,Surface,Field,TRUE,1015,25,1974,2022,25.9,TRUE,-0.012,0.864,0,56.7787142857143,0
+40,St. Andrews State Park Aquatic Preserve,pH,Bottom,Field,TRUE,110,11,2000,2021,8.135,TRUE,0.0687,0.1355,0.0150000000000001,-27.110000000001,0
+40,St. Andrews State Park Aquatic Preserve,pH,Surface,Field,TRUE,928,21,1998,2022,8.1,TRUE,-0.1385,0,-0.00588235294117645,25.7189999999997,-1
+41,St. Joseph Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,698,19,2001,2019,2,TRUE,0.0321,0.2778,0,2,0
+41,St. Joseph Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,23,5,2015,2019,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,338,20,2001,2021,6,TRUE,0.0731,0.0304,0.0588235294117647,5,1
+41,St. Joseph Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,1845,27,1991,2022,7.12,TRUE,-0.1953,0,-0.0681818181818182,128.970760233918,-1
+41,St. Joseph Bay Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,3584,29,1991,2022,7.2,TRUE,-0.176,0,-0.0470000000000001,96.2363299232737,-1
+41,St. Joseph Bay Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,25,4,2015,2018,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,204,9,2005,2018,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Salinity,Bottom,Field,TRUE,1997,26,1991,2020,32.5,TRUE,-0.089,0,-0.0666666666666667,149.543020833333,-1
+41,St. Joseph Bay Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Salinity,Surface,Field,TRUE,3987,29,1991,2022,32,TRUE,-0.0665,0,-0.0414285714285713,103.26875,-1
+41,St. Joseph Bay Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,995,22,1991,2021,1.61545964,TRUE,-0.0845,0,-0.0286872994117647,13.7713259191667,-1
+41,St. Joseph Bay Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,40,14,2001,2016,0.225,TRUE,0.1869,0.1535,0.00555555555555556,-10.762380952381,0
+41,St. Joseph Bay Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1395,22,2001,2022,0.13,TRUE,0.0896,0,0.0000075,0.116507346153846,1
+41,St. Joseph Bay Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,12,3,2019,2021,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,936,22,2001,2022,0.000016,TRUE,0.3574,0,0.00000130769230769231,-0.0026018,1
+41,St. Joseph Bay Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,35,6,2008,2013,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Turbidity,Surface,Field,FALSE,68,3,2005,2022,,,,,,,
+41,St. Joseph Bay Aquatic Preserve,Turbidity,Surface,Sample,TRUE,2537,23,1995,2022,0.9,TRUE,-0.0307,0.023,-0.00166666666666665,0.86,-1
+41,St. Joseph Bay Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,2078,26,1991,2020,25.5,TRUE,0.0424,0.1517,0.00999999999999979,-30.1789473684209,0
+41,St. Joseph Bay Aquatic Preserve,Water Temperature,Surface,Field,TRUE,4104,29,1991,2022,25.3,TRUE,-0.0206,0.0033,-0.0111111111111113,33.7916666666668,-1
+41,St. Joseph Bay Aquatic Preserve,pH,Bottom,Field,TRUE,145,13,1991,2020,8.1,TRUE,-0.1791,0.0017,-0.02,47.580357142857,-1
+41,St. Joseph Bay Aquatic Preserve,pH,Surface,Field,TRUE,3464,29,1991,2022,8.1,TRUE,-0.145,0,-0.00666666666666672,18.1183574879227,-1
+42,St. Joseph Bay State Buffer Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,41,4,2016,2019,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,51,6,2016,2021,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Dissolved Oxygen,Bottom,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Dissolved Oxygen,Surface,Field,FALSE,4,1,2017,2017,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Salinity,Bottom,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Salinity,Surface,Field,FALSE,4,1,2017,2017,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Secchi Depth,Surface,Field,FALSE,4,1,2017,2017,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Total Nitrogen,Surface,Sample,FALSE,53,6,2016,2021,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Total Phosphorus,Surface,Sample,FALSE,54,6,2016,2021,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Turbidity,Surface,Sample,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Water Temperature,Bottom,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,Water Temperature,Surface,Field,FALSE,4,1,2017,2017,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,pH,Bottom,Field,FALSE,0,0,,,,,,,,,
+42,St. Joseph Bay State Buffer Preserve,pH,Surface,Field,FALSE,4,1,2017,2017,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,139,4,2006,2009,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,175,10,2000,2017,2,TRUE,-0.1281,0.0086,-0.111805555555556,134.128,-1
+43,St. Martins Marsh Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,TRUE,60,13,1999,2022,13.396,TRUE,0.2947,0.006,0.313824561403509,-569.927454545455,1
+43,St. Martins Marsh Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,TRUE,598,23,1999,2022,13,TRUE,0.2228,0,0.285857142857143,-530.182692307692,1
+43,St. Martins Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,2782,27,1991,2022,7.2,TRUE,-0.0063,0.076,-0.00714285714285724,18.2444444444445,0
+43,St. Martins Marsh Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,5408,29,1991,2022,7.4,TRUE,-0.0444,0,-0.0181818181818182,49.7721428571429,-1
+43,St. Martins Marsh Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,28,2,2021,2022,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,52,2,2021,2022,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Salinity,Bottom,Field,TRUE,2871,26,1991,2021,18.3,TRUE,0.1792,0,0.199999999999999,-333.083333333333,1
+43,St. Martins Marsh Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Salinity,Surface,Field,TRUE,5799,30,1980,2021,17.9,TRUE,0.1561,0,0.185714285714286,-373.481818181818,1
+43,St. Martins Marsh Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,470,18,1991,2021,0.9,TRUE,-0.0236,0.2448,0,0.875,0
+43,St. Martins Marsh Aquatic Preserve,Total Nitrogen,Bottom,Sample,TRUE,168,18,1996,2015,0.4,TRUE,0.0901,0.1801,0.0025,-13.3898035714286,0
+43,St. Martins Marsh Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,992,26,1996,2021,0.37,TRUE,0.0442,0.0478,0.00105263157894737,-1.59958550724638,1
+43,St. Martins Marsh Aquatic Preserve,Total Phosphorus,Bottom,Sample,TRUE,177,15,1997,2015,0.015,TRUE,0.0501,0.5539,0.000111111111111111,-0.293611111111111,0
+43,St. Martins Marsh Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,993,26,1996,2021,0.014,TRUE,0.0605,0.0047,0.0001,-0.1866,1
+43,St. Martins Marsh Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,TRUE,33,10,2008,2021,3.43,TRUE,-0.108,0.3332,-0.0633333333333333,35.53,0
+43,St. Martins Marsh Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,TRUE,122,17,2005,2021,4.675,TRUE,-0.1278,0.034,-0.09,172.89,-1
+43,St. Martins Marsh Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,26,9,2005,2015,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Turbidity,Surface,Field,FALSE,2,2,2019,2020,,,,,,,
+43,St. Martins Marsh Aquatic Preserve,Turbidity,Surface,Sample,TRUE,2943,27,1995,2021,1.1,TRUE,-0.1074,0,-0.0166666666666667,18.2357142857143,-1
+43,St. Martins Marsh Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,2834,27,1991,2022,22.9,TRUE,0.0555,0,0.0300000000000001,-5.18052083333344,1
+43,St. Martins Marsh Aquatic Preserve,Water Temperature,Surface,Field,TRUE,5737,30,1980,2022,22.4,TRUE,0.0845,0,0.0416666666666667,-91.5791208791208,1
+43,St. Martins Marsh Aquatic Preserve,pH,Bottom,Field,TRUE,202,16,1991,2022,7.99,TRUE,-0.0892,0.0717,-0.00571428571428572,17.7268137254903,0
+43,St. Martins Marsh Aquatic Preserve,pH,Surface,Field,TRUE,4102,29,1991,2022,8.1,TRUE,-0.0784,0,0,17.4484249084249,-1
+44,Terra Ceia Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+44,Terra Ceia Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,TRUE,71,15,2000,2017,4.563,TRUE,0.1677,0.0407,0.0571428571428572,3.1,1
+44,Terra Ceia Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,13,4,2018,2021,,,,,,,
+44,Terra Ceia Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,219,4,2018,2021,,,,,,,
+44,Terra Ceia Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,3264,29,1993,2021,6.1,TRUE,-0.0321,0,-0.0263636363636364,-8.71642857142852,-1
+44,Terra Ceia Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,16586,33,1989,2021,6.7,TRUE,0.0122,0.0723,0,-0.457142857142832,0
+44,Terra Ceia Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,TRUE,2067,29,1993,2021,89.3,TRUE,-0.0939,0,-0.73125,155.632142857142,-1
+44,Terra Ceia Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,1779,29,1993,2021,91.8,TRUE,0.0463,0.9935,0,-421.323928571428,0
+44,Terra Ceia Aquatic Preserve,Salinity,Bottom,Field,TRUE,3237,29,1993,2021,30,TRUE,0.0944,0,0.101176470588235,-0.383923611110943,1
+44,Terra Ceia Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+44,Terra Ceia Aquatic Preserve,Salinity,Surface,Field,TRUE,17108,45,1966,2021,30.555,TRUE,0.0353,0,0.0162162162162162,-36.6982105263159,1
+44,Terra Ceia Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+44,Terra Ceia Aquatic Preserve,Secchi Depth,Surface,Field,TRUE,8119,27,1995,2021,1,TRUE,0.1536,0,0.025,-49.2125,1
+44,Terra Ceia Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+44,Terra Ceia Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,1255,27,1995,2021,0.451,TRUE,-0.1078,0,-0.00657894736842105,15.71245,-1
+44,Terra Ceia Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,9,4,2018,2021,,,,,,,
+44,Terra Ceia Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,2077,27,1995,2021,0.12,TRUE,-0.1787,0,-0.003375,7.1575,-1
+44,Terra Ceia Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,11,4,2018,2021,,,,,,,
+44,Terra Ceia Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,251,7,2000,2021,,,,,,,
+44,Terra Ceia Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+44,Terra Ceia Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,10,4,2018,2021,,,,,,,
+44,Terra Ceia Aquatic Preserve,Turbidity,Surface,Field,FALSE,10,4,2000,2021,,,,,,,
+44,Terra Ceia Aquatic Preserve,Turbidity,Surface,Sample,TRUE,6905,27,1995,2021,1.8,TRUE,0.0051,0.3915,0,-6.83428571428571,0
+44,Terra Ceia Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,3288,29,1993,2021,28.16,TRUE,0.0023,0.5518,0.00238095238095241,38.3410087719298,0
+44,Terra Ceia Aquatic Preserve,Water Temperature,Surface,Field,TRUE,17636,47,1966,2021,26.1,TRUE,-0.0035,0.2226,0,38.0972321428571,0
+44,Terra Ceia Aquatic Preserve,pH,Bottom,Field,TRUE,2011,29,1993,2021,8.06,TRUE,0.0497,0,0.00333333333333326,5.48075630252081,1
+44,Terra Ceia Aquatic Preserve,pH,Surface,Field,TRUE,16147,33,1989,2021,8,TRUE,-0.0085,0.237,0,8,0
+45,Tomoka Marsh Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,37,3,2000,2004,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,21,2,2020,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,68,3,2001,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,192,22,1997,2021,5.275,TRUE,-0.0197,0.4203,-0.0136363636363636,69.4828333333333,0
+45,Tomoka Marsh Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,289,22,1997,2021,5.35,TRUE,0.0275,0.6636,0.00421052631578948,-22.5469456845238,0
+45,Tomoka Marsh Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,51,8,2009,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,134,8,2009,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Salinity,Bottom,Field,TRUE,189,21,1998,2021,16.38,TRUE,0.1522,0.0017,0.48,-722.116666666667,1
+45,Tomoka Marsh Aquatic Preserve,Salinity,Bottom,Sample,FALSE,1,1,2002,2002,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Salinity,Surface,Field,TRUE,274,21,1998,2021,15.99,TRUE,0.0776,0.0724,0.16875,-362.688333333333,0
+45,Tomoka Marsh Aquatic Preserve,Salinity,Surface,Sample,FALSE,1,1,2002,2002,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,161,9,2000,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,300,18,1997,2021,0.8105,TRUE,0.0395,0.2824,0.00416249999999999,-1.27229310728745,0
+45,Tomoka Marsh Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,43,4,2000,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,391,22,1997,2021,0.09989,TRUE,0.0794,0.0326,0.000811111111111111,-1.355421875,1
+45,Tomoka Marsh Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,21,2,2020,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,55,4,2002,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,21,2,2020,2021,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Turbidity,Surface,Field,FALSE,1,1,2009,2009,,,,,,,
+45,Tomoka Marsh Aquatic Preserve,Turbidity,Surface,Sample,TRUE,275,22,1997,2021,7.5,TRUE,0.0645,0.066,0.0740581818181819,-50.2816102573529,0
+45,Tomoka Marsh Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,194,22,1997,2021,24.6,TRUE,0.0852,0.2495,0.0383333333333334,-79.1976394724558,0
+45,Tomoka Marsh Aquatic Preserve,Water Temperature,Surface,Field,TRUE,296,22,1997,2021,24.745,TRUE,0.1036,0.0116,0.05,-83.3208076923079,1
+45,Tomoka Marsh Aquatic Preserve,pH,Bottom,Field,TRUE,187,22,1997,2021,7.5,TRUE,0.1212,0.0132,0.00999999999999996,-9.97312500000003,1
+45,Tomoka Marsh Aquatic Preserve,pH,Surface,Field,TRUE,342,22,1997,2021,7.6,TRUE,0.143,0,0.01,-11.8538877777777,1
+46,Wekiva River Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Dissolved Oxygen,Bottom,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Dissolved Oxygen,Surface,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Salinity,Bottom,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Salinity,Surface,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Total Nitrogen,Surface,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Total Phosphorus,Surface,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Turbidity,Surface,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Turbidity,Surface,Sample,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Water Temperature,Bottom,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,Water Temperature,Surface,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,pH,Bottom,Field,FALSE,0,0,,,,,,,,,
+46,Wekiva River Aquatic Preserve,pH,Surface,Field,FALSE,0,0,,,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Bottom,Sample,FALSE,0,0,,,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Chlorophyll a uncorrected for pheophytin,Surface,Sample,FALSE,18,5,2001,2017,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,"Colored dissolved organic matter, CDOM",Bottom,Field,FALSE,8,4,2016,2019,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,"Colored dissolved organic matter, CDOM",Surface,Field,FALSE,15,6,2001,2020,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,TRUE,328,24,1995,2020,7.3,TRUE,-0.1419,0,-0.0749999999999997,62.8551515151514,-1
+47,Yellow River Marsh Aquatic Preserve,Dissolved Oxygen,Surface,Field,TRUE,497,28,1977,2021,7.5,TRUE,-0.0309,0.0183,-0.019047619047619,-24.9036184210527,-1
+47,Yellow River Marsh Aquatic Preserve,Dissolved Oxygen Saturation,Bottom,Field,FALSE,17,5,2004,2020,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Dissolved Oxygen Saturation,Surface,Field,TRUE,60,11,2002,2020,79.62935,TRUE,-0.2586,0.0078,-0.822058333333333,1513.7740288961,-1
+47,Yellow River Marsh Aquatic Preserve,Salinity,Bottom,Field,TRUE,397,24,1995,2020,17.1,TRUE,0.0917,0.0007,0.208712121212121,22.8,1
+47,Yellow River Marsh Aquatic Preserve,Salinity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Salinity,Surface,Field,TRUE,561,27,1995,2021,8.9,TRUE,-0.0852,0.0139,-0.109090909090909,380.865769230769,-1
+47,Yellow River Marsh Aquatic Preserve,Salinity,Surface,Sample,FALSE,0,0,,,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,89,7,2001,2020,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Total Nitrogen,Bottom,Sample,FALSE,0,0,,,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Total Nitrogen,Surface,Sample,TRUE,75,15,2001,2021,0.307,TRUE,0.3305,0.0001,0.017205,-33.32892125,1
+47,Yellow River Marsh Aquatic Preserve,Total Phosphorus,Bottom,Sample,FALSE,0,0,,,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Total Phosphorus,Surface,Sample,TRUE,65,14,2001,2021,0.012,TRUE,0.2749,0.0698,0.000497058823529412,-0.8064,0
+47,Yellow River Marsh Aquatic Preserve,"Total Suspended Solids, TSS",Bottom,Sample,FALSE,4,3,2009,2012,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,"Total Suspended Solids, TSS",Surface,Sample,FALSE,22,7,2009,2020,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Turbidity,Bottom,Field,FALSE,0,0,,,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Turbidity,Bottom,Sample,FALSE,0,0,,,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Turbidity,Surface,Field,FALSE,2,1,1977,1977,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,Turbidity,Surface,Sample,TRUE,563,23,1995,2021,2.4,TRUE,-0.0777,0.0002,-0.0454545454545455,50.1033333333333,-1
+47,Yellow River Marsh Aquatic Preserve,Water Temperature,Bottom,Field,TRUE,411,24,1995,2020,21.5,TRUE,0.0087,0.6921,0.00741758241758232,54.7833333333332,0
+47,Yellow River Marsh Aquatic Preserve,Water Temperature,Surface,Field,TRUE,586,28,1977,2021,22.1,TRUE,-0.0039,0.918,0,15.3350000000001,0
+47,Yellow River Marsh Aquatic Preserve,pH,Bottom,Field,FALSE,7,2,2004,2020,,,,,,,
+47,Yellow River Marsh Aquatic Preserve,pH,Surface,Field,TRUE,523,28,1977,2021,7.8,TRUE,-0.0551,0.0933,0,16.8727272727273,0
