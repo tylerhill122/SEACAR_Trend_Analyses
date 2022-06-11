@@ -5,6 +5,7 @@ library(data.table)
 library(dplyr)
 library(ggplot2)
 library(colorspace)
+windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 
 ###Bar Plot
 #List all of the trendplot jpg files

@@ -19,6 +19,7 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 4|Banana River Aquatic Preserve|Syringodium filiforme|BB_pct|14145|25|1997|2021|TRUE|0.0853393527839756|-0.00218795201447306|0.155076133189468
 4|Banana River Aquatic Preserve|Thalassia testudinum|BB_pct|14145|25|1997|2021|TRUE|||
 4|Banana River Aquatic Preserve|Total seagrass|BB_pct|4519|23|1998|2021|TRUE|87.7384501789826|-3.31319292140951|4.99060755457601e-12
+4|Banana River Aquatic Preserve|Total_SAV|BB_pct|4952|28|1994|2021|TRUE|42.2982470802153|-1.76926644575156|3.25922471784204e-17
 5|Big Bend Seagrasses Aquatic Preserve|Drift algae|BB_pct|80|7|2012|2018|TRUE|||
 5|Big Bend Seagrasses Aquatic Preserve|Halodule wrightii|BB_pct|1871|20|2000|2020|TRUE|27.2705246039397|-0.499241327637523|0.0540699731415425
 5|Big Bend Seagrasses Aquatic Preserve|Halophila spp.|BB_pct|481|20|2000|2020|TRUE|11.4237927947547|0.159403014092149|0.428726976842414
@@ -33,6 +34,7 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 6|Biscayne Bay Aquatic Preserve|Syringodium filiforme|BB_pct|22427|23|1999|2021|TRUE|34.0336405987967|-1.29973860815832|8.74751886757998e-62
 6|Biscayne Bay Aquatic Preserve|Thalassia testudinum|BB_pct|22583|23|1999|2021|TRUE|30.3935185175956|-0.886199888702946|4.90554484137126e-09
 6|Biscayne Bay Aquatic Preserve|Total seagrass|BB_pct|9718|17|2005|2021|TRUE|30.0222938570047|-0.120833884027481|0.499253862122643
+6|Biscayne Bay Aquatic Preserve|Total_SAV|BB_pct|6653|7|2005|2011|TRUE|||
 8|Boca Ciega Bay Aquatic Preserve|Halodule wrightii|BB_pct|1336|22|1998|2020|TRUE|55.4600275670198|-0.688103184088441|0.0523575647265596
 8|Boca Ciega Bay Aquatic Preserve|Halophila spp.|BB_pct|5|3|2017|2019|FALSE|21.7857133790793|-0.714285677081446|0.877678326956809
 8|Boca Ciega Bay Aquatic Preserve|Ruppia maritima|BB_pct|3|2|2017|2020|FALSE|||
@@ -42,6 +44,7 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 9|Cape Haze Aquatic Preserve|Halodule wrightii|BB_pct|369|23|1998|2021|TRUE|||
 9|Cape Haze Aquatic Preserve|Syringodium filiforme|BB_pct|79|20|1998|2021|TRUE|||
 9|Cape Haze Aquatic Preserve|Thalassia testudinum|BB_pct|257|23|1998|2021|TRUE|19.617090274188|0.510491193926583|0.0980662344544585
+9|Cape Haze Aquatic Preserve|Total_SAV|BB_pct|562|19|1998|2021|TRUE|28.9740737107067|-0.243330246526715|0.604350937720406
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||||||||
 11|Cockroach Bay Aquatic Preserve|Halodule wrightii|BB_pct|389|15|2000|2020|TRUE|28.6866682182741|0.521975330519561|0.571435637201045
 11|Cockroach Bay Aquatic Preserve|Syringodium filiforme|BB_pct|255|15|2000|2020|TRUE|47.1057430829683|0.714126881112945|0.487845598658554
@@ -52,6 +55,7 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 14|Estero Bay Aquatic Preserve|Halophila spp.|BB_pct|41|13|2002|2018|TRUE|||
 14|Estero Bay Aquatic Preserve|Syringodium filiforme|BB_pct|14|12|2003|2019|TRUE|||
 14|Estero Bay Aquatic Preserve|Thalassia testudinum|BB_pct|237|19|2002|2020|TRUE|29.4144503304949|-0.898856473407791|0.0865073099431857
+14|Estero Bay Aquatic Preserve|Total_SAV|BB_pct|669|15|2006|2020|TRUE|51.9383871280653|-1.51919318103482|0.0160987116584109
 15|Florida Keys National Marine Sanctuary|Drift algae|BB_pct|15825|23|1999|2021|TRUE|1.11834289245049|0.0869179400201971|0.0533300492007645
 15|Florida Keys National Marine Sanctuary|Halodule wrightii|BB_pct|36429|26|1996|2021|TRUE|5.8584825127185|-0.178753030242723|1.98364788455508e-06
 15|Florida Keys National Marine Sanctuary|Halophila spp.|BB_pct|43348|17|2005|2021|TRUE|0.0353215894023866|-0.000425305498666052|0.821343890082771
@@ -59,16 +63,19 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 15|Florida Keys National Marine Sanctuary|Syringodium filiforme|BB_pct|55256|26|1996|2021|TRUE|1.47752636591028|-0.0310934754817752|0.27862571488647
 15|Florida Keys National Marine Sanctuary|Thalassia testudinum|BB_pct|55515|26|1996|2021|TRUE|37.7516687118358|-1.13993446259997|2.47754261000516e-45
 15|Florida Keys National Marine Sanctuary|Total seagrass|BB_pct|14020|17|2005|2021|TRUE|18.9819179838868|-0.0618763375078164|0.532221094882029
+15|Florida Keys National Marine Sanctuary|Total_SAV|BB_pct|13086|16|2005|2021|TRUE|28.2771534640188|-0.089188831493126|0.498614119663925
 16|Fort Clinch State Park Aquatic Preserve||||||||||
 17|Fort Pickens State Park Aquatic Preserve|Halodule wrightii|BB_pct|755|6|2016|2021|TRUE|91.5548834449065|-1.76190043317348|0.0670221525094908
 17|Fort Pickens State Park Aquatic Preserve|Thalassia testudinum|BB_pct|432|6|2016|2021|TRUE|-25.34394888347|2.91457440335782|0.00756858646448099
 17|Fort Pickens State Park Aquatic Preserve|Total seagrass|BB_pct|855|6|2016|2021|TRUE|123.184321225127|-2.46554850217442|0.0284889292969571
+17|Fort Pickens State Park Aquatic Preserve|Total_SAV|BB_pct|857|6|2016|2021|TRUE|117.963610326295|-2.21545963734741|0.0463799655060485
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Attached algae|BB_pct|46|7|2007|2021|TRUE|||
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Halodule wrightii|BB_pct|2070|24|1998|2021|TRUE|||
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Halophila spp.|BB_pct|2|2|2011|2014|FALSE|||
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Ruppia maritima|BB_pct|40|10|1998|2019|TRUE|||
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Syringodium filiforme|BB_pct|229|24|1998|2021|TRUE|47.2352573345782|-0.309726090618408|0.582905360174845
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Thalassia testudinum|BB_pct|939|24|1998|2021|TRUE|||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Total_SAV|BB_pct|2917|20|1998|2021|TRUE|||
 19|Guana River Marsh Aquatic Preserve||||||||||
 20|Guana Tolomato Matanzas National Estuarine Research Reserve||||||||||
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|Drift algae|BB_pct|0|0|||FALSE|||
@@ -77,12 +84,14 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|Syringodium filiforme|BB_pct|43917|25|1997|2021|TRUE|6.26850991130729|-0.28130144252365|0.00470891575876952
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|Thalassia testudinum|BB_pct|43974|25|1997|2021|TRUE|1.84965970467236|-0.073696091679244|0.0976008013823355
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|Total seagrass|BB_pct|14185|23|1998|2021|TRUE|75.3773620531603|-2.52298004932122|3.71318981684168e-18
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Total_SAV|BB_pct|15790|28|1994|2021|TRUE|43.1275845447201|-1.77036118849974|2.38121334017727e-26
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Drift algae|BB_pct|0|0|||FALSE|||
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Halophila spp.|BB_pct|69012|24|1998|2021|TRUE|7.67033189130947|-0.235141344022973|0.002450202680063
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Ruppia maritima|BB_pct|17262|24|1998|2021|TRUE|0.138757179644793|-0.00569210625919088|0.103813817220259
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Syringodium filiforme|BB_pct|17226|24|1998|2021|TRUE|16.5543221032162|-0.624988646549894|0.0413451141944111
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Thalassia testudinum|BB_pct|17226|24|1998|2021|TRUE|5.85356407365135|-0.207817237658928|0.0135107059238846
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Total seagrass|BB_pct|5520|23|1998|2021|TRUE|70.2469740147418|-1.08270845563006|0.00217215226612278
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Total_SAV|BB_pct|6272|28|1994|2021|TRUE|54.1340138201087|-1.85628360965668|7.83610640861405e-17
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Drift algae|BB_pct|0|0|||FALSE|||
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Halodule wrightii|BB_pct|0|0|||FALSE|||
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Halophila spp.|BB_pct|56493|25|1997|2021|TRUE|3.9182556505504|-0.0975834225320994|1.05506678446037e-05
@@ -90,11 +99,13 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Syringodium filiforme|BB_pct|14121|25|1997|2021|TRUE|17.6992785404852|-0.657951497448407|0.000103479221542081
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Thalassia testudinum|BB_pct|14130|25|1997|2021|TRUE|2.98339758293851|-0.0626913266801107|0.0624975852366084
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Total seagrass|BB_pct|4437|24|1998|2021|TRUE|64.2716902912392|-1.48209226298702|1.68238309036931e-07
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Total_SAV|BB_pct|5249|28|1994|2021|TRUE|33.9353645263601|-0.998946898023159|1.03382757480348e-10
 24|Lake Jackson Aquatic Preserve||||||||||
 25|Lemon Bay Aquatic Preserve|Attached algae|BB_pct|111|13|1999|2021|TRUE|||
 25|Lemon Bay Aquatic Preserve|Halodule wrightii|BB_pct|524|23|1998|2021|TRUE|||
 25|Lemon Bay Aquatic Preserve|Syringodium filiforme|BB_pct|145|22|1998|2021|TRUE|29.0042374421033|-0.371108960159853|0.519968117185667
 25|Lemon Bay Aquatic Preserve|Thalassia testudinum|BB_pct|282|21|1998|2021|TRUE|||
+25|Lemon Bay Aquatic Preserve|Total_SAV|BB_pct|709|19|1998|2021|TRUE|||
 26|Lignumvitae Key Aquatic Preserve||||||||||
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Drift algae|BB_pct|0|0|||FALSE|||
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Halodule wrightii|BB_pct|0|0|||FALSE|||
@@ -103,17 +114,20 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Syringodium filiforme|BB_pct|2043|22|1999|2021|TRUE|2.45611722216603|-0.0719465983198763|0.338803856808042
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Thalassia testudinum|BB_pct|2043|22|1999|2021|TRUE|0.108850103389302|-0.00537459943014942|0.312111674273818
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Total seagrass|BB_pct|621|22|1999|2021|TRUE|74.0451807356226|-1.55240938982592|0.0815291353176105
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Total_SAV|BB_pct|688|22|1999|2021|TRUE|26.6311829731036|-0.712678255018159|4.44249325733091e-09
 28|Matlacha Pass Aquatic Preserve|Attached algae|BB_pct|2|1|2021|2021|FALSE|||
 28|Matlacha Pass Aquatic Preserve|Halodule wrightii|BB_pct|549|22|2000|2021|TRUE|16.4880072685061|0.28532836528173|0.637385638651037
 28|Matlacha Pass Aquatic Preserve|Halophila spp.|BB_pct|21|10|2007|2021|TRUE|11.9824893032983|-0.308566452531846|0.502314329133734
 28|Matlacha Pass Aquatic Preserve|Ruppia maritima|BB_pct|2|2|2006|2018|FALSE|||
 28|Matlacha Pass Aquatic Preserve|Thalassia testudinum|BB_pct|150|22|2000|2021|TRUE|||
+28|Matlacha Pass Aquatic Preserve|Total_SAV|BB_pct|623|20|2002|2021|TRUE|21.2447528972408|0.237726154573567|0.674561785885155
 29|Mosquito Lagoon Aquatic Preserve|Drift algae|BB_pct|0|0|||FALSE|||
 29|Mosquito Lagoon Aquatic Preserve|Halophila spp.|BB_pct|6600|13|2009|2021|TRUE|8.4478730829985|-0.33321364050618|0.00543021055442403
 29|Mosquito Lagoon Aquatic Preserve|Ruppia maritima|BB_pct|1650|13|2009|2021|TRUE|||
 29|Mosquito Lagoon Aquatic Preserve|Syringodium filiforme|BB_pct|1650|13|2009|2021|TRUE|||
 29|Mosquito Lagoon Aquatic Preserve|Thalassia testudinum|BB_pct|1650|13|2009|2021|TRUE|||
 29|Mosquito Lagoon Aquatic Preserve|Total seagrass|BB_pct|549|13|2009|2021|TRUE|87.0606306073341|-3.35151278130182|1.80352115848018e-05
+29|Mosquito Lagoon Aquatic Preserve|Total_SAV|BB_pct|550|13|2009|2021|TRUE|33.7491250500802|-1.33116657316676|0.00709460291964448
 30|Nassau River-St. Johns River Marshes Aquatic Preserve||||||||||
 48|Nature Coast Aquatic Preserve|Halodule wrightii|BB_pct|734|25|1997|2021|TRUE|3.88509039065868|0.457874324928966|1.17547241287844e-06
 48|Nature Coast Aquatic Preserve|Halophila spp.|BB_pct|122|22|1997|2021|TRUE|||
@@ -129,6 +143,7 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 34|Pine Island Sound Aquatic Preserve|Ruppia maritima|BB_pct|0|0|||FALSE|||
 34|Pine Island Sound Aquatic Preserve|Syringodium filiforme|BB_pct|272|22|2000|2021|TRUE|||
 34|Pine Island Sound Aquatic Preserve|Thalassia testudinum|BB_pct|642|23|1998|2021|TRUE|9.30732922244769|0.0754279234176296|0.595794795640217
+34|Pine Island Sound Aquatic Preserve|Total_SAV|BB_pct|1130|20|1998|2021|TRUE|13.3317646812121|0.641626169094715|0.0976754060266573
 35|Pinellas County Aquatic Preserve|Attached algae|BB_pct|430|4|2013|2017|FALSE|||
 35|Pinellas County Aquatic Preserve|Drift algae|BB_pct|474|7|2012|2019|TRUE|||
 35|Pinellas County Aquatic Preserve|Halodule wrightii|BB_pct|6152|24|1998|2021|TRUE|27.4884738674|0.0595179315535482|0.78906691928761
@@ -136,6 +151,7 @@ AreaID|ManagedAreaName|Species|ParameterName|N_Data|N_Years|EarliestYear|LatestY
 35|Pinellas County Aquatic Preserve|Ruppia maritima|BB_pct|668|16|1998|2020|TRUE|3.81885488709226|-0.0596468813269112|0.814374271515088
 35|Pinellas County Aquatic Preserve|Syringodium filiforme|BB_pct|3283|24|1998|2021|TRUE|33.6807924504683|-0.302365520906893|0.371570632548936
 35|Pinellas County Aquatic Preserve|Thalassia testudinum|BB_pct|3097|24|1998|2021|TRUE|39.7952067995601|-0.060024382494947|0.856105635395835
+35|Pinellas County Aquatic Preserve|Total_SAV|BB_pct|2602|9|2011|2019|TRUE|35.6054201573887|0.41991554190291|0.574127631159102
 36|Rainbow Springs Aquatic Preserve||||||||||
 37|Rocky Bayou State Park Aquatic Preserve||||||||||
 38|Rookery Bay Aquatic Preserve|Halodule wrightii|BB_pct|222|8|1998|2005|TRUE|25.4752502664727|-0.699205299582007|0.554323413124271

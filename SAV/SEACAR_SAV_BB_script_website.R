@@ -150,7 +150,7 @@ SAV2[, relyear := Year - min(Year)]
 
 SAV3 <- SAV2 %>% filter(SpeciesGroup1 == "Seagrass" | SpeciesGroup1 == "Macroalgae")
 
-species_reject <- c("Total_SAV", "All", "NA",
+species_reject <- c("All", "NA",
                     "Vallisneria americana", "Najas guadalupensis",
                     "Hydrilla verticillata", "Potamogeton pusillus",
                     "Zannichellia palustris")
@@ -214,7 +214,13 @@ SAV4_sum <- SAV4 %>% group_by(method, ManagedAreaName) %>% summarize(n_yr = leng
 
 
 #Functions ---------------------------------------------------------------------
-
+# addfits <- function(models, plot_i, param){
+#   for(z in 1:length(models)){
+#     plot_i <- plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[z]])$data$analysisunit)],
+#                                  aes(x = relyear, y = predict(eval(models[[z]]), level = 0), color = unique(eval(models[[z]])$data$analysisunit)), lwd = 1.2)
+#   }
+#   return(plot_i)
+# }
 addfits <- function(models, plot_i, param){
   ifelse(length(models) == 1,
          return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[1]])$data$analysisunit)],
@@ -251,18 +257,34 @@ addfits <- function(models, plot_i, param){
                                                         aes(x = relyear, y = predict(eval(models[[4]]), level = 0), color = unique(eval(models[[4]])$data$analysisunit)), lwd = 1.2) +
                                               geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[5]])$data$analysisunit)],
                                                         aes(x = relyear, y = predict(eval(models[[5]]), level = 0), color = unique(eval(models[[5]])$data$analysisunit)), lwd = 1.2)),
-                                     return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[1]])$data$analysisunit)],
-                                                               aes(x = relyear, y = predict(eval(models[[1]]), level = 0), color = unique(eval(models[[1]])$data$analysisunit)), lwd = 1.2) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[2]])$data$analysisunit)],
-                                                        aes(x = relyear, y = predict(eval(models[[2]]), level = 0), color = unique(eval(models[[2]])$data$analysisunit)), lwd = 1.2) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[3]])$data$analysisunit)],
-                                                        aes(x = relyear, y = predict(eval(models[[3]]), level = 0), color = unique(eval(models[[3]])$data$analysisunit)), lwd = 1.2) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[4]])$data$analysisunit)],
-                                                        aes(x = relyear, y = predict(eval(models[[4]]), level = 0), color = unique(eval(models[[4]])$data$analysisunit)), lwd = 1.2) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[5]])$data$analysisunit)],
-                                                        aes(x = relyear, y = predict(eval(models[[5]]), level = 0), color = unique(eval(models[[5]])$data$analysisunit)), lwd = 1.2) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[6]])$data$analysisunit)],
-                                                        aes(x = relyear, y = predict(eval(models[[6]]), level = 0), color = unique(eval(models[[6]])$data$analysisunit)), lwd = 1.2)))))))
+                                     ifelse(length(models) == 6,
+                                            return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[1]])$data$analysisunit)],
+                                                                      aes(x = relyear, y = predict(eval(models[[1]]), level = 0), color = unique(eval(models[[1]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[2]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[2]]), level = 0), color = unique(eval(models[[2]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[3]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[3]]), level = 0), color = unique(eval(models[[3]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[4]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[4]]), level = 0), color = unique(eval(models[[4]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[5]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[5]]), level = 0), color = unique(eval(models[[5]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[6]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[6]]), level = 0), color = unique(eval(models[[6]])$data$analysisunit)), lwd = 1.2)),
+                                            
+                                            return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[1]])$data$analysisunit)],
+                                                                      aes(x = relyear, y = predict(eval(models[[1]]), level = 0), color = unique(eval(models[[1]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[2]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[2]]), level = 0), color = unique(eval(models[[2]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[3]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[3]]), level = 0), color = unique(eval(models[[3]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[4]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[4]]), level = 0), color = unique(eval(models[[4]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[5]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[5]]), level = 0), color = unique(eval(models[[5]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[6]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[6]]), level = 0), color = unique(eval(models[[6]])$data$analysisunit)), lwd = 1.2) +
+                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == unique(eval(models[[7]])$data$analysisunit)],
+                                                               aes(x = relyear, y = predict(eval(models[[7]]), level = 0), color = unique(eval(models[[7]])$data$analysisunit)), lwd = 1.2))))))))
 }
 
 # Code source for original rotate sf function: https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/geospatial-data/
@@ -351,26 +373,21 @@ for(m in unique(props$ManagedAreaName)){
   props[ManagedAreaName == m, sp_prop := n1/sum(n1), by = c("relyear")]
 }
 
-spcollist <- c("#032563",
-               "#1d3e78",
-               "#2f588d",
-               "#3f73a3",
-               "#4e90ba",
-               "#5cadd0",
-               "#6bcce7",
-               "#79ebff")
-spmarklist <- c(21, 24, 21, 24, 21, 24, 21, 24)
-splinelist <- c("solid", "dashed", "solid", "dashed",
-                "solid", "dashed", "solid", "dashed")
+spcollist <- c("#00374f",
+               "#004d68",
+               "#006481",
+               "#007c99",
+               "#0094b0",
+               "#00aec6",
+               "#00c9db",
+               "#00e4ee",
+               "#00ffff")
 
 # spcollist <- hcl.colors(n = 8, palette = "Blues 3")
 spp <- c("Thalassia testudinum", "Syringodium filiforme", "Halodule wrightii", "Ruppia maritima", "Halophila spp.", "Total seagrass", 
-         "Attached algae", "Drift algae")
+         "Attached algae", "Drift algae", "Total_SAV")
 spcols <- setNames(spcollist, spp)
 
-spmark <- setNames(spmarklist, spp)
-
-spline <- setNames(splinelist, spp)
 
 prcollist <- hcl.colors(n = 21, palette = "viridis")
 progs <- sort(unique(SAV4$ProgramID))
