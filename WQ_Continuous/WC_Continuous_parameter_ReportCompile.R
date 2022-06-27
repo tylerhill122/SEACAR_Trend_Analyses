@@ -61,13 +61,19 @@ for (param_name in all_params){
       region <- all_regions[i]
       file_in <- file_list[grep(paste0("_", region, "-"), file_list)]
       
-         #Renders WC_discrete_parameter.Rmd for each parameter combination and writes the report to a pdf
-         #Stored in reports/by_parameter directory
-         rmarkdown::render(input = "WC_Continuous_parameter.Rmd", 
-                           output_format = "pdf_document",
-                           output_file = paste0("WC_Continuous_", param_name, "_",
-                                                region, ".pdf"),
-                           output_dir = "reports/by_parameter",
-                           clean=TRUE)
+      #Renders WC_discrete_parameter.Rmd for each parameter combination and writes the report to a pdf
+      #Stored in reports/by_parameter directory
+      file_out <-  paste0("WC_Continuous_", param_name, "_",
+                          region)
+      rmarkdown::render(input = "WC_Continuous_parameter.Rmd", 
+                        output_format = "html_document",
+                        output_file = paste0(file_out, ".html"),
+                        output_dir = "reports/by_parameter",
+                        clean=TRUE)
+      rmarkdown::render(input = paste0("reports/by_parameter/", file_out, ".md"), 
+                        output_format = "word_document",
+                        output_file = paste0(file_out, ".docx"),
+                        output_dir = "reports/by_parameter",
+                        clean=TRUE)
    }
 }

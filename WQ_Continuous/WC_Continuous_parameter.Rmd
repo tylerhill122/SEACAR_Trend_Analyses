@@ -1,8 +1,14 @@
 ---
 date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+    dev: png
+    keep_md: yes
   pdf_document:
-    toc: true
+    toc: TRUE
     toc_depth: 2
     dev: png
     extra_dependencies: ["float"]
