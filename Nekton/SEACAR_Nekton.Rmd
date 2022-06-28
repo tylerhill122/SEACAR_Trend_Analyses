@@ -34,6 +34,9 @@ library(lubridate)
 library(ggplot2)
 library(scales)
 library(tidyr)
+library(gridExtra)
+library(tidyverse)
+library(png)
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 options(scipen=999)
 opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
@@ -98,7 +101,7 @@ data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName", "ShortName")],
 
 data$ShortName <- NULL
 
-fwrite(data, paste0(out_dir,"/Nekton_", param_name, "UsedData_.txt"), sep="|")
+fwrite(data, paste0(out_dir,"/Nekton_", param_name, "_UsedData.txt"), sep="|")
 
 data$SampleDate <- as.Date(data$SampleDate)
 
@@ -215,7 +218,7 @@ The plots shown here are the species richness for each managed area with a yearl
 8. Create file name to save figure
 9. Save figure as png file
 
-```{r Trendlines_ManagedArea, warning=FALSE, fig.height=4, fig.width=8, results="asis", eval=APP_Plots}
+```{r Trendlines_ManagedArea, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
 plot_theme <- theme_bw() +
       theme(text=element_text(family="Segoe UI"),
             title=element_text(face="bold"),
@@ -286,10 +289,17 @@ if(n==0){
             rm(plot_data)
             
             print(p1)
-            
             dev.off()
             
-            print(p1)
+      
+            ResultTable <- MA_Ov_Stats[MA_Ov_Stats$ManagedAreaName==MA_Include[i],]
+            ResultTable <- ResultTable[,-c("AreaID", "ManagedAreaName",
+                                             "ProgramIDs")]
+            t1 <- ggtexttable(ResultTable, rows = NULL,
+                              theme=ttheme(base_size=7))
+            print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
+            
+            cat("\n \n \n \n")
       }
 }
 ```
