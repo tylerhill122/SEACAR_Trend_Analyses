@@ -5,20 +5,21 @@ library(data.table)
 library(dplyr)
 library(ggplot2)
 library(colorspace)
+library(here)
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 
 ###Bar Plot
 #List all of the trendplot jpg files
-files <- list.files("SAV/output/Figures/BB", pattern="barplot")
+files <- list.files(here::here("SAV/output/Figures/BB/"), pattern="barplot")
 
 #Set the directory with the input rds files and directory to save to
-in_dir <- "SAV/output/Figures/BB/"
-out_dir <- "SAV/output/website/images/barplots/"
+in_dir <- here::here("SAV/output/Figures/BB/")
+out_dir <- here::here("SAV/output/website/images/barplots/")
 
 #For loop the cycles through each barplot file
 for(i in 1:length(files)){
       #Imports the barplot object
-      barplot <- readRDS(paste0(in_dir, files[i]))
+      barplot <- readRDS(paste0(in_dir, "/", files[i]))
       barplot <- barplot + theme_bw() +
          theme(text=element_text(family="Segoe UI"),
                title=element_text(face="bold"),
