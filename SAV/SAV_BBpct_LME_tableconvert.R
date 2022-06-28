@@ -57,15 +57,17 @@ stats <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName", "ShortName")],
                           stats, by="ShortName", all=TRUE)
 
 stats$ShortName <- NULL
+stats$AreaID <- NULL
 
 stats <-  merge.data.frame(stats, output,
                               by=c("ManagedAreaName", "Species"), all=TRUE)
 
 
 stats <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
-                         stats, by=c("AreaID", "ManagedAreaName"), all=TRUE)
+                         stats, by=c("ManagedAreaName"), all=TRUE)
 
 stats <- as.data.table(stats[order(stats$ManagedAreaName, stats$Species), ])
+stats <- stats %>% select(AreaID, everything())
 
 stats$EarliestYear[stats$EarliestYear=="Inf"] <- NA
 stats$LatestYear[stats$LatestYear=="-Inf"] <- NA

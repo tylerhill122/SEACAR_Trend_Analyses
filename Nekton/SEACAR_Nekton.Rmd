@@ -36,7 +36,6 @@ library(scales)
 library(tidyr)
 library(gridExtra)
 library(tidyverse)
-library(png)
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 options(scipen=999)
 opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
@@ -267,7 +266,7 @@ if(n==0){
                   geom_point(aes(x=Year, y=Mean, fill=as.factor(GearSize_m)), shape=21,
                              size=3, color="#333333", alpha=0.75) +
                   geom_line(aes(x=Year, y=Mean, color=as.factor(GearSize_m)),
-                            size=1.2, alpha=0.7) +
+                            size=1.2, alpha=0.75) +
                   labs(title=MA_Include[i],
                        subtitle="Species Richness",
                        x="Year", y="Number of Species per 100 square meters",
