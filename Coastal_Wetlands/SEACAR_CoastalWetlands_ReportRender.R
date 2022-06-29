@@ -1,4 +1,4 @@
-#This script is created to automate the production of Rmd documents Nekton.
+#This script is created to automate the production of Rmd documents for Coastal Wetlands.
 
 
 ## WHEN RUNNING IN RSTUDIO:
@@ -21,11 +21,8 @@ out_dir <- "output/by_parameter"
 #Easiest way to edit is to comment out undesired parameters.
 #If only one parameter is desired, comment out all other parameters and delete comma after remaining parameter
 all_params <- c(
-      # "Count",
-      # "Fork Length",
-      "Presence"
-      # "Standard Length",
-      # "Total Length"
+      "All Parameters"
+      # "Hectares"
 )
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
@@ -37,11 +34,14 @@ for (param_name in all_params){
       #Gets the files with the file names containing the desired parameter
       file_in <- list.files("data", pattern=param_name, full=TRUE)
       
-      #Renders SEACAR_Nekton.Rmd for each parameter combination and writes the
+      if(param_name=="Hectares" & length(grep("All Parameters", file_in))>0){
+            file_in <- file_in[-grep("All Parameters", file_in)]
+      }
+      #Renders SEACAR_CoastalWetlands.Rmd for each parameter combination and writes the
       #report to an html and Word document stored in reports/by_parameter directory
-      file_out <-  paste0("SEACAR_Nekton_", param_name)
+      file_out <-  paste0("SEACAR_CoastalWetlands_", param_name)
       
-      rmarkdown::render(input = "SEACAR_Nekton.Rmd", 
+      rmarkdown::render(input = "SEACAR_CoastalWetlands.Rmd", 
                         output_format = "html_document",
                         output_file = paste0(file_out, ".html"),
                         output_dir = "reports/by_parameter",
