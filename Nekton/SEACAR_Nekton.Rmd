@@ -35,7 +35,7 @@ library(ggplot2)
 library(scales)
 library(tidyr)
 library(gridExtra)
-library(tidyverse)
+#library(tidyverse)
 library(ggpubr)
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 options(scipen=999)
@@ -85,21 +85,23 @@ data <- data[!is.na(data$EffortCorrection_100m2),]
 data <- data[data$EffortCorrection_100m2!=0,]
 data <- data[!is.na(data$ResultValue),]
 
+
+
 data <- data %>%
    group_by(ManagedAreaName, ProgramID, ProgramName, ProgramLocationID,
-            SampleDate, GearSize_m) %>%
+            SampleDate, GearType, GearSize_m) %>%
    summarise(ParameterName=parameter,
              Year=unique(Year), Month=unique(Month),
              N_Species=sum(ResultValue),
              EffortCorrection_100m2=unique(EffortCorrection_100m2),
              SpeciesRichness=N_Species/unique(EffortCorrection_100m2))
 
-setnames(data, c("ManagedAreaName"), c("ShortName"))
+#setnames(data, c("ManagedAreaName"), c("ShortName"))
 
-data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName", "ShortName")],
-                          data, by="ShortName", all=TRUE)
+data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
+                          data, by="ManagedAreaName", all=TRUE)
 
-data$ShortName <- NULL
+#data$ShortName <- NULL
 
 fwrite(data, paste0(out_dir,"/Nekton_", param_name, "_UsedData.txt"), sep="|")
 
@@ -116,7 +118,7 @@ n <- length(MA_Include)
 
 Gets summary statistics for each managed area. Uses piping from dplyr package to feed into subsequent steps. The following steps are performed:
 
-1. Group data that have the same `ManagedAreaName`, `Year`, `Month`, and `GearSize_m`.
+1. Group data that have the same `ManagedAreaName`, `Year`, `Month`, `GearType`, and `GearSize_m`.
    + Second summary statistics do not use the `Month` grouping and are only for `ManagedAreaName` and `Year`.
    + Third summary statistics do not use `Year` grouping and are only for `ManagedAreaName` and `Month`
 
@@ -127,7 +129,7 @@ Gets summary statistics for each managed area. Uses piping from dplyr package to
 
 ```{r managed_area_stats, message=FALSE}
 MA_YM_Stats <- data %>%
-   group_by(AreaID, ManagedAreaName, Year, Month, GearSize_m) %>%
+   group_by(AreaID, ManagedAreaName, Year, Month, GearType, GearSize_m) %>%
    summarize(ParameterName=parameter,
              N_Data=length(na.omit(SpeciesRichness)),
              Min=min(SpeciesRichness),
@@ -146,7 +148,7 @@ fwrite(MA_YM_Stats, paste0(out_dir,"/Nekton_", param_name,
 rm(MA_YM_Stats)
 
 MA_Y_Stats <- data %>%
-   group_by(AreaID, ManagedAreaName, Year, GearSize_m) %>%
+   group_by(AreaID, ManagedAreaName, Year, GearType, GearSize_m) %>%
    summarize(ParameterName=parameter,
              N_Data=length(na.omit(SpeciesRichness)),
              Min=min(SpeciesRichness),
@@ -163,7 +165,7 @@ fwrite(MA_Y_Stats, paste0(out_dir,"/Nekton_", param_name,
                           "_ManagedArea_Year_Stats.txt"), sep="|")
 
 MA_M_Stats <- data %>%
-   group_by(AreaID, ManagedAreaName, Month, GearSize_m) %>%
+   group_by(AreaID, ManagedAreaName, Month, GearType, GearSize_m) %>%
    summarize(ParameterName=parameter,
              N_Data=length(na.omit(SpeciesRichness)),
              Min=min(SpeciesRichness),
@@ -181,7 +183,7 @@ fwrite(MA_M_Stats, paste0(out_dir,"/Nekton_", param_name,
 rm(MA_M_Stats)
 
 MA_Ov_Stats <- data %>%
-   group_by(AreaID, ManagedAreaName, GearSize_m) %>%
+   group_by(AreaID, ManagedAreaName, GearType, GearSize_m) %>%
    summarize(ParameterName=parameter,
              N_Years=length(unique(na.omit(Year))),
              EarliestYear=min(Year),
@@ -218,6 +220,7 @@ The plots shown here are the species richness for each managed area with a yearl
 9. Save figure as png file
 
 ```{r Trendlines_ManagedArea, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
+
 plot_theme <- theme_bw() +
       theme(text=element_text(family="Segoe UI"),
             title=element_text(face="bold"),
@@ -230,6 +233,8 @@ plot_theme <- theme_bw() +
             axis.text=element_text(size=10),
             axis.text.x=element_text(face="bold", angle = 60, hjust = 1),
             axis.text.y=element_text(face="bold"))
+
+
 
 colorlist <- c("#00374f",
                "#004d68",
@@ -246,6 +251,8 @@ if(n==0){
 } else {
       for (i in 1:n) {
             plot_data <- MA_Y_Stats[MA_Y_Stats$ManagedAreaName==MA_Include[i]]
+            plot_data$GearType_Plot <- paste0(plot_data$GearType, " (",
+                                         plot_data$GearSize_m, " m)")
             t_max <- max(MA_Ov_Stats$LatestYear[MA_Ov_Stats$ManagedAreaName==
                                                       MA_Include[i]])
             t_min <- min(MA_Ov_Stats$EarliestYear[MA_Ov_Stats$ManagedAreaName==
@@ -255,32 +262,38 @@ if(n==0){
             if(t>=30){
                   brk <- -10
             }else if(t<30 & t>=10){
-                  brk <-5
+                  brk <- -5
             }else if(t<10 & t>=4){
                   brk <- -2
             }else if(t<4){
                   brk <- -1
             }
             
-            p1 <- ggplot(data=plot_data, group=as.factor(GearSize_m)) +
-               geom_point(aes(x=Year, y=Mean, fill=as.factor(GearSize_m)),
-                          shape=21, size=3, color="#333333", alpha=0.75) +
-               geom_line(aes(x=Year, y=Mean, color=as.factor(GearSize_m)),
+            p1 <- ggplot(data=plot_data, group=as.factor(GearType_Plot)) +
+               geom_point(aes(x=Year, y=Mean, fill=as.factor(GearType_Plot),
+                              shape=as.factor(GearType_Plot)), size=3,
+                          color="#333333", alpha=0.75) +
+               geom_line(aes(x=Year, y=Mean, color=as.factor(GearType_Plot)),
                          size=1.2, alpha=0.75) +
                labs(title=MA_Include[i],
                     subtitle="Species Richness",
                     x="Year", y="Number of Species per 100 square meters",
-                    fill="Gear Size (m)", color="Gear Size (m)") +
+                    fill="Gear Type", color="Gear Type", shape="Gear Type") +
                scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
                                   breaks=seq(t_max, t_min, brk)) +
-               scale_fill_manual(values=c("6.1"= "#00374f", "183"= "#007c99"),
-                                 na.value="#00c9db") +
-               scale_color_manual(values=c("6.1"= "#00374f", "183"= "#007c99"),
-                                 na.value="#00c9db") +
-               # scale_fill_manual(values=c("6.1"= "#00374f", "183"= "#007c99",
-               #                            "NA"="#00c9db")) +
-               # scale_color_manual(values=c("6.1"= "#00374f", "183"= "#007c99",
-               #                             "NA"="#00c9db")) +
+               # scale_fill_manual(values=c("6.1"= "#00374f", "183"= "#007c99"),
+               #                   na.value="#00c9db") +
+               # scale_color_manual(values=c("6.1"= "#00374f", "183"= "#007c99"),
+               #                   na.value="#00c9db") +
+               scale_fill_manual(values=c("Trawl (4.8 m)"="#00374f",
+                                          "Trawl (6.1 m)"="#007c99",
+                                          "Seine (183 m)"="#00c9db")) +
+               scale_color_manual(values=c("Trawl (4.8 m)"="#00374f",
+                                          "Trawl (6.1 m)"="#007c99",
+                                          "Seine (183 m)"="#00c9db")) +
+               scale_shape_manual(values=c("Trawl (4.8 m)"=21,
+                                          "Trawl (6.1 m)"=22,
+                                          "Seine (183 m)"=24)) +
                plot_theme
             
             outname <- paste0("Nekton_", gsub(" ", "", MA_Include[i]), "_",
@@ -298,7 +311,7 @@ if(n==0){
       
             ResultTable <- MA_Ov_Stats[MA_Ov_Stats$ManagedAreaName==MA_Include[i],]
             ResultTable <- ResultTable[,-c("AreaID", "ManagedAreaName",
-                                             "ProgramIDs")]
+                                             "ProgramIDs", "GearType_Plot")]
             t1 <- ggtexttable(ResultTable, rows = NULL,
                               theme=ttheme(base_size=7))
             print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
