@@ -1,14 +1,4 @@
 AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
-4|Banana River Aquatic Preserve|1996|Turbidity|Bottom|Sample|1|1.26|1.26|1.26|1.26||5002
-4|Banana River Aquatic Preserve|1998|Turbidity|Bottom|Sample|1|4.6|4.6|4.6|4.6||5002
-4|Banana River Aquatic Preserve|2002|Turbidity|Bottom|Sample|1|3.8|3.8|3.8|3.8||5002
-4|Banana River Aquatic Preserve|2003|Turbidity|Bottom|Sample|1|2.2|2.2|2.2|2.2||5002
-4|Banana River Aquatic Preserve|2004|Turbidity|Bottom|Sample|1|5.3|5.3|5.3|5.3||5002
-4|Banana River Aquatic Preserve|2010|Turbidity|Bottom|Sample|1|4.2|4.2|4.2|4.2||5002
-4|Banana River Aquatic Preserve|2011|Turbidity|Bottom|Sample|1|1.8|1.8|1.8|1.8||5002
-4|Banana River Aquatic Preserve|2012|Turbidity|Bottom|Sample|1|0.8|0.8|0.8|0.8||5002
-4|Banana River Aquatic Preserve|2020|Turbidity|Bottom|Sample|14|0.5|56.73264|2.310495|11.6336007142857|18.1465876743122|5002
-4|Banana River Aquatic Preserve|2021|Turbidity|Bottom|Sample|14|0.5|6.17275|1.886575|2.17670785714286|1.40699508946264|5002
 5|Big Bend Seagrasses Aquatic Preserve|1993|Turbidity|Bottom|Sample|1|5.2|5.2|5.2|5.2||5002
 5|Big Bend Seagrasses Aquatic Preserve|1995|Turbidity|Bottom|Sample|4|2.1|4.5|2.6|2.95|1.10905365064094|5002
 5|Big Bend Seagrasses Aquatic Preserve|1996|Turbidity|Bottom|Sample|21|1.38|9.9|2.8|3.88|2.86837933335185|5002
@@ -24,94 +14,23 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 5|Big Bend Seagrasses Aquatic Preserve|2019|Turbidity|Bottom|Sample|8|0.35|2.2|1.342805|1.21695125|0.724250776723041|477, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2020|Turbidity|Bottom|Sample|8|0.5|5.21016|0.525|1.40023625|1.63510349921376|477, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2021|Turbidity|Bottom|Sample|5|0.2|3.37557|0.55|1.070652|1.3050666683622|477, 5002
-6|Biscayne Bay Aquatic Preserve|1994|Turbidity|Bottom|Sample|9|0.3|2.1|1.4|1.25555555555556|0.689403929331548|5002
-6|Biscayne Bay Aquatic Preserve|1995|Turbidity|Bottom|Sample|9|0.1|1.11|0.43|0.503333333333333|0.382916439970916|5002
-6|Biscayne Bay Aquatic Preserve|1996|Turbidity|Bottom|Sample|11|0.12|1.43|0.6|0.597272727272727|0.385463121688467|5002
-6|Biscayne Bay Aquatic Preserve|1997|Turbidity|Bottom|Sample|4|0.5|1.2|0.9|0.875|0.330403793359984|5002
-6|Biscayne Bay Aquatic Preserve|1998|Turbidity|Bottom|Sample|2|0.3|0.3|0.3|0.3|0|5002
-6|Biscayne Bay Aquatic Preserve|2006|Turbidity|Bottom|Sample|1|0.7|0.7|0.7|0.7||5002
-6|Biscayne Bay Aquatic Preserve|2007|Turbidity|Bottom|Sample|5|0.6|2.9|0.9|1.28|0.962808392152873|5002
-6|Biscayne Bay Aquatic Preserve|2008|Turbidity|Bottom|Sample|5|0.2|1.2|0.7|0.7|0.360555127546399|5002
-6|Biscayne Bay Aquatic Preserve|2010|Turbidity|Bottom|Sample|1|0.6|0.6|0.6|0.6||5002
-6|Biscayne Bay Aquatic Preserve|2014|Turbidity|Bottom|Sample|6|0.4|0.7|0.65|0.6|0.126491106406735|5002
-6|Biscayne Bay Aquatic Preserve|2015|Turbidity|Bottom|Sample|11|0.4|1|0.6|0.609090909090909|0.216585066219005|5002
-6|Biscayne Bay Aquatic Preserve|2016|Turbidity|Bottom|Sample|1|0.6|0.6|0.6|0.6||5002
-9|Cape Haze Aquatic Preserve|2002|Turbidity|Bottom|Sample|1|4.1|4.1|4.1|4.1||479
-9|Cape Haze Aquatic Preserve|2004|Turbidity|Bottom|Sample|1|1.95|1.95|1.95|1.95||479
-9|Cape Haze Aquatic Preserve|2005|Turbidity|Bottom|Sample|1|2|2|2|2||479
-9|Cape Haze Aquatic Preserve|2008|Turbidity|Bottom|Sample|1|1.46|1.46|1.46|1.46||479
-9|Cape Haze Aquatic Preserve|2010|Turbidity|Bottom|Sample|9|0.65|9.3|1.9|3.35|2.924063952789|479
-9|Cape Haze Aquatic Preserve|2011|Turbidity|Bottom|Sample|8|1.08|10|5.1|4.65625|3.13379704648713|479
-9|Cape Haze Aquatic Preserve|2012|Turbidity|Bottom|Sample|11|1.4|7.8|2.4|3.26545454545455|2.17704553758695|479
-9|Cape Haze Aquatic Preserve|2013|Turbidity|Bottom|Sample|11|1|2.4|1.8|1.74545454545455|0.427466107109409|479
-9|Cape Haze Aquatic Preserve|2014|Turbidity|Bottom|Sample|9|2.1|13|3|4.15555555555556|3.40848614164379|479
-9|Cape Haze Aquatic Preserve|2015|Turbidity|Bottom|Sample|2|1.9|2.3|2.1|2.1|0.282842712474619|479
-9|Cape Haze Aquatic Preserve|2020|Turbidity|Bottom|Sample|3|1.1|3.6|1.5|2.06666666666667|1.34288247189891|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1996|Turbidity|Bottom|Sample|10|1|5.7|2|2.53|1.73079942993597|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1997|Turbidity|Bottom|Sample|24|1|14|2.4|3.6125|3.19541961590949|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1998|Turbidity|Bottom|Sample|24|0.37|6.5|2.1|2.77208333333333|1.8935565321848|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|Turbidity|Bottom|Sample|24|0.13|7.6|1.3|2.08291666666667|2.13236851201065|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2000|Turbidity|Bottom|Sample|23|0.8|15|4.5|5.84782608695652|4.13871626618881|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2001|Turbidity|Bottom|Sample|33|1|84|4.5|7.66363636363636|14.0598679354977|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2002|Turbidity|Bottom|Sample|33|0.96|12.5|3.1|4.55606060606061|3.3306352053643|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2003|Turbidity|Bottom|Sample|17|0.39|7.69|2.19|2.35029411764706|1.65461331452042|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2004|Turbidity|Bottom|Sample|12|0.62|6.08|1.455|2.06083333333333|1.63498378270152|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2005|Turbidity|Bottom|Sample|17|1|5.21|1.79|2.17|1.15913221851521|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2006|Turbidity|Bottom|Sample|16|0.9|10.2|2.55|3.0125|2.33434501877222|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|Turbidity|Bottom|Sample|15|0.4|4.6|1.8|1.86|1.10699077296451|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|Turbidity|Bottom|Sample|22|0.6|6.4|2.35|2.66|1.6789339020995|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2009|Turbidity|Bottom|Sample|25|0.8|5.7|2.4|2.3868|1.11579090036321|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Turbidity|Bottom|Sample|38|0.4|6.9|2.1|2.51342105263158|1.64642984160534|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Turbidity|Bottom|Sample|51|0.33|15.1|3.1|3.35666666666667|2.65352871977423|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Turbidity|Bottom|Sample|40|0.9|17|2.6|3.14675|2.75106635502374|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Turbidity|Bottom|Sample|45|0.5|15|2|2.51111111111111|2.5497969814212|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Turbidity|Bottom|Sample|52|0.6|7.5|2.8|2.97615384615385|1.53705493012456|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|Turbidity|Bottom|Sample|38|0.7|5.6|2.1|2.35789473684211|1.28012490500106|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2001|Turbidity|Bottom|Sample|24|1|84|3.7|7.94166666666667|16.5015392343093|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2002|Turbidity|Bottom|Sample|22|0.96|12.5|4.1|5.22409090909091|3.76688409708419|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Turbidity|Bottom|Sample|13|1.4|5.9|2.7|2.99230769230769|1.33757338643626|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Turbidity|Bottom|Sample|28|0.7|15.1|3.95|4.29428571428571|3.05020027098577|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Turbidity|Bottom|Sample|22|0.9|7.7|2.8|2.85318181818182|1.60539977624218|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Turbidity|Bottom|Sample|19|0.6|7.6|2.1|2.5|1.56950098226581|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Turbidity|Bottom|Sample|31|1.3|7.5|3|3.24193548387097|1.56966539821887|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|Turbidity|Bottom|Sample|23|0.7|5.3|1.9|2.28260869565217|1.22906179070684|479
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2016|Turbidity|Bottom|Sample|1|1.4|1.4|1.4|1.4||479
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|Turbidity|Bottom|Sample|72|0.3|15|1.8|2.14166666666667|2.02277316266694|476, 479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|Turbidity|Bottom|Sample|14|1.5|11|3.35|3.70714285714286|2.29396005790265|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|Turbidity|Bottom|Sample|1|3.7|3.7|3.7|3.7||476
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1995|Turbidity|Bottom|Sample|9|1.6|5.8|3.2|3.64444444444444|1.30586284799659|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1996|Turbidity|Bottom|Sample|15|0.65|10|2.6|4.14333333333333|3.5109739525149|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1997|Turbidity|Bottom|Sample|8|1.2|10|2.95|3.6125|2.7668638770792|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1998|Turbidity|Bottom|Sample|10|1.3|11.4|7.85|7.03|4.05628456157164|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1999|Turbidity|Bottom|Sample|5|2.9|11.6|3.9|5.4|3.61386219991853|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2000|Turbidity|Bottom|Sample|5|0.6|12|4.6|4.7|4.52106182218293|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2001|Turbidity|Bottom|Sample|6|3.1|13|8.75|8.11666666666667|4.10824374479736|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2002|Turbidity|Bottom|Sample|9|2|11|6|5.98888888888889|3.0937212400459|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2003|Turbidity|Bottom|Sample|8|2.2|6.6|4.25|4.45|1.55011520309206|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2004|Turbidity|Bottom|Sample|6|3.2|22|6.65|9.03333333333333|7.08764182691723|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2005|Turbidity|Bottom|Sample|11|2.3|9.6|5|5.20909090909091|2.21786137774864|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2006|Turbidity|Bottom|Sample|8|2.4|9.6|3.55|4.3875|2.44098194527179|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2007|Turbidity|Bottom|Sample|5|0.7|4.5|3.5|2.94|1.63187009286891|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2008|Turbidity|Bottom|Sample|10|2|7.9|5.4|5.08|1.8689272026724|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2009|Turbidity|Bottom|Sample|7|1.1|8.1|4.5|4.37142857142857|2.18076002478821|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2010|Turbidity|Bottom|Sample|5|4.7|11|5.8|6.98|2.64707385616647|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2011|Turbidity|Bottom|Sample|3|2.5|5.1|2.5|3.36666666666667|1.50111069989303|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2012|Turbidity|Bottom|Sample|1|1.9|1.9|1.9|1.9||5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Turbidity|Bottom|Sample|6|0.65|37|3.55|12.5416666666667|16.0992054669374|5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Turbidity|Bottom|Sample|11|2.4|50|13|14.5181818181818|12.6414254086965|5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|Turbidity|Bottom|Sample|11|2|27|12|11.5454545454545|7.7286950562645|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Turbidity|Bottom|Sample|14|3.1|27|12|13.8785714285714|7.16295798067859|5002, 5014
-29|Mosquito Lagoon Aquatic Preserve|1995|Turbidity|Bottom|Sample|13|1.6|8.9|5.9|5.42307692307692|2.47020709191013|5002
-29|Mosquito Lagoon Aquatic Preserve|1996|Turbidity|Bottom|Sample|12|2.1|13|4.05|4.85833333333333|2.84395957436214|5002
-29|Mosquito Lagoon Aquatic Preserve|1997|Turbidity|Bottom|Sample|5|2.4|4.7|3.2|3.32|0.92574294488265|5002
-29|Mosquito Lagoon Aquatic Preserve|1998|Turbidity|Bottom|Sample|12|2.7|16.5|5.6|7.41666666666667|4.18022037986545|5002
-29|Mosquito Lagoon Aquatic Preserve|1999|Turbidity|Bottom|Sample|7|1.4|12|5.9|5.60285714285714|3.74398056568013|5002
-29|Mosquito Lagoon Aquatic Preserve|2000|Turbidity|Bottom|Sample|5|2.1|8.9|5.4|5.42|3.23063461258001|5002
-29|Mosquito Lagoon Aquatic Preserve|2001|Turbidity|Bottom|Sample|4|2.3|14|8.3|8.225|5.26141615917236|5002
-29|Mosquito Lagoon Aquatic Preserve|2002|Turbidity|Bottom|Sample|4|3|7.4|4.85|5.025|2.30416289933387|5002
-29|Mosquito Lagoon Aquatic Preserve|2003|Turbidity|Bottom|Sample|3|2.1|7.5|5.2|4.93333333333333|2.70985854489369|5002
-29|Mosquito Lagoon Aquatic Preserve|2004|Turbidity|Bottom|Sample|5|1|12|3.8|5.04|4.42413833418441|5002
-29|Mosquito Lagoon Aquatic Preserve|2005|Turbidity|Bottom|Sample|5|2.4|15|6.7|7.24|4.96920516783117|5002
-29|Mosquito Lagoon Aquatic Preserve|2006|Turbidity|Bottom|Sample|4|0.9|9|7.2|6.075|3.55375388380606|5002
-29|Mosquito Lagoon Aquatic Preserve|2007|Turbidity|Bottom|Sample|2|3|8.8|5.9|5.9|4.10121933088198|5002
-29|Mosquito Lagoon Aquatic Preserve|2008|Turbidity|Bottom|Sample|5|3.6|5.9|3.8|4.38|1.03053384223906|5002
-29|Mosquito Lagoon Aquatic Preserve|2009|Turbidity|Bottom|Sample|6|0.9|3.7|2.2|2.3|1.05451410611713|5002
-29|Mosquito Lagoon Aquatic Preserve|2010|Turbidity|Bottom|Sample|5|1.3|4.8|3.2|3.08|1.25179870586289|5002
-29|Mosquito Lagoon Aquatic Preserve|2011|Turbidity|Bottom|Sample|6|1.1|8.4|3.8|4.5|3.27047397176617|5002
-29|Mosquito Lagoon Aquatic Preserve|2020|Turbidity|Bottom|Sample|4|3.4501|13.47031|5.784655|7.12243|4.64758496250113|5002
-29|Mosquito Lagoon Aquatic Preserve|2021|Turbidity|Bottom|Sample|5|0.1|11.97387|10.43928|8.236378|4.91540776321456|5002
 37|Rocky Bayou State Park Aquatic Preserve|2008|Turbidity|Bottom|Sample|2|3.7|14.2|8.95|8.95|7.42462120245875|537
 37|Rocky Bayou State Park Aquatic Preserve|2009|Turbidity|Bottom|Sample|8|0|41.9|13.45|16.3625|15.2099532731507|537
 37|Rocky Bayou State Park Aquatic Preserve|2010|Turbidity|Bottom|Sample|6|0|17.2|2.25|5.45|7.16037708504238|537

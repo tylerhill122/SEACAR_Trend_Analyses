@@ -1,8 +1,14 @@
 ---
 date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+    dev: png
+    keep_md: yes
   pdf_document:
-    toc: true
+    toc: TRUE
     toc_depth: 2
     dev: png
     extra_dependencies: ["float"]
@@ -19,11 +25,12 @@ Note: The top 2% of data is excluded when computing mean and standard deviations
 
 # Libraries
 
-Loads libraries used in the script. The inclusion of `scipen` option limits how frequently R defaults to scientific notation.
+Loads libraries used in the script. Loads the Segoe UI font for use in the figures. The inclusion of `scipen` option limits how frequently R defaults to scientific notation. Sets default settings for displaying warning and messages in created document, and sets figure dpi.
 
 ```{r libraries, message=FALSE}
 library(knitr)
 library(data.table)
+library(plyr)
 library(dplyr)
 library(lubridate)
 library(ggplot2)
@@ -31,8 +38,10 @@ library(ggpubr)
 library(scales)
 library(EnvStats)
 library(tidyr)
+library(stringr)
 library(kableExtra)
-windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
+
+windowsFonts(`Segoe UI`=windowsFont('Segoe UI'))
 options(scipen=999)
 opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
 ```
@@ -59,6 +68,10 @@ data$SampleDate <- as.Date(data$SampleDate)
 data$YearMonth <- paste0(data$Month, "-", data$Year)
 data$YearMonthDec <- data$Year + ((data$Month-0.5) / 12)
 data$DecDate <- decimal_date(data$SampleDate)
+data[, `:=` (relyear=Year - min(Year), relyear_dd=DecDate - min(DecDate)),
+     by="ManagedAreaName"]
+data <- data[ParameterName==parameter & str_detect(ActivityType, activity) &
+                RelativeDepth==depth & Include==1, ]
 ```
 
 ---
@@ -77,6 +90,10 @@ After the initial filtering, a second filter variable is created to determine wh
 After filtering, the amount of data impacted by the H (for dissolved oxygen & pH in program 476), I, Q, S (for Secchi depth), and U value qualifiers. A variable is also created that determines if scatter plot points should be a different color based on value qualifiers of interest.
 
 ```{r filtering}
+# param_name <- "Water_Temperature"
+# out_dir <- here::here("WQ_Discrete/output/by_parameter/")
+# APP_Plots <- TRUE
+
 if(depth=="Bottom"){
    data$RelativeDepth[grep("12Q", data$SEACAR_QAQCFlagCode[
       data$RelativeDepth=="Surface"])] <- "Bottom"
@@ -112,7 +129,7 @@ data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
 
 MA_Summ <- data %>%
    group_by(AreaID, ManagedAreaName) %>%
-   summarize(ParameterName=parameter,
+   dplyr::summarize(ParameterName=parameter,
              RelativeDepth=depth,
              ActivityType=activity,
              N_Data=length(ResultValue[Include==TRUE & !is.na(ResultValue)]),
@@ -161,9 +178,10 @@ if (inc_H==TRUE){
    data$VQ_Plot <- gsub("[^HU]+", "", data$VQ_Plot)
    data$VQ_Plot <- gsub("UH", "HU", data$VQ_Plot)
    data$VQ_Plot[na.omit(data$ProgramID!=476)] <- gsub("[^U]+", "",
-                                             data$VQ_Plot[na.omit(data$ProgramID!=476)])
-   data$VQ_Plot[data$VQ_Plot==""] <- NA
+                                                      data$VQ_Plot[
+                                                na.omit(data$ProgramID!=476)])
    
+   data$VQ_Plot[data$VQ_Plot==""] <- NA
    
    cat(paste0("Number of Measurements: ", total,
               ", Number Passed Filter: ", pass_filter, "\n",
@@ -195,7 +213,7 @@ if (inc_H==TRUE){
 
 data_summ <- data %>%
    group_by(AreaID, ManagedAreaName) %>%
-   summarize(ParameterName=parameter,
+   dplyr::summarize(ParameterName=parameter,
              RelativeDepth=depth,
              ActivityType=activity,
              N_Total=length(ResultValue),
@@ -221,6 +239,7 @@ n <- length(MA_Include)
 MA_Exclude <- MA_Summ[MA_Summ$N_Years<10 & MA_Summ$N_Years>0,]
 MA_Exclude <- MA_Exclude[,c("ManagedAreaName", "N_Years")]
 z <- nrow(MA_Exclude)
+setDT(data)
 ```
 
 # Managed Area Statistics
@@ -241,7 +260,7 @@ Gets summary statistics for each managed area. Excluded managed areas are not in
 ```{r managed_area_stats, message=FALSE}
 MA_YM_Stats <- data[data$Use_In_Analysis==TRUE, ] %>%
    group_by(AreaID, ManagedAreaName, Year, Month) %>%
-   summarize(ParameterName=parameter,
+   dplyr::summarize(ParameterName=parameter,
              RelativeDepth=depth,
              ActivityType=activity,
              N_Data=length(ResultValue),
@@ -261,7 +280,7 @@ rm(MA_YM_Stats)
 
 MA_Y_Stats <- data[data$Use_In_Analysis==TRUE, ] %>%
    group_by(AreaID, ManagedAreaName, Year) %>%
-   summarize(ParameterName=parameter,
+   dplyr::summarize(ParameterName=parameter,
              RelativeDepth=depth,
              ActivityType=activity,
              N=length(ResultValue),
@@ -280,7 +299,7 @@ rm(MA_Y_Stats)
 
 MA_M_Stats <- data[data$Use_In_Analysis==TRUE, ] %>%
    group_by(AreaID, ManagedAreaName, Month) %>%
-   summarize(ParameterName=parameter,
+   dplyr::summarize(ParameterName=parameter,
              RelativeDepth=depth,
              ActivityType=activity,
              N=length(ResultValue),
@@ -295,7 +314,7 @@ MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ManagedAreaName,
                                              MA_M_Stats$Month), ])
 fwrite(MA_M_Stats, paste0(out_dir,"/", param_name, "_", activity, "_", depth,
                           "_ManagedArea_Month_Stats.txt"), sep="|")
-rm(MA_M_Stats)
+#rm(MA_M_Stats)
 ```
 
 
@@ -313,8 +332,9 @@ Gets monitoring location statistics, which is defined as a unique combination of
 
 ```{r monitoring_loc_stats, message=FALSE}
 Mon_Stats <- data[data$Use_In_Analysis==TRUE, ] %>%
-   group_by(AreaID, ManagedAreaName, ProgramID, ProgramName, ProgramLocationID) %>%
-   summarize(ParameterName=parameter,
+   group_by(AreaID, ManagedAreaName, ProgramID, ProgramName,
+            ProgramLocationID) %>%
+   dplyr::summarize(ParameterName=parameter,
              RelativeDepth=depth,
              ActivityType=activity,
              EarliestSampleDate=min(SampleDate),
@@ -358,30 +378,46 @@ The following steps are performed:
 
 ```{r SKT_analysis}
 tauSeasonal <- function(data, independent, stats.median, stats.minYear,
-                        stats.maxYear) {
-   tau <- NULL
+                        stats.maxYear, seasondata=MA_M_Stats[
+                           MA_M_Stats$ManagedAreaName==MA_Include[i]]) {
+  setDT(data) 
+  tau <- NULL
    tryCatch({ken <- kendallSeasonalTrendTest(
-      y = data$ResultValue,
-      season = data$Month,
-      year = data$Year,
-      independent.obs = independent)
+      y=data$ResultValue,
+      season=data$Month,
+      year=data$relyear,
+      independent.obs=independent)
    
    tau <- ken$estimate[1]
-   p <- ken$p.value[2]
+   z <- ken$statistic[2]
+   p_z <- ken$p.value[2]
+   chi_sq <- ken$statistic[1]
+   p_chi_sq <- ken$p.value[1]
    slope <- ken$estimate[2]
    intercept <- ken$estimate[3]
-   trend <- trend_calculator(slope, stats.median, p)
+   trend <- trend_calculator(slope, stats.median, p_z)
+   
+   seasonresults <- as.data.table(ken$seasonal.estimates)
    rm(ken)
-   }, warning = function(w) {
+   }, warning=function(w) {
       print(w)
-   }, error = function(e) {
+   }, error=function(e) {
       print(e)
-   }, finally = {
+   }, finally={
       if (!exists("tau")) {
          tau <- NA
       }
-      if (!exists("p")) {
-         p <- NA
+     if (!exists("z")) {
+         z <- NA
+      }
+      if (!exists("p_z")) {
+         p_z <- NA
+      }
+      if (!exists("chi_sq")) {
+         chi_sq <- NA
+      }
+      if (!exists("p_chi_sq")) {
+         p_chi_sq <- NA
       }
       if (!exists("slope")) {
          slope <- NA
@@ -393,32 +429,81 @@ tauSeasonal <- function(data, independent, stats.median, stats.minYear,
          trend <- NA
       }
    })
-   KT <-c(unique(data$AreaID),
-          unique(data$ManagedAreaName),
-          stats.median,
-          independent,
-          tau,
-          p,
-          slope,
-          intercept,
-          trend)
+   KT <-data.table(AreaID=unique(data$AreaID),
+                   ManagedAreaName=unique(data$ManagedAreaName),
+                   season="All",
+                   stats.median=stats.median,
+                   independent=independent,
+                   tau=tau,
+                   z=z,
+                   p_z=p_z,
+                   chi_sq=chi_sq,
+                   p_chi_sq=p_chi_sq,
+                   slope=slope,
+                   intercept=intercept,
+                   trend=trend)
+   
+   seasonresults[, `:=` (AreaID=unique(data$AreaID),
+                         ManagedAreaName=unique(data$ManagedAreaName),
+                         season=unique(data$Month),
+                         stats.median=as.numeric(NA),
+                         independent=independent,
+                         z=as.numeric(NA),
+                         p_z=as.numeric(NA),
+                         chi_sq=as.numeric(NA),
+                         p_chi_sq=as.numeric(NA),
+                         trend=as.integer(NA))]
+   
+   for(s in as.integer(unique(seasonresults$season))){
+     seasondat_s <- data[Month==s, ]
+     
+     if(nrow(seasondat_s) < 3 | length(unique(seasondat_s$Year)) < 3 |
+        is.na(seasonresults[season==s, tau])){
+       next
+       
+     } else{
+       if(!is.na(unique(seasondat_s$Month))){
+       trend_s <- trend_calculator(seasonresults[season==s, slope],
+                                   seasondata[Month==s, Median], p_z)
+       ken_s <- kendallTrendTest(ResultValue ~ relyear, data=seasondat_s)
+       seasonresults[season==s, `:=` (stats.median=unique(seasondata[
+          Month==s, Median]),
+                                        z=ken_s$statistic, 
+                                        p_z=ken_s$p.value,
+                                        chi_sq=NA,
+                                        p_chi_sq=NA,
+                                        trend=trend_s)]
+     } else{
+       next
+     }
+    }
+   }
+   
+   seasonresults[, season := as.character(season)]
+   
+   KT <- rbind(KT, seasonresults)
+   KT[, season := factor(season, levels=c("All", seq(1:12)), ordered=TRUE)]
+   
    return(KT)
 }
-runStats <- function(data) {
+runStats <- function(data, MA_M_Stats) {
    data$Index <- as.Date(data$SampleDate) # , "%Y-%m-%d")
    data$ResultValue <- as.numeric(data$ResultValue)
    # Calculate basic stats
-   stats.median <- median(data$ResultValue, na.rm = TRUE)
-   stats.minYear <- min(data$Year, na.rm = TRUE)
-   stats.maxYear <- max(data$Year, na.rm = TRUE)
-   # Calculate Kendall Tau and Slope stats, then update appropriate columns and table
+   stats.median <- median(data$ResultValue, na.rm=TRUE)
+   stats.minYear <- min(data$relyear, na.rm=TRUE)
+   stats.maxYear <- max(data$relyear, na.rm=TRUE)
+   # Calculate Kendall Tau and Slope stats,
+   # then update appropriate columns and table
+   seasondata <- MA_M_Stats[MA_M_Stats$ManagedAreaName==MA_Include[i]]
    KT <- tauSeasonal(data, TRUE, stats.median,
-                     stats.minYear, stats.maxYear)
-   if (is.null(KT[9])) {
+                     stats.minYear, stats.maxYear, seasondata)
+   # if (is.null(KT[9])) {
+   if (is.na(KT[season=="All", trend])) {
       KT <- tauSeasonal(data, FALSE, stats.median,
-                        stats.minYear, stats.maxYear)
+                        stats.minYear, stats.maxYear, seasondata)
    }
-   if (is.null(KT.Stats) == TRUE) {
+   if (is.null(KT.Stats)==TRUE) {
       KT.Stats <- KT
    } else{
       KT.Stats <- rbind(KT.Stats, KT)
@@ -450,34 +535,37 @@ trend_calculator <- function(slope, median_value, p) {
 KT.Stats <- NULL
 # Loop that goes through each managed area.
 # List of managed areas stored in MA_Years$ManagedAreaName
-c_names <- c("AreaID", "ManagedAreaName", "Median", "Independent", 
-             "tau", "p", "SennSlope", "SennIntercept", "Trend")
+c_names <- c("AreaID", "ManagedAreaName", "Season", "Median", "Independent", 
+             "tau", "z", "p_z", "chi_sq", "p_chi_sq", "SennSlope",
+             "SennIntercept", "Trend")
 if(n==0){
    KT.Stats <- data.frame(matrix(ncol=length(c_names),
                                  nrow=length(MA_Summ$ManagedAreaName)))
    colnames(KT.Stats) <- c_names
-   KT.Stats[, c("AreaID", "ManagedAreaName")] <-
-      MA_Summ[, c("AreaID", "ManagedAreaName")]
+   # KT.Stats[, c("AreaID", "ManagedAreaName")] <-
+      # MA_Summ[, c("AreaID", "ManagedAreaName")]
 } else{
    for (i in 1:n) {
-      x <- nrow(data[data$Use_In_Analysis == TRUE &
-                        data$ManagedAreaName == MA_Include[i], ])
+      x <- nrow(data[data$Use_In_Analysis==TRUE &
+                        data$ManagedAreaName==MA_Include[i], ])
       if (x>0) {
-         KT.Stats <- runStats(data[data$Use_In_Analysis == TRUE &
+         KT.Stats <- runStats(data[data$Use_In_Analysis==TRUE &
                                       data$ManagedAreaName ==
-                                      MA_Include[i], ])
+                                      MA_Include[i], ], MA_M_Stats)
       }
    }
    KT.Stats <- as.data.frame(KT.Stats)
-   c_names <- c("AreaID", "ManagedAreaName", "Median", "Independent", 
-                "tau", "p", "SennSlope", "SennIntercept", "Trend")
+   
    if(dim(KT.Stats)[2]==1){
       KT.Stats <- as.data.frame(t(KT.Stats))
    }
    colnames(KT.Stats) <- c_names
    rownames(KT.Stats) <- seq(1:nrow(KT.Stats))
    KT.Stats$tau <- round(as.numeric(KT.Stats$tau), digits=4)
-   KT.Stats$p <- round(as.numeric(KT.Stats$p), digits=4)
+   KT.Stats$z <- round(as.numeric(KT.Stats$z), digits=4)
+   KT.Stats$p_z <- round(as.numeric(KT.Stats$p_z), digits=4)
+   KT.Stats$chi_sq <- round(as.numeric(KT.Stats$chi_sq), digits=4)
+   KT.Stats$p_chi_sq <- round(as.numeric(KT.Stats$p_chi_sq), digits=4)
    KT.Stats$SennSlope <- as.numeric(KT.Stats$SennSlope)
    KT.Stats$SennIntercept <- as.numeric(KT.Stats$SennIntercept)
    KT.Stats$Trend <- as.integer(KT.Stats$Trend)
@@ -486,11 +574,30 @@ if(n==0){
 KT.Stats <-  merge.data.frame(MA_Summ, KT.Stats,
                               by=c("AreaID", "ManagedAreaName"), all=TRUE)
 
-KT.Stats <- as.data.table(KT.Stats[order(KT.Stats$ManagedAreaName), ])
+KT.Stats <- as.data.table(KT.Stats[order(KT.Stats$ManagedAreaName,
+                                         KT.Stats$Season), ])
+KT.Stats2 <- copy(KT.Stats)
+KT.Stats[, `:=` (RelativeDepth=depth, Units=unit)]
+KT.Stats_all <- rbind(KT.Stats_all, KT.Stats)
 
-fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", activity, "_", depth,
+KT.Stats2$MonitoringID <- NULL
+fwrite(KT.Stats2, paste0(out_dir,"/", param_name, "_", activity, "_", depth,
                         "_KendallTau_Stats.txt"), sep="|")
+rm(KT.Stats2)
 data <- data[!is.na(data$ResultValue),]
+
+plot_theme <- theme_bw() +
+   theme(text=element_text(family="Segoe UI"),
+         title=element_text(face="bold"),
+         plot.title=element_text(hjust=0.5, size=14, color="#314963"),
+         plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
+         axis.title.x=element_text(margin=margin(t=5, r=0,
+                                                     b=10, l=0)),
+         axis.title.y=element_text(margin=margin(t=0, r=10,
+                                                     b=0, l=0)),
+         axis.text=element_text(size=10),
+         axis.text.x=element_text(face="bold", angle=60, hjust=1),
+         axis.text.y=element_text(face="bold"))
 ```
 
 
@@ -505,12 +612,12 @@ plot_theme <- theme_bw() +
          title=element_text(face="bold"),
          plot.title=element_text(hjust=0.5, size=14, color="#314963"),
          plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
-         axis.title.x = element_text(margin = margin(t = 5, r = 0,
-                                                     b = 10, l = 0)),
-         axis.title.y = element_text(margin = margin(t = 0, r = 10,
-                                                     b = 0, l = 0)),
+         axis.title.x=element_text(margin=margin(t=5, r=0,
+                                                     b=10, l=0)),
+         axis.title.y=element_text(margin=margin(t=0, r=10,
+                                                     b=0, l=0)),
          axis.text=element_text(size=10),
-         axis.text.x=element_text(face="bold", angle = 60, hjust = 1),
+         axis.text.x=element_text(face="bold", angle=60, hjust=1),
          axis.text.y=element_text(face="bold"))
 
 year_lower <- min(data$Year)
@@ -764,7 +871,7 @@ if(z==0){
    print("There are no managed areas that qualify.")
 } else {
    for(i in 1:z){
-      p1<-ggplot(data=data[data$ManagedAreaName==MA_Exclude$ManagedAreaName[i]&
+      p1<-ggplot(data=data[data$ManagedAreaName==MA_Exclude$ManagedAreaName[i] &
                               data$Include==TRUE, ],
                  aes(x=SampleDate, y=ResultValue, fill=VQ_Plot)) +
          geom_point(shape=21, size=3, color="#333333", alpha=0.75) +
@@ -810,15 +917,17 @@ The plots created in this section are designed to show the general trend of the 
 10. Plot the arrangement as a set of panels
 
 
-```{r Trendlines_ManagedArea, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval=APP_Plots}
+```{r Trendlines_ManagedArea, warning=FALSE, fig.height=12, fig.width=10, results="asis", eval=APP_Plots}
 if(n==0){
    print("There are no managed areas that qualify.")
 } else {
    for (i in 1:n) {
       plot_data <- data[data$SufficientData==TRUE &
                            data$ManagedAreaName==MA_Include[i],]
-      year_lower <- min(plot_data$Year)
-      year_upper <- max(plot_data$Year)
+      plot_data$Season <- factor(plot_data$Month, levels=c("All", seq(1, 12)),
+                                 ordered=TRUE)
+      year_lower <- min(plot_data$relyear)
+      year_upper <- max(plot_data$relyear)
       min_RV <- min(plot_data$ResultValue)
       mn_RV <- mean(plot_data$ResultValue[plot_data$ResultValue <
                                              quantile(data$ResultValue, 0.98)])
@@ -831,18 +940,57 @@ if(n==0){
       s_slope <- KT.Stats$SennSlope[KT.Stats$ManagedAreaName==MA_Include[i]]
       s_int <- KT.Stats$SennIntercept[KT.Stats$ManagedAreaName==MA_Include[i]]
       trend <- KT.Stats$Trend[KT.Stats$ManagedAreaName==MA_Include[i]]
-      p <- KT.Stats$p[KT.Stats$ManagedAreaName==MA_Include[i]]
+      z <- KT.Stats$z[KT.Stats$ManagedAreaName==MA_Include[i]]
+      p_z <- KT.Stats$p_z[KT.Stats$ManagedAreaName==MA_Include[i]]
+      chi_sq <- KT.Stats$chi_sq[KT.Stats$ManagedAreaName==MA_Include[i]]
+      p_chi_sq <- KT.Stats$p_chi_sq[KT.Stats$ManagedAreaName==MA_Include[i]]
       
-      model <- lm(ResultValue ~ DecDate,
-                  data=plot_data)
-      m_int <- coef(model)[[1]]
-      m_slope <- coef(model)[[2]]
-      rm(model)
+      # model <- lm(ResultValue ~ relyear_dd,
+      #             data=plot_data)
+      # m_int <- coef(model)[[1]]
+      # m_slope <- coef(model)[[2]]
+      # rm(model)
+      
+      xbrks <- seq(round_any(min(plot_data$relyear_dd), 5, floor), round_any(max(plot_data$relyear_dd), 5, ceiling), 
+                   by=(round_any(max(plot_data$relyear_dd), 5, ceiling) - round_any(min(plot_data$relyear_dd), 5, floor))/5)
+      
+      xlabs <- seq(max(plot_data$Year) - round_any(max(plot_data$relyear_dd), 5,
+                                                   ceiling),
+                   max(plot_data$Year), 
+                   by=(max(plot_data$Year) - (max(plot_data$Year) - round_any(max(plot_data$relyear_dd), 5, ceiling)))/5)
+      
+      KT.Stats[, season := Season]
+      KT.Stats[ManagedAreaName==MA_Include[i] & season != "All", `:=`
+               (N_Data=nrow(plot_data[Season==season &
+                                         ManagedAreaName==MA_Include[i], ]),
+                  relyear_dd_lower=min(plot_data[Season==season &
+                                                    ManagedAreaName==
+                                                    MA_Include[i],
+                                                 relyear_dd]),
+                  relyear_dd_upper=max(plot_data[Season==season &
+                                                    ManagedAreaName==
+                                                    MA_Include[i],
+                                                 relyear_dd])), by="season"]
+      KT.Stats[ManagedAreaName==MA_Include[i] & season=="All", `:=`
+               (relyear_dd_lower=min(plot_data[ManagedAreaName==MA_Include[i],
+                                               relyear_dd]),
+                  relyear_dd_upper=max(plot_data[
+                     ManagedAreaName==MA_Include[i], relyear_dd])), by="season"]
+      KT.Stats[, season := NULL]
+      
+      # plot_data[is.na(VQ_Plot), VQ_Plot := "None"]
       p1 <- ggplot(data=plot_data,
-                   aes(x=DecDate, y=ResultValue, fill=VQ_Plot)) +
+                   aes(x=relyear_dd, y=ResultValue, fill=VQ_Plot)) +
          geom_point(shape=21, size=3, color="#333333", alpha=0.75) +
-         geom_abline(aes(slope=s_slope, intercept=s_int),
-                     color="#000099", size=1.2, alpha=0.7) +
+         # geom_abline(aes(slope=s_slope, intercept=s_int),
+         #             color="#000099", size=1.2, alpha=0.7) +
+         geom_segment(data=KT.Stats[ManagedAreaName==MA_Include[i] &
+                                       Season=="All", ],
+                      aes(x=relyear_dd_lower, y=relyear_dd_lower * SennSlope +
+                             SennIntercept,
+                          xend=relyear_dd_upper,
+                          yend=relyear_dd_upper * SennSlope + SennIntercept),
+                      color="#000099", size=1.2, alpha=0.7, inherit.aes=FALSE) +
          labs(subtitle="Autoscale",
               x="Year", y=paste0("Values (", unit, ")"),
               fill="Value Qualifier") +
@@ -857,13 +1005,21 @@ if(n==0){
                                        "SU"="#7CAE00"), na.value="#cccccc")
          } else {
             scale_fill_manual(values=c("U"= "#00BFC4"), na.value="#cccccc")
-         }}
+         }} +
+         scale_x_continuous(breaks=xbrks,
+                            labels=xlabs)
       
       p2 <- ggplot(data=plot_data,
-                   aes(x=DecDate, y=ResultValue, fill=VQ_Plot)) +
+                   aes(x=relyear_dd, y=ResultValue, fill=VQ_Plot)) +
          geom_point(shape=21, size=3, color="#333333", alpha=0.75) +
-         geom_abline(aes(slope=s_slope, intercept=s_int),
-                     color="#000099", size=1.2, alpha=0.7) +
+         # geom_abline(aes(slope=s_slope, intercept=s_int),
+         #             color="#000099", size=1.2, alpha=0.7) +
+         geom_segment(data=KT.Stats[ManagedAreaName==MA_Include[i] &
+                                       Season=="All", ],
+                      aes(x=relyear_dd_lower, y=relyear_dd_lower * SennSlope +
+                             SennIntercept, xend=relyear_dd_upper,
+                          yend=relyear_dd_upper * SennSlope + SennIntercept),
+                      color="#000099", size=1.2, alpha=0.7, inherit.aes=FALSE) +
          ylim(min_RV, y_scale) +
          labs(subtitle="Scaled to 4x Standard Deviation",
               x="Year", y=paste0("Values (", unit, ")")) +
@@ -877,10 +1033,30 @@ if(n==0){
                                        "SU"="#7CAE00"), na.value="#cccccc")
          } else {
             scale_fill_manual(values=c("U"= "#00BFC4"), na.value="#cccccc")
-         }}
+         }} +
+         scale_x_continuous(breaks=xbrks,
+                            labels=xlabs)
+      
+      splot <- ggplot(plot_data, aes(x=relyear_dd, y=ResultValue)) +
+         geom_point(shape=21, size=1.5, color="#333333", fill="#cccccc",
+                    alpha=0.75) +
+         geom_segment(data=KT.Stats[ManagedAreaName==MA_Include[i] &
+                                       Season != "All", ],
+                      aes(x=relyear_dd_lower, y=relyear_dd_lower * SennSlope +
+                             SennIntercept, xend=relyear_dd_upper,
+                          yend=relyear_dd_upper * SennSlope + SennIntercept),
+                      color="#000099", size=1.2, alpha=0.7) +
+         #ylim(min_RV-0.1*y_scale, y_scale) +
+         scale_x_continuous(breaks=xbrks,
+                            labels=xlabs) +
+         labs(y=paste0("Values (", unit, ")"), x="Year",
+              subtitle="Results for Individual Seasons") +
+         facet_wrap(~Season, ncol=3) +
+         plot_theme
+      
       leg <- get_legend(p1)
       KTset <- ggarrange(leg, p1 + theme(legend.position="none"), p2,
-                         ncol=1, heights=c(0.1, 1, 1))
+                         splot, ncol=1, heights=c(0.1, 1, 1, 1.5))
       
       p0 <- ggplot() + labs(title=paste0(MA_Include[i])) +
          plot_theme + theme(panel.border=element_blank(),
@@ -888,16 +1064,23 @@ if(n==0){
                             panel.grid.minor=element_blank(),
                             axis.line=element_blank())
       
-      print(ggarrange(p0, KTset, ncol=1, heights=c(0.1, 1)))
-      cat('\n')
-      print(KT.Stats[KT.Stats$ManagedAreaName==MA_Include[i], ] %>%
-         select(N_Data, Median, tau, SennSlope, SennIntercept, p, Trend) %>%
-         kable(format="latex") %>%
-            row_spec(0,bold=TRUE) %>%
-            kable_styling(latex_options = "HOLD_position") %>%
-            add_footnote(
-            "p < 0.00005 appear as 0 due to rounding"))
-      cat('\n')
+      KT.Stats[ManagedAreaName==MA_Include[i], `:=` (N=N_Data,
+                                                     Median=round(Median, 2),
+                                                     Slope=round(SennSlope, 4),
+                                                     Int.=round(SennIntercept, 4),
+                                                     z=round(z, 1),
+                                                     chi_sq=round(chi_sq, 1))]
+      
+      #print(ggarrange(p0, KTset, ncol=1, heights=c(0.1, 1.25)))
+      ResultTable <- KT.Stats[KT.Stats$ManagedAreaName==MA_Include[i], ] %>%
+         select(Season, N, Median, tau, Slope, Int., z, p_z, chi_sq, p_chi_sq, Trend)
+      
+      t1 <- ggtexttable(ResultTable, rows=NULL, theme=ttheme(base_size=11.5)) %>%
+         tab_add_footnote(text="p_z < 0.00005 appear as 0 due to rounding",
+                          size=10, face="italic")
+      
+      print(ggarrange(p0, KTset, t1, ncol=1, heights=c(0.015, 0.645, 0.34)))
+      cat('\n \n \n')
       rm(plot_data)
       rm(KTset, leg)
    }
@@ -944,7 +1127,7 @@ if(n==0){
                                            quantile(data$ResultValue, 0.98)])
       x_scale <- ifelse(year_upper - year_lower > 30, 10, 5)
       y_scale <- mn_RV + 4 * sd_RV
-      
+
       ##Year plots
       p1 <- ggplot(data=plot_data,
                    aes(x=Year, y=ResultValue, group=Year)) +
@@ -957,7 +1140,7 @@ if(n==0){
                             breaks=rev(seq(year_upper,
                                            year_lower, -x_scale))) +
          plot_theme
-      
+
       p2 <- ggplot(data=plot_data,
                    aes(x=Year, y=ResultValue, group=Year)) +
          geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
@@ -970,7 +1153,7 @@ if(n==0){
                             breaks=rev(seq(year_upper,
                                            year_lower, -x_scale))) +
          plot_theme
-      
+
       p3 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
                    aes(x=Year, y=ResultValue, group=Year)) +
          geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
@@ -982,17 +1165,17 @@ if(n==0){
          scale_x_continuous(limits=c(year_upper - 10.5, year_upper + 1),
                             breaks=rev(seq(year_upper, year_upper - 10,-2))) +
          plot_theme
-      
+
       Yset <- ggarrange(p1, p2, p3, ncol=1)
-      
+
       p0 <- ggplot() + labs(title=paste0(MA_Include[i]),
                             subtitle="By Year") +
          plot_theme + theme(panel.border=element_blank(),
                             panel.grid.major=element_blank(),
                             panel.grid.minor=element_blank(),
                             axis.line=element_blank())
-      
-      
+
+
       ## Year & Month Plots
       p4 <- ggplot(data=plot_data,
                    aes(x=YearMonthDec, y=ResultValue,
@@ -1005,7 +1188,7 @@ if(n==0){
                                            year_lower, -x_scale))) +
          plot_theme +
          theme(legend.position="none")
-      
+
       p5 <- ggplot(data=plot_data,
                    aes(x=YearMonthDec, y=ResultValue,
                        group=YearMonth, color=as.factor(Month))) +
@@ -1019,7 +1202,7 @@ if(n==0){
          plot_theme +
          theme(legend.position="top", legend.box="horizontal") +
          guides(color=guide_legend(nrow=1))
-      
+
       p6 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
                    aes(x=YearMonthDec, y=ResultValue,
                        group=YearMonth, color=as.factor(Month))) +
@@ -1031,17 +1214,17 @@ if(n==0){
                             breaks=rev(seq(year_upper, year_upper - 10,-2))) +
          plot_theme +
          theme(legend.position="none")
-      
+
       leg1 <- get_legend(p5)
       YMset <- ggarrange(leg1, p4, p5 + theme(legend.position="none"), p6,
                          ncol=1, heights=c(0.1, 1, 1, 1))
-      
+
       p00 <- ggplot() + labs(title=paste0(MA_Include[i]),
                              subtitle="By Year & Month") + plot_theme +
          theme(panel.border=element_blank(),
                panel.grid.major=element_blank(),
                panel.grid.minor=element_blank(), axis.line=element_blank())
-      
+
       ## Month Plots
       p7 <- ggplot(data=plot_data,
                    aes(x=Month, y=ResultValue,
@@ -1053,7 +1236,7 @@ if(n==0){
          scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
          plot_theme +
          theme(legend.position="none")
-      
+
       p8 <- ggplot(data=plot_data,
                    aes(x=Month, y=ResultValue,
                        group=Month, fill=as.factor(Month))) +
@@ -1066,7 +1249,7 @@ if(n==0){
          plot_theme +
          theme(legend.position="top", legend.box="horizontal") +
          guides(fill=guide_legend(nrow=1))
-      
+
       p9 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
                    aes(x=Month, y=ResultValue,
                        group=Month, fill=as.factor(Month))) +
@@ -1078,24 +1261,28 @@ if(n==0){
          scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
          plot_theme +
          theme(legend.position="none")
-      
+
       leg2 <- get_legend(p8)
       Mset <- ggarrange(leg2, p7, p8 + theme(legend.position="none"), p9,
                         ncol=1, heights=c(0.1, 1, 1, 1))
-      
+
       p000 <- ggplot() + labs(title=paste0(MA_Include[i]),
                               subtitle="By Month") + plot_theme +
          theme(panel.border=element_blank(),
                panel.grid.major=element_blank(),
                panel.grid.minor=element_blank(), axis.line=element_blank())
-      
+
       print(ggarrange(p0, Yset, ncol=1, heights=c(0.07, 1)))
       print(ggarrange(p00, YMset, ncol=1, heights=c(0.07, 1)))
       print(ggarrange(p000, Mset, ncol=1, heights=c(0.07, 1, 0.7)))
-      
+
       rm(plot_data)
       rm(p1, p2, p3, p4, p5, p6, p7, p8, p9, p0, p00, p000, leg1, leg2,
          Yset, YMset, Mset)
    }
 }
+
+rm(list=setdiff(ls(), c("all_params", "all_depths", "all_activity",
+                        "param_name", "depth", "activity", "KT.Stats_all",
+                        "MA_All", "APP_Plots", "out_dir", "file_in", "file_out")))
 ```

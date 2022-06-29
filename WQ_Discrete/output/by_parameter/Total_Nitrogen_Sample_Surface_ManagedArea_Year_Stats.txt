@@ -32,8 +32,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 2|Apalachicola Bay Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|233|0.194|1.011|0.625|0.616974248927039|0.145527279192584|355
 2|Apalachicola Bay Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|232|0.164|1.004|0.65|0.638594827586207|0.187926391523753|355
 2|Apalachicola Bay Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|232|0.174|1.512|0.609|0.636181034482759|0.260696057923987|355
-2|Apalachicola Bay Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|209|0.008|1.329|0.588|0.632626794258373|0.244249939866461|355, 5002
-2|Apalachicola Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|216|0.204|1.26|0.58|0.569662037037037|0.161687587487287|355, 5002
+2|Apalachicola Bay Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|208|0.008|1.329|0.584|0.6314375|0.244231845062252|355, 5002
+2|Apalachicola Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|215|0.204|1.26|0.58|0.56933488372093|0.161993248508962|355, 5002
 2|Apalachicola Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|7|0.51|0.64|0.582|0.567857142857143|0.046656291363647|5002
 2|Apalachicola Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|10|0.56|1.01|0.76|0.776|0.125273035140581|5002
 2|Apalachicola Bay Aquatic Preserve|2022|Total Nitrogen|Surface|Sample|2|0.57|0.708|0.639|0.639|0.0975807358037436|5002
@@ -57,8 +57,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 3|Apalachicola National Estuarine Research Reserve|2015|Total Nitrogen|Surface|Sample|276|0.194|1.16|0.6245|0.622518115942029|0.159379192316144|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2016|Total Nitrogen|Surface|Sample|273|0.164|1.15|0.659|0.644648351648352|0.192171857845109|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2017|Total Nitrogen|Surface|Sample|276|0.174|1.512|0.6135|0.635963768115942|0.251034424569302|355, 5002
-3|Apalachicola National Estuarine Research Reserve|2018|Total Nitrogen|Surface|Sample|246|0.008|1.329|0.589|0.625682926829268|0.237293801086012|355, 5002
-3|Apalachicola National Estuarine Research Reserve|2019|Total Nitrogen|Surface|Sample|270|0.204|1.26|0.604|0.587922222222222|0.169836148532058|355, 5002
+3|Apalachicola National Estuarine Research Reserve|2018|Total Nitrogen|Surface|Sample|245|0.008|1.329|0.588|0.624644897959184|0.237219239624536|355, 5002
+3|Apalachicola National Estuarine Research Reserve|2019|Total Nitrogen|Surface|Sample|268|0.204|1.26|0.604|0.587458955223881|0.17038353462355|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2020|Total Nitrogen|Surface|Sample|24|0.244|0.994|0.71|0.700125|0.163675796330269|5002
 3|Apalachicola National Estuarine Research Reserve|2021|Total Nitrogen|Surface|Sample|25|0.56|1.01|0.83|0.812|0.110942928270951|5002
 3|Apalachicola National Estuarine Research Reserve|2022|Total Nitrogen|Surface|Sample|7|0.457|0.84|0.66|0.662142857142857|0.131263638747152|5002
@@ -84,7 +84,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 4|Banana River Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|92|0.5809|2.204|1.06745|1.17052826086957|0.335296527882603|540, 5002
 4|Banana River Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|48|0.6035|1.904|1.13615|1.19392916666667|0.224960718990344|540, 5002
 4|Banana River Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|18|1.607|2.704|2.107|2.07155555555556|0.28030513252572|540
-4|Banana River Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|13|1.304|2.104|1.704|1.73215384615385|0.263193796201534|540
+4|Banana River Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|12|1.304|2.104|1.754|1.7345|0.274754932125472|540
 4|Banana River Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|49|0.5914|2.1919|1.0125|1.02555102040816|0.230005599680429|540, 5002
 4|Banana River Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|55|0.7844|1.4966|1.206|1.18476363636364|0.161353397930037|5002
 5|Big Bend Seagrasses Aquatic Preserve|1990|Total Nitrogen|Surface|Sample|17|0.34|1.35|0.86|0.840588235294118|0.314810867590274|5002
@@ -114,9 +114,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 5|Big Bend Seagrasses Aquatic Preserve|2014|Total Nitrogen|Surface|Sample|330|0.00024|1.75|0.46|0.455228393939394|0.321437059017113|514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|278|0.00028|1.45|0.47|0.44131273381295|0.320960066803881|514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|304|0.00016|2.008|0.485|0.472612763157895|0.331531502037385|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|394|0.00009|1.87|0.52|0.514798883248731|0.399779375354776|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|447|0.00019|2.3|0.584|0.645921342281879|0.476640499418207|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|283|0.00025|2.02|0.554|0.569435759717315|0.429049964244406|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|379|0.00009|1.87|0.52|0.510118100263852|0.401611835127366|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|417|0.00019|2.3|0.58|0.635987625899281|0.480164558624951|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|273|0.00025|2.02|0.554|0.562301538461538|0.428374236160057|514, 540, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|147|0.194|2.28|0.55|0.641993197278912|0.348104190366428|514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|168|0.13|1.89|0.5|0.596886904761905|0.288777029490955|514, 540, 5002
 6|Biscayne Bay Aquatic Preserve|1994|Total Nitrogen|Surface|Sample|2|0.7|1.74|1.22|1.22|0.73539105243401|5002
@@ -145,8 +145,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 6|Biscayne Bay Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|491|0.176|4.248|0.456|0.475456211812627|0.27845177579974|4058, 5002
 6|Biscayne Bay Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|432|0.275|1.648|0.439|0.455456018518519|0.113807416241366|4058
 6|Biscayne Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|1|1.38|1.38|1.38|1.38||5026
-6|Biscayne Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|320|0.12|1.9|0.3795|0.463375|0.266600548882737|5002, 5026
-6|Biscayne Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|110|0.065|1.16|0.3045|0.374072727272727|0.197395086945678|5002, 5026
+6|Biscayne Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|314|0.12|1.9|0.38|0.464754777070064|0.268212388529116|5002, 5026
+6|Biscayne Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|106|0.065|1.16|0.308|0.375962264150943|0.200384341396052|5002, 5026
 8|Boca Ciega Bay Aquatic Preserve|1999|Total Nitrogen|Surface|Sample|8|0.3|0.71|0.365|0.40375|0.128389752595091|5002
 8|Boca Ciega Bay Aquatic Preserve|2000|Total Nitrogen|Surface|Sample|5|0.165|0.8049|0.36|0.37698|0.255804812308135|103, 5002
 8|Boca Ciega Bay Aquatic Preserve|2001|Total Nitrogen|Surface|Sample|8|0.44|0.6819|0.47|0.5064875|0.0848956575954944|103, 5002
@@ -168,7 +168,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 8|Boca Ciega Bay Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|121|0.27|2.52|0.66|0.677520661157025|0.240427677939873|5002
 8|Boca Ciega Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|5|0.404|0.654|0.494|0.504|0.0924662100445346|5002
 8|Boca Ciega Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|112|0.4|1.72|0.9|0.9425|0.29110073795791|5002
-8|Boca Ciega Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|124|0.4|1.82|1.25|1.22209677419355|0.319827886116075|5002
+8|Boca Ciega Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|123|0.4|1.82|1.25|1.22089430894309|0.320854412953303|5002
 9|Cape Haze Aquatic Preserve|1998|Total Nitrogen|Surface|Sample|1|1.1|1.1|1.1|1.1||476
 9|Cape Haze Aquatic Preserve|1999|Total Nitrogen|Surface|Sample|1|0.63|0.63|0.63|0.63||476
 9|Cape Haze Aquatic Preserve|2000|Total Nitrogen|Surface|Sample|1|1.21|1.21|1.21|1.21||476
@@ -189,7 +189,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 9|Cape Haze Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|5|0.353|0.61|0.478|0.4622|0.0998959458636836|479
 9|Cape Haze Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|1|0.748|0.748|0.748|0.748||5002
 9|Cape Haze Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|13|0.515|1.256|0.724|0.766307692307692|0.239346814133586|479, 5002
-9|Cape Haze Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|13|0.344|1.004|0.534|0.601461538461539|0.189310862245415|476, 513, 5028
+9|Cape Haze Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|12|0.344|1.004|0.536|0.612916666666667|0.192965592002745|476, 513, 5028
 9|Cape Haze Aquatic Preserve|2022|Total Nitrogen|Surface|Sample|1|0.534|0.534|0.534|0.534||5028
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1989|Total Nitrogen|Surface|Sample|2|0.5|0.75|0.625|0.625|0.176776695296637|5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1990|Total Nitrogen|Surface|Sample|10|0.27|1.12|0.505001|0.5700003|0.264070621868069|5002
@@ -314,10 +314,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 15|Florida Keys National Marine Sanctuary|2016|Total Nitrogen|Surface|Sample|709|0.00015|1.22431397|0.15797013|0.199285281311707|0.172620325433323|297, 514, 5002
 15|Florida Keys National Marine Sanctuary|2017|Total Nitrogen|Surface|Sample|562|0.0002|1.03|0.15887286|0.181302914039146|0.132254008617933|297, 514, 5002
 15|Florida Keys National Marine Sanctuary|2018|Total Nitrogen|Surface|Sample|495|0.00017|1.26862128|0.15230837|0.164815817737374|0.128604731765245|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|2019|Total Nitrogen|Surface|Sample|546|0.00016|1.05343255|0.13|0.158715886849817|0.132091906155724|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|2020|Total Nitrogen|Surface|Sample|1532|0.0004|1.91522014|0.14|0.178241958766319|0.136585512447943|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|2021|Total Nitrogen|Surface|Sample|583|0.047|0.63667|0.181|0.210735883361921|0.119206688084415|297, 514, 5002
-17|Fort Pickens State Park Aquatic Preserve|1999|Total Nitrogen|Surface|Sample|13|0.2|0.616|0.299|0.317153846153846|0.106687117430555|5002
+15|Florida Keys National Marine Sanctuary|2019|Total Nitrogen|Surface|Sample|538|0.00016|1.05343255|0.13|0.159091476245353|0.132881023476602|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2020|Total Nitrogen|Surface|Sample|1488|0.0004|1.91522014|0.14038273|0.179430269375|0.137833245872947|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2021|Total Nitrogen|Surface|Sample|572|0.047|0.63667|0.182|0.212014597902098|0.119681304693687|297, 514, 5002
+17|Fort Pickens State Park Aquatic Preserve|1999|Total Nitrogen|Surface|Sample|11|0.2|0.616|0.299|0.315909090909091|0.114748816591244|5002
 17|Fort Pickens State Park Aquatic Preserve|2000|Total Nitrogen|Surface|Sample|9|0.185|0.547|0.446|0.429333333333333|0.105239013678388|5002
 17|Fort Pickens State Park Aquatic Preserve|2001|Total Nitrogen|Surface|Sample|5|0.247|0.56|0.38|0.396|0.11928746790841|5002
 17|Fort Pickens State Park Aquatic Preserve|2002|Total Nitrogen|Surface|Sample|10|0.0171|0.22|0.02685|0.04673|0.0617766955340856|505, 5002
@@ -375,7 +375,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 19|Guana River Marsh Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|24|0.0705|0.7616|0.301|0.32155|0.17239162695293|5002
 19|Guana River Marsh Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|68|0.1112|3.698|1.125|1.26296323529412|0.724427050992902|4054, 5002, 5014
 19|Guana River Marsh Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|112|0.156|2.839|1.1605|1.29723214285714|0.665217176244076|4054, 5014
-19|Guana River Marsh Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|116|0.158|4.004|1.0465|1.24087931034483|0.796291154477212|4054, 5002, 5014
+19|Guana River Marsh Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|115|0.158|4.004|1.051|1.24753043478261|0.796533204578079|4054, 5002, 5014
 19|Guana River Marsh Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|116|0.1686|3.983|1.104|1.28519568965517|0.867087510692347|5002, 5014
 19|Guana River Marsh Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|122|0.152|12.602|0.892|1.19491393442623|1.27790555771243|5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|1997|Total Nitrogen|Surface|Sample|108|0.177|1.498|0.498|0.52112962962963|0.247774848526799|5002
@@ -397,11 +397,11 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|Total Nitrogen|Surface|Sample|61|0.1185|1.1484|0.327|0.36827868852459|0.180667568676796|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|Total Nitrogen|Surface|Sample|81|0.1425|1.804|0.406|0.527924691358025|0.348290124225072|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|Total Nitrogen|Surface|Sample|59|0.024|0.79|0.2188|0.249342372881356|0.162325173014762|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|Total Nitrogen|Surface|Sample|128|0.1112|3.698|0.928|0.988521875|0.652081715561543|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Total Nitrogen|Surface|Sample|201|0.156|2.839|0.958|1.08523880597015|0.59591261329709|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Total Nitrogen|Surface|Sample|164|0.158|4.004|0.8365|1.04869512195122|0.757663209071792|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|Total Nitrogen|Surface|Sample|124|0.1112|3.698|0.9275|0.989829032258065|0.660575319803893|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Total Nitrogen|Surface|Sample|196|0.156|2.839|0.958|1.08888775510204|0.601116634147894|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Total Nitrogen|Surface|Sample|160|0.158|4.004|0.866|1.06153125|0.762284360037759|4054, 5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|Total Nitrogen|Surface|Sample|197|0.146|5.902|0.816|1.05222081218274|0.864832197964479|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Total Nitrogen|Surface|Sample|179|0.152|12.602|0.812|1.0268905027933|1.10611100996689|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Total Nitrogen|Surface|Sample|178|0.152|12.602|0.812|1.03117640449438|1.10773971330564|5002, 5014
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1997|Total Nitrogen|Surface|Sample|39|0.6098|1.65729|0.94362|0.966962820512821|0.25328671867594|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1998|Total Nitrogen|Surface|Sample|157|0.47746|2.77029|1.01071|1.07722904458599|0.356090453001696|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1999|Total Nitrogen|Surface|Sample|104|0.458|1.84385|0.737|0.823650384615385|0.277128019549211|5002
@@ -421,11 +421,11 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2013|Total Nitrogen|Surface|Sample|113|0.087|1.269|0.4505|0.499669911504425|0.23799761699173|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2014|Total Nitrogen|Surface|Sample|145|0.0629|1.563|0.504|0.56665724137931|0.289832589788395|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|154|0.1298|1.44|0.6198|0.626501298701299|0.236886105940903|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|145|0.0326|1.404|0.5308|0.547488965517241|0.2525891039474|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|144|0.0326|1.404|0.5275|0.546165972222222|0.252966100761965|540, 5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|78|0.2004|1.108|0.4553|0.523158974358974|0.218703458387431|540, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|50|0.354|1.604|0.769|0.8048|0.30813825415464|540
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|28|0.164|1.408|0.7295|0.724142857142857|0.305059522338366|540
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|81|0.1562|1.9909|0.5589|0.664851851851852|0.378335294451599|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|49|0.354|1.604|0.764|0.804408163265306|0.311318895880049|540
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|27|0.164|1.408|0.724|0.721185185185185|0.310461323868584|540
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|80|0.1562|1.9909|0.5677|0.6677375|0.379824224294291|540, 5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|71|0.1579|1.561|0.5015|0.554643661971831|0.280411919826323|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1997|Total Nitrogen|Surface|Sample|13|0.80273|1.29728|0.9781|0.990863076923077|0.13213100055025|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1998|Total Nitrogen|Surface|Sample|42|0.7067|2.31648|0.98773|1.13383785714286|0.364677379781862|5002
@@ -447,10 +447,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2014|Total Nitrogen|Surface|Sample|47|0.174|0.906|0.4119|0.454391489361702|0.167843440029025|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|51|0.195|1.158|0.4818|0.545680392156863|0.227064999521818|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|44|0.278|0.846|0.42935|0.494636363636364|0.151240312533751|540, 5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|33|0.204|0.901|0.449|0.459430303030303|0.164258354971765|540, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|32|0.204|0.901|0.4365|0.45885|0.166852283520871|540, 5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|12|0.304|1.004|0.5|0.542083333333333|0.21323416847696|540
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|17|0.206|0.87|0.434|0.469764705882353|0.190437171204759|540
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|32|0.184|0.7835|0.42405|0.44091875|0.170947344161313|540, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|16|0.206|0.87|0.448|0.47575|0.195024271993685|540
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|30|0.184|0.7835|0.42425|0.44988|0.171580322800762|540, 5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|21|0.06|0.443|0.3111|0.295176190476191|0.0959690413871156|5002
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2000|Total Nitrogen|Surface|Sample|1|0.382|0.382|0.382|0.382||5002
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2001|Total Nitrogen|Surface|Sample|18|0.102|0.481|0.2985|0.292055555555556|0.104652069045746|5002
@@ -495,8 +495,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 25|Lemon Bay Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|66|0.32|0.995|0.595|0.59080303030303|0.164822629112628|476, 479, 5002
 25|Lemon Bay Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|45|0.315|1.465|0.555|0.6142|0.260589593736274|476, 5002
 25|Lemon Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|6|0.504|0.844|0.684|0.684166666666667|0.152630818207421|5002
-25|Lemon Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|75|0.264|0.976|0.587|0.582666666666667|0.15702610674088|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|107|0.294|1.125|0.484|0.516738317757009|0.178729390496728|476, 5002
+25|Lemon Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|70|0.264|0.976|0.588|0.582785714285714|0.160257844128002|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|96|0.294|1.125|0.484|0.515666666666667|0.179098424376193|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|Total Nitrogen|Surface|Sample|3|0.314|0.596|0.414|0.441333333333333|0.14297319096017|476
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1991|Total Nitrogen|Surface|Sample|9|0.29|0.92|0.55|0.579444444444444|0.185513551466673|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1992|Total Nitrogen|Surface|Sample|25|0.62|1.825|1.035|1.05796|0.317305383923227|5002, 10000
@@ -514,7 +514,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2004|Total Nitrogen|Surface|Sample|80|0.00029|2.49|0.97|0.959912125|0.572920156497172|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2005|Total Nitrogen|Surface|Sample|195|0.00026|3.936|1.086|1.22556774358974|0.775412652901956|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|Total Nitrogen|Surface|Sample|170|0.00035|2.749|0.6405|0.755854764705882|0.56366847093979|514, 5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|Total Nitrogen|Surface|Sample|331|0.00029|2.088|0.6|0.686672779456193|0.46951160386681|514, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|Total Nitrogen|Surface|Sample|330|0.00029|2.088|0.5995|0.686708151515152|0.470224164249662|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|Total Nitrogen|Surface|Sample|299|0.00027|4.02|0.62|0.624778127090301|0.435270150242102|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|Total Nitrogen|Surface|Sample|294|0.0001|1.51|0.495|0.558214795918367|0.378382409232845|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|Total Nitrogen|Surface|Sample|281|0.00044|1.994|0.58|0.580603202846975|0.341999512557701|514, 5002, 10000
@@ -601,9 +601,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|41|0.2067|1.0106|0.4036|0.433536585365854|0.167005099856408|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|17|0.1165|0.584|0.3282|0.332258823529412|0.142774608469186|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|25|0.2397|0.6439|0.472|0.460408|0.107728234151189|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|16|0.344|0.784|0.599|0.585125|0.131584636894535|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|68|0.154|1.404|0.50555|0.525944117647059|0.245167052023141|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|72|0.21|1.36|0.44795|0.478647222222222|0.239048147058064|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|15|0.344|0.774|0.594|0.571866666666667|0.124650864799399|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|67|0.154|1.404|0.5044|0.522226865671642|0.24507903955854|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|70|0.21|1.36|0.44795|0.48278|0.24040225806169|5002
 48|Nature Coast Aquatic Preserve|1996|Total Nitrogen|Surface|Sample|4|0.24|0.29|0.275|0.27|0.0216024689946929|479
 48|Nature Coast Aquatic Preserve|1997|Total Nitrogen|Surface|Sample|124|0.09|0.91|0.37|0.397258064516129|0.160640682257713|479
 48|Nature Coast Aquatic Preserve|1998|Total Nitrogen|Surface|Sample|180|0.22|1.91|0.62|0.712777777777778|0.336453829509611|479
@@ -619,10 +619,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 48|Nature Coast Aquatic Preserve|2009|Total Nitrogen|Surface|Sample|370|0.07|1.15|0.46|0.475810810810811|0.152409791674475|479
 48|Nature Coast Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|141|0.21|0.67|0.35|0.361574468085106|0.0915313555987824|479, 5002
 48|Nature Coast Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|1|0.407|0.407|0.407|0.407||5002
-48|Nature Coast Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|3|0.394|0.464|0.454|0.437333333333333|0.0378593889720018|540
+48|Nature Coast Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|2|0.394|0.454|0.424|0.424|0.0424264068711929|540
 48|Nature Coast Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|2|0.304|0.554|0.429|0.429|0.176776695296637|540
 48|Nature Coast Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|72|0.2|0.64|0.39|0.400680555555556|0.10924849905681|479, 514, 540, 5002
-48|Nature Coast Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|143|0.18|0.671|0.37|0.377825174825175|0.107423691533153|479, 514, 5002
+48|Nature Coast Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|142|0.18|0.671|0.37|0.378056338028169|0.107768255082451|479, 514, 5002
 48|Nature Coast Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|4|0.27|0.54|0.43|0.4175|0.115866302262565|514
 31|North Fork St. Lucie Aquatic Preserve|1999|Total Nitrogen|Surface|Sample|3|0.012|1.493|0.032|0.512333333333333|0.849341117180449|5002
 31|North Fork St. Lucie Aquatic Preserve|2000|Total Nitrogen|Surface|Sample|1|0.572|0.572|0.572|0.572||5002
@@ -666,7 +666,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 34|Pine Island Sound Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|90|0.511|2.75|1.015|1.07205555555556|0.409571394528451|303
 34|Pine Island Sound Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|200|0.245|3.74|0.7915|0.87889|0.526622344158349|303, 476, 513, 5002
 34|Pine Island Sound Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|256|0.16|4.07|0.6655|0.66703515625|0.299480142283151|303, 476, 513, 5002
-34|Pine Island Sound Aquatic Preserve|2022|Total Nitrogen|Surface|Sample|2|0.925|0.925|0.925|0.925|0|476
+34|Pine Island Sound Aquatic Preserve|2022|Total Nitrogen|Surface|Sample|1|0.925|0.925|0.925|0.925||476
 35|Pinellas County Aquatic Preserve|1999|Total Nitrogen|Surface|Sample|275|0.19|4.97|0.95|1.52701818181818|1.2255538817965|5002
 35|Pinellas County Aquatic Preserve|2000|Total Nitrogen|Surface|Sample|313|0.109|7.61|1.12|1.56886134185304|1.32208434828551|103, 5002
 35|Pinellas County Aquatic Preserve|2001|Total Nitrogen|Surface|Sample|328|0.00031|5.04|1.035|1.43676600609756|1.15504348179067|103, 514, 5002
@@ -688,8 +688,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 35|Pinellas County Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|530|0.057|3.13|0.66|0.740564150943396|0.411577830576039|5002
 35|Pinellas County Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|27|0.00047|0.00112|0.00068|0.000701111111111111|0.00015668030491647|514
 35|Pinellas County Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|95|0.00024|2.504|0.00047|0.0744346315789474|0.343077225829077|514, 5002
-35|Pinellas County Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|510|0.12|3.08|0.805|0.844419607843137|0.369063180294326|514, 5002
-35|Pinellas County Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|489|0.194|3.05|1.08|1.08944376278119|0.430910641490492|514, 5002
+35|Pinellas County Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|506|0.12|3.08|0.8|0.84303162055336|0.369919433278346|514, 5002
+35|Pinellas County Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|482|0.194|3.05|1.08|1.08721576763485|0.432845580297271|514, 5002
 37|Rocky Bayou State Park Aquatic Preserve|2001|Total Nitrogen|Surface|Sample|34|0.00014|0.39|0.18|0.159794411764706|0.13363634440755|514, 537, 5002
 37|Rocky Bayou State Park Aquatic Preserve|2002|Total Nitrogen|Surface|Sample|33|0.00014|0.32|0.17|0.143102727272727|0.110200622056795|514, 537, 5002
 37|Rocky Bayou State Park Aquatic Preserve|2003|Total Nitrogen|Surface|Sample|34|0.00008|0.53|0.18|0.172156764705882|0.158440382989764|514, 537, 5002
@@ -732,10 +732,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 38|Rookery Bay Aquatic Preserve|2014|Total Nitrogen|Surface|Sample|36|0.314|1540.44|0.5845|43.41575|256.632841089854|354, 5002
 38|Rookery Bay Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|52|0.204|1.45|0.464|0.537711538461538|0.243483408182841|354, 5002
 38|Rookery Bay Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|30|0.382|1.108|0.529|0.573966666666667|0.136090862986851|354, 5002
-38|Rookery Bay Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|33|0.244|1.104|0.504|0.578363636363636|0.210579233630393|354, 5002
-38|Rookery Bay Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|33|0.354|1.04|0.504|0.554878787878788|0.173886773069388|354, 5002
-38|Rookery Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|36|0.234|0.902|0.5145|0.542333333333333|0.159959101915816|354, 5002
-38|Rookery Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|10|0.324|0.661|0.5135|0.5074|0.10869345273137|5002
+38|Rookery Bay Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|32|0.244|1.104|0.5|0.57975|0.213795651604894|354, 5002
+38|Rookery Bay Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|30|0.354|1.04|0.504|0.5617|0.178639909430618|354, 5002
+38|Rookery Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|32|0.234|0.902|0.517|0.54890625|0.1680459536565|354, 5002
+38|Rookery Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|8|0.324|0.661|0.5135|0.48925|0.107139095172051|5002
 38|Rookery Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|32|0.243|0.59|0.389|0.403375|0.0998633744091751|5002
 39|Rookery Bay National Estuarine Research Reserve|1989|Total Nitrogen|Surface|Sample|6|0.5|1.12|0.965|0.903333333333333|0.242377116631638|5002
 39|Rookery Bay National Estuarine Research Reserve|1990|Total Nitrogen|Surface|Sample|24|0.27|1.12|0.535001|0.551250541666667|0.210223403694215|5002
@@ -763,10 +763,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 39|Rookery Bay National Estuarine Research Reserve|2014|Total Nitrogen|Surface|Sample|143|0.314|1540.44|0.595|11.3975524475524|128.765586990561|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2015|Total Nitrogen|Surface|Sample|169|0.00044|1.45|0.554|0.585288520710059|0.251806853535958|354, 514, 5002
 39|Rookery Bay National Estuarine Research Reserve|2016|Total Nitrogen|Surface|Sample|153|0.00066|1.108|0.584|0.553496666666667|0.220420666486774|354, 514, 5002
-39|Rookery Bay National Estuarine Research Reserve|2017|Total Nitrogen|Surface|Sample|148|0.00067|1.404|0.589|0.654183918918919|0.271211591091459|354, 514, 5002
-39|Rookery Bay National Estuarine Research Reserve|2018|Total Nitrogen|Surface|Sample|139|0.354|1.33|0.664|0.692208633093525|0.196930226546938|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|2019|Total Nitrogen|Surface|Sample|148|0.234|1.31|0.6415|0.669432432432433|0.168004258213048|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|2020|Total Nitrogen|Surface|Sample|26|0.324|0.847|0.592|0.578192307692308|0.138750717253863|5002
+39|Rookery Bay National Estuarine Research Reserve|2017|Total Nitrogen|Surface|Sample|147|0.00067|1.404|0.594|0.65500149659864|0.271955745995441|354, 514, 5002
+39|Rookery Bay National Estuarine Research Reserve|2018|Total Nitrogen|Surface|Sample|136|0.354|1.33|0.6675|0.696742647058824|0.196177319500177|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2019|Total Nitrogen|Surface|Sample|144|0.234|1.31|0.651|0.674423611111111|0.167430836565498|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2020|Total Nitrogen|Surface|Sample|24|0.324|0.847|0.592|0.578041666666667|0.142719999258709|5002
 39|Rookery Bay National Estuarine Research Reserve|2021|Total Nitrogen|Surface|Sample|92|0.243|0.83|0.4515|0.472815217391304|0.13360939702984|5002
 40|St. Andrews State Park Aquatic Preserve|1990|Total Nitrogen|Surface|Sample|14|0.00026|0.44|0.13022|0.168025|0.178076733406611|514, 5002
 40|St. Andrews State Park Aquatic Preserve|1991|Total Nitrogen|Surface|Sample|24|0.00014|0.55|0.070275|0.149315833333333|0.176723318431768|514, 5002
@@ -793,10 +793,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 40|St. Andrews State Park Aquatic Preserve|2014|Total Nitrogen|Surface|Sample|63|0.00008|0.344|0.15|0.121017301587302|0.107867897720917|470, 514, 5002
 40|St. Andrews State Park Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|46|0.00016|0.42|0.172|0.147708913043478|0.13187172444342|470, 514, 5002
 40|St. Andrews State Park Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|55|0.00008|0.44|0.254|0.232893090909091|0.124732458810889|470, 514, 5002
-40|St. Andrews State Park Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|69|0.00014|0.984|0.284|0.27756884057971|0.160040104721361|470, 514
-40|St. Andrews State Park Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|71|0.00011|0.454|0.266|0.248348450704225|0.115282615300064|470, 514
-40|St. Andrews State Park Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|74|0.00009|0.424|0.264|0.231452432432432|0.111699163642284|470, 514
-40|St. Andrews State Park Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|40|0.09|0.441|0.2335|0.2284|0.0716296744122871|470, 514
+40|St. Andrews State Park Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|68|0.00014|0.984|0.284|0.274091911764706|0.158582858451972|470, 514
+40|St. Andrews State Park Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|63|0.00011|0.454|0.254|0.24045619047619|0.117198002232073|470, 514
+40|St. Andrews State Park Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|70|0.00009|0.424|0.264|0.231121142857143|0.114061415614608|470, 514
+40|St. Andrews State Park Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|39|0.09|0.441|0.234|0.229358974358974|0.0723054511956366|470, 514
 40|St. Andrews State Park Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|33|0.11|0.524|0.234|0.256606060606061|0.103332575754799|470, 514
 40|St. Andrews State Park Aquatic Preserve|2022|Total Nitrogen|Surface|Sample|2|0.164|0.194|0.179|0.179|0.0212132034355964|470
 41|St. Joseph Bay Aquatic Preserve|2001|Total Nitrogen|Surface|Sample|64|0.0001|0.73|0.050365|0.138263125|0.180094111013729|514, 5002
@@ -816,8 +816,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 41|St. Joseph Bay Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|31|0.00022|0.538|0.264|0.225439677419355|0.164470291025135|514, 540, 5002
 41|St. Joseph Bay Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|78|0.00013|0.56|0.222|0.184674871794872|0.161256900110043|514, 540, 5002
 41|St. Joseph Bay Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|82|0.00014|0.444|0.00024|0.0359569512195122|0.101565974467843|514, 540, 5002
-41|St. Joseph Bay Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|85|0.00009|0.464|0.00025|0.0601156470588235|0.121760998158249|514, 540
-41|St. Joseph Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|88|0.00009|0.504|0.000265|0.0894702272727273|0.140626843123368|514, 540, 5002
+41|St. Joseph Bay Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|84|0.00009|0.464|0.00025|0.0581646428571429|0.121148340629248|514, 540
+41|St. Joseph Bay Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|87|0.00009|0.504|0.00026|0.087923908045977|0.140687588825972|514, 540, 5002
 41|St. Joseph Bay Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|61|0.13|0.51|0.22|0.227229508196721|0.0719141602752019|514, 5002
 41|St. Joseph Bay Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|57|0.1|0.5|0.274|0.275070175438597|0.094296617809579|514, 5002
 41|St. Joseph Bay Aquatic Preserve|2022|Total Nitrogen|Surface|Sample|2|0.324|0.339|0.3315|0.3315|0.0106066017177982|5002
@@ -844,8 +844,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 43|St. Martins Marsh Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|17|0.324|0.525|0.404|0.416588235294118|0.0551339945309713|479, 5002
 43|St. Martins Marsh Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|26|0.314|0.664|0.4|0.424115384615385|0.0920844512056523|479, 540, 5002
 43|St. Martins Marsh Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|11|0.394|0.574|0.494|0.479181818181818|0.0510936751111489|479, 540
-43|St. Martins Marsh Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|28|0.239|0.721|0.38|0.388642857142857|0.113076249032403|479, 540, 5002
-43|St. Martins Marsh Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|42|0.19|0.921|0.397|0.389547619047619|0.134230090476446|479, 5002
+43|St. Martins Marsh Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|27|0.239|0.721|0.376|0.384185185185185|0.112695313204381|479, 540, 5002
+43|St. Martins Marsh Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|41|0.19|0.921|0.4|0.391146341463415|0.13549216969545|479, 5002
 43|St. Martins Marsh Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|14|0.284|0.567|0.397|0.417142857142857|0.0965185172690929|479, 5002
 44|Terra Ceia Aquatic Preserve|1995|Total Nitrogen|Surface|Sample|6|0.544|0.734|0.631|0.6335|0.0745835102418759|5002
 44|Terra Ceia Aquatic Preserve|1996|Total Nitrogen|Surface|Sample|24|0.305|1.303|0.4825|0.588208333333333|0.254172139404136|5002
@@ -873,7 +873,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 44|Terra Ceia Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|64|0.219|1.773|0.4135|0.54471875|0.384001424796877|5002
 44|Terra Ceia Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|63|0.263|1.999|0.444|0.581587301587302|0.369062309404857|5002
 44|Terra Ceia Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|59|0.194|1.576|0.392|0.482983050847458|0.278795407096527|5002
-44|Terra Ceia Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|50|0.194|1.16|0.3905|0.41112|0.190849939983844|5002
+44|Terra Ceia Aquatic Preserve|2021|Total Nitrogen|Surface|Sample|48|0.194|1.16|0.3905|0.409479166666667|0.191820282643242|5002
 45|Tomoka Marsh Aquatic Preserve|1997|Total Nitrogen|Surface|Sample|4|0.37|1.464|1.0255|0.97125|0.458110157785949|5002
 45|Tomoka Marsh Aquatic Preserve|1998|Total Nitrogen|Surface|Sample|8|0.622|2.036|1.2855|1.3045|0.456403330399768|5002
 45|Tomoka Marsh Aquatic Preserve|1999|Total Nitrogen|Surface|Sample|12|0.741|1.353|1.022|1.02066666666667|0.244499612691024|5002
@@ -902,7 +902,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 47|Yellow River Marsh Aquatic Preserve|2014|Total Nitrogen|Surface|Sample|6|0.271|0.509|0.353|0.363333333333333|0.0926362060247864|5002
 47|Yellow River Marsh Aquatic Preserve|2015|Total Nitrogen|Surface|Sample|5|0.198|0.472|0.295|0.3272|0.104564334263648|5002
 47|Yellow River Marsh Aquatic Preserve|2016|Total Nitrogen|Surface|Sample|7|0.296|0.42|0.346|0.359714285714286|0.0431150178233149|540, 5002
-47|Yellow River Marsh Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|13|0.188|0.5|0.339|0.364230769230769|0.103008214758301|540, 5002
+47|Yellow River Marsh Aquatic Preserve|2017|Total Nitrogen|Surface|Sample|12|0.188|0.5|0.3745|0.372916666666667|0.102495639227267|540, 5002
 47|Yellow River Marsh Aquatic Preserve|2018|Total Nitrogen|Surface|Sample|3|0.218|0.336|0.327|0.293666666666667|0.0656835849610337|540
 47|Yellow River Marsh Aquatic Preserve|2019|Total Nitrogen|Surface|Sample|6|0.285|0.37|0.3085|0.321|0.0353949148890063|540
 47|Yellow River Marsh Aquatic Preserve|2020|Total Nitrogen|Surface|Sample|2|0.37|0.43|0.4|0.4|0.0424264068711929|540, 5002
