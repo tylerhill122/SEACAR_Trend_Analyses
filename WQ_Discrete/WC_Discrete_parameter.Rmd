@@ -40,7 +40,6 @@ library(EnvStats)
 library(tidyr)
 library(stringr)
 library(kableExtra)
-
 windowsFonts(`Segoe UI`=windowsFont('Segoe UI'))
 options(scipen=999)
 opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
@@ -1066,16 +1065,20 @@ if(n==0){
       
       KT.Stats[ManagedAreaName==MA_Include[i], `:=` (N=N_Data,
                                                      Median=round(Median, 2),
-                                                     Slope=round(SennSlope, 4),
-                                                     Int.=round(SennIntercept, 4),
+                                                     Slope=round(SennSlope,
+                                                                 4),
+                                                     Int.=round(SennIntercept,
+                                                                4),
                                                      z=round(z, 1),
                                                      chi_sq=round(chi_sq, 1))]
       
       #print(ggarrange(p0, KTset, ncol=1, heights=c(0.1, 1.25)))
       ResultTable <- KT.Stats[KT.Stats$ManagedAreaName==MA_Include[i], ] %>%
-         select(Season, N, Median, tau, Slope, Int., z, p_z, chi_sq, p_chi_sq, Trend)
+         select(Season, N, Median, tau, Slope, Int., z, p_z, chi_sq,
+                p_chi_sq, Trend)
       
-      t1 <- ggtexttable(ResultTable, rows=NULL, theme=ttheme(base_size=11.5)) %>%
+      t1 <- ggtexttable(ResultTable, rows=NULL,
+                        theme=ttheme(base_size=11.5)) %>%
          tab_add_footnote(text="p_z < 0.00005 appear as 0 due to rounding",
                           size=10, face="italic")
       

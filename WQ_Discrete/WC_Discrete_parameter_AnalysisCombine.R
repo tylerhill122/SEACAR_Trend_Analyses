@@ -9,7 +9,7 @@ library(data.table)
 library(dplyr)
 library(here)
 
-out_dir <- here::here("WQ_Discrete/output/by_parameter/Combined")
+out_dir <- "WQ_Discrete/output/by_parameter/Combined"
 
 #List all of the files in the "tables" directory that are KendallTau results
 files <- list.files("WQ_Discrete/output/by_parameter", pattern="KendallTau", full.names=TRUE)
