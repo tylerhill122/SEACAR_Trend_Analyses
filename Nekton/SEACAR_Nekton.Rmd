@@ -219,7 +219,7 @@ The plots shown here are the species richness for each managed area with a yearl
 8. Create file name to save figure
 9. Save figure as png file
 
-```{r Trendlines_ManagedArea, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
+```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
 
 plot_theme <- theme_bw() +
       theme(text=element_text(family="Segoe UI"),
