@@ -128,9 +128,14 @@ Mon_Summ <- data %>%
              N_Years=length(unique(Year[Include==TRUE & !is.na(Year)])),
              EarliestYear=min(Year[Include==TRUE]),
              LatestYear=max(Year[Include==TRUE]),
+             LastSampleDate=max(SampleDate[Include==TRUE]),
              SufficientData=ifelse(N_Data>0 & N_Years>=10, TRUE, FALSE))
 
 Mon_Summ <- as.data.table(Mon_Summ[order(Mon_Summ$MonitoringID), ])
+
+data <- data %>%
+   group_by(MonitoringID) %>%
+   mutate(YearFromStart=Year-min(Year))
 
 data <- merge.data.frame(data, Mon_Summ[,c("MonitoringID", "SufficientData")],
                          by="MonitoringID")
@@ -249,7 +254,7 @@ tauSeasonal <- function(data, independent, stats.median, stats.minYear,
    tryCatch({ken <- kendallSeasonalTrendTest(
       y=data$ResultValue,
       season=data$Month,
-      year=data$Year,
+      year=data$YearFromStart,
       independent.obs=independent)
    
    tau <- ken$estimate[1]
@@ -377,6 +382,19 @@ fwrite(KT.Stats, paste0(out_dir,"/", param_name, "_", region,
 
 KT.Stats$MonitoringID <- Mon_Summ$MonitoringID
 data <- data[!is.na(data$ResultValue),]
+
+KT.Plot <- KT.Stats %>%
+   group_by(MonitoringID) %>%
+   summarize(x=EarliestYear, y=SennIntercept)
+KT.Plot2 <- KT.Stats %>%
+   group_by(MonitoringID) %>%
+   summarize(x=decimal_date(LastSampleDate),
+             y=(x-EarliestYear)*SennSlope+SennIntercept)
+KT.Plot <- bind_rows(KT.Plot, KT.Plot2)
+rm(KT.Plot2)
+KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$MonitoringID), ])
+KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
+
 ```
 
 
@@ -587,7 +605,7 @@ if(z==0){
       MA_name <- unique(data$ManagedAreaName[
          data$MonitoringID==Mon_Exclude$MonitoringID[i]])
       Mon_name <- paste0(unique(data$ProgramID[
-         data$MonitoringID==Mon_Exclude$MonitoringID[i]]), " | ",
+         data$MonitoringID==Mon_Exclude$MonitoringID[i]]), "\n",
          unique(data$ProgramName[
             data$MonitoringID==Mon_Exclude$MonitoringID[i]]), "\n",
          unique(data$ProgramLocationID[
@@ -637,6 +655,7 @@ if(n==0){
    for (i in 1:n) {
       plot_data <- data[data$Use_In_Analysis==TRUE &
                                      data$MonitoringID==Mon_IDs[i],]
+      KT.plot_data <- KT.Plot[KT.Plot$MonitoringID==Mon_IDs[i],]
       year_lower <- min(plot_data$Year)
       year_upper <- max(plot_data$Year)
       min_RV <- min(plot_data$ResultValue)
@@ -647,57 +666,58 @@ if(n==0){
       x_scale <- ifelse(year_upper - year_lower > 30, 10, 5)
       y_scale <- mn_RV + 4 * sd_RV
       
-      tau <- KT.Stats$tau[KT.Stats$MonitoringID==Mon_IDs[i]]
-      s_slope <- KT.Stats$SennSlope[KT.Stats$MonitoringID==Mon_IDs[i]]
-      s_int <- KT.Stats$SennIntercept[KT.Stats$MonitoringID==Mon_IDs[i]]
-      trend <- KT.Stats$Trend[KT.Stats$MonitoringID==Mon_IDs[i]]
-      p <- KT.Stats$p[KT.Stats$MonitoringID==Mon_IDs[i]]
       
 
       MA_name <- KT.Stats$ManagedAreaName[KT.Stats$MonitoringID==Mon_IDs[i]]
       Mon_name <- paste0(KT.Stats$ProgramID[KT.Stats$MonitoringID==Mon_IDs[i]],
-         " | ", KT.Stats$ProgramName[KT.Stats$MonitoringID==Mon_IDs[i]], "\n",
+         "\n", KT.Stats$ProgramName[KT.Stats$MonitoringID==Mon_IDs[i]], "\n",
          KT.Stats$ProgramLocationID[KT.Stats$MonitoringID==Mon_IDs[i]])
       
       p1 <- ggplot(data=plot_data,
                    aes(x=DecDate, y=ResultValue)) +
          geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
                     alpha=0.75) +
-         geom_abline(aes(slope=s_slope, intercept=s_int),
+         geom_line(data=KT.plot_data, aes(x=x, y=y),
                      color="#000099", size=1.2, alpha=0.7) +
-         labs(subtitle="Autoscale",
+         labs(title=paste0(MA_name, "\n", Mon_name),
+              subtitle=parameter,
               x="Year", y=paste0("Values (", unit, ")")) +
          plot_theme
       
-      p2 <- ggplot(data=plot_data,
-                   aes(x=DecDate, y=ResultValue)) +
-         geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
-                    alpha=0.75) +
-         geom_abline(aes(slope=s_slope, intercept=s_int),
-                     color="#000099", size=1.2, alpha=0.7) +
-         ylim(min_RV-0.1*y_scale, y_scale) +
-         labs(subtitle="Scaled to 4x Standard Deviation",
-              x="Year", y=paste0("Values (", unit, ")")) +
-         plot_theme
+      # p2 <- ggplot(data=plot_data,
+      #              aes(x=DecDate, y=ResultValue)) +
+      #    geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
+      #               alpha=0.75) +
+      #   geom_line(data=KT.plot_data, aes(x=x, y=y),
+      #                color="#000099", size=1.2, alpha=0.7) +
+      #    ylim(min_RV-0.1*y_scale, y_scale) +
+      #    labs(subtitle="Scaled to 4x Standard Deviation",
+      #         x="Year", y=paste0("Values (", unit, ")")) +
+      #    plot_theme
       
-      KTset <- ggarrange(p1, p2, ncol=1, heights=c(1, 1))
+      # KTset <- ggarrange(p1, p2, ncol=1, heights=c(1, 1))
+      # 
+      # p0 <- ggplot() + labs()) +
+      #    plot_theme + theme(panel.border=element_blank(),
+      #                       panel.grid.major=element_blank(),
+      #                       panel.grid.minor=element_blank(),
+      #                       axis.line=element_blank())
       
-      p0 <- ggplot() + labs(title=paste0(MA_name, "\n", Mon_name)) +
-         plot_theme + theme(panel.border=element_blank(),
-                            panel.grid.major=element_blank(),
-                            panel.grid.minor=element_blank(),
-                            axis.line=element_blank())
+      ResultTable <- KT.Stats[KT.Stats$MonitoringID==Mon_IDs[i], ] %>%
+         select(RelativeDepth, N_Data, N_Years, EarliestYear, LatestYear,
+                Median, Independent, tau, p, SennSlope, SennIntercept)
       
-      print(ggarrange(p0, KTset, ncol=1, heights=c(0.1, 1)))
-      cat('\n')
-      print(KT.Stats[KT.Stats$MonitoringID==Mon_IDs[i], ] %>%
-         select(N_Data, Median, tau, SennSlope, SennIntercept, p, Trend) %>%
-         kable(format="latex") %>%
-            row_spec(0,bold=TRUE) %>%
-            kable_styling(latex_options = "HOLD_position") %>%
-            add_footnote(
-            "p < 0.00005 appear as 0 due to rounding"))
-      cat('\n')
+      t1 <- ggtexttable(ResultTable, rows=NULL,
+                        theme=ttheme(base_size=11)) %>%
+         tab_add_footnote(text="p < 0.00005 appear as 0 due to rounding.\n
+                          SennIntercept is intercept value at beginning of
+                          record for monitoring location",
+                          size=10, face="italic")
+      
+      print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
+      cat('\n \n \n')
+      rm(plot_data)
+      rm(KTset, leg)
       rm(plot_data)
       rm(KTset, leg)
    }
@@ -751,7 +771,7 @@ if(n==0){
       y_scale <- mn_RV + 4 * sd_RV
       MA_name <- KT.Stats$ManagedAreaName[KT.Stats$MonitoringID==Mon_IDs[i]]
       Mon_name <- paste0(KT.Stats$ProgramID[KT.Stats$MonitoringID==Mon_IDs[i]],
-         " | ", KT.Stats$ProgramName[KT.Stats$MonitoringID==Mon_IDs[i]], "\n",
+         "\n", KT.Stats$ProgramName[KT.Stats$MonitoringID==Mon_IDs[i]], "\n",
          KT.Stats$ProgramLocationID[KT.Stats$MonitoringID==Mon_IDs[i]])
       
       ##Year plots
