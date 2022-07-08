@@ -7,12 +7,11 @@
 
 library(data.table)
 library(dplyr)
-library(here)
 
-out_dir <- "WQ_Discrete/output/by_parameter/Combined"
+out_dir <- "output/by_parameter/Combined"
 
 #List all of the files in the "tables" directory that are KendallTau results
-files <- list.files("WQ_Discrete/output/by_parameter", pattern="KendallTau", full.names=TRUE)
+files <- list.files("output/by_parameter", pattern="KendallTau", full.names=TRUE)
 
 for(i in 1:length(files)){
       if(i==1){

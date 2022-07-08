@@ -1,5 +1,6 @@
-#This script is created to automate the production of Rmd documents for each relevant combination of
-#parameter, relative depth, and activity type for WC data.
+# This script is created to automate the production of Rmd documents for each relevant combination of
+# parameter, relative depth, and activity type for discrete WC data.
+# Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
 
 ## WHEN RUNNING IN RSTUDIO:
@@ -10,14 +11,16 @@
 library(data.table)
 library(knitr)
 library(readr)
-library(plyr)
 library(dplyr)
-library(here)
 
 #Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
 APP_Plots <- TRUE
+
 #Set output directory
-out_dir <- here::here("WQ_Discrete/output/by_parameter/")
+out_dir <- "output/by_parameter/"
+
+#Set number of unique years a location must have to be considered for analysis
+suff_years <- 10
 
 #Sets the list of parameter names to cycle through. This can be edited to limit the number of parameters.
 #Easiest way to edit is to comment out undesired parameters.
@@ -52,37 +55,13 @@ all_activity <- c(
 )
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
-MA_All <- fread(here::here("WQ_Discrete/data/ManagedArea.csv"), sep = ",", header = TRUE, stringsAsFactors = FALSE,
+MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
                 na.strings = "")
-
-#Creates data.table to store all Kendall test results
-KT.Stats_all <- data.table(AreaID = integer(),
-                           ManagedAreaName = character(),
-                           ParameterName = character(),
-                           Units = character(),
-                           ActivityType = character(),
-                           RelativeDepth = character(),
-                           N_Data = integer(),
-                           N_Years = integer(),
-                           EarliestYear = integer(),
-                           LatestYear = integer(),
-                           SufficientData = logical(),
-                           Season = factor(),
-                           Median = numeric(),
-                           Independent = logical(),
-                           tau = numeric(),
-                           z = numeric(),
-                           p_z = numeric(),
-                           chi_sq = numeric(),
-                           p_chi_sq = numeric(),
-                           SennSlope = numeric(),
-                           SennIntercept = numeric(),
-                           Trend = integer())
 
 #Starts for loop that cycles through each parameter
 for (param_name in all_params){
    #Gets the file with the filename containing the desired parameter
-   file_in <- list.files(here::here("WQ_Discrete/data"), pattern=param_name, full=TRUE)
+   file_in <- list.files("data", pattern=param_name, full=TRUE)
    
    #Since Dissolved_Oxygen will return both Dissolved_Oxygen and Dissolved_Oxygen_Saturation,
    #the if statement removes the entry for Dissolved_Oxygen_Saturation when trying to get Dissolved_Oxygen
@@ -102,11 +81,12 @@ for (param_name in all_params){
       for (activity in all_activity){
          #Skips Field loops for parameters that only have Sample measurements
          if ((param_name=="Chlorophyll_a_uncorrected_for_pheophytin" |
-              param_name=="Colored_dissolved_organic_matter_CDOM" | param_name=="Total_Nitrogen" | 
-              param_name=="Total_Phosphorus" | param_name=="Total_Suspended_Solids_TSS") & activity=="Field") {
+              param_name=="Total_Nitrogen" | param_name=="Total_Phosphorus" |
+              param_name=="Total_Suspended_Solids_TSS") & activity=="Field") {
             next
          #Skips Sample loops for parameters that only have Field measurements
-         } else if ((param_name=="Dissolved_Oxygen" | param_name=="Dissolved_Oxygen_Saturation" |
+         } else if ((param_name=="Colored_dissolved_organic_matter_CDOM" |
+                     param_name=="Dissolved_Oxygen" | param_name=="Dissolved_Oxygen_Saturation" |
                      param_name=="pH" | param_name=="Secchi_Depth" |
                      param_name=="Water_Temperature") & activity=="Sample") {
             next
@@ -116,19 +96,16 @@ for (param_name in all_params){
          #Stored in reports/by_parameter directory
          file_out <- paste0("WC_Discrete_", param_name, "_", activity, "_",
                             depth)
-         rmarkdown::render(input = here::here("WQ_Discrete/WC_discrete_parameter.Rmd"), 
+         rmarkdown::render(input = "WC_Discrete_parameter.Rmd", 
                            output_format = "html_document",
                            output_file = paste0(file_out,".html"),
-                           output_dir = here::here("WQ_Discrete/reports/by_parameter"),
+                           output_dir = "reports/by_parameter",
                            clean=TRUE)
-         rmarkdown::render(input = here::here(paste0("WQ_Discrete/reports/by_parameter/",
-                                              file_out, ".md")), 
+         rmarkdown::render(input = paste0("reports/by_parameter/", file_out, ".md"), 
                            output_format = "word_document",
                            output_file = paste0(file_out,".docx"),
-                           output_dir = here::here("WQ_Discrete/reports/by_parameter"),
+                           output_dir = "reports/by_parameter",
                            clean=TRUE)
       }
    }
 }
-
-write.csv(KT.Stats_all, here::here("WQ_Discrete/output/WQ_Discrete_All_KTstats.csv"))

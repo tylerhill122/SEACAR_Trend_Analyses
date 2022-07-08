@@ -1,5 +1,6 @@
 # This script is designed to read the file names for the Kendall Tau results,
 # import each one, combine into one data table, arrange by managed area, and write to file
+# Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
 ## WHEN RUNNING IN RSTUDIO:
 ## Set working directory to "Source File Location" in "Session" menu

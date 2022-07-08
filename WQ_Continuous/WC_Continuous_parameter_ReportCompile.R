@@ -1,6 +1,6 @@
-#This script is created to automate the production of Rmd documents for each relevant combination of
-#parameter, relative depth, and activity type for continuous WC data.
-
+# This script is created to automate the production of Rmd documents for each relevant combination of
+# parameter, relative depth, and activity type for continuous WC data.
+# Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
 ## WHEN RUNNING IN RSTUDIO:
 ## Set working directory to "Source File Location" in "Session" menu
@@ -17,6 +17,9 @@ APP_Plots <- TRUE
 
 #Set output directory
 out_dir <- "output/by_parameter/"
+
+#Set number of unique years a location must have to be considered for analysis
+suff_years <- 5
 
 #Sets the list of parameter names to cycle through. This can be edited to limit the number of parameters.
 #Easiest way to edit is to comment out undesired parameters.
