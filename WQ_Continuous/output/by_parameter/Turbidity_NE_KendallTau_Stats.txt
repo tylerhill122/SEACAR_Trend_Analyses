@@ -1,58 +1,58 @@
-AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
-1|Alligator Harbor Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-2|Apalachicola Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-3|Apalachicola National Estuarine Research Reserve||||Turbidity||0|0||||FALSE|||||||
-4|Banana River Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|CMMerritt|Turbidity|surface|543|3|2015|2017|2017-04-26|FALSE|||||||
-4|Banana River Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|IRLB04|Turbidity|surface|1752|10|2003|2021|2021-12-21|TRUE|6.2115931372549|1|-0.348|0|-1.66927083333333|31.0622373188406|-2
-5|Big Bend Seagrasses Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-6|Biscayne Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-8|Boca Ciega Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-9|Cape Haze Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-11|Cockroach Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-13|Coupon Bight Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-14|Estero Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-15|Florida Keys National Marine Sanctuary||||Turbidity||0|0||||FALSE|||||||
-16|Fort Clinch State Park Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-17|Fort Pickens State Park Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-19|Guana River Marsh Aquatic Preserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmpiwq|Turbidity|bottom|6752|22|2001|2022|2022-03-08|TRUE|11.2708333333333|1|0.0068|0.3312|0.00810185185185189|12.8696844868457|0
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmfmwq|Turbidity|bottom|7162|22|2001|2022|2022-03-08|TRUE|7.64583333333333|1|0.026|0.0013|0.019345238095238|8.09201388888889|1
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmpcwq|Turbidity|bottom|6827|21|2002|2022|2022-03-11|TRUE|9.27083333333333|1|0.0105|0.2021|0.0097222222222222|8.69690739633174|0
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmpiwq|Turbidity|bottom|6752|22|2001|2022|2022-03-08|TRUE|11.2708333333333|1|0.0068|0.3312|0.00810185185185189|12.8696844868457|0
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmsswq|Turbidity|bottom|6569|21|2002|2022|2022-03-08|TRUE|9.52083333333333|1|0.109|0|0.108901515151515|8.56409970238095|1
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5005|Indian River Lagoon Aquatic Preserves Continuous Water Quality Monitoring|IRDM|Turbidity|bottom|867|5|2003|2007|2007-04-18|FALSE|||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-24|Lake Jackson Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-25|Lemon Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-26|Lignumvitae Key Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-28|Matlacha Pass Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-29|Mosquito Lagoon Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5006|Northeast Aquatic Preserves Continuous Water Quality Monitoring|NEKD|Turbidity|bottom|2422|8|2004|2011|2011-05-31|FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5006|Northeast Aquatic Preserves Continuous Water Quality Monitoring|NELC|Turbidity|bottom|2057|7|2005|2011|2011-05-31|FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5006|Northeast Aquatic Preserves Continuous Water Quality Monitoring|NENR|Turbidity|bottom|656|3|2009|2011|2011-05-31|FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|NCB19020038|Turbidity|surface|1323|5|2015|2019|2019-07-11|FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|NCBARD16|Turbidity|surface|310|2|2015|2016|2016-01-21|FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|NCBNRCM|Turbidity|surface|1460|5|2015|2019|2019-06-25|FALSE|||||||
-48|Nature Coast Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-31|North Fork St. Lucie Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-32|Oklawaha River Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-33|Pellicer Creek Aquatic Preserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmpcwq|Turbidity|bottom|6827|21|2002|2022|2022-03-11|TRUE|9.27083333333333|1|0.0105|0.2021|0.0097222222222222|8.69690739633174|0
-34|Pine Island Sound Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-35|Pinellas County Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-36|Rainbow Springs Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-37|Rocky Bayou State Park Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-38|Rookery Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve||||Turbidity||0|0||||FALSE|||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Turbidity||0|0||||FALSE|||||||
-40|St. Andrews State Park Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-41|St. Joseph Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-42|St. Joseph Bay State Buffer Preserve||||Turbidity||0|0||||FALSE|||||||
-43|St. Martins Marsh Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-44|Terra Ceia Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-45|Tomoka Marsh Aquatic Preserve|10003|Tomoka Marsh Aquatic Preserve Continuous Water Quality Monitoring|TMGR|Turbidity|bottom|259|1|2021|2021|2021-09-30|FALSE|||||||
-46|Wekiva River Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
-47|Yellow River Marsh Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||
+AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
+1|Alligator Harbor Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+2|Apalachicola Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+3|Apalachicola National Estuarine Research Reserve||||Turbidity||0|0||||FALSE|||||||||
+4|Banana River Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|CMMerritt|Turbidity|surface|12912|3|2015|2017|2017-04-26|FALSE|5.29||||||||
+4|Banana River Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|IRLB04|Turbidity|surface|40327|10|2003|2021|2021-12-21|TRUE|6.24|1|-0.2193|0.014|-0.104768875192604|6.44722629273134|2.5008|0.9958|-1
+5|Big Bend Seagrasses Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+6|Biscayne Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+8|Boca Ciega Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+9|Cape Haze Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+11|Cockroach Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Turbidity||0|0||||FALSE|||||||||
+13|Coupon Bight Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+14|Estero Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+15|Florida Keys National Marine Sanctuary||||Turbidity||0|0||||FALSE|||||||||
+16|Fort Clinch State Park Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+17|Fort Pickens State Park Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+19|Guana River Marsh Aquatic Preserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmpiwq|Turbidity|bottom|545462|22|2001|2022|2022-03-08|TRUE|10|1|-0.096|0.0337|-0.0789837216248506|14.9733233263754|4.9845|0.9319|-1
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmfmwq|Turbidity|bottom|582117|22|2001|2022|2022-03-08|TRUE|7|1|-0.0577|0.2034|-0.0410552509728164|8.82963257111993|16.5436|0.1221|0
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmpcwq|Turbidity|bottom|577278|21|2002|2022|2022-03-11|TRUE|9|1|-0.0134|0.7933|-0.00999200223885962|9.26604204228447|7.4065|0.7653|0
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmpiwq|Turbidity|bottom|545462|22|2001|2022|2022-03-08|TRUE|10|1|-0.096|0.0337|-0.0789837216248506|14.9733233263754|4.9845|0.9319|-1
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmsswq|Turbidity|bottom|541694|21|2002|2022|2022-03-08|TRUE|9|1|0.0608|0.2127|0.05154457435148|9.69046496485965|12.8289|0.3047|0
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5005|Indian River Lagoon Aquatic Preserves Continuous Water Quality Monitoring|IRDM|Turbidity|bottom|39124|5|2003|2007|2007-04-18|TRUE|5|1|0.0505|0.8844|-1.11298170082933|6.13473424212576|15.0113|0.1317|0
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+24|Lake Jackson Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+25|Lemon Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+26|Lignumvitae Key Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+28|Matlacha Pass Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+29|Mosquito Lagoon Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5006|Northeast Aquatic Preserves Continuous Water Quality Monitoring|NEKD|Turbidity|bottom|114181|8|2004|2011|2011-05-31|TRUE|4|1|0.0203|0.8697|0.0474101376155051|6.06341972321684|4.3028|0.9602|0
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5006|Northeast Aquatic Preserves Continuous Water Quality Monitoring|NELC|Turbidity|bottom|96153|7|2005|2011|2011-05-31|TRUE|15|1|0.1577|0.1513|0.637988718899706|15.1844340532621|6.3479|0.8492|0
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5006|Northeast Aquatic Preserves Continuous Water Quality Monitoring|NENR|Turbidity|bottom|31087|3|2009|2011|2011-05-31|FALSE|21||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|NCB19020038|Turbidity|surface|31407|5|2015|2019|2019-07-11|TRUE|5.77|1|-0.0136|0.7876|0.124147403261838|6.78995584506361|14.3051|0.2166|0
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|NCBARD16|Turbidity|surface|7385|2|2015|2016|2016-01-21|FALSE|12.89||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5061|St. Johns River Water Management District Continuous Water Quality Programs|NCBNRCM|Turbidity|surface|34696|5|2015|2019|2019-06-25|TRUE|8.64|1|-0.1046|0.6001|-0.141920178303705|10.0869033334101|8.1815|0.697|0
+31|North Fork St. Lucie Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+32|Oklawaha River Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+33|Pellicer Creek Aquatic Preserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|gtmpcwq|Turbidity|bottom|577278|21|2002|2022|2022-03-11|TRUE|9|1|-0.0134|0.7933|-0.00999200223885962|9.26604204228447|7.4065|0.7653|0
+34|Pine Island Sound Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+35|Pinellas County Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+36|Rainbow Springs Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+37|Rocky Bayou State Park Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+38|Rookery Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+39|Rookery Bay National Estuarine Research Reserve||||Turbidity||0|0||||FALSE|||||||||
+40|St. Andrews State Park Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+41|St. Joseph Bay Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+42|St. Joseph Bay State Buffer Preserve||||Turbidity||0|0||||FALSE|||||||||
+43|St. Martins Marsh Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+44|Terra Ceia Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+45|Tomoka Marsh Aquatic Preserve|10003|Tomoka Marsh Aquatic Preserve Continuous Water Quality Monitoring|TMGR|Turbidity|bottom|24689|1|2021|2021|2021-09-30|FALSE|7||||||||
+46|Wekiva River Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+47|Yellow River Marsh Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||
+48|Nature Coast Aquatic Preserve||||Turbidity||0|0||||FALSE|||||||||

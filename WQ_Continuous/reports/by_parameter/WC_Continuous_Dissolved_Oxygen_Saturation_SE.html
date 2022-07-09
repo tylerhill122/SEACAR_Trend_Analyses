@@ -1510,13 +1510,15 @@ div.tocify {
 
 <h1 class="title toc-ignore">SEACAR Continuous Water Quality Analysis:
 SE Region for Dissolved Oxygen Saturation</h1>
-<h4 class="date">Last compiled on 30 June, 2022</h4>
+<h4 class="date">Last compiled on 08 July, 2022</h4>
 
 </div>
 
 
 <div id="important-notes" class="section level1">
 <h1>Important Notes</h1>
+<p>These scripts were created by <a href="jepanzik@usf.edu">J.E.
+Panzik</a> for SEACAR.</p>
 <p>All scripts and outputs can be found on the SEACAR GitHub
 repository:</p>
 <p><a href="https://github.com/FloridaSEACAR/SEACAR_Panzik" class="uri">https://github.com/FloridaSEACAR/SEACAR_Panzik</a></p>
@@ -1577,27 +1579,53 @@ rows that are missing values for <code>ResultValue</code> and
 <code>RelativeDepth</code>, and removes any activity type that has
 “Blank” in the description. Data passes the filtering the process if it
 is has an <code>Include</code> value of 1.</p>
-<p>The script then gets the units of the parameter, sets the
-<code>SampleDate</code> as a date object, and creates various scales of
-the date to be used by plotting functions.</p>
-<p>Because the continuous data is extensive and most measurements are
-taken every 15 minutes, a daily average is determined and used based on
-grouping <code>ManagedAreaName</code>, <code>ProgramID</code>,
-<code>ProgramName</code>, <code>ProgramLocationID</code>, and
-<code>SampleDate</code>. The new <code>ResultValue</code> is the mean of
-all values on that date from that specific monitoring location. Sets the
-<code>SampleDate</code> as a date object, and creates various scales of
-the date to be used by plotting functions.</p>
 <p>Creates a variable for each <code>MonitoringID</code> which is
 defined as a unique combination of <code>ManagedAreaName</code>,
 <code>ProgramID</code>, <code>ProgramAreaName</code>, and
 <code>ProgramLocationID</code>.</p>
 <p>After the initial filtering, a second filter variable is created to
-determine whether enough time is represented in the managed area, which
-is that each managed area has 5 year or more of unique year entries for
-observation that pass the initial filter. If data passes the first set
-of filtering criteria and the time criteria, they are used in the
-analysis.</p>
+determine whether enough time is represented in the monitoring location,
+which is that each monitoring location has 5 year or more of unique year
+entries and have at least 2 consecutive years of observations with at
+least 2 repeating months for observations that pass the initial filter.
+If data passes the first set of filtering criteria and the time
+criteria, they are used in the analysis.</p>
+<p>The function that determines whether a monitoring location has at
+least 2 consecutive years of observations with at least 2 repeating
+months takes the data, creates a list of the monitoring IDs and cycles
+through each monitoring ID. For each monitoring ID cycle:</p>
+<ol style="list-style-type: decimal">
+<li>List the unique years and put them in ascending order</li>
+<li>If there are fewer than 2 unique years, skip to the next area</li>
+<li>If there are 2 or more unique years, start a loop that compares
+adjacent year entries for the area
+<ul>
+<li>Start with the first two year entries</li>
+</ul></li>
+<li>See if the year entries are subsequent years (1 year apart)
+<ul>
+<li>If not, skip to next pair of years</li>
+</ul></li>
+<li>For the two years being compared, get the list of months for
+each</li>
+<li>Compare the two lists of months to see what months are the same
+<ul>
+<li>If there are two or more months that are the same, the location
+passes the criteria and is stored in a variable</li>
+</ul></li>
+<li>The list of IDs that pass the 2 consecutive years with at least 2
+repeating months is returned and used to determine if there is
+sufficient data for analysis.</li>
+</ol>
+<p>A data frame is created that stores summary information for each
+monitoring location. This information is stored and combined with the
+results of the Seasonal Kendall Tau analysis and export to a data file
+once combined.</p>
+<p>The sufficient data qualifier is merged with the original data, and a
+variable <code>Use_In_Analysis</code> is created to indicate what data
+should be used.</p>
+<p>A variable with the monitoring IDs that pass all criteria is created
+and stored.</p>
 <pre class="r"><code>data$Include &lt;- as.logical(data$Include)
 data &lt;- data[data$Include==TRUE,]
 data &lt;- data[!is.na(data$ResultValue),]
@@ -1610,26 +1638,53 @@ if(param_name==&quot;Water_Temperature&quot;){
    data &lt;- data[data$ResultValue&gt;=0,]
 }
 
-
-
-data &lt;- data %&gt;%
-   group_by(ManagedAreaName, ProgramID, ProgramName, ProgramLocationID,
-            SampleDate) %&gt;%
-   summarise(Year=unique(Year), Month=unique(Month),
-             RelativeDepth=unique(RelativeDepth), 
-             ResultValue=mean(ResultValue), Include=unique(Include))
-
 data &lt;- merge.data.frame(MA_All[,c(&quot;AreaID&quot;, &quot;ManagedAreaName&quot;)],
                           data, by=&quot;ManagedAreaName&quot;, all=TRUE)
 
-data$SampleDate &lt;- as.Date(data$SampleDate)
-data$YearMonth &lt;- format(data$SampleDate, format = &quot;%m-%Y&quot;)
-data$YearMonthDec &lt;- data$Year + ((data$Month-0.5) / 12)
-data$DecDate &lt;- decimal_date(data$SampleDate)
-
 data &lt;- data %&gt;%
-    group_by(ManagedAreaName, ProgramID, ProgramName, ProgramLocationID) %&gt;%
+    group_by(AreaID, ManagedAreaName, ProgramID, ProgramName,
+             ProgramLocationID) %&gt;%
     mutate(MonitoringID=cur_group_id())
+
+ContinuousConsecutiveCheck &lt;- function(con_data){
+   IDs &lt;- unique(con_data$MonitoringID[con_data$Include==TRUE &amp;
+                                          !is.na(con_data$Include)])
+   
+   for(i in 1:length(IDs)) {
+      Years &lt;- unique(con_data$Year[con_data$MonitoringID==IDs[i] &amp;
+                                       con_data$Include==TRUE &amp;
+                                       !is.na(con_data$Include)])
+      Years &lt;- Years[order(Years)]
+      if(length(Years)&lt;2) {
+         next
+      }
+      for(j in 2:length(Years)) {
+         if(Years[j]-Years[j-1]!=1) {
+            next
+         }
+         Months1 &lt;- unique(con_data$Month[con_data$MonitoringID==IDs[i] &amp;
+                                         con_data$Year==Years[j-1] &amp;
+                                         con_data$Include==TRUE &amp;
+                                         !is.na(con_data$Include)])
+         Months2 &lt;- unique(con_data$Month[con_data$MonitoringID==IDs[i] &amp;
+                                         con_data$Year==Years[j] &amp;
+                                         con_data$Include==TRUE &amp;
+                                         !is.na(con_data$Include)])
+         if(length(intersect(Months1, Months2))&gt;=2) {
+            if(exists(&quot;consecutive&quot;)==FALSE){
+               consecutive &lt;- IDs[i]
+               break
+            } else{
+               consecutive &lt;- append(consecutive, IDs[i])
+               break
+            }
+         }
+      }
+   }
+   return(consecutive)
+}
+
+consMonthIDs &lt;- ContinuousConsecutiveCheck(data)
 
 Mon_Summ &lt;- data %&gt;%
    group_by(MonitoringID, AreaID, ManagedAreaName, ProgramID, ProgramName,
@@ -1641,7 +1696,12 @@ Mon_Summ &lt;- data %&gt;%
              EarliestYear=min(Year[Include==TRUE]),
              LatestYear=max(Year[Include==TRUE]),
              LastSampleDate=max(SampleDate[Include==TRUE]),
-             SufficientData=ifelse(N_Data&gt;0 &amp; N_Years&gt;=10, TRUE, FALSE))
+             ConsecutiveMonths=ifelse(unique(MonitoringID) %in%
+                                         consMonthIDs==TRUE, TRUE, FALSE),
+             SufficientData=ifelse(N_Data&gt;0 &amp; N_Years&gt;=suff_years &amp;
+                                      ConsecutiveMonths==TRUE, TRUE, FALSE),
+             Median=median(ResultValue, na.rm=TRUE))
+Mon_Summ$ConsecutiveMonths &lt;- NULL
 
 Mon_Summ &lt;- as.data.table(Mon_Summ[order(Mon_Summ$MonitoringID), ])
 
@@ -1652,8 +1712,8 @@ data &lt;- data %&gt;%
 data &lt;- merge.data.frame(data, Mon_Summ[,c(&quot;MonitoringID&quot;, &quot;SufficientData&quot;)],
                          by=&quot;MonitoringID&quot;)
 
-data$Use_In_Analysis &lt;- ifelse(data$Include==TRUE &amp;
-                                  data$SufficientData==TRUE, TRUE, FALSE)
+data$Use_In_Analysis &lt;- ifelse(data$Include==TRUE &amp; data$SufficientData==TRUE,
+                               TRUE, FALSE)
 
 Mon_IDs &lt;- unique(data$MonitoringID[data$Use_In_Analysis==TRUE])
 Mon_IDs &lt;- Mon_IDs[order(Mon_IDs)]
@@ -1690,9 +1750,17 @@ measurements.</li>
 <li>Write summary stats to a pipe-delimited .txt file in the output
 directory</li>
 </ol>
+<p>Because the continuous data is extensive and most measurements are
+taken every 15 minutes, a daily average is determined and used based on
+grouping <code>ManagedAreaName</code>, <code>ProgramID</code>,
+<code>ProgramName</code>, <code>ProgramLocationID</code>, and
+<code>SampleDate</code>. The new <code>ResultValue</code> is the mean of
+all values on that date from that specific monitoring location. Sets the
+<code>SampleDate</code> as a date object, and creates various scales of
+the date to be used by plotting functions.</p>
 <pre class="r"><code>Mon_YM_Stats &lt;- data[data$Use_In_Analysis==TRUE, ] %&gt;%
-   group_by(AreaID, ManagedAreaName, ProgramID, ProgramName, ProgramLocationID,
-            Year, Month) %&gt;%
+   group_by(MonitoringID, AreaID, ManagedAreaName, ProgramID, ProgramName,
+            ProgramLocationID, Year, Month) %&gt;%
    summarize(ParameterName=parameter,
              RelativeDepth=unique(RelativeDepth),
              EarliestSampleDate=min(SampleDate),
@@ -1706,8 +1774,16 @@ Mon_YM_Stats &lt;- as.data.table(Mon_YM_Stats[order(Mon_YM_Stats$ManagedAreaName
                                                  Mon_YM_Stats$ProgramLocationID,
                                                  Mon_YM_Stats$Year,
                                                  Mon_YM_Stats$Month), ])
-fwrite(Mon_YM_Stats, paste0(out_dir,&quot;/&quot;, param_name, &quot;_&quot;, region,
-                            &quot;_MonitoringLoc_YearMonth_Stats.txt&quot;), sep=&quot;|&quot;)
+
+fwrite(select(Mon_YM_Stats, -MonitoringID),
+       paste0(out_dir,&quot;/&quot;, param_name, &quot;_&quot;, region,
+              &quot;_MonitoringLoc_YearMonth_Stats.txt&quot;), sep=&quot;|&quot;)
+
+Mon_YM_Stats &lt;- Mon_YM_Stats %&gt;%
+   group_by(MonitoringID) %&gt;%
+   mutate(YearFromStart=Year-min(Year))
+
+Mon_YM_Stats$YearMonthDec &lt;- Mon_YM_Stats$Year + ((Mon_YM_Stats$Month-0.5) / 12)
 
 Mon_Y_Stats &lt;- data[data$Use_In_Analysis==TRUE, ] %&gt;%
    group_by(AreaID, ManagedAreaName, ProgramID, ProgramName, ProgramLocationID,
@@ -1744,7 +1820,20 @@ Mon_M_Stats &lt;- as.data.table(Mon_M_Stats[order(Mon_M_Stats$ManagedAreaName,
                                                Mon_M_Stats$Month), ])
 
 fwrite(Mon_M_Stats, paste0(out_dir,&quot;/&quot;, param_name, &quot;_&quot;, region,
-                           &quot;_MonitoringLoc_Month_Stats.txt&quot;), sep=&quot;|&quot;)</code></pre>
+                           &quot;_MonitoringLoc_Month_Stats.txt&quot;), sep=&quot;|&quot;)
+
+data &lt;- data %&gt;%
+   group_by(MonitoringID, AreaID, ManagedAreaName, ProgramID, ProgramName,
+            ProgramLocationID, SampleDate) %&gt;%
+   summarise(Year=unique(Year), Month=unique(Month),
+             RelativeDepth=unique(RelativeDepth),
+             ResultValue=mean(ResultValue), Include=unique(Include),
+             Use_In_Analysis=unique(Use_In_Analysis))
+
+data$SampleDate &lt;- as.Date(data$SampleDate)
+data$YearMonth &lt;- format(data$SampleDate, format = &quot;%m-%Y&quot;)
+data$YearMonthDec &lt;- data$Year + ((data$Month-0.5) / 12)
+data$DecDate &lt;- decimal_date(data$SampleDate)</code></pre>
 </div>
 <div id="seasonal-kendall-tau-analysis" class="section level1">
 <h1>Seasonal Kendall Tau Analysis</h1>
@@ -1786,22 +1875,25 @@ directory</p>
 <li><a href="https://github.com/FloridaSEACAR/SEACAR_Panzik/tree/main/output/WQ">Click
 this text to open Git directory with output files</a></li>
 </ul></li>
-<li><p>Add the Monitoring IDS to <code>KT.Stats</code> for easier use
-while plotting.</p></li>
 </ol>
-<pre class="r"><code>tauSeasonal &lt;- function(data, independent, stats.median, stats.minYear,
+<p>After the analysis is performed, a variable is created that stores
+the x &amp; y coordinates of the SKT trend line to be used for
+plotting</p>
+<pre class="r"><code>tauSeasonal &lt;- function(dat, independent, stats.median, stats.minYear,
                         stats.maxYear) {
    tau &lt;- NULL
    tryCatch({ken &lt;- kendallSeasonalTrendTest(
-      y=data$ResultValue,
-      season=data$Month,
-      year=data$YearFromStart,
+      y=dat$Mean,
+      season=dat$Month,
+      year=dat$YearFromStart,
       independent.obs=independent)
    
    tau &lt;- ken$estimate[1]
    p &lt;- ken$p.value[2]
    slope &lt;- ken$estimate[2]
    intercept &lt;- ken$estimate[3]
+   chi_sq &lt;- ken$statistic[1]
+   p_chi_sq &lt;- ken$p.value[1]
    trend &lt;- trend_calculator(slope, stats.median, p)
    rm(ken)
    }, warning=function(w) {
@@ -1825,29 +1917,30 @@ while plotting.</p></li>
          trend &lt;- NA
       }
    })
-   KT &lt;-c(unique(data$MonitoringID),
-          stats.median,
+   KT &lt;-c(unique(dat$MonitoringID),
           independent,
           tau,
           p,
           slope,
           intercept,
+          chi_sq,
+          p_chi_sq,
           trend)
    return(KT)
 }
-runStats &lt;- function(data) {
-   data$Index &lt;- as.Date(data$SampleDate) # , &quot;%Y-%m-%d&quot;)
-   data$ResultValue &lt;- as.numeric(data$ResultValue)
+runStats &lt;- function(dat, med, minYr, maxYr) {
+   #dat$Index &lt;- as.Date(dat$SampleDate) # , &quot;%Y-%m-%d&quot;)
+   dat$Mean &lt;- as.numeric(dat$Mean)
    # Calculate basic stats
-   stats.median &lt;- median(data$ResultValue, na.rm=TRUE)
-   stats.minYear &lt;- min(data$Year, na.rm=TRUE)
-   stats.maxYear &lt;- max(data$Year, na.rm=TRUE)
+   stats.median &lt;- med
+   stats.minYear &lt;- minYr
+   stats.maxYear &lt;- maxYr
    # Calculate Kendall Tau and Slope stats,
    # then update appropriate columns and table
-   KT &lt;- tauSeasonal(data, TRUE, stats.median,
+   KT &lt;- tauSeasonal(dat, TRUE, stats.median,
                      stats.minYear, stats.maxYear)
    if (is.null(KT[8])) {
-      KT &lt;- tauSeasonal(data, FALSE, stats.median,
+      KT &lt;- tauSeasonal(dat, FALSE, stats.median,
                         stats.minYear, stats.maxYear)
    }
    if (is.null(KT.Stats)==TRUE) {
@@ -1879,11 +1972,12 @@ trend_calculator &lt;- function(slope, median_value, p) {
       0
    return(trend)
 }
+
 KT.Stats &lt;- NULL
 # Loop that goes through each managed area.
 # List of managed areas stored in MA_Years$ManagedAreaName
-c_names &lt;- c(&quot;MonitoringID&quot;, &quot;Median&quot;, &quot;Independent&quot;, &quot;tau&quot;, &quot;p&quot;,
-             &quot;SennSlope&quot;, &quot;SennIntercept&quot;, &quot;Trend&quot;)
+c_names &lt;- c(&quot;MonitoringID&quot;, &quot;Independent&quot;, &quot;tau&quot;, &quot;p&quot;,
+             &quot;SennSlope&quot;, &quot;SennIntercept&quot;, &quot;ChiSquared&quot;, &quot;pChiSquared&quot;, &quot;Trend&quot;)
 if(n==0){
    KT.Stats &lt;- data.frame(matrix(ncol=length(c_names),
                                  nrow=nrow(Mon_Summ)))
@@ -1891,13 +1985,18 @@ if(n==0){
    KT.Stats[, c(&quot;MonitoringID&quot;)] &lt;- Mon_Summ[, c(&quot;MonitoringID&quot;)]
 } else{
    for (i in 1:n) {
-      x &lt;- nrow(data[data$Use_In_Analysis==TRUE &amp;
-                        data$MonitoringID==Mon_IDs[i], ])
+      x &lt;- nrow(Mon_YM_Stats[Mon_YM_Stats$MonitoringID==Mon_IDs[i], ])
       if (x&gt;0) {
-         KT.Stats &lt;- runStats(data[data$Use_In_Analysis==TRUE &amp;
-                                      data$MonitoringID==Mon_IDs[i], ])
+         SKT.med &lt;- Mon_Summ$Median[Mon_Summ$MonitoringID==Mon_IDs[i]]
+         SKT.minYr &lt;- Mon_Summ$EarliestYear[Mon_Summ$MonitoringID==Mon_IDs[i]]
+         SKT.maxYr &lt;- Mon_Summ$LatestYear[Mon_Summ$MonitoringID==Mon_IDs[i]]
+         
+         KT.Stats &lt;- runStats(Mon_YM_Stats[Mon_YM_Stats$MonitoringID==
+                                              Mon_IDs[i], ],
+                              SKT.med, SKT.minYr, SKT.maxYr)
       }
    }
+   
    KT.Stats &lt;- as.data.frame(KT.Stats)
   
    if(dim(KT.Stats)[2]==1){
@@ -1909,6 +2008,8 @@ if(n==0){
    KT.Stats$p &lt;- round(as.numeric(KT.Stats$p), digits=4)
    KT.Stats$SennSlope &lt;- as.numeric(KT.Stats$SennSlope)
    KT.Stats$SennIntercept &lt;- as.numeric(KT.Stats$SennIntercept)
+   KT.Stats$ChiSquared &lt;- round(as.numeric(KT.Stats$ChiSquared), digits=4)
+   KT.Stats$pChiSquared &lt;- round(as.numeric(KT.Stats$pChiSquared), digits=4)
    KT.Stats$Trend &lt;- as.integer(KT.Stats$Trend)
 }
 
@@ -1917,20 +2018,24 @@ KT.Stats &lt;-  merge.data.frame(Mon_Summ, KT.Stats,
 
 KT.Stats &lt;- as.data.table(KT.Stats[order(KT.Stats$MonitoringID), ])
 
-KT.Stats$MonitoringID &lt;- NULL
-fwrite(KT.Stats, paste0(out_dir,&quot;/&quot;, param_name, &quot;_&quot;, region,
-                           &quot;_KendallTau_Stats.txt&quot;), sep=&quot;|&quot;)
+#KT.Stats$MonitoringID &lt;- NULL
+fwrite(select(KT.Stats, -MonitoringID), paste0(out_dir,&quot;/&quot;, param_name, &quot;_&quot;,
+                                               region, &quot;_KendallTau_Stats.txt&quot;),
+       sep=&quot;|&quot;)
 
-KT.Stats$MonitoringID &lt;- Mon_Summ$MonitoringID
+#KT.Stats$MonitoringID &lt;- Mon_Summ$MonitoringID
 data &lt;- data[!is.na(data$ResultValue),]
 
 KT.Plot &lt;- KT.Stats %&gt;%
    group_by(MonitoringID) %&gt;%
-   summarize(x=EarliestYear, y=SennIntercept)
+   summarize(x=EarliestYear,
+             y=SennIntercept)
+
 KT.Plot2 &lt;- KT.Stats %&gt;%
    group_by(MonitoringID) %&gt;%
    summarize(x=decimal_date(LastSampleDate),
              y=(x-EarliestYear)*SennSlope+SennIntercept)
+
 KT.Plot &lt;- bind_rows(KT.Plot, KT.Plot2)
 rm(KT.Plot2)
 KT.Plot &lt;- as.data.table(KT.Plot[order(KT.Plot$MonitoringID), ])
@@ -2113,7 +2218,7 @@ Mset &lt;- ggarrange(p0, set, ncol=1, heights=c(0.07, 1))</code></pre>
 <h1>Appendix II: Excluded Monitoring Locations</h1>
 <p>Scatter plots of data values are created for monitoring locations
 that have fewer than 5 separate years of data entries.</p>
-<pre class="r"><code>Mon_Exclude &lt;- Mon_Summ[Mon_Summ$N_Years&lt;5 &amp; Mon_Summ$N_Years&gt;0,]
+<pre class="r"><code>Mon_Exclude &lt;- Mon_Summ[Mon_Summ$SufficientData==FALSE &amp; N_Years&gt;0,]
 Mon_Exclude &lt;- Mon_Exclude[order(Mon_Exclude$MonitoringID),]
 z=nrow(Mon_Exclude)
 
@@ -2155,43 +2260,42 @@ trend of the data. Data is taken and grouped by
 the Senn slope and intercept from the seasonal Kendall Tau analysis. The
 scripts that create plots follow this format</p>
 <ol style="list-style-type: decimal">
-<li>Use the data set that only has <code>Use_In_Analysis</code> of
-<code>TRUE</code> for the desired monitoring location</li>
+<li>Use the averages that have been aggregated by year and month for the
+desired monitoring location</li>
 <li>Determine the earliest and latest year of the data to create x-axis
 scale and intervals</li>
-<li>Determine the minimum, mean, and standard deviation for the data to
-be used for y-axis scales
-<ul>
-<li>Excludes the top 2% of values to reduce the impact of extreme
-outliers on the y-axis scale</li>
-</ul></li>
-<li>Set what values are to be used for the x-axis, y-axis, and the
-variable that should determine groups for the plots</li>
-<li>Set the plot type as a point plot with the size of the points</li>
-<li>Add the linear trend</li>
-<li>Create the title, x-axis, y-axis, and color fill labels</li>
+<li>Determine the x-axis scale</li>
+<li>Set the plot type as a line and point plot with the specifics of
+each</li>
+<li>Add the linear trend determined form the seasonal Kendall Tau slope
+and intercept</li>
+<li>Create the title, x-axis, y-axis, and labels</li>
 <li>Set the y and x limits</li>
-<li>Make the axis labels bold</li>
-<li>Plot the arrangement as a set of panels</li>
+<li>Apply the plot theme</li>
+<li>Set the SKT analysis results as a table figure</li>
+<li>Combine the plot and table to be displayed together</li>
 </ol>
 <pre class="r"><code>if(n==0){
    print(&quot;There are no monitoring locations that qualify.&quot;)
 } else {
    for (i in 1:n) {
-      plot_data &lt;- data[data$Use_In_Analysis==TRUE &amp;
-                                     data$MonitoringID==Mon_IDs[i],]
+      plot_data &lt;- Mon_YM_Stats[Mon_YM_Stats$MonitoringID==Mon_IDs[i],]
       KT.plot_data &lt;- KT.Plot[KT.Plot$MonitoringID==Mon_IDs[i],]
-      year_lower &lt;- min(plot_data$Year)
-      year_upper &lt;- max(plot_data$Year)
-      min_RV &lt;- min(plot_data$ResultValue)
-      mn_RV &lt;- mean(plot_data$ResultValue[plot_data$ResultValue &lt;
-                                        quantile(plot_data$ResultValue, 0.98)])
-      sd_RV &lt;- sd(plot_data$ResultValue[plot_data$ResultValue &lt;
-                                      quantile(plot_data$ResultValue, 0.98)])
-      x_scale &lt;- ifelse(year_upper - year_lower &gt; 30, 10, 5)
-      y_scale &lt;- mn_RV + 4 * sd_RV
+      t_min &lt;- min(plot_data$Year)
+      t_max &lt;- max(plot_data$YearMonthDec)
+      t_max_brk &lt;- as.integer(round(t_max, 0))
+      t &lt;- t_max-t_min
+      min_RV &lt;- min(plot_data$Mean)
       
-      
+      if(t&gt;=30){
+         brk &lt;- -10
+      }else if(t&lt;30 &amp; t&gt;=10){
+         brk &lt;- -5
+      }else if(t&lt;10 &amp; t&gt;=4){
+         brk &lt;- -2
+      }else if(t&lt;4){
+         brk &lt;- -1
+      }
 
       MA_name &lt;- KT.Stats$ManagedAreaName[KT.Stats$MonitoringID==Mon_IDs[i]]
       Mon_name &lt;- paste0(KT.Stats$ProgramID[KT.Stats$MonitoringID==Mon_IDs[i]],
@@ -2199,14 +2303,17 @@ variable that should determine groups for the plots</li>
          KT.Stats$ProgramLocationID[KT.Stats$MonitoringID==Mon_IDs[i]])
       
       p1 &lt;- ggplot(data=plot_data,
-                   aes(x=DecDate, y=ResultValue)) +
+                   aes(x=YearMonthDec, y=Mean)) +
+         geom_line(size=0.75, color=&quot;#333333&quot;, alpha=0.6) +
          geom_point(shape=21, size=3, color=&quot;#333333&quot;, fill=&quot;#cccccc&quot;,
                     alpha=0.75) +
          geom_line(data=KT.plot_data, aes(x=x, y=y),
-                     color=&quot;#000099&quot;, size=1.2, alpha=0.7) +
+                   color=&quot;#000099&quot;, size=1.2, alpha=0.7) +
          labs(title=paste0(MA_name, &quot;\n&quot;, Mon_name),
               subtitle=parameter,
               x=&quot;Year&quot;, y=paste0(&quot;Values (&quot;, unit, &quot;)&quot;)) +
+         scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
+                            breaks=seq(t_max_brk, t_min, brk)) +
          plot_theme
       
       # p2 &lt;- ggplot(data=plot_data,
@@ -2229,11 +2336,11 @@ variable that should determine groups for the plots</li>
       #                       axis.line=element_blank())
       
       ResultTable &lt;- KT.Stats[KT.Stats$MonitoringID==Mon_IDs[i], ] %&gt;%
-         select(RelativeDepth, N_Data, N_Years, EarliestYear, LatestYear,
-                Median, Independent, tau, p, SennSlope, SennIntercept)
+         select(RelativeDepth, N_Data, N_Years, Median, Independent, tau, p,
+                SennSlope, SennIntercept, ChiSquared, pChiSquared, Trend)
       
       t1 &lt;- ggtexttable(ResultTable, rows=NULL,
-                        theme=ttheme(base_size=11)) %&gt;%
+                        theme=ttheme(base_size=10)) %&gt;%
          tab_add_footnote(text=&quot;p &lt; 0.00005 appear as 0 due to rounding.\n
                           SennIntercept is intercept value at beginning of
                           record for monitoring location&quot;,

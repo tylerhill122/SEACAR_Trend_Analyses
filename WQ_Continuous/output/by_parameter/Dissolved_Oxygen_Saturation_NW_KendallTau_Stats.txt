@@ -1,68 +1,68 @@
-AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
-1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPAH|Dissolved Oxygen Saturation|bottom|289|2|2007|2008|2008-08-25|FALSE|||||||
-1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPAH2|Dissolved Oxygen Saturation|bottom|88|1|2019|2019|2019-12-31|FALSE|||||||
-1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPFS|Dissolved Oxygen Saturation|bottom|110|1|2019|2019|2019-12-30|FALSE|||||||
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbwq|Dissolved Oxygen Saturation|bottom|6412|21|2002|2022|2022-03-11|TRUE|94.3854166666667|1|-0.0585|0|-0.144791666666667|97.1316247800993|-1
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebwq|Dissolved Oxygen Saturation|bottom|7598|28|1995|2022|2022-03-11|TRUE|85.4557291666667|1|-0.1528|0|-0.653819444444444|93.150897606383|-1
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Dissolved Oxygen Saturation|bottom|8435|28|1995|2022|2022-02-21|TRUE|83.2572916666667|1|-0.0874|0|-0.313645833333333|89.2245681423611|-1
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Dissolved Oxygen Saturation|bottom|1710|6|2017|2022|2022-02-21|FALSE|||||||
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Dissolved Oxygen Saturation|bottom|1783|6|2017|2022|2022-02-21|FALSE|||||||
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apabpwq|Dissolved Oxygen Saturation|bottom|532|3|2020|2022|2022-02-22|FALSE|||||||
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apacpwq|Dissolved Oxygen Saturation|bottom|6259|21|2002|2022|2022-02-21|TRUE|93.5427083333333|1|0.1409|0|0.287708333333333|91.2034288194444|1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbwq|Dissolved Oxygen Saturation|bottom|6412|21|2002|2022|2022-03-11|TRUE|94.3854166666667|1|-0.0585|0|-0.144791666666667|97.1316247800993|-1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebwq|Dissolved Oxygen Saturation|bottom|7598|28|1995|2022|2022-03-11|TRUE|85.4557291666667|1|-0.1528|0|-0.653819444444444|93.150897606383|-1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Dissolved Oxygen Saturation|bottom|8435|28|1995|2022|2022-02-21|TRUE|83.2572916666667|1|-0.0874|0|-0.313645833333333|89.2245681423611|-1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Dissolved Oxygen Saturation|bottom|1710|6|2017|2022|2022-02-21|FALSE|||||||
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Dissolved Oxygen Saturation|bottom|1783|6|2017|2022|2022-02-21|FALSE|||||||
-4|Banana River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02313700|Dissolved Oxygen Saturation|surface|1019|4|2019|2022|2022-03-31|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02323566|Dissolved Oxygen Saturation|surface|1222|8|2015|2022|2022-03-31|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02326526|Dissolved Oxygen Saturation|surface|1193|7|2016|2022|2022-03-31|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSK|Dissolved Oxygen Saturation|bottom|2238|10|2004|2015|2015-04-26|TRUE|92.0552083333333|1|0.0312|0.0871|0.125628435680877|94.7183442112527|0
-5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSST|Dissolved Oxygen Saturation|bottom|399|2|2019|2020|2020-12-31|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSW|Dissolved Oxygen Saturation|bottom|1964|8|2009|2016|2016-07-27|FALSE|||||||
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-6|Biscayne Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-8|Boca Ciega Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-9|Cape Haze Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-11|Cockroach Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-13|Coupon Bight Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-14|Estero Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-15|Florida Keys National Marine Sanctuary||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-16|Fort Clinch State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P09|Dissolved Oxygen Saturation|Surface|82|10|2002|2016|2016-09-06|TRUE|95.69241|1|0.1388|0.073|0.491686868686868|94.2527566666667|0
-17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P26|Dissolved Oxygen Saturation|Surface|10|2|2011|2012|2012-05-20|FALSE|||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-19|Guana River Marsh Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-24|Lake Jackson Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-25|Lemon Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-26|Lignumvitae Key Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-28|Matlacha Pass Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-29|Mosquito Lagoon Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-48|Nature Coast Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSHS|Dissolved Oxygen Saturation|bottom|70|1|2016|2016|2016-07-12|FALSE|||||||
-31|North Fork St. Lucie Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-32|Oklawaha River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-33|Pellicer Creek Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-34|Pine Island Sound Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-35|Pinellas County Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-36|Rainbow Springs Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-37|Rocky Bayou State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-38|Rookery Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-40|St. Andrews State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-41|St. Joseph Bay Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPRH|Dissolved Oxygen Saturation|bottom|1892|7|2005|2011|2011-05-10|FALSE|||||||
-42|St. Joseph Bay State Buffer Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-43|St. Martins Marsh Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSCH|Dissolved Oxygen Saturation|bottom|777|3|2018|2020|2020-12-31|FALSE|||||||
-44|Terra Ceia Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-45|Tomoka Marsh Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-46|Wekiva River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||
-47|Yellow River Marsh Aquatic Preserve|467|Yellow River Marsh Aquatic Preserve Continuous Water Quality Monitoring|YRMAP1|Dissolved Oxygen Saturation|bottom|1518|5|2015|2019|2019-12-31|FALSE|||||||
-47|Yellow River Marsh Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P11|Dissolved Oxygen Saturation|Surface|37|7|2002|2012|2012-05-20|FALSE|||||||
+AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
+1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPAH|Dissolved Oxygen Saturation|bottom|11557|2|2007|2008|2008-08-25|FALSE|105.6||||||||
+1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPAH2|Dissolved Oxygen Saturation|bottom|8148|1|2019|2019|2019-12-31|FALSE|99.5||||||||
+1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPFS|Dissolved Oxygen Saturation|bottom|10494|1|2019|2019|2019-12-30|FALSE|96.6||||||||
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbwq|Dissolved Oxygen Saturation|bottom|525092|21|2002|2022|2022-03-11|TRUE|94.8|1|-0.1126|0.0209|-0.184545122396785|97.3085439190156|9.0627|0.6161|-1
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebwq|Dissolved Oxygen Saturation|bottom|560178|28|1995|2022|2022-03-11|TRUE|85.8|1|-0.2237|0|-0.685290537647489|91.3724285097553|5.6019|0.8986|-1
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Dissolved Oxygen Saturation|bottom|614829|28|1995|2022|2022-02-21|TRUE|84.1|1|-0.1597|0.0001|-0.414432350399762|87.1883217772599|9.8067|0.5479|-1
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Dissolved Oxygen Saturation|bottom|161667|6|2017|2022|2022-02-21|TRUE|75.6|1|-0.2065|0.0944|-1.27448401337931|80.4913589310043|7.0601|0.7942|0
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Dissolved Oxygen Saturation|bottom|170333|6|2017|2022|2022-02-21|TRUE|93.7|1|0.0161|0.7379|0.301114510387492|93.2001301918702|16.0851|0.138|0
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apabpwq|Dissolved Oxygen Saturation|bottom|50738|3|2020|2022|2022-02-22|FALSE|74.7||||||||
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apacpwq|Dissolved Oxygen Saturation|bottom|515646|21|2002|2022|2022-02-21|TRUE|94.1|1|0.2089|0|0.305864445939837|91.2390285205958|18.1787|0.0775|1
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbwq|Dissolved Oxygen Saturation|bottom|525092|21|2002|2022|2022-03-11|TRUE|94.8|1|-0.1126|0.0209|-0.184545122396785|97.3085439190156|9.0627|0.6161|-1
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebwq|Dissolved Oxygen Saturation|bottom|560178|28|1995|2022|2022-03-11|TRUE|85.8|1|-0.2237|0|-0.685290537647489|91.3724285097553|5.6019|0.8986|-1
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Dissolved Oxygen Saturation|bottom|614829|28|1995|2022|2022-02-21|TRUE|84.1|1|-0.1597|0.0001|-0.414432350399762|87.1883217772599|9.8067|0.5479|-1
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Dissolved Oxygen Saturation|bottom|161667|6|2017|2022|2022-02-21|TRUE|75.6|1|-0.2065|0.0944|-1.27448401337931|80.4913589310043|7.0601|0.7942|0
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Dissolved Oxygen Saturation|bottom|170333|6|2017|2022|2022-02-21|TRUE|93.7|1|0.0161|0.7379|0.301114510387492|93.2001301918702|16.0851|0.138|0
+4|Banana River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02313700|Dissolved Oxygen Saturation|surface|1019|4|2019|2022|2022-03-31|FALSE|6.5||||||||
+5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02323566|Dissolved Oxygen Saturation|surface|1222|8|2015|2022|2022-03-31|TRUE|1|1|-0.1964|0.0436|-0.123912151067324|2.0802534562212|11.0029|0.443|-2
+5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02326526|Dissolved Oxygen Saturation|surface|1193|7|2016|2022|2022-03-31|TRUE|9.2|1|-0.3333|0.2081|-0.0652058648095307|10.733342683497|1.0336|0.9999|0
+5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSK|Dissolved Oxygen Saturation|bottom|134196|10|2004|2015|2015-04-26|TRUE|91.8|1|0.1199|0.2612|0.363766336728286|93.3738987343439|9.8765|0.5415|0
+5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSST|Dissolved Oxygen Saturation|bottom|38066|2|2019|2020|2020-12-31|FALSE|94.7||||||||
+5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSW|Dissolved Oxygen Saturation|bottom|182158|8|2009|2016|2016-07-27|TRUE|75.8|1|-0.0465|0.6835|-0.25277015999771|79.1420870665758|8.647|0.6544|0
+6|Biscayne Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+8|Boca Ciega Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+9|Cape Haze Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+11|Cockroach Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+13|Coupon Bight Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+14|Estero Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+15|Florida Keys National Marine Sanctuary||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+16|Fort Clinch State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P09|Dissolved Oxygen Saturation|Surface|358|10|2002|2016|2016-09-06|TRUE|96.9125|1|0.107|0.2446|0.381323380566802|94.2646975160257|9.4769|0.578|0
+17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P26|Dissolved Oxygen Saturation|Surface|27|2|2011|2012|2012-05-20|FALSE|98.17||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+19|Guana River Marsh Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+24|Lake Jackson Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+25|Lemon Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+26|Lignumvitae Key Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+28|Matlacha Pass Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+29|Mosquito Lagoon Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+31|North Fork St. Lucie Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+32|Oklawaha River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+33|Pellicer Creek Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+34|Pine Island Sound Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+35|Pinellas County Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+36|Rainbow Springs Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+37|Rocky Bayou State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+38|Rookery Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+39|Rookery Bay National Estuarine Research Reserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+40|St. Andrews State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+41|St. Joseph Bay Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPRH|Dissolved Oxygen Saturation|bottom|89684|7|2005|2011|2011-05-10|TRUE|98.3|1|-0.0845|0.5078|-0.374908526223687|98.3378280022968|13.1279|0.285|0
+42|St. Joseph Bay State Buffer Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+43|St. Martins Marsh Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSCH|Dissolved Oxygen Saturation|bottom|73612|3|2018|2020|2020-12-31|FALSE|98.1||||||||
+44|Terra Ceia Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+45|Tomoka Marsh Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+46|Wekiva River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
+47|Yellow River Marsh Aquatic Preserve|467|Yellow River Marsh Aquatic Preserve Continuous Water Quality Monitoring|YRMAP1|Dissolved Oxygen Saturation|bottom|143488|5|2015|2019|2019-12-31|TRUE|86.9|1|0.0113|1|0.0212101284860893|84.5602774116743|14.7942|0.1921|0
+47|Yellow River Marsh Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P11|Dissolved Oxygen Saturation|Surface|126|7|2002|2012|2012-05-20|TRUE|79.929365|1|0.086|0.7119|1.09376303571429|79.967725952381|8.2348|0.4109|0
+48|Nature Coast Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSHS|Dissolved Oxygen Saturation|bottom|6555|1|2016|2016|2016-07-12|FALSE|82.6||||||||

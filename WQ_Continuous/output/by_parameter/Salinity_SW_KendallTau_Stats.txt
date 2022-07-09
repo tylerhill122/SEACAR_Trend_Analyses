@@ -1,82 +1,82 @@
-AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
-1|Alligator Harbor Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-2|Apalachicola Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-3|Apalachicola National Estuarine Research Reserve||||Salinity||0|0||||FALSE|||||||
-4|Banana River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-6|Biscayne Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-8|Boca Ciega Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-9|Cape Haze Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255123081321300|Salinity|surface|319|5|2008|2017|2017-03-06|FALSE|||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255432081303900|Salinity|surface|718|11|2007|2019|2019-03-06|TRUE|33|1|-0.1307|0|-0.166666666666667|34|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255443081314700|Salinity|surface|136|3|2007|2011|2011-03-06|FALSE|||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255532081314300|Salinity|surface|130|2|2010|2011|2011-03-06|FALSE|||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255534081324000|Salinity|surface|645|10|2008|2019|2019-03-06|TRUE|36|1|-0.0636|0.0013|-0.0454545454545455|36|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255654081350200|Salinity|surface|626|10|2008|2019|2019-03-06|TRUE|35.5|1|-0.0501|0.0718|0|36|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255732081363700|Salinity|surface|261|4|2012|2015|2015-03-06|FALSE|||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Salinity|bottom|6826|21|2002|2022|2022-02-09|TRUE|29.4958333333333|1|0.0051|0.6492|0.0044189288720536|31.3910069444444|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Salinity|bottom|6984|21|2002|2022|2022-02-09|TRUE|24.7869791666667|1|-0.0295|0.0003|-0.0420138888888898|28.4102132161458|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Salinity|bottom|7514|23|2000|2022|2022-02-09|TRUE|33.2364583333333|1|-0.1148|0|-0.0915972222222223|35.5561979166667|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Salinity|bottom|2098|7|2016|2022|2022-02-09|FALSE|||||||
-11|Cockroach Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-13|Coupon Bight Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Salinity|bottom|4922|17|2004|2021|2021-09-30|TRUE|33.4375|1|-0.1043|0|-0.0555989583333334|33.8662310606061|-1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Salinity|bottom|5423|18|2004|2021|2021-09-30|TRUE|30.5702127659574|1|-0.1706|0|-0.159027777777778|32.137359775641|-1
-14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB04|Salinity|bottom|143|1|2021|2021|2021-09-30|FALSE|||||||
-15|Florida Keys National Marine Sanctuary||||Salinity||0|0||||FALSE|||||||
-16|Fort Clinch State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-17|Fort Pickens State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|National Water Information System|02293252|Salinity|surface|193|3|2012|2014|2014-03-06|FALSE|||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|National Water Information System|02293254|Salinity|surface|185|3|2012|2014|2014-03-06|FALSE|||||||
-19|Guana River Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Salinity||0|0||||FALSE|||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-24|Lake Jackson Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-25|Lemon Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-26|Lignumvitae Key Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Salinity|bottom|4872|15|2005|2019|2019-12-31|TRUE|27.3630208333333|1|-0.2793|0|-0.414843749999999|30.6112294823232|-1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Salinity|bottom|4965|15|2005|2019|2019-12-31|TRUE|24.953125|1|-0.2792|0|-0.484895833333333|29.5460503472222|-1
-28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Salinity|bottom|4310|13|2009|2021|2021-10-13|TRUE|24.03125|1|-0.2067|0|-0.363932291666667|28.6788013599537|-1
-29|Mosquito Lagoon Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-48|Nature Coast Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-31|North Fork St. Lucie Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-32|Oklawaha River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-33|Pellicer Creek Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-34|Pine Island Sound Aquatic Preserve|7|National Water Information System|02293249|Salinity|surface|191|4|2010|2013|2013-03-06|FALSE|||||||
-35|Pinellas County Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-36|Rainbow Springs Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-37|Rocky Bayou State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Salinity|bottom|260|2|1997|1998|1998-02-13|FALSE|||||||
-38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Salinity|bottom|7024|22|2001|2022|2022-02-09|TRUE|33.0515625|1|-0.1667|0|-0.116927083333334|35.0822560541311|-1
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|02291330|Salinity|surface|196|3|2012|2014|2014-03-06|FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255123081321300|Salinity|surface|319|5|2008|2017|2017-03-06|FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255432081303900|Salinity|surface|718|11|2007|2019|2019-03-06|TRUE|33|1|-0.1307|0|-0.166666666666667|34|-1
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255443081314700|Salinity|surface|136|3|2007|2011|2011-03-06|FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255532081314300|Salinity|surface|130|2|2010|2011|2011-03-06|FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255534081324000|Salinity|surface|645|10|2008|2019|2019-03-06|TRUE|36|1|-0.0636|0.0013|-0.0454545454545455|36|-1
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255654081350200|Salinity|surface|626|10|2008|2019|2019-03-06|TRUE|35.5|1|-0.0501|0.0718|0|36|0
-39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255732081363700|Salinity|surface|261|4|2012|2015|2015-03-06|FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Salinity|bottom|260|2|1997|1998|1998-02-13|FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Salinity|bottom|6826|21|2002|2022|2022-02-09|TRUE|29.4958333333333|1|0.0051|0.6492|0.0044189288720536|31.3910069444444|0
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Salinity|bottom|6984|21|2002|2022|2022-02-09|TRUE|24.7869791666667|1|-0.0295|0.0003|-0.0420138888888898|28.4102132161458|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Salinity|bottom|7024|22|2001|2022|2022-02-09|TRUE|33.0515625|1|-0.1667|0|-0.116927083333334|35.0822560541311|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Salinity|bottom|7514|23|2000|2022|2022-02-09|TRUE|33.2364583333333|1|-0.1148|0|-0.0915972222222223|35.5561979166667|-1
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Salinity|bottom|2098|7|2016|2022|2022-02-09|FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Salinity|bottom|1433|5|1996|2000|2000-12-31|FALSE|||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Salinity||0|0||||FALSE|||||||
-40|St. Andrews State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-41|St. Joseph Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-42|St. Joseph Bay State Buffer Preserve||||Salinity||0|0||||FALSE|||||||
-43|St. Martins Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-44|Terra Ceia Aquatic Preserve|7|National Water Information System|023000825|Salinity|surface|65|1|2007|2007|2007-03-06|FALSE|||||||
-44|Terra Ceia Aquatic Preserve|7|National Water Information System|02300084|Salinity|surface|65|1|2007|2007|2007-03-06|FALSE|||||||
-44|Terra Ceia Aquatic Preserve|7|National Water Information System|023000842|Salinity|surface|60|1|2007|2007|2007-03-01|FALSE|||||||
-44|Terra Ceia Aquatic Preserve|473|Terra Ceia Aquatic Preserve Continuous Water Quality Monitoring|TCBH|Salinity|bottom|94|2|2008|2009|2009-03-03|FALSE|||||||
-45|Tomoka Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-46|Wekiva River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
-47|Yellow River Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||
+AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
+1|Alligator Harbor Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+2|Apalachicola Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+3|Apalachicola National Estuarine Research Reserve||||Salinity||0|0||||FALSE|||||||||
+4|Banana River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+5|Big Bend Seagrasses Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+6|Biscayne Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+8|Boca Ciega Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+9|Cape Haze Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255123081321300|Salinity|surface|319|5|2008|2017|2017-03-06|TRUE|35|1|-0.1667|0.5677|-0.173891625615764|36.1241379310345|0.7701|0.6804|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255432081303900|Salinity|surface|795|11|2007|2019|2019-03-06|TRUE|33|1|-0.1697|0.2235|-0.0742424242424245|33.8|0.0293|0.9855|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255443081314700|Salinity|surface|173|3|2007|2011|2011-03-06|FALSE|34||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255532081314300|Salinity|surface|130|2|2010|2011|2011-03-06|FALSE|33||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255534081324000|Salinity|surface|712|10|2008|2019|2019-03-06|TRUE|36|1|0.037|0.8359|0.0322580645161281|35.8371647509579|1.5765|0.4546|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255654081350200|Salinity|surface|690|10|2008|2019|2019-03-06|TRUE|36|1|-0.0074|1|-0.0271879021879033|35.3687683284458|0.0853|0.9582|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|National Water Information System|255732081363700|Salinity|surface|261|4|2012|2015|2015-03-06|FALSE|35||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Salinity|bottom|566717|21|2002|2022|2022-02-09|TRUE|29.8|1|0.0051|0.9254|0.00425906749454725|31.3091924236191|3.9662|0.9709|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Salinity|bottom|582262|21|2002|2022|2022-02-09|TRUE|26.2|1|-0.0364|0.4428|-0.0481721186861844|28.3016394403259|4.6637|0.9464|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Salinity|bottom|601067|23|2000|2022|2022-02-09|TRUE|33.3|1|-0.1292|0.0038|-0.0907910079271943|34.8600326690129|9.1054|0.6122|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Salinity|bottom|199302|7|2016|2022|2022-02-09|TRUE|30|1|0.0454|0.7889|0.142185091264802|32.3988258245189|11.2124|0.4256|0
+11|Cockroach Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Salinity||0|0||||FALSE|||||||||
+13|Coupon Bight Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Salinity|bottom|469026|17|2004|2021|2021-09-30|TRUE|33.6|1|-0.1206|0.0297|-0.0622081271298519|33.7499264277634|6.795|0.8154|-1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Salinity|bottom|511144|18|2004|2021|2021-09-30|TRUE|30.9|1|-0.2226|0|-0.170238973181013|31.9771637431666|4.3778|0.9575|-1
+14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB04|Salinity|bottom|13675|1|2021|2021|2021-09-30|FALSE|21.1||||||||
+15|Florida Keys National Marine Sanctuary||||Salinity||0|0||||FALSE|||||||||
+16|Fort Clinch State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+17|Fort Pickens State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|National Water Information System|02293252|Salinity|surface|193|3|2012|2014|2014-03-06|FALSE|32||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|National Water Information System|02293254|Salinity|surface|185|3|2012|2014|2014-03-06|FALSE|30||||||||
+19|Guana River Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Salinity||0|0||||FALSE|||||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+24|Lake Jackson Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+25|Lemon Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+26|Lignumvitae Key Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Salinity|bottom|465310|15|2005|2019|2019-12-31|TRUE|27.4|1|-0.3358|0|-0.453072893795959|31.1202378499811|3.9154|0.9723|-1
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Salinity|bottom|474415|15|2005|2019|2019-12-31|TRUE|25|1|-0.3317|0|-0.458480604849626|29.4799937123617|5.9492|0.8767|-1
+28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Salinity|bottom|412354|13|2009|2021|2021-10-13|TRUE|24.1|1|-0.2456|0.0001|-0.334200945211006|28.5826508331274|5.1365|0.9244|-1
+29|Mosquito Lagoon Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+31|North Fork St. Lucie Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+32|Oklawaha River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+33|Pellicer Creek Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+34|Pine Island Sound Aquatic Preserve|7|National Water Information System|02293249|Salinity|surface|261|4|2010|2013|2013-03-06|FALSE|33||||||||
+35|Pinellas County Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+36|Rainbow Springs Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+37|Rocky Bayou State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Salinity|bottom|12256|2|1997|1998|1998-02-13|FALSE|34.5||||||||
+38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Salinity|bottom|573453|22|2001|2022|2022-02-09|TRUE|33.1|1|-0.1645|0.0003|-0.110678632417041|34.7064781247086|10.4503|0.4904|-1
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|02291330|Salinity|surface|273|3|2012|2014|2014-03-06|FALSE|34||||||||
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255123081321300|Salinity|surface|319|5|2008|2017|2017-03-06|TRUE|35|1|-0.1667|0.5677|-0.173891625615764|36.1241379310345|0.7701|0.6804|0
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255432081303900|Salinity|surface|795|11|2007|2019|2019-03-06|TRUE|33|1|-0.1697|0.2235|-0.0742424242424245|33.8|0.0293|0.9855|0
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255443081314700|Salinity|surface|173|3|2007|2011|2011-03-06|FALSE|34||||||||
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255532081314300|Salinity|surface|130|2|2010|2011|2011-03-06|FALSE|33||||||||
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255534081324000|Salinity|surface|712|10|2008|2019|2019-03-06|TRUE|36|1|0.037|0.8359|0.0322580645161281|35.8371647509579|1.5765|0.4546|0
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255654081350200|Salinity|surface|690|10|2008|2019|2019-03-06|TRUE|36|1|-0.0074|1|-0.0271879021879033|35.3687683284458|0.0853|0.9582|0
+39|Rookery Bay National Estuarine Research Reserve|7|National Water Information System|255732081363700|Salinity|surface|261|4|2012|2015|2015-03-06|FALSE|35||||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Salinity|bottom|12256|2|1997|1998|1998-02-13|FALSE|34.5||||||||
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Salinity|bottom|566717|21|2002|2022|2022-02-09|TRUE|29.8|1|0.0051|0.9254|0.00425906749454725|31.3091924236191|3.9662|0.9709|0
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfuwq|Salinity|bottom|582262|21|2002|2022|2022-02-09|TRUE|26.2|1|-0.0364|0.4428|-0.0481721186861844|28.3016394403259|4.6637|0.9464|0
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Salinity|bottom|573453|22|2001|2022|2022-02-09|TRUE|33.1|1|-0.1645|0.0003|-0.110678632417041|34.7064781247086|10.4503|0.4904|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Salinity|bottom|601067|23|2000|2022|2022-02-09|TRUE|33.3|1|-0.1292|0.0038|-0.0907910079271943|34.8600326690129|9.1054|0.6122|-1
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Salinity|bottom|199302|7|2016|2022|2022-02-09|TRUE|30|1|0.0454|0.7889|0.142185091264802|32.3988258245189|11.2124|0.4256|0
+39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Salinity|bottom|68446|5|1996|2000|2000-12-31|TRUE|21.1|1|0.3067|0.0358|2.05665134449077|16.7415118523488|12.9829|0.2944|1
+40|St. Andrews State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+41|St. Joseph Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+42|St. Joseph Bay State Buffer Preserve||||Salinity||0|0||||FALSE|||||||||
+43|St. Martins Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+44|Terra Ceia Aquatic Preserve|7|National Water Information System|023000825|Salinity|surface|124|1|2007|2007|2007-03-06|FALSE|8.2||||||||
+44|Terra Ceia Aquatic Preserve|7|National Water Information System|02300084|Salinity|surface|127|1|2007|2007|2007-03-06|FALSE|7.7||||||||
+44|Terra Ceia Aquatic Preserve|7|National Water Information System|023000842|Salinity|surface|100|1|2007|2007|2007-03-01|FALSE|28||||||||
+44|Terra Ceia Aquatic Preserve|473|Terra Ceia Aquatic Preserve Continuous Water Quality Monitoring|TCBH|Salinity|bottom|8304|2|2008|2009|2009-03-03|FALSE|32.6||||||||
+45|Tomoka Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+46|Wekiva River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+47|Yellow River Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
+48|Nature Coast Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||

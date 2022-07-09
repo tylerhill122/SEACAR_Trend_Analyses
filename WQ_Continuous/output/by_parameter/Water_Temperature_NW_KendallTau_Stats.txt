@@ -1,71 +1,71 @@
-AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|Trend
-1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPAH|Water Temperature|bottom|307|2|2007|2008|2008-08-25|FALSE|||||||
-1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPAH2|Water Temperature|bottom|88|1|2019|2019|2019-12-31|FALSE|||||||
-1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPFS|Water Temperature|bottom|110|1|2019|2019|2019-12-30|FALSE|||||||
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbwq|Water Temperature|bottom|6590|21|2002|2022|2022-03-11|TRUE|23.2291666666667|1|0.0499|0|0.025416666666667|23.301259765625|1
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebwq|Water Temperature|bottom|8922|28|1995|2022|2022-03-11|TRUE|24.0604166666667|1|0.0453|0|0.0186848958333334|23.4539700776144|1
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Water Temperature|bottom|9056|28|1995|2022|2022-02-21|TRUE|24.0328125|1|0.0799|0|0.0331845238095238|23.1644484747024|1
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Water Temperature|bottom|1798|6|2017|2022|2022-02-21|FALSE|||||||
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Water Temperature|bottom|1805|6|2017|2022|2022-02-21|FALSE|||||||
-3|Apalachicola National Estuarine Research Reserve|5|National Data Buoy Center|APCF1|Water Temperature|surface|4966|17|2005|2021|2021-12-31|TRUE|23.6251582278481|1|0.0502|0|0.0321129943502825|22.8941766883084|1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apabpwq|Water Temperature|bottom|532|3|2020|2022|2022-02-22|FALSE|||||||
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apacpwq|Water Temperature|bottom|6830|21|2002|2022|2022-02-21|TRUE|23.5802083333333|1|0.0666|0|0.03125|23.2603117766204|1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbwq|Water Temperature|bottom|6590|21|2002|2022|2022-03-11|TRUE|23.2291666666667|1|0.0499|0|0.025416666666667|23.301259765625|1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebwq|Water Temperature|bottom|8922|28|1995|2022|2022-03-11|TRUE|24.0604166666667|1|0.0453|0|0.0186848958333334|23.4539700776144|1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Water Temperature|bottom|9056|28|1995|2022|2022-02-21|TRUE|24.0328125|1|0.0799|0|0.0331845238095238|23.1644484747024|1
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Water Temperature|bottom|1798|6|2017|2022|2022-02-21|FALSE|||||||
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Water Temperature|bottom|1805|6|2017|2022|2022-02-21|FALSE|||||||
-4|Banana River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02313700|Water Temperature|surface|955|4|2019|2022|2022-03-31|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02323566|Water Temperature|surface|1272|8|2015|2022|2022-03-31|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02326526|Water Temperature|surface|1193|7|2016|2022|2022-03-31|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|291652083064100|Water Temperature|surface|66|1|2000|2000|2000-03-06|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSK|Water Temperature|bottom|2582|10|2004|2015|2015-04-26|TRUE|21.7197916666667|1|-0.2136|0|-0.361458333333334|25.0107036884901|-1
-5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSST|Water Temperature|bottom|399|2|2019|2020|2020-12-31|FALSE|||||||
-5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSW|Water Temperature|bottom|2403|8|2009|2016|2016-07-27|FALSE|||||||
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-6|Biscayne Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-8|Boca Ciega Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-9|Cape Haze Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-11|Cockroach Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-13|Coupon Bight Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-14|Estero Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-15|Florida Keys National Marine Sanctuary||||Water Temperature||0|0||||FALSE|||||||
-16|Fort Clinch State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|EX4|Water Temperature|Surface|1|1|2002|2002|2002-03-06|FALSE|||||||
-17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P09|Water Temperature|Surface|87|10|2002|2016|2016-09-06|TRUE|25.735|1|0.1071|0.2259|0.0587299999999999|22.9405542410714|0
-17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P26|Water Temperature|Surface|10|2|2011|2012|2012-05-20|FALSE|||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-19|Guana River Marsh Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Water Temperature||0|0||||FALSE|||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-24|Lake Jackson Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-25|Lemon Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-26|Lignumvitae Key Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-28|Matlacha Pass Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-29|Mosquito Lagoon Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-48|Nature Coast Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSHS|Water Temperature|bottom|3102|12|2004|2016|2016-07-12|TRUE|24.546875|1|0.0215|0.0524|0.0250000000000004|24.3909381200397|0
-31|North Fork St. Lucie Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-32|Oklawaha River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-33|Pellicer Creek Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-34|Pine Island Sound Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-35|Pinellas County Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-36|Rainbow Springs Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-37|Rocky Bayou State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-38|Rookery Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-39|Rookery Bay National Estuarine Research Reserve||||Water Temperature||0|0||||FALSE|||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Water Temperature||0|0||||FALSE|||||||
-40|St. Andrews State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-41|St. Joseph Bay Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPRH|Water Temperature|bottom|2040|7|2005|2011|2011-05-10|FALSE|||||||
-42|St. Joseph Bay State Buffer Preserve||||Water Temperature||0|0||||FALSE|||||||
-43|St. Martins Marsh Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSCH|Water Temperature|bottom|789|3|2018|2020|2020-12-31|FALSE|||||||
-44|Terra Ceia Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-45|Tomoka Marsh Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-46|Wekiva River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||
-47|Yellow River Marsh Aquatic Preserve|467|Yellow River Marsh Aquatic Preserve Continuous Water Quality Monitoring|YRMAP1|Water Temperature|bottom|1745|5|2015|2019|2019-12-31|FALSE|||||||
-47|Yellow River Marsh Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P11|Water Temperature|Surface|40|7|2002|2012|2012-05-20|FALSE|||||||
+AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
+1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPAH|Water Temperature|bottom|13034|2|2007|2008|2008-08-25|FALSE|20.9||||||||
+1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPAH2|Water Temperature|bottom|8233|1|2019|2019|2019-12-31|FALSE|18.4||||||||
+1|Alligator Harbor Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPFS|Water Temperature|bottom|10494|1|2019|2019|2019-12-30|FALSE|21.1||||||||
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbwq|Water Temperature|bottom|543710|21|2002|2022|2022-03-11|TRUE|23.1|1|0.0994|0.0365|0.0240433933411914|22.8915225353368|6.5716|0.8326|1
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebwq|Water Temperature|bottom|661756|28|1995|2022|2022-03-11|TRUE|24.1|1|0.1044|0.0105|0.0199513798502337|22.9498144631629|9.5641|0.57|1
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Water Temperature|bottom|665844|28|1995|2022|2022-02-21|TRUE|24.1|1|0.1511|0.0002|0.0368642589443265|22.61306566662|9.2634|0.5976|1
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Water Temperature|bottom|171930|6|2017|2022|2022-02-21|TRUE|22.3|1|-0.2129|0.0523|-0.237139484966797|24.2268368363842|11.6492|0.3906|0
+2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Water Temperature|bottom|172562|6|2017|2022|2022-02-21|TRUE|23|1|-0.271|0.0192|-0.144867063425938|23.7962455545084|11.5276|0.4002|-1
+3|Apalachicola National Estuarine Research Reserve|5|National Data Buoy Center|APCF1|Water Temperature|surface|1095039|17|2005|2021|2021-12-31|TRUE|23.5|1|0.0904|0.158|0.0423556795808379|22.6098586935089|5.7336|0.8905|0
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apabpwq|Water Temperature|bottom|50737|3|2020|2022|2022-02-22|FALSE|21.8||||||||
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apacpwq|Water Temperature|bottom|566848|21|2002|2022|2022-02-21|TRUE|23.5|1|0.124|0.008|0.0319013532695324|23.0060062372891|7.2439|0.779|1
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbwq|Water Temperature|bottom|543710|21|2002|2022|2022-03-11|TRUE|23.1|1|0.0994|0.0365|0.0240433933411914|22.8915225353368|6.5716|0.8326|1
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebwq|Water Temperature|bottom|661756|28|1995|2022|2022-03-11|TRUE|24.1|1|0.1044|0.0105|0.0199513798502337|22.9498144631629|9.5641|0.57|1
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Water Temperature|bottom|665844|28|1995|2022|2022-02-21|TRUE|24.1|1|0.1511|0.0002|0.0368642589443265|22.61306566662|9.2634|0.5976|1
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Water Temperature|bottom|171930|6|2017|2022|2022-02-21|TRUE|22.3|1|-0.2129|0.0523|-0.237139484966797|24.2268368363842|11.6492|0.3906|0
+3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Water Temperature|bottom|172562|6|2017|2022|2022-02-21|TRUE|23|1|-0.271|0.0192|-0.144867063425938|23.7962455545084|11.5276|0.4002|-1
+4|Banana River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02313700|Water Temperature|surface|955|4|2019|2022|2022-03-31|FALSE|24.9||||||||
+5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02323566|Water Temperature|surface|1272|8|2015|2022|2022-03-31|TRUE|22.7|1|0.3988|0.0005|0.0411674347158219|22.5341782536151|13.7718|0.2459|1
+5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02326526|Water Temperature|surface|1193|7|2016|2022|2022-03-31|TRUE|21.8|1|-0.203|0.5569|-0.127874551971326|24.7247126436782|10.6236|0.4753|0
+5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|291652083064100|Water Temperature|surface|92|1|2000|2000|2000-03-06|FALSE|18.35||||||||
+5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSK|Water Temperature|bottom|179213|10|2004|2015|2015-04-26|TRUE|21.7|1|-0.3321|0.0002|-0.37194300709395|25.1923849243935|7.7847|0.7324|-1
+5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSST|Water Temperature|bottom|38066|2|2019|2020|2020-12-31|FALSE|22.9||||||||
+5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSW|Water Temperature|bottom|227996|8|2009|2016|2016-07-27|TRUE|23.7|1|0.0174|0.9025|0.00960210119952798|23.0851109160505|12.0767|0.3579|0
+6|Biscayne Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+8|Boca Ciega Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+9|Cape Haze Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+11|Cockroach Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Water Temperature||0|0||||FALSE|||||||||
+13|Coupon Bight Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+14|Estero Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+15|Florida Keys National Marine Sanctuary||||Water Temperature||0|0||||FALSE|||||||||
+16|Fort Clinch State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|EX4|Water Temperature|Surface|2|1|2002|2002|2002-03-06|FALSE|13.62||||||||
+17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P09|Water Temperature|Surface|373|10|2002|2016|2016-09-06|TRUE|26.3914|1|0.0958|0.4485|0.045182857142857|23.785652899531|9.9653|0.5335|0
+17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P26|Water Temperature|Surface|27|2|2011|2012|2012-05-20|FALSE|29.64||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+19|Guana River Marsh Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Water Temperature||0|0||||FALSE|||||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+24|Lake Jackson Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+25|Lemon Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+26|Lignumvitae Key Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+28|Matlacha Pass Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+29|Mosquito Lagoon Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+31|North Fork St. Lucie Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+32|Oklawaha River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+33|Pellicer Creek Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+34|Pine Island Sound Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+35|Pinellas County Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+36|Rainbow Springs Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+37|Rocky Bayou State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+38|Rookery Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+39|Rookery Bay National Estuarine Research Reserve||||Water Temperature||0|0||||FALSE|||||||||
+40|St. Andrews State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+41|St. Joseph Bay Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPRH|Water Temperature|bottom|97321|7|2005|2011|2011-05-10|TRUE|22.6|1|-0.0648|0.5078|-0.0707521263240594|21.5836833475257|8.1102|0.7034|0
+42|St. Joseph Bay State Buffer Preserve||||Water Temperature||0|0||||FALSE|||||||||
+43|St. Martins Marsh Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSCH|Water Temperature|bottom|74868|3|2018|2020|2020-12-31|FALSE|25.6||||||||
+44|Terra Ceia Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+45|Tomoka Marsh Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+46|Wekiva River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
+47|Yellow River Marsh Aquatic Preserve|467|Yellow River Marsh Aquatic Preserve Continuous Water Quality Monitoring|YRMAP1|Water Temperature|bottom|166637|5|2015|2019|2019-12-31|TRUE|22.6|1|-0.1167|0.358|-0.146069733229559|22.7691992303694|11.26|0.4217|0
+47|Yellow River Marsh Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P11|Water Temperature|Surface|136|7|2002|2012|2012-05-20|TRUE|26.21545|1|0.1333|0.496|0.103061224489796|25.9609165625|6.5312|0.6858|0
+48|Nature Coast Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSHS|Water Temperature|bottom|244110|12|2004|2016|2016-07-12|TRUE|24.5|1|0.0468|0.5239|0.0285933260609109|23.7692316561365|8.6115|0.6577|0
