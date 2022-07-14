@@ -14,54 +14,18 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|Salinity|bottom|656563|28|1995|2022|2022-02-21|TRUE|7.6|1|0.057|0.1717|0.0404016341715994|7.33703164134352|8.3662|0.6802|0
 3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|Salinity|bottom|171930|6|2017|2022|2022-02-21|TRUE|0.1|1|-0.1387|0.2532|-0.00234981674409984|0.115530741123667|13.7463|0.2474|0
 3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|Salinity|bottom|171934|6|2017|2022|2022-02-21|TRUE|26|1|-0.3677|0.0017|-1.0201870245732|26.5598599616958|7.2749|0.7764|-1
-4|Banana River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
 5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|291652083064100|Salinity|surface|123|1|2000|2000|2000-03-06|FALSE|19||||||||
 5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSK|Salinity|bottom|178356|10|2004|2015|2015-04-26|TRUE|29.6|1|-0.2176|0.0197|-0.206897248965357|30.7669455059511|4.432|0.9555|-1
 5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSST|Salinity|bottom|35012|2|2019|2020|2020-12-31|FALSE|28.9||||||||
 5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSW|Salinity|bottom|221696|8|2009|2016|2016-07-27|TRUE|7.5|1|-0.2342|0.016|-0.650260403937489|10.386957006027|8.6594|0.6533|-1
-6|Biscayne Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-8|Boca Ciega Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-9|Cape Haze Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-11|Cockroach Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Salinity||0|0||||FALSE|||||||||
-13|Coupon Bight Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-14|Estero Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-15|Florida Keys National Marine Sanctuary||||Salinity||0|0||||FALSE|||||||||
-16|Fort Clinch State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
 17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|EX4|Salinity|Surface|2|1|2002|2002|2002-03-06|FALSE|33.65||||||||
 17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P09|Salinity|Surface|373|10|2002|2016|2016-09-06|TRUE|25.9138|1|-0.175|0.1296|-0.267083333333334|28.2451715277778|11.3498|0.4144|0
 17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P26|Salinity|Surface|27|2|2011|2012|2012-05-20|FALSE|26.38||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-19|Guana River Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Salinity||0|0||||FALSE|||||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-24|Lake Jackson Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-25|Lemon Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-26|Lignumvitae Key Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-28|Matlacha Pass Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-29|Mosquito Lagoon Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-31|North Fork St. Lucie Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-32|Oklawaha River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-33|Pellicer Creek Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-34|Pine Island Sound Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-35|Pinellas County Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-36|Rainbow Springs Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
 37|Rocky Bayou State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-38|Rookery Bay Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-39|Rookery Bay National Estuarine Research Reserve||||Salinity||0|0||||FALSE|||||||||
 40|St. Andrews State Park Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
 41|St. Joseph Bay Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPRH|Salinity|bottom|90747|7|2005|2011|2011-05-10|TRUE|32.4|1|-0.1211|0.2697|-0.157316753052125|32.3218099056421|3.208|0.9877|0
 42|St. Joseph Bay State Buffer Preserve||||Salinity||0|0||||FALSE|||||||||
 43|St. Martins Marsh Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSCH|Salinity|bottom|73612|3|2018|2020|2020-12-31|FALSE|24.8||||||||
-44|Terra Ceia Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-45|Tomoka Marsh Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
-46|Wekiva River Aquatic Preserve||||Salinity||0|0||||FALSE|||||||||
 47|Yellow River Marsh Aquatic Preserve|467|Yellow River Marsh Aquatic Preserve Continuous Water Quality Monitoring|YRMAP1|Salinity|bottom|151177|5|2015|2019|2019-12-28|TRUE|13.6|1|-0.0667|0.6206|-0.421501313358125|12.4992526824776|9.28|0.5961|0
 47|Yellow River Marsh Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P11|Salinity|Surface|136|7|2002|2012|2012-05-20|TRUE|10.0516|1|0.0571|0.6499|0.15389375|11.5169867724868|6.5824|0.6805|0
 48|Nature Coast Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSHS|Salinity|bottom|235670|12|2004|2016|2016-07-12|TRUE|18.4|1|-0.2177|0.005|-0.383780383734841|21.3293900460603|5.3322|0.914|-1

@@ -1,18 +1,9 @@
 AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-1|Alligator Harbor Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-2|Apalachicola Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-3|Apalachicola National Estuarine Research Reserve||||Water Temperature||0|0||||FALSE|||||||||
-4|Banana River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-5|Big Bend Seagrasses Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
 6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBBB14|Water Temperature|bottom|93435|3|2019|2021|2021-12-31|FALSE|27.4||||||||
 6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBJT71|Water Temperature|bottom|98821|3|2019|2021|2021-12-31|FALSE|27.7||||||||
 6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBLR03|Water Temperature|bottom|86746|3|2019|2021|2021-12-31|FALSE|28||||||||
 6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBMRDW|Water Temperature|bottom|25993|1|2021|2021|2021-12-31|FALSE|28.3||||||||
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|986|Water Temperature on Coral Reefs in the Florida Keys|6|Water Temperature|Surface|47891|8|2013|2020|2020-07-09|TRUE|26.67|1|0.1746|0.0623|0.065789060593456|26.2836827354918|7.0977|0.7911|0
-8|Boca Ciega Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-9|Cape Haze Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-11|Cockroach Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|5|National Data Buoy Center|LKWF1|Water Temperature|surface|891506|13|2006|2021|2021-12-31|TRUE|26.4|1|0.2829|0|0.0602684919227541|26.0407769447654|6.0334|0.8711|1
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|986|Water Temperature on Coral Reefs in the Florida Keys|1|Water Temperature|Surface|50591|8|2013|2020|2020-05-27|TRUE|26.35|1|0.1747|0.0666|0.0568365607884545|26.3885730577114|6.6909|0.8235|0
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|986|Water Temperature on Coral Reefs in the Florida Keys|2|Water Temperature|Surface|46638|8|2013|2020|2020-08-04|TRUE|26.57|1|0.2063|0.027|0.0496683277458052|26.532669466892|11.609|0.3937|1
@@ -36,7 +27,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|986|Water Temperature on Coral Reefs in the Florida Keys|97|Water Temperature|Surface|82075|11|2010|2020|2020-07-27|TRUE|26.4|1|0.3282|0|0.0785795300835288|26.1465937007517|7.4987|0.7574|1
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|986|Water Temperature on Coral Reefs in the Florida Keys|98|Water Temperature|Surface|73685|11|2010|2020|2020-08-06|TRUE|26.32|1|0.3811|0|0.112454276654722|26.1169030517132|8.7223|0.6475|1
 13|Coupon Bight Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-14|Estero Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
 15|Florida Keys National Marine Sanctuary|2|Atlantic Oceanographic and Meteorological Laboratory (AOML) South Florida Program Moored Instrument Array|1B|Water Temperature|Surface|86204|6|2003|2008|2008-06-13|TRUE|26.3845|1|0.259|0.0392|0.162792876344085|25.7282640710754|16.6535|0.1186|1
 15|Florida Keys National Marine Sanctuary|5|National Data Buoy Center|KYWF1|Water Temperature|surface|1225747|17|2005|2021|2021-12-31|TRUE|27.5|1|0.2724|0|0.0718095054612718|26.7169879795111|7.1785|0.7844|1
 15|Florida Keys National Marine Sanctuary|5|National Data Buoy Center|LONF1|Water Temperature|surface|107173|15|2005|2019|2019-03-12|TRUE|26.3|1|0.1852|0.0022|0.0606754032258063|26.0583224760214|3.2552|0.9869|1
@@ -90,36 +80,4 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|986|Water Temperature on Coral Reefs in the Florida Keys|80|Water Temperature|Surface|152221|12|2009|2020|2020-09-15|TRUE|26.96|1|0.2457|0.0003|0.0692500000000003|26.9669973110495|14.378|0.2128|1
 15|Florida Keys National Marine Sanctuary|986|Water Temperature on Coral Reefs in the Florida Keys|81|Water Temperature|Surface|37351|5|2016|2020|2020-07-16|TRUE|27.16|1|0.3611|0.0142|0.141217741935485|26.5791920313705|5.0385|0.9293|1
 15|Florida Keys National Marine Sanctuary|986|Water Temperature on Coral Reefs in the Florida Keys|83|Water Temperature|Surface|113109|14|2006|2020|2020-08-14|TRUE|25.69|1|0.0662|0.2827|0.0259733885837097|25.9135383412905|8.9764|0.6241|0
-16|Fort Clinch State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-17|Fort Pickens State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-19|Guana River Marsh Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Water Temperature||0|0||||FALSE|||||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-24|Lake Jackson Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-25|Lemon Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
 26|Lignumvitae Key Aquatic Preserve|7|National Water Information System|245323080410100|Water Temperature|surface|165|3|2002|2004|2004-03-06|FALSE|22.9||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-28|Matlacha Pass Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-29|Mosquito Lagoon Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-31|North Fork St. Lucie Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-32|Oklawaha River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-33|Pellicer Creek Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-34|Pine Island Sound Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-35|Pinellas County Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-36|Rainbow Springs Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-37|Rocky Bayou State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-38|Rookery Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-39|Rookery Bay National Estuarine Research Reserve||||Water Temperature||0|0||||FALSE|||||||||
-40|St. Andrews State Park Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-41|St. Joseph Bay Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-42|St. Joseph Bay State Buffer Preserve||||Water Temperature||0|0||||FALSE|||||||||
-43|St. Martins Marsh Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-44|Terra Ceia Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-45|Tomoka Marsh Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-46|Wekiva River Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-47|Yellow River Marsh Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
-48|Nature Coast Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||

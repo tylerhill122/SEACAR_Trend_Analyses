@@ -1,11 +1,4 @@
 AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-1|Alligator Harbor Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-2|Apalachicola Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-3|Apalachicola National Estuarine Research Reserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-4|Banana River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-5|Big Bend Seagrasses Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-6|Biscayne Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 8|Boca Ciega Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 9|Cape Haze Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbfbwq|Dissolved Oxygen Saturation|bottom|473769|19|2002|2022|2022-02-09|TRUE|78.8|1|0.0465|0.3861|0.0665547734519918|77.471154036358|8.5228|0.6658|0
@@ -13,36 +6,16 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Dissolved Oxygen Saturation|bottom|525748|20|2000|2022|2022-02-09|TRUE|65.7|1|-0.1718|0.0004|-0.257268840076514|74.181404043608|13.5786|0.2572|-1
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Dissolved Oxygen Saturation|bottom|199210|7|2016|2022|2022-02-09|TRUE|73.4|1|0.0435|0.7889|0.130046502014678|74.8855284694891|6.0824|0.8678|0
 11|Cockroach Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-13|Coupon Bight Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB02|Dissolved Oxygen Saturation|bottom|388942|17|2004|2021|2021-09-30|TRUE|87.4|1|0.4224|0|0.818566471485866|80.1523707177864|3.6263|0.9796|1
 14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB03|Dissolved Oxygen Saturation|bottom|426534|18|2004|2021|2021-09-30|TRUE|83.4|1|0.2335|0|0.449161413768668|81.6301226114137|9.0948|0.6131|1
 14|Estero Bay Aquatic Preserve|474|Estero Bay Aquatic Preserve Continuous Water Quality Monitoring|EB04|Dissolved Oxygen Saturation|bottom|10983|1|2021|2021|2021-09-30|FALSE|74.5||||||||
-15|Florida Keys National Marine Sanctuary||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-16|Fort Clinch State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-17|Fort Pickens State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-19|Guana River Marsh Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-24|Lake Jackson Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 25|Lemon Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-26|Lignumvitae Key Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP1A|Dissolved Oxygen Saturation|bottom|448553|15|2005|2019|2019-12-31|TRUE|87.9|1|-0.1495|0.0108|-0.267560305011889|91.6271578818762|5.2013|0.921|-1
 28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP2B|Dissolved Oxygen Saturation|bottom|469681|15|2005|2019|2019-12-31|TRUE|90.8|1|-0.0871|0.1392|-0.253360039148557|92.5762947719272|5.082|0.9271|0
 28|Matlacha Pass Aquatic Preserve|512|Matlacha Pass Aquatic Preserve Continuous Water Quality Monitoring Program|MP3C|Dissolved Oxygen Saturation|bottom|390970|13|2009|2021|2021-10-13|TRUE|79.6|1|0.2574|0.0001|1.17548326858511|68.1882098034138|12.3976|0.3345|1
-29|Mosquito Lagoon Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-31|North Fork St. Lucie Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-32|Oklawaha River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-33|Pellicer Creek Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 34|Pine Island Sound Aquatic Preserve|7|National Water Information System|02293249|Dissolved Oxygen Saturation|surface|188|4|2010|2013|2013-03-06|FALSE|9.25||||||||
 35|Pinellas County Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-36|Rainbow Springs Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-37|Rocky Bayou State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Dissolved Oxygen Saturation|bottom|10441|2|1997|1998|1998-02-13|FALSE|102.4||||||||
 38|Rookery Bay Aquatic Preserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkblhwq|Dissolved Oxygen Saturation|bottom|498386|19|2001|2022|2022-02-16|TRUE|81.8|1|0.0503|0.2961|0.0570496795743918|80.8958487719127|19.9491|0.046|0
 39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbbmwq|Dissolved Oxygen Saturation|bottom|10441|2|1997|1998|1998-02-13|FALSE|102.4||||||||
@@ -52,12 +25,4 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbmbwq|Dissolved Oxygen Saturation|bottom|525748|20|2000|2022|2022-02-09|TRUE|65.7|1|-0.1718|0.0004|-0.257268840076514|74.181404043608|13.5786|0.2572|-1
 39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbpbwq|Dissolved Oxygen Saturation|bottom|199210|7|2016|2022|2022-02-09|TRUE|73.4|1|0.0435|0.7889|0.130046502014678|74.8855284694891|6.0824|0.8678|0
 39|Rookery Bay National Estuarine Research Reserve|354|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|rkbuhwq|Dissolved Oxygen Saturation|bottom|58164|5|1996|2000|2000-12-31|TRUE|49.7|1|0|1|-0.0239212853102249|50.5286705795889|7.0993|0.791|0
-40|St. Andrews State Park Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-41|St. Joseph Bay Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-42|St. Joseph Bay State Buffer Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-43|St. Martins Marsh Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
 44|Terra Ceia Aquatic Preserve|473|Terra Ceia Aquatic Preserve Continuous Water Quality Monitoring|TCBH|Dissolved Oxygen Saturation|bottom|8153|2|2008|2009|2009-03-03|FALSE|59.5||||||||
-45|Tomoka Marsh Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-46|Wekiva River Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-47|Yellow River Marsh Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||
-48|Nature Coast Aquatic Preserve||||Dissolved Oxygen Saturation||0|0||||FALSE|||||||||

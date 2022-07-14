@@ -119,7 +119,9 @@ if(param_name=="Water_Temperature"){
    data <- data[data$ResultValue>=0,]
 }
 
-data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
+MA_All_Region <- MA_All[MA_All$Region==region,]
+
+data <- merge.data.frame(MA_All_Region[,c("AreaID", "ManagedAreaName")],
                           data, by="ManagedAreaName", all=TRUE)
 
 data <- data %>%

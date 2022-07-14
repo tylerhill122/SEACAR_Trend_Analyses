@@ -14,53 +14,17 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaeswq|pH|bottom|620457|28|1995|2022|2022-02-21|TRUE|7.5|1|-0.1225|0.0023|-0.00856796467384742|7.62595459852794|2.3221|0.997|-1
 3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apalmwq|pH|bottom|164208|6|2017|2022|2022-02-21|TRUE|7.1|1|-0.071|0.6395|-0.0167943638180508|7.1315498150593|8.594|0.6593|0
 3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcwq|pH|bottom|167296|6|2017|2022|2022-02-21|TRUE|8.1|1|-0.2129|0.0944|-0.0129627801498162|8.12263164193845|11.2507|0.4225|0
-4|Banana River Aquatic Preserve||||pH||0|0||||FALSE|||||||||
 5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02313700|pH|surface|989|4|2019|2022|2022-03-31|FALSE|7.5||||||||
 5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02323566|pH|surface|1169|8|2015|2022|2022-03-31|TRUE|7.2|1|0.1147|0.8789|0|6.96666666666667|9.7931|0.4588|0
 5|Big Bend Seagrasses Aquatic Preserve|7|National Water Information System|02326526|pH|surface|1030|7|2016|2022|2022-03-31|TRUE|8.1|1|0.0125|0.5251|0.0148275862068967|8.11306100981767|12.6249|0.3185|0
 5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSK|pH|bottom|168278|10|2004|2015|2015-04-26|TRUE|8.1|1|-0.3661|0|-0.0356176054271706|8.2775468312614|3.7467|0.9767|-1
 5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSST|pH|bottom|36627|2|2019|2020|2020-12-31|FALSE|8||||||||
 5|Big Bend Seagrasses Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSSW|pH|bottom|224733|8|2009|2016|2016-07-27|TRUE|7.6|1|-0.2889|0.0017|-0.0556340712871482|7.80465481433963|5.0142|0.9305|-1
-6|Biscayne Bay Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-8|Boca Ciega Bay Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-9|Cape Haze Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-11|Cockroach Bay Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area||||pH||0|0||||FALSE|||||||||
-13|Coupon Bight Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-14|Estero Bay Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-15|Florida Keys National Marine Sanctuary||||pH||0|0||||FALSE|||||||||
-16|Fort Clinch State Park Aquatic Preserve||||pH||0|0||||FALSE|||||||||
 17|Fort Pickens State Park Aquatic Preserve|505|Pensacola Bay Water Quality Monitoring Program|P09|pH|Surface|157|2|2015|2016|2016-09-06|FALSE|7.061||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-19|Guana River Marsh Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve||||pH||0|0||||FALSE|||||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-24|Lake Jackson Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-25|Lemon Bay Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-26|Lignumvitae Key Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-28|Matlacha Pass Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-29|Mosquito Lagoon Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-31|North Fork St. Lucie Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-32|Oklawaha River Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-33|Pellicer Creek Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-34|Pine Island Sound Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-35|Pinellas County Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-36|Rainbow Springs Aquatic Preserve||||pH||0|0||||FALSE|||||||||
 37|Rocky Bayou State Park Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-38|Rookery Bay Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-39|Rookery Bay National Estuarine Research Reserve||||pH||0|0||||FALSE|||||||||
 40|St. Andrews State Park Aquatic Preserve||||pH||0|0||||FALSE|||||||||
 41|St. Joseph Bay Aquatic Preserve|468|Central Panhandle Aquatic Preserves Continuous Water Quality Monitoring|CPRH|pH|bottom|92953|7|2005|2011|2011-05-10|TRUE|8.1|1|-0.2563|0.0152|-0.0359690236854235|8.26620066374242|3.8281|0.9747|-1
 42|St. Joseph Bay State Buffer Preserve||||pH||0|0||||FALSE|||||||||
 43|St. Martins Marsh Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSCH|pH|bottom|73612|3|2018|2020|2020-12-31|FALSE|8.2||||||||
-44|Terra Ceia Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-45|Tomoka Marsh Aquatic Preserve||||pH||0|0||||FALSE|||||||||
-46|Wekiva River Aquatic Preserve||||pH||0|0||||FALSE|||||||||
 47|Yellow River Marsh Aquatic Preserve|467|Yellow River Marsh Aquatic Preserve Continuous Water Quality Monitoring|YRMAP1|pH|bottom|144320|5|2015|2019|2019-12-18|TRUE|7.6|1|0.0621|0.6134|0.0117673818421147|7.54617768363832|10.0404|0.5268|0
 48|Nature Coast Aquatic Preserve|471|Big Bend Seagrasses Aquatic Preserves Continuous Water Quality Monitoring|BBSHS|pH|bottom|6555|1|2016|2016|2016-07-12|FALSE|8||||||||
