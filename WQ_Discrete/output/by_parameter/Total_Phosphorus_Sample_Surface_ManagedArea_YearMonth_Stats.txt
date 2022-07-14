@@ -233,7 +233,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 2|Apalachicola Bay Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|40|0.012|0.12|0.025|0.028775|0.0182328071456443|355
 2|Apalachicola Bay Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|21|0.002|0.031|0.023|0.0202857142857143|0.00773396959615731|355
 2|Apalachicola Bay Aquatic Preserve|2018|2|Total Phosphorus|Surface|Sample|19|0.01|0.038|0.031|0.0266315789473684|0.00959867193542818|355
-2|Apalachicola Bay Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|23|0.015|0.05|0.038|0.0329565217391304|0.0132441351029241|355, 5002
+2|Apalachicola Bay Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|24|0.015|0.05|0.0365|0.0329166666666667|0.0129544911354985|355, 5002
 2|Apalachicola Bay Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|19|0.013|0.049|0.034|0.0309473684210526|0.00986280151889764|355
 2|Apalachicola Bay Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|23|0.02|0.056|0.042|0.0394782608695652|0.0113172015703264|355, 5002
 2|Apalachicola Bay Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|19|0.019|0.07|0.055|0.0509473684210526|0.0177841180214586|355
@@ -247,7 +247,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 2|Apalachicola Bay Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|18|0.016|5|0.027|0.303055555555556|1.17221607485301|355
 2|Apalachicola Bay Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|19|0.011|0.042|0.025|0.0245263157894737|0.00660276390824859|355
 2|Apalachicola Bay Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|23|0.018|0.16|0.041|0.0440434782608696|0.0266227487496716|355, 5002
-2|Apalachicola Bay Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|21|0.021|0.04|0.031|0.0313809523809524|0.00446627574693044|355, 5002
+2|Apalachicola Bay Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|22|0.021|0.04|0.0305|0.0313181818181818|0.00436857134363348|355, 5002
 2|Apalachicola Bay Aquatic Preserve|2019|7|Total Phosphorus|Surface|Sample|19|0.015|0.039|0.029|0.0279473684210526|0.00552241577784504|355
 2|Apalachicola Bay Aquatic Preserve|2019|8|Total Phosphorus|Surface|Sample|18|0.019|0.032|0.0255|0.0258333333333333|0.00358509988375088|355, 5002
 2|Apalachicola Bay Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|21|0.019|0.046|0.034|0.0325714285714286|0.00698978847012861|355
@@ -481,7 +481,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 3|Apalachicola National Estuarine Research Reserve|2017|11|Total Phosphorus|Surface|Sample|45|0.012|0.12|0.025|0.0283555555555556|0.017285247987223|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2018|1|Total Phosphorus|Surface|Sample|23|0.002|0.031|0.023|0.02|0.00753175097353017|355
 3|Apalachicola National Estuarine Research Reserve|2018|2|Total Phosphorus|Surface|Sample|21|0.01|0.038|0.03|0.0259047619047619|0.00964834059258255|355
-3|Apalachicola National Estuarine Research Reserve|2018|3|Total Phosphorus|Surface|Sample|26|0.015|0.05|0.0335|0.0318846153846154|0.0129037263550555|355, 5002
+3|Apalachicola National Estuarine Research Reserve|2018|3|Total Phosphorus|Surface|Sample|27|0.015|0.05|0.032|0.0318888888888889|0.0126531641932982|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2018|4|Total Phosphorus|Surface|Sample|22|0.013|0.049|0.0315|0.0302272727272727|0.00945128773378738|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2018|5|Total Phosphorus|Surface|Sample|25|0.02|0.056|0.038|0.03848|0.0113765841387767|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2018|6|Total Phosphorus|Surface|Sample|21|0.019|0.07|0.054|0.0501428571428571|0.0171501770086659|355
@@ -495,11 +495,11 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 3|Apalachicola National Estuarine Research Reserve|2019|3|Total Phosphorus|Surface|Sample|22|0.016|5|0.0265|0.252409090909091|1.06040570219457|355
 3|Apalachicola National Estuarine Research Reserve|2019|4|Total Phosphorus|Surface|Sample|25|0.011|0.042|0.026|0.02656|0.00690458784673881|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2019|5|Total Phosphorus|Surface|Sample|29|0.018|0.16|0.041|0.0431724137931035|0.0239315526412864|355, 5002
-3|Apalachicola National Estuarine Research Reserve|2019|6|Total Phosphorus|Surface|Sample|27|0.021|0.045|0.031|0.0315185185185185|0.00516177049507963|355, 5002
+3|Apalachicola National Estuarine Research Reserve|2019|6|Total Phosphorus|Surface|Sample|28|0.021|0.045|0.0305|0.0314642857142857|0.0050734029989168|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2019|7|Total Phosphorus|Surface|Sample|24|0.015|0.046|0.0295|0.029375|0.00729986599043166|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2019|8|Total Phosphorus|Surface|Sample|25|0.018|0.036|0.025|0.02544|0.00481386885294285|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2019|9|Total Phosphorus|Surface|Sample|23|0.018|0.046|0.034|0.0315652173913044|0.00750651890605469|355
-3|Apalachicola National Estuarine Research Reserve|2019|10|Total Phosphorus|Surface|Sample|22|0.017|0.13|0.0365|0.0393181818181818|0.022412552528048|355, 5002
+3|Apalachicola National Estuarine Research Reserve|2019|10|Total Phosphorus|Surface|Sample|23|0.017|0.13|0.036|0.0385652173913044|0.0221930089052561|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2019|11|Total Phosphorus|Surface|Sample|28|0.014|0.32|0.027|0.0449285714285714|0.0688094139615754|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2019|12|Total Phosphorus|Surface|Sample|21|0.018|0.029|0.022|0.0224761904761905|0.00317205056105743|355
 3|Apalachicola National Estuarine Research Reserve|2020|3|Total Phosphorus|Surface|Sample|1|0.053|0.053|0.053|0.053||5002
@@ -744,7 +744,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 4|Banana River Aquatic Preserve|2016|3|Total Phosphorus|Surface|Sample|15|0.0159|0.1969|0.14|0.0999933333333333|0.0682461141402065|5002
 4|Banana River Aquatic Preserve|2016|4|Total Phosphorus|Surface|Sample|13|0.0372|0.162|0.078|0.0922615384615385|0.0450887557760901|5002
 4|Banana River Aquatic Preserve|2016|5|Total Phosphorus|Surface|Sample|15|0.0359|0.1383|0.0608|0.0684733333333333|0.0287363499687036|5002
-4|Banana River Aquatic Preserve|2016|6|Total Phosphorus|Surface|Sample|14|0.0254|0.1051|0.0516|0.0540142857142857|0.023758427076363|540, 5002
+4|Banana River Aquatic Preserve|2016|6|Total Phosphorus|Surface|Sample|15|0.0254|0.1051|0.0492|0.0533466666666667|0.0230397441288702|540, 5002
 4|Banana River Aquatic Preserve|2016|7|Total Phosphorus|Surface|Sample|17|0.0044|0.1392|0.066|0.0592764705882353|0.0356181753008868|5002
 4|Banana River Aquatic Preserve|2016|8|Total Phosphorus|Surface|Sample|13|0.0306|0.0905|0.0617|0.0624692307692308|0.0175897879755738|5002
 4|Banana River Aquatic Preserve|2016|9|Total Phosphorus|Surface|Sample|13|0.0206|0.1267|0.0468|0.0543692307692308|0.0282986567589166|5002
@@ -766,7 +766,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 4|Banana River Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|3|0.057|0.082|0.061|0.0666666666666667|0.0134288247189891|540
 4|Banana River Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|3|0.091|0.097|0.096|0.0946666666666667|0.00321455025366432|540
 4|Banana River Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|3|0.061|0.079|0.065|0.0683333333333333|0.00945163125250522|540
-4|Banana River Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|3|0.026|0.03|0.028|0.028|0.002|540
+4|Banana River Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|4|0.026|0.03|0.029|0.0285|0.00191485421551268|540
 4|Banana River Aquatic Preserve|2019|12|Total Phosphorus|Surface|Sample|3|0.024|0.03|0.026|0.0266666666666667|0.00305505046330389|540
 4|Banana River Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|3|0.025|0.057|0.054|0.0453333333333333|0.0176729548557488|540
 4|Banana River Aquatic Preserve|2020|5|Total Phosphorus|Surface|Sample|11|0.0268|0.098|0.0475|0.0473909090909091|0.0214386312317487|5002
@@ -1065,36 +1065,36 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 5|Big Bend Seagrasses Aquatic Preserve|2017|4|Total Phosphorus|Surface|Sample|22|0.000016|0.27|0.012|0.0294258181818182|0.0582121258335461|514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2017|5|Total Phosphorus|Surface|Sample|35|0.000019|0.1|0.032|0.0312367428571429|0.0264386191209028|514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2017|6|Total Phosphorus|Surface|Sample|27|0.000014|0.11|0.033|0.0346978148148148|0.0333276695266827|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|7|Total Phosphorus|Surface|Sample|37|0.000018|0.11|0.039|0.0417108918918919|0.0324364658771436|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|8|Total Phosphorus|Surface|Sample|63|0.000013|0.13|0.042|0.0452598888888889|0.0326989350172395|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|7|Total Phosphorus|Surface|Sample|39|0.000018|0.11|0.039|0.0432641794871795|0.0323017191239363|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|8|Total Phosphorus|Surface|Sample|66|0.000013|0.13|0.0425|0.0453844393939394|0.0324656416155858|514, 540, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2017|9|Total Phosphorus|Surface|Sample|13|0.000022|0.1|0.000123|0.0307973846153846|0.0371256922686039|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|10|Total Phosphorus|Surface|Sample|41|0.000017|0.11|0.032|0.0380061463414634|0.029247588684848|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|46|0.000022|0.082|0.023|0.0251791304347826|0.0193921713283235|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|12|Total Phosphorus|Surface|Sample|41|0.000023|0.11|0.017|0.0268350975609756|0.0281349373731353|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|10|Total Phosphorus|Surface|Sample|43|0.000017|0.11|0.032|0.0383546976744186|0.028902318845458|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|49|0.000022|0.082|0.024|0.0262702040816327|0.0203924784080834|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|12|Total Phosphorus|Surface|Sample|44|0.000023|0.11|0.017|0.0259145227272727|0.0273909081270178|514, 540, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|28|0.000026|0.081|0.0185|0.0208289642857143|0.0197440337907939|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|2|Total Phosphorus|Surface|Sample|51|0.000013|0.14|0.024|0.0298094705882353|0.0304766068093894|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|26|0.000023|0.092|0.016|0.0328155769230769|0.0325408025471691|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|40|0.00002|0.12|0.029|0.034409875|0.0334642722073645|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|43|0.00001|0.097|0.024|0.0313094186046512|0.0260274535609655|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|41|0.000011|0.14|0.043|0.0488142195121951|0.0429915927615576|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|36|0.000019|0.14|0.0385|0.0421754166666667|0.0366412937438272|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|17|0.00002|0.13|0.038|0.0456624117647059|0.046709249428056|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|9|Total Phosphorus|Surface|Sample|41|0.000024|0.11|0.041|0.0457397073170732|0.0344107790999012|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|10|Total Phosphorus|Surface|Sample|33|0.000023|0.13|0.039|0.0388863333333333|0.0327538967602203|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|11|Total Phosphorus|Surface|Sample|21|0.000025|0.078|0.03|0.0278652857142857|0.0224844936748481|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|28|0.000027|0.12|0.029|0.0360780714285714|0.0308319488961605|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|2|Total Phosphorus|Surface|Sample|55|0.000013|0.14|0.023|0.0296778727272727|0.0297667856088544|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|27|0.000023|0.095|0.017|0.0351187037037037|0.0340792513142469|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|42|0.00002|0.12|0.0265|0.0334617857142857|0.0329604332743957|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|46|0.00001|0.097|0.0245|0.0317892391304348|0.0258295497101757|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|44|0.000011|0.14|0.046|0.05046325|0.0427160142597407|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|39|0.000019|0.14|0.042|0.0442132051282051|0.038697385063416|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|18|0.00002|0.13|0.041|0.0497922777777778|0.0485841516519722|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|9|Total Phosphorus|Surface|Sample|43|0.000024|0.11|0.04|0.0448215813953488|0.0338502070565747|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|10|Total Phosphorus|Surface|Sample|35|0.000023|0.13|0.039|0.0388642571428571|0.0320582876981572|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|11|Total Phosphorus|Surface|Sample|24|0.000025|0.079|0.0315|0.0310904583333333|0.0236102481783158|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|29|0.000027|0.12|0.029|0.0361443448275862|0.0302784762075022|514, 540, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|16|0.000026|0.13|0.0295|0.0257681875|0.0330635997621125|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|29|0.00002|0.09|0.023|0.0278685517241379|0.0270046134267385|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|22|0.000015|0.076|0.0415|0.0347839090909091|0.0277632544972137|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|32|0.00001|0.09|0.0235|0.0291323125|0.0276463130487506|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|30|0.00002|0.09|0.0195|0.0273729333333333|0.0266734278209521|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|23|0.000015|0.076|0.046|0.0355759130434783|0.02738958250688|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|33|0.00001|0.09|0.019|0.0285828484848485|0.0273933700260223|514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|14|0.000023|0.064|0.008558|0.0200931428571429|0.0242530543575511|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|37|0.000026|0.076|0.038|0.034251|0.0245204947249348|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|38|0.000026|0.076|0.036|0.0335601842105263|0.0245588912790672|514, 540, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2019|7|Total Phosphorus|Surface|Sample|11|0.000021|0.05|0.026|0.021025|0.0213365100239003|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|8|Total Phosphorus|Surface|Sample|25|0.000022|0.099|0.03|0.03916504|0.032904846554725|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|18|0.000022|0.12|0.0635|0.0611707777777778|0.0369717291558191|514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|24|0.000024|0.09|0.047|0.0390447083333333|0.0282467849690039|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|8|Total Phosphorus|Surface|Sample|26|0.000022|0.099|0.0335|0.0413125384615385|0.0340488657728633|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|20|0.000022|0.12|0.0635|0.0632037|0.0367107097253219|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|25|0.000024|0.09|0.048|0.03988292|0.027967852887914|514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2019|11|Total Phosphorus|Surface|Sample|9|0.016|0.055|0.028|0.0317777777777778|0.0119768294821478|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|12|Total Phosphorus|Surface|Sample|35|0.01|0.099|0.028|0.0341914285714286|0.0220000049656221|477, 514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|12|Total Phosphorus|Surface|Sample|37|0.01|0.099|0.028|0.0351|0.0236822249330121|477, 514, 540, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2020|1|Total Phosphorus|Surface|Sample|9|0.016|0.039|0.029|0.0284444444444444|0.00857483397960437|514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|30|0.009|0.11|0.0296|0.0403833333333333|0.0303399598041847|477, 514, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|36|0.011|0.13|0.051|0.0510638888888889|0.026834233495697|477, 514, 5002
@@ -1240,21 +1240,21 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 6|Biscayne Bay Aquatic Preserve|2020|1|Total Phosphorus|Surface|Sample|1|0.03|0.03|0.03|0.03||5026
 6|Biscayne Bay Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|30|0.002|0.05|0.005|0.00866666666666667|0.0106522891609182|5002, 5026
 6|Biscayne Bay Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|1|0.017|0.017|0.017|0.017||5026
-6|Biscayne Bay Aquatic Preserve|2020|4|Total Phosphorus|Surface|Sample|11|0.008|0.026|0.012|0.015|0.0070427267446636|5026
-6|Biscayne Bay Aquatic Preserve|2020|5|Total Phosphorus|Surface|Sample|24|0.002|0.039|0.0085|0.00995833333333333|0.00833264489909973|5002, 5026
-6|Biscayne Bay Aquatic Preserve|2020|6|Total Phosphorus|Surface|Sample|26|0.004|0.15|0.011|0.0225769230769231|0.0287167868354704|5002, 5026
-6|Biscayne Bay Aquatic Preserve|2020|7|Total Phosphorus|Surface|Sample|42|0.002|0.041|0.008|0.0103571428571429|0.0102643627594285|5002, 5026
+6|Biscayne Bay Aquatic Preserve|2020|4|Total Phosphorus|Surface|Sample|12|0.008|0.026|0.0115|0.0145|0.00693476092528856|5026
+6|Biscayne Bay Aquatic Preserve|2020|5|Total Phosphorus|Surface|Sample|25|0.002|0.039|0.009|0.01|0.0081598611099291|5002, 5026
+6|Biscayne Bay Aquatic Preserve|2020|6|Total Phosphorus|Surface|Sample|27|0.004|0.15|0.011|0.0220740740740741|0.028280090748856|5002, 5026
+6|Biscayne Bay Aquatic Preserve|2020|7|Total Phosphorus|Surface|Sample|43|0.002|0.041|0.009|0.0104186046511628|0.0101494371369609|5002, 5026
 6|Biscayne Bay Aquatic Preserve|2020|8|Total Phosphorus|Surface|Sample|42|0.002|0.109|0.009|0.0153333333333333|0.0194003604023182|5002, 5026
-6|Biscayne Bay Aquatic Preserve|2020|9|Total Phosphorus|Surface|Sample|39|0.002|0.038|0.006|0.00897435897435897|0.00880934664967057|5002, 5026
+6|Biscayne Bay Aquatic Preserve|2020|9|Total Phosphorus|Surface|Sample|40|0.002|0.038|0.0065|0.008975|0.00869567384333978|5002, 5026
 6|Biscayne Bay Aquatic Preserve|2020|10|Total Phosphorus|Surface|Sample|38|0.002|0.04|0.01|0.011421052631579|0.00928419633380955|5002, 5026
-6|Biscayne Bay Aquatic Preserve|2020|11|Total Phosphorus|Surface|Sample|42|0.003|0.076|0.009|0.0131904761904762|0.0146557873281082|5002, 5026
+6|Biscayne Bay Aquatic Preserve|2020|11|Total Phosphorus|Surface|Sample|43|0.003|0.076|0.009|0.0132790697674419|0.0144919116708586|5002, 5026
 6|Biscayne Bay Aquatic Preserve|2020|12|Total Phosphorus|Surface|Sample|40|0.002|0.077|0.008|0.011575|0.0137503146817138|5002, 5026
 6|Biscayne Bay Aquatic Preserve|2021|1|Total Phosphorus|Surface|Sample|47|0.002|0.059|0.006|0.00770212765957447|0.00882416369634372|5002, 5026
-6|Biscayne Bay Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|9|0.007|0.018|0.009|0.0104444444444444|0.00343187671366233|5026
-6|Biscayne Bay Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|6|0.007|0.013|0.0085|0.00933333333333333|0.00225092573548455|5026
-6|Biscayne Bay Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|8|0.011|0.024|0.0125|0.014125|0.00442194204265178|5026
+6|Biscayne Bay Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|10|0.007|0.018|0.009|0.0102|0.00332665998663324|5026
+6|Biscayne Bay Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|7|0.007|0.013|0.008|0.00914285714285714|0.00211570094204982|5026
+6|Biscayne Bay Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|9|0.011|0.024|0.012|0.0138888888888889|0.00419655943733806|5026
 6|Biscayne Bay Aquatic Preserve|2021|5|Total Phosphorus|Surface|Sample|10|0.008|0.03|0.0095|0.0118|0.00662989860824097|5026
-6|Biscayne Bay Aquatic Preserve|2021|6|Total Phosphorus|Surface|Sample|8|0.009|0.022|0.0115|0.01275|0.00395510519997347|5026
+6|Biscayne Bay Aquatic Preserve|2021|6|Total Phosphorus|Surface|Sample|9|0.008|0.022|0.011|0.0122222222222222|0.00402423215588321|5026
 6|Biscayne Bay Aquatic Preserve|2021|7|Total Phosphorus|Surface|Sample|11|0.006|0.038|0.01|0.0137272727272727|0.00974772700777888|5026
 6|Biscayne Bay Aquatic Preserve|2021|8|Total Phosphorus|Surface|Sample|11|0.007|0.033|0.01|0.0119090909090909|0.00748938642953541|5026
 8|Boca Ciega Bay Aquatic Preserve|1999|1|Total Phosphorus|Surface|Sample|1|0.06|0.06|0.06|0.06||5002
@@ -1436,7 +1436,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 8|Boca Ciega Bay Aquatic Preserve|2020|10|Total Phosphorus|Surface|Sample|19|0.03|0.07|0.04|0.0447368421052632|0.0117229220156408|5002
 8|Boca Ciega Bay Aquatic Preserve|2020|12|Total Phosphorus|Surface|Sample|18|0.02|0.15|0.06|0.0577777777777778|0.0292163442484139|5002
 8|Boca Ciega Bay Aquatic Preserve|2021|1|Total Phosphorus|Surface|Sample|8|0.02|0.09|0.055|0.055|0.0226778683805536|5002
-8|Boca Ciega Bay Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|11|0.02|0.08|0.03|0.0336363636363636|0.0196329963442809|5002
+8|Boca Ciega Bay Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|12|0.02|0.08|0.03|0.0333333333333333|0.0187487373312218|5002
 8|Boca Ciega Bay Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|12|0.02|0.2|0.06|0.0716666666666667|0.0434497271323859|5002
 8|Boca Ciega Bay Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|6|0.02|0.07|0.055|0.0466666666666667|0.0216024689946929|5002
 8|Boca Ciega Bay Aquatic Preserve|2021|5|Total Phosphorus|Surface|Sample|17|0.03|0.09|0.06|0.0552941176470588|0.0128051000868909|5002
@@ -1590,7 +1590,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 9|Cape Haze Aquatic Preserve|2021|9|Total Phosphorus|Surface|Sample|1|0.22|0.22|0.22|0.22||5028
 9|Cape Haze Aquatic Preserve|2021|10|Total Phosphorus|Surface|Sample|1|0.23|0.23|0.23|0.23||5028
 9|Cape Haze Aquatic Preserve|2021|11|Total Phosphorus|Surface|Sample|2|0.1|0.14|0.12|0.12|0.0282842712474619|513, 5028
-9|Cape Haze Aquatic Preserve|2021|12|Total Phosphorus|Surface|Sample|1|0.1|0.1|0.1|0.1||5028
+9|Cape Haze Aquatic Preserve|2021|12|Total Phosphorus|Surface|Sample|2|0.1|0.11|0.105|0.105|0.00707106781186547|476, 5028
 9|Cape Haze Aquatic Preserve|2022|1|Total Phosphorus|Surface|Sample|1|0.1|0.1|0.1|0.1||5028
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1994|9|Total Phosphorus|Surface|Sample|2|0.0274|0.074|0.0507|0.0507|0.0329511760032931|509
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1994|10|Total Phosphorus|Surface|Sample|2|0.0346|0.0867|0.06065|0.06065|0.0368402632998191|509
@@ -2551,26 +2551,26 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2019|5|Total Phosphorus|Surface|Sample|104|0.000006|0.031899|0.0059365|0.00639075|0.00394297985179363|297, 514, 5002
 15|Florida Keys National Marine Sanctuary|2019|6|Total Phosphorus|Surface|Sample|17|0.000004|0.00961|0.006882|0.00508423529411765|0.00349811820000075|297, 514
 15|Florida Keys National Marine Sanctuary|2019|7|Total Phosphorus|Surface|Sample|8|0.000005|0.000015|0.0000085|0.000009125|0.00000318198051533946|514
-15|Florida Keys National Marine Sanctuary|2019|8|Total Phosphorus|Surface|Sample|50|0.000008|0.01383|0.0077805|0.0073626|0.00348494292987558|297, 514
-15|Florida Keys National Marine Sanctuary|2019|9|Total Phosphorus|Surface|Sample|155|0.000009|0.01340192|0.00639196|0.00663061296774194|0.00201158406910431|297, 514
+15|Florida Keys National Marine Sanctuary|2019|8|Total Phosphorus|Surface|Sample|51|0.000008|0.01383|0.00778|0.0073678431372549|0.00345012067830996|297, 514
+15|Florida Keys National Marine Sanctuary|2019|9|Total Phosphorus|Surface|Sample|164|0.000009|0.01340192|0.00639098|0.00662893298780488|0.00197144216069129|297, 514
 15|Florida Keys National Marine Sanctuary|2019|10|Total Phosphorus|Surface|Sample|17|0.004526|0.01262|0.0079|0.00728435294117647|0.00275435316683374|297, 514
-15|Florida Keys National Marine Sanctuary|2019|11|Total Phosphorus|Surface|Sample|33|0.0044|0.014|0.005022|0.00595161090909091|0.00227640201479819|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|2019|12|Total Phosphorus|Surface|Sample|41|0.004619|0.014|0.00679|0.00708190243902439|0.00189383737164623|297, 5002
-15|Florida Keys National Marine Sanctuary|2020|1|Total Phosphorus|Surface|Sample|128|0.0044|0.0173|0.007008|0.00773148203125|0.00272461298735385|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2019|11|Total Phosphorus|Surface|Sample|34|0.0044|0.014|0.005021|0.00591332823529412|0.00225273273824088|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2019|12|Total Phosphorus|Surface|Sample|42|0.004619|0.014|0.00682|0.00708233333333333|0.00187060130761007|297, 5002
+15|Florida Keys National Marine Sanctuary|2020|1|Total Phosphorus|Surface|Sample|136|0.0044|0.0173|0.007008|0.00770095367647059|0.00271412882506061|297, 514, 5002
 15|Florida Keys National Marine Sanctuary|2020|2|Total Phosphorus|Surface|Sample|17|0.002|0.021|0.005|0.00741176470588235|0.00542054913649683|514, 5002
-15|Florida Keys National Marine Sanctuary|2020|3|Total Phosphorus|Surface|Sample|202|0.00476|0.019871|0.007235|0.00823259405940594|0.00252282180345371|297, 514
+15|Florida Keys National Marine Sanctuary|2020|3|Total Phosphorus|Surface|Sample|209|0.00476|0.019871|0.00728619|0.00825207655502392|0.00250849862995635|297, 514
 15|Florida Keys National Marine Sanctuary|2020|4|Total Phosphorus|Surface|Sample|1|0.011|0.011|0.011|0.011||5002
 15|Florida Keys National Marine Sanctuary|2020|5|Total Phosphorus|Surface|Sample|1|0.012|0.012|0.012|0.012||5002
-15|Florida Keys National Marine Sanctuary|2020|6|Total Phosphorus|Surface|Sample|23|0.00663|0.025|0.00756|0.00856226391304348|0.0037274348300147|297, 5002
-15|Florida Keys National Marine Sanctuary|2020|7|Total Phosphorus|Surface|Sample|189|0.002|0.02432|0.0078|0.00811173312169312|0.00329586906033487|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2020|6|Total Phosphorus|Surface|Sample|24|0.00663|0.025|0.007535|0.00848841958333333|0.00366340894226946|297, 5002
+15|Florida Keys National Marine Sanctuary|2020|7|Total Phosphorus|Surface|Sample|199|0.002|0.02432|0.00768053|0.00808677165829146|0.00325884595231765|297, 514, 5002
 15|Florida Keys National Marine Sanctuary|2020|8|Total Phosphorus|Surface|Sample|237|0.002|0.05|0.015|0.0152573839662447|0.00480523177894707|514, 5002
-15|Florida Keys National Marine Sanctuary|2020|9|Total Phosphorus|Surface|Sample|139|0.002|0.06045|0.008618|0.00873884172661871|0.00535856069559646|297, 5002
-15|Florida Keys National Marine Sanctuary|2020|10|Total Phosphorus|Surface|Sample|235|0.002|0.044|0.015|0.0123960127659574|0.00569531839791969|297, 5002
-15|Florida Keys National Marine Sanctuary|2020|11|Total Phosphorus|Surface|Sample|159|0.003|0.031|0.01|0.0110612955974843|0.00438307167096645|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|2020|12|Total Phosphorus|Surface|Sample|130|0|0.058001|0.007595|0.00892678469230769|0.00692156912861417|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2020|9|Total Phosphorus|Surface|Sample|146|0.002|0.06045|0.0085715|0.00868684246575342|0.00525400908822489|297, 5002
+15|Florida Keys National Marine Sanctuary|2020|10|Total Phosphorus|Surface|Sample|239|0.002|0.044|0.015|0.0122789665271967|0.00571892302979535|297, 5002
+15|Florida Keys National Marine Sanctuary|2020|11|Total Phosphorus|Surface|Sample|162|0.003|0.031|0.009991|0.0109584938271605|0.00440755501052104|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2020|12|Total Phosphorus|Surface|Sample|136|0|0.058001|0.007501|0.00883927948529412|0.00678036523229367|297, 514, 5002
 15|Florida Keys National Marine Sanctuary|2021|1|Total Phosphorus|Surface|Sample|9|0.002|0.021|0.004|0.00611111111111111|0.00592546294487706|5002
-15|Florida Keys National Marine Sanctuary|2021|2|Total Phosphorus|Surface|Sample|195|0.00068|0.074|0.015|0.0129459487179487|0.00601942101690851|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|2021|3|Total Phosphorus|Surface|Sample|91|0.00068|0.02|0.015|0.0124813186813187|0.00370347800761249|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2021|2|Total Phosphorus|Surface|Sample|200|0.00068|0.074|0.015|0.01279605|0.00601986167368917|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2021|3|Total Phosphorus|Surface|Sample|94|0.00068|0.02|0.015|0.0123514893617021|0.00371510053047001|297, 514, 5002
 15|Florida Keys National Marine Sanctuary|2021|4|Total Phosphorus|Surface|Sample|110|0.015|0.033|0.015|0.0158090909090909|0.00299692642107061|5002
 15|Florida Keys National Marine Sanctuary|2021|5|Total Phosphorus|Surface|Sample|72|0.008|0.026|0.015|0.0147916666666667|0.00279807529421792|514, 5002
 15|Florida Keys National Marine Sanctuary|2021|6|Total Phosphorus|Surface|Sample|3|0.009|0.015|0.012|0.012|0.003|514, 5002
@@ -2580,9 +2580,10 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2021|10|Total Phosphorus|Surface|Sample|4|0.005|0.01|0.0085|0.008|0.00216024689946929|514, 5002
 15|Florida Keys National Marine Sanctuary|2021|11|Total Phosphorus|Surface|Sample|3|0.007|0.012|0.009|0.00933333333333333|0.00251661147842358|5002
 15|Florida Keys National Marine Sanctuary|2021|12|Total Phosphorus|Surface|Sample|2|0.012|0.015|0.0135|0.0135|0.00212132034355964|5002
+17|Fort Pickens State Park Aquatic Preserve|1999|1|Total Phosphorus|Surface|Sample|1|0.023|0.023|0.023|0.023||5002
 17|Fort Pickens State Park Aquatic Preserve|1999|3|Total Phosphorus|Surface|Sample|1|0.022|0.022|0.022|0.022||5002
-17|Fort Pickens State Park Aquatic Preserve|1999|4|Total Phosphorus|Surface|Sample|3|0.02|0.022|0.022|0.0213333333333333|0.00115470053837925|5002
-17|Fort Pickens State Park Aquatic Preserve|1999|5|Total Phosphorus|Surface|Sample|3|0.032|0.037|0.034|0.0343333333333333|0.00251661147842358|5002
+17|Fort Pickens State Park Aquatic Preserve|1999|4|Total Phosphorus|Surface|Sample|7|0.02|0.21|0.032|0.0538571428571429|0.0692012248721764|5002
+17|Fort Pickens State Park Aquatic Preserve|1999|5|Total Phosphorus|Surface|Sample|4|0.029|0.037|0.033|0.033|0.00336650164612069|5002
 17|Fort Pickens State Park Aquatic Preserve|1999|6|Total Phosphorus|Surface|Sample|3|0.005|0.016|0.016|0.0123333333333333|0.00635085296108588|5002
 17|Fort Pickens State Park Aquatic Preserve|1999|7|Total Phosphorus|Surface|Sample|1|0.021|0.021|0.021|0.021||5002
 17|Fort Pickens State Park Aquatic Preserve|1999|11|Total Phosphorus|Surface|Sample|1|0.017|0.017|0.017|0.017||5002
@@ -3136,7 +3137,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 19|Guana River Marsh Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|8|0.059|0.18|0.076|0.09655|0.0440665730133721|5014
 19|Guana River Marsh Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|9|0.0328|0.164|0.0473|0.0696333333333333|0.0484640072631226|5014
 19|Guana River Marsh Aquatic Preserve|2019|11|Total Phosphorus|Surface|Sample|9|0.028|0.43|0.043|0.0988888888888889|0.12928693325743|5014
-19|Guana River Marsh Aquatic Preserve|2019|12|Total Phosphorus|Surface|Sample|6|0.027|0.066|0.045|0.047|0.0156204993518133|5014
+19|Guana River Marsh Aquatic Preserve|2019|12|Total Phosphorus|Surface|Sample|7|0.027|0.066|0.042|0.0457142857142857|0.014659630346798|5014
 19|Guana River Marsh Aquatic Preserve|2020|1|Total Phosphorus|Surface|Sample|10|0.0244|0.137|0.0388|0.05253|0.0361930640992012|5002, 5014
 19|Guana River Marsh Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|10|0.025|0.26|0.0466|0.06272|0.0699005293256067|5002, 5014
 19|Guana River Marsh Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|9|0.026|0.663|0.065|0.119977777777778|0.204938538211934|5002, 5014
@@ -3404,28 +3405,28 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|4|Total Phosphorus|Surface|Sample|24|0.0566|0.1406|0.08785|0.0868583333333333|0.0203125130992154|4054, 5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|5|Total Phosphorus|Surface|Sample|25|0.0278|0.11|0.09|0.080916|0.0245385017200861|4054, 5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|6|Total Phosphorus|Surface|Sample|27|0.0388|0.19|0.14|0.120440740740741|0.048593749671357|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|7|Total Phosphorus|Surface|Sample|22|0.0425|0.22|0.18|0.147918181818182|0.0621471038007606|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|7|Total Phosphorus|Surface|Sample|23|0.0425|0.22|0.18|0.150182608695652|0.061681768723711|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|8|Total Phosphorus|Surface|Sample|9|0.0486|0.125|0.0827|0.0850111111111111|0.0298616997358006|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|9|Total Phosphorus|Surface|Sample|8|0.07|0.242|0.106|0.1244125|0.057339999439434|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|9|Total Phosphorus|Surface|Sample|9|0.07|0.242|0.118|0.125033333333333|0.0536689854571521|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|10|Total Phosphorus|Surface|Sample|21|0.065|0.236|0.0902|0.106552380952381|0.0462423141618974|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|11|Total Phosphorus|Surface|Sample|17|0.06|0.222|0.082|0.0922588235294118|0.0373421855751563|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|12|Total Phosphorus|Surface|Sample|22|0.039|0.0851|0.0545|0.0569636363636364|0.0101340794895031|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|11|Total Phosphorus|Surface|Sample|18|0.06|0.222|0.082|0.0916888888888889|0.0363078485906429|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|12|Total Phosphorus|Surface|Sample|23|0.039|0.0851|0.052|0.0566173913043478|0.0100393612697002|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|1|Total Phosphorus|Surface|Sample|22|0.034|0.111|0.0615|0.0628545454545455|0.0168397977386543|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|2|Total Phosphorus|Surface|Sample|22|0.039|0.179|0.0755|0.0802681818181818|0.0297867881604873|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|3|Total Phosphorus|Surface|Sample|20|0.0294|0.168|0.0585|0.06499|0.0367491911833659|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|4|Total Phosphorus|Surface|Sample|21|0.037|0.165|0.078|0.078152380952381|0.0282142981314017|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|3|Total Phosphorus|Surface|Sample|21|0.0294|0.168|0.059|0.0647047619047619|0.0358425232955281|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|4|Total Phosphorus|Surface|Sample|22|0.037|0.165|0.0785|0.0783272727272727|0.0275465524905124|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|5|Total Phosphorus|Surface|Sample|20|0.0413|0.14|0.0955|0.08932|0.0253232283632408|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|6|Total Phosphorus|Surface|Sample|21|0.063|0.151|0.081|0.0835666666666667|0.0185344364180121|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|6|Total Phosphorus|Surface|Sample|22|0.063|0.151|0.081|0.0836772727272727|0.0180951962006806|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|7|Total Phosphorus|Surface|Sample|23|0.035|0.17|0.086|0.0872478260869565|0.0244367805788588|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|8|Total Phosphorus|Surface|Sample|27|0.052|0.117|0.062|0.0697407407407407|0.0170829708112463|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|8|Total Phosphorus|Surface|Sample|28|0.052|0.117|0.0625|0.0695|0.0168119666375538|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|9|Total Phosphorus|Surface|Sample|28|0.052|0.145|0.089|0.0895892857142857|0.0178299859638447|4054, 5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|10|Total Phosphorus|Surface|Sample|25|0.0027|0.15|0.082|0.074556|0.0325366342246193|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|11|Total Phosphorus|Surface|Sample|25|0.0342|0.1|0.065|0.062344|0.01567019676541|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|11|Total Phosphorus|Surface|Sample|26|0.0342|0.1|0.065|0.0624461538461538|0.0153624276927634|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|12|Total Phosphorus|Surface|Sample|20|0.039|0.074|0.06|0.05855|0.00939470735658059|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|1|Total Phosphorus|Surface|Sample|27|0.027|0.086|0.06|0.0569777777777778|0.0173678157993752|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|2|Total Phosphorus|Surface|Sample|24|0.022|0.0821|0.05|0.0483375|0.0118491537947726|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|1|Total Phosphorus|Surface|Sample|28|0.027|0.086|0.061|0.0574071428571429|0.0171939250376712|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|2|Total Phosphorus|Surface|Sample|25|0.022|0.0821|0.05|0.048284|0.01160275398343|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|3|Total Phosphorus|Surface|Sample|21|0.0278|0.109|0.0669|0.0623380952380952|0.0213809372149697|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|4|Total Phosphorus|Surface|Sample|33|0.026|0.18|0.053|0.0650939393939394|0.0352122310017586|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|4|Total Phosphorus|Surface|Sample|34|0.026|0.18|0.052|0.0644735294117647|0.0348628073838142|4054, 5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|5|Total Phosphorus|Surface|Sample|17|0.042|0.16|0.0703|0.0768470588235294|0.0285820117741705|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|6|Total Phosphorus|Surface|Sample|23|0.0282|0.161|0.11|0.0949304347826087|0.0349509583011111|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|7|Total Phosphorus|Surface|Sample|22|0.038|0.64|0.105|0.1149|0.120945654856102|4054, 5014
@@ -3433,7 +3434,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|9|Total Phosphorus|Surface|Sample|20|0.059|0.18|0.092|0.10017|0.0323001401333118|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|10|Total Phosphorus|Surface|Sample|21|0.0328|0.164|0.053|0.0639380952380952|0.0368236401811455|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|11|Total Phosphorus|Surface|Sample|21|0.028|0.43|0.059|0.0757142857142857|0.0843665471956408|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|12|Total Phosphorus|Surface|Sample|18|0.027|0.081|0.0625|0.0576666666666667|0.0132797944704152|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|12|Total Phosphorus|Surface|Sample|19|0.027|0.081|0.062|0.0566315789473684|0.0136715866197656|4054, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|1|Total Phosphorus|Surface|Sample|23|0.0244|0.137|0.078|0.0692304347826087|0.0290006494407313|4054, 5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|2|Total Phosphorus|Surface|Sample|20|0.025|0.26|0.066|0.07116|0.0500083298324547|4054, 5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|3|Total Phosphorus|Surface|Sample|25|0.018|0.663|0.065|0.080776|0.122679383217665|4054, 5002, 5014
@@ -3449,7 +3450,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|1|Total Phosphorus|Surface|Sample|22|0.013|0.112|0.0313|0.04065|0.0297937633294845|5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|2|Total Phosphorus|Surface|Sample|24|0.013|0.197|0.0509|0.0594958333333333|0.0501695688047842|5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|3|Total Phosphorus|Surface|Sample|11|0.013|0.297|0.013|0.0944545454545455|0.113482477622198|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|4|Total Phosphorus|Surface|Sample|16|0.013|0.371|0.059|0.08125|0.0974580251527121|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|4|Total Phosphorus|Surface|Sample|17|0.013|0.371|0.055|0.0783529411764706|0.0951163374350528|5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|5|Total Phosphorus|Surface|Sample|10|0.013|0.415|0.101|0.1238|0.114344314341476|5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|6|Total Phosphorus|Surface|Sample|16|0.013|0.932|0.096|0.1679375|0.217703917818062|5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|7|Total Phosphorus|Surface|Sample|14|0.013|0.328|0.0745|0.0979285714285714|0.0794446728481907|5002, 5014
@@ -3685,7 +3686,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|3|Total Phosphorus|Surface|Sample|17|0.0346|0.153|0.0872|0.0909411764705882|0.040438488145941|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|4|Total Phosphorus|Surface|Sample|24|0.028|0.1126|0.05835|0.06585|0.0269073288868681|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|5|Total Phosphorus|Surface|Sample|18|0.044|0.25|0.0907|0.09215|0.0483657420081611|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|6|Total Phosphorus|Surface|Sample|24|0.03|0.1468|0.06235|0.0662916666666667|0.0271738831883894|540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|6|Total Phosphorus|Surface|Sample|25|0.03|0.1468|0.0623|0.06576|0.0267342321129047|540, 5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|7|Total Phosphorus|Surface|Sample|23|0.0363|0.11|0.0648|0.0691826086956522|0.0203264192655298|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|8|Total Phosphorus|Surface|Sample|20|0.0263|0.1706|0.0642|0.071055|0.0339624944065625|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|9|Total Phosphorus|Surface|Sample|20|0.0158|0.1542|0.0594|0.06501|0.0316946600184355|5002
@@ -3707,12 +3708,12 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|3|0.04|0.047|0.046|0.0443333333333333|0.00378593889720018|540
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|5|0.043|0.071|0.053|0.056|0.0124899959967968|540
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|7|0.036|0.059|0.041|0.0434285714285714|0.00928901040400506|540
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|7|0.018|0.082|0.054|0.0494285714285714|0.0217244650325936|540
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|8|0.018|0.082|0.056|0.0505|0.0203399676920659|540
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|3|0.027|0.049|0.032|0.036|0.0115325625946708|540
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|9|Total Phosphorus|Surface|Sample|4|0.046|0.1|0.0745|0.07375|0.0254345565455085|540
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|9|Total Phosphorus|Surface|Sample|5|0.046|0.1|0.06|0.071|0.0228691932520586|540
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|3|0.033|0.043|0.035|0.037|0.00529150262212918|540
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|4|0.022|0.046|0.031|0.0325|0.0104721853816033|540
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|3|0.042|0.056|0.05|0.0493333333333333|0.00702376916856849|540
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|4|0.042|0.056|0.049|0.049|0.00577350269189626|540
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|1|0.079|0.079|0.079|0.079||540
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|4|0.044|0.056|0.0475|0.04875|0.00525198375219625|540
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|1|0.057|0.057|0.057|0.057||540
@@ -3980,17 +3981,17 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|5|Total Phosphorus|Surface|Sample|4|0.0591|0.1154|0.07465|0.08095|0.0249880638172175|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|6|Total Phosphorus|Surface|Sample|8|0.026|0.0836|0.05645|0.0552375|0.0207932638474236|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|10|Total Phosphorus|Surface|Sample|4|0.1|0.14|0.135|0.1275|0.0189296944860009|540
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|12|Total Phosphorus|Surface|Sample|4|0.04|0.051|0.047|0.04625|0.00485626742811115|540
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|12|Total Phosphorus|Surface|Sample|5|0.04|0.051|0.047|0.0464|0.0042190046219458|540
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|4|0.032|0.057|0.048|0.04625|0.0109048918686371|540
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|4|0.044|0.065|0.0565|0.0555|0.00873689494805411|540
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|4|0.026|0.062|0.058|0.051|0.0169509095134548|540
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|4|0.019|0.061|0.05|0.045|0.0183847763108502|540
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|5|0.019|0.061|0.046|0.0448|0.015927962832704|540
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|4|0.019|0.06|0.04|0.03975|0.0182825052987822|540
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|4|0.035|0.054|0.042|0.04325|0.00826135582092915|540
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|4|0.031|0.085|0.063|0.0605|0.0242967761921892|540
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|1|Total Phosphorus|Surface|Sample|4|0.02|0.041|0.0365|0.0335|0.00967815409397199|540
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|1|Total Phosphorus|Surface|Sample|5|0.02|0.041|0.033|0.033|0.00845576726264388|540
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|4|0.023|0.043|0.036|0.0345|0.00967815409397198|540
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|4|0.013|0.039|0.0255|0.02575|0.0115289490703475|540
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|5|0.013|0.039|0.03|0.0266|0.0101636607578175|540
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|5|Total Phosphorus|Surface|Sample|4|0.0618|0.0841|0.07675|0.07485|0.00952767897584016|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|6|Total Phosphorus|Surface|Sample|3|0.0794|0.1636|0.1375|0.126833333333333|0.043101546762655|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|7|Total Phosphorus|Surface|Sample|2|0.1082|0.1439|0.12605|0.12605|0.0252437120883597|5002
@@ -4463,21 +4464,21 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 25|Lemon Bay Aquatic Preserve|2020|4|Total Phosphorus|Surface|Sample|5|0.054|0.096|0.059|0.0652|0.0175128524232919|479
 25|Lemon Bay Aquatic Preserve|2020|8|Total Phosphorus|Surface|Sample|4|0.1|0.2|0.165|0.1575|0.0419324854180304|5002
 25|Lemon Bay Aquatic Preserve|2020|9|Total Phosphorus|Surface|Sample|8|0.035|0.19|0.095|0.10175|0.057918045547135|476, 5002
-25|Lemon Bay Aquatic Preserve|2020|10|Total Phosphorus|Surface|Sample|8|0.052|0.22|0.1215|0.125375|0.0735001214770619|476, 5002
+25|Lemon Bay Aquatic Preserve|2020|10|Total Phosphorus|Surface|Sample|9|0.052|0.22|0.14|0.127|0.0689256846175647|476, 5002
 25|Lemon Bay Aquatic Preserve|2020|11|Total Phosphorus|Surface|Sample|12|0.05|0.17|0.07|0.088|0.0393330765271534|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2020|12|Total Phosphorus|Surface|Sample|10|0.045|0.13|0.0675|0.0771|0.0277266418209394|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2020|12|Total Phosphorus|Surface|Sample|11|0.045|0.14|0.071|0.0828181818181818|0.032427821949117|476, 479, 5002
 25|Lemon Bay Aquatic Preserve|2021|1|Total Phosphorus|Surface|Sample|6|0.042|0.17|0.1|0.101833333333333|0.0516233151460333|476, 5002
-25|Lemon Bay Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|4|0.057|0.13|0.1|0.09675|0.0341894233157956|476, 5002
-25|Lemon Bay Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|7|0.038|0.21|0.1|0.108142857142857|0.0646024472483527|476, 5002
+25|Lemon Bay Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|5|0.057|0.13|0.11|0.0994|0.0301960262286282|476, 5002
+25|Lemon Bay Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|8|0.038|0.21|0.085|0.103375|0.0613117036135843|476, 5002
 25|Lemon Bay Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|4|0.034|0.13|0.07|0.076|0.0467332857821917|476, 5002
-25|Lemon Bay Aquatic Preserve|2021|5|Total Phosphorus|Surface|Sample|8|0.029|0.13|0.0595|0.07175|0.0361850403185784|476, 5002
+25|Lemon Bay Aquatic Preserve|2021|5|Total Phosphorus|Surface|Sample|9|0.029|0.13|0.052|0.0693333333333333|0.034615747861342|476, 5002
 25|Lemon Bay Aquatic Preserve|2021|6|Total Phosphorus|Surface|Sample|3|0.027|0.096|0.037|0.0533333333333333|0.0372871738448134|476
 25|Lemon Bay Aquatic Preserve|2021|7|Total Phosphorus|Surface|Sample|2|0.07|0.16|0.115|0.115|0.0636396103067893|5002
 25|Lemon Bay Aquatic Preserve|2021|8|Total Phosphorus|Surface|Sample|7|0.031|0.22|0.071|0.106142857142857|0.0783611905886849|476, 5002
 25|Lemon Bay Aquatic Preserve|2021|9|Total Phosphorus|Surface|Sample|7|0.053|0.23|0.074|0.115|0.0742091638546076|476, 5002
-25|Lemon Bay Aquatic Preserve|2021|10|Total Phosphorus|Surface|Sample|8|0.034|0.16|0.0655|0.08175|0.0431368255007913|476, 5002
+25|Lemon Bay Aquatic Preserve|2021|10|Total Phosphorus|Surface|Sample|9|0.034|0.16|0.07|0.0815555555555556|0.0403550217169782|476, 5002
 25|Lemon Bay Aquatic Preserve|2021|11|Total Phosphorus|Surface|Sample|5|0.036|0.13|0.053|0.0746|0.042471166689885|476, 5002
-25|Lemon Bay Aquatic Preserve|2021|12|Total Phosphorus|Surface|Sample|3|0.044|0.05|0.05|0.048|0.00346410161513776|476, 5002
+25|Lemon Bay Aquatic Preserve|2021|12|Total Phosphorus|Surface|Sample|4|0.044|0.05|0.05|0.0485|0.003|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|1|Total Phosphorus|Surface|Sample|1|0.23|0.23|0.23|0.23||476
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1991|2|Total Phosphorus|Surface|Sample|3|0.035|0.054|0.054|0.0476666666666667|0.0109696551146029|10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1991|4|Total Phosphorus|Surface|Sample|4|0.028|0.066|0.044|0.0455|0.0180092568789868|10000
@@ -4579,7 +4580,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|2|Total Phosphorus|Surface|Sample|8|0.000027|0.087|0.035|0.03313275|0.0288264981607944|514, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|3|Total Phosphorus|Surface|Sample|35|0.000025|0.17|0.021|0.0368872571428571|0.038781272232372|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|4|Total Phosphorus|Surface|Sample|10|0.000021|0.066|0.025|0.0281054|0.0233520554374889|514, 5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|5|Total Phosphorus|Surface|Sample|28|0.000033|0.072|0.041|0.037931|0.0201519239096236|514, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|5|Total Phosphorus|Surface|Sample|29|0.000033|0.072|0.043|0.0386575172413793|0.0201718481121245|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|6|Total Phosphorus|Surface|Sample|16|0.000041|0.116|0.045|0.05700525|0.0354160294113649|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|7|Total Phosphorus|Surface|Sample|35|0.000045|0.185|0.079|0.0888335142857143|0.0536487087440527|514, 5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|8|Total Phosphorus|Surface|Sample|8|0.00004|0.16|0.0685|0.070140625|0.0642932462814775|514, 10000
@@ -5357,7 +5358,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2017|6|Total Phosphorus|Surface|Sample|9|0.0305|0.1005|0.059|0.062|0.0246715929765388|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2017|10|Total Phosphorus|Surface|Sample|1|0.067|0.067|0.067|0.067||5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|1|0.056|0.056|0.056|0.056||5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|8|Total Phosphorus|Surface|Sample|3|0.044|0.07|0.059|0.0576666666666667|0.0130511813003013|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|8|Total Phosphorus|Surface|Sample|4|0.044|0.075|0.0645|0.062|0.013735598518691|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|3|0.046|0.073|0.07|0.063|0.0147986485869487|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|3|0.052|0.077|0.069|0.066|0.0127671453348037|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|11|Total Phosphorus|Surface|Sample|3|0.042|0.068|0.052|0.054|0.013114877048604|5002
@@ -5368,15 +5369,15 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|5|Total Phosphorus|Surface|Sample|8|0.0222|0.0822|0.04945|0.0508|0.0221730209295634|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|6|Total Phosphorus|Surface|Sample|8|0.0388|0.1899|0.0823|0.0920125|0.0485256467536203|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|7|Total Phosphorus|Surface|Sample|11|0.0113|0.1371|0.0719|0.0756090909090909|0.0366059955347606|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|8|Total Phosphorus|Surface|Sample|18|0.035|0.22|0.10045|0.113633333333333|0.0564771999805856|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|8|Total Phosphorus|Surface|Sample|19|0.035|0.22|0.105|0.113442105263158|0.0548923017856023|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|9|Total Phosphorus|Surface|Sample|9|0.0359|0.177|0.0675|0.074|0.0432846393077267|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|10|Total Phosphorus|Surface|Sample|7|0.0392|0.262|0.078|0.0973428571428571|0.0767293915250833|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|11|Total Phosphorus|Surface|Sample|8|0.0266|0.1169|0.0581|0.0674625|0.0326193604868555|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|12|Total Phosphorus|Surface|Sample|8|0.0183|0.0789|0.0447|0.0475875|0.0235637395467819|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|1|Total Phosphorus|Surface|Sample|12|0.01|0.12|0.0508|0.0576|0.0314395234754542|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|11|0.028|0.126|0.057|0.0639090909090909|0.0307943324183349|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|12|0.028|0.126|0.06|0.0675833333333333|0.0320013020568435|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|22|0.0296|0.0996|0.06095|0.06275|0.0193898291944637|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|11|0.049|0.112|0.069|0.0774545454545455|0.0211630037393733|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|12|0.046|0.112|0.069|0.0748333333333333|0.0221270436481257|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|5|Total Phosphorus|Surface|Sample|4|0.041|0.067|0.062|0.058|0.0120277457017791|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|6|Total Phosphorus|Surface|Sample|11|0.07|0.188|0.158|0.139545454545455|0.0406112389280692|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|7|Total Phosphorus|Surface|Sample|1|0.0787|0.0787|0.0787|0.0787||5002
@@ -5527,12 +5528,12 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 48|Nature Coast Aquatic Preserve|2015|10|Total Phosphorus|Surface|Sample|25|0.005|0.054|0.01|0.01228|0.00990589050346644|479
 48|Nature Coast Aquatic Preserve|2015|11|Total Phosphorus|Surface|Sample|9|0.005|0.011|0.006|0.00688888888888889|0.00231540733157497|479
 48|Nature Coast Aquatic Preserve|2016|2|Total Phosphorus|Surface|Sample|1|0.022|0.022|0.022|0.022||5002
-48|Nature Coast Aquatic Preserve|2017|9|Total Phosphorus|Surface|Sample|1|0.028|0.028|0.028|0.028||540
+48|Nature Coast Aquatic Preserve|2017|9|Total Phosphorus|Surface|Sample|2|0.028|0.03|0.029|0.029|0.00141421356237309|540
 48|Nature Coast Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|1|0.027|0.027|0.027|0.027||540
 48|Nature Coast Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|1|0.017|0.017|0.017|0.017||540
 48|Nature Coast Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|1|0.018|0.018|0.018|0.018||540
 48|Nature Coast Aquatic Preserve|2018|9|Total Phosphorus|Surface|Sample|1|0.026|0.026|0.026|0.026||540
-48|Nature Coast Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|6|0.008|0.027|0.0115|0.0151666666666667|0.00870440501508671|5002
+48|Nature Coast Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|7|0.008|0.027|0.014|0.0152857142857143|0.00795223837910404|5002
 48|Nature Coast Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|4|0.015|0.027|0.026|0.0235|0.00574456264653803|540, 5002
 48|Nature Coast Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|6|0.009|0.081|0.0145|0.0263333333333333|0.0278687399547713|5002
 48|Nature Coast Aquatic Preserve|2019|7|Total Phosphorus|Surface|Sample|6|0.007|0.038|0.0195|0.0213333333333333|0.0130025638497439|5002
@@ -5720,28 +5721,28 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 33|Pellicer Creek Aquatic Preserve|2017|4|Total Phosphorus|Surface|Sample|14|0.062|0.12|0.085|0.0861428571428571|0.0161952373951639|4054, 5002
 33|Pellicer Creek Aquatic Preserve|2017|5|Total Phosphorus|Surface|Sample|15|0.073|0.11|0.095|0.0929333333333333|0.0107932959792289|4054, 5002
 33|Pellicer Creek Aquatic Preserve|2017|6|Total Phosphorus|Surface|Sample|14|0.14|0.19|0.16|0.160714285714286|0.0154243991102437|4054
-33|Pellicer Creek Aquatic Preserve|2017|7|Total Phosphorus|Surface|Sample|14|0.12|0.22|0.19|0.187142857142857|0.0239963367167611|4054
+33|Pellicer Creek Aquatic Preserve|2017|7|Total Phosphorus|Surface|Sample|15|0.12|0.22|0.19|0.188|0.0233605283697584|4054
 33|Pellicer Creek Aquatic Preserve|2017|8|Total Phosphorus|Surface|Sample|3|0.1|0.12|0.11|0.11|0.01|4054
-33|Pellicer Creek Aquatic Preserve|2017|9|Total Phosphorus|Surface|Sample|1|0.12|0.12|0.12|0.12||4054
+33|Pellicer Creek Aquatic Preserve|2017|9|Total Phosphorus|Surface|Sample|2|0.12|0.13|0.125|0.125|0.00707106781186548|4054
 33|Pellicer Creek Aquatic Preserve|2017|10|Total Phosphorus|Surface|Sample|12|0.065|0.14|0.0895|0.0964166666666667|0.0290343318201474|4054
-33|Pellicer Creek Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|8|0.06|0.095|0.077|0.075|0.0119522860933439|4054
-33|Pellicer Creek Aquatic Preserve|2017|12|Total Phosphorus|Surface|Sample|14|0.047|0.062|0.051|0.0532857142857143|0.00469743909656464|4054
+33|Pellicer Creek Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|9|0.06|0.095|0.079|0.0757777777777778|0.0114212277993412|4054
+33|Pellicer Creek Aquatic Preserve|2017|12|Total Phosphorus|Surface|Sample|15|0.047|0.062|0.051|0.053|0.00465985898008574|4054
 33|Pellicer Creek Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|14|0.055|0.08|0.0635|0.0652857142857143|0.00790743147472506|4054
 33|Pellicer Creek Aquatic Preserve|2018|2|Total Phosphorus|Surface|Sample|14|0.069|0.085|0.076|0.0771428571428571|0.00512695955569325|4054
-33|Pellicer Creek Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|12|0.048|0.069|0.059|0.0588333333333333|0.00682020172100148|4054
-33|Pellicer Creek Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|13|0.068|0.094|0.08|0.0801538461538462|0.00730121170133371|4054
+33|Pellicer Creek Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|13|0.048|0.069|0.059|0.0588461538461539|0.00653000962028584|4054
+33|Pellicer Creek Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|14|0.068|0.094|0.0805|0.0802857142857143|0.00703210846407743|4054
 33|Pellicer Creek Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|14|0.078|0.14|0.1|0.100785714285714|0.0169123467480853|4054
-33|Pellicer Creek Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|14|0.069|0.095|0.0805|0.081|0.00884046639911301|4054
+33|Pellicer Creek Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|15|0.069|0.095|0.081|0.0813333333333333|0.00861615315776682|4054
 33|Pellicer Creek Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|14|0.072|0.11|0.0905|0.089|0.00965560817508505|4054
-33|Pellicer Creek Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|14|0.053|0.084|0.06|0.0607142857142857|0.00764026350158333|4054
+33|Pellicer Creek Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|15|0.053|0.084|0.06|0.0608666666666667|0.0073859583638402|4054
 33|Pellicer Creek Aquatic Preserve|2018|9|Total Phosphorus|Surface|Sample|15|0.074|0.1|0.09|0.089|0.00801783725737273|4054, 5002
 33|Pellicer Creek Aquatic Preserve|2018|10|Total Phosphorus|Surface|Sample|12|0.046|0.1|0.0825|0.0821666666666667|0.0138290427811336|4054
-33|Pellicer Creek Aquatic Preserve|2018|11|Total Phosphorus|Surface|Sample|12|0.062|0.1|0.068|0.072|0.0110946342477303|4054
+33|Pellicer Creek Aquatic Preserve|2018|11|Total Phosphorus|Surface|Sample|13|0.062|0.1|0.068|0.0714615384615385|0.0107982667175137|4054
 33|Pellicer Creek Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|12|0.058|0.072|0.0615|0.0623333333333333|0.00386906926400872|4054
-33|Pellicer Creek Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|14|0.049|0.086|0.068|0.069|0.0096635715646243|4054
-33|Pellicer Creek Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|12|0.04|0.055|0.051|0.0498333333333333|0.0039962103260085|4054
+33|Pellicer Creek Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|15|0.049|0.086|0.069|0.069|0.00931205056441843|4054
+33|Pellicer Creek Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|13|0.04|0.055|0.05|0.0496153846153846|0.00390594550095239|4054
 33|Pellicer Creek Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|11|0.057|0.072|0.069|0.0677272727272727|0.00458455906475004|4054
-33|Pellicer Creek Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|19|0.027|0.18|0.055|0.0675263157894737|0.0337332154494854|4054
+33|Pellicer Creek Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|20|0.027|0.18|0.054|0.06635|0.0332522654550744|4054
 33|Pellicer Creek Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|6|0.082|0.095|0.086|0.0866666666666667|0.0045018514709691|4054
 33|Pellicer Creek Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|12|0.11|0.13|0.11|0.115833333333333|0.00792961461098759|4054
 33|Pellicer Creek Aquatic Preserve|2019|7|Total Phosphorus|Surface|Sample|12|0.099|0.13|0.11|0.11325|0.00997382939132572|4054
@@ -5980,7 +5981,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 34|Pine Island Sound Aquatic Preserve|2021|10|Total Phosphorus|Surface|Sample|18|0.033|0.12|0.047|0.0504444444444444|0.0203534134215491|476, 5002
 34|Pine Island Sound Aquatic Preserve|2021|11|Total Phosphorus|Surface|Sample|15|0.022|0.096|0.038|0.0450666666666667|0.0210083883473336|476, 5002
 34|Pine Island Sound Aquatic Preserve|2021|12|Total Phosphorus|Surface|Sample|3|0.022|0.052|0.024|0.0326666666666667|0.0167729941672122|476, 5002
-34|Pine Island Sound Aquatic Preserve|2022|1|Total Phosphorus|Surface|Sample|1|0.14|0.14|0.14|0.14||476
+34|Pine Island Sound Aquatic Preserve|2022|1|Total Phosphorus|Surface|Sample|2|0.14|0.14|0.14|0.14|0|476
 35|Pinellas County Aquatic Preserve|1999|1|Total Phosphorus|Surface|Sample|21|0.02|0.25|0.11|0.0990476190476191|0.0659473094147716|5002
 35|Pinellas County Aquatic Preserve|1999|2|Total Phosphorus|Surface|Sample|21|0.02|0.2|0.11|0.09|0.0564800849857718|5002
 35|Pinellas County Aquatic Preserve|1999|3|Total Phosphorus|Surface|Sample|24|0.04|0.2|0.115|0.116666666666667|0.0606964411725638|5002
@@ -6226,23 +6227,23 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 35|Pinellas County Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|16|0.0099|0.132|0.0735|0.05796875|0.0384257156732311|514, 5002
 35|Pinellas County Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|18|0.0099|0.132|0.03995|0.0518388888888889|0.0452335265937178|514, 5002
 35|Pinellas County Aquatic Preserve|2020|4|Total Phosphorus|Surface|Sample|9|0.054|0.102|0.084|0.0826666666666667|0.0138112273169331|514
-35|Pinellas County Aquatic Preserve|2020|5|Total Phosphorus|Surface|Sample|66|0.01|0.29|0.07|0.0883333333333333|0.0532796203882681|5002
-35|Pinellas County Aquatic Preserve|2020|6|Total Phosphorus|Surface|Sample|76|0.0099|0.28|0.075|0.0908394736842105|0.056429833903583|514, 5002
-35|Pinellas County Aquatic Preserve|2020|7|Total Phosphorus|Surface|Sample|22|0.04|0.14|0.079|0.0847727272727273|0.0291513812760739|514, 5002
-35|Pinellas County Aquatic Preserve|2020|8|Total Phosphorus|Surface|Sample|72|0.03|0.24|0.07|0.0948888888888889|0.0522207005405445|514, 5002
+35|Pinellas County Aquatic Preserve|2020|5|Total Phosphorus|Surface|Sample|67|0.01|0.29|0.07|0.0871641791044776|0.0537335167156785|5002
+35|Pinellas County Aquatic Preserve|2020|6|Total Phosphorus|Surface|Sample|77|0.0099|0.28|0.078|0.0906987012987013|0.0560709641847451|514, 5002
+35|Pinellas County Aquatic Preserve|2020|7|Total Phosphorus|Surface|Sample|23|0.04|0.14|0.078|0.0836956521739131|0.0289457718416677|514, 5002
+35|Pinellas County Aquatic Preserve|2020|8|Total Phosphorus|Surface|Sample|73|0.03|0.24|0.07|0.0944109589041096|0.0520173143226898|514, 5002
 35|Pinellas County Aquatic Preserve|2020|9|Total Phosphorus|Surface|Sample|54|0.03|0.21|0.07|0.0883333333333333|0.0381036322737456|5002
-35|Pinellas County Aquatic Preserve|2020|10|Total Phosphorus|Surface|Sample|66|0.01|0.178|0.06|0.0623939393939394|0.0355825708362865|514, 5002
+35|Pinellas County Aquatic Preserve|2020|10|Total Phosphorus|Surface|Sample|67|0.01|0.178|0.06|0.0616119402985075|0.0358874314218361|514, 5002
 35|Pinellas County Aquatic Preserve|2020|11|Total Phosphorus|Surface|Sample|27|0.022|0.155|0.06|0.0685555555555556|0.0387539906960792|514, 5002
-35|Pinellas County Aquatic Preserve|2020|12|Total Phosphorus|Surface|Sample|68|0.02|0.15|0.06|0.0625441176470588|0.0276397042036192|5002
+35|Pinellas County Aquatic Preserve|2020|12|Total Phosphorus|Surface|Sample|69|0.02|0.15|0.06|0.0619275362318841|0.0279096856688623|5002
 35|Pinellas County Aquatic Preserve|2021|1|Total Phosphorus|Surface|Sample|11|0.02|0.116|0.06|0.0716363636363636|0.0342323610850106|5002
-35|Pinellas County Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|60|0.01|0.15|0.06|0.0564333333333333|0.0334138744483443|5002
+35|Pinellas County Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|62|0.01|0.15|0.06|0.0555806451612903|0.0331971499799314|5002
 35|Pinellas County Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|51|0.01|0.315|0.077|0.0891372549019608|0.0513353755641636|514, 5002
 35|Pinellas County Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|32|0.01|0.15|0.05|0.0528125|0.0324876527413902|514, 5002
-35|Pinellas County Aquatic Preserve|2021|5|Total Phosphorus|Surface|Sample|74|0.01|0.211|0.07|0.0827972972972973|0.044066879349564|514, 5002
-35|Pinellas County Aquatic Preserve|2021|6|Total Phosphorus|Surface|Sample|39|0.01|0.15|0.06|0.0688461538461539|0.0350507440130797|514, 5002
+35|Pinellas County Aquatic Preserve|2021|5|Total Phosphorus|Surface|Sample|75|0.01|0.211|0.07|0.08196|0.0443647169280737|514, 5002
+35|Pinellas County Aquatic Preserve|2021|6|Total Phosphorus|Surface|Sample|40|0.01|0.15|0.06|0.067375|0.0358277127374886|514, 5002
 35|Pinellas County Aquatic Preserve|2021|7|Total Phosphorus|Surface|Sample|50|0.016|0.42|0.09|0.13318|0.0918494086946183|514, 5002
-35|Pinellas County Aquatic Preserve|2021|8|Total Phosphorus|Surface|Sample|37|0.01|0.36|0.072|0.0936216216216216|0.0859923612083433|514, 5002
-35|Pinellas County Aquatic Preserve|2021|9|Total Phosphorus|Surface|Sample|65|0.01|0.285|0.05|0.0871230769230769|0.0684147525420111|514, 5002
+35|Pinellas County Aquatic Preserve|2021|8|Total Phosphorus|Surface|Sample|38|0.01|0.36|0.0695|0.0916842105263158|0.0856590050687018|514, 5002
+35|Pinellas County Aquatic Preserve|2021|9|Total Phosphorus|Surface|Sample|66|0.01|0.285|0.055|0.0867121212121212|0.0679684916032116|514, 5002
 35|Pinellas County Aquatic Preserve|2021|10|Total Phosphorus|Surface|Sample|2|0.132|0.14|0.136|0.136|0.00565685424949239|5002
 35|Pinellas County Aquatic Preserve|2021|11|Total Phosphorus|Surface|Sample|4|0.02|0.14|0.03|0.055|0.0568624070307733|5002
 35|Pinellas County Aquatic Preserve|2021|12|Total Phosphorus|Surface|Sample|6|0.011|0.05|0.035|0.0306666666666667|0.0157945138154571|5002
@@ -6676,34 +6677,34 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 38|Rookery Bay Aquatic Preserve|2017|8|Total Phosphorus|Surface|Sample|2|0.037|0.04|0.0385|0.0385|0.00212132034355964|354
 38|Rookery Bay Aquatic Preserve|2017|9|Total Phosphorus|Surface|Sample|4|0.051|0.1|0.1|0.08775|0.0245|354, 5002
 38|Rookery Bay Aquatic Preserve|2017|10|Total Phosphorus|Surface|Sample|2|0.062|0.064|0.063|0.063|0.0014142135623731|354
-38|Rookery Bay Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|4|0.023|0.06|0.052|0.04675|0.0163579746097533|354, 5002
+38|Rookery Bay Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|5|0.023|0.06|0.054|0.0492|0.0151888116717537|354, 5002
 38|Rookery Bay Aquatic Preserve|2017|12|Total Phosphorus|Surface|Sample|2|0.042|0.044|0.043|0.043|0.00141421356237309|354
 38|Rookery Bay Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|2|0.027|0.027|0.027|0.027|0|354
 38|Rookery Bay Aquatic Preserve|2018|2|Total Phosphorus|Surface|Sample|4|0.04|0.065|0.0415|0.047|0.0120830459735946|354, 5002
 38|Rookery Bay Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|2|0.036|0.036|0.036|0.036|0|354
 38|Rookery Bay Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|1|0.059|0.059|0.059|0.059||354
-38|Rookery Bay Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|4|0.029|0.062|0.057|0.05125|0.0153704261489394|354, 5002
+38|Rookery Bay Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|5|0.028|0.062|0.053|0.0466|0.0168908259123111|354, 5002
 38|Rookery Bay Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|2|0.063|0.064|0.0635|0.0635|0.000707106781186548|354
 38|Rookery Bay Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|2|0.045|0.051|0.048|0.048|0.00424264068711928|354
-38|Rookery Bay Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|4|0.034|0.073|0.0565|0.055|0.0160208197875972|354, 5002
+38|Rookery Bay Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|5|0.034|0.073|0.057|0.0586|0.0160405735558302|354, 5002
 38|Rookery Bay Aquatic Preserve|2018|9|Total Phosphorus|Surface|Sample|2|0.037|0.038|0.0375|0.0375|0.000707106781186548|354
 38|Rookery Bay Aquatic Preserve|2018|10|Total Phosphorus|Surface|Sample|2|0.034|0.035|0.0345|0.0345|0.000707106781186548|354
 38|Rookery Bay Aquatic Preserve|2018|11|Total Phosphorus|Surface|Sample|2|0.047|0.11|0.0785|0.0785|0.0445477272147525|354
-38|Rookery Bay Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|3|0.041|0.054|0.042|0.0456666666666667|0.00723417813807023|354, 5002
+38|Rookery Bay Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|4|0.041|0.054|0.046|0.04675|0.00629152869605896|354, 5002
 38|Rookery Bay Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|2|0.054|0.058|0.056|0.056|0.00282842712474619|354
-38|Rookery Bay Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|4|0.026|0.058|0.044|0.043|0.013114877048604|354, 5002
+38|Rookery Bay Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|5|0.026|0.058|0.044|0.0422|0.0114978258814438|354, 5002
 38|Rookery Bay Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|2|0.066|0.066|0.066|0.066|0|354
-38|Rookery Bay Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|3|0.05|0.058|0.052|0.0533333333333333|0.00416333199893227|354, 5002
+38|Rookery Bay Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|4|0.05|0.058|0.052|0.053|0.00346410161513776|354, 5002
 38|Rookery Bay Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|3|0.031|0.044|0.043|0.0393333333333333|0.00723417813807023|354, 5002
 38|Rookery Bay Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|2|0.042|0.043|0.0425|0.0425|0.000707106781186543|354
 38|Rookery Bay Aquatic Preserve|2019|7|Total Phosphorus|Surface|Sample|2|0.04|0.047|0.0435|0.0435|0.00494974746830583|354
 38|Rookery Bay Aquatic Preserve|2019|8|Total Phosphorus|Surface|Sample|2|0.036|0.041|0.0385|0.0385|0.00353553390593274|354
-38|Rookery Bay Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|4|0.021|0.048|0.0415|0.038|0.011916375287813|354, 5002
+38|Rookery Bay Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|5|0.021|0.048|0.04|0.0384|0.0103585713300628|354, 5002
 38|Rookery Bay Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|2|0.048|0.05|0.049|0.049|0.0014142135623731|354
-38|Rookery Bay Aquatic Preserve|2019|11|Total Phosphorus|Surface|Sample|4|0.033|0.042|0.036|0.03675|0.00411298755975102|354, 5002
+38|Rookery Bay Aquatic Preserve|2019|11|Total Phosphorus|Surface|Sample|5|0.033|0.042|0.038|0.0378|0.00426614580154031|354, 5002
 38|Rookery Bay Aquatic Preserve|2019|12|Total Phosphorus|Surface|Sample|2|0.033|0.035|0.034|0.034|0.0014142135623731|354
-38|Rookery Bay Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|2|0.017|0.046|0.0315|0.0315|0.0205060966544099|5002
-38|Rookery Bay Aquatic Preserve|2020|9|Total Phosphorus|Surface|Sample|5|0.027|0.054|0.036|0.0394|0.0106207344378814|5002
+38|Rookery Bay Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|3|0.017|0.047|0.046|0.0366666666666667|0.0170391705588427|5002
+38|Rookery Bay Aquatic Preserve|2020|9|Total Phosphorus|Surface|Sample|6|0.027|0.055|0.041|0.042|0.0114367827643966|5002
 38|Rookery Bay Aquatic Preserve|2020|11|Total Phosphorus|Surface|Sample|1|0.043|0.043|0.043|0.043||5002
 38|Rookery Bay Aquatic Preserve|2021|1|Total Phosphorus|Surface|Sample|4|0.028|0.037|0.03|0.03125|0.00427200187265877|5002
 38|Rookery Bay Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|2|0.045|0.053|0.049|0.049|0.00565685424949238|5002
@@ -6986,34 +6987,34 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 39|Rookery Bay National Estuarine Research Reserve|2017|8|Total Phosphorus|Surface|Sample|10|0.022|0.057|0.0455|0.0436|0.012598059815349|354
 39|Rookery Bay National Estuarine Research Reserve|2017|9|Total Phosphorus|Surface|Sample|16|0.033|0.17|0.11|0.10725|0.0394892390405285|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2017|10|Total Phosphorus|Surface|Sample|10|0.026|0.13|0.063|0.0747|0.0413898806741723|354
-39|Rookery Bay National Estuarine Research Reserve|2017|11|Total Phosphorus|Surface|Sample|16|0.023|0.14|0.0525|0.0664375|0.0386918919154905|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2017|11|Total Phosphorus|Surface|Sample|17|0.023|0.14|0.054|0.066|0.0375066660741794|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2017|12|Total Phosphorus|Surface|Sample|10|0.04|0.13|0.055|0.0675|0.0328810989272966|354
 39|Rookery Bay National Estuarine Research Reserve|2018|1|Total Phosphorus|Surface|Sample|10|0.027|0.045|0.038|0.038|0.00684754619472471|354
 39|Rookery Bay National Estuarine Research Reserve|2018|2|Total Phosphorus|Surface|Sample|16|0.04|0.077|0.0605|0.0579375|0.0114103388789875|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2018|3|Total Phosphorus|Surface|Sample|10|0.036|0.061|0.055|0.0514|0.00964019363567627|354
 39|Rookery Bay National Estuarine Research Reserve|2018|4|Total Phosphorus|Surface|Sample|6|0.059|0.074|0.07|0.0683333333333333|0.00575036230742609|354
-39|Rookery Bay National Estuarine Research Reserve|2018|5|Total Phosphorus|Surface|Sample|16|0.029|0.12|0.059|0.06225|0.0200881391207183|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2018|5|Total Phosphorus|Surface|Sample|17|0.028|0.12|0.057|0.0602352941176471|0.0211498505070506|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2018|6|Total Phosphorus|Surface|Sample|10|0.056|0.16|0.098|0.0975|0.0392859884550318|354
 39|Rookery Bay National Estuarine Research Reserve|2018|7|Total Phosphorus|Surface|Sample|10|0.024|0.1|0.0535|0.0582|0.0262712347973554|354
-39|Rookery Bay National Estuarine Research Reserve|2018|8|Total Phosphorus|Surface|Sample|16|0.026|0.16|0.059|0.0674375|0.0329220670675461|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2018|8|Total Phosphorus|Surface|Sample|17|0.026|0.16|0.06|0.0677647058823529|0.0319051904315048|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2018|9|Total Phosphorus|Surface|Sample|10|0.027|0.14|0.0525|0.0636|0.0384857838111108|354
 39|Rookery Bay National Estuarine Research Reserve|2018|10|Total Phosphorus|Surface|Sample|10|0.034|0.1|0.0395|0.0528|0.0255116531107736|354
 39|Rookery Bay National Estuarine Research Reserve|2018|11|Total Phosphorus|Surface|Sample|10|0.042|0.11|0.057|0.0663|0.0248642983680082|354
-39|Rookery Bay National Estuarine Research Reserve|2018|12|Total Phosphorus|Surface|Sample|12|0.041|0.064|0.055|0.05275|0.00789850388594977|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2018|12|Total Phosphorus|Surface|Sample|13|0.041|0.064|0.054|0.0525384615384615|0.0076006072631883|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2019|1|Total Phosphorus|Surface|Sample|10|0.054|0.075|0.064|0.066|0.0079021797274198|354
-39|Rookery Bay National Estuarine Research Reserve|2019|2|Total Phosphorus|Surface|Sample|16|0.026|0.09|0.058|0.0624375|0.0193079215176915|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2019|2|Total Phosphorus|Surface|Sample|17|0.026|0.09|0.058|0.0610588235294118|0.0195399289540523|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2019|3|Total Phosphorus|Surface|Sample|10|0.04|0.17|0.0885|0.0922|0.0459439271769888|354
-39|Rookery Bay National Estuarine Research Reserve|2019|4|Total Phosphorus|Surface|Sample|15|0.033|0.092|0.076|0.0702|0.0196766721925083|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2019|4|Total Phosphorus|Surface|Sample|16|0.033|0.092|0.0755|0.0690625|0.0195464191093919|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2019|5|Total Phosphorus|Surface|Sample|11|0.031|0.085|0.073|0.0649090909090909|0.0193775878037208|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2019|6|Total Phosphorus|Surface|Sample|11|0.042|0.091|0.064|0.0648181818181818|0.016277703657569|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2019|7|Total Phosphorus|Surface|Sample|10|0.03|0.094|0.0685|0.063|0.0241062463090194|354
 39|Rookery Bay National Estuarine Research Reserve|2019|8|Total Phosphorus|Surface|Sample|10|0.027|0.092|0.053|0.0562|0.0240129594640524|354
-39|Rookery Bay National Estuarine Research Reserve|2019|9|Total Phosphorus|Surface|Sample|16|0.021|0.073|0.043|0.046|0.0158029533104839|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2019|9|Total Phosphorus|Surface|Sample|17|0.021|0.073|0.042|0.0456470588235294|0.0153701869558839|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2019|10|Total Phosphorus|Surface|Sample|10|0.038|0.073|0.049|0.0536|0.0127121988656566|354
-39|Rookery Bay National Estuarine Research Reserve|2019|11|Total Phosphorus|Surface|Sample|16|0.032|0.084|0.0485|0.0518125|0.0176227835485771|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2019|11|Total Phosphorus|Surface|Sample|17|0.032|0.084|0.046|0.0512352941176471|0.0172283538526055|354, 5002
 39|Rookery Bay National Estuarine Research Reserve|2019|12|Total Phosphorus|Surface|Sample|10|0.033|0.07|0.0575|0.0527|0.0152319109474521|354
-39|Rookery Bay National Estuarine Research Reserve|2020|2|Total Phosphorus|Surface|Sample|6|0.017|0.085|0.0625|0.0571666666666667|0.0238614053791194|5002
-39|Rookery Bay National Estuarine Research Reserve|2020|9|Total Phosphorus|Surface|Sample|9|0.027|0.068|0.045|0.0447777777777778|0.0125177651537503|5002
+39|Rookery Bay National Estuarine Research Reserve|2020|2|Total Phosphorus|Surface|Sample|7|0.017|0.085|0.055|0.0557142857142857|0.0221187272517678|5002
+39|Rookery Bay National Estuarine Research Reserve|2020|9|Total Phosphorus|Surface|Sample|10|0.027|0.068|0.0455|0.0458|0.0122365572500329|5002
 39|Rookery Bay National Estuarine Research Reserve|2020|11|Total Phosphorus|Surface|Sample|9|0.026|0.065|0.036|0.0431111111111111|0.0153984126166015|5002
 39|Rookery Bay National Estuarine Research Reserve|2021|1|Total Phosphorus|Surface|Sample|12|0.028|0.065|0.0325|0.03775|0.011185420705706|5002
 39|Rookery Bay National Estuarine Research Reserve|2021|2|Total Phosphorus|Surface|Sample|2|0.045|0.053|0.049|0.049|0.00565685424949238|5002
@@ -7290,35 +7291,35 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 40|St. Andrews State Park Aquatic Preserve|2017|6|Total Phosphorus|Surface|Sample|7|0.000011|0.01|0.009|0.006575|0.00449788731887909|470, 514
 40|St. Andrews State Park Aquatic Preserve|2017|7|Total Phosphorus|Surface|Sample|5|0.011|0.014|0.012|0.0122|0.00109544511501033|470
 40|St. Andrews State Park Aquatic Preserve|2017|8|Total Phosphorus|Surface|Sample|7|0.000013|0.013|0.012|0.00857557142857143|0.00587675431558222|470, 514
-40|St. Andrews State Park Aquatic Preserve|2017|9|Total Phosphorus|Surface|Sample|4|0.011|0.012|0.0115|0.0115|0.000577350269189626|470
+40|St. Andrews State Park Aquatic Preserve|2017|9|Total Phosphorus|Surface|Sample|5|0.011|0.019|0.012|0.013|0.00339116499156263|470
 40|St. Andrews State Park Aquatic Preserve|2017|10|Total Phosphorus|Surface|Sample|7|0.000011|0.024|0.01|0.00957457142857143|0.00827942546028291|470, 514
 40|St. Andrews State Park Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|5|0.008|0.011|0.009|0.0094|0.00114017542509914|470
 40|St. Andrews State Park Aquatic Preserve|2017|12|Total Phosphorus|Surface|Sample|5|0.008|0.011|0.011|0.0102|0.00130384048104053|470
-40|St. Andrews State Park Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|4|0.008|0.01|0.009|0.009|0.000816496580927726|470
+40|St. Andrews State Park Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|5|0.008|0.01|0.009|0.009|0.000707106781186548|470
 40|St. Andrews State Park Aquatic Preserve|2018|2|Total Phosphorus|Surface|Sample|7|0.000014|0.011|0.01|0.00714728571428571|0.0049060274735705|470, 514
-40|St. Andrews State Park Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|5|0.008|0.01|0.009|0.0092|0.000836660026534076|470
+40|St. Andrews State Park Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|6|0.008|0.01|0.009|0.009|0.000894427190999916|470
 40|St. Andrews State Park Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|7|0.000014|0.014|0.008|0.00643257142857143|0.00515355161861355|470, 514
 40|St. Andrews State Park Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|5|0.008|0.012|0.01|0.0102|0.00178885438199983|470
-40|St. Andrews State Park Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|7|0.000012|0.011|0.009|0.00700342857142857|0.00482466243576145|470, 514
-40|St. Andrews State Park Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|5|0.008|0.011|0.009|0.009|0.00122474487139159|470
-40|St. Andrews State Park Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|6|0.000013|0.014|0.0115|0.0100021666666667|0.00501478096896232|470, 514
+40|St. Andrews State Park Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|8|0.000012|0.011|0.0095|0.007378|0.00459069269594159|470, 514
+40|St. Andrews State Park Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|6|0.008|0.011|0.009|0.00916666666666667|0.00116904519445001|470
+40|St. Andrews State Park Aquatic Preserve|2018|8|Total Phosphorus|Surface|Sample|7|0.000013|0.014|0.011|0.0101447142857143|0.00459335704085388|470, 514
 40|St. Andrews State Park Aquatic Preserve|2018|9|Total Phosphorus|Surface|Sample|5|0.009|0.017|0.01|0.0114|0.00320936130717624|470
-40|St. Andrews State Park Aquatic Preserve|2018|11|Total Phosphorus|Surface|Sample|5|0.009|0.019|0.011|0.0128|0.00389871773792359|470
-40|St. Andrews State Park Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|7|0.000011|0.017|0.009|0.00857657142857143|0.00659668734687199|470, 514
+40|St. Andrews State Park Aquatic Preserve|2018|11|Total Phosphorus|Surface|Sample|6|0.009|0.019|0.011|0.0121666666666667|0.00381663027639129|470
+40|St. Andrews State Park Aquatic Preserve|2018|12|Total Phosphorus|Surface|Sample|8|0.000011|0.017|0.0095|0.0088795|0.00616715475031118|470, 514
 40|St. Andrews State Park Aquatic Preserve|2019|1|Total Phosphorus|Surface|Sample|5|0.009|0.011|0.01|0.01|0.000707106781186548|470
 40|St. Andrews State Park Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|7|0.00001|0.009|0.008|0.00586014285714286|0.00405403710016618|470, 514
-40|St. Andrews State Park Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|5|0.006|0.009|0.007|0.0074|0.00114017542509914|470
+40|St. Andrews State Park Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|6|0.006|0.009|0.007|0.00733333333333333|0.00103279555898864|470
 40|St. Andrews State Park Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|7|0.000011|0.009|0.007|0.00557642857142857|0.00385842817120922|470, 514
 40|St. Andrews State Park Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|5|0.008|0.009|0.009|0.0088|0.000447213595499958|470
-40|St. Andrews State Park Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|6|0.000012|0.01|0.009|0.00617216666666667|0.00478386322616635|470, 514
+40|St. Andrews State Park Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|7|0.000012|0.01|0.009|0.00657614285714286|0.00449594263117949|470, 514
 40|St. Andrews State Park Aquatic Preserve|2019|7|Total Phosphorus|Surface|Sample|5|0.008|0.011|0.01|0.0098|0.00130384048104053|470
 40|St. Andrews State Park Aquatic Preserve|2019|8|Total Phosphorus|Surface|Sample|7|0.000011|0.009|0.008|0.006005|0.00411461869436282|470, 514
-40|St. Andrews State Park Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|5|0.011|0.014|0.012|0.0124|0.00114017542509914|470
-40|St. Andrews State Park Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|7|0.00001|0.016|0.012|0.00957457142857143|0.00672425110717773|470, 514
+40|St. Andrews State Park Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|6|0.011|0.014|0.012|0.0121666666666667|0.00116904519445001|470
+40|St. Andrews State Park Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|8|0.00001|0.016|0.013|0.01025275|0.00651426109722792|470, 514
 40|St. Andrews State Park Aquatic Preserve|2019|11|Total Phosphorus|Surface|Sample|5|0.008|0.01|0.009|0.009|0.001|470
 40|St. Andrews State Park Aquatic Preserve|2019|12|Total Phosphorus|Surface|Sample|5|0.008|0.01|0.009|0.009|0.000707106781186548|470
 40|St. Andrews State Park Aquatic Preserve|2020|1|Total Phosphorus|Surface|Sample|5|0.007|0.01|0.007|0.0078|0.00130384048104053|470
-40|St. Andrews State Park Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|7|0.005|0.009|0.008|0.00757142857142857|0.00161834718742537|470, 514
+40|St. Andrews State Park Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|8|0.005|0.009|0.008|0.007625|0.00150594061730772|470, 514
 40|St. Andrews State Park Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|5|0.007|0.008|0.007|0.0072|0.000447213595499958|470
 40|St. Andrews State Park Aquatic Preserve|2020|4|Total Phosphorus|Surface|Sample|2|0.006|0.011|0.0085|0.0085|0.00353553390593274|514
 40|St. Andrews State Park Aquatic Preserve|2020|6|Total Phosphorus|Surface|Sample|8|0.007|0.017|0.01|0.010875|0.00401559460105225|470, 514
@@ -7498,7 +7499,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 41|St. Joseph Bay Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|9|0.000009|0.009|0.000014|0.00278733333333333|0.00416950830434477|514, 540
 41|St. Joseph Bay Aquatic Preserve|2018|2|Total Phosphorus|Surface|Sample|6|0.000007|0.00002|0.0000115|0.0000125|0.00000450555213042752|514
 41|St. Joseph Bay Aquatic Preserve|2018|3|Total Phosphorus|Surface|Sample|6|0.000006|0.000027|0.000016|0.0000161666666666667|0.00000670571895225759|514
-41|St. Joseph Bay Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|9|0.000012|0.012|0.000021|0.00267833333333333|0.00446431330105762|514, 540
+41|St. Joseph Bay Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|10|0.000012|0.012|0.0000235|0.0032105|0.004532951803798|514, 540
 41|St. Joseph Bay Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|9|0.000009|0.014|0.000039|0.003352|0.00527829662391192|514, 540
 41|St. Joseph Bay Aquatic Preserve|2018|6|Total Phosphorus|Surface|Sample|9|0.000009|0.013|0.000014|0.00400777777777778|0.0060149845340154|514, 540
 41|St. Joseph Bay Aquatic Preserve|2018|7|Total Phosphorus|Surface|Sample|6|0.000012|0.000028|0.0000225|0.000022|0.0000058309518948453|514
@@ -7510,7 +7511,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 41|St. Joseph Bay Aquatic Preserve|2019|2|Total Phosphorus|Surface|Sample|6|0.00001|0.00002|0.000014|0.0000141666666666667|0.00000337144874893074|514
 41|St. Joseph Bay Aquatic Preserve|2019|3|Total Phosphorus|Surface|Sample|9|0.000012|0.015|0.000017|0.00445511111111111|0.00670232686170341|514, 540
 41|St. Joseph Bay Aquatic Preserve|2019|4|Total Phosphorus|Surface|Sample|6|0.00001|0.000017|0.0000135|0.0000133333333333333|0.00000258198889747161|514
-41|St. Joseph Bay Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|9|0.000018|0.013|0.000026|0.00401411111111111|0.00601025166786809|514, 540
+41|St. Joseph Bay Aquatic Preserve|2019|5|Total Phosphorus|Surface|Sample|10|0.000018|0.013|0.000027|0.0046127|0.00597432264965847|514, 540
 41|St. Joseph Bay Aquatic Preserve|2019|6|Total Phosphorus|Surface|Sample|12|0.000015|0.016|0.0045125|0.00600966666666667|0.00665110516221085|514, 540, 5002
 41|St. Joseph Bay Aquatic Preserve|2019|7|Total Phosphorus|Surface|Sample|9|0.000008|0.016|0.00002|0.00456544444444444|0.0069048167084853|514, 5002
 41|St. Joseph Bay Aquatic Preserve|2019|8|Total Phosphorus|Surface|Sample|9|0.000013|0.014|0.000018|0.00467733333333333|0.00699200017877574|514, 5002
@@ -7743,9 +7744,9 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 43|St. Martins Marsh Aquatic Preserve|2019|7|Total Phosphorus|Surface|Sample|4|0.01|0.034|0.026|0.024|0.0103601801786134|479, 5002
 43|St. Martins Marsh Aquatic Preserve|2019|9|Total Phosphorus|Surface|Sample|3|0.01|0.031|0.029|0.0233333333333333|0.0115902257671425|5002
 43|St. Martins Marsh Aquatic Preserve|2019|10|Total Phosphorus|Surface|Sample|7|0.005|0.034|0.015|0.0167142857142857|0.010387721689801|479
-43|St. Martins Marsh Aquatic Preserve|2019|11|Total Phosphorus|Surface|Sample|2|0.007|0.016|0.0115|0.0115|0.00636396103067893|5002
+43|St. Martins Marsh Aquatic Preserve|2019|11|Total Phosphorus|Surface|Sample|3|0.007|0.027|0.016|0.0166666666666667|0.0100166528008778|5002
 43|St. Martins Marsh Aquatic Preserve|2020|1|Total Phosphorus|Surface|Sample|8|0.005|0.048|0.015|0.02125|0.0168925173629374|479
-43|St. Martins Marsh Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|4|0.007|0.026|0.0185|0.0175|0.00946924847422786|479, 5002
+43|St. Martins Marsh Aquatic Preserve|2020|2|Total Phosphorus|Surface|Sample|5|0.007|0.026|0.012|0.0162|0.00870057469366248|479, 5002
 43|St. Martins Marsh Aquatic Preserve|2020|3|Total Phosphorus|Surface|Sample|4|0.01|0.027|0.016|0.01725|0.0078049129826454|479, 5002
 43|St. Martins Marsh Aquatic Preserve|2020|4|Total Phosphorus|Surface|Sample|5|0.005|0.03|0.024|0.0188|0.0128335497817245|479
 43|St. Martins Marsh Aquatic Preserve|2020|5|Total Phosphorus|Surface|Sample|3|0.01|0.026|0.011|0.0156666666666667|0.0089628864398325|479
@@ -8039,8 +8040,8 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 44|Terra Ceia Aquatic Preserve|2020|12|Total Phosphorus|Surface|Sample|14|0.046|0.116|0.075|0.0780714285714286|0.0200593898431413|5002
 44|Terra Ceia Aquatic Preserve|2021|1|Total Phosphorus|Surface|Sample|1|0.275|0.275|0.275|0.275||5002
 44|Terra Ceia Aquatic Preserve|2021|2|Total Phosphorus|Surface|Sample|2|0.146|0.433|0.2895|0.2895|0.202939646200539|5002
-44|Terra Ceia Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|15|0.033|0.277|0.072|0.0865333333333333|0.0589307907230006|5002
-44|Terra Ceia Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|9|0.073|0.177|0.096|0.103222222222222|0.0344484316688648|5002
+44|Terra Ceia Aquatic Preserve|2021|3|Total Phosphorus|Surface|Sample|16|0.033|0.277|0.073|0.0899375|0.0585382709572692|5002
+44|Terra Ceia Aquatic Preserve|2021|4|Total Phosphorus|Surface|Sample|10|0.073|0.177|0.0965|0.1052|0.0330749989501973|5002
 44|Terra Ceia Aquatic Preserve|2021|5|Total Phosphorus|Surface|Sample|4|0.019|0.444|0.0655|0.1485|0.198337254863192|5002
 44|Terra Ceia Aquatic Preserve|2021|6|Total Phosphorus|Surface|Sample|13|0.031|0.221|0.072|0.081|0.048533493589479|5002
 44|Terra Ceia Aquatic Preserve|2021|10|Total Phosphorus|Surface|Sample|1|0.221|0.221|0.221|0.221||5002
@@ -8212,7 +8213,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 47|Yellow River Marsh Aquatic Preserve|2017|7|Total Phosphorus|Surface|Sample|1|0.02|0.02|0.02|0.02||5002
 47|Yellow River Marsh Aquatic Preserve|2017|8|Total Phosphorus|Surface|Sample|1|0.017|0.017|0.017|0.017||5002
 47|Yellow River Marsh Aquatic Preserve|2017|10|Total Phosphorus|Surface|Sample|1|0.011|0.011|0.011|0.011||540
-47|Yellow River Marsh Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|1|0.01|0.01|0.01|0.01||540
+47|Yellow River Marsh Aquatic Preserve|2017|11|Total Phosphorus|Surface|Sample|2|0.009|0.01|0.0095|0.0095|0.000707106781186548|540
 47|Yellow River Marsh Aquatic Preserve|2018|1|Total Phosphorus|Surface|Sample|1|0.013|0.013|0.013|0.013||540
 47|Yellow River Marsh Aquatic Preserve|2018|4|Total Phosphorus|Surface|Sample|1|0.012|0.012|0.012|0.012||540
 47|Yellow River Marsh Aquatic Preserve|2018|5|Total Phosphorus|Surface|Sample|1|0.009|0.009|0.009|0.009||540

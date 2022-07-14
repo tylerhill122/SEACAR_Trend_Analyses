@@ -1,25 +1,120 @@
 AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
-15|Florida Keys National Marine Sanctuary|1|Total Phosphorus|Bottom|Sample|699|0.00111223|0.04203761|0.00588793|0.00685052264663805|0.00393756931253101|297
-15|Florida Keys National Marine Sanctuary|2|Total Phosphorus|Bottom|Sample|593|0.00172657|0.0334999|0.00557569|0.00689591360876897|0.00441764323891295|297, 5002
-15|Florida Keys National Marine Sanctuary|3|Total Phosphorus|Bottom|Sample|595|0.00030974|0.03288414|0.00581532|0.00657778352941176|0.00379060057822282|297, 5002
-15|Florida Keys National Marine Sanctuary|4|Total Phosphorus|Bottom|Sample|568|0.00049852|0.032|0.00527483|0.00624159283450704|0.00343787362993109|297, 5002
-15|Florida Keys National Marine Sanctuary|5|Total Phosphorus|Bottom|Sample|877|0.00185068|0.038011|0.00541022|0.00642315092360319|0.00388320425244586|297, 5002
-15|Florida Keys National Marine Sanctuary|6|Total Phosphorus|Bottom|Sample|441|0.00046461|0.02744275|0.00627219|0.00690647519274376|0.00326007106717107|297
-15|Florida Keys National Marine Sanctuary|7|Total Phosphorus|Bottom|Sample|884|0.00101439|0.05196947|0.00547291|0.00616749846153846|0.00333848482803207|297
-15|Florida Keys National Marine Sanctuary|8|Total Phosphorus|Bottom|Sample|472|0.00038562|0.0463574|0.005346145|0.00624234419491526|0.00370982873506552|297, 5002
-15|Florida Keys National Marine Sanctuary|9|Total Phosphorus|Bottom|Sample|618|0.00129315|0.06076|0.00549124|0.00624677194174757|0.00382813873009744|297
-15|Florida Keys National Marine Sanctuary|10|Total Phosphorus|Bottom|Sample|688|0.00092921|0.04960031|0.005653995|0.00699480322674419|0.00443239486475163|297, 5002
-15|Florida Keys National Marine Sanctuary|11|Total Phosphorus|Bottom|Sample|631|0.00132965|0.02213274|0.00525609|0.0059568787163233|0.00272081387801152|297, 5002
-15|Florida Keys National Marine Sanctuary|12|Total Phosphorus|Bottom|Sample|595|0.00137007|0.06333504|0.00530735|0.00637634514285714|0.00414961065748315|297
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|23|0.028|0.192|0.132|0.127913043478261|0.0466952528670336|476, 479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|27|0.039|0.2|0.073|0.0872222222222222|0.041388713932975|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|28|0.019|0.177|0.068|0.0909642857142857|0.045462627828806|476, 479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|17|0.052|0.253|0.087|0.103235294117647|0.0488883030639292|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|12|0.059|0.294|0.1695|0.175416666666667|0.067603736224525|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|15|0.013|0.26|0.155|0.149733333333333|0.0710889449579757|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|16|0.015|0.364|0.166|0.1794375|0.111149730094139|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|17|0.052|0.54|0.293|0.269235294117647|0.141717381349186|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|23|0.052|0.602|0.329|0.313434782608696|0.152019982564182|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|11|0.015|0.386|0.122|0.156272727272727|0.128090663913566|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|21|0.058|0.37|0.161|0.175380952380952|0.0801432942862197|476, 479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|14|0.056|0.255|0.1375|0.146357142857143|0.0597090473016471|476, 479
+1|Alligator Harbor Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|2|0.000019|0.01|0.0050095|0.0050095|0.00705763278302293|514
+1|Alligator Harbor Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|6|0.000005|0.019|0.000013|0.00467333333333333|0.00788619273583056|514
+1|Alligator Harbor Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|5|0.000025|0.032|0.000041|0.0092186|0.0140986710827652|514
+1|Alligator Harbor Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|2|0.000014|0.000042|0.000028|0.000028|0.0000197989898732233|514
+1|Alligator Harbor Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|4|0.000024|0.000043|0.0000285|0.000031|0.00000875595035770913|514
+1|Alligator Harbor Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|3|0.000016|0.000057|0.000052|0.0000416666666666667|0.0000223681320930768|514
+1|Alligator Harbor Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|6|0.000012|0.033|0.000039|0.00553033333333333|0.0134573471630432|514
+1|Alligator Harbor Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|6|0.000024|0.00006|0.0000445|0.0000428333333333333|0.0000162039089934086|514
+1|Alligator Harbor Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|6|0.000021|0.045|0.000038|0.0108541666666667|0.0185371339253582|514
+1|Alligator Harbor Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|6|0.000013|0.028|0.00004|0.004696|0.0114165895432918|514
+1|Alligator Harbor Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|1|0.031|0.031|0.031|0.031||514
+1|Alligator Harbor Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|1|0.000021|0.000021|0.000021|0.000021||514
+5|Big Bend Seagrasses Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|11|0.000026|0.048|0.031|0.0245564545454545|0.0202652155841661|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|5|0.000023|0.1875|0.02|0.0477094|0.0792721843763624|477, 514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|10|0.00002|0.0507|0.0222|0.0235208|0.0230313136297327|477, 514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|11|0.000019|0.078|0.029|0.0278282727272727|0.0291057762139782|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|7|0.000021|0.074|0.00003|0.0207327142857143|0.0353743912066073|514
+5|Big Bend Seagrasses Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|7|0.000022|0.14|0.034|0.0590101428571429|0.0644743139770368|477, 514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|8|0.00002|0.11|0.0290175|0.039887625|0.0450028914307181|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|11|0.000014|0.12|0.000035|0.0303803636363636|0.0447809936028059|514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|14|0.000022|0.11|0.0150185|0.0321212142857143|0.039895480744987|477, 514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|12|0.000014|0.045|0.024|0.0203424166666667|0.0165535945421274|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|10|0.000022|0.0921|0.0000355|0.0212377|0.0321718068330021|477, 514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|10|0.000019|0.052|0.0105185|0.0164447|0.0194205303226022|477, 514, 540, 5002
+9|Cape Haze Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|3|0.036|0.074|0.054|0.0546666666666667|0.0190087699058443|479
+9|Cape Haze Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|5|0.027|0.118|0.045|0.0648|0.0413485187159105|479
+9|Cape Haze Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|3|0.074|0.151|0.118|0.114333333333333|0.0386307304271267|479
+9|Cape Haze Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|5|0.026|0.062|0.039|0.0422|0.0133678719323608|479
+9|Cape Haze Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|5|0.019|0.087|0.034|0.0392|0.0278334331335536|479
+9|Cape Haze Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|6|0.009|0.073|0.06|0.051|0.0244867311007411|476, 479
+9|Cape Haze Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|7|0.018|0.428|0.111|0.183857142857143|0.176859104535624|479, 5002
+9|Cape Haze Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|3|0.008|0.31|0.112|0.143333333333333|0.153418816751184|476, 479
+9|Cape Haze Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|7|0.049|0.271|0.174|0.152857142857143|0.0913152571615291|479
+9|Cape Haze Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|9|0.026|0.214|0.111|0.107222222222222|0.0734162410127653|479
+9|Cape Haze Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|7|0.051|0.186|0.106|0.112428571428571|0.0452358896705449|476, 479
+9|Cape Haze Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|5|0.012|0.187|0.088|0.0868|0.0677694621492601|479
+15|Florida Keys National Marine Sanctuary|1|Total Phosphorus|Bottom|Sample|739|0.000003|0.04203761|0.00580758|0.00660232866035183|0.00404124742112545|297, 514
+15|Florida Keys National Marine Sanctuary|2|Total Phosphorus|Bottom|Sample|659|0.000002|0.0334999|0.00551422|0.00660427220030349|0.0045018794315527|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|3|Total Phosphorus|Bottom|Sample|669|0.000003|0.03288414|0.00575513|0.0062538709715994|0.00401699351183879|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|4|Total Phosphorus|Bottom|Sample|611|0.000004|0.032|0.00512535|0.0058894447299509|0.00361842530993797|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|5|Total Phosphorus|Bottom|Sample|941|0.000004|0.038011|0.00528755|0.00610333104144527|0.0040220118183379|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|6|Total Phosphorus|Bottom|Sample|484|0.000002|0.02744275|0.006008865|0.00635051677685951|0.00363670574531208|297, 514
+15|Florida Keys National Marine Sanctuary|7|Total Phosphorus|Bottom|Sample|913|0.000002|0.05196947|0.00541266|0.0060008791237678|0.00345155897207352|297, 514
+15|Florida Keys National Marine Sanctuary|8|Total Phosphorus|Bottom|Sample|516|0.000002|0.0463574|0.0052133|0.00571089817829457|0.00395254593969608|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|9|Total Phosphorus|Bottom|Sample|681|0.000003|0.06076|0.005394|0.00594546954478708|0.00389797045741132|297, 514
+15|Florida Keys National Marine Sanctuary|10|Total Phosphorus|Bottom|Sample|718|0|0.04960031|0.005538405|0.00672704632311978|0.00454010760878309|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|11|Total Phosphorus|Bottom|Sample|666|0.000003|0.02213274|0.005130995|0.00565157878378378|0.00295476996441869|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|12|Total Phosphorus|Bottom|Sample|647|0.000001|0.06333504|0.00516715|0.00604532188562597|0.00433580373180169|297, 514
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|42|0.000034|0.32|0.09|0.107196166666667|0.0723806418369418|476, 479, 514
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|51|0.000036|0.2|0.067|0.0775522156862745|0.0481554473335317|476, 479, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|43|0.000041|0.254|0.069|0.0932600465116279|0.0627489799719613|476, 479, 514
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|39|0.000028|0.253|0.084|0.0913114871794872|0.0542371221285083|479, 514
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|28|0.000036|0.294|0.1265|0.11272575|0.0886974396693509|476, 479, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|37|0.000022|0.355|0.125|0.131706567567568|0.0962332334558253|476, 479, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|34|0.000041|0.623|0.185|0.188387294117647|0.136754230175674|479, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|37|0.000042|0.61|0.282|0.253411675675676|0.156692493545134|476, 479, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|49|0.00004|0.602|0.291|0.249217163265306|0.176924684995521|476, 479, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|28|0.000049|0.386|0.0895|0.122876892857143|0.120242282938438|476, 479, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|44|0.000031|0.37|0.131|0.12896375|0.090932312995967|476, 479, 514
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|33|0.00004|0.255|0.123|0.113644090909091|0.0700539285744221|476, 479, 514
+48|Nature Coast Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|46|0.004|0.019|0.008|0.00843478260869565|0.00363105233545345|479
+48|Nature Coast Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|30|0.003|0.021|0.0065|0.00773333333333333|0.00405082650854105|479
+48|Nature Coast Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|45|0.004|0.034|0.008|0.0106666666666667|0.0075136239894305|479
+48|Nature Coast Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|46|0.003|0.033|0.008|0.0108913043478261|0.00710313940254453|479
+48|Nature Coast Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|33|0.006|0.033|0.009|0.0115757575757576|0.0069057507875244|479
+48|Nature Coast Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|46|0.004|0.053|0.01|0.0132608695652174|0.0101421776811463|479
+48|Nature Coast Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|50|0.004|0.091|0.014|0.01976|0.0180425347782536|479, 5002
+48|Nature Coast Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|45|0.004|0.027|0.01|0.0115333333333333|0.00539191313660813|479
+48|Nature Coast Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|46|0.005|0.031|0.011|0.0125217391304348|0.00607266783926063|479
+48|Nature Coast Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|53|0.004|0.053|0.01|0.0126792452830189|0.00835457862700646|479, 5002
+48|Nature Coast Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|46|0.003|0.025|0.009|0.0104782608695652|0.00569888538979249|479
+48|Nature Coast Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|38|0.004|0.03|0.0085|0.0108684210526316|0.0059054306323128|479
+35|Pinellas County Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|6|0.000009|0.116|0.058062|0.0580408333333333|0.0634910985837122|514, 5002
+35|Pinellas County Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|23|0.00001|0.16|0.05|0.0496774782608696|0.045950313737053|514, 5002
+35|Pinellas County Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|15|0.000114|0.13|0.06|0.0504175333333333|0.0452952063734069|514, 5002
+35|Pinellas County Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|9|0.000009|0.148|0.04|0.0409298888888889|0.0500334152877965|514, 5002
+35|Pinellas County Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|15|0.00009|0.226|0.07|0.0677740666666667|0.0614562812743064|514, 5002
+35|Pinellas County Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|17|0.000009|0.26|0.09|0.0993734117647059|0.0787499065428484|514, 5002
+35|Pinellas County Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|13|0.000013|0.25|0.06|0.0732418461538462|0.0775925413563767|514, 5002
+35|Pinellas County Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|21|0.000014|0.351|0.09|0.122772571428571|0.114526160081255|514, 5002
+35|Pinellas County Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|21|0.000013|0.287|0.09|0.0998347142857143|0.088420498229281|514, 5002
+35|Pinellas County Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|18|0.000006|0.202|0.0001555|0.0378042777777778|0.0719576252892718|514, 5002
+35|Pinellas County Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|6|0.000005|0.116|0.010005|0.0326705|0.047014531301503|514, 5002
+35|Pinellas County Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|21|0.000026|0.19|0.06|0.0615403333333333|0.047000314357814|514, 5002
+37|Rocky Bayou State Park Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|4|0.000003|0.000014|0.000007|0.00000775|0.00000485626742811115|514
+37|Rocky Bayou State Park Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|3|0.000007|0.000009|0.000008|0.000008|0.000001|514
+37|Rocky Bayou State Park Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|3|0.000004|0.000016|0.000013|0.000011|0.0000062449979983984|514
+37|Rocky Bayou State Park Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|6|0.000006|0.000017|0.0000085|0.0000101666666666667|0.00000407021702943058|514
+37|Rocky Bayou State Park Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|3|0.000009|0.000011|0.000011|0.0000103333333333333|0.00000115470053837925|514
+37|Rocky Bayou State Park Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|4|0.000011|0.000017|0.0000125|0.00001325|0.00000262995563967658|514
+37|Rocky Bayou State Park Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|5|0.000006|0.000017|0.000014|0.0000116|0.00000482700735445887|514
+37|Rocky Bayou State Park Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|3|0.000011|0.000016|0.000011|0.0000126666666666667|0.00000288675134594813|514
+37|Rocky Bayou State Park Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|2|0.000017|0.000024|0.0000205|0.0000205|0.00000494974746830583|514
+37|Rocky Bayou State Park Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|2|0.000008|0.000015|0.0000115|0.0000115|0.00000494974746830583|514
+37|Rocky Bayou State Park Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|1|0.000011|0.000011|0.000011|0.000011||514
+37|Rocky Bayou State Park Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|3|0.00001|0.000013|0.000011|0.0000113333333333333|0.00000152752523165195|514
+40|St. Andrews State Park Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|8|0.000005|0.008|0.0000095|0.001881125|0.00347832839316737|470, 514
+40|St. Andrews State Park Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|4|0.000005|0.007|0.0000075|0.001755|0.00349666688910072|470, 514
+40|St. Andrews State Park Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|3|0.000005|0.008|0.000011|0.002672|0.00461418432661722|470, 514
+40|St. Andrews State Park Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|4|0.000008|0.012|0.0045045|0.00525425|0.00617984823842787|470, 514
+40|St. Andrews State Park Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|9|0.000006|0.009|0.000012|0.00200811111111111|0.0039640292142101|470, 514
+40|St. Andrews State Park Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|3|0.000006|0.000022|0.000013|0.0000136666666666667|0.00000802080627701064|514
+40|St. Andrews State Park Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|4|0.000007|0.000013|0.000009|0.0000095|0.000003|514
+40|St. Andrews State Park Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|1|0.000019|0.000019|0.000019|0.000019||514
+40|St. Andrews State Park Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|3|0.000007|0.000017|0.00001|0.0000113333333333333|0.00000513160143944688|514
+40|St. Andrews State Park Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|3|0.000006|0.00001|0.000007|0.00000766666666666667|0.00000208166599946613|514
+40|St. Andrews State Park Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|3|0.000007|0.000025|0.000008|0.0000133333333333333|0.0000101159939369957|514
+43|St. Martins Marsh Aquatic Preserve|1|Total Phosphorus|Bottom|Sample|17|0.008|0.037|0.018|0.0176470588235294|0.00788147492915022|479
+43|St. Martins Marsh Aquatic Preserve|2|Total Phosphorus|Bottom|Sample|20|0.007|0.025|0.014|0.01475|0.00488687824151251|479
+43|St. Martins Marsh Aquatic Preserve|3|Total Phosphorus|Bottom|Sample|11|0.005|0.024|0.012|0.0127272727272727|0.00732244370536106|479
+43|St. Martins Marsh Aquatic Preserve|4|Total Phosphorus|Bottom|Sample|9|0.006|0.052|0.017|0.0203333333333333|0.0146543508897528|479
+43|St. Martins Marsh Aquatic Preserve|5|Total Phosphorus|Bottom|Sample|10|0.006|0.027|0.0115|0.0143|0.00730372811955952|479
+43|St. Martins Marsh Aquatic Preserve|6|Total Phosphorus|Bottom|Sample|15|0.005|0.036|0.018|0.0189333333333333|0.00947528112411196|479
+43|St. Martins Marsh Aquatic Preserve|7|Total Phosphorus|Bottom|Sample|21|0.008|0.065|0.022|0.0249047619047619|0.0132586000841143|479
+43|St. Martins Marsh Aquatic Preserve|8|Total Phosphorus|Bottom|Sample|18|0.008|0.035|0.017|0.019|0.00946821307446814|479
+43|St. Martins Marsh Aquatic Preserve|9|Total Phosphorus|Bottom|Sample|13|0.009|0.055|0.019|0.023|0.014770466027403|479
+43|St. Martins Marsh Aquatic Preserve|10|Total Phosphorus|Bottom|Sample|19|0.006|0.052|0.012|0.0182105263157895|0.0117925539000413|479
+43|St. Martins Marsh Aquatic Preserve|11|Total Phosphorus|Bottom|Sample|9|0.004|0.028|0.013|0.0142222222222222|0.00837821248503787|479
+43|St. Martins Marsh Aquatic Preserve|12|Total Phosphorus|Bottom|Sample|15|0.007|0.024|0.014|0.014|0.00596417878432803|479

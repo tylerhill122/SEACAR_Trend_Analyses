@@ -24,7 +24,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 1|Alligator Harbor Aquatic Preserve|2020|Dissolved Oxygen|Surface|Field|88|5.12|10.11|7.33|7.39090909090909|1.01271529439552|469, 5002
 1|Alligator Harbor Aquatic Preserve|2021|Dissolved Oxygen|Surface|Field|92|5.26|9.66|7.31|7.31739130434783|1.20773138484745|469, 5002
 1|Alligator Harbor Aquatic Preserve|2022|Dissolved Oxygen|Surface|Field|15|8.05|9.07|8.52|8.53066666666667|0.30108059354519|469, 5002
-2|Apalachicola Bay Aquatic Preserve|1992|Dissolved Oxygen|Surface|Field|2|4.4|6.6|5.5|5.5|1.5556349186104|115
+2|Apalachicola Bay Aquatic Preserve|1992|Dissolved Oxygen|Surface|Field|4|4.4|9.5|7.25|7.1|2.1556128285633|115, 5002
 2|Apalachicola Bay Aquatic Preserve|1993|Dissolved Oxygen|Surface|Field|2|6.7|6.8|6.75|6.75|0.0707106781186545|115
 2|Apalachicola Bay Aquatic Preserve|1994|Dissolved Oxygen|Surface|Field|8|6.2|7.7|6.65|6.7875|0.556616051305951|115, 119
 2|Apalachicola Bay Aquatic Preserve|1995|Dissolved Oxygen|Surface|Field|690|4.8|11.7|8.8|8.72869565217391|1.37550192769823|95, 5002
@@ -32,10 +32,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 2|Apalachicola Bay Aquatic Preserve|1997|Dissolved Oxygen|Surface|Field|610|4.4|11.9|8|8.16606557377049|1.75019002363907|5002
 2|Apalachicola Bay Aquatic Preserve|1998|Dissolved Oxygen|Surface|Field|1233|1.9|12.6|8.1|8.13244120032441|1.70493514748577|69, 5002
 2|Apalachicola Bay Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|963|4.5|13|8.2|8.34299065420561|1.48336590721018|69, 95, 5002
-2|Apalachicola Bay Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|813|4.2|13.7|8.5|8.58346863468635|1.62202528727949|69, 95, 129, 5002
-2|Apalachicola Bay Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|1607|1|15.4|8|8.16611076540137|1.80329144070002|69, 95, 129, 5002
-2|Apalachicola Bay Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|1337|1.9|14.3|7.91|8.05451757666417|1.7859207595688|69, 115, 129, 5002
-2|Apalachicola Bay Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|1479|2|13.9|7.78|7.84386071670047|2.06249672248194|69, 95, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|855|4.2|13.7|8.4|8.50856140350877|1.63090387810953|69, 95, 129, 5002
+2|Apalachicola Bay Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|1717|1|15.4|8|8.13259755387304|1.79726894195451|69, 95, 129, 5002
+2|Apalachicola Bay Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|1453|1.9|14.3|7.9|8.02098417068135|1.77873172940055|69, 115, 129, 5002
+2|Apalachicola Bay Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|1492|2|13.9|7.8|7.85426943699732|2.05691559045783|69, 95, 129, 355, 5002
 2|Apalachicola Bay Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|1090|2.7|15.4|8.3|8.36716513761468|1.95096631193331|69, 95, 103, 115, 129, 355, 5002
 2|Apalachicola Bay Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|1244|1.5|16.5|7.9|8.05549035369775|2.04247215863834|69, 95, 118, 129, 355, 5002
 2|Apalachicola Bay Aquatic Preserve|2006|Dissolved Oxygen|Surface|Field|1021|2.5|16.7|7.83|7.92351616062684|1.82891483870589|69, 118, 129, 355, 5002
@@ -55,18 +55,18 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 2|Apalachicola Bay Aquatic Preserve|2020|Dissolved Oxygen|Surface|Field|58|5.86|10.03|8.26|8.21034482758621|1.13034533694896|129, 5002
 2|Apalachicola Bay Aquatic Preserve|2021|Dissolved Oxygen|Surface|Field|8|4.9|9.31|7.115|6.89|1.63803017589508|5002
 2|Apalachicola Bay Aquatic Preserve|2022|Dissolved Oxygen|Surface|Field|1|12.9|12.9|12.9|12.9||5002
-3|Apalachicola National Estuarine Research Reserve|1992|Dissolved Oxygen|Surface|Field|2|4.4|6.6|5.5|5.5|1.5556349186104|115
+3|Apalachicola National Estuarine Research Reserve|1992|Dissolved Oxygen|Surface|Field|6|4.4|9.5|7.25|7.15|1.70733710789639|115, 5002
 3|Apalachicola National Estuarine Research Reserve|1993|Dissolved Oxygen|Surface|Field|2|6.7|6.8|6.75|6.75|0.0707106781186545|115
 3|Apalachicola National Estuarine Research Reserve|1994|Dissolved Oxygen|Surface|Field|8|6.2|7.7|6.65|6.7875|0.556616051305951|115, 119
 3|Apalachicola National Estuarine Research Reserve|1995|Dissolved Oxygen|Surface|Field|1113|2.6|11.8|8.8|8.74070080862534|1.40005339484807|95, 5002
 3|Apalachicola National Estuarine Research Reserve|1996|Dissolved Oxygen|Surface|Field|1780|2.1|11.9|8.2|8.09230337078652|1.76864269884176|95, 5002
 3|Apalachicola National Estuarine Research Reserve|1997|Dissolved Oxygen|Surface|Field|870|4.4|11.9|7.9|8.09965517241379|1.73491522446428|5002
 3|Apalachicola National Estuarine Research Reserve|1998|Dissolved Oxygen|Surface|Field|1899|1.9|12.6|8.1|8.13412322274882|1.67633199089926|69, 5002
-3|Apalachicola National Estuarine Research Reserve|1999|Dissolved Oxygen|Surface|Field|1286|4.5|13|8.3|8.35443234836703|1.48990630776755|69, 95, 5002
-3|Apalachicola National Estuarine Research Reserve|2000|Dissolved Oxygen|Surface|Field|1172|4.2|13.7|8.6|8.60751706484642|1.55873749375288|69, 95, 115, 118, 129, 5002
-3|Apalachicola National Estuarine Research Reserve|2001|Dissolved Oxygen|Surface|Field|2314|1|15.4|8|8.13462834917891|1.79257028525375|69, 95, 115, 118, 129, 5002
-3|Apalachicola National Estuarine Research Reserve|2002|Dissolved Oxygen|Surface|Field|2002|1.9|14.3|7.9|8.0185964035964|1.75199706937013|69, 115, 129, 5002
-3|Apalachicola National Estuarine Research Reserve|2003|Dissolved Oxygen|Surface|Field|2188|2|13.9|7.7|7.78704753199269|2.00363758443391|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|1999|Dissolved Oxygen|Surface|Field|1287|4.5|13|8.3|8.35337995337995|1.48980537656208|69, 95, 5002
+3|Apalachicola National Estuarine Research Reserve|2000|Dissolved Oxygen|Surface|Field|1235|4.2|13.7|8.5|8.5287044534413|1.57623289892116|69, 95, 115, 118, 129, 5002
+3|Apalachicola National Estuarine Research Reserve|2001|Dissolved Oxygen|Surface|Field|2483|1|15.4|7.96|8.08615384615385|1.79002822188516|69, 95, 115, 118, 129, 5002
+3|Apalachicola National Estuarine Research Reserve|2002|Dissolved Oxygen|Surface|Field|2160|1.9|14.3|7.9|7.98875462962963|1.74558350263871|69, 115, 129, 5002
+3|Apalachicola National Estuarine Research Reserve|2003|Dissolved Oxygen|Surface|Field|2210|2|13.9|7.78|7.79476470588235|1.99739111504901|69, 95, 129, 355, 5002
 3|Apalachicola National Estuarine Research Reserve|2004|Dissolved Oxygen|Surface|Field|1634|2.7|15.4|8.3|8.33623623011016|1.8668772949894|69, 95, 103, 115, 129, 355, 5002
 3|Apalachicola National Estuarine Research Reserve|2005|Dissolved Oxygen|Surface|Field|1926|0.2|16.5|7.9|7.95780373831776|1.95225740928564|69, 95, 118, 129, 355, 5002
 3|Apalachicola National Estuarine Research Reserve|2006|Dissolved Oxygen|Surface|Field|1688|2.1|16.7|7.9|7.88774881516588|1.74464584372708|69, 118, 129, 355, 5002
@@ -125,18 +125,18 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 5|Big Bend Seagrasses Aquatic Preserve|1989|Dissolved Oxygen|Surface|Field|5|4.8|8.5|6.9|6.5|1.57638827704344|5002
 5|Big Bend Seagrasses Aquatic Preserve|1990|Dissolved Oxygen|Surface|Field|9|4.5|10.1|5.8|6.16666666666667|1.6844880527923|60, 5002
 5|Big Bend Seagrasses Aquatic Preserve|1991|Dissolved Oxygen|Surface|Field|15|3.7|7.2|5.9|5.42|1.14342842864281|115, 5002
-5|Big Bend Seagrasses Aquatic Preserve|1992|Dissolved Oxygen|Surface|Field|15|3.4|8.1|5.9|5.82|1.30010988546573|60, 115, 5002
+5|Big Bend Seagrasses Aquatic Preserve|1992|Dissolved Oxygen|Surface|Field|18|3.4|8.6|6.2|6.16111111111111|1.43409692382632|60, 115, 5002
 5|Big Bend Seagrasses Aquatic Preserve|1993|Dissolved Oxygen|Surface|Field|14|4.8|11.6|6.55|6.77857142857143|1.62441874642478|60, 115, 5002
 5|Big Bend Seagrasses Aquatic Preserve|1994|Dissolved Oxygen|Surface|Field|12|5.1|8.1|6.65|6.61666666666667|0.949481517205654|60, 115, 5002
 5|Big Bend Seagrasses Aquatic Preserve|1995|Dissolved Oxygen|Surface|Field|3119|3|13.6|8.2|8.09387624238538|2.12748236597174|60, 5002
 5|Big Bend Seagrasses Aquatic Preserve|1996|Dissolved Oxygen|Surface|Field|4421|2|13.5|7.9|8.05308753675639|1.87709040968635|60, 69, 95, 5002
 5|Big Bend Seagrasses Aquatic Preserve|1997|Dissolved Oxygen|Surface|Field|4324|2.3|13.1|6.8|7.05404717853839|1.9628211681975|60, 69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|1998|Dissolved Oxygen|Surface|Field|3627|2.7|14|7.2|7.30361180038599|1.61958697361075|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|3572|1|13.6|7|7.0280235162374|1.80879373203765|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|3076|0.8|13.4|6.3|6.52421976592978|1.63694993267776|60, 69, 115, 118, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|3755|0.4|14.4|6.3|6.37|1.71240092908425|60, 69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|3310|2.6|14.9|7.3|7.33605438066465|1.83429099992669|69, 95, 115, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|3914|1.13|18.6|7.1|7.31162493612673|1.91420218737717|69, 95, 103, 5002
+5|Big Bend Seagrasses Aquatic Preserve|1998|Dissolved Oxygen|Surface|Field|3631|2.7|14|7.2|7.30132194987607|1.620301102399|69, 5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|3584|1|13.6|7|7.02553013392857|1.80745301626716|69, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|3118|0.8|13.4|6.3|6.52659397049391|1.63836209632288|60, 69, 115, 118, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|3820|0.4|14.4|6.3|6.38022251308901|1.71507739520809|60, 69, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|3368|0.88|14.9|7.3|7.30657066508314|1.84463742409401|69, 95, 115, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|3934|1.13|18.6|7.1|7.30692933401118|1.91319444093286|69, 95, 103, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|3886|0.58|14.3|6.7|6.74864642305713|1.89347337203381|60, 69, 95, 103, 115, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|3691|1.7|14.1|6.8|6.98207802763479|1.731172821866|69, 95, 118, 5002
 5|Big Bend Seagrasses Aquatic Preserve|2006|Dissolved Oxygen|Surface|Field|3909|0|14.4|6.5|6.64674852903556|1.56930090030956|69, 95, 118, 5002
@@ -178,13 +178,13 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 6|Biscayne Bay Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|196|0.72|10.02|6.4|6.10790816326531|1.44588441987087|509, 4049, 5002
 6|Biscayne Bay Aquatic Preserve|2008|Dissolved Oxygen|Surface|Field|117|1.64|8.26|6.33|6.13982905982906|1.39502872477285|509, 5002
 6|Biscayne Bay Aquatic Preserve|2009|Dissolved Oxygen|Surface|Field|111|1.1|8.64|4.27|4.59135135135135|1.82791858108241|5002
-6|Biscayne Bay Aquatic Preserve|2010|Dissolved Oxygen|Surface|Field|89|0.6|8.15|4.38|4.23393258426966|1.8060168490465|5002
+6|Biscayne Bay Aquatic Preserve|2010|Dissolved Oxygen|Surface|Field|111|0.6|8.64|4.48|4.51927927927928|1.95641588426467|5002
 6|Biscayne Bay Aquatic Preserve|2011|Dissolved Oxygen|Surface|Field|75|0.75|7.92|6.41|5.63213333333333|1.93991243417126|5002
 6|Biscayne Bay Aquatic Preserve|2012|Dissolved Oxygen|Surface|Field|26|0.76|7.4|5.625|5.23384615384615|1.71029839951531|5002
 6|Biscayne Bay Aquatic Preserve|2013|Dissolved Oxygen|Surface|Field|31|2.24|8.1|6.03|5.78225806451613|1.74923547047926|5002
 6|Biscayne Bay Aquatic Preserve|2014|Dissolved Oxygen|Surface|Field|28|1.66|8.38|5.305|5.16571428571429|1.57181053558893|5002
 6|Biscayne Bay Aquatic Preserve|2015|Dissolved Oxygen|Surface|Field|60|0.91|7.8|5.04|4.928|1.5479453851006|4057, 5002
-6|Biscayne Bay Aquatic Preserve|2016|Dissolved Oxygen|Surface|Field|261|0.45|10.09|4.59|5.11153256704981|2.15698399388981|4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|2016|Dissolved Oxygen|Surface|Field|297|0.45|10.09|4.68|5.08619528619529|2.07253321353216|4057, 4058, 5002
 6|Biscayne Bay Aquatic Preserve|2017|Dissolved Oxygen|Surface|Field|488|0.3|21.89|5.385|5.27324795081967|1.9308312181582|4057, 4058, 5002
 6|Biscayne Bay Aquatic Preserve|2018|Dissolved Oxygen|Surface|Field|479|1.9|8.22|5.24|5.21923799582464|0.938370063372458|4057, 4058
 6|Biscayne Bay Aquatic Preserve|2019|Dissolved Oxygen|Surface|Field|159|1.77|9.58|6.49|6.48150943396226|1.28997899535409|4057, 5026
@@ -267,7 +267,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|340|1.8|9.2|6.2|5.98705882352941|1.21425051093843|509, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|329|2.1|8.5|6.6|6.26838905775076|1.2314616120006|509, 4043, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|285|0.1|8.4|6.2|5.93298245614035|1.5357133096413|509, 4043, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|275|2.89|13.2|5.7|5.68156363636364|1.23674760012303|354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|277|2.89|13.2|5.7|5.66927797833935|1.24078670637178|354, 509, 4043, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|293|2.69|9.8|6.3|5.74798634812287|1.44952532611399|354, 509, 4043, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|280|1.53|8.2|5.745|5.69953571428571|1.33915294422964|354, 509, 4043, 5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|229|3.9|8.39|6.04|6.09039301310044|1.11129974604739|354, 509, 4043, 5002
@@ -298,7 +298,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 11|Cockroach Bay Aquatic Preserve|1997|Dissolved Oxygen|Surface|Field|222|2.4|12.4|6.4|6.49108108108108|1.8070116584205|69, 4067
 11|Cockroach Bay Aquatic Preserve|1998|Dissolved Oxygen|Surface|Field|224|2.4|10.6|4.955|5.38321428571429|1.75178561780165|69, 4067
 11|Cockroach Bay Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|202|0.83|12.7|5.555|5.82559405940594|1.92159497742838|69, 4067, 5002
-11|Cockroach Bay Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|202|2.6|13.5|5.95|6.20440594059406|2.14725021275664|69, 4067, 5002
+11|Cockroach Bay Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|203|2.6|13.5|5.9|6.19108374384236|2.15032251964602|69, 4067, 5002
 11|Cockroach Bay Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|824|2.2|12|5.3|5.59553398058252|1.76323565002856|69, 4067, 5002
 11|Cockroach Bay Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|1540|0.06|16.2|5.02|5.24004545454546|2.28979878820392|69, 4067, 5002
 11|Cockroach Bay Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|1065|0.3|16|5|5.76507042253521|2.79329251981224|69, 4067, 5002
@@ -393,8 +393,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 15|Florida Keys National Marine Sanctuary|2002|Dissolved Oxygen|Surface|Field|713|2.26|10.9|5.81|6.0328064516129|1.08021878979896|60, 115, 297, 509
 15|Florida Keys National Marine Sanctuary|2003|Dissolved Oxygen|Surface|Field|863|2.646|9.01|5.67|5.69538933951333|1.00458335904446|60, 95, 103, 115, 297, 509, 5002
 15|Florida Keys National Marine Sanctuary|2004|Dissolved Oxygen|Surface|Field|672|0.90811|9.315|6.05155|5.99985644345238|0.882100162777607|103, 115, 297, 509
-15|Florida Keys National Marine Sanctuary|2005|Dissolved Oxygen|Surface|Field|922|0|14.53161|5.48037|5.55265387201735|1.32977848991144|95, 118, 297, 509, 5002
-15|Florida Keys National Marine Sanctuary|2006|Dissolved Oxygen|Surface|Field|1140|0.67|14.80096|5.62|5.63708880701754|1.44044537016307|60, 69, 95, 118, 297, 509, 4049, 5002
+15|Florida Keys National Marine Sanctuary|2005|Dissolved Oxygen|Surface|Field|971|0|14.53161|5.48|5.53931706488157|1.34755408616659|95, 118, 297, 509, 5002
+15|Florida Keys National Marine Sanctuary|2006|Dissolved Oxygen|Surface|Field|1160|0.67|14.80096|5.64866|5.64705279310345|1.44427725641174|60, 69, 95, 118, 297, 509, 4049, 5002
 15|Florida Keys National Marine Sanctuary|2007|Dissolved Oxygen|Surface|Field|967|2.06909|10.5|5.78124|5.56356043433299|1.26104666474283|69, 95, 297, 509, 4049
 15|Florida Keys National Marine Sanctuary|2008|Dissolved Oxygen|Surface|Field|755|2.18|11.8|6.37889|6.40216103311258|0.862049757285083|60, 69, 95, 297, 509, 4049
 15|Florida Keys National Marine Sanctuary|2009|Dissolved Oxygen|Surface|Field|737|3.6|9.58|6.31948|6.49132690637721|0.729926964122382|60, 69, 95, 297
@@ -404,7 +404,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 15|Florida Keys National Marine Sanctuary|2013|Dissolved Oxygen|Surface|Field|553|3.76|16.09|6.50943|6.40530481012658|0.702837620283833|95, 297, 4049, 5002
 15|Florida Keys National Marine Sanctuary|2014|Dissolved Oxygen|Surface|Field|517|2.92|9.09329|6.47295|6.41444874274662|0.443024261506629|95, 297, 4049, 5002
 15|Florida Keys National Marine Sanctuary|2015|Dissolved Oxygen|Surface|Field|966|0|9.3|6.32905|6.22942065217391|1.07888366204002|95, 297, 3000, 4049, 4057, 5002
-15|Florida Keys National Marine Sanctuary|2016|Dissolved Oxygen|Surface|Field|1115|0|12.1|6.22|5.97336677130045|1.37518355699128|60, 95, 297, 3000, 4049, 4057, 5002
+15|Florida Keys National Marine Sanctuary|2016|Dissolved Oxygen|Surface|Field|1123|0|12.1|6.22|5.97409968833482|1.37160966833532|60, 95, 297, 3000, 4049, 4057, 5002
 15|Florida Keys National Marine Sanctuary|2017|Dissolved Oxygen|Surface|Field|1107|1.09|9.9|6.47271|6.28626516711834|1.01490021922674|95, 297, 3000, 4049, 4057, 5002
 15|Florida Keys National Marine Sanctuary|2018|Dissolved Oxygen|Surface|Field|908|0|9.79|6.4039|6.29728627753304|0.849706183641011|95, 297, 3000, 4049, 4057
 15|Florida Keys National Marine Sanctuary|2019|Dissolved Oxygen|Surface|Field|552|3.5|7.09|6.405735|6.46949657608696|0.286903698328184|297, 4049, 5002
@@ -441,7 +441,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 17|Fort Pickens State Park Aquatic Preserve|1996|Dissolved Oxygen|Surface|Field|22|4.55|8.8|7.37|7.32363636363636|1.07001800365159|69, 95, 103, 5002
 17|Fort Pickens State Park Aquatic Preserve|1997|Dissolved Oxygen|Surface|Field|52|4.5|10.7|7.55|7.66038461538462|1.34879170551153|5002
 17|Fort Pickens State Park Aquatic Preserve|1998|Dissolved Oxygen|Surface|Field|46|5.05|10.5|7.78|7.725|1.43805539995277|5002
-17|Fort Pickens State Park Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|57|5.12|10.58|7.1|7.38701754385965|1.15298210386353|5002
+17|Fort Pickens State Park Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|66|5.12|10.58|7.1|7.32560606060606|1.08894038656906|5002
 17|Fort Pickens State Park Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|55|5.02|10.71|7.16|7.41636363636364|1.17678526886751|95, 5002
 17|Fort Pickens State Park Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|47|5.49|10.49|7.54|7.70829787234043|1.02095930836797|5002
 17|Fort Pickens State Park Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|64|5.0783|10.75|7.74|7.6918078125|1.28397618559539|95, 505, 5002
@@ -597,7 +597,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|216|2.1|9.25|5.7|5.53925925925926|1.82794901140211|69, 3013, 5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|246|3.1|9.6|5.8|5.95113821138211|1.52859823915181|69, 3013, 5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2006|Dissolved Oxygen|Surface|Field|218|2.6|10.1|6.255|6.48082568807339|1.78870116276019|69, 118, 3013, 5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|247|2.6|10.5|6.8|6.64388663967611|1.3289146326677|69, 95, 3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|259|2.6|10.5|6.8|6.63675675675676|1.31326399052911|69, 95, 3013, 5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2008|Dissolved Oxygen|Surface|Field|236|2.8|9.8|6.245|6.0789406779661|1.52657931499695|69, 95, 3001, 3013, 5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2009|Dissolved Oxygen|Surface|Field|156|2.4|10.9|5.255|5.36038461538462|2.05941297135871|69, 3013, 5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2010|Dissolved Oxygen|Surface|Field|144|3.5|10.9|6.855|6.956875|1.57587070781909|69, 3013, 5002
@@ -629,7 +629,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|283|1.9|18.4|6.3|6.24353356890459|1.81597136778665|69, 3001, 3013, 5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|319|2.1|18.6|6.02|6.06188087774295|1.60203552857665|69, 118, 3001, 3013, 5002, 10000, 10001
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2006|Dissolved Oxygen|Surface|Field|411|2.3|10.8|6.1|6.14330900243309|1.10816206853432|69, 118, 3001, 3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|454|2.1|13.1|6.3|6.30960352422907|1.41687147874192|69, 3001, 3013, 5002, 10000, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|510|2.1|13.1|6.315|6.38313725490196|1.46517704489|69, 3001, 3013, 5002, 10000, 10001
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2008|Dissolved Oxygen|Surface|Field|462|2.95|13.2|6.575|6.52705627705628|1.29870550979212|69, 3001, 3013, 5002, 10000, 10001
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2009|Dissolved Oxygen|Surface|Field|365|2.12|12.9|6.3|6.41843835616438|1.60398885497263|69, 95, 3001, 3013, 5002, 10000, 10001
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2010|Dissolved Oxygen|Surface|Field|303|4|11.61|6.93|6.97085808580858|1.40856271785278|69, 3001, 3013, 5002, 10000, 10001
@@ -695,7 +695,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|207|0.2|8.28|6.1|5.576038647343|1.5819997049495|3013, 5002, 10000, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|196|2.24|8|6.255|6.1459693877551|1.07952011137031|3013, 5002, 10000, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|Dissolved Oxygen|Surface|Field|248|0.48|7.6|5.675|5.51866935483871|1.22905029147554|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|334|0.16|9.1|5.96|5.6784131736527|1.39177513088899|3013, 5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|411|0.16|10.13|6.06|5.80282238442822|1.48012798229934|3013, 5002, 10000, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|Dissolved Oxygen|Surface|Field|278|1.45|8.06|6.135|5.78410071942446|1.20988247956887|3013, 5002, 10000, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|Dissolved Oxygen|Surface|Field|392|0.21|8.6|6.095|5.73772959183674|1.46897538915934|3013, 5002, 10000, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|Dissolved Oxygen|Surface|Field|372|0.95|9.86|6.46|6.23344086021505|1.41857583540878|3013, 5002, 10000, 10001
@@ -787,7 +787,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|1998|Dissolved Oxygen|Surface|Field|5208|1.81|9.34|6.39|6.20672619047619|1.47587003902932|103
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|3|4.98|8.11|4.99|6.02666666666667|1.80422651940751|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|13|5.7|8.3|6.86|6.98|0.958853482029449|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|319|2.3|9.34|5.4|5.69416927899687|1.598484694067|69, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|321|2.3|9.34|5.4|5.69897196261682|1.59578562229908|69, 5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|535|2.8|10.8|6.9|7.01771962616822|1.85176847244747|69, 5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|499|1.7|11.3|7.6|7.58833667334669|1.55404751975362|69, 5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|518|1.7|17|6.9|7.71828185328185|2.82272635635849|69, 103, 5002
@@ -858,7 +858,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 31|North Fork St. Lucie Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|85|1.2|13.8|6.9|6.83423529411765|2.24385211743777|69, 5002
 31|North Fork St. Lucie Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|365|0.66|13.09|6.85|7.09093150684932|1.77138153329671|69, 5002
 31|North Fork St. Lucie Aquatic Preserve|2006|Dissolved Oxygen|Surface|Field|252|2.6|14.28|7.755|7.54230158730159|1.97267313640781|69, 5002
-31|North Fork St. Lucie Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|95|4.49|10.22|7.38|7.13715789473684|0.962441115256381|69, 5002
+31|North Fork St. Lucie Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|131|2.27|11.78|7.05|6.8475572519084|1.5603264409944|69, 5002
 31|North Fork St. Lucie Aquatic Preserve|2008|Dissolved Oxygen|Surface|Field|104|0.96|9.6|6.775|6.67423076923077|1.51884900999427|69, 5002
 31|North Fork St. Lucie Aquatic Preserve|2009|Dissolved Oxygen|Surface|Field|71|3.2|11.8|6.22|6.22112676056338|1.78861842077364|69, 3001, 5002
 31|North Fork St. Lucie Aquatic Preserve|2010|Dissolved Oxygen|Surface|Field|50|6.06|8.8|7.09|7.1162|0.665318367860264|69, 5002
@@ -903,10 +903,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 34|Pine Island Sound Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|695|3.3|14.8|7.48|7.58234532374101|1.67557967823118|69, 95, 103, 115, 509, 5002
 34|Pine Island Sound Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|969|1.6|14.1|7.7|7.67934984520124|2.07975684231187|69, 103, 115, 509, 5002
 34|Pine Island Sound Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|1111|0.9|15.6|7.4|7.35690369036904|1.91753519264717|69, 95, 509, 5002
-34|Pine Island Sound Aquatic Preserve|2006|Dissolved Oxygen|Surface|Field|954|1.2|17.8|7.4|7.44962264150943|2.09326553809116|69, 118, 509, 5002
-34|Pine Island Sound Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|919|1.2|16.2|7.23|7.4516648531012|2.17048591308103|69, 95, 509, 5002
-34|Pine Island Sound Aquatic Preserve|2008|Dissolved Oxygen|Surface|Field|1101|1.1|15.1|7.2|7.20553133514986|1.74100499037688|69, 95, 476, 509, 5002
-34|Pine Island Sound Aquatic Preserve|2009|Dissolved Oxygen|Surface|Field|1126|0.3|15.7|7.05|7.13694493783304|2.04397501410824|69, 95, 5002
+34|Pine Island Sound Aquatic Preserve|2006|Dissolved Oxygen|Surface|Field|957|1.2|17.8|7.4|7.46220480668757|2.10730817604007|69, 118, 509, 5002
+34|Pine Island Sound Aquatic Preserve|2007|Dissolved Oxygen|Surface|Field|931|1.2|16.2|7.23|7.45395273899033|2.17202998403048|69, 95, 509, 5002
+34|Pine Island Sound Aquatic Preserve|2008|Dissolved Oxygen|Surface|Field|1113|1.1|15.1|7.2|7.19315363881402|1.74610136923996|69, 95, 476, 509, 5002
+34|Pine Island Sound Aquatic Preserve|2009|Dissolved Oxygen|Surface|Field|1138|0.3|15.7|7.1|7.1404920913884|2.05112280734862|69, 95, 5002
 34|Pine Island Sound Aquatic Preserve|2010|Dissolved Oxygen|Surface|Field|1225|1|14.9|7.2|7.48182857142857|2.15547393754247|69, 95, 5002
 34|Pine Island Sound Aquatic Preserve|2011|Dissolved Oxygen|Surface|Field|1103|0.5|15.6|6.8|6.71378059836809|2.02560527014518|69, 95, 5002
 34|Pine Island Sound Aquatic Preserve|2012|Dissolved Oxygen|Surface|Field|1001|1.9|14.2|7.2|7.31508491508492|1.98703855467935|69, 95, 5002
@@ -934,7 +934,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 35|Pinellas County Aquatic Preserve|1997|Dissolved Oxygen|Surface|Field|1484|0.23|14|6.4|6.11095013477089|2.06061574839055|69, 95, 4067, 5002
 35|Pinellas County Aquatic Preserve|1998|Dissolved Oxygen|Surface|Field|1089|1.2|15.9|6.9|7.04401285583104|1.56477221955762|69, 95, 4067, 5002
 35|Pinellas County Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|2071|0.33|15.14|6.7|6.73271849348141|1.72062481557761|69, 4067, 5002
-35|Pinellas County Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|1668|0.16|14|6.8|6.77721223021583|1.64931916601367|69, 95, 115, 118, 4067, 5002
+35|Pinellas County Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|1671|0.16|14|6.8|6.77532615200479|1.65043198795182|69, 95, 115, 118, 4067, 5002
 35|Pinellas County Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|1865|0.18|13.64|6.7|6.80230026809652|1.70336939380891|69, 95, 115, 118, 4067, 5002
 35|Pinellas County Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|2429|0.1|16.25|6.6|6.62093042361877|1.96825798514264|69, 95, 115, 4067, 5002
 35|Pinellas County Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|3198|0.18|16.1|6.9|6.96086616635397|1.68785044676942|69, 95, 103, 115, 4067, 5002
@@ -989,7 +989,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 38|Rookery Bay Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|163|2.8|12.17|5.7|5.7598773006135|1.4159213672324|509, 572, 5002
 38|Rookery Bay Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|159|2.5|8.5|6.2|6.0785534591195|1.18609498439099|509, 572, 5002
 38|Rookery Bay Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|178|2|8.9|5.6|5.50876404494382|1.34830072608653|69, 509, 572, 5002
-38|Rookery Bay Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|242|2.95|11.9|5.715|5.82822314049587|1.36177687186885|354, 509, 572, 4043, 5002
+38|Rookery Bay Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|243|2.95|11.9|5.7|5.82374485596708|1.3607522411906|354, 509, 572, 4043, 5002
 38|Rookery Bay Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|250|2.93|8.8|5.54|5.593092|1.26580215512523|95, 354, 509, 572, 4043, 5002
 38|Rookery Bay Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|257|2.93|9.01|5.7|5.65268482490272|1.0730852268962|354, 509, 572, 4043, 5002
 38|Rookery Bay Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|297|1.81|8.51|5.97|5.89683501683502|1.02347385546663|354, 509, 572, 4043, 5002
@@ -1021,7 +1021,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 39|Rookery Bay National Estuarine Research Reserve|1999|Dissolved Oxygen|Surface|Field|493|1.8|12.17|6.1|5.90559837728195|1.29367437603783|509, 572, 5002
 39|Rookery Bay National Estuarine Research Reserve|2000|Dissolved Oxygen|Surface|Field|482|2.1|8.5|6.5|6.2050622406639|1.22854226967742|509, 572, 4043, 5002
 39|Rookery Bay National Estuarine Research Reserve|2001|Dissolved Oxygen|Surface|Field|470|0.1|10.33|6|5.80648936170213|1.5258224441319|69, 509, 572, 4043, 5002
-39|Rookery Bay National Estuarine Research Reserve|2002|Dissolved Oxygen|Surface|Field|526|2.89|13.2|5.715|5.77136882129278|1.33212241282825|354, 509, 572, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|2002|Dissolved Oxygen|Surface|Field|530|2.89|13.2|5.7|5.76111320754717|1.33288467474044|354, 509, 572, 4043, 5002
 39|Rookery Bay National Estuarine Research Reserve|2003|Dissolved Oxygen|Surface|Field|548|2.69|13.47|5.71|5.68546167883212|1.40197146525457|95, 354, 509, 572, 4043, 5002
 39|Rookery Bay National Estuarine Research Reserve|2004|Dissolved Oxygen|Surface|Field|545|1.53|13.51|5.74|5.72915596330275|1.33183021168732|354, 509, 572, 4043, 5002
 39|Rookery Bay National Estuarine Research Reserve|2005|Dissolved Oxygen|Surface|Field|536|1.81|15.92|6.02|6.01542910447761|1.18898708269472|354, 509, 572, 4043, 5002
@@ -1151,7 +1151,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 44|Terra Ceia Aquatic Preserve|1997|Dissolved Oxygen|Surface|Field|673|2.2|13.5|6.9|6.99416047548291|1.13595181840301|69, 4067, 5002
 44|Terra Ceia Aquatic Preserve|1998|Dissolved Oxygen|Surface|Field|764|2.1|12|7.1|7.0317277486911|1.09748773007094|69, 4067, 5002
 44|Terra Ceia Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|594|2.7|12.2|6.87|6.89496632996633|1.09202169468548|69, 95, 4067, 5002
-44|Terra Ceia Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|589|3.3|17.5|6.7|6.66261460101868|1.08852563139074|69, 95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|590|3.3|17.5|6.7|6.66698305084746|1.09276508661148|69, 95, 4067, 5002
 44|Terra Ceia Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|608|3.3|15.2|6.6|6.68041118421053|1.3301302392562|69, 4067, 5002
 44|Terra Ceia Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|641|1.3|12.9|6.4|6.54003120124805|1.71339921618546|69, 95, 4067, 5002
 44|Terra Ceia Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|995|1.9|13.3|6.7|6.90317587939699|1.54689556192333|69, 95, 4067, 5002
@@ -1178,7 +1178,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 45|Tomoka Marsh Aquatic Preserve|1999|Dissolved Oxygen|Surface|Field|8|2|7.77|4.86|4.94375|1.75128473249946|5002
 45|Tomoka Marsh Aquatic Preserve|2000|Dissolved Oxygen|Surface|Field|9|3.83|8.9|6.33|6.12777777777778|1.83347196445554|5002
 45|Tomoka Marsh Aquatic Preserve|2001|Dissolved Oxygen|Surface|Field|11|1.4|6.34|4.77|4.07909090909091|1.58260831885501|69, 5002
-45|Tomoka Marsh Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|7|2.66|8.18|6.68|5.67428571428571|2.18887229064692|5002
+45|Tomoka Marsh Aquatic Preserve|2002|Dissolved Oxygen|Surface|Field|8|2.66|8.18|5.875|5.59875|2.0377328964177|5002
 45|Tomoka Marsh Aquatic Preserve|2003|Dissolved Oxygen|Surface|Field|8|4.96|8.53|5.745|6.3875|1.48198467314226|5002
 45|Tomoka Marsh Aquatic Preserve|2004|Dissolved Oxygen|Surface|Field|11|3.43|8.86|5.4|6.12454545454546|1.80243370827536|69, 5002
 45|Tomoka Marsh Aquatic Preserve|2005|Dissolved Oxygen|Surface|Field|40|2.13|8.88|5.93|5.54175|1.83667604935013|5002
