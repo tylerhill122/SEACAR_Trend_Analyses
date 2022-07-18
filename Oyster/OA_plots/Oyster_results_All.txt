@@ -1,73 +1,73 @@
-AreaID|ManagedAreaName|ParameterName|SizeClass|ProgramNames|Intercept|Slope|StandardError|LowerConfidence|UpperConfidence
-1|Alligator Harbor Aquatic Preserve||||||||
-2|Apalachicola Bay Aquatic Preserve|Density|NA|c(5063, 5073)|97.6409013249625|-0.242481886024363|0.0988924413458468|-0.432897825|-0.0482567225000001
-2|Apalachicola Bay Aquatic Preserve|Size class|>75mm|5035|83.8458013005997|-0.892875765691529|2.05750312640696|-7.395059|0.00754660074999997
-2|Apalachicola Bay Aquatic Preserve|Size class|25-75mm|5035|53.2723404685158|-0.107389060138681|0.442668483524825|-0.904810725|0.7931525
-3|Apalachicola National Estuarine Research Reserve|Density|NA|c(5063, 5075, 5073)|76.1341859111694|-0.168312138990255|0.0718120997650847|-0.3097278|-0.0294673575000001
-3|Apalachicola National Estuarine Research Reserve|Size class|>75mm|5035|80.5996741311844|-0.358576762752324|1.107216428536|-2.9725745|-0.0150179575000001
-3|Apalachicola National Estuarine Research Reserve|Size class|>75mm|c(5063, 5071, 5073)|3353.68939724138|-7.51234787577586|7.88540264915394|-23.15059|7.57210699999999
-3|Apalachicola National Estuarine Research Reserve|Size class|25-75mm|5035|114.100098688156|-0.241324012031484|0.61596173511494|-1.1949425|1.0606245
-3|Apalachicola National Estuarine Research Reserve|Size class|25-75mm|c(5063, 5071, 5075, 5073)|1029.7831218066|-2.30603962181034|3.88979751896277|-10.1238175|5.52396625
-4|Banana River Aquatic Preserve||||||||
-5|Big Bend Seagrasses Aquatic Preserve||||||||
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||||||
-6|Biscayne Bay Aquatic Preserve||||||||
-8|Boca Ciega Bay Aquatic Preserve||||||||
-9|Cape Haze Aquatic Preserve||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||||||
-11|Cockroach Bay Aquatic Preserve||||||||
-13|Coupon Bight Aquatic Preserve||||||||
-14|Estero Bay Aquatic Preserve|Density|NA|4042|6.67450566131934|-0.000495198620164918|0.0433406806376455|-0.082720745|0.085091285
-14|Estero Bay Aquatic Preserve|Size class|>75mm|4042|73.898523261994|0.199320387744753|0.53254523810195|-0.888354575|1.22240925
-14|Estero Bay Aquatic Preserve|Size class|>75mm|5035|62.7679333770615|-1.63944536090705|1.40404786200388|-4.85891675|-0.185532175
-14|Estero Bay Aquatic Preserve|Size class|25-75mm|4042|28.4725029966267|0.261939854640555|0.220145285353879|-0.175972375|0.687110875
-14|Estero Bay Aquatic Preserve|Size class|25-75mm|5035|-93.1582180768366|-0.102195001330585|1.27579268645828|-2.5933325|2.5134875
-15|Florida Keys National Marine Sanctuary||||||||
-16|Fort Clinch State Park Aquatic Preserve||||||||
-17|Fort Pickens State Park Aquatic Preserve||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||||||
-19|Guana River Marsh Aquatic Preserve|Density|NA|c(5017, 4000)|7.5239857796102|-0.0188871342912294|0.0393218559042129|-0.0970366025|0.0575738324999999
-19|Guana River Marsh Aquatic Preserve|Percent live|NA|c(4000, 5017)|-2.68947868815592|0.0816738073463269|0.00996463011517046|0.0618781425|0.10067275
-19|Guana River Marsh Aquatic Preserve|Size class|>75mm|5035|66.5942932908546|1.26526654625937|5.0301029470387|-9.98235|11.4340975
-19|Guana River Marsh Aquatic Preserve|Size class|>75mm|c(4000, 5017)|-48.4392150423538|1.58824416578411|1.43428129250404|-1.141151|4.4923555
-19|Guana River Marsh Aquatic Preserve|Size class|25-75mm|5035|46.8947603748126|-75.5649922488981|223.733723911749|-783.82835|18.28277
-19|Guana River Marsh Aquatic Preserve|Size class|25-75mm|c(4000, 5017)|-17.6109819169565|1.26815673767616|1.60230910937906|-1.80909775|4.48082674999999
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Density|NA|c(5017, 4000)|-4.51191530493253|0.108132359315592|0.0646153501364363|-0.014975965|0.240315175
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Percent live|NA|c(4000, 5017)|-15.9588396551724|0.135178407121439|0.0172058460631574|0.10027865|0.17107885
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Size class|>75mm|c(4000, 5017)|-309.533974041229|2.69328709333733|1.46269957301152|-0.00925512499999869|5.72592725
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Size class|25-75mm|c(4000, 5017)|-252.2885036994|2.27772494244753|1.06868361590264|0.218966700000001|4.43465825
-21|Indian River-Malabar to Vero Beach Aquatic Preserve||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Size class|>75mm|c(4016, 5035)|88.0613778804348|-1.05610147441192|0.493651724511453|-2.21228125|-0.33366275
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Size class|25-75mm|c(4016, 5035)|33.6066224275862|53.8867735014993|61.9343272513756|-13.222285|145.504375
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||||||
-24|Lake Jackson Aquatic Preserve||||||||
-25|Lemon Bay Aquatic Preserve|Density|NA|972|8.34197148425787|-0.0316628593072714|0.0109996236085541|-0.0526955125|-0.00950528825000001
-25|Lemon Bay Aquatic Preserve|Percent live|NA|c(972, 5035)|-0.271630814252999|0.00884665278035232|0.0130936942134157|-0.0162955675|0.034215915
-25|Lemon Bay Aquatic Preserve|Size class|>75mm|5035|64.904035148051|0.0498568762341848|0.261229403510678|-0.458072125|0.5789785
-25|Lemon Bay Aquatic Preserve|Size class|25-75mm|5035|12.4953426199175|0.0121012845|0.669339991485672|-1.69510575|0.8260949
-26|Lignumvitae Key Aquatic Preserve||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||||||
-28|Matlacha Pass Aquatic Preserve||||||||
-29|Mosquito Lagoon Aquatic Preserve||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve||||||||
-48|Nature Coast Aquatic Preserve||||||||
-31|North Fork St. Lucie Aquatic Preserve||||||||
-32|Oklawaha River Aquatic Preserve||||||||
-33|Pellicer Creek Aquatic Preserve||||||||
-34|Pine Island Sound Aquatic Preserve|Density|NA|4012|6.45666559595202|-0.674060037518741|1.08665832704577|-2.850187|1.59281475
-34|Pine Island Sound Aquatic Preserve|Density|NA|4012|3.63352841791604|0.147218104701559|0.135402528597493|0.00385780075|0.500686625
-35|Pinellas County Aquatic Preserve||||||||
-36|Rainbow Springs Aquatic Preserve||||||||
-37|Rocky Bayou State Park Aquatic Preserve||||||||
-38|Rookery Bay Aquatic Preserve||||||||
-39|Rookery Bay National Estuarine Research Reserve||||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area||||||||
-40|St. Andrews State Park Aquatic Preserve||||||||
-41|St. Joseph Bay Aquatic Preserve||||||||
-42|St. Joseph Bay State Buffer Preserve||||||||
-43|St. Martins Marsh Aquatic Preserve|Size class|>75mm|5072|39.6158611605697|-0.0217605323614026|0.0126642677995387|-0.0494932025|0.000806995774999983
-43|St. Martins Marsh Aquatic Preserve|Size class|35-75mm|5072|69.8660818215892|0.00260819919385465|0.0030246838714188|-0.003339181|0.008645585
-44|Terra Ceia Aquatic Preserve||||||||
-45|Tomoka Marsh Aquatic Preserve||||||||
-46|Wekiva River Aquatic Preserve||||||||
-47|Yellow River Marsh Aquatic Preserve||||||||
+AreaID|ManagedAreaName|ParameterName|SizeClass|ShellType|HabitatType|ProgramNames|Intercept|Slope|StandardError|LowerConfidence|UpperConfidence
+1|Alligator Harbor Aquatic Preserve||||||||||
+2|Apalachicola Bay Aquatic Preserve|Density|NA|Live Oysters|Natural|c(5063, 5073)|97.6409013249625|-0.242481886024363|0.0988924413458468|-0.432897825|-0.0482567225000001
+2|Apalachicola Bay Aquatic Preserve|Size class|>75mm|Dead Shells|Natural|5035|83.8458013005997|-0.892875765691529|2.05750312640696|-7.395059|0.00754660074999997
+2|Apalachicola Bay Aquatic Preserve|Size class|25-75mm|Dead Shells|Natural|5035|53.2723404685158|-0.107389060138681|0.442668483524825|-0.904810725|0.7931525
+3|Apalachicola National Estuarine Research Reserve|Density|NA|Live Oysters|Natural|c(5063, 5075, 5073)|76.1341859111694|-0.168312138990255|0.0718120997650847|-0.3097278|-0.0294673575000001
+3|Apalachicola National Estuarine Research Reserve|Size class|>75mm|Dead Shells|Natural|5035|80.5996741311844|-0.358576762752324|1.107216428536|-2.9725745|-0.0150179575000001
+3|Apalachicola National Estuarine Research Reserve|Size class|25-75mm|Dead Shells|Natural|5035|114.100098688156|-0.241324012031484|0.61596173511494|-1.1949425|1.0606245
+3|Apalachicola National Estuarine Research Reserve|Size class|>75mm|Live Oysters|Natural|c(5063, 5071, 5073)|3353.68939724138|-7.51234787577586|7.88540264915394|-23.15059|7.57210699999999
+3|Apalachicola National Estuarine Research Reserve|Size class|25-75mm|Live Oysters|Natural|c(5063, 5071, 5075, 5073)|1029.7831218066|-2.30603962181034|3.88979751896277|-10.1238175|5.52396625
+4|Banana River Aquatic Preserve||||||||||
+5|Big Bend Seagrasses Aquatic Preserve||||||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve||||||||||
+6|Biscayne Bay Aquatic Preserve||||||||||
+8|Boca Ciega Bay Aquatic Preserve||||||||||
+9|Cape Haze Aquatic Preserve||||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve||||||||||
+11|Cockroach Bay Aquatic Preserve||||||||||
+13|Coupon Bight Aquatic Preserve||||||||||
+14|Estero Bay Aquatic Preserve|Density|NA|Live Oysters|Natural|4042|6.67450566131934|-0.000495198620164918|0.0433406806376455|-0.082720745|0.085091285
+14|Estero Bay Aquatic Preserve|Size class|>75mm|Dead Shells|Natural|5035|62.7679333770615|-1.63944536090705|1.40404786200388|-4.85891675|-0.185532175
+14|Estero Bay Aquatic Preserve|Size class|25-75mm|Dead Shells|Natural|5035|-93.1582180768366|-0.102195001330585|1.27579268645828|-2.5933325|2.5134875
+14|Estero Bay Aquatic Preserve|Size class|>75mm|Live Oysters|Natural|4042|73.898523261994|0.199320387744753|0.53254523810195|-0.888354575|1.22240925
+14|Estero Bay Aquatic Preserve|Size class|25-75mm|Live Oysters|Natural|4042|28.4725029966267|0.261939854640555|0.220145285353879|-0.175972375|0.687110875
+15|Florida Keys National Marine Sanctuary||||||||||
+16|Fort Clinch State Park Aquatic Preserve||||||||||
+17|Fort Pickens State Park Aquatic Preserve||||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve||||||||||
+19|Guana River Marsh Aquatic Preserve|Density|NA|Live Oysters|Natural|c(5017, 4000)|7.5239857796102|-0.0188871342912294|0.0393218559042129|-0.0970366025|0.0575738324999999
+19|Guana River Marsh Aquatic Preserve|Percent live|NA|Live Oysters|Natural|c(4000, 5017)|-2.68947868815592|0.0816738073463269|0.00996463011517046|0.0618781425|0.10067275
+19|Guana River Marsh Aquatic Preserve|Size class|>75mm|Dead Shells|Natural|5035|66.5942932908546|1.26526654625937|5.0301029470387|-9.98235|11.4340975
+19|Guana River Marsh Aquatic Preserve|Size class|25-75mm|Dead Shells|Natural|5035|46.8947603748126|-75.5649922488981|223.733723911749|-783.82835|18.28277
+19|Guana River Marsh Aquatic Preserve|Size class|>75mm|Live Oysters|Natural|c(4000, 5017)|-48.4392150423538|1.58824416578411|1.43428129250404|-1.141151|4.4923555
+19|Guana River Marsh Aquatic Preserve|Size class|25-75mm|Live Oysters|Natural|c(4000, 5017)|-17.6109819169565|1.26815673767616|1.60230910937906|-1.80909775|4.48082674999999
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Density|NA|Live Oysters|Natural|c(5017, 4000)|-4.51191530493253|0.108132359315592|0.0646153501364363|-0.014975965|0.240315175
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Percent live|NA|Live Oysters|Natural|c(4000, 5017)|-15.9588396551724|0.135178407121439|0.0172058460631574|0.10027865|0.17107885
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Size class|>75mm|Live Oysters|Natural|c(4000, 5017)|-309.533974041229|2.69328709333733|1.46269957301152|-0.00925512499999869|5.72592725
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Size class|25-75mm|Live Oysters|Natural|c(4000, 5017)|-252.2885036994|2.27772494244753|1.06868361590264|0.218966700000001|4.43465825
+21|Indian River-Malabar to Vero Beach Aquatic Preserve||||||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Size class|>75mm|Dead Shells|Natural|c(4016, 5035)|88.0613778804348|-1.05610147441192|0.493651724511453|-2.21228125|-0.33366275
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Size class|25-75mm|Dead Shells|Natural|c(4016, 5035)|33.6066224275862|53.8867735014993|61.9343272513756|-13.222285|145.504375
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve||||||||||
+24|Lake Jackson Aquatic Preserve||||||||||
+25|Lemon Bay Aquatic Preserve|Density|NA|Live Oysters|Natural|972|8.34197148425787|-0.0316628593072714|0.0109996236085541|-0.0526955125|-0.00950528825000001
+25|Lemon Bay Aquatic Preserve|Percent live|NA|Live Oysters|Natural|c(972, 5035)|-0.271630814252999|0.00884665278035232|0.0130936942134157|-0.0162955675|0.034215915
+25|Lemon Bay Aquatic Preserve|Size class|>75mm|Dead Shells|Natural|5035|64.904035148051|0.0498568762341848|0.261229403510678|-0.458072125|0.5789785
+25|Lemon Bay Aquatic Preserve|Size class|25-75mm|Dead Shells|Natural|5035|12.4953426199175|0.0121012845|0.669339991485672|-1.69510575|0.8260949
+26|Lignumvitae Key Aquatic Preserve||||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve||||||||||
+28|Matlacha Pass Aquatic Preserve||||||||||
+29|Mosquito Lagoon Aquatic Preserve||||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve||||||||||
+48|Nature Coast Aquatic Preserve||||||||||
+31|North Fork St. Lucie Aquatic Preserve||||||||||
+32|Oklawaha River Aquatic Preserve||||||||||
+33|Pellicer Creek Aquatic Preserve||||||||||
+34|Pine Island Sound Aquatic Preserve|Density|NA|Live Oysters|Natural|4012|6.45666559595202|-0.674060037518741|1.08665832704577|-2.850187|1.59281475
+34|Pine Island Sound Aquatic Preserve|Density|NA|Live Oysters|Restored|4012|3.63352841791604|0.147218104701559|0.135402528597493|0.00385780075|0.500686625
+35|Pinellas County Aquatic Preserve||||||||||
+36|Rainbow Springs Aquatic Preserve||||||||||
+37|Rocky Bayou State Park Aquatic Preserve||||||||||
+38|Rookery Bay Aquatic Preserve||||||||||
+39|Rookery Bay National Estuarine Research Reserve||||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area||||||||||
+40|St. Andrews State Park Aquatic Preserve||||||||||
+41|St. Joseph Bay Aquatic Preserve||||||||||
+42|St. Joseph Bay State Buffer Preserve||||||||||
+43|St. Martins Marsh Aquatic Preserve|Size class|>75mm|Dead Shells|Natural|5072|39.6158611605697|-0.0217605323614026|0.0126642677995387|-0.0494932025|0.000806995774999983
+43|St. Martins Marsh Aquatic Preserve|Size class|35-75mm|Dead Shells|Natural|5072|69.8660818215892|0.00260819919385465|0.0030246838714188|-0.003339181|0.008645585
+44|Terra Ceia Aquatic Preserve||||||||||
+45|Tomoka Marsh Aquatic Preserve||||||||||
+46|Wekiva River Aquatic Preserve||||||||||
+47|Yellow River Marsh Aquatic Preserve||||||||||

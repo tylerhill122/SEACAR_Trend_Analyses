@@ -53,6 +53,13 @@ stats <- fread("SAV/output/data/SAV_BBpct_Stats.txt", sep = "|", header = TRUE, 
                na.strings = "")
 setnames(stats, c("ManagedAreaName", "analysisunit"), c("ShortName","Species"))
 
+stats$Species[stats$Species=="Thalassia testudinum"] <- "Turtle grass"
+stats$Species[stats$Species=="Syringodium filiforme"] <- "Manatee grass"
+stats$Species[stats$Species=="Halodule wrightii"] <- "Shoal grass"
+stats$Species[stats$Species=="Ruppia maritima"] <- "Widgeon grass"
+stats$Species[stats$Species=="Halophila spp."] <- "Tape grasses"
+
+
 stats <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName", "ShortName")],
                           stats, by="ShortName", all=TRUE)
 

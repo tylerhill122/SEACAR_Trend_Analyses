@@ -18,8 +18,9 @@ data <- data[data$effect=="fixed" & !is.na(data$effect),]
 
 #For each managed area and species, get the LME intercept, slope, and p values
 table <- data %>%
-      group_by(managed_area, indicator, size_class, programs) %>%
-      summarise(Intercept = estimate[term == "(Intercept)"],
+      group_by(managed_area, indicator, live_date_qual, size_class, habitat_class) %>%
+      summarise(Programs=unique(programs),
+                Intercept = estimate[term == "(Intercept)"],
                 Slope = estimate[term == "RelYear" |
                                        term == "meRelYearSampleAge_StdevgrEQQuadIdentifier"],
                 StandardError = std.error[term == "RelYear" |
@@ -30,14 +31,18 @@ table <- data %>%
                                                  term == "meRelYearSampleAge_StdevgrEQQuadIdentifier"])
 
 #Change column names to better match other outputs
-setnames(table, c("managed_area", "indicator", "size_class", "programs"),
-         c("ManagedAreaName", "ParameterName", "SizeClass", "ProgramNames"))
+setnames(table, c("managed_area", "indicator", "size_class", "live_date_qual", "habitat_class", "Programs"),
+         c("ManagedAreaName", "ParameterName", "SizeClass", "ShellType", "HabitatType", "ProgramNames"))
 
 table$ManagedAreaName[table$ManagedAreaName=="Fort Pickens Aquatic Preserve"] <-
       "Fort Pickens State Park Aquatic Preserve"
 
 table$ManagedAreaName[table$ManagedAreaName=="St. Andrews Aquatic Preserve"] <-
       "St. Andrews State Park Aquatic Preserve"
+
+table$ShellType[table$ShellType=="Exact"] <- "Live Oysters"
+table$ShellType[table$ShellType=="Estimate"] <- "Dead Shells"
+
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
 MA_All <- fread("../ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
@@ -61,7 +66,8 @@ table <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
 #                           stats, by=c("ManagedAreaName"), all=TRUE)
 
 table <- as.data.table(table[order(table$ManagedAreaName, table$ParameterName,
-                                   table$SizeClass), ])
+                                   table$ShellType, table$SizeClass,
+                                   table$HabitatType), ])
 table <- table %>% select(AreaID, everything())
 
 #Write output table to a pipe-delimited txt file
