@@ -1,0 +1,26 @@
+"","model","error","reason"
+"1","SAV_BBpct_BRAP_lme_TuGr.rds","Error in MEEM(object, conLin, control$niterEM) : Overfitted model!
+","all zero values"
+"2","SAV_BBpct_BBSAP_lme_DrAl.rds","Error in lme.formula(formula_j, random = list(LocationID = ~relyear),  : 
+  fewer observations than random effects in all level 1 groups
+","only one value per LocationID; all mean values"
+"3","SAV_BBpct_BBAP_lme_WiGr.rds","Error in MEEM(object, conLin, control$niterEM) : Overfitted model!
+","all zero values"
+"4","SAV_BBpct_JBJIAP_lme_WiGr.rds","Error in MEEM(object, conLin, control$niterEM) : Overfitted model!
+","all zero values"
+"5","SAV_BBpct_LRLWCAP_lme_WiGr.rds","Error in MEEM(object, conLin, control$niterEM) : Overfitted model!
+","all zero values"
+"6","SAV_BBpct_MLAP_lme_MaGr.rds","Error in MEEM(object, conLin, control$niterEM) : Overfitted model!
+","all zero values"
+"7","SAV_BBpct_MLAP_lme_TuGr.rds","Error in MEEM(object, conLin, control$niterEM) : Overfitted model!
+","all zero values"
+"8","SAV_BBpct_MLAP_lme_WiGr.rds","Error in MEEM(object, conLin, control$niterEM) : Overfitted model!
+","all zero values"
+"9","SAV_BBpct_PCAP_lme_DrAl.rds","Error in lme.formula(formula_j, random = list(LocationID = ~relyear),  : 
+  nlminb problem, convergence error code = 1
+  message = iteration limit reached without convergence (10)
+","Very unbalanced (hundreds of zeroes in 2013)"
+"10","SAV_BBpct_PCAP_lme_TaGr.rds","Error in lme.formula(formula_j, random = list(LocationID = ~relyear),  : 
+  nlminb problem, convergence error code = 1
+  message = iteration limit reached without convergence (10)
+","Very unbalanced (hundreds of zeroes in 2013 all from ID_564); model works when data are restricted to CommonIdentifier == Halophila engelmannii (ID_564 did not identify Halophila to species apparently."
