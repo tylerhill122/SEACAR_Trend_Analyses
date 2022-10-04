@@ -20,8 +20,9 @@ All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Panzik
 
-This script is based off of code originally wrtten by Katie May Laumann.
-Compiled and edited by J.E. Panzik.
+This script is based off of code originally written by Katie May Laumann, and modified by Stephen Durham.
+
+Compiled and edited by [J.E. Panzik](jepanzik@usf.edu) for SEACAR.
 
 THIS SCRIPT WILL ONLY RUN WITH brms version 2.16.3 or lower. DOES NOT WORK WITH brms 2.17.0
 
@@ -75,9 +76,9 @@ oysterraw2 <- pivot_wider(oysterraw, names_from="ParameterName",
                           values_from="ResultValue")
 setDT(oysterraw2)
 setnames(oysterraw2, c("Density", "Percent Live", "Shell Height",
-                       "Number of Oysters Counted-Live",
-                       "Number of Oysters Counted-Dead",
-                       "Number of Oysters Counted-Total", "Reef Height"),
+                       "Number of Oysters Counted - Live",
+                       "Number of Oysters Counted - Dead",
+                       "Number of Oysters Counted - Total", "Reef Height"),
          c("Density_m2", "PercentLive_pct", "ShellHeight_mm",
            "Number_of_Oysters_Counted_Live_Count",
            "Number_of_Oysters_Counted_Dead_Count",
@@ -573,23 +574,23 @@ oysterraw$SizeClass[oysterraw$SizeClass=="35to75mm"] <- "35-75mm"
 oysterraw$SizeClass[oysterraw$SizeClass=="o75mm"] <- ">75mm"
 
 oyster_sh_summ <- oysterraw %>%
-      subset(nyrpar=="ShellHeight_mm" & !is.na(SizeClass)) %>%
-      group_by(ManagedAreaName, nyrpar, LiveDate_Qualifier, SizeClass,
-               HabitatClassification) %>%
-      summarise(N_Data=length(ShellHeight_mm[!is.na(ShellHeight_mm)]),
-                N_Years=length(unique(LiveDate[!is.na(LiveDate) &
-                                                     !is.na(ShellHeight_mm)])),
-                EarliestLiveDate=min(LiveDate[!is.na(ShellHeight_mm)]),
-                LatestLiveDate=max(LiveDate[!is.na(ShellHeight_mm)]),
-                LastSampleDate=max(SampleDate),
-                Mean=mean(ShellHeight_mm[!is.na(ShellHeight_mm)]),
-                Median=median(ShellHeight_mm[!is.na(ShellHeight_mm)]))
+  subset(nyrpar=="ShellHeight_mm" & !is.na(SizeClass)) %>%
+  group_by(ManagedAreaName, nyrpar, LiveDate_Qualifier, SizeClass,
+           HabitatClassification) %>%
+  dplyr::summarize(N_Data=length(ShellHeight_mm[!is.na(ShellHeight_mm)]),
+            N_Years=length(unique(LiveDate[!is.na(LiveDate) &
+                                             !is.na(ShellHeight_mm)])),
+            EarliestLiveDate=min(LiveDate[!is.na(ShellHeight_mm)]),
+            LatestLiveDate=max(LiveDate[!is.na(ShellHeight_mm)]),
+            LastSampleDate=max(SampleDate),
+            Mean=mean(ShellHeight_mm[!is.na(ShellHeight_mm)]),
+            Median=median(ShellHeight_mm[!is.na(ShellHeight_mm)]))
 
 oyster_den_summ <- oysterraw %>%
       subset(nyrpar=="Density_m2") %>%
       group_by(ManagedAreaName, nyrpar, LiveDate_Qualifier, SizeClass,
                HabitatClassification) %>%
-      summarise(N_Data=length(Density_m2[!is.na(Density_m2)]),
+      dplyr::summarize(N_Data=length(Density_m2[!is.na(Density_m2)]),
                 N_Years=length(unique(LiveDate[!is.na(LiveDate) &
                                                      !is.na(Density_m2)])),
                 EarliestLiveDate=min(LiveDate[!is.na(Density_m2)]),
@@ -602,7 +603,7 @@ oyster_pct_summ <- oysterraw %>%
       subset(nyrpar=="PercentLive_pct") %>%
       group_by(ManagedAreaName, nyrpar, LiveDate_Qualifier, SizeClass,
                HabitatClassification) %>%
-      summarise(N_Data=length(PercentLive_pct[!is.na(PercentLive_pct)]),
+      dplyr::summarize(N_Data=length(PercentLive_pct[!is.na(PercentLive_pct)]),
                 N_Years=length(unique(LiveDate[!is.na(LiveDate) &
                                                      !is.na(PercentLive_pct)])),
                 EarliestLiveDate=min(LiveDate[!is.na(PercentLive_pct)]),
@@ -613,7 +614,7 @@ oyster_pct_summ <- oysterraw %>%
 
 oyster_summ <- bind_rows(oyster_sh_summ, oyster_den_summ, oyster_pct_summ)
 
-rm(oyster_sh_summ, oyster_den_summ, oyster_pct_summ)
+#rm(oyster_sh_summ, oyster_den_summ, oyster_pct_summ)
 
 setnames(oyster_summ, c("nyrpar", "LiveDate_Qualifier",
                         "HabitatClassification"),
@@ -662,576 +663,591 @@ The functions are:
 
 ```{r Functions}
 plot_theme <- theme_bw() +
-      theme(text=element_text(family="Segoe UI"),
-            title=element_text(face="bold"),
-            plot.title=element_text(hjust=0.5, size=14, color="#314963"),
-            plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
-            axis.title.x=element_text(margin=margin(t=5, r=0,
-                                                    b=10, l=0)),
-            axis.title.y=element_text(margin=margin(t=0, r=10,
-                                                    b=0, l=0)),
-            axis.text=element_text(size=10),
-            axis.text.x=element_text(face="bold", angle=60, hjust=1),
-            axis.text.y=element_text(face="bold"),
-            legend.title=element_text(size=10))
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        text=element_text(family="Arial"),
+        #title=element_text(face="bold"),
+        plot.title=element_text(hjust=0.5, size=12, color="#314963"),
+        plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
+        legend.title=element_text(size=10),
+        legend.text.align = 0,
+        axis.title.x = element_text(size=10, margin = margin(t = 5, r = 0,
+                                                             b = 10, l = 0)),
+        axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
+                                                             b = 0, l = 0)),
+        axis.text=element_text(size=10),
+        axis.text.x=element_text(angle = -45, hjust = 0))
 
 #Function to save diagnostic plots
 diagnosticplots <- function(model, indicator, managedarea, sizeclass="",
                             historical=FALSE){
-      ind <- case_when(str_detect(indicator, "ercent") ~ "Pct",
-                       str_detect(indicator, "ensity") ~ "Den",
-                       str_detect(indicator, "^S|^s") ~ "SH")
-      ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
-                   ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
-                          ifelse(str_detect(managedarea, "NMS|National M"),
-                                 "MS", "AP")))
-      if(sizeclass != ""){
-            size <- case_when(str_detect(sizeclass, "25") &
-                                    str_detect(sizeclass, "75") ~ "25to75", 
-                              str_detect(sizeclass, "35") &
-                                    str_detect(sizeclass, "75") ~ "35to75",
-                              str_detect(sizeclass, "25")==FALSE &
-                                    str_detect(sizeclass, "75") ~ "o75", TRUE ~ "raw")
-            sizelab <- case_when(str_detect(sizeclass, "25") &
-                                       str_detect(sizeclass, "75") ~ "25-75mm", 
-                                 str_detect(sizeclass, "35") &
-                                       str_detect(sizeclass, "75") ~ "35-75mm",
-                                 str_detect(sizeclass, "25")==FALSE &
-                                       str_detect(sizeclass, "75") ~ ">75mm", 
-                                 TRUE ~ "raw")
-      }
-      
-      #Save diagnostic plot(s) of chains
-      diag <- plot(model, plot=FALSE)
-      
-      title <- textGrob(paste0(ma, " (", ind, " ", sizelab, ")"),
-                        just="left",
-                        gp=gpar(fontsize=10))
-      
-      diag[[1]] <- gtable_add_rows(
-            diag[[1]],
-            heights=grobHeight(title)+unit(5, "mm"),
-            pos=0
-      )
-      
-      diag[[1]] <- gtable_add_grob(
-            diag[[1]],
-            title,
-            clip="off",
-            1, 1, 1, 1)
-      
-      if(class(try(diag[[2]], silent=TRUE)) != "try-error"){
-            diag[[2]] <- gtable_add_rows(
-                  diag[[2]],
-                  heights=grobHeight(title)+unit(5, "mm"),
-                  pos=0
-            )
-      }
-      
-      if(class(try(diag[[3]], silent=TRUE)) != "try-error"){
-            diag[[3]] <- gtable_add_rows(
-                  diag[[3]],
-                  heights=grobHeight(title)+unit(5, "mm"),
-                  pos=0
-            )
-      }
-      
-      #save chains plots
-      jpeg(filename=paste0("output/Figures/", ind, "_AllDates_GLMM_", ma,
-                           "_PDistandMChains_", ifelse(sizeclass != "",
-                                                       paste0(size, "_"), ""),
-                           ifelse(historical==TRUE, "hist_", "_"),
-                           Sys.Date(), ".png"),
+  ind <- case_when(str_detect(indicator, "ercent") ~ "Pct",
+                   str_detect(indicator, "ensity") ~ "Den",
+                   str_detect(indicator, "^S|^s") ~ "SH")
+  ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
+               ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
+                      ifelse(str_detect(managedarea, "NMS|National M"),
+                             "MS", "AP")))
+  if(sizeclass != ""){
+    size <- case_when(str_detect(sizeclass, "25") &
+                        str_detect(sizeclass, "75") ~ "25to75", 
+                      str_detect(sizeclass, "35") &
+                        str_detect(sizeclass, "75") ~ "35to75",
+                      str_detect(sizeclass, "25")==FALSE &
+                        str_detect(sizeclass, "75") ~ "o75", TRUE ~ "raw")
+    sizelab <- case_when(str_detect(sizeclass, "25") &
+                           str_detect(sizeclass, "75") ~ "25-75mm", 
+                         str_detect(sizeclass, "35") &
+                           str_detect(sizeclass, "75") ~ "35-75mm",
+                         str_detect(sizeclass, "25")==FALSE &
+                           str_detect(sizeclass, "75") ~ ">75mm", 
+                         TRUE ~ "raw")
+  }
+  
+  #Save diagnostic plot(s) of chains
+  diag <- plot(model, plot=FALSE)
+  
+  title <- textGrob(paste0(ma, " (", ind, " ", sizelab, ")"),
+                    just="left",
+                    gp=gpar(fontsize=10))
+  
+  diag[[1]] <- gtable_add_rows(
+    diag[[1]],
+    heights=grobHeight(title)+unit(5, "mm"),
+    pos=0
+  )
+  
+  diag[[1]] <- gtable_add_grob(
+    diag[[1]],
+    title,
+    clip="off",
+    1, 1, 1, 1)
+  
+  if(class(try(diag[[2]], silent=TRUE)) != "try-error"){
+    diag[[2]] <- gtable_add_rows(
+      diag[[2]],
+      heights=grobHeight(title)+unit(5, "mm"),
+      pos=0
+    )
+  }
+  
+  if(class(try(diag[[3]], silent=TRUE)) != "try-error"){
+    diag[[3]] <- gtable_add_rows(
+      diag[[3]],
+      heights=grobHeight(title)+unit(5, "mm"),
+      pos=0
+    )
+  }
+  
+  #save chains plots
+  jpeg(filename=paste0("output/Figures/", ind, "_AllDates_GLMM_", ma,
+                       "_PDistandMChains_", ifelse(sizeclass != "",
+                                                   paste0(size, "_"), ""),
+                       ifelse(historical==TRUE, "hist_", "_"),
+                       Sys.Date(), ".png"),
+       width=6,
+       height=ifelse(length(diag)==1, 6, ifelse(length(diag)==2, 12, 18)),
+       units="in", quality=100, res=300)
+  print(grid.arrange(grobs=diag, ncol=1))
+  dev.off()
+  
+  #Save posterior predictive check plot
+  postpc <- tryCatch(pp_check(model),
+                     error=function(e) NA)
+  k <- 1001
+  
+  while(is.na(postpc)==TRUE & k <= 1000){
+    postpc <- tryCatch(pp_check(model), 
+                       error=function(e) NA)
+    k <- k+1
+  }
+  
+  if(!is.na(postpc)){
+    postpc <- postpc +
+      labs(title=paste0(ind, "_AllDates_GLMM_", ma, "_PPcheck_",
+                        ifelse(sizeclass != "", paste0(size, "_"), ""),
+                        ifelse(historical==TRUE, "_hist_", "_"),
+                        Sys.Date(), ".png"))
+    
+    ggsave(paste0("output/Figures/", ind, "_AllDates_GLMM_", ma, "_PPcheck_",
+                  ifelse(sizeclass != "", paste0(size, "_"), ""),
+                  ifelse(historical==TRUE, "_hist_", "_"), Sys.Date(),
+                  ".png"),
+           postpc,
            width=6,
-           height=ifelse(length(diag)==1, 6, ifelse(length(diag)==2, 12, 18)),
-           units="in", quality=100, res=300)
-      print(grid.arrange(grobs=diag, ncol=1))
-      dev.off()
-      
-      #Save posterior predictive check plot
-      postpc <- tryCatch(pp_check(model),
-                         error=function(e) NA)
-      k <- 1001
-      
-      while(is.na(postpc)==TRUE & k <= 1000){
-            postpc <- tryCatch(pp_check(model), 
-                               error=function(e) NA)
-            k <- k+1
-      }
-      
-      if(!is.na(postpc)){
-            postpc <- postpc +
-                  labs(title=paste0(ind, "_AllDates_GLMM_", ma, "_PPcheck_",
-                                    ifelse(sizeclass != "", paste0(size, "_"), ""),
-                                    ifelse(historical==TRUE, "_hist_", "_"),
-                                    Sys.Date(), ".png"))
-            
-            ggsave(paste0("output/Figures/", ind, "_AllDates_GLMM_", ma, "_PPcheck_",
-                          ifelse(sizeclass != "", paste0(size, "_"), ""),
-                          ifelse(historical==TRUE, "_hist_", "_"), Sys.Date(),
-                          ".png"),
-                   postpc,
-                   width=6,
-                   height=6,
-                   units="in",
-                   dpi=300)
-      }
-      
-      print(paste0("Plots saved."))
-      
+           height=6,
+           units="in",
+           dpi=300)
+  }
+  
+  print(paste0("Plots saved."))
+  
 }
 
 
 # Save marginal effects plots
 meplots <- function(models, data, indicator, managedarea, sizeclass="",
                     zoom=FALSE){
-      ind <- case_when(str_detect(indicator, "ercent") ~ "Pct",
-                       str_detect(indicator, "ensity") ~ "Den",
-                       str_detect(indicator, "^S|^s") ~ "SH")
-      ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
-                   ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
-                          ifelse(str_detect(managedarea, "NMS|National M"), "MS",
-                                 "AP")))
-      if(sizeclass != ""){
-            size <- case_when(str_detect(sizeclass, "25") &
-                                    str_detect(sizeclass, "75") ~ "25to75",
-                              str_detect(sizeclass, "35") &
-                                    str_detect(sizeclass, "75") ~ "35to75",
-                              str_detect(sizeclass, "25")==FALSE &
-                                    str_detect(sizeclass, "75") ~ "o75", TRUE ~ "raw")
-            sizelab <- case_when(str_detect(sizeclass, "25") &
-                                       str_detect(sizeclass, "75") ~ "25-75mm",
-                                 str_detect(sizeclass, "35") &
-                                       str_detect(sizeclass, "75") ~ "35-75mm",
-                                 str_detect(sizeclass, "25")==FALSE &
-                                       str_detect(sizeclass, "75") ~ ">75mm",
-                                 TRUE ~ "raw")
+  ind <- case_when(str_detect(indicator, "ercent") ~ "Pct",
+                   str_detect(indicator, "ensity") ~ "Den",
+                   str_detect(indicator, "^S|^s") ~ "SH")
+  ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
+               ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
+                      ifelse(str_detect(managedarea, "NMS|National M"), "MS",
+                             "AP")))
+  if(sizeclass != ""){
+    size <- case_when(str_detect(sizeclass, "25") &
+                        str_detect(sizeclass, "75") ~ "25to75",
+                      str_detect(sizeclass, "35") &
+                        str_detect(sizeclass, "75") ~ "35to75",
+                      str_detect(sizeclass, "25")==FALSE &
+                        str_detect(sizeclass, "75") ~ "o75", TRUE ~ "raw")
+    sizelab <- case_when(str_detect(sizeclass, "25") &
+                           str_detect(sizeclass, "75") ~ "25-75mm",
+                         str_detect(sizeclass, "35") &
+                           str_detect(sizeclass, "75") ~ "35-75mm",
+                         str_detect(sizeclass, "25")==FALSE &
+                           str_detect(sizeclass, "75") ~ ">75mm",
+                         TRUE ~ "raw")
+  }
+  
+  
+  if(ind=="SH"){
+    #Marginal effects plot including random effects
+    nyrs <- (max(data[!is.na(RelYear), RelYear])+1) -
+      (min(data[!is.na(RelYear), RelYear])+1)
+    maxyr <- max(data[!is.na(RelYear), RelYear])
+    minyr <- min(data[!is.na(RelYear), RelYear]) #+ 1
+    if(minyr > 0){
+      maxyr <- maxyr-(minyr-1)
+      minyr <- minyr-(minyr-1)
+    }
+    nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
+    breaks <- if(minyr==0){
+      c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
+                                               (nyrs/nbreaks)/nbreaks)),
+        maxyr)+1
+    } else{
+      c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
+                                               (nyrs/nbreaks)/nbreaks)),
+        maxyr)
+    }
+    yrlist <- c(min(data[!is.na(LiveDate), LiveDate]):max(data[!is.na(LiveDate),
+                                                               LiveDate]))
+    
+    set.seed(987)
+    if(length(models)==2){
+      liveplot_1 <- plot(conditional_effects(models[[1]],
+                                             re_formula=NULL),
+                         plot=FALSE)
+      histplot_1 <- plot(conditional_effects(models[[2]],
+                                             re_formula=NULL),
+                         plot=FALSE)
+      present <- "Both"
+    } else{
+      if(str_detect(models[[1]]$file, "hist")){
+        histplot_1 <- plot(conditional_effects(models[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
+        present <- "hist"
+      } else{
+        liveplot_1 <- plot(conditional_effects(models[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
+        present <- "live"
       }
+    }
+    
+    plot1 <- ggplot() +
+      geom_jitter(data=data[!is.na(RelYear) & !is.na(LiveDate), ],
+                  aes(x=RelYear, y=ShellHeight_mm), shape=21,
+                  size=3, color="#333333", fill="#cccccc",
+                  alpha=0.75, inherit.aes=FALSE) +
+      {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
+        list(geom_ribbon(data=liveplot_1$RelYear$data,
+                         aes(x=RelYear, y=ShellHeight_mm,
+                             ymin=lower__, ymax=upper__),
+                         fill="grey", alpha=0.4),
+             geom_line(data=liveplot_1$RelYear$data,
+                       aes(x=RelYear, y=estimate__,
+                           color="live"), lwd=1))
+      }} +
+      {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
+        list(geom_ribbon(data=histplot_1$RelYear$data,
+                         aes(x=RelYear, y=ShellHeight_mm,
+                             ymin=lower__, ymax=upper__),
+                         fill="grey", alpha=0.4,
+                         inherit.aes=FALSE),
+             geom_line(data=histplot_1$RelYear$data,
+                       aes(x=RelYear, y=estimate__,
+                           color="hist"),
+                       lwd=1, inherit.aes=FALSE))
+      }} +
+      scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
+      plot_theme +
+      theme(legend.position="right"
+            #legend.position=ifelse(zoom==TRUE, "none", "right")
+      ) +
+      labs(subtitle=managedarea,
+           subtitle=sizelab,
+           x="Year",
+           y="Shell height (mm)") +
+      scale_color_manual(name="Trendlines",
+                         values=c("hist"="red", "live"="#000099"),
+                         labels=c("Dead Shells", "Live Oysters")) +
+      coord_cartesian(ylim=c(ifelse(size=="25to75", 20,
+                                    ifelse(size=="35to75", 35, 70)),
+                             ifelse(size=="o75", 250, 80)))
+    
+    ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma, "_MEPrand_",
+                  ifelse(sizeclass != "", paste0(size, "_"), ""),
+                  Sys.Date(), ".png"),
+           plot1,
+           width=8,
+           height=4,
+           units="in",
+           dpi=200)
+    
+    if(zoom==TRUE){
+      zoomplot <- plot1 +
+        {if(length(models)==1)
+          geom_boxplot(data=subset(data,
+                                   data$LiveDate_Qualifier=="Exact" &
+                                     !is.na(data$RelYear) &
+                                     !is.na(data$LiveDate)),
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           group=LiveDate_Qualifier),
+                       color="blue", alpha=0.5, lwd=1,
+                       inherit.aes=FALSE)} +
+        coord_cartesian(xlim=c(ifelse(min(data[LiveDate_Qualifier=="Exact" &
+                                                 !is.na(RelYear) &
+                                                 !is.na(LiveDate),
+                                               RelYear]) -
+                                        max(data[LiveDate_Qualifier==
+                                                   "Estimate" &
+                                                   !is.na(RelYear) &
+                                                   !is.na(LiveDate),
+                                                 RelYear]) > 50, 
+                                      min(data[LiveDate_Qualifier=="Exact" &
+                                                 !is.na(RelYear) &
+                                                 !is.na(LiveDate),
+                                               RelYear]-5), 
+                                      max(data[LiveDate_Qualifier ==
+                                                 "Estimate" &
+                                                 !is.na(RelYear) &
+                                                 !is.na(LiveDate),
+                                               RelYear]-5)),
+                               ifelse(min(data[LiveDate_Qualifier =="Exact" &
+                                                 !is.na(RelYear) &
+                                                 !is.na(LiveDate),
+                                               RelYear]) -
+                                        max(data[LiveDate_Qualifier ==
+                                                   "Estimate" &
+                                                   !is.na(RelYear) &
+                                                   !is.na(LiveDate),
+                                                 RelYear]) > 50,
+                                      max(data[LiveDate_Qualifier =="Exact" &
+                                                 !is.na(RelYear) &
+                                                 !is.na(LiveDate),
+                                               RelYear]+5),
+                                      max(data[LiveDate_Qualifier ==
+                                                 "Estimate" &
+                                                 !is.na(RelYear) &
+                                                 !is.na(LiveDate),
+                                               RelYear]-5))),
+                        
+                        ylim=c(ifelse(size=="25to75",
+                                      20,
+                                      ifelse(size=="35to75", 35,
+                                             70)),
+                               ifelse(size=="o75", 250, 80))) +
+        theme(legend.position="right") +
+        labs(title=paste0("post-",
+                          yrlist[max(data[LiveDate_Qualifier==
+                                            "Estimate" &
+                                            !is.na(RelYear) &
+                                            !is.na(LiveDate),
+                                          RelYear])-5]),
+             x="",
+             y=NULL)
       
+      cplot <- grid.arrange(grobs=list(plot1, zoomplot), ncol=2)
       
-      if(ind=="SH"){
-            #Marginal effects plot including random effects
-            nyrs <- (max(data[!is.na(RelYear), RelYear])+1) -
-                  (min(data[!is.na(RelYear), RelYear])+1)
-            maxyr <- max(data[!is.na(RelYear), RelYear])
-            minyr <- min(data[!is.na(RelYear), RelYear]) #+ 1
-            if(minyr > 0){
-                  maxyr <- maxyr-(minyr-1)
-                  minyr <- minyr-(minyr-1)
-            }
-            nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
-            breaks <- if(minyr==0){
-                  c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
-                                                               (nyrs/nbreaks)/nbreaks)),
-                    maxyr)+1
-            } else{
-                  c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
-                                                               (nyrs/nbreaks)/nbreaks)),
-                    maxyr)
-            }
-            yrlist <- c(min(data[!is.na(LiveDate), LiveDate]):max(data[!is.na(LiveDate),
-                                                                       LiveDate]))
-            
-            set.seed(987)
-            if(length(models)==2){
-                  liveplot_1 <- plot(conditional_effects(models[[1]],
-                                                         re_formula=NULL),
-                                     plot=FALSE)
-                  histplot_1 <- plot(conditional_effects(models[[2]],
-                                                         re_formula=NULL),
-                                     plot=FALSE)
-                  present <- "Both"
-            } else{
-                  if(str_detect(models[[1]]$file, "hist")){
-                        histplot_1 <- plot(conditional_effects(models[[1]],
-                                                               re_formula=NULL),
-                                           plot=FALSE)
-                        present <- "hist"
-                  } else{
-                        liveplot_1 <- plot(conditional_effects(models[[1]],
-                                                               re_formula=NULL),
-                                           plot=FALSE)
-                        present <- "live"
-                  }
-            }
-            
-            plot1 <- ggplot() +
-                  geom_jitter(data=data[!is.na(RelYear) & !is.na(LiveDate), ],
-                              aes(x=RelYear, y=ShellHeight_mm), shape=21,
-                              size=3, color="#333333", fill="#cccccc",
-                              alpha=0.75, inherit.aes=FALSE) +
-                  {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
-                        list(geom_ribbon(data=liveplot_1$RelYear$data,
-                                         aes(x=RelYear, y=ShellHeight_mm,
-                                             ymin=lower__, ymax=upper__),
-                                         fill="grey", alpha=0.4),
-                             geom_line(data=liveplot_1$RelYear$data,
-                                       aes(x=RelYear, y=estimate__,
-                                           color="live"), lwd=1))
-                  }} +
-                  {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
-                        list(geom_ribbon(data=histplot_1$RelYear$data,
-                                         aes(x=RelYear, y=ShellHeight_mm,
-                                             ymin=lower__, ymax=upper__),
-                                         fill="grey", alpha=0.4,
-                                         inherit.aes=FALSE),
-                             geom_line(data=histplot_1$RelYear$data,
-                                       aes(x=RelYear, y=estimate__,
-                                           color="hist"),
-                                       lwd=1, inherit.aes=FALSE))
-                  }} +
-                  scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
-                  plot_theme +
-                  theme(legend.text=element_text(size=12), 
-                        legend.title=element_text(size=13),
-                        legend.position="right"
-                        #legend.position=ifelse(zoom==TRUE, "none", "right")
-                  ) +
-                  labs(title=managedarea,
-                       subtitle=sizelab,
-                       x="Year",
-                       y="Shell height (mm)") +
-                  scale_color_manual(name="Trendlines",
-                                     values=c("hist"="red", "live"="#000099"),
-                                     labels=c("Dead Shells", "Live Oysters")) +
-                  coord_cartesian(ylim=c(ifelse(size=="25to75", 20,
-                                                ifelse(size=="35to75", 35, 70)),
-                                         ifelse(size=="o75", 250, 80)))
-            
-            ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma, "_MEPrand_",
-                          ifelse(sizeclass != "", paste0(size, "_"), ""),
-                          Sys.Date(), ".png"),
-                   plot1,
-                   width=8,
-                   height=4,
-                   units="in",
-                   dpi=200)
-            
-            if(zoom==TRUE){
-                  zoomplot <- plot1 +
-                        {if(length(models)==1)
-                              geom_boxplot(data=subset(data,
-                                                       data$LiveDate_Qualifier=="Exact" &
-                                                             !is.na(data$RelYear) &
-                                                             !is.na(data$LiveDate)),
-                                           aes(x=RelYear, y=ShellHeight_mm,
-                                               group=LiveDate_Qualifier),
-                                           color="blue", alpha=0.5, lwd=1,
-                                           inherit.aes=FALSE)} +
-                        coord_cartesian(xlim=c(ifelse(min(data[LiveDate_Qualifier=="Exact" &
-                                                                     !is.na(RelYear) &
-                                                                     !is.na(LiveDate),
-                                                               RelYear]) -
-                                                            max(data[LiveDate_Qualifier==
-                                                                           "Estimate" &
-                                                                           !is.na(RelYear) &
-                                                                           !is.na(LiveDate),
-                                                                     RelYear]) > 50, 
-                                                      min(data[LiveDate_Qualifier=="Exact" &
-                                                                     !is.na(RelYear) &
-                                                                     !is.na(LiveDate),
-                                                               RelYear]-5), 
-                                                      max(data[LiveDate_Qualifier ==
-                                                                     "Estimate" &
-                                                                     !is.na(RelYear) &
-                                                                     !is.na(LiveDate),
-                                                               RelYear]-5)),
-                                               ifelse(min(data[LiveDate_Qualifier =="Exact" &
-                                                                     !is.na(RelYear) &
-                                                                     !is.na(LiveDate),
-                                                               RelYear]) -
-                                                            max(data[LiveDate_Qualifier ==
-                                                                           "Estimate" &
-                                                                           !is.na(RelYear) &
-                                                                           !is.na(LiveDate),
-                                                                     RelYear]) > 50,
-                                                      max(data[LiveDate_Qualifier =="Exact" &
-                                                                     !is.na(RelYear) &
-                                                                     !is.na(LiveDate),
-                                                               RelYear]+5),
-                                                      max(data[LiveDate_Qualifier ==
-                                                                     "Estimate" &
-                                                                     !is.na(RelYear) &
-                                                                     !is.na(LiveDate),
-                                                               RelYear]-5))),
-                                        
-                                        ylim=c(ifelse(size=="25to75",
-                                                      20,
-                                                      ifelse(size=="35to75", 35,
-                                                             70)),
-                                               ifelse(size=="o75", 250, 80))) +
-                        theme(legend.position="right") +
-                        labs(title=paste0("post-",
-                                          yrlist[max(data[LiveDate_Qualifier==
-                                                                "Estimate" &
-                                                                !is.na(RelYear) &
-                                                                !is.na(LiveDate),
-                                                          RelYear])-5]),
-                             x="",
-                             y=NULL)
-                  
-                  cplot <- grid.arrange(grobs=list(plot1, zoomplot), ncol=2)
-                  
-                  ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma,
-                                "_MEPrand_", ifelse(sizeclass != "",
-                                                    paste0(size, "_"), ""),
-                                Sys.Date(), "_Zoom.png"),
-                         cplot,
-                         width=8,
-                         height=4,
-                         units="in",
-                         dpi=200)
-            }
-            
-            if("Region.y" %in% if(present=="hist"){names(histplot_1)}
-               else{names(liveplot_1)}){
-                  #Plot of modeled mean shell heights
-                  meanSH_test_hist <- histplot_1$Region.y$data
-                  meanSH_test <- liveplot_1$Region.y$data
-                  meanSH_test_hist$data <- "Historical data"
-                  meanSH_test$data <- "Real-time data"
-                  meanSH <- rbind(meanSH_test[, c("effect1__", "estimate__",
-                                                  "se__", "lower__", "upper__",
-                                                  "data")],
-                                  meanSH_test_hist[, c("effect1__",
-                                                       "estimate__", "se__",
-                                                       "lower__", "upper__",
-                                                       "data")])
-                  setnames(meanSH, c("effect1__"), c("Region"))
-                  
-                  meanshplot <- ggplot(meanSH, aes(x=Region, y=estimate__,
-                                                   ymin=lower__, ymax=upper__,
-                                                   fill=data)) +
-                        geom_pointinterval(
-                              position=position_jitter(width=0.25, height=0),
-                              size=3, fatten_point=4, shape=21, color="black") +
-                        ylab(paste0("ShellHeight_mm | ",
-                                    ifelse(size=="25to75", "trunc(lb=25, ub=75)",
-                                           ifelse(size=="35to75",
-                                                  "trunc(lb=35, ub=75)",
-                                                  "trunc(lb=75, ub=250)")))) +
-                        theme_bw()+
-                        theme(axis.title=element_text(size=13), 
-                              axis.text=element_text(size=12), 
-                              legend.text=element_text(size=12), 
-                              legend.title=element_text(size=13), 
-                              axis.text.x=element_text(angle=45, hjust=1)) +
-                        labs(fill=NULL)
-                  
-                  ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma,
-                                "_MEPrand_", ifelse(sizeclass != "",
-                                                    paste0(size, "_"), ""),
-                                "MeanRes_", Sys.Date(), ".png"),
-                         meanshplot,
-                         width=8,
-                         height=4,
-                         units="in",
-                         dpi=200)
-            }
+      ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma,
+                    "_MEPrand_", ifelse(sizeclass != "",
+                                        paste0(size, "_"), ""),
+                    Sys.Date(), "_Zoom.png"),
+             cplot,
+             width=8,
+             height=4,
+             units="in",
+             dpi=200)
+    }
+    
+    if("Region.y" %in% if(present=="hist"){names(histplot_1)}
+       else{names(liveplot_1)}){
+      #Plot of modeled mean shell heights
+      meanSH_test_hist <- histplot_1$Region.y$data
+      meanSH_test <- liveplot_1$Region.y$data
+      meanSH_test_hist$data <- "Historical data"
+      meanSH_test$data <- "Real-time data"
+      meanSH <- rbind(meanSH_test[, c("effect1__", "estimate__",
+                                      "se__", "lower__", "upper__",
+                                      "data")],
+                      meanSH_test_hist[, c("effect1__",
+                                           "estimate__", "se__",
+                                           "lower__", "upper__",
+                                           "data")])
+      setnames(meanSH, c("effect1__"), c("Region"))
+      
+      meanshplot <- ggplot(meanSH, aes(x=Region, y=estimate__,
+                                       ymin=lower__, ymax=upper__,
+                                       fill=data)) +
+        geom_pointinterval(
+          position=position_jitter(width=0.25, height=0),
+          size=3, fatten_point=4, shape=21, color="black") +
+        ylab(paste0("ShellHeight_mm | ",
+                    ifelse(size=="25to75", "trunc(lb=25, ub=75)",
+                           ifelse(size=="35to75",
+                                  "trunc(lb=35, ub=75)",
+                                  "trunc(lb=75, ub=250)")))) +
+        theme_bw()+
+        theme(axis.title=element_text(size=13), 
+              axis.text=element_text(size=12), 
+              legend.text=element_text(size=12), 
+              legend.title=element_text(size=13), 
+              axis.text.x=element_text(angle=45, hjust=1)) +
+        labs(fill=NULL)
+      
+      ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma,
+                    "_MEPrand_", ifelse(sizeclass != "",
+                                        paste0(size, "_"), ""),
+                    "MeanRes_", Sys.Date(), ".png"),
+             meanshplot,
+             width=8,
+             height=4,
+             units="in",
+             dpi=200)
+    }
+  }
+  
+  
+  
+  if(ind=="Den"){ 
+    nyrs <- (max(data$RelYear)+1)-(min(data$RelYear)+1)
+    maxyr <- max(data$RelYear)
+    minyr <- min(data$RelYear)
+    if(grepl("Natural", unique(data$MA_plotlab))==TRUE){
+      type <- "Natural"
+    } else{
+      type <- "Restored"
+    }
+    if(minyr > 0){
+      maxyr <- maxyr-(minyr-1)
+      minyr <- minyr-(minyr-1)
+    }
+    nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
+    breaks <- if(minyr==0){
+      c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
+                                               (nyrs/nbreaks)/nbreaks)),
+        maxyr)+1
+    } else{
+      c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
+                                               (nyrs/nbreaks)/nbreaks)),
+        maxyr)
+    }
+    yrlist <- c(min(data$Year):max(data$Year))
+    
+    denplots <- plot(conditional_effects(models[[1]], re_formula=NULL),
+                     plot=FALSE)
+    
+    plot1 <- ggplot() +
+      {if("meanDen_int" %in% colnames(data)){
+        geom_jitter(data=data, aes(x=RelYear -
+                                     (min(RelYear)-1),
+                                   y=meanDen_int), shape=21,
+                    size=2, color="#333333", fill="#cccccc",
+                    alpha=1, inherit.aes=FALSE)
+      } else{
+        geom_jitter(data=data, aes(x=RelYear-(min(RelYear)-1),
+                                   y=Density_m2), shape=21,
+                    size=2, color="#333333", fill="#cccccc",
+                    alpha=1, inherit.aes=FALSE)
       }
+      } +
+      list(geom_ribbon(data=denplots$RelYear$data,
+                       aes(x=RelYear-(min(RelYear)-1), y=Density_m2,
+                           ymin=lower__, ymax=upper__),
+                       fill="#000099", alpha=0.5, inherit.aes=FALSE),
+           geom_line(data=denplots$RelYear$data,
+                     aes(x=RelYear-(min(RelYear)-1),
+                         y=estimate__),
+                     color="#000099", lwd=0.75, inherit.aes=FALSE)) +
+      scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
+      plot_theme +
+      {if("meanDen_int" %in% colnames(data)){
+        labs(title="Oyster Density",
+             subtitle=managedarea,
+             x="Year",
+             y=bquote('Estimated density ('*~m^{-2}*')'))
+      }else{
+        labs(title="Oyster Density",
+             subtitle=managedarea,
+             x="Year",
+             y=bquote('Density ('*~m^{-2}*')'))
+      }}
+      # labs(title="Oyster Density",
+      #      subtitle=managedarea,
+      #      x="Year",
+      #      y=ifelse("meanDen_int" %in% colnames(data),
+      #                           "Estimated density (square meters)",
+      #                           bquote('Richness (species/100'*~m^{2}*')')))
+  
+    
+    
+    ggsave(paste0("output/Figures/Den_AllDates_GLMM_", ma, "_", type,
+                  "_MEPrand_", ifelse(sizeclass != "",
+                                      paste0(size, "_"), "raw_"),
+                  Sys.Date(), ".png"),
+           plot1,
+           width=8,
+           height=4,
+           units="in",
+           dpi=200)
+  }
+  
+  
+  #Marginal effects plot including random effects for percent live
+  if(ind=="Pct"){
+    nyrs <- (max(data$RelYear)+1)-(min(data$RelYear)+1)
+    maxyr <- max(data$RelYear)
+    minyr <- min(data$RelYear)
+    if(minyr > 0){
+      maxyr <- maxyr-(minyr-1)
+      minyr <- minyr-(minyr-1)
+    }
+    nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
+    breaks <- if(minyr==0){
+      c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
+                                               (nyrs/nbreaks)/nbreaks)),
+        maxyr)+1
+    } else{
+      c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
+                                               (nyrs/nbreaks)/nbreaks)),
+        maxyr)
+    }
+    yrlist <- c(min(data$Year):max(data$Year))
+    
+    set.seed(987)
+    pctplots <- plot(conditional_effects(models[[1]], re_formula=NULL),
+                     plot=FALSE)
+    
+    plot1 <- ggplot() +
+      geom_jitter(data=data, aes(x=RelYear-(min(RelYear)-1),
+                                 y=100*PercentLive_dec),
+                  shape=21, size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE) +
+      {if(names(pctplots$RelYear$data[2])=="PercentLive_dec"){
+        list(geom_ribbon(data=pctplots$RelYear$data,
+                         aes(x=RelYear-(min(RelYear)-1),
+                             y=100*PercentLive_dec, ymin=100*lower__,
+                             ymax=100*upper__), fill="#000099",
+                         alpha=0.5, inherit.aes=FALSE),
+             geom_line(data=pctplots$RelYear$data,
+                       aes(x=RelYear-(min(RelYear)-1),
+                           y=100*estimate__), color="#000099",
+                       lwd=0.75, inherit.aes=FALSE))
+      } else{
+        list(geom_ribbon(data=pctplots$RelYear$data,
+                         aes(x=RelYear-(min(RelYear)-1),
+                             y=100*LiveObs, ymin=100*lower__,
+                             ymax=100*upper__), fill="#000099",
+                         alpha=0.5, inherit.aes=FALSE),
+             geom_line(data=pctplots$RelYear$data,
+                       aes(x=RelYear-(min(RelYear)-1),
+                           y=100*estimate__), color="#000099",
+                       lwd=0.75, inherit.aes=FALSE))
+      }} +
+      scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
+      plot_theme +
+      labs(title="Oyster Percent Live Cover",
+           subtitle=managedarea,
+           x="Year",
+           y="Live cover (%)") +
+      theme(legend.text=element_text(size=10), 
+            legend.title=element_text(size=10))
+    
+    ggsave(paste0("output/Figures/Pct_AllDates_GLMM_", ma,
+                  "_MEPrand_raw_", Sys.Date(), ".png"),
+           plot1,
+           width=8,
+           height=4,
+           units="in",
+           dpi=200)
+    
+    #Plot of modeled mean percent live
+    if("Region.y" %in% names(pctplots)){
+      meanPct <- pctplots$Region.y$data
+      setnames(meanPct, "effect1__", "Region")
+      
+      meanpctplot <- ggplot(meanPct, aes(x=Region, y=estimate__,
+                                         ymin=lower__, ymax=upper__)) +
+        geom_pointinterval(fill="black", size=3,
+                           fatten_point=4, shape=21,
+                           color="black") +
+        labs(title="Oyster Percent Live Cover",
+             subtitle=managedarea,
+             y="Live cover (%)",
+             fill=NULL) +
+        plot_theme +
+        theme(legend.text=element_text(size=10), 
+              legend.title=element_text(size=10))
+      
+      ggsave(paste0("output/Figures/Pct_AllDates_GLMM_", ma,
+                    "_MEPrand_raw_MeanRes_", Sys.Date(), ".png"),
+             meanpctplot,
+             width=8,
+             height=4,
+             units="in",
+             dpi=200)
+    }
+    
+    #Plot of RelYear * Region.y interaction
+    if("RelYear:Region.y" %in% names(pctplots)){
+      pctplots$RelYear$data$RelYear <-
+        pctplots$RelYear$data$RelYear-
+        (min(pctplots$RelYear$data$RelYear)-1)
+      RelYrbyRegion <- pctplots$`RelYear:Region.y`
       
       
+      intplot <- RelYrbyRegion +
+        geom_point(data=data, aes(x=RelYear-(min(RelYear)-1),
+                                  y=PercentLive_dec,
+                                  fill=Region.y),
+                   alpha=0.5, shape=21, size=3, color="black",
+                   inherit.aes=FALSE) +
+        scale_x_continuous(breaks=breaks,
+                           labels=c(yrlist[breaks])) +
+        labs(title=ma,
+             x="Year",
+             y="Proportion live",
+             fill="Region") +
+        plot_theme +
+        theme(legend.text=element_text(size=12), 
+              legend.title=element_text(size=13), 
+              legend.position="none") +
+        facet_wrap(~ Region.y, ncol=3, scales="free")
       
-      if(ind=="Den"){ 
-            nyrs <- (max(data$RelYear)+1)-(min(data$RelYear)+1)
-            maxyr <- max(data$RelYear)
-            minyr <- min(data$RelYear)
-            if(grepl("Natural", unique(data$MA_plotlab))==TRUE){
-                  type <- "Natural"
-            } else{
-                  type <- "Restored"
-            }
-            if(minyr > 0){
-                  maxyr <- maxyr-(minyr-1)
-                  minyr <- minyr-(minyr-1)
-            }
-            nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
-            breaks <- if(minyr==0){
-                  c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
-                                                               (nyrs/nbreaks)/nbreaks)),
-                    maxyr)+1
-            } else{
-                  c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
-                                                               (nyrs/nbreaks)/nbreaks)),
-                    maxyr)
-            }
-            yrlist <- c(min(data$Year):max(data$Year))
-            
-            denplots <- plot(conditional_effects(models[[1]], re_formula=NULL),
-                             plot=FALSE)
-            
-            plot1 <- ggplot() +
-                  {if("meanDen_int" %in% colnames(data)){
-                        geom_jitter(data=data, aes(x=RelYear -
-                                                         (min(RelYear)-1),
-                                                   y=meanDen_int), shape=21,
-                                    size=3, color="#333333", fill="#cccccc",
-                                    alpha=0.75, inherit.aes=FALSE)
-                  } else{
-                        geom_jitter(data=data, aes(x=RelYear-(min(RelYear)-1),
-                                                   y=Density_m2), shape=21,
-                                    size=3, color="#333333", fill="#cccccc",
-                                    alpha=0.75, inherit.aes=FALSE)
-                  }
-                  } +
-                  list(geom_ribbon(data=denplots$RelYear$data,
-                                   aes(x=RelYear-(min(RelYear)-1), y=Density_m2,
-                                       ymin=lower__, ymax=upper__),
-                                   fill="grey", alpha=0.4, inherit.aes=FALSE),
-                       geom_line(data=denplots$RelYear$data,
-                                 aes(x=RelYear-(min(RelYear)-1),
-                                     y=estimate__),
-                                 color="#000099", lwd=1, inherit.aes=FALSE)) +
-                  scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
-                  plot_theme +
-                  labs(title=managedarea,
-                       x="Year",
-                       y=ifelse("meanDen_int" %in% colnames(data),
-                                "Estimated density (square meters)",
-                                "Density (square meters)"))
-            
-            
-            ggsave(paste0("output/Figures/Den_AllDates_GLMM_", ma, "_", type,
-                          "_MEPrand_", ifelse(sizeclass != "",
-                                              paste0(size, "_"), "raw_"),
-                          Sys.Date(), ".png"),
-                   plot1,
-                   width=8,
-                   height=4,
-                   units="in",
-                   dpi=200)
-      }
-      
-      
-      #Marginal effects plot including random effects for percent live
-      if(ind=="Pct"){
-            nyrs <- (max(data$RelYear)+1)-(min(data$RelYear)+1)
-            maxyr <- max(data$RelYear)
-            minyr <- min(data$RelYear)
-            if(minyr > 0){
-                  maxyr <- maxyr-(minyr-1)
-                  minyr <- minyr-(minyr-1)
-            }
-            nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
-            breaks <- if(minyr==0){
-                  c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
-                                                               (nyrs/nbreaks)/nbreaks)),
-                    maxyr)+1
-            } else{
-                  c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
-                                                               (nyrs/nbreaks)/nbreaks)),
-                    maxyr)
-            }
-            yrlist <- c(min(data$Year):max(data$Year))
-            
-            set.seed(987)
-            pctplots <- plot(conditional_effects(models[[1]], re_formula=NULL),
-                             plot=FALSE)
-            
-            plot1 <- ggplot() +
-                  geom_jitter(data=data, aes(x=RelYear-(min(RelYear)-1),
-                                             y=PercentLive_dec),
-                              shape=21, size=3, color="#333333", fill="#cccccc",
-                              alpha=0.75, inherit.aes=FALSE) +
-                  {if(names(pctplots$RelYear$data[2])=="PercentLive_dec"){
-                        list(geom_ribbon(data=pctplots$RelYear$data,
-                                         aes(x=RelYear-(min(RelYear)-1),
-                                             y=PercentLive_dec, ymin=lower__,
-                                             ymax=upper__), fill="grey",
-                                         alpha=0.4, inherit.aes=FALSE),
-                             geom_line(data=pctplots$RelYear$data,
-                                       aes(x=RelYear-(min(RelYear)-1),
-                                           y=estimate__), color="#000099",
-                                       lwd=1, inherit.aes=FALSE))
-                  } else{
-                        list(geom_ribbon(data=pctplots$RelYear$data,
-                                         aes(x=RelYear-(min(RelYear)-1),
-                                             y=LiveObs, ymin=lower__,
-                                             ymax=upper__), fill="grey",
-                                         alpha=0.4, inherit.aes=FALSE),
-                             geom_line(data=pctplots$RelYear$data,
-                                       aes(x=RelYear-(min(RelYear)-1),
-                                           y=estimate__), color="#000099",
-                                       lwd=1, inherit.aes=FALSE))
-                  }} +
-                  scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
-                  plot_theme +
-                  labs(title=managedarea,
-                       x="Year",
-                       y="Proportion Live") +
-                  theme(legend.text=element_text(size=12), 
-                        legend.title=element_text(size=13))
-            
-            ggsave(paste0("output/Figures/Pct_AllDates_GLMM_", ma,
-                          "_MEPrand_raw_", Sys.Date(), ".png"),
-                   plot1,
-                   width=8,
-                   height=4,
-                   units="in",
-                   dpi=200)
-            
-            #Plot of modeled mean percent live
-            if("Region.y" %in% names(pctplots)){
-                  meanPct <- pctplots$Region.y$data
-                  setnames(meanPct, "effect1__", "Region")
-                  
-                  meanpctplot <- ggplot(meanPct, aes(x=Region, y=estimate__,
-                                                     ymin=lower__, ymax=upper__)) +
-                        geom_pointinterval(fill="black", size=3,
-                                           fatten_point=4, shape=21,
-                                           color="black") +
-                        labs(title=managedarea,
-                             y="Proportion live",
-                             fill=NULL) +
-                        plot_theme +
-                        theme(legend.text=element_text(size=12), 
-                              legend.title=element_text(size=13))
-                  
-                  ggsave(paste0("output/Figures/Pct_AllDates_GLMM_", ma,
-                                "_MEPrand_raw_MeanRes_", Sys.Date(), ".png"),
-                         meanpctplot,
-                         width=8,
-                         height=4,
-                         units="in",
-                         dpi=200)
-            }
-            
-            #Plot of RelYear * Region.y interaction
-            if("RelYear:Region.y" %in% names(pctplots)){
-                  pctplots$RelYear$data$RelYear <-
-                        pctplots$RelYear$data$RelYear-
-                        (min(pctplots$RelYear$data$RelYear)-1)
-                  RelYrbyRegion <- pctplots$`RelYear:Region.y`
-                  
-                  
-                  intplot <- RelYrbyRegion +
-                        geom_point(data=data, aes(x=RelYear-(min(RelYear)-1),
-                                                  y=PercentLive_dec,
-                                                  fill=Region.y),
-                                   alpha=0.5, shape=21, size=3, color="black",
-                                   inherit.aes=FALSE) +
-                        scale_x_continuous(breaks=breaks,
-                                           labels=c(yrlist[breaks])) +
-                        labs(title=ma,
-                             x="Year",
-                             y="Proportion live",
-                             fill="Region") +
-                        plot_theme +
-                        theme(legend.text=element_text(size=12), 
-                              legend.title=element_text(size=13), 
-                              legend.position="none") +
-                        facet_wrap(~ Region.y, ncol=3, scales="free")
-                  
-                  ggsave(paste0("output/Figures/Pct_AllDates_GLMM_", ma,
-                                "_MEPrand_raw_RelYrbyRegion_", Sys.Date(),
-                                ".png"),
-                         intplot,
-                         width=10,
-                         height=10,
-                         units="in",
-                         dpi=300)
-            }
-      }
+      ggsave(paste0("output/Figures/Pct_AllDates_GLMM_", ma,
+                    "_MEPrand_raw_RelYrbyRegion_", Sys.Date(),
+                    ".png"),
+             intplot,
+             width=10,
+             height=10,
+             units="in",
+             dpi=300)
+    }
+  }
 }
 
 
@@ -1239,76 +1255,76 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
 
 # Create model results tables and save diagnostic plots
 modresults <- function(datafile, models, indicator, meplotzoom=FALSE){
-      for(m in seq_along(models)){
-            modelobj <- models[[m]]
-            sizeclass <- ifelse(str_detect(modelobj$file, "25to75|seed"),
-                                "25-75mm", 
-                                ifelse(str_detect(modelobj$file, "35to75|seed"),
-                                       "35-75mm",
-                                       ifelse(str_detect(modelobj$file,
-                                                         "o75|market"),
-                                              ">75mm", "NA")))
-            oyres_i <- setDT(broom.mixed::tidy(modelobj))
-            #tidy() does not like that parameter values have underscores for
-            #some reason, so the resulting table is incomplete
-            
-            if(nrow(oyres_i[effect=="fixed", ])-nrow(summary(modelobj)$fixed)==-1){
-                  missingrow <- data.table(effect="fixed",
-                                           component="cond",
-                                           #not sure what "cond" means in the tidy summary.
-                                           group=NA,
-                                           term=rownames(summary(modelobj)$fixed)[2],
-                                           estimate=summary(modelobj)$fixed$Estimate[2],
-                                           std.error=summary(modelobj)$fixed$Est.Error[2],
-                                           conf.low=summary(modelobj)$fixed$`l-95% CI`[2],
-                                           conf.high=summary(modelobj)$fixed$`u-95% CI`[2])
-                  oyres_i <- rbind(oyres_i, missingrow) %>% arrange(effect, group)
-            }
-            
-            oyres_i[, `:=` (indicator=indicator,
-                            managed_area=unique(datafile$ManagedAreaName),
-                            habitat_class=unique(datafile$HabitatClassification),
-                            size_class=sizeclass,
-                            live_date_qual=ifelse(
-                                  str_detect(modelobj$file, "_hist"),
-                                  "Estimate", "Exact"),
-                            n_programs=if(
-                                  class(try(datafile$LiveDate_Qualifier)) !=
-                                  "try-error"){
-                                  length(
-                                        unique(
-                                              datafile[LiveDate_Qualifier==
-                                                             ifelse(
-                                                                   str_detect(
-                                                                         modelobj$file,
-                                                                         "_hist"),
-                                                                   "Estimate",
-                                                                   "Exact"),
-                                                       ProgramID]))
-                            } else{length(unique(datafile[, ProgramID]))},
-                            programs=if(class(try(
-                                  datafile$LiveDate_Qualifier)) != "try-error"){
-                                  list(unique(datafile[LiveDate_Qualifier==
-                                                             ifelse(
-                                                                   str_detect(
-                                                                         modelobj$file,
-                                                                         "_hist"),
-                                                                   "Estimate",
-                                                                   "Exact"),
-                                                       ProgramID]))
-                            } else{list(unique(datafile[, ProgramID]))},
-                            filename=modelobj$file)]
-            oysterresults <<- rbind(oysterresults, oyres_i)
-            
-            # Save diagnostic plots
-            #diagnosticplots(modelobj, indicator,
-            #unique(datafile$ManagedAreaName), sizeclass,
-            #ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
-      }
-      
-      # Save marginal effects plots
-      meplots(models, datafile, indicator, unique(datafile$ManagedAreaName),
-              sizeclass, meplotzoom)
+  for(m in seq_along(models)){
+    modelobj <- models[[m]]
+    sizeclass <- ifelse(str_detect(modelobj$file, "25to75|seed"),
+                        "25-75mm", 
+                        ifelse(str_detect(modelobj$file, "35to75|seed"),
+                               "35-75mm",
+                               ifelse(str_detect(modelobj$file,
+                                                 "o75|market"),
+                                      ">75mm", "NA")))
+    oyres_i <- setDT(broom.mixed::tidy(modelobj))
+    #tidy() does not like that parameter values have underscores for
+    #some reason, so the resulting table is incomplete
+    
+    if(nrow(oyres_i[effect=="fixed", ])-nrow(summary(modelobj)$fixed)==-1){
+      missingrow <- data.table(effect="fixed",
+                               component="cond",
+                               #not sure what "cond" means in the tidy summary.
+                               group=NA,
+                               term=rownames(summary(modelobj)$fixed)[2],
+                               estimate=summary(modelobj)$fixed$Estimate[2],
+                               std.error=summary(modelobj)$fixed$Est.Error[2],
+                               conf.low=summary(modelobj)$fixed$`l-95% CI`[2],
+                               conf.high=summary(modelobj)$fixed$`u-95% CI`[2])
+      oyres_i <- rbind(oyres_i, missingrow) %>% arrange(effect, group)
+    }
+    
+    oyres_i[, `:=` (indicator=indicator,
+                    managed_area=unique(datafile$ManagedAreaName),
+                    habitat_class=unique(datafile$HabitatClassification),
+                    size_class=sizeclass,
+                    live_date_qual=ifelse(
+                      str_detect(modelobj$file, "_hist"),
+                      "Estimate", "Exact"),
+                    n_programs=if(
+                      class(try(datafile$LiveDate_Qualifier)) !=
+                      "try-error"){
+                      length(
+                        unique(
+                          datafile[LiveDate_Qualifier==
+                                     ifelse(
+                                       str_detect(
+                                         modelobj$file,
+                                         "_hist"),
+                                       "Estimate",
+                                       "Exact"),
+                                   ProgramID]))
+                    } else{length(unique(datafile[, ProgramID]))},
+                    programs=if(class(try(
+                      datafile$LiveDate_Qualifier)) != "try-error"){
+                      list(unique(datafile[LiveDate_Qualifier==
+                                             ifelse(
+                                               str_detect(
+                                                 modelobj$file,
+                                                 "_hist"),
+                                               "Estimate",
+                                               "Exact"),
+                                           ProgramID]))
+                    } else{list(unique(datafile[, ProgramID]))},
+                    filename=modelobj$file)]
+    oysterresults <<- rbind(oysterresults, oyres_i)
+    
+    # Save diagnostic plots
+    #diagnosticplots(modelobj, indicator,
+    #unique(datafile$ManagedAreaName), sizeclass,
+    #ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
+  }
+  
+  # Save marginal effects plots
+  meplots(models, datafile, indicator, unique(datafile$ManagedAreaName),
+          sizeclass, meplotzoom)
 }
 
 
@@ -1316,519 +1332,557 @@ modresults <- function(datafile, models, indicator, meplotzoom=FALSE){
 # Marginal effects plots for shell height (attempt to combine models into one plot)
 meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
                       sizeclass2="", managedarea, indicator, zoom=FALSE){
-      ind <- case_when(str_detect(indicator, "ercent") ~ "Pct",
-                       str_detect(indicator, "ensity") ~ "Den",
-                       str_detect(indicator, "^S|^s") ~ "SH")
-      ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
-                   ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
-                          ifelse(str_detect(managedarea, "NMS|National M"),
-                                 "MS", "AP")))
-      if(sizeclass1 != ""){
-            size1 <- case_when(str_detect(sizeclass1, "25") &
-                                     str_detect(sizeclass1, "75") ~ "25to75",
-                               str_detect(sizeclass1, "35") &
-                                     str_detect(sizeclass1, "75") ~ "35to75",
-                               str_detect(sizeclass1, "25")==FALSE &
-                                     str_detect(sizeclass1, "75") ~ "o75",
-                               TRUE ~ "raw")
-            sizelab1 <- case_when(str_detect(sizeclass1, "25") &
-                                        str_detect(sizeclass1, "75") ~ "25-75mm",
-                                  str_detect(sizeclass1, "35") &
-                                        str_detect(sizeclass1, "75") ~ "35-75mm",
-                                  str_detect(sizeclass1, "25")==FALSE &
-                                        str_detect(sizeclass1, "75") ~ ">75mm",
-                                  TRUE ~ "raw")
-      }
-      if(sizeclass2 != ""){
-            size2 <- case_when(str_detect(sizeclass2, "25") &
-                                     str_detect(sizeclass2, "75") ~ "25to75",
-                               str_detect(sizeclass2, "35") &
-                                     str_detect(sizeclass2, "75") ~ "35to75",
-                               str_detect(sizeclass2, "25")==FALSE &
-                                     str_detect(sizeclass2, "75") ~ "o75",
-                               TRUE ~ "raw")
-            sizelab2 <- case_when(str_detect(sizeclass2, "25") &
-                                        str_detect(sizeclass2, "75") ~ "25-75mm",
-                                  str_detect(sizeclass2, "35") &
-                                        str_detect(sizeclass2, "75") ~ "35-75mm",
-                                  str_detect(sizeclass2, "25")==FALSE &
-                                        str_detect(sizeclass2, "75") ~ ">75mm",
-                                  TRUE ~ "raw")
-      }
-      
-      #Marginal effects plot including random effects
-      ## Hist plot settings
-      y_max <- round(max(data2[!is.na(ShellHeight_mm), ShellHeight_mm]), -0)+1
-      y_breaks <- append(seq(25, 75, 25), seq(100, 300, 50))
-      y_labs <- append(seq(25, 75, 25), seq(100, 300, 50))
-      y_minor <- seq(25, 300, 25)
-      ylim_upper <- ceiling(y_max/25)*25
-      
-      maxyr_hist <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
-                              RelYear],
-                        data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
-                              RelYear])
-      minyr_hist <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
-                              RelYear],
-                        data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
-                              RelYear])
-      nyrs_hist <- (maxyr_hist+1)-(minyr_hist+1)
-      if(minyr_hist > 0){
-            maxyr_hist <- maxyr_hist-(minyr_hist-1)
-            minyr_hist <- minyr_hist-(minyr_hist-1)
-      }
-      nbreaks_hist <- ifelse(nyrs_hist < 11, nyrs_hist+1, 12)
-      breaks_hist <- if(minyr_hist==0){
-            c(minyr_hist, round(minyr_hist+c(1:(nbreaks_hist-2))*
-                                      ((nyrs_hist/nbreaks_hist)+
-                                             (nyrs_hist/nbreaks_hist)/nbreaks_hist)),
-              maxyr_hist)+1
+  ind <- case_when(str_detect(indicator, "ercent") ~ "Pct",
+                   str_detect(indicator, "ensity") ~ "Den",
+                   str_detect(indicator, "^S|^s") ~ "SH")
+  ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
+               ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
+                      ifelse(str_detect(managedarea, "NMS|National M"),
+                             "MS", "AP")))
+  if(sizeclass1 != ""){
+    size1 <- case_when(str_detect(sizeclass1, "25") &
+                         str_detect(sizeclass1, "75") ~ "25to75",
+                       str_detect(sizeclass1, "35") &
+                         str_detect(sizeclass1, "75") ~ "35to75",
+                       str_detect(sizeclass1, "25")==FALSE &
+                         str_detect(sizeclass1, "75") ~ "o75",
+                       TRUE ~ "raw")
+    sizelab1 <- case_when(str_detect(sizeclass1, "25") &
+                            str_detect(sizeclass1, "75") ~ "25-75mm",
+                          str_detect(sizeclass1, "35") &
+                            str_detect(sizeclass1, "75") ~ "35-75mm",
+                          str_detect(sizeclass1, "25")==FALSE &
+                            str_detect(sizeclass1, "75") ~ ">75mm",
+                          TRUE ~ "raw")
+  }
+  if(sizeclass2 != ""){
+    size2 <- case_when(str_detect(sizeclass2, "25") &
+                         str_detect(sizeclass2, "75") ~ "25to75",
+                       str_detect(sizeclass2, "35") &
+                         str_detect(sizeclass2, "75") ~ "35to75",
+                       str_detect(sizeclass2, "25")==FALSE &
+                         str_detect(sizeclass2, "75") ~ "o75",
+                       TRUE ~ "raw")
+    sizelab2 <- case_when(str_detect(sizeclass2, "25") &
+                            str_detect(sizeclass2, "75") ~ "25-75mm",
+                          str_detect(sizeclass2, "35") &
+                            str_detect(sizeclass2, "75") ~ "35-75mm",
+                          str_detect(sizeclass2, "25")==FALSE &
+                            str_detect(sizeclass2, "75") ~ ">75mm",
+                          TRUE ~ "raw")
+  }
+  
+  #Marginal effects plot including random effects
+  ## Hist plot settings
+  y_max <- round(max(data2[!is.na(ShellHeight_mm), ShellHeight_mm]), -0)+1
+  y_breaks <- seq(25, 300, 50)
+  y_labs <- seq(25, 300, 50)
+  y_minor <- seq(25, 300, 25)
+  ylim_upper <- ceiling(y_max/25)*25
+  
+  maxyr_hist <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
+                          RelYear],
+                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
+                          RelYear])
+  minyr_hist <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
+                          RelYear],
+                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
+                          RelYear])
+  nyrs_hist <- (maxyr_hist+1)-(minyr_hist+1)
+  if(minyr_hist > 0){
+    maxyr_hist <- maxyr_hist-(minyr_hist-1)
+    minyr_hist <- minyr_hist-(minyr_hist-1)
+  }
+  nbreaks_hist <- ifelse(nyrs_hist < 11, nyrs_hist+1, 12)
+  breaks_hist <- if(minyr_hist==0){
+    c(minyr_hist, round(minyr_hist+c(1:(nbreaks_hist-2))*
+                          ((nyrs_hist/nbreaks_hist)+
+                             (nyrs_hist/nbreaks_hist)/nbreaks_hist)),
+      maxyr_hist)+1
+  } else{
+    c(minyr_hist, round(minyr_hist+c(1:(nbreaks_hist-2))*
+                          ((nyrs_hist/nbreaks_hist)+
+                             (nyrs_hist/nbreaks_hist)/nbreaks_hist)),
+      maxyr_hist)
+  }
+  yrlist_hist <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier==
+                               "Estimate",LiveDate],
+                       data2[!is.na(LiveDate) & LiveDate_Qualifier==
+                               "Estimate", LiveDate]):
+                     max(data1[!is.na(LiveDate) & LiveDate_Qualifier==
+                                 "Estimate", LiveDate],
+                         data2[!is.na(LiveDate) & LiveDate_Qualifier==
+                                 "Estimate", LiveDate]))
+  
+  ## Live plot settings
+  maxyr_live <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
+                          RelYear],
+                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
+                          RelYear])
+  minyr_live <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
+                          RelYear],
+                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
+                          RelYear])
+  nyrs_live <- (maxyr_live+1)-(minyr_live+1)
+  nbreaks_live <- ifelse(nyrs_live < 11, nyrs_live+1, 12)
+  breaks_live <- if(minyr_live==0){
+    c(minyr_live, round(minyr_live+c(1:(nbreaks_live-2))*
+                          ((nyrs_live/nbreaks_live)+
+                             (nyrs_live/nbreaks_live)/nbreaks_live)),
+      maxyr_live)+1
+  } else{
+    c(minyr_live, round(minyr_live+c(1:(nbreaks_live-2))*
+                          ((nyrs_live/nbreaks_live)+
+                             (nyrs_live/nbreaks_live)/nbreaks_live)),
+      maxyr_live)
+  }
+  yr_breaks_live <- breaks_live-min(breaks_live)+1
+  
+  yrlist_live <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                             LiveDate],
+                       data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                             LiveDate]):
+                     max(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                               LiveDate],
+                         data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                               LiveDate]))
+  ## Check data for Exact and Estimate
+  n_hist1 <- nrow(data1[data1$LiveDate_Qualifier=="Estimate" &
+                          !is.na(data1$ShellHeight_mm),])
+  n_live1 <- nrow(data1[data1$LiveDate_Qualifier=="Exact" &
+                          !is.na(data1$ShellHeight_mm),])
+  n_hist2 <- nrow(data2[data2$LiveDate_Qualifier=="Estimate" &
+                          !is.na(data2$ShellHeight_mm),])
+  n_live2 <- nrow(data2[data2$LiveDate_Qualifier=="Exact" &
+                          !is.na(data2$ShellHeight_mm),])
+  
+  
+  set.seed(987)
+  if(!is.null(models1)==TRUE){
+    if(length(models1)==2){
+      liveplot_1 <- plot(conditional_effects(models1[[1]],
+                                             re_formula=NULL),
+                         plot=FALSE)
+      histplot_1 <- plot(conditional_effects(models1[[2]],
+                                             re_formula=NULL),
+                         plot=FALSE)
+      present1 <- "Both"
+    } else{
+      if(str_detect(models1[[1]]$file, "hist")){
+        histplot_1 <- plot(conditional_effects(models1[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
+        present1 <- "hist"
       } else{
-            c(minyr_hist, round(minyr_hist+c(1:(nbreaks_hist-2))*
-                                      ((nyrs_hist/nbreaks_hist)+
-                                             (nyrs_hist/nbreaks_hist)/nbreaks_hist)),
-              maxyr_hist)
+        liveplot_1 <- plot(conditional_effects(models1[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
+        present1 <- "live"
       }
-      yrlist_hist <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier==
-                                       "Estimate",LiveDate],
-                           data2[!is.na(LiveDate) & LiveDate_Qualifier==
-                                       "Estimate", LiveDate]):
-                             max(data1[!is.na(LiveDate) & LiveDate_Qualifier==
-                                             "Estimate", LiveDate],
-                                 data2[!is.na(LiveDate) & LiveDate_Qualifier==
-                                             "Estimate", LiveDate]))
-      
-      ## Live plot settings
-      maxyr_live <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
-                              RelYear],
-                        data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
-                              RelYear])
-      minyr_live <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
-                              RelYear],
-                        data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
-                              RelYear])
-      nyrs_live <- (maxyr_live+1)-(minyr_live+1)
-      nbreaks_live <- ifelse(nyrs_live < 11, nyrs_live+1, 12)
-      breaks_live <- if(minyr_live==0){
-            c(minyr_live, round(minyr_live+c(1:(nbreaks_live-2))*
-                                      ((nyrs_live/nbreaks_live)+
-                                             (nyrs_live/nbreaks_live)/nbreaks_live)),
-              maxyr_live)+1
+    }
+  }
+  
+  if(!is.null(models2)==TRUE){
+    if(length(models2)==2){
+      liveplot_2 <- plot(conditional_effects(models2[[1]],
+                                             re_formula=NULL),
+                         plot=FALSE)
+      histplot_2 <- plot(conditional_effects(models2[[2]],
+                                             re_formula=NULL),
+                         plot=FALSE)
+      present2 <- "Both"
+    } else{
+      if(str_detect(models2[[1]]$file, "hist")){
+        histplot_2 <- plot(conditional_effects(models2[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
+        present2 <- "hist"
       } else{
-            c(minyr_live, round(minyr_live+c(1:(nbreaks_live-2))*
-                                      ((nyrs_live/nbreaks_live)+
-                                             (nyrs_live/nbreaks_live)/nbreaks_live)),
-              maxyr_live)
+        liveplot_2 <- plot(conditional_effects(models2[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
+        present2 <- "live"
       }
-      yr_breaks_live <- breaks_live-min(breaks_live)+1
+    }
+  }
+  
+  
+  # Fixes issue with legend alpha values being added
+  a_ribb <- 0.5
+  if(class(try(histplot_1, silent=TRUE)) != "try-error" &
+     class(try(liveplot_1, silent=TRUE)) != "try-error"){
+    a_ribb <- 0.25
+  }else if(class(try(histplot_2, silent=TRUE)) != "try-error" &
+           class(try(liveplot_2, silent=TRUE)) != "try-error"){
+    a_ribb <- 0.25
+  }
+  
+  #p_color <- c("size2"="#0094b0", "size1"="#00374f")
+  p_shape <- c("size2"=24, "size1"=21)
+  sizelab <- c("size2"=sizelab2, "size1"=sizelab1)
+  
+  
+  check <- NA
+  check1 <- NA
+  check2 <- NA
+  
+  if(exists("present1")){
+    check1 <- c("size1"="#00374f")
+  } else{
+    check1 <- c("size1"="#FFFFFF")
+  }
+  
+  if(exists("present2")){
+    check2 <- c("size2"="#0094b0")
+  } else{
+    check2 <- c("size2"="#FFFFFF")
+  }
+  p_color <- c(check2, check1)
+  
+  
+  plot_leg <- ggplot() +
+    {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=histplot_1$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__,
+                           fill="size1"), alpha=a_ribb,
+                       inherit.aes=FALSE),
+           geom_line(data=histplot_1$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size1"),
+                     lwd=0.75, inherit.aes=FALSE))
       
-      yrlist_live <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
-                                 LiveDate],
-                           data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
-                                 LiveDate]):
-                             max(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
-                                       LiveDate],
-                                 data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
-                                       LiveDate]))
-      ## Check data for Exact and Estimate
-      n_hist1 <- nrow(data1[data1$LiveDate_Qualifier=="Estimate" &
-                                  !is.na(data1$ShellHeight_mm),])
-      n_live1 <- nrow(data1[data1$LiveDate_Qualifier=="Exact" &
-                                  !is.na(data1$ShellHeight_mm),])
-      n_hist2 <- nrow(data2[data2$LiveDate_Qualifier=="Estimate" &
-                                  !is.na(data2$ShellHeight_mm),])
-      n_live2 <- nrow(data2[data2$LiveDate_Qualifier=="Exact" &
-                                  !is.na(data2$ShellHeight_mm),])
-      
-      
-      set.seed(987)
-      if(!is.null(models1)==TRUE){
-            if(length(models1)==2){
-                  liveplot_1 <- plot(conditional_effects(models1[[1]],
-                                                         re_formula=NULL),
-                                     plot=FALSE)
-                  histplot_1 <- plot(conditional_effects(models1[[2]],
-                                                         re_formula=NULL),
-                                     plot=FALSE)
-                  present1 <- "Both"
-            } else{
-                  if(str_detect(models1[[1]]$file, "hist")){
-                        histplot_1 <- plot(conditional_effects(models1[[1]],
-                                                               re_formula=NULL),
-                                           plot=FALSE)
-                        present1 <- "hist"
-                  } else{
-                        liveplot_1 <- plot(conditional_effects(models1[[1]],
-                                                               re_formula=NULL),
-                                           plot=FALSE)
-                        present1 <- "live"
-                  }
-            }
-      }
-      
-      if(!is.null(models2)==TRUE){
-            if(length(models2)==2){
-                  liveplot_2 <- plot(conditional_effects(models2[[1]],
-                                                         re_formula=NULL),
-                                     plot=FALSE)
-                  histplot_2 <- plot(conditional_effects(models2[[2]],
-                                                         re_formula=NULL),
-                                     plot=FALSE)
-                  present2 <- "Both"
-            } else{
-                  if(str_detect(models2[[1]]$file, "hist")){
-                        histplot_2 <- plot(conditional_effects(models2[[1]],
-                                                               re_formula=NULL),
-                                           plot=FALSE)
-                        present2 <- "hist"
-                  } else{
-                        liveplot_2 <- plot(conditional_effects(models2[[1]],
-                                                               re_formula=NULL),
-                                           plot=FALSE)
-                        present2 <- "live"
-                  }
-            }
-      }
-      
-      plot_leg <- ggplot() +
-            geom_jitter(data=data1[!is.na(RelYear) & !is.na(LiveDate), ],
-                        aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
-                        size=3, color="#333333", fill="#cccccc",
-                        alpha=0.75, inherit.aes=FALSE, width=0.1, height=0.1) +
-            geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate), ],
-                        aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
-                        size=3, color="#333333", fill="#cccccc",
-                        alpha=0.75, inherit.aes=FALSE, width=0.1, height=0.1) +
-            {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
-                  list(geom_ribbon(data=histplot_1$RelYear$data,
-                                   aes(x=RelYear, y=ShellHeight_mm,
-                                       ymin=lower__, ymax=upper__,
-                                       fill="size1"), alpha=0.2,
-                                   inherit.aes=FALSE),
-                       geom_line(data=histplot_1$RelYear$data,
-                                 aes(x=RelYear, y=estimate__, color="size1"),
-                                 lwd=1, inherit.aes=FALSE))
-            }} +
-            {if(class(try(histplot_2, silent=TRUE)) != "try-error"){
-                  list(geom_ribbon(data=histplot_2$RelYear$data,
-                                   aes(x=RelYear, y=ShellHeight_mm,
-                                       ymin=lower__, ymax=upper__,
-                                       fill="size2"), alpha=0.2,
-                                   inherit.aes=FALSE),
-                       geom_line(data=histplot_2$RelYear$data,
-                                 aes(x=RelYear, y=estimate__, color="size2"),
-                                 lwd=1, inherit.aes=FALSE))
-            }} +
-            {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
-                  list(geom_ribbon(data=liveplot_1$RelYear$data,
-                                   aes(x=RelYear, y=ShellHeight_mm,
-                                       ymin=lower__, ymax=upper__,
-                                       fill="size1"), alpha=0.2),
-                       geom_line(data=liveplot_1$RelYear$data,
-                                 aes(x=RelYear, y=estimate__, color="size1"),
-                                 lwd=1))
-            }} +
-            {if(class(try(liveplot_2, silent=TRUE)) != "try-error"){
-                  list(geom_ribbon(data=liveplot_2$RelYear$data,
-                                   aes(x=RelYear, y=ShellHeight_mm,
-                                       ymin=lower__, ymax=upper__, fill="size2"),
-                                   alpha=0.2),
-                       geom_line(data=liveplot_2$RelYear$data,
-                                 aes(x=RelYear, y=estimate__, color="size2"),
-                                 lwd=1))
-            }} +
-            plot_theme +
-            theme(legend.position="right") +
-            scale_shape_manual(name="Shell Heights",
-                               values=c("size2"=24, "size1"=21),
-                               labels=c(sizelab2, sizelab1)) +
-            scale_color_manual(name="Shell Heights",
-                               values=c("size2"="#0094b0", "size1"="#00374f"),
-                               labels=c(sizelab2, sizelab1)) +
-            scale_fill_manual(name="Shell Heights",
-                              values=c("size2"="#0094b0", "size1"="#00374f"),
-                              labels=c(sizelab2, sizelab1))
-      
-      leg <-get_legend(plot_leg)
-      
-      rm(plot_leg)
-      
-      plot1 <- ggplot() +
-            geom_hline(yintercept=75, size=1, color="grey") +
-            {if(n_hist1>0){
-                  geom_jitter(data=data1[!is.na(RelYear) &
-                                               !is.na(LiveDate) &
-                                               LiveDate_Qualifier=="Estimate", ],
-                              aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
-                              size=3, color="#333333", fill="#cccccc",
-                              alpha=0.75, inherit.aes=FALSE, width=0.1, height=0.1) 
-            }} +
-            {if(n_hist2>0){
-                  geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate) &
-                                               LiveDate_Qualifier=="Estimate", ],
-                              aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
-                              size=3, color="#333333", fill="#cccccc",
-                              alpha=0.75, inherit.aes=FALSE, width=0.1, height=0.1)
-            }} +
-            {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
-                  list(geom_ribbon(data=histplot_1$RelYear$data,
-                                   aes(x=RelYear, y=ShellHeight_mm,
-                                       ymin=lower__, ymax=upper__, fill="size1"),
-                                   alpha=0.2, inherit.aes=FALSE),
-                       geom_line(data=histplot_1$RelYear$data,
-                                 aes(x=RelYear, y=estimate__, color="size1"),
-                                 lwd=1, inherit.aes=FALSE))
-            }} +
-            {if(class(try(histplot_2, silent=TRUE)) != "try-error"){
-                  list(geom_ribbon(data=histplot_2$RelYear$data,
-                                   aes(x=RelYear, y=ShellHeight_mm,
-                                       ymin=lower__, ymax=upper__, fill="size2"),
-                                   alpha=0.2, inherit.aes=FALSE),
-                       geom_line(data=histplot_2$RelYear$data,
-                                 aes(x=RelYear, y=estimate__, color="size2"),
-                                 lwd=1, inherit.aes=FALSE))
-            }} +
-            scale_x_continuous(breaks=breaks_hist,
-                               labels=c(yrlist_hist[breaks_hist])) +
-            scale_y_continuous(breaks=y_breaks,
-                               labels=y_labs, minor_breaks=y_minor) +
-            plot_theme +
-            theme(plot.subtitle=element_text(hjust=0, size=10, color="#314963"),
-                  legend.position="none",
-            ) +
-            labs(subtitle="Dead Oyster Shells",
-                 x="Estimated Year",
-                 y="Shell Height (mm)") +
-            scale_shape_manual(name="Shell Heights",
-                               values=c("size1"=21, "size2"=24),
-                               labels=c(sizelab1, sizelab2)) +
-            scale_color_manual(name="Shell Heights",
-                               values=c("size1"="#00374f", "size2"="#0094b0"),
-                               labels=c(sizelab1, sizelab2)) +
-            scale_fill_manual(name="Shell Heights",
-                              values=c("size1"="#00374f", "size2"="#0094b0"),
-                              labels=c(sizelab1, sizelab2)) +
-            coord_cartesian(ylim=c(25, ylim_upper))
-      
-      plot2 <- ggplot() +
-            geom_hline(yintercept=75, size=1, color="grey") +
-            {if(n_live1>0){
-                  geom_jitter(data=data1[!is.na(RelYear) & !is.na(LiveDate) &
-                                               LiveDate_Qualifier=="Exact", ],
-                              aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
-                              size=3, color="#333333", fill="#cccccc",
-                              alpha=0.75, inherit.aes=FALSE, width=0.1, height=0.1) 
-            }} +
-            {if(n_live2>0){
-                  geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate) &
-                                               LiveDate_Qualifier=="Exact", ],
-                              aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
-                              size=3, color="#333333", fill="#cccccc",
-                              alpha=0.75, inherit.aes=FALSE, width=0.1, height=0.1)
-            }} +
-            {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
-                  list(geom_ribbon(data=liveplot_1$RelYear$data,
-                                   aes(x=RelYear, y=ShellHeight_mm,
-                                       ymin=lower__, ymax=upper__, fill="size1"),
-                                   alpha=0.2),
-                       geom_line(data=liveplot_1$RelYear$data,
-                                 aes(x=RelYear, y=estimate__, color="size1"),
-                                 lwd=1))
-            }} +
-            {if(class(try(liveplot_2, silent=TRUE)) != "try-error"){
-                  list(geom_ribbon(data=liveplot_2$RelYear$data,
-                                   aes(x=RelYear, y=ShellHeight_mm,
-                                       ymin=lower__, ymax=upper__, fill="size2"),
-                                   alpha=0.2),
-                       geom_line(data=liveplot_2$RelYear$data,
-                                 aes(x=RelYear, y=estimate__, color="size2"),
-                                 lwd=1))
-            }} +
-            scale_x_continuous(breaks=breaks_live,
-                               labels=c(yrlist_live[yr_breaks_live])) +
-            scale_y_continuous(breaks=y_breaks,
-                               labels=y_labs, minor_breaks=y_minor) +
-            plot_theme +
-            theme(plot.subtitle=element_text(hjust=0, size=10, color="#314963"),
-                  legend.position="none",
-                  axis.text.y=element_blank(),  #remove y-axis labels
-                  axis.ticks.y=element_blank(),  #remove y-axis ticks
-                  axis.title.y=element_blank()   #removes y-axis title
-            ) +
-            labs(subtitle="Live Oyster Shells",
-                 x="Year",
-                 y="Shell Height (mm)") +
-            scale_shape_manual(name="Shell Heights",
-                               values=c("size1"=21, "size2"=24),
-                               labels=c(sizelab1, sizelab2)) +
-            scale_color_manual(name="Shell Heights",
-                               values=c("size1"="#00374f", "size2"="#0094b0"),
-                               labels=c(sizelab1, sizelab2)) +
-            scale_fill_manual(name="Shell Heights",
-                              values=c("size1"="#00374f", "size2"="#0094b0"),
-                              labels=c(sizelab1, sizelab2)) +
-            coord_cartesian(ylim=c(25, ylim_upper))
-      
-      #leg <- get_legend(plot1)
-      
-      plot_title <- ggplot()+labs(title=managedarea) +
-            plot_theme +
-            theme(panel.border=element_blank(),
-                  panel.grid.major=element_blank(),
-                  panel.grid.minor=element_blank(), axis.line=element_blank())
-      
-      plot_comb <- ggarrange(plot1, plot2, leg, nrow=1,
-                             widths=c(0.46, 0.39, 0.15))
-      
-      plot_comb <- ggarrange(plot_title, plot_comb, ncol=1,
-                             heights=c(0.075, 0.925))
-      
-      ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma, "_MEPrand_",
-                    Sys.Date(), ".png"),
-             plot_comb,
-             width=8,
-             height=4,
-             units="in",
-             dpi=200,
-             bg="white")
+    }} +
+    {if(class(try(histplot_2, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=histplot_2$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__,
+                           fill="size2"), alpha=a_ribb,
+                       inherit.aes=FALSE),
+           geom_line(data=histplot_2$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size2"),
+                     lwd=0.75, inherit.aes=FALSE))
+    }} +
+    {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=liveplot_1$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__,
+                           fill="size1"), alpha=a_ribb),
+           geom_line(data=liveplot_1$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size1"),
+                     lwd=0.75))
+    }} +
+    {if(class(try(liveplot_2, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=liveplot_2$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size2"),
+                       alpha=a_ribb),
+           geom_line(data=liveplot_2$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size2"),
+                     lwd=0.75))
+    }} +
+    geom_jitter(data=data1[!is.na(RelYear) & !is.na(LiveDate), ],
+                aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                size=2, color="#333333", fill="#cccccc",
+                alpha=1, inherit.aes=FALSE, width=0.1, height=0.1) +
+    geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate), ],
+                aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                size=2, color="#333333", fill="#cccccc",
+                alpha=1, inherit.aes=FALSE, width=0.1, height=0.1) +
+    plot_theme +
+    theme(legend.position="right") +
+    scale_shape_manual(name="Shell heights",
+                       values=p_shape,
+                       labels=sizelab) +
+    scale_color_manual(name="Shell heights",
+                       values=p_color,
+                       labels=sizelab) +
+    scale_fill_manual(name="Shell heights",
+                      values=p_color,
+                      labels=sizelab)
+  
+  leg <-get_legend(plot_leg)
+  
+  rm(plot_leg)
+  
+  plot1 <- ggplot() +
+    geom_hline(yintercept=75, size=1, color="grey") +
+    {if(n_hist1>0){
+      geom_jitter(data=data1[!is.na(RelYear) &
+                               !is.na(LiveDate) &
+                               LiveDate_Qualifier=="Estimate", ],
+                  aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                  size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE, width=0.1, height=0.1) 
+    }} +
+    {if(n_hist2>0){
+      geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate) &
+                               LiveDate_Qualifier=="Estimate", ],
+                  aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                  size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE, width=0.1, height=0.1)
+    }} +
+    {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=histplot_1$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size1"),
+                       alpha=0.5, inherit.aes=FALSE),
+           geom_line(data=histplot_1$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size1"),
+                     lwd=0.75, inherit.aes=FALSE))
+    }} +
+    {if(class(try(histplot_2, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=histplot_2$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size2"),
+                       alpha=0.5, inherit.aes=FALSE),
+           geom_line(data=histplot_2$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size2"),
+                     lwd=0.75, inherit.aes=FALSE))
+    }} +
+    scale_x_continuous(breaks=breaks_hist,
+                       labels=c(yrlist_hist[breaks_hist])) +
+    scale_y_continuous(breaks=y_breaks,
+                       labels=y_labs, minor_breaks=y_minor) +
+    plot_theme +
+    theme(plot.subtitle=element_text(hjust=0, size=10, color="#314963"),
+          legend.position="none",
+    ) +
+    labs(subtitle="Dead Oyster Shells",
+         x="Estimated year",
+         y="Shell height (mm)") +
+    scale_shape_manual(name="Shell heights",
+                       values=c("size1"=21, "size2"=24),
+                       labels=c(sizelab1, sizelab2)) +
+    scale_color_manual(name="Shell heights",
+                       values=c("size1"="#00374f", "size2"="#0094b0"),
+                       labels=c(sizelab1, sizelab2)) +
+    scale_fill_manual(name="Shell heights",
+                      values=c("size1"="#00374f", "size2"="#0094b0"),
+                      labels=c(sizelab1, sizelab2)) +
+    coord_cartesian(ylim=c(25, ylim_upper))
+  
+  plot2 <- ggplot() +
+    geom_hline(yintercept=75, size=1, color="grey") +
+    {if(n_live1>0){
+      geom_jitter(data=data1[!is.na(RelYear) & !is.na(LiveDate) &
+                               LiveDate_Qualifier=="Exact", ],
+                  aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                  size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE, width=0.1, height=0.1) 
+    }} +
+    {if(n_live2>0){
+      geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate) &
+                               LiveDate_Qualifier=="Exact", ],
+                  aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                  size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE, width=0.1, height=0.1)
+    }} +
+    {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=liveplot_1$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size1"),
+                       alpha=0.5),
+           geom_line(data=liveplot_1$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size1"),
+                     lwd=0.75))
+    }} +
+    {if(class(try(liveplot_2, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=liveplot_2$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size2"),
+                       alpha=0.5),
+           geom_line(data=liveplot_2$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size2"),
+                     lwd=0.75))
+    }} +
+    scale_x_continuous(breaks=breaks_live,
+                       labels=c(yrlist_live[yr_breaks_live])) +
+    scale_y_continuous(breaks=y_breaks,
+                       labels=y_labs, minor_breaks=y_minor) +
+    plot_theme +
+    theme(plot.subtitle=element_text(hjust=0, size=10, color="#314963"),
+          legend.position="none",
+          axis.text.y=element_blank(),  #remove y-axis labels
+          axis.ticks.y=element_blank(),  #remove y-axis ticks
+          axis.title.y=element_blank()   #removes y-axis title
+    ) +
+    labs(subtitle="Live Oyster Shells",
+         x="Year",
+         y="Shell height (mm)") +
+    scale_shape_manual(name="Shell heights",
+                       values=c("size1"=21, "size2"=24),
+                       labels=c(sizelab1, sizelab2)) +
+    scale_color_manual(name="Shell heights",
+                       values=c("size1"="#00374f", "size2"="#0094b0"),
+                       labels=c(sizelab1, sizelab2)) +
+    scale_fill_manual(name="Shell heights",
+                      values=c("size1"="#00374f", "size2"="#0094b0"),
+                      labels=c(sizelab1, sizelab2)) +
+    coord_cartesian(ylim=c(25, ylim_upper))
+  
+  #leg <- get_legend(plot1)
+  
+  plot_title <- ggplot()+labs(title="Oyster Size Class",
+                              subtitle=managedarea) +
+    plot_theme +
+    theme(plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
+          panel.border=element_blank(),
+          panel.grid.major=element_blank(),
+          panel.grid.minor=element_blank(), axis.line=element_blank())
+  
+  plot_comb <- ggarrange(plot1, plot2, leg, nrow=1,
+                         widths=c(0.46, 0.39, 0.15))
+  
+  plot_comb <- ggarrange(plot_title, plot_comb, ncol=1,
+                         heights=c(0.125, 0.875))
+  
+  ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma, "_MEPrand_",
+                Sys.Date(), ".png"),
+         plot_comb,
+         width=8,
+         height=4,
+         units="in",
+         dpi=200,
+         bg="white")
 }
 
 
 # Create model results tables and save diagnostic plots
 modresultssh <- function(datafile1, models1, datafile2, models2, indicator,
                          meplotzoom=FALSE){
-      datafile1$SizeClass[datafile1$SizeClass=="25to75mm" &
-                                datafile1$MA_plotlab==
-                                "St. Martins Marsh Aquatic Preserve_Natural"] <- "35-75mm"
-      sizeclass1 <- unique(datafile1$SizeClass)
-      for(m in seq_along(models1)){
-            modelobj <- models1[[m]]
-            oyres_i <- setDT(broom.mixed::tidy(modelobj))
-            #tidy() does not like that parameter values have underscores
-            #for some reason, so the resulting table is incomplete
-            
-            if(nrow(oyres_i[effect=="fixed", ])-nrow(summary(modelobj)$fixed)==-1){
-                  missingrow <- data.table(effect="fixed",
-                                           component="cond",
-                                           #not sure what "cond" means in the tidy summary.
-                                           group=NA,
-                                           term=rownames(summary(modelobj)$fixed)[2],
-                                           estimate=summary(modelobj)$fixed$Estimate[2],
-                                           std.error=summary(modelobj)$fixed$Est.Error[2],
-                                           conf.low=summary(modelobj)$fixed$`l-95% CI`[2],
-                                           conf.high=summary(modelobj)$fixed$`u-95% CI`[2])
-                  oyres_i <- rbind(oyres_i, missingrow) %>% arrange(effect, group)
-            }
-            
-            oyres_i[, `:=` (indicator=indicator,
-                            managed_area=unique(datafile1$ManagedAreaName),
-                            habitat_class=unique(datafile1$HabitatClassification),
-                            size_class=sizeclass1,
-                            live_date_qual=ifelse(
-                                  str_detect(
-                                        modelobj$file, "_hist"), "Estimate",
-                                  "Exact"),
-                            n_programs=if(class(
-                                  try(datafile1$LiveDate_Qualifier))!="try-error"){
-                                  length(unique(
-                                        datafile1[LiveDate_Qualifier==
-                                                        ifelse(str_detect(
-                                                              modelobj$file, "_hist"),
-                                                              "Estimate", "Exact"),
-                                                  ProgramID]))
-                            } else{length(unique(datafile1[, ProgramID]))},
-                            programs=if(class(try(
-                                  datafile1$LiveDate_Qualifier)) != "try-error"){
-                                  list(unique(
-                                        datafile1[LiveDate_Qualifier==
-                                                        ifelse(
-                                                              str_detect(
-                                                                    modelobj$file,
-                                                                    "_hist"),
-                                                              "Estimate",
-                                                              "Exact"),
-                                                  ProgramID]))
-                            } else{list(unique(datafile1[, ProgramID]))},
-                            filename=modelobj$file)]
-            oysterresults <<- rbind(oysterresults, oyres_i)
-            
-            # Save diagnostic plots
-            #diagnosticplots(modelobj, indicator,
-            #unique(datafile$ManagedAreaName), sizeclass,
-            #ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
-      }
-      
-      datafile2$SizeClass[datafile2$SizeClass=="25to75mm" &
-                                datafile2$MA_plotlab==
-                                "St. Martins Marsh Aquatic Preserve_Natural"] <- "35-75mm"
-      sizeclass2 <- unique(datafile2$SizeClass)
-      
-      for(m in seq_along(models2)){
-            modelobj <- models2[[m]]
-            oyres_i <- setDT(broom.mixed::tidy(modelobj))
-            #tidy() does not like that parameter values have underscores for
-            #some reason, so the resulting table is incomplete
-            
-            if(nrow(oyres_i[effect=="fixed", ])-nrow(summary(modelobj)$fixed)==-1){
-                  missingrow <- data.table(effect="fixed",
-                                           component="cond",
-                                           #not sure what "cond" means in the tidy summary.
-                                           group=NA,
-                                           term=rownames(summary(modelobj)$fixed)[2],
-                                           estimate=summary(modelobj)$fixed$Estimate[2],
-                                           std.error=summary(modelobj)$fixed$Est.Error[2],
-                                           conf.low=summary(modelobj)$fixed$`l-95% CI`[2],
-                                           conf.high=summary(modelobj)$fixed$`u-95% CI`[2])
-                  oyres_i <- rbind(oyres_i, missingrow) %>% arrange(effect, group)
-            }
-            
-            oyres_i[, `:=` (indicator=indicator,
-                            managed_area=unique(datafile2$ManagedAreaName),
-                            habitat_class=unique(datafile2$HabitatClassification),
-                            size_class=sizeclass2,
-                            live_date_qual=ifelse(
-                                  str_detect(modelobj$file, "_hist"),
-                                  "Estimate", "Exact"),
-                            n_programs=if(class(
-                                  try(datafile2$LiveDate_Qualifier))!=
-                                  "try-error"){
-                                  length(
-                                        unique(
-                                              datafile2[LiveDate_Qualifier==
-                                                              ifelse(
-                                                                    str_detect(
-                                                                          modelobj$file,
-                                                                          "_hist"),
-                                                                    "Estimate",
-                                                                    "Exact"),
-                                                        ProgramID]))
-                            } else{length(unique(datafile2[, ProgramID]))},
-                            programs=if(class(
-                                  try(datafile2$LiveDate_Qualifier)) !=
-                                  "try-error"){
-                                  list(
-                                        unique(
-                                              datafile2[LiveDate_Qualifier==
-                                                              ifelse(
-                                                                    str_detect(
-                                                                          modelobj$file,
-                                                                          "_hist"),
-                                                                    "Estimate",
-                                                                    "Exact"),
-                                                        ProgramID]))
-                            } else{list(unique(datafile2[, ProgramID]))},
-                            filename=modelobj$file)]
-            oysterresults <<- rbind(oysterresults, oyres_i)
-            
-            # Save diagnostic plots
-            #diagnosticplots(modelobj, indicator,
-            #unique(datafile$ManagedAreaName), sizeclass,
-            #ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
-      }
-      
-      # Save marginal effects plots
-      meplotssh(models1, datafile1, sizeclass1, models2, datafile2, sizeclass2,
-                unique(datafile1$ManagedAreaName), indicator, meplotzoom)
+  datafile1$SizeClass[datafile1$SizeClass=="25to75mm" &
+                        datafile1$MA_plotlab==
+                        "St. Martins Marsh Aquatic Preserve_Natural"] <-
+    "35-75mm"
+  sizeclass1 <- unique(datafile1$SizeClass)
+  for(m in seq_along(models1)){
+    modelobj <- models1[[m]]
+    oyres_i <- setDT(broom.mixed::tidy(modelobj))
+    #tidy() does not like that parameter values have underscores
+    #for some reason, so the resulting table is incomplete
+    
+    if(nrow(oyres_i[effect=="fixed", ])-nrow(summary(modelobj)$fixed)==-1){
+      missingrow <- data.table(effect="fixed",
+                               component="cond",
+                               #not sure what "cond" means in the tidy summary.
+                               group=NA,
+                               term=rownames(summary(modelobj)$fixed)[2],
+                               estimate=summary(modelobj)$fixed$Estimate[2],
+                               std.error=summary(modelobj)$fixed$Est.Error[2],
+                               conf.low=summary(modelobj)$fixed$`l-95% CI`[2],
+                               conf.high=summary(modelobj)$fixed$`u-95% CI`[2])
+      oyres_i <- rbind(oyres_i, missingrow) %>% arrange(effect, group)
+    }
+    
+    oyres_i[, `:=` (indicator=indicator,
+                    managed_area=unique(datafile1$ManagedAreaName),
+                    habitat_class=unique(datafile1$HabitatClassification),
+                    size_class=sizeclass1,
+                    live_date_qual=ifelse(
+                      str_detect(
+                        modelobj$file, "_hist"), "Estimate",
+                      "Exact"),
+                    n_programs=if(class(
+                      try(datafile1$LiveDate_Qualifier))!="try-error"){
+                      length(unique(
+                        datafile1[LiveDate_Qualifier==
+                                    ifelse(str_detect(
+                                      modelobj$file, "_hist"),
+                                      "Estimate", "Exact"),
+                                  ProgramID]))
+                    } else{length(unique(datafile1[, ProgramID]))},
+                    programs=if(class(try(
+                      datafile1$LiveDate_Qualifier)) != "try-error"){
+                      list(unique(
+                        datafile1[LiveDate_Qualifier==
+                                    ifelse(
+                                      str_detect(
+                                        modelobj$file,
+                                        "_hist"),
+                                      "Estimate",
+                                      "Exact"),
+                                  ProgramID]))
+                    } else{list(unique(datafile1[, ProgramID]))},
+                    filename=modelobj$file)]
+    oysterresults <<- rbind(oysterresults, oyres_i)
+    
+    # Save diagnostic plots
+    #diagnosticplots(modelobj, indicator,
+    #unique(datafile$ManagedAreaName), sizeclass,
+    #ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
+  }
+  
+  datafile2$SizeClass[datafile2$SizeClass=="25to75mm" &
+                        datafile2$MA_plotlab==
+                        "St. Martins Marsh Aquatic Preserve_Natural"] <- "35-75mm"
+  sizeclass2 <- unique(datafile2$SizeClass)
+  
+  for(m in seq_along(models2)){
+    modelobj <- models2[[m]]
+    oyres_i <- setDT(broom.mixed::tidy(modelobj))
+    #tidy() does not like that parameter values have underscores for
+    #some reason, so the resulting table is incomplete
+    
+    if(nrow(oyres_i[effect=="fixed", ])-nrow(summary(modelobj)$fixed)==-1){
+      missingrow <- data.table(effect="fixed",
+                               component="cond",
+                               #not sure what "cond" means in the tidy summary.
+                               group=NA,
+                               term=rownames(summary(modelobj)$fixed)[2],
+                               estimate=summary(modelobj)$fixed$Estimate[2],
+                               std.error=summary(modelobj)$fixed$Est.Error[2],
+                               conf.low=summary(modelobj)$fixed$`l-95% CI`[2],
+                               conf.high=summary(modelobj)$fixed$`u-95% CI`[2])
+      oyres_i <- rbind(oyres_i, missingrow) %>% arrange(effect, group)
+    }
+    
+    oyres_i[, `:=` (indicator=indicator,
+                    managed_area=unique(datafile2$ManagedAreaName),
+                    habitat_class=unique(datafile2$HabitatClassification),
+                    size_class=sizeclass2,
+                    live_date_qual=ifelse(
+                      str_detect(modelobj$file, "_hist"),
+                      "Estimate", "Exact"),
+                    n_programs=if(class(
+                      try(datafile2$LiveDate_Qualifier))!=
+                      "try-error"){
+                      length(
+                        unique(
+                          datafile2[LiveDate_Qualifier==
+                                      ifelse(
+                                        str_detect(
+                                          modelobj$file,
+                                          "_hist"),
+                                        "Estimate",
+                                        "Exact"),
+                                    ProgramID]))
+                    } else{length(unique(datafile2[, ProgramID]))},
+                    programs=if(class(
+                      try(datafile2$LiveDate_Qualifier)) !=
+                      "try-error"){
+                      list(
+                        unique(
+                          datafile2[LiveDate_Qualifier==
+                                      ifelse(
+                                        str_detect(
+                                          modelobj$file,
+                                          "_hist"),
+                                        "Estimate",
+                                        "Exact"),
+                                    ProgramID]))
+                    } else{list(unique(datafile2[, ProgramID]))},
+                    filename=modelobj$file)]
+    oysterresults <<- rbind(oysterresults, oyres_i)
+    
+    # Save diagnostic plots
+    #diagnosticplots(modelobj, indicator,
+    #unique(datafile$ManagedAreaName), sizeclass,
+    #ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
+  }
+  
+  # Save marginal effects plots
+  meplotssh(models1, datafile1, sizeclass1, models2, datafile2, sizeclass2,
+            unique(datafile1$ManagedAreaName), indicator, meplotzoom)
 }
 ```
 
@@ -2377,11 +2431,13 @@ oysterraw_den <- oysterraw_den %>%
       dplyr::distinct()
 
 oysterraw_den <- subset(oysterraw_den, !is.na(oysterraw_den$Density_m2) |
-                              !is.na(oysterraw_den$Number_of_Oysters_Counted_Total_Count) |
-                              !is.na(oysterraw_den$Number_of_Oysters_Counted_Live_Count) |
-                              !is.na(oysterraw_den$Number_of_Oysters_Counted_Dead_Count) |
-                              !is.na(oysterraw_den$DensIndex) | !is.na(oysterraw_den$NTotIndex) |
-                              !is.na(oysterraw_den$NLiveIndex) | !is.na(oysterraw_den$NDeadIndex))
+                          !is.na(oysterraw_den$Number_of_Oysters_Counted_Total_Count) |
+                          !is.na(oysterraw_den$Number_of_Oysters_Counted_Live_Count) |
+                          !is.na(oysterraw_den$Number_of_Oysters_Counted_Dead_Count) |
+                          !is.na(oysterraw_den$DensIndex) |
+                          !is.na(oysterraw_den$NTotIndex) |
+                          !is.na(oysterraw_den$NLiveIndex) |
+                          !is.na(oysterraw_den$NDeadIndex))
 setDT(oysterraw_den)
 
 #Calculate estimated Density_m2 values for ProgramID==5074. This line can be deleted after Claude recalculates 
@@ -2414,7 +2470,8 @@ saveRDS(ab_n, paste0('data/GLMMs/AllDates/Data/ab_n_', Sys.Date(), '.rds'))
 ab_den_glmm <- brm(formula=Density_m2 ~
                          RelYear+(0+RelYear | UniversalReefID), data=ab_n,
                    family=negbinomial, cores=4,
-                   control= list(adapt_delta=0.99, max_treedepth=15), iter=3000,
+                   control= list(adapt_delta=0.99, max_treedepth=15),
+                   iter=3000,
                    warmup=1000, chains=4, inits=0, thin=3, seed=5512,
                    backend="cmdstanr", threads=threading(2),
                    file="data/GLMMs/AllDates/ab_den_glmm9.rds")

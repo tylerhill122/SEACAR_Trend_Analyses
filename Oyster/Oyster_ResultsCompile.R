@@ -7,21 +7,21 @@ library(dplyr)
 file_list <- list.files("output/Tables", pattern="ModelResults", full.names=TRUE)
 
 #Include only those that are txt
-file_in <- file_list[grep("txt", file_list)]
-
-
-#Read in file
-data <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE, na.strings = "")
-
-############
-#Include only those that are BBpct
 file_in <- file_list[grep("csv", file_list)]
 
 
 #Read in file
 data <- fread(file_in, sep = ",", header = TRUE, stringsAsFactors = FALSE, na.strings = "")
 
-data <- data[data$Converged==1,]
+############
+# #Include only those that are BBpct
+# file_in <- file_list[grep("csv", file_list)]
+# 
+# 
+# #Read in file
+# data <- fread(file_in, sep = ",", header = TRUE, stringsAsFactors = FALSE, na.strings = "")
+# 
+# data <- data[data$Converged==1,]
 ##############
 
 #Keep only rows that are values with "fixed" in the effect column
@@ -30,7 +30,7 @@ data <- data[data$effect=="fixed" & !is.na(data$effect),]
 #For each managed area and species, get the LME intercept, slope, and p values
 table <- data %>%
       group_by(managed_area, indicator, live_date_qual, size_class, habitat_class) %>%
-      summarise(Programs=unique(programs),
+      dplyr::summarise(Programs=unique(programs),
                 Intercept = estimate[term == "(Intercept)"],
                 ModelEstimate = estimate[term == "RelYear" |
                                        term == "meRelYearSampleAge_StdevgrEQQuadIdentifier"],
@@ -70,7 +70,7 @@ table <- merge.data.frame(data_summ, table, by=c("ManagedAreaName", "ParameterNa
                                                  "ShellType", "SizeClass", "HabitatType"),
                              all=TRUE)
 #Loads data file with list on managed area names and corresponding area IDs and short names
-MA_All <- fread("ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
+MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
                 na.strings = "")
 
 # stats <- fread("SAV/output/data/SAV_BBpct_Stats.txt", sep = "|", header = TRUE, stringsAsFactors = FALSE,
@@ -101,17 +101,17 @@ fwrite(table, "output/Tables/Oyster_results_All.csv", sep=",")
 
 ###### Compile data used for plots
 
-#List all of the files in the "tables" directory that are Shell Heights
-file_list <- list.files("GLMMs/AllDates/Data", pattern="sho25", full.names=TRUE)
+#List all of the files in the "Tables" directory that are Shell Heights
+file_list <- list.files("data/GLMMs/AllDates/Data", pattern="sho25", full.names=TRUE)
 
 for(i in 1:length(file_list)){
   if(i==1){
-    data <- fread(file_list[i], sep="|", header=TRUE, stringsAsFactors=FALSE,
-                  na.strings="")
+    data <- readRDS(file_list[i])
+    data$ProgramID <- as.character(data$ProgramID)
   } else{
-    data <- bind_rows(data,
-                      fread(file_list[i], sep="|", header=TRUE,
-                            stringsAsFactors=FALSE, na.strings=""))
+    temp_data <- readRDS(file_list[i])
+    temp_data$ProgramID <- as.character(temp_data$ProgramID)
+    data <- bind_rows(data, temp_data)
   }
 }
 
@@ -121,16 +121,16 @@ fwrite(table, "output/Tables/Oyster_data_ShellHeight.csv", sep=",")
 
 
 #List all of the files in the "tables" directory that are Density
-file_list <- list.files("GLMMs/AllDates/Data", pattern="_n_", full.names=TRUE)
+file_list <- list.files("data/GLMMs/AllDates/Data", pattern="_n_", full.names=TRUE)
 
 for(i in 1:length(file_list)){
   if(i==1){
-    data <- fread(file_list[i], sep="|", header=TRUE, stringsAsFactors=FALSE,
-                  na.strings="")
+    data <- readRDS(file_list[i])
+    data$ProgramID <- as.character(data$ProgramID)
   } else{
-    data <- bind_rows(data,
-                      fread(file_list[i], sep="|", header=TRUE,
-                            stringsAsFactors=FALSE, na.strings=""))
+    temp_data <- readRDS(file_list[i])
+    temp_data$ProgramID <- as.character(temp_data$ProgramID)
+    data <- bind_rows(data, temp_data)
   }
 }
 
@@ -140,16 +140,16 @@ fwrite(table, "output/Tables/Oyster_data_Density.csv", sep=",")
 
 
 #List all of the files in the "tables" directory that are Density
-file_list <- list.files("GLMMs/AllDates/Data", pattern="_p_", full.names=TRUE)
+file_list <- list.files("data/GLMMs/AllDates/Data", pattern="_p_", full.names=TRUE)
 
 for(i in 1:length(file_list)){
   if(i==1){
-    data <- fread(file_list[i], sep="|", header=TRUE, stringsAsFactors=FALSE,
-                  na.strings="")
+    data <- readRDS(file_list[i])
+    data$ProgramID <- as.character(data$ProgramID)
   } else{
-    data <- bind_rows(data,
-                      fread(file_list[i], sep="|", header=TRUE,
-                            stringsAsFactors=FALSE, na.strings=""))
+    temp_data <- readRDS(file_list[i])
+    temp_data$ProgramID <- as.character(temp_data$ProgramID)
+    data <- bind_rows(data, temp_data)
   }
 }
 

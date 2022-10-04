@@ -16,6 +16,8 @@ output:
 ---
 
 # Important Notes
+These scripts were created by [J.E. Panzik](jepanzik@usf.edu) for SEACAR.
+
 All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Panzik
@@ -37,6 +39,7 @@ library(tidyr)
 library(gridExtra)
 #library(tidyverse)
 library(ggpubr)
+library(scales)
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 options(scipen=999)
 opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
@@ -198,6 +201,27 @@ MA_Ov_Stats <- data %>%
                               collapse=', '))
 MA_Ov_Stats <- as.data.table(MA_Ov_Stats[order(MA_Ov_Stats$ManagedAreaName,
                                                MA_Ov_Stats$GearSize_m), ])
+MA_Ov_Stats$Year_MinRichness <- NA
+MA_Ov_Stats$Year_MaxRichness <- NA
+
+for(m in 1:nrow(MA_Ov_Stats)){
+   ma <- MA_Ov_Stats$ManagedAreaName[m]
+   gear <- MA_Ov_Stats$GearType[m]
+   size <- MA_Ov_Stats$GearSize_m[m]
+   if(MA_Ov_Stats$N_Data[m]==0){
+      next
+   }
+   ds <- MA_Y_Stats[MA_Y_Stats$ManagedAreaName==ma &
+                       MA_Y_Stats$GearType==gear &
+                       MA_Y_Stats$GearSize_m==size,]
+   min <- min(ds$Mean)
+   max <- max(ds$Mean)
+   year_min <- ds$Year[ds$Mean==min]
+   year_max <- ds$Year[ds$Mean==max]
+   MA_Ov_Stats$Year_MinRichness[m] <- year_min
+   MA_Ov_Stats$Year_MaxRichness[m] <- year_max
+}
+MA_Ov_Stats$ProgramIDs <- gsub("", NA, MA_Ov_Stats$ProgramIDs)
 fwrite(MA_Ov_Stats, paste0(out_dir,"/Nekton_", param_name,
                            "_ManagedArea_Overall_Stats.txt"), sep="|")
 MA_Ov_Stats <- MA_Ov_Stats[!is.na(MA_Ov_Stats$EarliestYear), ]
@@ -211,40 +235,41 @@ The plots shown here are the species richness for each managed area with a yearl
 
 1. Set common plot theme.
 2. Determine the earliest and latest year of the data to create x-axis scale and intervals
-3. Set the plot type as a point plot with the size of the points
-4. Add the linear trend
-5. Create the title, x-axis, y-axis, and color fill labels
-6. Set the y and x limits
-7. Apply common plot theme
-8. Create file name to save figure
-9. Save figure as png file
+3. determine the upper and lower limit of the plot for better y-axis labels
+4. Determines what gear types are present and adjusts legend entries
+5. Add the plot line
+6. Set the plot type as a point plot with the size of the points
+7. Create the title, x-axis, y-axis, and color fill labels
+8. Set the y and x limits
+9. Apply common plot theme
+10. Create file name to save figure
+11. Save figure as png file
 
 ```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
 
 plot_theme <- theme_bw() +
-      theme(text=element_text(family="Segoe UI"),
-            title=element_text(face="bold"),
-            plot.title=element_text(hjust=0.5, size=14, color="#314963"),
+      theme(panel.grid.major = element_blank(),
+            panel.grid.minor = element_blank(),
+            text=element_text(family="Arial"),
+            #title=element_text(face="bold"),
+            plot.title=element_text(hjust=0.5, size=12, color="#314963"),
             plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
-            axis.title.x = element_text(margin = margin(t = 5, r = 0,
+            legend.title=element_text(size=10),
+            legend.text.align = 0,
+            axis.title.x = element_text(size=10, margin = margin(t = 5, r = 0,
                                                         b = 10, l = 0)),
-            axis.title.y = element_text(margin = margin(t = 0, r = 10,
+            axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
                                                         b = 0, l = 0)),
             axis.text=element_text(size=10),
-            axis.text.x=element_text(face="bold", angle = 60, hjust = 1),
-            axis.text.y=element_text(face="bold"))
+            axis.text.x=element_text(angle = -45, hjust = 0))
 
+gear_colors <- c("Trawl (4.8 m)"="#00374f",
+                 "Trawl (6.1 m)"="#007c99",
+                 "Seine (183 m)"="#00c9db")
 
-
-colorlist <- c("#00374f",
-               "#004d68",
-               "#006481",
-               "#007c99",
-               "#0094b0",
-               "#00aec6",
-               "#00c9db",
-               "#00e4ee",
-               "#00ffff")
+gear_shapes <- c("Trawl (4.8 m)"=21,
+                 "Trawl (6.1 m)"=22,
+                 "Seine (183 m)"=24)
 
 if(n==0){
       print("There are no monitoring locations that qualify.")
@@ -259,6 +284,7 @@ if(n==0){
                                                         MA_Include[i]])
             t <- t_max-t_min
             
+            
             if(t>=30){
                   brk <- -10
             }else if(t<30 & t>=10){
@@ -269,31 +295,36 @@ if(n==0){
                   brk <- -1
             }
             
+            y_range <- max(plot_data$Mean) - min(plot_data$Mean)
+            
+            y_min <- if(min(plot_data$Mean)-(0.1*y_range)<0){
+               y_min <- 0
+            } else {
+               y_min <- min(plot_data$Mean)-(0.1*y_range)
+            }
+            
+            y_max <- max(plot_data$Mean)+(0.1*y_range)
+            
+            gear_colors_plot <- gear_colors[unique(plot_data$GearType_Plot)]
+            gear_shapes_plot <- gear_shapes[unique(plot_data$GearType_Plot)]
+            
             p1 <- ggplot(data=plot_data, group=as.factor(GearType_Plot)) +
-               geom_point(aes(x=Year, y=Mean, fill=as.factor(GearType_Plot),
-                              shape=as.factor(GearType_Plot)), size=3,
-                          color="#333333", alpha=0.75) +
                geom_line(aes(x=Year, y=Mean, color=as.factor(GearType_Plot)),
-                         size=1.2, alpha=0.75) +
-               labs(title=MA_Include[i],
-                    subtitle="Species Richness",
-                    x="Year", y="Number of Species per 100 square meters",
-                    fill="Gear Type", color="Gear Type", shape="Gear Type") +
+                         size=0.75, alpha=1) +
+               geom_point(aes(x=Year, y=Mean, fill=as.factor(GearType_Plot),
+                              shape=as.factor(GearType_Plot)), size=2,
+                          color="#333333", alpha=1) +
+               labs(title="Nekton Species Richness",
+                    subtitle=MA_Include[i],
+                    x="Year", y=bquote('Richness (species/100'*~m^{2}*')'),
+                    fill="Gear type", color="Gear type", shape="Gear type") +
                scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
                                   breaks=seq(t_max, t_min, brk)) +
-               # scale_fill_manual(values=c("6.1"= "#00374f", "183"= "#007c99"),
-               #                   na.value="#00c9db") +
-               # scale_color_manual(values=c("6.1"= "#00374f", "183"= "#007c99"),
-               #                   na.value="#00c9db") +
-               scale_fill_manual(values=c("Trawl (4.8 m)"="#00374f",
-                                          "Trawl (6.1 m)"="#007c99",
-                                          "Seine (183 m)"="#00c9db")) +
-               scale_color_manual(values=c("Trawl (4.8 m)"="#00374f",
-                                          "Trawl (6.1 m)"="#007c99",
-                                          "Seine (183 m)"="#00c9db")) +
-               scale_shape_manual(values=c("Trawl (4.8 m)"=21,
-                                          "Trawl (6.1 m)"=22,
-                                          "Seine (183 m)"=24)) +
+               scale_y_continuous(limits=c(y_min, y_max),
+                                  breaks=pretty_breaks(n=5)) +
+               scale_fill_manual(values=gear_colors_plot) +
+               scale_color_manual(values=gear_colors_plot) +
+               scale_shape_manual(values=gear_shapes_plot) +
                plot_theme
             
             outname <- paste0("Nekton_", gsub(" ", "", MA_Include[i]), "_",
@@ -303,7 +334,7 @@ if(n==0){
                 height = 4,
                 units = "in",
                 res = 200)
-            rm(plot_data)
+            #rm(plot_data)
             
             print(p1)
             dev.off()

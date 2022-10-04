@@ -1,5 +1,5 @@
 #This script is created to automate the production of Rmd documents for oyster analysis.
-#Created for SEACAR by J.E. Panzik
+# Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
 ## WHEN RUNNING IN RSTUDIO:
 ## Set working directory to "Source File Location" in "Session" menu

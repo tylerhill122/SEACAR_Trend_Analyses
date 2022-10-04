@@ -1,4 +1,5 @@
 #This script is created to automate the production of Rmd documents Nekton.
+# Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
 
 ## WHEN RUNNING IN RSTUDIO:

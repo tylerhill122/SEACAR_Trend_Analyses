@@ -39,7 +39,7 @@ saveRDS(session, here::here(paste0("SessionInfo_", Sys.Date())))
 #oysterraw <- fread(here::here("All_Parameters_but_Hectares-2021-Sep-20.csv"))
 #oysterraw <- fread("C:/Users/steph/Downloads/All_Parameters_but_Hectares-2021-Sep-20.csv")
 
-file_in <- here::here("All_Oyster_Parameters-2022-May-03.txt")
+file_in <- here::here("data/All_Oyster_Parameters-2022-May-03.txt")
 oysterraw <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE, na.strings = "")
 oysterraw2 <- pivot_wider(oysterraw, names_from = "ParameterName", values_from = "ResultValue")
 setDT(oysterraw2)
@@ -54,15 +54,15 @@ rm(oysterraw2)
 # Generate UniversalReefIDs -----------------------------------------------
 
 #Load spatial data files for RCP managed areas, SEACAR sample locations and FWC statewide oyster reef layer
-fwcoymap <- st_read(here::here("OysterGIS_files/Oyster_Beds_in_Florida_2021update/Oyster_Beds_in_Florida.shp"))
-aps <- st_read(here::here("OysterGIS_files/APs/Florida_Aquatic_Preserves.shp"))
-nerrs <- st_read(here::here("OysterGIS_files/NERRs/Florida_National_Estuarine_Resarch_Reserves__NERR__Boundaries.shp"))
-GTMnew <- st_read(here::here("OysterGIS_files/GTM_RB_2016_Merge.kml"))
+fwcoymap <- st_read(here::here("data/OysterGIS_files/Oyster_Beds_in_Florida_2021update/Oyster_Beds_in_Florida.shp"))
+aps <- st_read(here::here("data/OysterGIS_files/APs/Florida_Aquatic_Preserves.shp"))
+nerrs <- st_read(here::here("data/OysterGIS_files/NERRs/Florida_National_Estuarine_Resarch_Reserves__NERR__Boundaries.shp"))
+GTMnew <- st_read(here::here("data/OysterGIS_files/GTM_RB_2016_Merge.kml"))
 GTMnew2 <- st_union(GTMnew)
 GTMnew <- subset(nerrs, nerrs$SITE_NAME == "Guana Tolomato Matanzas National Estuarine Research Reserve")
 GTMnew$geometry <- GTMnew2
 othernerrs <- subset(nerrs, nerrs$SITE_NAME != "Guana Tolomato Matanzas National Estuarine Research Reserve")
-oysamplelocs <- st_read(here::here("OysterGIS_files/SEACAR_SampleLocationMatching/SampleLocations_12jan21/seacar_dbo_SampleLocation_Point.shp"))
+oysamplelocs <- st_read(here::here("data/OysterGIS_files/SEACAR_SampleLocationMatching/SampleLocations_12jan21/seacar_dbo_SampleLocation_Point.shp"))
 oysterprogs <- unique(oysterraw$ProgramID)
 oysamplelocs <- subset(oysamplelocs, oysamplelocs$ProgramID %in% oysterprogs)
 
@@ -235,20 +235,20 @@ oysterraw <- subset(oysterraw, oysterraw$UniversalReefID != "no match")
 
 #Save a .RDS copies to avoid having to run this time consuming code every time I need the oysterraw file or crosswalk map
 saveRDS(oysterraw, here::here(paste0("oysterraw_", Sys.Date(), ".rds")))
-saveRDS(othernerrs, here::here('OysterGIS_files/reefIDcrosswalk_map_files/othernerrs.rds'))
-saveRDS(GTMnew, here::here('OysterGIS_files/reefIDcrosswalk_map_files/GTMnew.rds'))
-saveRDS(aps, here::here('OysterGIS_files/reefIDcrosswalk_map_files/aps.rds'))
-saveRDS(oysamplelocs_m, here::here('OysterGIS_files/reefIDcrosswalk_map_files/oysamplelocs_m.rds'))
-saveRDS(fwcoymap_m_rcp, here::here('OysterGIS_files/reefIDcrosswalk_map_files/fwcoymap_m_rcp.rds'))
-saveRDS(reefcrosswalk_rcp, here::here('OysterGIS_files/reefIDcrosswalk_map_files/reefcrosswalk_rcp.rds'))
+saveRDS(othernerrs, here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/othernerrs.rds'))
+saveRDS(GTMnew, here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/GTMnew.rds'))
+saveRDS(aps, here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/aps.rds'))
+saveRDS(oysamplelocs_m, here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/oysamplelocs_m.rds'))
+saveRDS(fwcoymap_m_rcp, here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/fwcoymap_m_rcp.rds'))
+saveRDS(reefcrosswalk_rcp, here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/reefcrosswalk_rcp.rds'))
 
 # #Create an interactive map of UniversalReefIDs
-# othernerrs <- readRDS(here::here('OysterGIS_files/reefIDcrosswalk_map_files/othernerrs.rds'))
-# GTMnew <- readRDS(here::here('OysterGIS_files/reefIDcrosswalk_map_files/GTMnew.rds'))
-# aps <- readRDS(here::here('OysterGIS_files/reefIDcrosswalk_map_files/aps.rds'))
-# oysamplelocs_m <- readRDS(here::here('OysterGIS_files/reefIDcrosswalk_map_files/oysamplelocs_m.rds'))
-# fwcoymap_m_rcp <- readRDS(here::here('OysterGIS_files/reefIDcrosswalk_map_files/fwcoymap_m_rcp.rds'))
-# reefcrosswalk_rcp <- readRDS(here::here('OysterGIS_files/reefIDcrosswalk_map_files/reefcrosswalk_rcp.rds'))
+# othernerrs <- readRDS(here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/othernerrs.rds'))
+# GTMnew <- readRDS(here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/GTMnew.rds'))
+# aps <- readRDS(here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/aps.rds'))
+# oysamplelocs_m <- readRDS(here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/oysamplelocs_m.rds'))
+# fwcoymap_m_rcp <- readRDS(here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/fwcoymap_m_rcp.rds'))
+# reefcrosswalk_rcp <- readRDS(here::here('data/OysterGIS_files/reefIDcrosswalk_map_files/reefcrosswalk_rcp.rds'))
 # 
 # mapview(othernerrs, color = "yellow", alpha.regions = 0) +
 #   mapview(GTMnew, color = "yellow", alpha.regions = 0) +
@@ -266,10 +266,10 @@ gtmn <- oysterraw[ManagedAreaName == "Guana Tolomato Matanzas National Estuarine
 #gtmn_regions <- fread(here::here("GTMregions.csv"))
 
 #temporarily load reefcrosswalk_rcp file until UniversalReefID generation code is fixed
-reefcrosswalk_rcp <- readRDS(here::here("OysterGIS_files/reefIDcrosswalk_map_files/reefcrosswalk_rcp.rds"))
+reefcrosswalk_rcp <- readRDS(here::here("data/OysterGIS_files/reefIDcrosswalk_map_files/reefcrosswalk_rcp.rds"))
 
 #Used gtmn_regions file to create shape files for the regions within GTMNERR boundaries in Google Earth
-gtm_oyregions <- st_read(here::here("OysterGIS_files/GTMNERR_Regions.kml"))
+gtm_oyregions <- st_read(here::here("data/OysterGIS_files/GTMNERR_Regions.kml"))
 gtm_oyregions_m <- st_transform(gtm_oyregions, 32119)
 
 #Assign regions to GTM samples using region polygons
@@ -947,152 +947,275 @@ modresults <- function(datafile, models, indicator, meplotzoom = FALSE){
 
 
 # Marginal effects plots for shell height (attempt to combine models into one plot)
-meplotssh <- function(models1, data1, sizeclass1="", models2, data2, sizeclass2="",
-                      managedarea, indicator, zoom = FALSE){
+meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
+                      sizeclass2="", managedarea, indicator, zoom=FALSE){
   ind <- case_when(str_detect(indicator, "ercent") ~ "Pct",
                    str_detect(indicator, "ensity") ~ "Den",
                    str_detect(indicator, "^S|^s") ~ "SH")
-  ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl = TRUE),
+  ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
                ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
-                      ifelse(str_detect(managedarea, "NMS|National M"), "MS", "AP")))
+                      ifelse(str_detect(managedarea, "NMS|National M"),
+                             "MS", "AP")))
   if(sizeclass1 != ""){
-    size1 <- case_when(str_detect(sizeclass1, "25") & str_detect(sizeclass1, "75") ~ "25to75",
-                       str_detect(sizeclass1, "35") & str_detect(sizeclass1, "75") ~ "35to75",
-                       str_detect(sizeclass1, "25") == FALSE & str_detect(sizeclass1, "75") ~ "o75",
+    size1 <- case_when(str_detect(sizeclass1, "25") &
+                         str_detect(sizeclass1, "75") ~ "25to75",
+                       str_detect(sizeclass1, "35") &
+                         str_detect(sizeclass1, "75") ~ "35to75",
+                       str_detect(sizeclass1, "25")==FALSE &
+                         str_detect(sizeclass1, "75") ~ "o75",
                        TRUE ~ "raw")
-    sizelab1 <- case_when(str_detect(sizeclass1, "25") & str_detect(sizeclass1, "75") ~ "25-75mm",
-                          str_detect(sizeclass1, "35") & str_detect(sizeclass1, "75") ~ "35-75mm",
-                          str_detect(sizeclass1, "25") == FALSE & str_detect(sizeclass1, "75") ~ ">75mm",
+    sizelab1 <- case_when(str_detect(sizeclass1, "25") &
+                            str_detect(sizeclass1, "75") ~ "25-75mm",
+                          str_detect(sizeclass1, "35") &
+                            str_detect(sizeclass1, "75") ~ "35-75mm",
+                          str_detect(sizeclass1, "25")==FALSE &
+                            str_detect(sizeclass1, "75") ~ ">75mm",
                           TRUE ~ "raw")
   }
   if(sizeclass2 != ""){
-    size2 <- case_when(str_detect(sizeclass2, "25") & str_detect(sizeclass2, "75") ~ "25to75",
-                       str_detect(sizeclass2, "35") & str_detect(sizeclass2, "75") ~ "35to75",
-                       str_detect(sizeclass2, "25") == FALSE & str_detect(sizeclass2, "75") ~ "o75",
+    size2 <- case_when(str_detect(sizeclass2, "25") &
+                         str_detect(sizeclass2, "75") ~ "25to75",
+                       str_detect(sizeclass2, "35") &
+                         str_detect(sizeclass2, "75") ~ "35to75",
+                       str_detect(sizeclass2, "25")==FALSE &
+                         str_detect(sizeclass2, "75") ~ "o75",
                        TRUE ~ "raw")
-    sizelab2 <- case_when(str_detect(sizeclass2, "25") & str_detect(sizeclass2, "75") ~ "25-75mm",
-                          str_detect(sizeclass2, "35") & str_detect(sizeclass2, "75") ~ "35-75mm",
-                          str_detect(sizeclass2, "25") == FALSE & str_detect(sizeclass2, "75") ~ ">75mm",
+    sizelab2 <- case_when(str_detect(sizeclass2, "25") &
+                            str_detect(sizeclass2, "75") ~ "25-75mm",
+                          str_detect(sizeclass2, "35") &
+                            str_detect(sizeclass2, "75") ~ "35-75mm",
+                          str_detect(sizeclass2, "25")==FALSE &
+                            str_detect(sizeclass2, "75") ~ ">75mm",
                           TRUE ~ "raw")
   }
   
   #Marginal effects plot including random effects
   ## Hist plot settings
   y_max <- round(max(data2[!is.na(ShellHeight_mm), ShellHeight_mm]), -0)+1
-  y_breaks <- append(seq(25, 75, 25), seq(100, 300, 50))
-  y_labs <- append(seq(25, 75, 25), seq(100, 300, 50))
+  y_breaks <- seq(25, 300, 50)
+  y_labs <- seq(25, 300, 50)
   y_minor <- seq(25, 300, 25)
   ylim_upper <- ceiling(y_max/25)*25
   
-  maxyr_hist <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate", RelYear],
-                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate", RelYear])
-  minyr_hist <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate", RelYear],
-                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate", RelYear])
-  nyrs_hist <- (maxyr_hist + 1) - (minyr_hist + 1)
+  maxyr_hist <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
+                          RelYear],
+                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
+                          RelYear])
+  minyr_hist <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
+                          RelYear],
+                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
+                          RelYear])
+  nyrs_hist <- (maxyr_hist+1)-(minyr_hist+1)
   if(minyr_hist > 0){
-    maxyr_hist <- maxyr_hist - (minyr_hist - 1)
-    minyr_hist <- minyr_hist - (minyr_hist - 1)
+    maxyr_hist <- maxyr_hist-(minyr_hist-1)
+    minyr_hist <- minyr_hist-(minyr_hist-1)
   }
-  nbreaks_hist <- ifelse(nyrs_hist < 11, nyrs_hist + 1, 12)
-  breaks_hist <- if(minyr_hist == 0){
-    c(minyr_hist, round(minyr_hist + c(1:(nbreaks_hist-2))*((nyrs_hist/nbreaks_hist) + (nyrs_hist/nbreaks_hist)/nbreaks_hist)), maxyr_hist) + 1
+  nbreaks_hist <- ifelse(nyrs_hist < 11, nyrs_hist+1, 12)
+  breaks_hist <- if(minyr_hist==0){
+    c(minyr_hist, round(minyr_hist+c(1:(nbreaks_hist-2))*
+                          ((nyrs_hist/nbreaks_hist)+
+                             (nyrs_hist/nbreaks_hist)/nbreaks_hist)),
+      maxyr_hist)+1
   } else{
-    c(minyr_hist, round(minyr_hist + c(1:(nbreaks_hist-2))*((nyrs_hist/nbreaks_hist) + (nyrs_hist/nbreaks_hist)/nbreaks_hist)), maxyr_hist)
+    c(minyr_hist, round(minyr_hist+c(1:(nbreaks_hist-2))*
+                          ((nyrs_hist/nbreaks_hist)+
+                             (nyrs_hist/nbreaks_hist)/nbreaks_hist)),
+      maxyr_hist)
   }
-  yrlist_hist <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Estimate",LiveDate],
-                       data2[!is.na(LiveDate) & LiveDate_Qualifier=="Estimate", LiveDate]):
-                     max(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Estimate", LiveDate],
-                         data2[!is.na(LiveDate) & LiveDate_Qualifier=="Estimate", LiveDate]))
+  yrlist_hist <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier==
+                               "Estimate",LiveDate],
+                       data2[!is.na(LiveDate) & LiveDate_Qualifier==
+                               "Estimate", LiveDate]):
+                     max(data1[!is.na(LiveDate) & LiveDate_Qualifier==
+                                 "Estimate", LiveDate],
+                         data2[!is.na(LiveDate) & LiveDate_Qualifier==
+                                 "Estimate", LiveDate]))
   
   ## Live plot settings
-  maxyr_live <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact", RelYear],
-                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact", RelYear])
-  minyr_live <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact", RelYear],
-                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact", RelYear])
-  nyrs_live <- (maxyr_live + 1) - (minyr_live + 1)
-  nbreaks_live <- ifelse(nyrs_live < 11, nyrs_live + 1, 12)
-  breaks_live <- if(minyr_live == 0){
-    c(minyr_live, round(minyr_live + c(1:(nbreaks_live-2))*((nyrs_live/nbreaks_live) + (nyrs_live/nbreaks_live)/nbreaks_live)), maxyr_live) + 1
+  maxyr_live <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
+                          RelYear],
+                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
+                          RelYear])
+  minyr_live <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
+                          RelYear],
+                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
+                          RelYear])
+  nyrs_live <- (maxyr_live+1)-(minyr_live+1)
+  nbreaks_live <- ifelse(nyrs_live < 11, nyrs_live+1, 12)
+  breaks_live <- if(minyr_live==0){
+    c(minyr_live, round(minyr_live+c(1:(nbreaks_live-2))*
+                          ((nyrs_live/nbreaks_live)+
+                             (nyrs_live/nbreaks_live)/nbreaks_live)),
+      maxyr_live)+1
   } else{
-    c(minyr_live, round(minyr_live + c(1:(nbreaks_live-2))*((nyrs_live/nbreaks_live) + (nyrs_live/nbreaks_live)/nbreaks_live)), maxyr_live)
+    c(minyr_live, round(minyr_live+c(1:(nbreaks_live-2))*
+                          ((nyrs_live/nbreaks_live)+
+                             (nyrs_live/nbreaks_live)/nbreaks_live)),
+      maxyr_live)
   }
   yr_breaks_live <- breaks_live-min(breaks_live)+1
   
-  yrlist_live <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",LiveDate],
-                       data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact", LiveDate]):
-                     max(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact", LiveDate],
-                         data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact", LiveDate]))
+  yrlist_live <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                             LiveDate],
+                       data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                             LiveDate]):
+                     max(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                               LiveDate],
+                         data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                               LiveDate]))
   ## Check data for Exact and Estimate
-  n_hist1 <- nrow(data1[data1$LiveDate_Qualifier=="Estimate" & !is.na(data1$ShellHeight_mm),])
-  n_live1 <- nrow(data1[data1$LiveDate_Qualifier=="Exact" & !is.na(data1$ShellHeight_mm),])
-  n_hist2 <- nrow(data2[data2$LiveDate_Qualifier=="Estimate" & !is.na(data2$ShellHeight_mm),])
-  n_live2 <- nrow(data2[data2$LiveDate_Qualifier=="Exact" & !is.na(data2$ShellHeight_mm),])
+  n_hist1 <- nrow(data1[data1$LiveDate_Qualifier=="Estimate" &
+                          !is.na(data1$ShellHeight_mm),])
+  n_live1 <- nrow(data1[data1$LiveDate_Qualifier=="Exact" &
+                          !is.na(data1$ShellHeight_mm),])
+  n_hist2 <- nrow(data2[data2$LiveDate_Qualifier=="Estimate" &
+                          !is.na(data2$ShellHeight_mm),])
+  n_live2 <- nrow(data2[data2$LiveDate_Qualifier=="Exact" &
+                          !is.na(data2$ShellHeight_mm),])
   
   
   set.seed(987)
   if(!is.null(models1)==TRUE){
-    if(length(models1) == 2){
-      liveplot_1 <- plot(conditional_effects(models1[[1]], re_formula = NULL), plot = FALSE)
-      histplot_1 <- plot(conditional_effects(models1[[2]], re_formula = NULL), plot = FALSE)
+    if(length(models1)==2){
+      liveplot_1 <- plot(conditional_effects(models1[[1]],
+                                             re_formula=NULL),
+                         plot=FALSE)
+      histplot_1 <- plot(conditional_effects(models1[[2]],
+                                             re_formula=NULL),
+                         plot=FALSE)
       present1 <- "Both"
     } else{
       if(str_detect(models1[[1]]$file, "hist")){
-        histplot_1 <- plot(conditional_effects(models1[[1]], re_formula = NULL), plot = FALSE)
+        histplot_1 <- plot(conditional_effects(models1[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
         present1 <- "hist"
       } else{
-        liveplot_1 <- plot(conditional_effects(models1[[1]], re_formula = NULL), plot = FALSE)
+        liveplot_1 <- plot(conditional_effects(models1[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
         present1 <- "live"
       }
     }
   }
   
   if(!is.null(models2)==TRUE){
-    if(length(models2) == 2){
-      liveplot_2 <- plot(conditional_effects(models2[[1]], re_formula = NULL), plot = FALSE)
-      histplot_2 <- plot(conditional_effects(models2[[2]], re_formula = NULL), plot = FALSE)
+    if(length(models2)==2){
+      liveplot_2 <- plot(conditional_effects(models2[[1]],
+                                             re_formula=NULL),
+                         plot=FALSE)
+      histplot_2 <- plot(conditional_effects(models2[[2]],
+                                             re_formula=NULL),
+                         plot=FALSE)
       present2 <- "Both"
     } else{
       if(str_detect(models2[[1]]$file, "hist")){
-        histplot_2 <- plot(conditional_effects(models2[[1]], re_formula = NULL), plot = FALSE)
+        histplot_2 <- plot(conditional_effects(models2[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
         present2 <- "hist"
       } else{
-        liveplot_2 <- plot(conditional_effects(models2[[1]], re_formula = NULL), plot = FALSE)
+        liveplot_2 <- plot(conditional_effects(models2[[1]],
+                                               re_formula=NULL),
+                           plot=FALSE)
         present2 <- "live"
       }
     }
   }
   
+  
+  # Fixes issue with legend alpha values being added
+  a_ribb <- 0.5
+  if(class(try(histplot_1, silent=TRUE)) != "try-error" &
+     class(try(liveplot_1, silent=TRUE)) != "try-error"){
+    a_ribb <- 0.25
+  }else if(class(try(histplot_2, silent=TRUE)) != "try-error" &
+           class(try(liveplot_2, silent=TRUE)) != "try-error"){
+    a_ribb <- 0.25
+  }
+  
+  #p_color <- c("size2"="#0094b0", "size1"="#00374f")
+  p_shape <- c("size2"=24, "size1"=21)
+  sizelab <- c("size2"=sizelab2, "size1"=sizelab1)
+  
+  
+  check <- NA
+  check1 <- NA
+  check2 <- NA
+  
+  if(exists("present1")){
+    check1 <- c("size1"="#00374f")
+  } else{
+    check1 <- c("size1"="#FFFFFF")
+  }
+  
+  if(exists("present2")){
+    check2 <- c("size2"="#0094b0")
+  } else{
+    check2 <- c("size2"="#FFFFFF")
+  }
+  p_color <- c(check2, check1)
+  
+  
   plot_leg <- ggplot() +
-    geom_jitter(data = data1[!is.na(RelYear) & !is.na(LiveDate), ],
-                aes(x = RelYear, y = ShellHeight_mm, shape="size1"), size=3, color="#333333", fill="#cccccc",
-                alpha=0.75, inherit.aes = FALSE, width = 0.1, height = 0.1) +
-    geom_jitter(data = data2[!is.na(RelYear) & !is.na(LiveDate), ],
-                aes(x = RelYear, y = ShellHeight_mm, shape="size2"), size=3, color="#333333", fill="#cccccc",
-                alpha=0.75, inherit.aes = FALSE, width = 0.1, height = 0.1) +
-    {if(class(try(histplot_1, silent = TRUE)) != "try-error"){
-      list(geom_ribbon(data = histplot_1$RelYear$data, aes(x = RelYear, y = ShellHeight_mm, ymin = lower__, ymax = upper__, fill="size1"), alpha = 0.2, inherit.aes = FALSE),
-           geom_line(data = histplot_1$RelYear$data, aes(x = RelYear, y = estimate__, color="size1"), lwd = 1, inherit.aes = FALSE))
+    {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=histplot_1$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__,
+                           fill="size1"), alpha=a_ribb,
+                       inherit.aes=FALSE),
+           geom_line(data=histplot_1$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size1"),
+                     lwd=0.75, inherit.aes=FALSE))
+      
     }} +
-    {if(class(try(histplot_2, silent = TRUE)) != "try-error"){
-      list(geom_ribbon(data = histplot_2$RelYear$data, aes(x = RelYear, y = ShellHeight_mm, ymin = lower__, ymax = upper__, fill="size2"), alpha = 0.2, inherit.aes = FALSE),
-           geom_line(data = histplot_2$RelYear$data, aes(x = RelYear, y = estimate__, color="size2"), lwd = 1, inherit.aes = FALSE))
+    {if(class(try(histplot_2, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=histplot_2$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__,
+                           fill="size2"), alpha=a_ribb,
+                       inherit.aes=FALSE),
+           geom_line(data=histplot_2$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size2"),
+                     lwd=0.75, inherit.aes=FALSE))
     }} +
-    {if(class(try(liveplot_1, silent = TRUE)) != "try-error"){
-      list(geom_ribbon(data = liveplot_1$RelYear$data, aes(x = RelYear, y = ShellHeight_mm, ymin = lower__, ymax = upper__, fill="size1"), alpha = 0.2),
-           geom_line(data = liveplot_1$RelYear$data, aes(x = RelYear, y = estimate__, color="size1"), lwd = 1))
+    {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=liveplot_1$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__,
+                           fill="size1"), alpha=a_ribb),
+           geom_line(data=liveplot_1$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size1"),
+                     lwd=0.75))
     }} +
-    {if(class(try(liveplot_2, silent = TRUE)) != "try-error"){
-      list(geom_ribbon(data = liveplot_2$RelYear$data, aes(x = RelYear, y = ShellHeight_mm, ymin = lower__, ymax = upper__, fill="size2"), alpha = 0.2),
-           geom_line(data = liveplot_2$RelYear$data, aes(x = RelYear, y = estimate__, color="size2"), lwd = 1))
+    {if(class(try(liveplot_2, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=liveplot_2$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size2"),
+                       alpha=a_ribb),
+           geom_line(data=liveplot_2$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size2"),
+                     lwd=0.75))
     }} +
-    plot_theme  + 
+    geom_jitter(data=data1[!is.na(RelYear) & !is.na(LiveDate), ],
+                aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                size=2, color="#333333", fill="#cccccc",
+                alpha=1, inherit.aes=FALSE, width=0.1, height=0.1) +
+    geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate), ],
+                aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                size=2, color="#333333", fill="#cccccc",
+                alpha=1, inherit.aes=FALSE, width=0.1, height=0.1) +
+    plot_theme +
     theme(legend.position="right") +
-    scale_shape_manual(name = "Shell Heights", values = c("size2" = 24, "size1" = 21),
-                       labels=c(sizelab2, sizelab1)) +
-    scale_color_manual(name = "Shell Heights", values = c("size2" = "#0094b0", "size1" = "#00374f"),
-                       labels=c(sizelab2, sizelab1)) +
-    scale_fill_manual(name = "Shell Heights", values = c("size2" = "#0094b0", "size1" = "#00374f"),
-                      labels=c(sizelab2, sizelab1))
+    scale_shape_manual(name="Shell heights",
+                       values=p_shape,
+                       labels=sizelab) +
+    scale_color_manual(name="Shell heights",
+                       values=p_color,
+                       labels=sizelab) +
+    scale_fill_manual(name="Shell heights",
+                      values=p_color,
+                      labels=sizelab)
   
   leg <-get_legend(plot_leg)
   
@@ -1101,177 +1224,276 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2, sizeclass2=
   plot1 <- ggplot() +
     geom_hline(yintercept=75, size=1, color="grey") +
     {if(n_hist1>0){
-      geom_jitter(data = data1[!is.na(RelYear) & !is.na(LiveDate) & LiveDate_Qualifier=="Estimate", ],
-                  aes(x = RelYear, y = ShellHeight_mm, shape="size1"), size=3, color="#333333", fill="#cccccc",
-                  alpha=0.75, inherit.aes = FALSE, width = 0.1, height = 0.1) 
+      geom_jitter(data=data1[!is.na(RelYear) &
+                               !is.na(LiveDate) &
+                               LiveDate_Qualifier=="Estimate", ],
+                  aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                  size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE, width=0.1, height=0.1) 
     }} +
     {if(n_hist2>0){
-      geom_jitter(data = data2[!is.na(RelYear) & !is.na(LiveDate) & LiveDate_Qualifier=="Estimate", ],
-                  aes(x = RelYear, y = ShellHeight_mm, shape="size2"), size=3, color="#333333", fill="#cccccc",
-                  alpha=0.75, inherit.aes = FALSE, width = 0.1, height = 0.1)
+      geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate) &
+                               LiveDate_Qualifier=="Estimate", ],
+                  aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                  size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE, width=0.1, height=0.1)
     }} +
-    {if(class(try(histplot_1, silent = TRUE)) != "try-error"){
-      list(geom_ribbon(data = histplot_1$RelYear$data, aes(x = RelYear, y = ShellHeight_mm, ymin = lower__, ymax = upper__, fill="size1"), alpha = 0.2, inherit.aes = FALSE),
-           geom_line(data = histplot_1$RelYear$data, aes(x = RelYear, y = estimate__, color="size1"), lwd = 1, inherit.aes = FALSE))
+    {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=histplot_1$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size1"),
+                       alpha=0.5, inherit.aes=FALSE),
+           geom_line(data=histplot_1$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size1"),
+                     lwd=0.75, inherit.aes=FALSE))
     }} +
-    {if(class(try(histplot_2, silent = TRUE)) != "try-error"){
-      list(geom_ribbon(data = histplot_2$RelYear$data, aes(x = RelYear, y = ShellHeight_mm, ymin = lower__, ymax = upper__, fill="size2"), alpha = 0.2, inherit.aes = FALSE),
-           geom_line(data = histplot_2$RelYear$data, aes(x = RelYear, y = estimate__, color="size2"), lwd = 1, inherit.aes = FALSE))
+    {if(class(try(histplot_2, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=histplot_2$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size2"),
+                       alpha=0.5, inherit.aes=FALSE),
+           geom_line(data=histplot_2$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size2"),
+                     lwd=0.75, inherit.aes=FALSE))
     }} +
-    scale_x_continuous(breaks = breaks_hist, labels = c(yrlist_hist[breaks_hist])) +
-    scale_y_continuous(breaks=y_breaks, labels=y_labs, minor_breaks=y_minor) +
-    plot_theme  + 
+    scale_x_continuous(breaks=breaks_hist,
+                       labels=c(yrlist_hist[breaks_hist])) +
+    scale_y_continuous(breaks=y_breaks,
+                       labels=y_labs, minor_breaks=y_minor) +
+    plot_theme +
     theme(plot.subtitle=element_text(hjust=0, size=10, color="#314963"),
           legend.position="none",
     ) +
-    labs(subtitle = "Dead Oyster Shells",
-         x = "Estimated Year",
-         y = "Shell Height (mm)") +
-    scale_shape_manual(name = "Shell Heights", values = c("size1" = 21, "size2" = 24),
+    labs(subtitle="Dead Oyster Shells",
+         x="Estimated year",
+         y="Shell height (mm)") +
+    scale_shape_manual(name="Shell heights",
+                       values=c("size1"=21, "size2"=24),
                        labels=c(sizelab1, sizelab2)) +
-    scale_color_manual(name = "Shell Heights", values = c("size1" = "#00374f", "size2" = "#0094b0"),
+    scale_color_manual(name="Shell heights",
+                       values=c("size1"="#00374f", "size2"="#0094b0"),
                        labels=c(sizelab1, sizelab2)) +
-    scale_fill_manual(name = "Shell Heights", values = c("size1" = "#00374f", "size2" = "#0094b0"),
+    scale_fill_manual(name="Shell heights",
+                      values=c("size1"="#00374f", "size2"="#0094b0"),
                       labels=c(sizelab1, sizelab2)) +
-    coord_cartesian(ylim = c(25, ylim_upper))
+    coord_cartesian(ylim=c(25, ylim_upper))
   
   plot2 <- ggplot() +
     geom_hline(yintercept=75, size=1, color="grey") +
     {if(n_live1>0){
-      geom_jitter(data = data1[!is.na(RelYear) & !is.na(LiveDate) & LiveDate_Qualifier=="Exact", ],
-                  aes(x = RelYear, y = ShellHeight_mm, shape="size1"), size=3, color="#333333", fill="#cccccc",
-                  alpha=0.75, inherit.aes = FALSE, width = 0.1, height = 0.1) 
+      geom_jitter(data=data1[!is.na(RelYear) & !is.na(LiveDate) &
+                               LiveDate_Qualifier=="Exact", ],
+                  aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                  size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE, width=0.1, height=0.1) 
     }} +
     {if(n_live2>0){
-      geom_jitter(data = data2[!is.na(RelYear) & !is.na(LiveDate) & LiveDate_Qualifier=="Exact", ],
-                  aes(x = RelYear, y = ShellHeight_mm, shape="size2"), size=3, color="#333333", fill="#cccccc",
-                  alpha=0.75, inherit.aes = FALSE, width = 0.1, height = 0.1)
+      geom_jitter(data=data2[!is.na(RelYear) & !is.na(LiveDate) &
+                               LiveDate_Qualifier=="Exact", ],
+                  aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                  size=2, color="#333333", fill="#cccccc",
+                  alpha=1, inherit.aes=FALSE, width=0.1, height=0.1)
     }} +
-    {if(class(try(liveplot_1, silent = TRUE)) != "try-error"){
-      list(geom_ribbon(data = liveplot_1$RelYear$data, aes(x = RelYear, y = ShellHeight_mm, ymin = lower__, ymax = upper__, fill="size1"), alpha = 0.2),
-           geom_line(data = liveplot_1$RelYear$data, aes(x = RelYear, y = estimate__, color="size1"), lwd = 1))
+    {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=liveplot_1$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size1"),
+                       alpha=0.5),
+           geom_line(data=liveplot_1$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size1"),
+                     lwd=0.75))
     }} +
-    {if(class(try(liveplot_2, silent = TRUE)) != "try-error"){
-      list(geom_ribbon(data = liveplot_2$RelYear$data, aes(x = RelYear, y = ShellHeight_mm, ymin = lower__, ymax = upper__, fill="size2"), alpha = 0.2),
-           geom_line(data = liveplot_2$RelYear$data, aes(x = RelYear, y = estimate__, color="size2"), lwd = 1))
+    {if(class(try(liveplot_2, silent=TRUE)) != "try-error"){
+      list(geom_ribbon(data=liveplot_2$RelYear$data,
+                       aes(x=RelYear, y=ShellHeight_mm,
+                           ymin=lower__, ymax=upper__, fill="size2"),
+                       alpha=0.5),
+           geom_line(data=liveplot_2$RelYear$data,
+                     aes(x=RelYear, y=estimate__, color="size2"),
+                     lwd=0.75))
     }} +
-    scale_x_continuous(breaks = breaks_live, labels = c(yrlist_live[yr_breaks_live])) +
-    scale_y_continuous(breaks=y_breaks, labels=y_labs, minor_breaks=y_minor) +
-    plot_theme  + 
+    scale_x_continuous(breaks=breaks_live,
+                       labels=c(yrlist_live[yr_breaks_live])) +
+    scale_y_continuous(breaks=y_breaks,
+                       labels=y_labs, minor_breaks=y_minor) +
+    plot_theme +
     theme(plot.subtitle=element_text(hjust=0, size=10, color="#314963"),
-          legend.position = "none",
+          legend.position="none",
           axis.text.y=element_blank(),  #remove y-axis labels
           axis.ticks.y=element_blank(),  #remove y-axis ticks
           axis.title.y=element_blank()   #removes y-axis title
     ) +
-    labs(subtitle = "Live Oyster Shells",
-         x = "Year",
-         y = "Shell Height (mm)") +
-    scale_shape_manual(name = "Shell Heights", values = c("size1" = 21, "size2" = 24),
+    labs(subtitle="Live Oyster Shells",
+         x="Year",
+         y="Shell height (mm)") +
+    scale_shape_manual(name="Shell heights",
+                       values=c("size1"=21, "size2"=24),
                        labels=c(sizelab1, sizelab2)) +
-    scale_color_manual(name = "Shell Heights", values = c("size1" = "#00374f", "size2" = "#0094b0"),
+    scale_color_manual(name="Shell heights",
+                       values=c("size1"="#00374f", "size2"="#0094b0"),
                        labels=c(sizelab1, sizelab2)) +
-    scale_fill_manual(name = "Shell Heights", values = c("size1" = "#00374f", "size2" = "#0094b0"),
+    scale_fill_manual(name="Shell heights",
+                      values=c("size1"="#00374f", "size2"="#0094b0"),
                       labels=c(sizelab1, sizelab2)) +
-    coord_cartesian(ylim = c(25, ylim_upper))
+    coord_cartesian(ylim=c(25, ylim_upper))
   
   #leg <- get_legend(plot1)
   
-  plot_title <- ggplot() + labs(title=managedarea) +
+  plot_title <- ggplot()+labs(title="Oyster Size Class",
+                              subtitle=managedarea) +
     plot_theme +
-    theme(panel.border=element_blank(),
+    theme(plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
+          panel.border=element_blank(),
           panel.grid.major=element_blank(),
           panel.grid.minor=element_blank(), axis.line=element_blank())
   
-  plot_comb <- ggarrange(plot1, plot2, leg, nrow=1, widths=c(0.46, 0.39, 0.15))
+  plot_comb <- ggarrange(plot1, plot2, leg, nrow=1,
+                         widths=c(0.46, 0.39, 0.15))
   
-  plot_comb <- ggarrange(plot_title, plot_comb, ncol=1, heights=c(0.075, 0.925))
+  plot_comb <- ggarrange(plot_title, plot_comb, ncol=1,
+                         heights=c(0.125, 0.875))
   
-  ggsave(here::here(paste0("output/Figures/SH_AllDates_GLMM_", ma, "_MEPrand_", Sys.Date(), ".png")),
+  ggsave(paste0("output/Figures/SH_AllDates_GLMM_", ma, "_MEPrand_",
+                Sys.Date(), ".png"),
          plot_comb,
-         width = 8,
-         height = 4,
-         units = "in",
-         dpi = 200,
+         width=8,
+         height=4,
+         units="in",
+         dpi=200,
          bg="white")
 }
 
 
 # Create model results tables and save diagnostic plots
-modresultssh <- function(datafile1, models1, datafile2, models2, indicator, meplotzoom = FALSE){
+modresultssh <- function(datafile1, models1, datafile2, models2, indicator,
+                         meplotzoom=FALSE){
   datafile1$SizeClass[datafile1$SizeClass=="25to75mm" &
-                        datafile1$MA_plotlab=="St. Martins Marsh Aquatic Preserve_Natural"] <- "35-75mm"
+                        datafile1$MA_plotlab==
+                        "St. Martins Marsh Aquatic Preserve_Natural"] <- "35-75mm"
   sizeclass1 <- unique(datafile1$SizeClass)
   for(m in seq_along(models1)){
     modelobj <- models1[[m]]
-    oyres_i <- setDT(broom.mixed::tidy(modelobj)) #tidy() does not like that parameter values have underscores for some reason, so the resulting table is incomplete
+    oyres_i <- setDT(broom.mixed::tidy(modelobj))
+    #tidy() does not like that parameter values have underscores
+    #for some reason, so the resulting table is incomplete
     
-    if(nrow(oyres_i[effect == "fixed", ]) - nrow(summary(modelobj)$fixed) == -1){
-      missingrow <- data.table(effect = "fixed",
-                               component = "cond", #not sure what "cond" means in the tidy summary.
-                               group = NA,
-                               term = rownames(summary(modelobj)$fixed)[2],
-                               estimate = summary(modelobj)$fixed$Estimate[2],
-                               std.error = summary(modelobj)$fixed$Est.Error[2],
-                               conf.low = summary(modelobj)$fixed$`l-95% CI`[2],
-                               conf.high = summary(modelobj)$fixed$`u-95% CI`[2])
+    if(nrow(oyres_i[effect=="fixed", ])-nrow(summary(modelobj)$fixed)==-1){
+      missingrow <- data.table(effect="fixed",
+                               component="cond",
+                               #not sure what "cond" means in the tidy summary.
+                               group=NA,
+                               term=rownames(summary(modelobj)$fixed)[2],
+                               estimate=summary(modelobj)$fixed$Estimate[2],
+                               std.error=summary(modelobj)$fixed$Est.Error[2],
+                               conf.low=summary(modelobj)$fixed$`l-95% CI`[2],
+                               conf.high=summary(modelobj)$fixed$`u-95% CI`[2])
       oyres_i <- rbind(oyres_i, missingrow) %>% arrange(effect, group)
     }
     
-    oyres_i[, `:=` (indicator = indicator,
-                    managed_area = unique(datafile1$ManagedAreaName),
-                    habitat_class = unique(datafile1$HabitatClassification),
-                    size_class = sizeclass1,
-                    live_date_qual = ifelse(str_detect(modelobj$file, "_hist"), "Estimate", "Exact"),
-                    n_programs = if(class(try(datafile1$LiveDate_Qualifier)) != "try-error"){
-                      length(unique(datafile1[LiveDate_Qualifier == ifelse(str_detect(modelobj$file, "_hist"), "Estimate", "Exact"), ProgramID]))
+    oyres_i[, `:=` (indicator=indicator,
+                    managed_area=unique(datafile1$ManagedAreaName),
+                    habitat_class=unique(datafile1$HabitatClassification),
+                    size_class=sizeclass1,
+                    live_date_qual=ifelse(
+                      str_detect(
+                        modelobj$file, "_hist"), "Estimate",
+                      "Exact"),
+                    n_programs=if(class(
+                      try(datafile1$LiveDate_Qualifier))!="try-error"){
+                      length(unique(
+                        datafile1[LiveDate_Qualifier==
+                                    ifelse(str_detect(
+                                      modelobj$file, "_hist"),
+                                      "Estimate", "Exact"),
+                                  ProgramID]))
                     } else{length(unique(datafile1[, ProgramID]))},
-                    programs = if(class(try(datafile1$LiveDate_Qualifier)) != "try-error"){
-                      list(unique(datafile1[LiveDate_Qualifier == ifelse(str_detect(modelobj$file, "_hist"), "Estimate", "Exact"), ProgramID]))
+                    programs=if(class(try(
+                      datafile1$LiveDate_Qualifier)) != "try-error"){
+                      list(unique(
+                        datafile1[LiveDate_Qualifier==
+                                    ifelse(
+                                      str_detect(
+                                        modelobj$file,
+                                        "_hist"),
+                                      "Estimate",
+                                      "Exact"),
+                                  ProgramID]))
                     } else{list(unique(datafile1[, ProgramID]))},
-                    filename = modelobj$file)]
+                    filename=modelobj$file)]
     oysterresults <<- rbind(oysterresults, oyres_i)
     
     # Save diagnostic plots
-    #diagnosticplots(modelobj, indicator, unique(datafile$ManagedAreaName), sizeclass, ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
+    #diagnosticplots(modelobj, indicator,
+    #unique(datafile$ManagedAreaName), sizeclass,
+    #ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
   }
   
   datafile2$SizeClass[datafile2$SizeClass=="25to75mm" &
-                        datafile2$MA_plotlab=="St. Martins Marsh Aquatic Preserve_Natural"] <- "35-75mm"
+                        datafile2$MA_plotlab==
+                        "St. Martins Marsh Aquatic Preserve_Natural"] <- "35-75mm"
   sizeclass2 <- unique(datafile2$SizeClass)
   
   for(m in seq_along(models2)){
     modelobj <- models2[[m]]
-    oyres_i <- setDT(broom.mixed::tidy(modelobj)) #tidy() does not like that parameter values have underscores for some reason, so the resulting table is incomplete
+    oyres_i <- setDT(broom.mixed::tidy(modelobj))
+    #tidy() does not like that parameter values have underscores for
+    #some reason, so the resulting table is incomplete
     
-    if(nrow(oyres_i[effect == "fixed", ]) - nrow(summary(modelobj)$fixed) == -1){
-      missingrow <- data.table(effect = "fixed",
-                               component = "cond", #not sure what "cond" means in the tidy summary.
-                               group = NA,
-                               term = rownames(summary(modelobj)$fixed)[2],
-                               estimate = summary(modelobj)$fixed$Estimate[2],
-                               std.error = summary(modelobj)$fixed$Est.Error[2],
-                               conf.low = summary(modelobj)$fixed$`l-95% CI`[2],
-                               conf.high = summary(modelobj)$fixed$`u-95% CI`[2])
+    if(nrow(oyres_i[effect=="fixed", ])-nrow(summary(modelobj)$fixed)==-1){
+      missingrow <- data.table(effect="fixed",
+                               component="cond",
+                               #not sure what "cond" means in the tidy summary.
+                               group=NA,
+                               term=rownames(summary(modelobj)$fixed)[2],
+                               estimate=summary(modelobj)$fixed$Estimate[2],
+                               std.error=summary(modelobj)$fixed$Est.Error[2],
+                               conf.low=summary(modelobj)$fixed$`l-95% CI`[2],
+                               conf.high=summary(modelobj)$fixed$`u-95% CI`[2])
       oyres_i <- rbind(oyres_i, missingrow) %>% arrange(effect, group)
     }
     
-    oyres_i[, `:=` (indicator = indicator,
-                    managed_area = unique(datafile2$ManagedAreaName),
-                    habitat_class = unique(datafile2$HabitatClassification),
-                    size_class = sizeclass2,
-                    live_date_qual = ifelse(str_detect(modelobj$file, "_hist"), "Estimate", "Exact"),
-                    n_programs = if(class(try(datafile2$LiveDate_Qualifier)) != "try-error"){
-                      length(unique(datafile2[LiveDate_Qualifier == ifelse(str_detect(modelobj$file, "_hist"), "Estimate", "Exact"), ProgramID]))
+    oyres_i[, `:=` (indicator=indicator,
+                    managed_area=unique(datafile2$ManagedAreaName),
+                    habitat_class=unique(datafile2$HabitatClassification),
+                    size_class=sizeclass2,
+                    live_date_qual=ifelse(
+                      str_detect(modelobj$file, "_hist"),
+                      "Estimate", "Exact"),
+                    n_programs=if(class(
+                      try(datafile2$LiveDate_Qualifier))!=
+                      "try-error"){
+                      length(
+                        unique(
+                          datafile2[LiveDate_Qualifier==
+                                      ifelse(
+                                        str_detect(
+                                          modelobj$file,
+                                          "_hist"),
+                                        "Estimate",
+                                        "Exact"),
+                                    ProgramID]))
                     } else{length(unique(datafile2[, ProgramID]))},
-                    programs = if(class(try(datafile2$LiveDate_Qualifier)) != "try-error"){
-                      list(unique(datafile2[LiveDate_Qualifier == ifelse(str_detect(modelobj$file, "_hist"), "Estimate", "Exact"), ProgramID]))
+                    programs=if(class(
+                      try(datafile2$LiveDate_Qualifier)) !=
+                      "try-error"){
+                      list(
+                        unique(
+                          datafile2[LiveDate_Qualifier==
+                                      ifelse(
+                                        str_detect(
+                                          modelobj$file,
+                                          "_hist"),
+                                        "Estimate",
+                                        "Exact"),
+                                    ProgramID]))
                     } else{list(unique(datafile2[, ProgramID]))},
-                    filename = modelobj$file)]
+                    filename=modelobj$file)]
     oysterresults <<- rbind(oysterresults, oyres_i)
     
     # Save diagnostic plots
-    #diagnosticplots(modelobj, indicator, unique(datafile$ManagedAreaName), sizeclass, ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
+    #diagnosticplots(modelobj, indicator,
+    #unique(datafile$ManagedAreaName), sizeclass,
+    #ifelse(str_detect(modelobj$file, "_hist"), TRUE, FALSE))  
   }
   
   # Save marginal effects plots
@@ -1374,17 +1596,17 @@ ab_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
                         MA_plotlab == "Apalachicola Bay Aquatic Preserve_Natural" & 
                         QuadIdentifier %in% setdiff(oysterraw[!is.na(ShellHeight_mm) & ManagedAreaName == "Apalachicola Bay Aquatic Preserve", QuadIdentifier], exclude_samps), ]
 
-saveRDS(ab_sho25, here::here(paste0('GLMMs/AllDates/Data/ab_sho25_', Sys.Date(), '.rds')))
+saveRDS(ab_sho25, here::here(paste0('data/GLMMs/AllDates/Data/ab_sho25_', Sys.Date(), '.rds')))
 
 
 ### ABAP - 25 to 75mm -------------------------------------------------------
 
 ab_sh25to75 <- ab_sho25[ShellHeight_mm < 75, ]
 
-saveRDS(ab_sh25to75, here::here(paste0('GLMMs/AllDates/Data/ab_sh25to75_', Sys.Date(), '.rds')))
+saveRDS(ab_sh25to75, here::here(paste0('data/GLMMs/AllDates/Data/ab_sh25to75_', Sys.Date(), '.rds')))
 
-#ab_sh25to75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ RelYear + QuadSize_m2 + (1 | UniversalReefID), data = subset(ab_sh25to75, ab_sh25to75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4536, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/ab_sh25to75_glmm4b.rds")
-#ab_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(ab_sh25to75, ab_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7712, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/ab_sh25to75_glmm_hist2.rds")
+#ab_sh25to75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ RelYear + QuadSize_m2 + (1 | UniversalReefID), data = subset(ab_sh25to75, ab_sh25to75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4536, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/ab_sh25to75_glmm4b.rds")
+#ab_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(ab_sh25to75, ab_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7712, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/ab_sh25to75_glmm_hist2.rds")
 
 # Create model results tables and save diagnostic plots
 data1 <- ab_sh25to75
@@ -1397,10 +1619,10 @@ models1 <- NULL
 
 ab_sho75 <- ab_sho25[ShellHeight_mm >= 75, ]
 
-saveRDS(ab_sho75, here::here(paste0('GLMMs/AllDates/Data/ab_sho75_', Sys.Date(), '.rds')))
+saveRDS(ab_sho75, here::here(paste0('data/GLMMs/AllDates/Data/ab_sho75_', Sys.Date(), '.rds')))
 
-#ab_sho75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + Subtidal + (1 | UniversalReefID), data = subset(ab_sho75, ab_sho75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/ab_sho75_glmm4c.rds")
-ab_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(ab_sho75, ab_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 1115, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/ab_sho75_glmm_hist2.rds")
+#ab_sho75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + Subtidal + (1 | UniversalReefID), data = subset(ab_sho75, ab_sho75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/ab_sho75_glmm4c.rds")
+ab_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(ab_sho75, ab_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 1115, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/ab_sho75_glmm_hist2.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data2 <- ab_sho75
@@ -1416,17 +1638,17 @@ an_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
                         MA_plotlab == "Apalachicola National Estuarine Research Reserve_Natural" & 
                         QuadIdentifier %in% setdiff(oysterraw[!is.na(ShellHeight_mm) & ManagedAreaName == "Apalachicola National Estuarine Research Reserve", QuadIdentifier], exclude_samps), ]
 
-saveRDS(an_sho25, here::here(paste0('GLMMs/AllDates/Data/an_sho25_', Sys.Date(), '.rds')))
+saveRDS(an_sho25, here::here(paste0('data/GLMMs/AllDates/Data/an_sho25_', Sys.Date(), '.rds')))
 
 
 ### ANERR - 25 to 75mm -------------------------------------------------------
 
 an_sh25to75 <- subset(an_sho25, an_sho25$ShellHeight_mm < 75)
 
-saveRDS(an_sh25to75, here::here(paste0('GLMMs/AllDates/Data/an_sh25to75_', Sys.Date(), '.rds')))
+saveRDS(an_sh25to75, here::here(paste0('data/GLMMs/AllDates/Data/an_sh25to75_', Sys.Date(), '.rds')))
 
-an_sh25to75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ RelYear + QuadSize_m2 + (1 | UniversalReefID), data = subset(an_sh25to75, an_sh25to75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 5699, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/an_sh25to75_glmm4b.rds")
-#an_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(an_sh25to75, an_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 8848, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/an_sh25to75_glmm_hist3.rds")
+an_sh25to75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ RelYear + QuadSize_m2 + (1 | UniversalReefID), data = subset(an_sh25to75, an_sh25to75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 5699, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/an_sh25to75_glmm4b.rds")
+#an_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(an_sh25to75, an_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 8848, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/an_sh25to75_glmm_hist3.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data1 <- an_sh25to75
@@ -1438,10 +1660,10 @@ models1 <- list(an_sh25to75_glmm)
 
 an_sho75 <- an_sho25[ShellHeight_mm >= 75, ]
 
-saveRDS(an_sho75, here::here(paste0('GLMMs/AllDates/Data/an_sho75_', Sys.Date(), '.rds')))
+saveRDS(an_sho75, here::here(paste0('data/GLMMs/AllDates/Data/an_sho75_', Sys.Date(), '.rds')))
 
-an_sho75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + (1 | UniversalReefID), data = subset(an_sho75, an_sho75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 3639, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/an_sho75_glmm4b.rds")
-an_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(an_sho75, an_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 1313, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/an_sho75_glmm_hist3.rds")
+an_sho75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + (1 | UniversalReefID), data = subset(an_sho75, an_sho75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 3639, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/an_sho75_glmm4b.rds")
+an_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(an_sho75, an_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 1313, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/an_sho75_glmm_hist3.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data2 <- an_sho75
@@ -1456,7 +1678,7 @@ modresultssh(data1, models1, data2, models2, "Size class", meplotzoom = FALSE)
 #                         ShellHeight_mm >= 25 &
 #                         MA_plotlab == "Big Bend Seagrasses Aquatic Preserve_Natural", ]
 # 
-# saveRDS(bbs_sho25, here::here(paste0('GLMMs/AllDates/Data/bbs_sho25_', Sys.Date(), '.rds')))
+# saveRDS(bbs_sho25, here::here(paste0('data/GLMMs/AllDates/Data/bbs_sho25_', Sys.Date(), '.rds')))
 # 
 # 
 # 
@@ -1464,10 +1686,10 @@ modresultssh(data1, models1, data2, models2, "Size class", meplotzoom = FALSE)
 # 
 # bbs_sh25to75 <- subset(bbs_sho25, bbs_sho25$ShellHeight_mm < 75)
 # 
-# saveRDS(bbs_sh25to75, here::here(paste0('GLMMs/AllDates/Data/bbs_sh25to75_', Sys.Date(), '.rds')))
+# saveRDS(bbs_sh25to75, here::here(paste0('data/GLMMs/AllDates/Data/bbs_sh25to75_', Sys.Date(), '.rds')))
 # 
-# bbs_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = bbs_sh25to75, family = gaussian, prior = c(set_prior("normal(125.4, 80)", class = "meanme"), set_prior("normal(49.59, 100)", class = "sdme"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7423, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sh25to75_glmm_hist3.rds")
-# bbs_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = bbs_sh25to75, family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 20), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7423, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sh25to75_glmm_hist3.rds")
+# bbs_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = bbs_sh25to75, family = gaussian, prior = c(set_prior("normal(125.4, 80)", class = "meanme"), set_prior("normal(49.59, 100)", class = "sdme"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7423, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/bbs_sh25to75_glmm_hist3.rds")
+# bbs_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = bbs_sh25to75, family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 20), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 7423, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/bbs_sh25to75_glmm_hist3.rds")
 # 
 # # Create model results tables and save diagnostic plots and marginal effects plots
 # data <- bbs_sh25to75
@@ -1479,9 +1701,9 @@ modresultssh(data1, models1, data2, models2, "Size class", meplotzoom = FALSE)
 # 
 # bbs_sho75 <- bbs_sho25[ShellHeight_mm >= 75, ]
 # 
-# saveRDS(bbs_sho75, here::here(paste0('GLMMs/AllDates/Data/bbs_sho75_', Sys.Date(), '.rds')))
+# saveRDS(bbs_sho75, here::here(paste0('data/GLMMs/AllDates/Data/bbs_sho75_', Sys.Date(), '.rds')))
 # 
-# bbs_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(bbs_sho75, bbs_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4118, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/bbs_sho75_glmm_hist3.rds")
+# bbs_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(bbs_sho75, bbs_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4118, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/bbs_sho75_glmm_hist3.rds")
 # 
 # # Create model results tables and save diagnostic plots and marginal effects plots
 # data <- bbs_sho75
@@ -1495,7 +1717,7 @@ eb_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
                         ShellHeight_mm >= 25 &
                         MA_plotlab == "Estero Bay Aquatic Preserve_Natural", ]
 
-saveRDS(eb_sho25, here::here(paste0('GLMMs/AllDates/Data/eb_sho25_', Sys.Date(), '.rds')))
+saveRDS(eb_sho25, here::here(paste0('data/GLMMs/AllDates/Data/eb_sho25_', Sys.Date(), '.rds')))
 
 
 
@@ -1503,10 +1725,10 @@ saveRDS(eb_sho25, here::here(paste0('GLMMs/AllDates/Data/eb_sho25_', Sys.Date(),
 
 eb_sh25to75 <- subset(eb_sho25, eb_sho25$ShellHeight_mm < 75)
 
-saveRDS(eb_sh25to75, here::here(paste0('GLMMs/AllDates/Data/eb_sh25to75_', Sys.Date(), '.rds')))
+saveRDS(eb_sh25to75, here::here(paste0('data/GLMMs/AllDates/Data/eb_sh25to75_', Sys.Date(), '.rds')))
 
-eb_sh25to75_glmm <- brm(formula = ShellHeight_mm ~ RelYear + QuadSize_m2 + (0 + RelYear | UniversalReefID), data = subset(eb_sh25to75, eb_sh25to75$LiveDate_Qualifier == "Exact"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 6881, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/eb_sh25to75_glmm5.rds")
-eb_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(eb_sh25to75, eb_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 20), iter = 3000, warmup = 1000, chains = 4, thin = 3, inits = 30, seed = 6874, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/eb_sh25to75_glmm_hist3.rds")
+eb_sh25to75_glmm <- brm(formula = ShellHeight_mm ~ RelYear + QuadSize_m2 + (0 + RelYear | UniversalReefID), data = subset(eb_sh25to75, eb_sh25to75$LiveDate_Qualifier == "Exact"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 6881, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/eb_sh25to75_glmm5.rds")
+eb_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(eb_sh25to75, eb_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 20), iter = 3000, warmup = 1000, chains = 4, thin = 3, inits = 30, seed = 6874, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/eb_sh25to75_glmm_hist3.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data1 <- eb_sh25to75
@@ -1518,10 +1740,10 @@ models1 <- list(eb_sh25to75_glmm, eb_sh25to75_glmm_hist)
 
 eb_sho75 <- eb_sho25[ShellHeight_mm >= 75, ]
 
-saveRDS(eb_sho75, here::here(paste0('GLMMs/AllDates/Data/eb_sho75_', Sys.Date(), '.rds')))
+saveRDS(eb_sho75, here::here(paste0('data/GLMMs/AllDates/Data/eb_sho75_', Sys.Date(), '.rds')))
 
-eb_sho75_glmm <- brm(formula = ShellHeight_mm ~ RelYear + (1 | UniversalReefID), data = subset(eb_sho75, eb_sho75$LiveDate_Qualifier == "Exact"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 3138, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/eb_sho75_glmm4.rds")
-eb_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(eb_sho75, eb_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 20), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4127, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/eb_sho75_glmm_hist3.rds")
+eb_sho75_glmm <- brm(formula = ShellHeight_mm ~ RelYear + (1 | UniversalReefID), data = subset(eb_sho75, eb_sho75$LiveDate_Qualifier == "Exact"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 3138, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/eb_sho75_glmm4.rds")
+eb_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(eb_sho75, eb_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 20), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4127, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/eb_sho75_glmm_hist3.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data2 <- eb_sho75
@@ -1535,17 +1757,17 @@ grm_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
                          ShellHeight_mm >= 25 &
                          MA_plotlab == "Guana River Marsh Aquatic Preserve_Natural", ]
 
-saveRDS(grm_sho25, here::here(paste0('GLMMs/AllDates/Data/grm_sho25_', Sys.Date(), '.rds')))
+saveRDS(grm_sho25, here::here(paste0('data/GLMMs/AllDates/Data/grm_sho25_', Sys.Date(), '.rds')))
 
 
 ### GRMAP - 25 to 75mm -------------------------------------------------------
 
 grm_sh25to75 <- subset(grm_sho25, grm_sho25$ShellHeight_mm < 75)
 
-saveRDS(grm_sh25to75, here::here(paste0('GLMMs/AllDates/Data/grm_sh25to75_', Sys.Date(), '.rds')))
+saveRDS(grm_sh25to75, here::here(paste0('data/GLMMs/AllDates/Data/grm_sh25to75_', Sys.Date(), '.rds')))
 
-grm_sh25to75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ RelYear + NumberMeasured_n + (1 | UniversalReefID), data = subset(grm_sh25to75, grm_sh25to75$LiveDate_Qualifier == "Exact"), family = gaussian, cores = 4, control= list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 30, thin = 3, seed = 3457, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/grm_sh25to75_glmm4.rds")
-grm_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(grm_sh25to75, grm_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, prior = c(set_prior("normal(6.25, 7)", class = "meanme", coef = "meRelYear"), set_prior("normal(15.27, 5)", class = "sdme", coef = "meRelYear"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 3455, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/grm_sh25to75_glmm_hist3c.rds")
+grm_sh25to75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ RelYear + NumberMeasured_n + (1 | UniversalReefID), data = subset(grm_sh25to75, grm_sh25to75$LiveDate_Qualifier == "Exact"), family = gaussian, cores = 4, control= list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 30, thin = 3, seed = 3457, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/grm_sh25to75_glmm4.rds")
+grm_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(grm_sh25to75, grm_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, prior = c(set_prior("normal(6.25, 7)", class = "meanme", coef = "meRelYear"), set_prior("normal(15.27, 5)", class = "sdme", coef = "meRelYear"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 3455, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/grm_sh25to75_glmm_hist3c.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data1 <- grm_sh25to75
@@ -1557,10 +1779,10 @@ models1 <- list(grm_sh25to75_glmm, grm_sh25to75_glmm_hist)
 
 grm_sho75 <- grm_sho25[ShellHeight_mm >= 75, ]
 
-saveRDS(grm_sho75, here::here(paste0('GLMMs/AllDates/Data/grm_sho75_', Sys.Date(), '.rds')))
+saveRDS(grm_sho75, here::here(paste0('data/GLMMs/AllDates/Data/grm_sho75_', Sys.Date(), '.rds')))
 
-grm_sho75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + NumberMeasured_n + (1 | UniversalReefID), data = subset(grm_sho75, grm_sho75$LiveDate_Qualifier == "Exact"), family = gaussian, cores = 4, control= list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 30, thin = 3, seed = 4352, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/grm_sho75_glmm4.rds")
-grm_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (0 + me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) | UniversalReefID), data = subset(grm_sho75, grm_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, prior = c(set_prior("normal(7.36, 6)", class = "meanme"), set_prior("normal(15.54, 4)", class = "sdme"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 6784, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/grm_sho75_glmm_hist4.rds")
+grm_sho75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + NumberMeasured_n + (1 | UniversalReefID), data = subset(grm_sho75, grm_sho75$LiveDate_Qualifier == "Exact"), family = gaussian, cores = 4, control= list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 30, thin = 3, seed = 4352, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/grm_sho75_glmm4.rds")
+grm_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (0 + me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) | UniversalReefID), data = subset(grm_sho75, grm_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, prior = c(set_prior("normal(7.36, 6)", class = "meanme"), set_prior("normal(15.54, 4)", class = "sdme"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 6784, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/grm_sho75_glmm_hist4.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data2 <- grm_sho75
@@ -1575,17 +1797,17 @@ gtmn_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
                           ShellHeight_mm >= 25 &
                           MA_plotlab == "Guana Tolomato Matanzas National Estuarine Research Reserve_Natural", ]
 
-saveRDS(gtmn_sho25, here::here(paste0('GLMMs/AllDates/Data/gtmn_sho25_', Sys.Date(), '.rds')))
+saveRDS(gtmn_sho25, here::here(paste0('data/GLMMs/AllDates/Data/gtmn_sho25_', Sys.Date(), '.rds')))
 
 
 ### GTMNERR - 25 to 75mm -------------------------------------------------------
 
 gtmn_sh25to75 <- subset(gtmn_sho25, gtmn_sho25$ShellHeight_mm < 75)
 
-saveRDS(gtmn_sh25to75, here::here(paste0('GLMMs/AllDates/Data/gtmn_sh25to75_', Sys.Date(), '.rds')))
+saveRDS(gtmn_sh25to75, here::here(paste0('data/GLMMs/AllDates/Data/gtmn_sh25to75_', Sys.Date(), '.rds')))
 
-gtmn_sh25to75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ RelYear + NumberMeasured_n + Region.y + (1 | UniversalReefID), data = subset(gtmn_sh25to75, gtmn_sh25to75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 30, thin = 3, seed = 7844, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/gtmn_sh25to75_glmm5.rds")
-#gtmn_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + Region.y + (1 + RelYear | UniversalReefID), data = subset(gtmn_sh25to75, gtmn_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, prior = c(set_prior("normal(146,25)", class = "b"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.9, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 6625, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/gtmn_sh25to75_glmm_hist5.rds")
+gtmn_sh25to75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ RelYear + NumberMeasured_n + Region.y + (1 | UniversalReefID), data = subset(gtmn_sh25to75, gtmn_sh25to75$LiveDate_Qualifier != "Estimate"), family = gaussian, cores = 4, control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 30, thin = 3, seed = 7844, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/gtmn_sh25to75_glmm5.rds")
+#gtmn_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + Region.y + (1 + RelYear | UniversalReefID), data = subset(gtmn_sh25to75, gtmn_sh25to75$LiveDate_Qualifier == "Estimate"), family = gaussian, prior = c(set_prior("normal(146,25)", class = "b"), set_prior("cauchy(0,2)", class = "sd")), cores = 4, control= list(adapt_delta = 0.9, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 6625, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/gtmn_sh25to75_glmm_hist5.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data1 <- gtmn_sh25to75
@@ -1597,10 +1819,10 @@ models1 <- list(gtmn_sh25to75_glmm)
 
 gtmn_sho75 <- gtmn_sho25[ShellHeight_mm >= 75, ]
 
-saveRDS(gtmn_sho75, here::here(paste0('GLMMs/AllDates/Data/gtmn_sho75_', Sys.Date(), '.rds')))
+saveRDS(gtmn_sho75, here::here(paste0('data/GLMMs/AllDates/Data/gtmn_sho75_', Sys.Date(), '.rds')))
 
-gtmn_sho75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 75) ~ RelYear + NumberMeasured_n + Region.y + (0 + RelYear | UniversalReefID), data = subset(gtmn_sho75, gtmn_sho75$LiveDate_Qualifier != "Estimate"), family = gaussian, prior = c(set_prior("normal(171,10)", class = "b", coef = "RelYear"), set_prior("cauchy(0,2)")), cores = 4, control = list(adapt_delta = 0.99, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 30, thin = 3, seed = 5332, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/gtmn_sho75_glmm6.rds")
-gtmn_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + Region.y + (1 + RelYear | UniversalReefID), data = subset(gtmn_sho75, gtmn_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, prior = c(set_prior("normal(146,25)", class = "b", coef = "meRelYearSampleAge_StdevgrEQQuadIdentifier")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 4000, warmup = 1000, chains = 4, thin = 3, seed = 4688, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/gtmn_sho75_glmm_hist22.rds")
+gtmn_sho75_glmm <- brm(formula = ShellHeight_mm | trunc(lb = 75) ~ RelYear + NumberMeasured_n + Region.y + (0 + RelYear | UniversalReefID), data = subset(gtmn_sho75, gtmn_sho75$LiveDate_Qualifier != "Estimate"), family = gaussian, prior = c(set_prior("normal(171,10)", class = "b", coef = "RelYear"), set_prior("cauchy(0,2)")), cores = 4, control = list(adapt_delta = 0.99, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, inits = 30, thin = 3, seed = 5332, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/gtmn_sho75_glmm6.rds")
+gtmn_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + Region.y + (1 + RelYear | UniversalReefID), data = subset(gtmn_sho75, gtmn_sho75$LiveDate_Qualifier == "Estimate"), family = gaussian, prior = c(set_prior("normal(146,25)", class = "b", coef = "meRelYearSampleAge_StdevgrEQQuadIdentifier")), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 4000, warmup = 1000, chains = 4, thin = 3, seed = 4688, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/gtmn_sho75_glmm_hist22.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data2 <- gtmn_sho75
@@ -1615,16 +1837,16 @@ irvbfp_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
                             ShellHeight_mm >= 25 &
                             MA_plotlab == "Indian River-Vero Beach to Ft. Pierce Aquatic Preserve_Natural", ]
 
-saveRDS(irvbfp_sho25, here::here(paste0('GLMMs/AllDates/Data/irvbfp_sho25_', Sys.Date(), '.rds')))
+saveRDS(irvbfp_sho25, here::here(paste0('data/GLMMs/AllDates/Data/irvbfp_sho25_', Sys.Date(), '.rds')))
 
 
 ### IRVBFPAP - 25 to 75mm -------------------------------------------------------
 
 irvbfp_sh25to75 <- subset(irvbfp_sho25, irvbfp_sho25$ShellHeight_mm < 75)
 
-saveRDS(irvbfp_sh25to75, here::here(paste0('GLMMs/AllDates/Data/irvbfp_sh25to75_', Sys.Date(), '.rds')))
+saveRDS(irvbfp_sh25to75, here::here(paste0('data/GLMMs/AllDates/Data/irvbfp_sh25to75_', Sys.Date(), '.rds')))
 
-#irvbfp_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(irvbfp_sh25to75, irvbfp_sh25to75$LiveDate_Qualifier == "Estimate" & !is.na(irvbfp_sh25to75$RelYear)), family = gaussian, prior = set_prior("normal(113, 20)", class = "b", coef = "meRelYearSampleAge_StdevgrEQQuadIdentifier"), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 2258, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/irvbfp_sh25to75_glmm_hist3.rds")
+#irvbfp_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = subset(irvbfp_sh25to75, irvbfp_sh25to75$LiveDate_Qualifier == "Estimate" & !is.na(irvbfp_sh25to75$RelYear)), family = gaussian, prior = set_prior("normal(113, 20)", class = "b", coef = "meRelYearSampleAge_StdevgrEQQuadIdentifier"), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 2258, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/irvbfp_sh25to75_glmm_hist3.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data1 <- irvbfp_sh25to75
@@ -1636,9 +1858,9 @@ models1 <- NULL
 
 irvbfp_sho75 <- irvbfp_sho25[ShellHeight_mm >= 75, ]
 
-saveRDS(irvbfp_sho75, here::here(paste0('GLMMs/AllDates/Data/irvbfp_sho75_', Sys.Date(), '.rds')))
+saveRDS(irvbfp_sho75, here::here(paste0('data/GLMMs/AllDates/Data/irvbfp_sho75_', Sys.Date(), '.rds')))
 
-irvbfp_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + (1 | UniversalReefID), data = subset(irvbfp_sho75, irvbfp_sho75$LiveDate_Qualifier == "Estimate" & !is.na(irvbfp_sho75$RelYear)), family = gaussian, cores = 4, control= list(adapt_delta = 0.999, max_treedepth = 15), iter = 5000, warmup = 1000, chains = 4, inits = 75, thin = 3, seed = 5334, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/irvbfp_sho75_glmm_hist6.rds")
+irvbfp_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + (1 | UniversalReefID), data = subset(irvbfp_sho75, irvbfp_sho75$LiveDate_Qualifier == "Estimate" & !is.na(irvbfp_sho75$RelYear)), family = gaussian, cores = 4, control= list(adapt_delta = 0.999, max_treedepth = 15), iter = 5000, warmup = 1000, chains = 4, inits = 75, thin = 3, seed = 5334, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/irvbfp_sho75_glmm_hist6.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data2 <- irvbfp_sho75
@@ -1653,16 +1875,16 @@ lb_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
                         ShellHeight_mm >= 25 &
                         MA_plotlab == "Lemon Bay Aquatic Preserve_Natural", ]
 
-saveRDS(lb_sho25, here::here(paste0('GLMMs/AllDates/Data/lb_sho25_', Sys.Date(), '.rds')))
+saveRDS(lb_sho25, here::here(paste0('data/GLMMs/AllDates/Data/lb_sho25_', Sys.Date(), '.rds')))
 
 
 ### LBAP - 25 to 75mm -------------------------------------------------------
 
 lb_sh25to75 <- subset(lb_sho25, lb_sho25$ShellHeight_mm < 75)
 
-saveRDS(lb_sh25to75, here::here(paste0('GLMMs/AllDates/Data/lb_sh25to75_', Sys.Date(), '.rds')))
+saveRDS(lb_sh25to75, here::here(paste0('data/GLMMs/AllDates/Data/lb_sh25to75_', Sys.Date(), '.rds')))
 
-#lb_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = lb_sh25to75, family = gaussian, prior = set_prior("normal(53, 20)", class = "b", coef = "meRelYearSampleAge_StdevgrEQQuadIdentifier"), cores = 4, control= list(adapt_delta = 0.999, max_treedepth = 15), iter = 4000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 9112, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/lb_sh25to75_glmm_hist4.rds")
+#lb_sh25to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 25, ub = 75) ~ me(RelYear, SampleAge_Stdev, gr = QuadIdentifier) + (1 | UniversalReefID), data = lb_sh25to75, family = gaussian, prior = set_prior("normal(53, 20)", class = "b", coef = "meRelYearSampleAge_StdevgrEQQuadIdentifier"), cores = 4, control= list(adapt_delta = 0.999, max_treedepth = 15), iter = 4000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 9112, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/lb_sh25to75_glmm_hist4.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data1 <- lb_sh25to75
@@ -1674,9 +1896,9 @@ models1 <- NULL
 
 lb_sho75 <- lb_sho25[ShellHeight_mm >= 75, ]
 
-saveRDS(lb_sho75, here::here(paste0('GLMMs/AllDates/Data/lb_sho75_', Sys.Date(), '.rds')))
+saveRDS(lb_sho75, here::here(paste0('data/GLMMs/AllDates/Data/lb_sho75_', Sys.Date(), '.rds')))
 
-lb_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + (1 | UniversalReefID), data = lb_sho75, family = gaussian, cores = 4, control= list(adapt_delta = 0.999, max_treedepth = 20), iter = 5000, warmup = 1000, chains = 4, inits = 75, thin = 3, seed = 7419, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/lb_sho75_glmm_hist14.rds")
+lb_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear + (1 | UniversalReefID), data = lb_sho75, family = gaussian, cores = 4, control= list(adapt_delta = 0.999, max_treedepth = 20), iter = 5000, warmup = 1000, chains = 4, inits = 75, thin = 3, seed = 7419, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/lb_sho75_glmm_hist14.rds")
 
 #Important: note that time-averaging is not accounted for in the model fit for the data on shell height >75mm. The measurement error approach I was taking did not result in any models that converged, possibly because the combination of the data and degree of measurement error leads to multiple possible solutions. This means the model reported in this section makes the unrealistic assumption that the estimated sample ages are exactly correct.
 
@@ -1693,16 +1915,16 @@ smm_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
                          ShellHeight_mm >= 25 &
                          MA_plotlab == "St. Martins Marsh Aquatic Preserve_Natural", ]
 
-saveRDS(smm_sho25, here::here(paste0('GLMMs/AllDates/Data/smm_sho25_', Sys.Date(), '.rds')))
+saveRDS(smm_sho25, here::here(paste0('data/GLMMs/AllDates/Data/smm_sho25_', Sys.Date(), '.rds')))
 
 
 ### SMMAP - 35 to 75mm -------------------------------------------------------
 
 smm_sh35to75 <- subset(smm_sho25, smm_sho25$ShellHeight_mm > 35 & smm_sho25$ShellHeight_mm < 75)
 
-saveRDS(smm_sh35to75, here::here(paste0('GLMMs/AllDates/Data/smm_sh35to75_', Sys.Date(), '.rds')))
+saveRDS(smm_sh35to75, here::here(paste0('data/GLMMs/AllDates/Data/smm_sh35to75_', Sys.Date(), '.rds')))
 
-smm_sh35to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 35, ub = 75) ~ RelYear, data = subset(smm_sh35to75, smm_sh35to75$LiveDate_Qualifier == "Estimate" & !is.na(smm_sh35to75$RelYear)), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4449, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/smm_sh35to75_glmm_hist2.rds")
+smm_sh35to75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 35, ub = 75) ~ RelYear, data = subset(smm_sh35to75, smm_sh35to75$LiveDate_Qualifier == "Estimate" & !is.na(smm_sh35to75$RelYear)), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 4449, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/smm_sh35to75_glmm_hist2.rds")
 
 #Important: note that this analysis is focused on oyster specimens from surveys of archaeological middens and it assumes that the estimated sample ages are correct and that all specimens in a sample lived at the estimated age of the sample (i.e., time-averaging is not accounted for in the model), which is almost certainly not the case. Archaeological samples have an additional type of error that is not present for historical size class estimates from death assemblages (e.g., those from Program ID 5035), which is that they were gathered by humans, so they didn't die in-place; this means a single midden sample is possibly a mix of shells from oysters from multiple different reefs.
 
@@ -1716,9 +1938,9 @@ models1 <- list(smm_sh35to75_glmm_hist)
 
 smm_sho75 <- smm_sho25[ShellHeight_mm >= 75, ]
 
-saveRDS(smm_sho75, here::here(paste0('GLMMs/AllDates/Data/smm_sho75_', Sys.Date(), '.rds')))
+saveRDS(smm_sho75, here::here(paste0('data/GLMMs/AllDates/Data/smm_sho75_', Sys.Date(), '.rds')))
 
-smm_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear, data = subset(smm_sho75, smm_sho75$LiveDate_Qualifier == "Estimate" & !is.na(smm_sho75$RelYear)), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 6221, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/smm_sho75_glmm_hist2.rds")
+smm_sho75_glmm_hist <- brm(formula = ShellHeight_mm | trunc(lb = 75, ub = 250) ~ RelYear, data = subset(smm_sho75, smm_sho75$LiveDate_Qualifier == "Estimate" & !is.na(smm_sho75$RelYear)), family = gaussian, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 6221, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/smm_sho75_glmm_hist2.rds")
 
 #Important: note that this analysis is focused on oyster specimens from surveys of archaeological middens and it assumes that the estimated sample ages are correct and that all specimens in a sample lived at the estimated age of the sample (i.e., time-averaging is not accounted for in the model), which is almost certainly not the case. Archaeological samples have an additional type of error that is not present for historical size class estimates from death assemblages (e.g., those from Program ID 5035), which is that they were gathered by humans, so they didn't die in-place; this means a single midden sample is possibly a mix of shells from oysters from multiple different reefs.
 
@@ -2016,9 +2238,9 @@ colnames(den_o75_sum)[2] <- "Year"
 
 ab_n <- subset(oysterraw_den, oysterraw_den$MA_plotlab == "Apalachicola Bay Aquatic Preserve_Natural")
 ab_n[, Density_m2 := as.integer(round(Density_m2))]
-saveRDS(ab_n, here::here(paste0('GLMMs/AllDates/Data/ab_n_', Sys.Date(), '.rds')))
+saveRDS(ab_n, here::here(paste0('data/GLMMs/AllDates/Data/ab_n_', Sys.Date(), '.rds')))
 
-ab_den_glmm <- brm(formula = Density_m2 ~ RelYear + (0 + RelYear | UniversalReefID), data = ab_n, family = negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 5512, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/ab_den_glmm9.rds")
+ab_den_glmm <- brm(formula = Density_m2 ~ RelYear + (0 + RelYear | UniversalReefID), data = ab_n, family = negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 5512, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/ab_den_glmm9.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- ab_n
@@ -2030,9 +2252,9 @@ modresults(data, models, "Density", meplotzoom = FALSE)
 
 an_n <- subset(oysterraw_den, oysterraw_den$MA_plotlab == "Apalachicola National Estuarine Research Reserve_Natural")
 an_n[, Density_m2 := as.integer(round(Density_m2))]
-saveRDS(an_n, here::here(paste0('GLMMs/AllDates/Data/an_n_', Sys.Date(), '.rds')))
+saveRDS(an_n, here::here(paste0('data/GLMMs/AllDates/Data/an_n_', Sys.Date(), '.rds')))
 
-an_den_glmm <- brm(formula = Density_m2 ~ RelYear + Subtidal + (0 + RelYear | UniversalReefID), data = an_n, family = zero_inflated_negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 4677, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/an_den_glmm11.rds")
+an_den_glmm <- brm(formula = Density_m2 ~ RelYear + Subtidal + (0 + RelYear | UniversalReefID), data = an_n, family = zero_inflated_negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 4677, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/an_den_glmm11.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- an_n
@@ -2044,9 +2266,9 @@ modresults(data, models, "Density", meplotzoom = FALSE)
 
 eb_n <- subset(oysterraw_den, oysterraw_den$MA_plotlab == "Estero Bay Aquatic Preserve_Natural")
 eb_n[, Density_m2 := as.integer(round(Density_m2))]
-saveRDS(eb_n, here::here(paste0('GLMMs/AllDates/Data/eb_n_', Sys.Date(), '.rds')))
+saveRDS(eb_n, here::here(paste0('data/GLMMs/AllDates/Data/eb_n_', Sys.Date(), '.rds')))
 
-eb_den_glmm <- brm(formula = Density_m2 ~ RelYear + (1 | UniversalReefID), data = eb_n, family = zero_inflated_negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 1298, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/eb_den_glmm10.rds")
+eb_den_glmm <- brm(formula = Density_m2 ~ RelYear + (1 | UniversalReefID), data = eb_n, family = zero_inflated_negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 1298, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/eb_den_glmm10.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- eb_n
@@ -2058,9 +2280,9 @@ modresults(data, models, "Density", meplotzoom = FALSE)
 
 grm_n <- subset(oysterraw_den, oysterraw_den$MA_plotlab == "Guana River Marsh Aquatic Preserve_Natural")
 grm_n[, Density_m2 := as.integer(round(Density_m2))]
-saveRDS(grm_n, here::here(paste0('GLMMs/AllDates/Data/grm_n_', Sys.Date(), '.rds')))
+saveRDS(grm_n, here::here(paste0('data/GLMMs/AllDates/Data/grm_n_', Sys.Date(), '.rds')))
 
-grm_den_glmm <- brm(formula = Density_m2 ~ RelYear + (1 | UniversalReefID), data = grm_n, family = zero_inflated_negbinomial, cores = 2, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 9875, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/grm_den_glmm6.rds")
+grm_den_glmm <- brm(formula = Density_m2 ~ RelYear + (1 | UniversalReefID), data = grm_n, family = zero_inflated_negbinomial, cores = 2, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 9875, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/grm_den_glmm6.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- grm_n
@@ -2072,9 +2294,9 @@ modresults(data, models, "Density", meplotzoom = FALSE)
 
 gtmn_n <- subset(oysterraw_den, oysterraw_den$MA_plotlab == "Guana Tolomato Matanzas National Estuarine Research Reserve_Natural")
 gtmn_n[, Density_m2 := as.integer(round(Density_m2))]
-saveRDS(gtmn_n, here::here(paste0('GLMMs/AllDates/Data/gtmn_n_', Sys.Date(), '.rds')))
+saveRDS(gtmn_n, here::here(paste0('data/GLMMs/AllDates/Data/gtmn_n_', Sys.Date(), '.rds')))
 
-gtmn_den_glmm <- brm(formula = Density_m2 ~ RelYear + Region.y + RelYear:Region.y + (1 | UniversalReefID), data = gtmn_n, family = zero_inflated_negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 3647, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/gtmn_den_glmm18.rds")
+gtmn_den_glmm <- brm(formula = Density_m2 ~ RelYear + Region.y + RelYear:Region.y + (1 | UniversalReefID), data = gtmn_n, family = zero_inflated_negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 3647, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/gtmn_den_glmm18.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- gtmn_n
@@ -2086,9 +2308,9 @@ modresults(data, models, "Density", meplotzoom = FALSE)
 
 lb_n <- subset(oysterraw_den, oysterraw_den$MA_plotlab == "Lemon Bay Aquatic Preserve_Natural")
 lb_n[, Density_m2 := as.integer(round(Density_m2))]
-saveRDS(lb_n, here::here(paste0('GLMMs/AllDates/Data/lb_n_', Sys.Date(), '.rds')))
+saveRDS(lb_n, here::here(paste0('data/GLMMs/AllDates/Data/lb_n_', Sys.Date(), '.rds')))
 
-lb_den_glmm <- brm(formula = Density_m2 ~ RelYear + (1 | ReefIdentifier), data = lb_n, family = zero_inflated_negbinomial, cores = 2, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 4612, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/lb_den_glmm6.rds")
+lb_den_glmm <- brm(formula = Density_m2 ~ RelYear + (1 | ReefIdentifier), data = lb_n, family = zero_inflated_negbinomial, cores = 2, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 4612, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/lb_den_glmm6.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- lb_n
@@ -2103,9 +2325,9 @@ oysterraw_den[str_detect(MA_plotlab, "Pine Island Sound"), `:=` (MA_plotlab = if
 pis_n <- subset(oysterraw_den, oysterraw_den$MA_plotlab == "Pine Island Sound Aquatic Preserve_Natural")
 pis_n[, `:=` (Density_m2 = as.integer(round(Density_m2)),
               Treatment = ifelse(UniversalReefID == 170711, "Reference", "Control"))]
-saveRDS(pis_n, here::here(paste0('GLMMs/AllDates/Data/pis_n_', Sys.Date(), '.rds')))
+saveRDS(pis_n, here::here(paste0('data/GLMMs/AllDates/Data/pis_n_', Sys.Date(), '.rds')))
 
-pis_den_glmm <- brm(formula = Density_m2 ~ RelYear + (0 + RelYear | UniversalReefID), data = pis_n, family = zero_inflated_negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 5243, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/pis_den_glmm9.rds")
+pis_den_glmm <- brm(formula = Density_m2 ~ RelYear + (0 + RelYear | UniversalReefID), data = pis_n, family = zero_inflated_negbinomial, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 5243, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/pis_den_glmm9.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- pis_n
@@ -2118,9 +2340,9 @@ modresults(data, models, "Density", meplotzoom = FALSE)
 pisr_n <- subset(oysterraw_den, oysterraw_den$MA_plotlab == "Pine Island Sound Aquatic Preserve_Restored")
 pisr_n[, `:=` (Density_m2 = as.integer(round(Density_m2)),
                Treatment = ifelse(UniversalReefID == 170711, "Reference", "Control"))]
-saveRDS(pisr_n, here::here(paste0('GLMMs/AllDates/Data/pisr_n_', Sys.Date(), '.rds')))
+saveRDS(pisr_n, here::here(paste0('data/GLMMs/AllDates/Data/pisr_n_', Sys.Date(), '.rds')))
 
-pisr_den_glmm <- brm(formula = Density_m2 ~ RelYear + QuadSize_m2, data = pisr_n, family = zero_inflated_negbinomial, prior = set_prior("uniform(0,5)", class = "b", lb = 0, ub = 5), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 8441, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/pisr_den_glmm12.rds")
+pisr_den_glmm <- brm(formula = Density_m2 ~ RelYear + QuadSize_m2, data = pisr_n, family = zero_inflated_negbinomial, prior = set_prior("uniform(0,5)", class = "b", lb = 0, ub = 5), cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 8441, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/pisr_den_glmm12.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- pisr_n
@@ -2192,7 +2414,7 @@ pct_all_sum <- summarySE(oysterraw_pct, measurevar = 'PercentLive_pct', groupvar
 ## Guana River Marsh Aquatic Preserve_Natural ----------------------------------------
 
 grm_p <- subset(oysterraw_pct, oysterraw_pct$MA_plotlab == "Guana River Marsh Aquatic Preserve_Natural")
-saveRDS(grm_p, here::here(paste0('GLMMs/AllDates/Data/grm_p_', Sys.Date(), '.rds')))
+saveRDS(grm_p, here::here(paste0('data/GLMMs/AllDates/Data/grm_p_', Sys.Date(), '.rds')))
 
 grm_p_binom <- data.table(ProgramID = character(), ProgramLocationID = character(), QuadIdentifier = character(), Year = integer(), ManagedAreaName = character(), PercentLiveMethod = character(), UniversalReefID = factor(), Region.y = character(), MA_plotlab = character(), RelYear = integer(), PercentLive_pct = numeric(), LiveObs = logical())
 for(i in 1:nrow(grm_p)){
@@ -2202,9 +2424,9 @@ for(i in 1:nrow(grm_p)){
   dat <- rbind(dat_l, dat_nl)
   grm_p_binom <- rbind(grm_p_binom, dat)
 }
-saveRDS(grm_p_binom, here::here(paste0('GLMMs/AllDates/Data/grm_p_binom_', Sys.Date(), '.rds')))
+saveRDS(grm_p_binom, here::here(paste0('data/GLMMs/AllDates/Data/grm_p_binom_', Sys.Date(), '.rds')))
 
-grm_pct_glmm <- brm(formula = LiveObs ~ RelYear + (1 | UniversalReefID), data = grm_p_binom, family = bernoulli, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 4331, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/grm_pct_glmm3.rds")
+grm_pct_glmm <- brm(formula = LiveObs ~ RelYear + (1 | UniversalReefID), data = grm_p_binom, family = bernoulli, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 4331, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/grm_pct_glmm3.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- grm_p
@@ -2215,7 +2437,7 @@ modresults(data, models, "Percent live", meplotzoom = FALSE)
 ## Guana Tolomato Matanzas National Estuarine Research Reserve_Natural ----------------------------------------
 
 gtmn_p <- subset(oysterraw_pct, oysterraw_pct$MA_plotlab == "Guana Tolomato Matanzas National Estuarine Research Reserve_Natural")
-saveRDS(gtmn_p, here::here(paste0('GLMMs/AllDates/Data/gtmn_p_', Sys.Date(), '.rds')))
+saveRDS(gtmn_p, here::here(paste0('data/GLMMs/AllDates/Data/gtmn_p_', Sys.Date(), '.rds')))
 
 gtmn_p_binom <- data.table(ProgramID = character(), ProgramLocationID = character(), QuadIdentifier = character(), Year = integer(), ManagedAreaName = character(), PercentLiveMethod = character(), UniversalReefID = factor(), Region.y = character(), MA_plotlab = character(), RelYear = integer(), PercentLive_pct = numeric(), LiveObs = logical())
 for(i in 1:nrow(gtmn_p)){
@@ -2225,9 +2447,9 @@ for(i in 1:nrow(gtmn_p)){
   dat <- rbind(dat_l, dat_nl)
   gtmn_p_binom <- rbind(gtmn_p_binom, dat)
 }
-saveRDS(gtmn_p_binom, here::here(paste0('GLMMs/AllDates/Data/gtmn_p_binom_', Sys.Date(), '.rds')))
+saveRDS(gtmn_p_binom, here::here(paste0('data/GLMMs/AllDates/Data/gtmn_p_binom_', Sys.Date(), '.rds')))
 
-gtmn_pct_glmm <- brm(formula = LiveObs ~ RelYear + Region.y + RelYear:Region.y + (1 | UniversalReefID), data = gtmn_p_binom, family = bernoulli, cores = 4, control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 8553, backend = "cmdstanr", threads = threading(3), file = "GLMMs/AllDates/gtmn_pct_glmm6.rds")
+gtmn_pct_glmm <- brm(formula = LiveObs ~ RelYear + Region.y + RelYear:Region.y + (1 | UniversalReefID), data = gtmn_p_binom, family = bernoulli, cores = 4, control = list(adapt_delta = 0.8, max_treedepth = 10), iter = 3000, warmup = 1000, chains = 4, thin = 3, seed = 8553, backend = "cmdstanr", threads = threading(3), file = "data/GLMMs/AllDates/gtmn_pct_glmm6.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- gtmn_p
@@ -2239,9 +2461,9 @@ models <- list(gtmn_pct_glmm)
 
 lb_p <- subset(oysterraw_pct, oysterraw_pct$MA_plotlab == "Lemon Bay Aquatic Preserve_Natural")
 lb_p[, PercentLive_dec := PercentLive_pct/100] #PercentLiveMethod == "Percent" for Lemon Bay program(s) with sufficient data, so cannot be modeled as binomial
-saveRDS(lb_p, here::here(paste0('GLMMs/AllDates/Data/lb_p_', Sys.Date(), '.rds')))
+saveRDS(lb_p, here::here(paste0('data/GLMMs/AllDates/Data/lb_p_', Sys.Date(), '.rds')))
 
-lb_pct_glmm <- brm(formula = PercentLive_dec ~ RelYear + (0 + RelYear | ReefIdentifier), data = subset(lb_p, lb_p$PercentLive_dec > 0), family = Beta, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 8465, backend = "cmdstanr", threads = threading(2), file = "GLMMs/AllDates/lb_pct_glmm6.rds")
+lb_pct_glmm <- brm(formula = PercentLive_dec ~ RelYear + (0 + RelYear | ReefIdentifier), data = subset(lb_p, lb_p$PercentLive_dec > 0), family = Beta, cores = 4, control= list(adapt_delta = 0.99, max_treedepth = 15), iter = 3000, warmup = 1000, chains = 4, inits = 0, thin = 3, seed = 8465, backend = "cmdstanr", threads = threading(2), file = "data/GLMMs/AllDates/lb_pct_glmm6.rds")
 
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- lb_p
