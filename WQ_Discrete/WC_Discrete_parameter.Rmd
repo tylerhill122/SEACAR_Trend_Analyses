@@ -83,9 +83,11 @@ After filtering, the amount of data impacted by the H (for dissolved oxygen & pH
 
 ```{r filtering}
 data <- data[!is.na(data$ResultValue),]
+data$ActivityType <- gsub("Sample", "Lab", data$ActivityType)
 
-if(param_name=="Chlorophyll_a_uncorrected_for_pheophytin" |
-   param_name=="Salinity" | param_name=="Turbidity"){
+if((param_name=="Chlorophyll_a_uncorrected_for_pheophytin" |
+   param_name=="Salinity" | param_name=="Total_Suspended_Solids_TSS" |
+   param_name=="Turbidity") & activity!="All"){
    data <- data[grep(activity, data$ActivityType[!is.na(data$ActivityType)]),]
 }
 
@@ -94,7 +96,7 @@ if(depth=="Bottom"){
       data$RelativeDepth=="Surface"])] <- "Bottom"
 }
 
-if(param_name!="Secchi_Depth"){
+if(param_name!="Secchi_Depth" & depth!="All"){
    data <- data[!is.na(data$RelativeDepth),]
    data <- data[data$RelativeDepth==depth,]
 }
