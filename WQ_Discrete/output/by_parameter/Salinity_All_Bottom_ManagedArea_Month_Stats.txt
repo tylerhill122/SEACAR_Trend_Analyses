@@ -1,0 +1,444 @@
+AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
+1|Alligator Harbor Aquatic Preserve|1|Salinity|Bottom|All|173|24.1|35.4|31.3|31.6597687861272|2.28409132961957|95, 5002
+1|Alligator Harbor Aquatic Preserve|2|Salinity|Bottom|All|362|26.9|34.5|31|31.0827624309392|1.50271521342425|5002
+1|Alligator Harbor Aquatic Preserve|3|Salinity|Bottom|All|234|28.3|33.5|31.6|31.284188034188|1.03727005461844|95, 557, 5002
+1|Alligator Harbor Aquatic Preserve|4|Salinity|Bottom|All|556|24|36.4|31.4|31.1969064748201|2.22414955065295|95, 5002
+1|Alligator Harbor Aquatic Preserve|5|Salinity|Bottom|All|536|26.9|37.6|32.4|31.9623507462687|2.29893816938465|95, 5002
+1|Alligator Harbor Aquatic Preserve|6|Salinity|Bottom|All|717|22.5|40|32.4|31.8460251046025|3.00835024379028|557, 558, 5002
+1|Alligator Harbor Aquatic Preserve|7|Salinity|Bottom|All|576|23.2|37.5|31.6|30.5818923611111|3.4403049504182|557, 558, 5002
+1|Alligator Harbor Aquatic Preserve|8|Salinity|Bottom|All|352|23.6|35|30.2|29.7222159090909|2.77002898952756|95, 558, 5002
+1|Alligator Harbor Aquatic Preserve|9|Salinity|Bottom|All|575|23.7|35.9|30.3|30.0476869565217|2.9816085571792|69, 557, 5002
+1|Alligator Harbor Aquatic Preserve|10|Salinity|Bottom|All|382|25.6|37.7|32.6|31.9267015706806|2.74152841827082|5002
+1|Alligator Harbor Aquatic Preserve|11|Salinity|Bottom|All|145|29.9|33.5|31|31.5|1.25576448605797|69, 5002
+1|Alligator Harbor Aquatic Preserve|12|Salinity|Bottom|All|256|27.9|35.7|31.1|31.34765625|1.32179111065103|5002
+2|Apalachicola Bay Aquatic Preserve|1|Salinity|Bottom|All|2004|0.04|36.4|17.1|16.3526946107784|9.6111302762355|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|2|Salinity|Bottom|All|2097|0|36.3|15.2|15.0915593705293|9.40800140109497|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|3|Salinity|Bottom|All|2768|0.03|38.7|12.3|13.6555960982659|10.2051461258929|69, 95, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|4|Salinity|Bottom|All|2242|0|36.8|13.25|15.0096253345227|10.2037370219215|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|5|Salinity|Bottom|All|2151|0.1|37.2|20.5|19.5303393770339|9.43096260968279|69, 129, 355, 557, 5002
+2|Apalachicola Bay Aquatic Preserve|6|Salinity|Bottom|All|2593|0|39.9|21.3|20.2823370613189|9.65246770959648|69, 119, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|7|Salinity|Bottom|All|3387|0.1|39|22.2|20.8013906111603|9.63065552272879|69, 115, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|8|Salinity|Bottom|All|3444|0.1|40.3|20.6|19.8121225319396|9.10014368559889|69, 129, 355, 5002, 5071
+2|Apalachicola Bay Aquatic Preserve|9|Salinity|Bottom|All|2406|0.1|36.3|23|22.0032252701579|7.64543678863027|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|10|Salinity|Bottom|All|1868|0.1|38.3|22.86|22.1070556745182|6.80416225549047|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|11|Salinity|Bottom|All|1802|0.06|37.1|21.05|20.1253940066593|7.46357974684838|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|12|Salinity|Bottom|All|1585|0.05|37.54|19.4|18.7766056782334|8.79151988742004|69, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|1|Salinity|Bottom|All|3386|0.04|37.43|16.4|15.8803130537507|9.53779126610528|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|2|Salinity|Bottom|All|3417|0|36.3|14.4|14.6536172080773|9.41045586844879|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|3|Salinity|Bottom|All|4662|0|38.7|14.3|14.5360489060489|9.43771509040312|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|4|Salinity|Bottom|All|3796|0|36.8|14.1|15.2343651211802|9.87591331004351|69, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|5|Salinity|Bottom|All|3163|0.05|37.2|20.8|19.963863420803|8.82498426674793|69, 95, 129, 355, 557, 5002
+3|Apalachicola National Estuarine Research Reserve|6|Salinity|Bottom|All|3052|0|39.9|21.6|20.4853964613368|9.5952575009446|69, 95, 119, 129, 355, 557, 558, 5002
+3|Apalachicola National Estuarine Research Reserve|7|Salinity|Bottom|All|4150|0.05|39|22.7|21.1270120481928|9.21603896990815|69, 95, 115, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|8|Salinity|Bottom|All|4245|0.01|40.3|21.8|20.7746266195524|9.16006920523896|69, 95, 115, 129, 355, 5002, 5071
+3|Apalachicola National Estuarine Research Reserve|9|Salinity|Bottom|All|3261|0.06|36.3|24.7|23.3161944188899|7.60859129905495|69, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|10|Salinity|Bottom|All|3146|0.05|38.3|25.7|24.365375079466|6.83965821177237|69, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|11|Salinity|Bottom|All|2621|0.05|37.1|22.2|21.5623731400229|8.01213279014851|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|12|Salinity|Bottom|All|2443|0.05|37.54|20.6|19.4776258698322|9.10459528001979|69, 95, 129, 355, 5002
+4|Banana River Aquatic Preserve|1|Salinity|Bottom|All|697|11|37.5|16.4|18.6065853658537|5.53403869705775|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|2|Salinity|Bottom|All|984|8.2|36.4|17.3|18.0718495934959|3.90201542124706|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|3|Salinity|Bottom|All|801|11.6|36.4|18.5|19.563695380774|4.607485059888|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|4|Salinity|Bottom|All|1088|0|35.2|20|20.3847150735294|4.75641789945854|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|5|Salinity|Bottom|All|1233|13.1|35.1|20.4|21.7358799675588|5.86571369356971|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|6|Salinity|Bottom|All|955|11.1|38.8|20.59|21.172|5.23564685472783|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|7|Salinity|Bottom|All|987|9|34.54|20.9|20.5780445795339|5.25014597749709|95, 115, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|8|Salinity|Bottom|All|1195|0|37|20|19.9929707112971|5.79516013872609|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|9|Salinity|Bottom|All|759|1.15|33.6|17.5|17.7294993412385|4.40953739814426|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|10|Salinity|Bottom|All|1128|8.5|31.64|18.5|18.935079787234|4.73479159601479|3001, 3013, 5002
+4|Banana River Aquatic Preserve|11|Salinity|Bottom|All|749|10.49|31.7|17.1|18.2638050734312|5.52162008015278|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|12|Salinity|Bottom|All|588|12|34.4|19.6|19.8387755102041|5.60124939189463|3001, 3013, 5002
+5|Big Bend Seagrasses Aquatic Preserve|1|Salinity|Bottom|All|4102|0.03|38.4|25.1|23.2237128230132|7.32039720930836|95, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2|Salinity|Bottom|All|4492|0.02|37.5|23.7|21.7797462154942|7.34712555123849|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|3|Salinity|Bottom|All|6331|0.03|36.33|22.8|21.0603064286843|7.47129683303923|60, 95, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|4|Salinity|Bottom|All|6978|0.03|35.5|21.6|20.2287890513041|7.81819635149645|95, 5002
+5|Big Bend Seagrasses Aquatic Preserve|5|Salinity|Bottom|All|6430|0.02|37.7|23|21.635632970451|7.30086679944938|5002
+5|Big Bend Seagrasses Aquatic Preserve|6|Salinity|Bottom|All|5609|0.02|37.1|23.1|21.9935567837404|7.32562010372466|60, 5002
+5|Big Bend Seagrasses Aquatic Preserve|7|Salinity|Bottom|All|6430|0|37.7|22.3|21.196699844479|7.40421203869371|60, 115, 5002
+5|Big Bend Seagrasses Aquatic Preserve|8|Salinity|Bottom|All|7256|0.02|39|21.3|20.2285970231533|7.2839983540454|95, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|9|Salinity|Bottom|All|6617|0.02|35.61|22.1|21.1241227142209|6.27856050357332|60, 95, 115, 5002
+5|Big Bend Seagrasses Aquatic Preserve|10|Salinity|Bottom|All|6507|0.08|35|24.4|22.8138819732596|6.71975860837994|60, 5002
+5|Big Bend Seagrasses Aquatic Preserve|11|Salinity|Bottom|All|4924|0.03|35.9|26.3|25.0442729488221|6.2144210564673|95, 5002
+5|Big Bend Seagrasses Aquatic Preserve|12|Salinity|Bottom|All|4570|0.03|35.4|25.7|23.8209059080963|7.08452508635386|477, 5002
+6|Biscayne Bay Aquatic Preserve|1|Salinity|Bottom|All|159|1.07|40|33.4|32.9637106918239|3.27273151765572|509, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|2|Salinity|Bottom|All|137|30.22|39.5|34.73|34.4936496350365|1.65058495687777|509, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|3|Salinity|Bottom|All|161|22|40|34.83|34.5154658385093|2.26498894873423|102, 509, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|4|Salinity|Bottom|All|691|0.2|40.6|35.8|35.0809406657019|3.39059703360639|102, 509, 965, 4057, 4058
+6|Biscayne Bay Aquatic Preserve|5|Salinity|Bottom|All|484|21.3|40.81|35.8|35.4332438016529|3.1425807355688|102, 509, 965, 4049, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|6|Salinity|Bottom|All|240|18.6|40.65|31.46|31.5584583333333|4.1410687933666|102, 509, 4049, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|7|Salinity|Bottom|All|161|11.58|41.74|33.5|33.1986335403727|4.35557753014661|115, 509, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|8|Salinity|Bottom|All|166|0.98|43|33.11|32.5421084337349|4.70353211059982|509, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|9|Salinity|Bottom|All|697|20|40|31.53|31.1843328550933|3.25662060288227|509, 965, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|10|Salinity|Bottom|All|251|16|37.75|31.04|30.6895219123506|3.03879327538382|509, 965, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|11|Salinity|Bottom|All|168|0.62|39|32.1|31.0060714285714|5.38638737049677|509, 4057, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|12|Salinity|Bottom|All|149|1.17|36.73|32.7|32.2998657718121|3.29355820618624|509, 4057, 4058, 5002
+8|Boca Ciega Bay Aquatic Preserve|1|Salinity|Bottom|All|545|3|36.5|32.1|31.9878899082569|2.52399305540643|69, 5002
+8|Boca Ciega Bay Aquatic Preserve|2|Salinity|Bottom|All|503|13.32|35.77|32.24|31.7573757455268|2.60007230055162|69, 95, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|3|Salinity|Bottom|All|497|19.56|37|32.6|32.1278068410463|2.35955936182357|69, 95, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|4|Salinity|Bottom|All|510|6.65|35.77|33.1|32.521862745098|2.34089975245954|69, 95, 5002
+8|Boca Ciega Bay Aquatic Preserve|5|Salinity|Bottom|All|672|21.63|38|33.76|33.5258482224702|2.08090936994212|69, 95, 5002
+8|Boca Ciega Bay Aquatic Preserve|6|Salinity|Bottom|All|545|14.55|37.21|34|33.5232110091743|2.47896847644973|69, 5002
+8|Boca Ciega Bay Aquatic Preserve|7|Salinity|Bottom|All|486|16.3|36.52|32.995|32.4502469135802|2.63243792394884|69, 5002
+8|Boca Ciega Bay Aquatic Preserve|8|Salinity|Bottom|All|925|17.24|37.2|31.75|31.7002918918919|2.64360660217966|69, 95, 102, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|9|Salinity|Bottom|All|1874|9.9|36.29|29.905|30.6022411953042|2.52442418219898|69, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|10|Salinity|Bottom|All|782|23.7|35.6|32.3|31.9627877237852|2.01452577885018|69, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|11|Salinity|Bottom|All|549|20.5|37|32.3|32.1548269581056|2.05269891261268|69, 95, 5002
+8|Boca Ciega Bay Aquatic Preserve|12|Salinity|Bottom|All|513|16.82|36.95|32.4|32.3165886939571|2.11715063630934|69, 5002
+9|Cape Haze Aquatic Preserve|1|Salinity|Bottom|All|43|28.3|38.12|34.66|33.873023255814|2.35208371134205|95, 479, 5002
+9|Cape Haze Aquatic Preserve|2|Salinity|Bottom|All|45|27.31|36.4|32.92|32.1693333333333|2.58784870289801|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|3|Salinity|Bottom|All|71|19.4|38.94|32.2|31.3588732394366|4.37530849501602|95, 479, 5002
+9|Cape Haze Aquatic Preserve|4|Salinity|Bottom|All|62|17.2|39.14|31.9|30.5517741935484|5.42932490571177|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|5|Salinity|Bottom|All|70|25.86|39.3|34.19|33.519|3.4798518001094|95, 479, 5002
+9|Cape Haze Aquatic Preserve|6|Salinity|Bottom|All|71|23.9|40.34|33.68|32.8194366197183|3.57637281826312|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|7|Salinity|Bottom|All|210|5.15|38.6|29.515|29.1490952380952|5.47764422528781|95, 479, 5002
+9|Cape Haze Aquatic Preserve|8|Salinity|Bottom|All|144|11.1|38.64|27.99|27.3316666666667|5.86953721624347|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|9|Salinity|Bottom|All|115|10.81|38.9|26.8|25.7406956521739|6.61144272836266|95, 479, 5002
+9|Cape Haze Aquatic Preserve|10|Salinity|Bottom|All|82|16.3|38.75|27.35|27.9741463414634|6.52451028410988|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|11|Salinity|Bottom|All|58|21.07|37.3|27.165|28.3805172413793|4.56774174401842|476, 479, 5002
+9|Cape Haze Aquatic Preserve|12|Salinity|Bottom|All|42|13.22|36.12|30.4|29.3811904761905|5.42835338748495|95, 476, 479, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1|Salinity|Bottom|All|629|15|39.5|32.4|31.8935294117647|4.06649005225306|354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2|Salinity|Bottom|All|686|5.6|38.7|33.5|32.3345626822158|4.42911976867439|95, 354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|3|Salinity|Bottom|All|540|18.7|38.51|33.9|33.3858148148148|3.47585115681672|354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|4|Salinity|Bottom|All|720|14.9|41|36|35.1705555555556|3.8125874855377|354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5|Salinity|Bottom|All|765|19.4|43|37|36.4363267973856|3.91093914524066|509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|6|Salinity|Bottom|All|703|2.4|40.9|33.8|32.3212517780939|7.09535367194369|95, 354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|Salinity|Bottom|All|736|2.2|39.11|28.9|26.7494429347826|7.58365410743587|95, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|8|Salinity|Bottom|All|799|0|40.2|25.4|23.8175719649562|8.61701448929889|354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|9|Salinity|Bottom|All|727|0|35|20.7|19.7205364511692|8.94189845943976|95, 354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|10|Salinity|Bottom|All|807|1.2|37.6|24.7|23.3466914498141|7.93666175630278|95, 354, 509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|11|Salinity|Bottom|All|647|4.4|37.3|28.2|26.5729520865533|6.41005156655826|509, 4043, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|12|Salinity|Bottom|All|643|6.5|39.7|31.3|29.7558786936236|5.62735189717774|95, 354, 509, 4043, 5002
+11|Cockroach Bay Aquatic Preserve|1|Salinity|Bottom|All|353|0.1|31.9|7.35|9.44745042492918|8.54591045627408|69, 5002
+11|Cockroach Bay Aquatic Preserve|2|Salinity|Bottom|All|353|0.13|32.6|7.28|9.17303116147309|8.10733209407912|69, 5002
+11|Cockroach Bay Aquatic Preserve|3|Salinity|Bottom|All|368|0.13|34.2|10.45|11.3611956521739|8.62087850804338|69, 5002
+11|Cockroach Bay Aquatic Preserve|4|Salinity|Bottom|All|374|0.12|32.1|13.145|13.4341443850267|9.20984591980216|69, 5002
+11|Cockroach Bay Aquatic Preserve|5|Salinity|Bottom|All|368|0.18|36.1|18.145|16.7388315217391|9.29201473675088|69, 4067, 5002
+11|Cockroach Bay Aquatic Preserve|6|Salinity|Bottom|All|365|0.13|35.5|12.43|12.4310136986301|10.5387492122454|69, 5002
+11|Cockroach Bay Aquatic Preserve|7|Salinity|Bottom|All|300|0.11|26.8|2.65|7.09823333333333|8.39013514619761|69, 5002
+11|Cockroach Bay Aquatic Preserve|8|Salinity|Bottom|All|1529|0.04|29.35|5.54|6.64613472858077|6.54919609871532|69, 4067, 5002
+11|Cockroach Bay Aquatic Preserve|9|Salinity|Bottom|All|1179|0|30.4|5.52|8.76960135708227|8.32398726168113|69, 4067, 5002
+11|Cockroach Bay Aquatic Preserve|10|Salinity|Bottom|All|364|0.13|25.42|2.955|5.78708791208791|6.60052533871897|69, 4067, 5002
+11|Cockroach Bay Aquatic Preserve|11|Salinity|Bottom|All|373|0.1|28.2|6.68|8.0830563002681|7.40611835045966|69, 5002
+11|Cockroach Bay Aquatic Preserve|12|Salinity|Bottom|All|333|0.14|31.6|8.99|9.29825825825826|7.37278526880098|69, 5002
+13|Coupon Bight Aquatic Preserve|1|Salinity|Bottom|All|6|34.9845|37.7|35.83375|36.0289|1.0647293440119|297
+13|Coupon Bight Aquatic Preserve|2|Salinity|Bottom|All|2|34.9145|36.5933|35.7539|35.7539|1.18709086425598|297
+13|Coupon Bight Aquatic Preserve|3|Salinity|Bottom|All|5|35.46|36.7055|36.1105|36.07648|0.447005455223982|297
+13|Coupon Bight Aquatic Preserve|4|Salinity|Bottom|All|1|35.8471|35.8471|35.8471|35.8471||297
+13|Coupon Bight Aquatic Preserve|5|Salinity|Bottom|All|9|36.4|37.93|37.05|37.0957555555556|0.489307702553086|297
+13|Coupon Bight Aquatic Preserve|6|Salinity|Bottom|All|3|35.9991|38.3|36.36|36.8863666666667|1.2374698393631|297
+13|Coupon Bight Aquatic Preserve|7|Salinity|Bottom|All|4|36.6|37.6293|36.90375|37.0092|0.458581690287202|297
+13|Coupon Bight Aquatic Preserve|8|Salinity|Bottom|All|6|35.4668|37.4784|36.63345|36.6006666666667|0.797687075654775|297, 5002
+13|Coupon Bight Aquatic Preserve|9|Salinity|Bottom|All|3|35.3462|36.51|36.5|36.1187333333333|0.669052175344592|297
+13|Coupon Bight Aquatic Preserve|10|Salinity|Bottom|All|7|33.8|36.7483|36.1964|35.6162571428571|1.27651704500586|297, 5002
+13|Coupon Bight Aquatic Preserve|11|Salinity|Bottom|All|3|36.9|37.24|37.06|37.0666666666667|0.170098010962309|297
+13|Coupon Bight Aquatic Preserve|12|Salinity|Bottom|All|4|34.1672|36.1082|35.19815|35.167925|1.04228267878728|297
+14|Estero Bay Aquatic Preserve|1|Salinity|Bottom|All|38|15.43|38.52|33.455|33.1842105263158|3.58012730528516|95, 476, 509, 4042, 5002
+14|Estero Bay Aquatic Preserve|2|Salinity|Bottom|All|35|15.52|37.33|33.95|33.5174285714286|3.62167522406019|95, 476, 509, 4042
+14|Estero Bay Aquatic Preserve|3|Salinity|Bottom|All|38|0.07|37.13|34.175|33.1668421052632|5.92852841923177|95, 476, 509
+14|Estero Bay Aquatic Preserve|4|Salinity|Bottom|All|40|31.7|40.61|34.9|34.9475|1.67146603852687|95, 476, 509
+14|Estero Bay Aquatic Preserve|5|Salinity|Bottom|All|36|30.99|38.96|36.215|35.9133333333333|1.89474611944262|95, 476, 509
+14|Estero Bay Aquatic Preserve|6|Salinity|Bottom|All|35|25.27|38.09|35.55|35.0171428571429|2.91340368098953|95, 476, 509, 5002
+14|Estero Bay Aquatic Preserve|7|Salinity|Bottom|All|37|18.6|38.68|32.28|31.8851351351351|4.21927035663067|95, 115, 509
+14|Estero Bay Aquatic Preserve|8|Salinity|Bottom|All|36|14.1|35.5|30.15|29.9266666666667|4.38260783422056|95, 476, 509
+14|Estero Bay Aquatic Preserve|9|Salinity|Bottom|All|33|17.59|36.02|31.69|30.2972727272727|4.48240955899229|95, 476, 509
+14|Estero Bay Aquatic Preserve|10|Salinity|Bottom|All|32|18.04|37.05|30.98|30.1803125|4.46300310031117|95, 476, 509
+14|Estero Bay Aquatic Preserve|11|Salinity|Bottom|All|30|14.97|35.98|33.325|31.7433333333333|4.34433863331573|95, 476, 509
+14|Estero Bay Aquatic Preserve|12|Salinity|Bottom|All|34|26.62|36.95|33.76|33.1411764705882|2.61806285627935|95, 476, 509
+15|Florida Keys National Marine Sanctuary|1|Salinity|Bottom|All|1140|21|39.1129|36.2|35.4383960526316|2.47159850591209|95, 297, 509, 899, 3000, 4057
+15|Florida Keys National Marine Sanctuary|2|Salinity|Bottom|All|1462|0.66|39|36.1|34.9476009575923|3.22031642433041|297, 509, 899, 3000, 4057, 5002
+15|Florida Keys National Marine Sanctuary|3|Salinity|Bottom|All|1316|16.6|39.32|36.1948|35.6710013297872|2.02830172251731|60, 297, 509, 3000, 4057, 5002
+15|Florida Keys National Marine Sanctuary|4|Salinity|Bottom|All|1582|0|42.3|36.41985|36.0802561314791|2.36504828379952|60, 297, 509, 965, 3000, 4057, 5002
+15|Florida Keys National Marine Sanctuary|5|Salinity|Bottom|All|2701|19.8|44|36.5274|36.1198081451314|3.09739589707349|60, 297, 509, 965, 3000, 4049, 4057, 5002
+15|Florida Keys National Marine Sanctuary|6|Salinity|Bottom|All|1107|0|41.98|36.4888|36.3704046973803|2.26483798778194|60, 102, 297, 509, 3000
+15|Florida Keys National Marine Sanctuary|7|Salinity|Bottom|All|1706|0|42.8|36.37|36.1950163540446|2.31831413946675|60, 115, 297, 509, 899, 3000, 4057
+15|Florida Keys National Marine Sanctuary|8|Salinity|Bottom|All|1505|0|42.369|36.41|36.173433820598|2.34317519367709|60, 102, 115, 297, 509, 3000, 4057, 5002
+15|Florida Keys National Marine Sanctuary|9|Salinity|Bottom|All|1716|3.7|44.1604|35.6185|33.9835247086247|3.82776142885483|60, 297, 509, 965, 3000
+15|Florida Keys National Marine Sanctuary|10|Salinity|Bottom|All|1605|15|39.56|35.7289|34.8281639875389|2.7594838886027|60, 297, 509, 965, 3000, 4057, 5002
+15|Florida Keys National Marine Sanctuary|11|Salinity|Bottom|All|1378|14|40|35.84115|34.6598273584906|3.36837737955467|297, 509, 3000, 4057, 5002
+15|Florida Keys National Marine Sanctuary|12|Salinity|Bottom|All|1052|18.7|40.0712|35.9|34.8710996197719|2.95998266068735|95, 297, 509, 3000, 4057
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Salinity|Bottom|All|498|3.36|35.9|28.115|28.005562248996|4.56314676903506|95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Salinity|Bottom|All|527|5.5|41.2|29.2|28.6073244781784|6.30631754091349|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Salinity|Bottom|All|568|0.55|37.6|28.805|28.2773415492958|5.53721418151372|95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Salinity|Bottom|All|557|3.14|37.2|30.5|28.832315978456|6.71596062976501|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Salinity|Bottom|All|479|12.7|39.7|29.7|29.2812108559499|5.81343925199346|95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Salinity|Bottom|All|572|0.16|38.7|29.8|28.4300174825175|6.29377613505777|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Salinity|Bottom|All|750|3.89|42.3|32.16|31.2205066666667|5.58957825392022|115, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Salinity|Bottom|All|497|1.29|38.6|28.8|26.7032997987928|8.17966698543411|102, 115, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Salinity|Bottom|All|580|2.06|51.5|24.095|23.7773103448276|9.48337587408356|95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Salinity|Bottom|All|628|2.6|38.5|22.09|22.5542356687898|6.85552836124509|95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Salinity|Bottom|All|467|8.31|40.7|25.94|26.0674304068523|6.1715982648483|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Salinity|Bottom|All|484|8.2|38.3|27.315|27.265847107438|5.3286451093325|95, 476, 479, 5002
+19|Guana River Marsh Aquatic Preserve|1|Salinity|Bottom|All|413|8.8|36.6|32.1|30.5477966101695|4.57756297112871|5002
+19|Guana River Marsh Aquatic Preserve|2|Salinity|Bottom|All|353|0.33|35.9|31.41|29.983597733711|4.61566660545604|4054, 5002, 5014
+19|Guana River Marsh Aquatic Preserve|3|Salinity|Bottom|All|295|2.6|37.39|32.5|31.2293559322034|5.16219887284608|5002
+19|Guana River Marsh Aquatic Preserve|4|Salinity|Bottom|All|479|12.4|37.43|32|30.4392693110647|5.15096132804858|5002
+19|Guana River Marsh Aquatic Preserve|5|Salinity|Bottom|All|454|0.97|39|34.795|33.3181938325991|5.0539830900913|5002, 5014
+19|Guana River Marsh Aquatic Preserve|6|Salinity|Bottom|All|310|1.35|38.94|32.85|30.6965483870968|6.02024696210265|4054, 5002
+19|Guana River Marsh Aquatic Preserve|7|Salinity|Bottom|All|461|0.39|39.9|34.2|32.3542299349241|4.92420327954882|4054, 5002, 5014
+19|Guana River Marsh Aquatic Preserve|8|Salinity|Bottom|All|425|1.96|38.84|32.4|29.2909882352941|7.05392497207432|4054, 5002
+19|Guana River Marsh Aquatic Preserve|9|Salinity|Bottom|All|225|0.65|38.44|30.5|28.6152888888889|6.74807558752276|60, 5002, 5014
+19|Guana River Marsh Aquatic Preserve|10|Salinity|Bottom|All|362|1.23|38.6|28|27.0205248618785|5.40092523115862|5002, 5014
+19|Guana River Marsh Aquatic Preserve|11|Salinity|Bottom|All|334|0.35|38.67|29.59|29.0499401197605|5.17086176645779|95, 4054, 5002, 5014
+19|Guana River Marsh Aquatic Preserve|12|Salinity|Bottom|All|223|0.37|38.17|28.2|27.5471300448431|4.94010411461058|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|Salinity|Bottom|All|1048|0.53|36.6|32.3|31.5002003816794|3.87308966472787|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|Salinity|Bottom|All|933|0.07|36.9|32.08|31.0795819935691|4.43639838372013|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|Salinity|Bottom|All|985|0.06|40|32.43|31.0349949238579|5.41293890097661|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|Salinity|Bottom|All|1071|0.06|38.2|33.3|31.5278244631186|5.35969501773904|95, 4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|Salinity|Bottom|All|1137|0.12|39|34.4|33.2577748460862|4.67742927302922|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|Salinity|Bottom|All|877|0.15|38.94|33.1|31.3925313568985|5.75396228186124|95, 4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|Salinity|Bottom|All|1282|0.12|40|34.2|32.9234945397816|4.27332560710163|95, 4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|Salinity|Bottom|All|1278|0.1|39.7|33.7|31.526455399061|5.89327490863553|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|Salinity|Bottom|All|826|0.05|38.44|31.5|30.2365254237288|5.87920383477797|60, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|Salinity|Bottom|All|1058|0.05|40.8|30.5|29.7182797731569|5.47923487580222|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|Salinity|Bottom|All|878|0.22|38.67|31.6|30.80784738041|4.6452001479524|95, 4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|Salinity|Bottom|All|663|0.1|38.17|30.7|29.4139366515837|5.17095333052176|4054, 5002, 5014
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|1|Salinity|Bottom|All|1460|0.4|38.4|26.9|25.4294383561644|6.54397057479568|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2|Salinity|Bottom|All|1277|0.5|37.7|26.7|26.0902114330462|6.39815315749275|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3|Salinity|Bottom|All|1170|0.4|38.5|30|28.0466367521368|6.34828280740187|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|4|Salinity|Bottom|All|1805|0.4|39.5|31.2|29.0379833795014|6.61919475225182|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5|Salinity|Bottom|All|1478|0.3|43|33.35|31.897700947226|5.27694427743194|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|6|Salinity|Bottom|All|1412|0.38|39.2|32.7|31.2221317280453|5.51487059227488|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|7|Salinity|Bottom|All|1743|0.3|39.88|30.13|28.428611589214|6.16816191241387|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|8|Salinity|Bottom|All|1621|0.24|40|29.8|27.636502159161|7.54779767843535|95, 115, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|9|Salinity|Bottom|All|1624|0.32|35.9|27.31|25.2441502463054|7.6211929448245|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|10|Salinity|Bottom|All|1849|0.22|36.61|24.8|23.5919199567334|8.0031662391039|3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|11|Salinity|Bottom|All|1355|0.42|38.3|25.6|24.8151955719557|6.74849503564062|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|12|Salinity|Bottom|All|1255|0.8|38|26.2|25.1925577689243|6.61581188499017|95, 3001, 3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1|Salinity|Bottom|All|453|17.8|38.6|29.4|29.4397130242826|3.8469514026634|3001, 3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2|Salinity|Bottom|All|293|6.2|35.2|29.2|28.6649829351536|4.14659776570259|3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|3|Salinity|Bottom|All|311|19.5|36.82|31|30.8256591639871|3.00823002287938|3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|4|Salinity|Bottom|All|497|13.4|37.5|33.4|32.5666599597586|3.43575045082573|3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|5|Salinity|Bottom|All|348|14.91|39.5|34.74|33.8923275862069|3.94749167600737|3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|6|Salinity|Bottom|All|203|13.19|38.23|29.8|29.0624137931035|4.73482647712899|3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|7|Salinity|Bottom|All|484|13.7|37.59|29.3|27.4989669421488|5.11161963034044|3001, 3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|8|Salinity|Bottom|All|276|7.4|35.59|27.45|26.5869202898551|5.45634479124037|115, 3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|9|Salinity|Bottom|All|324|14.3|34|24.9|24.197962962963|5.1944506157882|3001, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|10|Salinity|Bottom|All|530|11.5|35.6|24.25|24.5825471698113|5.05103206083899|3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|11|Salinity|Bottom|All|223|10|35.7|26.8|26.1917040358744|5.8148832622377|3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|12|Salinity|Bottom|All|300|16|35.2|27.4|27.5776333333333|3.77416168000856|3013, 5002
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1|Salinity|Bottom|All|28|15.6|36.2|30|29.5035714285714|5.12636483310702|3001, 5002
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2|Salinity|Bottom|All|47|27.6|37|34.53|34.0270212765958|2.18101184624259|95, 3001, 3013, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|3|Salinity|Bottom|All|31|20|39.6|34.3|31.831935483871|5.7006873382981|95, 3001, 3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|4|Salinity|Bottom|All|23|22.4|38.4|34.8|33.304347826087|4.37631728333617|95, 3001, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|5|Salinity|Bottom|All|24|24.6|36.9|33.2|32.36125|3.25960295328181|95, 3001, 5002
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|6|Salinity|Bottom|All|28|19.35|37.5|34.1|31.3953571428571|5.36344657165373|95, 3013, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|7|Salinity|Bottom|All|30|25|39.2|31.075|31.0556666666667|3.72218390041461|95, 3001, 3013, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|8|Salinity|Bottom|All|50|3|36.4|29.5|29.035|7.28507707297484|95, 115, 3001, 3013, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|9|Salinity|Bottom|All|29|17.4|36|26.06|26.3655172413793|5.38913429716744|95, 3001, 3013, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|10|Salinity|Bottom|All|26|18.8|36.9|31.5|29.5615384615385|4.88082590741173|3001, 5002, 10000, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|11|Salinity|Bottom|All|47|0|39|29.6|24.4795744680851|13.1259335001275|95, 3001, 3016, 5002
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|12|Salinity|Bottom|All|25|26.4|35.6|32.8|32.588|2.15683409963153|3001, 5002, 10001
+25|Lemon Bay Aquatic Preserve|1|Salinity|Bottom|All|156|18.2|38.5|33.93|33.2415384615385|3.96612480955438|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2|Salinity|Bottom|All|163|27.15|37.92|33.2|33.0145398773006|1.80147100470904|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|3|Salinity|Bottom|All|279|24.4|37.4|33.2|33.1642652329749|2.70375998810607|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|4|Salinity|Bottom|All|354|8.7|37.1|33.1|32.0151129943503|4.23978868115505|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|5|Salinity|Bottom|All|208|27.4|38.7|33.65|33.7087980769231|2.78639326680405|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|6|Salinity|Bottom|All|302|25.3|38.7|35.3|34.997880794702|2.19171002558304|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|7|Salinity|Bottom|All|443|22.3|39.09|33.4|33.2725056433409|3.27036969098175|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|8|Salinity|Bottom|All|346|12.6|39.6|32.2|31.301936416185|5.66445489724315|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|9|Salinity|Bottom|All|345|14.3|63.1|32.8|32.4775362318841|4.67488577332069|60, 95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|10|Salinity|Bottom|All|390|17.4|38.5|30.9|30.5965641025641|4.32596061100452|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|11|Salinity|Bottom|All|336|21.5|38.6|32.6|32.9926785714286|3.24073494027075|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|12|Salinity|Bottom|All|274|17.6|38.4|34.3|33.5284306569343|3.81149285030435|476, 479, 5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1|Salinity|Bottom|All|12|2.2|37.4|28.95|22.7733333333333|12.7545844402091|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2|Salinity|Bottom|All|37|0.2|39|35.3|33.5272972972973|6.45878499437809|3013, 5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|3|Salinity|Bottom|All|10|0.4|34.2|17.9|17.32|15.1912840507678|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|4|Salinity|Bottom|All|59|1.2|38.5|35.28|31.4552542372881|9.28558195601305|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5|Salinity|Bottom|All|18|0.2|38.8|33.85|28.1277777777778|12.8150098370693|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|6|Salinity|Bottom|All|67|0.1|38.3|34.2|28.855671641791|10.9616723762611|3013, 5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|7|Salinity|Bottom|All|20|10.18|37.2|32.55|29.6425|7.3058951503131|3013, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|8|Salinity|Bottom|All|58|4|37.3|33.41|31.6851724137931|6.72107506056524|3013, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|9|Salinity|Bottom|All|9|0.2|36.4|26.23|19.8811111111111|14.7770755263385|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10|Salinity|Bottom|All|54|0.2|39.09|33.96|29.9392592592593|9.17368732100631|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|11|Salinity|Bottom|All|18|1|36.4|25.925|23.9361111111111|11.7572671589001|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|12|Salinity|Bottom|All|48|0.2|39.6|34.6|32.2816666666667|7.4767865817243|5002, 10000, 10001
+28|Matlacha Pass Aquatic Preserve|1|Salinity|Bottom|All|41|16.2|34.7|27.1|27.6407317073171|4.55142416735899|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|2|Salinity|Bottom|All|167|9|36.8|27.7|27.2650299401198|5.78766468440408|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|3|Salinity|Bottom|All|99|10.2|36.2|27.02|26.4210101010101|5.80575743356954|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|4|Salinity|Bottom|All|101|7.9|35.61|28.6|26.2122772277228|6.28578489628592|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|5|Salinity|Bottom|All|114|14.8|37.4|31.2|29.5505263157895|6.02559802666485|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|6|Salinity|Bottom|All|114|9.2|39.5|27.1|26.600701754386|6.80161143312771|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|7|Salinity|Bottom|All|151|6.2|40.6|17.5|18.4023178807947|6.96060336883795|95, 115, 476, 5002
+28|Matlacha Pass Aquatic Preserve|8|Salinity|Bottom|All|131|4.3|62.7|17.5|18.7180152671756|7.52078559929309|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|9|Salinity|Bottom|All|94|3.2|31|18.9|17.5910638297872|6.74320916358368|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|10|Salinity|Bottom|All|135|7.91|34.1|20.94|20.6657037037037|6.27568614798185|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|11|Salinity|Bottom|All|111|10.18|41.1|24.3|24.9958558558559|6.14361493651128|95, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|12|Salinity|Bottom|All|86|15.29|32.42|23.9|24.3197674418605|3.88391736046578|95, 476, 513, 5002
+29|Mosquito Lagoon Aquatic Preserve|1|Salinity|Bottom|All|213|22.4|39|32.4|31.5033333333333|3.2711182766562|3001, 5002
+29|Mosquito Lagoon Aquatic Preserve|2|Salinity|Bottom|All|132|26.7|36.8|32.26|32.4264393939394|2.3714366221317|3001, 3013, 5002
+29|Mosquito Lagoon Aquatic Preserve|3|Salinity|Bottom|All|172|10|38.69|32.42|30.5010465116279|5.77268786738018|5002
+29|Mosquito Lagoon Aquatic Preserve|4|Salinity|Bottom|All|174|23.8|41.42|34.475|34.1779310344828|3.10762706637324|5002
+29|Mosquito Lagoon Aquatic Preserve|5|Salinity|Bottom|All|152|25|40.76|34.1|34.1721710526316|3.46185551398182|3001, 5002
+29|Mosquito Lagoon Aquatic Preserve|6|Salinity|Bottom|All|180|20.9|44.4|36.3|35.1181111111111|4.25266341635883|3001, 5002
+29|Mosquito Lagoon Aquatic Preserve|7|Salinity|Bottom|All|183|22.3|43.54|33.1|32.8686885245902|4.83503257784512|3001, 5002
+29|Mosquito Lagoon Aquatic Preserve|8|Salinity|Bottom|All|202|25|41.37|33.26|32.9543564356436|3.45766591270236|3001, 5002
+29|Mosquito Lagoon Aquatic Preserve|9|Salinity|Bottom|All|233|22.7|40.8|32|31.3415450643777|3.8029249426892|5002
+29|Mosquito Lagoon Aquatic Preserve|10|Salinity|Bottom|All|216|22.4|38.2|28.9|29.6225462962963|3.54191086223047|3001, 5002
+29|Mosquito Lagoon Aquatic Preserve|11|Salinity|Bottom|All|148|25.8|39.32|32.5|31.7731081081081|2.94487606459969|5002
+29|Mosquito Lagoon Aquatic Preserve|12|Salinity|Bottom|All|201|20|38.01|31.2|30.284776119403|3.16366292051269|3001, 3013, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1|Salinity|Bottom|All|75|18.92|37.49|31.73|30.6041333333333|4.23370615652761|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2|Salinity|Bottom|All|46|15.97|35.64|32.5|30.3026086956522|4.81778530714067|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|3|Salinity|Bottom|All|103|12.33|36.27|32.8|30.7066990291262|5.10645638774102|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|4|Salinity|Bottom|All|81|23.85|36.41|33.23|32.4201234567901|2.81756388296129|95, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5|Salinity|Bottom|All|56|0.57|39.89|33.91|32.295|6.00451829874804|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|6|Salinity|Bottom|All|47|3.04|36.72|32.31|29.6582978723404|7.53920833093033|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|7|Salinity|Bottom|All|72|2.95|36.7|32.07|29.3601388888889|8.26808193317396|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|8|Salinity|Bottom|All|47|1.48|36.69|34.29|30.74|8.41272948520897|115, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|9|Salinity|Bottom|All|46|10.08|36.33|30.255|28.0604347826087|7.69121113321252|60, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|10|Salinity|Bottom|All|41|22.92|36.15|30.64|30.6158536585366|3.64516527444899|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|11|Salinity|Bottom|All|45|2.15|36.53|31.98|30.9822222222222|5.73552046021065|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|12|Salinity|Bottom|All|66|15.5|36.17|32.5|31.8043939393939|3.33486114520663|5002
+48|Nature Coast Aquatic Preserve|1|Salinity|Bottom|All|152|5.1|30.61|21.4|20.0196052631579|6.03205695442517|479, 5002
+48|Nature Coast Aquatic Preserve|2|Salinity|Bottom|All|211|6.2|34.7|20.5|20.1671563981043|5.20789459965709|95, 479, 5002
+48|Nature Coast Aquatic Preserve|3|Salinity|Bottom|All|135|3.9|34.2|21.8|20.8542962962963|5.9076515702716|479, 5002
+48|Nature Coast Aquatic Preserve|4|Salinity|Bottom|All|201|5.1|35.3|20.6|20.4149751243781|6.28381827588753|479, 5002
+48|Nature Coast Aquatic Preserve|5|Salinity|Bottom|All|203|8|36.18|23.6|23.1919704433498|6.63748021638366|479, 5002
+48|Nature Coast Aquatic Preserve|6|Salinity|Bottom|All|210|9.1|36.78|24.4|24.0894761904762|6.37312375706571|60, 479, 5002
+48|Nature Coast Aquatic Preserve|7|Salinity|Bottom|All|106|9.6|34.69|23.95|23.918179245283|6.29424671357698|115, 479, 5002
+48|Nature Coast Aquatic Preserve|8|Salinity|Bottom|All|110|9|35.62|24.4|23.4894545454545|5.86545396013517|479, 5002
+48|Nature Coast Aquatic Preserve|9|Salinity|Bottom|All|155|8.18|36.2|23.37|23.4610967741936|6.06013089393397|60, 95, 115, 479, 5002
+48|Nature Coast Aquatic Preserve|10|Salinity|Bottom|All|162|11|33.53|23.09|22.5233950617284|5.15276277140337|60, 479, 5002
+48|Nature Coast Aquatic Preserve|11|Salinity|Bottom|All|133|9.5|32.5|23|22.7332330827068|5.18549631604784|479, 5002
+48|Nature Coast Aquatic Preserve|12|Salinity|Bottom|All|153|10.1|34.19|23.5|22.5783660130719|4.95224941680099|479, 5002
+33|Pellicer Creek Aquatic Preserve|1|Salinity|Bottom|All|4|10.04|30.57|23.19|21.7475|8.54524575421913|4054, 5002
+33|Pellicer Creek Aquatic Preserve|2|Salinity|Bottom|All|11|0.07|15.8|9.91|7.52090909090909|7.21976101342067|4054, 5002
+33|Pellicer Creek Aquatic Preserve|3|Salinity|Bottom|All|10|0.07|28.6|13.875|11.31|9.8808794030581|4054, 5002
+33|Pellicer Creek Aquatic Preserve|4|Salinity|Bottom|All|12|0.06|27.43|3.04|6.61583333333333|8.59637921488231|95, 4054, 5002
+33|Pellicer Creek Aquatic Preserve|5|Salinity|Bottom|All|6|0.12|24.4|4.35|9.18833333333333|10.7879718514031|4054, 5002
+33|Pellicer Creek Aquatic Preserve|6|Salinity|Bottom|All|14|0.15|26.1|6.41|9.29857142857143|10.1515461930629|4054, 5002
+33|Pellicer Creek Aquatic Preserve|7|Salinity|Bottom|All|10|0.12|33.8|14.845|12.176|10.8532434476212|4054, 5002
+33|Pellicer Creek Aquatic Preserve|8|Salinity|Bottom|All|7|0.1|23.66|11.38|10.6514285714286|8.90361430089195|4054, 5002
+33|Pellicer Creek Aquatic Preserve|9|Salinity|Bottom|All|12|0.06|28.8|0.27|5.47916666666667|9.11023047142191|5002
+33|Pellicer Creek Aquatic Preserve|10|Salinity|Bottom|All|9|0.05|28.59|0.5|9.50444444444445|12.2623092351228|4054, 5002
+33|Pellicer Creek Aquatic Preserve|11|Salinity|Bottom|All|8|0.23|28.73|25.17|19.15375|12.4154453777773|4054, 5002
+33|Pellicer Creek Aquatic Preserve|12|Salinity|Bottom|All|18|0.1|29.02|13.03|11.4766666666667|9.54467575636374|4054, 5002
+34|Pine Island Sound Aquatic Preserve|1|Salinity|Bottom|All|313|25|38.49|32.3|32.2878913738019|1.98197260607695|95, 509, 5002
+34|Pine Island Sound Aquatic Preserve|2|Salinity|Bottom|All|211|20.7|39.4|33.7|33.2638862559242|2.63519585724634|95, 476, 509, 5002
+34|Pine Island Sound Aquatic Preserve|3|Salinity|Bottom|All|463|21|39.9|34.4|33.9384665226782|3.24158291033401|95, 476, 509, 5002
+34|Pine Island Sound Aquatic Preserve|4|Salinity|Bottom|All|348|19.7|38.42|33.6|32.9508620689655|3.18686992026678|95, 509, 5002
+34|Pine Island Sound Aquatic Preserve|5|Salinity|Bottom|All|287|3.5|39.4|34.5|33.8409756097561|3.66932213344419|95, 476, 509, 5002
+34|Pine Island Sound Aquatic Preserve|6|Salinity|Bottom|All|294|25.71|38.85|34.55|34.1212925170068|2.36455561118233|95, 509, 5002
+34|Pine Island Sound Aquatic Preserve|7|Salinity|Bottom|All|622|13.8|38.54|32.5|31.7634887459807|4.03770022101101|95, 115, 509, 5002
+34|Pine Island Sound Aquatic Preserve|8|Salinity|Bottom|All|481|14.7|36.5|31.2|30.3372972972973|3.78655419612346|95, 509, 5002
+34|Pine Island Sound Aquatic Preserve|9|Salinity|Bottom|All|504|12.9|56.2|31|29.9234325396825|4.76715847480126|95, 115, 476, 509, 5002
+34|Pine Island Sound Aquatic Preserve|10|Salinity|Bottom|All|311|10.3|38.3|32.3|31.4549839228296|4.42576655467896|95, 476, 509, 5002
+34|Pine Island Sound Aquatic Preserve|11|Salinity|Bottom|All|255|7|37.28|31.5|31.2078431372549|3.63108317374682|95, 476, 509, 5002
+34|Pine Island Sound Aquatic Preserve|12|Salinity|Bottom|All|273|22|38.2|33.4|33.0689377289377|3.40382008144428|95, 476, 509, 5002
+35|Pinellas County Aquatic Preserve|1|Salinity|Bottom|All|1460|0|36.5|30.16|27.6019938356164|7.52652950629614|69, 95, 5002
+35|Pinellas County Aquatic Preserve|2|Salinity|Bottom|All|1429|0.01|35.76|29.82|27.8849797060882|6.67610758414498|69, 95, 4067, 5002
+35|Pinellas County Aquatic Preserve|3|Salinity|Bottom|All|1374|0.01|37|29.7|28.3959599708879|5.98177101338035|69, 95, 4067, 5002
+35|Pinellas County Aquatic Preserve|4|Salinity|Bottom|All|1716|0.07|35.77|28.65|26.8985472027972|7.45784762707541|69, 95, 4067, 5002
+35|Pinellas County Aquatic Preserve|5|Salinity|Bottom|All|1959|0.09|38|31|29.0145732541654|7.16381579523824|69, 95, 4067, 5002
+35|Pinellas County Aquatic Preserve|6|Salinity|Bottom|All|1583|0.1|40.37|31.4|29.0858382817435|7.98776825896401|60, 69, 95, 5002
+35|Pinellas County Aquatic Preserve|7|Salinity|Bottom|All|1336|0.01|49.5|30.1|27.4033577844311|8.3473451509386|60, 69, 95, 115, 4067, 5002
+35|Pinellas County Aquatic Preserve|8|Salinity|Bottom|All|2713|0.03|37.2|27|26.2581264283081|6.84353456406201|69, 95, 102, 4067, 5002
+35|Pinellas County Aquatic Preserve|9|Salinity|Bottom|All|4537|0.1|43.99|28.38|26.5408994930571|6.47344612622639|69, 95, 4067, 5002
+35|Pinellas County Aquatic Preserve|10|Salinity|Bottom|All|2027|0.08|35.79|29.1|27.1312698569314|6.85029453778355|60, 69, 95, 4067, 5002
+35|Pinellas County Aquatic Preserve|11|Salinity|Bottom|All|1465|0.08|37|29.8|27.2723017064846|7.28089104526427|69, 95, 4067, 5002
+35|Pinellas County Aquatic Preserve|12|Salinity|Bottom|All|1332|0.14|36.66|29.5|27.0281103603604|7.52661559787729|69, 95, 4067, 5002
+37|Rocky Bayou State Park Aquatic Preserve|1|Salinity|Bottom|All|26|21.67|32.54|29.7|28.5680769230769|2.93386437209462|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|2|Salinity|Bottom|All|38|9.87|31.99|27.19|25.3618421052632|4.91593099992434|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|3|Salinity|Bottom|All|36|14.56|30.82|25.11|24.3916666666667|4.93672274171554|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|4|Salinity|Bottom|All|35|10.38|31.53|24.25|22.7871428571429|6.51085318861495|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|5|Salinity|Bottom|All|41|4.6|32.3|27.14|25.7426829268293|5.24832307713152|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|6|Salinity|Bottom|All|36|14.1|33.22|27.77|26.6877777777778|4.6824884172604|102, 537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|7|Salinity|Bottom|All|33|5.31|33.01|28.21|26.2272727272727|7.55800208087729|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|8|Salinity|Bottom|All|38|0.22|32.05|29.34|28.1805263157895|5.04372660776567|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|9|Salinity|Bottom|All|37|18.97|31.51|26.12|25.8513513513514|2.97349883896822|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|10|Salinity|Bottom|All|36|20.7|31.11|27.125|26.2094444444444|3.43627700899384|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|11|Salinity|Bottom|All|31|20.77|31.04|27.05|26.7777419354839|2.93623989673575|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|12|Salinity|Bottom|All|31|18.8|31.29|28.72|28.4929032258065|3.36182112705637|537, 5002
+38|Rookery Bay Aquatic Preserve|1|Salinity|Bottom|All|171|30.4|39.1|34.4|34.5900584795322|1.84649891195585|354, 509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|2|Salinity|Bottom|All|193|25.6|38.54|35|34.2933160621762|2.34753491911397|354, 509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|3|Salinity|Bottom|All|172|31.4|38.27|35.2|35.1797093023256|1.58565662504356|509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|4|Salinity|Bottom|All|223|30|43.8|36.32|36.6846636771301|2.51806781869166|354, 509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|5|Salinity|Bottom|All|207|31.9|41.5|36.82|36.6361835748792|1.98363900791185|509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|6|Salinity|Bottom|All|197|18.4|40.4|36.47|34.8105583756345|4.35837654582499|509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|7|Salinity|Bottom|All|200|14.2|41.47|32.2|31.23305|5.04591761928423|509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|8|Salinity|Bottom|All|201|7.4|36.94|30.8|29.8679104477612|4.95082201376098|354, 509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|9|Salinity|Bottom|All|191|12.24|39.5|29.46|28.3107853403141|5.59330378888286|354, 509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|10|Salinity|Bottom|All|184|5.8|38.4|31.4|30.4686413043478|4.43600898775992|509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|11|Salinity|Bottom|All|176|19.6|37.38|33.4|32.6519318181818|3.38957405093225|354, 509, 4043, 5002
+38|Rookery Bay Aquatic Preserve|12|Salinity|Bottom|All|163|29.19|39.17|34.4|34.32|2.18905244735798|354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|1|Salinity|Bottom|All|784|15|39.5|33|32.4435331632653|3.91007865483821|354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|2|Salinity|Bottom|All|854|5.6|38.7|33.8|32.769074941452|4.12424307868764|95, 354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|3|Salinity|Bottom|All|708|0.79|38.51|34.4|33.7348728813559|3.69694125806347|354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|4|Salinity|Bottom|All|927|14.9|43.9|36.1|35.5624703344121|3.62650600919151|354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|5|Salinity|Bottom|All|956|19.4|43|37|36.4865376569038|3.56910440019942|354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|6|Salinity|Bottom|All|875|2.4|40.9|34.5|32.8416114285714|6.76057065583569|95, 354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|7|Salinity|Bottom|All|920|2.2|41.47|29.4|27.6152391304348|7.41329913585603|95, 354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|8|Salinity|Bottom|All|975|0|40.2|26.7|24.8513538461538|8.42176353503007|354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|9|Salinity|Bottom|All|905|0|39.5|22.5|21.282817679558|9.10839508189169|95, 354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|10|Salinity|Bottom|All|970|1.2|38.4|26.4|24.6014845360825|7.92553647673349|95, 354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|11|Salinity|Bottom|All|807|4.4|37.38|29.3|27.8239405204461|6.44121301835474|354, 509, 4043, 5002
+39|Rookery Bay National Estuarine Research Reserve|12|Salinity|Bottom|All|782|6.5|39.7|32.015|30.6850511508951|5.46085050899869|95, 354, 509, 4043, 5002
+40|St. Andrews State Park Aquatic Preserve|1|Salinity|Bottom|All|12|23.6|35.57|32.19|30.4525|4.14121880390522|95, 5002
+40|St. Andrews State Park Aquatic Preserve|2|Salinity|Bottom|All|21|23.89|36.06|33.67|31.9580952380952|3.70584351942661|95, 5002
+40|St. Andrews State Park Aquatic Preserve|3|Salinity|Bottom|All|11|27.11|35.82|31.24|31.8036363636364|3.2223012668814|95, 5002
+40|St. Andrews State Park Aquatic Preserve|4|Salinity|Bottom|All|6|18.4|34.79|33.5|30.4316666666667|6.29962035893169|95, 5002
+40|St. Andrews State Park Aquatic Preserve|5|Salinity|Bottom|All|32|26.84|35.14|29.855|30.2465625|2.20571926587195|95, 557, 5002
+40|St. Andrews State Park Aquatic Preserve|6|Salinity|Bottom|All|23|23.8|35.88|29.3|29.5695652173913|3.62852145979457|60, 95, 557, 5002
+40|St. Andrews State Park Aquatic Preserve|7|Salinity|Bottom|All|12|26.2|35.93|34.45|33.5791666666667|2.52159927006412|69, 95, 115, 5002
+40|St. Andrews State Park Aquatic Preserve|8|Salinity|Bottom|All|11|22.5|35.36|29.6|29.8090909090909|4.44315755864105|95, 115, 5002
+40|St. Andrews State Park Aquatic Preserve|9|Salinity|Bottom|All|14|18.5|34.5|31.065|29.1|5.33261084849987|95, 5002
+40|St. Andrews State Park Aquatic Preserve|10|Salinity|Bottom|All|20|26.91|33.7|32.265|31.932|1.42992675557729|95, 557, 5002
+40|St. Andrews State Park Aquatic Preserve|11|Salinity|Bottom|All|11|30.3|35.7|32.6|32.4545454545455|1.83406305036857|95, 5002
+40|St. Andrews State Park Aquatic Preserve|12|Salinity|Bottom|All|8|31.7|34.24|32.52|32.92|0.92024841366728|95, 5002
+41|St. Joseph Bay Aquatic Preserve|1|Salinity|Bottom|All|192|23.9|36.6|31.7|31.3552083333333|2.70709247987391|95, 5002
+41|St. Joseph Bay Aquatic Preserve|2|Salinity|Bottom|All|234|29.4|37|31.9|32.5299145299145|1.81052075392381|5002
+41|St. Joseph Bay Aquatic Preserve|3|Salinity|Bottom|All|394|24.5|36.5|31.7|31.7867005076142|2.37358014912609|95, 5002
+41|St. Joseph Bay Aquatic Preserve|4|Salinity|Bottom|All|314|18.25|36.5|32.7|32.1884713375796|2.48055998666|95, 557, 5002
+41|St. Joseph Bay Aquatic Preserve|5|Salinity|Bottom|All|398|27.1|37.3|33.05|33.2427889447236|2.09534713299167|95, 557, 5002
+41|St. Joseph Bay Aquatic Preserve|6|Salinity|Bottom|All|456|22.1|40.8|32.4|33.0461184210526|3.03332299907459|60, 95, 557, 5002
+41|St. Joseph Bay Aquatic Preserve|7|Salinity|Bottom|All|587|21|40.38|33.4|32.9015502555366|2.73755043878524|95, 115, 557, 5002
+41|St. Joseph Bay Aquatic Preserve|8|Salinity|Bottom|All|496|20.2|36.6|33.5|32.8344758064516|2.29537984080084|95, 557, 5002
+41|St. Joseph Bay Aquatic Preserve|9|Salinity|Bottom|All|226|26.4|36.2|31.3|31.8186283185841|2.30391538692892|95, 557, 5002
+41|St. Joseph Bay Aquatic Preserve|10|Salinity|Bottom|All|162|23.3|34.26|31.5|31.1841975308642|1.76266551696979|60, 95, 557, 5002
+41|St. Joseph Bay Aquatic Preserve|11|Salinity|Bottom|All|161|30.3|35.2|32.3|32.3093167701863|1.29941338891036|95, 5002
+41|St. Joseph Bay Aquatic Preserve|12|Salinity|Bottom|All|220|28.2|37.1|32.3|32.9322727272727|2.11506972113928|95, 5002
+43|St. Martins Marsh Aquatic Preserve|1|Salinity|Bottom|All|483|4.61|29.78|17.6|17.0574948240166|4.74822658939817|95, 479, 5002
+43|St. Martins Marsh Aquatic Preserve|2|Salinity|Bottom|All|702|6.1|28.67|17|17.0577207977208|3.90519679242358|479, 5002
+43|St. Martins Marsh Aquatic Preserve|3|Salinity|Bottom|All|372|5.9|28.7|17.2|17.3557258064516|4.59125833629508|95, 479, 5002
+43|St. Martins Marsh Aquatic Preserve|4|Salinity|Bottom|All|584|5.2|33.37|17.25|17.1912157534247|4.57943311014774|95, 479, 5002
+43|St. Martins Marsh Aquatic Preserve|5|Salinity|Bottom|All|618|8.9|33.9|19.7|19.9884789644013|5.1056507878969|479, 5002
+43|St. Martins Marsh Aquatic Preserve|6|Salinity|Bottom|All|632|5.4|35.7|19.3|19.2604113924051|5.28609015410581|479, 5002
+43|St. Martins Marsh Aquatic Preserve|7|Salinity|Bottom|All|314|7.8|32.86|18.3|18.9650636942675|5.30821770800207|115, 479, 5002
+43|St. Martins Marsh Aquatic Preserve|8|Salinity|Bottom|All|311|9.4|35.4|18.1|18.2740514469453|4.71229130458635|479, 5002
+43|St. Martins Marsh Aquatic Preserve|9|Salinity|Bottom|All|383|5.24|32.2|18.4|18.8303394255875|4.46825845874231|479, 5002
+43|St. Martins Marsh Aquatic Preserve|10|Salinity|Bottom|All|489|9.4|33.73|18.9|19.1915132924335|4.34293704921566|479, 5002
+43|St. Martins Marsh Aquatic Preserve|11|Salinity|Bottom|All|320|8.2|31.4|19.2|19.2619375|4.55567798214045|95, 479, 5002
+43|St. Martins Marsh Aquatic Preserve|12|Salinity|Bottom|All|509|6.9|29.41|19.3|18.8657367387033|4.31010240865304|479, 5002
+44|Terra Ceia Aquatic Preserve|1|Salinity|Bottom|All|262|0.4|35.1|30.3|30.3036259541985|2.9477522154892|69, 95, 5002
+44|Terra Ceia Aquatic Preserve|2|Salinity|Bottom|All|281|0.45|35.63|31.26|30.9655871886121|3.30873288657341|69, 95, 5002
+44|Terra Ceia Aquatic Preserve|3|Salinity|Bottom|All|350|20.1|37.5|32.29|31.9480285714286|2.29901457631394|69, 95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|4|Salinity|Bottom|All|277|22.8|35.99|32|31.7315523465704|2.33106543446337|69, 95, 5002
+44|Terra Ceia Aquatic Preserve|5|Salinity|Bottom|All|320|1.12|37.9|32.76|32.86109375|3.06200618419707|69, 95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|6|Salinity|Bottom|All|304|0.53|36.32|32.7|32.4872039473684|2.74065151088984|69, 95, 5002
+44|Terra Ceia Aquatic Preserve|7|Salinity|Bottom|All|476|3.3|40.9|31.61|31.6326890756303|3.50742237277138|69, 95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|8|Salinity|Bottom|All|764|0.21|35.38|29.9|29.5092539267016|2.96169270672042|69, 95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|9|Salinity|Bottom|All|875|17.45|35.84|28.9|28.9157714285714|2.39963444829682|69, 4067, 5002
+44|Terra Ceia Aquatic Preserve|10|Salinity|Bottom|All|702|1.2|36.2|28.335|27.6930056980057|4.0444374998768|69, 95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|11|Salinity|Bottom|All|299|23.4|40.8|30.5|31.1008026755853|3.02624360557132|69, 95, 5002
+44|Terra Ceia Aquatic Preserve|12|Salinity|Bottom|All|328|25.4|38.5|30.945|31.1781097560976|2.31445677806245|69, 5002
+45|Tomoka Marsh Aquatic Preserve|1|Salinity|Bottom|All|16|1.24|28.78|23.75|21.778125|7.49050262554746|5002
+45|Tomoka Marsh Aquatic Preserve|2|Salinity|Bottom|All|33|0.18|32.16|17.6|16.9269696969697|8.33216001588442|5002
+45|Tomoka Marsh Aquatic Preserve|3|Salinity|Bottom|All|14|6.86|36.07|20.685|21.2328571428571|8.67543519508825|5002
+45|Tomoka Marsh Aquatic Preserve|4|Salinity|Bottom|All|24|0.4|29.7|22.23|19.04875|9.62974572444108|5002
+45|Tomoka Marsh Aquatic Preserve|5|Salinity|Bottom|All|16|1.74|34.68|23.475|20.7775|9.50768916894812|5002
+45|Tomoka Marsh Aquatic Preserve|6|Salinity|Bottom|All|36|0.72|39.66|22.98|20.4822222222222|12.7836838221028|5002
+45|Tomoka Marsh Aquatic Preserve|7|Salinity|Bottom|All|15|6.32|17.97|13.4|13.0766666666667|3.51198492241042|5002
+45|Tomoka Marsh Aquatic Preserve|8|Salinity|Bottom|All|26|0.29|27.7|5.415|9.53461538461539|9.29234232291051|5002
+45|Tomoka Marsh Aquatic Preserve|9|Salinity|Bottom|All|15|0.44|23.56|8.86|9.652|7.19789473189408|5002
+45|Tomoka Marsh Aquatic Preserve|10|Salinity|Bottom|All|38|0.22|31.85|6.43|10.5052631578947|9.7896226735783|5002
+45|Tomoka Marsh Aquatic Preserve|11|Salinity|Bottom|All|21|1.34|29.68|22.48|18.4557142857143|11.1673607318061|5002
+45|Tomoka Marsh Aquatic Preserve|12|Salinity|Bottom|All|26|0.26|32.07|18.18|17.5834615384615|10.6531452415923|5002
+47|Yellow River Marsh Aquatic Preserve|1|Salinity|Bottom|All|64|6.2|28.5|17.35|17.759375|5.75493490785524|5002
+47|Yellow River Marsh Aquatic Preserve|2|Salinity|Bottom|All|75|0.7|27.1|15.4|14.1714666666667|8.35672777893185|5002
+47|Yellow River Marsh Aquatic Preserve|3|Salinity|Bottom|All|102|0.3|31.2|14.7|13.5|8.27839846758531|5002
+47|Yellow River Marsh Aquatic Preserve|4|Salinity|Bottom|All|98|0.1|22.2|12|11.8591836734694|6.6829809500168|5002
+47|Yellow River Marsh Aquatic Preserve|5|Salinity|Bottom|All|109|2.6|24.8|14|13.4887155963303|5.89906067552715|5002
+47|Yellow River Marsh Aquatic Preserve|6|Salinity|Bottom|All|90|1.6|27.1|16.3|15.6511111111111|6.44009987438161|5002
+47|Yellow River Marsh Aquatic Preserve|7|Salinity|Bottom|All|5|4.8|5.7|5.1|5.1|0.367423461417477|115, 5002
+47|Yellow River Marsh Aquatic Preserve|9|Salinity|Bottom|All|50|13.4|30.2|21.1|21.5|4.53629355131185|5002
+47|Yellow River Marsh Aquatic Preserve|10|Salinity|Bottom|All|96|0.3|30.7|22.8|20.3539583333333|6.77465858206218|5002
+47|Yellow River Marsh Aquatic Preserve|11|Salinity|Bottom|All|42|0.01|30.4|24.4|20.8004761904762|8.00446246039714|5002
+47|Yellow River Marsh Aquatic Preserve|12|Salinity|Bottom|All|64|0.01|30.7|22.9|21.4284375|7.04898106308832|5002

@@ -1,0 +1,424 @@
+AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
+2|Apalachicola Bay Aquatic Preserve|2000|Turbidity|All|Field|56|1.5|45.9|6.35|9.35214285714286|9.36165539252069|129
+2|Apalachicola Bay Aquatic Preserve|2001|Turbidity|All|Field|143|1.2|85.3|7.4|10.9188811188811|11.4392104958104|129
+2|Apalachicola Bay Aquatic Preserve|2002|Turbidity|All|Field|135|1.15|58|6.5|9.32785185185185|7.97878805232088|129
+2|Apalachicola Bay Aquatic Preserve|2003|Turbidity|All|Field|117|1.21|44.2|6.16|8.45675213675214|7.72963975485005|129
+2|Apalachicola Bay Aquatic Preserve|2004|Turbidity|All|Field|193|1.23|50|7.8|9.30678756476684|6.76597338721571|129, 355
+2|Apalachicola Bay Aquatic Preserve|2005|Turbidity|All|Field|200|1.55|75|8.4|10.7772|9.81470910081742|103, 129, 355
+2|Apalachicola Bay Aquatic Preserve|2006|Turbidity|All|Field|214|1.24|50|6.45|8.59317757009346|6.56661446533874|103, 129, 355
+2|Apalachicola Bay Aquatic Preserve|2007|Turbidity|All|Field|213|1.96|59.8|7.33|10.407323943662|9.64928748338541|129, 355
+2|Apalachicola Bay Aquatic Preserve|2008|Turbidity|All|Field|204|2|56.5|7.3|9.84975490196078|8.08921135424954|129, 355
+2|Apalachicola Bay Aquatic Preserve|2009|Turbidity|All|Field|196|1.4|65.9|6.56|9.89545918367347|9.98046313571939|129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|2010|Turbidity|All|Field|193|0.17|49.4|6.35|9.23906735751295|9.45323644758667|129, 355
+2|Apalachicola Bay Aquatic Preserve|2011|Turbidity|All|Field|239|0.18|101.6|7.3|9.75196652719665|12.1673128331077|129, 355
+2|Apalachicola Bay Aquatic Preserve|2012|Turbidity|All|Field|257|0.31|68.2|6.2|8.64501945525292|8.92497768399318|129, 355
+2|Apalachicola Bay Aquatic Preserve|2013|Turbidity|All|Field|164|1.8|50.3|7.2|9.57743902439024|8.47343974612604|355
+2|Apalachicola Bay Aquatic Preserve|2014|Turbidity|All|Field|116|0.75|27.5|4.4|6.12870689655172|4.83147264077535|129, 355
+2|Apalachicola Bay Aquatic Preserve|2015|Turbidity|All|Field|129|0.4|41.5|5.4|6.84356589147287|5.889533592321|129, 355
+2|Apalachicola Bay Aquatic Preserve|2016|Turbidity|All|Field|136|1.5|61|5.75|9.87647058823529|9.55431440487891|129, 355
+2|Apalachicola Bay Aquatic Preserve|2017|Turbidity|All|Field|272|0.1|23.8|4.65|6.07974264705882|4.71905522550308|129, 355
+2|Apalachicola Bay Aquatic Preserve|2018|Turbidity|All|Field|230|1.01|74.1|4.4|7.76856521739131|8.81730752022456|129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|2019|Turbidity|All|Field|237|1.27|34.53|4.51|6.38552742616034|5.37573946788487|129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|2020|Turbidity|All|Field|90|0.3|55|10.42|13.1961111111111|11.2535390382933|129
+3|Apalachicola National Estuarine Research Reserve|2000|Turbidity|All|Field|70|0.9|45.9|6.3|8.52542857142857|8.60829389174813|129
+3|Apalachicola National Estuarine Research Reserve|2001|Turbidity|All|Field|176|0.45|85.3|6.3|9.81818181818182|10.7201122110816|129
+3|Apalachicola National Estuarine Research Reserve|2002|Turbidity|All|Field|165|1.15|58|6.21|8.56139393939394|7.56111803716317|129
+3|Apalachicola National Estuarine Research Reserve|2003|Turbidity|All|Field|139|1.21|44.2|5.4|7.6563309352518|7.36098332907008|129
+3|Apalachicola National Estuarine Research Reserve|2004|Turbidity|All|Field|237|0.93|50|7.6|8.93789029535865|6.56304960415187|129, 355
+3|Apalachicola National Estuarine Research Reserve|2005|Turbidity|All|Field|247|1.55|75|8.06|10.5512550607287|9.91557666570842|103, 129, 355
+3|Apalachicola National Estuarine Research Reserve|2006|Turbidity|All|Field|260|1.24|50|6.5|8.40153846153846|6.21661895984878|103, 129, 355
+3|Apalachicola National Estuarine Research Reserve|2007|Turbidity|All|Field|259|0|59.8|7.2|9.92119691119691|9.26962371165353|129, 355
+3|Apalachicola National Estuarine Research Reserve|2008|Turbidity|All|Field|250|2|56.5|6.95|9.472|7.61041650354497|129, 355
+3|Apalachicola National Estuarine Research Reserve|2009|Turbidity|All|Field|242|1|65.9|6.51|9.72107438016529|9.71711565230412|129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|2010|Turbidity|All|Field|239|0.05|49.4|6.3|8.9273640167364|9.25864393743557|129, 355
+3|Apalachicola National Estuarine Research Reserve|2011|Turbidity|All|Field|302|0.18|101.6|7.2|9.80450331125828|12.2260794012867|129, 355
+3|Apalachicola National Estuarine Research Reserve|2012|Turbidity|All|Field|318|0.31|68.2|6.2|8.58899371069182|9.01539578328638|129, 355
+3|Apalachicola National Estuarine Research Reserve|2013|Turbidity|All|Field|212|1.8|50.3|7.4|10.2900943396226|8.91403632441295|355
+3|Apalachicola National Estuarine Research Reserve|2014|Turbidity|All|Field|140|0.75|27.5|4.8|6.35021428571429|4.78817510300747|129, 355
+3|Apalachicola National Estuarine Research Reserve|2015|Turbidity|All|Field|157|0.4|41.5|5.4|6.97974522292994|5.56079337968924|129, 355
+3|Apalachicola National Estuarine Research Reserve|2016|Turbidity|All|Field|164|0.2|61|6.1|10.1743902439024|9.60515979658543|129, 355
+3|Apalachicola National Estuarine Research Reserve|2017|Turbidity|All|Field|322|0.1|23.8|4.9|6.29083850931677|4.64132301795696|129, 355
+3|Apalachicola National Estuarine Research Reserve|2018|Turbidity|All|Field|275|1.01|74.1|4.4|7.23574545454545|8.19305739617476|129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|2019|Turbidity|All|Field|287|1.27|34.53|4.68|6.41383275261324|5.03535805213386|129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|2020|Turbidity|All|Field|90|0.3|55|10.42|13.1961111111111|11.2535390382933|129
+4|Banana River Aquatic Preserve|2003|Turbidity|All|Field|48|2.05|9|5.665|5.44333333333333|1.74825302873533|5002
+4|Banana River Aquatic Preserve|2004|Turbidity|All|Field|196|1.03|13.3|5.235|5.42647959183674|2.69387974044715|3013, 5002
+4|Banana River Aquatic Preserve|2005|Turbidity|All|Field|143|0.9|11.8|3.5|3.79363636363636|1.9296199528954|103, 3013, 5002
+4|Banana River Aquatic Preserve|2006|Turbidity|All|Field|23|1.65|20.7|6.06|6.73608695652174|4.08361998402313|103, 3013
+4|Banana River Aquatic Preserve|2007|Turbidity|All|Field|24|1.05|8.81|3.865|4.27875|2.13981574277868|3013
+4|Banana River Aquatic Preserve|2008|Turbidity|All|Field|38|0.97|10.6|3.505|4.02921052631579|1.98403136088301|3013, 5002
+4|Banana River Aquatic Preserve|2009|Turbidity|All|Field|111|0.23|8.69|3.42|3.63693693693694|1.58823389209112|95, 3013, 5002
+4|Banana River Aquatic Preserve|2010|Turbidity|All|Field|18|1.69|8.32|5.22|5.19666666666667|1.89026608771171|95, 3013
+4|Banana River Aquatic Preserve|2011|Turbidity|All|Field|17|4.91|19.1|8.72|9.54176470588235|3.90377579289289|3013
+4|Banana River Aquatic Preserve|2012|Turbidity|All|Field|18|1.65|22.9|2.725|3.94222222222222|4.82809249333347|3013
+4|Banana River Aquatic Preserve|2013|Turbidity|All|Field|19|0.92|6.28|2.44|2.43947368421053|1.17907437181418|3013
+4|Banana River Aquatic Preserve|2014|Turbidity|All|Field|19|0.9|8.7|2.94|3.87947368421053|2.4301245365532|3013
+4|Banana River Aquatic Preserve|2015|Turbidity|All|Field|27|2.22|15.5|5.08|5.83481481481481|3.04822819957679|3013
+4|Banana River Aquatic Preserve|2016|Turbidity|All|Field|24|1.17|14.6|5.535|6.07791666666667|3.8031314090487|3013
+4|Banana River Aquatic Preserve|2017|Turbidity|All|Field|14|1.66|9.27|2.83|3.38857142857143|2.06176495393503|3013
+4|Banana River Aquatic Preserve|2018|Turbidity|All|Field|5|5.82|19.5|13.1|12.624|6.14807937489424|3013
+4|Banana River Aquatic Preserve|2019|Turbidity|All|Field|9|4.27|45.3|12.6|14.7266666666667|12.5117854441323|3013
+5|Big Bend Seagrasses Aquatic Preserve|2005|Turbidity|All|Field|18|0.4|3.49|1.705|1.79055555555556|0.757445181260254|103, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2006|Turbidity|All|Field|9|0.88|22.93|2.89|8.93222222222222|9.1975265394803|103, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2014|Turbidity|All|Field|60|0.35|4.97|1.625|2.04|1.29493668453294|5002
+5|Big Bend Seagrasses Aquatic Preserve|2015|Turbidity|All|Field|56|0.64|12.8|3.12|3.69142857142857|2.81614141469005|5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|Turbidity|All|Field|56|0.72|14.4|2.365|3.33285714285714|2.69834812383477|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|Turbidity|All|Field|4|0.85|1.7|1.275|1.275|0.490747728811182|5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|Turbidity|All|Field|20|0.54|26|3.12|7.64|8.68016856494098|477, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|Turbidity|All|Field|92|0.17|16.2|2.22|3.01217391304348|2.99198262985165|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|Turbidity|All|Field|72|0.31|11|2.92|3.3175|2.34309158357374|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2022|Turbidity|All|Field|8|2.24|12|2.665|4.0575|3.29925857471905|477, 540
+6|Biscayne Bay Aquatic Preserve|1982|Turbidity|All|Field|4|1.1|1.6|1.3|1.325|0.262995563967658|103
+6|Biscayne Bay Aquatic Preserve|1983|Turbidity|All|Field|1|1.2|1.2|1.2|1.2||103
+6|Biscayne Bay Aquatic Preserve|2005|Turbidity|All|Field|179|0.38|14.43|2.44|2.90575418994413|2.08588807533709|965
+6|Biscayne Bay Aquatic Preserve|2006|Turbidity|All|Field|180|0.39|9.35|2.395|2.68777777777778|1.61272126992716|103, 965
+6|Biscayne Bay Aquatic Preserve|2007|Turbidity|All|Field|176|0.23|15.2|2|2.62204545454545|2.40570353670054|965
+6|Biscayne Bay Aquatic Preserve|2008|Turbidity|All|Field|182|0.26|8.93|1.355|1.93615384615385|1.6287901955324|965
+6|Biscayne Bay Aquatic Preserve|2009|Turbidity|All|Field|180|0.48|5.06|1.245|1.43861111111111|0.801568827581708|965
+6|Biscayne Bay Aquatic Preserve|2010|Turbidity|All|Field|181|0.51|8.14|1.72|1.95790055248619|1.28968644382601|965
+6|Biscayne Bay Aquatic Preserve|2011|Turbidity|All|Field|178|0.61|15.08|1.645|2.3847191011236|2.17177091418521|965
+6|Biscayne Bay Aquatic Preserve|2016|Turbidity|All|Field|180|0.7|46.1|4.085|5.77566666666667|6.42717763892011|4058
+6|Biscayne Bay Aquatic Preserve|2017|Turbidity|All|Field|462|0.65|478|4.025|5.98049783549784|22.2453558479408|4058
+6|Biscayne Bay Aquatic Preserve|2018|Turbidity|All|Field|430|1.22|66.1|4.325|5.39088372093023|4.74672937680857|4058
+6|Biscayne Bay Aquatic Preserve|2019|Turbidity|All|Field|227|0.01|495.76|1.47|4.78356828193833|32.8846046375318|5026
+6|Biscayne Bay Aquatic Preserve|2020|Turbidity|All|Field|174|0.25|14.12|2.11|2.45695402298851|1.91213841741482|5026
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2002|Turbidity|All|Field|70|1.63|15.82|6.21|6.542|3.45008363687741|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2003|Turbidity|All|Field|36|1.01|26.95|5.47|6.25694444444445|4.5374478789258|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2004|Turbidity|All|Field|39|1.68|13.3|6.7|7.1748717948718|3.11567418723872|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2005|Turbidity|All|Field|36|2.08|28.7|7.66|8.44861111111111|5.35515354069745|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2006|Turbidity|All|Field|26|2.49|13.4|6.135|7.09307692307692|3.27664190198535|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2015|Turbidity|All|Field|32|3.62|14.48|6.12|6.98125|2.91591600171066|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2016|Turbidity|All|Field|96|2.3|12.49|6.615|6.90583333333333|2.4857580297479|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2017|Turbidity|All|Field|96|0.62|20.44|7.805|7.49520833333333|3.56091176354025|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2018|Turbidity|All|Field|86|1.51|14.45|5.8|6.32232558139535|3.41821614104013|354
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2019|Turbidity|All|Field|96|2.97|30.72|9.03|10.0134375|6.09348104264757|354
+13|Coupon Bight Aquatic Preserve|1995|Turbidity|All|Field|4|0.7|2.368686|1.729343|1.631843|0.865601992179624|297
+13|Coupon Bight Aquatic Preserve|1996|Turbidity|All|Field|3|0.35|1.95|0.52|0.94|0.878806008172452|297
+13|Coupon Bight Aquatic Preserve|1997|Turbidity|All|Field|4|0.315|1.06|0.54|0.61375|0.327270912242442|297
+13|Coupon Bight Aquatic Preserve|1998|Turbidity|All|Field|3|0.305|0.65|0.42|0.458333333333333|0.175665401639974|297
+13|Coupon Bight Aquatic Preserve|1999|Turbidity|All|Field|4|0.475|1.555|0.49|0.7525|0.535109023159456|297
+13|Coupon Bight Aquatic Preserve|2000|Turbidity|All|Field|4|0.41|1.095|0.8075|0.78|0.282046095523409|297
+13|Coupon Bight Aquatic Preserve|2001|Turbidity|All|Field|4|0.865|3.525|1.635|1.915|1.20435321507715|297
+13|Coupon Bight Aquatic Preserve|2002|Turbidity|All|Field|4|0.55|1.885|0.72|0.96875|0.630626342086448|297
+13|Coupon Bight Aquatic Preserve|2003|Turbidity|All|Field|4|0.565|1.04|0.9875|0.895|0.22475913032993|297
+13|Coupon Bight Aquatic Preserve|2004|Turbidity|All|Field|4|0.325|0.59|0.4375|0.4475|0.132444957120559|297
+13|Coupon Bight Aquatic Preserve|2005|Turbidity|All|Field|4|0.305|1.085|0.885|0.79|0.344722110305291|297
+13|Coupon Bight Aquatic Preserve|2006|Turbidity|All|Field|4|1.43|2.815|1.715|1.91875|0.63176175625521|297
+13|Coupon Bight Aquatic Preserve|2007|Turbidity|All|Field|4|0.3|1.2|0.56|0.655|0.393827373350304|297
+13|Coupon Bight Aquatic Preserve|2008|Turbidity|All|Field|6|0.3680159|3.1274786|0.5877961|1.2949593|1.20163154609268|297
+13|Coupon Bight Aquatic Preserve|2009|Turbidity|All|Field|8|0.477906|4.4156349|0.7851937|1.64221905|1.70713089516579|297
+13|Coupon Bight Aquatic Preserve|2010|Turbidity|All|Field|7|0.650761|11.873895|0.936928|3.3324382|4.47957330845725|297
+13|Coupon Bight Aquatic Preserve|2011|Turbidity|All|Field|3|0.6|0.74|0.65|0.663333333333333|0.0709459888459759|297
+14|Estero Bay Aquatic Preserve|1991|Turbidity|All|Field|110|0.15|26|1.77|3.00690909090909|4.83544780720947|5002
+14|Estero Bay Aquatic Preserve|1992|Turbidity|All|Field|158|0.11|45|1.36|2.53708860759494|5.35178906972946|5002
+14|Estero Bay Aquatic Preserve|1993|Turbidity|All|Field|112|0.7|48|2.2|3.83928571428571|6.74975284356127|5002
+14|Estero Bay Aquatic Preserve|1994|Turbidity|All|Field|134|1|22|3.1|3.99402985074627|3.14328885742426|5002
+14|Estero Bay Aquatic Preserve|1995|Turbidity|All|Field|102|1.3|38|6.3|7.88764705882353|6.82258497169375|5002
+14|Estero Bay Aquatic Preserve|1996|Turbidity|All|Field|134|0.55|24|2.4|4.28283582089552|4.31937366873205|5002
+14|Estero Bay Aquatic Preserve|1997|Turbidity|All|Field|130|0.99|45|2.6|4.82276923076923|6.32655275733112|5002
+14|Estero Bay Aquatic Preserve|1998|Turbidity|All|Field|160|1.2|71|3.25|7.312875|9.69891301615643|5002
+14|Estero Bay Aquatic Preserve|1999|Turbidity|All|Field|160|0.4|114|3.3|8.55125|18.1449059244265|5002
+14|Estero Bay Aquatic Preserve|2000|Turbidity|All|Field|216|0.67|119|3.5|6.70351851851852|12.1708507520043|5002
+14|Estero Bay Aquatic Preserve|2001|Turbidity|All|Field|364|0.68|70|3.7|4.84472527472528|6.45686519828166|5002
+14|Estero Bay Aquatic Preserve|2002|Turbidity|All|Field|406|0.5|35|3.9|5.93502463054187|6.04941898031471|5002
+14|Estero Bay Aquatic Preserve|2003|Turbidity|All|Field|514|0.6|17|2.4|3.38696498054475|2.73188938659742|5002
+14|Estero Bay Aquatic Preserve|2004|Turbidity|All|Field|606|0.51|66|2.6|3.67356435643564|4.43774857313151|5002
+14|Estero Bay Aquatic Preserve|2005|Turbidity|All|Field|620|0.2|42.4|2.6|3.58816129032258|3.99475368874193|5002
+14|Estero Bay Aquatic Preserve|2006|Turbidity|All|Field|588|0.2|20.1|2.25|3.08384353741497|2.72880124619508|5002
+14|Estero Bay Aquatic Preserve|2007|Turbidity|All|Field|544|0.72|18.2|2.495|2.88356617647059|1.68297798062653|5002
+14|Estero Bay Aquatic Preserve|2008|Turbidity|All|Field|546|0.638|17.4|3.18|3.61444688644689|2.10754745197146|5002
+14|Estero Bay Aquatic Preserve|2009|Turbidity|All|Field|506|0.914|23.2|3.37|4.35305928853755|2.93474226986584|5002
+14|Estero Bay Aquatic Preserve|2010|Turbidity|All|Field|402|0.958|20.4|4.21|4.91964179104478|3.07099545072909|5002
+14|Estero Bay Aquatic Preserve|2011|Turbidity|All|Field|468|1.11|49.8|3.785|5.57974358974359|5.94658744908148|5002
+14|Estero Bay Aquatic Preserve|2012|Turbidity|All|Field|432|0.924|19.7|2.905|3.55108333333333|2.2051808039683|5002
+14|Estero Bay Aquatic Preserve|2013|Turbidity|All|Field|408|0.818|35.6|3.16|4.34861764705882|3.787668167009|5002
+14|Estero Bay Aquatic Preserve|2014|Turbidity|All|Field|500|0.676|16.9|3.245|3.710664|2.1654287211073|5002
+14|Estero Bay Aquatic Preserve|2015|Turbidity|All|Field|518|0.53|35.6|4.36|5.26257142857143|3.56863255479402|5002
+14|Estero Bay Aquatic Preserve|2016|Turbidity|All|Field|518|0.2|64.3|4.27|6.36320463320463|7.81921628354138|4042, 5002
+14|Estero Bay Aquatic Preserve|2017|Turbidity|All|Field|494|0.2|23.3|4.73|5.62846153846154|3.62567585663443|4042, 5002
+14|Estero Bay Aquatic Preserve|2018|Turbidity|All|Field|16|3.5|100|18.35|34.1625|35.3963439731657|4042
+14|Estero Bay Aquatic Preserve|2019|Turbidity|All|Field|16|1.4|38.4|11.65|15.4125|13.7372910963795|4042
+14|Estero Bay Aquatic Preserve|2020|Turbidity|All|Field|28|1.97|47|4.1|7.81857142857143|11.4687852417174|4042, 5002
+14|Estero Bay Aquatic Preserve|2021|Turbidity|All|Field|34|2.2|9|4.09|4.71294117647059|2.02445283204184|4042, 5002
+14|Estero Bay Aquatic Preserve|2022|Turbidity|All|Field|8|4.35|45.66|11.33|18.6425|15.6230175885271|476, 4042
+15|Florida Keys National Marine Sanctuary|1995|Turbidity|All|Field|634|0|37|0.565397|0.984299747634069|1.91122933611272|297
+15|Florida Keys National Marine Sanctuary|1996|Turbidity|All|Field|668|0|20.7|0.6|0.965291916167665|1.49109247658475|297
+15|Florida Keys National Marine Sanctuary|1997|Turbidity|All|Field|881|0|12.97|0.48|0.729308172531215|0.978758564679326|297
+15|Florida Keys National Marine Sanctuary|1998|Turbidity|All|Field|836|0|18.8|0.545|1.19081937799043|2.00248992124852|297
+15|Florida Keys National Marine Sanctuary|1999|Turbidity|All|Field|878|0|25.8|0.6|0.972021640091116|1.38702991321273|297
+15|Florida Keys National Marine Sanctuary|2000|Turbidity|All|Field|930|0|16.825|0.695|1.12897311827957|1.65407636343333|297
+15|Florida Keys National Marine Sanctuary|2001|Turbidity|All|Field|902|0|10.19|0.7|1.09675720620843|1.15585360101489|297
+15|Florida Keys National Marine Sanctuary|2002|Turbidity|All|Field|902|0|18.86|0.7025|1.18172949002217|1.61327575425361|297
+15|Florida Keys National Marine Sanctuary|2003|Turbidity|All|Field|883|0.015|6.685|0.735|0.920033975084938|0.846328738992888|297
+15|Florida Keys National Marine Sanctuary|2004|Turbidity|All|Field|868|0.01|10.14|0.525|0.695552995391705|0.703081604286649|297
+15|Florida Keys National Marine Sanctuary|2005|Turbidity|All|Field|1062|0|18.2|0.685|1.14984463276836|1.40321366021546|103, 297, 965
+15|Florida Keys National Marine Sanctuary|2006|Turbidity|All|Field|1055|0.185|40.1|1.45|1.98605450236967|2.37135436427857|103, 297, 965
+15|Florida Keys National Marine Sanctuary|2007|Turbidity|All|Field|1000|0|14.5|0.5775|1.026825|1.30622991121623|297, 965
+15|Florida Keys National Marine Sanctuary|2008|Turbidity|All|Field|1196|0.1116056|23.695244|0.88|1.34868478035117|1.8569394946411|297, 965
+15|Florida Keys National Marine Sanctuary|2009|Turbidity|All|Field|1244|0.01|23.8948|0.8451722|1.47585884280547|2.29714166541133|297, 965
+15|Florida Keys National Marine Sanctuary|2010|Turbidity|All|Field|1230|0|27|0.9850849|1.64437286369919|2.38671855945524|297, 965
+15|Florida Keys National Marine Sanctuary|2011|Turbidity|All|Field|1060|0|22|0.65|1.32612123916038|1.92473516179882|297, 965
+15|Florida Keys National Marine Sanctuary|2012|Turbidity|All|Field|675|0|31|0|0.344725925925926|1.37240338814315|297
+15|Florida Keys National Marine Sanctuary|2013|Turbidity|All|Field|636|0|5.69|0.13|0.366124213836478|0.661749555580058|297
+15|Florida Keys National Marine Sanctuary|2014|Turbidity|All|Field|1363|0|6.12|0.33|0.561100513573001|0.744078828753479|297
+15|Florida Keys National Marine Sanctuary|2015|Turbidity|All|Field|1791|0|23.4|0.3|0.720938023450586|1.59493665031033|297, 3000
+15|Florida Keys National Marine Sanctuary|2016|Turbidity|All|Field|1925|0|12|0.18|0.372950649350649|0.731783072951586|297, 3000
+15|Florida Keys National Marine Sanctuary|2017|Turbidity|All|Field|2232|0|80|0.345|0.885744623655914|2.50717899446377|297, 3000
+15|Florida Keys National Marine Sanctuary|2018|Turbidity|All|Field|1410|0|11.4|0.67|1.02655319148936|1.2292219285744|297, 3000
+15|Florida Keys National Marine Sanctuary|2019|Turbidity|All|Field|1280|0|7.55|0.585|0.7895703125|0.811135105418981|297
+15|Florida Keys National Marine Sanctuary|2020|Turbidity|All|Field|2229|0|83|0.32|0.869080305069538|3.29731507081493|297
+15|Florida Keys National Marine Sanctuary|2021|Turbidity|All|Field|735|0|11.38|0.48|0.69374149659864|0.948362715653615|297
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1996|Turbidity|All|Field|8|0.041|0.65|0.51|0.42775|0.255622908653687|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1997|Turbidity|All|Field|12|0.9|5.5|1.38|2.00666666666667|1.64994398435679|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1998|Turbidity|All|Field|16|0.74|1.84|1.34|1.335|0.33350662162342|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|Turbidity|All|Field|16|0.6|1.6|0.79|0.90625|0.366421887992516|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2000|Turbidity|All|Field|16|0.47|1.3|0.83|0.8375|0.250106643920815|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2001|Turbidity|All|Field|48|0.5|3.3|1.21|1.305|0.681025509566896|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2002|Turbidity|All|Field|48|0.39|3.4|0.89|1.12083333333333|0.609561521281446|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2003|Turbidity|All|Field|52|0.41|20|1.2|2.50769230769231|3.70540496338589|95, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2004|Turbidity|All|Field|48|0.22|1.94|0.715|0.873333333333333|0.495577605547877|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2005|Turbidity|All|Field|50|0.24|6|0.88|1.228|1.28813739918678|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2006|Turbidity|All|Field|50|0.27|1.67|0.65|0.7474|0.397270328977278|103, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|Turbidity|All|Field|48|0.2|2.94|0.95|1.00058333333333|0.603809601994696|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|Turbidity|All|Field|48|0.31|2.03|0.9495|0.941208333333333|0.400119554385209|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2009|Turbidity|All|Field|48|0.476|2.89|0.931|1.25295833333333|0.656727119026806|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Turbidity|All|Field|48|0.569|10.2|1.185|1.769375|2.04689437436015|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Turbidity|All|Field|48|0.59|7.3|1.815|2.33029166666667|1.63505592276453|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Turbidity|All|Field|48|0.365|10.2|1.47|1.87979166666667|1.89530472437203|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Turbidity|All|Field|48|0.306|6.7|0.928|1.36908333333333|1.38905453584303|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Turbidity|All|Field|188|0.338|3.71|0.9475|1.07362765957447|0.561243291046072|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2016|Turbidity|All|Field|184|0.2|5.21|0.84|1.19336956521739|1.07238794584379|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2017|Turbidity|All|Field|208|0.2|13.6|1.155|1.89|2.08213008731037|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|Turbidity|All|Field|2|2.8|3.3|3.05|3.05|0.353553390593274|476
+19|Guana River Marsh Aquatic Preserve|2002|Turbidity|All|Field|15|0.8|13|4.8|5.5|3.31058907144937|4054
+19|Guana River Marsh Aquatic Preserve|2003|Turbidity|All|Field|23|1.5|16.1|4.5|5.36521739130435|3.15315263530042|4054
+19|Guana River Marsh Aquatic Preserve|2004|Turbidity|All|Field|24|1.2|15.2|6.05|6.01666666666667|3.4848325599682|4054
+19|Guana River Marsh Aquatic Preserve|2005|Turbidity|All|Field|24|3.2|9|5.45|5.83333333333333|1.83555859680884|4054
+19|Guana River Marsh Aquatic Preserve|2006|Turbidity|All|Field|24|2.5|14.7|7.45|7.30416666666667|3.2253721277271|4054
+19|Guana River Marsh Aquatic Preserve|2007|Turbidity|All|Field|24|3.6|13.1|6.65|7.525|2.92845856470898|4054
+19|Guana River Marsh Aquatic Preserve|2008|Turbidity|All|Field|24|2.8|12.7|5.45|6.48333333333333|3.09651510525969|4054
+19|Guana River Marsh Aquatic Preserve|2009|Turbidity|All|Field|24|2.9|13.8|5.25|5.775|2.40366567884391|4054
+19|Guana River Marsh Aquatic Preserve|2010|Turbidity|All|Field|24|0.7|14.8|6.25|6.91666666666667|3.31356456779214|4054
+19|Guana River Marsh Aquatic Preserve|2011|Turbidity|All|Field|24|3.4|10.3|6.15|6.20833333333333|2.11144225727276|4054
+19|Guana River Marsh Aquatic Preserve|2012|Turbidity|All|Field|28|2.2|29|8.5|9.38928571428571|5.11441965034043|95, 4054
+19|Guana River Marsh Aquatic Preserve|2019|Turbidity|All|Field|2|5.2|5.2|5.2|5.2|0|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2002|Turbidity|All|Field|132|0.2|19.7|4.45|5.22121212121212|3.05886348956453|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2003|Turbidity|All|Field|227|0.5|16.1|4.3|4.74801762114537|2.47156090546493|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2004|Turbidity|All|Field|228|0.1|29.6|5.2|5.88114035087719|3.71680841222229|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2005|Turbidity|All|Field|228|2|19.3|5.8|6.14736842105263|2.59585269113339|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2006|Turbidity|All|Field|228|2.5|34.7|7.75|9.03464912280702|4.83101957112649|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2007|Turbidity|All|Field|227|1.3|39|8.6|9.86916299559471|6.14251258043063|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2008|Turbidity|All|Field|228|2.6|34.2|9.5|10.1868421052632|5.38413419195565|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2009|Turbidity|All|Field|234|1.5|16.6|6.3|6.81837606837607|3.07657003632904|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2010|Turbidity|All|Field|229|0.7|32.1|6.3|8.2292576419214|5.51229645118853|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2011|Turbidity|All|Field|228|1.5|44.5|9.8|11.1684210526316|6.53108211702246|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2012|Turbidity|All|Field|218|2.2|40|9.7|10.7160550458716|4.9761429955502|95, 4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Turbidity|All|Field|2|5.2|5.2|5.2|5.2|0|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Turbidity|All|Field|2|4.5|4.5|4.5|4.5|0|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2003|Turbidity|All|Field|24|3.08|5.88|3.445|3.8375|0.822901811460121|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2004|Turbidity|All|Field|241|1.14|73.6|4.31|5.96668049792531|7.86568214471318|3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2005|Turbidity|All|Field|270|1|23.6|4.2|4.66022222222222|2.85421802692598|3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2006|Turbidity|All|Field|170|1.57|20.2|4.515|5.00529411764706|2.67728118216364|3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2007|Turbidity|All|Field|166|1.69|35.8|3.96|4.85783132530121|3.15472442178981|3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2008|Turbidity|All|Field|182|0.75|36.6|4.22|5.13747252747253|4.45495790442293|95, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2009|Turbidity|All|Field|228|0.93|37.3|3.57|4.91986842105263|4.95468411669877|3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2010|Turbidity|All|Field|163|0.78|22.9|3.81|4.63435582822086|2.91512362078464|3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2011|Turbidity|All|Field|150|2.32|22.9|5.655|6.9216|3.85414813227299|3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2012|Turbidity|All|Field|65|0.68|29|3.3|4.96723076923077|4.42735230826941|3013
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2013|Turbidity|All|Field|61|1|9.34|2.97|3.42491803278689|1.70608481906266|3013
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2014|Turbidity|All|Field|67|1.03|13.1|2.87|3.59611940298507|2.40810371468474|3013
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2015|Turbidity|All|Field|82|0.99|22.6|3.82|5.28341463414634|3.92269314752757|3013
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|Turbidity|All|Field|80|1.57|19.7|3.555|4.81675|3.28565149696277|3013
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2017|Turbidity|All|Field|45|0.15|15.5|3.16|3.47533333333333|2.3593465967586|3013
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|Turbidity|All|Field|36|1.51|15.1|4.45|5.79388888888889|3.34326297224542|3013
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|Turbidity|All|Field|37|1.89|17|3.9|5.14297297297297|3.78220604708186|3013
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2020|Turbidity|All|Field|2|3.7|3.7|3.7|3.7|0|540
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2004|Turbidity|All|Field|13|2.47|8.96|5.21|5.71692307692308|2.09464549353578|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2005|Turbidity|All|Field|61|1.21|27.8|4.19|4.75491803278689|3.89173381367518|3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2006|Turbidity|All|Field|26|2.04|24|4.115|5.57769230769231|4.62225166575106|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2007|Turbidity|All|Field|27|1.71|10.9|4.15|4.91|2.17210815710311|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2008|Turbidity|All|Field|21|1.24|9.01|3.61|3.85761904761905|1.91724777940126|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2009|Turbidity|All|Field|22|1.98|9.15|3.275|3.82090909090909|1.79633465195608|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2010|Turbidity|All|Field|21|1.69|9.51|4.59|4.8352380952381|2.38869759293138|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2011|Turbidity|All|Field|19|2.84|22.4|6.74|7.97789473684211|4.68414770967802|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2012|Turbidity|All|Field|15|1.56|5.26|2.85|3.028|1.07796236350944|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2013|Turbidity|All|Field|20|1.32|6.17|2.69|3.1895|1.47395806196142|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2014|Turbidity|All|Field|17|2.33|15.1|3.66|4.64176470588235|3.24254382255298|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2015|Turbidity|All|Field|22|1.84|8.91|4.32|4.29454545454546|1.76693904622474|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2016|Turbidity|All|Field|24|1.97|11|4.715|5.21166666666667|2.51989762847045|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|Turbidity|All|Field|14|2.15|4.18|2.645|2.92|0.707672240518165|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2018|Turbidity|All|Field|14|1.48|8.7|4.875|4.91928571428571|2.21510709685772|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|Turbidity|All|Field|14|2.27|7.65|6.13|5.48071428571429|1.89151329032405|3013
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|Turbidity|All|Field|2|5.2|5.2|5.2|5.2|0|540
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2004|Turbidity|All|Field|14|0.44|7.61|3.44|3.68857142857143|2.3265288013984|3013
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2005|Turbidity|All|Field|28|1.76|21.2|3.48|5.65392857142857|5.31473029125496|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2006|Turbidity|All|Field|39|0.71|17|4.5|5.28564102564103|2.93128029767468|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2007|Turbidity|All|Field|34|1.16|14.7|4.11|4.87411764705882|3.0260646687867|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2008|Turbidity|All|Field|26|0.54|8.09|2.825|3.14692307692308|1.98267046022433|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2009|Turbidity|All|Field|32|0.19|14.5|2.64|4.0840625|3.59499280754362|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2010|Turbidity|All|Field|27|0.4|7.47|2.62|2.95925925925926|1.62064784274667|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2011|Turbidity|All|Field|27|0.84|11.7|3.4|3.93148148148148|2.75254665817187|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2012|Turbidity|All|Field|12|0.7|5|2.35|2.45333333333333|1.40421659384307|10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|Turbidity|All|Field|3|2.4|2.6|2.4|2.46666666666667|0.115470053837925|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2014|Turbidity|All|Field|5|1.4|4|2.6|2.64|0.931665175908169|3013, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2015|Turbidity|All|Field|2|1.5|2.3|1.9|1.9|0.565685424949238|10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2016|Turbidity|All|Field|5|1.75|3.49|2.89|2.678|0.844108997701126|3013
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2018|Turbidity|All|Field|7|1.4|8.28|2.84|4.22857142857143|2.97337310458133|3013
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2003|Turbidity|All|Field|40|0.8|24.5|2.85|4.10025|4.06204286579915|10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2004|Turbidity|All|Field|66|0.36|15|3.095|4.03893939393939|3.11058843247872|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2005|Turbidity|All|Field|72|0.76|12.1|2.89|3.47472222222222|2.15723086204868|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|Turbidity|All|Field|74|0.8|10.2|3.06|3.44175675675676|2.0080115961217|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|Turbidity|All|Field|66|0.55|12.4|3.1|3.21939393939394|1.79250137112951|3013, 5002, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|Turbidity|All|Field|45|1.38|7.12|2.75|3.13511111111111|1.35031582538413|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|Turbidity|All|Field|45|0.278|16.8|2.52|2.96737777777778|2.49079347788911|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|Turbidity|All|Field|52|0.62|7.33|2.475|2.69942307692308|1.07395441802994|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2011|Turbidity|All|Field|47|0.31|3.82|2.2|2.11427659574468|0.861921783552355|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|Turbidity|All|Field|45|0.3|4.28|2.3|2.32177777777778|0.828806065946368|10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|Turbidity|All|Field|47|0.7|5.1|2.3|2.36574468085106|0.995694524223628|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|Turbidity|All|Field|45|0.7|4.1|2.3|2.28111111111111|0.744687921890842|3013, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|Turbidity|All|Field|17|1.2|5|2.1|2.16470588235294|0.929341955680596|10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|Turbidity|All|Field|18|1.2|3.6|2.4|2.41888888888889|0.608391214007111|10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|Turbidity|All|Field|2|1.52|2.46|1.99|1.99|0.664680374315355|3013
+28|Matlacha Pass Aquatic Preserve|1996|Turbidity|All|Field|16|0.35|1.4|0.9|0.89|0.409650257333415|5002
+28|Matlacha Pass Aquatic Preserve|1997|Turbidity|All|Field|24|0.57|1.97|1.49|1.3375|0.437485403483213|5002
+28|Matlacha Pass Aquatic Preserve|1998|Turbidity|All|Field|32|0.6|1.66|1.175|1.181875|0.325065129950411|5002
+28|Matlacha Pass Aquatic Preserve|1999|Turbidity|All|Field|32|0.5|2.1|1.25|1.24125|0.528062496301337|5002
+28|Matlacha Pass Aquatic Preserve|2000|Turbidity|All|Field|32|0.5|3|1.25|1.4125|0.653116597800562|5002
+28|Matlacha Pass Aquatic Preserve|2001|Turbidity|All|Field|96|0.5|4|1.57|1.58104166666667|0.687749157403171|5002
+28|Matlacha Pass Aquatic Preserve|2002|Turbidity|All|Field|96|0.38|3.5|0.98|1.12958333333333|0.589190196557358|5002
+28|Matlacha Pass Aquatic Preserve|2003|Turbidity|All|Field|86|0.3|10.3|1.34|1.70093023255814|1.52193501284074|5002
+28|Matlacha Pass Aquatic Preserve|2004|Turbidity|All|Field|76|0.23|5.3|1.165|1.53631578947368|1.15054171832839|5002
+28|Matlacha Pass Aquatic Preserve|2005|Turbidity|All|Field|77|0.21|5.2|1.37|1.59857142857143|1.01213650302312|103, 5002
+28|Matlacha Pass Aquatic Preserve|2006|Turbidity|All|Field|72|0.31|1.83|0.765|0.923055555555555|0.414360661059288|5002
+28|Matlacha Pass Aquatic Preserve|2007|Turbidity|All|Field|74|0.52|2.02|1.01|1.09410810810811|0.35004538130713|5002
+28|Matlacha Pass Aquatic Preserve|2008|Turbidity|All|Field|72|0.473|3.58|1.35|1.51991666666667|0.691920429154748|5002
+28|Matlacha Pass Aquatic Preserve|2009|Turbidity|All|Field|72|0.702|2.48|1.275|1.36766666666667|0.485780800274664|5002
+28|Matlacha Pass Aquatic Preserve|2010|Turbidity|All|Field|72|0.59|2.7|1.43|1.45725|0.537369250392694|5002
+28|Matlacha Pass Aquatic Preserve|2011|Turbidity|All|Field|74|0.811|4.4|2.04|2.12016216216216|0.913555706094449|5002
+28|Matlacha Pass Aquatic Preserve|2012|Turbidity|All|Field|95|0.393|9|1.71|2.10025263157895|1.35369454243626|95, 5002
+28|Matlacha Pass Aquatic Preserve|2013|Turbidity|All|Field|80|0.285|5.9|1.885|2.059525|1.33931786884125|95, 5002
+28|Matlacha Pass Aquatic Preserve|2014|Turbidity|All|Field|72|0.391|3.47|1.175|1.2645|0.594467521234606|5002
+28|Matlacha Pass Aquatic Preserve|2017|Turbidity|All|Field|2|0.72|0.72|0.72|0.72|0|5002
+28|Matlacha Pass Aquatic Preserve|2019|Turbidity|All|Field|16|0.4|22.04|1.577715|5.17626|7.52026126441717|303
+29|Mosquito Lagoon Aquatic Preserve|1991|Turbidity|All|Field|3|8.08|13|12.22|11.1|2.64431465601203|103
+29|Mosquito Lagoon Aquatic Preserve|1992|Turbidity|All|Field|6|3.02|22.6|9.39|9.74666666666667|7.1781074571691|103
+29|Mosquito Lagoon Aquatic Preserve|1993|Turbidity|All|Field|3|3.49|5.68|4.51|4.56|1.09585582993385|103
+29|Mosquito Lagoon Aquatic Preserve|2006|Turbidity|All|Field|1|12.3|12.3|12.3|12.3||103
+29|Mosquito Lagoon Aquatic Preserve|2009|Turbidity|All|Field|4|7.68|12.2|9.435|9.6875|1.94547980371595|3013
+29|Mosquito Lagoon Aquatic Preserve|2010|Turbidity|All|Field|6|1.45|17.8|4.22|7.74666666666667|7.53611482573525|3013
+29|Mosquito Lagoon Aquatic Preserve|2011|Turbidity|All|Field|6|2.82|13.3|9.69|8.35166666666667|4.4263502647968|3013
+29|Mosquito Lagoon Aquatic Preserve|2012|Turbidity|All|Field|2|31|37.5|34.25|34.25|4.59619407771256|3013
+29|Mosquito Lagoon Aquatic Preserve|2013|Turbidity|All|Field|2|4.98|5.04|5.01|5.01|0.0424264068711926|3013
+29|Mosquito Lagoon Aquatic Preserve|2019|Turbidity|All|Field|2|3.85|4.71|4.28|4.28|0.608111831820431|3013
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1985|Turbidity|All|Field|63|1|23|4.7|5.68888888888889|3.78119758768735|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1986|Turbidity|All|Field|63|1.9|19|4.6|6.54761904761905|3.98593726149002|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1987|Turbidity|All|Field|64|0|16|6.85|7.3890625|3.41342434716364|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1988|Turbidity|All|Field|37|2.2|73|6.3|8.84594594594595|11.6588925192222|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1989|Turbidity|All|Field|41|2.4|16|4.8|5.93170731707317|3.23151969082584|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1990|Turbidity|All|Field|47|1.8|14|5.5|6.06595744680851|3.04868300830152|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1991|Turbidity|All|Field|11|3.5|10|7.5|6.93636363636364|2.41216613328051|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1992|Turbidity|All|Field|11|6.4|16|7.8|8.6|2.64159043002506|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1997|Turbidity|All|Field|9792|0.1|794|21.8|27.8138276143791|34.4849900779193|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1998|Turbidity|All|Field|5076|0.1|853|10.9|18.5710795902285|38.9905225682421|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2005|Turbidity|All|Field|2|4.54|7.4|5.97|5.97|2.02232539419353|103
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|Turbidity|All|Field|2|11|11|11|11|0|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|Turbidity|All|Field|2|8|8|8|8|0|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|Turbidity|All|Field|6|3.4|15|4.4|6.46666666666667|4.54253967144665|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2022|Turbidity|All|Field|3|4.1|12|5.3|7.13333333333333|4.25715084690845|5002
+33|Pellicer Creek Aquatic Preserve|2002|Turbidity|All|Field|86|0.9|10.2|4.6|4.95813953488372|2.00519707796451|4054
+33|Pellicer Creek Aquatic Preserve|2003|Turbidity|All|Field|156|0.9|15.8|4.6|4.95512820512821|2.34980561644369|4054
+33|Pellicer Creek Aquatic Preserve|2004|Turbidity|All|Field|156|0.1|29.6|5.3|5.87307692307692|3.64350675026216|4054
+33|Pellicer Creek Aquatic Preserve|2005|Turbidity|All|Field|156|2|19.3|5.85|6.28782051282051|2.86131805740659|4054
+33|Pellicer Creek Aquatic Preserve|2006|Turbidity|All|Field|156|2.9|34.7|9.1|10.1192307692308|5.23456397894111|4054
+33|Pellicer Creek Aquatic Preserve|2007|Turbidity|All|Field|155|2.5|39|10.8|11.6129032258065|6.4577720181674|4054
+33|Pellicer Creek Aquatic Preserve|2008|Turbidity|All|Field|156|3|34.2|11.05|11.4012820512821|5.60108269694336|4054
+33|Pellicer Creek Aquatic Preserve|2009|Turbidity|All|Field|162|1.5|16.6|6.55|7.07777777777778|3.20940001358587|4054, 5002
+33|Pellicer Creek Aquatic Preserve|2010|Turbidity|All|Field|157|1.9|32.1|6.8|8.67261146496815|5.85181991705679|4054
+33|Pellicer Creek Aquatic Preserve|2011|Turbidity|All|Field|156|3.8|44.5|11.05|13.0980769230769|6.82093997073477|4054
+33|Pellicer Creek Aquatic Preserve|2012|Turbidity|All|Field|142|4.5|40|10.7|12.0197183098592|5.07460985380303|4054
+34|Pine Island Sound Aquatic Preserve|1996|Turbidity|All|Field|20|0.5|1.3|0.59|0.717|0.264736214292444|5002
+34|Pine Island Sound Aquatic Preserve|1997|Turbidity|All|Field|30|0.76|5|1.75|2.08|1.13840178350601|5002
+34|Pine Island Sound Aquatic Preserve|1998|Turbidity|All|Field|40|1.13|2.4|1.57|1.62|0.300017093530113|5002
+34|Pine Island Sound Aquatic Preserve|1999|Turbidity|All|Field|40|0.5|2.4|0.98|1.209|0.575881932343775|5002
+34|Pine Island Sound Aquatic Preserve|2000|Turbidity|All|Field|40|1|6.5|2.15|2.5045|1.50318456822635|5002
+34|Pine Island Sound Aquatic Preserve|2001|Turbidity|All|Field|120|0.6|5.4|2|2.31833333333333|1.14256113113275|5002
+34|Pine Island Sound Aquatic Preserve|2002|Turbidity|All|Field|120|0.51|7.6|1.5|1.85483333333333|1.2575853769793|5002
+34|Pine Island Sound Aquatic Preserve|2003|Turbidity|All|Field|148|0.2|17.1|1.315|2.04891891891892|2.67905027723239|5002
+34|Pine Island Sound Aquatic Preserve|2004|Turbidity|All|Field|224|0.17|7.1|1.545|1.77026785714286|1.09217145767193|5002
+34|Pine Island Sound Aquatic Preserve|2005|Turbidity|All|Field|230|0.3|10.4|1.5|1.8295652173913|1.46481493014337|5002
+34|Pine Island Sound Aquatic Preserve|2006|Turbidity|All|Field|252|0.23|7|1.15|1.4743253968254|1.20299325442377|103, 5002
+34|Pine Island Sound Aquatic Preserve|2007|Turbidity|All|Field|270|0|11.5|1.72|2.1813037037037|1.83730956638699|5002
+34|Pine Island Sound Aquatic Preserve|2008|Turbidity|All|Field|312|0|26.3|1.945|2.49217307692308|2.60727093443989|5002
+34|Pine Island Sound Aquatic Preserve|2009|Turbidity|All|Field|280|0|17.8|1.82|2.54497857142857|2.3118241411825|5002
+34|Pine Island Sound Aquatic Preserve|2010|Turbidity|All|Field|178|0|24.8|2.46|3.78076404494382|4.6807695876545|5002
+34|Pine Island Sound Aquatic Preserve|2011|Turbidity|All|Field|266|0|24.8|2.6|3.96770676691729|3.99141817664595|5002
+34|Pine Island Sound Aquatic Preserve|2012|Turbidity|All|Field|168|0.671|16.2|2.355|3.04172619047619|2.2904259695926|5002
+34|Pine Island Sound Aquatic Preserve|2013|Turbidity|All|Field|120|0.491|12.9|1.455|2.42831666666667|2.55417462530004|5002
+34|Pine Island Sound Aquatic Preserve|2014|Turbidity|All|Field|278|0.423|31|1.88|2.59014388489209|3.33519586738279|5002
+34|Pine Island Sound Aquatic Preserve|2015|Turbidity|All|Field|190|0.2|26.8|2.82|4.14192631578947|4.44139684458053|5002
+34|Pine Island Sound Aquatic Preserve|2016|Turbidity|All|Field|180|0.2|38.6|3.15|4.74566666666667|5.50082168570088|5002
+34|Pine Island Sound Aquatic Preserve|2017|Turbidity|All|Field|160|0.2|14.5|2.695|3.293375|2.54654974068071|5002
+34|Pine Island Sound Aquatic Preserve|2019|Turbidity|All|Field|276|0.29792|558.84579|4.548185|39.4085302898551|86.7094749618366|303
+34|Pine Island Sound Aquatic Preserve|2020|Turbidity|All|Field|310|0.53343|847.26257|2.95486|27.6131396129032|105.95609180835|303, 5002
+34|Pine Island Sound Aquatic Preserve|2021|Turbidity|All|Field|118|0.02452|138.69217|2.9475|7.26623288135593|18.2239522779679|303, 5002
+34|Pine Island Sound Aquatic Preserve|2022|Turbidity|All|Field|3|1.2|16|16|11.0666666666667|8.54478398400646|476
+35|Pinellas County Aquatic Preserve|1999|Turbidity|All|Field|2|16|16|16|16|0|5002
+35|Pinellas County Aquatic Preserve|2000|Turbidity|All|Field|2|3.8|4.6|4.2|4.2|0.565685424949238|95
+35|Pinellas County Aquatic Preserve|2001|Turbidity|All|Field|4|7.8|28|17.9|17.9|11.6624754376304|5002
+35|Pinellas County Aquatic Preserve|2003|Turbidity|All|Field|12|3.6|5.5|4.35|4.425|0.584846522213695|95
+35|Pinellas County Aquatic Preserve|2004|Turbidity|All|Field|8|1.2|7.4|3.25|3.425|2.10492619483779|95
+35|Pinellas County Aquatic Preserve|2005|Turbidity|All|Field|12|3.1|18.6|5.85|6.59166666666667|4.31012725678685|95
+35|Pinellas County Aquatic Preserve|2006|Turbidity|All|Field|4|0.91|6.21|1.665|2.6125|2.49581483020409|103
+35|Pinellas County Aquatic Preserve|2011|Turbidity|All|Field|18|1|70|3|10.6111111111111|18.8496805680187|95
+35|Pinellas County Aquatic Preserve|2012|Turbidity|All|Field|80|0.4|22|2|2.23125|2.61241407102339|95
+35|Pinellas County Aquatic Preserve|2013|Turbidity|All|Field|219|0.4|2127.9|1.72|12.0082191780822|143.649527412078|95, 5002
+35|Pinellas County Aquatic Preserve|2014|Turbidity|All|Field|198|0.4|25|1.61|1.92282828282828|1.99051101282835|95, 5002
+35|Pinellas County Aquatic Preserve|2015|Turbidity|All|Field|126|0.58|5.7|1.59|1.9252380952381|1.26071326750262|5002
+35|Pinellas County Aquatic Preserve|2016|Turbidity|All|Field|150|0.3|5.08|1.18|1.74813333333333|1.20596581176661|95, 5002
+35|Pinellas County Aquatic Preserve|2017|Turbidity|All|Field|110|0.61|5.83|1.7|2.10381818181818|1.26241721088762|5002
+35|Pinellas County Aquatic Preserve|2020|Turbidity|All|Field|96|0.7|12|1.735|2.45208333333333|2.20205259111473|5002
+35|Pinellas County Aquatic Preserve|2021|Turbidity|All|Field|76|0.35|12|1.77|3.07315789473684|2.765549594819|5002
+37|Rocky Bayou State Park Aquatic Preserve|2001|Turbidity|All|Field|8|0|20.1|0.2|5.125|9.24441916586898|5002
+37|Rocky Bayou State Park Aquatic Preserve|2002|Turbidity|All|Field|44|0|30|0.8|4.1|7.00152807241656|5002
+37|Rocky Bayou State Park Aquatic Preserve|2003|Turbidity|All|Field|48|0.1|76.7|1.5|4.975|15.1842653722074|5002
+37|Rocky Bayou State Park Aquatic Preserve|2004|Turbidity|All|Field|42|0|15.1|1.3|2.55714285714286|3.53181656134581|5002
+37|Rocky Bayou State Park Aquatic Preserve|2005|Turbidity|All|Field|30|0|9.8|0.5|1.88666666666667|2.95899952026349|5002
+37|Rocky Bayou State Park Aquatic Preserve|2006|Turbidity|All|Field|44|0|18|2.1|3.56363636363636|5.00720833464655|5002
+37|Rocky Bayou State Park Aquatic Preserve|2007|Turbidity|All|Field|36|0|50.5|2.9|7.37777777777778|12.3878076259594|5002
+37|Rocky Bayou State Park Aquatic Preserve|2008|Turbidity|All|Field|40|0|20.2|1.3|4.61|6.7634689930917|5002
+37|Rocky Bayou State Park Aquatic Preserve|2009|Turbidity|All|Field|32|0|41.9|5.45|11.2875|12.6517562213264|5002
+37|Rocky Bayou State Park Aquatic Preserve|2010|Turbidity|All|Field|30|0|17.2|0.3|3.64|5.42977741335874|5002
+37|Rocky Bayou State Park Aquatic Preserve|2011|Turbidity|All|Field|40|0|12.4|0.25|1.815|3.51002593313526|5002
+37|Rocky Bayou State Park Aquatic Preserve|2012|Turbidity|All|Field|48|0|56.8|0.95|9.24583333333333|15.8920019805673|5002
+37|Rocky Bayou State Park Aquatic Preserve|2013|Turbidity|All|Field|48|0|40.6|2.2|9.53333333333333|13.820788125037|5002
+37|Rocky Bayou State Park Aquatic Preserve|2014|Turbidity|All|Field|48|0|4.9|1.1|1.29166666666667|1.47660238721501|5002
+37|Rocky Bayou State Park Aquatic Preserve|2015|Turbidity|All|Field|36|0|6.7|1.25|2.17777777777778|2.40773884572359|5002
+37|Rocky Bayou State Park Aquatic Preserve|2020|Turbidity|All|Field|32|0|15.4|0.4|2.5375|4.04759984634463|537
+37|Rocky Bayou State Park Aquatic Preserve|2021|Turbidity|All|Field|48|0|19.5|0.75|4.725|6.96863795110759|537
+37|Rocky Bayou State Park Aquatic Preserve|2022|Turbidity|All|Field|8|0|9.2|1.65|3.3375|3.95472140972932|537
+38|Rookery Bay Aquatic Preserve|2000|Turbidity|All|Field|1|0|0|0|0||572
+38|Rookery Bay Aquatic Preserve|2002|Turbidity|All|Field|96|2|89.8|7.8|9.5975|11.056986931348|354
+38|Rookery Bay Aquatic Preserve|2003|Turbidity|All|Field|74|2|22.4|9.4|9.59918918918919|3.98731267237456|95, 354, 572
+38|Rookery Bay Aquatic Preserve|2004|Turbidity|All|Field|95|4.2|237|11.5|32.7458947368421|63.2322281734246|354
+38|Rookery Bay Aquatic Preserve|2005|Turbidity|All|Field|123|2.1|371.5|9.2|21.8612195121951|55.9602402411289|354
+38|Rookery Bay Aquatic Preserve|2006|Turbidity|All|Field|116|2.1|47.8|7.05|9.56189655172414|7.46250510611354|354
+38|Rookery Bay Aquatic Preserve|2011|Turbidity|All|Field|1|30|30|30|30||95
+38|Rookery Bay Aquatic Preserve|2015|Turbidity|All|Field|10|5.81|7.23|6.72|6.542|0.588761411778999|354
+38|Rookery Bay Aquatic Preserve|2016|Turbidity|All|Field|24|3.42|11.68|7.325|7.04833333333333|3.04062874886195|354
+38|Rookery Bay Aquatic Preserve|2017|Turbidity|All|Field|22|2.22|8.18|6.06|5.97090909090909|1.58496179641779|354
+38|Rookery Bay Aquatic Preserve|2018|Turbidity|All|Field|20|1.82|7.01|4.865|4.488|1.5619407630792|354
+38|Rookery Bay Aquatic Preserve|2019|Turbidity|All|Field|28|2.43|16.83|6.9|7.56571428571429|3.96168821905177|354, 5002
+38|Rookery Bay Aquatic Preserve|2020|Turbidity|All|Field|4|7.2|11|9.1|9.1|2.19393102292058|5002
+39|Rookery Bay National Estuarine Research Reserve|2000|Turbidity|All|Field|1|0|0|0|0||572
+39|Rookery Bay National Estuarine Research Reserve|2002|Turbidity|All|Field|166|1.63|89.8|6.93|8.30903614457831|8.81241068582572|354
+39|Rookery Bay National Estuarine Research Reserve|2003|Turbidity|All|Field|110|1.01|26.95|8.3|8.50536363636364|4.44304335677981|95, 354, 572
+39|Rookery Bay National Estuarine Research Reserve|2004|Turbidity|All|Field|134|1.68|237|9.55|25.3035820895522|54.4479940240003|354
+39|Rookery Bay National Estuarine Research Reserve|2005|Turbidity|All|Field|159|2.08|371.5|8.7|18.8244025157233|49.5589806725815|354
+39|Rookery Bay National Estuarine Research Reserve|2006|Turbidity|All|Field|142|2.1|47.8|6.77|9.10985915492958|6.9456340678253|354
+39|Rookery Bay National Estuarine Research Reserve|2011|Turbidity|All|Field|1|30|30|30|30||95
+39|Rookery Bay National Estuarine Research Reserve|2015|Turbidity|All|Field|42|3.62|14.48|6.31|6.87666666666667|2.55748224767142|354
+39|Rookery Bay National Estuarine Research Reserve|2016|Turbidity|All|Field|120|2.3|12.49|6.63|6.93433333333333|2.59287800687642|354
+39|Rookery Bay National Estuarine Research Reserve|2017|Turbidity|All|Field|118|0.62|20.44|7.23|7.21101694915254|3.33198623801308|354
+39|Rookery Bay National Estuarine Research Reserve|2018|Turbidity|All|Field|106|1.51|14.45|5.51|5.97622641509434|3.22801500345548|354
+39|Rookery Bay National Estuarine Research Reserve|2019|Turbidity|All|Field|124|2.43|30.72|8.4|9.46072580645161|5.76013764139225|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2020|Turbidity|All|Field|4|7.2|11|9.1|9.1|2.19393102292058|5002

@@ -1,49 +1,45 @@
 AreaID,ManagedAreaName,ParameterName,RelativeDepth,ActivityType,N_Total,N_AnalysisUse,N_H,perc_H,N_I,perc_I,N_Q,perc_Q,N_S,perc_S,N_U,perc_U
-1,Alligator Harbor Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2493,2493,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,11656,11656,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,16536,16536,0,0,0,0,0,0,0,0,0,0
-4,Banana River Aquatic Preserve,Dissolved Oxygen,Bottom,Field,5862,5862,0,0,0,0,0,0,0,0,0,0
-5,Big Bend Seagrasses Aquatic Preserve,Dissolved Oxygen,Bottom,Field,33173,33173,0,0,0,0,0,0,0,0,0,0
+1,Alligator Harbor Aquatic Preserve,Dissolved Oxygen,Bottom,Field,4833,4833,0,0,0,0,0,0,0,0,0,0
+2,Apalachicola Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,21237,21237,0,0,0,0,0,0,0,0,0,0
+3,Apalachicola National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,31615,31615,0,0,0,0,0,0,0,0,0,0
+4,Banana River Aquatic Preserve,Dissolved Oxygen,Bottom,Field,10589,10589,0,0,0,0,0,0,0,0,0,0
+5,Big Bend Seagrasses Aquatic Preserve,Dissolved Oxygen,Bottom,Field,67575,67575,0,0,0,0,0,0,0,0,0,0
 7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1,0,0,0,0,0,0,0,0,0,0,0
-6,Biscayne Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1891,1891,0,0,0,0,0,0,0,0,0,0
-8,Boca Ciega Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,6288,6288,0,0,0,0,0,0,0,0,0,0
-9,Cape Haze Aquatic Preserve,Dissolved Oxygen,Bottom,Field,655,655,0,0,0,0,0,0,0,0,0,0
-10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Dissolved Oxygen,Bottom,Field,4773,4773,0,0,0,0,0,0,0,0,0,0
-11,Cockroach Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,3969,3969,0,0,0,0,0,0,0,0,0,0
-13,Coupon Bight Aquatic Preserve,Dissolved Oxygen,Bottom,Field,54,54,0,0,0,0,0,0,0,0,0,0
-14,Estero Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,430,430,0,0,0,0,0,0,0,0,0,0
-15,Florida Keys National Marine Sanctuary,Dissolved Oxygen,Bottom,Field,16347,16347,0,0,0,0,0,0,0,0,0,0
-16,Fort Clinch State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,18,0,0,0,0,0,0,0,0,0,0,0
-17,Fort Pickens State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,19,0,0,0,0,0,0,0,0,0,0,0
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Dissolved Oxygen,Bottom,Field,4549,4549,0,0,0,0,0,0,0,0,0,0
-19,Guana River Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2188,2188,0,0,0,0,0,0,0,0,0,0
-20,Guana Tolomato Matanzas National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,5537,5537,0,0,0,0,0,0,0,0,0,0
-21,Indian River-Malabar to Vero Beach Aquatic Preserve,Dissolved Oxygen,Bottom,Field,9891,9891,0,0,0,0,0,0,0,0,0,0
-22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2002,2002,0,0,0,0,0,0,0,0,0,0
-23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Dissolved Oxygen,Bottom,Field,415,415,0,0,0,0,0,0,0,0,0,0
-24,Lake Jackson Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1,0,0,0,0,0,0,0,0,0,0,0
-25,Lemon Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1857,1857,0,0,0,0,0,0,0,0,0,0
-26,Lignumvitae Key Aquatic Preserve,Dissolved Oxygen,Bottom,Field,63,0,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Dissolved Oxygen,Bottom,Field,401,401,0,0,0,0,0,0,0,0,0,0
-28,Matlacha Pass Aquatic Preserve,Dissolved Oxygen,Bottom,Field,724,724,0,0,0,0,0,0,0,0,0,0
-29,Mosquito Lagoon Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1099,1099,0,0,0,0,0,0,0,0,0,0
-30,Nassau River-St. Johns River Marshes Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2024,2024,0,0,0,0,0,0,0,0,0,0
-48,Nature Coast Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1204,1204,0,0,0,0,0,0,0,0,0,0
-31,North Fork St. Lucie Aquatic Preserve,Dissolved Oxygen,Bottom,Field,70,70,0,0,0,0,0,0,0,0,0,0
-32,Oklawaha River Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1,0,0,0,0,0,0,0,0,0,0,0
-33,Pellicer Creek Aquatic Preserve,Dissolved Oxygen,Bottom,Field,57,57,0,0,0,0,0,0,0,0,0,0
-34,Pine Island Sound Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2370,2370,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,Dissolved Oxygen,Bottom,Field,16589,16589,0,0,0,0,0,0,0,0,0,0
-36,Rainbow Springs Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1,0,0,0,0,0,0,0,0,0,0,0
-37,Rocky Bayou State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,260,260,0,0,0,0,0,0,0,0,0,0
-38,Rookery Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1663,1663,0,0,0,0,0,0,0,0,0,0
-39,Rookery Bay National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,6340,6340,0,0,0,0,0,0,0,0,0,0
+6,Biscayne Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1895,1895,0,0,0,0,0,0,0,0,0,0
+8,Boca Ciega Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,9013,9013,0,0,0,0,0,0,0,0,0,0
+9,Cape Haze Aquatic Preserve,Dissolved Oxygen,Bottom,Field,946,946,0,0,0,0,0,0,0,0,0,0
+10,Cape Romano-Ten Thousand Islands Aquatic Preserve,Dissolved Oxygen,Bottom,Field,8185,8185,0,0,0,0,0,0,0,0,0,0
+11,Cockroach Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,5859,5859,0,0,0,0,0,0,0,0,0,0
+13,Coupon Bight Aquatic Preserve,Dissolved Oxygen,Bottom,Field,56,56,0,0,0,0,0,0,0,0,0,0
+14,Estero Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,434,434,0,0,0,0,0,0,0,0,0,0
+15,Florida Keys National Marine Sanctuary,Dissolved Oxygen,Bottom,Field,17083,17083,0,0,0,0,0,0,0,0,0,0
+16,Fort Clinch State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,26,0,0,0,0,0,0,0,0,0,0,0
+17,Fort Pickens State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,23,0,0,0,0,0,0,0,0,0,0,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,Dissolved Oxygen,Bottom,Field,6930,6930,0,0,0,0,0,0,0,0,0,0
+19,Guana River Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,4069,4069,0,0,0,0,0,0,0,0,0,0
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,10690,10690,0,0,0,0,0,0,0,0,0,0
+21,Indian River-Malabar to Vero Beach Aquatic Preserve,Dissolved Oxygen,Bottom,Field,17359,17359,0,0,0,0,0,0,0,0,0,0
+22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,Dissolved Oxygen,Bottom,Field,3835,3835,0,0,0,0,0,0,0,0,0,0
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,Dissolved Oxygen,Bottom,Field,459,459,0,0,0,0,0,0,0,0,0,0
+25,Lemon Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,3664,3664,0,0,0,0,0,0,0,0,0,0
+26,Lignumvitae Key Aquatic Preserve,Dissolved Oxygen,Bottom,Field,114,0,0,0,0,0,0,0,0,0,0,0
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,Dissolved Oxygen,Bottom,Field,402,402,0,0,0,0,0,0,0,0,0,0
+28,Matlacha Pass Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1330,1330,0,0,0,0,0,0,0,0,0,0
+29,Mosquito Lagoon Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2055,2055,0,0,0,0,0,0,0,0,0,0
+30,Nassau River-St. Johns River Marshes Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2377,2377,0,0,0,0,0,0,0,0,0,0
+48,Nature Coast Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2057,2057,0,0,0,0,0,0,0,0,0,0
+31,North Fork St. Lucie Aquatic Preserve,Dissolved Oxygen,Bottom,Field,99,99,0,0,0,0,0,0,0,0,0,0
+33,Pellicer Creek Aquatic Preserve,Dissolved Oxygen,Bottom,Field,90,90,0,0,0,0,0,0,0,0,0,0
+34,Pine Island Sound Aquatic Preserve,Dissolved Oxygen,Bottom,Field,4317,4317,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,Dissolved Oxygen,Bottom,Field,29065,29065,0,0,0,0,0,0,0,0,0,0
+37,Rocky Bayou State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,414,414,0,0,0,0,0,0,0,0,0,0
+38,Rookery Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2256,2256,0,0,0,0,0,0,0,0,0,0
+39,Rookery Bay National Estuarine Research Reserve,Dissolved Oxygen,Bottom,Field,10247,10247,0,0,0,0,0,0,0,0,0,0
 12,Southeast Florida Coral Reef Ecosystem Conservation Area,Dissolved Oxygen,Bottom,Field,151,151,0,0,0,0,0,0,0,0,0,0
-40,St. Andrews State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,101,101,0,0,0,0,0,0,0,0,0,0
-41,St. Joseph Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1845,1845,0,0,0,0,0,0,0,0,0,0
+40,St. Andrews State Park Aquatic Preserve,Dissolved Oxygen,Bottom,Field,181,181,0,0,0,0,0,0,0,0,0,0
+41,St. Joseph Bay Aquatic Preserve,Dissolved Oxygen,Bottom,Field,3570,3570,0,0,0,0,0,0,0,0,0,0
 42,St. Joseph Bay State Buffer Preserve,Dissolved Oxygen,Bottom,Field,1,0,0,0,0,0,0,0,0,0,0,0
-43,St. Martins Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,2782,2782,0,0,0,0,0,0,0,0,0,0
-44,Terra Ceia Aquatic Preserve,Dissolved Oxygen,Bottom,Field,3329,3329,0,0,0,0,0,0,0,0,0,0
-45,Tomoka Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,197,197,0,0,0,0,0,0,0,0,0,0
-46,Wekiva River Aquatic Preserve,Dissolved Oxygen,Bottom,Field,1,0,0,0,0,0,0,0,0,0,0,0
-47,Yellow River Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,329,329,0,0,0,0,0,0,0,0,0,0
+43,St. Martins Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,5909,5909,0,0,0,0,0,0,0,0,0,0
+44,Terra Ceia Aquatic Preserve,Dissolved Oxygen,Bottom,Field,5340,5340,0,0,0,0,0,0,0,0,0,0
+45,Tomoka Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,315,315,0,0,0,0,0,0,0,0,0,0
+47,Yellow River Marsh Aquatic Preserve,Dissolved Oxygen,Bottom,Field,659,659,0,0,0,0,0,0,0,0,0,0
