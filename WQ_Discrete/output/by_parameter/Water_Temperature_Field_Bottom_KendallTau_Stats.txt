@@ -1,49 +1,45 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-1|Alligator Harbor Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|2822|25|1998|2022|2022-01-18|26.1|TRUE|-0.0045|0.8585|0.0036184210526315|22.606897294992|10.2933|0.5042|0
-2|Apalachicola Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|14960|30|1992|2022|2022-01-06|24.5|TRUE|0.0866|0.0328|0.0236436950146627|22.3657876124396|6.563|0.8333|1
-3|Apalachicola National Estuarine Research Reserve|Water Temperature|Bottom|Field|TRUE|21376|30|1992|2022|2022-01-12|22.9|TRUE|0.0702|0.081|0.0171743940415506|22.4787521051682|10.0223|0.5284|0
-4|Banana River Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|6519|31|1991|2021|2021-10-04|25.4|TRUE|0.0848|0.0305|0.0210370370370369|24.1766046512378|11.579|0.3961|1
-5|Big Bend Seagrasses Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|33576|37|1982|2021|2021-12-28|24.3|TRUE|0.0941|0.0114|0.0252683295540438|22.0198323169576|13.5665|0.2579|1
+1|Alligator Harbor Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|5589|25|1998|2022|2022-06-07|26.1|TRUE|-0.0004|0.8058|0.00363636363636356|22.6055126796074|10.4892|0.487|0
+2|Apalachicola Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|27924|30|1992|2022|2022-05-26|24.6|TRUE|0.0917|0.0231|0.0244903244903244|22.3880033228608|6.1222|0.8651|1
+3|Apalachicola National Estuarine Research Reserve|Water Temperature|Bottom|Field|TRUE|40356|30|1992|2022|2022-06-22|22.9|TRUE|0.0567|0.1606|0.0136926328502414|22.5819743683726|10.895|0.4521|0
+4|Banana River Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|11728|32|1991|2022|2022-04-11|25.5|TRUE|0.0704|0.0696|0.0182301422066879|24.1995190135986|11.7599|0.382|0
+5|Big Bend Seagrasses Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|66363|38|1982|2022|2022-01-19|24.4|TRUE|0.0868|0.022|0.0225093234731983|22.0469227789759|15.2866|0.1697|1
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|0|0||||||||||||
-6|Biscayne Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|3402|25|1993|2020|2020-11-16|27.2|TRUE|0.0899|0.0659|0.0223776223776225|26.8116917613636|10.7452|0.4649|0
-8|Boca Ciega Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|5680|27|1992|2021|2021-12-16|28.505|TRUE|0.1076|0.018|0.0297900432900437|24.2821356029533|17.1959|0.1022|1
-9|Cape Haze Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|675|26|1995|2021|2021-11-02|28.01|TRUE|-0.1068|0.0295|-0.0407670454545456|27.0162334656085|13.6753|0.2515|-1
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|4894|27|1994|2020|2020-11-13|26.9|TRUE|0.0671|0.1194|0.0143981481481481|25.4696494996759|13.9716|0.2346|0
-11|Cockroach Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|3835|25|1995|2021|2021-11-23|27.74|TRUE|-0.0284|0.5041|-0.0105822222222223|24.685435764893|5.9882|0.8741|0
-13|Coupon Bight Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|54|20|1995|2020|2020-10-05|28.6864|TRUE|0.0428|0.7448|0.0168309523809527|29.3367514285714|16.5594|0.0847|0
+6|Biscayne Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|3406|25|1993|2020|2020-11-16|27.2|TRUE|0.0899|0.0659|0.0223776223776225|26.8116917613636|10.7452|0.4649|0
+8|Boca Ciega Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|8001|27|1992|2021|2021-12-16|28.1|TRUE|0.1089|0.0142|0.0311454170829172|24.242773419946|19.2141|0.0574|1
+9|Cape Haze Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|986|27|1995|2022|2022-06-08|28.4|TRUE|-0.1181|0.0159|-0.040909090909091|26.9628327228327|16.0811|0.1381|-1
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|8422|27|1994|2020|2020-11-13|27.1|TRUE|0.0628|0.1494|0.0183410138248849|25.7994136471299|19.0959|0.0594|0
+11|Cockroach Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|5711|26|1995|2022|2022-06-22|27.22|TRUE|-0.0301|0.4979|-0.00963636363636364|24.8054740336292|5.4006|0.9102|0
+13|Coupon Bight Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|56|20|1995|2020|2020-10-05|28.94455|TRUE|0.0428|0.7448|0.0168309523809527|29.3367514285714|16.5594|0.0847|0
 14|Estero Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|412|18|1999|2022|2022-01-03|25.555|TRUE|-0.0156|0.6903|-0.0131907308377897|25.9328125|10.2511|0.5079|0
-15|Florida Keys National Marine Sanctuary|Water Temperature|Bottom|Field|TRUE|4307859|34|1982|2021|2021-05-15|26.85|TRUE|0.2817|0|0.0490276470657115|25.6039585660341|5.146|0.9239|1
-16|Fort Clinch State Park Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|14|3|2008|2014|2014-07-16|23.465||||||||
-17|Fort Pickens State Park Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|26|13|1982|2019|2019-09-27|25.48||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|4388|28|1992|2022|2022-01-03|25.79|TRUE|-0.0086|0.8242|-0.00310613071139375|26.3423400472335|6.2022|0.8595|0
-19|Guana River Marsh Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|2524|28|1986|2021|2021-12-01|22.4|TRUE|0.0606|0.1465|0.0266433566433566|22.1820431806755|10.1461|0.5173|0
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Water Temperature|Bottom|Field|TRUE|6556|29|1986|2022|2022-01-12|22.7|TRUE|0.1077|0.0115|0.0381829281829282|22.0161254618142|8.1876|0.6964|1
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|10754|31|1991|2021|2021-10-12|25|TRUE|0.04|0.2718|0.0130842671736887|23.7854459428452|11.7784|0.3805|0
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|2291|27|1993|2021|2021-07-12|24.8|TRUE|0.0666|0.1852|0.0196875000000001|26.3201639475291|13.2019|0.2803|0
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|294|25|1993|2020|2020-08-12|25.25|TRUE|0.1776|0.0012|0.0907456140350878|24.6783333333333|18.7508|0.0657|1
-24|Lake Jackson Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|0|0||||||||||||
-25|Lemon Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|1957|28|1986|2022|2022-01-03|26.8|TRUE|0.1181|0.0231|0.0380909090909088|25.5486865703178|7.8326|0.7282|1
-26|Lignumvitae Key Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|67|5|2001|2021|2021-05-06|29.7||||||||
+15|Florida Keys National Marine Sanctuary|Water Temperature|Bottom|Field|TRUE|5171111|34|1982|2021|2021-10-16|26.928|TRUE|0.2946|0|0.0474983673748273|25.7870328766407|5.216|0.9203|1
+16|Fort Clinch State Park Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|22|3|2008|2014|2014-07-16|23.93||||||||
+17|Fort Pickens State Park Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|30|13|1982|2019|2019-09-27|24.99||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|6910|28|1992|2022|2022-05-04|25.96|TRUE|-0.0037|0.9187|-0.00155476190476195|26.1748077977395|5.1722|0.9225|0
+19|Guana River Marsh Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|4756|29|1986|2022|2022-06-14|22.3|TRUE|0.0601|0.137|0.02658547008547|22.1627083333333|9.1586|0.6073|0
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Water Temperature|Bottom|Field|TRUE|12756|29|1986|2022|2022-06-14|22.6|TRUE|0.1158|0.0055|0.0411340442609792|21.7658597642839|7.8295|0.7285|1
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|19218|32|1991|2022|2022-06-29|24.94|TRUE|0.071|0.0523|0.020259879009879|23.7216489889702|10.1938|0.513|0
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|4408|27|1993|2021|2021-10-14|24.8|TRUE|0.0717|0.1436|0.0196875000000001|26.209814606144|13.2512|0.2772|0
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|295|26|1993|2022|2022-01-12|25.2|TRUE|0.1852|0.001|0.0904708462332301|24.6783333333333|17.6005|0.0913|1
+25|Lemon Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|3645|28|1986|2022|2022-07-06|27|TRUE|0.1097|0.0302|0.0338898281205973|25.7734536157723|7.1733|0.7849|1
+26|Lignumvitae Key Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|137|5|2001|2021|2021-05-06|29.7||||||||
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|48|10|1996|2019|2019-08-15|23.85|TRUE|0.4409|0.0205|0.114372469635627|21.8354385964912|8.8495|0.4513|1
-28|Matlacha Pass Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|765|26|1995|2021|2021-12-14|26.5|TRUE|0.0243|0.6552|0.00666666666666652|25.2112932900433|7.4463|0.7619|0
-29|Mosquito Lagoon Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|1284|27|1995|2021|2021-06-10|24.1|TRUE|0.0912|0.043|0.0344513888888889|23.312956505848|19.2401|0.0569|1
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|381|24|1986|2021|2021-03-10|21.125|TRUE|-0.0104|0.8149|-0.0157142857142861|23.5015296310832|5.5186|0.9035|0
-48|Nature Coast Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|1045|32|1986|2022|2022-01-19|23.3|TRUE|0.0606|0.2362|0.0185900673400673|22.8963764880952|11.9288|0.369|0
-31|North Fork St. Lucie Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|22|5|1996|2021|2021-12-08|27.25||||||||
-32|Oklawaha River Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|0|0||||||||||||
-33|Pellicer Creek Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|56|8|2004|2022|2022-01-12|23.83||||||||
-34|Pine Island Sound Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|2444|26|1995|2021|2021-11-01|26.4|TRUE|0.0683|0.1411|0.0222322775263952|25.4008316798942|7.4598|0.7607|0
-35|Pinellas County Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|15438|29|1992|2021|2021-12-16|28.07|TRUE|0.1079|0.0064|0.0275809197196665|23.8687750635817|11.4069|0.4098|1
-36|Rainbow Springs Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|0|0||||||||||||
+28|Matlacha Pass Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|1422|27|1995|2022|2022-06-14|26.5|TRUE|0.023|0.7093|0.00680272108843552|25.2508178104575|7.6575|0.7436|0
+29|Mosquito Lagoon Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|2367|28|1995|2022|2022-02-23|24.1|TRUE|0.0893|0.0463|0.0324999999999998|23.3661931818182|18.3462|0.0739|1
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|733|24|1986|2021|2021-09-28|21.375|TRUE|-0.0062|0.9123|-0.00325|23.4495577266484|4.1948|0.9639|0
+48|Nature Coast Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|1803|32|1986|2022|2022-01-19|23.1|TRUE|0.057|0.2723|0.013888888888889|22.8428935185185|12.8379|0.3041|0
+31|North Fork St. Lucie Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|47|6|1996|2022|2022-05-23|27.5||||||||
+33|Pellicer Creek Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|89|8|2004|2022|2022-03-15|23.8||||||||
+34|Pine Island Sound Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|4477|26|1995|2021|2021-11-01|26.5|TRUE|0.068|0.1411|0.0188299013299012|25.3922596872082|7.3772|0.7678|0
+35|Pinellas County Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|23664|30|1992|2022|2022-06-22|27.5|TRUE|0.1147|0.0035|0.0266648735879504|23.9054809796673|12.1793|0.3503|1
 37|Rocky Bayou State Park Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|106|12|1994|2018|2018-10-04|24.19445|TRUE|0.0289|0.5992|0.0277750000000001|22.2197816666667|12.0748|0.358|0
-38|Rookery Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|1665|26|1989|2021|2021-09-27|26.2|TRUE|0.028|0.6412|0.0081671415004748|26.0037272359086|9.5846|0.5681|0
-39|Rookery Bay National Estuarine Research Reserve|Water Temperature|Bottom|Field|TRUE|6439|32|1989|2021|2021-09-27|26.72|TRUE|0.0606|0.1402|0.013099662162162|25.2296237373737|8.5525|0.6631|0
+38|Rookery Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|2274|27|1989|2022|2022-05-09|26.3|TRUE|0.0492|0.3401|0.0155931867696573|26.6866575163399|8.9401|0.6274|0
+39|Rookery Bay National Estuarine Research Reserve|Water Temperature|Bottom|Field|TRUE|10450|33|1989|2022|2022-05-09|27|TRUE|0.0747|0.0705|0.0189753320683113|25.4139585571098|10.0463|0.5262|0
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|Water Temperature|Bottom|Field|FALSE|148|8|1986|2018|2018-04-20|25.97395||||||||
-40|St. Andrews State Park Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|104|12|1983|2021|2021-02-22|24.15|TRUE|0.122|0.1965|0.114375|23.9926103896104|11.2701|0.4209|0
-41|St. Joseph Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|2078|26|1991|2020|2020-06-19|25.5|TRUE|0.0893|0.1338|0.0251452991452991|20.8561904761905|7.7384|0.7365|0
+40|St. Andrews State Park Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|183|14|1983|2022|2022-06-21|24|TRUE|0.0525|0.6753|0.0152777777777778|26.6616666666667|6.0508|0.87|0
+41|St. Joseph Bay Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|3981|26|1991|2020|2020-06-19|25.3|TRUE|0.0893|0.1338|0.0239624505928855|20.8291666666667|7.7384|0.7365|0
 42|St. Joseph Bay State Buffer Preserve|Water Temperature|Bottom|Field|FALSE|0|0||||||||||||
-43|St. Martins Marsh Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|2834|27|1991|2022|2022-01-12|22.9|TRUE|0.0703|0.1422|0.0208861340679523|22.8604789402174|9.2907|0.5951|0
-44|Terra Ceia Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|3288|29|1993|2021|2021-11-17|28.16|TRUE|0.0371|0.3878|0.00934125369822484|25.1966676587302|12.8511|0.3032|0
-45|Tomoka Marsh Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|194|22|1997|2021|2021-07-13|24.5|TRUE|0.0696|0.4576|0.0222727272727273|24.228125|9.8165|0.547|0
-46|Wekiva River Aquatic Preserve|Water Temperature|Bottom|Field|FALSE|0|0||||||||||||
-47|Yellow River Marsh Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|411|24|1995|2020|2020-12-08|21.5|TRUE|-0.0199|1|0|21.0029411764706|10.6017|0.3894|0
+43|St. Martins Marsh Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|5598|27|1991|2022|2022-01-12|22.8|TRUE|0.0688|0.1541|0.0200202020202022|22.9316703574958|9.6181|0.565|0
+44|Terra Ceia Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|5352|30|1993|2022|2022-06-22|27.94|TRUE|0.0443|0.2671|0.0130454545454544|25.0467857142857|10.8566|0.4553|0
+45|Tomoka Marsh Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|315|23|1997|2022|2022-05-03|24.3|TRUE|0.0752|0.3856|0.0245530303030303|22.2729656084656|10.9426|0.4481|0
+47|Yellow River Marsh Aquatic Preserve|Water Temperature|Bottom|Field|TRUE|823|25|1995|2022|2022-05-16|21.5|TRUE|-0.0182|1|0|21.0029411764706|10.5217|0.396|0

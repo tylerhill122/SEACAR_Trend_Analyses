@@ -1,256 +1,280 @@
 AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
-1|Alligator Harbor Aquatic Preserve|1|pH|Bottom|Field|6|7.74|8.5|8.06|8.10333333333333|0.265756781036095|95, 5002
-1|Alligator Harbor Aquatic Preserve|2|pH|Bottom|Field|3|7.98|8.42|8.4|8.26666666666667|0.248461935381123|95, 5002
+1|Alligator Harbor Aquatic Preserve|1|pH|Bottom|Field|9|7.74|8.5|8.04|8.05333333333333|0.241660919471891|95, 5002
+1|Alligator Harbor Aquatic Preserve|2|pH|Bottom|Field|4|7.98|8.42|8.19|8.195|0.248394846967484|95, 5002
 1|Alligator Harbor Aquatic Preserve|3|pH|Bottom|Field|4|8.1|8.2|8.135|8.1425|0.0505799696849783|69, 95, 557
-1|Alligator Harbor Aquatic Preserve|4|pH|Bottom|Field|3|7.89|8.4|7.9|8.06333333333333|0.291604755333883|95, 5002
-1|Alligator Harbor Aquatic Preserve|5|pH|Bottom|Field|4|7.84|8.4|8.025|8.0725|0.275121185419565|95, 5002
-1|Alligator Harbor Aquatic Preserve|6|pH|Bottom|Field|23|7.83|8.6|8|8.04565217391304|0.18881992592647|557, 5002
-1|Alligator Harbor Aquatic Preserve|7|pH|Bottom|Field|11|8.01|8.4|8.18|8.19545454545455|0.114049431069483|95, 557, 5002
-1|Alligator Harbor Aquatic Preserve|8|pH|Bottom|Field|5|7.94|8.2|8.04|8.05|0.0938083151964683|95, 5002
-1|Alligator Harbor Aquatic Preserve|9|pH|Bottom|Field|14|7.91|8.4|8.12|8.12142857142857|0.143733575268066|557, 5002
-2|Apalachicola Bay Aquatic Preserve|1|pH|Bottom|Field|57|7.26|8.88|8.1|8.09912280701754|0.303528538913291|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|2|pH|Bottom|Field|55|7.33|9.28|8.1|8.13981818181818|0.395378350955184|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|3|pH|Bottom|Field|88|0.1|8.9|7.965|7.7625|0.962437339354572|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|4|pH|Bottom|Field|74|5.45|8.5|7.875|7.78851351351351|0.469936406168197|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|5|pH|Bottom|Field|70|6.64|8.8|7.99|7.93171428571429|0.382451934759986|69, 129, 355, 557, 5002
-2|Apalachicola Bay Aquatic Preserve|6|pH|Bottom|Field|111|6.73|8.5|7.95|7.86585585585586|0.328183619524936|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|7|pH|Bottom|Field|47|6.77|8.4|7.9|7.82510638297872|0.362148614344188|69, 115, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|8|pH|Bottom|Field|47|6.5|8.71|7.97|7.86936170212766|0.474558853523891|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|9|pH|Bottom|Field|95|5.5|8.42|7.99|7.88231578947368|0.394974959162048|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|10|pH|Bottom|Field|52|6.95|8.62|7.9|7.91211538461539|0.339488291625543|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|11|pH|Bottom|Field|57|7.32|11.8|8.07|8.08859649122807|0.561526740860802|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|12|pH|Bottom|Field|54|7|8.8|8.11|8.06240740740741|0.287296672548261|69, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|1|pH|Bottom|Field|92|5.49|9.2|8|7.75619565217391|0.673700364464641|69, 95, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|2|pH|Bottom|Field|97|6.28|9.45|8.1|7.95443298969072|0.558237496262726|69, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|3|pH|Bottom|Field|114|0.1|8.9|7.955|7.71315789473684|0.893889102216274|69, 95, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|4|pH|Bottom|Field|122|5.45|8.5|7.785|7.68483606557377|0.513035422562835|69, 95, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|5|pH|Bottom|Field|110|6.37|8.8|7.92|7.789|0.49487640936951|69, 95, 129, 355, 557, 5002
-3|Apalachicola National Estuarine Research Reserve|6|pH|Bottom|Field|140|6.65|8.5|7.895|7.74828571428571|0.411421369983794|69, 95, 129, 355, 557, 5002
-3|Apalachicola National Estuarine Research Reserve|7|pH|Bottom|Field|75|6.48|8.4|7.81|7.66493333333333|0.478644971778676|69, 95, 115, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|8|pH|Bottom|Field|71|4.53|8.71|7.9|7.66760563380282|0.663539136080657|69, 95, 115, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|9|pH|Bottom|Field|118|5.5|8.42|7.91|7.77618644067797|0.494881354151041|69, 95, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|10|pH|Bottom|Field|75|5.91|8.62|7.87|7.72346666666667|0.513076289921177|69, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|11|pH|Bottom|Field|85|5.94|11.8|8.04|7.94894117647059|0.625555036460787|69, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|12|pH|Bottom|Field|70|5.85|8.8|8.1|7.94914285714286|0.497275891864264|69, 95, 129, 355, 5002
-4|Banana River Aquatic Preserve|1|pH|Bottom|Field|63|7.5|8.75|8.31|8.24793650793651|0.279158636425303|3001, 3013, 5002
-4|Banana River Aquatic Preserve|2|pH|Bottom|Field|78|7.1|8.99|8.23|8.25794871794872|0.269720196405431|3001, 3013, 5002
-4|Banana River Aquatic Preserve|3|pH|Bottom|Field|69|7.64|9.1|8.22|8.23173913043478|0.272677122801369|95, 3001, 3013, 5002
-4|Banana River Aquatic Preserve|4|pH|Bottom|Field|93|7.46|8.84|8.23|8.23795698924731|0.229387460044396|95, 3001, 3013, 5002
-4|Banana River Aquatic Preserve|5|pH|Bottom|Field|74|7.3|8.84|8.27|8.29013513513513|0.278884732133376|95, 3001, 3013, 5002
-4|Banana River Aquatic Preserve|6|pH|Bottom|Field|78|6.62|8.76|8.325|8.27205128205128|0.288846154954677|95, 3001, 3013, 5002
-4|Banana River Aquatic Preserve|7|pH|Bottom|Field|83|7.3|8.76|8.27|8.23807228915663|0.277020109472242|95, 115, 3001, 3013, 5002
-4|Banana River Aquatic Preserve|8|pH|Bottom|Field|77|6.9|8.78|8.17|8.13337662337662|0.366486197017347|3001, 3013, 5002
-4|Banana River Aquatic Preserve|9|pH|Bottom|Field|73|0.81|8.83|8.15|7.95493150684932|1.23679258488289|95, 3001, 3013, 5002
-4|Banana River Aquatic Preserve|10|pH|Bottom|Field|63|7.29|8.6|8.16|8.16460317460317|0.24007274029952|95, 3001, 3013, 5002
-4|Banana River Aquatic Preserve|11|pH|Bottom|Field|50|7.08|8.76|8.15|8.127|0.283680259792462|3001, 5002
-4|Banana River Aquatic Preserve|12|pH|Bottom|Field|63|7.42|8.7|8.2|8.14634920634921|0.320288688264205|3001, 3013, 5002
-5|Big Bend Seagrasses Aquatic Preserve|1|pH|Bottom|Field|76|5.6|8.1|7.47|7.365|0.435009578438606|5002
-5|Big Bend Seagrasses Aquatic Preserve|2|pH|Bottom|Field|93|4.6|8.11|7.4|7.26881720430108|0.630189497833037|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|3|pH|Bottom|Field|87|4.28|8.12|7.32|7.22459770114943|0.606493552560107|95, 477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|4|pH|Bottom|Field|88|5.66|8.23|7.315|7.26318181818182|0.502706572064317|5002
-5|Big Bend Seagrasses Aquatic Preserve|5|pH|Bottom|Field|100|5.19|8.4|7.6|7.4706|0.592145252450782|69, 95, 5002
-5|Big Bend Seagrasses Aquatic Preserve|6|pH|Bottom|Field|117|4.44|8.6|7.45|7.4591452991453|0.611461748669097|69, 95, 477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|7|pH|Bottom|Field|114|5.4|8.4|7.52|7.52798245614035|0.552348453287217|69, 115, 5002
-5|Big Bend Seagrasses Aquatic Preserve|8|pH|Bottom|Field|91|6|8.5|7.37|7.36|0.428449400616793|69, 477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|9|pH|Bottom|Field|87|5.1|8.11|7.37|7.30080459770115|0.599942280926867|69, 115, 477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|10|pH|Bottom|Field|97|5.64|8.4|7.46|7.45154639175258|0.541066347222057|69, 95, 5002
-5|Big Bend Seagrasses Aquatic Preserve|11|pH|Bottom|Field|101|5.4|8.42|7.52|7.53158415841584|0.473336524416334|69, 95, 477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|12|pH|Bottom|Field|89|6|8.34|7.5|7.40595505617978|0.4060808223996|477, 5002
-6|Biscayne Bay Aquatic Preserve|1|pH|Bottom|Field|6|7.66|8.27|8.01|8.02666666666667|0.225181408350393|4058, 5002
-6|Biscayne Bay Aquatic Preserve|2|pH|Bottom|Field|4|7.56|8.31|7.945|7.94|0.306267856622271|5002
-6|Biscayne Bay Aquatic Preserve|3|pH|Bottom|Field|8|7.81|8.4|8.025|8.04875|0.182242969686076|103, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|4|pH|Bottom|Field|4|7.79|8.1|8.02|7.9825|0.139851111305321|103, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|5|pH|Bottom|Field|178|7.74|8.51|8.185|8.17612359550562|0.168278510078474|4049, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|6|pH|Bottom|Field|10|7.36|8.23|8.14|8.022|0.264398688852019|4049, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|7|pH|Bottom|Field|9|7.5|8.9|7.98|7.99888888888889|0.404334157734801|115, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|8|pH|Bottom|Field|9|7.42|8.36|7.71|7.78|0.33689761055846|4058, 5002
-6|Biscayne Bay Aquatic Preserve|9|pH|Bottom|Field|2|7.94|8.01|7.975|7.975|0.0494974746830579|4058, 5002
-6|Biscayne Bay Aquatic Preserve|10|pH|Bottom|Field|10|7.32|8.28|8.05|7.993|0.280517379140758|103, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|11|pH|Bottom|Field|13|7.37|8.4|8.1|8.05923076923077|0.298006195082741|103, 4058, 5002
-6|Biscayne Bay Aquatic Preserve|12|pH|Bottom|Field|8|7.38|8.3|7.99|7.96125|0.29787041765554|103, 4058, 5002
-8|Boca Ciega Bay Aquatic Preserve|1|pH|Bottom|Field|89|7.76|8.37|8.07|8.07280898876405|0.152083923931111|5002
-8|Boca Ciega Bay Aquatic Preserve|2|pH|Bottom|Field|129|7.24|8.37|8.01|7.97496124031008|0.238590011941929|95, 4067, 5002
-8|Boca Ciega Bay Aquatic Preserve|3|pH|Bottom|Field|99|6.89|8.37|8.01|7.95545454545455|0.270461709264191|95, 4067, 5002
-8|Boca Ciega Bay Aquatic Preserve|4|pH|Bottom|Field|97|7.51|8.28|8.04|8.01216494845361|0.144627587877478|95, 5002
-8|Boca Ciega Bay Aquatic Preserve|5|pH|Bottom|Field|125|6.87|9.02|8.12|8.09264|0.198336403699014|95, 5002
-8|Boca Ciega Bay Aquatic Preserve|6|pH|Bottom|Field|138|5.72|8.28|8.07|7.92166666666667|0.438310597691479|5002
-8|Boca Ciega Bay Aquatic Preserve|7|pH|Bottom|Field|106|6.99|8.69|8.11|8.0838679245283|0.233305729338819|115, 5002
-8|Boca Ciega Bay Aquatic Preserve|8|pH|Bottom|Field|475|7.25|8.4|8.07|8.06913684210526|0.134333376039898|95, 4067, 5002
-8|Boca Ciega Bay Aquatic Preserve|9|pH|Bottom|Field|2300|0|8.74|8.1|8.08972608695652|0.253681143201802|95, 4067, 5002
-8|Boca Ciega Bay Aquatic Preserve|10|pH|Bottom|Field|498|7.62|8.66|8.1|8.10897590361446|0.156449397266712|4067, 5002
-8|Boca Ciega Bay Aquatic Preserve|11|pH|Bottom|Field|82|7.25|8.4|8.025|8.02890243902439|0.186030703011932|95, 5002
-8|Boca Ciega Bay Aquatic Preserve|12|pH|Bottom|Field|81|7.25|8.52|8.05|8.02061728395062|0.178341986636717|4067, 5002
-9|Cape Haze Aquatic Preserve|1|pH|Bottom|Field|37|7.5|8.18|8.01|8.00891891891892|0.119112080360002|95, 479
-9|Cape Haze Aquatic Preserve|2|pH|Bottom|Field|32|5.83|8.6|8.02|7.9740625|0.435681589673749|95, 479
-9|Cape Haze Aquatic Preserve|3|pH|Bottom|Field|35|6.96|8.7|8|8.00571428571429|0.254827343097078|95, 479
-9|Cape Haze Aquatic Preserve|4|pH|Bottom|Field|27|7.34|12.3|8.03|8.33888888888889|1.09488086226955|95, 479
-9|Cape Haze Aquatic Preserve|5|pH|Bottom|Field|39|7.8|8.4|8.19|8.15846153846154|0.144523508587402|95, 479
-9|Cape Haze Aquatic Preserve|6|pH|Bottom|Field|33|8|8.34|8.2|8.17727272727273|0.105897141346944|95, 476, 479
-9|Cape Haze Aquatic Preserve|7|pH|Bottom|Field|34|7.56|8.49|8.085|8.04735294117647|0.196473590229715|95, 479, 5002
-9|Cape Haze Aquatic Preserve|8|pH|Bottom|Field|40|7.3|8.37|8.125|8.035|0.232191344612198|95, 476, 479, 5002
-9|Cape Haze Aquatic Preserve|9|pH|Bottom|Field|33|7.43|8.5|8.04|7.99969696969697|0.20720588867846|95, 479
-9|Cape Haze Aquatic Preserve|10|pH|Bottom|Field|38|7.49|8.4|8.1|8.0521052631579|0.186868329055469|95, 476, 479
-9|Cape Haze Aquatic Preserve|11|pH|Bottom|Field|35|6.68|8.22|7.94|7.91971428571429|0.280215103450333|69, 95, 476, 479
-9|Cape Haze Aquatic Preserve|12|pH|Bottom|Field|30|7.71|8.5|7.905|7.965|0.172321872048231|95, 476, 479
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1|pH|Bottom|Field|21|7.2|8.4|7.9|7.90857142857143|0.235929771633122|354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2|pH|Bottom|Field|33|7.3|8.2|7.9|7.86848484848485|0.23473550557118|95, 354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|3|pH|Bottom|Field|16|7.57|8.8|7.795|7.86375|0.307047770441887|354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|4|pH|Bottom|Field|20|7.4|8.7|7.815|7.895|0.334215499341368|354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5|pH|Bottom|Field|21|7.2|8.8|7.8|7.81619047619048|0.347325152997536|354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|6|pH|Bottom|Field|26|7.05|8.4|7.79|7.77692307692308|0.382201718790162|95, 354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|pH|Bottom|Field|22|7.34|8.43|7.725|7.78045454545455|0.345204939443876|95, 354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|8|pH|Bottom|Field|22|7.14|8.4|7.615|7.64136363636364|0.329115632517053|354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|9|pH|Bottom|Field|10|7.09|7.9|7.58|7.56|0.337737570706409|354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|10|pH|Bottom|Field|25|7|8.3|7.69|7.6888|0.319899984370115|354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|11|pH|Bottom|Field|23|4.3|8.5|7.9|7.64217391304348|1.04493565057088|354, 5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|12|pH|Bottom|Field|26|4.5|8.6|7.9|7.90615384615385|0.760116185451024|95, 354, 5002
-11|Cockroach Bay Aquatic Preserve|1|pH|Bottom|Field|159|6.9|8.6|7.55|7.55270440251572|0.305683888874118|5002
-11|Cockroach Bay Aquatic Preserve|2|pH|Bottom|Field|151|7|8.24|7.57|7.56139072847682|0.276494821494844|5002
-11|Cockroach Bay Aquatic Preserve|3|pH|Bottom|Field|163|6.89|9.03|7.43|7.54944785276074|0.450882880872494|5002
-11|Cockroach Bay Aquatic Preserve|4|pH|Bottom|Field|169|6.69|8.2|7.38|7.37112426035503|0.317010650175351|5002
-11|Cockroach Bay Aquatic Preserve|5|pH|Bottom|Field|171|6.17|8.11|7.37|7.35602339181287|0.378926470489777|4067, 5002
-11|Cockroach Bay Aquatic Preserve|6|pH|Bottom|Field|168|6.65|8.17|7.305|7.33083333333333|0.34518313574911|5002
-11|Cockroach Bay Aquatic Preserve|7|pH|Bottom|Field|151|6.6|8.05|7.27|7.29602649006623|0.330597599245566|5002
-11|Cockroach Bay Aquatic Preserve|8|pH|Bottom|Field|1045|6.38|8.29|7.12|7.06858373205742|0.408613091971492|4067, 5002
-11|Cockroach Bay Aquatic Preserve|9|pH|Bottom|Field|828|0.15|8.3|7.2|7.21045893719807|0.878881355615034|4067, 5002
-11|Cockroach Bay Aquatic Preserve|10|pH|Bottom|Field|184|6.79|8.58|7.3|7.31673913043478|0.288249317917864|4067, 5002
-11|Cockroach Bay Aquatic Preserve|11|pH|Bottom|Field|159|6.58|8.2|7.38|7.33238993710692|0.344659911480348|5002
-11|Cockroach Bay Aquatic Preserve|12|pH|Bottom|Field|147|6.6|8.4|7.43|7.46040816326531|0.25246694494343|5002
+1|Alligator Harbor Aquatic Preserve|4|pH|Bottom|Field|4|7.89|8.4|7.895|8.02|0.253377189186399|95, 5002
+1|Alligator Harbor Aquatic Preserve|5|pH|Bottom|Field|5|7.84|8.4|7.85|8.026|0.259961535616329|95, 5002
+1|Alligator Harbor Aquatic Preserve|6|pH|Bottom|Field|26|7.83|8.6|8.03|8.03923076923077|0.182338653651343|557, 5002
+1|Alligator Harbor Aquatic Preserve|7|pH|Bottom|Field|12|8.01|8.4|8.165|8.18|0.121206060454538|95, 557, 5002
+1|Alligator Harbor Aquatic Preserve|8|pH|Bottom|Field|9|7.94|8.2|8.04|8.03333333333333|0.0753325958665965|95, 5002
+1|Alligator Harbor Aquatic Preserve|9|pH|Bottom|Field|16|7.91|8.4|8.12|8.110625|0.140497627500728|557, 5002
+2|Apalachicola Bay Aquatic Preserve|1|pH|Bottom|Field|70|7.26|8.88|8.1|8.09942857142857|0.302582534982095|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|2|pH|Bottom|Field|60|7.33|9.28|8.1|8.1315|0.380436078953471|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|3|pH|Bottom|Field|96|0.1|8.9|7.955|7.76|0.929985851618468|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|4|pH|Bottom|Field|81|5.45|8.5|7.89|7.80654320987654|0.4601091188344|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|5|pH|Bottom|Field|85|6.64|8.8|7.98|7.92141176470588|0.382604336660437|69, 129, 355, 557, 5002
+2|Apalachicola Bay Aquatic Preserve|6|pH|Bottom|Field|120|6.73|8.5|7.935|7.85975|0.324149728086401|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|7|pH|Bottom|Field|49|6.77|8.4|7.9|7.82612244897959|0.355878117750836|69, 115, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|8|pH|Bottom|Field|61|6.5|8.71|7.97|7.89081967213115|0.440326753983021|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|9|pH|Bottom|Field|103|5.5|8.42|7.98|7.87553398058252|0.380790530023487|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|10|pH|Bottom|Field|66|6.95|8.62|7.9|7.90348484848485|0.309652372951657|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|11|pH|Bottom|Field|61|7.32|11.8|8.06|8.07295081967213|0.548477724440702|69, 129, 355, 5002
+2|Apalachicola Bay Aquatic Preserve|12|pH|Bottom|Field|60|7|8.8|8.105|8.05333333333333|0.307034292054121|69, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|1|pH|Bottom|Field|123|5.49|9.2|8|7.65658536585366|0.730133413890344|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|2|pH|Bottom|Field|111|6.28|9.45|8.03|7.89990990990991|0.579136497484904|69, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|3|pH|Bottom|Field|132|0.1|8.9|7.9|7.67439393939394|0.859801377361427|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|4|pH|Bottom|Field|148|5.15|8.5|7.745|7.59804054054054|0.604794515937892|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|5|pH|Bottom|Field|143|6.37|8.8|7.9|7.7158041958042|0.522871826843075|69, 95, 129, 355, 557, 5002
+3|Apalachicola National Estuarine Research Reserve|6|pH|Bottom|Field|171|4.08|8.5|7.81|7.6553216374269|0.517308971903079|69, 95, 129, 355, 557, 5002
+3|Apalachicola National Estuarine Research Reserve|7|pH|Bottom|Field|91|6.48|8.4|7.8|7.57296703296703|0.518987249908671|69, 95, 115, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|8|pH|Bottom|Field|101|4.53|8.71|7.8|7.58079207920792|0.709375335303275|69, 95, 115, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|9|pH|Bottom|Field|138|5.5|8.42|7.9|7.72688405797102|0.517598047025047|69, 95, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|10|pH|Bottom|Field|105|5.91|8.62|7.8|7.65685714285714|0.537691494127574|69, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|11|pH|Bottom|Field|101|5.94|11.8|8|7.84970297029703|0.660203688940837|69, 129, 355, 5002
+3|Apalachicola National Estuarine Research Reserve|12|pH|Bottom|Field|85|5.85|8.8|8.07|7.86588235294118|0.591552223910489|69, 95, 129, 355, 5002
+4|Banana River Aquatic Preserve|1|pH|Bottom|Field|165|7.5|9.05|8.3|8.25145454545455|0.268726115320846|3001, 3013, 5002
+4|Banana River Aquatic Preserve|2|pH|Bottom|Field|208|0.78|8.99|8.23|8.00144230769231|1.2961488241839|3001, 3013, 5002
+4|Banana River Aquatic Preserve|3|pH|Bottom|Field|195|0.83|9.1|8.19|7.95697435897436|1.29763526969391|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|4|pH|Bottom|Field|262|0.82|8.9|8.2|7.99809160305344|1.31130750724226|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|5|pH|Bottom|Field|312|0.84|9|8.2|8.09644230769231|1.06938175329555|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|6|pH|Bottom|Field|241|0.8|8.85|8.2|7.9554356846473|1.19649275532894|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|7|pH|Bottom|Field|217|0.84|9.11|8.2|7.92626728110599|1.51010895562529|95, 115, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|8|pH|Bottom|Field|198|6.9|8.84|8.155|8.13555555555556|0.374094432070346|3001, 3013, 5002
+4|Banana River Aquatic Preserve|9|pH|Bottom|Field|182|0.81|9.01|8.12|7.78879120879121|1.61479748155663|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|10|pH|Bottom|Field|220|7.2|9.3|8.15|8.15218181818182|0.361216568990923|95, 3001, 3013, 5002
+4|Banana River Aquatic Preserve|11|pH|Bottom|Field|155|7.08|8.76|8.1|8.08309677419355|0.28912444573124|3001, 5002
+4|Banana River Aquatic Preserve|12|pH|Bottom|Field|165|7.4|8.7|8.25|8.17278787878788|0.318172349135841|3001, 3013, 5002
+5|Big Bend Seagrasses Aquatic Preserve|1|pH|Bottom|Field|133|5.6|8.1|7.46|7.3515037593985|0.443796459352984|5002
+5|Big Bend Seagrasses Aquatic Preserve|2|pH|Bottom|Field|162|4.6|8.11|7.4|7.25358024691358|0.64636933203565|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|3|pH|Bottom|Field|162|4.28|8.12|7.38|7.24777777777778|0.567996369509874|95, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|4|pH|Bottom|Field|165|5.66|8.3|7.32|7.26878787878788|0.516019932351346|5002
+5|Big Bend Seagrasses Aquatic Preserve|5|pH|Bottom|Field|166|5.19|8.4|7.58|7.45933734939759|0.565630927471014|69, 95, 5002
+5|Big Bend Seagrasses Aquatic Preserve|6|pH|Bottom|Field|197|4.44|8.6|7.4|7.4238578680203|0.5706399380337|69, 95, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|7|pH|Bottom|Field|190|5.4|8.4|7.475|7.45405263157895|0.536743953193079|69, 115, 5002
+5|Big Bend Seagrasses Aquatic Preserve|8|pH|Bottom|Field|161|6|8.5|7.33|7.33428571428572|0.425493411061961|69, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|9|pH|Bottom|Field|147|5.1|8.11|7.36|7.26489795918367|0.574741594523364|69, 115, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|10|pH|Bottom|Field|160|5.64|8.4|7.42|7.396375|0.538417769922719|69, 95, 5002
+5|Big Bend Seagrasses Aquatic Preserve|11|pH|Bottom|Field|164|5.4|8.42|7.51|7.51530487804878|0.479472388683437|69, 95, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|12|pH|Bottom|Field|151|6|8.34|7.5|7.3964238410596|0.418483523165665|477, 5002
+6|Biscayne Bay Aquatic Preserve|1|pH|Bottom|Field|15|7.66|8.27|8.02|8.03|0.147017977520729|4058, 5002
+6|Biscayne Bay Aquatic Preserve|2|pH|Bottom|Field|17|7.56|8.41|7.98|8.01176470588235|0.206767843671279|5002
+6|Biscayne Bay Aquatic Preserve|3|pH|Bottom|Field|21|7.48|8.4|8.1|8.0347619047619|0.238361470200598|103, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|4|pH|Bottom|Field|13|7.79|8.35|8.07|8.06461538461539|0.156131108613636|103, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|5|pH|Bottom|Field|184|7.74|8.51|8.18|8.17402173913044|0.168033042435006|4049, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|6|pH|Bottom|Field|18|7.36|8.25|8.095|8.00166666666667|0.243244007241337|4049, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|7|pH|Bottom|Field|21|7.43|8.9|8|7.9652380952381|0.32049366682696|115, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|8|pH|Bottom|Field|25|7.38|8.36|7.81|7.806|0.286516433501931|4058, 5002
+6|Biscayne Bay Aquatic Preserve|9|pH|Bottom|Field|15|7.55|8.16|7.94|7.94266666666667|0.159035785131463|4058, 5002
+6|Biscayne Bay Aquatic Preserve|10|pH|Bottom|Field|18|7.32|8.28|8|7.94055555555556|0.245655718488587|103, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|11|pH|Bottom|Field|24|7.37|8.4|7.955|7.98708333333333|0.236927418103679|103, 4058, 5002
+6|Biscayne Bay Aquatic Preserve|12|pH|Bottom|Field|17|7.38|8.3|7.94|7.87941176470588|0.297982184623412|103, 4058, 5002
+8|Boca Ciega Bay Aquatic Preserve|1|pH|Bottom|Field|225|7.4|8.4|8.07|8.06733333333333|0.182851911197481|5002
+8|Boca Ciega Bay Aquatic Preserve|2|pH|Bottom|Field|284|7.24|8.37|8.02|7.98369718309859|0.231545872381202|95, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|3|pH|Bottom|Field|236|6.89|8.5|8|7.95860169491525|0.269871825836069|95, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|4|pH|Bottom|Field|229|7.5|8.6|8.03|8.00502183406114|0.192537589071312|95, 5002
+8|Boca Ciega Bay Aquatic Preserve|5|pH|Bottom|Field|299|6.87|9.02|8.1|8.07571906354515|0.21352836758351|95, 5002
+8|Boca Ciega Bay Aquatic Preserve|6|pH|Bottom|Field|295|5.72|8.3|8.07|7.93732203389831|0.41304240532237|5002
+8|Boca Ciega Bay Aquatic Preserve|7|pH|Bottom|Field|244|6.99|8.7|8.11|8.07352459016394|0.264850053489073|115, 5002
+8|Boca Ciega Bay Aquatic Preserve|8|pH|Bottom|Field|683|7.1|8.7|8.08|8.07598828696925|0.160118211034325|95, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|9|pH|Bottom|Field|2548|0|8.74|8.1|8.090647566719|0.251274748864519|95, 4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|10|pH|Bottom|Field|687|7.6|8.66|8.09|8.09994177583697|0.161000867711447|4067, 5002
+8|Boca Ciega Bay Aquatic Preserve|11|pH|Bottom|Field|236|4|8.7|8|7.87402542372881|0.715891575789975|95, 5002
+8|Boca Ciega Bay Aquatic Preserve|12|pH|Bottom|Field|238|7.25|8.7|8.055|8.02487394957983|0.211444162447867|4067, 5002
+9|Cape Haze Aquatic Preserve|1|pH|Bottom|Field|46|7.5|8.5|8.025|8.04195652173913|0.178432926274116|95, 479, 5002
+9|Cape Haze Aquatic Preserve|2|pH|Bottom|Field|45|5.83|8.6|8.02|7.97355555555556|0.377046871667626|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|3|pH|Bottom|Field|47|6.96|8.7|8.01|8.01893617021277|0.234068310751493|95, 479, 5002
+9|Cape Haze Aquatic Preserve|4|pH|Bottom|Field|45|7.34|12.3|8.03|8.21488888888889|0.861459180223834|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|5|pH|Bottom|Field|63|7.8|8.4|8.13|8.13333333333333|0.167399464291739|95, 479, 5002
+9|Cape Haze Aquatic Preserve|6|pH|Bottom|Field|69|7.7|8.6|8.14|8.1363768115942|0.209810636012101|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|7|pH|Bottom|Field|102|6.6|8.5|8|7.93794117647059|0.385482437183356|95, 479, 5002
+9|Cape Haze Aquatic Preserve|8|pH|Bottom|Field|64|7.3|9|8.005|8.01375|0.259850384302626|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|9|pH|Bottom|Field|56|7.43|8.6|8.06|8.04267857142857|0.23401236231081|95, 479, 5002
+9|Cape Haze Aquatic Preserve|10|pH|Bottom|Field|58|7.49|8.4|8.07|8.02551724137931|0.180030917557144|95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|11|pH|Bottom|Field|59|6.68|8.22|7.91|7.89016949152542|0.24911907916679|69, 95, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|12|pH|Bottom|Field|45|7.6|8.5|7.9|7.94577777777778|0.160969913745747|95, 476, 479, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1|pH|Bottom|Field|46|7|8.5|7.9|7.90391304347826|0.272196646733118|354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2|pH|Bottom|Field|57|4|8.2|7.9|7.74666666666667|0.750307873317284|95, 354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|3|pH|Bottom|Field|49|7.4|8.9|7.9|8.04938775510204|0.398216901550238|354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|4|pH|Bottom|Field|46|7.4|8.7|7.865|7.92586956521739|0.295616689402239|354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5|pH|Bottom|Field|50|7.2|8.8|7.87|7.8568|0.273558858346046|354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|6|pH|Bottom|Field|47|7.05|8.4|7.8|7.87659574468085|0.34922446124137|95, 354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|7|pH|Bottom|Field|45|7.34|8.43|7.8|7.826|0.277180610629768|95, 354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|8|pH|Bottom|Field|66|7|8.8|7.8|7.81287878787879|0.348644695274607|354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|9|pH|Bottom|Field|40|7|8.8|7.9|7.8575|0.364457798900623|354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|10|pH|Bottom|Field|58|7|8.3|7.9|7.81758620689655|0.291013415889139|354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|11|pH|Bottom|Field|52|4.3|8.5|7.9|7.56288461538462|1.07174831794297|354, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|12|pH|Bottom|Field|41|4.5|8.6|7.9|7.90390243902439|0.833738202461602|95, 354, 5002
+11|Cockroach Bay Aquatic Preserve|1|pH|Bottom|Field|313|6.9|8.6|7.53|7.53632587859425|0.304412395088111|5002
+11|Cockroach Bay Aquatic Preserve|2|pH|Bottom|Field|306|7|8.24|7.57|7.55990196078431|0.270922510600801|5002
+11|Cockroach Bay Aquatic Preserve|3|pH|Bottom|Field|320|6.89|9.03|7.43|7.54784375|0.451103878338154|5002
+11|Cockroach Bay Aquatic Preserve|4|pH|Bottom|Field|337|6.69|8.2|7.38|7.37089020771513|0.312080828098941|5002
+11|Cockroach Bay Aquatic Preserve|5|pH|Bottom|Field|344|6.17|8.11|7.37|7.35218023255814|0.375249051702259|4067, 5002
+11|Cockroach Bay Aquatic Preserve|6|pH|Bottom|Field|338|6.38|8.17|7.3|7.32150887573965|0.359035678749828|5002
+11|Cockroach Bay Aquatic Preserve|7|pH|Bottom|Field|294|6.6|8.05|7.27|7.29425170068027|0.331463737787541|5002
+11|Cockroach Bay Aquatic Preserve|8|pH|Bottom|Field|1188|6.38|8.29|7.13|7.09332491582492|0.412774905544685|4067, 5002
+11|Cockroach Bay Aquatic Preserve|9|pH|Bottom|Field|987|0.15|8.3|7.2|7.2161094224924|0.817241104263199|4067, 5002
+11|Cockroach Bay Aquatic Preserve|10|pH|Bottom|Field|335|6.79|8.58|7.29|7.31244776119403|0.290461087275078|4067, 5002
+11|Cockroach Bay Aquatic Preserve|11|pH|Bottom|Field|301|6.58|8.2|7.38|7.34086378737542|0.333586447642798|5002
+11|Cockroach Bay Aquatic Preserve|12|pH|Bottom|Field|297|6.6|8.4|7.42|7.44296296296296|0.257047901418439|5002
 14|Estero Bay Aquatic Preserve|1|pH|Bottom|Field|4|7.54|7.96|7.875|7.8125|0.186435869224067|95, 476
 14|Estero Bay Aquatic Preserve|2|pH|Bottom|Field|1|8.23|8.23|8.23|8.23||95
 14|Estero Bay Aquatic Preserve|3|pH|Bottom|Field|8|7.19|8.29|7.82|7.805|0.312409987036266|95, 476, 5002
-14|Estero Bay Aquatic Preserve|4|pH|Bottom|Field|11|7.25|8.16|7.99|7.91090909090909|0.29142596128192|95, 476
+14|Estero Bay Aquatic Preserve|4|pH|Bottom|Field|12|7.24|8.16|7.965|7.855|0.338700726037282|95, 476, 5002
 14|Estero Bay Aquatic Preserve|5|pH|Bottom|Field|5|7.84|8.07|7.94|7.952|0.105688220724923|95, 476
 14|Estero Bay Aquatic Preserve|6|pH|Bottom|Field|7|7.78|8.07|7.9|7.90571428571429|0.103900135203175|95, 476, 5002
-14|Estero Bay Aquatic Preserve|7|pH|Bottom|Field|7|7.94|8.29|8.03|8.06714285714286|0.12983506020002|95, 115
+14|Estero Bay Aquatic Preserve|7|pH|Bottom|Field|8|7.25|8.29|8.015|7.965|0.312912584780935|95, 115, 5002
 14|Estero Bay Aquatic Preserve|8|pH|Bottom|Field|9|7.77|8.24|8.05|8.02555555555556|0.160865713493515|95, 476, 5002
 14|Estero Bay Aquatic Preserve|9|pH|Bottom|Field|7|7.48|8.2|7.84|7.86428571428571|0.218925949646385|95, 476, 5002
 14|Estero Bay Aquatic Preserve|10|pH|Bottom|Field|4|7.5|7.98|7.935|7.8375|0.227797424626941|95, 476, 5002
-14|Estero Bay Aquatic Preserve|11|pH|Bottom|Field|3|7.87|8.14|7.95|7.98666666666667|0.138684293751432|95, 476
+14|Estero Bay Aquatic Preserve|11|pH|Bottom|Field|4|7.3|8.14|7.91|7.815|0.361524549650505|95, 476, 5002
 14|Estero Bay Aquatic Preserve|12|pH|Bottom|Field|10|7.32|8.05|7.78|7.761|0.241957296507738|95, 476, 5002
-15|Florida Keys National Marine Sanctuary|1|pH|Bottom|Field|21|7.63|8.12|8.095|8.04852380952381|0.13067923287486|899, 5002
-15|Florida Keys National Marine Sanctuary|2|pH|Bottom|Field|176|6.86|8.32|8.13|8.10081818181818|0.148611097101859|899, 5002
-15|Florida Keys National Marine Sanctuary|3|pH|Bottom|Field|68|7.7|8.73|8.31|8.27941176470588|0.15825430463072|5002
-15|Florida Keys National Marine Sanctuary|4|pH|Bottom|Field|121|7.43|8.3|8.17|8.10381818181818|0.185259277770372|5002
-15|Florida Keys National Marine Sanctuary|5|pH|Bottom|Field|846|5.82|9.08|8.09|8.10835697399527|0.274359105138881|4049, 5002
-15|Florida Keys National Marine Sanctuary|6|pH|Bottom|Field|4|7.8|8|7.84|7.87|0.0945163125250522|5002
-15|Florida Keys National Marine Sanctuary|7|pH|Bottom|Field|67|7.52|8.5|8.069|8.08417910447761|0.124774089843026|115, 899, 5002
-15|Florida Keys National Marine Sanctuary|8|pH|Bottom|Field|283|6.88|8.97|8.02|7.97950530035336|0.191814134530929|115, 5002
-15|Florida Keys National Marine Sanctuary|9|pH|Bottom|Field|1|9.2|9.2|9.2|9.2||5002
-15|Florida Keys National Marine Sanctuary|10|pH|Bottom|Field|195|6.69|8.2|7.93|7.85948717948718|0.206474440118907|103, 5002
-15|Florida Keys National Marine Sanctuary|11|pH|Bottom|Field|84|7|8.4|7.91|7.8875|0.25554041483581|103, 5002
-15|Florida Keys National Marine Sanctuary|12|pH|Bottom|Field|3|7.81|8.3|8.3|8.13666666666667|0.282901631902917|103, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|pH|Bottom|Field|229|6.81|8.27|7.93|7.90786026200873|0.183368236650222|95, 476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|pH|Bottom|Field|190|5.62|8.34|7.97|7.9001052631579|0.355355086551874|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|pH|Bottom|Field|203|6.89|8.28|7.94|7.92014778325123|0.186490457995254|95, 476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|pH|Bottom|Field|213|7.09|8.55|7.95|7.94323943661972|0.204840766375964|69, 95, 476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|pH|Bottom|Field|195|7.28|8.6|7.98|7.96794871794872|0.18199891649133|69, 476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|pH|Bottom|Field|218|6.67|8.38|7.96|7.92394495412844|0.200708507019733|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|pH|Bottom|Field|218|6.44|9.28|7.89|7.85366972477064|0.333638399558312|115, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|pH|Bottom|Field|245|6.43|8.26|7.82|7.77481632653061|0.286378723900439|115, 476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|pH|Bottom|Field|236|5.58|8.4|7.8|7.74559322033898|0.325935752376515|95, 115, 476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|pH|Bottom|Field|251|6.99|8.5|7.85|7.83478087649402|0.214614658848898|69, 95, 476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|pH|Bottom|Field|252|6.53|8.79|7.89|7.87603174603175|0.215036657173639|69, 476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|pH|Bottom|Field|257|5.9|8.38|7.88|7.84587548638132|0.211117081108559|476, 479, 5002
-19|Guana River Marsh Aquatic Preserve|1|pH|Bottom|Field|25|7.13|8.02|7.83|7.7708|0.215482404540757|5002
-19|Guana River Marsh Aquatic Preserve|2|pH|Bottom|Field|46|7.17|8.01|7.71|7.66739130434783|0.225343538058955|5002, 5014
-19|Guana River Marsh Aquatic Preserve|3|pH|Bottom|Field|24|6.53|8.05|7.615|7.58916666666667|0.302495658131494|5002
-19|Guana River Marsh Aquatic Preserve|4|pH|Bottom|Field|47|5.89|8.1|7.58|7.53063829787234|0.358095228136918|5002
-19|Guana River Marsh Aquatic Preserve|5|pH|Bottom|Field|47|6.5|8.56|7.43|7.45659574468085|0.339816296892413|5002, 5014
-19|Guana River Marsh Aquatic Preserve|6|pH|Bottom|Field|43|6.95|7.99|7.37|7.38674418604651|0.238314727181481|5002
-19|Guana River Marsh Aquatic Preserve|7|pH|Bottom|Field|45|6.81|8.33|7.5|7.48355555555556|0.324885683080537|5002, 5014
-19|Guana River Marsh Aquatic Preserve|8|pH|Bottom|Field|52|6.33|8.34|7.365|7.35211538461538|0.344630160040663|5002
-19|Guana River Marsh Aquatic Preserve|9|pH|Bottom|Field|27|6.69|8.07|7.37|7.43703703703704|0.390136216988718|5002, 5014
-19|Guana River Marsh Aquatic Preserve|10|pH|Bottom|Field|46|6.81|8.24|7.45|7.52173913043478|0.315082383215185|95, 5002, 5014
-19|Guana River Marsh Aquatic Preserve|11|pH|Bottom|Field|48|7.03|8.08|7.53|7.5725|0.257587002447304|95, 5002, 5014
-19|Guana River Marsh Aquatic Preserve|12|pH|Bottom|Field|37|7.17|8.17|7.76|7.70567567567568|0.252427553309201|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|pH|Bottom|Field|54|7.13|8.17|7.87|7.83203703703704|0.210779144269493|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|pH|Bottom|Field|91|6.55|8.13|7.82|7.72472527472528|0.320698337518958|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|pH|Bottom|Field|52|5.15|8.19|7.695|7.59865384615385|0.521592692291201|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|pH|Bottom|Field|89|5.89|8.1|7.67|7.59348314606742|0.372336300587848|95, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|pH|Bottom|Field|75|6.5|8.56|7.56|7.57213333333333|0.330136308184941|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|pH|Bottom|Field|82|6.79|8.03|7.515|7.48768292682927|0.305029036385459|95, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|pH|Bottom|Field|77|6.73|8.33|7.62|7.57402597402597|0.342910375509786|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|pH|Bottom|Field|82|6.33|8.34|7.465|7.46536585365854|0.368742257075272|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|pH|Bottom|Field|58|6.26|8.07|7.6|7.48206896551724|0.457659026606052|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|pH|Bottom|Field|75|5.95|8.24|7.6|7.54493333333333|0.42102954038152|95, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|pH|Bottom|Field|77|6.87|8.08|7.74|7.66194805194805|0.284757694600713|95, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|pH|Bottom|Field|80|6.9|8.17|7.83|7.738625|0.303614277903453|5002, 5014
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|1|pH|Bottom|Field|480|0.75|8.81|8.04|7.33241666666667|2.15330488173624|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2|pH|Bottom|Field|444|0.8|8.9|8.06|7.88542792792793|1.05780728390047|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3|pH|Bottom|Field|450|0.82|8.87|8|7.80200888888889|1.1965852676747|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|4|pH|Bottom|Field|634|0.77|8.78|8|7.41981072555205|1.95578058310156|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5|pH|Bottom|Field|477|0.78|9.32|8|7.62400419287212|1.66413796039958|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|6|pH|Bottom|Field|505|0.81|9.37|8|7.9760198019802|0.492952112604652|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|7|pH|Bottom|Field|547|0.8|9.29|7.97|7.35937842778793|2.08480557006044|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|8|pH|Bottom|Field|440|0.79|9.55|7.975|7.75747727272727|1.35344485795948|95, 115, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|9|pH|Bottom|Field|431|0.8|9.33|7.95|7.81206496519722|0.977281067115188|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|10|pH|Bottom|Field|554|0.81|9.08|7.9|7.76173285198556|1.08414526333468|3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|11|pH|Bottom|Field|447|0.77|8.79|7.88|7.36308724832215|1.8239487663408|95, 3001, 3013, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|12|pH|Bottom|Field|398|0.81|8.94|8|7.8106783919598|1.2731704578318|95, 3013, 5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1|pH|Bottom|Field|92|0.77|8.7|8|7.59108695652174|1.66020352024058|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2|pH|Bottom|Field|64|7.1|8.42|7.85|7.86953125|0.285097753703298|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|3|pH|Bottom|Field|74|0.81|8.81|8.1|7.93567567567568|1.22517438633628|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|4|pH|Bottom|Field|96|0.83|8.75|8.1|7.911875|1.29536933363667|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|5|pH|Bottom|Field|75|7.8|9.4|8.2|8.31373333333333|0.374424868273973|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|6|pH|Bottom|Field|44|7.7|9.4|8.115|8.33295454545455|0.512311585538071|3001, 5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|7|pH|Bottom|Field|79|0.83|9.15|8.1|8.07696202531646|0.873615174375085|3001, 5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|8|pH|Bottom|Field|51|7.8|9.34|8.1|8.28392156862745|0.46276593838083|115, 5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|9|pH|Bottom|Field|56|0.81|9.23|7.9|7.80321428571429|1.43738665278706|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|10|pH|Bottom|Field|93|7.2|9.16|8|7.99365591397849|0.391853968324705|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|11|pH|Bottom|Field|56|7.6|8.83|7.985|8.02625|0.275856105441027|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|12|pH|Bottom|Field|76|6.21|8.9|8|7.92486842105263|0.436490529629384|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1|pH|Bottom|Field|2|8.15|8.25|8.2|8.2|0.0707106781186545|10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2|pH|Bottom|Field|21|7.8|8.5|7.98|8.01952380952381|0.168566787668158|95, 3001, 3013, 5002, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|3|pH|Bottom|Field|14|7.9|8.5|8.125|8.13357142857143|0.154252896387575|95, 3001, 5002, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|4|pH|Bottom|Field|9|7.92|8.3|8.1|8.13111111111111|0.14347860854884|95, 3001, 5002, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|5|pH|Bottom|Field|7|7.95|8.4|8.1|8.10714285714286|0.159866015328909|95, 3001, 5002, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|6|pH|Bottom|Field|14|7.76|8.4|8.11|8.095|0.232304508383683|69, 95, 3001, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|7|pH|Bottom|Field|10|7.77|8.4|8.04|8.11|0.234331199610959|95, 3001, 3013, 5002, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|8|pH|Bottom|Field|14|7.8|8.23|8.01|8.01428571428571|0.123644296625085|95, 115, 5002, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|9|pH|Bottom|Field|8|7.91|8.48|8.24|8.21625|0.192942441454144|95, 3001, 5002, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|10|pH|Bottom|Field|16|7.8|8.4|7.92|7.975625|0.159121284978891|95, 3001, 5002, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|11|pH|Bottom|Field|3|7.8|8.26|8.01|8.02333333333333|0.230289672658878|95, 3001, 5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|12|pH|Bottom|Field|7|7.92|8.12|8.03|8.03571428571429|0.0667974906856893|3001, 10001
-25|Lemon Bay Aquatic Preserve|1|pH|Bottom|Field|41|7.8|8.34|8.04|8.04365853658537|0.115342015275462|95, 476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2|pH|Bottom|Field|37|6.22|8.3|8.01|7.86810810810811|0.485705888589185|95, 476, 479, 5002
-25|Lemon Bay Aquatic Preserve|3|pH|Bottom|Field|31|7.67|8.16|7.94|7.95774193548387|0.133982826696045|95, 476, 479, 5002
-25|Lemon Bay Aquatic Preserve|4|pH|Bottom|Field|31|7.7|8.6|8.05|8.05806451612903|0.14849061372892|95, 476, 479, 5002
-25|Lemon Bay Aquatic Preserve|5|pH|Bottom|Field|21|7.81|8.25|8.18|8.09857142857143|0.157362184602455|479, 5002
-25|Lemon Bay Aquatic Preserve|6|pH|Bottom|Field|13|8.1|8.22|8.16|8.16923076923077|0.0440570725426197|95, 479
-25|Lemon Bay Aquatic Preserve|7|pH|Bottom|Field|31|7.57|8.25|8.03|7.99193548387097|0.182727836865628|95, 479, 5002
-25|Lemon Bay Aquatic Preserve|8|pH|Bottom|Field|35|7.47|8.3|7.99|7.97628571428571|0.215653394488985|95, 476, 479, 5002
-25|Lemon Bay Aquatic Preserve|9|pH|Bottom|Field|31|7.44|8.24|8.05|7.98258064516129|0.182555338494669|479, 5002
-25|Lemon Bay Aquatic Preserve|10|pH|Bottom|Field|31|7.66|8.33|8|7.99903225806452|0.201962947735629|95, 479, 5002
-25|Lemon Bay Aquatic Preserve|11|pH|Bottom|Field|49|7.59|8.32|8.03|7.99244897959184|0.1720166006069|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|12|pH|Bottom|Field|39|7.66|8.1|7.98|7.92307692307692|0.14371305193178|476, 479, 5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1|pH|Bottom|Field|6|7.49|8.08|8|7.92|0.218906372680194|5002, 10001
+15|Florida Keys National Marine Sanctuary|1|pH|Bottom|Field|25|7.63|8.22|8.1|8.06836|0.128818308740127|899, 5002
+15|Florida Keys National Marine Sanctuary|2|pH|Bottom|Field|289|6.86|8.32|8.13|8.11011764705882|0.147371106583196|899, 5002
+15|Florida Keys National Marine Sanctuary|3|pH|Bottom|Field|120|7.7|8.73|8.31|8.2935|0.141745718593176|5002
+15|Florida Keys National Marine Sanctuary|4|pH|Bottom|Field|217|7.43|8.3|8.17|8.11153917050691|0.178518516482427|5002
+15|Florida Keys National Marine Sanctuary|5|pH|Bottom|Field|898|5.82|9.08|8.08|8.1021714922049|0.273735189252732|4049, 5002
+15|Florida Keys National Marine Sanctuary|6|pH|Bottom|Field|5|7.8|8.14|7.88|7.924|0.145876660230484|5002
+15|Florida Keys National Marine Sanctuary|7|pH|Bottom|Field|70|7.52|8.5|8.0685|8.079|0.127650224089678|115, 899, 5002
+15|Florida Keys National Marine Sanctuary|8|pH|Bottom|Field|494|6.88|8.97|8.03|7.98194331983806|0.194602285493206|115, 5002
+15|Florida Keys National Marine Sanctuary|9|pH|Bottom|Field|3|8.09|9.2|8.16|8.48333333333333|0.621637622199085|5002
+15|Florida Keys National Marine Sanctuary|10|pH|Bottom|Field|346|6.69|8.2|7.92|7.851387283237|0.210679604978169|103, 5002
+15|Florida Keys National Marine Sanctuary|11|pH|Bottom|Field|156|7|8.4|7.92|7.89198717948718|0.248067160187733|103, 5002
+15|Florida Keys National Marine Sanctuary|12|pH|Bottom|Field|5|7.81|8.33|8.3|8.17|0.219431082574917|103, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|pH|Bottom|Field|331|6.81|8.6|7.93|7.92163141993958|0.216833402277253|95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|pH|Bottom|Field|255|5.62|8.34|7.97|7.90619607843137|0.323058770622157|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|pH|Bottom|Field|308|6.89|8.3|7.93|7.90616883116883|0.181218093638085|95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|pH|Bottom|Field|338|7|8.55|7.95|7.93967455621302|0.215999946430806|69, 95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|pH|Bottom|Field|288|7.28|8.6|7.99|7.97878472222222|0.200961752499989|69, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|pH|Bottom|Field|320|6.67|8.6|7.96|7.9524375|0.237615497407367|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|pH|Bottom|Field|390|6.44|9.3|7.9|7.88784615384615|0.373115800302052|115, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|pH|Bottom|Field|324|6.43|8.5|7.815|7.7808024691358|0.299770765659944|115, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|pH|Bottom|Field|353|5.58|8.8|7.86|7.82501416430595|0.348939240482928|95, 115, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|pH|Bottom|Field|328|6.99|8.5|7.885|7.85149390243902|0.221064757195762|69, 95, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|pH|Bottom|Field|346|6.53|8.79|7.875|7.86656069364162|0.213439787018297|69, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|pH|Bottom|Field|339|5.9|8.38|7.88|7.84247787610619|0.2128429608617|476, 479, 5002
+19|Guana River Marsh Aquatic Preserve|1|pH|Bottom|Field|45|7.13|8.4|7.83|7.78777777777778|0.221819837715296|5002
+19|Guana River Marsh Aquatic Preserve|2|pH|Bottom|Field|90|0.79|8.3|7.71|7.62611111111111|0.766235060076793|5002, 5014
+19|Guana River Marsh Aquatic Preserve|3|pH|Bottom|Field|50|6.53|8.5|7.645|7.6558|0.314390177444317|5002
+19|Guana River Marsh Aquatic Preserve|4|pH|Bottom|Field|72|5.89|8.1|7.62|7.58319444444445|0.310981301864833|5002
+19|Guana River Marsh Aquatic Preserve|5|pH|Bottom|Field|73|0.73|8.56|7.45|7.22821917808219|1.39385690169575|5002, 5014
+19|Guana River Marsh Aquatic Preserve|6|pH|Bottom|Field|80|6.95|8|7.43|7.431125|0.235753538706545|5002
+19|Guana River Marsh Aquatic Preserve|7|pH|Bottom|Field|66|6.81|8.33|7.5|7.48333333333333|0.323853401465888|5002, 5014
+19|Guana River Marsh Aquatic Preserve|8|pH|Bottom|Field|78|6.33|8.34|7.38|7.36679487179487|0.33585515426845|5002
+19|Guana River Marsh Aquatic Preserve|9|pH|Bottom|Field|42|6.69|8.07|7.505|7.48428571428571|0.362754656436758|5002, 5014
+19|Guana River Marsh Aquatic Preserve|10|pH|Bottom|Field|76|0.75|8.24|7.49|7.37815789473684|1.13359805989756|95, 5002, 5014
+19|Guana River Marsh Aquatic Preserve|11|pH|Bottom|Field|78|7.03|8.08|7.58|7.61371794871795|0.254895491568038|95, 5002, 5014
+19|Guana River Marsh Aquatic Preserve|12|pH|Bottom|Field|69|7.17|8.17|7.76|7.71898550724638|0.231371517690998|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|pH|Bottom|Field|108|7.13|8.4|7.885|7.85916666666667|0.208623100664431|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|pH|Bottom|Field|169|6.55|8.3|7.84|7.75313609467456|0.308693848468473|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|pH|Bottom|Field|111|5.15|8.5|7.8|7.68306585585586|0.436315327535797|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|pH|Bottom|Field|162|5.89|8.1|7.7|7.63827512345679|0.33278633720095|95, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|pH|Bottom|Field|127|0.73|8.56|7.69|7.45472440944882|1.08864472812851|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|pH|Bottom|Field|154|6.79|8.03|7.575|7.52149350649351|0.297841433594122|95, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|pH|Bottom|Field|128|6.73|8.33|7.72|7.60734375|0.346929125201944|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|pH|Bottom|Field|143|6.33|8.34|7.51|7.52020979020979|0.352489073912115|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|pH|Bottom|Field|105|6.26|8.07|7.7|7.52933333333333|0.444098626144677|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|pH|Bottom|Field|135|0.75|8.24|7.62|7.43585185185185|1.08829757864262|95, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|pH|Bottom|Field|134|6.87|8.08|7.805|7.69388059701493|0.276176663651195|95, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|pH|Bottom|Field|150|6.9|8.17|7.83|7.75446666666667|0.289960739454596|5002, 5014
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|1|pH|Bottom|Field|853|0.75|8.81|8.02|7.26336459554514|2.23181452199237|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2|pH|Bottom|Field|758|0.79|8.9|8.055|7.87678100263852|1.07948416276346|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3|pH|Bottom|Field|773|0.82|8.87|8|7.80369210866753|1.18136584401774|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|4|pH|Bottom|Field|1128|0.76|8.78|8|7.32562056737589|2.08600227008744|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5|pH|Bottom|Field|857|0.78|9.32|8|7.55135355892649|1.79095084841512|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|6|pH|Bottom|Field|867|0.81|9.37|8.02|7.98687427912341|0.448514393136246|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|7|pH|Bottom|Field|985|0.8|9.29|7.96|7.34084263959391|2.1000624266295|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|8|pH|Bottom|Field|848|0.79|9.55|7.97|7.68814858490566|1.51132442807391|95, 115, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|9|pH|Bottom|Field|820|0.8|9.33|7.96|7.83009756097561|0.935707597713598|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|10|pH|Bottom|Field|997|0.81|9.08|7.9|7.78623871614845|0.974127761007054|3001, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|11|pH|Bottom|Field|828|0.77|8.79|7.87|7.28252415458937|1.92122039777538|95, 3001, 3013, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|12|pH|Bottom|Field|735|0.81|8.94|8|7.79965986394558|1.29188381080019|95, 3013, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1|pH|Bottom|Field|101|0.77|8.7|8|7.62277227722772|1.58949055914899|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2|pH|Bottom|Field|74|7.1|8.42|7.85|7.865|0.284403966987727|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|3|pH|Bottom|Field|88|0.81|8.81|8.1|7.96785840909091|1.12931482821852|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|4|pH|Bottom|Field|116|0.83|8.75|8.1|7.94275862068966|1.18272315567444|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|5|pH|Bottom|Field|87|7.8|9.4|8.2|8.33425287356322|0.393914853814375|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|6|pH|Bottom|Field|56|7.7|9.4|8.165|8.40232142857143|0.526370042914604|3001, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|7|pH|Bottom|Field|86|0.83|9.15|8.1|8.07976744186047|0.840208624994847|3001, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|8|pH|Bottom|Field|61|7.77|9.34|8.1|8.32819672131148|0.499274500973567|115, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|9|pH|Bottom|Field|70|0.81|9.23|8|7.95228571428571|1.34260850524033|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|10|pH|Bottom|Field|109|7.2|9.16|8|8.04623853211009|0.439610073416974|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|11|pH|Bottom|Field|69|7.6|8.83|7.97|8.03188405797101|0.287925007405006|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|12|pH|Bottom|Field|88|6.21|8.9|8|7.89681818181818|0.456653356936368|5002
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1|pH|Bottom|Field|6|7.9|8.25|8.1|8.08333333333333|0.1211060141639|5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2|pH|Bottom|Field|24|7.8|8.5|8.01|8.0325|0.162674655303956|95, 3001, 3013, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|3|pH|Bottom|Field|20|7.7|8.5|8.1|8.0985|0.161417242932065|95, 3001, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|4|pH|Bottom|Field|12|7.92|8.3|8.08|8.11166666666667|0.128829226874067|95, 3001, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|5|pH|Bottom|Field|15|7.77|8.4|8|8.03866666666667|0.140349902878824|95, 3001, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|6|pH|Bottom|Field|20|7.5|8.4|8.05|8.0295|0.248584942593494|69, 95, 3001, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|7|pH|Bottom|Field|12|7.67|8.4|7.985|8.06166666666667|0.24851681243048|95, 3001, 3013, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|8|pH|Bottom|Field|19|7.7|8.23|8|7.99789473684211|0.130664070865731|95, 115, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|9|pH|Bottom|Field|9|7.91|8.48|8.2|8.18555555555556|0.202614850832257|95, 3001, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|10|pH|Bottom|Field|18|7.62|8.4|7.905|7.95222222222222|0.171620496361133|95, 3001, 5002, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|11|pH|Bottom|Field|9|7.8|8.26|8|7.98777777777778|0.126271312832505|95, 3001, 5002
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|12|pH|Bottom|Field|13|7.71|8.12|8.06|8.00615384615385|0.140744358178132|3001, 5002, 10001
+25|Lemon Bay Aquatic Preserve|1|pH|Bottom|Field|77|7.5|8.6|8.03|8.03974025974026|0.213849270736817|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2|pH|Bottom|Field|68|6.22|8.4|8.005|7.90235294117647|0.390101852934413|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|3|pH|Bottom|Field|72|7.6|8.7|7.94|7.97791666666667|0.197911187223383|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|4|pH|Bottom|Field|71|7.7|8.6|8.02|8.00619718309859|0.148731456920404|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|5|pH|Bottom|Field|50|7.5|8.6|8.07|8.0356|0.229695095147227|479, 5002
+25|Lemon Bay Aquatic Preserve|6|pH|Bottom|Field|56|7.6|8.6|8.1|8.03875|0.209762311373438|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|7|pH|Bottom|Field|81|6.9|8.6|8|7.94395061728395|0.302893046356076|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|8|pH|Bottom|Field|78|7.47|8.5|8.05|8.03897435897436|0.218463285533765|95, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|9|pH|Bottom|Field|67|5.2|8.3|8|7.75507462686567|0.770608522108632|479, 5002
+25|Lemon Bay Aquatic Preserve|10|pH|Bottom|Field|84|6.2|8.33|8|7.95833333333333|0.292388721838984|95, 479, 5002
+25|Lemon Bay Aquatic Preserve|11|pH|Bottom|Field|99|4.9|8.4|8|7.90848484848485|0.571045163581412|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|12|pH|Bottom|Field|83|7.4|8.6|7.98|7.95168674698795|0.234945864429361|476, 479, 5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1|pH|Bottom|Field|7|7.49|8.08|7.97|7.88714285714286|0.217923096964218|5002, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2|pH|Bottom|Field|38|7.18|8.22|8|7.9721052631579|0.173020197145302|5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|3|pH|Bottom|Field|5|7.48|8.18|7.99|7.92|0.26485845276298|5002, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|4|pH|Bottom|Field|42|7.05|8.2|8|7.95|0.192341160314737|5002, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5|pH|Bottom|Field|13|7.27|8.02|7.85|7.74769230769231|0.266181449583858|5002, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|6|pH|Bottom|Field|56|7.55|8.15|7.975|7.93196428571429|0.139419832198972|5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|7|pH|Bottom|Field|16|7.53|8.27|7.9|7.910625|0.203714465203955|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|3|pH|Bottom|Field|7|7.48|8.18|7.99|7.88142857142857|0.255175009972148|5002, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|4|pH|Bottom|Field|43|7.05|8.2|8|7.94976744186047|0.190043708908454|5002, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5|pH|Bottom|Field|15|7.27|8.02|7.86|7.76666666666667|0.251727365748475|5002, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|6|pH|Bottom|Field|58|7.55|8.15|7.965|7.92896551724138|0.138420788104794|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|7|pH|Bottom|Field|20|7.39|8.27|7.89|7.8705|0.221940603718534|5002, 10000, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|8|pH|Bottom|Field|65|7.32|8.77|7.97|7.92030769230769|0.247304021087717|5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|9|pH|Bottom|Field|15|7.23|8.11|7.93|7.83933333333333|0.264317629990528|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|9|pH|Bottom|Field|16|7.23|8.11|7.935|7.845625|0.256592251117085|5002, 10000, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10|pH|Bottom|Field|44|7.66|8.11|7.975|7.945|0.120454565399496|5002, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|11|pH|Bottom|Field|12|7.39|8.09|7.985|7.92|0.19986358984431|5002, 10001
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|12|pH|Bottom|Field|35|7.45|8.44|8.04|8.06342857142857|0.159557160274799|10000, 10001
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|1|pH|Bottom|Field|54|6.6|8.15|7.8|7.65388888888889|0.448929194176151|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2|pH|Bottom|Field|18|6|8.14|7.915|7.74555555555556|0.547993368596869|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|3|pH|Bottom|Field|47|6.5|8.27|7.66|7.62702127659575|0.402988374487711|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|4|pH|Bottom|Field|225|6.73|8.2|7.56|7.57288888888889|0.208571054848545|95, 103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5|pH|Bottom|Field|35|7|8.14|7.71|7.69|0.298899943911986|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|6|pH|Bottom|Field|27|6.7|8.11|7.74|7.67037037037037|0.305368396449039|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|7|pH|Bottom|Field|93|6.69|8.12|7.79|7.73075268817204|0.271266099739159|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|8|pH|Bottom|Field|36|6.54|8.17|7.675|7.60972222222222|0.382484256341626|103, 115, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|9|pH|Bottom|Field|25|6.93|8.12|7.63|7.6028|0.334807407325465|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|10|pH|Bottom|Field|281|6.97|8.14|7.51|7.51747330960854|0.177571977859101|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|11|pH|Bottom|Field|358|6|8.13|7.8|7.74259776536313|0.287366503305245|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|12|pH|Bottom|Field|60|6.9|8.27|7.955|7.87983333333333|0.264174388131463|103, 5002
+28|Matlacha Pass Aquatic Preserve|1|pH|Bottom|Field|11|7.71|8.39|7.91|7.97727272727273|0.212089175069871|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|2|pH|Bottom|Field|21|7.58|8.6|7.92|7.99333333333333|0.24801881649047|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|3|pH|Bottom|Field|18|7.46|8.6|7.89|7.94222222222222|0.317222422535793|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|4|pH|Bottom|Field|17|7.54|8.55|7.92|7.97823529411765|0.277065770488652|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|5|pH|Bottom|Field|28|7.32|8.57|8.02|7.99928571428572|0.311209451577748|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|6|pH|Bottom|Field|30|7.07|8.29|7.945|7.91166666666667|0.293634576247103|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|7|pH|Bottom|Field|24|7.61|8.53|7.785|7.85375|0.209363683990116|95, 115, 476
+28|Matlacha Pass Aquatic Preserve|8|pH|Bottom|Field|27|7.17|8.7|7.78|7.82518518518519|0.249482084609918|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|9|pH|Bottom|Field|23|7.53|8.02|7.7|7.73173913043478|0.143927133518478|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|10|pH|Bottom|Field|39|7.52|8.7|7.84|7.85615384615385|0.218868085536464|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|11|pH|Bottom|Field|20|7.47|8.3|7.89|7.858|0.257796329237678|95, 476, 513
+28|Matlacha Pass Aquatic Preserve|12|pH|Bottom|Field|27|7|8.26|7.92|7.91037037037037|0.277398373372768|95, 476, 513
+29|Mosquito Lagoon Aquatic Preserve|1|pH|Bottom|Field|4|7.7|8.17|7.94|7.9375|0.194657819433658|103, 5002
+29|Mosquito Lagoon Aquatic Preserve|2|pH|Bottom|Field|6|7.76|8.11|8.035|8.00166666666667|0.122215656389297|5002
+29|Mosquito Lagoon Aquatic Preserve|3|pH|Bottom|Field|2|7.87|7.97|7.92|7.92|0.0707106781186545|5002
+29|Mosquito Lagoon Aquatic Preserve|4|pH|Bottom|Field|5|7.61|8.1|7.9|7.824|0.211730961363708|5002
+29|Mosquito Lagoon Aquatic Preserve|5|pH|Bottom|Field|5|7.87|8.09|8.02|7.988|0.11144505372604|5002
+29|Mosquito Lagoon Aquatic Preserve|6|pH|Bottom|Field|4|7.71|8.12|7.895|7.905|0.225757982509294|5002
+29|Mosquito Lagoon Aquatic Preserve|7|pH|Bottom|Field|7|7.78|8.03|8|7.94142857142857|0.112164844674935|5002
+29|Mosquito Lagoon Aquatic Preserve|8|pH|Bottom|Field|9|7.71|8.15|7.94|7.89666666666667|0.154515371403624|5002
+29|Mosquito Lagoon Aquatic Preserve|9|pH|Bottom|Field|4|7.53|7.75|7.64|7.64|0.127017059221718|5002
+29|Mosquito Lagoon Aquatic Preserve|10|pH|Bottom|Field|6|7.33|7.94|7.48|7.58333333333333|0.292688685580203|5002
+29|Mosquito Lagoon Aquatic Preserve|11|pH|Bottom|Field|7|7.46|7.81|7.71|7.65142857142857|0.14334440710268|5002
+29|Mosquito Lagoon Aquatic Preserve|12|pH|Bottom|Field|3|7.65|7.83|7.65|7.71|0.103923048454132|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|1|pH|Bottom|Field|78|6.6|8.15|7.855|7.74051282051282|0.405241301967745|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2|pH|Bottom|Field|32|6|8.14|7.935|7.8325|0.42948581410348|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|3|pH|Bottom|Field|81|6.5|8.27|7.77|7.69641975308642|0.353611045648942|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|4|pH|Bottom|Field|259|6.73|8.2|7.6|7.60772200772201|0.225898344295932|95, 103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5|pH|Bottom|Field|64|7|8.14|7.76|7.711875|0.269018645721875|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|6|pH|Bottom|Field|52|6.7|8.11|7.75|7.70153846153846|0.295033295664282|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|7|pH|Bottom|Field|129|6.69|8.12|7.77|7.71271317829457|0.299991541385921|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|8|pH|Bottom|Field|59|6.54|8.17|7.69|7.62406779661017|0.365961740246671|103, 115, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|9|pH|Bottom|Field|48|6.93|8.12|7.66|7.6525|0.319464312261183|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|10|pH|Bottom|Field|301|6.97|8.14|7.53|7.54003322259136|0.196783295935521|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|11|pH|Bottom|Field|379|6|8.13|7.8|7.74981530343008|0.283359882375379|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|12|pH|Bottom|Field|84|6.9|8.27|7.965|7.88738095238095|0.249022760113416|103, 5002
 48|Nature Coast Aquatic Preserve|1|pH|Bottom|Field|39|7.53|8.42|8.12|8.11769230769231|0.178700890029026|95, 479, 5008
 48|Nature Coast Aquatic Preserve|2|pH|Bottom|Field|28|7.87|8.47|8.21|8.19285714285714|0.1564148601176|95, 479
-48|Nature Coast Aquatic Preserve|3|pH|Bottom|Field|36|7.83|8.69|8.2|8.17027777777778|0.191766019798103|95, 479, 5008
+48|Nature Coast Aquatic Preserve|3|pH|Bottom|Field|37|7.83|8.69|8.2|8.17|0.189091394715771|95, 479, 5008
 48|Nature Coast Aquatic Preserve|4|pH|Bottom|Field|34|7.74|8.68|8.21|8.19058823529412|0.225347424381951|479, 5008
 48|Nature Coast Aquatic Preserve|5|pH|Bottom|Field|23|7.69|8.84|8.25|8.2395652173913|0.280704928558435|479, 5008
 48|Nature Coast Aquatic Preserve|6|pH|Bottom|Field|41|7.56|8.89|8.11|8.10829268292683|0.31147955341422|479, 5008
@@ -259,123 +283,147 @@ AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|
 48|Nature Coast Aquatic Preserve|9|pH|Bottom|Field|49|6.93|8.56|8.07|7.98469387755102|0.398769472047115|95, 115, 479, 5002, 5008
 48|Nature Coast Aquatic Preserve|10|pH|Bottom|Field|33|7.81|8.59|8.24|8.21212121212121|0.168944472678111|95, 479, 5002, 5008
 48|Nature Coast Aquatic Preserve|11|pH|Bottom|Field|38|7.5|8.55|8.16|8.15763157894737|0.235032306123571|479, 5008
-48|Nature Coast Aquatic Preserve|12|pH|Bottom|Field|42|6.64|9.03|8.17|8.19904761904762|0.448693548110672|479, 5008
-34|Pine Island Sound Aquatic Preserve|1|pH|Bottom|Field|9|7.83|8.6|7.92|8.03555555555556|0.258220405424857|95, 5002
-34|Pine Island Sound Aquatic Preserve|2|pH|Bottom|Field|11|7.62|8.7|7.96|8.01818181818182|0.327133556267717|95, 476, 5002
-34|Pine Island Sound Aquatic Preserve|3|pH|Bottom|Field|11|7.69|8.2|7.93|7.94363636363636|0.174027166113382|95, 476, 5002
-34|Pine Island Sound Aquatic Preserve|4|pH|Bottom|Field|11|7.21|8.8|7.91|7.97727272727273|0.432922415892061|95, 476, 5002
-34|Pine Island Sound Aquatic Preserve|5|pH|Bottom|Field|11|7.67|8.4|8.2|8.16818181818182|0.223150988427934|95, 476, 5002
-34|Pine Island Sound Aquatic Preserve|6|pH|Bottom|Field|6|8.01|8.36|8.13|8.14833333333333|0.12512660255384|95, 5002
-34|Pine Island Sound Aquatic Preserve|7|pH|Bottom|Field|8|7.89|8.3|8.09|8.09|0.154087173842787|95, 115, 5002
-34|Pine Island Sound Aquatic Preserve|8|pH|Bottom|Field|11|7.89|8.4|8.19|8.17181818181818|0.172905649521245|95, 5002
-34|Pine Island Sound Aquatic Preserve|9|pH|Bottom|Field|7|7.63|8.1|8.1|7.97714285714286|0.186789925291693|115, 476, 5002
-34|Pine Island Sound Aquatic Preserve|10|pH|Bottom|Field|5|7.93|8.4|8.3|8.266|0.19437077969695|95
-34|Pine Island Sound Aquatic Preserve|11|pH|Bottom|Field|5|7.75|8|7.98|7.898|0.130843417870369|5002
-34|Pine Island Sound Aquatic Preserve|12|pH|Bottom|Field|15|7.55|8.4|7.92|7.97733333333333|0.281715831155811|95, 476, 5002
-35|Pinellas County Aquatic Preserve|1|pH|Bottom|Field|505|6.35|8.84|8.07|8.04329900990099|0.273876963199244|95, 5002
-35|Pinellas County Aquatic Preserve|2|pH|Bottom|Field|579|6.6|10.69|8.07|8.06755785837651|0.309134702646242|95, 4067, 5002
-35|Pinellas County Aquatic Preserve|3|pH|Bottom|Field|498|6.5|8.99|8.09|8.06865261044177|0.270224129723684|95, 4067, 5002
-35|Pinellas County Aquatic Preserve|4|pH|Bottom|Field|812|6.52|9.39|8.04|8.04345073891626|0.255477911070754|95, 4067, 5002
-35|Pinellas County Aquatic Preserve|5|pH|Bottom|Field|842|3.66|9.18|8.08|8.05450475059383|0.468173733824104|95, 4067, 5002
-35|Pinellas County Aquatic Preserve|6|pH|Bottom|Field|662|4.47|9.65|8.0775|8.02540181268882|0.388456511852151|95, 5002, 5008
-35|Pinellas County Aquatic Preserve|7|pH|Bottom|Field|578|6.41|9.25|8.1|8.09925951557093|0.36031118620691|95, 115, 4067, 5002, 5008
-35|Pinellas County Aquatic Preserve|8|pH|Bottom|Field|1691|6.4|12.97|8.06|8.05171259609698|0.326136745126516|95, 4067, 5002
-35|Pinellas County Aquatic Preserve|9|pH|Bottom|Field|4420|3.54|9.4|8.11|8.09196312217195|0.21903429090073|95, 4067, 5002, 5008
-35|Pinellas County Aquatic Preserve|10|pH|Bottom|Field|1289|6.74|8.95|8.08|8.07167571761055|0.226065109159203|95, 4067, 5002
-35|Pinellas County Aquatic Preserve|11|pH|Bottom|Field|458|6.28|9.02|8.07|8.06192358078603|0.297420773796348|95, 4067, 5002
-35|Pinellas County Aquatic Preserve|12|pH|Bottom|Field|432|6.75|9.09|8.09|8.06956712962963|0.290379606151624|95, 4067, 5002, 5008
-37|Rocky Bayou State Park Aquatic Preserve|1|pH|Bottom|Field|16|7.22|8.65|8.13|8.03|0.394038915167864|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|2|pH|Bottom|Field|24|6.71|8.46|7.975|7.92583333333333|0.401777752394082|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|3|pH|Bottom|Field|22|7.17|8.54|7.815|7.90727272727273|0.430450282712703|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|4|pH|Bottom|Field|22|7|8.08|7.57|7.58045454545455|0.351547291037064|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|5|pH|Bottom|Field|24|6.91|9.28|7.945|7.92041666666667|0.550252741665269|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|6|pH|Bottom|Field|21|7.2|8.18|7.78|7.71857142857143|0.289072408131349|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|7|pH|Bottom|Field|21|7.14|8.61|7.57|7.68809523809524|0.395292537845316|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|8|pH|Bottom|Field|23|7.02|7.99|7.6|7.56695652173913|0.186241162880251|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|9|pH|Bottom|Field|24|7.26|8.27|7.81|7.74833333333333|0.277044442623211|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|10|pH|Bottom|Field|23|7.4|8.26|7.89|7.87782608695652|0.239069341818704|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|11|pH|Bottom|Field|19|4.9|8.55|7.85|7.77736842105263|0.768236379314937|537, 5002
-37|Rocky Bayou State Park Aquatic Preserve|12|pH|Bottom|Field|19|7.45|9.26|8.2|8.2821052631579|0.538831853254678|537, 5002
-38|Rookery Bay Aquatic Preserve|1|pH|Bottom|Field|6|7.32|7.9|7.795|7.72333333333333|0.205977345032571|354, 5002
-38|Rookery Bay Aquatic Preserve|2|pH|Bottom|Field|11|7.55|8.04|7.72|7.72545454545455|0.140240053933506|354
-38|Rookery Bay Aquatic Preserve|3|pH|Bottom|Field|19|7.4|8|7.86|7.83789473684211|0.13049388863376|354, 5002
-38|Rookery Bay Aquatic Preserve|4|pH|Bottom|Field|27|7.32|8.13|7.72|7.68777777777778|0.200064092294547|354, 5002
-38|Rookery Bay Aquatic Preserve|5|pH|Bottom|Field|3|7.64|8|7.79|7.81|0.180831413200251|354
-38|Rookery Bay Aquatic Preserve|6|pH|Bottom|Field|20|7.58|8.08|7.785|7.829|0.135914059533763|354, 5002
-38|Rookery Bay Aquatic Preserve|7|pH|Bottom|Field|7|7.26|8.29|7.71|7.79857142857143|0.371592454687864|354, 5002
-38|Rookery Bay Aquatic Preserve|8|pH|Bottom|Field|9|7.86|12.3|7.95|9.37555555555556|2.19359357625285|354, 5002
-38|Rookery Bay Aquatic Preserve|9|pH|Bottom|Field|7|7.23|7.93|7.87|7.76571428571429|0.24878753605283|354, 5002
+48|Nature Coast Aquatic Preserve|12|pH|Bottom|Field|43|6.64|9.03|8.17|8.19348837209302|0.444816086773004|479, 5008
+31|North Fork St. Lucie Aquatic Preserve|1|pH|Bottom|Field|32|7.36|8.27|8.01|7.8734375|0.268767910130895|5002
+31|North Fork St. Lucie Aquatic Preserve|2|pH|Bottom|Field|21|7.6|8.26|7.93|7.89714285714286|0.167754071698509|5002
+31|North Fork St. Lucie Aquatic Preserve|3|pH|Bottom|Field|21|7.41|8.16|7.9|7.86571428571429|0.218026865972325|5002
+31|North Fork St. Lucie Aquatic Preserve|4|pH|Bottom|Field|28|7.64|8.14|7.825|7.83535714285714|0.115741798936962|5002
+31|North Fork St. Lucie Aquatic Preserve|5|pH|Bottom|Field|27|7.31|8.34|7.8|7.83925925925926|0.285979099907748|5002
+31|North Fork St. Lucie Aquatic Preserve|6|pH|Bottom|Field|36|6.99|8.26|7.62|7.64305555555556|0.393619246367745|5002
+31|North Fork St. Lucie Aquatic Preserve|7|pH|Bottom|Field|31|7.15|7.82|7.59|7.57290322580645|0.178216975405208|5002
+31|North Fork St. Lucie Aquatic Preserve|8|pH|Bottom|Field|40|6.94|8.21|7.34|7.40975|0.264599237357662|5002
+31|North Fork St. Lucie Aquatic Preserve|9|pH|Bottom|Field|29|6.8|7.79|7.4|7.35655172413793|0.311095711754311|69, 5002
+31|North Fork St. Lucie Aquatic Preserve|10|pH|Bottom|Field|25|7.14|7.67|7.4|7.3928|0.156671631127017|5002
+31|North Fork St. Lucie Aquatic Preserve|11|pH|Bottom|Field|33|7.17|8.02|7.63|7.59939393939394|0.278365086194589|5002
+31|North Fork St. Lucie Aquatic Preserve|12|pH|Bottom|Field|31|6.99|8.29|7.76|7.72225806451613|0.282461911030135|5002
+33|Pellicer Creek Aquatic Preserve|1|pH|Bottom|Field|4|7.45|7.8|7.65|7.6375|0.143614066163451|5002
+33|Pellicer Creek Aquatic Preserve|2|pH|Bottom|Field|7|6.6|7.18|7.08|6.97285714285714|0.258374036731911|5002
+33|Pellicer Creek Aquatic Preserve|3|pH|Bottom|Field|4|6.7|7.6|7.06|7.105|0.379956137819442|5002
+33|Pellicer Creek Aquatic Preserve|4|pH|Bottom|Field|15|6.46|7.5|7.14|7.03733333333333|0.325608587695338|95, 5002
+33|Pellicer Creek Aquatic Preserve|5|pH|Bottom|Field|3|7.2|7.56|7.36|7.37333333333333|0.180369990112915|5002
+33|Pellicer Creek Aquatic Preserve|6|pH|Bottom|Field|11|6.79|7.7|6.99|7.03636363636364|0.265340261825179|5002
+33|Pellicer Creek Aquatic Preserve|7|pH|Bottom|Field|7|6.73|7.8|7.18|7.23142857142857|0.438878440703443|5002
+33|Pellicer Creek Aquatic Preserve|8|pH|Bottom|Field|2|7|7|7|7|0|5002
+33|Pellicer Creek Aquatic Preserve|9|pH|Bottom|Field|12|6.26|7.16|6.655|6.69416666666667|0.361322277030891|5002
+33|Pellicer Creek Aquatic Preserve|10|pH|Bottom|Field|6|5.95|7|6.28|6.41|0.48024993492972|5002
+33|Pellicer Creek Aquatic Preserve|11|pH|Bottom|Field|3|6.87|7.71|6.87|7.15|0.484974226119286|5002
+33|Pellicer Creek Aquatic Preserve|12|pH|Bottom|Field|17|6.9|7.84|7.13|7.24176470588235|0.293475622797653|5002
+34|Pine Island Sound Aquatic Preserve|1|pH|Bottom|Field|24|7.3|8.6|7.91|7.95625|0.236970232949938|95, 5002
+34|Pine Island Sound Aquatic Preserve|2|pH|Bottom|Field|19|7.62|8.7|7.88|7.96789473684211|0.268898554753531|95, 476, 5002
+34|Pine Island Sound Aquatic Preserve|3|pH|Bottom|Field|30|7.6|8.3|7.8|7.861|0.170098348833438|95, 476, 5002
+34|Pine Island Sound Aquatic Preserve|4|pH|Bottom|Field|37|7.21|8.8|8|7.98351351351351|0.268516668386157|95, 476, 5002
+34|Pine Island Sound Aquatic Preserve|5|pH|Bottom|Field|34|7.67|8.4|8.1|8.10823529411765|0.218236327118455|95, 476, 5002
+34|Pine Island Sound Aquatic Preserve|6|pH|Bottom|Field|25|7.8|8.6|8.06|8.098|0.221923410211721|95, 5002
+34|Pine Island Sound Aquatic Preserve|7|pH|Bottom|Field|61|7|8.5|8|8.01131147540984|0.282302883500659|95, 115, 5002
+34|Pine Island Sound Aquatic Preserve|8|pH|Bottom|Field|51|7.5|8.7|8|8.04411764705882|0.237951057745817|95, 5002
+34|Pine Island Sound Aquatic Preserve|9|pH|Bottom|Field|37|7.63|8.5|8.1|8.09027027027027|0.184202281420401|115, 476, 5002
+34|Pine Island Sound Aquatic Preserve|10|pH|Bottom|Field|20|7.7|8.4|8.05|8.0615|0.236114936329523|95, 5002
+34|Pine Island Sound Aquatic Preserve|11|pH|Bottom|Field|23|7.6|8.5|7.9|7.90304347826087|0.212633589722463|5002
+34|Pine Island Sound Aquatic Preserve|12|pH|Bottom|Field|29|7.55|8.4|7.92|7.97896551724138|0.229305548303478|95, 476, 5002
+35|Pinellas County Aquatic Preserve|1|pH|Bottom|Field|1062|6.35|8.84|8.06|8.04237853107345|0.275141670012548|95, 5002
+35|Pinellas County Aquatic Preserve|2|pH|Bottom|Field|1167|6.6|10.69|8.08|8.06907112253642|0.30715941282303|95, 4067, 5002
+35|Pinellas County Aquatic Preserve|3|pH|Bottom|Field|1053|6.5|8.99|8.09|8.06532668566002|0.27113527627727|95, 4067, 5002, 5008
+35|Pinellas County Aquatic Preserve|4|pH|Bottom|Field|1354|6.52|9.39|8.04|8.04687001477105|0.283467721430202|95, 4067, 5002
+35|Pinellas County Aquatic Preserve|5|pH|Bottom|Field|1547|3.66|9.18|8.09|8.0568021978022|0.487922951810341|95, 4067, 5002
+35|Pinellas County Aquatic Preserve|6|pH|Bottom|Field|1313|4.47|9.65|8.08|8.03066717440975|0.369373950779758|95, 5002, 5008
+35|Pinellas County Aquatic Preserve|7|pH|Bottom|Field|1137|6.41|9.25|8.1|8.09512928759894|0.359290157461732|95, 115, 4067, 5002, 5008
+35|Pinellas County Aquatic Preserve|8|pH|Bottom|Field|2361|6.4|12.97|8.07|8.05244218551461|0.342201327374568|95, 4067, 5002
+35|Pinellas County Aquatic Preserve|9|pH|Bottom|Field|5211|3.54|9.4|8.11|8.08806697370946|0.235937993100978|95, 4067, 5002, 5008
+35|Pinellas County Aquatic Preserve|10|pH|Bottom|Field|1981|6.74|8.95|8.08|8.06298838970217|0.241305505189645|95, 4067, 5002
+35|Pinellas County Aquatic Preserve|11|pH|Bottom|Field|1020|4|9.02|8.06|8.00699117647059|0.510429668454197|95, 4067, 5002
+35|Pinellas County Aquatic Preserve|12|pH|Bottom|Field|970|6.75|9.09|8.08|8.05525051546392|0.28707685893459|95, 4067, 5002, 5008
+37|Rocky Bayou State Park Aquatic Preserve|1|pH|Bottom|Field|26|7.22|8.65|8.13|8.03307692307692|0.37732499764282|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|2|pH|Bottom|Field|38|6.71|8.46|7.98|7.96131578947369|0.352705152512434|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|3|pH|Bottom|Field|36|7.17|8.54|7.815|7.89222222222222|0.41418499049242|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|4|pH|Bottom|Field|34|7|8.08|7.57|7.58235294117647|0.349667017565148|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|5|pH|Bottom|Field|39|6.91|9.28|7.93|7.89564102564103|0.541215954912225|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|6|pH|Bottom|Field|34|7.2|8.18|7.78|7.72117647058824|0.281260848473682|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|7|pH|Bottom|Field|34|7.14|8.61|7.53|7.66176470588235|0.383022038991154|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|8|pH|Bottom|Field|37|7.02|7.99|7.6|7.57108108108108|0.197495200838791|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|9|pH|Bottom|Field|37|7.26|8.27|7.81|7.74432432432432|0.273958031462855|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|10|pH|Bottom|Field|36|7.4|8.26|7.92|7.8775|0.244521398420904|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|11|pH|Bottom|Field|31|4.9|8.55|7.85|7.75|0.821376892784305|537, 5002
+37|Rocky Bayou State Park Aquatic Preserve|12|pH|Bottom|Field|30|7.45|9.26|8.16|8.261|0.532731089568746|537, 5002
+38|Rookery Bay Aquatic Preserve|1|pH|Bottom|Field|12|7.32|8.1|7.81|7.75833333333333|0.223437334445796|354, 5002
+38|Rookery Bay Aquatic Preserve|2|pH|Bottom|Field|16|4.4|8.04|7.715|7.53|0.845434799378403|354, 5002
+38|Rookery Bay Aquatic Preserve|3|pH|Bottom|Field|27|7.4|8.7|7.87|7.90777777777778|0.225172298701603|354, 5002
+38|Rookery Bay Aquatic Preserve|4|pH|Bottom|Field|40|7.32|8.6|7.745|7.75625|0.245656498763243|354, 5002
+38|Rookery Bay Aquatic Preserve|5|pH|Bottom|Field|5|7.64|8.1|8|7.914|0.192561678430574|354, 5002
+38|Rookery Bay Aquatic Preserve|6|pH|Bottom|Field|29|7.58|8.2|7.86|7.86275862068966|0.146480046220933|354, 5002
+38|Rookery Bay Aquatic Preserve|7|pH|Bottom|Field|9|7.26|8.29|7.74|7.82111111111111|0.324901694534071|354, 5002
+38|Rookery Bay Aquatic Preserve|8|pH|Bottom|Field|13|7.86|12.3|7.95|8.92461538461538|1.9246411586952|354, 5002
+38|Rookery Bay Aquatic Preserve|9|pH|Bottom|Field|11|7.23|8.1|7.89|7.77363636363636|0.284930613563117|354, 5002
 38|Rookery Bay Aquatic Preserve|10|pH|Bottom|Field|3|7.48|7.76|7.71|7.65|0.14933184523068|354
-38|Rookery Bay Aquatic Preserve|11|pH|Bottom|Field|3|7.73|7.88|7.83|7.81333333333333|0.0763762615825971|354
-38|Rookery Bay Aquatic Preserve|12|pH|Bottom|Field|7|7.93|8.22|8.02|8.06428571428572|0.120396171430981|354
-39|Rookery Bay National Estuarine Research Reserve|1|pH|Bottom|Field|32|7.15|9.05|7.9|7.9196875|0.326046546993603|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|2|pH|Bottom|Field|30|4.2|8.2|7.805|7.61166666666667|0.954510466095085|95, 354, 5002
-39|Rookery Bay National Estuarine Research Reserve|3|pH|Bottom|Field|41|7.03|8.8|7.8|7.82536585365854|0.276993660225064|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|4|pH|Bottom|Field|47|6.8|8.2|7.78|7.75553191489362|0.259546498394531|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|5|pH|Bottom|Field|28|7.2|8.3|7.8|7.80214285714286|0.254927108577787|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|6|pH|Bottom|Field|38|7.05|8.4|7.8|7.78657894736842|0.318002858356944|95, 354, 5002
-39|Rookery Bay National Estuarine Research Reserve|7|pH|Bottom|Field|28|7.34|8.43|7.69|7.77571428571429|0.30700981491644|95, 354, 5002
-39|Rookery Bay National Estuarine Research Reserve|8|pH|Bottom|Field|30|7.16|12.3|7.765|8.15633333333333|1.43905975849016|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|9|pH|Bottom|Field|14|6.51|7.93|7.795|7.56071428571429|0.427415565853732|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|10|pH|Bottom|Field|27|7|8.3|7.76|7.71814814814815|0.332022207749341|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|11|pH|Bottom|Field|31|4.3|8.5|7.9|7.5941935483871|1.0829674485522|354, 5002
-39|Rookery Bay National Estuarine Research Reserve|12|pH|Bottom|Field|30|4.5|8.6|8.12|7.93466666666667|0.713663367631302|95, 354, 5002
-40|St. Andrews State Park Aquatic Preserve|1|pH|Bottom|Field|7|8.2|8.6|8.32|8.40285714285714|0.161422250192292|95
-40|St. Andrews State Park Aquatic Preserve|2|pH|Bottom|Field|9|7.98|8.5|8.32|8.25444444444445|0.208153255506076|95, 5002
-40|St. Andrews State Park Aquatic Preserve|3|pH|Bottom|Field|6|8.28|8.4|8.3|8.31|0.0451663591625451|95
-40|St. Andrews State Park Aquatic Preserve|4|pH|Bottom|Field|1|8.1|8.1|8.1|8.1||95
-40|St. Andrews State Park Aquatic Preserve|5|pH|Bottom|Field|26|7.95|8.2|8.035|8.05307692307692|0.0810811559251213|95, 557
-40|St. Andrews State Park Aquatic Preserve|6|pH|Bottom|Field|16|7.93|8.6|8.17|8.178125|0.197119887378215|95, 557
-40|St. Andrews State Park Aquatic Preserve|7|pH|Bottom|Field|6|8|8.2|8.1|8.11666666666667|0.0752772652709078|95, 115
-40|St. Andrews State Park Aquatic Preserve|8|pH|Bottom|Field|8|8|8.5|8.2|8.2375|0.184681192483542|95, 115
-40|St. Andrews State Park Aquatic Preserve|9|pH|Bottom|Field|5|8.08|8.4|8.3|8.256|0.157098695093244|95
-40|St. Andrews State Park Aquatic Preserve|10|pH|Bottom|Field|18|8.01|8.6|8.09|8.15555555555556|0.160265302920693|95, 557
-40|St. Andrews State Park Aquatic Preserve|11|pH|Bottom|Field|3|8.2|8.4|8.4|8.33333333333333|0.115470053837926|95
-40|St. Andrews State Park Aquatic Preserve|12|pH|Bottom|Field|5|8.3|8.4|8.3|8.34|0.0547722557505164|95
+38|Rookery Bay Aquatic Preserve|11|pH|Bottom|Field|8|7.4|8|7.815|7.7675|0.190394327646598|354, 5002
+38|Rookery Bay Aquatic Preserve|12|pH|Bottom|Field|9|7.8|8.22|8.02|8.03888888888889|0.137971414108543|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|1|pH|Bottom|Field|63|7|9.05|7.9|7.92365079365079|0.321118516897611|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|2|pH|Bottom|Field|64|4|8.2|7.9|7.61796875|1.03052641762384|95, 354, 5002
+39|Rookery Bay National Estuarine Research Reserve|3|pH|Bottom|Field|83|7.03|8.9|7.9|7.97144578313253|0.367486958554465|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|4|pH|Bottom|Field|89|6.8|8.7|7.8|7.83842696629213|0.310640463311485|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|5|pH|Bottom|Field|64|7|8.6|7.9|7.86984375|0.298809766884743|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|6|pH|Bottom|Field|71|7.05|8.5|7.86|7.88352112676056|0.307534428230863|95, 354, 5002
+39|Rookery Bay National Estuarine Research Reserve|7|pH|Bottom|Field|53|7.34|8.43|7.8|7.83433962264151|0.258282116432953|95, 354, 5002
+39|Rookery Bay National Estuarine Research Reserve|8|pH|Bottom|Field|72|7|12.3|7.87|8.01069444444445|0.957836950441292|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|9|pH|Bottom|Field|48|6.51|8.8|7.845|7.76479166666667|0.442935034779889|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|10|pH|Bottom|Field|63|7|8.3|7.9|7.82365079365079|0.311651695509388|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|11|pH|Bottom|Field|60|4.3|8.6|7.9|7.61866666666667|1.01743024025498|354, 5002
+39|Rookery Bay National Estuarine Research Reserve|12|pH|Bottom|Field|46|4.5|8.6|8.1|7.89217391304348|0.779506718789313|95, 354, 5002
+40|St. Andrews State Park Aquatic Preserve|1|pH|Bottom|Field|15|7.25|8.6|8.2|8.188|0.332849172191507|95, 5002
+40|St. Andrews State Park Aquatic Preserve|2|pH|Bottom|Field|21|7.94|8.5|8.16|8.17666666666667|0.18391121046128|95, 5002
+40|St. Andrews State Park Aquatic Preserve|3|pH|Bottom|Field|15|7.91|8.4|8.21|8.17733333333333|0.142801894078408|95, 5002
+40|St. Andrews State Park Aquatic Preserve|4|pH|Bottom|Field|7|7.9|8.1|8.1|8.04714285714286|0.076749437720912|95, 5002
+40|St. Andrews State Park Aquatic Preserve|5|pH|Bottom|Field|34|7.95|8.2|8.04|8.06558823529412|0.0829454430578568|95, 557, 5002
+40|St. Andrews State Park Aquatic Preserve|6|pH|Bottom|Field|26|7.87|8.6|8.135|8.15961538461539|0.171755192509124|95, 557, 5002
+40|St. Andrews State Park Aquatic Preserve|7|pH|Bottom|Field|14|7.88|8.29|8.1|8.10857142857143|0.127692969679205|95, 115, 5002
+40|St. Andrews State Park Aquatic Preserve|8|pH|Bottom|Field|13|7.46|8.5|8.17|8.13153846153846|0.274798294325315|95, 115, 5002
+40|St. Andrews State Park Aquatic Preserve|9|pH|Bottom|Field|14|7.47|8.4|8.09|8.05928571428571|0.246902792635055|95, 5002
+40|St. Andrews State Park Aquatic Preserve|10|pH|Bottom|Field|19|8.01|8.6|8.09|8.15421052631579|0.155860186259412|95, 557, 5002
+40|St. Andrews State Park Aquatic Preserve|11|pH|Bottom|Field|10|8|8.4|8.185|8.194|0.125006666488899|95, 5002
+40|St. Andrews State Park Aquatic Preserve|12|pH|Bottom|Field|10|8.16|8.4|8.24|8.255|0.0968676072448029|95, 5002
 41|St. Joseph Bay Aquatic Preserve|1|pH|Bottom|Field|1|8.18|8.18|8.18|8.18||95
-41|St. Joseph Bay Aquatic Preserve|3|pH|Bottom|Field|2|8.4|8.5|8.45|8.45|0.0707106781186545|95
-41|St. Joseph Bay Aquatic Preserve|4|pH|Bottom|Field|11|7.95|8.8|8.08|8.16454545454545|0.245860270737817|95, 557
-41|St. Joseph Bay Aquatic Preserve|5|pH|Bottom|Field|24|7.87|8.97|8.08|8.18875|0.313289871330468|95, 557
+41|St. Joseph Bay Aquatic Preserve|3|pH|Bottom|Field|5|8|8.5|8|8.18|0.248997991959775|95, 5002
+41|St. Joseph Bay Aquatic Preserve|4|pH|Bottom|Field|13|7.95|8.8|8.08|8.14692307692308|0.229433527606023|95, 557, 5002
+41|St. Joseph Bay Aquatic Preserve|5|pH|Bottom|Field|26|7.87|8.97|8.065|8.17423076923077|0.304843213169302|95, 557, 5002
 41|St. Joseph Bay Aquatic Preserve|6|pH|Bottom|Field|30|7.74|8.5|8.125|8.117|0.213156086568926|95, 557, 5002
 41|St. Joseph Bay Aquatic Preserve|7|pH|Bottom|Field|33|5.3|8.5|8.14|7.97212121212121|0.710223369686245|95, 115, 557
 41|St. Joseph Bay Aquatic Preserve|8|pH|Bottom|Field|3|8|8.2|8.1|8.1|0.0999999999999996|95
-41|St. Joseph Bay Aquatic Preserve|9|pH|Bottom|Field|9|7.78|8.3|8|8.02444444444445|0.182627428875779|95, 557
+41|St. Joseph Bay Aquatic Preserve|9|pH|Bottom|Field|11|7.78|8.3|8|8.02909090909091|0.165194100709108|95, 557, 5002
 41|St. Joseph Bay Aquatic Preserve|10|pH|Bottom|Field|28|7.82|9.2|7.905|8.14071428571429|0.459241956492625|95, 557
-41|St. Joseph Bay Aquatic Preserve|11|pH|Bottom|Field|3|8.3|8.5|8.4|8.4|0.0999999999999996|95
+41|St. Joseph Bay Aquatic Preserve|11|pH|Bottom|Field|4|8|8.5|8.35|8.3|0.216024689946929|95, 5002
 41|St. Joseph Bay Aquatic Preserve|12|pH|Bottom|Field|1|8.3|8.3|8.3|8.3||95
 43|St. Martins Marsh Aquatic Preserve|1|pH|Bottom|Field|16|7.94|8.52|8.115|8.141875|0.165940501385286|95, 479, 5008
 43|St. Martins Marsh Aquatic Preserve|2|pH|Bottom|Field|13|7.83|8.55|8.01|8.10461538461538|0.253496067839831|479
 43|St. Martins Marsh Aquatic Preserve|3|pH|Bottom|Field|18|7.76|8.71|7.985|8.07|0.245428796431159|95, 479, 5008
-43|St. Martins Marsh Aquatic Preserve|4|pH|Bottom|Field|21|7.56|8.51|8.04|8.03238095238095|0.240767621616877|95, 479, 5008
+43|St. Martins Marsh Aquatic Preserve|4|pH|Bottom|Field|22|7.56|8.51|8.04|8.03272727272727|0.234970754374359|95, 479, 5008
 43|St. Martins Marsh Aquatic Preserve|5|pH|Bottom|Field|9|7.77|8.39|7.96|8.03333333333333|0.242538656712698|479, 5008
-43|St. Martins Marsh Aquatic Preserve|6|pH|Bottom|Field|15|7.53|8.16|7.79|7.80066666666667|0.184525130563628|479, 5008
+43|St. Martins Marsh Aquatic Preserve|6|pH|Bottom|Field|16|7.53|8.16|7.795|7.804375|0.178884273577454|479, 5008
 43|St. Martins Marsh Aquatic Preserve|7|pH|Bottom|Field|21|7.44|8.36|7.84|7.85857142857143|0.23085245751964|115, 479, 5008
 43|St. Martins Marsh Aquatic Preserve|8|pH|Bottom|Field|14|7.49|8.49|7.845|7.92071428571429|0.307082156025795|95, 479
 43|St. Martins Marsh Aquatic Preserve|9|pH|Bottom|Field|14|7.59|8.43|7.955|7.99928571428572|0.28367002188931|479, 5008
 43|St. Martins Marsh Aquatic Preserve|10|pH|Bottom|Field|26|7.6|8.51|8.045|8.02423076923077|0.25451401654012|479, 5008
 43|St. Martins Marsh Aquatic Preserve|11|pH|Bottom|Field|15|7.84|8.45|8.07|8.07266666666667|0.138948431681206|479, 5008
 43|St. Martins Marsh Aquatic Preserve|12|pH|Bottom|Field|20|7.41|8.33|7.995|7.981|0.272046822595322|479, 5008
-44|Terra Ceia Aquatic Preserve|1|pH|Bottom|Field|76|7.6|8.28|8|8.05236842105263|0.120641269014685|95, 5002
-44|Terra Ceia Aquatic Preserve|2|pH|Bottom|Field|78|6.6|8.92|8.05|8.0575641025641|0.268421000482141|95, 5002
-44|Terra Ceia Aquatic Preserve|3|pH|Bottom|Field|85|7.6|8.37|8.1|8.06870588235294|0.137119935642853|95, 4067, 5002
-44|Terra Ceia Aquatic Preserve|4|pH|Bottom|Field|69|7.8|8.3|8.1|8.07797101449275|0.108486644747921|95, 5002
-44|Terra Ceia Aquatic Preserve|5|pH|Bottom|Field|80|7.3|8.4|8.1|8.08275|0.155294534369576|95, 4067, 5002
-44|Terra Ceia Aquatic Preserve|6|pH|Bottom|Field|70|7.33|8.45|8.1|8.09857142857143|0.142669027282573|95, 5002
-44|Terra Ceia Aquatic Preserve|7|pH|Bottom|Field|66|7.77|8.8|8.03|8.09363636363636|0.220458517735102|95, 4067, 5002
-44|Terra Ceia Aquatic Preserve|8|pH|Bottom|Field|335|7.23|8.8|8.05|8.03289552238806|0.157490531445103|95, 4067, 5002
-44|Terra Ceia Aquatic Preserve|9|pH|Bottom|Field|563|6.64|8.6|8.04|8.03420959147424|0.143331753566465|95, 4067, 5002
-44|Terra Ceia Aquatic Preserve|10|pH|Bottom|Field|456|7.58|8.72|8.08|8.05910087719298|0.115058813051271|95, 4067, 5002
-44|Terra Ceia Aquatic Preserve|11|pH|Bottom|Field|70|7.63|8.8|8.1|8.053|0.173408707134748|95, 5002
-44|Terra Ceia Aquatic Preserve|12|pH|Bottom|Field|63|7.8|8.24|8.04|8.04095238095238|0.0980407138224741|95, 5002
-45|Tomoka Marsh Aquatic Preserve|1|pH|Bottom|Field|13|7.34|8.01|7.8|7.72692307692308|0.208701725571233|5002
-45|Tomoka Marsh Aquatic Preserve|2|pH|Bottom|Field|20|6.44|8.09|7.65|7.5795|0.376556069774755|5002
-45|Tomoka Marsh Aquatic Preserve|3|pH|Bottom|Field|11|7.07|7.9|7.64|7.58|0.241619535634021|5002
-45|Tomoka Marsh Aquatic Preserve|4|pH|Bottom|Field|16|7.25|7.87|7.665|7.640625|0.15476729844081|5002
-45|Tomoka Marsh Aquatic Preserve|5|pH|Bottom|Field|11|6.93|7.85|7.64|7.52181818181818|0.29051052241935|5002
-45|Tomoka Marsh Aquatic Preserve|6|pH|Bottom|Field|22|6.48|7.81|7.5|7.39863636363636|0.341052927809013|5002
-45|Tomoka Marsh Aquatic Preserve|7|pH|Bottom|Field|11|7.14|7.85|7.42|7.45090909090909|0.241721101497347|5002
-45|Tomoka Marsh Aquatic Preserve|8|pH|Bottom|Field|21|6.86|7.56|7.3|7.26428571428571|0.177554820508243|5002
-45|Tomoka Marsh Aquatic Preserve|9|pH|Bottom|Field|11|6.82|7.79|7.18|7.25181818181818|0.33096278285687|5002
-45|Tomoka Marsh Aquatic Preserve|10|pH|Bottom|Field|23|6.54|7.54|7.26|7.20260869565217|0.300306167879388|5002
-45|Tomoka Marsh Aquatic Preserve|11|pH|Bottom|Field|12|7.1|7.81|7.405|7.43583333333333|0.257027000114538|5002
-45|Tomoka Marsh Aquatic Preserve|12|pH|Bottom|Field|16|7.28|7.97|7.66|7.648125|0.211351799929249|5002
+44|Terra Ceia Aquatic Preserve|1|pH|Bottom|Field|234|7.6|8.6|8.02|8.05598290598291|0.168749807586906|95, 5002
+44|Terra Ceia Aquatic Preserve|2|pH|Bottom|Field|231|5|8.92|8.03|8.02748917748918|0.297614747493874|95, 5002
+44|Terra Ceia Aquatic Preserve|3|pH|Bottom|Field|265|7.2|8.7|8.07|8.0288679245283|0.189589472534882|95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|4|pH|Bottom|Field|258|7.5|8.6|8.035|8.01054263565892|0.218597617572998|95, 5002
+44|Terra Ceia Aquatic Preserve|5|pH|Bottom|Field|298|5|8.8|8.1|8.04442953020134|0.301999805004365|95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|6|pH|Bottom|Field|258|7.33|8.45|8.09|8.06170542635659|0.184351314213249|95, 5002
+44|Terra Ceia Aquatic Preserve|7|pH|Bottom|Field|277|7.4|9.4|8|8.0541155234657|0.270036956027259|95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|8|pH|Bottom|Field|589|7.23|8.9|8.04|8.02351443123939|0.19056051017901|95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|9|pH|Bottom|Field|739|6.64|8.6|8.03|8.02872801082544|0.156657171179877|95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|10|pH|Bottom|Field|629|7.5|8.72|8.08|8.04839427662957|0.147670220355797|95, 4067, 5002
+44|Terra Ceia Aquatic Preserve|11|pH|Bottom|Field|212|7.5|8.8|8.055|8.01471698113208|0.170961637819743|95, 5002
+44|Terra Ceia Aquatic Preserve|12|pH|Bottom|Field|219|7.4|8.5|8.02|8.00118721461187|0.203130221307074|95, 5002
+45|Tomoka Marsh Aquatic Preserve|1|pH|Bottom|Field|21|7.34|8.01|7.8|7.74904761904762|0.200297397933791|5002
+45|Tomoka Marsh Aquatic Preserve|2|pH|Bottom|Field|33|6.44|8.09|7.69|7.61393939393939|0.336126272719228|5002
+45|Tomoka Marsh Aquatic Preserve|3|pH|Bottom|Field|18|7.07|7.94|7.645|7.635|0.235003128890309|5002
+45|Tomoka Marsh Aquatic Preserve|4|pH|Bottom|Field|30|7.25|7.87|7.615|7.607|0.170883101805763|5002
+45|Tomoka Marsh Aquatic Preserve|5|pH|Bottom|Field|20|6.93|7.85|7.645|7.538|0.255272815878064|5002
+45|Tomoka Marsh Aquatic Preserve|6|pH|Bottom|Field|40|6.48|7.92|7.535|7.4395|0.320095738883357|5002
+45|Tomoka Marsh Aquatic Preserve|7|pH|Bottom|Field|22|7.14|7.85|7.47|7.49227272727273|0.214007828476789|5002
+45|Tomoka Marsh Aquatic Preserve|8|pH|Bottom|Field|37|6.86|7.63|7.3|7.28027027027027|0.195611384673321|5002
+45|Tomoka Marsh Aquatic Preserve|9|pH|Bottom|Field|23|6.82|7.79|7.33|7.30391304347826|0.294058422309624|5002
+45|Tomoka Marsh Aquatic Preserve|10|pH|Bottom|Field|38|6.54|7.54|7.295|7.21105263157895|0.302670898552744|5002
+45|Tomoka Marsh Aquatic Preserve|11|pH|Bottom|Field|20|7.1|7.81|7.405|7.417|0.264537331959026|5002
+45|Tomoka Marsh Aquatic Preserve|12|pH|Bottom|Field|31|7.28|7.97|7.72|7.66612903225806|0.198958578927957|5002
