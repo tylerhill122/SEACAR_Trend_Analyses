@@ -13,6 +13,8 @@ out_dir <- "output/by_parameter/Combined"
 
 #List all of the files in the "tables" directory that are KendallTau results
 files <- list.files("output/by_parameter", pattern="KendallTau", full.names=TRUE)
+website <- fread("data/WebsiteParameters.csv",  sep=",", header=TRUE,
+                 stringsAsFactors=FALSE, na.strings="")
 
 for(i in 1:length(files)){
       if(i==1){
@@ -24,6 +26,11 @@ for(i in 1:length(files)){
                                     stringsAsFactors=FALSE, na.strings=""))
       }
 }
+data <- merge.data.frame(data, website, by=c("ParameterName"), all=TRUE)
+data$Website[is.na(data$Website)] <- 0
+data <- data %>%
+      select(AreaID, ManagedAreaName, ProgramID, ProgramName, ProgramLocationID,
+             everything())
 data <- as.data.table(data[order(data$ManagedAreaName, data$ProgramID,
                                  data$ProgramName, data$ProgramLocationID,
                                  data$ParameterName), ])

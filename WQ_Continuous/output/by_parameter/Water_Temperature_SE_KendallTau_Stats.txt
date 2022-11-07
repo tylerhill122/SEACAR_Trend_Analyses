@@ -1,10 +1,12 @@
 AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|SufficientData|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBBB14|Water Temperature|bottom|93435|3|2019|2021|2021-12-31|FALSE|27.4||||||||
-6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBJT71|Water Temperature|bottom|98821|3|2019|2021|2021-12-31|FALSE|27.7||||||||
-6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBLR03|Water Temperature|bottom|86746|3|2019|2021|2021-12-31|FALSE|28||||||||
-6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBMRDW|Water Temperature|bottom|25993|1|2021|2021|2021-12-31|FALSE|28.3||||||||
+6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBBB14|Water Temperature|bottom|76388|3|2020|2022|2022-06-24|FALSE|27||||||||
+6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBCWA4|Water Temperature|bottom|15032|1|2022|2022|2022-06-30|FALSE|26||||||||
+6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBJT71|Water Temperature|bottom|115558|4|2019|2022|2022-06-24|FALSE|27.3||||||||
+6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBLR03|Water Temperature|bottom|98154|4|2019|2022|2022-06-30|FALSE|27.9||||||||
+6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBMRDW|Water Temperature|bottom|40518|2|2021|2022|2022-06-22|FALSE|27.6||||||||
+6|Biscayne Bay Aquatic Preserve|5077|Biscayne Bay Aquatic Preserves Continuous Water Quality Monitoring|BBMRRB|Water Temperature|bottom|15639|1|2022|2022|2022-06-30|FALSE|26.3||||||||
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|986|Water Temperature on Coral Reefs in the Florida Keys|6|Water Temperature|Surface|47891|8|2013|2020|2020-07-09|TRUE|26.67|1|0.1746|0.0623|0.065789060593456|26.2836827354918|7.0977|0.7911|0
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|5|National Data Buoy Center|LKWF1|Water Temperature|surface|891506|13|2006|2021|2021-12-31|TRUE|26.4|1|0.2829|0|0.0602684919227541|26.0407769447654|6.0334|0.8711|1
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|5|National Data Buoy Center|LKWF1|Water Temperature|surface|932959|14|2006|2022|2022-06-30|TRUE|26.4|1|0.3234|0|0.0632213009868547|26.000884020029|4.8299|0.9391|1
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|986|Water Temperature on Coral Reefs in the Florida Keys|1|Water Temperature|Surface|50591|8|2013|2020|2020-05-27|TRUE|26.35|1|0.1747|0.0666|0.0568365607884545|26.3885730577114|6.6909|0.8235|0
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|986|Water Temperature on Coral Reefs in the Florida Keys|2|Water Temperature|Surface|46638|8|2013|2020|2020-08-04|TRUE|26.57|1|0.2063|0.027|0.0496683277458052|26.532669466892|11.609|0.3937|1
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|986|Water Temperature on Coral Reefs in the Florida Keys|3|Water Temperature|Surface|50038|8|2013|2020|2020-08-04|TRUE|26.59|1|0.1984|0.0336|0.0531677872732862|26.4879979532298|7.1203|0.7893|1
@@ -28,7 +30,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|986|Water Temperature on Coral Reefs in the Florida Keys|98|Water Temperature|Surface|73685|11|2010|2020|2020-08-06|TRUE|26.32|1|0.3811|0|0.112454276654722|26.1169030517132|8.7223|0.6475|1
 13|Coupon Bight Aquatic Preserve||||Water Temperature||0|0||||FALSE|||||||||
 15|Florida Keys National Marine Sanctuary|2|Atlantic Oceanographic and Meteorological Laboratory (AOML) South Florida Program Moored Instrument Array|1B|Water Temperature|Surface|86204|6|2003|2008|2008-06-13|TRUE|26.3845|1|0.259|0.0392|0.162792876344085|25.7282640710754|16.6535|0.1186|1
-15|Florida Keys National Marine Sanctuary|5|National Data Buoy Center|KYWF1|Water Temperature|surface|1225747|17|2005|2021|2021-12-31|TRUE|27.5|1|0.2724|0|0.0718095054612718|26.7169879795111|7.1785|0.7844|1
+15|Florida Keys National Marine Sanctuary|5|National Data Buoy Center|KYWF1|Water Temperature|surface|1269087|18|2005|2022|2022-06-30|TRUE|27.5|1|0.2853|0|0.0714317224849392|26.7671620441366|7.0403|0.7958|1
 15|Florida Keys National Marine Sanctuary|5|National Data Buoy Center|LONF1|Water Temperature|surface|107173|15|2005|2019|2019-03-12|TRUE|26.3|1|0.1852|0.0022|0.0606754032258063|26.0583224760214|3.2552|0.9869|1
 15|Florida Keys National Marine Sanctuary|5|National Data Buoy Center|MLRF1|Water Temperature|surface|111537|15|2005|2019|2019-03-31|TRUE|26.5|1|0.1913|0.0009|0.0415920075653773|26.2227333566651|7.5875|0.7497|1
 15|Florida Keys National Marine Sanctuary|5|National Data Buoy Center|SANF1|Water Temperature|surface|6291|1|2005|2005|2005-09-20|FALSE|25.4||||||||
