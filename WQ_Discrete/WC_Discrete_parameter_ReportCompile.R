@@ -5,7 +5,7 @@
 
 ## WHEN RUNNING IN RSTUDIO:
 ## Set working directory to "Source File Location" in "Session" menu
-
+Start_time <- Sys.time()
 
 #Load libraries
 library(data.table)
@@ -131,4 +131,7 @@ for (param_name in all_params){
    }
 }
 toc()
-writeLines(as.character(Sys.time()), "LatestFinishTime.txt")
+End_time <- Sys.time()
+
+print(Start_time)
+print(End_time)

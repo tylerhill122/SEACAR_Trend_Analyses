@@ -1,117 +1,141 @@
 AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
-1|Alligator Harbor Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|70|3|26|7|8.88571428571429|5.44948570141604|514
+1|Alligator Harbor Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|70|3|26|7|9.07142857142857|5.43024655423228|103, 514
 1|Alligator Harbor Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|13|0|9|4|3.61538461538462|2.29268625337403|514
 1|Alligator Harbor Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|6|15|39|23.5|24.1666666666667|8.32866535926775|514
-1|Alligator Harbor Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|70|3|14|6|7.45714285714286|3.29552051830093|514
+1|Alligator Harbor Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|70|3|14|7|7.57142857142857|3.25964090034038|103, 514
 1|Alligator Harbor Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|13|5|13|7|8.15384615384615|2.26738299389972|514
 1|Alligator Harbor Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|6|4|20|9.5|11.1666666666667|5.81090928054007|514
-1|Alligator Harbor Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|96|2|21|9|9.875|4.0710789983156|514
+1|Alligator Harbor Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|82|2|21|9|9.98780487804878|4.24116773588673|514
 1|Alligator Harbor Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|6|9|24|11.5|13|5.69209978830308|514
 1|Alligator Harbor Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|40|3|13|8|7.925|2.48469675186288|514
 1|Alligator Harbor Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|6|6|11|8.5|8.66666666666667|2.06559111797729|514
-5|Big Bend Seagrasses Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|278|0|440|19|27.0697482014389|44.7209193424249|477, 514, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|243|0|220|20|32.6673474897119|40.0052858733025|477, 514, 540, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|235|2|550|21.6|38.9449786382979|70.9044694741981|477, 514, 540, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|253|0|380|10|19.3557723320158|38.5917906187234|514, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|171|1|460|11|25.6320298245614|51.7802924469853|477, 514, 540, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|151|2|580|15|35.5750786092715|59.717636932287|477, 514, 540, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|248|0|750|14.5|35.689155|98.9003966794737|477, 514, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|175|2|540|21.3|58.5044383428572|105.899797355504|477, 514, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|115|2|477.28891|37|75.0327831304348|104.924469618617|477, 514, 540, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|195|0|700|14|42.2023726666667|97.4717133957569|477, 514, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|137|1|260|14.2|27.7694589051095|45.4578628754624|477, 514, 540, 5002, 5008
-5|Big Bend Seagrasses Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|165|1|260|18.4|34.2899667878788|50.2919056897215|477, 514, 540, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|211|0|440|14.4|23.4580331753555|40.8954835909418|477, 514, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|154|0|220|18|32.0840940093507|41.0836405622216|103, 477, 514, 540, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|140|2|550|19.95|37.0067007674286|68.1498219080778|103, 477, 514, 540, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|197|0|380|8.6|20.6637827411168|43.2736465332705|514, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|116|1|460|10|22.6582905982759|45.5556716757502|103, 477, 514, 540, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|97|2|580|9.8266|34.3680402061856|69.2879967224323|477, 514, 540, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|191|0|750|10|33.2070863874346|96.1992627585905|514, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|110|2|540|20.5|60.4252246363636|113.120100344593|477, 514, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|79|2|477.28891|31.8|67.4141735443038|103.525788850984|477, 514, 540, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|152|0|700|11.5|35.5171820394737|91.1112334794448|477, 514, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|88|1|260|13.2|27.81383875|47.6382632679368|477, 514, 540, 5002, 5008
+5|Big Bend Seagrasses Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|103|1|260|18|31.7053531772816|49.0910994915592|103, 477, 514, 540, 5002, 5008
+6|Biscayne Bay Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|26|4|24.195|9.4005|12.6741153846154|7.8145749587648|3, 514
+6|Biscayne Bay Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|34|4.704|63.177|14.803|15.8936176470588|10.660307866993|3
+6|Biscayne Bay Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|24|1.967|27.773|8.0145|10.8364166666667|7.13257836736945|3, 514
+6|Biscayne Bay Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|31|3.963|35.89|12.756|15.7901290322581|9.1918698342319|3, 514
+6|Biscayne Bay Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|40|0|60.232|13.9025|15.813125|12.0413834310137|3, 514
+6|Biscayne Bay Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|26|5.984|104.58|21.198|23.2667692307692|19.3560028917288|3, 514
+6|Biscayne Bay Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|34|0.201|62.06|20.239|20.4090294117647|14.6782082229226|3, 514
+6|Biscayne Bay Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|30|4.412|63.834|19.857|22.3472|14.2260405531789|3, 5002
+6|Biscayne Bay Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|17|7.242|45.95|23.386|21.3286470588235|12.3971770170732|3
+6|Biscayne Bay Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|24|6|126.281|29.3095|37.0801666666667|30.1653904689617|3, 514
+6|Biscayne Bay Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|27|5|95.444|25.831|30.4363703703704|21.2774877261032|3, 514
+6|Biscayne Bay Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|22|13.196|36.91|20.638|21.6591818181818|6.10883552644671|3
 11|Cockroach Bay Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|22|13.9|68|37.5|40.6818181818182|15.7360561515096|514, 5002
-11|Cockroach Bay Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|13|13.4|56|39|35.6923076923077|13.2021754229156|514, 5002
+11|Cockroach Bay Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|12|14.6|56|40|37.55|11.8827988744617|514, 5002
 11|Cockroach Bay Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|10|13.7|95|30.25|38.76|28.4074012265192|514, 5002
 11|Cockroach Bay Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|23|11.3|65|40.4|39.9826086956522|15.3182200536697|514, 5002
 11|Cockroach Bay Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|18|9|40.8|29.9|26.0888888888889|10.7532697565678|514, 5002
-11|Cockroach Bay Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|12|18.3|110|49.8|61.4333333333333|36.7526952217195|514, 5002
-11|Cockroach Bay Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|30|25.5|218|98.5|109.08|62.4310289784683|514, 5002
-11|Cockroach Bay Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|15|30.2|152|94|97.0133333333333|41.2576030511203|514, 5002
-11|Cockroach Bay Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|16|28.6|115|72.05|80.2125|29.0551859972249|514, 5002
-11|Cockroach Bay Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|31|20.8|190|55.7|70.2193548387097|43.8583129281465|514, 5002
-11|Cockroach Bay Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|17|19|78.6|45.3|50.7882352941177|21.3895676193133|514, 5002
+11|Cockroach Bay Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|11|18.3|110|37.8|57.0181818181818|35.0502729855794|514, 5002
+11|Cockroach Bay Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|25|25.5|218|119|121.608|60.5794032654664|514, 5002
+11|Cockroach Bay Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|11|30.2|152|133|106.245454545455|44.0785517828425|514, 5002
+11|Cockroach Bay Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|10|65.8|115|108|95.01|22.6149630898561|514, 5002
+11|Cockroach Bay Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|27|20.8|190|60.1|73.8074074074074|45.7072366423686|514, 5002
+11|Cockroach Bay Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|12|19|78.6|44.65|48.475|20.7045943518034|514, 5002
 11|Cockroach Bay Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|8|14.8|40.7|31.5|29.9375|8.65496348098262|514, 5002
-14|Estero Bay Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|124|2.5|55.9|11.4|14.2322580645161|10.2112602312397|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|154|1.6|65.5|8|12.3375974025974|12.6935303399193|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|130|1.59|75.2|10.75|15.8993846153846|13.9664736857686|476, 4063, 5002
-14|Estero Bay Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|130|2.5|98.1|7.915|14.064|17.6116893264171|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|107|1.5|128|8.82|15.8075700934579|23.2042982290782|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|132|1.31|114|12.9|21.2625757575758|23.3328684926105|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|122|2.91|124|19.5|27.1126229508197|25.5541177417484|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|144|3.14|120|26|34.4945833333333|25.8542783213433|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|128|5.22|118|23.05|30.82453125|23.2789476336056|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|136|2.14|131|19.2|25.7827205882353|21.0269622492756|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|146|4.3|86.5|19|23.8664383561644|17.2250608422819|476, 514, 4063, 5002
-14|Estero Bay Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|122|2.43|58.5|14.8|17.7424590163934|12.1993950745214|476, 514, 4063, 5002
-15|Florida Keys National Marine Sanctuary|1|Colored dissolved organic matter, CDOM|Surface|Lab|115|0|13|5|5.71304347826087|3.13375851181513|514
-15|Florida Keys National Marine Sanctuary|2|Colored dissolved organic matter, CDOM|Surface|Lab|56|1|13|5|5.21428571428571|3.01339003126371|514
-15|Florida Keys National Marine Sanctuary|3|Colored dissolved organic matter, CDOM|Surface|Lab|43|1|15|6|7.02325581395349|3.43295216626423|514
-15|Florida Keys National Marine Sanctuary|4|Colored dissolved organic matter, CDOM|Surface|Lab|138|0|21|5|5.66666666666667|3.40101602108386|514
-15|Florida Keys National Marine Sanctuary|5|Colored dissolved organic matter, CDOM|Surface|Lab|54|0|16|7|7.01851851851852|3.55809330294763|514
-15|Florida Keys National Marine Sanctuary|6|Colored dissolved organic matter, CDOM|Surface|Lab|48|3|22|6.5|7.125|3.7338303873773|514
-15|Florida Keys National Marine Sanctuary|7|Colored dissolved organic matter, CDOM|Surface|Lab|159|0|38|6|6.67295597484277|4.63134184474215|514
-15|Florida Keys National Marine Sanctuary|8|Colored dissolved organic matter, CDOM|Surface|Lab|56|1|26|6|7.66071428571429|4.63299151624632|514
-15|Florida Keys National Marine Sanctuary|9|Colored dissolved organic matter, CDOM|Surface|Lab|60|1|26|7.5|8.16666666666667|4.57023037162434|514
-15|Florida Keys National Marine Sanctuary|10|Colored dissolved organic matter, CDOM|Surface|Lab|124|0|25|6|6.62903225806452|4.18760800988815|514
-15|Florida Keys National Marine Sanctuary|11|Colored dissolved organic matter, CDOM|Surface|Lab|56|2|25|8|9.64285714285714|5.39841246505462|514
-15|Florida Keys National Marine Sanctuary|12|Colored dissolved organic matter, CDOM|Surface|Lab|67|0|14|5|5.77611940298507|2.46687690866338|514
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|61|2.5|54|12.6|14.2075409836066|10.6972547343914|476, 513, 514, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|55|1.6|38|8.51|10.6345454545455|8.3178767363236|476, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|56|1.6|27|6.795|9.56285714285714|7.6748642189436|476, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|59|1.6|53|6.43|10.2010169491525|9.81528851349547|476, 513, 514, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|45|1.31|29|4.99|7.34444444444444|6.7024166454264|476, 513, 514, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|45|2.5|56.3|6.4|10.1335555555556|10.2863610394708|476, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|50|1.6|74|13.3|21.2564|19.1153451297268|476, 513, 514, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|48|5|150|22.95|32.1202083333333|28.5999414885269|476, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|54|6.4|150|32.9|43.8407407407407|36.0252925748193|476, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|53|2.5|170|29.4|41.1175471698113|36.3345090209157|476, 513, 514, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|51|2.5|120|20.4|26.498431372549|19.515412203953|476, 513, 514, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|43|2.34|87|14.5|20.2016279069767|18.9671609606148|476, 513, 5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|63|7|60|30|31.9047619047619|16.5701969985703|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|37|7.5|75|33|34.5135135135135|16.8380713160874|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|27|7.5|55|45|34.1666666666667|15.5662356498831|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|108|1|69|21|25.0555555555556|16.0564619031514|514, 5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|53|5|50|35|29.5660377358491|15.0843900898632|514, 5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|53|7.5|180|80|75.3207547169811|49.37825883497|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|114|5|165|45|51.3859649122807|29.0289781284943|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|44|15|120|65|72.8636363636364|30.654557617888|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|48|30|143|70|72.9166666666667|27.1276206368793|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|81|10|240|65|72.358024691358|42.0586818154039|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|46|5|140|65|67.5869565217391|38.8990580217034|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|46|12|65|57|47.2608695652174|19.1234989622816|514, 10000
-48|Nature Coast Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|387|2|102|9.1166|10.9413074935401|7.39792534943228|479, 514, 5008
-48|Nature Coast Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|248|3|58|9|10.1483915322581|6.36167269861795|479, 5008
-48|Nature Coast Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|347|0|88|8.0134|9.6706060518732|6.697189448476|479, 540, 5008
-48|Nature Coast Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|430|1|48|8|9.86370418604651|5.72354050867828|479, 514, 5008
-48|Nature Coast Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|393|3|27.391|8.8618|9.98636743002545|4.5316232866434|479, 5008
-48|Nature Coast Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|369|0|201|9.4918|11.342825203252|12.7507391189598|479, 540, 5008
-48|Nature Coast Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|474|3|137|12|17.4976158227848|18.2009928939647|479, 5008
+14|Estero Bay Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|101|2.5|55.9|11.4|14.0229702970297|10.2136674651718|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|125|1.6|65.5|8|12.29672|12.7237218621678|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|102|1.59|75.2|9.39|15.0966666666667|14.1196622497213|476, 4063, 5002
+14|Estero Bay Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|106|2.5|98.1|7.96|13.9755660377359|17.5970520842982|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|103|1.5|128|8.82|15.9107766990291|23.4713727465291|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|106|1.31|114|14.15|22.5872641509434|23.1744831568409|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|82|2.91|124|22|30.4587804878049|27.3538815892846|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|97|3.14|120|28.7|35.4016494845361|25.4453016160979|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|87|5.22|118|23.3|30.9127586206897|23.5459200381098|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|91|2.14|131|19.3|26.3446153846154|21.8854331720486|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|95|4.3|86.5|18|22.7637894736842|16.8345987559655|476, 514, 4063, 5002
+14|Estero Bay Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|96|2.43|58.5|13.65|16.6814583333333|12.0624691527648|476, 514, 4063, 5002
+15|Florida Keys National Marine Sanctuary|1|Colored dissolved organic matter, CDOM|Surface|Lab|128|0|45.027|6|7.4062578125|6.55109771921547|3, 514
+15|Florida Keys National Marine Sanctuary|2|Colored dissolved organic matter, CDOM|Surface|Lab|86|1|40.874|6.771|9.18636046511628|7.92167980093466|3, 514
+15|Florida Keys National Marine Sanctuary|3|Colored dissolved organic matter, CDOM|Surface|Lab|64|1|52.705|7.709|9.56003125|7.95090306534821|3, 514
+15|Florida Keys National Marine Sanctuary|4|Colored dissolved organic matter, CDOM|Surface|Lab|163|0|43.277|6|7.3118282208589|6.21933283666928|3, 514
+15|Florida Keys National Marine Sanctuary|5|Colored dissolved organic matter, CDOM|Surface|Lab|88|0|56.35|7|10.3166590909091|8.73235317771654|3, 514
+15|Florida Keys National Marine Sanctuary|6|Colored dissolved organic matter, CDOM|Surface|Lab|69|3|50.867|7|10.8517391304348|9.79647609760501|3, 514
+15|Florida Keys National Marine Sanctuary|7|Colored dissolved organic matter, CDOM|Surface|Lab|170|0|71.486|6.208|8.81045882352941|9.55607990615664|3, 514
+15|Florida Keys National Marine Sanctuary|8|Colored dissolved organic matter, CDOM|Surface|Lab|81|1|60.843|8|11.4558148148148|10.3591858694483|3, 514
+15|Florida Keys National Marine Sanctuary|9|Colored dissolved organic matter, CDOM|Surface|Lab|79|1|56.69|8|10.4020632911392|8.53360051666318|3, 514
+15|Florida Keys National Marine Sanctuary|10|Colored dissolved organic matter, CDOM|Surface|Lab|137|0|49.789|7|8.78711678832117|8.36537157859858|3, 514
+15|Florida Keys National Marine Sanctuary|11|Colored dissolved organic matter, CDOM|Surface|Lab|75|2|55.548|9|14.5768133333333|11.7244043226699|3, 514
+15|Florida Keys National Marine Sanctuary|12|Colored dissolved organic matter, CDOM|Surface|Lab|88|0|44.31|6|9.73428409090909|8.75968072155898|3, 514
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|50|2.5|54|13.4|14.2208|9.54275702257145|476, 513, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|43|1.6|38|8.32|9.69139534883721|7.30843986393401|476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|43|1.6|27|6.23|8.82953488372093|7.03927213278961|476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|48|1.6|53|6.625|10.6233333333333|10.0601990871831|476, 513, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|41|1.31|29|4.99|7.11707317073171|6.35210998169208|476, 513, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|36|2.5|56.3|6.3|10.7052777777778|11.2175659407431|476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|39|1.6|74|15|23.9376923076923|20.302068790298|476, 513, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|33|5|150|23.6|33.4842424242424|30.3955527205773|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|35|6.4|150|36.9|42.3542857142857|32.7694921145473|476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|38|2.5|170|28.95|39.3105263157895|35.7020453609979|476, 513, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|36|2.5|120|20.15|25.9438888888889|20.7025276962953|476, 513, 514, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|32|2.34|87|11.6|17.44125|17.6705416880295|476, 513, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|121|2.1|220|25.6|31.3375788429752|30.2039703494687|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|120|2.9|328.2|34.5|67.3262020833333|86.6538194361815|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|117|2.7|780|29.7|93.7519594871795|117.347257471564|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|118|4|220.5|37.15|56.3049827118644|53.6748556628691|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|119|3.4|80.5|36.6|33.6866636134454|19.0183989316842|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|118|2.7|782.6|49.75|114.520399830508|208.901110275661|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|122|1.1|555.7|53.85|112.472263770492|147.331007260339|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|125|3.41534|585.4|59.3|180.4851744|203.358025200102|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|124|1.3|876.6|47.3|150.108171935484|255.518133766062|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|119|5.6|880|60.4|149.501657226891|187.39390020318|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|103|3.9|387.2|40.9|70.0510641747573|85.0664324124569|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|112|2.8|104|25.55|31.6506865178571|21.7529243696429|4054, 5002, 5014
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|46|7|60|28.5|30.5217391304348|16.3159623687763|514, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|28|7.5|75|33|34.4464285714286|17.2408533376258|514, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|18|7.5|55|40|34.4444444444444|15.9630905979359|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|74|1|69|21|25.1418918918919|16.2327928433465|514, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|34|5|50|30|28.4705882352941|15.2811733924314|514, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|36|7.5|180|80|75.5416666666667|48.5800333764515|514, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|65|5|165|50|53.3384615384615|30.9769455215674|514, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|26|15|120|65|68.3076923076923|31.1406733784216|514, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|26|30|143|70|74.8076923076923|29.8462985722106|514, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|51|10|240|63|68.9411764705882|41.0445668826976|514, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|28|5|140|60|63.3571428571429|37.4899633835158|514, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|28|12|65|47.5|44.25|19.8617909751548|514, 10000
+48|Nature Coast Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|307|2|102|9.1818|10.9502364820847|7.91467563040628|103, 479, 514, 5008
+48|Nature Coast Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|247|3|58|9|10.1538991902834|6.36458529193317|479, 5008
+48|Nature Coast Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|296|0|88|8.4666|9.91177263513513|7.1197574068385|479, 540, 5008
+48|Nature Coast Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|354|1|48|8.03785|9.96737429378531|5.9646680366908|479, 514, 5008
+48|Nature Coast Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|324|3|27.391|9|10.058337345679|4.68446829156406|479, 5008
+48|Nature Coast Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|311|0|201|9.2016|11.4185408360129|13.7680833343235|479, 540, 5008
+48|Nature Coast Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|381|3|137|12|17.1860952755906|17.7626097097728|479, 5008
 48|Nature Coast Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|208|3|245|14|19.6461826923077|25.4414744890901|479
-48|Nature Coast Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|313|2.5|170|15|21.1953188498403|20.6088014178548|479, 540, 5008
-48|Nature Coast Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|397|4|154|13|16.8704115869018|14.0318166436001|479, 5008
-48|Nature Coast Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|320|4|99.654|11|14.06719625|10.109393965355|479, 540, 5008
-48|Nature Coast Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|309|4|77|11|12.256484789644|6.30795826890666|479, 5008
-35|Pinellas County Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|49|3|35|9|9.89471428571429|5.29009221576052|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|26|4|60|40|31.9476769230769|21.957089241779|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|17|2|44|7.7358|10.7841|11.3939915408846|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|55|2|65|8|18.8284345454545|20.8578707333371|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|44|5.1743|50|35|31.6111272727273|14.4529079234236|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|43|4|50|33|28.3389209302326|14.0369508145221|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|78|4|65|13|19.8007243589744|14.8754852044946|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|25|3|110|40|52.164|31.5452833241358|514, 5002
-35|Pinellas County Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|48|8.9021|260|55|86.6340458333333|76.7260183048582|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|94|4|110|14|23.5608936170213|23.521791243906|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|15|10.341|85|75|51.1690666666667|33.2296886049351|514, 5002, 5008
-35|Pinellas County Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|36|6.9917|90|47|51.6618083333333|26.7309001916442|514, 5002, 5008
-37|Rocky Bayou State Park Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|16|6|51|17|20.25|13.7283162356739|514
+48|Nature Coast Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|261|2.5|170|15|20.9148252873563|20.1574260946387|479, 540, 5008
+48|Nature Coast Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|315|4|154|13.5|17.0423228571429|14.687082993053|479, 5008
+48|Nature Coast Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|267|4|99.654|11|13.7665651685393|9.31845414942361|479, 540, 5008
+48|Nature Coast Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|258|4|77|11|12.4244821705426|6.58468944454934|479, 5008
+35|Pinellas County Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|46|3|35|9|9.88957608695652|5.33562971783649|103, 514, 5002, 5008
+35|Pinellas County Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|18|4|60|12.15|24.4799777777778|21.8995059890442|514, 5002, 5008
+35|Pinellas County Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|14|2|44|7.7679|11.6240142857143|12.4578653121915|514, 5002, 5008
+35|Pinellas County Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|52|2|65|8|15.1136442307692|17.4603092421957|103, 514, 5002, 5008
+35|Pinellas County Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|24|5.1743|50|35|29.4560708333333|14.9466966800281|514, 5002, 5008
+35|Pinellas County Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|27|4|50|32|25.5501|15.1108048828288|514, 5002, 5008
+35|Pinellas County Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|56|4|65|11|17.1382232142857|13.5521803274064|514, 5002, 5008
+35|Pinellas County Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|15|3|110|37|45.3466666666667|33.437764507187|514, 5002
+35|Pinellas County Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|28|8.9021|260|46.5|78.0190035714286|75.3264899970909|514, 5002, 5008
+35|Pinellas County Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|74|4|110|14.3255|22.7616486486487|23.1927167597239|514, 5002, 5008
+35|Pinellas County Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|9|10.341|85|47|47.3575555555556|32.9222534849572|514, 5002, 5008
+35|Pinellas County Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|25|6.9917|90|45|46.406336|27.8255864524583|514, 5002, 5008
+37|Rocky Bayou State Park Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|16|6|51|14.5|19.8125|13.9150697686597|103, 514
 37|Rocky Bayou State Park Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|6|6|94|11|24.1666666666667|34.4175342909202|514
 37|Rocky Bayou State Park Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|4|17|77|35|41|25.4689353265241|514
-37|Rocky Bayou State Park Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|18|4|118|15|25.1666666666667|28.7059124879302|514
+37|Rocky Bayou State Park Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|18|4|118|19.5|26.8333333333333|28.8286009943965|103, 514
 37|Rocky Bayou State Park Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|8|4|51|10.5|17|16.630436812406|514
 37|Rocky Bayou State Park Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|6|7|47|18|21.8333333333333|13.7610561610171|514
-37|Rocky Bayou State Park Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|19|6|78|23|28.8947368421053|22.0249725358439|514
+37|Rocky Bayou State Park Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|18|6|78|21|27.5|21.783020910792|514
 37|Rocky Bayou State Park Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|3|15|120|29|54.6666666666667|57.0116947067296|514
 37|Rocky Bayou State Park Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|7|10|87|14|33.4285714285714|30.0269720021691|514
 37|Rocky Bayou State Park Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|16|4|29|11|13.625|7.88986691902975|514
@@ -143,36 +167,36 @@ AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|
 39|Rookery Bay National Estuarine Research Reserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|11|4|7|5|5|1.09544511501033|514
 40|St. Andrews State Park Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|12|3|27|5|7.83333333333333|7.14567044164549|514
 40|St. Andrews State Park Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|8|2|7|5|4.875|2.10017006114131|514
-40|St. Andrews State Park Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|39|1|55|6|10.5897435897436|12.5083507868227|514
+40|St. Andrews State Park Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|34|1|55|6|11|13.32575542233|514
 40|St. Andrews State Park Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|8|2|43|4|8.875|13.8402879821401|514
 40|St. Andrews State Park Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|12|1|11|5.5|5.33333333333333|3.22865953984659|514
 40|St. Andrews State Park Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|15|1|35|5|6.66666666666667|8.02377419802878|514
 40|St. Andrews State Park Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|10|0|56|10|15.7|17.9879589355398|514
 40|St. Andrews State Park Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|4|2|7|5|4.75|2.06155281280883|514
-40|St. Andrews State Park Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|33|2|18|7|8.84848484848485|4.34540858350233|514
+40|St. Andrews State Park Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|30|2|18|7|8.2|3.92516197776909|514
 40|St. Andrews State Park Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|5|2|5|4|3.6|1.14017542509914|514
 40|St. Andrews State Park Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|8|3|7|5|4.75|1.58113883008419|514
-41|St. Joseph Bay Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|75|1|28|6|8.04|6.7512561393758|514, 540
+41|St. Joseph Bay Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|72|1|28|6|7.65277777777778|5.80955919935126|103, 514, 540
 41|St. Joseph Bay Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|8|3|11|5.5|6|2.32992949004287|514
-41|St. Joseph Bay Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|23|2.5|7.5|5|4.30434782608696|1.87531288561998|514, 540
-41|St. Joseph Bay Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|94|2|28|6|6.95744680851064|5.04424487057722|514, 540
-41|St. Joseph Bay Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|24|2.5|10|5.5|5.58333333333333|2.74521982435979|514, 540
-41|St. Joseph Bay Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|24|2.5|17|6.5|7.83333333333333|3.97182103308301|514, 540
-41|St. Joseph Bay Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|74|1|21|6|7|3.67516656970381|514
+41|St. Joseph Bay Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|14|2.5|7.5|5|4.39285714285714|1.74508729590518|514, 540
+41|St. Joseph Bay Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|87|2|28|6|6.72988505747127|4.8047968991882|103, 514, 540
+41|St. Joseph Bay Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|17|2.5|10|6|5.67647058823529|2.40404071610817|514, 540
+41|St. Joseph Bay Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|18|2.5|17|6|7.25|3.43104340158055|514, 540
+41|St. Joseph Bay Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|62|1|21|6|6.7258064516129|3.78161798505292|514
 41|St. Joseph Bay Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|7|7|37|9|12.8571428571429|10.6993546756891|514
-41|St. Joseph Bay Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|15|2.5|18|5|7.6|5.45501080266051|514, 540
-41|St. Joseph Bay Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|51|2.5|19|6|6.84313725490196|2.97907736737137|514, 540
+41|St. Joseph Bay Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|12|2.5|18|9.5|8.83333333333333|5.43696662309105|514, 540
+41|St. Joseph Bay Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|48|2.5|19|6|6.8125|2.90931190226845|514, 540
 41|St. Joseph Bay Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|12|3|10|5|5.58333333333333|1.83195540504146|514
-41|St. Joseph Bay Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|8|4.7|9.3|5.3|6.45|2.05356832297902|514, 540
-43|St. Martins Marsh Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|71|5|26.579|12|11.8573281690141|4.01140336117578|479, 5008
-43|St. Martins Marsh Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|59|6|30|12|12.4932661016949|4.8641945913963|479, 5008
-43|St. Martins Marsh Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|67|2.5|33|11|11.6089985074627|5.41086636832835|479, 540, 5008
-43|St. Martins Marsh Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|70|6|42.052|12.64|15.06894|7.54218380356662|479, 5008
-43|St. Martins Marsh Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|68|5|35|13|13.6028352941176|5.56445356198718|479, 5008
-43|St. Martins Marsh Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|73|5.2|36|13|15.8469369863014|7.79159925508284|479, 540, 5008
-43|St. Martins Marsh Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|84|6|98.4|15.141|19.496275|13.4003577846757|479, 5008
-43|St. Martins Marsh Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|47|7|50|17|21.4795744680851|12.0837781950498|479
-43|St. Martins Marsh Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|67|2.9|103|13|18.8891432835821|15.3738241382851|479, 540, 5008
-43|St. Martins Marsh Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|88|6|53.9|16.9765|19.2327227272727|9.5395020143976|479, 5008
-43|St. Martins Marsh Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|58|5|49|12.5|15.6151034482759|9.17993470348993|479, 540, 5008
-43|St. Martins Marsh Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|53|5|30|11.819|12.8127358490566|5.34215725710613|479, 5008
+41|St. Joseph Bay Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|5|4.7|9.3|5.3|6.46|2.06228029132802|514, 540
+43|St. Martins Marsh Aquatic Preserve|1|Colored dissolved organic matter, CDOM|Surface|Lab|54|5|26.579|11.8|11.7704111111111|4.2152566536005|479, 5008
+43|St. Martins Marsh Aquatic Preserve|2|Colored dissolved organic matter, CDOM|Surface|Lab|54|6|30|12|12.5487537037037|5.05908483191332|479, 5008
+43|St. Martins Marsh Aquatic Preserve|3|Colored dissolved organic matter, CDOM|Surface|Lab|53|2.5|33|11|11.9120660377359|5.43080173833773|479, 540, 5008
+43|St. Martins Marsh Aquatic Preserve|4|Colored dissolved organic matter, CDOM|Surface|Lab|60|6|42.052|11.9|14.736025|7.48609382061562|479, 5008
+43|St. Martins Marsh Aquatic Preserve|5|Colored dissolved organic matter, CDOM|Surface|Lab|56|5|35|13|13.6712589285714|5.7432181567726|479, 5008
+43|St. Martins Marsh Aquatic Preserve|6|Colored dissolved organic matter, CDOM|Surface|Lab|63|5.2|36|13|16.0551603174603|7.81587334532579|479, 540, 5008
+43|St. Martins Marsh Aquatic Preserve|7|Colored dissolved organic matter, CDOM|Surface|Lab|71|6|98.4|15|19.291423943662|14.0801167560344|479, 5008
+43|St. Martins Marsh Aquatic Preserve|8|Colored dissolved organic matter, CDOM|Surface|Lab|44|7|50|16|20.4418181818182|11.6404713547829|479
+43|St. Martins Marsh Aquatic Preserve|9|Colored dissolved organic matter, CDOM|Surface|Lab|52|2.9|103|13.5|18.9278807692308|15.4498309531337|479, 540, 5008
+43|St. Martins Marsh Aquatic Preserve|10|Colored dissolved organic matter, CDOM|Surface|Lab|71|6|53.9|15.5|18.5656281690141|9.23346944911644|479, 5008
+43|St. Martins Marsh Aquatic Preserve|11|Colored dissolved organic matter, CDOM|Surface|Lab|47|5|49|12|15.3965106382979|9.26165154903562|479, 540, 5008
+43|St. Martins Marsh Aquatic Preserve|12|Colored dissolved organic matter, CDOM|Surface|Lab|49|5|30|11.093|12.6550408163265|5.35889221278982|103, 479, 5008

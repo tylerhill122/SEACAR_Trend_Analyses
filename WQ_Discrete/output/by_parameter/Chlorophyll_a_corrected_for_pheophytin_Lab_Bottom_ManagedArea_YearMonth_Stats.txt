@@ -1,626 +1,540 @@
 AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Data|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
-5|Big Bend Seagrasses Aquatic Preserve|1999|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.28|1.28|1.28|1.28|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2001|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
+2|Apalachicola Bay Aquatic Preserve|2000|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|1|42|2.1|7.45555555555556|13.2145857966785|5002
+2|Apalachicola Bay Aquatic Preserve|2000|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1|15|3.7|5.95714285714286|5.71776679682349|5002
+2|Apalachicola Bay Aquatic Preserve|2000|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|2.4|15|10|8.92857142857143|4.6828461024304|5002
+2|Apalachicola Bay Aquatic Preserve|2000|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1|6.9|4|3.96666666666667|2.95014123955673|5002
+2|Apalachicola Bay Aquatic Preserve|2001|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.85|72|7.6|15.2071428571429|25.4875202888824|5002
+2|Apalachicola Bay Aquatic Preserve|2001|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1|3.1|1|1.7|1.21243556529821|5002
+2|Apalachicola Bay Aquatic Preserve|2001|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|6.9|1.9|3.21666666666667|3.23277486585957|5002
+2|Apalachicola Bay Aquatic Preserve|2001|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.2|20|9.8|10.0666666666667|7.37744309816529|5002
+2|Apalachicola Bay Aquatic Preserve|2001|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.85|1.2|1|1.01|0.124498995979887|5002
+2|Apalachicola Bay Aquatic Preserve|2001|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|7.9|22|16|15.3|7.0760158281338|5002
+2|Apalachicola Bay Aquatic Preserve|2001|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|2.5|0.85|1.4|0.952627944162882|5002
+2|Apalachicola Bay Aquatic Preserve|2001|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
+2|Apalachicola Bay Aquatic Preserve|2001|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|0.85|0.85|0.85|0|5002
+2|Apalachicola Bay Aquatic Preserve|2002|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1.6|4.8|2.2|2.7|1.46515073172239|5002
+2|Apalachicola Bay Aquatic Preserve|2002|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.1|6.9|5.6|4.86666666666667|2.48260615751539|5002
+2|Apalachicola Bay Aquatic Preserve|2002|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|0.85|0.85|0.85|0|5002
+2|Apalachicola Bay Aquatic Preserve|2002|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|0.85|0.85|0.85|0|5002
+2|Apalachicola Bay Aquatic Preserve|2002|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.85|7.8|2.35|3.3375|3.07987418574201|5002
+2|Apalachicola Bay Aquatic Preserve|2002|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|1.7|0.96|1.17|0.462276973253049|5002
+2|Apalachicola Bay Aquatic Preserve|2002|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|5.6|20|15|13.5333333333333|7.3111786555475|5002
+2|Apalachicola Bay Aquatic Preserve|2002|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.3|3.3|3.3|3.3||5002
+2|Apalachicola Bay Aquatic Preserve|2002|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.4|1.4|1.4|1.4||5002
+2|Apalachicola Bay Aquatic Preserve|2002|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|0.85|0.85|0.85|0|5002
+2|Apalachicola Bay Aquatic Preserve|2002|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|0.85|0.85|0.85|0|5002
+2|Apalachicola Bay Aquatic Preserve|2002|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9.3|9.3|9.3|9.3||5002
+2|Apalachicola Bay Aquatic Preserve|2012|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.7|5.7|5.7|5.7||5002
+2|Apalachicola Bay Aquatic Preserve|2012|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|13|13|13|13||5002
+2|Apalachicola Bay Aquatic Preserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|21|21|21|21|0|355
+2|Apalachicola Bay Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.2|9.9|6.1|6.325|3.47215111038292|5002
+2|Apalachicola Bay Aquatic Preserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|15|15|15|15||5002
+2|Apalachicola Bay Aquatic Preserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.4|7|1.7|3.36666666666667|3.15013227235514|5002
+2|Apalachicola Bay Aquatic Preserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|35|35|35|35||5002
+2|Apalachicola Bay Aquatic Preserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|10|11|10.5|10.5|0.707106781186548|5002
+2|Apalachicola Bay Aquatic Preserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.8|1.8|1.8|1.8||5002
+2|Apalachicola Bay Aquatic Preserve|2022|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|15|19|17|17|2.82842712474619|5002
+3|Apalachicola National Estuarine Research Reserve|1999|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.08|2.08|2.08|2.08||5002
+3|Apalachicola National Estuarine Research Reserve|2000|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.4|2.4|2.4|2.4||5002
+3|Apalachicola National Estuarine Research Reserve|2000|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|1|42|2.1|7.45555555555556|13.2145857966785|5002
+3|Apalachicola National Estuarine Research Reserve|2000|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|1|15|2.8|4.85555555555556|5.41274216804918|5002
+3|Apalachicola National Estuarine Research Reserve|2000|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|2.4|15|7.7|7.65555555555556|4.78725158914567|5002
+3|Apalachicola National Estuarine Research Reserve|2000|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1|6.9|1.7|3.04|2.44192546978813|5002
+3|Apalachicola National Estuarine Research Reserve|2001|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0.85|72|4.8|13.4125|24.1366459677278|5002
+3|Apalachicola National Estuarine Research Reserve|2001|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1|3.1|1|1.525|1.05|5002
+3|Apalachicola National Estuarine Research Reserve|2001|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.85|6.9|5.2|4.35|2.82754310311974|5002
+3|Apalachicola National Estuarine Research Reserve|2001|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|1|20|4.6|7.8|7.51607800461308|5002
+3|Apalachicola National Estuarine Research Reserve|2001|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.85|1.2|1|1.00833333333333|0.111430097669645|5002
+3|Apalachicola National Estuarine Research Reserve|2001|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.9|22|14.95|14.95|9.97020561473032|5002
+3|Apalachicola National Estuarine Research Reserve|2001|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.7|3.7|3.7|3.7||5002
+3|Apalachicola National Estuarine Research Reserve|2001|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.85|2.5|0.85|1.2625|0.825|5002
+3|Apalachicola National Estuarine Research Reserve|2002|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.6|4.8|2|2.56|1.30690474021636|5002
+3|Apalachicola National Estuarine Research Reserve|2002|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2|6.9|3.85|4.15|2.48260615751539|5002
+3|Apalachicola National Estuarine Research Reserve|2002|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.85|0.85|0.85|0.85|0|5002
+3|Apalachicola National Estuarine Research Reserve|2002|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.85|0.85|0.85|0.85|0|5002
+3|Apalachicola National Estuarine Research Reserve|2002|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.85|7.8|2.35|3.3375|3.07987418574201|5002
+3|Apalachicola National Estuarine Research Reserve|2002|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.85|1.7|0.905|1.09|0.409959347578106|5002
+3|Apalachicola National Estuarine Research Reserve|2002|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|5.6|20|12.05|12.425|6.36782275716486|5002
+3|Apalachicola National Estuarine Research Reserve|2002|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.3|3.3|3.3|3.3||5002
+3|Apalachicola National Estuarine Research Reserve|2002|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.4|1.4|1.4|1.4||5002
+3|Apalachicola National Estuarine Research Reserve|2002|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.85|0.85|0.85|0.85|0|5002
+3|Apalachicola National Estuarine Research Reserve|2002|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.85|0.85|0.85|0.85|0|5002
+3|Apalachicola National Estuarine Research Reserve|2002|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.8|9.3|5.55|5.55|5.30330085889911|5002
+3|Apalachicola National Estuarine Research Reserve|2012|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|13|13|13|13||5002
+3|Apalachicola National Estuarine Research Reserve|2014|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.8|3.8|3.8|3.8||5002
+3|Apalachicola National Estuarine Research Reserve|2014|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|14|14|14|14||5002
+3|Apalachicola National Estuarine Research Reserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|21|23|23|22.3333333333333|1.15470053837925|355
+3|Apalachicola National Estuarine Research Reserve|2014|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|8|8|8|8||355
+3|Apalachicola National Estuarine Research Reserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.7|2.7|2.7|2.7||5002
+3|Apalachicola National Estuarine Research Reserve|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.1|4.1|4.1|4.1||5002
+3|Apalachicola National Estuarine Research Reserve|2017|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.7|3.7|3.7|3.7|0|5002
+3|Apalachicola National Estuarine Research Reserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.2|9.9|4.3|5.92|3.14038214235147|5002
+3|Apalachicola National Estuarine Research Reserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.7|3.3|3|3|0.424264068711928|5002
+3|Apalachicola National Estuarine Research Reserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|8.7|8.7|8.7|8.7||5002
+3|Apalachicola National Estuarine Research Reserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|15|15|15|15||5002
+3|Apalachicola National Estuarine Research Reserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.2|3.7|3.45|3.45|0.353553390593274|5002
+3|Apalachicola National Estuarine Research Reserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3.9|11|4.9|6.6|3.84317577011513|5002
+3|Apalachicola National Estuarine Research Reserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.88|7|3.65|3.86333333333333|2.82815605415731|5002
+3|Apalachicola National Estuarine Research Reserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.1|8.7|7.9|7.9|1.13137084989848|5002
+3|Apalachicola National Estuarine Research Reserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|35|35|35|35||5002
+3|Apalachicola National Estuarine Research Reserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9|9|9|9||5002
+3|Apalachicola National Estuarine Research Reserve|2019|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.5|8.9|8.2|8.2|0.989949493661167|5002
+3|Apalachicola National Estuarine Research Reserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.3|5.9|5.1|5.1|1.13137084989848|5002
+3|Apalachicola National Estuarine Research Reserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.3|6.3|5.2|5|1.24899959967968|5002
+3|Apalachicola National Estuarine Research Reserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.7|11|8.25|7.55|3.76519145152895|5002
+3|Apalachicola National Estuarine Research Reserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.8|1.8|1.8|1.8||5002
+3|Apalachicola National Estuarine Research Reserve|2021|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.7|2.7|2.7|2.7||5002
+3|Apalachicola National Estuarine Research Reserve|2021|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.5|15|10.65|9.95|4.88978527135906|5002
+3|Apalachicola National Estuarine Research Reserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.9|6.9|6.9|6.9||5002
+3|Apalachicola National Estuarine Research Reserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.7|2.7|2.7|2.7||5002
+3|Apalachicola National Estuarine Research Reserve|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|8.2|8.7|8.45|8.45|0.353553390593274|5002
+3|Apalachicola National Estuarine Research Reserve|2022|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.5|1.8|1.65|1.65|0.212132034355964|5002
+3|Apalachicola National Estuarine Research Reserve|2022|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|15|19|17|17|2.82842712474619|5002
+5|Big Bend Seagrasses Aquatic Preserve|1995|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.01|0.01|0.01|0.01|0|5002
+5|Big Bend Seagrasses Aquatic Preserve|1996|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.01|0.01|0.01|0.01||5002
+5|Big Bend Seagrasses Aquatic Preserve|1996|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.71|0.71|0.71|0.71||5002
+5|Big Bend Seagrasses Aquatic Preserve|1996|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.36|0.36|0.36|0.36||5002
+5|Big Bend Seagrasses Aquatic Preserve|1996|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.01|0.01|0.01|0.01|0|5002
+5|Big Bend Seagrasses Aquatic Preserve|1996|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.8|0.8|0.8|0.8||5002
+5|Big Bend Seagrasses Aquatic Preserve|1996|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.01|0.01|0.01|0.01||5002
+5|Big Bend Seagrasses Aquatic Preserve|1996|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.89|0.89|0.89|0.89||5002
+5|Big Bend Seagrasses Aquatic Preserve|1996|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.01|0.01|0.01|0.01||5002
+5|Big Bend Seagrasses Aquatic Preserve|1997|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||5002
+5|Big Bend Seagrasses Aquatic Preserve|1997|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.7|1.7|1.7|1.7||5002
+5|Big Bend Seagrasses Aquatic Preserve|1997|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.5|0.5|0.5|0.5||5002
+5|Big Bend Seagrasses Aquatic Preserve|1997|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.5|0.5|0.5|0.5||5002
+5|Big Bend Seagrasses Aquatic Preserve|1997|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|7.9|7.9|7.9|7.9||5002
+5|Big Bend Seagrasses Aquatic Preserve|1997|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||5002
+5|Big Bend Seagrasses Aquatic Preserve|1997|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.6|1.6|1.6|1.6||5002
+5|Big Bend Seagrasses Aquatic Preserve|1997|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.8|0.8|0.8|0.8||5002
+5|Big Bend Seagrasses Aquatic Preserve|1998|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
+5|Big Bend Seagrasses Aquatic Preserve|1998|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.8|0.8|0.8|0.8||5002
+5|Big Bend Seagrasses Aquatic Preserve|1998|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.5|1.1|0.8|0.8|0.424264068711929|5002
+5|Big Bend Seagrasses Aquatic Preserve|1998|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|7.6|7.6|7.6|7.6||5002
+5|Big Bend Seagrasses Aquatic Preserve|1998|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.7|3.7|3.7|3.7||5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.5|4.5|2.5|2.5|2.82842712474619|5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.5|0.5|0.5|0.5||5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|24.6|24.6|24.6|24.6||5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.5|8.1|4.3|4.3|5.37401153701776|5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5|5|5|5||5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.28|1.28|1.28|1.28||5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||5002
+5|Big Bend Seagrasses Aquatic Preserve|2000|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.5|1.5|1.5|1.5||5002
+5|Big Bend Seagrasses Aquatic Preserve|2000|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
+5|Big Bend Seagrasses Aquatic Preserve|2000|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.4|2.4|2.4|2.4||5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.1|1.1|1.1|1.1||5002
 5|Big Bend Seagrasses Aquatic Preserve|2001|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2001|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2001|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2001|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.3|3.3|3.3|3.3||5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.6|0.6|0.6|0.6||5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.7|4.5|3.6|3.6|1.27279220613579|5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.5|0.5|0.5|0.5||5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.5|5.6|1.6|2.28|1.94602158261413|5002
+5|Big Bend Seagrasses Aquatic Preserve|2002|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.5|0.9|0.5|0.633333333333333|0.23094010767585|5002
+5|Big Bend Seagrasses Aquatic Preserve|2002|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3|6.8|5.1|4.96666666666667|1.9035055380359|5002
+5|Big Bend Seagrasses Aquatic Preserve|2002|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.5|0.5|0.5|0.5||5002
+5|Big Bend Seagrasses Aquatic Preserve|2002|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.8|5.8|5.8|5.8||5002
+5|Big Bend Seagrasses Aquatic Preserve|2002|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|5.3|0.96|2.37|2.53805043291106|5002
 5|Big Bend Seagrasses Aquatic Preserve|2002|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
 5|Big Bend Seagrasses Aquatic Preserve|2003|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.7|1.7|1.7|1.7||5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
-5|Big Bend Seagrasses Aquatic Preserve|2010|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.5|2.5|2.5|2.5||5002
-5|Big Bend Seagrasses Aquatic Preserve|2010|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.72|0.72|0.72|0.72||5002
-5|Big Bend Seagrasses Aquatic Preserve|2011|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.4|1.4|1.4|1.4||5002
-5|Big Bend Seagrasses Aquatic Preserve|2011|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|14|14|14|14||5002
-5|Big Bend Seagrasses Aquatic Preserve|2011|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.6|4.6|4.6|4.6||5002
-5|Big Bend Seagrasses Aquatic Preserve|2011|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3|3|3|3||5002
-5|Big Bend Seagrasses Aquatic Preserve|2011|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.72|0.72|0.72|0.72||5002
-5|Big Bend Seagrasses Aquatic Preserve|2012|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.1|3.1|3.1|3.1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2012|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2012|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2012|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2012|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|1|0.5|0.5|0.707106781186548|5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0|1|0|0.4|0.547722557505166|5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1|3.4|2|2.1|1.28062484748657|5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0|1|0.5|0.5|0.577350269189626|5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|1|0.5|0.5|0.707106781186548|5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0|1|0.56|0.512|0.500719482345155|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0|2|0.5|0.75|0.957427107756338|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|2.6|1|1.2|1.3114877048604|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|2.2|1|1.06666666666667|1.10151410945722|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|0.75|0|0.25|0.433012701892219|5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||5002
-5|Big Bend Seagrasses Aquatic Preserve|2014|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0|1|0.775|0.56875|0.494929648680353|5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0|0.92|0|0.153333333333333|0.375588427226754|5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|4|2|2|2.82842712474619|5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|1|0.55|0.516666666666667|0.500832640043891|5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|2|1|1|1|5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.69|0.69|0.69|0.69||5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|1|0.55|0.516666666666667|0.500832640043891|5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0.55|0.275|0.275|0.388908729652601|5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0|0|0|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0|3.5|0|0.875|1.75|5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.4|0.4|0.4|0.4||5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0|1|0.275|0.3875|0.483692395364382|5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|1.3|69|4.3|16.5454545454545|24.6315392794021|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.54|5.5|0.55|2.19666666666667|2.86077495328335|5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|4.2|19|11|11.5909090909091|4.6541281773184|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0.8|9.1|2.4|2.74444444444444|2.49404847141706|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|0.55|7.8|3.6|3.7725|1.94391594739235|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.78|0.97|0.875|0.875|0.134350288425444|5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.56|1.4|0.98|0.98|0.5939696961967|5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|0.94|14|12|11.034|3.85504056759171|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|0.55|42|13|16.6927272727273|14.915489995913|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.55|3|2.5|2.19166666666667|0.8651107828866|5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.56|31|15|16.512|11.4136199340963|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0.4|35|8.8|11.9777777777778|9.77724114689028|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.4|1.9|0.45|0.916666666666667|0.851958527942137|5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.8|1.6|1.2|1.2|0.565685424949238|5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|0.6|19|3.3|7.52|6.61955436566541|540
-5|Big Bend Seagrasses Aquatic Preserve|2019|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.55|0.55|0.55|0.55|0|5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|3.7|20|11|10.1076923076923|4.19512843237279|540
-5|Big Bend Seagrasses Aquatic Preserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|5.9|24|10.05|12.5|7.95026205018845|5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.3|2.3|2.3|2.3||5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|4.6|44|9.9|16.12|15.8722084159704|540
-5|Big Bend Seagrasses Aquatic Preserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.82|6.6|3.71|3.71|4.08707719525824|5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|10|41|24.5|24.4|10.637460014287|540
-5|Big Bend Seagrasses Aquatic Preserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|1|16|8.9|7.65596714285714|5.25964060536229|477, 540
-5|Big Bend Seagrasses Aquatic Preserve|2020|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.1|4.2|3.5|2.93333333333333|1.62583311976763|5002
-5|Big Bend Seagrasses Aquatic Preserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1|2.82706|2.52163|1.976984|0.893950283309984|477
-5|Big Bend Seagrasses Aquatic Preserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1|1.27746|1.0607|1.099715|0.131592409482209|477
-5|Big Bend Seagrasses Aquatic Preserve|2020|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.8302|4.10912|3.46966|3.46966|0.904333004595099|477
-5|Big Bend Seagrasses Aquatic Preserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|477
-5|Big Bend Seagrasses Aquatic Preserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.68|0.82|0.75|0.75|0.0989949493661166|5002
-5|Big Bend Seagrasses Aquatic Preserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|15.44318|20.70067|18.071925|18.071925|3.71760683102046|477
-5|Big Bend Seagrasses Aquatic Preserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1|1.602|1|1.1874|0.273420555189254|477
-5|Big Bend Seagrasses Aquatic Preserve|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|0.92|0.46|0.46|0.650538238691624|5002
-5|Big Bend Seagrasses Aquatic Preserve|2020|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||477
-5|Big Bend Seagrasses Aquatic Preserve|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0|1|0.5|0.5|0.577350269189626|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0|0.82|0.41|0.41|0.473427220735493|5002
-5|Big Bend Seagrasses Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|7.5294|7.5294|7.5294|7.5294||477
-5|Big Bend Seagrasses Aquatic Preserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1|1|1|1|0|477
-5|Big Bend Seagrasses Aquatic Preserve|2021|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.11432|3.11432|3.11432|3.11432||477
-5|Big Bend Seagrasses Aquatic Preserve|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1|2.1348|2.01733|1.71737666666667|0.624036666898134|477
-5|Big Bend Seagrasses Aquatic Preserve|2021|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|23|12|12|15.556349186104|540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1|15.39117|13.10727|9.83281333333333|7.73420928981324|477
-5|Big Bend Seagrasses Aquatic Preserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||477
-5|Big Bend Seagrasses Aquatic Preserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1|3.00214|2.8035|2.26854666666667|1.1030740893219|477
-5|Big Bend Seagrasses Aquatic Preserve|2022|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.068|1.15313|1.110565|1.110565|0.0601960002824107|477
-14|Estero Bay Aquatic Preserve|2010|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|8.4|8.4|8.4|8.4||476
-14|Estero Bay Aquatic Preserve|2011|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9.4|9.4|9.4|9.4||476
-14|Estero Bay Aquatic Preserve|2011|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|7.1|7.1|7.1|7.1||476
-14|Estero Bay Aquatic Preserve|2012|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-14|Estero Bay Aquatic Preserve|2013|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-14|Estero Bay Aquatic Preserve|2013|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-14|Estero Bay Aquatic Preserve|2013|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.9|5.9|5.9|5.9||476
-14|Estero Bay Aquatic Preserve|2013|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.6|4.6|4.6|4.6||476
-14|Estero Bay Aquatic Preserve|2013|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6|6|6|6||5002
-14|Estero Bay Aquatic Preserve|2014|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.2|5.2|5.2|5.2||476
-14|Estero Bay Aquatic Preserve|2014|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||5002
-14|Estero Bay Aquatic Preserve|2015|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3|3|3|3||5002
-14|Estero Bay Aquatic Preserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|3|2|2|1.4142135623731|5002
-14|Estero Bay Aquatic Preserve|2015|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
-14|Estero Bay Aquatic Preserve|2016|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|3.3|2.15|2.15|1.62634559672906|476, 5002
-14|Estero Bay Aquatic Preserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3|8|5.5|5.5|3.53553390593274|5002
-14|Estero Bay Aquatic Preserve|2017|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.6|3.6|3.6|3.6||476
-14|Estero Bay Aquatic Preserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.29|8.81|6.05|6.05|3.90322943214974|5002
-14|Estero Bay Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.83|5.83|5.83|5.83||5002
-14|Estero Bay Aquatic Preserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.03|1.03|1.03|1.03||5002
-14|Estero Bay Aquatic Preserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.79|3.79|3.79|3.79||5002
-14|Estero Bay Aquatic Preserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.88|3.88|3.88|3.88||5002
-14|Estero Bay Aquatic Preserve|2019|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3.54|4.99|3.68|4.07|0.799812478022193|5002
-14|Estero Bay Aquatic Preserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.41|2.43|2.38|2.07333333333333|0.575007246331151|5002
-14|Estero Bay Aquatic Preserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.22|1.22|1.22|1.22||5002
-14|Estero Bay Aquatic Preserve|2019|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|2.88|4.95|3.7|3.632|0.837358943345087|5002
-14|Estero Bay Aquatic Preserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1.8|8.3|4.65|4.85|2.91490422941589|476
-14|Estero Bay Aquatic Preserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.2|3.1|2.15|2.15|1.34350288425444|476
-14|Estero Bay Aquatic Preserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.83|4.98|4.905|4.905|0.106066017177982|5002
-14|Estero Bay Aquatic Preserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.52|7.5|7.5|5.84|2.87520434056434|5002
-14|Estero Bay Aquatic Preserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.56|7.69|5.76|5.33666666666667|2.59106799087429|5002
-14|Estero Bay Aquatic Preserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.61|4.8|4.7|4.03666666666667|1.23654087410539|476, 5002
-14|Estero Bay Aquatic Preserve|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.77|4.06|3.16|3.01|0.89231907596629|476, 5002
-14|Estero Bay Aquatic Preserve|2020|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|2|3.7|2.88|2.772|0.656025914122301|476, 5002
-14|Estero Bay Aquatic Preserve|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|1.97|4|2.8|2.93|0.74298625251654|476, 5002
-14|Estero Bay Aquatic Preserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0.87|13|2.545|3.92375|3.99360180252649|476, 5002
-14|Estero Bay Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|2.07|6.15|4.53|4.29|1.41014690217519|476, 5002
-14|Estero Bay Aquatic Preserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|1.28|5.8|2.48|2.87777777777778|1.61124779113718|476, 5002
-14|Estero Bay Aquatic Preserve|2021|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.32|12|2.6|3.76142857142857|3.74878837569078|476, 5002
-14|Estero Bay Aquatic Preserve|2021|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.8|2.9|2.2|2.32|0.506951674225463|476
-14|Estero Bay Aquatic Preserve|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|1.3|43.36|2.66|6.89083333333333|11.7016964258361|476, 5002
-14|Estero Bay Aquatic Preserve|2021|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.25|3.95|2.48|2.41285714285714|1.0467045792345|5002
-14|Estero Bay Aquatic Preserve|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.14|5|2.37|2.99142857142857|1.52695152260344|476, 5002
-14|Estero Bay Aquatic Preserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0.5|6.9|1.64|2.77555555555556|2.39866166388213|476, 5002
-14|Estero Bay Aquatic Preserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.92|4.54|3.43|3.21285714285714|1.25469404352501|476, 5002
-14|Estero Bay Aquatic Preserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|0.5|10|3.2|4.686|3.63905421168132|476, 5002
-14|Estero Bay Aquatic Preserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.8|1.8|1.8|1.8||476
-14|Estero Bay Aquatic Preserve|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.5|47|25.75|25.75|30.0520382004283|476
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2002|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2002|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2003|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2003|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2003|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2003|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2004|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2004|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2004|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2005|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2005|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2005|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2005|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.728|0.728|0.728|0.728||513
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.4|2.4|2.4|2.4||476
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.3|6.3|6.3|6.3||476
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5|5|5|5||476
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|6.87|15.62|11.245|11.245|6.18718433538229|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.03|1.26|1.145|1.145|0.162634559672906|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.38|1.49|1.435|1.435|0.0777817459305203|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.65|1.75|1.2|1.2|0.777817459305202|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.5|0.89|0.695|0.695|0.275771644662754|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.65|4.9|4.275|4.275|0.883883476483185|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.91|5.72|4.315|4.315|1.9869700551342|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|6.42|13.03|9.725|9.725|4.67397582364308|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|8.49|8.49|8.49|8.49||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9.94|9.94|9.94|9.94||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.44|2.44|2.44|2.44||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.09|1.09|1.09|1.09||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.18|2.18|2.18|2.18||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.18|1.18|1.18|1.18||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.91|0.91|0.91|0.91||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.72|0.72|0.72|0.72||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.48|1.48|1.48|1.48||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.11|5.11|5.11|5.11||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.92|1.92|1.92|1.92||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.23|2.23|2.23|2.23||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.1|6.1|6.1|6.1||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.72|1.72|1.72|1.72||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.45|5.45|5.45|5.45||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.8|2.8|2.8|2.8||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.59|4.96|3.46|3.686|1.39117935579853|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.5|10.1|3.46|5.07428571428571|3.94175450420604|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|0.82|5.37|3.33|3.148|1.47912737037004|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.88|10.8|3.46|6.08|4.35676485479765|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|1.91|5.83|3.53|4.015|1.53673354879758|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|3.88|18|5.71|8.49416666666667|5.71655563546209|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|9.2|17.3|14|13.9|2.67166198793518|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|2.63|20|12.8|13.0481818181818|5.53770136100136|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|3|11|4.19|4.995|2.31007083716653|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|5.29|22.3|7.5|10.603|6.74828875427772|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|4.7|12.9|10.6|9.725|3.03303242882197|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.2|18|3.46|5.86571428571429|5.81709508587364|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0.68|7.2|3.3|3.13222222222222|2.08523246772259|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|0.5|27.9|1.8|5.68636363636364|8.43640239998931|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|0.71|5.28|2.11|2.43090909090909|1.46183757336754|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|0.863|9.99|1.58|3.52230769230769|3.23103013461175|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|1.26|4.82|2.1|2.39666666666667|1.14861873569954|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|1.43|5.71|2.28|2.90933333333333|1.40535438675836|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|18|4.8|77.4|16.5|24.1661111111111|19.5823771731533|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|3.25|43|13.15|15.8125|10.4608822198791|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|1.41|20|16|12.4484615384615|6.93209185137484|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|1.36|20|12.4|11.2511111111111|8.0933003843371|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.84|7|4.2|5.012|1.38214326319669|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.51|8.27|3.3|3.84142857142857|2.4712711207759|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.5|4.9|2.7|2.7|3.11126983722081|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.5|0.5|0.5|0.5||5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.5|5.5|4.5|3.5|2.64575131106459|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.19|6.8|6.5|4.83|3.1558992379352|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.57|14|8.4|8.734|5.03738821215915|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.39|1.39|1.39|1.39||5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2012|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|3|12|4.05|5.02142857142857|2.65277172070983|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|1|5.6|3.4|3.42105263157895|1.09065675798699|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|21|2.1|11|5.8|5.95714285714286|2.93642153455042|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|21|1.4|5.2|2.8|3.02857142857143|1.08818328288155|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|3.5|14|8.6|8.04|2.92941524612175|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|2.5|10|4.8|4.85625|1.75117817482973|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|21|3.7|12|5.7|6.18571428571429|2.2260471051363|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0.77|11|3.4|4.80777777777778|3.96469348682145|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|1.2|4.8|1.75|2.29|1.19577961551821|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|18|0.55|10|4.95|5.35277777777778|2.29836720957843|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|1.5|6.2|4.5|4.05789473684211|1.52873069697041|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|2.3|7.8|4|4.34285714285714|1.50318343510047|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|21|1.4|5.1|3.2|3.31904761904762|1.22458933835758|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|0.73|3|1.75|1.784375|0.830373159087728|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|1.4|3.1|1.8|1.92|0.537070241629942|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|0.55|2.8|1.2|1.48235294117647|0.853276987646484|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|2|5.7|3.15|3.34375|1.02109010376166|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|2.7|11|6.5|6.91|2.32782683586597|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|7.3|23|13|13.3142857142857|5.00680489315244|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|6.5|20|12|12.5636363636364|4.44438358544191|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|11|38|18|20.5263157894737|7.69825680883256|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|3.3|17|6.9|7.61|3.4115747251472|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|1.2|9.6|5.2|5.35|2.57558466442794|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|21|4|12|7.8|7.37619047619048|2.29693377394838|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|0.51|8.2|3|3.350625|2.38128947911281|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|0.4|3.9|0.63|1.24133333333333|1.05438449659821|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|1.2|6.3|2.1|3.29|2.07174108206385|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.9|12|4.1|6.33333333333333|4.94401995680978|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|1.1|15|9.2|8.08888888888889|4.461066140634|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|4.5|19|11|10.7176470588235|4.26119632470121|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|12|46|31|28.5714285714286|11.2376916795984|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|9.2|29|21.5|20.45|5.83894967723934|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|8.5|57|21|28.4666666666667|17.6564705527733|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|2|7.1|4.15|4.45|1.55183176220292|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|1.5|4.3|3|3.05625|0.795796246954374|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|4|9.2|7.2|6.99230769230769|1.65351219049107|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|2.5|5|3.7|3.61176470588235|0.857964417197165|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|0.88|10|4.9|5.239375|3.41467513096048|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|0.76|2.5|1.65|1.585|0.533129127572924|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|1|5.9|3|3.01052631578947|1.50255143629543|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|4.1|27|13|13.7736842105263|6.22065038625948|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|5.1|14|9.4|9.41666666666667|3.47715488015792|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|4.1|21|8.2|10.4117647058824|5.80268066855109|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|6.7|18|12|11.8947368421053|2.67009647853376|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|23|5.6|25|20|18.095652173913|4.66860678661881|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|2.4|21|11.5|10.105|5.78687034769681|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|1.8|10|5.9|5.73076923076923|2.38829947011977|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|2.4|8.2|4.6|4.67142857142857|1.76479616231039|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|1.3|5.7|2.1|2.6|1.43108350559987|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|1.6|6.9|3.2|3.61764705882353|1.34221612181014|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|1.8|20|7.25|8.64|6.09064856973377|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|2.3|17|10|9.72857142857143|4.69528639016986|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|3.7|13|11.5|9.52|3.46596146673458|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|3.8|19|12.5|11.27|5.62929835769965|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|3.4|38|9.95|12.7833333333333|9.85198026548547|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|18|2.2|31.7|17.7|16.2722222222222|9.97419054982323|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|4.1|35|18|17.0214285714286|9.60866424491087|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|2.4|6.4|3.1|3.36153846153846|1.0516165821712|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|0.75|3.5|1.75|1.8875|0.900536456280871|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|3.2|6.1|4.25|4.29|0.930292666016692|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|0.55|3|0.975|1.291|0.763474743662504|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|0.51|3.1|0.85|1.20875|0.812214052246492|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|0.56|3.5|1.95|1.934|0.998679127648115|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|2|101|5.8|11.3176470588235|23.2278721392565|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|22|1.6|42|4.95|8.49545454545455|8.53700501027465|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|2.8|58.5|6.9|14.8333333333333|17.3265142264131|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|1.9|21.4|7.05|8.2|5.6737623273599|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|22|0.62|76|12.5|13.7963636363636|14.9204910379603|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|0.65|14|1.3|3.50266666666667|4.65327299046698|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|24|4.4|49|10|14.2458333333333|11.4384925719625|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|4.7|21|8.9|9.26666666666667|4.47383930145441|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|1.4|8.3|4.4|4.98333333333333|2.56703460566208|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|28|1.1|24|2.95|4.45|5.38712456799647|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|29|1.7|8.4|2.9|3.90689655172414|2.1276967819826|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|0.62|27|3.3|4.999|7.16621525302105|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|2.3|12|4.4|5.01818181818182|2.76036888180481|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|2.8|12|4.3|5.51428571428571|3.18381897988929|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|4.3|38|9.4|11.5|9.74428607498318|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|29|3.8|21|11|11.0965517241379|5.29767352972852|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|23|4.8|77|20|26.3826086956522|20.9856585699055|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|3|10|5.3|5.73333333333333|2.00344940635134|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|4.3|51|8.5|13.105|13.2770270530876|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|4.7|8.3|6.6|6.62307692307692|1.13222041887747|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|2.9|7|3.8|4.45|1.50055545271298|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|23|2.4|29|5.7|7.56521739130435|7.06248788868807|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|18|2.1|11|3.6|4.18333333333333|2.16530122887434|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|2.8|39|5.05|8.1|10.0111755735097|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|2.3|5.6|3.9|3.95333333333333|0.949335607273895|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|11|49|17|25.6666666666667|20.4287379280594|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|6.2|80|11|16|18.3976318351808|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|4.4|16|10|10.0157894736842|2.87523200182655|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|20|1.6|4|2|2.315|0.741460152600756|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.6|36|16|18.1142857142857|14.3451999604314|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|23|43|29|31.6666666666667|10.2632028788938|5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.5|1.5|1.5|1.5||5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.3|1.4|1.35|1.35|0.0707106781186547|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.82|6.8|3.03|3.42|3.04993989011806|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.82|3|2.4|2.07333333333333|1.12611426300058|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|12|12|12|12|0|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.6|6.6|6.6|6.6||5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1.9|9.9|5.15|5.525|4.23034671549902|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|5.2|70|48|43.2|24.0149953154274|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.5|38|11.55|16.15|16.2354550290406|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|6|23|18|16.25|7.27438428093173|5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.6|0.6|0.6|0.6||5002
+5|Big Bend Seagrasses Aquatic Preserve|2004|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
+5|Big Bend Seagrasses Aquatic Preserve|2004|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
+5|Big Bend Seagrasses Aquatic Preserve|2004|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.85|0.85|0.85|0.85|0|5002
+5|Big Bend Seagrasses Aquatic Preserve|2004|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.85|0.96|0.905|0.905|0.0777817459305202|5002
+5|Big Bend Seagrasses Aquatic Preserve|2007|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.76|0.76|0.76|0.76||5002
+5|Big Bend Seagrasses Aquatic Preserve|2008|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
+5|Big Bend Seagrasses Aquatic Preserve|2008|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.9|3.9|3.9|3.9||5002
+5|Big Bend Seagrasses Aquatic Preserve|2008|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.69|0.69|0.69|0.69||5002
+5|Big Bend Seagrasses Aquatic Preserve|2008|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.68|0.68|0.68|0.68||5002
+5|Big Bend Seagrasses Aquatic Preserve|2009|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.5|2.5|2.5|2.5||5002
+5|Big Bend Seagrasses Aquatic Preserve|2009|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.64|1.7|1.17|1.17|0.74953318805774|5002
+5|Big Bend Seagrasses Aquatic Preserve|2009|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.84|0.84|0.84|0.84||5002
+5|Big Bend Seagrasses Aquatic Preserve|2009|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.71|0.77|0.74|0.74|0.0424264068711929|5002
+5|Big Bend Seagrasses Aquatic Preserve|2009|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.79|0.79|0.79|0.79||5002
+5|Big Bend Seagrasses Aquatic Preserve|2009|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.59|0.59|0.59|0.59||5002
+5|Big Bend Seagrasses Aquatic Preserve|2010|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.64|0.64|0.64|0.64||5002
+5|Big Bend Seagrasses Aquatic Preserve|2010|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.2|1.2|1.2|1.2||5002
+5|Big Bend Seagrasses Aquatic Preserve|2011|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2011|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.66|0.66|0.66|0.66||5002
+5|Big Bend Seagrasses Aquatic Preserve|2011|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.58|0.58|0.58|0.58||5002
+5|Big Bend Seagrasses Aquatic Preserve|2011|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.6|0.6|0.6|0.6||5002
+5|Big Bend Seagrasses Aquatic Preserve|2011|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.82|0.82|0.82|0.82||5002
+5|Big Bend Seagrasses Aquatic Preserve|2012|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.4|1.4|1.4|1.4||5002
+5|Big Bend Seagrasses Aquatic Preserve|2012|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
+5|Big Bend Seagrasses Aquatic Preserve|2012|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.67|0.67|0.67|0.67||5002
+5|Big Bend Seagrasses Aquatic Preserve|2012|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.1|2.1|2.1|2.1||5002
+5|Big Bend Seagrasses Aquatic Preserve|2012|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.55|0.55|0.55|0.55|0|5002
+5|Big Bend Seagrasses Aquatic Preserve|2012|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.55|0.89|0.72|0.72|0.240416305603426|5002
+5|Big Bend Seagrasses Aquatic Preserve|2012|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2013|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.69|0.69|0.69|0.69||5002
+5|Big Bend Seagrasses Aquatic Preserve|2013|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.62|0.62|0.62|0.62|0|5002
+5|Big Bend Seagrasses Aquatic Preserve|2013|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2013|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2013|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.65|0.65|0.65|0.65||5002
+5|Big Bend Seagrasses Aquatic Preserve|2013|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2013|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2013|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.55|0.73|0.64|0.64|0.127279220613579|5002
+5|Big Bend Seagrasses Aquatic Preserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.7|0.7|0.7|0.7||5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.55|0.55|0.55|0.55|0|5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.7|5.7|5.7|5.7||5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.55|19|1.55|5.6625|8.91173150029406|5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.1|16|5.8|6.52857142857143|4.60713732004097|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.55|0.98|0.87|0.8|0.223383079036887|5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.63|19|8.34|9.0775|9.80230032526379|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|0.4|9.1|0.92|1.535|2.23605335700752|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.74|0.78|0.76|0.76|0.0282842712474619|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.2|5.8|3.55|3.775|1.58403493227475|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.55|2.2|1.9|1.55|0.878919791562347|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.4|1.4|0.55|0.783333333333333|0.539289656245448|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.55|44|2.4|17.61|21.8912768015025|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.82|17|3|4.99857142857143|5.61158453134059|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.1|31|16.05|16.05|21.1424927574778|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0.45|35|10.25|13.83375|13.9717356908255|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.9|15|8.75|8.78333333333333|3.92602428248561|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|2.5|6.6|4.6|4.48|1.50565600320923|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.81|1.5|1.4|1.23666666666667|0.372871738448134|5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.55|23|2.58|7.1775|10.6953895830556|5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.6|22|0.735|6.0175|10.6554160719639|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.6|6.6|6.6|6.6||5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1.5|23|10.8|11.525|11.5831414852218|5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|18|33|31|27.3333333333333|8.14452781524708|540
+5|Big Bend Seagrasses Aquatic Preserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.7|15|8|7.77666666666667|6.12980151935335|5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.6|15|7.2|8.54|5.68225307426552|540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0|1|0.43|0.465|0.539969134920383|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0|0.1|0|0.025|0.05|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0|0|0|0||5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.82|1.2|1.03|1.02|0.165730705262081|5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1|2.86728|2.7768|2.21469333333333|1.05292762245718|477
+5|Big Bend Seagrasses Aquatic Preserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.68|1|0.82|0.833333333333333|0.160416125540213|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|1|0.5|0.5|0.707106781186548|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.4|20|8.5|9.35|10.1237344888139|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|2.3|1.65|1.65|0.919238815542512|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0|6.9|1|1.98|2.78424136884718|477, 514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.6|1.90883|1.2644|1.2594075|0.645910314898026|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0|0.9|0.6|0.464|0.437584277596899|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.4|1.6|1.5|1.5|0.14142135623731|5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0|2|1|1|1.4142135623731|514
+5|Big Bend Seagrasses Aquatic Preserve|2021|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.6|1.8|0.82|1.02857142857143|0.504659243827905|5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.82|0.82|0.82|0.82||5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0|13|0.77|2.75666666666667|5.07187013503566|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0|11|0.41|2.13666666666667|4.36532549378241|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.6|12|10.5|7.73666666666667|5.49356593358692|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||514
+5|Big Bend Seagrasses Aquatic Preserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.6|1.7|1.65|1.65|0.0707106781186547|5002
+5|Big Bend Seagrasses Aquatic Preserve|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.6|0.82|0.71|0.71|0.15556349186104|5002
+15|Florida Keys National Marine Sanctuary|2005|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
+15|Florida Keys National Marine Sanctuary|2005|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.96|0.96|0.96|0.96||5002
+15|Florida Keys National Marine Sanctuary|2005|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.85|0.85|0.85|0.85|0|5002
+15|Florida Keys National Marine Sanctuary|2005|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.96|0.96|0.96|0.96||5002
+15|Florida Keys National Marine Sanctuary|2005|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|0.85|0.85|0.85|0|5002
+15|Florida Keys National Marine Sanctuary|2005|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.85|1.7|0.96|1.17|0.462276973253049|5002
+15|Florida Keys National Marine Sanctuary|2006|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.85|1.9|1.375|1.375|0.742462120245875|5002
+15|Florida Keys National Marine Sanctuary|2006|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.85|0.85|0.85|0.85||5002
+15|Florida Keys National Marine Sanctuary|2006|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.85|2.1|0.85|1.15|0.51478150704935|5002
+15|Florida Keys National Marine Sanctuary|2006|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.85|0.85|0.85|0.85|0|5002
+15|Florida Keys National Marine Sanctuary|2010|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+15|Florida Keys National Marine Sanctuary|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.55|0.55|0.55|0.55|0|5002
+15|Florida Keys National Marine Sanctuary|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+15|Florida Keys National Marine Sanctuary|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.55|0.55|0.55|0.55|0|5002
+15|Florida Keys National Marine Sanctuary|2016|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.55|0.79|0.55|0.61|0.12|5002
+15|Florida Keys National Marine Sanctuary|2016|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.76|0.76|0.76|0.76||5002
+15|Florida Keys National Marine Sanctuary|2017|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.6|0.6|0.6|0.6||5002
+15|Florida Keys National Marine Sanctuary|2017|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+15|Florida Keys National Marine Sanctuary|2017|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+15|Florida Keys National Marine Sanctuary|2017|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.55|0.55|0.55|0.55||5002
+15|Florida Keys National Marine Sanctuary|2017|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.55|0.55|0.55|0.55|0|5002
+15|Florida Keys National Marine Sanctuary|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.19546|0.31274|0.247585|0.2508425|0.052530984110967|297
+15|Florida Keys National Marine Sanctuary|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.26062|0.79488|0.40396|0.489962|0.205951321238782|297
+15|Florida Keys National Marine Sanctuary|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.1694|1.21187|0.482145|0.58639|0.48629092629824|297
+15|Florida Keys National Marine Sanctuary|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.24681|0.3029|0.29449|0.2846725|0.0264577239824845|297
+15|Florida Keys National Marine Sanctuary|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0.33095|1.19479|0.476795|0.6562925|0.371319072410393|297
+15|Florida Keys National Marine Sanctuary|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.08821|1.08821|1.08821|1.08821||297
+15|Florida Keys National Marine Sanctuary|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.20194|0.40387|0.359|0.313322857142857|0.0806024281508288|297
+15|Florida Keys National Marine Sanctuary|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.20194|0.359|0.29449|0.28748|0.071155101480264|297
+15|Florida Keys National Marine Sanctuary|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.359|0.359|0.359|0.359||297
+15|Florida Keys National Marine Sanctuary|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||514
+15|Florida Keys National Marine Sanctuary|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.13767|0.67183|0.189985|0.270751666666667|0.20389812695723|297
+15|Florida Keys National Marine Sanctuary|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.11014|0.1597|0.13492|0.13492|0.0350442120756053|297
+15|Florida Keys National Marine Sanctuary|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.17622|2.67079|1.6245|1.49050333333333|1.25267162546029|297
+15|Florida Keys National Marine Sanctuary|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|32|0.136|9.71|0.3545|0.88921875|1.81559562313139|5002
+15|Florida Keys National Marine Sanctuary|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.12|0.38|0.37|0.29|0.147309198626562|297
+15|Florida Keys National Marine Sanctuary|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|25|0.249|2.35|0.699|0.77056|0.425694538372293|297, 5002
+15|Florida Keys National Marine Sanctuary|2020|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|0|1.68|0.575|0.6751|0.615591937352442|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.23|0.74|0.245|0.365|0.250399680510978|297
+15|Florida Keys National Marine Sanctuary|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|0.136|0.885|0.351125|0.433962857142857|0.259695140810219|297, 5002
+15|Florida Keys National Marine Sanctuary|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|0.174|0.69438|0.24|0.328566|0.173445712288971|297, 5002
+15|Florida Keys National Marine Sanctuary|2021|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|0.168|0.884|0.318|0.337941176470588|0.152817076347931|5002
+15|Florida Keys National Marine Sanctuary|2021|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.19|0.45|0.27|0.308|0.115844723660597|5002
+15|Florida Keys National Marine Sanctuary|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.18474|1.26457|0.250335|0.427783333333333|0.420038753862863|297
+15|Florida Keys National Marine Sanctuary|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0.19987|0.543|0.290705|0.32476125|0.12148592163439|297
+15|Florida Keys National Marine Sanctuary|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.6|1.6|1.6|1.6||5002
+15|Florida Keys National Marine Sanctuary|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0|1|0.31845|0.38465375|0.315159145645384|297, 514
+15|Florida Keys National Marine Sanctuary|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0|1.48155|0.58841|0.57737|0.521759292945511|297, 514
+15|Florida Keys National Marine Sanctuary|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|0.93|0.82|0.583333333333333|0.508166639335301|514, 5002
+15|Florida Keys National Marine Sanctuary|2022|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0|0.82|0.62|0.48|0.427551166528639|514, 5002
+15|Florida Keys National Marine Sanctuary|2022|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.7|0.89|0.795|0.795|0.134350288425444|5002
+15|Florida Keys National Marine Sanctuary|2022|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.6|0.7|0.65|0.65|0.05|5002
+19|Guana River Marsh Aquatic Preserve|2012|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.2|4.2|4.2|4.2||4054
+19|Guana River Marsh Aquatic Preserve|2013|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.5|4.5|4|4|0.707106781186548|4054
+19|Guana River Marsh Aquatic Preserve|2013|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.6|3.6|3.6|3.6||4054
+19|Guana River Marsh Aquatic Preserve|2013|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.5|4.9|4.2|4.2|0.989949493661167|4054
+19|Guana River Marsh Aquatic Preserve|2013|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.7|4.6|4.15|4.15|0.636396103067892|4054
+19|Guana River Marsh Aquatic Preserve|2013|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.8|2.8|2.8|2.8||4054
+19|Guana River Marsh Aquatic Preserve|2013|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.7|3.3|3.1|3.03333333333333|0.305505046330389|4054
+19|Guana River Marsh Aquatic Preserve|2013|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.9|5.1|4.5|4.5|0.848528137423857|4054
+19|Guana River Marsh Aquatic Preserve|2014|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.5|2.5|2.5|2.5||4054
+19|Guana River Marsh Aquatic Preserve|2014|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.5|6.5|6.5|6.5||4054
+19|Guana River Marsh Aquatic Preserve|2014|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|10|14|12|12|2.82842712474619|4054
+19|Guana River Marsh Aquatic Preserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|8.2|10|9.1|9.1|1.27279220613579|4054
+19|Guana River Marsh Aquatic Preserve|2014|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.1|4.1|4.1|4.1||4054
+19|Guana River Marsh Aquatic Preserve|2015|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.5|9.8|8.65|8.65|1.62634559672906|4054
+19|Guana River Marsh Aquatic Preserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.9|6.1|5.5|5.5|0.848528137423857|4054
+19|Guana River Marsh Aquatic Preserve|2015|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|11|13|12|12|1.4142135623731|4054
+19|Guana River Marsh Aquatic Preserve|2015|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|11|11|11|11||4054
+19|Guana River Marsh Aquatic Preserve|2015|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.5|3.5|3.5|3.5||4054
+19|Guana River Marsh Aquatic Preserve|2016|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.9|5.5|5.2|5.2|0.424264068711928|4054
+19|Guana River Marsh Aquatic Preserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|8.6|8.6|8.6|8.6||4054
+19|Guana River Marsh Aquatic Preserve|2016|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|12|15|15|14|1.73205080756888|4054
+19|Guana River Marsh Aquatic Preserve|2016|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.2|10|8.6|8.6|1.97989898732233|4054
+19|Guana River Marsh Aquatic Preserve|2016|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|7.1|7.1|7.1|7.1||4054
+19|Guana River Marsh Aquatic Preserve|2016|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.6|3.6|3.6|3.6||4054
+19|Guana River Marsh Aquatic Preserve|2017|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|4.4|5.5|5.3|5.06666666666667|0.585946527708231|4054
+19|Guana River Marsh Aquatic Preserve|2017|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|5|6.4|6.3|5.9|0.781024967590666|4054
+19|Guana River Marsh Aquatic Preserve|2017|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.6|3.6|3.6|3.6||4054
+19|Guana River Marsh Aquatic Preserve|2017|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|11.1|45.1|13.7|23.96|15.7768184371882|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2017|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.8|5.6|5.2|5.2|0.565685424949238|4054
+19|Guana River Marsh Aquatic Preserve|2017|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|74|74|74|74||5014
+19|Guana River Marsh Aquatic Preserve|2017|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|52|88|65.5|67.75|15.5857841210081|5014
+19|Guana River Marsh Aquatic Preserve|2017|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|23.6|23.6|23.6|23.6||5014
+19|Guana River Marsh Aquatic Preserve|2017|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.3|2.3|2.3|2.3||4054
+19|Guana River Marsh Aquatic Preserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|4.2|22.1|4.3|10.2|10.3058235963944|5014
+19|Guana River Marsh Aquatic Preserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.7|5.4|4.05|4.05|1.90918830920368|4054
+19|Guana River Marsh Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.7|11|7.35|7.35|5.1618795026618|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.1|5.1|5.1|5.1||4054
+19|Guana River Marsh Aquatic Preserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.7|6.7|6.7|6.7||4054
+19|Guana River Marsh Aquatic Preserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|4.4|82|5.8|24.5|38.3390140718303|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|18.8|18.8|18.8|18.8||5014
+19|Guana River Marsh Aquatic Preserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.7|20|11.85|11.85|11.5258405333407|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|57|57|57|57||5014
+19|Guana River Marsh Aquatic Preserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|12.9|16.1|14.5|14.5|2.26274169979695|5014
+19|Guana River Marsh Aquatic Preserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.4|1.8|1.6|1.6|0.282842712474619|5014
+19|Guana River Marsh Aquatic Preserve|2019|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|3.7|17.5|10.05|10.2666666666667|5.11103381584065|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|2.4|27|3.6|10.68|10.9312396369305|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|11.8|13.6|12.7|12.7|1.27279220613578|5014
+19|Guana River Marsh Aquatic Preserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.8|3.8|3.8|3.8||5014
+19|Guana River Marsh Aquatic Preserve|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3|30.3|11|13.28|10.2238446780064|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|11|30|14.5|17.5|8.58292879305582|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2019|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|12|12|12|12||4054
+19|Guana River Marsh Aquatic Preserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|5.9|32.1|27|21.6666666666667|13.8904043617648|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2019|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.2|15.9|9.55|9.55|8.98025612106915|5014
+19|Guana River Marsh Aquatic Preserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.1|2.9|2.5|2.5|0.565685424949238|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2020|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.8|4.2|4|4|0.282842712474619|4054
+19|Guana River Marsh Aquatic Preserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|4.7|6.9|6.2|6|0.941629792788369|4054, 5002
+19|Guana River Marsh Aquatic Preserve|2020|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|46|46|46|46||5014
+19|Guana River Marsh Aquatic Preserve|2020|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.9|5.9|5.9|5.9||5014
+19|Guana River Marsh Aquatic Preserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|19.1|22|20.55|20.55|2.05060966544099|5014
+19|Guana River Marsh Aquatic Preserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|7.2|11|8.75|8.925|1.57770930993852|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|7.6|11|8.9|9.1|1.58745078663875|5002, 5014
+19|Guana River Marsh Aquatic Preserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.5|35.9|13.2|15.5666666666667|13.5331691287247|4054, 5014
+19|Guana River Marsh Aquatic Preserve|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|14|19.4|16.7|16.7|3.81837661840736|5014
+19|Guana River Marsh Aquatic Preserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.7|7.5|5.1|5.35|1.85741756210067|5014
+19|Guana River Marsh Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|48|48|48|48||5014
+19|Guana River Marsh Aquatic Preserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|4.6|31|13.6|16.4|13.4208792558461|5014
+19|Guana River Marsh Aquatic Preserve|2021|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|20|30|25|25|5.22812904711937|5014
+19|Guana River Marsh Aquatic Preserve|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|48.7|48.7|48.7|48.7||5014
+19|Guana River Marsh Aquatic Preserve|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|20.4|54|36.45|36.825|15.0449050069007|5014
+19|Guana River Marsh Aquatic Preserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|6|79|26.6|38.3|30.5690039091888|5002, 5014
+19|Guana River Marsh Aquatic Preserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.6|57|32.3|32.3|34.9310749906155|5002, 5014
+19|Guana River Marsh Aquatic Preserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4|4|4|4||5002
+19|Guana River Marsh Aquatic Preserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|6|22|8.5|12.1666666666667|8.60716755578357|5014
+19|Guana River Marsh Aquatic Preserve|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.1|11|3.2|5.43333333333333|4.85214729097678|5002, 5014
+19|Guana River Marsh Aquatic Preserve|2022|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.2|3.2|3.2|3.2||5014
+19|Guana River Marsh Aquatic Preserve|2022|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|11|11|11|11||5014
+19|Guana River Marsh Aquatic Preserve|2022|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|5|15|10|10|7.07106781186548|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2012|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|4.2|9.7|4.5|5.48333333333333|2.13580585884267|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|1.4|4.9|4.4|3.86666666666667|1.31554804802663|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.2|6.2|6.2|6.2||4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.3|3.5|2.9|2.9|0.848528137423857|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.5|10|8.6|7.2|2.82931087015902|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3|5.3|3.9|4.025|0.981070843517429|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.4|9.9|4.6|5.6|2.67301328092473|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3.4|13|5.4|7.26666666666667|5.06491197685936|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.8|5.3|4|4|0.975704873412037|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.7|3.9|3.2|3.25|0.5|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|2.2|5.1|3.4|3.475|0.933120724083591|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.1|2.7|2.5|2.43333333333333|0.305505046330389|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.9|2.6|2.25|2.25|0.494974746830583|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.55|2|0.75|0.967142857142857|0.512890965856431|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|5.2|8.3|6.4|6.34285714285714|1.00640803994063|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|11|14|14|13|1.73205080756888|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|9.6|14|11.5|11.65|2.18097837372741|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|10|17|14.5|13.8333333333333|2.78687399547713|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.3|21|8.65|10.4|7.98623816324056|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.77|6.7|4.1|3.85666666666667|2.9724793242903|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4|4|4|4||4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.51|3.5|0.55|1.152|1.31359049935663|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.55|3.9|1.08|1.465|1.27036608896806|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1.8|9.8|5.4|5.6|3.69594372251527|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|6.1|11|8.55|8.55|3.46482322781408|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|9|48|28.5|28.5|27.5771644662754|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|11|25|19|17.8|5.76194411635517|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|11|31|23|22|8.40634680861233|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2|3.5|2.75|2.75|1.06066017177982|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.4|3.9|2.9|3.06666666666667|0.763762615825973|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.6|6.6|5.1|5.1|2.12132034355964|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3.1|5.4|4.5|4.33333333333333|1.15902257671425|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.91|5.2|4.8|3.742|1.79828251395602|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.7|4.9|2.3|2.96666666666667|1.70098010962308|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.1|5.1|5.1|5.1||4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|4|23|11.65|12.575|9.39090872422188|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.7|11|6.35|6.35|6.57609306503489|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|15|19|17|17|2.82842712474619|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|6.7|15|12|10.66|3.44499637155107|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|7.2|20|15|14.5333333333333|5.18716364371384|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|14|14|14|14||4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.9|5.5|4.75|4.475|1.19547758936195|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.9|8.2|2.8|3.8|2.2956480566498|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.3|5.7|4.6|4.3|1.43294568401365|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|3.3|6.9|5|5.01666666666667|1.20733867107232|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|5|20|7.7|9.29090909090909|5.11066620812875|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|8.1|15|13|12.2714285714286|2.82649033591973|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|13|17|15|15|1.63299316185545|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|2.2|45.1|13.2|16.5727272727273|15.0221896479236|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|3.8|27|5.6|11.6285714285714|9.29976958239903|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.2|74|3.65|20.875|35.4357046870338|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0.8|88|5|31.6666666666667|35.5564340169258|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.4|23.6|3.7|6.48333333333333|8.50821171966628|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0.75|3.5|1.8|1.80625|0.943563723338281|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.9|22.1|4.2|7.02|8.49276162387712|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.59|2.7|1.3|1.4725|0.887895451803496|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|5.6|11|8.3|8.3|3.81837661840736|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.9|7|4.3|4.625|1.83552898823927|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.4|10.4|5.9|5.9|6.36396103067893|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|2.4|8.9|6.9|6.31428571428571|2.50960061326404|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|4.4|82|7.2|19.1714285714286|28.0317507055669|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|0.88|18.8|1.3|3.40625|6.22294128321051|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|8.5|20|14.25|14.25|8.1317279836453|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|6.1|57|11.45|19.2|19.5807047881326|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2|16.1|12.9|10.3333333333333|7.39211291400053|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.4|2.9|1.8|2.03333333333333|0.776745346515403|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|9.5|14.3|10.6|11.4666666666667|2.51462389500564|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|0.55|27|2.9|5.75636363636364|8.40671192884266|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.7|13.6|5.8|6.86|3.94119271287259|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.2|123|4.2|33.65|59.5694272816742|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|4.5|11|5.05|6.4|3.09946231896222|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3|30.3|11|13.28|10.2238446780064|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|4.8|30|11|12.7727272727273|7.34535103437418|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|14|14|14|14||4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.3|8.8|6.55|6.55|3.18198051533946|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|4.3|32.1|5.8|13.4333333333333|12.6002645474874|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.8|15.9|5.6|7.475|5.88182227998546|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.4|6.5|4|4.31666666666667|1.77923204407595|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2.5|3.8|3.35|3.25|0.613731754650732|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|2.8|29|5.5|7.47777777777778|8.20651841187507|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.1|40|3.4|11.1|16.1867229543228|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.9|5.9|5.9|5.9||5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|19|22|19.1|20.0333333333333|1.70391705588427|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|6.1|11|7.2|8.04|1.96545160204977|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|7.6|29|11|16.68|10.0085963051769|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|8.3|46.9|24.05|26.2166666666667|13.5991788967815|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|6|19.4|12.7|12.7|9.47523086789974|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|5.5|5.9|5.7|5.7|0.282842712474619|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|1.3|7.5|3.8|4.01666666666667|2.51747227723895|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.82|48|4.2|17.6733333333333|26.3179811789076|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|2.4|31|3.1|8.58571428571429|10.6555820381352|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.5|30|11.85|14.6202783333333|13.5601149576549|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|23|23|23|23||5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.1|48.7|27.9|27.9|29.4156420973604|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.6|5.6|5.6|5.6||5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|20.4|54|28.9|33.86|14.6190970993424|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|6|79|27.5|35.6|26.3161547343072|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|4.1|57|4.95|13.8166666666667|21.1927739257197|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.5|5.7|4.5|4.55|0.988264472024906|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|6|22|8.5|12.1666666666667|8.60716755578357|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|2|11|2.65|4.575|4.31769614493656|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.2|4.3|3.7|3.74|0.502991053598372|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|11|11|11|11||5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|5|15|12|10.6666666666667|5.13160143944688|5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9.5|9.5|9.5|9.5||5002
-25|Lemon Bay Aquatic Preserve|2001|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2002|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2004|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|513
-25|Lemon Bay Aquatic Preserve|2004|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|1|1|1|0|513
-25|Lemon Bay Aquatic Preserve|2004|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2005|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2005|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2005|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2006|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3|3|3|3||513
-25|Lemon Bay Aquatic Preserve|2006|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||513
-25|Lemon Bay Aquatic Preserve|2006|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||513
-25|Lemon Bay Aquatic Preserve|2007|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2007|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2008|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-25|Lemon Bay Aquatic Preserve|2010|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.8|4.8|4.8|4.8||476
-25|Lemon Bay Aquatic Preserve|2011|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.8|6.8|6.8|6.8||476
-25|Lemon Bay Aquatic Preserve|2016|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.9|3.9|3.9|3.9||476
-25|Lemon Bay Aquatic Preserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.4|3.4|3.4|3.4||476
-25|Lemon Bay Aquatic Preserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.2|6.2|6.2|6.2||476
-25|Lemon Bay Aquatic Preserve|2020|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|8.1|10|9.05|9.05|1.34350288425444|476
-25|Lemon Bay Aquatic Preserve|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.8|1.8|1.8|1.8||476
-25|Lemon Bay Aquatic Preserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.9|2.9|2.9|2.9||476
-25|Lemon Bay Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.4|4.7|3.05|3.05|2.33345237791561|476
-25|Lemon Bay Aquatic Preserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.4|5.6|4.7|4.23333333333333|1.65025250593154|476
-25|Lemon Bay Aquatic Preserve|2021|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.5|5.2|2.3|3|1.94679223339318|476
-25|Lemon Bay Aquatic Preserve|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.6|7.6|5.6|5.6|2.82842712474619|476
-25|Lemon Bay Aquatic Preserve|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9.7|9.7|9.7|9.7||476
-25|Lemon Bay Aquatic Preserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|8.5|22|15.25|15.25|9.54594154601839|476
-25|Lemon Bay Aquatic Preserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|8.2|8.2|8.2|8.2||476
-25|Lemon Bay Aquatic Preserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.1|11|6.05|6.05|7.00035713374682|476
-25|Lemon Bay Aquatic Preserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.1|1.1|1.1|1.1|0|476
-25|Lemon Bay Aquatic Preserve|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.1|2.6|2.4|2.03333333333333|0.814452781524708|476
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.4|2.4|2.4|2.4||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.3|3.3|3.3|3.3||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.5|1.5|1.5|1.5||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.5|3.5|3.5|3.5||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.1|2.1|2.1|2.1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.9|12.7|7.3|7.3|7.63675323681471|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3|3|3|3||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.3|1.3|1.3|1.3||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.8|3.8|3.8|3.8||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.1|2.1|2.1|2.1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.4|2.4|2.4|2.4||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.3|11.2|6.25|6.25|7.00035713374682|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|2.9|1.95|1.95|1.34350288425444|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.7|3.7|3.7|3.7||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.3|4.3|4.3|4.3||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.7|4.3|3|3|1.83847763108502|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|8.1|8.1|8.1|8.1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.1|1.1|1.1|1.1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.1|4.1|4.1|4.1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.5|2.5|2.5|2.5||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.6|1.6|1.6|1.6||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9.9|9.9|9.9|9.9||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.7|2.7|2.7|2.7||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2011|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.5|2.5|2.5|2.5||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2011|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.8|3.8|3.8|3.8||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2011|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.6|4.6|4.6|4.6||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2011|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.6|2.6|2.6|2.6||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.5|2.5|2.5|2.5||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.1|1.1|1.1|1.1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.8|1.8|1.8|1.8||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.9|4.9|4.9|4.9||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.7|1.7|1.7|1.7||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3|3|3|3||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.5|1.5|1.5|1.5||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|9|10|9.5|9.5|0.707106781186548|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.8|3.8|3.8|3.8||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4|12|8|8|5.65685424949238|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|7|7|7|7||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7|9|8|8|1.4142135623731|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7|9|8|8|1.4142135623731|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.5|2.5|2.5|2.5||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.2|12|4|6.06666666666667|5.21664004253057|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.6|4.6|4.6|4.6||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3|3|3|3||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.1|3.1|3.1|3.1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.6|12|6|6.53333333333333|5.22047252012051|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.1|2.1|2.1|2.1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|5|7|6|6|1.4142135623731|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|8|16|12|12|5.65685424949238|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.8|3.8|3.8|3.8||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.8|7|4.4|4.4|3.67695526217005|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.8|1.8|1.8|1.8||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3|7|5|5|2.82842712474619|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.8|5.5|5.15|5.15|0.494974746830583|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6|6|6|6||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.6|9.6|6.6|6.6|4.24264068711929|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|11|20|15.5|15.5|6.36396103067893|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2|8.5|5.25|5.25|4.59619407771256|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4|10|7|7|4.24264068711929|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.1|9.8|8.45|8.45|1.90918830920368|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|6|11|8.5|8.5|3.53553390593274|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.8|5.8|5.8|5.8||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|6|12|9|9|4.24264068711929|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.1|8|5.55|5.55|3.46482322781408|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2|2|2|2||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|5.9|5.9|5.9|5.9||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.6|12|4|5.86666666666667|5.44548742844324|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|5.7|23.5|14.6|14.6|12.5865007051205|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|23|27|25|25|2.82842712474619|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|8.8|11.2|10|10|1.69705627484771|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|11|29|20|20|12.7279220613579|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|26.7|26.7|26.7|26.7||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2|7|4.5|4.5|3.53553390593274|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.62|1.62|1.62|1.62||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.4|2.4|2.4|2.4||5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1|4.6|2.8|2.8|2.54558441227157|5002
-28|Matlacha Pass Aquatic Preserve|2007|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.2|4.2|4.2|4.2||476
-28|Matlacha Pass Aquatic Preserve|2008|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.6|3.6|3.6|3.6||476
-28|Matlacha Pass Aquatic Preserve|2008|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.7|3.7|3.7|3.7|0|476
-28|Matlacha Pass Aquatic Preserve|2010|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.5|4.5|4.5|4.5||476
-28|Matlacha Pass Aquatic Preserve|2013|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1|1|1|1||513
-28|Matlacha Pass Aquatic Preserve|2014|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.4|2.4|2.4|2.4||476
-28|Matlacha Pass Aquatic Preserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.57|6.01|5.29|5.29|1.01823376490863|5002
-28|Matlacha Pass Aquatic Preserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.54|3.6|3.07|3.07|0.74953318805774|5002
-28|Matlacha Pass Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.5|3.63|3.065|3.065|0.799030662740799|5002
-28|Matlacha Pass Aquatic Preserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.74|1.04|0.89|0.89|0.212132034355964|5002
-28|Matlacha Pass Aquatic Preserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.89|2.16|1.13|1.39333333333333|0.674709814167049|5002
-28|Matlacha Pass Aquatic Preserve|2018|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.82|3.56|3.54|2.97333333333333|0.99886602371556|5002
-28|Matlacha Pass Aquatic Preserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|4.49|6.82|6.13|5.81333333333333|1.196843069635|5002
-28|Matlacha Pass Aquatic Preserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3.82|9.13|8.6|7.18333333333333|2.92476209858739|5002
-28|Matlacha Pass Aquatic Preserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|7.47|13.02|10.245|10.245|3.92444263558534|5002
-28|Matlacha Pass Aquatic Preserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|9.35|11.53|10.44|10.44|1.54149278298667|5002
-28|Matlacha Pass Aquatic Preserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|6.7|9.11|7.905|7.905|1.70412734265958|5002
-28|Matlacha Pass Aquatic Preserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.61|3.48|3.045|3.045|0.615182899632297|5002
-28|Matlacha Pass Aquatic Preserve|2019|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.59|2.75|2.41|2.25|0.596322060635023|5002
-28|Matlacha Pass Aquatic Preserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.52|2.31|1.93|1.92|0.395094925302768|5002
-28|Matlacha Pass Aquatic Preserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.25|5.04|1.48|2.59|2.12487646699755|5002
-28|Matlacha Pass Aquatic Preserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.74|3.41|3.05|2.4|1.44882711183909|5002
-28|Matlacha Pass Aquatic Preserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.6|4.47|1.68|2.58333333333333|1.63439081413637|5002
-28|Matlacha Pass Aquatic Preserve|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3.45|7.53|3.99|4.99|2.21621298615453|5002
-28|Matlacha Pass Aquatic Preserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|4.95|5.74|5.33|5.34|0.395094925302768|5002
-28|Matlacha Pass Aquatic Preserve|2019|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3.29|12.02|6.06|7.12333333333333|4.46107983938119|5002
-28|Matlacha Pass Aquatic Preserve|2019|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|6.22|7.88|6.8|6.96666666666667|0.842456724902433|5002
-28|Matlacha Pass Aquatic Preserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.52|4.78|3.11|3.47|1.17222011584856|5002
-28|Matlacha Pass Aquatic Preserve|2019|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3.29|10.89|3.45|5.87666666666667|4.34241100465321|5002
-28|Matlacha Pass Aquatic Preserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.5|5.66|5.06|4.40666666666667|1.67825305998033|5002
-28|Matlacha Pass Aquatic Preserve|2020|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.65|3.67|3.59|3.30333333333333|0.567215420570821|5002
-28|Matlacha Pass Aquatic Preserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.35|2.16|1.77|1.76|0.405092582010582|5002
-28|Matlacha Pass Aquatic Preserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.03|1.9|1.69|1.54|0.453982378512647|5002
-28|Matlacha Pass Aquatic Preserve|2020|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.77|4.34|1.86|2.32333333333333|1.82954456992262|5002
-28|Matlacha Pass Aquatic Preserve|2020|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.84|3.27|3.055|3.055|0.304055915910216|5002
-28|Matlacha Pass Aquatic Preserve|2020|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.12|4.31|3.715|3.715|0.841457069611991|5002
-28|Matlacha Pass Aquatic Preserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.74|8.24|6.15|6.022|2.25113749024799|5002
-28|Matlacha Pass Aquatic Preserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.31|7.56|7.22|6.574|1.83253376503681|5002
-28|Matlacha Pass Aquatic Preserve|2020|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.24|13.05|12.48|10.86|4.26923295218239|5002
-28|Matlacha Pass Aquatic Preserve|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.49|2.69|2.14|2.23|0.496739368280792|5002
-28|Matlacha Pass Aquatic Preserve|2021|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.04|3.99|1.45|2.384|1.47559479532831|5002
-28|Matlacha Pass Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1.2|3.33|2.265|2.265|1.2297560733739|5002
-28|Matlacha Pass Aquatic Preserve|2021|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.07|5.17|4.21|3.966|1.68857336233875|5002
-28|Matlacha Pass Aquatic Preserve|2021|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1|1.42|1.26|1.272|0.171813852759316|5002
-28|Matlacha Pass Aquatic Preserve|2021|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.81|3.4|1.25|1.82|1.38589321377947|5002
-28|Matlacha Pass Aquatic Preserve|2021|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.13|3.99|1.26|2.326|1.51994407791866|5002
-28|Matlacha Pass Aquatic Preserve|2021|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|2.61|22|8.4|8.73727272727273|7.14975956366239|476, 5002
-28|Matlacha Pass Aquatic Preserve|2021|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|21|3.74|26|15|15.2952380952381|6.16089491798685|476, 5002
-28|Matlacha Pass Aquatic Preserve|2021|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|3.01|4.25|4.14|3.732|0.660620920044166|5002
-28|Matlacha Pass Aquatic Preserve|2021|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|1.03|19.48|9.4|9.90764705882353|4.67686798163547|476, 5002
-28|Matlacha Pass Aquatic Preserve|2021|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|1.8|8.1|5.97|5.31272727272727|2.25134222591365|476, 5002
-28|Matlacha Pass Aquatic Preserve|2021|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|0.53|4.5|2.9|2.81923076923077|1.09142461595279|476, 5002
-28|Matlacha Pass Aquatic Preserve|2022|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.5|6|1.5|2.246|2.26684362054377|476, 5002
-28|Matlacha Pass Aquatic Preserve|2022|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0.98|3.7|1.77|2.22444444444444|1.07312756826846|476, 5002
-28|Matlacha Pass Aquatic Preserve|2022|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.28|1.9|1.46|1.54666666666667|0.318956632370818|5002
-28|Matlacha Pass Aquatic Preserve|2022|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.9|2.04|1.8|1.58|0.600999168052669|5002
-28|Matlacha Pass Aquatic Preserve|2022|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|0.5|4.4|1.93|2.06555555555556|1.49724005349102|476, 5002
-28|Matlacha Pass Aquatic Preserve|2022|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|1.3|13|2.3|4.68545454545455|4.33100765096614|476, 5002
-33|Pellicer Creek Aquatic Preserve|2012|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|3.5|12|4.5|6.2|3.3391615714128|4054
-33|Pellicer Creek Aquatic Preserve|2013|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|1|4.9|3.1|3.09285714285714|1.08377139635646|4054
-33|Pellicer Creek Aquatic Preserve|2013|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|4.9|10|6.7|7.18461538461539|1.74825920744329|4054
-33|Pellicer Creek Aquatic Preserve|2013|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|1.4|5.2|3.6|3.24705882352941|1.15440333455146|4054
-33|Pellicer Creek Aquatic Preserve|2013|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|6.4|14|8.6|9.06|2.36123454392582|4054
-33|Pellicer Creek Aquatic Preserve|2013|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|2.5|8|4.1|4.56428571428571|1.70907403758119|4054
-33|Pellicer Creek Aquatic Preserve|2013|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|5|12|7.6|8.25555555555556|2.07190197108304|4054
-33|Pellicer Creek Aquatic Preserve|2013|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.77|1.3|1.2|1.06|0.220227155455452|4054
-33|Pellicer Creek Aquatic Preserve|2013|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|1.6|2|1.7|1.76666666666667|0.208166599946613|4054
-33|Pellicer Creek Aquatic Preserve|2013|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|0.55|8.2|5.5|5.18636363636364|2.20795050998555|4054
-33|Pellicer Creek Aquatic Preserve|2013|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|18|1.5|6.2|4.45|4.17222222222222|1.35247292266276|4054
-33|Pellicer Creek Aquatic Preserve|2013|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|2.3|7.8|4.8|5.12222222222222|1.96963053501017|4054
-33|Pellicer Creek Aquatic Preserve|2013|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|1.4|4.9|3.05|3.17857142857143|1.25586535990042|4054
-33|Pellicer Creek Aquatic Preserve|2014|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|0.73|3.3|1.7|1.96384615384615|0.723182070914585|4054
-33|Pellicer Creek Aquatic Preserve|2014|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|1.4|3.1|1.9|2.06666666666667|0.671317113342619|4054
-33|Pellicer Creek Aquatic Preserve|2014|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|0.55|2.3|1|1.21307692307692|0.658120868019756|4054
-33|Pellicer Creek Aquatic Preserve|2014|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|2|5.7|3.5|3.56923076923077|0.973297329857476|4054
-33|Pellicer Creek Aquatic Preserve|2014|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|2.7|11|7.9|7.07777777777778|2.45345561289469|4054
-33|Pellicer Creek Aquatic Preserve|2014|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|7.3|23|13|13.3555555555556|4.343993298542|4054
-33|Pellicer Creek Aquatic Preserve|2014|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|9.6|18|13|13.5777777777778|3.53757606906826|4054
-33|Pellicer Creek Aquatic Preserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|11|38|17|19.2105263157895|7.4280171376008|4054
-33|Pellicer Creek Aquatic Preserve|2014|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|4.3|15|8.7|8.86923076923077|3.14811706034592|4054
-33|Pellicer Creek Aquatic Preserve|2014|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|2.2|9.6|6.7|6.36666666666667|2.14067746286076|4054
-33|Pellicer Creek Aquatic Preserve|2014|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|19|3.1|14|7.4|8.01578947368421|3.08765699697913|4054
-33|Pellicer Creek Aquatic Preserve|2014|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|0.51|7.5|2.3|3.19181818181818|2.6879427753649|4054
-33|Pellicer Creek Aquatic Preserve|2015|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|0.4|3.9|0.76|1.31357142857143|1.09278477818305|4054
-33|Pellicer Creek Aquatic Preserve|2015|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|1.2|5.7|2|3.22857142857143|2.08703480702031|4054
-33|Pellicer Creek Aquatic Preserve|2015|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|5.5|12|12|10.375|3.25|4054
-33|Pellicer Creek Aquatic Preserve|2015|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.1|16|9.7|9.06|5.3181763791736|4054
-33|Pellicer Creek Aquatic Preserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|5.1|19|11|11.5933333333333|3.85773187742425|4054
-33|Pellicer Creek Aquatic Preserve|2015|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|19|53|31|32|13|4054
-33|Pellicer Creek Aquatic Preserve|2015|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|14|33|22|22.5294117647059|4.90048016855011|4054
-33|Pellicer Creek Aquatic Preserve|2015|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|9.7|57|36|33.7909090909091|13.4759381525335|4054
-33|Pellicer Creek Aquatic Preserve|2015|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|2|7.1|3.4|3.71428571428571|1.71408729010376|4054
-33|Pellicer Creek Aquatic Preserve|2015|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|1.5|6.2|3|3.22857142857143|1.18219390016292|4054
-33|Pellicer Creek Aquatic Preserve|2015|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|4|9.2|6.7|6.91818181818182|1.62161535625325|4054
-33|Pellicer Creek Aquatic Preserve|2015|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|3.2|5|4.25|4.2|0.546316335525068|4054
-33|Pellicer Creek Aquatic Preserve|2016|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|0.95|9.7|5.2|5.91923076923077|3.01133542230702|4054
-33|Pellicer Creek Aquatic Preserve|2016|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|0.94|4|1.8|1.94571428571429|0.746908647340843|4054
-33|Pellicer Creek Aquatic Preserve|2016|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|2.2|6.8|3.2|3.6|1.36075959179668|4054
-33|Pellicer Creek Aquatic Preserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|7.6|27|14|14.1941176470588|5.09429467495689|4054
-33|Pellicer Creek Aquatic Preserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|9.1|14|11.5|11.4166666666667|1.9559311507992|4054
-33|Pellicer Creek Aquatic Preserve|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|6|21|9.7|12.6166666666667|5.60662486922769|4054
-33|Pellicer Creek Aquatic Preserve|2016|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|21|7.8|18|14|12.9761904761905|2.8611020187866|4054
-33|Pellicer Creek Aquatic Preserve|2016|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|22|15|25|19|18.6363636363636|3.06354066160079|4054
-33|Pellicer Creek Aquatic Preserve|2016|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|2.4|21|14|13.2916666666667|4.67633468227051|4054
-33|Pellicer Creek Aquatic Preserve|2016|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|5.2|8.7|5.95|6.23|1.06254411673116|4054
-33|Pellicer Creek Aquatic Preserve|2016|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|2.6|8.2|5.2|5.18461538461539|1.68465928990907|4054
-33|Pellicer Creek Aquatic Preserve|2016|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|1.6|5.7|4.5|3.47777777777778|1.63919017946193|4054
-33|Pellicer Creek Aquatic Preserve|2017|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|2.2|6.9|3.2|3.63333333333333|1.16782255664528|4054
-33|Pellicer Creek Aquatic Preserve|2017|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|4.9|18|9.4|9.51428571428571|4.19699438941273|4054
-33|Pellicer Creek Aquatic Preserve|2017|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|6.7|17|12|11.975|3.63111553107306|4054
-33|Pellicer Creek Aquatic Preserve|2017|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|7|14|12|11.2333333333333|2.36008474424119|4054
-33|Pellicer Creek Aquatic Preserve|2017|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|9.7|20|15|15.0777777777778|3.27939696353528|4054
-33|Pellicer Creek Aquatic Preserve|2017|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|13|38|18|21.375|9.53096457418061|4054
-33|Pellicer Creek Aquatic Preserve|2017|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|16|31.7|21.4|22.6066666666667|5.71420118985106|4054
-33|Pellicer Creek Aquatic Preserve|2017|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|8.8|32|19|19.9076923076923|6.10552503044873|4054
-33|Pellicer Creek Aquatic Preserve|2017|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|2.4|3.2|2.7|2.775|0.291547594742265|4054
-33|Pellicer Creek Aquatic Preserve|2017|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|12|0.55|3.5|1.15|1.66666666666667|1.01987818642793|4054
-33|Pellicer Creek Aquatic Preserve|2017|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.5|6.8|4.45|4.8|1.41185457230316|4054
-33|Pellicer Creek Aquatic Preserve|2017|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|0.55|1.5|0.92|0.920588235294118|0.269825651769696|4054
-33|Pellicer Creek Aquatic Preserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|0.51|3.1|0.725|1.21|0.920501535535426|4054
-33|Pellicer Creek Aquatic Preserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|0.56|3.8|1.595|1.919|1.24069380231833|4054
-33|Pellicer Creek Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|11|4.2|7.8|5.9|6.01818181818182|1.17202233922241|4054
-33|Pellicer Creek Aquatic Preserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|17|1.6|13|7.1|7.24705882352941|3.76498964923192|4054
-33|Pellicer Creek Aquatic Preserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.2|11|3.8|5.08333333333333|3.34210512501726|4054
-33|Pellicer Creek Aquatic Preserve|2018|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|15|1.9|11|4.9|5.84|2.76245232667332|4054
-33|Pellicer Creek Aquatic Preserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|10|4.9|16|11.5|10.55|4.04097073046124|4054
-33|Pellicer Creek Aquatic Preserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|0.65|4.9|1.1|1.47285714285714|1.06884141855655|4054
-33|Pellicer Creek Aquatic Preserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|4.4|28|9.65|10.6285714285714|5.61638106468358|4054
-33|Pellicer Creek Aquatic Preserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|4.4|14|9.5|9.31111111111111|3.22546292973755|4054
-33|Pellicer Creek Aquatic Preserve|2018|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.4|8.3|7.3|6.14|2.76640561017361|4054
-33|Pellicer Creek Aquatic Preserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|25|1.1|4.9|3.1|3.032|1.18558002682231|4054
-33|Pellicer Creek Aquatic Preserve|2019|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|21|1.7|7.4|2.9|3.49047619047619|1.69555441136661|4054
-33|Pellicer Creek Aquatic Preserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.62|3.1|0.84|1.42571428571429|1.14815587128312|4054
-33|Pellicer Creek Aquatic Preserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|2.7|12|4.75|5.4125|2.90243124687858|4054
-33|Pellicer Creek Aquatic Preserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|3.6|12|6.95|7.075|2.84391581149252|4054
-33|Pellicer Creek Aquatic Preserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|7.2|11|9|9.12|1.41138230115019|4054
-33|Pellicer Creek Aquatic Preserve|2019|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|6|31|12|13.48125|5.70838199492641|4054
-33|Pellicer Creek Aquatic Preserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|11|77|24.5|35.75|27.4733637235362|4054
-33|Pellicer Creek Aquatic Preserve|2019|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|3|8.5|6.15|5.99285714285714|1.92771857414377|4054
-33|Pellicer Creek Aquatic Preserve|2019|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|16|4.5|14|9.15|9.3|3.09257174532783|4054
-33|Pellicer Creek Aquatic Preserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|9|4.7|9.7|6.6|7.08888888888889|1.79822443290906|4054
-33|Pellicer Creek Aquatic Preserve|2019|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|2.7|7|4.3|4.72857142857143|1.78392291099726|4054
-33|Pellicer Creek Aquatic Preserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|2.4|6.9|5.2|4.86923076923077|1.39903813111283|4054
-33|Pellicer Creek Aquatic Preserve|2020|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|2.1|6.7|3|3.54615384615385|1.37877686411748|4054
-33|Pellicer Creek Aquatic Preserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.8|4.7|4.05|3.96666666666667|0.809114742583935|4054
-33|Pellicer Creek Aquatic Preserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|2.3|5.6|3.9|3.88571428571429|0.91723425651176|4054, 5002
-33|Pellicer Creek Aquatic Preserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|8|6.2|18|10.1|10.9|3.76145868361882|4054, 5002
-33|Pellicer Creek Aquatic Preserve|2020|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|14|7.2|17|11|11.2571428571429|2.90720968144166|4054
-33|Pellicer Creek Aquatic Preserve|2020|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|13|1.6|2.8|1.9|2.02307692307692|0.467535820648796|4054
-33|Pellicer Creek Aquatic Preserve|2020|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.5|1.5|1.5|1.5||5002
-33|Pellicer Creek Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|0.82|0.86|0.84|0.84|0.0282842712474619|5002
+33|Pellicer Creek Aquatic Preserve|2012|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|4|5.7|4.8|4.825|0.805708797684788|4054
+33|Pellicer Creek Aquatic Preserve|2013|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|1.4|4.9|4.3|3.74|1.42933550994859|4054
+33|Pellicer Creek Aquatic Preserve|2013|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|7.6|7.6|7.6|7.6||4054
+33|Pellicer Creek Aquatic Preserve|2013|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|8.6|10|9|9.26|0.691375440697744|4054
+33|Pellicer Creek Aquatic Preserve|2013|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|3|4.2|3.6|3.6|0.6|4054
+33|Pellicer Creek Aquatic Preserve|2013|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.4|3.4|3.4|3.4||4054
+33|Pellicer Creek Aquatic Preserve|2013|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.3|1.3|1.3|1.3||4054
+33|Pellicer Creek Aquatic Preserve|2013|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.4|13|5.15|6.675|4.29835239752784|4054
+33|Pellicer Creek Aquatic Preserve|2013|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|1.5|4.5|3.35|3.175|1.24733048280451|4054
+33|Pellicer Creek Aquatic Preserve|2013|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.1|4.2|3|3.11666666666667|0.744087808438404|4054
+33|Pellicer Creek Aquatic Preserve|2014|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.3|2.7|2|2|0.989949493661167|4054
+33|Pellicer Creek Aquatic Preserve|2014|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.9|2.6|2.25|2.25|0.494974746830583|4054
+33|Pellicer Creek Aquatic Preserve|2014|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.55|0.77|0.645|0.651666666666667|0.105530406360758|4054
+33|Pellicer Creek Aquatic Preserve|2014|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|5.8|6.4|6.1|6.1|0.424264068711929|4054
+33|Pellicer Creek Aquatic Preserve|2014|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|11|14|12.5|12.5|2.12132034355964|4054
+33|Pellicer Creek Aquatic Preserve|2014|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|9.6|13|11.5|11.4|1.85472369909914|4054
+33|Pellicer Creek Aquatic Preserve|2014|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|11|17|14.5|14|2.5298221281347|4054
+33|Pellicer Creek Aquatic Preserve|2014|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|2.7|21|5.3|8.86|7.7261245136226|4054
+33|Pellicer Creek Aquatic Preserve|2014|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|6.7|6.7|6.7|6.7||4054
+33|Pellicer Creek Aquatic Preserve|2014|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4|5|4.5|4.5|0.707106781186548|4054
+33|Pellicer Creek Aquatic Preserve|2014|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.55|3.4|0.55|1.14|1.26412024744484|4054
+33|Pellicer Creek Aquatic Preserve|2015|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|0.55|2.4|1.4|1.38428571428571|0.80028863840611|4054
+33|Pellicer Creek Aquatic Preserve|2015|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|15|15|15|15||4054
+33|Pellicer Creek Aquatic Preserve|2015|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.1|3.1|3.1|3.1||4054
+33|Pellicer Creek Aquatic Preserve|2015|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9.9|9.9|9.9|9.9||4054
+33|Pellicer Creek Aquatic Preserve|2015|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|19|25|20.5|21.25|2.62995563967658|4054
+33|Pellicer Creek Aquatic Preserve|2015|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|18|31|23|23.75|5.61990510002912|4054
+33|Pellicer Creek Aquatic Preserve|2015|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.9|3.9|3.4|3.4|0.707106781186548|4054
+33|Pellicer Creek Aquatic Preserve|2015|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.6|6.6|5.1|5.1|2.12132034355964|4054
+33|Pellicer Creek Aquatic Preserve|2015|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3.1|5.4|4.1|4.175|0.997914491994847|4054
+33|Pellicer Creek Aquatic Preserve|2016|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.91|7.2|4.8|4.222|2.37811269707724|4054
+33|Pellicer Creek Aquatic Preserve|2016|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.3|2.5|2.4|2.4|0.14142135623731|4054
+33|Pellicer Creek Aquatic Preserve|2016|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|3.8|3.8|3.8|3.8||4054
+33|Pellicer Creek Aquatic Preserve|2016|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|18|27|21|22|4.58257569495584|4054
+33|Pellicer Creek Aquatic Preserve|2016|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|14|14|14|14||4054
+33|Pellicer Creek Aquatic Preserve|2016|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|15|19|17|17|2.82842712474619|4054
+33|Pellicer Creek Aquatic Preserve|2016|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|20|20|20|20|0|4054
+33|Pellicer Creek Aquatic Preserve|2016|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|4.2|5.5|5.3|5|0.7|4054
+33|Pellicer Creek Aquatic Preserve|2016|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.6|8.2|4.3|4.65|2.23405460989654|4054
+33|Pellicer Creek Aquatic Preserve|2016|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.5|5.7|5.1|5.1|0.848528137423857|4054
+33|Pellicer Creek Aquatic Preserve|2017|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|5.3|6.9|6.1|6.1|1.13137084989848|4054
+33|Pellicer Creek Aquatic Preserve|2017|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|7|5.7|20|9.8|11.3428571428571|5.45339562195187|4054
+33|Pellicer Creek Aquatic Preserve|2017|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|8.8|15|13.5|12.9666666666667|2.35088635766739|4054
+33|Pellicer Creek Aquatic Preserve|2017|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|13|15|15|14.3333333333333|1.15470053837925|4054
+33|Pellicer Creek Aquatic Preserve|2017|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|15.1|15.1|15.1|15.1||4054
+33|Pellicer Creek Aquatic Preserve|2017|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|17|19|18|18|1.4142135623731|4054
+33|Pellicer Creek Aquatic Preserve|2017|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.2|2.2|2.2|2.2||4054
+33|Pellicer Creek Aquatic Preserve|2017|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|0.8|5|2.8|2.85|1.9|4054
+33|Pellicer Creek Aquatic Preserve|2017|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.9|2.9|2.9|2.9||4054
+33|Pellicer Creek Aquatic Preserve|2017|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.75|1.5|0.9|1.05|0.396862696659689|4054
+33|Pellicer Creek Aquatic Preserve|2018|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|1.9|1.9|1.9|1.9||4054
+33|Pellicer Creek Aquatic Preserve|2018|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|0.59|1.4|0.86|0.95|0.412431812546026|4054
+33|Pellicer Creek Aquatic Preserve|2018|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|7.1|7.1|7.1|7.1||4054
+33|Pellicer Creek Aquatic Preserve|2018|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.9|4.9|4.9|4.9||4054
+33|Pellicer Creek Aquatic Preserve|2018|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|1.4|2.4|1.9|1.9|0.707106781186548|4054
+33|Pellicer Creek Aquatic Preserve|2018|6|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|2.4|8.9|7.05|6.21666666666667|2.73453225738273|4054
+33|Pellicer Creek Aquatic Preserve|2018|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|7.2|16|13|12.3|3.68239052790439|4054
+33|Pellicer Creek Aquatic Preserve|2018|8|Chlorophyll a corrected for pheophytin|Bottom|Lab|6|0.97|2.2|1.3|1.395|0.420654252326064|4054
+33|Pellicer Creek Aquatic Preserve|2018|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|10|10|10|10||4054
+33|Pellicer Creek Aquatic Preserve|2018|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|6.2|21|11.45|12.525|6.51018432918762|4054
+33|Pellicer Creek Aquatic Preserve|2018|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|2.9|2.9|2.9|2.9||4054
+33|Pellicer Creek Aquatic Preserve|2019|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|0.55|3.6|0.84|1.764|1.46223459130196|4054
+33|Pellicer Creek Aquatic Preserve|2019|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|3.7|6.7|5.2|5.2|2.12132034355964|4054
+33|Pellicer Creek Aquatic Preserve|2019|4|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|4.6|4.6|4.6|4.6||4054
+33|Pellicer Creek Aquatic Preserve|2019|5|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|9.8|9.8|9.8|9.8||4054
+33|Pellicer Creek Aquatic Preserve|2019|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|15|20|17.5|17.5|3.53553390593274|4054
+33|Pellicer Creek Aquatic Preserve|2019|9|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|12|12|12|12||4054
+33|Pellicer Creek Aquatic Preserve|2019|10|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|4.3|5.6|4.95|4.95|0.919238815542512|4054
+33|Pellicer Creek Aquatic Preserve|2019|11|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.8|7|4.9|4.9|2.9698484809835|4054
+33|Pellicer Creek Aquatic Preserve|2019|12|Chlorophyll a corrected for pheophytin|Bottom|Lab|4|3|6.5|5.55|5.15|1.56737572606783|4054
+33|Pellicer Creek Aquatic Preserve|2020|1|Chlorophyll a corrected for pheophytin|Bottom|Lab|2|2.5|3|2.75|2.75|0.353553390593274|4054
+33|Pellicer Creek Aquatic Preserve|2020|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|5|2.8|5.5|3.7|3.8|1.03198837202751|4054
+33|Pellicer Creek Aquatic Preserve|2020|3|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|2.8|3.9|3.4|3.36666666666667|0.55075705472861|4054
+33|Pellicer Creek Aquatic Preserve|2020|7|Chlorophyll a corrected for pheophytin|Bottom|Lab|3|6.9|14|9.3|10.0666666666667|3.61155552820849|4054, 5002
+33|Pellicer Creek Aquatic Preserve|2021|2|Chlorophyll a corrected for pheophytin|Bottom|Lab|1|0.82|0.82|0.82|0.82||5002

@@ -1,227 +1,108 @@
 AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|ProgramIDs
-4|Banana River Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|31|0.007|0.1307|0.032|0.0440929032258065|0.0316145213674084|5002
-4|Banana River Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|34|0.0059|0.0876|0.034|0.0364382352941176|0.0227326759174366|5002
-4|Banana River Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|42|0.002|0.1264|0.0316|0.0406357142857143|0.0287322103725416|5002
-4|Banana River Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|42|0.006|0.1172|0.0358|0.039747619047619|0.0228039388777277|5002
-4|Banana River Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|31|0.005|0.0955|0.036|0.041258064516129|0.0221146674433289|5002
-4|Banana River Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|39|0.005|0.1071|0.0408|0.0451897435897436|0.0260720539524784|5002
-4|Banana River Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|33|0.002|0.1016|0.0293|0.0378969696969697|0.0256415859109826|5002
-4|Banana River Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|34|0.002|0.1474|0.0404|0.0429647058823529|0.0262009817344745|5002
-4|Banana River Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|34|0|0.1542|0.0288|0.0428941176470588|0.0390812901153052|5002
-4|Banana River Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|36|0.001|0.1599|0.0335|0.0416472222222222|0.0365674600556374|5002
-4|Banana River Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|35|0.002|0.219|0.0343|0.0441371428571429|0.0484040900417838|5002
-4|Banana River Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|45|0|0.2057|0.0316|0.0388537777777778|0.0412647202544349|5002
-5|Big Bend Seagrasses Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|16|0.000023|0.048|0.031|0.0224490625|0.0210738991755797|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|6|0.000027|0.1875|0.010014|0.0529303333333333|0.0785449312449038|477, 514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|11|0.000018|0.0507|0.0324|0.0257440909090909|0.0230779364435148|477, 514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|14|0.000023|0.078|0.0145135|0.0239412142857143|0.0268392079906605|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|6|0.00002|0.00003|0.0000255|0.0000251666666666667|0.00000381663027639129|514
-5|Big Bend Seagrasses Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|8|0.000022|0.14|0.0000255|0.032519|0.0604035488692511|477, 514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|8|0.000019|0.11|0.0000285|0.031016|0.0449889911835583|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|7|0.00002|0.059|0.000029|0.00845542857142857|0.0222880628278693|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|19|0.000021|0.11|0.03|0.0276708421052632|0.0336158216292123|477, 514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|15|0.000017|0.045|0.025|0.0253381333333333|0.0155326540684303|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|8|0.000025|0.0921|0.018066|0.029289375|0.0350319923903749|477, 514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|7|0.000027|0.04|0.000029|0.011773|0.0159398263269502|477, 514, 5002
-9|Cape Haze Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|4|0.023|0.074|0.045|0.04675|0.0221716786313832|479
-9|Cape Haze Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|9|0.027|0.118|0.078|0.0654444444444444|0.0333695636438024|476, 479
-9|Cape Haze Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|4|0.04|0.151|0.096|0.09575|0.0487467947664254|479
-9|Cape Haze Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|11|0.017|0.126|0.047|0.0540909090909091|0.0323927601338773|476, 479
-9|Cape Haze Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|6|0.019|0.137|0.035|0.0555|0.04705209878422|479
-9|Cape Haze Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|9|0.009|0.098|0.062|0.0613333333333333|0.0291804729228298|476, 479
-9|Cape Haze Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|10|0.018|0.428|0.111|0.1868|0.174045204855903|479, 5002
-9|Cape Haze Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|6|0.008|0.376|0.211|0.187333333333333|0.164733319843518|476, 479
-9|Cape Haze Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|7|0.038|0.271|0.174|0.151285714285714|0.0934696283750579|479
-9|Cape Haze Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|7|0.026|0.214|0.115|0.118285714285714|0.0770837516076168|479
-9|Cape Haze Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|11|0.03|0.186|0.106|0.102272727272727|0.0509236505154352|476, 479
-9|Cape Haze Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|4|0.039|0.187|0.098|0.1055|0.0615819237547296|479
-15|Florida Keys National Marine Sanctuary|1|Total Phosphorus|Bottom|Lab|734|0.000003|0.04203761|0.00580282|0.00652422797002725|0.00411015260360391|297, 514
-15|Florida Keys National Marine Sanctuary|2|Total Phosphorus|Bottom|Lab|684|0.000002|0.0334999|0.00558742|0.0070257175|0.0049426873229429|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|3|Total Phosphorus|Bottom|Lab|654|0.000003|0.03288414|0.00573015|0.00629376941896024|0.00416854802438215|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|4|Total Phosphorus|Bottom|Lab|669|0.000003|0.032|0.00518811|0.0063274553961136|0.00435156797205653|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|5|Total Phosphorus|Bottom|Lab|975|0.000003|0.038011|0.005394|0.00649726303589744|0.00438488628410787|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|6|Total Phosphorus|Bottom|Lab|488|0.000002|0.02744275|0.00596245|0.00626273885245902|0.00370124132936504|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|7|Total Phosphorus|Bottom|Lab|974|0.000003|0.05196947|0.00534297|0.00593172707392197|0.00352063409455414|297, 514
-15|Florida Keys National Marine Sanctuary|8|Total Phosphorus|Bottom|Lab|618|0.000002|0.05|0.005530885|0.0069938601618123|0.00528151897275774|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|9|Total Phosphorus|Bottom|Lab|662|0.000003|0.06076|0.00534553|0.00585930975830816|0.00400319128173696|297, 514
-15|Florida Keys National Marine Sanctuary|10|Total Phosphorus|Bottom|Lab|796|0.000001|0.04960031|0.005608235|0.00708192596733668|0.00491521883987218|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|11|Total Phosphorus|Bottom|Lab|681|0.000003|0.02213274|0.00516333|0.0057714391629956|0.00314247331970681|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|12|Total Phosphorus|Bottom|Lab|669|0.000001|0.06333504|0.00511067|0.00577926104633782|0.00432125703158359|297, 514
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|41|0.028|0.231|0.121|0.121243902439024|0.04997038147133|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|47|0.008|0.2|0.066|0.0799574468085106|0.0390923974855161|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|56|0.017|0.254|0.0785|0.0974464285714286|0.0546629073646695|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|44|0.023|0.282|0.084|0.100613636363636|0.0514149629424774|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|27|0.035|0.294|0.137|0.137407407407407|0.0642574504864607|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|36|0.013|0.299|0.1225|0.147666666666667|0.0709317579488503|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|37|0.015|0.606|0.21|0.206621621621622|0.134997603137437|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|41|0.052|0.568|0.298|0.269780487804878|0.145546987635458|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|44|0.031|0.602|0.2955|0.276295454545455|0.144289692382012|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|33|0.015|0.439|0.194|0.196575757575758|0.109524263950685|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|49|0.019|0.37|0.158|0.159489795918367|0.0806414705266929|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|36|0.056|0.255|0.117|0.123722222222222|0.0487604119935197|476, 479, 5002
-19|Guana River Marsh Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|14|0.0245|0.23|0.07844|0.0986921428571429|0.0617544727970336|5002
-19|Guana River Marsh Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|21|0.0338|0.18034|0.08082|0.0791166666666667|0.0341995348408912|5002, 5014
-19|Guana River Marsh Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|21|0.0232|0.22175|0.088|0.0984828571428571|0.0463261097161047|5002
-19|Guana River Marsh Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|19|0.02125|0.24361|0.10462|0.107128421052632|0.0494607567519901|5002
-19|Guana River Marsh Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|16|0.0414|0.29|0.09765|0.118234375|0.0635897603883676|5002, 5014
-19|Guana River Marsh Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|18|0.055|0.291|0.10381|0.129800555555556|0.0645176656585322|5002, 5014
-19|Guana River Marsh Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|20|0.041|0.27279|0.088315|0.117478|0.0678565651014581|5002, 5014
-19|Guana River Marsh Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|14|0.0667|0.21|0.1295|0.137477142857143|0.0472935602102722|5002
-19|Guana River Marsh Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|12|0.064|0.174|0.113175|0.115876666666667|0.0334414822239286|5002, 5014
-19|Guana River Marsh Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|20|0.058|0.18|0.090475|0.1020875|0.035207831795452|5002, 5014
-19|Guana River Marsh Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|24|0.05645|0.1932|0.085775|0.0946708333333333|0.0356012730496203|5002, 5014
-19|Guana River Marsh Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|20|0.037|0.12553|0.0817|0.0814525|0.0255297555753447|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1|Total Phosphorus|Bottom|Lab|16|0.047|0.217|0.086075|0.097764375|0.0446217402871067|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2|Total Phosphorus|Bottom|Lab|23|0.0338|0.102|0.06|0.0678952173913044|0.0224842075627166|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|3|Total Phosphorus|Bottom|Lab|20|0.0232|0.22175|0.065105|0.0820815|0.0511379673839105|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4|Total Phosphorus|Bottom|Lab|21|0.02125|0.24361|0.10462|0.1071|0.0536707864671275|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5|Total Phosphorus|Bottom|Lab|21|0.0414|0.29|0.0906|0.112109523809524|0.0571871998331961|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|6|Total Phosphorus|Bottom|Lab|19|0.055|0.221|0.10672|0.124207368421053|0.0500242446599763|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|7|Total Phosphorus|Bottom|Lab|21|0.041|0.34|0.09948|0.132674761904762|0.0811830541812174|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|8|Total Phosphorus|Bottom|Lab|20|0.0621|0.21|0.126035|0.125975|0.0473333526006879|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|9|Total Phosphorus|Bottom|Lab|12|0.064|0.174|0.10692|0.113418333333333|0.0331821591804811|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|10|Total Phosphorus|Bottom|Lab|23|0.058|0.18|0.092|0.105963043478261|0.0344552929612197|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|11|Total Phosphorus|Bottom|Lab|14|0.052|0.17078|0.07431|0.0887407142857143|0.0345904174067563|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|12|Total Phosphorus|Bottom|Lab|26|0.037|0.154|0.0817|0.0855803846153846|0.0290507520702331|5002, 5014
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|46|0.007|0.1348|0.04|0.0489760869565217|0.029760004366656|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|48|0.008|0.131|0.042|0.0474583333333333|0.0260292456902937|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|48|0.005|0.116|0.03605|0.0459666666666667|0.0281575909672332|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|45|0.007|0.1455|0.0556|0.0656488888888889|0.0337286809583761|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|36|0.015|0.1475|0.08|0.0790083333333333|0.0317158939424924|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|34|0.031|0.2447|0.088|0.109120588235294|0.0644096161624097|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|44|0.032|0.504|0.1172|0.155220454545455|0.104103127713766|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|39|0.01|0.6419|0.104|0.122287179487179|0.117847986784687|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|36|0.014|0.58|0.1042|0.143933333333333|0.120340580971555|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|34|0.013|0.414|0.121|0.140038235294118|0.102804949222643|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|37|0.005|0.173|0.0537|0.0724675675675676|0.0450917031913488|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|37|0.011|0.185|0.056|0.0727189189189189|0.0471253401864399|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|20|0.011|0.077|0.0415|0.0419|0.0183242720829074|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|22|0.015|0.123|0.04055|0.0439409090909091|0.022680191884023|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|20|0.026|0.074|0.041|0.0445|0.013769722697204|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|6|0.0468|0.177|0.0679|0.0826666666666667|0.0471631070506033|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|24|0.018|0.1636|0.042|0.0545041666666667|0.0398318037575467|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|22|0.0127|0.175|0.0475|0.0583863636363636|0.0408280167048554|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|15|0.026|0.183|0.043|0.05942|0.0419240844520528|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|3|0.043|0.0718|0.0582|0.0576666666666667|0.0144074055031894|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|18|0.023|0.153|0.0825|0.0862777777777778|0.0358145641678905|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|3|0.0392|0.053|0.053|0.0484|0.00796743371481684|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|19|0.009|0.072|0.033|0.0327368421052632|0.0133368416437041|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|12|0.007|0.115|0.044|0.0476666666666667|0.0316983892144046|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|7|0.019|0.08|0.034|0.0382857142857143|0.0207261050024222|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|12|0.009|0.053|0.0235|0.0271666666666667|0.012755272231394|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|3|0.026|0.044|0.043|0.0376666666666667|0.0101159939369957|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|13|0.018|0.124|0.032|0.04|0.02692272893548|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|3|0.039|0.14|0.067|0.082|0.0521440312979348|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|2|0.007|0.17|0.0885|0.0885|0.115258405333407|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|4|0.047|0.155|0.0875|0.09425|0.048396797414705|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|11|0.026|0.218|0.053|0.0666363636363636|0.0521176989654623|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|2|0.047|0.087|0.067|0.067|0.0282842712474619|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|5|0.029|0.076|0.043|0.0478|0.0187269858760026|5002
-25|Lemon Bay Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|9|0.039|0.15|0.049|0.0652222222222222|0.0368401200384098|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|8|0.028|0.19|0.0605|0.079875|0.0551968878522279|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|6|0.008|0.19|0.05|0.0701666666666667|0.0668622963011791|479, 5002
-25|Lemon Bay Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|7|0.008|0.14|0.08|0.0775714285714286|0.0417686371290595|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|2|0.026|0.062|0.044|0.044|0.0254558441227157|479
-25|Lemon Bay Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|3|0.008|0.022|0.022|0.0173333333333333|0.00808290376865476|479
-25|Lemon Bay Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|8|0.008|0.17|0.0535|0.07375|0.0618956495124773|479, 5002
-25|Lemon Bay Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|11|0.008|0.21|0.085|0.0955454545454545|0.0648326517063179|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|7|0.026|0.22|0.13|0.120857142857143|0.0780415029998538|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|5|0.009|0.21|0.17|0.1204|0.0923163040854648|479, 5002
-25|Lemon Bay Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|14|0.008|0.16|0.0635|0.0751428571428572|0.0500612811275527|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|9|0.018|0.13|0.04|0.0495555555555556|0.0334630808171898|476, 479, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|6|0.0179|0.067|0.042365|0.0409233333333333|0.017817136320595|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|10|0.00942|0.31|0.03345|0.074353|0.0942078449257574|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|8|0.0034|0.1241|0.04795|0.0564625|0.040510454999737|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|10|0.0153|0.18823|0.1056|0.108246|0.060550120873354|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|12|0.0254|0.1177|0.0578|0.0663125|0.0322174371547177|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|10|0.01003|0.0737|0.0468|0.047612|0.0205560792846193|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|13|0.0132|0.1192|0.06901|0.0659092307692308|0.037920566640795|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|12|0.03659|0.1077|0.06064|0.0644291666666667|0.0225370379832978|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|16|0.02292|0.189|0.098965|0.094654375|0.0418151125740842|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|14|0.0034|0.262|0.059185|0.0787407142857143|0.0653660554656838|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|14|0.0152|0.1069|0.0401|0.0486714285714286|0.0252103799919926|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|10|0.005|0.1151|0.03952|0.043591|0.0325345622889464|5002
-48|Nature Coast Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|51|0.004|0.053|0.007|0.00852941176470588|0.00730302113149475|479
-48|Nature Coast Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|38|0.003|0.023|0.007|0.0076578947368421|0.00355859306991806|479
-48|Nature Coast Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|41|0.004|0.021|0.007|0.00848780487804878|0.0041177782311552|479
-48|Nature Coast Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|46|0.004|0.048|0.008|0.0114565217391304|0.00820760222595594|479
-48|Nature Coast Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|37|0.005|0.049|0.009|0.0112162162162162|0.00795171237720088|479
-48|Nature Coast Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|39|0.005|0.069|0.009|0.0124358974358974|0.0110947945873987|479
-48|Nature Coast Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|52|0.004|0.041|0.012|0.0153846153846154|0.00980226833722954|479, 5002
-48|Nature Coast Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|34|0.004|0.086|0.01|0.0140588235294118|0.0142189399435904|479
-48|Nature Coast Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|52|0.006|0.031|0.0115|0.0129807692307692|0.0062825322252566|479, 5002
-48|Nature Coast Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|47|0.005|0.036|0.011|0.0127234042553191|0.00684518913150458|479, 5002
-48|Nature Coast Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|50|0.004|0.05|0.008|0.01072|0.0079540517206962|479
-48|Nature Coast Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|45|0.003|0.03|0.008|0.00937777777777778|0.00504204544031708|479
-31|North Fork St. Lucie Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|7|0.082|0.131|0.103|0.104285714285714|0.0162040559296563|5002
-31|North Fork St. Lucie Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|15|0.077|0.158|0.106|0.107333333333333|0.024120728094515|5002
-31|North Fork St. Lucie Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|11|0.105|0.183|0.125|0.132818181818182|0.0219536702253549|5002
-31|North Fork St. Lucie Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|4|0.113|0.151|0.119|0.1255|0.0174068951855292|5002
-31|North Fork St. Lucie Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|5|0.134|0.175|0.165|0.1574|0.017184295155752|5002
-31|North Fork St. Lucie Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|5|0.043|0.279|0.211|0.1974|0.0912649987673259|5002
-31|North Fork St. Lucie Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|6|0.188|0.262|0.236|0.228166666666667|0.0268731588516621|5002
-31|North Fork St. Lucie Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|8|0.154|0.34|0.2405|0.240875|0.0557198028403855|5002
-31|North Fork St. Lucie Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|3|0.213|0.365|0.272|0.283333333333333|0.0766311511941021|5002
-31|North Fork St. Lucie Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|5|0.176|0.54|0.191|0.2698|0.15558663181649|5002
-31|North Fork St. Lucie Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|8|0.128|0.245|0.1475|0.168375|0.0450109113755447|5002
-31|North Fork St. Lucie Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|8|0.091|0.34|0.1515|0.161875|0.0776207584532459|5002
-35|Pinellas County Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|13|0.048|0.116|0.116|0.100230769230769|0.0252525703185301|5002
-35|Pinellas County Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|32|0.0099|0.16|0.07|0.067646875|0.0384446983162702|5002
-35|Pinellas County Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|40|0.000007|0.15|0.07|0.0682279|0.0503317803955375|514, 5002
-35|Pinellas County Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|10|0.04|0.148|0.07|0.0829|0.0446578349477695|5002
-35|Pinellas County Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|18|0.032|0.226|0.07|0.095|0.0642824649038729|5002
-35|Pinellas County Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|24|0.000012|0.26|0.095|0.109617166666667|0.0728192708223685|514, 5002
-35|Pinellas County Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|14|0.000022|0.25|0.09|0.110287285714286|0.0848355898741601|514, 5002
-35|Pinellas County Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|27|0.000019|0.351|0.12|0.16792662962963|0.108730696078801|514, 5002
-35|Pinellas County Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|21|0.000018|0.287|0.11|0.138905619047619|0.0868719774325854|514, 5002
-35|Pinellas County Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|14|0.03|0.73|0.173|0.190785714285714|0.175807227720254|5002
-35|Pinellas County Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|10|0.000006|0.155|0.116|0.0856019|0.0600047658930337|514, 5002
-35|Pinellas County Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|33|0.02|0.19|0.06|0.0754545454545455|0.0401295487367872|5002
-38|Rookery Bay Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|2|0.038|0.053|0.0455|0.0455|0.0106066017177982|5002
-38|Rookery Bay Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|5|0.000024|0.000032|0.000031|0.0000298|0.00000327108544675923|514
-38|Rookery Bay Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|10|0.000039|0.065|0.000058|0.0181382|0.0292139226237537|514, 5002
-38|Rookery Bay Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|1|0.000036|0.000036|0.000036|0.000036||514
-38|Rookery Bay Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|5|0.000022|0.055|0.000032|0.0110236|0.0245835553429523|514, 5002
-38|Rookery Bay Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|4|0.000029|0.000054|0.0000375|0.0000395|0.0000105356537528527|514
-38|Rookery Bay Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|1|0.000045|0.000045|0.000045|0.000045||514
-38|Rookery Bay Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|9|0.000028|0.00005|0.000036|0.0000373333333333333|0.00000756637297521078|514
-38|Rookery Bay Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|12|0.000027|0.000047|0.000035|0.0000348333333333333|0.00000574983530725934|514
-38|Rookery Bay Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|2|0.000041|0.000044|0.0000425|0.0000425|0.00000212132034355964|514
-38|Rookery Bay Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|10|0.000031|0.035|0.0000385|0.0065296|0.0137382448515085|514, 5002
-38|Rookery Bay Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|5|0.000036|0.00004|0.000036|0.0000374|0.00000194935886896179|514
-39|Rookery Bay National Estuarine Research Reserve|1|Total Phosphorus|Bottom|Lab|10|0.000012|0.06|0.0355|0.028905|0.026042722118345|514, 5002
-39|Rookery Bay National Estuarine Research Reserve|2|Total Phosphorus|Bottom|Lab|8|0.000022|0.000035|0.000029|0.000028125|0.00000485320218294802|514
-39|Rookery Bay National Estuarine Research Reserve|3|Total Phosphorus|Bottom|Lab|19|0.00002|0.083|0.000056|0.0256045789473684|0.0325522917478184|514, 5002
-39|Rookery Bay National Estuarine Research Reserve|4|Total Phosphorus|Bottom|Lab|8|0.000023|0.000075|0.000035|0.000038125|0.0000161902748586922|514
-39|Rookery Bay National Estuarine Research Reserve|5|Total Phosphorus|Bottom|Lab|11|0.000027|0.116|0.000034|0.0313806363636364|0.040692527734887|514, 5002
-39|Rookery Bay National Estuarine Research Reserve|6|Total Phosphorus|Bottom|Lab|6|0.000028|0.000067|0.0000465|0.0000466666666666667|0.0000141656862405839|514
-39|Rookery Bay National Estuarine Research Reserve|7|Total Phosphorus|Bottom|Lab|3|0.000036|0.000045|0.000041|0.0000406666666666667|0.0000045092497528229|514
-39|Rookery Bay National Estuarine Research Reserve|8|Total Phosphorus|Bottom|Lab|5|0.000035|0.00005|0.000047|0.0000434|0.00000730068489937759|514
-39|Rookery Bay National Estuarine Research Reserve|9|Total Phosphorus|Bottom|Lab|12|0.000026|0.000047|0.000035|0.00003525|0.00000646845492300202|514
-39|Rookery Bay National Estuarine Research Reserve|10|Total Phosphorus|Bottom|Lab|1|0.000041|0.000041|0.000041|0.000041||514
-39|Rookery Bay National Estuarine Research Reserve|11|Total Phosphorus|Bottom|Lab|15|0.00001|0.057|0.000043|0.0170858|0.0229862422399636|514, 5002
-39|Rookery Bay National Estuarine Research Reserve|12|Total Phosphorus|Bottom|Lab|9|0.000012|0.00004|0.000034|0.0000292222222222222|0.0000105092551802896|514
-43|St. Martins Marsh Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|20|0.006|0.032|0.0135|0.0141|0.006307055364306|479
-43|St. Martins Marsh Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|20|0.004|0.02|0.0115|0.0113|0.00452013041265055|479
-43|St. Martins Marsh Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|19|0.006|0.032|0.012|0.0144210526315789|0.00832877068075665|479
-43|St. Martins Marsh Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|15|0.006|0.052|0.017|0.0184|0.0118911731969558|479
-43|St. Martins Marsh Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|15|0.005|0.079|0.02|0.0231333333333333|0.0199207955473193|479
-43|St. Martins Marsh Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|15|0.009|0.059|0.018|0.0221333333333333|0.0131195963933274|479
-43|St. Martins Marsh Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|12|0.006|0.033|0.0115|0.0145833333333333|0.00855419443455913|479
-43|St. Martins Marsh Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|21|0.008|0.035|0.015|0.018|0.00880340843082951|479
-43|St. Martins Marsh Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|13|0.000027|0.027|0.011|0.0135429230769231|0.0087066150087308|479, 514
-43|St. Martins Marsh Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|24|0.000036|0.026|0.011|0.0127531666666667|0.00737965668853096|479, 514
-43|St. Martins Marsh Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|16|0.004|0.044|0.013|0.01625|0.011|479
-43|St. Martins Marsh Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|9|0.008|0.025|0.009|0.0131111111111111|0.00598841474107389|479
-45|Tomoka Marsh Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|11|0.0348|0.1614|0.0689|0.0704727272727273|0.0331805994794877|5002
-45|Tomoka Marsh Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|8|0.0721|0.1414|0.09525|0.09481125|0.0214829071173872|5002
-45|Tomoka Marsh Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|7|0.049|0.1345|0.0748|0.0898857142857143|0.0354113178033723|5002
-45|Tomoka Marsh Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|8|0.0564|0.1322|0.08931|0.0924875|0.0236063960763664|5002
-45|Tomoka Marsh Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|5|0.0597|0.1739|0.1307|0.1214|0.0526237588927283|5002
-45|Tomoka Marsh Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|14|0.0588|0.189|0.12222|0.113612857142857|0.0355269030083209|5002
-45|Tomoka Marsh Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|11|0.0729|0.2111|0.1319|0.129109090909091|0.0418386771909786|5002
-45|Tomoka Marsh Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|13|0.0827|1.1366|0.117|0.201161538461538|0.282940881747588|5002
-45|Tomoka Marsh Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|13|0.0742|0.1519|0.1211|0.111369230769231|0.0256667224441618|5002
-45|Tomoka Marsh Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|12|0.06555|0.158|0.11325|0.115965|0.0316448713351497|5002
-45|Tomoka Marsh Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|5|0.0104|0.1388|0.0948|0.09078|0.0484526779445677|5002
-45|Tomoka Marsh Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|11|0.0581|0.115|0.0871|0.08197|0.0179128975880509|5002
+4|Banana River Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|23|0.01|0.1307|0.0417|0.0436086956521739|0.0289115408388396|5002
+4|Banana River Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|19|0.0059|0.0762|0.032|0.0361526315789474|0.0196813890775878|5002
+4|Banana River Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|23|0.002|0.1024|0.0289|0.037395652173913|0.0236916839698672|5002
+4|Banana River Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|27|0.007|0.1172|0.0339|0.0393777777777778|0.0273792640982935|5002
+4|Banana River Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|16|0.008|0.1324|0.03755|0.045075|0.0329530271750563|5002
+4|Banana River Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|24|0.005|0.1137|0.0342|0.0450166666666667|0.033073050459047|5002
+4|Banana River Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|18|0.021|0.1177|0.0371|0.0491611111111111|0.0278427335306273|5002
+4|Banana River Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|19|0.004|0.1474|0.0305|0.0390315789473684|0.0317863187311701|5002
+4|Banana River Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|23|0.012|0.1721|0.042|0.0588478260869565|0.0461506315288733|5002
+4|Banana River Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|18|0.004|0.1599|0.0419|0.0538722222222222|0.0431756032085054|5002
+4|Banana River Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|21|0.01|0.219|0.0343|0.0431571428571429|0.0439740442923842|5002
+4|Banana River Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|23|0.008|0.2057|0.0401|0.044695652173913|0.0409239480706798|5002
+5|Big Bend Seagrasses Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|7|0.031|0.048|0.039|0.0377142857142857|0.00615668432719771|5002
+5|Big Bend Seagrasses Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|3|0.016|0.096|0.061|0.0576666666666667|0.0401040313850532|5002
+5|Big Bend Seagrasses Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|3|0.019|0.049|0.045|0.0376666666666667|0.0162890556304942|5002
+5|Big Bend Seagrasses Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|4|0.042|0.13|0.0485|0.06725|0.0419950393895914|5002
+5|Big Bend Seagrasses Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|5|0.004|0.14|0.03|0.047|0.0533666562565053|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|4|0.000026|0.12|0.023|0.0415065|0.0534441843016307|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|2|0.000028|0.028|0.014014|0.014014|0.0197791908833501|514
+5|Big Bend Seagrasses Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|4|0.000022|0.18|0.0925|0.0912555|0.0918599211898203|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|8|0.000026|0.051|0.031|0.0293815|0.0205663421777289|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|7|0.02|0.14|0.026|0.046|0.0426067287330691|514, 5002
+5|Big Bend Seagrasses Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|1|0.000023|0.000023|0.000023|0.000023||514
+5|Big Bend Seagrasses Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|1|0.066|0.066|0.066|0.066||5002
+8|Boca Ciega Bay Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|3|0.01|0.02|0.01|0.0133333333333333|0.00577350269189626|5002
+8|Boca Ciega Bay Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|9|0.02|0.07|0.05|0.0422222222222222|0.017873008824606|5002
+8|Boca Ciega Bay Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|5|0.0099|0.06|0.05|0.03798|0.0217117940299737|5002
+8|Boca Ciega Bay Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|6|0.01|0.05|0.05|0.0383333333333333|0.0183484785926972|5002
+8|Boca Ciega Bay Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|15|0.01|0.05|0.05|0.0366666666666667|0.0171824938596845|5002
+8|Boca Ciega Bay Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|4|0.0099|0.05|0.035|0.032475|0.0206519369551623|5002
+8|Boca Ciega Bay Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|10|0.01|0.06|0.035|0.034|0.0195505043981536|5002
+8|Boca Ciega Bay Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|8|0.04|0.07|0.05|0.05|0.010690449676497|5002
+8|Boca Ciega Bay Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|4|0.01|0.03|0.02|0.02|0.00816496580927726|5002
+8|Boca Ciega Bay Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|4|0.02|0.06|0.03|0.035|0.0191485421551268|5002
+8|Boca Ciega Bay Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|4|0.05|0.06|0.05|0.0525|0.005|5002
+15|Florida Keys National Marine Sanctuary|1|Total Phosphorus|Bottom|Lab|735|0.00111223|0.04203761|0.00587264|0.00684691881632653|0.00390488282899122|297, 5002
+15|Florida Keys National Marine Sanctuary|2|Total Phosphorus|Bottom|Lab|695|0.00068|0.0334999|0.00555|0.00665696215827338|0.00407592232817111|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|3|Total Phosphorus|Bottom|Lab|686|0.00030974|0.03288414|0.006164895|0.00676047272594752|0.00384236107713964|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|4|Total Phosphorus|Bottom|Lab|586|0.00049852|0.02573471|0.00527706|0.00608445511945393|0.00305774272124312|297, 5002
+15|Florida Keys National Marine Sanctuary|5|Total Phosphorus|Bottom|Lab|935|0.00185068|0.038011|0.00545677|0.00639165218181818|0.00377163400820435|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|6|Total Phosphorus|Bottom|Lab|530|0.00046461|0.02744275|0.00651603|0.00702484067924528|0.00324342922115012|297, 5002
+15|Florida Keys National Marine Sanctuary|7|Total Phosphorus|Bottom|Lab|936|0.00101439|0.05196947|0.00555095|0.00627422146367521|0.00342348344020033|297, 5002
+15|Florida Keys National Marine Sanctuary|8|Total Phosphorus|Bottom|Lab|531|0.00038562|0.0463574|0.00549784|0.006194221826742|0.00379347104481513|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|9|Total Phosphorus|Bottom|Lab|737|0.00129315|0.06076|0.00566706|0.00646441919945726|0.00373242964973307|297
+15|Florida Keys National Marine Sanctuary|10|Total Phosphorus|Bottom|Lab|725|0.00092921|0.04960031|0.00556482|0.00681857075862069|0.00431953680554765|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|11|Total Phosphorus|Bottom|Lab|720|0.00132965|0.02213274|0.00526554|0.00597984834722222|0.00270708936226727|297, 514, 5002
+15|Florida Keys National Marine Sanctuary|12|Total Phosphorus|Bottom|Lab|644|0.000015|0.06334|0.00542041|0.00651957139751553|0.0046307312856435|297, 514
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|24|0.028|0.296|0.117|0.119416666666667|0.0643677725645958|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|25|0.032|0.136|0.066|0.07668|0.0336955981299239|479, 513
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|32|0.019|0.305|0.0785|0.10053125|0.0670180449339892|476, 479, 513
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|27|0.022|0.253|0.083|0.0967037037037037|0.051335858523749|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|24|0.024|0.294|0.1275|0.120125|0.0767442463499778|476, 479, 513
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|33|0.013|0.254|0.114|0.116060606060606|0.0621821615266084|479, 513
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|33|0.015|0.422|0.14|0.165818181818182|0.116681043486467|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|26|0.052|0.433|0.164|0.208769230769231|0.119681011924969|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|29|0.008|0.602|0.317|0.267137931034483|0.168729226052092|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|18|0.015|0.386|0.1515|0.178611111111111|0.111931774855142|476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|24|0.027|0.333|0.161|0.154875|0.0707274699109193|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|22|0.056|0.255|0.1245|0.125363636363636|0.0605274793591783|479, 513, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|15|0.021|0.1348|0.05711|0.05821|0.0316279740555279|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|11|0.0106|0.36613|0.049|0.0782890909090909|0.100155455613216|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|16|0.0244|0.235|0.05285|0.06990625|0.0519211513579325|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|7|0.043|0.078|0.067|0.0599428571428572|0.0139979590349042|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|12|0.038|0.097|0.0693|0.0666525|0.0175868127894428|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|11|0.0111|0.14|0.0698|0.0696272727272727|0.0424184886790911|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|7|0.0497|0.315|0.102|0.126622857142857|0.0882498630243103|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|11|0.0236|0.334|0.105|0.130915454545455|0.0873138696157302|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|11|0.0308|0.2063|0.12412|0.116447272727273|0.0641087777283125|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|10|0.02|0.3652|0.1937|0.17689|0.11126918760875|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|7|0.0437|0.1202|0.074|0.0759571428571429|0.0264920023870637|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|11|0.027|0.122|0.036|0.0559909090909091|0.0330772566742|5002
+25|Lemon Bay Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|9|0.04|0.15|0.05|0.0615555555555556|0.0337161352734529|479, 5002
+25|Lemon Bay Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|5|0.039|0.08|0.05|0.052|0.0164468842033985|479, 5002
+25|Lemon Bay Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|7|0.008|0.06|0.05|0.0404285714285714|0.0183290038177851|479, 5002
+25|Lemon Bay Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|3|0.008|0.1|0.046|0.0513333333333333|0.0462313025268955|479, 5002
+25|Lemon Bay Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|6|0.026|0.12|0.05|0.0596666666666667|0.031809851723431|479, 5002
+25|Lemon Bay Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|5|0.008|0.053|0.022|0.031|0.0199624647776771|479
+25|Lemon Bay Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|2|0.008|0.037|0.0225|0.0225|0.0205060966544099|479
+25|Lemon Bay Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|6|0.008|0.085|0.032|0.0388333333333333|0.0274329485594725|479
+25|Lemon Bay Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|5|0.016|0.064|0.042|0.0388|0.0185795586599897|479
+25|Lemon Bay Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|4|0.009|0.05|0.03|0.02975|0.0169189243156886|479, 5002
+25|Lemon Bay Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|6|0.008|0.062|0.0265|0.0318333333333333|0.0187020497985292|479
+25|Lemon Bay Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|4|0.041|0.14|0.09|0.09025|0.0519639297975047|479, 5002
+35|Pinellas County Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|13|0.01|0.084|0.02|0.028|0.0209443707632067|514, 5002
+35|Pinellas County Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|27|0.01|0.3|0.05|0.0502222222222222|0.0556447062471655|514, 5002
+35|Pinellas County Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|22|0.0099|0.315|0.049|0.0530863636363636|0.0635229414535339|514, 5002
+35|Pinellas County Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|31|0.01|1.5|0.05|0.0854516129032258|0.263099580477263|514, 5002
+35|Pinellas County Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|39|0.01|0.21|0.05|0.0475384615384616|0.0350239362916324|5002
+35|Pinellas County Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|17|0.0099|0.05|0.05|0.0399941176470588|0.0150125143875133|5002
+35|Pinellas County Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|18|0.01|0.11|0.05|0.0423888888888889|0.0240395235562283|5002
+35|Pinellas County Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|18|0.01|0.3|0.05|0.0604444444444444|0.0688307576786307|5002
+35|Pinellas County Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|26|0.01|0.287|0.05|0.0773076923076923|0.0786423647817227|5002
+35|Pinellas County Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|20|0.01|0.4|0.043|0.08235|0.104010766143146|5002
+35|Pinellas County Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|9|0.01|0.21|0.036|0.0657777777777778|0.06611879040367|514, 5002
+35|Pinellas County Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|38|0.01|0.25|0.05|0.0690526315789474|0.0718947982813406|5002
+44|Terra Ceia Aquatic Preserve|1|Total Phosphorus|Bottom|Lab|8|0.03|0.056|0.056|0.05275|0.00919238815542512|5002
+44|Terra Ceia Aquatic Preserve|2|Total Phosphorus|Bottom|Lab|17|0.03|0.056|0.056|0.0529411764705882|0.00863474513401593|5002
+44|Terra Ceia Aquatic Preserve|3|Total Phosphorus|Bottom|Lab|7|0.03|0.056|0.056|0.0485714285714286|0.0126867009483309|5002
+44|Terra Ceia Aquatic Preserve|4|Total Phosphorus|Bottom|Lab|12|0.03|0.056|0.056|0.0495|0.0117589424385328|5002
+44|Terra Ceia Aquatic Preserve|5|Total Phosphorus|Bottom|Lab|13|0.03|0.444|0.056|0.0798461538461539|0.109992307423327|5002
+44|Terra Ceia Aquatic Preserve|6|Total Phosphorus|Bottom|Lab|13|0.02|0.056|0.056|0.0492307692307692|0.0130776772029914|5002
+44|Terra Ceia Aquatic Preserve|7|Total Phosphorus|Bottom|Lab|5|0.03|0.056|0.056|0.0508|0.0116275534829989|5002
+44|Terra Ceia Aquatic Preserve|8|Total Phosphorus|Bottom|Lab|6|0.03|0.056|0.056|0.0516666666666667|0.0106144555520604|5002
+44|Terra Ceia Aquatic Preserve|9|Total Phosphorus|Bottom|Lab|5|0.02|0.056|0.056|0.0416|0.019718012070186|5002
+44|Terra Ceia Aquatic Preserve|10|Total Phosphorus|Bottom|Lab|7|0.056|0.056|0.056|0.056|0|5002
+44|Terra Ceia Aquatic Preserve|11|Total Phosphorus|Bottom|Lab|10|0.03|0.056|0.056|0.0534|0.00822192191643779|5002
+44|Terra Ceia Aquatic Preserve|12|Total Phosphorus|Bottom|Lab|8|0.02|0.056|0.056|0.0515|0.0127279220613579|5002
