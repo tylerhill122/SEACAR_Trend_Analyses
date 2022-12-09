@@ -4,7 +4,7 @@
 
 ## WHEN RUNNING IN RSTUDIO:
 ## Set working directory to "Source File Location" in "Session" menu
-
+start_time <- Sys.time()
 
 #Load libraries
 library(knitr)
@@ -80,3 +80,7 @@ for (param_name in all_params){
                         clean=TRUE)
    }
 }
+end_time <- Sys.time()
+
+print(start_time)
+print(end_time)
