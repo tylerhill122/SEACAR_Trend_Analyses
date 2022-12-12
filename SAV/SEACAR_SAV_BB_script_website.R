@@ -73,7 +73,7 @@ SAV[, `:=` (BB = as.numeric(BB),
             mBB = as.numeric(mBB),
             PC = as.numeric(PC),
             PO = as.numeric(PO))]
-SAV[ SAV == "NA" ] <- NA
+# SAV[ SAV == "NA" ] <- NA
 
 SAV_sum <- SAV %>% group_by(ManagedAreaName) %>% summarize(n_yr = length(unique(Year)), yrs = list(sort(unique(Year))))
 
@@ -152,19 +152,42 @@ SAV2[, relyear := Year - min(Year)]
 
 SAV3 <- SAV2 %>% filter(SpeciesGroup1 == "Seagrass" | SpeciesGroup1 == "Macroalgae")
 
+#Temporary fix to programs 570 and 571 - Group 1 should be "Total seagrass" instead of "Total_SAV"
+SAV3[ProgramID %in% c(570, 571) & CommonIdentifier == "Total_SAV", CommonIdentifier := "Total seagrass"]
+
+#Temporary fix to cases where analysisunit is NA but CommonIdentifier is "Drift Algae" (and Drift_Attached is also NA); ~6,000 records
+SAV3[CommonIdentifier == "Drift algae", Drift_Attached := "Drift"]
+
 species_reject <- c("All", "NA",
                     "Vallisneria americana", "Najas guadalupensis",
                     "Hydrilla verticillata", "Potamogeton pusillus",
                     "Zannichellia palustris")
-SAV3[, analysisunit := ifelse(CommonIdentifier %in% species_reject, NA, 
-                              ifelse(str_detect(CommonIdentifier, "Halophila"), "Halophila spp.", 
-                                     ifelse(SpeciesGroup1 == "Seagrass", CommonIdentifier, Drift_Attached)))]
-SAV3[!is.na(Drift_Attached), analysisunit := paste0(analysisunit, " algae")]
+SAV3[, `:=` (analysisunit_halid = ifelse(CommonIdentifier %in% species_reject, NA, 
+                                         ifelse(str_detect(CommonIdentifier, "Halophila") & is.na(SpeciesName), "Halophila sp. indet.", 
+                                                ifelse(SpeciesGroup1 == "Seagrass", CommonIdentifier, Drift_Attached))),
+             analysisunit = ifelse(CommonIdentifier %in% species_reject, NA, 
+                                   ifelse(str_detect(CommonIdentifier, "Halophila"), "Halophila spp.", 
+                                          ifelse(SpeciesGroup1 == "Seagrass", CommonIdentifier, Drift_Attached))))]
+SAV3[!is.na(Drift_Attached), `:=` (analysisunit_halid = paste0(analysisunit_halid, " algae"),
+                                   analysisunit = paste0(analysisunit, " algae"))]
+
 SAV3$analysisunit[SAV3$analysisunit=="Total_SAV"] <- "Total SAV"
 SAV4 <- subset(SAV3, !is.na(SAV3$analysisunit))
 
-#Temporary fix to programs 570 and 571 - Group 1 should be "Total seagrass" instead of "Total_SAV"
-SAV4[ProgramID %in% c(570, 571) & SpeciesGroup1 == "Total SAV", SpeciesGroup1 := "Total seagrass"]
+stats <- SAV4 %>%
+  group_by(ManagedAreaName, analysisunit) %>%
+  summarize(ParameterName="BB_pct",
+            N_Data=length(BB_pct[!is.na(BB_pct)]),
+            N_Years=length(unique(Year[!is.na(Year) & !is.na(BB_pct)])),
+            EarliestYear=min(Year[!is.na(BB_pct)]),
+            LatestYear=max(Year[!is.na(BB_pct)]),
+            SufficientData=ifelse(N_Data>0 & N_Years>=5, TRUE, FALSE))
+fwrite(stats, here::here("SAV/output/data/SAV_BBpct_Stats.txt"), sep = "|")
+
+saveRDS(SAV4, here::here("SAV/output/data/SAV4.rds"))
+fwrite(SAV4, "SAV/output/data/SAV_Used.txt", sep = "|")
+
+SAV4_sum <- SAV4 %>% group_by(method, ManagedAreaName) %>% summarize(n_yr = length(unique(Year)), yrs = list(sort(unique(Year))))
 
 stats <- SAV4 %>%
   group_by(ManagedAreaName, analysisunit) %>%
@@ -440,26 +463,44 @@ failedmods <- data.table(model = character(),
 
 #Create a table of the proportion of present SAV types by managed area and year
 props <- SAV4 %>% group_by(ManagedAreaName, analysisunit, relyear) %>% summarize(n1 = sum(PA), ntot = n(), prop = n1/ntot)
+#props <- SAV4 %>% filter(str_detect(analysisunit, "Total|Drift|decipiens|engelmannii|johnsonii|indet\\.", negate = TRUE), !is.na(PA)) %>% group_by(ManagedAreaName, analysisunit, relyear) %>% summarize(n_P = sum(PA), ntot_PA = n(), prop_P = n_P/ntot_PA)
 setDT(props)
 for(m in unique(props$ManagedAreaName)){
-  props[ManagedAreaName == m, sp_prop := n1/sum(n1), by = c("relyear")]
+  #props[ManagedAreaName == m, sp_prop := n1/sum(n1), by = c("relyear")]
+  props[ManagedAreaName == m, `:=` (n_allsp_P = sum(n1), sp_prop = n1/sum(n1), sp_pct = (n1/sum(n1)) * 100), by = c("relyear")]
 }
 
-spcollist <- c("#00374f",
-               "#004d68",
-               "#006481",
-               "#007c99",
-               "#0094b0",
-               "#00aec6",
-               "#00c9db",
-               "#00e4ee",
-               "#00ffff")
+spcollist_a <- sequential_hcl(8, palette = "YlOrRd")
+spcollist_b <- sequential_hcl(8, palette = "YlGnBu", rev = TRUE)
+spcollist <- append(spcollist_a[4:7], spcollist_b[3:7])
+#Reverse color list to start with Blue colors
+spcollist <- rev(spcollist)
 
-# spcollist <- hcl.colors(n = 8, palette = "Blues 3")
-spp <- c("Thalassia testudinum", "Syringodium filiforme", "Halodule wrightii", "Ruppia maritima", "Halophila spp.", "Total seagrass", 
-         "Attached algae", "Drift algae", "Total SAV")
-spp_common <- c("Turtle grass", "Manatee grass", "Shoal grass", "Widgeon grass", "Tape grasses", "Total seagrass", 
-                "Attached algae", "Drift algae", "Total SAV")
+#Change order so that last two colors are assigned to "Total SAV" and "Total seagrass"
+spcollist <- append(spcollist[c(length(spcollist), length(spcollist)-1)],
+                         spcollist[-c(length(spcollist), length(spcollist)-1)])
+
+
+spp <- c("Total SAV",
+         "Total seagrass",
+         "Halophila spp.",
+         "Syringodium filiforme",
+         "Halodule wrightii",
+         "Thalassia testudinum",
+         "Ruppia maritima",
+         "Attached algae",
+         "Drift algae")
+
+spp_common <- c("Total SAV",
+                "Total seagrass",
+                "Halophila spp.",
+                "Manatee grass",
+                "Shoal grass",
+                "Turtle grass",
+                "Widgeon grass",
+                "Attached algae",
+                "Drift algae")
+spcollist <- spcollist[1:length(spp)]
 
 usenames <- "common" #alternative is "scientific"
 if(usenames == "common"){
@@ -469,25 +510,25 @@ if(usenames == "common"){
 }
 
 if(usenames == "common"){
-  SAV4[, analysisunit := fcase(analysisunit == "Thalassia testudinum", "Turtle grass",
+  SAV4[, analysisunit := fcase(analysisunit == "Total SAV", "Total SAV",
+                               analysisunit == "Total seagrass", "Total seagrass",
+                               analysisunit == "Halophila spp.", "Halophila spp.",
                                analysisunit == "Syringodium filiforme", "Manatee grass",
                                analysisunit == "Halodule wrightii", "Shoal grass",
+                               analysisunit == "Thalassia testudinum", "Turtle grass",
                                analysisunit == "Ruppia maritima", "Widgeon grass",
-                               analysisunit == "Halophila spp.", "Tape grasses",
-                               analysisunit == "Total seagrass", "Total seagrass",
                                analysisunit == "Attached algae", "Attached algae",
-                               analysisunit == "Drift algae", "Drift algae",
-                               analysisunit == "Total SAV", "Total SAV")]
+                               analysisunit == "Drift algae", "Drift algae")]
   
-  props[, analysisunit := fcase(analysisunit == "Thalassia testudinum", "Turtle grass",
+  props[, analysisunit := fcase(analysisunit == "Total SAV", "Total SAV",
+                                analysisunit == "Total seagrass", "Total seagrass",
+                                analysisunit == "Halophila spp.", "Halophila spp.",
                                 analysisunit == "Syringodium filiforme", "Manatee grass",
                                 analysisunit == "Halodule wrightii", "Shoal grass",
+                                analysisunit == "Thalassia testudinum", "Turtle grass",
                                 analysisunit == "Ruppia maritima", "Widgeon grass",
-                                analysisunit == "Halophila spp.", "Tape grasses",
-                                analysisunit == "Total seagrass", "Total seagrass",
                                 analysisunit == "Attached algae", "Attached algae",
-                                analysisunit == "Drift algae", "Drift algae",
-                                analysisunit == "Total SAV", "Total SAV")]
+                                analysisunit == "Drift algae", "Drift algae")]
 }
 
 prcollist <- hcl.colors(n = 21, palette = "viridis")
@@ -499,17 +540,20 @@ parameters <- data.table(column = c(as.name("BB_all"), as.name("BB_pct"), as.nam
                          type = c("BBall", "BBpct", "PC", "PO", "PA"))
 
 plot_theme <- theme_bw() +
-  theme(text=element_text(family="Segoe UI"),
-        title=element_text(face="bold"),
-        plot.title=element_text(hjust=0.5, size=14, color="#314963"),
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        text=element_text(family="Arial"),
+        #title=element_text(face="bold"),
+        plot.title=element_text(hjust=0.5, size=12, color="#314963"),
         plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
-        axis.title.x = element_text(margin = margin(t = 5, r = 0,
-                                                    b = 10, l = 0)),
-        axis.title.y = element_text(margin = margin(t = 0, r = 10,
-                                                    b = 0, l = 0)),
+        legend.title=element_text(size=10),
+        legend.text.align = 0,
+        axis.title.x = element_text(size=10, margin = margin(t = 5, r = 0,
+                                                             b = 10, l = 0)),
+        axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
+                                                             b = 0, l = 0)),
         axis.text=element_text(size=10),
-        axis.text.x=element_text(face="bold", angle = 60, hjust = 1),
-        axis.text.y=element_text(face="bold"))
+        axis.text.x=element_text(angle = -45, hjust = 0))
 
 # #subset to run only part of the script------------------------------------------------------
 # parameters <- parameters[column == "PA", ]
@@ -1065,11 +1109,20 @@ for(p in parameters$column){
         formula_j <- as.formula(paste0(p, " ~ relyear"))
         
         set.seed(seed + n)
+       
+        # model_j <- try(lme(formula_j,
+        #                    random = list(LocationID = ~relyear),
+        #                    na.action = na.omit, 
+        #                    data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]), 
+        #                silent = TRUE)
+        
         model_j <- try(lme(formula_j,
                            random = list(LocationID = ~relyear),
+                           control = list(msMaxIter = 1000, msMaxEval = 1000, sing.tol=1e-20),
                            na.action = na.omit, 
                            data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]), 
                        silent = TRUE)
+        
         n <- n + 1
         x <- 0
         
@@ -1077,11 +1130,19 @@ for(p in parameters$column){
           if(x %% 25 == 0) print(paste0("    Model failed, starting attempt ", x, " of 5"))
           
           set.seed(seed + n)
+          # model_j <- try(lme(formula_j,
+          #                    random = list(LocationID = ~relyear),
+          #                    na.action = na.omit, 
+          #                    data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]),
+          #                silent = TRUE)
+          
           model_j <- try(lme(formula_j,
                              random = list(LocationID = ~relyear),
+                             control = list(msMaxIter = 1000, msMaxEval = 1000, sing.tol=1e-20),
                              na.action = na.omit, 
-                             data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]),
+                             data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & analysisunit == j, ]), 
                          silent = TRUE)
+          
           n <- n + 1
           x <- x + 1
         }
@@ -1428,7 +1489,7 @@ for(p in parameters$column){
       #                                                                                                                         "Attached algae",
       #                                                                                                                         "Total_SAV"))]
       # }
-        
+      
       #split modeled vs unmodeled data
       modeledsp <- c()
       for(u in seq_along(models)){
@@ -1443,7 +1504,7 @@ for(p in parameters$column){
                           str_detect(models[[u]], "_DrAl"), "Drift algae",
                           str_detect(models[[u]], "_ToSA"), "Total SAV")
           modeledsp <- append(modeledsp, name_u)
-
+          
         } else{
           name_u <- fcase(str_detect(models[[u]], "_ThTe"), "Thalassia testudinum",
                           str_detect(models[[u]], "_SyFi"), "Syringodium filiforme",
@@ -1477,7 +1538,7 @@ for(p in parameters$column){
                        aes(x = relyear, y = data, size = npt)) + #SAV4[ManagedAreaName == i & !is.na(eval(p)), ]    size = npt   fill = analysisunit,   y = eval(p)
         geom_hline(yintercept = 0, color = "grey20") +
         geom_point(shape = 21, fill = "grey90", #stroke = 2,
-                    alpha = 0.9, color = "grey50") + #fill = analysisunit  shape = 21, color = "#333333", , color = analysisunit   size = 0.5, width = 0.001, height = 0.3
+                   alpha = 0.9, color = "grey50") + #fill = analysisunit  shape = 21, color = "#333333", , color = analysisunit   size = 0.5, width = 0.001, height = 0.3
         labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
                             ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
              x = "Year",
@@ -1629,7 +1690,12 @@ for(p in parameters$column){
         labels <- append(labels, yrlist[b + 1])
       }
       
-      barplot_sp <- ggplot(data = props[ManagedAreaName == i, ], aes(x = relyear, y = sp_prop, fill = analysisunit)) +
+      bpdat <- props[ManagedAreaName == i & !is.na(analysisunit), ]
+      #Ignores "Total SAV" and "Total seagrass" for bar plots
+      bpdat <- bpdat[analysisunit!="Total SAV", ]
+      bpdat <- bpdat[analysisunit!="Total seagrass", ]
+      
+      barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
         geom_col(color = "grey20") +
         scale_x_continuous(breaks = breaks, labels = labels) +
         plot_theme +
@@ -1637,9 +1703,9 @@ for(p in parameters$column){
                                    ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))), 
              fill = "Species", 
              x = "Year", 
-             y = "Proportion") +
+             y = "Occurrence frequency (%)") +
         theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(props[ManagedAreaName == i, analysisunit])), 
+        scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)), 
                            aesthetics = c("color", "fill"))
       
       saveRDS(barplot_sp, here::here(paste0("SAV/output/Figures/BB/SAV_", parameters[column == p, type], "_", 
@@ -1751,9 +1817,26 @@ for(m in malist){
   }
 }
 
+#Save .png versions of "barplot" .rds files --------------------------------------------------
+plots2 <- stringr::str_subset(files, "_barplot") #identify map file
+
+for(pl2 in plots2){
+  plot_pl2 <- readRDS(here::here(paste0("SAV/output/Figures/BB/", pl2)))
+  plot_pl2 <- plot_pl2 +
+    plot_theme
+  
+  png(here::here(paste0("SAV/output/website/images/barplots/", str_sub(pl2, 1, -5), ".png")),
+      width = 8,
+      height = 4,
+      units = "in",
+      res = 200)
+  
+  print(plot_pl2)
+  dev.off()
+}
+
 toc()
 
 #Save session info-----------------------------------------------------
 session <- sessionInfo()
 saveRDS(session, here::here(paste0("SAV/output/SessionInfo_", Sys.Date())))
-

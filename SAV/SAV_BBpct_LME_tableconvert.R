@@ -57,7 +57,6 @@ stats$Species[stats$Species=="Thalassia testudinum"] <- "Turtle grass"
 stats$Species[stats$Species=="Syringodium filiforme"] <- "Manatee grass"
 stats$Species[stats$Species=="Halodule wrightii"] <- "Shoal grass"
 stats$Species[stats$Species=="Ruppia maritima"] <- "Widgeon grass"
-stats$Species[stats$Species=="Halophila spp."] <- "Tape grasses"
 
 
 stats <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName", "ShortName")],
