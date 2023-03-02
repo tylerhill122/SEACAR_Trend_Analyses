@@ -43,13 +43,20 @@ for (param_name in all_params){
       file_out <-  paste0("SEACAR_Nekton_", param_name)
       
       rmarkdown::render(input = "SEACAR_Nekton.Rmd", 
-                        output_format = "html_document",
-                        output_file = paste0(file_out, ".html"),
+                        output_format = "pdf_document",
+                        output_file = paste0(file_out, ".pdf"),
                         output_dir = "reports/by_parameter",
                         clean=TRUE)
-      rmarkdown::render(input = paste0("reports/by_parameter/", file_out, ".md"), 
+      rmarkdown::render(input = paste0("reports/by_parameter/", file_out, ".md"),
                         output_format = "word_document",
                         output_file = paste0(file_out, ".docx"),
                         output_dir = "reports/by_parameter",
                         clean=TRUE)
+      # rmarkdown::render(input = paste0("reports/by_parameter/", file_out, ".md"), 
+      #                   output_format = "word_document",
+      #                   output_file = paste0(file_out, ".docx"),
+      #                   output_dir = "reports/by_parameter",
+      #                   clean=TRUE)
+      unlink(paste0("reports/by_parameter/", file_out, ".md"))
+      unlink(paste0("reports/by_parameter/", file_out, "_files"), recursive=TRUE)
 }
