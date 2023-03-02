@@ -2,6 +2,9 @@
 title: "SEACAR Nekton Analysis"
 date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 output:
+  word_document:
+    toc: TRUE
+    toc_depth: 2
   html_document:
     toc: TRUE
     toc_float: TRUE
@@ -13,6 +16,7 @@ output:
     toc_depth: 2
     dev: png
     extra_dependencies: ["float"]
+    keep_md: yes
 ---
 
 # Important Notes
@@ -22,11 +26,11 @@ All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Panzik
 
-
+This markdown file is designed to be compiled by [SEACAR_Nekton_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Panzik/blob/main/Nekton/SEACAR_Nekton_ReportRender.R).
 
 # Libraries and Settings
 
-Loads libraries used in the script. Loads the Segoe UI font for use in the figures. The inclusion of `scipen` option limits how frequently R defaults to scientific notation. Sets default settings for displaying warning and messages in created document, and sets figure dpi.
+Loads libraries used in the script. The inclusion of `scipen` option limits how frequently R defaults to scientific notation. Sets default settings for displaying warning and messages in created document, and sets figure dpi.
 
 ```{r libraries, message=FALSE}
 library(knitr)
@@ -40,7 +44,6 @@ library(gridExtra)
 #library(tidyverse)
 library(ggpubr)
 library(scales)
-windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 options(scipen=999)
 opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
 ```
@@ -56,6 +59,7 @@ The command `fread` is used because of its improved speed while handling large d
 The script then gets the name of the parameter as it appears in the data file and units of the parameter.
 
 ```{r file_import}
+#Import data from nekton file
 data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
              # select=c("ManagedAreaName", "ProgramID", "ProgramName",
              #            "ProgramLocationID", "SampleDate", "Year", "Month",
@@ -63,6 +67,8 @@ data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
              #            "ResultValue", "ParameterUnits", "ValueQualifier",
              #            "SEACAR_QAQCFlagCode", "Include"),
              na.strings="")
+
+# Determine what parameter is being used
 parameter <- unique(data$ParameterName)
 if(parameter=="Presence"){
       parameter <- "Species Richness"
