@@ -20,7 +20,7 @@ output:
 ---
 
 # Important Notes
-These scripts were created by [J.E. Panzik](jepanzik@usf.edu) for SEACAR.
+These scripts were created by [J.E. Panzik](mailto:jepanzik@usf.edu) for SEACAR.
 
 All scripts and outputs can be found on the SEACAR GitHub repository:
 
@@ -61,19 +61,17 @@ The script then gets the name of the parameter as it appears in the data file an
 ```{r file_import}
 #Import data from nekton file
 data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
-             # select=c("ManagedAreaName", "ProgramID", "ProgramName",
-             #            "ProgramLocationID", "SampleDate", "Year", "Month",
-             #            "RelativeDepth", "ActivityType", "ParameterName",
-             #            "ResultValue", "ParameterUnits", "ValueQualifier",
-             #            "SEACAR_QAQCFlagCode", "Include"),
-             na.strings="")
+              na.strings="")
 
-# Determine what parameter is being used
+# Determine what parameter is being used.
+# Renames "Presence" to "Species Richness"
 parameter <- unique(data$ParameterName)
 if(parameter=="Presence"){
       parameter <- "Species Richness"
       param_name <- "SpeciesRichness"
 }
+
+# Gets the units of the data
 unit <- unique(data$ParameterUnits)
 ```
 
@@ -90,12 +88,18 @@ A group of unique `ManagedAreaName`, `ProgramID`, `ProgramName`, `ProgramLocatio
 The `ManagedAreaName` values from the data are actually shortened versions, and are merged with the full versions. The species richness data is then written to a file. And the list of Managed Areas with observations is stored.
 
 ```{r filtering}
+# Remove any data with missing EffortCorrection values
 data <- data[!is.na(data$EffortCorrection_100m2),]
+
+# Only keep data that has non-zero EffortCorrection values
 data <- data[data$EffortCorrection_100m2!=0,]
+
+# Remove any data with missing ResultValue entries
 data <- data[!is.na(data$ResultValue),]
 
-
-
+# Create Species Richness values for groups of unique combinations of
+# ManagedAreaName, ProgramID, ProgramName, ProgramLocationID, SampleDate,
+# GearType, and GearSize_m.
 data <- data %>%
    group_by(ManagedAreaName, ProgramID, ProgramName, ProgramLocationID,
             SampleDate, GearType, GearSize_m) %>%
@@ -105,19 +109,25 @@ data <- data %>%
              EffortCorrection_100m2=unique(EffortCorrection_100m2),
              SpeciesRichness=N_Species/unique(EffortCorrection_100m2))
 
-#setnames(data, c("ManagedAreaName"), c("ShortName"))
-
+# Adds AreaID for each managed area by combining the MA_All datatable to the
+# data based on ManagedAreaName
 data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
                           data, by="ManagedAreaName", all=TRUE)
 
-#data$ShortName <- NULL
-
+# Writes this data that is used by the rest of the script to a text file
 fwrite(data, paste0(out_dir,"/Nekton_", param_name, "_UsedData.txt"), sep="|")
 
+# Makes sure SampleDate is being stored as a Date object
 data$SampleDate <- as.Date(data$SampleDate)
 
+# Creates a variable with the names of all the managed areas that contain
+# species observations
 MA_Include <- unique(data$ManagedAreaName[!is.na(data$N_Species)])
+
+# Puts the managed areas in alphabetical order
 MA_Include <- MA_Include[order(MA_Include)]
+
+# Determines the number of managed areas used
 n <- length(MA_Include)
 ```
 
@@ -134,9 +144,11 @@ Gets summary statistics for each managed area. Uses piping from dplyr package to
 2. For each group, provide the following information: Parameter Name (ParameterName), Number of Entries (N_Data), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, and a list of all Program IDs included in these measurements.
 3. Sort the data in ascending (A to Z and 0 to 9) order based on `ManagedAreaName` then `Year` then `Month`
 4. Write summary stats to a pipe-delimited .txt file in the output directory
-   + [Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Panzik)
+   + [Nekton Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Panzik/tree/main/Nekton/output/by_parameter)
 
 ```{r managed_area_stats, message=FALSE}
+# Create summary statistics for each managed area based on Year and Month
+# intervals, and each gear type and size.
 MA_YM_Stats <- data %>%
    group_by(AreaID, ManagedAreaName, Year, Month, GearType, GearSize_m) %>%
    summarize(ParameterName=parameter,
@@ -148,14 +160,19 @@ MA_YM_Stats <- data %>%
              StandardDeviation=sd(SpeciesRichness),
              ProgramIDs=paste(sort(unique(ProgramID), decreasing=FALSE),
                               collapse=', '))
+# Puts the data in order based on ManagedAreaName, Year, Month, then GearSize
 MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ManagedAreaName,
                                                MA_YM_Stats$Year,
                                                MA_YM_Stats$Month,
                                                MA_YM_Stats$GearSize_m), ])
+# Writes summary statistics to file
 fwrite(MA_YM_Stats, paste0(out_dir,"/Nekton_", param_name,
                            "_ManagedArea_YearMonth_Stats.txt"), sep="|")
+# Removes variable storing data to improve computer memory
 rm(MA_YM_Stats)
 
+# Create summary statistics for each managed area based on Year intervals,
+# and each gear type and size.
 MA_Y_Stats <- data %>%
    group_by(AreaID, ManagedAreaName, Year, GearType, GearSize_m) %>%
    summarize(ParameterName=parameter,
@@ -167,12 +184,16 @@ MA_Y_Stats <- data %>%
              StandardDeviation=sd(SpeciesRichness),
              ProgramIDs=paste(sort(unique(ProgramID), decreasing=FALSE),
                               collapse=', '))
+# Puts the data in order based on ManagedAreaName, Year, then GearSize
 MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ManagedAreaName,
                                              MA_Y_Stats$Year,
                                              MA_Y_Stats$GearSize_m), ])
+# Writes summary statistics to file
 fwrite(MA_Y_Stats, paste0(out_dir,"/Nekton_", param_name,
                           "_ManagedArea_Year_Stats.txt"), sep="|")
 
+# Create summary statistics for each managed area based on Month intervals,
+# and each gear type and size.
 MA_M_Stats <- data %>%
    group_by(AreaID, ManagedAreaName, Month, GearType, GearSize_m) %>%
    summarize(ParameterName=parameter,
@@ -184,13 +205,18 @@ MA_M_Stats <- data %>%
              StandardDeviation=sd(SpeciesRichness),
              ProgramIDs=paste(sort(unique(ProgramID), decreasing=FALSE),
                               collapse=', '))
+# Puts the data in order based on ManagedAreaName, Month, then GearSize
 MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ManagedAreaName,
                                              MA_M_Stats$Month,
                                              MA_M_Stats$GearSize_m), ])
+# Writes summary statistics to file
 fwrite(MA_M_Stats, paste0(out_dir,"/Nekton_", param_name,
                           "_ManagedArea_Month_Stats.txt"), sep="|")
+# Removes variable storing data to improve computer memory
 rm(MA_M_Stats)
 
+# Create summary overall statistics for each managed area based each gear type
+# and size.
 MA_Ov_Stats <- data %>%
    group_by(AreaID, ManagedAreaName, GearType, GearSize_m) %>%
    summarize(ParameterName=parameter,
@@ -205,31 +231,47 @@ MA_Ov_Stats <- data %>%
              StandardDeviation=sd(SpeciesRichness),
              ProgramIDs=paste(sort(unique(ProgramID), decreasing=FALSE),
                               collapse=', '))
+# Puts the data in order based on ManagedAreaName then GearSize
 MA_Ov_Stats <- as.data.table(MA_Ov_Stats[order(MA_Ov_Stats$ManagedAreaName,
                                                MA_Ov_Stats$GearSize_m), ])
+# Creates Year_MinRichness and Year_MaxRichness columns
 MA_Ov_Stats$Year_MinRichness <- NA
 MA_Ov_Stats$Year_MaxRichness <- NA
 
+# Loops through each ManagedAreaName, GearType, and GearSize_m.
+# determines what year the minimum and maximum species richness occurred
 for(m in 1:nrow(MA_Ov_Stats)){
+   # Stores ManagedAreaName, GearType, and GearSize_m for this row
    ma <- MA_Ov_Stats$ManagedAreaName[m]
    gear <- MA_Ov_Stats$GearType[m]
    size <- MA_Ov_Stats$GearSize_m[m]
+   # Skips to next row if there are no data for this combination
    if(MA_Ov_Stats$N_Data[m]==0){
       next
    }
+   # Gets subset of data from MA_Y_Stats (yearly summary stats) with this
+   # combination of ManagedAreaName, GearType, and GearSize_m
    ds <- MA_Y_Stats[MA_Y_Stats$ManagedAreaName==ma &
                        MA_Y_Stats$GearType==gear &
                        MA_Y_Stats$GearSize_m==size,]
+   # Gets the minimum and maximum Mean (yearly averages)
    min <- min(ds$Mean)
    max <- max(ds$Mean)
+   #Determines what years those minimum and maximum values occured
    year_min <- ds$Year[ds$Mean==min]
    year_max <- ds$Year[ds$Mean==max]
+   # Stores the occurrence years of the minimum and maximum into the overall
+   # stats for this row
    MA_Ov_Stats$Year_MinRichness[m] <- year_min
    MA_Ov_Stats$Year_MaxRichness[m] <- year_max
 }
+# Replaces blank ProgramIDs with NA (missing values)
 MA_Ov_Stats$ProgramIDs <- gsub("", NA, MA_Ov_Stats$ProgramIDs)
+# Write overall statistics to file
 fwrite(MA_Ov_Stats, paste0(out_dir,"/Nekton_", param_name,
                            "_ManagedArea_Overall_Stats.txt"), sep="|")
+# Removes entries from the overall statistics that do not have data.
+# Based on presence or absence of EarliestYear
 MA_Ov_Stats <- MA_Ov_Stats[!is.na(MA_Ov_Stats$EarliestYear), ]
 ```
 
@@ -241,119 +283,172 @@ The plots shown here are the species richness for each managed area with a yearl
 
 1. Set common plot theme.
 2. Determine the earliest and latest year of the data to create x-axis scale and intervals
-3. determine the upper and lower limit of the plot for better y-axis labels
+3. Determine the upper and lower limit of the plot for better y-axis labels
 4. Determines what gear types are present and adjusts legend entries
 5. Add the plot line
 6. Set the plot type as a point plot with the size of the points
 7. Create the title, x-axis, y-axis, and color fill labels
 8. Set the y and x limits
 9. Apply common plot theme
-10. Create file name to save figure
-11. Save figure as png file
+10. Add table with summary statistics below each figure
+   + Numerical non-integer values are rounded to 2 decimal places
+   + StandardDeviation is renamed StDev for space reasons
+11. Create file name to save figure
+12. Save figure as png file
+   + [Nekton Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Panzik/tree/main/Nekton/output/by_parameter/Figures)
 
 ```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
-
+# Defines standard plot theme: black and white, no major or minor grid lines,
+# Arial font. Title is centered, size 12, and blue (hex coded). Subtitle is
+# centered, size 10, and blue (hex coded). Legend title is size 10 and the
+# legend is left-justified. X-axis title is size 10 and the margins are padded
+# at the top and bottom to give more space for angled axis labels. Y-axis title
+# is size 10 and margins are padded on the right side to give more space for
+# axis labels. Axis labels are size 10 and the x-axis labels are rotated -45
+# degrees with a horizontal justification that aligns them with the tick mark
 plot_theme <- theme_bw() +
-      theme(panel.grid.major = element_blank(),
-            panel.grid.minor = element_blank(),
-            text=element_text(family="Arial"),
-            #title=element_text(face="bold"),
-            plot.title=element_text(hjust=0.5, size=12, color="#314963"),
-            plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
-            legend.title=element_text(size=10),
-            legend.text.align = 0,
-            axis.title.x = element_text(size=10, margin = margin(t = 5, r = 0,
-                                                        b = 10, l = 0)),
-            axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
-                                                        b = 0, l = 0)),
-            axis.text=element_text(size=10),
-            axis.text.x=element_text(angle = -45, hjust = 0))
+   theme(panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(),
+         text=element_text(family="Arial"),
+         plot.title=element_text(hjust=0.5, size=12, color="#314963"),
+         plot.subtitle=element_text(hjust=0.5, size=10, color="#314963"),
+         legend.title=element_text(size=10),
+         legend.text.align = 0,
+         axis.title.x = element_text(size=10, margin = margin(t = 5, r = 0,
+                                                              b = 10, l = 0)),
+         axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
+                                                              b = 0, l = 0)),
+         axis.text=element_text(size=10),
+         axis.text.x=element_text(angle = -45, hjust = 0))
 
+# Defines and sets variable with standardized gear colors for plots
 gear_colors <- c("Trawl (4.8 m)"="#00374f",
                  "Trawl (6.1 m)"="#007c99",
                  "Seine (183 m)"="#00c9db")
 
+# Defines and sets variable with standardized gear shapes for plots
 gear_shapes <- c("Trawl (4.8 m)"=21,
                  "Trawl (6.1 m)"=22,
                  "Seine (183 m)"=24)
 
+# Loop that cycles through each managed area with data
 if(n==0){
-      print("There are no monitoring locations that qualify.")
+   # Prints a statement if there are no managed areas with approproiate data
+   print("There are no monitoring locations that qualify.")
 } else {
-      for (i in 1:n) {
-            plot_data <- MA_Y_Stats[MA_Y_Stats$ManagedAreaName==MA_Include[i]]
-            plot_data$GearType_Plot <- paste0(plot_data$GearType, " (",
-                                         plot_data$GearSize_m, " m)")
-            t_max <- max(MA_Ov_Stats$LatestYear[MA_Ov_Stats$ManagedAreaName==
-                                                      MA_Include[i]])
-            t_min <- min(MA_Ov_Stats$EarliestYear[MA_Ov_Stats$ManagedAreaName==
-                                                        MA_Include[i]])
-            t <- t_max-t_min
-            
-            
-            if(t>=30){
-                  brk <- -10
-            }else if(t<30 & t>=10){
-                  brk <- -5
-            }else if(t<10 & t>=4){
-                  brk <- -2
-            }else if(t<4){
-                  brk <- -1
-            }
-            
-            y_range <- max(plot_data$Mean) - min(plot_data$Mean)
-            
-            y_min <- if(min(plot_data$Mean)-(0.1*y_range)<0){
-               y_min <- 0
-            } else {
-               y_min <- min(plot_data$Mean)-(0.1*y_range)
-            }
-            
-            y_max <- max(plot_data$Mean)+(0.1*y_range)
-            
-            gear_colors_plot <- gear_colors[unique(plot_data$GearType_Plot)]
-            gear_shapes_plot <- gear_shapes[unique(plot_data$GearType_Plot)]
-            
-            p1 <- ggplot(data=plot_data, group=as.factor(GearType_Plot)) +
-               geom_line(aes(x=Year, y=Mean, color=as.factor(GearType_Plot)),
-                         size=0.75, alpha=1) +
-               geom_point(aes(x=Year, y=Mean, fill=as.factor(GearType_Plot),
-                              shape=as.factor(GearType_Plot)), size=2,
-                          color="#333333", alpha=1) +
-               labs(title="Nekton Species Richness",
-                    subtitle=MA_Include[i],
-                    x="Year", y=bquote('Richness (species/100'*~m^{2}*')'),
-                    fill="Gear type", color="Gear type", shape="Gear type") +
-               scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
-                                  breaks=seq(t_max, t_min, brk)) +
-               scale_y_continuous(limits=c(y_min, y_max),
-                                  breaks=pretty_breaks(n=5)) +
-               scale_fill_manual(values=gear_colors_plot) +
-               scale_color_manual(values=gear_colors_plot) +
-               scale_shape_manual(values=gear_shapes_plot) +
-               plot_theme
-            
-            outname <- paste0("Nekton_", gsub(" ", "", MA_Include[i]), "_",
-                              param_name, ".png")
-            png(paste0(out_dir, "/Figures/", outname),
-                width = 8,
-                height = 4,
-                units = "in",
-                res = 200)
-            #rm(plot_data)
-            
-            print(p1)
-            dev.off()
-            
+   for (i in 1:n) {
+      # Gets data for target managed area
+      plot_data <- MA_Y_Stats[MA_Y_Stats$ManagedAreaName==MA_Include[i]]
+      # Gets the gear type(s) present for the managed area.
+      # Combine type and size into one label for plots
+      plot_data$GearType_Plot <- paste0(plot_data$GearType, " (",
+                                        plot_data$GearSize_m, " m)")
+      # Determines most recent year with available data for managed area
+      t_max <- max(MA_Ov_Stats$LatestYear[MA_Ov_Stats$ManagedAreaName==
+                                             MA_Include[i]])
+      # Determines earliest recent year with available data for managed area
+      t_min <- min(MA_Ov_Stats$EarliestYear[MA_Ov_Stats$ManagedAreaName==
+                                               MA_Include[i]])
+      # Determines how many years of data are present
+      t <- t_max-t_min
       
-            ResultTable <- MA_Ov_Stats[MA_Ov_Stats$ManagedAreaName==MA_Include[i],]
-            ResultTable <- ResultTable[,-c("AreaID", "ManagedAreaName",
-                                             "ProgramIDs", "GearType_Plot")]
-            t1 <- ggtexttable(ResultTable, rows = NULL,
-                              theme=ttheme(base_size=7))
-            print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
-            
-            cat("\n \n \n \n")
+      # Creates break intervals for plots based on number of years of data
+      if(t>=30){
+         # Set breaks to every 10 years if more than 30 years of data
+         brk <- -10
+      }else if(t<30 & t>=10){
+         # Set breaks to every 5 years if between 30 and 10 years of data
+         brk <- -5
+      }else if(t<10 & t>=4){
+         # Set breaks to every 2 years if between 10 and 4 years of data
+         brk <- -2
+      }else if(t<4){
+         # Set breaks to every year if less than 4 years of data
+         brk <- -1
       }
+      # Determine range of data values for the managed area
+      y_range <- max(plot_data$Mean) - min(plot_data$Mean)
+      
+      # Determines lower bound of y-axis based on data range. Set based on
+      # relation of data range to minimum value. Designed to set lower boundary
+      # to be 10% of the data range below the minimum value
+      y_min <- if(min(plot_data$Mean)-(0.1*y_range)<0){
+         # If 10% of the data range below the minimum value is less than 0,
+         # set as 0
+         y_min <- 0
+      } else {
+         # Otherwise set minimum bound as 10% data range below minimum value
+         y_min <- min(plot_data$Mean)-(0.1*y_range)
+      }
+      
+      # Sets upper bound of y-axis to be 10% of the data range above the
+      # maximum value.
+      y_max <- max(plot_data$Mean)+(0.1*y_range)
+      
+      # Determines what combination of gear are present for managed area
+      # and subsets color and shape scheme to be used by plots.
+      # Used so only gear combinations present for managed area appea in legend.
+      gear_colors_plot <- gear_colors[unique(plot_data$GearType_Plot)]
+      gear_shapes_plot <- gear_shapes[unique(plot_data$GearType_Plot)]
+      
+      # Creates plot object using plot_data and grouping by the plot gear types.
+      # Data is plotted as symbols with connected lines.
+      p1 <- ggplot(data=plot_data, group=as.factor(GearType_Plot)) +
+         geom_line(aes(x=Year, y=Mean, color=as.factor(GearType_Plot)),
+                   size=0.75, alpha=1) +
+         geom_point(aes(x=Year, y=Mean, fill=as.factor(GearType_Plot),
+                        shape=as.factor(GearType_Plot)), size=2,
+                    color="#333333", alpha=1) +
+         labs(title="Nekton Species Richness",
+              subtitle=MA_Include[i],
+              x="Year", y=bquote('Richness (species/100'*~m^{2}*')'),
+              fill="Gear type", color="Gear type", shape="Gear type") +
+         scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
+                            breaks=seq(t_max, t_min, brk)) +
+         scale_y_continuous(limits=c(y_min, y_max),
+                            breaks=pretty_breaks(n=5)) +
+         scale_fill_manual(values=gear_colors_plot) +
+         scale_color_manual(values=gear_colors_plot) +
+         scale_shape_manual(values=gear_shapes_plot) +
+         plot_theme
+      # Sets file name of plot created
+      outname <- paste0("Nekton_", gsub(" ", "", MA_Include[i]), "_",
+                        param_name, ".png")
+      # Saves plot as a png image
+      png(paste0(out_dir, "/Figures/", outname),
+          width = 8,
+          height = 4,
+          units = "in",
+          res = 200)
+      print(p1)
+      dev.off()
+      
+      # Creates a data table object to be shown underneath plots in report
+      ResultTable <-
+         MA_Ov_Stats[MA_Ov_Stats$ManagedAreaName==MA_Include[i],]
+      # Removes location, gear, and parameter information because it is in plot
+      # labels
+      ResultTable <- ResultTable[,-c("AreaID", "ManagedAreaName",
+                                     "ProgramIDs", "GearType_Plot",
+                                     "ParameterName")]
+      # Renames StandardDeviation to StDev to save horizontal space
+      ResultTable <- ResultTable %>%
+         rename("StDev"="StandardDeviation")
+      # Converts all non-integer values to 2 decimal places for space
+      ResultTable$Min <- round(ResultTable$Min, digits=2)
+      ResultTable$Max <- round(ResultTable$Max, digits=2)
+      ResultTable$Median <- round(ResultTable$Median, digits=2)
+      ResultTable$Mean <- round(ResultTable$Mean, digits=2)
+      ResultTable$StDev <- round(ResultTable$StDev, digits=2)
+      # Stores as plot table object
+      t1 <- ggtexttable(ResultTable, rows = NULL,
+                        theme=ttheme(base_size=7))
+      # Combines plot and table into one figure
+      print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
+      
+      # Add extra space at the end to prevent the next figure from being too
+      # close
+      cat("\n \n \n \n")
+   }
 }
 ```

@@ -11,6 +11,7 @@ library(knitr)
 library(readr)
 library(dplyr)
 library(data.table)
+library(utils)
 
 #Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
 APP_Plots <- TRUE
@@ -60,3 +61,7 @@ for (param_name in all_params){
       unlink(paste0("reports/by_parameter/", file_out, ".md"))
       unlink(paste0("reports/by_parameter/", file_out, "_files"), recursive=TRUE)
 }
+
+#Gets list of all image files in output/by_parameter/Figures
+fig_list <- list.files(paste0(out_dir, "/Figures"), pattern=".png", full=TRUE)
+zip(paste0(out_dir, "/Figures/NektonFigures"), files=fig_list)
