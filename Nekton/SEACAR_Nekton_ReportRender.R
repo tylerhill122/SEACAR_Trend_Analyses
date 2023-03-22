@@ -17,7 +17,7 @@ library(utils)
 APP_Plots <- TRUE
 
 #Set output directory
-out_dir <- "output/by_parameter"
+out_dir <- "output"
 
 #Sets the list of parameter names to cycle through. This can be edited to limit the number of parameters.
 #Easiest way to edit is to comment out undesired parameters.
@@ -31,7 +31,7 @@ all_params <- c(
 )
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
-MA_All <- fread("../ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
+MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
                 na.strings = "")
 
 #Starts for loop that cycles through each parameter
@@ -46,20 +46,20 @@ for (param_name in all_params){
       rmarkdown::render(input = "SEACAR_Nekton.Rmd", 
                         output_format = "pdf_document",
                         output_file = paste0(file_out, ".pdf"),
-                        output_dir = "reports/by_parameter",
+                        output_dir = out_dir,
                         clean=TRUE)
-      rmarkdown::render(input = paste0("reports/by_parameter/", file_out, ".md"),
+      rmarkdown::render(input = paste0(out_dir, "/", file_out, ".md"),
                         output_format = "word_document",
                         output_file = paste0(file_out, ".docx"),
-                        output_dir = "reports/by_parameter",
+                        output_dir = out_dir,
                         clean=TRUE)
       # rmarkdown::render(input = paste0("reports/by_parameter/", file_out, ".md"), 
       #                   output_format = "word_document",
       #                   output_file = paste0(file_out, ".docx"),
       #                   output_dir = "reports/by_parameter",
       #                   clean=TRUE)
-      unlink(paste0("reports/by_parameter/", file_out, ".md"))
-      unlink(paste0("reports/by_parameter/", file_out, "_files"), recursive=TRUE)
+      unlink(paste0(out_dir, "/", file_out, ".md"))
+      unlink(paste0(out_dir, "/", file_out, "_files"), recursive=TRUE)
 }
 
 #Gets list of all image files in output/by_parameter/Figures
