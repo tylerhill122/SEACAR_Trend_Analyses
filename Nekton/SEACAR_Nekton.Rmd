@@ -149,7 +149,7 @@ Gets summary statistics for each managed area. Uses piping from dplyr package to
 2. For each group, provide the following information: Parameter Name (ParameterName), Number of Entries (N_Data), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, and a list of all Program IDs included in these measurements.
 3. Sort the data in ascending (A to Z and 0 to 9) order based on `ManagedAreaName` then `Year` then `Month`
 4. Write summary stats to a pipe-delimited .txt file in the output directory
-   + [Nekton Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output/by_parameter)
+   + [Nekton Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output)
 
 ```{r managed_area_stats, message=FALSE}
 # Create summary statistics for each managed area based on Year and Month
@@ -300,7 +300,7 @@ The plots shown here are the species richness for each managed area with a yearl
    + StandardDeviation is renamed StDev for space reasons
 11. Create file name to save figure
 12. Save figure as png file
-   + [Nekton Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output/by_parameter/Figures)
+   + [Nekton Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output/Figures)
 
 ```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
 # Defines standard plot theme: black and white, no major or minor grid lines,
