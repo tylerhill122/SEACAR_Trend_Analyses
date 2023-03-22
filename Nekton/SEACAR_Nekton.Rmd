@@ -59,7 +59,7 @@ The command `fread` is used because of its improved speed while handling large d
 
 The script then gets the name of the parameter as it appears in the data file and units of the parameter.
 
-The file being used for the analysis is: **`r file_in`**
+The file being used for the analysis is: **`r file_short`**
 
 ```{r file_import}
 #Import data from nekton file
@@ -67,12 +67,8 @@ data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
               na.strings="")
 
 # Determine what parameter is being used.
-# Renames "Presence" to "Species Richness"
 parameter <- unique(data$ParameterName)
-if(parameter=="Presence"){
-      parameter <- "Species Richness"
-      param_name <- "SpeciesRichness"
-}
+
 
 # Gets the units of the data
 unit <- unique(data$ParameterUnits)

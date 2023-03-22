@@ -38,10 +38,11 @@ MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFacto
 for (param_name in all_params){
       #Gets the files with the file names containing the desired parameter
       file_in <- list.files("data", pattern=param_name, full=TRUE)
-      
+      file_short <- sub("data/", "", file_in)
       #Renders SEACAR_Nekton.Rmd for each parameter combination and writes the
       #report to an html and Word document stored in reports/by_parameter directory
       file_out <-  paste0("SEACAR_Nekton_", param_name)
+      
       
       rmarkdown::render(input = "SEACAR_Nekton.Rmd", 
                         output_format = "pdf_document",
