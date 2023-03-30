@@ -1,5 +1,4 @@
 ---
-title: "SEACAR Nekton Analysis"
 date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 output:
   word_document:
@@ -27,7 +26,9 @@ All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
 
-This markdown file is designed to be compiled by [SEACAR_Nekton_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR_Nekton_ReportRender.R).
+This markdown file is designed to be compiled by [SEACAR_Nekton_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR_Nekton_SpeciesRichness_ReportRender.R).
+
+Details on the determination of catch per unit effort can be found in the document [SEACAR Nekton catch per unit effort.pdf](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR%20Nekton%20catch%20per%20unit%20effort.pdf).
 
 # Libraries and Settings
 
@@ -66,13 +67,6 @@ The file being used for the analysis is: **`r file_short`**
 data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
               na.strings="")
 
-# Determine what parameter is being used.
-parameter <- unique(data$ParameterName)
-
-
-# Gets the units of the data
-unit <- unique(data$ParameterUnits)
-
 cat(paste("The data file used is:", file_in, sep="\n"))
 ```
 
@@ -80,15 +74,27 @@ cat(paste("The data file used is:", file_in, sep="\n"))
 
 # Data Filtering
 
-Documentation on database filtering is provided here: [SEACAR Documentation- Analysis Filters and Calculations.docx](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/SEACAR%20Documentation%20-%20Analysis%20Filters%20and%20Calculations.docx).
+Documentation on database filtering is provided here: [SEACAR Documentation- Analysis Filters and Calculations.pdf](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/SEACAR%20Documentation%20-%20Analysis%20Filters%20and%20Calculations.pdf).
 
-The filtering that is performed by the script at this point removes rows that are missing values for `ResultValue` and `EffortCorrection_100m2`, and removes any `EffortCorrection_100m2` that is 0 because it will cause an infinite number when determining Species Richness.
+Imported data is initially filtered to only contain the parameter of interest.
+
+The other filtering performed by the script at this point removes rows that are missing values for `ResultValue` and `EffortCorrection_100m2`, and removes any `EffortCorrection_100m2` that is 0 because it will cause an infinite number when determining Species Richness.
 
 A group of unique `ManagedAreaName`, `ProgramID`, `ProgramName`, `ProgramLocationID`, `SampleDate`, and `GearSize_m` are being considered a "reference" for measurement. For each "reference", the number of observed species is summed and then divided by the `EffortCorrection_100m2`to determine the Species Richness per 100 square meters.
 
 The `ManagedAreaName` values from the data are actually shortened versions, and are merged with the full versions. The species richness data is then written to a file. And the list of Managed Areas with observations is stored.
 
 ```{r filtering}
+# Filter data for the desired parameter
+data <- data[data$ParameterName==param_name,]
+
+if (param_name=="Presence"){
+         parameter <- "Species Richness"
+      }
+
+# Gets the units of the data
+unit <- unique(data$ParameterUnits)
+
 # Remove any data with missing EffortCorrection values
 data <- data[!is.na(data$EffortCorrection_100m2),]
 
@@ -116,7 +122,7 @@ data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
                           data, by="ManagedAreaName", all=TRUE)
 
 # Writes this data that is used by the rest of the script to a text file
-fwrite(data, paste0(out_dir,"/Nekton_", param_name, "_UsedData.txt"), sep="|")
+fwrite(data, paste0(out_dir,"/Nekton_", param_file, "_UsedData.txt"), sep="|")
 
 # Makes sure SampleDate is being stored as a Date object
 data$SampleDate <- as.Date(data$SampleDate)
@@ -132,7 +138,9 @@ MA_Include <- MA_Include[order(MA_Include)]
 n <- length(MA_Include)
 ```
 
-
+---
+title: '`r paste("SEACAR Nekton Analysis:", parameter)`'
+---
 
 # Managed Area Statistics
 
@@ -167,8 +175,8 @@ MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ManagedAreaName,
                                                MA_YM_Stats$Month,
                                                MA_YM_Stats$GearSize_m), ])
 # Writes summary statistics to file
-fwrite(MA_YM_Stats, paste0(out_dir,"/Nekton_", param_name,
-                           "_ManagedArea_YearMonth_Stats.txt"), sep="|")
+fwrite(MA_YM_Stats, paste0(out_dir,"/Nekton_", param_file,
+                           "_MA_MMYY_Stats.txt"), sep="|")
 # Removes variable storing data to improve computer memory
 rm(MA_YM_Stats)
 
@@ -190,8 +198,8 @@ MA_Y_Stats <- as.data.table(MA_Y_Stats[order(MA_Y_Stats$ManagedAreaName,
                                              MA_Y_Stats$Year,
                                              MA_Y_Stats$GearSize_m), ])
 # Writes summary statistics to file
-fwrite(MA_Y_Stats, paste0(out_dir,"/Nekton_", param_name,
-                          "_ManagedArea_Year_Stats.txt"), sep="|")
+fwrite(MA_Y_Stats, paste0(out_dir,"/Nekton_", param_file,
+                          "_MA_Yr_Stats.txt"), sep="|")
 
 # Create summary statistics for each managed area based on Month intervals,
 # and each gear type and size.
@@ -211,8 +219,8 @@ MA_M_Stats <- as.data.table(MA_M_Stats[order(MA_M_Stats$ManagedAreaName,
                                              MA_M_Stats$Month,
                                              MA_M_Stats$GearSize_m), ])
 # Writes summary statistics to file
-fwrite(MA_M_Stats, paste0(out_dir,"/Nekton_", param_name,
-                          "_ManagedArea_Month_Stats.txt"), sep="|")
+fwrite(MA_M_Stats, paste0(out_dir,"/Nekton_", param_file,
+                          "_MA_Mo_Stats.txt"), sep="|")
 # Removes variable storing data to improve computer memory
 rm(MA_M_Stats)
 
@@ -269,8 +277,8 @@ for(m in 1:nrow(MA_Ov_Stats)){
 # Replaces blank ProgramIDs with NA (missing values)
 MA_Ov_Stats$ProgramIDs <- gsub("", NA, MA_Ov_Stats$ProgramIDs)
 # Write overall statistics to file
-fwrite(MA_Ov_Stats, paste0(out_dir,"/Nekton_", param_name,
-                           "_ManagedArea_Overall_Stats.txt"), sep="|")
+fwrite(MA_Ov_Stats, paste0(out_dir,"/Nekton_", param_file,
+                           "_MA_Overall_Stats.txt"), sep="|")
 # Removes entries from the overall statistics that do not have data.
 # Based on presence or absence of EarliestYear
 MA_Ov_Stats <- MA_Ov_Stats[!is.na(MA_Ov_Stats$EarliestYear), ]
@@ -414,7 +422,7 @@ if(n==0){
          plot_theme
       # Sets file name of plot created
       outname <- paste0("Nekton_", gsub(" ", "", MA_Include[i]), "_",
-                        param_name, ".png")
+                        param_file, ".png")
       # Saves plot as a png image
       png(paste0(out_dir, "/Figures/", outname),
           width = 8,
