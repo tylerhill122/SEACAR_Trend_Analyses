@@ -330,10 +330,13 @@ plot_theme <- theme_bw() +
          axis.text=element_text(size=10),
          axis.text.x=element_text(angle = -45, hjust = 0))
 
+# Color palette for SEACAR
+color_palette <- c("#005396", "#0088B1", "#00ADAE", "#65CCB3", "#AEE4C1", "#FDEBA8", "#F8CD6D", "#F5A800", "#F17B00")
+
 # Defines and sets variable with standardized gear colors for plots
-gear_colors <- c("Trawl (4.8 m)"="#00374f",
-                 "Trawl (6.1 m)"="#007c99",
-                 "Seine (183 m)"="#00c9db")
+gear_colors <- c("Trawl (4.8 m)"=color_palette[1],
+                 "Trawl (6.1 m)"=color_palette[2],
+                 "Seine (183 m)"=color_palette[3])
 
 # Defines and sets variable with standardized gear shapes for plots
 gear_shapes <- c("Trawl (4.8 m)"=21,
