@@ -92,6 +92,10 @@ if (param_name=="Presence"){
          parameter <- "Species Richness"
       }
 
+# # Replace instances where NA values imported as blank character string or as "NA"
+# data <- replace(data, data=="", NA)
+# data <- replace(data, data=="NA", NA)
+
 # Gets the units of the data
 unit <- unique(data$ParameterUnits)
 
@@ -167,6 +171,8 @@ MA_YM_Stats <- data %>%
              Median=median(SpeciesRichness),
              Mean=mean(SpeciesRichness),
              StandardDeviation=sd(SpeciesRichness),
+             Programs=paste(sort(unique(ProgramName), decreasing=FALSE),
+                              collapse=', '),
              ProgramIDs=paste(sort(unique(ProgramID), decreasing=FALSE),
                               collapse=', '))
 # Puts the data in order based on ManagedAreaName, Year, Month, then GearSize
@@ -191,6 +197,8 @@ MA_Y_Stats <- data %>%
              Median=median(SpeciesRichness),
              Mean=mean(SpeciesRichness),
              StandardDeviation=sd(SpeciesRichness),
+             Programs=paste(sort(unique(ProgramName), decreasing=FALSE),
+                              collapse=', '),
              ProgramIDs=paste(sort(unique(ProgramID), decreasing=FALSE),
                               collapse=', '))
 # Puts the data in order based on ManagedAreaName, Year, then GearSize
@@ -212,6 +220,8 @@ MA_M_Stats <- data %>%
              Median=median(SpeciesRichness),
              Mean=mean(SpeciesRichness),
              StandardDeviation=sd(SpeciesRichness),
+             Programs=paste(sort(unique(ProgramName), decreasing=FALSE),
+                              collapse=', '),
              ProgramIDs=paste(sort(unique(ProgramID), decreasing=FALSE),
                               collapse=', '))
 # Puts the data in order based on ManagedAreaName, Month, then GearSize
@@ -238,6 +248,8 @@ MA_Ov_Stats <- data %>%
              Median=median(SpeciesRichness),
              Mean=mean(SpeciesRichness),
              StandardDeviation=sd(SpeciesRichness),
+             Programs=paste(sort(unique(ProgramName), decreasing=FALSE),
+                              collapse=', '),
              ProgramIDs=paste(sort(unique(ProgramID), decreasing=FALSE),
                               collapse=', '))
 # Puts the data in order based on ManagedAreaName then GearSize
@@ -275,7 +287,10 @@ for(m in 1:nrow(MA_Ov_Stats)){
    MA_Ov_Stats$Year_MaxRichness[m] <- year_max
 }
 # Replaces blank ProgramIDs with NA (missing values)
-MA_Ov_Stats$ProgramIDs <- gsub("", NA, MA_Ov_Stats$ProgramIDs)
+MA_Ov_Stats$ProgramIDs <- replace(MA_Ov_Stats$ProgramIDs,
+                                  MA_Ov_Stats$ProgramIDs=="", NA)
+MA_Ov_Stats$Programs <- replace(MA_Ov_Stats$Programs,
+                                  MA_Ov_Stats$Programs=="", NA)
 # Write overall statistics to file
 fwrite(MA_Ov_Stats, paste0(out_dir,"/Nekton_", param_file,
                            "_MA_Overall_Stats.txt"), sep="|")
