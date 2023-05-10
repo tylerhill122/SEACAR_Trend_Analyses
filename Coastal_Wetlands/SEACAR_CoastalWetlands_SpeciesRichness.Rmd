@@ -20,13 +20,13 @@ urlcolor: blue
 ---
 
 # Important Notes
-These scripts were created by [J.E. Panzik](mailto:jepanzik@usf.edu) for SEACAR.
+These scripts were created by [J.E. Panzik](mailto:jepanzik@usf.edu) (jepanzik@usf.edu) for SEACAR.
 
 All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
 
-This markdown file is designed to be compiled by [SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coastal_Wetlands/SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R).
+This markdown file is designed to be compiled by [SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coastal_Wetlands/SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coastal_Wetlands/SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R).
 
 This script is based off of code originally written by Katie May Laumann
 
@@ -60,14 +60,16 @@ The command `fread` is used because of its improved speed while handling large d
 
 The script then gets the name of the parameter as it appears in the data file and units of the parameter.
 
+The latest version of Coastal Wetlands data is available at: https://usf.box.com/s/jpwsi8kram54xt6zyma5wo9mqferddcn
+
 The file being used for the analysis is: **`r file_short`**
 
 ```{r file_import}
-#Import data from nekton file
+#Import data from coastal wetlands file
 data <- fread(file_in, sep=",", header=TRUE, stringsAsFactors=FALSE,
               na.strings="")
 
-cat(paste("The data file used is:", file_in, sep="\n"))
+cat(paste("The data file used is:", file_short, sep="\n"))
 ```
 
 
@@ -76,15 +78,23 @@ cat(paste("The data file used is:", file_in, sep="\n"))
 
 The processing and filtering that is done to the data is as follows:
 
-1. `[PercentCover-SpeciesComposition_%]` column is renamed `perccov`
-2. Removes data that contains NA values in `GenusName`, `SpeciesName`, `Month`, `Year`, `SpeciesGroup1`, and removes invasive species data
-3. Excludes data from program 5015 and 651
-4. Removes duplicates (`MADup`==1) and where percent cover is 0
-5. Combines genus and species names
-6. Makes month and year numeric values
-7. Makes a combined year+month column where all months have 2 digits.
-8. Summarize data by managed area and remove managed areas with less than 5 years
-9. Include only data with more than 5 years
+1. Set parameter names to `Species Richness`
+2. `[PercentCover-SpeciesComposition_%]` column is renamed `perccov`
+3. Changes `ManagedArea` column name to `ManagedAreaName` for consistency
+4. Sets units
+5. Replaces any NA values that were imported as blank character strings or `"NA"` character strings with the proper NA value
+6. Removes rows that contains NA values in `ManagedAreaName`, `GenusName`, `SpeciesName`, `Month`, `Year`, `SpeciesGroup1`, and removes invasive species data
+7. Sets perccov to be numeric values and removes rows where percent cover is 0
+8. Removes duplicates (`MADup`==1)
+9. Combines genus and species names
+10. Corrects some managed area names to match what is being used with other habitats
+11. Creates species richness dataset
+   + Grouped based on common `ManagedAreaName`, `ProgramID`, `ProgramName`, `ProgramLocationID`,
+            and `SampleDate`
+   + `SpeciesRichness` determined based on the number of unique species (`gensp`) in each group
+   
+12. Merges data with managed area data to determine correct `AreaID`
+13. Writes to file with "_UsedData" file name to indicate what data was used for species richness.
 
 ```{r filtering}
 # Create ParameterName Column
@@ -95,7 +105,7 @@ parameter <- "Species Richness"
 colnames(data)[colnames(data) == "[PercentCover-SpeciesComposition_%]"] <-
   "perccov"
 
-#Changes "ManagedArea" column name to "ManagedAreaName" for consistency
+# Changes "ManagedArea" column name to "ManagedAreaName" for consistency
 colnames(data)[colnames(data) == "ManagedArea"] <- "ManagedAreaName"
 
 # Sets units for species richness
@@ -184,11 +194,13 @@ Gets summary statistics for each managed area. Uses piping from dplyr package to
 1. Group data that have the same `ManagedAreaName`, `Year`, and `Month`.
    + Second summary statistics do not use the `Month` grouping and are only for `ManagedAreaName` and `Year`.
    + Third summary statistics do not use `Year` grouping and are only for `ManagedAreaName` and `Month`
+   + Fourth summary statistics are only grouped based on `ManagedAreaName`
+      + Determines the years that the minimum and maximum species richness occurred
 
 2. For each group, provide the following information: Parameter Name (ParameterName), Number of Entries (N_Data), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, and a list of all Programs included in these measurements.
 3. Sort the data in ascending (A to Z and 0 to 9) order based on `ManagedAreaName` then `Year` then `Month`
 4. Write summary stats to a pipe-delimited .txt file in the output directory
-   + [Coastal Wetlands Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output)
+   + [Coastal Wetlands Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output)
 
 ```{r managed_area_stats, message=FALSE}
 # Create summary statistics for each managed area based on Year and Month
@@ -329,18 +341,18 @@ The plots shown here are the species richness for each managed area with a yearl
 1. Set common plot theme.
 2. Determine the earliest and latest year of the data to create x-axis scale and intervals
 3. Determine the upper and lower limit of the plot for better y-axis labels
-4. Determines what gear types are present and adjusts legend entries
-5. Add the plot line
-6. Set the plot type as a point plot with the size of the points
-7. Create the title, x-axis, y-axis, and color fill labels
-8. Set the y and x limits
-9. Apply common plot theme
-10. Add table with summary statistics below each figure
+4. Add the plot line
+5. Set the plot type as a point plot with the size of the points
+6. Create the title, x-axis, y-axis, and color fill labels
+7. Set the y and x limits
+8. Apply common plot theme
+9. Add table with summary statistics below each figure
    + Numerical non-integer values are rounded to 2 decimal places
    + StandardDeviation is renamed StDev for space reasons
-11. Create file name to save figure
-12. Save figure as png file
-   + [Coastal Wetlands Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output/Figures)
+   
+10. Create file name to save figure
+11. Save figure as png file
+   + [Coastal Wetlands Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output/Figures) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output/Figures)
 
 ```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
 # Defines standard plot theme: black and white, no major or minor grid lines,

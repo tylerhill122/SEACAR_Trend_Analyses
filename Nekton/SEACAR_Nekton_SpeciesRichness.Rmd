@@ -60,6 +60,8 @@ The command `fread` is used because of its improved speed while handling large d
 
 The script then gets the name of the parameter as it appears in the data file and units of the parameter.
 
+The latest version of Nekton data is available at: https://usf.box.com/s/35sn0n0lrrxi9dtkik030nozbvnj9dyj
+
 The file being used for the analysis is: **`r file_short`**
 
 ```{r file_import}
@@ -151,8 +153,10 @@ title: '`r paste("SEACAR Nekton Analysis:", parameter)`'
 Gets summary statistics for each managed area. Uses piping from dplyr package to feed into subsequent steps. The following steps are performed:
 
 1. Group data that have the same `ManagedAreaName`, `Year`, `Month`, `GearType`, and `GearSize_m`.
-   + Second summary statistics do not use the `Month` grouping and are only for `ManagedAreaName` and `Year`.
-   + Third summary statistics do not use `Year` grouping and are only for `ManagedAreaName` and `Month`
+   + Second summary statistics do not use the `Month` grouping and are only for `ManagedAreaName`, `Year`, `GearType`, and `GearSize_m`.
+   + Third summary statistics do not use `Year` grouping and are only for `ManagedAreaName`, `Month`, `GearType`, and `GearSize_m`
+   + Fourth summary statistics are only grouped based on `ManagedAreaName`, `GearType`, and `GearSize_m`
+      + Determines the years that the minimum and maximum species richness occurred
 
 2. For each group, provide the following information: Parameter Name (ParameterName), Number of Entries (N_Data), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, and a list of all Program IDs included in these measurements.
 3. Sort the data in ascending (A to Z and 0 to 9) order based on `ManagedAreaName` then `Year` then `Month`
@@ -317,6 +321,7 @@ The plots shown here are the species richness for each managed area with a yearl
 10. Add table with summary statistics below each figure
    + Numerical non-integer values are rounded to 2 decimal places
    + StandardDeviation is renamed StDev for space reasons
+   
 11. Create file name to save figure
 12. Save figure as png file
    + [Nekton Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output/Figures) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output/Figures)

@@ -20,7 +20,7 @@ APP_Plots <- TRUE
 out_dir <- "output"
 
 # Sets coastal wetland file to only care about "All Parameters" file
-param_name <- "All Parameters"
+param_name <- "All_Parameters"
 
 #Sets abbreviation or label to be used in file names
 param_file <- "SpeciesRichness"
