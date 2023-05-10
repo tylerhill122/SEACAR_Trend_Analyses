@@ -20,15 +20,15 @@ urlcolor: blue
 ---
 
 # Important Notes
-These scripts were created by [J.E. Panzik](mailto:jepanzik@usf.edu) for SEACAR.
+These scripts were created by [J.E. Panzik](mailto:jepanzik@usf.edu) (jepanzik@usf.edu) for SEACAR.
 
 All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
 
-This markdown file is designed to be compiled by [SEACAR_Nekton_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR_Nekton_SpeciesRichness_ReportRender.R).
+This markdown file is designed to be compiled by [SEACAR_Nekton_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR_Nekton_SpeciesRichness_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR_Nekton_SpeciesRichness_ReportRender.R).
 
-Details on the determination of catch per unit effort can be found in the document [SEACAR Nekton catch per unit effort.pdf](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR%20Nekton%20catch%20per%20unit%20effort.pdf).
+Details on the determination of catch per unit effort can be found in the document [SEACAR Nekton catch per unit effort.pdf](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR%20Nekton%20catch%20per%20unit%20effort.pdf) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR%20Nekton%20catch%20per%20unit%20effort.pdf).
 
 # Libraries and Settings
 
@@ -67,14 +67,14 @@ The file being used for the analysis is: **`r file_short`**
 data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
               na.strings="")
 
-cat(paste("The data file used is:", file_in, sep="\n"))
+cat(paste("The data file used is:", file_short, sep="\n"))
 ```
 
 
 
 # Data Filtering
 
-Documentation on database filtering is provided here: [SEACAR Documentation- Analysis Filters and Calculations.pdf](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/SEACAR%20Documentation%20-%20Analysis%20Filters%20and%20Calculations.pdf).
+Documentation on database filtering is provided here: [SEACAR Documentation- Analysis Filters and Calculations.pdf](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/SEACAR%20Documentation%20-%20Analysis%20Filters%20and%20Calculations.pdf) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/SEACAR%20Documentation%20-%20Analysis%20Filters%20and%20Calculations.pdf).
 
 Imported data is initially filtered to only contain the parameter of interest.
 
@@ -157,7 +157,7 @@ Gets summary statistics for each managed area. Uses piping from dplyr package to
 2. For each group, provide the following information: Parameter Name (ParameterName), Number of Entries (N_Data), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, and a list of all Program IDs included in these measurements.
 3. Sort the data in ascending (A to Z and 0 to 9) order based on `ManagedAreaName` then `Year` then `Month`
 4. Write summary stats to a pipe-delimited .txt file in the output directory
-   + [Nekton Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output)
+   + [Nekton Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output)
 
 ```{r managed_area_stats, message=FALSE}
 # Create summary statistics for each managed area based on Year and Month
@@ -319,7 +319,7 @@ The plots shown here are the species richness for each managed area with a yearl
    + StandardDeviation is renamed StDev for space reasons
 11. Create file name to save figure
 12. Save figure as png file
-   + [Nekton Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output/Figures)
+   + [Nekton Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output/Figures) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Nekton/output/Figures)
 
 ```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
 # Defines standard plot theme: black and white, no major or minor grid lines,
