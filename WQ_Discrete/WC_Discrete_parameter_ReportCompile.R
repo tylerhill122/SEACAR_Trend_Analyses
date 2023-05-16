@@ -43,6 +43,25 @@ all_params <- c(
    "Water_Temperature"
 )
 
+#Sets the list of parameter abbreviation names to cycle through. This can be edited to limit the number of parameters.
+#Easiest way to edit is to comment out undesired parameters.
+#If only one parameter is desired, comment out all other parameters and delete comma after remaining parameter
+all_params_short <- c(
+   "ChlaC",
+   "Chla",
+   "CDOM",
+   "DO",
+   "DOS",
+   "pH",
+   "Sal",
+   "Secchi",
+   "TN",
+   "TP",
+   "TSS",
+   "Turb",
+   "TempW"
+)
+
 #Sets the list of relative depths to cycle through. This can be edited to limit the number of depths.
 #If only one depth is desired, comment out the other depth and delete comma after remaining depth
 all_depths <- c(
