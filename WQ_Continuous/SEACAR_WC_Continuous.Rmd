@@ -26,8 +26,9 @@ All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
 
-This markdown file is designed to be compiled by [SEACAR_WC_Continuous_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coral/SEACAR_WC_Continuous_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coral/SEACAR_WC_Continuous_ReportRender.R).
+This markdown file is designed to be compiled by [SEACAR_WC_Continuous_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/WQ_Continuous/SEACAR_WC_Continuous_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/WQ_Continuous/SEACAR_WC_Continuous_ReportRender.R).
 
+Note: The top 2% of data is excluded when computing mean and standard deviations in plotting sections solely for the purpose of getting y-axis scales. The exclusion of the top 2% is not used in any statistics that are exported.
 
 
 # Libraries and Settings
@@ -53,7 +54,7 @@ opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
 
 # File Import
 
-Imports file that is determined in the WC_Continuous_parameter_ReportCompile.R script. 
+Imports file that is determined in the SEACAR_WC_Continuous_ReportRender.R script. 
 
 The command `fread` is used because of its improved speed while handling large data files. Only columns that are used by the script are imported from the file, and are designated in the `select` input.
 
@@ -84,7 +85,7 @@ title: '`r paste("SEACAR Continuous Water Quality Analysis:", region, "Region fo
 
 # Data Filtering
 
-Most data filtering is performed on export from the database, and is indicated by the `Include` variable. `Include` values of 1 indicate the data should be used for analysis, values of 0 indicate the data should not be used for analysis. Documentation on the database filtering is provided here: [SEACAR Documentation- Analysis Filters and Calculations.pdf](https://github.com/FloridaSEACAR/SEACAR_Panzik/blob/main/SEACAR%20Documentation%20-%20Analysis%20Filters%20and%20Calculations.pdf)
+Most data filtering is performed on export from the database, and is indicated by the `Include` variable. `Include` values of 1 indicate the data should be used for analysis, values of 0 indicate the data should not be used for analysis. Documentation on the database filtering is provided here: [SEACAR Documentation- Analysis Filters and Calculations.pdf](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/SEACAR%20Documentation%20-%20Analysis%20Filters%20and%20Calculations.pdf)
 
 The filtering that is performed by the script at this point removes rows that are missing values for `ResultValue` and `RelativeDepth`, and removes any activity type that has "Blank" in the description. Data passes the filtering the process if it is has an `Include` value of 1.
 
@@ -219,7 +220,7 @@ Mon_Summ <- data %>%
                                          consMonthIDs==TRUE, TRUE, FALSE),
              # Determines if monitoring location is sufficient for analysis
              # based on having more than 0 data entries, more than the
-             #sufficient number of year, and the consecutive month criteria
+             # sufficient number of year, and the consecutive month criteria
              SufficientData=ifelse(N_Data>0 & N_Years>=suff_years &
                                       ConsecutiveMonths==TRUE, TRUE, FALSE),
              Median=median(ResultValue, na.rm=TRUE))
@@ -260,7 +261,7 @@ Gets summary statistics for each monitoring location. Excluded monitoring locati
 3. For each group, provide the following information: Earliest Sample Date (EarliestSampleDate), Latest Sample Date (LastSampleDate), Number of Entries (N), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, and a list of all Program IDs included in these measurements.
 4. Sort the data in ascending (A to Z and 0 to 9) order based on `ManagedAreaName`, `ProgramID`, `ProgramName`, `ProgramLocationID`, `Year`, and `Month` in that order.
 5. Write summary stats to a pipe-delimited .txt file in the output directory
-   + [WC Continuous Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WC_Continuous/output) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WC_Continuous/output)
+   + [WC Continuous Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WQ_Continuous/output) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WQ_Continuous/output)
 
 Because the continuous data is extensive and most measurements are taken every 15 minutes, a daily average is determined and used based on grouping `ManagedAreaName`, `ProgramID`, `ProgramName`, `ProgramLocationID`, and `SampleDate`. The new `ResultValue` is the mean of all values on that date from that specific monitoring location. Sets the `SampleDate` as a date object, and creates various scales of the date to be used by plotting functions.
 
@@ -377,7 +378,7 @@ The following steps are performed:
 6. The two stats tables are merged based on similar groups, and then Trend is determined from the user-defined function.
    
 7. Write summary stats to a pipe-delimited .txt file in the output directory
-   + [WC Continuous Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WC_Continuous/output) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WC_Continuous/output)
+   + [WC Continuous Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WQ_Continuous/output) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WQ_Continuous/output)
 
 After the analysis is performed, a variable is created that stores the x & y coordinates of the SKT trend line to be used for plotting
 
@@ -439,9 +440,8 @@ tauSeasonal <- function(dat, independent, stats.median, stats.minYear,
 }
 # Function that determines statistics from data
 runStats <- function(dat, med, minYr, maxYr) {
-   #dat$Index <- as.Date(dat$SampleDate) # , "%Y-%m-%d")
+   # Get basic stats
    dat$Mean <- as.numeric(dat$Mean)
-   # Calculate basic stats
    stats.median <- med
    stats.minYear <- minYr
    stats.maxYear <- maxYr
@@ -493,7 +493,7 @@ trend_calculator <- function(slope, median_value, p) {
       0
    return(trend)
 }
-
+# Creates a null data frame for storing kendall tau results
 KT.Stats <- NULL
 # List for column names
 c_names <- c("MonitoringID", "Independent", "tau", "p",
@@ -538,7 +538,7 @@ if(n==0){
    # Sets column and row names for KT.Stats
    colnames(KT.Stats) <- c_names
    rownames(KT.Stats) <- seq(1:nrow(KT.Stats))
-   # Sets valiables to proper format and rounds values if necessary
+   # Sets variables to proper format and rounds values if necessary
    KT.Stats$tau <- round(as.numeric(KT.Stats$tau), digits=4)
    KT.Stats$p <- round(as.numeric(KT.Stats$p), digits=4)
    KT.Stats$SennSlope <- as.numeric(KT.Stats$SennSlope)
@@ -560,7 +560,7 @@ fwrite(select(KT.Stats, -MonitoringID), paste0(out_dir_param,"/WC_Continuous_",
                                                "_KendallTau_Stats.txt"), 
        sep="|")
 
-#KT.Stats$MonitoringID <- Mon_Summ$MonitoringID
+# Removes data rows with no ResultValue (created by merging with MA_All)
 data <- data[!is.na(data$ResultValue),]
 
 # Gets x and y values for starting point for trendline
@@ -618,7 +618,7 @@ plot_theme <- theme_bw() +
          axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
                                                               b = 0, l = 0)),
          axis.text=element_text(size=10),
-         axis.text.x=element_text(angle = -45, hjust = 0))
+         axis.text.x=element_text(angle = 60, hjust = 0))
 # Get minimum, mean, and standard deviation of the data
 min_RV <- min(data$ResultValue[data$Include==TRUE])
 mn_RV <- mean(data$ResultValue[data$Include==TRUE &
@@ -912,6 +912,7 @@ The following plots are arranged by `MonitoringID` with data grouped by `Year`, 
 if(n==0){
    print("There are no monitoring locations that qualify.")
 } else {
+   # Begin looping through monitoringg locations
    for (i in 1:n) {
       # Determine upper and lower bounds of time for x-axis
       year_lower <- min(data$Year[data$Use_In_Analysis==TRUE &
@@ -1035,8 +1036,8 @@ if(n==0){
          plot_theme +
          theme(legend.position="none")
       # Create legend object
-      # Arrange plots and legend
       leg1 <- get_legend(p5)
+      # Arrange plots and legend
       YMset <- ggarrange(leg1, p4, p5 + theme(legend.position="none"), p6,
                          ncol=1, heights=c(0.1, 1, 1, 1))
       # Create plot title object

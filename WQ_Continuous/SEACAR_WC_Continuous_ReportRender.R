@@ -81,7 +81,7 @@ for (j in 1:length(all_params)){
       out_dir_param <- paste0(out_dir, "/", param_name)
       
       #Renders WC_discrete_parameter.Rmd for each parameter combination and writes the report to a pdf
-      #Stored in reports/by_parameter directory
+      #Stored in output directory
       file_out <-  paste0("SEACAR_WC_Continuous_", param_abrev, "_",
                           region)
       rmarkdown::render(input = "SEACAR_WC_Continuous.Rmd", 
