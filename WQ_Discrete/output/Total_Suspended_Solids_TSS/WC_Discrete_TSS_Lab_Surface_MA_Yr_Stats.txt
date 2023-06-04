@@ -1,19 +1,21 @@
 AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|Median|Mean|StandardDeviation|Programs|ProgramIDs
-2|Apalachicola Bay Aquatic Preserve|2001|Total Suspended Solids, TSS|Surface|Lab|5|4|29|17|18.6|10.3101891350256|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|1992|Total Suspended Solids, TSS|Surface|Lab|2|28|36|32|32|5.65685424949238|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|2001|Total Suspended Solids, TSS|Surface|Lab|2|4|17|10.5|10.5|9.19238815542512|Florida STORET / WIN|5002
 2|Apalachicola Bay Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|48|4|863|11|35.25|125.050372829036|Florida STORET / WIN|5002
 2|Apalachicola Bay Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|8|6|38|13.5|16.125|10.8685325596421|Florida STORET / WIN|5002
 2|Apalachicola Bay Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|104|3|30|8|9.19230769230769|4.43305527699264|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
 2|Apalachicola Bay Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|232|3|56|9|10.9008620689655|7.69964294095006|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
 2|Apalachicola Bay Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|230|3|43|10|11.3652173913043|6.40118771018366|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
 2|Apalachicola Bay Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|232|3|70|10|11.7931034482759|7.5512875440992|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-2|Apalachicola Bay Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|205|1|46|11|14.4243902439024|9.99952892242893|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
+2|Apalachicola Bay Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|205|1|46|11|14.390243902439|10.0163543933098|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
 2|Apalachicola Bay Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|215|2|83|7|8.50697674418605|6.40667712978039|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
 2|Apalachicola Bay Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|7|4|9|6|6.14285714285714|1.67616341969505|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|10|3|14|7|8|4.21637021355784|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|5|6|27|9|13.6|8.53229160308062|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|9|3|14|7|8.44444444444445|4.21637021355784|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|4|4|27|7.5|11.5|10.5356537528527|Florida STORET / WIN|5002
+3|Apalachicola National Estuarine Research Reserve|1992|Total Suspended Solids, TSS|Surface|Lab|4|10|36|26|24.5|10.8781125813871|Florida STORET / WIN|5002
 3|Apalachicola National Estuarine Research Reserve|1999|Total Suspended Solids, TSS|Surface|Lab|2|17|20|18.5|18.5|2.12132034355964|Florida STORET / WIN|5002
 3|Apalachicola National Estuarine Research Reserve|2000|Total Suspended Solids, TSS|Surface|Lab|9|4|20|12|12.7777777777778|4.81606109226663|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2001|Total Suspended Solids, TSS|Surface|Lab|38|4|47|13.5|15.0526315789474|7.80487501300985|Florida STORET / WIN|5002
+3|Apalachicola National Estuarine Research Reserve|2001|Total Suspended Solids, TSS|Surface|Lab|32|4|47|13|14.09375|7.73913129658662|Florida STORET / WIN|5002
 3|Apalachicola National Estuarine Research Reserve|2002|Total Suspended Solids, TSS|Surface|Lab|12|7|26|13|14.6666666666667|5.24548868220603|Florida STORET / WIN|5002
 3|Apalachicola National Estuarine Research Reserve|2003|Total Suspended Solids, TSS|Surface|Lab|12|8|24|14.5|15.5|4.8523658709391|Florida STORET / WIN|5002
 3|Apalachicola National Estuarine Research Reserve|2004|Total Suspended Solids, TSS|Surface|Lab|12|8|37|14.5|16.25|7.91000517181764|Florida STORET / WIN|5002
@@ -30,11 +32,12 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 3|Apalachicola National Estuarine Research Reserve|2015|Total Suspended Solids, TSS|Surface|Lab|275|3|56|9|10.9381818181818|7.42651323784796|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2016|Total Suspended Solids, TSS|Surface|Lab|272|3|43|10|11.5551470588235|6.47138828992343|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2017|Total Suspended Solids, TSS|Surface|Lab|276|2|70|10|11.713768115942|7.66963023433912|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
-3|Apalachicola National Estuarine Research Reserve|2018|Total Suspended Solids, TSS|Surface|Lab|243|0|46|10|13.1316872427984|9.77173060630892|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
+3|Apalachicola National Estuarine Research Reserve|2018|Total Suspended Solids, TSS|Surface|Lab|243|0|46|10|13.1028806584362|9.78243238683785|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2019|Total Suspended Solids, TSS|Surface|Lab|268|2|83|7|8.77238805970149|6.67633634076265|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
 3|Apalachicola National Estuarine Research Reserve|2020|Total Suspended Solids, TSS|Surface|Lab|25|2|17|7|8.04|4.12795348811006|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2021|Total Suspended Solids, TSS|Surface|Lab|32|2|23|9|10.1875|5.22053946044511|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2022|Total Suspended Solids, TSS|Surface|Lab|18|3|27|9|10.8333333333333|6.06096478439259|Florida STORET / WIN|5002
+3|Apalachicola National Estuarine Research Reserve|2021|Total Suspended Solids, TSS|Surface|Lab|31|2|23|9|10.3870967741935|5.18123163835806|Florida STORET / WIN|5002
+3|Apalachicola National Estuarine Research Reserve|2022|Total Suspended Solids, TSS|Surface|Lab|35|2|27|9|10.1428571428571|5.88189073814383|Florida STORET / WIN|5002
+3|Apalachicola National Estuarine Research Reserve|2023|Total Suspended Solids, TSS|Surface|Lab|2|2|10|6|6|5.65685424949238|Florida STORET / WIN|5002
 4|Banana River Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|53|0|32.4|5.2|7.47924528301887|6.57996254637944|Florida STORET / WIN|5002
 4|Banana River Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|100|1.2|124.61538|11.8|15.7532014|18.3516952698059|Florida STORET / WIN|5002
 4|Banana River Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|62|2.7|54|27|24.9887096774194|14.5806530789747|Florida STORET / WIN|5002
@@ -56,23 +59,23 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 4|Banana River Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|76|2.1|29.7|8.1|10.7855263157895|8.02942428733|Florida STORET / WIN|5002
 4|Banana River Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|78|1.5|59.8|14.25|17.4102564102564|13.2500290589595|Florida STORET / WIN|5002
 4|Banana River Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|36|0.8|14|5.35|5.77777777777778|2.67582949607472|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|36|2.3|52.5641|9.35|14.8700861111111|15.1557028958391|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|72|2|26|5.65|7.06127083333333|5.12114005494643|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|17|3.1|10.2|4.9|5.26405294117647|1.92787181826154|Florida STORET / WIN|5002
+4|Banana River Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|34|2.3|52.5641|9.35|15.1359735294118|15.563579800082|Florida STORET / WIN|5002
+4|Banana River Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|71|2|26|5.7|7.41192676056338|5.44570483516158|Florida STORET / WIN|5002
+4|Banana River Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|57|2|21|6.1428|7.23023684210526|4.51396016979673|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1990|Total Suspended Solids, TSS|Surface|Lab|17|5|76|5|14|22.7293862653614|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1991|Total Suspended Solids, TSS|Surface|Lab|18|4|13|5|5.77777777777778|2.07380172503816|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|1992|Total Suspended Solids, TSS|Surface|Lab|20|4|23|4|6.15|4.76030737618796|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|1992|Total Suspended Solids, TSS|Surface|Lab|23|2|23|4|5.65217391304348|4.61823161406038|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1993|Total Suspended Solids, TSS|Surface|Lab|6|4|6|4|4.66666666666667|1.03279555898864|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1994|Total Suspended Solids, TSS|Surface|Lab|11|1|24|4|5.81818181818182|6.64557268891375|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1995|Total Suspended Solids, TSS|Surface|Lab|44|0|54|4.5|9.20454545454546|12.4892131047008|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1996|Total Suspended Solids, TSS|Surface|Lab|125|0|62|8|10.752|10.8751388571039|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|132|1|107|10|20.4469696969697|23.8331715699578|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|25|1|5|2|2.52|1.44683562761405|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|45|1|7|4|3.02222222222222|1.54462247357035|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|Total Suspended Solids, TSS|Surface|Lab|93|1|6|4|2.94623655913979|1.43984896096363|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2001|Total Suspended Solids, TSS|Surface|Lab|108|0|15|4|3.40740740740741|2.16184862497997|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|73|0|20|4|4.32876712328767|2.2611132614547|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|57|2|11|4|4.2280701754386|1.28198428589167|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|23|1|5|2|2.39130434782609|1.43777386117892|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|33|1|7|2|2.66666666666667|1.67082813798029|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2000|Total Suspended Solids, TSS|Surface|Lab|82|1|6|4|2.80487804878049|1.47772785538269|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|Total Suspended Solids, TSS|Surface|Lab|96|0|15|4|3.33333333333333|2.28342617303895|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|61|0|8|4|4.04918032786885|1.25732824550309|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|54|2|11|4|4.24074074074074|1.31658771623287|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|48|4|12|4|4.33333333333333|1.38891252934963|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|64|4|38|4|5.625|5.48735921105144|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2006|Total Suspended Solids, TSS|Surface|Lab|88|0.00013|24800|4|780.93104|3652.2594821436|Florida STORET / WIN|5002
@@ -85,13 +88,13 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 5|Big Bend Seagrasses Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|77|2|13|3|3.25974025974026|1.77261772975953|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|91|2|10|2|2.89010989010989|1.55242140220116|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|87|2|8|2|2.72413793103448|1.07497598861679|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|139|2|14|3|3.35251798561151|2.00673976473528|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|101|2|21|3|3.88118811881188|3.38315571238709|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|50|2|9|3|3.92|1.88268154394692|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|26|2|30|3|4.61538461538462|5.62904555374655|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|47|0.1|10|2|2.72127659574468|1.70254747366777|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|54|0.1|10|2|2.68333333333333|1.66197768075289|Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|8|2|14|2|3.625|4.20671232335045|Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|138|2|14|3|3.36231884057971|2.01070866319703|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|98|2|19|3|3.66326530612245|2.94255614229134|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|34|2|9|4|4.38235294117647|2.03029637905634|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|20|2|30|3|5.2|6.27945689907721|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|44|0.1|10|2|2.63409090909091|1.62894504051908|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|71|0.1|10|2|2.12284507042254|1.7257477935905|Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|102|0.638|22|2|2.31509803921569|2.61474128175068|Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 5002
 6|Biscayne Bay Aquatic Preserve|1994|Total Suspended Solids, TSS|Surface|Lab|3|4|12|5|7|4.35889894354067|Florida STORET / WIN|5002
 6|Biscayne Bay Aquatic Preserve|1995|Total Suspended Solids, TSS|Surface|Lab|3|4|7|6|5.66666666666667|1.52752523165195|Florida STORET / WIN|5002
 6|Biscayne Bay Aquatic Preserve|1996|Total Suspended Solids, TSS|Surface|Lab|3|4|4|4|4|0|Florida STORET / WIN|5002
@@ -117,15 +120,15 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 6|Biscayne Bay Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|8|3|14|3.5|5|3.74165738677394|Florida STORET / WIN|5002
 6|Biscayne Bay Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|130|2|26.9|3|4.56384615384615|3.33029327679729|Florida STORET / WIN, North Biscayne Bay Seagrass Loss Water Quality Program|5002, 5026
 6|Biscayne Bay Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|209|2|25.8|3.5|6.02105263157895|5.11706579478691|Florida STORET / WIN, North Biscayne Bay Seagrass Loss Water Quality Program|5002, 5026
-6|Biscayne Bay Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|31|2|5.5|4|3.83225806451613|0.959648233043127|Florida STORET / WIN, North Biscayne Bay Seagrass Loss Water Quality Program|5002, 5026
+6|Biscayne Bay Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|123|2|11.7|3|3.47235772357724|1.24619425984877|Florida STORET / WIN, North Biscayne Bay Seagrass Loss Water Quality Program|5002, 5026
 8|Boca Ciega Bay Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|145|5|35|14|14.4689655172414|5.14923830992641|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|131|4|48|14|14.824427480916|6.32027374775995|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|107|4|43|20|20.0934579439252|7.38373110965112|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|112|5|40|17.5|19.4285714285714|8.61458462208528|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2006|Total Suspended Solids, TSS|Surface|Lab|116|1|64|10|17.0086206896552|17.3132247465467|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|109|5|33|11|12.4770642201835|5.47316065885969|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|110|6|36|18|18.4727272727273|5.35819545638181|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|114|5|45|21|21.8771929824561|8.43626846889324|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|133|4|48|14|14.812030075188|6.28387833333679|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|115|4|43|20|19.8521739130435|7.46834662914073|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|120|5|40|18|19.6|8.67276234672028|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2006|Total Suspended Solids, TSS|Surface|Lab|124|1|64|10|17.0322580645161|17.0756020898125|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|115|5|33|11|12.4782608695652|5.53671608618949|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|118|6|36|18|18.6016949152542|5.2933433935648|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|122|5|45|21|21.672131147541|8.38184048799124|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|134|4|60|15.65|18.4626865671642|9.96885881691317|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|91|2|45|9.3|12.5758241758242|9.53361701978077|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|112|1|30|10|10.0267857142857|6.25791005240074|Florida STORET / WIN|5002
@@ -134,34 +137,26 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 8|Boca Ciega Bay Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|118|1|42|10|10.8220338983051|5.42332940275684|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|133|2|30|8|8.42857142857143|4.64166851251644|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|132|1|51|8|10.2772727272727|8.40535626129259|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|117|2|70|7|9.21880341880342|7.1830131467369|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|165|4|930|12|20.2793939393939|71.945465879415|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|104|3|70|7.5|9.50865384615385|7.61507333251602|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|157|4|930|12|20.571974522293|73.733913355854|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|108|5|33|12.5|13.9064814814815|5.09609110139061|Florida STORET / WIN|5002
 9|Cape Haze Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|15|2|3|2|2.09333333333333|0.27115274205475|Coastal Charlotte Harbor Monitoring Network|513
 9|Cape Haze Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|17|2|177|8.6|54.4382352941177|68.9639840999719|Coastal Charlotte Harbor Monitoring Network|513
 9|Cape Haze Aquatic Preserve|2006|Total Suspended Solids, TSS|Surface|Lab|1|12|12|12|12||Florida STORET / WIN|5002
 9|Cape Haze Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|6|3.3|19|8.15|9.25|5.72599336360076|Southwest Florida Water Management District - Water Quality Monitoring|479
 9|Cape Haze Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|27|2|21|7.8|8.77592592592593|4.84860825333435|Southwest Florida Water Management District - Water Quality Monitoring|479
 9|Cape Haze Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|27|3.68|21.4|8|8.77481481481481|3.51929775596733|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|33|1.6|25.5|7.4|8.31454545454545|5.24922856886436|Coastal Charlotte Harbor Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|479, 513
-9|Cape Haze Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|38|2|33.6|11.7|12.7960526315789|6.49626401551824|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-9|Cape Haze Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|32|1.33|30.5|8.84|12.254375|8.73505911034896|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|28|2.05|34.3|7.265|8.96928571428571|7.13093206134318|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|30|3.68|42.3|12|15.9053333333333|10.6299416851592|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|28|3.78|27.7|11.8|12.2321428571429|5.10964690897439|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+9|Cape Haze Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|30|1.68|25.5|7.255|8.346|5.31216664674204|Coastal Charlotte Harbor Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|479, 513
+9|Cape Haze Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|35|2|33.6|12|13.108|6.57458779741227|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+9|Cape Haze Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|25|1.33|29.8|8|11.4444|8.16840920865256|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|24|2.05|34.3|7.79|9.835|7.35489071239705|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|26|3.68|42.3|12.95|16.7873076923077|11.0400933176101|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|27|3.78|27.7|12|12.4011111111111|5.12664707741915|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 9|Cape Haze Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|4|5.33|17.1|10.57|10.8925|5.53354241572852|Southwest Florida Water Management District - Water Quality Monitoring|479
 9|Cape Haze Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|1|4|4|4|4||Florida STORET / WIN|5002
-9|Cape Haze Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|15|5.2|29.7|8.8|10.6253333333333|6.5289431070609|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-9|Cape Haze Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|11|2.75|48.5|29.3|26.3318181818182|15.7216454725209|Coastal Charlotte Harbor Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|479, 513
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1989|Total Suspended Solids, TSS|Surface|Lab|2|4.6|13|8.8|8.8|5.939696961967|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1990|Total Suspended Solids, TSS|Surface|Lab|10|4.4|25|9.200005|10.780001|6.10751792101878|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1991|Total Suspended Solids, TSS|Surface|Lab|8|10|115|30|46.375|39.795683541955|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1994|Total Suspended Solids, TSS|Surface|Lab|2|31|35|33|33|2.82842712474619|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1995|Total Suspended Solids, TSS|Surface|Lab|6|4|26|9.5|12.1666666666667|9.06458309392477|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1996|Total Suspended Solids, TSS|Surface|Lab|4|6|10.8|7.4|7.9|2.1007935008785|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|3|14|20|17|17|3|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|8|6|26|11.5|14|8.01783725737273|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|3|13|19|19|17|3.46410161513775|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|354
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|3|13|14|13|13.3333333333333|0.577350269189626|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|354
+9|Cape Haze Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|14|5.2|29.7|9.1|10.9557142857143|6.6440114322665|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|13|2.75|48.5|18.3|23.5946153846154|15.8341601268611|Coastal Charlotte Harbor Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|479, 513
+9|Cape Haze Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|2|4|18|11|11|9.89949493661167|Florida STORET / WIN|5002
 11|Cockroach Bay Aquatic Preserve|2000|Total Suspended Solids, TSS|Surface|Lab|1|350|350|350|350||Florida STORET / WIN|5002
 11|Cockroach Bay Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|12|1|9|6|5.33333333333333|2.49848438906955|Florida STORET / WIN|5002
 11|Cockroach Bay Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|12|3|12|5|5.5|2.50454132981017|Florida STORET / WIN|5002
@@ -202,7 +197,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 14|Estero Bay Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|224|0.6|104|8.6|12.0099553571429|11.4325340378739|Estero Bay Tributary Monitoring, Florida STORET / WIN|4063, 5002
 14|Estero Bay Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|212|0.6|59.8|6.975|9.48891509433962|8.37288176522088|Estero Bay Tributary Monitoring, Florida STORET / WIN|4063, 5002
 14|Estero Bay Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|250|0.6|47.2|9.75|11.746|7.70464080667226|Estero Bay Tributary Monitoring, Florida STORET / WIN|4063, 5002
-14|Estero Bay Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|104|1.2|53.4|13.95|16.4543269230769|11.1691172491425|Estero Bay Tributary Monitoring, Florida STORET / WIN|4063, 5002
+14|Estero Bay Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|226|0.6|53.4|9.1|12.4568584070796|9.84454205683287|Estero Bay Tributary Monitoring, Florida STORET / WIN|4063, 5002
+14|Estero Bay Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|19|4.1|25.1|13.3|13.3526315789474|5.88702607633021|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2007|Total Suspended Solids, TSS|Surface|Lab|49|11|201|43|49.2448979591837|28.424263851685|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2008|Total Suspended Solids, TSS|Surface|Lab|54|13|146|64|64.8148148148148|22.2948289749364|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2009|Total Suspended Solids, TSS|Surface|Lab|45|36|141|65|74.1555555555556|29.4749165744486|Florida STORET / WIN|5002
@@ -216,7 +212,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 15|Florida Keys National Marine Sanctuary|2017|Total Suspended Solids, TSS|Surface|Lab|88|3|50|4|5.59090909090909|6.33116060184491|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2020|Total Suspended Solids, TSS|Surface|Lab|3|2.9|4.1|3.6|3.53333333333333|0.602771377334171|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2021|Total Suspended Solids, TSS|Surface|Lab|12|2.7|18.1|4.2|8.14166666666667|6.26483088842836|Florida STORET / WIN|5002
-15|Florida Keys National Marine Sanctuary|2022|Total Suspended Solids, TSS|Surface|Lab|3|2.5|3.2|2.7|2.8|0.360555127546399|Florida STORET / WIN|5002
+15|Florida Keys National Marine Sanctuary|2022|Total Suspended Solids, TSS|Surface|Lab|30|2.5|6|3.1|3.53666666666667|0.947404197079408|Florida STORET / WIN|5002
 17|Fort Pickens State Park Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|14|12|39|20.5|21.3571428571429|7.24947895058294|Florida STORET / WIN|5002
 17|Fort Pickens State Park Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|11|12|41|22|24.9090909090909|9.5021528661093|Florida STORET / WIN|5002
 17|Fort Pickens State Park Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|34|5|64|27|28.2647058823529|12.2160074406355|Florida STORET / WIN|5002
@@ -244,19 +240,20 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|139|0.6|32.8|6.67|8.79057553956835|6.22524707265738|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 513, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|256|0.57|103|6.55|8.6640625|8.93854420199287|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 513, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|312|2|80.3|7.595|10.051891025641|8.34986596813599|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|301|1.4|36.5|6.32|8.17817275747508|6.15894668890079|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|328|1.6|59.3|6.725|9.2617987804878|8.15458120407303|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|311|1.11|57.6|5.5|7.71729903536978|7.07746125687364|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|306|2|48|5.725|7.87754901960784|6.19695288997262|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|349|2|135|8.63|11.8157593123209|10.5191417916985|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|287|0.57|55.8|7.11|8.55825783972125|5.99443860232653|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|292|1.4|36.5|6.215|8.17671232876712|6.22068466299418|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|308|1.6|53.5|6.47|8.8775|7.70753165535122|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|295|1.11|57.6|5.5|7.72122033898305|7.07651427526436|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|295|2|48|5.68|7.90003389830509|6.28132695902657|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|327|2|135|8.5|11.7422629969419|10.6647865790763|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|264|0.57|55.8|6.96|8.50401515151515|5.99938651614578|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|111|0.57|63.9|8.8|12.5144144144144|12.090288039631|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|57|1.6|55.2|10.2|14.5264912280702|11.9638057566544|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|74|1.8|56.2|6.765|11.2627027027027|11.083349265971|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|80|0.7|40.1|4.825|7.6705|7.59465966604416|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|226|0.6|42.8|6.025|8.18265486725664|7.05841046225617|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|189|0.57|71|10.4|14.8438095238095|12.4909988990249|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|27|3.7|18|7|7.28703703703704|2.90866056249372|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|209|0.6|42.8|6.2|8.35344497607655|7.1917375533748|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|195|0.57|71|10.8|15.1206153846154|12.6927561787487|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|117|2|52|7.78|10.6587179487179|9.76757395305416|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|9|0.95|32|8|11.0833333333333|9.74842936067139|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
 19|Guana River Marsh Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|70|9.4|75.6|24.2|26.3557142857143|12.2023713033341|Florida STORET / WIN|5002
 19|Guana River Marsh Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|78|5|106|30.65|35.9070512820513|23.3085860724891|Florida STORET / WIN|5002
 19|Guana River Marsh Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|78|0.9|148|33.9|43.8965384615385|29.4822010943659|Florida STORET / WIN|5002
@@ -272,17 +269,18 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 19|Guana River Marsh Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|70|6.5|201|20|27.9114285714286|25.8587441710443|Florida STORET / WIN|5002
 19|Guana River Marsh Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|68|3|140|47|45|20.8934753794776|Florida STORET / WIN|5002
 19|Guana River Marsh Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|57|5.5|110|53|51.1657894736842|17.4984467624342|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|29|5.2|58.6|22.9|25.8455448275862|16.2244115465507|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-19|Guana River Marsh Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|27|7.9|40.8|14|17.2888888888889|9.37366742666076|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-19|Guana River Marsh Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|47|5|51.6|9|11.7659574468085|7.5740195690883|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
+19|Guana River Marsh Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|23|5.2|45.9|21.4|21.7530782608696|12.3194206596354|Florida STORET / WIN|5002
+19|Guana River Marsh Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|24|7.9|40.8|14.85|18.075|9.66622312825528|Florida STORET / WIN|5002
+19|Guana River Marsh Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|27|5.3|51.6|11.9|13.037037037037|9.12174697118199|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
 19|Guana River Marsh Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|25|3.8|61.1|14.4|20.704|17.0304501799962|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
 19|Guana River Marsh Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|26|6|73.2|16|22.2423076923077|15.119740026255|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
 19|Guana River Marsh Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|12|5.2|24.9|14.9|15.65|6.58710862214978|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|21|2|77|10|16.9047619047619|17.9969574148098|Guana River and Guana Lake Water Quality Monitoring|5014
-19|Guana River Marsh Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|32|2|79|13|15.625|14.0637947432635|Guana River and Guana Lake Water Quality Monitoring|5014
-19|Guana River Marsh Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|46|2|47|12|14.7478260869565|9.79715920572976|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-19|Guana River Marsh Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|46|2|142|16|26.0416608695652|28.6855400313544|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-19|Guana River Marsh Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|11|5|45|25|24.1818181818182|11.9064535594625|Florida STORET / WIN|5002
+19|Guana River Marsh Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|17|2|53|10|12.4705882352941|12.3192818736464|Guana River and Guana Lake Water Quality Monitoring|5014
+19|Guana River Marsh Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|31|2|126|12|19.0967741935484|24.4872141313376|Guana River and Guana Lake Water Quality Monitoring|5014
+19|Guana River Marsh Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|35|3|47|13|15.44|10.1205149834093|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+19|Guana River Marsh Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|39|2|142|15|24.8696512820513|28.2111210379213|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+19|Guana River Marsh Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|35|3|45|12|15.9714285714286|10.7825723065611|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+19|Guana River Marsh Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|3|9|13|10|10.6666666666667|2.08166599946613|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|1997|Total Suspended Solids, TSS|Surface|Lab|108|9.4|75.6|20.5|24.312037037037|11.366755244293|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|1998|Total Suspended Solids, TSS|Surface|Lab|120|5|106|27.78|34.9623333333333|23.2830079683881|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|1999|Total Suspended Solids, TSS|Surface|Lab|120|0.9|206|35.1|46.33525|35.9537461720267|Florida STORET / WIN|5002
@@ -298,17 +296,18 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2009|Total Suspended Solids, TSS|Surface|Lab|119|4|201|20.5|25.5663865546219|21.3923409282781|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2010|Total Suspended Solids, TSS|Surface|Lab|116|3|140|45|40.8922413793103|23.39154492681|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2011|Total Suspended Solids, TSS|Surface|Lab|100|2|110|51.5|48.9185|17.9169346773471|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2012|Total Suspended Solids, TSS|Surface|Lab|97|4|64.8|18.8|25.8362969072165|18.374992971186|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|Total Suspended Solids, TSS|Surface|Lab|96|5|118|14.75|19.8302083333333|17.7766323244378|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|Total Suspended Solids, TSS|Surface|Lab|284|2|186|13|19.6514084507042|21.8797798966827|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|Total Suspended Solids, TSS|Surface|Lab|102|2|460|17|35.0735294117647|59.0615133710384|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2012|Total Suspended Solids, TSS|Surface|Lab|58|4.1|46.5|17.1|20.4779448275862|11.810874608139|Florida STORET / WIN|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|Total Suspended Solids, TSS|Surface|Lab|83|5|118|15.3|20.6710843373494|18.9054807521102|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|Total Suspended Solids, TSS|Surface|Lab|76|2.2|51.6|12.7|13.6578947368421|8.63151223765407|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|Total Suspended Solids, TSS|Surface|Lab|103|2|460|17|34.8398058252427|58.8191317745088|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|Total Suspended Solids, TSS|Surface|Lab|211|2|73.2|15|17.2433687203791|10.7070038464045|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|Total Suspended Solids, TSS|Surface|Lab|157|3|104|15.2|18.4732484076433|14.7115878893599|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Total Suspended Solids, TSS|Surface|Lab|171|2|125|10|13.859649122807|16.7058692713506|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Total Suspended Solids, TSS|Surface|Lab|168|2|150|14|17.2559523809524|17.2945587039446|Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|Total Suspended Solids, TSS|Surface|Lab|190|2|54|13.9|15.1192757894737|9.77256659601717|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Total Suspended Solids, TSS|Surface|Lab|118|2|142|13|17.4193576271186|19.9620514768783|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|Total Suspended Solids, TSS|Surface|Lab|22|3|45|17|19.4090909090909|11.1468940406396|Florida STORET / WIN|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Total Suspended Solids, TSS|Surface|Lab|167|2|125|10|13.3353293413174|16.1295996628077|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Total Suspended Solids, TSS|Surface|Lab|167|2|150|14|17.9101796407186|19.2878719454584|Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|Total Suspended Solids, TSS|Surface|Lab|173|2|54|14|15.3333086705202|9.51698653811839|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Total Suspended Solids, TSS|Surface|Lab|103|2|142|12|17.1221766990291|19.1860788693986|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|Total Suspended Solids, TSS|Surface|Lab|51|2|45|13|15.4313725490196|9.75757121820955|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2023|Total Suspended Solids, TSS|Surface|Lab|6|2|19|9.5|10.3333333333333|5.57374799095426|Florida STORET / WIN|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|74|2|54|11|14.772972972973|11.5003906699252|Florida STORET / WIN|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|156|1.6|79.6|8.4|10.3025641025641|8.18664489722644|Florida STORET / WIN|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|101|1.6|184|45|44.9524752475248|31.8245961295958|Florida STORET / WIN|5002
@@ -330,9 +329,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|105|1.2|34.7|4.9|7.31142857142857|6.14343480544811|Florida STORET / WIN|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|105|1.1|53|7|11.5304761904762|10.1538371281456|Florida STORET / WIN|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|43|2.5|12|5|5.33488372093023|2.16067490789008|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|51|2|26.7|4|5.36405294117647|4.14716391561042|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|103|2|19|5.8|6.76142291262136|4.0273112721735|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|24|2|12.8|6.2|6.45694166666667|3.07783860707996|Florida STORET / WIN|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|49|2|26.7|4|5.31768775510204|4.16523893600519|Florida STORET / WIN|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|95|2|19|5.8|6.77501642105263|3.97221207890352|Florida STORET / WIN|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|69|2|34|5.6|7.71803913043478|6.21424906542398|Florida STORET / WIN|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|1|3|3|3|3||Florida STORET / WIN|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|31|3.6|40|10|14.5354838709677|10.64698856914|Florida STORET / WIN|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|40|3.2|19.6|10.2|10.92|5.01010261423139|Florida STORET / WIN|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|39|2.8|93|59|53.2102564102564|24.5483818190227|Florida STORET / WIN|5002
@@ -354,9 +354,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|24|2.7|24.2|8.6|10.7208333333333|7.06651498675061|Florida STORET / WIN|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|23|4.1|37.6|13.8|15.2391304347826|8.86462526154761|Florida STORET / WIN|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|12|2.4|18.9103|5.05|5.80085833333333|4.29788486297374|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|14|2.5|15.6|4.75|5.72142857142857|3.41741660669815|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|31|3.4|17|6.8|7.42258064516129|3.41747564511384|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|5|6.8|18|11.5|11.28|4.40306711282034|Florida STORET / WIN|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|12|2.5|15.6|4.6|5.81666666666667|3.69541074930252|Florida STORET / WIN|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|26|4|17|7.15|7.85769230769231|3.54120579203447|Florida STORET / WIN|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|20|2.6|17|8.5999|8.94498|4.0397362865467|Florida STORET / WIN|5002
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1994|Total Suspended Solids, TSS|Surface|Lab|10|1.2|29|5.65|7.49|8.02502336445197|Florida STORET / WIN, RiverKeeper|5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1995|Total Suspended Solids, TSS|Surface|Lab|12|2.8|18|6.6|6.63333333333333|4.06477849856843|Florida STORET / WIN, RiverKeeper|5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1996|Total Suspended Solids, TSS|Surface|Lab|12|1.3|15|4.7|6.76666666666667|4.84248871652758|Florida STORET / WIN, RiverKeeper|5002, 10000
@@ -384,8 +384,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|4|5.8|37.4|10.55|16.075|14.680911642901|RiverKeeper|10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|4|3.7|14.1|8.4|8.65|4.65152304806358|RiverKeeper|10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|21|3.6|11|7|7.24285714285714|2.18049797719957|Florida STORET / WIN, RiverKeeper|5002, 10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|65|3|14|7|6.90461538461539|2.71871010138717|Florida STORET / WIN, RiverKeeper|5002, 10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|37|3|50|9|11.4945945945946|9.99416346190632|Florida STORET / WIN, RiverKeeper|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|64|3|14|7|6.95|2.7152713331633|Florida STORET / WIN, RiverKeeper|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|38|3|50|8|10.9236842105263|9.88374133698878|Florida STORET / WIN, RiverKeeper|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|15|3|22|9|9.93333333333333|4.36653943835008|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|1|10.8|10.8|10.8|10.8||Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|43|4|34|10|9.95348837209302|5.38495916052999|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|47|3|24|8|9.42553191489362|5.2533413005069|Florida STORET / WIN|5002
@@ -399,14 +400,14 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 25|Lemon Bay Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|56|3|17.3|8|8.61428571428571|3.3816310519376|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 25|Lemon Bay Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|20|3.8|15.3|7.15|8.31|3.16242744872053|Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|3|10.6|16.3|13.8|13.5666666666667|2.85715476187996|Southwest Florida Water Management District - Water Quality Monitoring|479
-25|Lemon Bay Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|2|7.56|10.9|9.23|9.23|2.36173664916307|Southwest Florida Water Management District - Water Quality Monitoring|479
-25|Lemon Bay Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|21|2.63|34.1|8.93|11.3790476190476|8.15755227060293|Southwest Florida Water Management District - Water Quality Monitoring|479
-25|Lemon Bay Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|24|2.94|33.3|11.25|12.29375|8.09538398396432|Southwest Florida Water Management District - Water Quality Monitoring|479
-25|Lemon Bay Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|26|5.62|34.5|11.6|14.2211538461538|7.90118438054603|Southwest Florida Water Management District - Water Quality Monitoring|479
-25|Lemon Bay Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|32|4.63|29.8|9.715|10.5453125|4.93159791180401|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|1|10.9|10.9|10.9|10.9||Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|17|3.22|34.1|10.4|12.2694117647059|8.699641853683|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|21|4.38|33.3|11.3|12.9685714285714|8.33046294374706|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|20|5.62|34.5|11.6|14.0275|8.00529027383899|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|26|4.63|29.8|9.715|10.5169230769231|4.93123657451619|Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|9|5.95|24.5|11.5|13.2311111111111|6.48858891525046|Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|1|4|4|4|4||Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|22|2.84|39.8|14.15|16.19|10.4177367069454|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|23|2.84|39.8|13.2|16.06|10.197293312889|Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|17|8|51.3|23.6|27.3064705882353|15.2970940627528|Southwest Florida Water Management District - Water Quality Monitoring|479
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1994|Total Suspended Solids, TSS|Surface|Lab|72|1|23|3.2|4.2625|4.21400874682408|Florida STORET / WIN, RiverKeeper|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1995|Total Suspended Solids, TSS|Surface|Lab|90|1.2|18|2.5|3.92333333333333|3.51798109876047|Florida STORET / WIN, RiverKeeper|5002, 10000
@@ -436,7 +437,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|101|0.5|44.8|4.7|5.87128712871287|5.48414690965994|RiverKeeper|10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|96|0.5|36|3.65|4.83854166666667|4.96773526270783|Florida STORET / WIN, RiverKeeper|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|169|0.5|46.3|5.3|8.87514792899408|9.12579273180906|Florida STORET / WIN, RiverKeeper|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|66|0.5|21.6|4.2|4.74090909090909|3.4801846667505|RiverKeeper|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|102|0.5|48|4.15|4.97549019607843|5.36258464863393|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|2|3|7|5|5|2.82842712474619|Florida STORET / WIN|5002
 28|Matlacha Pass Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|28|0.5|17.2|4|4.97857142857143|3.52980506678822|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
 28|Matlacha Pass Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|38|2.4|36|10.75|11.9460526315789|8.14070006268924|Florida STORET / WIN|5002
 28|Matlacha Pass Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|38|2.3|34.5|12.4|12.6631578947368|7.92380679235073|Florida STORET / WIN|5002
@@ -454,9 +456,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 28|Matlacha Pass Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|1|24.5|24.5|24.5|24.5||Florida STORET / WIN|5002
 28|Matlacha Pass Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|40|2.12|53.7|5.625|9.6645|10.2252008819838|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
 28|Matlacha Pass Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|38|0.6|22.2|5.14|7.98078947368421|5.89306068395287|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-28|Matlacha Pass Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|42|0.6|121|5.7|22.6547619047619|34.1939425699716|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-28|Matlacha Pass Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|95|1.5|51.5|9|13.4563157894737|11.0297885873753|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-28|Matlacha Pass Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|18|1.75|21.9|5.65|7.33055555555556|4.92640361870392|Florida STORET / WIN|5002
+28|Matlacha Pass Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|41|0.6|121|5.6|21.6341463414634|33.9648797271247|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
+28|Matlacha Pass Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|80|1.5|51.5|8.55|12.054375|9.97777972356703|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
+28|Matlacha Pass Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|66|1.3|57|11|17.8204545454545|15.8438825303763|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
+28|Matlacha Pass Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|3|10.1|21.5|12.1|14.5666666666667|6.08714492462052|Florida STORET / WIN|5002
 29|Mosquito Lagoon Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|12|4.8|87|13.4|20.7833333333333|21.9757648882637|Florida STORET / WIN|5002
 29|Mosquito Lagoon Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|47|2|64|17.2|21.1829787234043|14.4864452258705|Florida STORET / WIN|5002
 29|Mosquito Lagoon Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|33|3.2|100|70|63.2424242424242|31.0773533934181|Florida STORET / WIN|5002
@@ -478,9 +481,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 29|Mosquito Lagoon Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|12|9.9|44|14.25|22.3166666666667|13.694911685024|Florida STORET / WIN|5002
 29|Mosquito Lagoon Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|12|11.2|51.8|23.9|28.0666666666667|14.8368909591374|Florida STORET / WIN|5002
 29|Mosquito Lagoon Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|6|8.2|16.4|11.45|12.2833333333333|3.30055550879949|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|14|8.2|28.2432|16.5|16.2614857142857|6.34278056653112|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|20|1.2|53.625|17.95|17.325045|11.0938052839589|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|6|4.6|11.5|9.1375|8.9339|2.60946493749198|Florida STORET / WIN|5002
+29|Mosquito Lagoon Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|10|8.2|24.4|14.65|14.95176|5.73240766542878|Florida STORET / WIN|5002
+29|Mosquito Lagoon Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|13|1.2|26|18.2|15.5780230769231|7.90410982001914|Florida STORET / WIN|5002
+29|Mosquito Lagoon Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|12|4.6|52|11.4642|19.8461|15.2976477961928|Florida STORET / WIN|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|2|6|8|7|7|1.4142135623731|Florida STORET / WIN|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2000|Total Suspended Solids, TSS|Surface|Lab|2|13|26|19.5|19.5|9.19238815542512|Florida STORET / WIN|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2001|Total Suspended Solids, TSS|Surface|Lab|4|19|52|25.5|30.5|14.7082743152735|Florida STORET / WIN|5002
@@ -496,7 +499,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|25|6.2|42|24|24.015708|9.49575586064287|Florida STORET / WIN|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|54|6.8|56.4103|18|22.482587037037|11.7103130584137|Florida STORET / WIN|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|92|6.2|71.2|16.69445|19.151525|11.5483269490388|Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|34|5|40.4|12|15.6235294117647|9.26063872473264|Florida STORET / WIN|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|59|5|41.2|14.2|16.6728813559322|9.00461242935654|Florida STORET / WIN|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|23|5.2|27.2|14.4|15.1173913043478|6.52614686360761|Florida STORET / WIN|5002
 31|North Fork St. Lucie Aquatic Preserve|2000|Total Suspended Solids, TSS|Surface|Lab|4|3|10|4.5|5.5|3.3166247903554|Florida STORET / WIN|5002
 31|North Fork St. Lucie Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|14|3|58|7.5|15.4|16.8709126103982|Florida STORET / WIN|5002
 31|North Fork St. Lucie Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|3|3|20|5.5|9.5|9.17877987534291|Florida STORET / WIN|5002
@@ -512,19 +516,19 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 31|North Fork St. Lucie Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|10|3|9|4|4.5|2.0138409955991|Florida STORET / WIN|5002
 31|North Fork St. Lucie Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|3|5|6|5|5.33333333333333|0.577350269189626|Florida STORET / WIN|5002
 31|North Fork St. Lucie Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|6|5|11|7.5|7.83333333333333|2.31660671385254|Florida STORET / WIN|5002
-31|North Fork St. Lucie Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|24|2|16|5.5|6.79166666666667|4.12815535883361|Florida STORET / WIN|5002
-31|North Fork St. Lucie Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|9|3|13|9|9.66666666666667|3.1224989991992|Florida STORET / WIN|5002
+31|North Fork St. Lucie Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|22|2|16|6|7.04545454545455|4.21423068421038|Florida STORET / WIN|5002
+31|North Fork St. Lucie Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|9|3|23|9|9.77777777777778|6.18016540591305|Florida STORET / WIN|5002
+31|North Fork St. Lucie Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|2|13|17|15|15|2.82842712474619|Florida STORET / WIN|5002
 33|Pellicer Creek Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|6|4|17|8.5|8.83333333333333|4.9564772436345|Florida STORET / WIN|5002
-33|Pellicer Creek Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|21|4|64.8|12|27.0095238095238|23.0407010475355|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|29|5|118|18|25.6206896551724|28.2797426148919|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|151|2|186|16|24.6225165562914|27.9496551491795|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
+33|Pellicer Creek Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|24|5|118|20|27.7083333333333|30.6827797145971|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
+33|Pellicer Creek Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|8|4|16|12|11.25|4.43202630213959|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
 33|Pellicer Creek Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|31|2|460|22|64.741935483871|98.926898176359|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
 33|Pellicer Creek Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|142|4|39|14.5|15.5704225352113|7.80561526129951|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
 33|Pellicer Creek Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|127|3|104|16|18.9055118110236|15.6415366186167|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
 33|Pellicer Creek Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|148|2|125|10|13.5405405405405|16.6174968760917|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
 33|Pellicer Creek Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|136|2|150|14|17.6397058823529|17.994514717348|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|96|2|49|14.5|15.40625|8.60425613776174|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-33|Pellicer Creek Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|10|2|21|5.5|6.5|5.48229473446618|Florida STORET / WIN|5002
+33|Pellicer Creek Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|94|2|49|15|15.6276595744681|8.55341727917454|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
+33|Pellicer Creek Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|9|2|21|6|7|5.56776436283002|Florida STORET / WIN|5002
 34|Pine Island Sound Aquatic Preserve|1987|Total Suspended Solids, TSS|Surface|Lab|2|14|29|21.5|21.5|10.6066017177982|Florida STORET / WIN|5002
 34|Pine Island Sound Aquatic Preserve|1988|Total Suspended Solids, TSS|Surface|Lab|4|5|18|10.5|11|6.97614984548545|Florida STORET / WIN|5002
 34|Pine Island Sound Aquatic Preserve|1994|Total Suspended Solids, TSS|Surface|Lab|4|8|29|14.5|16.5|9.9498743710662|Florida STORET / WIN|5002
@@ -550,33 +554,34 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 34|Pine Island Sound Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|138|1.1|53.7|8.375|10.5903623188406|8.8920394489227|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
 34|Pine Island Sound Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|133|0.8|35.2|6.2|8.34360902255639|6.52572245371716|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
 34|Pine Island Sound Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|141|2.1|44.2|9.2|10.963829787234|7.54598309978556|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-34|Pine Island Sound Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|46|2.2|35.6|9.3|11.4032608695652|6.90931257373307|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
+34|Pine Island Sound Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|137|0.85|74.3|7.25|10.3484671532847|9.92096961361544|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
+34|Pine Island Sound Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|11|5.5|16.7|8.4|9.38181818181818|3.85540352798982|Florida STORET / WIN|5002
 35|Pinellas County Aquatic Preserve|2000|Total Suspended Solids, TSS|Surface|Lab|4|7|11|8|8.5|1.73205080756888|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|386|5|83|14|20.2046632124352|15.5162948789135|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|626|1|76|12|13.3642172523962|8.61746677082807|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|631|2|106|17|19.1917591125198|12.5064933704225|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|585|1|104|14|16.5726495726496|11.4016913544314|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2006|Total Suspended Solids, TSS|Surface|Lab|554|1|150|10|17.0090252707581|17.254344258569|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|540|3|90|10|12.6759259259259|10.3319924852061|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|553|1|66|16|17.2712477396022|8.60941017428146|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|553|1|92|19|20.3960216998192|11.4577256424684|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|578|1.2|68|12|15.0889273356401|9.69942637398275|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|458|1|68|9|11.453056768559|9.19611999817533|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|623|1|85|8|9.36757624398074|8.0459717148533|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|529|1|50|9|10.5928166351607|6.65590030781723|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|561|1.8|44|9|11.1272727272727|7.21243379856629|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|573|1|42|7|8.68307155322862|5.73489591086949|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|599|1|43|6|8.02587646076795|6.17025296051569|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|571|1|80|7|9.10490367775832|9.6371327057871|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|453|1|70|7|8.07991169977925|6.13030467353915|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|585|1|930|11|14.6042735042735|39.1408699993834|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|10|1|38|8|10.5|10.5540934659917|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|454|5|148|13|19.4911894273128|16.0406124167926|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|644|1|76|12|13.2686335403727|8.54031937637981|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|655|2|106|17|19.1358778625954|12.421798615391|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|608|1|104|14|16.6907894736842|11.5866386451094|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2006|Total Suspended Solids, TSS|Surface|Lab|573|1|150|10|17.0087260034904|17.1101407571866|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|555|3|90|10|12.7099099099099|10.2475052432424|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|583|1|73|16|17.3842195540309|8.85254684264352|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|582|1|92|19|20.2646048109966|11.2972092923591|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|600|1.2|68|12|15.1266666666667|9.82025379151536|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|474|1|68|9|11.3588607594937|9.09432225179379|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|646|1|85|8|9.34365325077399|7.95215430596861|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|544|1|50|9|10.5507352941176|6.59787338162869|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|576|1.8|44|8.8|11.0319444444444|7.16856085517167|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|581|1|42|7|8.63235800344234|5.71500621014163|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|606|1|43|6|7.99587458745875|6.14903871899639|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|578|1|80|7|9.03961937716263|9.60094076812466|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|402|1|70|7|8.16641791044776|6.36976113854142|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|559|0.5|930|11|14.2608228980322|40.0593768980226|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|475|1|51|11|12.1627368421053|6.66975199314121|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|1|6|6|6|6||Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|1989|Total Suspended Solids, TSS|Surface|Lab|4|11|24|15|16.25|5.56027577253743|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|1990|Total Suspended Solids, TSS|Surface|Lab|14|3.8|34|9.9|13.3428642857143|9.27110489287982|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|1991|Total Suspended Solids, TSS|Surface|Lab|11|20|168|50|66.9090909090909|45.5421882334491|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|1995|Total Suspended Solids, TSS|Surface|Lab|8|2|28|8|10.125|9.14076426939079|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|1996|Total Suspended Solids, TSS|Surface|Lab|14|4|62|7.5|13.1285714285714|15.2441882278223|Florida STORET / WIN|5002
-38|Rookery Bay Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|1|25|25|25|25||Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|2|7|9|8|8|1.4142135623731|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|8|3|12|6.5|6.625|3.24862608321909|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|12|3|6|4|3.91666666666667|0.90033663737852|Florida STORET / WIN|5002
@@ -586,7 +591,6 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 38|Rookery Bay Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|28|3|21|5.5|8.60714285714286|6.2143161222877|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|6|10|57|17|22.1666666666667|17.4632948399398|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|4|5|16|6.5|8.5|5.06622805119022|Florida STORET / WIN|5002
-38|Rookery Bay Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|6|4|10|5|6|2.44948974278318|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|354
 38|Rookery Bay Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|1|2|2|2|2||Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|1989|Total Suspended Solids, TSS|Surface|Lab|6|4.6|24|13.5|13.7666666666667|6.35662384184141|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|1990|Total Suspended Solids, TSS|Surface|Lab|24|3.8|34|9.700005|12.2750045833333|8.05261202967194|Florida STORET / WIN|5002
@@ -595,7 +599,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 39|Rookery Bay National Estuarine Research Reserve|1995|Total Suspended Solids, TSS|Surface|Lab|16|2|28|5.5|9.875|8.76260996126915|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|1996|Total Suspended Solids, TSS|Surface|Lab|20|2|62|7.5|11.27|13.027626515662|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|2001|Total Suspended Solids, TSS|Surface|Lab|2|2|2|2|2|0|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2002|Total Suspended Solids, TSS|Surface|Lab|17|2|25|2|6.58823529411765|7.50881834519763|Florida STORET / WIN|5002
+39|Rookery Bay National Estuarine Research Reserve|2002|Total Suspended Solids, TSS|Surface|Lab|16|2|20|2|5.4375|6.01075425106256|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|2003|Total Suspended Solids, TSS|Surface|Lab|12|2|2|2|2|0|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|2004|Total Suspended Solids, TSS|Surface|Lab|11|2|8|2|3.63636363636364|2.29227953237502|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|2005|Total Suspended Solids, TSS|Surface|Lab|10|2|5|2|2.7|1.15950180872841|Florida STORET / WIN|5002
@@ -611,8 +615,6 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 39|Rookery Bay National Estuarine Research Reserve|2015|Total Suspended Solids, TSS|Surface|Lab|37|3|21|5|7.5945945945946|5.68848475948199|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|2016|Total Suspended Solids, TSS|Surface|Lab|6|10|57|17|22.1666666666667|17.4632948399398|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|2017|Total Suspended Solids, TSS|Surface|Lab|12|5|26|9|12.1666666666667|7.43252475558772|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2018|Total Suspended Solids, TSS|Surface|Lab|3|13|19|19|17|3.46410161513775|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|354
-39|Rookery Bay National Estuarine Research Reserve|2019|Total Suspended Solids, TSS|Surface|Lab|9|4|14|8|8.44444444444445|4.15665463777998|Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program|354
 40|St. Andrews State Park Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|10|5|36|5|8.1|9.80306074652198|St. Andrews Aquatic Preserve Water Quality Monitoring|470
 40|St. Andrews State Park Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|1|33|33|33|33||St. Andrews Aquatic Preserve Water Quality Monitoring|470
 40|St. Andrews State Park Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|12|5|8|5|5.33333333333333|0.887625364598595|St. Andrews Aquatic Preserve Water Quality Monitoring|470
@@ -632,45 +634,46 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 43|St. Martins Marsh Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|5|2.99|7.43|4.62|4.65|1.81522725849961|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|6|4.25|6.35|5.005|5.14333333333333|0.836125987316904|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|5|6.08|8.92|6.2|7.158|1.39223561224385|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|4|2.23|14|9.595|8.855|5.65764674283104|Southwest Florida Water Management District - Water Quality Monitoring|479
+43|St. Martins Marsh Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|3|2.23|14|6.09|7.44|6.00000833332755|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|4|5.41|9.58|6.495|6.995|1.94357917255768|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|4|3.39|5.72|4.59|4.5725|1.20718336083077|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|3|3.86|4.64|3.99|4.16333333333333|0.417891532976361|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|28|2.73|13.7|3.8|4.58821428571429|2.34752202462185|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+43|St. Martins Marsh Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|23|2.79|13.7|3.85|4.81217391304348|2.53239009726841|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 43|St. Martins Marsh Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|2|3.68|7.12|5.4|5.4|2.43244732728172|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|14|2.76|8.79|4.715|4.77142857142857|1.80182325242157|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|2|3.43|5.98|4.705|4.705|1.8031222920257|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|8|2.13|5.47|4.42|4.04875|1.39084185708821|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|31|1.19|20.5|3.66|4.76096774193548|3.86538428864773|Southwest Florida Water Management District - Water Quality Monitoring|479
 43|St. Martins Marsh Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|6|2.81|6.48|4.275|4.37666666666667|1.22655071915786|Southwest Florida Water Management District - Water Quality Monitoring|479
-44|Terra Ceia Aquatic Preserve|1995|Total Suspended Solids, TSS|Surface|Lab|6|10.2|33.8|21.9|21.9666666666667|7.61305895594318|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|1996|Total Suspended Solids, TSS|Surface|Lab|33|4|57.4|12.4|19.1818181818182|15.5847973708646|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|33|6.8|40|17|18.7393939393939|9.21215024417275|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|31|8.4|42|25|25.3225806451613|7.17396727422233|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|38|10.4|58.4|27|27.7631578947368|9.03899722531544|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2000|Total Suspended Solids, TSS|Surface|Lab|37|2|50|30|28.7216216216216|11.9650215938686|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2001|Total Suspended Solids, TSS|Surface|Lab|41|21.2|91.2|30.2|37.2780487804878|15.8209277887727|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|44|33.8|97.6|58|56.6863636363636|18.3835820447193|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|41|0.5|62.8|26.2|28.6536585365854|16.0729912829096|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|40|5.2|42.4|15.6|17.4|10.3506719712495|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|69|3.2|52.6|12|15.7942028985507|12.0173879424036|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2006|Total Suspended Solids, TSS|Surface|Lab|44|0.5|298|11.5|32.0659090909091|66.4075470044959|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|43|2.6|28|9|9.18604651162791|4.39618781799851|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|41|3.6|24|11.6|11.2585365853659|3.57022237470974|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|25|5.8|17.6|10.6|10.256|2.65739220540238|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|38|5.4|22.1|9.2|9.93421052631579|2.7722833125948|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|42|6|18.4|10.3|10.4|2.58249265104142|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|38|6.6|15.6|10.6|10.6894736842105|1.9610793323926|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|45|1|29.4|10.8|14.2444444444444|7.74348862991457|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|40|7.6|30.8|23|20.905|7.59540853208244|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|38|8|32.4|21.9|22.0894736842105|3.97279869175808|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|22|2.4|27.4|23.3|17.6818181818182|9.21027564675333|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|40|1.8|25.2|4.6|5.69|4.95662209212106|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|64|1.8|16|5.1|5.884375|3.0391737990698|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|62|1.3|19.2|4.2|5.40483870967742|3.81065922696464|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|57|2|15.4|5.2|6.1280701754386|3.15915644176715|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|1995|Total Suspended Solids, TSS|Surface|Lab|8|10.2|35.8|23.5|24.65|8.29647085039347|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|1996|Total Suspended Solids, TSS|Surface|Lab|44|2.2|57.4|12|19.0090909090909|15.6109058209216|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|45|6|40|17|19.3422222222222|9.8530680244759|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|40|8.4|45|25.2|26.045|7.39570041411796|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|50|10.4|58.4|27|27.528|7.97155760264234|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2000|Total Suspended Solids, TSS|Surface|Lab|43|2|50|31|30.0767441860465|11.6519329524435|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2001|Total Suspended Solids, TSS|Surface|Lab|49|21.2|91.2|30.2|37.4367346938776|15.5179827656705|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2002|Total Suspended Solids, TSS|Surface|Lab|53|4.8|97.6|51.6|54.3094339622642|19.8947061392157|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2003|Total Suspended Solids, TSS|Surface|Lab|49|0.5|62.8|26.2|29.2714285714286|16.2393041722852|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2004|Total Suspended Solids, TSS|Surface|Lab|48|4.6|42.4|14.9|16.8|9.96931462250807|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2005|Total Suspended Solids, TSS|Surface|Lab|81|2|52.6|12|15.562962962963|11.7958938241708|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2006|Total Suspended Solids, TSS|Surface|Lab|64|0.5|312|9.3|29.3328125|66.5852837897468|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2007|Total Suspended Solids, TSS|Surface|Lab|63|1.8|28|7.6|8.34920634920635|4.58172643245911|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2008|Total Suspended Solids, TSS|Surface|Lab|63|2.6|24|10.2|9.93333333333333|3.90714812255856|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2009|Total Suspended Solids, TSS|Surface|Lab|42|1.6|17.6|8.9|8.8952380952381|3.27867852476531|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2010|Total Suspended Solids, TSS|Surface|Lab|58|2.4|22.1|8.8|8.81896551724138|3.22019160901802|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2011|Total Suspended Solids, TSS|Surface|Lab|61|4.6|57.8|10.2|10.7901639344262|6.75370774508425|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2012|Total Suspended Solids, TSS|Surface|Lab|57|2.4|104|10.6|12.0947368421053|13.4165731873018|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2013|Total Suspended Solids, TSS|Surface|Lab|65|1|29.4|10.6|13.3384615384615|7.63093400876681|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|59|2.6|32.2|21.8|18.406779661017|9.02486726250232|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2015|Total Suspended Solids, TSS|Surface|Lab|58|2.8|32.4|21.6|18.7620689655172|7.79468616984599|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|36|1.8|28.4|11|14.5|10.0016570055738|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|59|1.8|25.2|4.6|5.25423728813559|4.18154079974893|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2018|Total Suspended Solids, TSS|Surface|Lab|58|1.8|16|5.3|5.89655172413793|2.97220843624833|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2019|Total Suspended Solids, TSS|Surface|Lab|55|1.3|19.2|4.1|5.49090909090909|3.9668194521123|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|53|2.5|15.4|5.6|6.22264150943396|3.07837628962925|Florida STORET / WIN|5002
 44|Terra Ceia Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|75|1.9|25.4|11.8|10.3306666666667|4.844053845454|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|18|1.8|12.7|6|7.34444444444444|4.43505052988288|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|53|1.8|18.3|7.7|8.19245283018868|4.43711830673068|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|13|2.6|8.4|4.4|4.7|1.80138835346518|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|1997|Total Suspended Solids, TSS|Surface|Lab|4|5|17|8.5|9.75|5.1234753829798|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|1998|Total Suspended Solids, TSS|Surface|Lab|8|12|46|25|27.5|12.4441609945043|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|1999|Total Suspended Solids, TSS|Surface|Lab|12|10|79|36|36.6666666666667|21.2017723673082|Florida STORET / WIN|5002
@@ -691,6 +694,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 45|Tomoka Marsh Aquatic Preserve|2014|Total Suspended Solids, TSS|Surface|Lab|10|3.4|25.4|11|11.54|6.96980790425548|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|2016|Total Suspended Solids, TSS|Surface|Lab|6|4.6|14.8594|7.4347|8.76296666666667|4.02146134914494|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|2017|Total Suspended Solids, TSS|Surface|Lab|12|5.6|14.8|9.9|10.2166666666667|3.72164023793355|Florida STORET / WIN|5002
-45|Tomoka Marsh Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|39|3.4|38.2|10.2|13.3332384615385|7.93890358774983|Florida STORET / WIN|5002
-45|Tomoka Marsh Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|59|2.8|57.5|14|14.1203389830508|9.55942899140581|Florida STORET / WIN|5002
-45|Tomoka Marsh Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|13|2|16.8|8.4|9.46153846153846|4.17243702998988|Florida STORET / WIN|5002
+45|Tomoka Marsh Aquatic Preserve|2020|Total Suspended Solids, TSS|Surface|Lab|32|4.6|38.2|10.1|13.224884375|8.14669487358502|Florida STORET / WIN|5002
+45|Tomoka Marsh Aquatic Preserve|2021|Total Suspended Solids, TSS|Surface|Lab|39|2.8|36|14|13.9128205128205|8.14923888881266|Florida STORET / WIN|5002
+45|Tomoka Marsh Aquatic Preserve|2022|Total Suspended Solids, TSS|Surface|Lab|22|2|86.6663|8.79995|18.2302772727273|21.1777677991383|Florida STORET / WIN|5002
+45|Tomoka Marsh Aquatic Preserve|2023|Total Suspended Solids, TSS|Surface|Lab|4|12.4|30.4999|27.14285|24.2964|8.0906472930168|Florida STORET / WIN|5002

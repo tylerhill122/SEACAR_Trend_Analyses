@@ -15,8 +15,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 1|Alligator Harbor Aquatic Preserve|2011|Turbidity|All|All|59|1.4|9.7|3.9|4.22542372881356|1.66003668637681|Florida STORET / WIN|5002
 1|Alligator Harbor Aquatic Preserve|2019|Turbidity|All|All|5|0.9|13|7.2|6.38|4.5947796465119|Florida STORET / WIN|5002
 1|Alligator Harbor Aquatic Preserve|2020|Turbidity|All|All|5|2|13|7.9|7.8|3.98308925333089|Florida STORET / WIN|5002
-1|Alligator Harbor Aquatic Preserve|2021|Turbidity|All|All|75|0.4|14.4|4.1|5.01466666666667|3.4626069437415|Central Panhandle Aquatic Preserve WQ Monitoring, Florida STORET / WIN|469, 5002
-1|Alligator Harbor Aquatic Preserve|2022|Turbidity|All|All|16|0|8.3|1.3|2.54375|2.67929561638876|Central Panhandle Aquatic Preserve WQ Monitoring, Florida STORET / WIN|469, 5002
+1|Alligator Harbor Aquatic Preserve|2021|Turbidity|All|All|80|0.4|14.4|4.1|4.9325|3.44110576134467|Central Panhandle Aquatic Preserve WQ Monitoring, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 469, 5002
+1|Alligator Harbor Aquatic Preserve|2022|Turbidity|All|All|88|0|27.2|5.025|5.66431818181818|5.08707236796441|Central Panhandle Aquatic Preserve WQ Monitoring, Florida STORET / WIN|469, 5002
+1|Alligator Harbor Aquatic Preserve|2023|Turbidity|All|All|7|0.61|4.62|1.43|2.09285714285714|1.4420554113916|Central Panhandle Aquatic Preserve WQ Monitoring|469
 2|Apalachicola Bay Aquatic Preserve|1992|Turbidity|All|All|2|18|24|21|21|4.24264068711929|Florida STORET / WIN|5002
 2|Apalachicola Bay Aquatic Preserve|1995|Turbidity|All|All|1236|0.7|40|4.2|6.53974110032362|6.28368090874101|Florida STORET / WIN|5002
 2|Apalachicola Bay Aquatic Preserve|1996|Turbidity|All|All|1421|0.64|40|4.4|6.57711470795215|6.2602991294629|Florida STORET / WIN|5002
@@ -44,8 +45,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 2|Apalachicola Bay Aquatic Preserve|2018|Turbidity|All|All|239|1.01|74.1|4.45|7.75008368200837|8.6635881028877|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|129, 355, 5002
 2|Apalachicola Bay Aquatic Preserve|2019|Turbidity|All|All|244|1.27|120|4.52|6.86422131147541|9.00220388015018|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|129, 355, 5002
 2|Apalachicola Bay Aquatic Preserve|2020|Turbidity|All|All|98|0.3|55|9.715|12.6025510204082|10.9683665401566|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Florida STORET / WIN|129, 5002
-2|Apalachicola Bay Aquatic Preserve|2021|Turbidity|All|All|10|5.4|18|8|9.45|4.67909060490272|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2022|Turbidity|All|All|6|4.9|30|7.9|13.2333333333333|10.2821528225691|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|2021|Turbidity|All|All|76|1.9|28.8|5.6|7.69736842105263|5.31536072615235|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, NRDA Oyster Cultch Recovery Project|103, 4044, 5002
+2|Apalachicola Bay Aquatic Preserve|2022|Turbidity|All|All|8|4.5|30|6.85|11.125|9.52796635474448|Florida STORET / WIN|5002
 3|Apalachicola National Estuarine Research Reserve|1992|Turbidity|All|All|4|18|24|21.5|21.25|3.20156211871642|Florida STORET / WIN|5002
 3|Apalachicola National Estuarine Research Reserve|1995|Turbidity|All|All|1831|0.59|40|3.3|5.40731294374659|5.63408354268439|Florida STORET / WIN|5002
 3|Apalachicola National Estuarine Research Reserve|1996|Turbidity|All|All|2137|0.48|40|4.1|6.09639681796912|5.99726254092514|Florida STORET / WIN|5002
@@ -73,8 +74,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 3|Apalachicola National Estuarine Research Reserve|2018|Turbidity|All|All|294|1.01|74.1|4.52|7.18513605442177|7.94733139244171|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|129, 355, 5002
 3|Apalachicola National Estuarine Research Reserve|2019|Turbidity|All|All|318|1.27|120|5.15|6.90588050314465|8.05188331584901|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|129, 355, 5002
 3|Apalachicola National Estuarine Research Reserve|2020|Turbidity|All|All|114|0.3|55|10.025|12.2758771929825|10.3661530410148|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Florida STORET / WIN|129, 5002
-3|Apalachicola National Estuarine Research Reserve|2021|Turbidity|All|All|32|0.8|19|11|10.890625|4.12657472386154|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2022|Turbidity|All|All|19|2.1|30|13|12.4736842105263|6.98815204512952|Florida STORET / WIN|5002
+3|Apalachicola National Estuarine Research Reserve|2021|Turbidity|All|All|98|0.8|28.8|6.95|8.56122448979592|5.24873342901681|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, NRDA Oyster Cultch Recovery Project|103, 4044, 5002
+3|Apalachicola National Estuarine Research Reserve|2022|Turbidity|All|All|39|1.7|30|10|11.2923076923077|6.92103523650467|Florida STORET / WIN|5002
+3|Apalachicola National Estuarine Research Reserve|2023|Turbidity|All|All|2|2.2|14|8.1|8.1|8.34386001800126|Florida STORET / WIN|5002
 4|Banana River Aquatic Preserve|1996|Turbidity|All|All|3136|0.1|33|3.8|4.34577806122449|2.8966221818325|Florida STORET / WIN|5002
 4|Banana River Aquatic Preserve|1997|Turbidity|All|All|807|0.39|14|2.2|2.69885997521685|1.82224841046731|Florida STORET / WIN|5002
 4|Banana River Aquatic Preserve|1998|Turbidity|All|All|816|0.67|30.6|3.4|3.99827205882353|2.75494514962221|Florida STORET / WIN|5002
@@ -100,8 +102,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 4|Banana River Aquatic Preserve|2018|Turbidity|All|All|5|5.82|19.5|13.1|12.624|6.14807937489424|Seagrass (SJRWMD)|3013
 4|Banana River Aquatic Preserve|2019|Turbidity|All|All|12|1.9|45.3|8.68|11.67|12.0247237730512|Seagrass (SJRWMD), Shellfish Harvest Area Classification Program|540, 3013
 4|Banana River Aquatic Preserve|2020|Turbidity|All|All|68|0.5|56.73264|5.56328|13.8017609927941|16.6059617814175|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Shellfish Harvest Area Classification Program|103, 540, 5002
-4|Banana River Aquatic Preserve|2021|Turbidity|All|All|124|0.5|16.038414|2.306301275|3.34267989524194|2.90110331990645|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-4|Banana River Aquatic Preserve|2022|Turbidity|All|All|21|1.07631|3.99286|2.10954|2.17386714285714|0.859825936211178|Florida STORET / WIN|5002
+4|Banana River Aquatic Preserve|2021|Turbidity|All|All|125|0.5|16.038414|2.3063|3.31993845608|2.90054700139572|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+4|Banana River Aquatic Preserve|2022|Turbidity|All|All|74|0.5|7.5886|2.1138|2.45436337837838|1.4747075294205|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1990|Turbidity|All|All|36|0.32|6.3|2.8|2.91638888888889|1.53105967557072|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1991|Turbidity|All|All|42|0.69|9|2.6|3.3702380952381|2.25026013465895|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1992|Turbidity|All|All|35|0.4|5.4|1.4|1.72428571428571|1.39839043128853|Florida STORET / WIN|5002
@@ -131,10 +133,11 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 5|Big Bend Seagrasses Aquatic Preserve|2016|Turbidity|All|All|1167|0.01|100|4.2|6.19298109682948|6.73095083772212|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2017|Turbidity|All|All|1502|0.1|131.4|5.7|8.65272041944075|10.5447349471053|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2018|Turbidity|All|All|227|0.3|83.2|7.3|10.0394273127753|10.026511235055|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|Turbidity|All|All|129|0.35|27|2.6|4.74264007751938|5.27307999578468|Florida STORET / WIN, Shellfish Harvest Area Classification Program, Suwannee River Water Management District Water Resource Monitoring Program|477, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2020|Turbidity|All|All|189|0.1|19|1.82|3.11552188931217|3.62851559033295|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|103, 477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2021|Turbidity|All|All|240|0.1|25|2.2|3.15269149925|3.2039446522853|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Shellfish Harvest Area Classification Program, Suwannee River Water Management District Water Resource Monitoring Program|103, 477, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2022|Turbidity|All|All|64|0.2|30|2.920585|4.85529203125|5.91367873329047|Florida STORET / WIN, Shellfish Harvest Area Classification Program, Suwannee River Water Management District Water Resource Monitoring Program|477, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|Turbidity|All|All|137|0.35|27|2.6|4.61324751824818|5.15334055230936|Florida STORET / WIN, Shellfish Harvest Area Classification Program, Suwannee River Water Management District Water Resource Monitoring Program|477, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|Turbidity|All|All|201|0.1|19|1.8|3.21718227402985|3.82733682867194|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|103, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|Turbidity|All|All|325|0.1|25|2.3|3.4912522456|3.51940482375637|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Shellfish Harvest Area Classification Program, Suwannee River Water Management District Water Resource Monitoring Program|103, 477, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2022|Turbidity|All|All|202|0.1|30|1.8|3.35977633663366|4.96322398709248|Florida STORET / WIN, Shellfish Harvest Area Classification Program, Suwannee River Water Management District Water Resource Monitoring Program|477, 540, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2023|Turbidity|All|All|18|0.8|17|4.5|5.99166666666667|5.52194152769604|Florida STORET / WIN|5002
 6|Biscayne Bay Aquatic Preserve|1982|Turbidity|All|All|4|1.1|1.6|1.3|1.325|0.262995563967658|EPA STOrage and RETrieval Data Warehouse (STORET)|103
 6|Biscayne Bay Aquatic Preserve|1983|Turbidity|All|All|1|1.2|1.2|1.2|1.2||EPA STOrage and RETrieval Data Warehouse (STORET)|103
 6|Biscayne Bay Aquatic Preserve|1993|Turbidity|All|All|8|0.495|2.079|0.8212|0.9292375|0.515922471854334|SERC Water Quality Monitoring Network|509
@@ -163,10 +166,11 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 6|Biscayne Bay Aquatic Preserve|2016|Turbidity|All|All|420|0.2|46.1|1.3|2.98611904761905|4.86826501271283|City of Miami Beach Water Monitoring, Florida STORET / WIN|4058, 5002
 6|Biscayne Bay Aquatic Preserve|2017|Turbidity|All|All|512|0.3|478|3.77|5.5112109375|21.1801994565679|City of Miami Beach Water Monitoring, Florida STORET / WIN|4058, 5002
 6|Biscayne Bay Aquatic Preserve|2018|Turbidity|All|All|430|1.22|66.1|4.325|5.39088372093023|4.74672937680857|City of Miami Beach Water Monitoring|4058
-6|Biscayne Bay Aquatic Preserve|2019|Turbidity|All|All|227|0.01|495.76|1.47|4.78356828193833|32.8846046375318|North Biscayne Bay Seagrass Loss Water Quality Program|5026
-6|Biscayne Bay Aquatic Preserve|2020|Turbidity|All|All|418|0.25|23.8|1.4|1.96796650717703|2.05443240280047|Florida STORET / WIN, North Biscayne Bay Seagrass Loss Water Quality Program|5002, 5026
-6|Biscayne Bay Aquatic Preserve|2021|Turbidity|All|All|382|0.1|19.6|1|1.26623036649215|1.33622492068346|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|2022|Turbidity|All|All|109|0.3|16.7|1.1|1.51651376146789|1.93177685245456|Florida STORET / WIN|5002
+6|Biscayne Bay Aquatic Preserve|2019|Turbidity|All|All|441|0.01|495.76|2.08|4.11637188208617|23.6367780162327|City of Miami Beach Water Monitoring, North Biscayne Bay Seagrass Loss Water Quality Program|4058, 5026
+6|Biscayne Bay Aquatic Preserve|2020|Turbidity|All|All|734|0.2|30.2|1.89|2.45341961852861|2.51625550552996|City of Miami Beach Water Monitoring, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, North Biscayne Bay Seagrass Loss Water Quality Program|103, 4058, 5002, 5026
+6|Biscayne Bay Aquatic Preserve|2021|Turbidity|All|All|674|0.1|46.8|1.61|2.48390207715134|3.40122454950597|City of Miami Beach Water Monitoring, Florida STORET / WIN|4058, 5002
+6|Biscayne Bay Aquatic Preserve|2022|Turbidity|All|All|404|0.2|30.5|0.9|1.39517326732673|2.05089890590962|Florida STORET / WIN|5002
+6|Biscayne Bay Aquatic Preserve|2023|Turbidity|All|All|2|0.3|0.45|0.375|0.375|0.106066017177982|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|1995|Turbidity|All|All|323|0.82|10|2|2.28365325077399|1.32874303041719|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|1996|Turbidity|All|All|349|0.38|8.6|1.4|1.54756446991404|0.935108374380977|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|1997|Turbidity|All|All|320|0.38|27.4|1.35|1.5819375|1.64343016036772|Florida STORET / WIN|5002
@@ -190,8 +194,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 8|Boca Ciega Bay Aquatic Preserve|2015|Turbidity|All|All|120|0.1|7.8|2.2|2.51083333333333|1.54004233453398|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|2016|Turbidity|All|All|138|0.5|14|3.2|3.50246376811594|2.49372345284348|Florida STORET / WIN|5002
 8|Boca Ciega Bay Aquatic Preserve|2017|Turbidity|All|All|133|0.8|26|3.69|4.72654135338346|3.69470034974601|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2020|Turbidity|All|All|121|1.3|18|4.4|5.34074380165289|3.36704746162204|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2021|Turbidity|All|All|172|0.35|38|3.35|5.20226744186047|5.57324152934635|Florida STORET / WIN|5002
+8|Boca Ciega Bay Aquatic Preserve|2020|Turbidity|All|All|141|1.3|18|4.3|5.24354609929078|3.19782362033747|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+8|Boca Ciega Bay Aquatic Preserve|2021|Turbidity|All|All|301|0.35|38|3.6|5.53900332225914|5.80159044314479|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+8|Boca Ciega Bay Aquatic Preserve|2022|Turbidity|All|All|112|0.75|21|3.35|4.02330357142857|2.92956239649236|Florida STORET / WIN|5002
 9|Cape Haze Aquatic Preserve|1995|Turbidity|All|All|92|1|7.8|2|2.09673913043478|1.02854330866164|Florida STORET / WIN|5002
 9|Cape Haze Aquatic Preserve|1996|Turbidity|All|All|118|0.52|3.6|1.3|1.35813559322034|0.501812014300827|Florida STORET / WIN|5002
 9|Cape Haze Aquatic Preserve|1997|Turbidity|All|All|118|0.46|5.4|1.6|1.54838983050847|0.668961397247112|Florida STORET / WIN|5002
@@ -208,15 +213,18 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 9|Cape Haze Aquatic Preserve|2008|Turbidity|All|All|65|0.5|15.6|2.4|3.18861538461538|2.49849697125784|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 9|Cape Haze Aquatic Preserve|2009|Turbidity|All|All|102|0.5|24|2.1|2.57421568627451|2.575489739557|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
 9|Cape Haze Aquatic Preserve|2010|Turbidity|All|All|108|0.65|10.8|2|2.64|1.79996261643423|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-9|Cape Haze Aquatic Preserve|2011|Turbidity|All|All|84|0.65|17.7|2.55|3.4402380952381|2.69743652345136|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-9|Cape Haze Aquatic Preserve|2012|Turbidity|All|All|35|0.9|11|3.3|3.832|2.59197040651225|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479
-9|Cape Haze Aquatic Preserve|2013|Turbidity|All|All|31|1|8|2|2.34838709677419|1.48455851299119|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479
-9|Cape Haze Aquatic Preserve|2014|Turbidity|All|All|31|1.3|15|4.1|5.52258064516129|3.79988681212299|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479
-9|Cape Haze Aquatic Preserve|2015|Turbidity|All|All|27|1|14|2.7|3.74444444444444|2.92039688205524|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2011|Turbidity|All|All|85|0.65|17.7|2.6|3.45152941176471|2.68335233912924|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+9|Cape Haze Aquatic Preserve|2012|Turbidity|All|All|36|0.9|11|3.35|3.94222222222222|2.6388862489544|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479
+9|Cape Haze Aquatic Preserve|2013|Turbidity|All|All|33|1|8|2|2.32424242424242|1.44114327510971|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479
+9|Cape Haze Aquatic Preserve|2014|Turbidity|All|All|34|1.3|15|3.85|5.49705882352941|3.82737233178742|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479
+9|Cape Haze Aquatic Preserve|2015|Turbidity|All|All|28|1|14|2.6|3.69285714285714|2.87877656259643|Southwest Florida Water Management District - Water Quality Monitoring|479
 9|Cape Haze Aquatic Preserve|2016|Turbidity|All|All|5|1.6|7.4|3.2|3.64|2.26892044814269|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2017|Turbidity|All|All|1|1|1|1|1||Florida STORET / WIN|5002
-9|Cape Haze Aquatic Preserve|2020|Turbidity|All|All|15|0.75|7.6|2.76|2.91333333333333|1.74517566314629|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-9|Cape Haze Aquatic Preserve|2021|Turbidity|All|All|16|1.33|9.97|1.75|2.430625|2.09227617281594|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 513
+9|Cape Haze Aquatic Preserve|2017|Turbidity|All|All|4|1|2|1.65|1.575|0.419324854180304|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+9|Cape Haze Aquatic Preserve|2018|Turbidity|All|All|5|1.4|2.1|1.8|1.78|0.327108544675923|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+9|Cape Haze Aquatic Preserve|2019|Turbidity|All|All|5|0.85|1.3|1|1.08|0.207966343430854|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+9|Cape Haze Aquatic Preserve|2020|Turbidity|All|All|20|0.75|7.6|2.655|2.762|1.67779178182452|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 5002
+9|Cape Haze Aquatic Preserve|2021|Turbidity|All|All|23|1.1|9.97|1.8|2.1995652173913|1.77642766723472|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 513
+9|Cape Haze Aquatic Preserve|2023|Turbidity|All|All|2|1|4.2|2.6|2.6|2.26274169979695|Florida STORET / WIN|5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1989|Turbidity|All|All|2|3.8|11|7.4|7.4|5.09116882454314|Florida STORET / WIN|5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1990|Turbidity|All|All|10|4|19|6.55|7.72|4.28584232612965|Florida STORET / WIN|5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|1991|Turbidity|All|All|9|0.2|39|3.4|6.42222222222222|12.3470419309422|Florida STORET / WIN|5002
@@ -243,8 +251,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2017|Turbidity|All|All|8|5.4|23|11.1|12.7875|7.26330060745703|Florida STORET / WIN|5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2019|Turbidity|All|All|8|1.9|6.9|4.3|4.325|1.7870566383222|Florida STORET / WIN|5002
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2020|Turbidity|All|All|16|2|13|8.95|7.73125|3.90772205596389|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2021|Turbidity|All|All|60|1.5|20|4.4|6.02333333333333|3.99547908358242|Florida STORET / WIN|5002
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2022|Turbidity|All|All|24|1.3|30.3|8.1|10.5541666666667|7.96617736960821|Florida STORET / WIN|5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2021|Turbidity|All|All|120|1.5|20|4.4|6.02333333333333|3.97865593903676|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2022|Turbidity|All|All|40|1.3|30.3|6.95|8.6975|6.90865260157368|Florida STORET / WIN|5002
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|2023|Turbidity|All|All|16|1.5|24.2|4.65|6.51875|5.89702961950619|Florida STORET / WIN|5002
 11|Cockroach Bay Aquatic Preserve|1999|Turbidity|All|All|24|1|5|3|3|1.10335456873474|Florida STORET / WIN|5002
 11|Cockroach Bay Aquatic Preserve|2000|Turbidity|All|All|24|1|6|3|3.23333333333333|1.55554175287182|Florida STORET / WIN|5002
 11|Cockroach Bay Aquatic Preserve|2001|Turbidity|All|All|23|1|13|3|4.69565217391304|3.50888201061633|Florida STORET / WIN|5002
@@ -264,9 +273,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 11|Cockroach Bay Aquatic Preserve|2015|Turbidity|All|All|58|1.1|14.3|2.7|3.32413793103448|2.1772596928513|Florida STORET / WIN|5002
 11|Cockroach Bay Aquatic Preserve|2016|Turbidity|All|All|60|2.7|18.9|5.05|6.49166666666667|3.87207699122689|Florida STORET / WIN|5002
 11|Cockroach Bay Aquatic Preserve|2017|Turbidity|All|All|36|1.5|15.3|3.95|4.93055555555556|3.34679543482115|Florida STORET / WIN|5002
-11|Cockroach Bay Aquatic Preserve|2020|Turbidity|All|All|25|1.3|5.5|2.2|2.436|1.00286256951455|Florida STORET / WIN|5002
-11|Cockroach Bay Aquatic Preserve|2021|Turbidity|All|All|30|0.8|6|2.7|2.67666666666667|1.19587893901582|Florida STORET / WIN|5002
-11|Cockroach Bay Aquatic Preserve|2022|Turbidity|All|All|30|1.2|7.4|2.25|2.88666666666667|1.57145514233395|Florida STORET / WIN|5002
+11|Cockroach Bay Aquatic Preserve|2020|Turbidity|All|All|27|1.3|5.5|2.2|2.4|0.988783246061698|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+11|Cockroach Bay Aquatic Preserve|2021|Turbidity|All|All|50|0.8|6|2.55|2.734|1.29024756365211|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+11|Cockroach Bay Aquatic Preserve|2022|Turbidity|All|All|50|1.2|7.4|2.55|3.07|1.40469329937397|Florida STORET / WIN|5002
+11|Cockroach Bay Aquatic Preserve|2023|Turbidity|All|All|13|1.2|4.2|2.1|2.29230769230769|0.913292157035504|Florida STORET / WIN|5002
 13|Coupon Bight Aquatic Preserve|1995|Turbidity|All|All|4|0.7|2.368686|1.729343|1.631843|0.865601992179624|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 13|Coupon Bight Aquatic Preserve|1996|Turbidity|All|All|3|0.35|1.95|0.52|0.94|0.878806008172452|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 13|Coupon Bight Aquatic Preserve|1997|Turbidity|All|All|4|0.315|1.06|0.54|0.61375|0.327270912242442|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
@@ -285,9 +295,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 13|Coupon Bight Aquatic Preserve|2010|Turbidity|All|All|7|0.650761|11.873895|0.936928|3.3324382|4.47957330845725|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 13|Coupon Bight Aquatic Preserve|2011|Turbidity|All|All|3|0.6|0.74|0.65|0.663333333333333|0.0709459888459759|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 13|Coupon Bight Aquatic Preserve|2019|Turbidity|All|All|4|0.75|1.4|0.875|0.975|0.29011491975882|Florida STORET / WIN|5002
-13|Coupon Bight Aquatic Preserve|2020|Turbidity|All|All|12|0.3|2.5|0.65|0.795833333333333|0.57818616588798|Florida STORET / WIN|5002
-13|Coupon Bight Aquatic Preserve|2021|Turbidity|All|All|19|0.2|2.5|0.8|1.03157894736842|0.750779322200122|Florida STORET / WIN|5002
-13|Coupon Bight Aquatic Preserve|2022|Turbidity|All|All|7|0.3|1.3|0.7|0.721428571428571|0.305310146759464|Florida STORET / WIN|5002
+13|Coupon Bight Aquatic Preserve|2020|Turbidity|All|All|13|0.3|2.5|0.6|0.773076923076923|0.559618688861511|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+13|Coupon Bight Aquatic Preserve|2021|Turbidity|All|All|37|0.2|3.5|0.85|1.21621621621622|0.865388003381371|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+13|Coupon Bight Aquatic Preserve|2022|Turbidity|All|All|15|0.3|1.3|0.6|0.646666666666667|0.280603091996676|Florida STORET / WIN|5002
+13|Coupon Bight Aquatic Preserve|2023|Turbidity|All|All|3|0.65|3.6|0.7|1.65|1.68893457540545|Florida STORET / WIN|5002
 14|Estero Bay Aquatic Preserve|1991|Turbidity|All|All|55|0.15|26|1.77|3.00690909090909|4.85778255796525|Florida STORET / WIN|5002
 14|Estero Bay Aquatic Preserve|1992|Turbidity|All|All|79|0.11|45|1.36|2.53708860759494|5.36891483852464|Florida STORET / WIN|5002
 14|Estero Bay Aquatic Preserve|1993|Turbidity|All|All|56|0.7|48|2.2|3.83928571428571|6.7803641246129|Florida STORET / WIN|5002
@@ -314,12 +325,13 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 14|Estero Bay Aquatic Preserve|2014|Turbidity|All|All|255|0.676|16.9|3.26|3.73829803921569|2.18449282150362|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 14|Estero Bay Aquatic Preserve|2015|Turbidity|All|All|269|0.53|35.6|4.33|5.27920446096654|3.64501794303604|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 14|Estero Bay Aquatic Preserve|2016|Turbidity|All|All|263|0.2|64.3|4.25|6.31243346007605|7.77878084665266|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Estero Bay Oyster Monitoring, Florida STORET / WIN|476, 4042, 5002
-14|Estero Bay Aquatic Preserve|2017|Turbidity|All|All|248|0.2|23.3|4.76|5.65012096774194|3.63802961772958|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Estero Bay Oyster Monitoring, Florida STORET / WIN|476, 4042, 5002
-14|Estero Bay Aquatic Preserve|2018|Turbidity|All|All|247|0.2|100|2.36|4.67230769230769|9.14221859906394|Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|4042, 4063, 5002
-14|Estero Bay Aquatic Preserve|2019|Turbidity|All|All|209|0.2|71.8|3.98|6.49277511961723|7.93278251406982|Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|4042, 4063, 5002
-14|Estero Bay Aquatic Preserve|2020|Turbidity|All|All|246|0.48|62.9|4.1|5.59540650406504|6.96973378385096|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|476, 4042, 4063, 5002
-14|Estero Bay Aquatic Preserve|2021|Turbidity|All|All|310|0.2|25.7|3.895|4.69536774193548|3.40716008121438|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|476, 4042, 4063, 5002
-14|Estero Bay Aquatic Preserve|2022|Turbidity|All|All|133|0.43|99|6|9.52932330827068|11.5105990810768|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|476, 4042, 4063, 5002
+14|Estero Bay Aquatic Preserve|2017|Turbidity|All|All|280|0.2|23.3|4.715|5.54367857142857|3.50280170048837|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Estero Bay Oyster Monitoring, Florida STORET / WIN|476, 4042, 5002
+14|Estero Bay Aquatic Preserve|2018|Turbidity|All|All|278|0.2|100|2.62|4.87575539568345|9.19473471826299|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|476, 4042, 4063, 5002
+14|Estero Bay Aquatic Preserve|2019|Turbidity|All|All|253|0.2|71.8|3.81|6.14343873517787|7.39024869856143|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|476, 4042, 4063, 5002
+14|Estero Bay Aquatic Preserve|2020|Turbidity|All|All|274|0.48|62.9|4.105|5.55678832116788|6.73289937320319|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|103, 476, 4042, 4063, 5002
+14|Estero Bay Aquatic Preserve|2021|Turbidity|All|All|506|0.2|25.7|4.07|4.91176679841897|3.47595027151767|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|103, 476, 4042, 4063, 5002
+14|Estero Bay Aquatic Preserve|2022|Turbidity|All|All|267|0.43|99|4.69|7.64719101123596|10.4446463591948|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Estero Bay Oyster Monitoring, Estero Bay Tributary Monitoring, Florida STORET / WIN|103, 476, 4042, 4063, 5002
+14|Estero Bay Aquatic Preserve|2023|Turbidity|All|All|20|2.5|14.8|6.965|7.504|3.03014746905337|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|1991|Turbidity|All|All|40|0.01|4.65|0.29|0.53475|0.811570138523831|SERC Water Quality Monitoring Network|509
 15|Florida Keys National Marine Sanctuary|1992|Turbidity|All|All|48|0.16|85.59|0.65|2.7|12.2422350552886|SERC Water Quality Monitoring Network|509
 15|Florida Keys National Marine Sanctuary|1993|Turbidity|All|All|52|0.2|5.69|0.825|1.20575|1.18888934205293|SERC Water Quality Monitoring Network|509
@@ -349,9 +361,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 15|Florida Keys National Marine Sanctuary|2017|Turbidity|All|All|1605|0|80|0.43|1.05475514018692|2.99596254196363|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida Keys Water Watch, Florida STORET / WIN|297, 3000, 5002
 15|Florida Keys National Marine Sanctuary|2018|Turbidity|All|All|1052|0|11.4|0.655|0.992994296577947|1.21247169053468|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida Keys Water Watch|297, 3000
 15|Florida Keys National Marine Sanctuary|2019|Turbidity|All|All|912|0|7.55|0.585|0.798377192982456|0.847116370497778|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
-15|Florida Keys National Marine Sanctuary|2020|Turbidity|All|All|1558|0|83|0.35|0.932349165596919|3.40967928792934|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
-15|Florida Keys National Marine Sanctuary|2021|Turbidity|All|All|843|0|19.6|0.52|0.792467378410439|1.24699023298319|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
-15|Florida Keys National Marine Sanctuary|2022|Turbidity|All|All|51|0.3|7.4|0.7|1.25294117647059|1.26342438494379|Florida STORET / WIN|5002
+15|Florida Keys National Marine Sanctuary|2020|Turbidity|All|All|1579|0|83|0.36|0.938752374920836|3.39016264384136|EPA STOrage and RETrieval Data Warehouse (STORET), Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|103, 297, 5002
+15|Florida Keys National Marine Sanctuary|2021|Turbidity|All|All|869|0|19.6|0.53|0.849136939010357|1.33765444549701|EPA STOrage and RETrieval Data Warehouse (STORET), Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|103, 297, 5002
+15|Florida Keys National Marine Sanctuary|2022|Turbidity|All|All|160|0.2|7.4|0.65|0.9328125|0.864336130075978|Florida STORET / WIN|5002
+15|Florida Keys National Marine Sanctuary|2023|Turbidity|All|All|14|0.3|14|0.925|2.30357142857143|3.60200074134631|Florida STORET / WIN|5002
 17|Fort Pickens State Park Aquatic Preserve|1996|Turbidity|All|All|1|3|3|3|3||Florida STORET / WIN|5002
 17|Fort Pickens State Park Aquatic Preserve|1997|Turbidity|All|All|25|0.5|8|2|2.532|2.03013135863996|Florida STORET / WIN|5002
 17|Fort Pickens State Park Aquatic Preserve|1998|Turbidity|All|All|21|1|8|2|2.64285714285714|2.20874883782005|Florida STORET / WIN|5002
@@ -386,19 +399,20 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|Turbidity|All|All|565|0.2|29|1.6|2.05666194690266|2.21923442346626|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 513, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|Turbidity|All|All|397|0.3|68|1.9|2.59312090680101|3.97967938667152|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2009|Turbidity|All|All|527|0.14|31|1.8|2.40762998102467|2.60667622549766|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Turbidity|All|All|581|0.2|20|1.7|2.2626247848537|2.24796538513474|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Turbidity|All|All|465|0.09|15.1|2.5|2.86588602150538|1.98786873447806|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Turbidity|All|All|397|0.35|17|1.9|2.36331234256927|1.82356770644074|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Turbidity|All|All|290|0.306|17|1.9|2.4400275862069|2.10229928811628|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Turbidity|All|All|339|0.17|28|1.7|2.43380825958702|2.43188852183925|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|Turbidity|All|All|270|0.2|13|1.9|2.20277777777778|1.62403579248316|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2016|Turbidity|All|All|114|0.2|7.7|1.065|1.48938596491228|1.36642307101601|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2017|Turbidity|All|All|105|0.2|13.6|1.2|1.8872380952381|2.077311731374|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|Turbidity|All|All|111|0.2|12.1|0.51|0.936171171171171|1.45355863548661|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|Turbidity|All|All|116|0.2|30.23|0.8|1.82749137931035|3.53243575896709|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|Turbidity|All|All|280|0.2|38.7|1.4|1.88038571428571|2.6915278204762|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|Turbidity|All|All|259|0.2|12.4|1.2|1.77143243243243|1.73757442489375|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|Turbidity|All|All|55|0.55|12|1.77|2.28425454545455|2.01317369876872|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Turbidity|All|All|584|0.2|20|1.7|2.26692636986301|2.24646657634102|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Turbidity|All|All|471|0.09|15.1|2.5|2.87375159235669|1.98208964411585|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Turbidity|All|All|401|0.35|17|1.9|2.40283042394015|1.95765115538292|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Turbidity|All|All|294|0.306|17|1.9|2.44152380952381|2.09033214315679|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Turbidity|All|All|345|0.17|28|1.7|2.43814782608696|2.41708733969939|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|Turbidity|All|All|275|0.2|13|1.9|2.19109090909091|1.61415462578371|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Southwest Florida Water Management District - Water Quality Monitoring|476, 479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2016|Turbidity|All|All|115|0.2|7.7|1.07|1.48860869565217|1.36044232161824|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2017|Turbidity|All|All|134|0.2|13.6|1.5|1.97507462686567|1.87356992933364|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|Turbidity|All|All|145|0.1|30|0.74|1.64424137931034|3.02837508748472|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|Turbidity|All|All|161|0.2|30.23|1.4|1.98937267080745|3.04358512042105|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|Turbidity|All|All|315|0.2|38.7|1.3|1.81231111111111|2.58143970564045|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|Turbidity|All|All|404|0.2|12.4|1.24|1.81864603960396|1.74988552931793|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|Turbidity|All|All|161|0.458|22|1.61|2.41624844720497|2.72123517917658|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2023|Turbidity|All|All|18|0.868|9|3.185|3.44955555555556|2.13059611161986|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
 19|Guana River Marsh Aquatic Preserve|1995|Turbidity|All|All|503|1.4|26|4.6|5.22236580516899|3.13718251189375|Florida STORET / WIN|5002
 19|Guana River Marsh Aquatic Preserve|1996|Turbidity|All|All|335|1|36|3|3.9735223880597|3.37444608165995|Florida STORET / WIN|5002
 19|Guana River Marsh Aquatic Preserve|1997|Turbidity|All|All|474|0.66|20|3.2|3.91981012658228|2.43612986446014|Florida STORET / WIN|5002
@@ -422,11 +436,12 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 19|Guana River Marsh Aquatic Preserve|2015|Turbidity|All|All|23|1.27429|17.84784|8.14907|8.35840956521739|5.0966131659809|Florida STORET / WIN|5002
 19|Guana River Marsh Aquatic Preserve|2016|Turbidity|All|All|24|1.03551|8.91974|3.59531|4.26968833333333|2.30725662738177|Florida STORET / WIN|5002
 19|Guana River Marsh Aquatic Preserve|2017|Turbidity|All|All|12|2.36028|11.48887|7.613025|7.58274|3.09547723754865|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2018|Turbidity|All|All|22|0.65|37|6.55|9.66136363636364|9.24474022682476|Guana River and Guana Lake Water Quality Monitoring|5014
+19|Guana River Marsh Aquatic Preserve|2018|Turbidity|All|All|21|0.65|37|6.8|10.05|9.28706089136924|Guana River and Guana Lake Water Quality Monitoring|5014
 19|Guana River Marsh Aquatic Preserve|2019|Turbidity|All|All|47|0.7|70|6.2|9.91063829787234|11.8628619254369|Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5014
 19|Guana River Marsh Aquatic Preserve|2020|Turbidity|All|All|60|1.2|22|6.25|8.3145075|5.28095924874678|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002, 5014
-19|Guana River Marsh Aquatic Preserve|2021|Turbidity|All|All|48|1.2|33|8.1|11.3877752083333|8.09304827760825|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-19|Guana River Marsh Aquatic Preserve|2022|Turbidity|All|All|11|2.4|19|11|10.3636363636364|6.16543148972928|Florida STORET / WIN|5002
+19|Guana River Marsh Aquatic Preserve|2021|Turbidity|All|All|68|1.2|33|9.771725|11.8296060294118|7.74081664107982|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|103, 5002, 5014
+19|Guana River Marsh Aquatic Preserve|2022|Turbidity|All|All|57|0.9|19|7.4|8.20877192982456|4.21444288394743|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+19|Guana River Marsh Aquatic Preserve|2023|Turbidity|All|All|4|5.9|8.4|6.65|6.9|1.18602979164381|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|1995|Turbidity|All|All|1138|0.84|29|4|5.02644112478032|3.68547748810817|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|1996|Turbidity|All|All|1128|0.3|36|2.8|3.94122340425532|3.26057105625194|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|1997|Turbidity|All|All|1279|0.2|22|3|3.84539483971853|2.73114162324143|Florida STORET / WIN|5002
@@ -450,11 +465,12 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|Turbidity|All|All|81|1.27429|36|6.7416|8.55122222222222|6.56764116566062|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|Turbidity|All|All|61|1.03551|16.85752|3.34776|4.35390540983607|2.98740931877693|Florida STORET / WIN|5002
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|Turbidity|All|All|35|2.36028|19.91495|7.73034|8.32744057142857|3.75012956444326|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Turbidity|All|All|27|0.65|37|6.2|8.65740740740741|8.65577512531044|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Turbidity|All|All|26|0.65|37|6.25|8.93269230769231|8.70582497305904|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Turbidity|All|All|148|0.7|70|7.65|9.13445945945946|7.22274104071317|Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|Turbidity|All|All|174|1.2|28|6.769885|8.02417936781609|5.11537942031732|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Turbidity|All|All|122|0.5|33|6.01046|8.27242950819672|6.33556629467612|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|Turbidity|All|All|24|1.9|19|6.65|8.5875|5.55301034692386|Florida STORET / WIN|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|Turbidity|All|All|178|1.2|28|6.55|7.90509668539326|5.11885734408119|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|103, 4054, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Turbidity|All|All|177|0.5|33|6.1|8.48099661016949|6.21629168609625|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|103, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|Turbidity|All|All|77|0.9|19|6.4|7.6948051948052|4.29393379033284|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2023|Turbidity|All|All|7|3|8.4|6|6.2|1.67431578064991|Florida STORET / WIN|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1995|Turbidity|All|All|1197|0.17|19|2.9|3.3158813700919|2.03063588635975|Florida STORET / WIN|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1996|Turbidity|All|All|1212|0.34|37|2.4|3.08643564356436|3.02836802313572|Florida STORET / WIN|5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|1997|Turbidity|All|All|1220|0.62|26|2.4|3.16739344262295|2.80667727657129|Florida STORET / WIN|5002
@@ -480,9 +496,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2017|Turbidity|All|All|88|0.15|15.5|2.665|3.022445|1.8797262251208|Florida STORET / WIN, Seagrass (SJRWMD)|3013, 5002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|Turbidity|All|All|36|1.51|15.1|4.45|5.79388888888889|3.34326297224542|Seagrass (SJRWMD)|3013
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|Turbidity|All|All|50|0.85|17|3.19|4.4388|3.51589547335979|Seagrass (SJRWMD), Shellfish Harvest Area Classification Program|540, 3013
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2020|Turbidity|All|All|83|0.5|10.11382|2.13505|2.44543909638554|1.5864380136319|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Shellfish Harvest Area Classification Program|103, 540, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2021|Turbidity|All|All|134|0.5|9.09033|2.34792009|2.88217335298508|1.76746987691266|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2022|Turbidity|All|All|25|1.31264|7.35119|2.77651|2.9957824|1.44678644899158|Florida STORET / WIN|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2020|Turbidity|All|All|84|0.5|10.11382|2.122955|2.44013625|1.57760101054561|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Shellfish Harvest Area Classification Program|103, 540, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2021|Turbidity|All|All|138|0.5|9.09033|2.37396009|2.88486398043478|1.74499552829921|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2022|Turbidity|All|All|81|0.87523|8.94569|2.77651|3.39170444444444|1.82983204188117|Florida STORET / WIN|5002
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|2023|Turbidity|All|All|2|3.4|3.6|3.5|3.5|0.14142135623731|Florida STORET / WIN|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1995|Turbidity|All|All|244|0.8|39|2.9|4.26991803278689|4.39807009600636|Florida STORET / WIN|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1996|Turbidity|All|All|237|0.52|6.6|1.6|1.69873417721519|0.815359492964696|Florida STORET / WIN|5002
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1997|Turbidity|All|All|229|0.57|9.6|2|2.3710480349345|1.41641775182413|Florida STORET / WIN|5002
@@ -509,8 +526,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2018|Turbidity|All|All|14|1.48|8.7|4.875|4.91928571428571|2.21510709685772|Seagrass (SJRWMD)|3013
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2019|Turbidity|All|All|18|2.27|7.65|5.835|5.34055555555556|1.74792809187881|Seagrass (SJRWMD), Shellfish Harvest Area Classification Program|540, 3013
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|Turbidity|All|All|33|0.5|5.3|2.24826|2.45071261090909|1.30049160467882|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Shellfish Harvest Area Classification Program|103, 540, 5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2021|Turbidity|All|All|43|0.93847758|10.39016|2.26352|2.9685578755814|1.98348695858475|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2022|Turbidity|All|All|8|1.6|6.62535|3.3894|3.91406|1.96823532996293|Florida STORET / WIN|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2021|Turbidity|All|All|50|0.93847758|10.39016|2.001775|2.830959773|1.88863973194323|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2022|Turbidity|All|All|25|0.5945|6.62535|2.70808|3.0173976|1.68837616667929|Florida STORET / WIN|5002
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2023|Turbidity|All|All|2|1.9|2|1.95|1.95|0.0707106781186548|Florida STORET / WIN|5002
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1991|Turbidity|All|All|5|0.4|1.9|0.84|1.028|0.61475198251002|RiverKeeper|10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1992|Turbidity|All|All|8|1.28|4.5|1.75|2.10375|1.0187378395418|Florida STORET / WIN, RiverKeeper|5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1993|Turbidity|All|All|8|0.3|3.4|0.7|1.1|1.03233438657941|Florida STORET / WIN, RiverKeeper|5002, 10000
@@ -525,24 +543,25 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2002|Turbidity|All|All|32|1.01|33|4.15|5.680625|5.68565196845987|Florida STORET / WIN, RiverKeeper|5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2003|Turbidity|All|All|12|1|6.42|3.38|3.15833333333333|1.50639143369682|Florida STORET / WIN, RiverKeeper|5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2004|Turbidity|All|All|26|0.44|40.2|3.615|4.98423076923077|7.517520427948|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2005|Turbidity|All|All|40|1.72|24.7|3.49|5.995|5.71482642130459|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2006|Turbidity|All|All|51|0.71|17|4.19|4.68470588235294|2.91312914436774|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2007|Turbidity|All|All|100|0.29|14.7|3.68|4.1694|2.67588060460496|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2008|Turbidity|All|All|38|0.54|8.09|2.46|3.09736842105263|2.01252521785177|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2009|Turbidity|All|All|44|0.19|14.5|2.14|3.36340909090909|3.32198591709896|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2010|Turbidity|All|All|39|0.24|7.47|2.42|2.52205128205128|1.58047158100156|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2011|Turbidity|All|All|39|0.4|11.7|2.91|3.27307692307692|2.56647326505516|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2012|Turbidity|All|All|24|0.7|5|1.65|2.07666666666667|1.22572309330014|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper|5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|Turbidity|All|All|15|0.4|6.1|2|2.15333333333333|1.44017194740602|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2014|Turbidity|All|All|17|0.5|5.9|2.4|2.35294117647059|1.38479134125814|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2015|Turbidity|All|All|14|0.1|5.2|2.35|2.62142857142857|1.46664377271509|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper|5002, 10000, 10001
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2005|Turbidity|All|All|26|1.72|24.7|4.305|7.43615384615385|6.64368275998972|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2006|Turbidity|All|All|27|0.71|17|3.37|4.25481481481482|3.56844436087984|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2007|Turbidity|All|All|80|0.29|13.1|3.4|3.82525|2.36213054173611|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2008|Turbidity|All|All|26|0.54|8.09|2.35|2.91730769230769|2.11692901665088|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2009|Turbidity|All|All|32|0.19|14.5|2.14|3.5284375|3.72933109056631|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2010|Turbidity|All|All|27|0.24|7.47|2.23|2.43703703703704|1.77343390242428|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2011|Turbidity|All|All|27|0.4|11.7|2.5|3.32555555555556|2.96098909323496|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2012|Turbidity|All|All|12|0.9|3.6|1.2|1.7|0.92736184954957|Florida STORET / WIN, RiverKeeper|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|Turbidity|All|All|13|0.4|6.1|2|2.1|1.54757875405422|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2014|Turbidity|All|All|15|0.5|5.9|2.2|2.33333333333333|1.47873820085459|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2015|Turbidity|All|All|12|0.1|5.2|2.6|2.74166666666667|1.55004887508476|Florida STORET / WIN, RiverKeeper|5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2016|Turbidity|All|All|18|0.6|13.5|2.65|3.17777777777778|2.80784312356227|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2017|Turbidity|All|All|7|0.4|5.4|2.4|2.51428571428571|2.03995798276057|Florida STORET / WIN, RiverKeeper|5002, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2018|Turbidity|All|All|11|1.4|16.8|2.7|4.81818181818182|4.69028531793497|RiverKeeper, Seagrass (SJRWMD)|3013, 10000
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2019|Turbidity|All|All|4|0.9|1.8|1.55|1.45|0.404145188432738|RiverKeeper|10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2020|Turbidity|All|All|26|0.6|10.7|2.85|3.20769230769231|1.93926234984812|Florida STORET / WIN, RiverKeeper|5002, 10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2021|Turbidity|All|All|79|0.7|8.4|2|2.34177215189873|1.25142048467769|Florida STORET / WIN, RiverKeeper|5002, 10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2022|Turbidity|All|All|45|0.3|21.2|2.7|4.24444444444444|4.78803221848522|Florida STORET / WIN, RiverKeeper|5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2020|Turbidity|All|All|27|0.6|10.7|2.8|3.15555555555556|1.92080378474408|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, RiverKeeper|103, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2021|Turbidity|All|All|157|0.7|8.4|2|2.3515923566879|1.24527852386223|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, RiverKeeper|103, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2022|Turbidity|All|All|60|0.3|54.4|2.5|5.28833333333333|9.38394033219479|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2023|Turbidity|All|All|21|1.5|10.5|3.8|4.06666666666667|2.20982653919563|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|1995|Turbidity|All|All|216|0.78|8.1|2.4|2.66444444444444|1.1880453623266|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|1996|Turbidity|All|All|213|0.6|12|1.6|2.04896713615023|1.97035358953229|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|1997|Turbidity|All|All|184|0.3|6.4|1.7|1.80630434782609|0.833012463766141|Florida STORET / WIN|5002
@@ -560,15 +579,18 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 25|Lemon Bay Aquatic Preserve|2009|Turbidity|All|All|253|0.6|16|2|2.41067193675889|1.57666035659005|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
 25|Lemon Bay Aquatic Preserve|2010|Turbidity|All|All|345|0.76|15|3.2|3.43785507246377|1.67358514763271|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 25|Lemon Bay Aquatic Preserve|2011|Turbidity|All|All|286|0.8|9.1|2.3|2.74335664335664|1.44521275993607|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2012|Turbidity|All|All|105|1.2|10|4.3|4.46247619047619|1.9261653720003|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2013|Turbidity|All|All|85|1.1|12|3.6|3.84823529411765|1.91632161064007|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2014|Turbidity|All|All|85|1.7|11|3.4|3.94117647058824|1.85114469847116|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2012|Turbidity|All|All|107|1.2|10|4.3|4.4211214953271|1.93689078168955|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2013|Turbidity|All|All|88|1.1|12|3.6|3.86022727272727|1.8887166337135|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2014|Turbidity|All|All|88|1.7|11|3.4|3.91022727272727|1.83541406100629|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
 25|Lemon Bay Aquatic Preserve|2015|Turbidity|All|All|93|1|8.1|3|3.21720430107527|1.42901787921346|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2016|Turbidity|All|All|68|0.92|8.7|3.3|3.58264705882353|1.59248198063524|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2017|Turbidity|All|All|47|0.85|8.7|2.3|2.81255319148936|1.67629828735703|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-25|Lemon Bay Aquatic Preserve|2020|Turbidity|All|All|77|1.2|18|3.1|4.10649350649351|3.03347801352011|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2021|Turbidity|All|All|131|0.5|5.9|2.4|2.63496183206107|1.21077684791834|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2022|Turbidity|All|All|65|1.1|5.7|2.1|2.31076923076923|1.01089735460059|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+25|Lemon Bay Aquatic Preserve|2016|Turbidity|All|All|69|0.92|8.7|3.3|3.63942028985507|1.64957738264895|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2017|Turbidity|All|All|66|0.85|8.7|2.6|2.84227272727273|1.48608085032622|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+25|Lemon Bay Aquatic Preserve|2018|Turbidity|All|All|27|1.3|8.8|3|3.65925925925926|2.08276060503644|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+25|Lemon Bay Aquatic Preserve|2019|Turbidity|All|All|40|0.95|5.2|2.5|2.50625|0.952741489677996|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+25|Lemon Bay Aquatic Preserve|2020|Turbidity|All|All|92|1.2|18|2.95|3.86739130434783|2.84363753643197|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2021|Turbidity|All|All|231|0.5|5.9|2.5|2.66744588744589|1.20758795354101|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2022|Turbidity|All|All|96|0.9|17|2.2|2.54479166666667|1.81368306821501|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 476, 5002
+25|Lemon Bay Aquatic Preserve|2023|Turbidity|All|All|6|1.5|3.1|2.2|2.26666666666667|0.546504040851179|Florida STORET / WIN|5002
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1991|Turbidity|All|All|30|0.8|4.3|1.9|1.98666666666667|0.695668040798559|Florida STORET / WIN, RiverKeeper|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1992|Turbidity|All|All|44|0.62|6|1.86|1.99568181818182|0.9768563668842|Florida STORET / WIN, RiverKeeper|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1993|Turbidity|All|All|47|0.4|3.1|1.2|1.23297872340426|0.571827409708548|Florida STORET / WIN, RiverKeeper|5002, 10000
@@ -581,26 +603,27 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2000|Turbidity|All|All|90|1.26|14.1|3.205|3.41766666666667|1.68872536866908|Florida STORET / WIN, RiverKeeper|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2001|Turbidity|All|All|93|1.29|11.1|2.8|3.3005376344086|1.7356482096921|Florida STORET / WIN, RiverKeeper|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2002|Turbidity|All|All|99|1|7.8|2.89|3.26010101010101|1.33412165934661|Florida STORET / WIN, RiverKeeper|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2003|Turbidity|All|All|130|0.8|24.5|2.81|3.51776923076923|2.68581755063984|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper|5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2004|Turbidity|All|All|160|0.36|36.9|3.46|4.3173125|4.14004781090416|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2005|Turbidity|All|All|180|0.69|13.1|2.975|3.4785|2.08041693151602|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|Turbidity|All|All|182|0.8|10.2|3.335|3.60796703296703|1.70116071489812|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|Turbidity|All|All|312|0.35|12.4|3.025|3.21724358974359|1.52154941918|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|Turbidity|All|All|207|1.29|10.5|2.97|3.24666666666667|1.50157748766299|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|Turbidity|All|All|206|0.278|16.8|2.45|2.64015533980583|1.47185567132625|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|Turbidity|All|All|216|0.4|7.66|2.41|2.59925925925926|1.02910320290992|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2011|Turbidity|All|All|213|0.31|12.1|2.29|2.54357276995305|1.28942817171401|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|Turbidity|All|All|224|0.3|10.7|2.3|2.42669642857143|1.1289309109071|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper|5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|Turbidity|All|All|212|0.6|7.6|2.4|2.67966981132075|1.19495042806378|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|Turbidity|All|All|216|0.6|7.2|2.39|2.49143518518519|1.02626179871436|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|Turbidity|All|All|197|0.2|6|2.6|2.79035532994924|1.10862038534871|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper|5002, 10000, 10001
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|Turbidity|All|All|186|0.8|13.5|2.9|3.23935483870968|1.61270650901511|Florida STORET / WIN, Loxahatchee River District Landscape-Scale Seagrass Mapping Area, RiverKeeper|5002, 10000, 10001
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2003|Turbidity|All|All|90|0.89|9.36|2.81|3.25888888888889|1.73349646308137|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2004|Turbidity|All|All|96|0.97|36.9|3.53|4.44166666666667|4.71333152187364|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2005|Turbidity|All|All|110|0.69|13.1|3.185|3.47209090909091|2.02022757163667|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|Turbidity|All|All|110|0.82|10.2|3.345|3.67381818181818|1.4834116280999|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|Turbidity|All|All|250|0.35|9.8|3.005|3.18276|1.45897829079533|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|Turbidity|All|All|165|1.29|10.5|3|3.26169696969697|1.53412906262265|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|Turbidity|All|All|164|0.75|6.95|2.4|2.54780487804878|1.00858161279557|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|Turbidity|All|All|168|0.4|7.66|2.4|2.55797619047619|1.02107525778683|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2011|Turbidity|All|All|170|0.4|12.1|2.3|2.65723529411765|1.35089013079988|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|Turbidity|All|All|179|0.5|10.7|2.3|2.45307262569832|1.19306472049095|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|Turbidity|All|All|166|0.6|7.6|2.45|2.76506024096386|1.23135143642479|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|Turbidity|All|All|173|0.6|7.2|2.4|2.5393063583815|1.07933204140286|Florida STORET / WIN, RiverKeeper, Seagrass (SJRWMD)|3013, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|Turbidity|All|All|180|0.2|6|2.65|2.84944444444444|1.10809601777366|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|Turbidity|All|All|168|0.8|13.5|2.9|3.32726190476191|1.66226982194085|Florida STORET / WIN, RiverKeeper|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|Turbidity|All|All|132|0.9|20.7|3|3.59545454545455|2.68091540810206|Florida STORET / WIN, RiverKeeper|5002, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|Turbidity|All|All|111|0.3|22|3.6|4.12144144144144|2.60076032478855|RiverKeeper, Seagrass (SJRWMD)|3013, 10000
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|Turbidity|All|All|104|0.6|15.5|2.9|3.22019230769231|1.88645554566374|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2020|Turbidity|All|All|96|1.1|33.1|2.75|3.42708333333333|3.48740528388014|Florida STORET / WIN, RiverKeeper|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2021|Turbidity|All|All|184|0.8|24.8|3.4|4.53532608695652|3.45747023697014|Florida STORET / WIN, RiverKeeper|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2022|Turbidity|All|All|68|0.5|7.6|2.75|3.06764705882353|1.42351689529322|RiverKeeper|10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2020|Turbidity|All|All|100|1.1|33.1|2.7|3.367|3.42975850962476|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, RiverKeeper|103, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2021|Turbidity|All|All|274|0.8|24.8|3.4|4.44051094890511|3.31468059249796|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, RiverKeeper|103, 5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2022|Turbidity|All|All|100|0.5|18.9|2.9|3.286|2.0913491851294|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2023|Turbidity|All|All|4|2.2|5.6|3.4|3.65|1.45487685618635|Florida STORET / WIN|5002
 28|Matlacha Pass Aquatic Preserve|1995|Turbidity|All|All|101|0.7|12.07|1.6|1.95019801980198|1.34730989768354|Florida STORET / WIN|5002
 28|Matlacha Pass Aquatic Preserve|1996|Turbidity|All|All|104|0.35|4|1|1.16875|0.613368366014408|Florida STORET / WIN|5002
 28|Matlacha Pass Aquatic Preserve|1997|Turbidity|All|All|102|0.52|2.8|1|1.14362745098039|0.458742985951584|Florida STORET / WIN|5002
@@ -623,12 +646,13 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 28|Matlacha Pass Aquatic Preserve|2014|Turbidity|All|All|41|0.02|3.47|1.21|1.29126829268293|0.628610492451019|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
 28|Matlacha Pass Aquatic Preserve|2015|Turbidity|All|All|3|2.2|3|2.3|2.5|0.435889894354067|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
 28|Matlacha Pass Aquatic Preserve|2016|Turbidity|All|All|7|0.02|2.7|1.7|1.57428571428571|0.801225252199346|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network|476, 513
-28|Matlacha Pass Aquatic Preserve|2017|Turbidity|All|All|3|0.72|2.3|1.7|1.57333333333333|0.797579672091342|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-28|Matlacha Pass Aquatic Preserve|2018|Turbidity|All|All|41|0.2|6.31|1.03|1.26536585365854|1.10226380136738|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-28|Matlacha Pass Aquatic Preserve|2019|Turbidity|All|All|40|0.2|22.04|0.575|1.733752|3.83474323661174|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, River, Estuary and Coastal Observing Network|303, 513, 5002
-28|Matlacha Pass Aquatic Preserve|2020|Turbidity|All|All|46|0.2|4.43|1.1|1.40778260869565|1.17130935116871|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
-28|Matlacha Pass Aquatic Preserve|2021|Turbidity|All|All|99|0.02|5.12|2.1|2.27258585858586|1.39294913256746|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
-28|Matlacha Pass Aquatic Preserve|2022|Turbidity|All|All|25|0.27|8|0.735|1.63704|1.97456854949801|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+28|Matlacha Pass Aquatic Preserve|2017|Turbidity|All|All|14|0.72|5.5|2.8|2.80142857142857|1.34153676025701|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+28|Matlacha Pass Aquatic Preserve|2018|Turbidity|All|All|51|0.2|15|1.38|1.8878431372549|2.26435448967293|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|2019|Turbidity|All|All|58|0.2|22.04|1.085|1.79655310344828|3.22466463572609|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, River, Estuary and Coastal Observing Network|303, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|2020|Turbidity|All|All|53|0.2|4.43|1.2|1.37392452830189|1.1153388731174|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|2021|Turbidity|All|All|142|0.02|5.12|1.8|2.07994366197183|1.31546640206413|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|2022|Turbidity|All|All|56|0.27|9.2|1.9|2.42439285714286|1.95640245607336|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 476, 513, 5002
+28|Matlacha Pass Aquatic Preserve|2023|Turbidity|All|All|3|2.56|10.9|4.82|6.09333333333333|4.31334363728805|Florida STORET / WIN|5002
 29|Mosquito Lagoon Aquatic Preserve|1991|Turbidity|All|All|3|8.08|13|12.22|11.1|2.64431465601203|EPA STOrage and RETrieval Data Warehouse (STORET)|103
 29|Mosquito Lagoon Aquatic Preserve|1992|Turbidity|All|All|6|3.02|22.6|9.39|9.74666666666667|7.1781074571691|EPA STOrage and RETrieval Data Warehouse (STORET)|103
 29|Mosquito Lagoon Aquatic Preserve|1993|Turbidity|All|All|3|3.49|5.68|4.51|4.56|1.09585582993385|EPA STOrage and RETrieval Data Warehouse (STORET)|103
@@ -657,8 +681,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 29|Mosquito Lagoon Aquatic Preserve|2017|Turbidity|All|All|6|1.85811|8.94267|5.694375|5.54831833333333|2.39204493627872|Florida STORET / WIN|5002
 29|Mosquito Lagoon Aquatic Preserve|2019|Turbidity|All|All|2|3.85|4.71|4.28|4.28|0.608111831820431|Seagrass (SJRWMD)|3013
 29|Mosquito Lagoon Aquatic Preserve|2020|Turbidity|All|All|19|1.64943|13.47031|6.004|6.29870330052632|3.15084918670712|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-29|Mosquito Lagoon Aquatic Preserve|2021|Turbidity|All|All|35|0.1|14.98253|7.18826818|6.92978856371429|3.66397502804486|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-29|Mosquito Lagoon Aquatic Preserve|2022|Turbidity|All|All|6|1.17978|10.22605|5.972315|6.05863666666667|3.4936526782705|Florida STORET / WIN|5002
+29|Mosquito Lagoon Aquatic Preserve|2021|Turbidity|All|All|37|0.1|14.98253|7.08618|6.57142161432433|3.87182357553471|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+29|Mosquito Lagoon Aquatic Preserve|2022|Turbidity|All|All|20|1.17978|11.15602|5.9757|6.023081|2.97003934673015|Florida STORET / WIN|5002
+29|Mosquito Lagoon Aquatic Preserve|2023|Turbidity|All|All|2|3.63367|3.99378|3.813725|3.813725|0.254636222973088|Florida STORET / WIN|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|1985|Turbidity|All|All|63|1|23|4.7|5.68888888888889|3.78119758768735|EPA STOrage and RETrieval Data Warehouse (STORET)|103
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|1986|Turbidity|All|All|63|1.9|19|4.6|6.54761904761905|3.98593726149002|EPA STOrage and RETrieval Data Warehouse (STORET)|103
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|1987|Turbidity|All|All|64|0|16|6.85|7.3890625|3.41342434716364|EPA STOrage and RETrieval Data Warehouse (STORET)|103
@@ -689,9 +714,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2016|Turbidity|All|All|21|2.26688|15.93807|6.9447|8.05532619047619|3.83362591560063|Florida STORET / WIN|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2017|Turbidity|All|All|31|2.66483|30.14495|11.54109|11.5176312903226|6.65992123960273|Florida STORET / WIN|5002
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|2019|Turbidity|All|All|16|4.3|12|9.15|8.70625|2.27961071238052|Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|Turbidity|All|All|67|2.70376|22|8|8.90005328358209|4.18189383893861|Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|Turbidity|All|All|111|2|29|7.9|8.94493981981982|5.20452162640892|Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2022|Turbidity|All|All|41|2.2|18|5.5|7.24634146341463|4.17630803228016|Florida STORET / WIN|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|Turbidity|All|All|68|2.70376|22|8|8.86034661764706|4.1634634314394|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|Turbidity|All|All|173|2|29|7.9|8.93750473988439|5.22669012445753|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2022|Turbidity|All|All|74|2.2|18|6.85|7.51081081081081|3.79034706068316|Florida STORET / WIN|5002
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|2023|Turbidity|All|All|25|3.1|11|6.4|6.276|2.07570871431101|Florida STORET / WIN|5002
 48|Nature Coast Aquatic Preserve|1995|Turbidity|All|All|22|0.45|2.6|1|1.10409090909091|0.474779739316876|Florida STORET / WIN|5002
 48|Nature Coast Aquatic Preserve|1996|Turbidity|All|All|42|0.36|1.6|0.73|0.801904761904762|0.301477969872153|Florida STORET / WIN|5002
 48|Nature Coast Aquatic Preserve|1997|Turbidity|All|All|25|0.44|2.4|0.84|0.9736|0.473734102635645|Florida STORET / WIN|5002
@@ -726,9 +752,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 31|North Fork St. Lucie Aquatic Preserve|2009|Turbidity|All|All|17|1.6|10|5.7|5.67647058823529|2.64256726777312|Florida STORET / WIN|5002
 31|North Fork St. Lucie Aquatic Preserve|2011|Turbidity|All|All|18|1.5|7.1|3.8|3.92777777777778|1.47600635880806|Florida STORET / WIN|5002
 31|North Fork St. Lucie Aquatic Preserve|2017|Turbidity|All|All|3|3.2|5.6|3.3|4.03333333333333|1.35769412362775|Florida STORET / WIN|5002
-31|North Fork St. Lucie Aquatic Preserve|2020|Turbidity|All|All|15|2.7|8|5|5.14666666666667|1.58198187937368|Florida STORET / WIN|5002
-31|North Fork St. Lucie Aquatic Preserve|2021|Turbidity|All|All|48|1.4|8.5|4.25|4.56875|2.02811685529296|Florida STORET / WIN|5002
-31|North Fork St. Lucie Aquatic Preserve|2022|Turbidity|All|All|22|1.2|8.1|4.05|4.37272727272727|1.8155890604329|Florida STORET / WIN|5002
+31|North Fork St. Lucie Aquatic Preserve|2020|Turbidity|All|All|17|2.7|8|5|5.18823529411765|1.51115946914165|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+31|North Fork St. Lucie Aquatic Preserve|2021|Turbidity|All|All|82|1.4|8.5|4.4|4.8|2.00209766538209|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+31|North Fork St. Lucie Aquatic Preserve|2022|Turbidity|All|All|36|1.2|11.7|4.05|4.46388888888889|2.22725362950849|Florida STORET / WIN|5002
+31|North Fork St. Lucie Aquatic Preserve|2023|Turbidity|All|All|9|1.1|8.7|5|4.8|2.7046256672597|Florida STORET / WIN|5002
 33|Pellicer Creek Aquatic Preserve|2002|Turbidity|All|All|86|0.9|10.2|4.6|4.95813953488372|2.00519707796451|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
 33|Pellicer Creek Aquatic Preserve|2003|Turbidity|All|All|156|0.9|15.8|4.6|4.95512820512821|2.34980561644369|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
 33|Pellicer Creek Aquatic Preserve|2004|Turbidity|All|All|158|0.1|29.6|5.3|5.84810126582279|3.62699927769231|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
@@ -744,8 +771,8 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 33|Pellicer Creek Aquatic Preserve|2017|Turbidity|All|All|5|6.2|13|9.2|9.76|2.75463246187218|Florida STORET / WIN|5002
 33|Pellicer Creek Aquatic Preserve|2018|Turbidity|All|All|3|2.5|8.1|3.5|4.7|2.98663690461362|Florida STORET / WIN|5002
 33|Pellicer Creek Aquatic Preserve|2019|Turbidity|All|All|78|3.2|21|8.7|9.30897435897436|3.46039506405468|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2020|Turbidity|All|All|42|2|28|8.75|9.22619047619048|4.7190356354543|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-33|Pellicer Creek Aquatic Preserve|2021|Turbidity|All|All|10|2.1|16|5.05|5.99|4.0888602052134|Florida STORET / WIN|5002
+33|Pellicer Creek Aquatic Preserve|2020|Turbidity|All|All|46|2|28|8.35|8.66086956521739|4.87298577241554|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|103, 4054, 5002
+33|Pellicer Creek Aquatic Preserve|2021|Turbidity|All|All|20|2.1|16|5.05|5.99|3.97980427976844|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
 34|Pine Island Sound Aquatic Preserve|1995|Turbidity|All|All|238|0.84|9.8|1.8|2.05983193277311|1.00512105045343|Florida STORET / WIN|5002
 34|Pine Island Sound Aquatic Preserve|1996|Turbidity|All|All|275|0.38|7.2|0.92|1.07083636363636|0.627745670164348|Florida STORET / WIN|5002
 34|Pine Island Sound Aquatic Preserve|1997|Turbidity|All|All|233|0.58|5|1|1.27476394849785|0.641624460529568|Florida STORET / WIN|5002
@@ -768,12 +795,13 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 34|Pine Island Sound Aquatic Preserve|2014|Turbidity|All|All|144|0.423|31|1.875|2.56895833333333|3.29073063044787|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 34|Pine Island Sound Aquatic Preserve|2015|Turbidity|All|All|98|0.2|26.8|2.79|4.10186734693878|4.39490592099384|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 34|Pine Island Sound Aquatic Preserve|2016|Turbidity|All|All|92|0.2|38.6|3.15|4.70989130434783|5.46161701583111|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-34|Pine Island Sound Aquatic Preserve|2017|Turbidity|All|All|80|0.2|14.5|2.695|3.293375|2.55459573147413|Florida STORET / WIN|5002
-34|Pine Island Sound Aquatic Preserve|2018|Turbidity|All|All|141|0.2|9.9|1.1|1.64595744680851|1.82362863494087|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-34|Pine Island Sound Aquatic Preserve|2019|Turbidity|All|All|262|0.2|558.84579|2.53294|21.7148747328244|65.6789969159422|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, River, Estuary and Coastal Observing Network|303, 513, 5002
-34|Pine Island Sound Aquatic Preserve|2020|Turbidity|All|All|330|0.2|847.26257|2.230085|14.4810077814545|73.7478621948011|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, River, Estuary and Coastal Observing Network|103, 303, 476, 513, 5002
-34|Pine Island Sound Aquatic Preserve|2021|Turbidity|All|All|306|0.02451613|138.6921739|1.65|3.64777850552288|11.5898265622946|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, River, Estuary and Coastal Observing Network|103, 303, 476, 513, 5002
-34|Pine Island Sound Aquatic Preserve|2022|Turbidity|All|All|89|0.53|19.7|2.2|3.79568539325843|4.17032496715976|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|2017|Turbidity|All|All|106|0.2|14.5|2.615|3.20915094339623|2.4500134568822|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+34|Pine Island Sound Aquatic Preserve|2018|Turbidity|All|All|169|0.2|9.9|1.22|1.78094674556213|1.8826533462502|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|2019|Turbidity|All|All|305|0.2|558.84579|2.35042|18.9840891147541|61.2337490255111|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN, River, Estuary and Coastal Observing Network|303, 476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|2020|Turbidity|All|All|359|0.2|847.26257|2.2|13.5152258158217|70.7798857621075|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, River, Estuary and Coastal Observing Network|103, 303, 476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|2021|Turbidity|All|All|482|0.02451613|138.6921739|1.65|3.31206737072614|9.4817946132464|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, River, Estuary and Coastal Observing Network|103, 303, 476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|2022|Turbidity|All|All|205|0.53|19.7|2|3.05366341463415|3.23021428732481|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 476, 513, 5002
+34|Pine Island Sound Aquatic Preserve|2023|Turbidity|All|All|17|1.1|6.8|2.97|3.21529411764706|1.46140821490377|Florida STORET / WIN|5002
 35|Pinellas County Aquatic Preserve|1995|Turbidity|All|All|393|0.7|10|1.9|2.1698727735369|1.27574397425728|Florida STORET / WIN|5002
 35|Pinellas County Aquatic Preserve|1996|Turbidity|All|All|444|0.38|8.6|1.4|1.53265765765766|0.90876701124727|Florida STORET / WIN|5002
 35|Pinellas County Aquatic Preserve|1997|Turbidity|All|All|400|0.38|27.4|1.4|1.561525|1.50687444761572|Florida STORET / WIN|5002
@@ -797,9 +825,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 35|Pinellas County Aquatic Preserve|2015|Turbidity|All|All|729|0.1|15.6|1.8|2.3736488340192|1.9084619598874|Florida STORET / WIN|5002
 35|Pinellas County Aquatic Preserve|2016|Turbidity|All|All|771|0.3|20|2.4|3.24398184176394|2.85229041611328|Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|95, 5002
 35|Pinellas County Aquatic Preserve|2017|Turbidity|All|All|653|0.4|38|2.5|3.87275650842266|4.61448051537952|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2020|Turbidity|All|All|538|0.4|22|3.3|4.18271375464684|3.15347304560894|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2021|Turbidity|All|All|700|0.1|38|2.8|4.26168571428571|4.24493818077412|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-35|Pinellas County Aquatic Preserve|2022|Turbidity|All|All|81|0.4|15|2.4|2.85246913580247|2.37799680974565|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|Turbidity|All|All|625|0.4|22|3.3|4.077856|3.07694771727954|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+35|Pinellas County Aquatic Preserve|2021|Turbidity|All|All|1276|0.1|38|2.7|4.06873040752351|4.0895617046195|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+35|Pinellas County Aquatic Preserve|2022|Turbidity|All|All|653|0.35|26|2.7|3.4350382848392|2.86394776768304|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2023|Turbidity|All|All|37|0.6|3.9|1.9|2.13513513513514|0.855120594554494|Florida STORET / WIN|5002
 37|Rocky Bayou State Park Aquatic Preserve|2001|Turbidity|All|All|4|0|20.1|0.2|5.125|9.98511392023146|Florida STORET / WIN|5002
 37|Rocky Bayou State Park Aquatic Preserve|2002|Turbidity|All|All|22|0|30|0.8|4.1|7.08438927703521|Florida STORET / WIN|5002
 37|Rocky Bayou State Park Aquatic Preserve|2003|Turbidity|All|All|24|0.1|76.7|1.5|4.975|15.3484243632623|Florida STORET / WIN|5002
@@ -818,9 +847,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 37|Rocky Bayou State Park Aquatic Preserve|2016|Turbidity|All|All|25|0|11.8|1.1|1.758|2.59389025725197|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring, Florida STORET / WIN|537, 5002
 37|Rocky Bayou State Park Aquatic Preserve|2017|Turbidity|All|All|24|0|44.1|0.6|5.30833333333333|11.124079509224|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring|537
 37|Rocky Bayou State Park Aquatic Preserve|2018|Turbidity|All|All|18|0|4.9|0.25|1.05555555555556|1.64109799048658|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring|537
-37|Rocky Bayou State Park Aquatic Preserve|2020|Turbidity|All|All|16|0|15.4|0.4|2.5375|4.11450685582934|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring|537
-37|Rocky Bayou State Park Aquatic Preserve|2021|Turbidity|All|All|24|0|19.5|0.75|4.725|7.04397676711474|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring|537
-37|Rocky Bayou State Park Aquatic Preserve|2022|Turbidity|All|All|8|0|9.2|1.65|3.3375|3.95472140972932|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring|537
+37|Rocky Bayou State Park Aquatic Preserve|2020|Turbidity|All|All|18|0|15.4|0.4|2.32777777777778|3.91915440392823|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring, EPA STOrage and RETrieval Data Warehouse (STORET)|103, 537
+37|Rocky Bayou State Park Aquatic Preserve|2021|Turbidity|All|All|34|0|19.5|0.5|3.62352941176471|6.18061774021205|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring, EPA STOrage and RETrieval Data Warehouse (STORET)|103, 537
+37|Rocky Bayou State Park Aquatic Preserve|2022|Turbidity|All|All|18|0|31.5|3.7|6.13333333333333|7.87542715928327|Choctawhatchee Basin Alliance Living Shorelines Oyster Reef Monitoring|537
 38|Rookery Bay Aquatic Preserve|1989|Turbidity|All|All|4|9.5|23|12.3|14.275|6.35891762278246|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|1990|Turbidity|All|All|14|0.92|13|5.35|6.42285714285714|3.73057106078419|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|1991|Turbidity|All|All|4|0.2|5.9|2.35|2.7|2.36502290334224|Florida STORET / WIN|5002
@@ -832,11 +861,11 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 38|Rookery Bay Aquatic Preserve|1999|Turbidity|All|All|162|0.24|38.65|4.355|5.72373456790124|5.87390318324424|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
 38|Rookery Bay Aquatic Preserve|2000|Turbidity|All|All|155|0|18.89|4.32|5.20193548387097|3.52402143491391|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve Seagrass Monitoring, SERC Water Quality Monitoring Network|509, 572, 5002
 38|Rookery Bay Aquatic Preserve|2001|Turbidity|All|All|150|0.16|32|5.4325|6.74813333333333|5.46821942439932|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
-38|Rookery Bay Aquatic Preserve|2002|Turbidity|All|All|243|0.34|89.8|5.93|7.43705761316872|7.58891369288051|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
-38|Rookery Bay Aquatic Preserve|2003|Turbidity|All|All|228|0.4|34|6.4275|6.84061403508772|4.21845865855043|Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network, Rookery Bay National Estuarine Research Reserve Seagrass Monitoring, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|95, 354, 509, 572, 5002
-38|Rookery Bay Aquatic Preserve|2004|Turbidity|All|All|240|1.18|237|6.025|15.9606041666667|41.9857166406637|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
-38|Rookery Bay Aquatic Preserve|2005|Turbidity|All|All|264|0.75|371.5|7.5625|14.0974431818182|38.9349623518858|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
-38|Rookery Bay Aquatic Preserve|2006|Turbidity|All|All|262|1.415|47.8|6.395|8.26547709923664|6.52523097912183|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
+38|Rookery Bay Aquatic Preserve|2002|Turbidity|All|All|249|0.34|89.8|5.92|7.46901606425703|7.56423368129414|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
+38|Rookery Bay Aquatic Preserve|2003|Turbidity|All|All|233|0.4|34|6.425|6.81497854077253|4.18079910325513|Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network, Rookery Bay National Estuarine Research Reserve Seagrass Monitoring, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|95, 354, 509, 572, 5002
+38|Rookery Bay Aquatic Preserve|2004|Turbidity|All|All|246|1.18|237|5.875|15.6794918699187|41.5085478564225|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
+38|Rookery Bay Aquatic Preserve|2005|Turbidity|All|All|273|0.75|371.5|7.5|13.8635347985348|38.3134885758612|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
+38|Rookery Bay Aquatic Preserve|2006|Turbidity|All|All|264|1.415|47.8|6.395|8.24827651515152|6.50569126122402|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
 38|Rookery Bay Aquatic Preserve|2007|Turbidity|All|All|142|0.2|117.195|4.2975|5.69161971830986|10.0375305047856|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
 38|Rookery Bay Aquatic Preserve|2008|Turbidity|All|All|103|1.07|19|6.695|7.08252427184466|3.52561431677936|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
 38|Rookery Bay Aquatic Preserve|2009|Turbidity|All|All|27|2.2|13|6.9|7.01851851851852|3.07471537607543|Florida STORET / WIN|5002
@@ -848,8 +877,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 38|Rookery Bay Aquatic Preserve|2017|Turbidity|All|All|4|6.4|13|6.4|8.05|3.3|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|2019|Turbidity|All|All|6|2|6.7|5.2|4.71666666666667|1.87980495442125|Florida STORET / WIN|5002
 38|Rookery Bay Aquatic Preserve|2020|Turbidity|All|All|10|1.8|12|6.75|6.41|3.74268174798054|Florida STORET / WIN|5002
-38|Rookery Bay Aquatic Preserve|2021|Turbidity|All|All|33|1.2|15|4.3|5.36666666666667|3.17772193035619|Florida STORET / WIN|5002
-38|Rookery Bay Aquatic Preserve|2022|Turbidity|All|All|16|2.2|22.1|9.85|9.74375|5.59773391650586|Florida STORET / WIN|5002
+38|Rookery Bay Aquatic Preserve|2021|Turbidity|All|All|65|1.2|15|4.3|5.42615384615385|3.14017699158209|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+38|Rookery Bay Aquatic Preserve|2022|Turbidity|All|All|26|1.3|22.1|6.4|7.86538461538462|5.0604302036639|Florida STORET / WIN|5002
+38|Rookery Bay Aquatic Preserve|2023|Turbidity|All|All|11|2.5|22|4.9|6.37272727272727|5.47267592848159|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|1989|Turbidity|All|All|6|3.8|23|10.3|11.9833333333333|6.48457143276768|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|1990|Turbidity|All|All|24|0.92|19|6.1|6.96333333333333|3.93454120486158|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|1991|Turbidity|All|All|13|0.2|39|2.5|5.27692307692308|10.3067254617356|Florida STORET / WIN|5002
@@ -862,11 +892,11 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 39|Rookery Bay National Estuarine Research Reserve|1999|Turbidity|All|All|551|0.22|38.65|3.2|4.344555353902|4.63978066998503|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
 39|Rookery Bay National Estuarine Research Reserve|2000|Turbidity|All|All|501|0|19|3.885|4.33599800399202|3.31756621667089|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve Seagrass Monitoring, SERC Water Quality Monitoring Network|509, 572, 5002
 39|Rookery Bay National Estuarine Research Reserve|2001|Turbidity|All|All|442|0.15|40|4.565|6.04661764705882|5.9675991686441|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
-39|Rookery Bay National Estuarine Research Reserve|2002|Turbidity|All|All|537|0.3|89.8|5.365|6.36083798882682|5.88895297261141|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
-39|Rookery Bay National Estuarine Research Reserve|2003|Turbidity|All|All|544|0.3|34|5.2175|5.96055147058824|4.18719800528557|Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network, Rookery Bay National Estuarine Research Reserve Seagrass Monitoring, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|95, 354, 509, 572, 5002
-39|Rookery Bay National Estuarine Research Reserve|2004|Turbidity|All|All|498|1.18|237|5.6|10.7024799196787|29.6220547428386|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
-39|Rookery Bay National Estuarine Research Reserve|2005|Turbidity|All|All|480|0.5|371.5|7.315|11.5763958333333|29.3045735318694|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
-39|Rookery Bay National Estuarine Research Reserve|2006|Turbidity|All|All|477|1.26|60.3|6.12|8.0451677148847|7.05984072959687|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
+39|Rookery Bay National Estuarine Research Reserve|2002|Turbidity|All|All|543|0.3|89.8|5.3|6.38738489871087|5.89970093315391|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
+39|Rookery Bay National Estuarine Research Reserve|2003|Turbidity|All|All|549|0.3|34|5.22|5.95768670309654|4.17004368645239|Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network, Rookery Bay National Estuarine Research Reserve Seagrass Monitoring, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|95, 354, 509, 572, 5002
+39|Rookery Bay National Estuarine Research Reserve|2004|Turbidity|All|All|504|1.18|237|5.6|10.6278670634921|29.4540023635633|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
+39|Rookery Bay National Estuarine Research Reserve|2005|Turbidity|All|All|489|0.5|371.5|7.3|11.4922085889571|29.0448011722|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
+39|Rookery Bay National Estuarine Research Reserve|2006|Turbidity|All|All|479|1.26|60.3|6.12|8.03660751565762|7.04748010727027|Florida STORET / WIN, Rookery Bay National Estuarine Research Reserve System-Wide Monitoring Program, SERC Water Quality Monitoring Network|354, 509, 5002
 39|Rookery Bay National Estuarine Research Reserve|2007|Turbidity|All|All|325|0.1|117.195|4.435|5.19861538461538|7.1376449579717|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
 39|Rookery Bay National Estuarine Research Reserve|2008|Turbidity|All|All|286|0.8|22.7|6.56|6.96354895104895|3.65714296158286|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
 39|Rookery Bay National Estuarine Research Reserve|2009|Turbidity|All|All|185|1.5|13|5.4|5.85027027027027|2.48985167020055|Florida STORET / WIN|5002
@@ -878,8 +908,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 39|Rookery Bay National Estuarine Research Reserve|2017|Turbidity|All|All|12|5.4|23|7.8|11.2083333333333|6.47940209549859|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|2019|Turbidity|All|All|14|1.9|6.9|4.8|4.49285714285714|1.76611885901709|Florida STORET / WIN|5002
 39|Rookery Bay National Estuarine Research Reserve|2020|Turbidity|All|All|26|1.8|13|7.85|7.22307692307692|3.82552560491315|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2021|Turbidity|All|All|92|1.2|20|4.4|5.83695652173913|3.71450135358451|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2022|Turbidity|All|All|40|1.3|30.3|9.15|10.23|7.04546407999956|Florida STORET / WIN|5002
+39|Rookery Bay National Estuarine Research Reserve|2021|Turbidity|All|All|184|1.2|20|4.4|5.83695652173913|3.70433854013874|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+39|Rookery Bay National Estuarine Research Reserve|2022|Turbidity|All|All|66|1.3|30.3|6.7|8.36969696969697|6.21729522435278|Florida STORET / WIN|5002
+39|Rookery Bay National Estuarine Research Reserve|2023|Turbidity|All|All|27|1.5|24.2|4.7|6.45925925925926|5.62024221071677|Florida STORET / WIN|5002
 40|St. Andrews State Park Aquatic Preserve|2003|Turbidity|All|All|4|2|3|2|2.25|0.5|St. Andrews Aquatic Preserve Water Quality Monitoring|470
 40|St. Andrews State Park Aquatic Preserve|2004|Turbidity|All|All|5|3|7|4|4.2|1.6431676725155|St. Andrews Aquatic Preserve Water Quality Monitoring|470
 40|St. Andrews State Park Aquatic Preserve|2005|Turbidity|All|All|2|1|830|415.5|415.5|586.191521603648|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
@@ -888,17 +919,18 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 40|St. Andrews State Park Aquatic Preserve|2008|Turbidity|All|All|12|0.1|1.7|0.45|0.65|0.590839156700797|St. Andrews Aquatic Preserve Water Quality Monitoring|470
 40|St. Andrews State Park Aquatic Preserve|2009|Turbidity|All|All|5|0.1|2.4|1.3|1.3|0.821583836257749|St. Andrews Aquatic Preserve Water Quality Monitoring|470
 40|St. Andrews State Park Aquatic Preserve|2010|Turbidity|All|All|5|0.35|1.5|1.1|0.97|0.567450438364444|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
-40|St. Andrews State Park Aquatic Preserve|2011|Turbidity|All|All|14|0.2|1.1|0.45|0.553571428571429|0.315901813929512|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
-40|St. Andrews State Park Aquatic Preserve|2012|Turbidity|All|All|10|0.45|2.4|1.55|1.52|0.587934236685249|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
-40|St. Andrews State Park Aquatic Preserve|2013|Turbidity|All|All|1|1.4|1.4|1.4|1.4||St. Andrews Aquatic Preserve Water Quality Monitoring|470
-40|St. Andrews State Park Aquatic Preserve|2014|Turbidity|All|All|3|1.1|1.3|1.1|1.16666666666667|0.115470053837925|St. Andrews Aquatic Preserve Water Quality Monitoring|470
-40|St. Andrews State Park Aquatic Preserve|2015|Turbidity|All|All|5|1.1|2.4|1.1|1.38|0.571839138219832|St. Andrews Aquatic Preserve Water Quality Monitoring|470
+40|St. Andrews State Park Aquatic Preserve|2011|Turbidity|All|All|61|0.2|2.25|0.75|0.824918032786885|0.403784690773105|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
+40|St. Andrews State Park Aquatic Preserve|2012|Turbidity|All|All|58|0.25|4.48|0.865|1.16051724137931|0.816650030078579|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
+40|St. Andrews State Park Aquatic Preserve|2013|Turbidity|All|All|44|0.23|16.1|0.915|1.39409090909091|2.35967017618576|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
+40|St. Andrews State Park Aquatic Preserve|2014|Turbidity|All|All|50|0.15|2.19|0.64|0.763|0.47550295606283|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
+40|St. Andrews State Park Aquatic Preserve|2015|Turbidity|All|All|27|0.29|2.4|0.6|0.751111111111111|0.449806226085901|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
 40|St. Andrews State Park Aquatic Preserve|2017|Turbidity|All|All|21|0.28|10.4|0.72|1.17571428571429|2.13256786862358|Florida STORET / WIN|5002
 40|St. Andrews State Park Aquatic Preserve|2018|Turbidity|All|All|16|0.27|1.48|0.59|0.66625|0.326718533297393|Florida STORET / WIN|5002
 40|St. Andrews State Park Aquatic Preserve|2019|Turbidity|All|All|27|0.35|3.7|0.55|0.687037037037037|0.635124547536301|St. Andrews Aquatic Preserve Water Quality Monitoring|470
 40|St. Andrews State Park Aquatic Preserve|2020|Turbidity|All|All|48|0.04|25.25|0.695|1.76520833333333|4.41659201897308|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
-40|St. Andrews State Park Aquatic Preserve|2021|Turbidity|All|All|28|0.36|2.83|0.65|0.8075|0.562077001446915|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
-40|St. Andrews State Park Aquatic Preserve|2022|Turbidity|All|All|32|0.01|1|0.425|0.4559375|0.293123989784352|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
+40|St. Andrews State Park Aquatic Preserve|2021|Turbidity|All|All|48|0.36|2.83|0.65|0.764791666666667|0.467159773039267|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|103, 470, 5002
+40|St. Andrews State Park Aquatic Preserve|2022|Turbidity|All|All|46|0.01|1|0.425|0.435869565217391|0.275241922573632|Florida STORET / WIN, St. Andrews Aquatic Preserve Water Quality Monitoring|470, 5002
+40|St. Andrews State Park Aquatic Preserve|2023|Turbidity|All|All|6|0.04|1.51|0.165|0.373333333333333|0.562411474515471|Florida STORET / WIN|5002
 41|St. Joseph Bay Aquatic Preserve|1995|Turbidity|All|All|349|0.4|6.9|0.86|1.04409742120344|0.693205200681553|Florida STORET / WIN|5002
 41|St. Joseph Bay Aquatic Preserve|1996|Turbidity|All|All|210|0.36|1.6|0.715|0.728380952380952|0.198909100489298|Florida STORET / WIN|5002
 41|St. Joseph Bay Aquatic Preserve|1997|Turbidity|All|All|127|0.26|3|0.7|0.849448818897638|0.414428861313813|Florida STORET / WIN|5002
@@ -920,8 +952,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 41|St. Joseph Bay Aquatic Preserve|2013|Turbidity|All|All|8|0.3|0.85|0.525|0.54375|0.225891092596157|Florida STORET / WIN|5002
 41|St. Joseph Bay Aquatic Preserve|2019|Turbidity|All|All|12|0.35|2.8|0.85|1.00833333333333|0.721687836487032|Florida STORET / WIN|5002
 41|St. Joseph Bay Aquatic Preserve|2020|Turbidity|All|All|19|0.65|4.9|1|1.41578947368421|1.02767978037624|Florida STORET / WIN|5002
-41|St. Joseph Bay Aquatic Preserve|2021|Turbidity|All|All|77|0|6|0.9|1.2487012987013|0.979593565893732|Central Panhandle Aquatic Preserve WQ Monitoring, Florida STORET / WIN|469, 5002
-41|St. Joseph Bay Aquatic Preserve|2022|Turbidity|All|All|22|0|5.4|0.35|0.959090909090909|1.3443564900332|Central Panhandle Aquatic Preserve WQ Monitoring, Florida STORET / WIN|469, 5002
+41|St. Joseph Bay Aquatic Preserve|2021|Turbidity|All|All|97|0|6|0.9|1.31082474226804|1.06966278769594|Central Panhandle Aquatic Preserve WQ Monitoring, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 469, 5002
+41|St. Joseph Bay Aquatic Preserve|2022|Turbidity|All|All|95|0|12.75|0.5|0.930210526315789|1.63405446597118|Central Panhandle Aquatic Preserve WQ Monitoring, Florida STORET / WIN|469, 5002
+41|St. Joseph Bay Aquatic Preserve|2023|Turbidity|All|All|9|0.3|2.09|1.26|1.27222222222222|0.611877801888943|Central Panhandle Aquatic Preserve WQ Monitoring, Florida STORET / WIN|469, 5002
 43|St. Martins Marsh Aquatic Preserve|1995|Turbidity|All|All|97|0.5|2.8|1|1.14639175257732|0.418395211808889|Florida STORET / WIN|5002
 43|St. Martins Marsh Aquatic Preserve|1996|Turbidity|All|All|198|0.3|2.6|0.72|0.833434343434344|0.393881276699386|Florida STORET / WIN|5002
 43|St. Martins Marsh Aquatic Preserve|1997|Turbidity|All|All|106|0.5|5.9|0.89|1.09735849056604|0.714508558230317|Florida STORET / WIN|5002
@@ -948,7 +981,7 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 43|St. Martins Marsh Aquatic Preserve|2018|Turbidity|All|All|14|1.4|2.08|1.5|1.565|0.15887827948561|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 43|St. Martins Marsh Aquatic Preserve|2019|Turbidity|All|All|17|0.4|4.2|2.15|2.15294117647059|1.24702027201787|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 43|St. Martins Marsh Aquatic Preserve|2020|Turbidity|All|All|44|0.4|10.1|2.2|2.41931818181818|1.82678953068742|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 479, 5002
-43|St. Martins Marsh Aquatic Preserve|2021|Turbidity|All|All|18|0.45|3.9|1.88|1.8|0.983002603072372|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+43|St. Martins Marsh Aquatic Preserve|2021|Turbidity|All|All|30|0.45|3.9|1.6|1.71666666666667|1.03605130126388|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 479, 5002
 44|Terra Ceia Aquatic Preserve|1995|Turbidity|All|All|290|0.48|5.2|1.6|1.72875862068966|0.842592294911636|Florida STORET / WIN|5002
 44|Terra Ceia Aquatic Preserve|1996|Turbidity|All|All|358|0.3|7.1|1.2|1.495|1.03894035383343|Florida STORET / WIN|5002
 44|Terra Ceia Aquatic Preserve|1997|Turbidity|All|All|538|0.2|22|1.2|1.66345724907063|1.47166772821374|Florida STORET / WIN|5002
@@ -974,9 +1007,10 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 44|Terra Ceia Aquatic Preserve|2017|Turbidity|All|All|83|0.5|16|1.3|1.84096385542169|1.93976589891154|Florida STORET / WIN|5002
 44|Terra Ceia Aquatic Preserve|2018|Turbidity|All|All|64|0.5|18.2|1.6|2.7734375|3.242585789028|Florida STORET / WIN|5002
 44|Terra Ceia Aquatic Preserve|2019|Turbidity|All|All|64|0.4|19.6|1.35|2.3|2.92742912294069|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2020|Turbidity|All|All|74|0.4|10.5|1.4|1.88513513513514|1.63444787145447|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2021|Turbidity|All|All|104|0.2|26.3|1.6|2.44230769230769|3.09919163615452|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2022|Turbidity|All|All|43|0.4|6.9|1.8|2.03720930232558|1.17939113747285|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2020|Turbidity|All|All|91|0.4|10.5|1.3|1.71318681318681|1.52389915029461|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+44|Terra Ceia Aquatic Preserve|2021|Turbidity|All|All|181|0.2|26.3|1.6|2.22922651933702|2.45772805171396|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+44|Terra Ceia Aquatic Preserve|2022|Turbidity|All|All|101|0.4|12.4|1.8|2.54257425742574|2.12698596773244|Florida STORET / WIN|5002
+44|Terra Ceia Aquatic Preserve|2023|Turbidity|All|All|28|0.8|4.6|1.45|1.79642857142857|0.981111290873449|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|1997|Turbidity|All|All|4|2.6|4.3|3.95|3.7|0.761577310586391|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|1998|Turbidity|All|All|8|2.75|14.4|7.15|6.97125|3.97296016843864|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|1999|Turbidity|All|All|12|3.74|18.9|6.21|7.9325|4.64392687476685|Florida STORET / WIN|5002
@@ -998,8 +1032,9 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 45|Tomoka Marsh Aquatic Preserve|2016|Turbidity|All|All|6|1.92013|11.06297|4.97701|5.66433666666667|3.55830184518777|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|2017|Turbidity|All|All|12|3.21146|17.95775|8.302585|8.62336583333333|4.13677195129786|Florida STORET / WIN|5002
 45|Tomoka Marsh Aquatic Preserve|2020|Turbidity|All|All|44|2.92852|34.45737|6.16413249|7.64416306772727|5.65793444467603|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-45|Tomoka Marsh Aquatic Preserve|2021|Turbidity|All|All|82|1.24742|37.46791|7.00595|8.634918665|6.09919797276577|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-45|Tomoka Marsh Aquatic Preserve|2022|Turbidity|All|All|14|1.7|14.10261|6.02299|6.55475214285714|3.78752998480373|Florida STORET / WIN|5002
+45|Tomoka Marsh Aquatic Preserve|2021|Turbidity|All|All|94|1.24742|37.46791|7.00595|8.65173755882979|5.90942918446785|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+45|Tomoka Marsh Aquatic Preserve|2022|Turbidity|All|All|35|1.7|42.00586|5.54598|7.90545314285714|7.0375521688894|Florida STORET / WIN|5002
+45|Tomoka Marsh Aquatic Preserve|2023|Turbidity|All|All|10|3.84489|17.1967|6.177675|7.130202|4.10261669521836|Florida STORET / WIN|5002
 47|Yellow River Marsh Aquatic Preserve|1977|Turbidity|All|All|2|12|16|14|14|2.82842712474619|EPA STOrage and RETrieval Data Warehouse (STORET)|103
 47|Yellow River Marsh Aquatic Preserve|1995|Turbidity|All|All|50|0.98|18|2.95|4.0256|3.31735581942201|Florida STORET / WIN|5002
 47|Yellow River Marsh Aquatic Preserve|1996|Turbidity|All|All|38|0.6|14|2.6|3.34736842105263|2.78982871140431|Florida STORET / WIN|5002
@@ -1023,5 +1058,5 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N|Min|Max|M
 47|Yellow River Marsh Aquatic Preserve|2017|Turbidity|All|All|6|2.4|5.9|5.7|5.05|1.35757136092362|Florida STORET / WIN|5002
 47|Yellow River Marsh Aquatic Preserve|2019|Turbidity|All|All|2|1.7|2.2|1.95|1.95|0.353553390593274|Shellfish Harvest Area Classification Program|540
 47|Yellow River Marsh Aquatic Preserve|2020|Turbidity|All|All|4|3.1|14|6.15|7.35|4.67511140687221|Florida STORET / WIN, Shellfish Harvest Area Classification Program|540, 5002
-47|Yellow River Marsh Aquatic Preserve|2021|Turbidity|All|All|4|2|10|6.15|6.075|4.10802061013979|Shellfish Harvest Area Classification Program|540
+47|Yellow River Marsh Aquatic Preserve|2021|Turbidity|All|All|7|2|10|9.2|6.5|3.89743505398102|EPA STOrage and RETrieval Data Warehouse (STORET), Shellfish Harvest Area Classification Program|103, 540
 47|Yellow River Marsh Aquatic Preserve|2022|Turbidity|All|All|4|2.5|5.1|3.4|3.6|1.09848380355227|Shellfish Harvest Area Classification Program|540

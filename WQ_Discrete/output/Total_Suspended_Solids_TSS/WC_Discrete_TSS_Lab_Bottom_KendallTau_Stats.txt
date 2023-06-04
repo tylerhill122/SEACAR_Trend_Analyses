@@ -1,45 +1,45 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
 1|Alligator Harbor Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-2|Apalachicola Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|3|3|2018|2022|2022-04-06|6||||||||
-3|Apalachicola National Estuarine Research Reserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|14|9|1999|2022|2022-04-06|9.5||||||||
-4|Banana River Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|32|3|2020|2022|2022-04-11|5.4||||||||
-5|Big Bend Seagrasses Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|81|16|1993|2022|2022-01-12|4|TRUE|-0.426|0.0003|-0.261363636363636|8.16666666666667|12.6432|0.3173|-1
+2|Apalachicola Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|21|10|2001|2022|2022-09-01T11:35:00Z|11|TRUE|-0.4222|0.3223|-0.333333333333333|20.75|3.0259|0.696|0
+3|Apalachicola National Estuarine Research Reserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|31|13|1999|2022|2022-09-01T11:35:00Z|10|TRUE|-0.2754|0.4576|-0.25|14.8452380952381|2.5439|0.9238|0
+4|Banana River Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|53|5|2002|2022|2022-11-30T10:18:00Z|5.9||||||||
+5|Big Bend Seagrasses Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|168|21|1991|2022|2022-01-19T12:26:00Z|4|TRUE|-0.354|0|-0.0625|4.82619047619048|6.6352|0.8278|-1
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-6|Biscayne Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|16|3|2020|2022|2022-01-10|3||||||||
-8|Boca Ciega Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|89|8|2002|2021|2021-12-13|11.5||||||||
-9|Cape Haze Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|64|6|2010|2015|2015-05-18|9.11||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|2|1|1994|1994|1994-04-25|23||||||||
-11|Cockroach Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
+6|Biscayne Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|29|14|1995|2022|2022-11-01T10:10:00Z|14.5|TRUE|0.2795|0.1981|0.5|-27.5|5.9659|0.2017|0
+8|Boca Ciega Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|71|13|2002|2022|2022-12-14T11:18:00Z|12|TRUE|0.0242|0.6772|0.0384615384615385|15.1088235294118|||0
+9|Cape Haze Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|45|10|2008|2021|2021-11-08T10:18:00Z|8.71|TRUE|-0.037|1|-0.011875|8.58|9.0997|0.5227|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|2|1|1994|1994|1994-04-25T00:00:00Z|23||||||||
+11|Cockroach Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|1|1|2007|2007|2007-09-18T00:00:00Z|10||||||||
 13|Coupon Bight Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-14|Estero Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|253|11|2005|2022|2022-06-14|10.9|TRUE|-0.5191|0|-1.9225|44.355|4.7229|0.9438|-2
-15|Florida Keys National Marine Sanctuary|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
+14|Estero Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|83|23|1998|2023|2023-02-14T10:40:00Z|11.1|TRUE|-0.0439|0.3823|-0.179861111111111|14.6545833333333|10.3443|0.4997|0
+15|Florida Keys National Marine Sanctuary|Total Suspended Solids, TSS|Bottom|Lab|FALSE|30|12|2007|2022|2022-09-21T12:10:00Z|48||||||||
 16|Fort Clinch State Park Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-17|Fort Pickens State Park Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|698|20|1996|2021|2021-12-28|9.45|TRUE|0.0205|0.6684|0.0264583333333334|9.5669375|5.5577|0.9012|0
-19|Guana River Marsh Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|28|8|2014|2021|2021-02-25|13.5||||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|33|9|2014|2022|2022-03-29|11||||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|25|4|1998|2021|2021-06-29|12.6||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|39|13|1999|2022|2022-06-15|12.5|TRUE|-0.2381|0.2762|-0.616666666666667|13.0708333333333|5.5921|0.7799|0
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-25|Lemon Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|45|11|2003|2020|2020-11-03|10.4|TRUE|0.1977|0.9203|0.0825454545454545|-15.1158333333333|5.3241|0.8052|0
+17|Fort Pickens State Park Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|2|1|2003|2003|2003-07-29T00:00:00Z|5||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|872|26|1996|2023|2023-04-10T09:10:00Z|8.8|TRUE|-0.028|0.5415|-0.0287878787878788|10.0930952380952|5.3944|0.9106|0
+19|Guana River Marsh Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|61|9|2004|2023|2023-02-07T13:50:00Z|20||||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|180|26|1997|2023|2023-02-07T13:50:00Z|18|TRUE|-0.3188|0.0005|-0.75|36.5555555555556|9.3186|0.5925|-1
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|35|8|1998|2023|2023-02-15T10:00:00Z|7.7||||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|14|4|2020|2023|2023-02-27T11:04:00Z|5.4||||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|51|20|1996|2023|2023-02-27T12:49:00Z|3|TRUE|0.3407|0.032|0|1.46637426900585|||-1
+25|Lemon Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|48|14|1999|2021|2021-07-21T09:26:00Z|9.04|TRUE|0.3333|0.0564|0.530769230769231|3.6490625|7.6368|0.7454|0
 26|Lignumvitae Key Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|4|1|2021|2021|2021-05-13|6||||||||
-28|Matlacha Pass Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|12|4|2018|2021|2021-12-13|5.94||||||||
-29|Mosquito Lagoon Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|4|2|2020|2021|2021-10-05|11.35||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|50|3|2020|2022|2022-04-26|13.8||||||||
-48|Nature Coast Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|68|3|2015|2020|2020-07-28|3.245||||||||
-31|North Fork St. Lucie Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-33|Pellicer Creek Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|5|5|2014|2018|2018-11-06|8||||||||
-34|Pine Island Sound Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|197|8|2013|2022|2022-06-07|8.62||||||||
-35|Pinellas County Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|386|17|2002|2021|2021-12-16|8|TRUE|0.1249|0.1407|0.0833333333333333|6.18629807692308|8.7527|0.6447|0
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|83|25|1994|2023|2023-04-05T10:30:00Z|4.45|TRUE|0.1098|0.4038|0.0461538461538462|3.93076923076923|9.7241|0.465|0
+28|Matlacha Pass Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|43|5|2018|2023|2023-01-23T10:08:00Z|25||||||||
+29|Mosquito Lagoon Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|24|3|2020|2022|2022-10-06T12:22:00Z|17.15||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|16|8|2005|2023|2023-02-07T12:45:00Z|11.2||||||||
+48|Nature Coast Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|33|2|2015|2020|2020-11-04T11:20:00Z|3.83||||||||
+31|North Fork St. Lucie Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|87|19|2000|2022|2022-12-14T13:29:00Z|3|TRUE|0.1795|0.0208|0|3|||-1
+33|Pellicer Creek Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|32|8|2013|2021|2021-02-23T11:40:00Z|20||||||||
+34|Pine Island Sound Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|22|6|2003|2022|2022-11-16T08:45:00Z|7.725||||||||
+35|Pinellas County Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|303|19|2002|2022|2022-12-13T09:10:00Z|9.5|TRUE|-0.1869|0.0424|-0.26969696969697|14.5714285714286|7.2869|0.6981|-1
 37|Rocky Bayou State Park Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-38|Rookery Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|4|2|1992|1995|1995-09-05|12.5||||||||
-39|Rookery Bay National Estuarine Research Reserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|8|3|1992|1995|1995-09-07|12.5||||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|Total Suspended Solids, TSS|Bottom|Lab|FALSE|4028|6|2016|2021|2021-06-11|1.88||||||||
+38|Rookery Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|10|7|1992|2017|2017-02-27T00:00:00Z|8||||||||
+39|Rookery Bay National Estuarine Research Reserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|15|10|1992|2015|2015-01-26T00:00:00Z|4||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|Total Suspended Solids, TSS|Bottom|Lab|FALSE|4044|6|2016|2021|2021-06-11T09:35:00Z|1.88||||||||
 40|St. Andrews State Park Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
 41|St. Joseph Bay Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
 42|St. Joseph Bay State Buffer Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
-43|St. Martins Marsh Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|24|4|2011|2020|2020-07-28|3.65||||||||
-44|Terra Ceia Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|49|5|2018|2022|2022-02-23|6.4||||||||
-45|Tomoka Marsh Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|4|1|2020|2020|2020-12-15|11.2||||||||
+43|St. Martins Marsh Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|9|4|2009|2020|2020-08-04T13:35:00Z|4.19||||||||
+44|Terra Ceia Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|TRUE|46|14|2000|2023|2023-03-01T13:38:00Z|4.9|TRUE|-0.0683|0.9167|0.0884615384615385|8.303125|11.0944|0.4354|0
+45|Tomoka Marsh Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|48|5|2001|2023|2023-03-14T11:53:00Z|14||||||||
 47|Yellow River Marsh Aquatic Preserve|Total Suspended Solids, TSS|Bottom|Lab|FALSE|0|0||||||||||||
