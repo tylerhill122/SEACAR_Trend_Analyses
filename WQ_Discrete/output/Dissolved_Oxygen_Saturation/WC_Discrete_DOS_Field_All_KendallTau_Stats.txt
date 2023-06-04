@@ -1,45 +1,45 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-1|Alligator Harbor Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|127|8|2013|2022|2022-06-07|96.8||||||||
-2|Apalachicola Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|5787|23|2000|2022|2022-05-26|92.9|TRUE|0.1666|0.0003|0.320975757575759|88.0537742724868|4.664|0.9463|1
-3|Apalachicola National Estuarine Research Reserve|Dissolved Oxygen Saturation|All|Field|TRUE|7300|23|2000|2022|2022-06-22|91.6|TRUE|0.0046|0.9864|-0.00554919908466825|90.5246856565229|13.6727|0.2516|0
-4|Banana River Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|7046|32|1991|2022|2022-04-11|53|TRUE|0.4428|0|1.92653757916571|10.8350356950816|6.4773|0.8397|1
-5|Big Bend Seagrasses Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|991|18|1999|2022|2022-07-21|72.3|TRUE|0.0401|0.3931|0.282777777777778|65.3827150451887|10.7035|0.4684|0
+1|Alligator Harbor Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|131|8|2013|2022|2022-12-07T14:30:00Z|96.8||||||||
+2|Apalachicola Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|6014|23|2000|2022|2022-09-01T11:40:00Z|93.1|TRUE|0.1682|0.0003|0.320390740740742|88.1893827380952|4.6517|0.9469|1
+3|Apalachicola National Estuarine Research Reserve|Dissolved Oxygen Saturation|All|Field|TRUE|7571|24|2000|2023|2023-03-01T12:20:00Z|91.8|TRUE|-0.0245|0.5479|-0.0541711229946552|89.4652112613161|11.9879|0.3646|0
+4|Banana River Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|7264|32|1991|2022|2022-12-30T00:00:00Z|56.3|TRUE|0.4427|0|1.91303538541667|10.9985887113703|5.6591|0.8951|1
+5|Big Bend Seagrasses Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|1136|19|1999|2023|2023-01-19T11:35:00Z|71|TRUE|-0.0333|0.7181|-0.123925264550265|71.9029389880953|7.6679|0.7427|0
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|0|0||||||||||||
-6|Biscayne Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|3978|12|1995|2022|2022-05-05|89.7|TRUE|0.4126|0|1.59442176870748|52.7263827052754|17.1226|0.1043|1
-8|Boca Ciega Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|7339|28|1992|2021|2021-12-16|90.5|TRUE|0.1052|0.0338|0.450170250896057|86.3386846213758|20.8321|0.0352|1
-9|Cape Haze Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|15|4|2017|2022|2022-07-06|80.1||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|570|16|2002|2021|2021-10-27|74.6|TRUE|0.0495|0.597|0.106249999999999|72.2841794871795|4.8347|0.9389|0
-11|Cockroach Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|9658|28|1993|2022|2022-06-28|59.3|TRUE|-0.1109|0.0207|-0.352914098147386|73.0348718660742|11.5452|0.3988|-1
-13|Coupon Bight Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|146|20|1995|2022|2022-05-19|93.406682865|TRUE|-0.2029|0.0325|-0.502789436794118|98.4594880180469|19.9665|0.0458|-1
-14|Estero Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|1944|11|2011|2022|2022-07-05|84.4|TRUE|-0.2024|0.0165|-1.11818181818182|83.6203407636483|7.6643|0.743|-1
-15|Florida Keys National Marine Sanctuary|Dissolved Oxygen Saturation|All|Field|TRUE|28191|28|1995|2022|2022-05-25|94.738772975|TRUE|0.1793|0.0001|0.20038338712|91.4363824245698|13.3387|0.2718|1
-16|Fort Clinch State Park Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|50|6|2000|2020|2020-03-09|85.45||||||||
-17|Fort Pickens State Park Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|247|13|1999|2018|2018-05-01|98.01|TRUE|0.2466|0.0025|0.557404545454546|91.0575140567766|8.4787|0.6699|1
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|297|13|1992|2022|2022-07-05|75.2|TRUE|0.291|0.0004|2.24166666666667|16.2908333333333|5.6836|0.8936|1
-19|Guana River Marsh Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|1017|20|1999|2022|2022-06-14|78|TRUE|0.0913|0.1447|0.221111111111112|70.7605555555555|13.789|0.2449|0
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Dissolved Oxygen Saturation|All|Field|TRUE|1967|21|1999|2022|2022-06-14|81|TRUE|0.0664|0.2728|0.154430555555557|79.1803027081278|11.4695|0.4048|0
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|12357|32|1991|2022|2022-06-29|67|TRUE|0.4023|0|1.40107578847737|22.5621081818571|4.0344|0.9689|1
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|713|23|1992|2022|2022-03-09|81.6|TRUE|0.4332|0|1.89249308333333|51.7333333333333|4.1512|0.9653|1
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|4027|30|1993|2022|2022-05-19|77|TRUE|0.7159|0|2.83921675091123|17.1156672072097|2.7198|0.9939|1
-25|Lemon Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|4000|24|1998|2022|2022-07-06|88|TRUE|0.0012|0.9801|0|85.5399784499127|11.1822|0.4281|0
-26|Lignumvitae Key Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|172|6|2016|2022|2022-05-25|100.95||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|8051|28|1995|2022|2022-06-14|80.9|TRUE|-0.1408|0.0026|-0.211275510204082|85.9935691783268|12.6522|0.3167|-1
-28|Matlacha Pass Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|472|12|2007|2022|2022-07-05|90.6|TRUE|0.0192|0.7743|0.053968253968255|86.2228270319264|14.4548|0.2088|0
-29|Mosquito Lagoon Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|346|15|2006|2022|2022-04-06|87.6|TRUE|-0.3007|0|-1.25|104.508845486111|3.8101|0.9751|-1
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|921|17|2000|2022|2022-07-19|90|TRUE|-0.1284|0.0602|-0.193629908103592|92.2299537037037|6.2508|0.8561|0
-48|Nature Coast Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|957|6|2014|2022|2022-07-27|99.6||||||||
-31|North Fork St. Lucie Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|56|5|2009|2022|2022-05-23|70.4||||||||
-33|Pellicer Creek Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|159|11|2004|2022|2022-03-15|60.45|TRUE|0.2608|0.0427|0.781851851851852|58.6695806100218|13.4734|0.2635|1
-34|Pine Island Sound Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|1261|8|2014|2022|2022-07-05|93.9||||||||
-35|Pinellas County Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|26914|31|1992|2022|2022-07-26|90.8|TRUE|0.0883|0.069|0.106066319301613|89.2410614151679|19.3226|0.0555|0
-37|Rocky Bayou State Park Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|600|22|2000|2022|2022-04-16|89|TRUE|0.1297|0.0089|0.509999999999999|68.5940104166667|6.1475|0.8633|1
-38|Rookery Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|737|22|1998|2022|2022-05-09|81.1|TRUE|0.1247|0.0439|0.463125|75.5587924575425|11.2813|0.42|1
-39|Rookery Bay National Estuarine Research Reserve|Dissolved Oxygen Saturation|All|Field|TRUE|1323|23|1998|2022|2022-05-09|78.1|TRUE|0.0092|0.8454|0.0385892857142856|75.2207072829132|11.6765|0.3884|0
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|Dissolved Oxygen Saturation|All|Field|TRUE|166|11|1995|2016|2016-08-09|0.925394|TRUE|-0.177|0.2167|-0.0323616666666667|2.6038080625|3.6907|0.9781|0
-40|St. Andrews State Park Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|396|11|2005|2022|2022-06-21|100.2|TRUE|-0.1683|0.1015|-0.738020833333333|110.481600140056|5.6979|0.8927|0
-41|St. Joseph Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|274|10|2005|2018|2018-10-29|99.9|TRUE|0.1494|0.3258|1.08|82.9424166666666|19.2172|0.0573|0
+6|Biscayne Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|4854|13|1995|2023|2023-02-20T13:57:00Z|89.2|TRUE|0.3979|0|1.44514132925898|47.7020064870354|13.2164|0.2794|1
+8|Boca Ciega Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|7589|29|1992|2022|2022-12-19T13:05:00Z|90.8|TRUE|0.143|0.0114|0.465377064875666|83.7561035993845|20.6076|0.0377|1
+9|Cape Haze Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|26|7|2017|2023|2023-04-10T10:20:00Z|79.45||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|570|16|2002|2021|2021-10-27T09:53:00Z|74.6|TRUE|0.0495|0.597|0.106249999999999|72.2841794871795|4.8347|0.9389|0
+11|Cockroach Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|10036|29|1993|2023|2023-03-21T09:18:00Z|59.4|TRUE|-0.1236|0.0079|-0.33953823953824|73.1598079728243|11.745|0.3831|-1
+13|Coupon Bight Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|161|21|1995|2023|2023-02-03T13:45:00Z|93.50146975|TRUE|-0.0975|0.3046|-0.144025389347826|99.354183881966|28.733|0.0025|0
+14|Estero Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|2203|12|2011|2023|2023-02-14T10:40:00Z|82.9|TRUE|-0.1227|0.1231|-0.799833333333337|78.2802335164835|7.8148|0.7298|0
+15|Florida Keys National Marine Sanctuary|Dissolved Oxygen Saturation|All|Field|TRUE|28455|29|1995|2023|2023-03-07T13:24:00Z|94.731212715|TRUE|0.1745|0.0001|0.182131022379336|91.4576542309466|9.209|0.6026|1
+16|Fort Clinch State Park Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|50|6|2000|2020|2020-03-09T11:09:00Z|85.45||||||||
+17|Fort Pickens State Park Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|247|13|1999|2018|2018-05-01T00:00:00Z|98.01|TRUE|0.2466|0.0025|0.557404545454546|91.0575140567766|8.4787|0.6699|1
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|440|14|1992|2023|2023-04-10T09:10:00Z|76.3|TRUE|0.1965|0.0114|1.32084529505582|39.5525438596491|13.0602|0.2894|1
+19|Guana River Marsh Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|1104|21|1999|2023|2023-03-22T11:50:00Z|78|TRUE|0.0801|0.1878|0.19047619047619|73.8948727324263|13.0867|0.2877|0
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Dissolved Oxygen Saturation|All|Field|TRUE|2073|22|1999|2023|2023-03-22T11:50:00Z|81|TRUE|0.0541|0.351|0.129177489177489|80.2283928571429|8.9966|0.6222|0
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|12731|33|1991|2023|2023-03-22T10:00:00Z|68|TRUE|0.4049|0|1.39559100646427|23.6477340779595|3.6541|0.979|1
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|777|23|1992|2022|2022-12-23T00:00:00Z|81.8|TRUE|0.3612|0|1.55375|53.2527083333333|4.9398|0.934|1
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|3901|30|1993|2022|2022-12-23T00:00:00Z|75|TRUE|0.6504|0|2.81029713986928|14.2244379529246|8.0919|0.7051|1
+25|Lemon Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|4111|26|1998|2023|2023-02-01T12:06:00Z|87|TRUE|-0.0942|0.0292|-0.205555555555556|87.0958333333333|13.9661|0.2349|-1
+26|Lignumvitae Key Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|192|7|2016|2023|2023-03-07T13:24:00Z|100||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|7019|29|1995|2023|2023-04-05T10:45:00Z|77.5|TRUE|-0.0527|0.1966|-0.0918699186991863|75.8010971493784|11.9741|0.3656|0
+28|Matlacha Pass Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|608|13|2007|2023|2023-01-30T09:15:00Z|89.2|TRUE|0.0067|0.8727|0.0371794871794862|84.4619642857143|11.1686|0.4292|0
+29|Mosquito Lagoon Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|410|16|2006|2023|2023-02-08T11:36:00Z|86.95|TRUE|-0.3032|0|-1.2635|103.9573125|4.0883|0.9673|-1
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|969|18|2000|2023|2023-05-09T11:40:00Z|90|TRUE|-0.0963|0.1457|-0.136263736263736|91.5639975649351|8.2333|0.6923|0
+48|Nature Coast Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|1293|7|2014|2023|2023-01-19T10:51:00Z|99||||||||
+31|North Fork St. Lucie Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|67|6|2009|2023|2023-03-15T11:10:00Z|70.1||||||||
+33|Pellicer Creek Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|159|11|2004|2022|2022-03-15T11:55:00Z|60.45|TRUE|0.2608|0.0427|0.781851851851852|58.6695806100218|13.4734|0.2635|1
+34|Pine Island Sound Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|1480|10|2014|2023|2023-01-30T10:45:00Z|92.954415|TRUE|0.2277|0.0084|1.66791666666667|77.7602903135285|6.2006|0.8596|1
+35|Pinellas County Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|28272|32|1992|2023|2023-03-27T13:57:00Z|90.9|TRUE|0.104|0.0363|0.12407329840038|89.4891365537241|19.7028|0.0496|1
+37|Rocky Bayou State Park Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|610|22|2000|2022|2022-09-15T16:10:00Z|89|TRUE|0.1187|0.0143|0.462019230769232|68.3263020833333|6.6932|0.8234|1
+38|Rookery Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|751|23|1998|2023|2023-03-27T08:41:00Z|81.1|TRUE|0.1078|0.0959|0.380000000000001|77.2700162337662|12.0645|0.3588|0
+39|Rookery Bay National Estuarine Research Reserve|Dissolved Oxygen Saturation|All|Field|TRUE|1345|24|1998|2023|2023-03-27T08:41:00Z|78.1|TRUE|-0.0199|0.7331|-0.0612222222222229|75.2207072829132|10.932|0.449|0
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|Dissolved Oxygen Saturation|All|Field|TRUE|166|11|1995|2016|2016-08-09T00:00:00Z|0.925394|TRUE|-0.177|0.2167|-0.0323616666666667|2.6038080625|3.6907|0.9781|0
+40|St. Andrews State Park Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|445|12|2005|2023|2023-01-24T10:53:00Z|100.05|TRUE|-0.1294|0.1951|-0.526470588235293|100.586547619048|6.1759|0.8614|0
+41|St. Joseph Bay Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|276|12|2005|2023|2023-03-21T10:41:00Z|99.75|TRUE|0.0802|0.8439|0.127166666666668|82.9424166666666|22.5211|0.0206|0
 42|St. Joseph Bay State Buffer Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|0|0||||||||||||
-43|St. Martins Marsh Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|128|2|2021|2022|2022-07-20|88.4||||||||
-44|Terra Ceia Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|4490|30|1993|2022|2022-06-22|89.9|TRUE|0.0784|0.2694|0.0873793363499243|88.1079927684094|11.4987|0.4025|0
-45|Tomoka Marsh Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|246|9|2009|2022|2022-05-03|70.3||||||||
-47|Yellow River Marsh Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|104|12|2002|2022|2022-05-16|77.55805|TRUE|-0.2177|0.0665|-0.657833333333333|74.0017422077922|13.7554|0.2468|0
+43|St. Martins Marsh Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|FALSE|176|3|2021|2023|2023-01-17T09:55:00Z|85.2||||||||
+44|Terra Ceia Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|4686|31|1993|2023|2023-03-27T11:36:00Z|89.8|TRUE|0.0658|0.4499|0.0597222222222224|86.3629884004884|17.6184|0.0909|0
+45|Tomoka Marsh Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|277|10|2009|2023|2023-03-14T12:17:00Z|71.4|TRUE|0.3452|0.0016|1.25454365079365|56.2118181818182|16.2532|0.132|1
+47|Yellow River Marsh Aquatic Preserve|Dissolved Oxygen Saturation|All|Field|TRUE|116|15|2002|2023|2023-03-29T11:35:00Z|78.4169|TRUE|-0.1908|0.1338|-0.499070738636362|76.3489922077922|13.9581|0.2353|0
