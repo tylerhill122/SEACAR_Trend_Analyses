@@ -1,45 +1,45 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-1|Alligator Harbor Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|722|15|2001|2021|2021-08-19|5|TRUE|0.2173|0.0071|0.124492566257272|4.91126809698238|7.8738|0.7246|1
-2|Apalachicola Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|2512|18|2002|2021|2021-11-22|11|TRUE|-0.0506|0.4313|-0.0918961918016195|12.4826798767753|5.0721|0.9276|0
-3|Apalachicola National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|3027|20|2000|2021|2021-11-22|9.58|TRUE|0.0435|0.4542|0.0699494949494949|7.19847025364641|3.3019|0.9861|0
-4|Banana River Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|44|9|1999|2021|2021-12-15|8.85||||||||
-5|Big Bend Seagrasses Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|3790|30|1990|2021|2021-12-28|1|TRUE|0.052|0.182|0.0132066326530612|1.8488543956044|17.1464|0.1036|0
+1|Alligator Harbor Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|809|15|2001|2021|2021-08-19T00:00:00Z|5|TRUE|0.2306|0.0042|0.132759462759463|4.23475928833072|6.5987|0.8306|1
+2|Apalachicola Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|1762|15|2002|2021|2021-11-22T00:00:00Z|10.8|TRUE|0.0817|0.2569|0.12312925170068|7.59838032581454|5.9743|0.8751|0
+3|Apalachicola National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|2204|20|2000|2021|2021-11-22T00:00:00Z|9.2|TRUE|0.2246|0.0001|0.32857905982906|2.74828904991948|4.9588|0.9331|1
+4|Banana River Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|42|8|1999|2021|2021-12-15T00:00:00Z|8.7||||||||
+5|Big Bend Seagrasses Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|3893|32|1990|2021|2021-12-28T00:00:00Z|1|TRUE|0.0683|0.0632|0.0160666666666667|1.68369545454545|16.9789|0.1085|0
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|0|0||||||||||||
-6|Biscayne Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|364|14|2001|2020|2020-07-07|1.53|TRUE|-0.2294|1|0.00214285714285713|7.75950413223141|8.9795|0.534|0
-8|Boca Ciega Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|38|7|2000|2016|2016-07-27|11||||||||
-9|Cape Haze Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|38|9|2001|2022|2022-01-05|3.6||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|1750|28|1994|2021|2021-10-27|3.3|TRUE|0.1714|0|0.055625|2.80258949652778|6.8936|0.8076|1
-11|Cockroach Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|338|13|2004|2021|2021-10-25|8.8|TRUE|-0.1297|0.0961|-0.34537037037037|14.2272916666667|11.8298|0.3766|0
-13|Coupon Bight Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|89|19|1995|2021|2021-09-28|0.31818424|TRUE|0.2207|0.1513|0.0069767525|0.13446104|5.7226|0.8912|0
-14|Estero Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|178|16|2000|2022|2022-01-03|3.94|TRUE|0.3778|0.0006|0.206388888888889|2.71775297619048|13.7947|0.2446|1
-15|Florida Keys National Marine Sanctuary|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|14393|27|1995|2021|2021-09-28|0.2706|TRUE|0.1709|0|0.0064128263260092|0.273574145045213|21.2657|0.0307|1
-16|Fort Clinch State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|24|4|2004|2021|2021-11-18|4||||||||
-17|Fort Pickens State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|200|14|1998|2021|2021-06-29|5|TRUE|-0.2802|0|0|5.3171875|||-1
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|615|22|1997|2022|2022-01-03|4.8|TRUE|-0.2498|0|-0.203153594771242|6.92091666666667|4.874|0.9371|-1
-19|Guana River Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|112|7|2002|2021|2021-11-17|8.25||||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|442|13|2002|2021|2021-12-01|5.7|TRUE|0.2632|0.0264|0.297265221878225|4.94650556680162|4.6952|0.945|1
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|90|13|2000|2021|2021-08-25|4.35|TRUE|0.2353|0.079|0.161428571428571|4.40057|10.9045|0.2823|0
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|40|6|2001|2017|2017-06-01|3.35||||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|307|24|1997|2021|2021-10-12|2.3|TRUE|-0.2074|0.0187|-0.0262531328320802|2.42333333333333|8.4527|0.4892|-1
-25|Lemon Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|175|13|1999|2022|2022-01-03|2.7|TRUE|0.3946|0.0036|0.082|2.16976004464286|10.1529|0.5167|1
-26|Lignumvitae Key Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|56|5|2001|2021|2021-09-27|0.795||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|3297|25|1997|2021|2021-12-13|5.6|TRUE|0.0582|0.1941|0.0332767857142857|6.76842938311688|15.5186|0.16|0
-28|Matlacha Pass Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|216|15|1999|2022|2022-01-11|4.4|TRUE|0.2017|0.0161|0.09|3.2028231292517|13.8082|0.2438|1
-29|Mosquito Lagoon Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|32|7|1991|2021|2021-08-31|11.19940006||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|106|9|2004|2021|2021-11-18|8.262225||||||||
-48|Nature Coast Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|1915|9|2005|2021|2021-08-06|1||||||||
-31|North Fork St. Lucie Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|246|10|1999|2021|2021-12-08|16.5|TRUE|-0.0667|0.5642|-0.1165625|18.0047222222222|13.838|0.2421|0
-33|Pellicer Creek Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|196|7|2002|2021|2021-12-01|5.5||||||||
-34|Pine Island Sound Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|316|14|1999|2022|2022-01-03|3.4|TRUE|0.4664|0|0.150895963685437|1.41018630179344|26.7298|0.005|1
-35|Pinellas County Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|963|22|2000|2021|2021-10-27|6.3|TRUE|0.2884|0|0.374464285714286|1.7549503968254|5.9779|0.8748|1
-37|Rocky Bayou State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|399|21|2001|2021|2021-07-15|3.4|TRUE|-0.0102|0.9046|0|3.44625|10.0182|0.5288|0
-38|Rookery Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|2932|23|1999|2021|2021-10-26|4|TRUE|0.0741|0.0999|0.0317948717948717|4.00750384152884|27.5295|0.0038|0
-39|Rookery Bay National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|4706|28|1994|2021|2021-10-27|3.7|TRUE|0.2186|0|0.0692060733384263|3.5123040969216|15.659|0.1543|1
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|1025|5|2009|2021|2021-08-19|0.388||||||||
-40|St. Andrews State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|728|30|1990|2021|2021-11-09|1|TRUE|-0.1002|0.0822|-0.0088235294117647|1.93251862745098|9.8594|0.5431|0
-41|St. Joseph Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|371|12|2002|2021|2021-11-09|2|TRUE|0.2735|0.0701|0.09125|1.65416666666667|13.4704|0.2637|0
-42|St. Joseph Bay State Buffer Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|43|5|2016|2021|2021-04-20|9||||||||
-43|St. Martins Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|358|13|2000|2021|2021-11-15|2|TRUE|-0.2153|0.0789|-0.05|2.53903893849206|8.1306|0.7016|0
-44|Terra Ceia Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|78|17|2000|2021|2021-10-27|4|TRUE|-0.0204|0.6917|0|3.57916666666667|10.3119|0.3258|0
-45|Tomoka Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|61|4|2000|2021|2021-11-08|9||||||||
-47|Yellow River Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|25|7|2001|2021|2021-11-08|2.3||||||||
+6|Biscayne Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|452|16|2000|2020|2020-07-07T00:00:00Z|1.32|TRUE|-0.0515|0.7353|-0.0146666666666667|2.12986758942812|11.9564|0.3669|0
+8|Boca Ciega Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|37|7|2000|2016|2016-07-27T00:00:00Z|11||||||||
+9|Cape Haze Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|38|9|2001|2022|2022-01-05T00:00:00Z|3.6||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|417|17|1994|2021|2021-10-27T00:00:00Z|2.9652|TRUE|0.0521|0.3567|0.0332972222222222|2.8118140625|12.2965|0.3418|0
+11|Cockroach Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|719|21|1999|2021|2021-10-25T00:00:00Z|8.4|TRUE|-0.1534|0.0029|-0.165882352941176|12.88|18.8824|0.0632|-1
+13|Coupon Bight Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|89|19|1995|2021|2021-09-28T00:00:00Z|0.31818424|TRUE|0.2207|0.1513|0.0069767525|0.13446104|5.7226|0.8912|0
+14|Estero Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|253|19|2000|2022|2022-01-03T00:00:00Z|3.885|TRUE|0.3817|0|0.230769230769231|1.48514102564103|16.1888|0.1343|1
+15|Florida Keys National Marine Sanctuary|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|16069|27|1995|2021|2021-09-28T00:00:00Z|0.2671|TRUE|0.1252|0.002|0.00485162338593974|0.319860656621923|23.6088|0.0145|1
+16|Fort Clinch State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|24|4|2004|2021|2021-11-18T00:00:00Z|4||||||||
+17|Fort Pickens State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|199|14|1998|2021|2021-06-29T00:00:00Z|5|TRUE|-0.2802|0|0|5.3171875|||-1
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|613|21|1997|2022|2022-01-03T00:00:00Z|4.8|TRUE|-0.2476|0|-0.205|7.13352042160738|5.1061|0.9259|-1
+19|Guana River Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|365|16|2002|2021|2021-11-17T00:00:00Z|6.7|TRUE|0.1412|0.0215|0.13625|5.26945465686275|6.4392|0.8425|1
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|2790|19|2002|2021|2021-12-01T00:00:00Z|6.2|TRUE|0.2452|0|0.289332706766917|5.5124909348907|2.7268|0.9939|1
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|89|12|2000|2021|2021-08-25T00:00:00Z|4.275|TRUE|0.3333|0.0446|0.168461538461538|2.32057192307692|10.1941|0.335|1
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|40|6|2001|2017|2017-06-01T00:00:00Z|3.35||||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|306|24|1997|2021|2021-10-12T00:00:00Z|2.3|TRUE|-0.2074|0.0187|-0.0262531328320802|2.42333333333333|8.4527|0.4892|-1
+25|Lemon Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|175|13|1999|2022|2022-01-03T00:00:00Z|2.7|TRUE|0.3946|0.0036|0.082|2.16976004464286|10.1529|0.5167|1
+26|Lignumvitae Key Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|56|5|2001|2021|2021-09-27T00:00:00Z|0.795||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|3297|25|1997|2021|2021-12-13T00:00:00Z|5.6|TRUE|0.0582|0.1941|0.0332767857142857|6.76842938311688|15.5186|0.16|0
+28|Matlacha Pass Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|216|15|1999|2022|2022-01-11T00:00:00Z|4.4|TRUE|0.2017|0.0161|0.09|3.2028231292517|13.8082|0.2438|1
+29|Mosquito Lagoon Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|32|7|1991|2021|2021-08-31T00:00:00Z|11.19940006||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|105|9|2004|2021|2021-11-18T00:00:00Z|8.28945||||||||
+48|Nature Coast Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|1746|8|2005|2021|2021-08-06T00:00:00Z|1||||||||
+31|North Fork St. Lucie Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|246|10|1999|2021|2021-12-08T00:00:00Z|16.5|TRUE|-0.0667|0.5642|-0.1165625|18.0047222222222|13.838|0.2421|0
+33|Pellicer Creek Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|1792|17|2002|2021|2021-12-01T00:00:00Z|7.4|TRUE|0.2235|0.0003|0.332051282051282|4.89196091524217|8.349|0.6817|1
+34|Pine Island Sound Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|373|13|1999|2022|2022-01-03T00:00:00Z|3.9|TRUE|-0.0476|0.7729|0.0212244897959184|3.78253544575725|19.8822|0.047|0
+35|Pinellas County Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|1457|23|1999|2021|2021-10-27T00:00:00Z|7|TRUE|0.1325|0.0038|0.147777777777778|6.38710092592593|7.725|0.7377|1
+37|Rocky Bayou State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|399|21|2001|2021|2021-07-15T00:00:00Z|3.4|TRUE|-0.0102|0.9046|0|3.44625|10.0182|0.5288|0
+38|Rookery Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|615|17|1999|2021|2021-10-26T00:00:00Z|4.7163|TRUE|0.0848|0.1648|0.0469337878787878|4.16441991003788|18.2835|0.0752|0
+39|Rookery Bay National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|1056|22|1994|2021|2021-10-27T00:00:00Z|4|TRUE|0.2765|0|0.130484126984127|2.80497996524064|3.8547|0.974|1
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|1024|5|2009|2021|2021-08-19T00:00:00Z|0.387||||||||
+40|St. Andrews State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|728|30|1990|2021|2021-11-09T00:00:00Z|1|TRUE|-0.1002|0.0822|-0.0088235294117647|1.93251862745098|9.8594|0.5431|0
+41|St. Joseph Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|826|21|2001|2021|2021-11-09T00:00:00Z|2|TRUE|0.0302|0.7591|0|2.0060667903525|7.7422|0.7362|0
+42|St. Joseph Bay State Buffer Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|45|5|2016|2021|2021-04-20T00:00:00Z|7||||||||
+43|St. Martins Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|279|12|2000|2021|2021-11-15T00:00:00Z|2|TRUE|-0.1933|0.1473|-0.0437777777777778|2.20258647998673|10.8817|0.4532|0
+44|Terra Ceia Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|TRUE|77|17|2000|2021|2021-10-27T00:00:00Z|4.1|TRUE|0.0122|0.6551|0|3.15833333333333|9.3896|0.3105|0
+45|Tomoka Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|61|4|2000|2021|2021-11-08T00:00:00Z|9||||||||
+47|Yellow River Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Surface|Lab|FALSE|24|6|2001|2021|2021-11-08T00:00:00Z|2.15||||||||
