@@ -77,19 +77,19 @@ The processing and filtering that is done to the data is as follows:
 
 1. Only take data rows that are Presence measurements for grazers and reef-dependent species
 2. Set parameter names to `Species Richness`
-4. Sets units
-6. Removes rows that contains NA values in `ManagedAreaName`, `GenusName`, `SpeciesName`, `Month`, `Year`, `SpeciesGroup1`, and removes invasive species data
-7. Sets ResultValue to be numeric values and removes rows where presence is 0
-8. Removes duplicates (`MADup`==1)
-9. Combines genus and species names
-10. Corrects some managed area names to match what is being used with other habitats
-11. Creates species richness data set
+3. Sets units
+4. Removes rows that contains NA values in `ManagedAreaName`, `GenusName`, `SpeciesName`, `Month`, `Year`, `SpeciesGroup1`, and removes invasive species data
+5. Sets ResultValue to be numeric values and removes rows where presence is 0
+6. Removes duplicates (`MADup`==1)
+7. Combines genus and species names
+8. Corrects some managed area names to match what is being used with other habitats
+9. Creates species richness data set
    + Grouped based on common `ManagedAreaName`, `ProgramID`, `ProgramName`, `ProgramLocationID`,
             and `SampleDate`
    + `SpeciesRichness` determined based on the number of unique species (`gensp`) in each group
    
-12. Merges data with managed area data to determine correct `AreaID`
-13. Writes to file with "_UsedData" file name to indicate what data was used for species richness.
+10. Merges data with managed area data to determine correct `AreaID`
+11. Writes to file with "_UsedData" file name to indicate what data was used for species richness.
 
 ```{r filtering}
 # Only keep data for Presence of grazers and reef-dependent species
