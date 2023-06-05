@@ -634,7 +634,7 @@ AreaID,ManagedAreaName,ParameterName,RelativeDepth,ActivityType,SufficientData,N
 13,Coupon Bight Aquatic Preserve,Salinity,Surface,All,TRUE,110,21,1995,2023,2023-02-22T12:49:00Z,36.60015,TRUE,0.2647,5e-04,0.0443416666666666,36.373,20.1885,0.0428,1,0
 13,Coupon Bight Aquatic Preserve,Salinity,Surface,Field,TRUE,110,21,1995,2023,2023-02-22T12:49:00Z,36.60015,TRUE,0.2647,5e-04,0.0443416666666666,36.373,20.1885,0.0428,1,0
 13,Coupon Bight Aquatic Preserve,Salinity,Surface,Lab,FALSE,0,0,,,,,,,,,,,,,0
-13,Coupon Bight Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,Inf,-Inf,,1.45,,,,,,,,,1
+13,Coupon Bight Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,,,,,1
 13,Coupon Bight Aquatic Preserve,Total Nitrogen,All,Lab,TRUE,64,17,1995,2011,2011-07-14T00:00:00Z,0.208824815,TRUE,-0.1417,0.2335,-0.00457189461538462,0.213674782916667,12.7511,0.3099,0,1
 13,Coupon Bight Aquatic Preserve,Total Nitrogen,Bottom,Lab,FALSE,1,1,2006,2006,2006-03-28T00:00:00Z,0.29385177,,,,,,,,,0
 13,Coupon Bight Aquatic Preserve,Total Nitrogen,Surface,Lab,TRUE,64,17,1995,2011,2011-07-14T00:00:00Z,0.208824815,TRUE,-0.1417,0.2335,-0.00457189461538462,0.213674782916667,12.7511,0.3099,0,0
@@ -799,7 +799,7 @@ AreaID,ManagedAreaName,ParameterName,RelativeDepth,ActivityType,SufficientData,N
 16,Fort Clinch State Park Aquatic Preserve,Salinity,Surface,All,TRUE,813,24,1994,2022,2022-05-17T10:35:00Z,33.4,TRUE,0.0628,0.2147,0.0333333333333338,32.5816344246032,6.4825,0.8393,0,0
 16,Fort Clinch State Park Aquatic Preserve,Salinity,Surface,Field,TRUE,813,24,1994,2022,2022-05-17T10:35:00Z,33.4,TRUE,0.0628,0.2147,0.0333333333333338,32.5816344246032,6.4825,0.8393,0,0
 16,Fort Clinch State Park Aquatic Preserve,Salinity,Surface,Lab,FALSE,0,0,,,,,,,,,,,,,0
-16,Fort Clinch State Park Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,Inf,-Inf,,0.9,,,,,,,,,1
+16,Fort Clinch State Park Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,,,,,1
 16,Fort Clinch State Park Aquatic Preserve,Total Nitrogen,All,Lab,FALSE,9,2,2004,2006,2006-07-18T00:00:00Z,0.20524,,,,,,,,,1
 16,Fort Clinch State Park Aquatic Preserve,Total Nitrogen,Bottom,Lab,FALSE,0,0,,,,,,,,,,,,,0
 16,Fort Clinch State Park Aquatic Preserve,Total Nitrogen,Surface,Lab,FALSE,9,2,2004,2006,2006-07-18T00:00:00Z,0.20524,,,,,,,,,0
@@ -1844,7 +1844,7 @@ AreaID,ManagedAreaName,ParameterName,RelativeDepth,ActivityType,SufficientData,N
 37,Rocky Bayou State Park Aquatic Preserve,Salinity,Surface,All,TRUE,313,24,1994,2022,2022-09-15T16:10:00Z,14.2,TRUE,-0.0342,0.4294,-0.0679487179487179,16.5134995039683,10.3321,0.5008,0,0
 37,Rocky Bayou State Park Aquatic Preserve,Salinity,Surface,Field,TRUE,313,24,1994,2022,2022-09-15T16:10:00Z,14.2,TRUE,-0.0342,0.4294,-0.0679487179487179,16.5134995039683,10.3321,0.5008,0,0
 37,Rocky Bayou State Park Aquatic Preserve,Salinity,Surface,Lab,FALSE,0,0,,,,,,,,,,,,,0
-37,Rocky Bayou State Park Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,Inf,-Inf,,2.4384,,,,,,,,,1
+37,Rocky Bayou State Park Aquatic Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,,,,,1
 37,Rocky Bayou State Park Aquatic Preserve,Total Nitrogen,All,Lab,TRUE,577,22,2001,2022,2022-07-12T10:30:00Z,0.2,TRUE,-0.0076,0.9419,-4.16666666669396e-07,0.153647463924964,7.048,0.7952,0,1
 37,Rocky Bayou State Park Aquatic Preserve,Total Nitrogen,Bottom,Lab,FALSE,5,4,2008,2017,2017-11-15T00:00:00Z,3e-04,,,,,,,,,0
 37,Rocky Bayou State Park Aquatic Preserve,Total Nitrogen,Surface,Lab,TRUE,577,22,2001,2022,2022-07-12T10:30:00Z,0.2,TRUE,-0.0076,0.9419,-4.16666666669396e-07,0.153647463924964,7.048,0.7952,0,0
@@ -2009,7 +2009,7 @@ AreaID,ManagedAreaName,ParameterName,RelativeDepth,ActivityType,SufficientData,N
 12,Southeast Florida Coral Reef Ecosystem Conservation Area,Salinity,Surface,All,TRUE,568,34,1972,2022,2022-05-21T00:00:00Z,35.841,TRUE,0.2032,0.0011,0.0647222219444449,32.7422450866827,3.1227,0.989,1,0
 12,Southeast Florida Coral Reef Ecosystem Conservation Area,Salinity,Surface,Field,TRUE,561,34,1972,2022,2022-05-21T00:00:00Z,35.8,TRUE,0.1983,0.0014,0.0665229465821259,32.7422450866827,3.5702,0.9808,1,0
 12,Southeast Florida Coral Reef Ecosystem Conservation Area,Salinity,Surface,Lab,FALSE,0,0,,,,,,,,,,,,,0
-12,Southeast Florida Coral Reef Ecosystem Conservation Area,Secchi Depth,Surface,Field,FALSE,0,0,Inf,-Inf,,5.2,,,,,,,,,1
+12,Southeast Florida Coral Reef Ecosystem Conservation Area,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,,,,,1
 12,Southeast Florida Coral Reef Ecosystem Conservation Area,Total Nitrogen,All,Lab,FALSE,269,3,2009,2011,2011-09-28T00:00:00Z,0.122,,,,,,,,,1
 12,Southeast Florida Coral Reef Ecosystem Conservation Area,Total Nitrogen,Bottom,Lab,FALSE,134,3,2009,2011,2011-09-28T00:00:00Z,0.11245,,,,,,,,,0
 12,Southeast Florida Coral Reef Ecosystem Conservation Area,Total Nitrogen,Surface,Lab,FALSE,135,3,2009,2011,2011-09-28T00:00:00Z,0.1277,,,,,,,,,0
@@ -2174,7 +2174,7 @@ AreaID,ManagedAreaName,ParameterName,RelativeDepth,ActivityType,SufficientData,N
 42,St. Joseph Bay State Buffer Preserve,Salinity,Surface,All,FALSE,4,1,2017,2017,2017-09-20T00:00:00Z,32.2,,,,,,,,,0
 42,St. Joseph Bay State Buffer Preserve,Salinity,Surface,Field,FALSE,4,1,2017,2017,2017-09-20T00:00:00Z,32.2,,,,,,,,,0
 42,St. Joseph Bay State Buffer Preserve,Salinity,Surface,Lab,FALSE,0,0,,,,,,,,,,,,,0
-42,St. Joseph Bay State Buffer Preserve,Secchi Depth,Surface,Field,FALSE,0,0,Inf,-Inf,,0.55,,,,,,,,,1
+42,St. Joseph Bay State Buffer Preserve,Secchi Depth,Surface,Field,FALSE,0,0,,,,,,,,,,,,,1
 42,St. Joseph Bay State Buffer Preserve,Total Nitrogen,All,Lab,FALSE,58,7,2016,2022,2022-01-10T12:44:00Z,0.00108,,,,,,,,,1
 42,St. Joseph Bay State Buffer Preserve,Total Nitrogen,Bottom,Lab,FALSE,0,0,,,,,,,,,,,,,0
 42,St. Joseph Bay State Buffer Preserve,Total Nitrogen,Surface,Lab,FALSE,58,7,2016,2022,2022-01-10T12:44:00Z,0.00108,,,,,,,,,0

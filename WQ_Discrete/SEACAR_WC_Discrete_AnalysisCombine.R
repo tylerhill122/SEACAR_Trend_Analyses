@@ -38,6 +38,10 @@ for(i in 1:length(files)){
       }
 }
 
+data$Median[data$EarliestYear=="Inf"] <- NA
+data$LatestYear[data$EarliestYear=="Inf"] <- NA
+data$EarliestYear[data$EarliestYear=="Inf"] <- NA
+
 data <- merge.data.frame(data, website, by=c("ParameterName","RelativeDepth",
                                              "ActivityType"), all=TRUE)
 data$Website[is.na(data$Website)] <- 0
