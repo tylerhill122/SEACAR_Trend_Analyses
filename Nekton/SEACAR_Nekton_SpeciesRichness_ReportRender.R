@@ -28,7 +28,7 @@ MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFacto
 
 
 #Gets the files with the file names containing the desired parameter
-file_in <- list.files("data", pattern=param_name, full=TRUE)
+file_in <- list.files("data", pattern="All_NEKTON", full=TRUE)
 
 #Sets abbreviation or label to be used in file names
 param_file <- "SpeciesRichness"

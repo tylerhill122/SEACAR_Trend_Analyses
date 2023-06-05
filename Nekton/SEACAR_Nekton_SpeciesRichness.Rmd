@@ -93,13 +93,8 @@ data <- data[data$ParameterName==param_name,]
 if (param_name=="Presence"){
          parameter <- "Species Richness"
       }
-
-# # Replace instances where NA values imported as blank character string or as "NA"
-# data <- replace(data, data=="", NA)
-# data <- replace(data, data=="NA", NA)
-
-# Gets the units of the data
-unit <- unique(data$ParameterUnits)
+# Makes sure EffortCorrection is numeric value
+data$EffortCorrection_100m2 <- as.numeric(data$EffortCorrection_100m2)
 
 # Remove any data with missing EffortCorrection values
 data <- data[!is.na(data$EffortCorrection_100m2),]
@@ -119,7 +114,7 @@ data <- data %>%
    summarise(ParameterName=parameter,
              Year=unique(Year), Month=unique(Month),
              N_Species=sum(ResultValue),
-             EffortCorrection_100m2=unique(EffortCorrection_100m2),
+             EffortCorrection_100m2=as.numeric(unique(EffortCorrection_100m2)),
              SpeciesRichness=N_Species/unique(EffortCorrection_100m2))
 
 # Adds AreaID for each managed area by combining the MA_All datatable to the
