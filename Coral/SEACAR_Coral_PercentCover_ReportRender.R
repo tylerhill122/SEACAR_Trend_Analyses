@@ -29,10 +29,10 @@ MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFacto
                 na.strings = "")
 
 #Gets the files with the file names containing the desired parameter
-file_list <- list.files("data", pattern=param_name, full=TRUE)
+file_in <- list.files("data", pattern="All_CORAL", full=TRUE)
 
 #Gets the specific file used and removes the directory names
-file_short <- sub("data/", "", file_list)
+file_short <- sub("data/", "", file_in)
 
 #Renders SEACAR_Coral_PercentCover.Rmd and writes the report to a pdf and 
 #Word document stored in output directory
