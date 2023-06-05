@@ -64,7 +64,7 @@ The file being used for the analysis is: **`r file_short`**
 
 ```{r file_import}
 #Import data from coastal wetlands file
-data <- fread(file_in, sep=",", header=TRUE, stringsAsFactors=FALSE,
+data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
               na.strings="")
 
 cat(paste("The data file used is:", file_short, sep="\n"))
@@ -77,12 +77,11 @@ cat(paste("The data file used is:", file_short, sep="\n"))
 The processing and filtering that is done to the data is as follows:
 
 1. Set parameter names to `Species Richness`
-2. `[PercentCover-SpeciesComposition_%]` column is renamed `perccov`
 3. Changes `ManagedArea` column name to `ManagedAreaName` for consistency
 4. Sets units
 5. Replaces any NA values that were imported as blank character strings or `"NA"` character strings with the proper NA value
 6. Removes rows that contains NA values in `ManagedAreaName`, `GenusName`, `SpeciesName`, `Month`, `Year`, `SpeciesGroup1`, and removes invasive species data
-7. Sets perccov to be numeric values and removes rows where percent cover is 0
+7. Sets ResultValue to be numeric values and removes rows where percent cover is 0
 8. Removes duplicates (`MADup`==1)
 9. Combines genus and species names
 10. Corrects some managed area names to match what is being used with other habitats
@@ -95,24 +94,20 @@ The processing and filtering that is done to the data is as follows:
 13. Writes to file with "_UsedData" file name to indicate what data was used for species richness.
 
 ```{r filtering}
+# Only interested in Percent Cover measurements
+data <- data[data$ParameterName=="Percent Cover - Species Composition"]
+
 # Create ParameterName Column
 data$ParameterName <- "Species Richness"
 parameter <- "Species Richness"
-
-# Changes column name to perccov for ease moving forward
-colnames(data)[colnames(data) == "[PercentCover-SpeciesComposition_%]"] <-
-  "perccov"
-
-# Changes "ManagedArea" column name to "ManagedAreaName" for consistency
-colnames(data)[colnames(data) == "ManagedArea"] <- "ManagedAreaName"
 
 # Sets units for species richness
 unit <- "# of species"
 data$ParameterUnits <- unit
 
 # Replace instances where NA values imported as blank character string or as "NA"
-data <- replace(data, data=="", NA)
-data <- replace(data, data=="NA", NA)
+# data <- replace(data, data=="", NA)
+# data <- replace(data, data=="NA", NA)
 
 # Remove rows with missing ManagedAreaName
 data <- data[!is.na(data$ManagedAreaName),]
@@ -129,10 +124,10 @@ data <- data[!is.na(data$Year),]
 data <- data[!is.na(data$SpeciesGroup1),]
 # Remove rows with invasive species
 data <- data[data$SpeciesGroup1!="Invasive",]
-# Set perccov to be a number value
-data$perccov <- as.numeric(data$perccov)
-# Remove rows where perccov is 0
-data <- data[data$perccov!=0,]
+# Set ResultValue to be a number value
+data$ResultValue <- as.numeric(data$ResultValue)
+# Remove rows where ResultValue is 0
+data <- data[data$ResultValue!=0,]
 # Remove duplicate rows
 data <- data[data$MADup==1,]
 # Create variable that combines the genus and species name
