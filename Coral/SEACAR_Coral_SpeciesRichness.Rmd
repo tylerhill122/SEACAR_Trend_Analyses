@@ -26,7 +26,7 @@ All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
 
-This markdown file is designed to be compiled by [SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coral/SEACAR_Coral_SpeciesRichness_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coral/SEACAR_Coral_SpeciesRichness_ReportRender.R).
+This markdown file is designed to be compiled by [SEACAR_Coral_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coral/SEACAR_Coral_SpeciesRichness_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coral/SEACAR_Coral_SpeciesRichness_ReportRender.R).
 
 # Libraries and Settings
 
@@ -154,7 +154,7 @@ data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
                           data, by="ManagedAreaName", all=TRUE)
 
 # Writes this data that is used by the rest of the script to a text file
-fwrite(data, paste0(out_dir,"/CoastalWetlands_", param_file, "_UsedData.txt"),
+fwrite(data, paste0(out_dir,"/Coral_", param_file, "_UsedData.txt"),
        sep="|")
 
 # Makes sure SampleDate is being stored as a Date object
@@ -439,8 +439,8 @@ if(n==0){
                             breaks=pretty_breaks(n=5)) +
          plot_theme
       # Sets file name of plot created
-      outname <- paste0("Coral_", gsub(" ", "", MA_Include[i]), "_",
-                        param_file, ".png")
+      outname <- paste0("Coral_", param_file, "_", gsub(" ", "", MA_Include[i]),
+                        ".png")
       # Saves plot as a png image
       png(paste0(out_dir, "/Figures/", outname),
           width = 8,

@@ -87,7 +87,6 @@ The processing and filtering that is done to the data is as follows:
 7. Combines genus and species names
 8. Corrects some managed area names to match what is being used with other habitats
 9. Merges data with managed area data to determine correct `AreaID`
-10. Gets list of managed areas to be analyzed.
 
 ```{r filtering}
 # Only keep data for Percent Cover
@@ -141,16 +140,6 @@ data$ManagedAreaName[data$ManagedAreaName=="Coral ECA"] <-
 # data based on ManagedAreaName
 data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
                           data, by=c("AreaID", "ManagedAreaName"), all=TRUE)
-
-# Creates a variable with the names of all the managed areas that contain
-# species observations
-MA_Include <- unique(data$ManagedAreaName[!is.na(data$ResultValue)])
-
-# Puts the managed areas in alphabetical order
-MA_Include <- MA_Include[order(MA_Include)]
-
-# Determines the number of managed areas used
-n <- length(MA_Include)
 ```
 
 ---
@@ -170,6 +159,9 @@ Gets summary statistics for each managed area. Uses piping from dplyr package to
 3. Sort the data in ascending (A to Z and 0 to 9) order based on `ManagedAreaName` then `Year` then `Month`
 4. Write summary stats to a pipe-delimited .txt file in the output directory
    + [Coral Percent Cover Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coral/output/PercentCover) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coral/output/PercentCover)
+
+5. Determines if there is sufficient data to be analyzed based on having more than 5 years of records.
+6. Gets list of managed areas to be analyzed.
 
 ```{r managed_area_stats, message=FALSE}
 # Create summary statistics for each managed area based on Year and Month
@@ -246,6 +238,7 @@ MA_Ov_Stats <- data %>%
    group_by(AreaID, ManagedAreaName) %>%
    summarize(ParameterName=parameter,
              N_Years=length(unique(na.omit(Year))),
+             SufficientData=ifelse(N_Years>=5, TRUE, FALSE),
              EarliestYear=min(Year),
              LatestYear=max(Year),
              N_Data=length(na.omit(ResultValue)),
@@ -269,10 +262,21 @@ MA_Ov_Stats$Programs <- replace(MA_Ov_Stats$Programs,
 # Write overall statistics to file
 fwrite(MA_Ov_Stats, paste0(out_dir,"/Coral_", param_file,
                            "_MA_Overall_Stats.txt"), sep="|")
+# Creates a variable with the names of all the managed areas that contain
+# species observations
+MA_Include <- unique(MA_Ov_Stats$ManagedAreaName[!is.na(MA_Ov_Stats$Mean)&
+                                                   MA_Ov_Stats$SufficientData==
+                                                   TRUE])
+
+# Puts the managed areas in alphabetical order
+MA_Include <- MA_Include[order(MA_Include)]
+
+# Determines the number of managed areas used
+n <- length(MA_Include)
 ```
 
 
-# Linera Mixed Effects Models
+# Linear Mixed Effects Models
 
 Performs a linear mixed effects (LME) model on each managed area between using a relationship between percent cover and year.
 
@@ -459,8 +463,8 @@ if(n==0){
                            breaks=pretty_breaks(n=5)) +
         plot_theme
       # Sets file name of plot created
-      outname <- paste0("Coral_", gsub(" ", "", MA_Include[i]), "_",
-                        param_file, ".png")
+      outname <- paste0("Coral_", param_file, "_", gsub(" ", "", MA_Include[i]),
+                        ".png")
       # Saves plot as a png image
       png(paste0(out_dir, "/Figures/", outname),
           width = 8,
