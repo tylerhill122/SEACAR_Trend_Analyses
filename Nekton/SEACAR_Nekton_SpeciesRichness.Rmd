@@ -439,8 +439,8 @@ if(n==0){
          scale_shape_manual(values=gear_shapes_plot) +
          plot_theme
       # Sets file name of plot created
-      outname <- paste0("Nekton_", gsub(" ", "", MA_Include[i]), "_",
-                        param_file, ".png")
+      outname <- paste0("Nekton_", param_file, "_",
+                        gsub(" ", "", MA_Include[i]), ".png")
       # Saves plot as a png image
       png(paste0(out_dir, "/Figures/", outname),
           width = 8,
