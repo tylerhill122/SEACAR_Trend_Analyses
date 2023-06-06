@@ -80,7 +80,7 @@ The processing and filtering that is done to the data is as follows:
 2. Shorten parameter names to `Percent Cover`
 3. Sets units
 4. Removes any data that is not coral
-  + Only looks for `Octocoral` or `Unspecifiedcoral`
+  + Only looks for `Octocoral`, `Milleporans`, or `Scleractinian`
   
 5. Removes rows that contains NA values in `ManagedAreaName`, `GenusName`, `SpeciesName`, `Month`, `Year`, `SpeciesGroup1`, `ResultValue`, and `SampleDate`
 6. Removes duplicates (`MADup`==1)
@@ -97,12 +97,13 @@ data <- data[data$ParameterName=="Percent Cover - Species Composition"]
 data$ParameterName <- "Percent Cover"
 parameter <- "Percent Cover"
 
-# Sets units for species richness
+# Sets units for percent cover
 unit <- "%"
 data$ParameterUnits <- unit
 
 # Remove any rows that are not corals
-data <- data[SpeciesGroup1=="Octocoral"|SpeciesGroup1=="Milleporans"|
+data <- data[SpeciesGroup1=="Octocoral"|
+               SpeciesGroup1=="Milleporans"|
                SpeciesGroup1=="Scleractinian", ]
 # Remove rows with missing ManagedAreaName
 data <- data[!is.na(data$ManagedAreaName),]
