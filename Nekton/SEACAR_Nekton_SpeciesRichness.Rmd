@@ -456,7 +456,7 @@ if(n==0){
       # Removes location, gear, and parameter information because it is in plot
       # labels
       ResultTable <- ResultTable[,-c("AreaID", "ManagedAreaName",
-                                     "ProgramIDs", "GearType_Plot",
+                                     "ProgramIDs", "Programs", "GearType_Plot",
                                      "ParameterName")]
       # Renames StandardDeviation to StDev to save horizontal space
       ResultTable <- ResultTable %>%
