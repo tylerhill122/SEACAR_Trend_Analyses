@@ -77,6 +77,7 @@ cat(paste("The data file used is:", file_short, sep="\n"))
 The processing and filtering that is done to the data is as follows:
 
 1. Only take data rows that are percent cover
+2. Only keep data rows that are `Marsh`, `Marsh succulents`, and `Mangroves and associate`
 2. Set parameter names to `Species Richness`
 3. Sets units
 4. Removes rows that contains NA values in `ManagedAreaName`, `GenusName`, `SpeciesName`, `Month`, `Year`, `SpeciesGroup1`, and removes invasive species data
@@ -95,7 +96,13 @@ The processing and filtering that is done to the data is as follows:
 ```{r filtering}
 # Only interested in Percent Cover measurements
 data <- data[data$ParameterName=="Percent Cover - Species Composition"]
-
+# Make species group name uniform
+data$SpeciesGroup1[data$SpeciesGroup1=="Marsh Succulents"] <- "Marsh succulents"
+# Only keep data rows that are Marsh, Marsh succulents, and Mangroves and assoc.
+data <- data[SpeciesGroup1=="Marsh"|
+               SpeciesGroup1=="Marsh succulents"|
+               SpeciesGroup1=="Mangroves and associate", ]
+setnames(data, "SpeciesGroup1", "SpeciesGroup")
 # Create ParameterName Column
 data$ParameterName <- "Species Richness"
 parameter <- "Species Richness"
@@ -119,10 +126,6 @@ data <- data[!is.na(data$SpeciesName),]
 data <- data[!is.na(data$Month),]
 # Remove rows with missing Years
 data <- data[!is.na(data$Year),]
-# Remove rows with missing SpeciesGroup1
-data <- data[!is.na(data$SpeciesGroup1),]
-# Remove rows with invasive species
-data <- data[data$SpeciesGroup1!="Invasive",]
 # Set ResultValue to be a number value
 data$ResultValue <- as.numeric(data$ResultValue)
 # Remove rows where ResultValue is 0
@@ -147,7 +150,7 @@ data$ManagedAreaName[data$ManagedAreaName=="Guana Tolomato Matanzas NERR"] <-
 # ManagedAreaName, ProgramID, ProgramName, ProgramLocationID, and SampleDate.
 data <- data %>%
    group_by(ManagedAreaName, ProgramID, ProgramName, ProgramLocationID,
-            SampleDate) %>%
+            SampleDate, SpeciesGroup) %>%
    summarise(ParameterName=parameter,
              Year=unique(Year), Month=unique(Month),
              SpeciesRichness=length(unique(gensp)))
@@ -198,7 +201,7 @@ Gets summary statistics for each managed area. Uses piping from dplyr package to
 # Create summary statistics for each managed area based on Year and Month
 # intervals.
 MA_YM_Stats <- data %>%
-   group_by(AreaID, ManagedAreaName, Year, Month) %>%
+   group_by(AreaID, ManagedAreaName, Year, Month, SpeciesGroup) %>%
    summarize(ParameterName=parameter,
              N_Data=length(na.omit(SpeciesRichness)),
              Min=min(SpeciesRichness),
@@ -222,7 +225,7 @@ rm(MA_YM_Stats)
 
 # Create summary statistics for each managed area based on Year intervals
 MA_Y_Stats <- data %>%
-   group_by(AreaID, ManagedAreaName, Year) %>%
+   group_by(AreaID, ManagedAreaName, Year, SpeciesGroup) %>%
    summarize(ParameterName=parameter,
              N_Data=length(na.omit(SpeciesRichness)),
              Min=min(SpeciesRichness),
@@ -243,7 +246,7 @@ fwrite(MA_Y_Stats, paste0(out_dir,"/CoastalWetlands_", param_file,
 
 # Create summary statistics for each managed area based on Month intervals.
 MA_M_Stats <- data %>%
-   group_by(AreaID, ManagedAreaName, Month) %>%
+   group_by(AreaID, ManagedAreaName, Month, SpeciesGroup) %>%
    summarize(ParameterName=parameter,
              N_Data=length(na.omit(SpeciesRichness)),
              Min=min(SpeciesRichness),
@@ -266,7 +269,7 @@ rm(MA_M_Stats)
 
 # Create summary overall statistics for each managed area.
 MA_Ov_Stats <- data %>%
-   group_by(AreaID, ManagedAreaName) %>%
+   group_by(AreaID, ManagedAreaName, SpeciesGroup) %>%
    summarize(ParameterName=parameter,
              N_Years=length(unique(na.omit(Year))),
              EarliestYear=min(Year),
@@ -374,7 +377,15 @@ plot_theme <- theme_bw() +
 color_palette <- c("#005396", "#0088B1", "#00ADAE", "#65CCB3", "#AEE4C1",
                    "#FDEBA8", "#F8CD6D", "#F5A800", "#F17B00")
 
+# Defines and sets variable with standardized gear colors for plots
+group_colors <- c("Marsh"=color_palette[1],
+                  "Marsh succulents"=color_palette[2],
+                  "Mangroves and associate"=color_palette[3])
 
+# Defines and sets variable with standardized gear shapes for plots
+group_shapes <- c("Marsh"=21,
+                  "Marsh succulents"=22,
+                  "Mangroves and associate"=24)
 
 # Loop that cycles through each managed area with data
 if(n==0){
@@ -426,21 +437,32 @@ if(n==0){
       # maximum value.
       y_max <- max(plot_data$Mean)+(0.1*y_range)
       
+      # Determines what combination of gear are present for managed area
+      # and subsets color and shape scheme to be used by plots.
+      # Used so only gear combinations present for managed area appea in legend.
+      group_colors_plot <- group_colors[unique(plot_data$SpeciesGroup)]
+      group_shapes_plot <- group_shapes[unique(plot_data$SpeciesGroup)]
       
       # Creates plot object using plot_data.
       # Data is plotted as symbols with connected lines.
-      p1 <- ggplot(data=plot_data) +
-         geom_line(aes(x=Year, y=Mean), color=color_palette[1],
+      p1 <- ggplot(data=plot_data, group=as.factor(SpeciesGroup)) +
+         geom_line(aes(x=Year, y=Mean, color=as.factor(SpeciesGroup)),
                    size=0.75, alpha=1) +
-         geom_point(aes(x=Year, y=Mean), fill=color_palette[1],
-                        shape=21, size=2, color="#333333", alpha=1) +
+         geom_point(aes(x=Year, y=Mean, fill=as.factor(SpeciesGroup),
+                        shape=as.factor(SpeciesGroup)), size=2,
+                    color="#333333", alpha=1) +
          labs(title="Coastal Wetlands Species Richness",
               subtitle=MA_Include[i],
-              x="Year", y="Richness (# of species)") +
+              x="Year", y="Richness (# of species)",
+              fill="Species group", color="Species group",
+              shape="Species group") +
          scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
                             breaks=seq(t_max, t_min, brk)) +
          scale_y_continuous(limits=c(y_min, y_max),
                             breaks=pretty_breaks(n=5)) +
+         scale_fill_manual(values=group_colors_plot) +
+         scale_color_manual(values=group_colors_plot) +
+         scale_shape_manual(values=group_shapes_plot) +
          plot_theme
       # Sets file name of plot created
       outname <- paste0("CoastalWetlands_", param_file, "_",
@@ -457,7 +479,7 @@ if(n==0){
       # Creates a data table object to be shown underneath plots in report
       ResultTable <-
          MA_Ov_Stats[MA_Ov_Stats$ManagedAreaName==MA_Include[i],]
-      # Removes location, and parameter information because it is in plot
+      # Removes location, gear, and parameter information because it is in plot
       # labels
       ResultTable <- ResultTable[,-c("AreaID", "ManagedAreaName",
                                      "ProgramIDs", "Programs", "ParameterName")]
