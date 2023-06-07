@@ -71,7 +71,7 @@ for(i in 1:length(param_dirs)){
    param <- paste0("output/",param_dirs[i])
    # Creates shorter version of parameter directory to be used as zip file name
    param_short <- gsub("_", "", param_dirs[i])
-   param_short <- gsub("/", "", param_dirs[i])
+   param_short <- gsub("/", "", param_short)
    # Gets list of png plots in Figure directory
    fig_list <- list.files(param, pattern=".png", full=TRUE)
    # Sets name to be used for zip file
