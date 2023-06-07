@@ -121,8 +121,8 @@ for(i in 1:length(file_list)){
 }
 
 #Write output table to a csv and pipe-delimited txt file
-fwrite(table, "output/Shell_Height/Oyster_SH_plotdata.txt", sep="|")
-fwrite(table, "output/Shell_Height/Oyster_SH_plotdata.csv", sep=",")
+fwrite(data, "output/Shell_Height/Oyster_SH_plotdata.txt", sep="|")
+fwrite(data, "output/Shell_Height/Oyster_SH_plotdata.csv", sep=",")
 
 
 #List all of the files in the "tables" directory that are Density
@@ -140,8 +140,8 @@ for(i in 1:length(file_list)){
 }
 
 #Write output table to a csv and pipe-delimited txt file
-fwrite(table, "output/Density/Oyster_Den_plotdata.txt", sep="|")
-fwrite(table, "output/Density/Oyster_Den_plotdata.csv", sep=",")
+fwrite(data, "output/Density/Oyster_Den_plotdata.txt", sep="|")
+fwrite(data, "output/Density/Oyster_Den_plotdata.csv", sep=",")
 
 
 #List all of the files in the "tables" directory that are Density
@@ -159,5 +159,5 @@ for(i in 1:length(file_list)){
 }
 
 #Write output table to a csv and pipe-delimited txt file
-fwrite(table, "output/Percent_Live/Oyster_Pct_plotdata.txt", sep="|")
-fwrite(table, "output/Percent_Live/Oyster_Pct_plotdata.csv", sep=",")
+fwrite(data, "output/Percent_Live/Oyster_Pct_plotdata.txt", sep="|")
+fwrite(data, "output/Percent_Live/Oyster_Pct_plotdata.csv", sep=",")
