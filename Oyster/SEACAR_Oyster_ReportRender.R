@@ -74,6 +74,7 @@ for(i in 1:length(param_dirs)){
    param_short <- gsub("/", "", param_short)
    # Gets list of png plots in Figure directory
    fig_list <- list.files(param, pattern=".png", full=TRUE)
+   
    # Sets name to be used for zip file
    zip_name <- paste0("/Oyster", param_short)
    # Zips png figures to a zip file with name created above

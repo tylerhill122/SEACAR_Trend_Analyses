@@ -1472,7 +1472,7 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
         labs(fill=NULL)
       
       ggsave(paste0("output/Shell_Height/Figures/Oyster_SH_GLMM_", ma,
-                    "MeanRes_", ".png"),
+                    "MeanRes", ".png"),
              meanshplot,
              width=8,
              height=4,
@@ -1556,7 +1556,7 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
     
     
     ggsave(paste0("output/Density/Figures/Oyster_Den_GLMM_", ma, "_", type,
-                  ifelse(sizeclass != "", paste0(size, "_"), "raw"), ".png"),
+                  ifelse(sizeclass != "", paste0(size), "_raw"), ".png"),
            plot1,
            width=8,
            height=4,

@@ -30,8 +30,7 @@ data <- data[data$effect=="fixed" & !is.na(data$effect),]
 #For each managed area and species, get the LME intercept, slope, and p values
 table <- data %>%
       group_by(managed_area, indicator, live_date_qual, size_class, habitat_class) %>%
-      dplyr::summarise(Programs=unique(programs),
-                Intercept = estimate[term == "(Intercept)"],
+      dplyr::summarise(Intercept = estimate[term == "(Intercept)"],
                 ModelEstimate = estimate[term == "RelYear" |
                                        term == "meRelYearSampleAge_StdevgrEQQuadIdentifier"],
                 StandardError = std.error[term == "RelYear" |
@@ -42,8 +41,8 @@ table <- data %>%
                                                  term == "meRelYearSampleAge_StdevgrEQQuadIdentifier"])
 
 #Change column names to better match other outputs
-setnames(table, c("managed_area", "indicator", "size_class", "live_date_qual", "habitat_class", "Programs"),
-         c("ManagedAreaName", "ParameterName", "SizeClass", "ShellType", "HabitatType", "ProgramNames"))
+setnames(table, c("managed_area", "indicator", "size_class", "live_date_qual", "habitat_class"),
+         c("ManagedAreaName", "ParameterName", "SizeClass", "ShellType", "HabitatType"))
 
 table$ManagedAreaName[table$ManagedAreaName=="Fort Pickens Aquatic Preserve"] <-
       "Fort Pickens State Park Aquatic Preserve"
