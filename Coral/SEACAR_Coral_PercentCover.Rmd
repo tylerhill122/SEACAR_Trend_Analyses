@@ -46,7 +46,11 @@ library(hrbrthemes)
 library(nlme)
 library(ggpubr)
 options(scipen=999)
-opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   dpi=200
+)
 ```
 
 
@@ -65,7 +69,7 @@ The file(s) being used for the analysis: **`r file_short`**
 
 ```{r file_import}
 data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
-              na.strings="")
+              na.strings=c("NULL","","NA"))
 
 cat(paste("The data file(s) used:", file_short, sep="\n"))
 ```
@@ -127,14 +131,14 @@ data <- data[data$MADup==1,]
 data$gensp <- paste(data$GenusName, data$SpeciesName, sep=" ")
 # Corrects Managed Area names to be consistent with official names
 data$ManagedAreaName[data$ManagedAreaName=="Florida Keys NMS"] <-
-   "Florida Keys National Marine Sanctuary"
+  "Florida Keys National Marine Sanctuary"
 data$ManagedAreaName[data$ManagedAreaName==
                        "Biscayne Bay-Cape Florida to Monroe County Line"] <-
-   "Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve"
+  "Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve"
 data$ManagedAreaName[data$ManagedAreaName=="Coupon Bight"] <-
-   "Coupon Bight Aquatic Preserve"
+  "Coupon Bight Aquatic Preserve"
 data$ManagedAreaName[data$ManagedAreaName=="Coral ECA"] <-
-   "Southeast Florida Coral Reef Ecosystem Conservation Area"
+  "Southeast Florida Coral Reef Ecosystem Conservation Area"
 
 # Adds AreaID for each managed area by combining the MA_All datatable to the
 # data based on ManagedAreaName
@@ -298,10 +302,10 @@ The following steps are performed:
 ```{r LME, message=FALSE}
 # Creates blank data frame with number of rows defined by how many managed areas
 # are going to be analyzed
-lme_stats <- data.frame(matrix(ncol = 4, nrow = n))
+lme_stats <- data.frame(matrix(ncol = 5, nrow = n))
 # Sets column names for blank data frame
 colnames(lme_stats) <- c("AreaID", "ManagedAreaName", "LME_Intercept",
-                         "LME_Slope")
+                         "LME_Slope", "LME_p")
 
 # Begins to loop through each managed area for analysis
 for(i in 1:n){
@@ -317,10 +321,11 @@ for(i in 1:n){
   lme_stats$ManagedAreaName[i] <- MA_Include[i]
   lme_stats$LME_Intercept[i] <- AnyCoral$coefficients$fixed[1]
   lme_stats$LME_Slope[i] <- AnyCoral$coefficients$fixed[2]
+  lme_stats$LME_p[i] <- anova(AnyCoral)$p[2]
   
   # Clears temporary variables for memory
   rm(lme_data)
-  rm(AnyCoral)
+  (AnyCoral)
 }
 
 # Merges LME stats with overall stats to complete stats for each managed area
@@ -492,15 +497,20 @@ if(n==0){
       ResultTable$StDev <- round(ResultTable$StDev, digits=2)
       ResultTable$LME_Intercept <- round(ResultTable$LME_Intercept, digits=2)
       ResultTable$LME_Slope <- round(ResultTable$LME_Slope, digits=2)
+      ResultTable$LME_p <- round(ResultTable$LME_p, digits=4)
       # Stores as plot table object
       t1 <- ggtexttable(ResultTable, rows = NULL,
-                        theme=ttheme(base_size=7))
+                        theme=ttheme(base_size=7)) %>%
+        tab_add_footnote(text="LME_p < 0.00005 appear as 0 due to rounding.",
+              size=10, face="italic")
       # Combines plot and table into one figure
       print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
       
       # Add extra space at the end to prevent the next figure from being too
-      # close
-      cat("\n \n \n \n")
+      # close. Does not add space after last plot
+      if(i!=n){
+        cat("\n \n \n \n") 
+      }
    }
 }
 ```
