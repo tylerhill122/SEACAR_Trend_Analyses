@@ -76,7 +76,7 @@ data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
                         "RelativeDepth", "ActivityType", "ParameterName",
                         "ResultValue", "ParameterUnits", "ValueQualifier",
                         "SEACAR_QAQCFlagCode", "Include"),
-             na.strings="")
+             na.strings=c("NULL","","NA"))
 parameter <- unique(data$ParameterName)
 unit <- unique(data$ParameterUnits)
 cat(paste("The data file(s) used:", file_short, sep="\n"))
