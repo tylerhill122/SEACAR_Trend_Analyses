@@ -46,10 +46,10 @@ output$ManagedAreaName[output$ManagedAreaName=="St. Andrews Aquatic Preserve"] <
    "St. Andrews State Park Aquatic Preserve"
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
-MA_All <- fread("ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
+MA_All <- fread("SAV/data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
                 na.strings = "")
 
-stats <- fread("SAV/output/data/SAV_BBpct_Stats.txt", sep = "|", header = TRUE, stringsAsFactors = FALSE,
+stats <- fread("SAV/output/SAV_BBpct_Stats.txt", sep = "|", header = TRUE, stringsAsFactors = FALSE,
                na.strings = "")
 setnames(stats, c("ManagedAreaName", "analysisunit"), c("ShortName","Species"))
 
