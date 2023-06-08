@@ -45,7 +45,11 @@ library(gridExtra)
 library(ggpubr)
 library(scales)
 options(scipen=999)
-opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   dpi=200
+   )
 ```
 
 
@@ -65,7 +69,7 @@ The file being used for the analysis is: **`r file_short`**
 ```{r file_import}
 #Import data from coastal wetlands file
 data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
-              na.strings="")
+              na.strings=c("NULL","","NA"))
 
 cat(paste("The data file used is:", file_short, sep="\n"))
 ```
@@ -186,10 +190,10 @@ title: '`r paste("SEACAR Coastal Wetlands Analysis:", parameter)`'
 
 Gets summary statistics for each managed area. Uses piping from dplyr package to feed into subsequent steps. The following steps are performed:
 
-1. Group data that have the same `ManagedAreaName`, `Year`, and `Month`.
-   + Second summary statistics do not use the `Month` grouping and are only for `ManagedAreaName` and `Year`.
-   + Third summary statistics do not use `Year` grouping and are only for `ManagedAreaName` and `Month`
-   + Fourth summary statistics are only grouped based on `ManagedAreaName`
+1. Group data that have the same `ManagedAreaName`, `Year`, `Month`, and `SpeciesGroup`.
+   + Second summary statistics do not use the `Month` grouping and are only for `ManagedAreaName`, `Year`, and `SpeciesGroup`..
+   + Third summary statistics do not use `Year` grouping and are only for `ManagedAreaName`, `Month`, and `SpeciesGroup`.
+   + Fourth summary statistics are only grouped based on `ManagedAreaName` and `SpeciesGroup`.
       + Determines the years that the minimum and maximum species richness occurred
 
 2. For each group, provide the following information: Parameter Name (ParameterName), Number of Entries (N_Data), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, and a list of all Programs included in these measurements.
@@ -336,17 +340,18 @@ The plots shown here are the species richness for each managed area with a yearl
 1. Set common plot theme.
 2. Determine the earliest and latest year of the data to create x-axis scale and intervals
 3. Determine the upper and lower limit of the plot for better y-axis labels
-4. Add the plot line
-5. Set the plot type as a point plot with the size of the points
-6. Create the title, x-axis, y-axis
-7. Set the y and x limits
-8. Apply common plot theme
-9. Add table with summary statistics below each figure
+4. Determines what species groups are present and adjusts legend entries
+5. Add the plot line
+6. Set the plot type as a point plot with the size of the points
+7. Create the title, x-axis, y-axis, and color fill labels
+8. Set the y and x limits
+9. Apply common plot theme
+10. Add table with summary statistics below each figure
    + Numerical non-integer values are rounded to 2 decimal places
    + StandardDeviation is renamed StDev for space reasons
    
-10. Create file name to save figure
-11. Save figure as png file
+11. Create file name to save figure
+12. Save figure as png file
    + [Coastal Wetlands Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output/Figures) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output/Figures)
 
 ```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
@@ -377,12 +382,12 @@ plot_theme <- theme_bw() +
 color_palette <- c("#005396", "#0088B1", "#00ADAE", "#65CCB3", "#AEE4C1",
                    "#FDEBA8", "#F8CD6D", "#F5A800", "#F17B00")
 
-# Defines and sets variable with standardized gear colors for plots
+# Defines and sets variable with standardized group colors for plots
 group_colors <- c("Marsh"=color_palette[1],
                   "Marsh succulents"=color_palette[2],
                   "Mangroves and associate"=color_palette[3])
 
-# Defines and sets variable with standardized gear shapes for plots
+# Defines and sets variable with standardized group shapes for plots
 group_shapes <- c("Marsh"=21,
                   "Marsh succulents"=22,
                   "Mangroves and associate"=24)
@@ -437,9 +442,10 @@ if(n==0){
       # maximum value.
       y_max <- max(plot_data$Mean)+(0.1*y_range)
       
-      # Determines what combination of gear are present for managed area
+      # Determines what combination of groups are present for managed area
       # and subsets color and shape scheme to be used by plots.
-      # Used so only gear combinations present for managed area appea in legend.
+      # Used so only group combinations present for managed area appear in
+      # the legend.
       group_colors_plot <- group_colors[unique(plot_data$SpeciesGroup)]
       group_shapes_plot <- group_shapes[unique(plot_data$SpeciesGroup)]
       
@@ -479,8 +485,8 @@ if(n==0){
       # Creates a data table object to be shown underneath plots in report
       ResultTable <-
          MA_Ov_Stats[MA_Ov_Stats$ManagedAreaName==MA_Include[i],]
-      # Removes location, gear, and parameter information because it is in plot
-      # labels
+      # Removes location, species group, and parameter information because it is
+      # in plot labels
       ResultTable <- ResultTable[,-c("AreaID", "ManagedAreaName",
                                      "ProgramIDs", "Programs", "ParameterName")]
       # Renames StandardDeviation to StDev to save horizontal space
@@ -499,8 +505,10 @@ if(n==0){
       print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
       
       # Add extra space at the end to prevent the next figure from being too
-      # close
-      cat("\n \n \n \n")
+      # close. Does not add space after last plot
+      if(i!=n){
+        cat("\n \n \n \n") 
+      }
    }
 }
 ```

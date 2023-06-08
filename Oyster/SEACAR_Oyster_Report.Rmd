@@ -59,12 +59,15 @@ library(tictoc)
 library(doRNG)
 library(piecewiseSEM)
 library(ggpubr)
+library(formatR)
 options(scipen=999)
-opts_chunk$set(
-      warning=FALSE,
-      message=FALSE,
-      eval=Run_An,
-      dpi=200
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   eval=Run_An,
+   dpi=200,
+   tidy.opts = list(width.cutoff = 60),
+   tidy = TRUE
 )
 ```
 
@@ -82,7 +85,7 @@ The file being used for the analysis is: **`r file_short`**
 
 ```{r FileImport}
 oysterraw <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
-                   na.strings="")
+                   na.strings=c("NULL","","NA"))
 oysterraw2 <- pivot_wider(oysterraw, names_from="ParameterName",
                           values_from="ResultValue")
 setDT(oysterraw2)
@@ -577,10 +580,10 @@ oysterraw[str_detect(MA_plotlab, "Pine Island Sound"),
 
 Gets summary statistics for each managed area. Uses piping from dplyr package to feed into subsequent steps. Sets of summary statistics are performed for Density, Shell Height, and Percent Living. The following steps are performed:
 
-1. Group data that have the same `ManagedAreaName`, `Year`, and `Month`.
-   + Second summary statistics do not use the `Month` grouping and are only for `ManagedAreaName` and `Year`.
-   + Third summary statistics do not use `Year` grouping and are only for `ManagedAreaName` and `Month`
-   + Fourth summary statistics are only grouped based on `ManagedAreaName`
+1. Group data that have the same `ManagedAreaName`, `Year`, `Month`, `nyrpar`, `LiveDate_Qualifier`, `SizeClass`, and `HabitatClassification`.
+   + Second summary statistics do not use the `Month` grouping and are only for `ManagedAreaName`, `Year`, and the other oyster parameters.
+   + Third summary statistics do not use `Year` grouping and are only for `ManagedAreaName`, `Month`, and the other oyster parameters.
+   + Fourth summary statistics are only grouped based on `ManagedAreaName` and the other oyster parameters
       + Determines the years that the minimum and maximum species richness occurred
 
 2. For each group, provide the following information: Parameter Name (ParameterName), Number of Entries (N_Data), Lowest Value (Min), Largest Value (Max), Median, Mean, Standard Deviation, and a list of all Programs included in these measurements.
@@ -1019,69 +1022,6 @@ fwrite(MA_Ov_Stats, paste0(out_dir,"/Percent_Live/Oyster_Pct_MA_Overall_Stats.tx
        sep="|")
 # Removes variable storing data to improve computer memory
 rm(MA_Ov_Stats)
-```
-
-# Data Summary
-
-Creates and outputs a summary data file with basic statistics for each combination of managed area, parameter, shell type, shell size, and habitat classification. Column names and the shell type values are updated.
-
-```{r DataSumm}
-
-
-# Oyster Data Summary -----------------------------------------------------
-
-oyster_sh_summ <- oysterraw %>%
-  subset(nyrpar=="ShellHeight_mm" & !is.na(SizeClass)) %>%
-  group_by(ManagedAreaName, nyrpar, LiveDate_Qualifier, SizeClass,
-           HabitatClassification) %>%
-  dplyr::summarize(N_Data=length(ShellHeight_mm[!is.na(ShellHeight_mm)]),
-            N_Years=length(unique(LiveDate[!is.na(LiveDate) &
-                                             !is.na(ShellHeight_mm)])),
-            EarliestLiveDate=min(LiveDate[!is.na(ShellHeight_mm)]),
-            LatestLiveDate=max(LiveDate[!is.na(ShellHeight_mm)]),
-            LastSampleDate=max(SampleDate),
-            Mean=mean(ShellHeight_mm[!is.na(ShellHeight_mm)]),
-            Median=median(ShellHeight_mm[!is.na(ShellHeight_mm)]))
-
-oyster_den_summ <- oysterraw %>%
-      subset(nyrpar=="Density_m2") %>%
-      group_by(ManagedAreaName, nyrpar, LiveDate_Qualifier, SizeClass,
-               HabitatClassification) %>%
-      dplyr::summarize(N_Data=length(Density_m2[!is.na(Density_m2)]),
-                N_Years=length(unique(LiveDate[!is.na(LiveDate) &
-                                                     !is.na(Density_m2)])),
-                EarliestLiveDate=min(LiveDate[!is.na(Density_m2)]),
-                LatestLiveDate=max(LiveDate[!is.na(Density_m2)]),
-                LastSampleDate=max(SampleDate),
-                Mean=mean(Density_m2[!is.na(Density_m2)]),
-                Median=median(Density_m2[!is.na(Density_m2)]))
-
-oyster_pct_summ <- oysterraw %>%
-      subset(nyrpar=="PercentLive_pct") %>%
-      group_by(ManagedAreaName, nyrpar, LiveDate_Qualifier, SizeClass,
-               HabitatClassification) %>%
-      dplyr::summarize(N_Data=length(PercentLive_pct[!is.na(PercentLive_pct)]),
-                N_Years=length(unique(LiveDate[!is.na(LiveDate) &
-                                                     !is.na(PercentLive_pct)])),
-                EarliestLiveDate=min(LiveDate[!is.na(PercentLive_pct)]),
-                LatestLiveDate=max(LiveDate[!is.na(PercentLive_pct)]),
-                LastSampleDate=max(SampleDate),
-                Mean=mean(PercentLive_pct[!is.na(PercentLive_pct)]),
-                Median=median(PercentLive_pct[!is.na(PercentLive_pct)]))
-
-oyster_summ <- bind_rows(oyster_sh_summ, oyster_den_summ, oyster_pct_summ)
-
-#rm(oyster_sh_summ, oyster_den_summ, oyster_pct_summ)
-
-setnames(oyster_summ, c("nyrpar", "LiveDate_Qualifier",
-                        "HabitatClassification"),
-         c("ParameterName", "ShellType", "HabitatType"))
-
-oyster_summ$ShellType[oyster_summ$ShellType=="Exact"] <- "Live Oyster Shells"
-oyster_summ$ShellType[oyster_summ$ShellType=="Estimate"] <- "Dead Oyster Shells"
-
-
-fwrite(oyster_summ, file="output/OysterSummary.txt", sep="|")
 
 # LiveDate Threshold -----------------------------------------------------
 oysterraw <- oysterraw[oysterraw$LiveDate>=1960,]
