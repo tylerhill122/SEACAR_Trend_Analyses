@@ -46,8 +46,13 @@ library(scales)
 library(EnvStats)
 library(tidyr)
 library(kableExtra)
+library(formatR)
 options(scipen=999)
-opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   dpi=200
+)
 ```
 
 
@@ -618,7 +623,7 @@ plot_theme <- theme_bw() +
          axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
                                                               b = 0, l = 0)),
          axis.text=element_text(size=10),
-         axis.text.x=element_text(angle = 60, hjust = 0))
+         axis.text.x=element_text(angle = 60, hjust = 1))
 # Get minimum, mean, and standard deviation of the data
 min_RV <- min(data$ResultValue[data$Include==TRUE])
 mn_RV <- mean(data$ResultValue[data$Include==TRUE &
@@ -873,7 +878,11 @@ if(n==0){
                           size=10, face="italic")
       # Arrange and display plot and statistic table
       print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
-      cat('\n \n \n')
+      # Add extra space at the end to prevent the next figure from being too
+      # close. Does not add space after last plot
+      if(i!=n){
+        cat("\n \n \n") 
+      }
       rm(plot_data)
       rm(KTset, leg)
       rm(plot_data)
