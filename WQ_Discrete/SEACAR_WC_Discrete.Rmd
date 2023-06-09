@@ -49,7 +49,11 @@ library(EnvStats)
 library(tidyr)
 library(kableExtra)
 options(scipen=999)
-opts_chunk$set(warning=FALSE, message=FALSE, dpi=200)
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   dpi=200
+)
 ```
 
 # File Import
@@ -70,7 +74,8 @@ data <- fread(file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
               "ProgramLocationID", "SampleDate", "Year", "Month",
               "RelativeDepth", "ActivityType", "ParameterName",
               "ResultValue", "ParameterUnits", "ValueQualifier",
-              "SEACAR_QAQCFlagCode", "Include"), na.strings="")
+              "SEACAR_QAQCFlagCode", "Include"),
+        na.strings=c("NULL","","NA"))
 
 parameter <- unique(data$ParameterName)
 unit <- unique(data$ParameterUnits)
@@ -229,8 +234,8 @@ MA_Summ <- data %>%
           ActivityType=activity,
           N_Data=length(ResultValue[Include==TRUE & !is.na(ResultValue)]),
           N_Years=length(unique(Year[Include==TRUE & !is.na(Year)])),
-          EarliestYear=min(Year[Include==TRUE]),
-          LatestYear=max(Year[Include==TRUE]),
+          EarliestYear=min(Year[Include==TRUE & N_Data!=0]),
+          LatestYear=max(Year[Include==TRUE & N_Data!=0]),
           LastSampleDate=max(SampleDate[Include==TRUE]),
           ConsecutiveMonths=ifelse(unique(AreaID) %in%
                           consMonthIDs==TRUE, TRUE, FALSE),
@@ -239,7 +244,7 @@ MA_Summ <- data %>%
           # sufficient number of year, and the consecutive month criteria
           SufficientData=ifelse(N_Data>0 & N_Years>=suff_years &
                        ConsecutiveMonths==TRUE, TRUE, FALSE),
-          Median=median(ResultValue, na.rm=TRUE))
+          Median=median(ResultValue[Include==TRUE & N_Data!=0], na.rm=TRUE))
 
 MA_Summ$ConsecutiveMonths <- NULL
 # Creates column in data that determines how many years from the start for each
@@ -377,16 +382,16 @@ data_summ <- data %>%
                 ActivityType=activity,
                 N_Total=length(ResultValue),
                 N_AnalysisUse=length(ResultValue[Use_In_Analysis==TRUE]),
-                N_H=length(grep("H", data$ValueQualifier[data$ProgramID==476])),
-                perc_H=100*N_H/length(data$ValueQualifier),
-                N_I=length(grep("I", data$ValueQualifier)),
-                perc_I=100*N_I/length(data$ValueQualifier),
-                N_Q=length(grep("Q", data$ValueQualifier)),
-                perc_Q=100*N_Q/length(data$ValueQualifier),
-                N_S=length(grep("S", data$ValueQualifier)),
-                perc_S=100*N_S/length(data$ValueQualifier),
-                N_U=length(grep("U", data$ValueQualifier)),
-                perc_U=100*N_U/length(data$ValueQualifier))
+                N_H=length(grep("H", ValueQualifier[ProgramID==476])),
+                perc_H=100*N_H/length(ValueQualifier),
+                N_I=length(grep("I", ValueQualifier)),
+                perc_I=100*N_I/length(ValueQualifier),
+                N_Q=length(grep("Q", ValueQualifier)),
+                perc_Q=100*N_Q/length(ValueQualifier),
+                N_S=length(grep("S", ValueQualifier)),
+                perc_S=100*N_S/length(ValueQualifier),
+                N_U=length(grep("U", ValueQualifier)),
+                perc_U=100*N_U/length(ValueQualifier))
 # Orders the data table rows based on managed area name
 data_summ <- as.data.table(data_summ[order(data_summ$ManagedAreaName,
                                            data_summ$Year), ])
@@ -514,7 +519,7 @@ Mon_Stats <- data[data$Use_In_Analysis==TRUE, ] %>%
        ActivityType=activity,
        EarliestSampleDate=min(SampleDate),
        LastSampleDate=max(SampleDate),
-       N=length(ResultValue),
+       N_Data=length(ResultValue),
        Min=min(ResultValue),
        Max=max(ResultValue),
        Median=median(ResultValue),
@@ -771,7 +776,7 @@ plot_theme <- theme_bw() +
       axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
                                 b = 0, l = 0)),
       axis.text=element_text(size=10),
-      axis.text.x=element_text(angle = 60, hjust = 0))
+      axis.text.x=element_text(angle = 60, hjust = 1))
 # Gets first and most recent years from data set
 year_lower <- min(data$Year)
 year_upper <- max(data$Year)
@@ -1102,7 +1107,9 @@ if(n==0){
               size=10, face="italic")
    # Arrange and display plot and statistic table
    print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
-   cat('\n \n \n')
+   # Add extra space at the end to prevent the next figure from being too
+   # close.
+   cat("\n \n \n") 
    rm(plot_data)
    rm(KTset, leg)
    rm(plot_data)

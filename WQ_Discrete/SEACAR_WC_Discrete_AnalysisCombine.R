@@ -13,6 +13,7 @@ out_dir <- "output"
 
 #List all of the files in the "tables" directory that are KendallTau results
 param_dirs <- list.dirs("output", full.name=FALSE)
+param_dirs <- param_dirs[ !grepl("Figures", param_dirs) ]
 param_dirs <- param_dirs[param_dirs!=""]
 
 for(i in 1:length(param_dirs)){
@@ -25,7 +26,7 @@ for(i in 1:length(param_dirs)){
       }
 }
 website <- fread("data/WebsiteParameters.csv",  sep=",", header=TRUE,
-                 stringsAsFactors=FALSE, na.strings="")
+                 stringsAsFactors=FALSE, na.strings=c("NULL","","NA"))
 
 for(i in 1:length(files)){
       if(i==1){
