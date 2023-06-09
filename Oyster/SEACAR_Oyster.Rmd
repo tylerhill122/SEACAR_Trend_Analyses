@@ -22,6 +22,9 @@ always_allow_html: yes
 ---
 
 # Important Notes
+
+The purpose of this script is to group oyster data, create managed area statistics, perform lme analysis on density, percent live, and shell height, and create reports in pdf and Word document form for Oyster data.
+
 All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
@@ -59,15 +62,12 @@ library(tictoc)
 library(doRNG)
 library(piecewiseSEM)
 library(ggpubr)
-library(formatR)
 options(scipen=999)
 knitr::opts_chunk$set(
    warning=FALSE,
    message=FALSE,
    eval=Run_An,
-   dpi=200,
-   tidy.opts = list(width.cutoff = 60),
-   tidy = TRUE
+   dpi=200
 )
 ```
 

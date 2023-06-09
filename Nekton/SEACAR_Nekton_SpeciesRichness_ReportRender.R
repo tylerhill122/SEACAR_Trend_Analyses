@@ -1,4 +1,4 @@
-#This script is created to automate the production of Rmd documents Nekton.
+#The purpose of this script is to automate the production of Rmd documents Nekton.
 # Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
 
@@ -56,6 +56,6 @@ unlink(paste0(out_dir, "/", file_out, ".md"))
 unlink(paste0(out_dir, "/", file_out, "_files"), recursive=TRUE)
 
 
-#Gets list of all image files in output/by_parameter/Figures
+#Gets list of all image files in output/Figures and creates zip directory
 fig_list <- list.files(paste0(out_dir, "/Figures"), pattern=".png", full=TRUE)
 zip(paste0(out_dir, "/Figures/NektonFigures"), files=fig_list)

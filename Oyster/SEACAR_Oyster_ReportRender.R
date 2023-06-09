@@ -1,4 +1,4 @@
-#This script is created to automate the production of Rmd documents for oyster analysis.
+# The purpose of this script is to automate the production of Rmd documents for oyster analysis.
 # Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
 ## WHEN RUNNING IN RSTUDIO:
@@ -40,12 +40,12 @@ if(param_name=="Hectares" & length(grep("All Parameters", file_in))>0){
 #Gets the specific file used and removes the directory names
 file_short <- sub("data/", "", file_in)
 
-#Renders SEACAR_CoastalWetlands.Rmd for each parameter combination and writes the
-#report to an html and Word document stored in reports/by_parameter directory
+#Renders SEACAR_Oyster.Rmd for each parameter combination and writes the
+#report to an html and Word document stored in output directory
 file_out <-  paste0("SEACAR_", param_name)
 
 
-rmarkdown::render(input = "SEACAR_Oyster_Report.Rmd", 
+rmarkdown::render(input = "SEACAR_Oyster.Rmd", 
                   output_format = "pdf_document",
                   output_file = paste0(file_out, ".pdf"),
                   output_dir = out_dir,
@@ -72,7 +72,7 @@ for(i in 1:length(param_dirs)){
    # Creates shorter version of parameter directory to be used as zip file name
    param_short <- gsub("_", "", param_dirs[i])
    param_short <- gsub("/", "", param_short)
-   # Gets list of png plots in Figure directory
+   # Gets list of png plots
    fig_list <- list.files(param, pattern=".png", full=TRUE)
    
    # Sets name to be used for zip file

@@ -20,6 +20,9 @@ urlcolor: blue
 ---
 
 # Important Notes
+
+The purpose of this script is to determine species richness by species of grazers and reef-dependent species, create managed area statistics, generate plots, and create reports in pdf and Word document form for Coral data.
+
 These scripts were created by [J.E. Panzik](mailto:jepanzik@usf.edu) (jepanzik@usf.edu) for SEACAR.
 
 All scripts and outputs can be found on the SEACAR GitHub repository:
@@ -44,15 +47,12 @@ library(gridExtra)
 #library(tidyverse)
 library(ggpubr)
 library(scales)
-library(formatR)
 options(scipen=999)
 knitr::opts_chunk$set(
    warning=FALSE,
    message=FALSE,
-   dpi=200,
-   tidy.opts = list(width.cutoff = 60),
-   tidy = TRUE
-)
+   dpi=200
+   )
 ```
 
 

@@ -1,4 +1,4 @@
-#This script is designed to read the file names for the LME results of the BBpct analysis,
+#The purpose of this script is to read the file names for the LME results of the BBpct analysis,
 #import each one, extract the intercept, slope, and p values, then write them to a pipe-delimited file
 library(data.table)
 library(dplyr)

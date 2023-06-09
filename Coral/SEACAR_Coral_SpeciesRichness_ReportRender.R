@@ -1,4 +1,4 @@
-#This script is created to automate the production of Rmd documents for Coral.
+#The purpose of this script is to render the report for Coral species richness.
 
 
 ## WHEN RUNNING IN RSTUDIO:
@@ -55,6 +55,6 @@ unlink(paste0(out_dir, "/", file_out, ".md"))
 unlink(paste0(out_dir, "/", file_out, "_files"), recursive=TRUE)
 
 
-#Gets list of all image files in output/SpeciesRichness/Figures
+#Gets list of all image files in output/SpeciesRichness/Figures and creates zip directory
 fig_list <- list.files(paste0(out_dir, "/Figures"), pattern=".png", full=TRUE)
 zip(paste0(out_dir, "/Figures/CoralSpeciesRichnessFigures"), files=fig_list)
