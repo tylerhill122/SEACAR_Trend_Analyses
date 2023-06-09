@@ -1,45 +1,45 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-1|Alligator Harbor Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|82|3|2020|2022|2022-08-03T12:10:00Z|1.1||||||||
+1|Alligator Harbor Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|82|3|2020|2022|2022-08-03T12:10:00Z|1.00585||||||||
 2|Apalachicola Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|7|5|2001|2022|2022-09-01T11:35:00Z|0.8||||||||
-3|Apalachicola National Estuarine Research Reserve|Secchi Depth|Surface|Field|FALSE|12|7|2001|2022|2022-09-01T11:35:00Z|0.8||||||||
-4|Banana River Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|461|7|2015|2022|2022-09-07T15:00:00Z|0.8||||||||
-5|Big Bend Seagrasses Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|821|23|1999|2022|2022-10-19T12:40:00Z|0.9|TRUE|-0.0638|0.1003|-0.0235416666666667|2.09280878205128|32.7091|0.0006|0
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|0|0||||||||||||
-6|Biscayne Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|55|9|2007|2022|2022-07-21T11:20:00Z|1.52401853||||||||
-8|Boca Ciega Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|124|5|2010|2022|2022-12-14T10:38:00Z|1||||||||
-9|Cape Haze Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|213|16|2007|2023|2023-04-10T10:20:00Z|0.9|TRUE|0.1411|0.3094|0.00999999999999996|1.29772727272727|13.2458|0.2776|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|8|1|2021|2021|2021-05-19T08:59:00Z|1||||||||
-11|Cockroach Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|124|9|2006|2023|2023-03-21T09:19:00Z|0.8||||||||
-13|Coupon Bight Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||1.45||||||||
-14|Estero Bay Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|146|13|2007|2023|2023-02-14T10:40:00Z|0.9|TRUE|-0.0306|0.5733|-0.00347222222222224|0.960682234432235|9.065|0.6159|0
-15|Florida Keys National Marine Sanctuary|Secchi Depth|Surface|Field|FALSE|315|9|2005|2022|2022-12-13T10:45:00Z|2||||||||
-16|Fort Clinch State Park Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||0.9||||||||
-17|Fort Pickens State Park Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|4|3|2012|2021|2021-03-30T11:20:00Z|3||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|1127|21|2001|2023|2023-04-10T09:10:00Z|1.3|TRUE|-0.1685|0.0048|-0.0258886946386946|1.62829124000999|10.1945|0.513|-1
-19|Guana River Marsh Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|285|18|2002|2023|2023-02-27T14:15:00Z|0.7|TRUE|0.0138|0.8937|0|0.907126554001554|20.1956|0.0427|0
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Secchi Depth|Surface|Field|TRUE|1021|19|2002|2023|2023-02-27T14:15:00Z|0.8|TRUE|-0.2089|0.0003|-0.0205357142857143|1.05354166666667|17.7679|0.0871|-1
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|805|9|2015|2023|2023-03-07T09:30:00Z|0.8||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|109|6|2007|2023|2023-02-27T11:04:00Z|0.9||||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|92|5|2007|2023|2023-02-27T12:49:00Z|1||||||||
-25|Lemon Bay Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|329|15|2007|2023|2023-02-01T12:03:00Z|1.3|TRUE|0.0985|0.3107|0.00583333333333336|1.31800595238095|12.1001|0.3562|0
-26|Lignumvitae Key Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|7|2|2016|2017|2017-04-11T00:00:00Z|1.5||||||||
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|200|12|2007|2023|2023-01-31T11:15:00Z|1.21921483|TRUE|-0.2656|0.0211|-0.03125|1.64583333333333|5.7002|0.8926|-1
-28|Matlacha Pass Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|88|7|2005|2022|2022-11-22T10:27:00Z|0.9||||||||
-29|Mosquito Lagoon Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|32|6|2018|2023|2023-02-08T11:36:00Z|0.7||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|8|5|2004|2021|2021-09-30T11:00:00Z|0.7||||||||
+3|Apalachicola National Estuarine Research Reserve|Secchi Depth|Surface|Field|FALSE|12|7|2001|2022|2022-09-01T11:35:00Z|0.9225||||||||
+4|Banana River Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|461|7|2015|2022|2022-09-07T15:00:00Z|1.3||||||||
+5|Big Bend Seagrasses Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|821|23|1999|2022|2022-10-19T12:40:00Z|1.9|TRUE|-0.0638|0.1003|-0.0235416666666667|2.09280878205128|32.7091|0.0006|0
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||||||||||
+6|Biscayne Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|55|9|2007|2022|2022-07-21T11:20:00Z|1.1||||||||
+8|Boca Ciega Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|124|5|2010|2022|2022-12-14T10:38:00Z|0.958||||||||
+9|Cape Haze Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|213|16|2007|2023|2023-04-10T10:20:00Z|1.4|TRUE|0.1411|0.3094|0.00999999999999996|1.29772727272727|13.2458|0.2776|0
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|8|1|2021|2021|2021-05-19T08:59:00Z|1.5||||||||
+11|Cockroach Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|124|9|2006|2023|2023-03-21T09:19:00Z|1||||||||
+13|Coupon Bight Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||||||||||
+14|Estero Bay Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|146|13|2007|2023|2023-02-14T10:40:00Z|0.925|TRUE|-0.0306|0.5733|-0.00347222222222224|0.960682234432235|9.065|0.6159|0
+15|Florida Keys National Marine Sanctuary|Secchi Depth|Surface|Field|FALSE|315|9|2005|2022|2022-12-13T10:45:00Z|2.2||||||||
+16|Fort Clinch State Park Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||||||||||
+17|Fort Pickens State Park Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|4|3|2012|2021|2021-03-30T11:20:00Z|3.92882||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|1127|21|2001|2023|2023-04-10T09:10:00Z|1.7|TRUE|-0.1685|0.0048|-0.0258886946386946|1.62829124000999|10.1945|0.513|-1
+19|Guana River Marsh Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|285|18|2002|2023|2023-02-27T14:15:00Z|1|TRUE|0.0138|0.8937|0|0.907126554001554|20.1956|0.0427|0
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Secchi Depth|Surface|Field|TRUE|1021|19|2002|2023|2023-02-27T14:15:00Z|1|TRUE|-0.2089|0.0003|-0.0205357142857143|1.05354166666667|17.7679|0.0871|-1
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|805|9|2015|2023|2023-03-07T09:30:00Z|1||||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|109|6|2007|2023|2023-02-27T11:04:00Z|0.4||||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|92|5|2007|2023|2023-02-27T12:49:00Z|1.4||||||||
+25|Lemon Bay Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|329|15|2007|2023|2023-02-01T12:03:00Z|1.4|TRUE|0.0985|0.3107|0.00583333333333336|1.31800595238095|12.1001|0.3562|0
+26|Lignumvitae Key Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|7|2|2016|2017|2017-04-11T00:00:00Z|1.4||||||||
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|200|12|2007|2023|2023-01-31T11:15:00Z|1.4|TRUE|-0.2656|0.0211|-0.03125|1.64583333333333|5.7002|0.8926|-1
+28|Matlacha Pass Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|88|7|2005|2022|2022-11-22T10:27:00Z|1.2||||||||
+29|Mosquito Lagoon Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|32|6|2018|2023|2023-02-08T11:36:00Z|1.3||||||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|8|5|2004|2021|2021-09-30T11:00:00Z|0.3||||||||
 48|Nature Coast Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|1434|9|2007|2022|2022-05-04T12:47:00Z|1.7||||||||
-31|North Fork St. Lucie Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|4|4|2007|2023|2023-01-25T11:50:00Z|0.8||||||||
+31|North Fork St. Lucie Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|4|4|2007|2023|2023-01-25T11:50:00Z|0.62||||||||
 33|Pellicer Creek Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|230|15|2002|2022|2022-01-12T10:20:00Z|0.6|TRUE|-0.092|0.2168|0|0.642857142857143|11.82|0.3773|0
-34|Pine Island Sound Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|91|7|2005|2022|2022-09-06T07:33:00Z|1.2||||||||
-35|Pinellas County Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|791|15|2004|2023|2023-03-27T13:57:00Z|1.2|TRUE|0.5063|0|0.0542929901960784|0.380306285093583|2.2704|0.9973|1
-37|Rocky Bayou State Park Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||2.4384||||||||
-38|Rookery Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|16|7|2006|2023|2023-01-17T13:00:00Z|1.2||||||||
-39|Rookery Bay National Estuarine Research Reserve|Secchi Depth|Surface|Field|FALSE|54|8|2006|2023|2023-02-14T11:15:00Z|1.06681297||||||||
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||5.2||||||||
-40|St. Andrews State Park Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|300|14|2003|2022|2022-06-21T07:19:00Z|2.74323336|TRUE|0.0167|0.9205|-0.01625|1.91583333333333|10.8028|0.4599|0
-41|St. Joseph Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|137|3|2020|2022|2022-10-31T10:27:00Z|1.49353816||||||||
-42|St. Joseph Bay State Buffer Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||0.55||||||||
-43|St. Martins Marsh Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|218|8|2007|2022|2022-05-04T09:24:00Z|0.9||||||||
-44|Terra Ceia Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|138|7|2005|2023|2023-03-27T11:06:00Z|1||||||||
-45|Tomoka Marsh Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|44|4|2020|2023|2023-01-10T10:35:00Z|0.6||||||||
-47|Yellow River Marsh Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|1|1|2023|2023|2023-03-29T11:35:00Z|0.8||||||||
+34|Pine Island Sound Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|91|7|2005|2022|2022-09-06T07:33:00Z|1.5||||||||
+35|Pinellas County Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|791|15|2004|2023|2023-03-27T13:57:00Z|1|TRUE|0.5063|0|0.0542929901960784|0.380306285093583|2.2704|0.9973|1
+37|Rocky Bayou State Park Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||||||||||
+38|Rookery Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|16|7|2006|2023|2023-01-17T13:00:00Z|1.05||||||||
+39|Rookery Bay National Estuarine Research Reserve|Secchi Depth|Surface|Field|FALSE|54|8|2006|2023|2023-02-14T11:15:00Z|0.85||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||||||||||
+40|St. Andrews State Park Aquatic Preserve|Secchi Depth|Surface|Field|TRUE|300|14|2003|2022|2022-06-21T07:19:00Z|1.8|TRUE|0.0167|0.9205|-0.01625|1.91583333333333|10.8028|0.4599|0
+41|St. Joseph Bay Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|137|3|2020|2022|2022-10-31T10:27:00Z|1.67642||||||||
+42|St. Joseph Bay State Buffer Preserve|Secchi Depth|Surface|Field|FALSE|0|0|Inf|-Inf||||||||||
+43|St. Martins Marsh Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|218|8|2007|2022|2022-05-04T09:24:00Z|0.7||||||||
+44|Terra Ceia Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|138|7|2005|2023|2023-03-27T11:06:00Z|2.4||||||||
+45|Tomoka Marsh Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|44|4|2020|2023|2023-01-10T10:35:00Z|0.57||||||||
+47|Yellow River Marsh Aquatic Preserve|Secchi Depth|Surface|Field|FALSE|1|1|2023|2023|2023-03-29T11:35:00Z|2.1||||||||
