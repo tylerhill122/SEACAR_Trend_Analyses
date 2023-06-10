@@ -1,11 +1,11 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
 1|Alligator Harbor Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
-2|Apalachicola Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|67|8|2011|2019|2019-11-05T21:30:00Z|15.2||||||||
-3|Apalachicola National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|68|8|2011|2019|2019-11-06T00:00:00Z|15||||||||
+2|Apalachicola Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|54|8|2011|2019|2019-10-02T10:33:00Z|10.5||||||||
+3|Apalachicola National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|83|8|2011|2019|2019-09-17T16:00:00Z|9.2||||||||
 4|Banana River Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|1|1|2014|2014|2014-07-29T00:00:00Z|13||||||||
 5|Big Bend Seagrasses Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|14|9|1995|2015|2015-06-27T00:00:00Z|2.776||||||||
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
-6|Biscayne Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|4|2|2019|2020|2020-06-02T00:00:00Z|1.85||||||||
+6|Biscayne Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|4|2|2019|2020|2020-07-06T00:00:00Z|2.465||||||||
 8|Boca Ciega Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
 9|Cape Haze Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
@@ -31,7 +31,7 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 31|North Fork St. Lucie Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
 33|Pellicer Creek Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
 34|Pine Island Sound Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
-35|Pinellas County Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|144|9|2008|2018|2018-07-18T00:00:00Z|4.1815||||||||
+35|Pinellas County Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|144|8|2008|2018|2018-07-18T00:00:00Z|4.1815||||||||
 37|Rocky Bayou State Park Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
 38|Rookery Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
 39|Rookery Bay National Estuarine Research Reserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
@@ -40,6 +40,6 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 41|St. Joseph Bay Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|3|2|2009|2014|2014-06-28T00:00:00Z|3.131||||||||
 42|St. Joseph Bay State Buffer Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
 43|St. Martins Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|88|3|2007|2009|2009-12-30T11:58:00Z|2||||||||
-44|Terra Ceia Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|1|1|2015|2015|2015-10-12T00:00:00Z|9.3||||||||
+44|Terra Ceia Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|2|2|2016|2017|2017-10-16T00:00:00Z|7.35||||||||
 45|Tomoka Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||
 47|Yellow River Marsh Aquatic Preserve|Chlorophyll a uncorrected for pheophytin|Bottom|All|FALSE|0|0|Inf|-Inf||||||||||

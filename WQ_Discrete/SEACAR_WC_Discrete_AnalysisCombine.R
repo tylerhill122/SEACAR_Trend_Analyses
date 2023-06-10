@@ -1,4 +1,4 @@
-# This script is designed to read the file names for the Kendall Tau results,
+# The purpose of this script is to read the file names for the Kendall Tau results,
 # import each one, combine into one data table, arrange by managed area, and write to file
 # Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
