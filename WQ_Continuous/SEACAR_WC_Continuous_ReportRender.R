@@ -1,4 +1,4 @@
-# This script is created to automate the production of Rmd documents for each relevant combination of
+# The purpose of this script is to automate the production of Rmd documents for each relevant combination of
 # parameter, relative depth, and activity type for continuous WC data.
 # Created by J.E. Panzik (jepanzik@usf.edu) for SEACAR
 
