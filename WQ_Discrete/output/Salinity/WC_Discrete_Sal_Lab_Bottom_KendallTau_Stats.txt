@@ -1,45 +1,45 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-1|Alligator Harbor Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-2|Apalachicola Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|81|3|2000|2002|2002-12-17T00:00:00Z|26.9||||||||
-3|Apalachicola National Estuarine Research Reserve|Salinity|Bottom|Lab|FALSE|104|3|2000|2002|2002-12-17T00:00:00Z|28.6||||||||
-4|Banana River Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-5|Big Bend Seagrasses Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+1|Alligator Harbor Aquatic Preserve|Salinity|Bottom|Lab|FALSE|3|3|1999|2006|2006-07-19T00:00:00Z|32.5||||||||
+2|Apalachicola Bay Aquatic Preserve|Salinity|Bottom|Lab|TRUE|36|17|1995|2021|2021-12-03T10:14:00Z|22.15|TRUE|0.1111|0.384|0.303246753246753|19.7352100840336|7.2374|0.4046|0
+3|Apalachicola National Estuarine Research Reserve|Salinity|Bottom|Lab|TRUE|50|21|1995|2021|2021-12-03T10:14:00Z|22.5|TRUE|0.3415|0.0052|0.423333333333333|12.8641666666667|9.6979|0.3755|1
+4|Banana River Aquatic Preserve|Salinity|Bottom|Lab|FALSE|13|9|1993|2022|2022-06-23T12:32:00Z|21.61||||||||
+5|Big Bend Seagrasses Aquatic Preserve|Salinity|Bottom|Lab|FALSE|39|18|1995|2017|2017-08-01T00:00:00Z|23||||||||
 7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
 6|Biscayne Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-8|Boca Ciega Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+8|Boca Ciega Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|19|6|1997|2021|2021-11-03T10:58:00Z|33.45||||||||
 9|Cape Haze Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-11|Cockroach Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Salinity|Bottom|Lab|FALSE|9|7|1997|2019|2019-08-27T00:00:00Z|30.4||||||||
+11|Cockroach Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|8|4|2002|2013|2013-09-16T00:00:00Z|3.075||||||||
 13|Coupon Bight Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-14|Estero Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-15|Florida Keys National Marine Sanctuary|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+14|Estero Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|1|1|2007|2007|2007-10-22T11:16:00Z|37.05||||||||
+15|Florida Keys National Marine Sanctuary|Salinity|Bottom|Lab|FALSE|45|12|1992|2021|2021-04-16T14:21:00Z|36.18||||||||
 16|Fort Clinch State Park Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
 17|Fort Pickens State Park Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-19|Guana River Marsh Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-25|Lemon Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Salinity|Bottom|Lab|FALSE|2|2|2001|2009|2009-01-05T00:00:00Z|26.75||||||||
+19|Guana River Marsh Aquatic Preserve|Salinity|Bottom|Lab|FALSE|3|2|2010|2020|2020-07-22T09:32:00Z|34.93||||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Salinity|Bottom|Lab|FALSE|5|4|1997|2021|2021-06-22T09:15:00Z|32||||||||
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Salinity|Bottom|Lab|FALSE|31|12|1997|2020|2020-08-04T08:48:00Z|24||||||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Salinity|Bottom|Lab|FALSE|3|3|2000|2020|2020-07-08T08:59:00Z|26.4||||||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Salinity|Bottom|Lab|FALSE|2|2|2002|2023|2023-02-16T12:00:00Z|33.9||||||||
+25|Lemon Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|7|7|1995|2018|2018-05-07T07:15:00Z|31.9||||||||
 26|Lignumvitae Key Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
 28|Matlacha Pass Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
 29|Mosquito Lagoon Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-48|Nature Coast Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-31|North Fork St. Lucie Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+48|Nature Coast Aquatic Preserve|Salinity|Bottom|Lab|FALSE|4|4|1998|2016|2016-10-19T00:00:00Z|24.03||||||||
+31|North Fork St. Lucie Aquatic Preserve|Salinity|Bottom|Lab|FALSE|2|2|2022|2023|2023-01-12T10:10:00Z|11.155||||||||
 33|Pellicer Creek Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-34|Pine Island Sound Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-35|Pinellas County Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+34|Pine Island Sound Aquatic Preserve|Salinity|Bottom|Lab|FALSE|1|1|1995|1995|1995-05-17T00:00:00Z|35.4||||||||
+35|Pinellas County Aquatic Preserve|Salinity|Bottom|Lab|TRUE|110|13|1958|2021|2021-12-20T11:12:00Z|24.975|TRUE|-0.1085|0.3965|-0.0681791979949874|26.05975|10.2759|0.5057|0
 37|Rocky Bayou State Park Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-38|Rookery Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-39|Rookery Bay National Estuarine Research Reserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+38|Rookery Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|2|2|2001|2009|2009-09-17T00:00:00Z|28.65||||||||
+39|Rookery Bay National Estuarine Research Reserve|Salinity|Bottom|Lab|FALSE|8|8|2003|2019|2019-06-27T00:00:00Z|31.85||||||||
 12|Southeast Florida Coral Reef Ecosystem Conservation Area|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
 40|St. Andrews State Park Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-41|St. Joseph Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+41|St. Joseph Bay Aquatic Preserve|Salinity|Bottom|Lab|FALSE|2|2|1998|2006|2006-02-22T00:00:00Z|29.5||||||||
 42|St. Joseph Bay State Buffer Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-43|St. Martins Marsh Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-44|Terra Ceia Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-45|Tomoka Marsh Aquatic Preserve|Salinity|Bottom|Lab|FALSE|1|1|2002|2002|2002-06-24T00:00:00Z|7.1||||||||
+43|St. Martins Marsh Aquatic Preserve|Salinity|Bottom|Lab|FALSE|7|7|1995|2017|2017-12-05T00:00:00Z|18.3||||||||
+44|Terra Ceia Aquatic Preserve|Salinity|Bottom|Lab|FALSE|22|13|1995|2023|2023-01-17T10:28:00Z|30.645||||||||
+45|Tomoka Marsh Aquatic Preserve|Salinity|Bottom|Lab|FALSE|3|3|2002|2021|2021-02-15T10:33:00Z|7.1||||||||
 47|Yellow River Marsh Aquatic Preserve|Salinity|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
