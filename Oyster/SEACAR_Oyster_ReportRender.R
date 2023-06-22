@@ -66,17 +66,21 @@ param_dirs <- list.dirs(out_dir, full.name=FALSE)
 # Only keeps Figure directories
 param_dirs <- param_dirs[ grepl("Figures", param_dirs) ]
 # Loops through each figure directory
+wd <- getwd()
 for(i in 1:length(param_dirs)){
    # Makes full directory name
    param <- paste0("output/",param_dirs[i])
+   
    # Creates shorter version of parameter directory to be used as zip file name
    param_short <- gsub("_", "", param_dirs[i])
    param_short <- gsub("/", "", param_short)
    # Gets list of png plots
-   fig_list <- list.files(param, pattern=".png", full=TRUE)
+   fig_list <- list.files(param, pattern=".png", full=FALSE)
    
+   setwd(paste0(wd, "/",param))
    # Sets name to be used for zip file
-   zip_name <- paste0("/Oyster", param_short)
+   zip_name <- paste0("Oyster", param_short)
    # Zips png figures to a zip file with name created above
-   zip(paste0(param, zip_name), files=fig_list)
+   zip(zip_name, files=fig_list)
+   setwd(wd)
 }

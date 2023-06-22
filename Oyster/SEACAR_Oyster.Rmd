@@ -31,7 +31,7 @@ https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
 
 This markdown file is designed to be compiled by [SEACAR_Oyster_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Oyster/SEACAR_Oyster_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Nekton/SEACAR_Nekton_SpeciesRichness_ReportRender.R).
 
-This script is based off of code originally written by Katie May Laumann, and modified by Stephen Durham.
+This script is based off of code originally written by Stephen Durham.
 
 Compiled and edited by [J.E. Panzik](jepanzik@usf.edu) for SEACAR.
 
@@ -2309,7 +2309,7 @@ ab_sho25 <- oysterraw[!is.na(ShellHeight_mm) &
 saveRDS(ab_sho25, paste0('data/GLMMs/AllDates/Data/ab_sho25_', Sys.Date(), '.rds'))
 
 
-### ABAP-25 to 75mm -------------------------------------------------------
+### anerr-25 to 75mm -------------------------------------------------------
 
 ab_sh25to75 <- ab_sho25[ShellHeight_mm < 75, ]
 
@@ -2956,6 +2956,56 @@ models <- list(gtmn_den_glmm)
 modresults(data, models, "Density", meplotzoom=FALSE)
 
 
+### Indian River-Vero Beach to Ft. Pierce Aquatic Preserve_Natural ----------------------------------------
+
+irvb_n <- subset(oysterraw_den,
+               oysterraw_den$MA_plotlab==
+                     "Indian River-Vero Beach to Ft. Pierce Aquatic Preserve_Natural")
+irvb_n[, Density_m2 := as.integer(round(Density_m2))]
+saveRDS(irvb_n, paste0('data/GLMMs/AllDates/Data/irvb_n_',
+                       Sys.Date(), '.rds'))
+
+irvb_den_glmm <- brm(formula=Density_m2 ~
+                         RelYear+(0+RelYear | UniversalReefID),
+                     data=irvb_n,
+                   family=negbinomial, cores=4,
+                   control= list(adapt_delta=0.99, max_treedepth=15),
+                   iter=3000,
+                   warmup=1000, chains=4, inits=0, thin=3, seed=5512,
+                   backend="cmdstanr", threads=threading(2),
+                   file="data/GLMMs/AllDates/irvb_den_glmm9.rds")
+
+# Create model results tables and save diagnostic plots and marginal effects plots
+data <- irvb_n
+models <- list(irvb_den_glmm) 
+modresults(data, models, "Density", meplotzoom=FALSE)
+
+
+### Jensen Beach to Jupiter Inlet Aquatic Preserve_Natural ----------------------------------------
+
+jbji_n <- subset(oysterraw_den,
+               oysterraw_den$MA_plotlab==
+                     "Jensen Beach to Jupiter Inlet Aquatic Preserve_Natural")
+jbji_n[, Density_m2 := as.integer(round(Density_m2))]
+saveRDS(jbji_n, paste0('data/GLMMs/AllDates/Data/jbji_n_',
+                       Sys.Date(), '.rds'))
+
+jbji_den_glmm <- brm(formula=Density_m2 ~
+                         RelYear+(0+RelYear | UniversalReefID),
+                     data=jbji_n,
+                   family=negbinomial, cores=4,
+                   control= list(adapt_delta=0.99, max_treedepth=15),
+                   iter=3000,
+                   warmup=1000, chains=4, inits=0, thin=3, seed=5512,
+                   backend="cmdstanr", threads=threading(2),
+                   file="data/GLMMs/AllDates/jbji_den_glmm9.rds")
+
+# Create model results tables and save diagnostic plots and marginal effects plots
+data <- jbji_n
+models <- list(jbji_den_glmm) 
+modresults(data, models, "Density", meplotzoom=FALSE)
+
+
 ### Lemon Bay Aquatic Preserve_Natural ----------------------------------------
 
 lb_n <- subset(oysterraw_den,
@@ -3139,6 +3189,100 @@ pct_all_sum <- summarySE(oysterraw_pct, measurevar='PercentLive_pct',
                          groupvars=c('ManagedAreaName', 'Year', 'PercentLiveMethod'))
 
 
+## Apalachicola Bay Aquatic Preserve_Natural ----------------------------------------
+
+abap_p <- subset(oysterraw_pct,
+                oysterraw_pct$MA_plotlab==
+                      "Apalachicola Bay Aquatic Preserve_Natural")
+saveRDS(abap_p, paste0('data/GLMMs/AllDates/Data/abap_p_', Sys.Date(), '.rds'))
+
+abap_p_binom <- data.table(ProgramID=character(), ProgramLocationID=character(),
+                          QuadIdentifier=character(), Year=integer(),
+                          ManagedAreaName=character(),
+                          PercentLiveMethod=character(),
+                          UniversalReefID=factor(), Region.y=character(),
+                          MA_plotlab=character(), RelYear=integer(),
+                          PercentLive_pct=numeric(), LiveObs=logical())
+for(i in 1:nrow(abap_p)){
+      dat_i <- abap_p[i, c("ProgramID", "ProgramLocationID", "QuadIdentifier",
+                          "Year", "ManagedAreaName", "PercentLiveMethod",
+                          "UniversalReefID", "Region.y", "MA_plotlab", "RelYear",
+                          "PercentLive_pct")]
+      dat_l <- purrr::map_dfr(seq_len(round(dat_i$PercentLive_pct[1], digits=0)),
+                              ~dat_i[, LiveObs := 1])
+      dat_nl <- purrr::map_dfr(seq_len((100-round(dat_i$PercentLive_pct[1],
+                                                  digits=0))),
+                               ~dat_i[, LiveObs := 0])
+      dat <- rbind(dat_l, dat_nl)
+      abap_p_binom <- rbind(abap_p_binom, dat)
+}
+saveRDS(abap_p_binom,
+        paste0('data/GLMMs/AllDates/Data/abap_p_binom_',
+                            Sys.Date(), '.rds'))
+
+abap_pct_glmm <- brm(formula=LiveObs ~ RelYear+(1 | UniversalReefID),
+                    data=abap_p_binom, family=bernoulli, cores=4,
+                    control= list(adapt_delta=0.99,
+                                  max_treedepth=15),
+                    iter=3000, warmup=1000, chains=4, inits=0,
+                    thin=3,
+                    seed=4331, backend="cmdstanr",
+                    threads=threading(2),
+                    file="data/GLMMs/AllDates/abap_pct_glmm3.rds")
+
+# Create model results tables and save diagnostic plots and marginal effects plots
+data <- abap_p
+models <- list(abap_pct_glmm) 
+modresults(data, models, "Percent live", meplotzoom=FALSE)
+
+
+## Apalachicola National Estuarine Research Reserve_Natural ----------------------------------------
+
+anerr_p <- subset(oysterraw_pct,
+                oysterraw_pct$MA_plotlab==
+                      "Apalachicola National Estuarine Research Reserve_Natural")
+saveRDS(anerr_p, paste0('data/GLMMs/AllDates/Data/anerr_p_', Sys.Date(), '.rds'))
+
+anerr_p_binom <- data.table(ProgramID=character(), ProgramLocationID=character(),
+                          QuadIdentifier=character(), Year=integer(),
+                          ManagedAreaName=character(),
+                          PercentLiveMethod=character(),
+                          UniversalReefID=factor(), Region.y=character(),
+                          MA_plotlab=character(), RelYear=integer(),
+                          PercentLive_pct=numeric(), LiveObs=logical())
+for(i in 1:nrow(anerr_p)){
+      dat_i <- anerr_p[i, c("ProgramID", "ProgramLocationID", "QuadIdentifier",
+                          "Year", "ManagedAreaName", "PercentLiveMethod",
+                          "UniversalReefID", "Region.y", "MA_plotlab", "RelYear",
+                          "PercentLive_pct")]
+      dat_l <- purrr::map_dfr(seq_len(round(dat_i$PercentLive_pct[1], digits=0)),
+                              ~dat_i[, LiveObs := 1])
+      dat_nl <- purrr::map_dfr(seq_len((100-round(dat_i$PercentLive_pct[1],
+                                                  digits=0))),
+                               ~dat_i[, LiveObs := 0])
+      dat <- rbind(dat_l, dat_nl)
+      anerr_p_binom <- rbind(anerr_p_binom, dat)
+}
+saveRDS(anerr_p_binom,
+        paste0('data/GLMMs/AllDates/Data/anerr_p_binom_',
+                            Sys.Date(), '.rds'))
+
+anerr_pct_glmm <- brm(formula=LiveObs ~ RelYear+(1 | UniversalReefID),
+                    data=anerr_p_binom, family=bernoulli, cores=4,
+                    control= list(adapt_delta=0.99,
+                                  max_treedepth=15),
+                    iter=3000, warmup=1000, chains=4, inits=0,
+                    thin=3,
+                    seed=4331, backend="cmdstanr",
+                    threads=threading(2),
+                    file="data/GLMMs/AllDates/anerr_pct_glmm3.rds")
+
+# Create model results tables and save diagnostic plots and marginal effects plots
+data <- anerr_p
+models <- list(anerr_pct_glmm) 
+modresults(data, models, "Percent live", meplotzoom=FALSE)
+
+
 ## Guana River Marsh Aquatic Preserve_Natural ----------------------------------------
 
 grm_p <- subset(oysterraw_pct,
@@ -3179,6 +3323,140 @@ grm_pct_glmm <- brm(formula=LiveObs ~ RelYear+(1 | UniversalReefID),
 # Create model results tables and save diagnostic plots and marginal effects plots
 data <- grm_p
 models <- list(grm_pct_glmm) 
+modresults(data, models, "Percent live", meplotzoom=FALSE)
+
+
+## Guana Tolomato Matanzas National Estuarine Research
+## Reserve_Natural ----------------------------------------
+
+gtm_p <- subset(oysterraw_pct,
+                oysterraw_pct$MA_plotlab==
+                      "Guana Tolomato Matanzas National Estuarine Research Reserve_Natural")
+saveRDS(gtm_p, paste0('data/GLMMs/AllDates/Data/gtm_p_', Sys.Date(), '.rds'))
+
+gtm_p_binom <- data.table(ProgramID=character(), ProgramLocationID=character(),
+                          QuadIdentifier=character(), Year=integer(),
+                          ManagedAreaName=character(),
+                          PercentLiveMethod=character(),
+                          UniversalReefID=factor(), Region.y=character(),
+                          MA_plotlab=character(), RelYear=integer(),
+                          PercentLive_pct=numeric(), LiveObs=logical())
+for(i in 1:nrow(gtm_p)){
+      dat_i <- gtm_p[i, c("ProgramID", "ProgramLocationID", "QuadIdentifier",
+                          "Year", "ManagedAreaName", "PercentLiveMethod",
+                          "UniversalReefID", "Region.y", "MA_plotlab", "RelYear",
+                          "PercentLive_pct")]
+      dat_l <- purrr::map_dfr(seq_len(round(dat_i$PercentLive_pct[1], digits=0)),
+                              ~dat_i[, LiveObs := 1])
+      dat_nl <- purrr::map_dfr(seq_len((100-round(dat_i$PercentLive_pct[1],
+                                                  digits=0))),
+                               ~dat_i[, LiveObs := 0])
+      dat <- rbind(dat_l, dat_nl)
+      gtm_p_binom <- rbind(gtm_p_binom, dat)
+}
+saveRDS(gtm_p_binom,
+        paste0('data/GLMMs/AllDates/Data/gtm_p_binom_',
+                            Sys.Date(), '.rds'))
+
+gtm_pct_glmm <- brm(formula=LiveObs ~ RelYear+(1 | UniversalReefID),
+                    data=gtm_p_binom, family=bernoulli, cores=4,
+                    control= list(adapt_delta=0.99,
+                                  max_treedepth=15),
+                    iter=3000, warmup=1000, chains=4, inits=0,
+                    thin=3,
+                    seed=4331, backend="cmdstanr",
+                    threads=threading(2),
+                    file="data/GLMMs/AllDates/gtm_pct_glmm3.rds")
+
+# Create model results tables and save diagnostic plots and marginal effects plots
+data <- gtm_p
+models <- list(gtm_pct_glmm) 
+modresults(data, models, "Percent live", meplotzoom=FALSE)
+
+
+## Indian River-Vero Beach to Ft. Pierce Aquatic Preserve_Natural ----------------------------------------
+
+irvb_p <- subset(oysterraw_pct,
+                oysterraw_pct$MA_plotlab==
+                      "Indian River-Vero Beach to Ft. Pierce Aquatic Preserve_Natural")
+saveRDS(irvb_p, paste0('data/GLMMs/AllDates/Data/irvb_p_', Sys.Date(), '.rds'))
+
+irvb_p_binom <- data.table(ProgramID=character(), ProgramLocationID=character(),
+                          QuadIdentifier=character(), Year=integer(),
+                          ManagedAreaName=character(),
+                          PercentLiveMethod=character(),
+                          UniversalReefID=factor(), Region.y=character(),
+                          MA_plotlab=character(), RelYear=integer(),
+                          PercentLive_pct=numeric(), LiveObs=logical())
+for(i in 1:nrow(irvb_p)){
+      dat_i <- irvb_p[i, c("ProgramID", "ProgramLocationID", "QuadIdentifier",
+                          "Year", "ManagedAreaName", "PercentLiveMethod",
+                          "UniversalReefID", "Region.y", "MA_plotlab", "RelYear",
+                          "PercentLive_pct")]
+      dat_l <- purrr::map_dfr(seq_len(round(dat_i$PercentLive_pct[1], digits=0)),
+                              ~dat_i[, LiveObs := 1])
+      dat_nl <- purrr::map_dfr(seq_len((100-round(dat_i$PercentLive_pct[1],
+                                                  digits=0))),
+                               ~dat_i[, LiveObs := 0])
+      dat <- rbind(dat_l, dat_nl)
+      irvb_p_binom <- rbind(irvb_p_binom, dat)
+}
+saveRDS(irvb_p_binom, paste0('data/GLMMs/AllDates/Data/irvb_p_binom_',
+                            Sys.Date(), '.rds'))
+
+irvb_pct_glmm <- brm(formula=LiveObs ~ RelYear+(1 | UniversalReefID),
+                    data=irvb_p_binom, family=bernoulli, cores=4,
+                    control= list(adapt_delta=0.99, max_treedepth=15),
+                    iter=3000, warmup=1000, chains=4, inits=0, thin=3,
+                    seed=4331, backend="cmdstanr", threads=threading(2),
+                    file="data/GLMMs/AllDates/irvb_pct_glmm3.rds")
+
+# Create model results tables and save diagnostic plots and marginal effects plots
+data <- irvb_p
+models <- list(irvb_pct_glmm) 
+modresults(data, models, "Percent live", meplotzoom=FALSE)
+
+
+## Jensen Beach to Jupiter Inlet Aquatic Preserve_Natural ----------------------------------------
+
+jbji_p <- subset(oysterraw_pct,
+                oysterraw_pct$MA_plotlab==
+                      "Jensen Beach to Jupiter Inlet Aquatic Preserve_Natural")
+saveRDS(jbji_p, paste0('data/GLMMs/AllDates/Data/jbji_p_', Sys.Date(), '.rds'))
+
+jbji_p_binom <- data.table(ProgramID=character(), ProgramLocationID=character(),
+                          QuadIdentifier=character(), Year=integer(),
+                          ManagedAreaName=character(),
+                          PercentLiveMethod=character(),
+                          UniversalReefID=factor(), Region.y=character(),
+                          MA_plotlab=character(), RelYear=integer(),
+                          PercentLive_pct=numeric(), LiveObs=logical())
+for(i in 1:nrow(jbji_p)){
+      dat_i <- jbji_p[i, c("ProgramID", "ProgramLocationID", "QuadIdentifier",
+                          "Year", "ManagedAreaName", "PercentLiveMethod",
+                          "UniversalReefID", "Region.y", "MA_plotlab", "RelYear",
+                          "PercentLive_pct")]
+      dat_l <- purrr::map_dfr(seq_len(round(dat_i$PercentLive_pct[1], digits=0)),
+                              ~dat_i[, LiveObs := 1])
+      dat_nl <- purrr::map_dfr(seq_len((100-round(dat_i$PercentLive_pct[1],
+                                                  digits=0))),
+                               ~dat_i[, LiveObs := 0])
+      dat <- rbind(dat_l, dat_nl)
+      jbji_p_binom <- rbind(jbji_p_binom, dat)
+}
+saveRDS(jbji_p_binom, paste0('data/GLMMs/AllDates/Data/jbji_p_binom_',
+                            Sys.Date(), '.rds'))
+
+jbji_pct_glmm <- brm(formula=LiveObs ~ RelYear+(1 | UniversalReefID),
+                    data=jbji_p_binom, family=bernoulli, cores=4,
+                    control= list(adapt_delta=0.99, max_treedepth=15),
+                    iter=3000, warmup=1000, chains=4, inits=0, thin=3,
+                    seed=4331, backend="cmdstanr", threads=threading(2),
+                    file="data/GLMMs/AllDates/jbji_pct_glmm3.rds")
+
+# Create model results tables and save diagnostic plots and marginal effects plots
+data <- jbji_p
+models <- list(jbji_pct_glmm) 
 modresults(data, models, "Percent live", meplotzoom=FALSE)
 
 
