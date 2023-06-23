@@ -36,7 +36,7 @@ file_in <- list.files("data", pattern="All_CORAL", full=TRUE)
 #Gets the specific file used and removes the directory names
 file_short <- sub("data/", "", file_in)
 
-#Renders SEACAR_Coral_PercentCover.Rmd and writes the report to a pdf and 
+#Renders Coral_PercentCover.Rmd and writes the report to a pdf and 
 #Word document stored in output directory
 file_out <-  paste0("Coral_", param_file, "_Report")
 

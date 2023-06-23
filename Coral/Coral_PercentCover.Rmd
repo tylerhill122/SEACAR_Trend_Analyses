@@ -61,7 +61,7 @@ seed <- 42
 
 # File Import
 
-Imports file that is determined in the SEACAR_Coral_PercentCover_ReportRender.R script.
+Imports file that is determined in the Coral_PercentCover_ReportRender.R script.
 
 The command `fread` is used because of its improved speed while handling large data files. Only columns that are used by the script are imported from the file, and are designated in the `select` input.
 
