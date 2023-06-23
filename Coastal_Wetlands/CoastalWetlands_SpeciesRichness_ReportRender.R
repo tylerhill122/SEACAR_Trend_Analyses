@@ -14,7 +14,7 @@ library(utils)
 library(rstudioapi)
 
 # Gets directory of this script and sets it as the working directory
-wd <- setwd(dirname(getActiveDocumentContext()$path))
+wd <- dirname(getActiveDocumentContext()$path)
 setwd(wd)
 
 
