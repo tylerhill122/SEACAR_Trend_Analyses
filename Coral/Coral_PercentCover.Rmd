@@ -29,7 +29,7 @@ All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
 
-This markdown file is designed to be compiled by [SEACAR_Coral_PercentCover_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Corals/SEACAR_Coral_PercentCover_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coral/SEACAR_Coral_PercentCover_ReportRender.R).
+This markdown file is designed to be compiled by [Coral_PercentCover_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Corals/Coral_PercentCover_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coral/Coral_PercentCover_ReportRender.R).
 
 # Libraries and Settings
 
@@ -54,6 +54,7 @@ knitr::opts_chunk$set(
    message=FALSE,
    dpi=200
 )
+seed <- 42
 ```
 
 
@@ -383,7 +384,7 @@ The plots shown here are the percent cover for each managed area by year with th
 11. Save figure as png file
    + [Coral Percent Cover Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coral/output/PercentCover/Figures) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coral/output/PercentCover/Figures)
 
-```{r Trendlines_ManagedArea, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
+```{r Trendlines_ManagedArea, warning=FALSE, fig.height=6, fig.width=8, results="asis"}
 # Defines standard plot theme: black and white, no major or minor grid lines,
 # Arial font. Title is centered, size 12, and blue (hex coded). Subtitle is
 # centered, size 10, and blue (hex coded). Legend title is size 10 and the
@@ -406,7 +407,9 @@ plot_theme <- theme_bw() +
                                                               b = 0, l = 0)),
          axis.text=element_text(size=10),
          axis.text.x=element_text(angle = -45, hjust = 0))
-
+# Create jitter object that sets the height and width
+# Sets seed to be reproducible
+plot_jitter <- position_jitter(width = 0.2, height = 0.2, seed=seed)
 # Color palette for SEACAR
 color_palette <- c("#005396", "#0088B1", "#00ADAE", "#65CCB3", "#AEE4C1",
                    "#FDEBA8", "#F8CD6D", "#F5A800", "#F17B00")
@@ -440,9 +443,16 @@ if(n==0){
       }else if(t<10 & t>=4){
          # Set breaks to every 2 years if between 10 and 4 years of data
          brk <- -2
-      }else if(t<4){
-         # Set breaks to every year if less than 4 years of data
+      }else if(t<4 & t>=2){
+         # Set breaks to every year if between 4 and 2 years of data
          brk <- -1
+      }else if(t<2){
+         # Set breaks to every year if less than 2 years of data
+         brk <- -1
+         # Sets t_max to be 1 year greater and t_min to be 1 year lower
+         # Forces graph to have at least 3 tick marks
+         t_max <- t_max+1
+         t_min <- t_min-1
       }
       # Determine range of data values for the managed area
       y_range <- max(plot_data$ResultValue) - min(plot_data$ResultValue)
@@ -456,9 +466,11 @@ if(n==0){
       
       
       # Creates plot object using plot_data.
-      # Data is plotted as symbols with connected lines.
+      # Data is plotted as a point pot with jitter to show concentrations
+      # that overlap. LME fit is plotted as a line
       p1 <- ggplot(data=plot_data) +
-        geom_jitter(aes(x=Year, y=ResultValue), shape=21, size=2,
+        geom_point(aes(x=Year, y=ResultValue), 
+                   position=plot_jitter, shape=21, size=2,
                    color="#333333", fill="#cccccc", alpha=1) +
         geom_line(data=lme_plot_data, aes(x=x, y=y),
                    color="#000099", size=2, alpha=0.8) +

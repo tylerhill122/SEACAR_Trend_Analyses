@@ -11,9 +11,11 @@ library(readr)
 library(dplyr)
 library(data.table)
 library(utils)
+library(rstudioapi)
 
-#Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
-APP_Plots <- TRUE
+# Gets directory of this script and sets it as the working directory
+wd <- dirname(getActiveDocumentContext()$path)
+setwd(wd)
 
 #Set output directory
 out_dir <- "output/PercentCover"
@@ -36,10 +38,10 @@ file_short <- sub("data/", "", file_in)
 
 #Renders SEACAR_Coral_PercentCover.Rmd and writes the report to a pdf and 
 #Word document stored in output directory
-file_out <-  paste0("SEACAR_Coral_", param_file)
+file_out <-  paste0("Coral_", param_file, "_Report")
 
 
-rmarkdown::render(input = "SEACAR_Coral_PercentCover.Rmd", 
+rmarkdown::render(input = "Coral_PercentCover.Rmd", 
                   output_format = "pdf_document",
                   output_file = paste0(file_out, ".pdf"),
                   output_dir = out_dir,
@@ -55,6 +57,8 @@ unlink(paste0(out_dir, "/", file_out, ".md"))
 unlink(paste0(out_dir, "/", file_out, "_files"), recursive=TRUE)
 
 
-#Gets list of all image files in output/PercentCover/Figures & creates zip directory
-fig_list <- list.files(paste0(out_dir, "/Figures"), pattern=".png", full=TRUE)
-zip(paste0(out_dir, "/Figures/CoralPercentCoverFigures"), files=fig_list)
+#Gets list of all image files in output/Figures and creates zip directory
+fig_list <- list.files(paste0(out_dir, "/Figures"), pattern=".png", full=FALSE)
+setwd(paste0(out_dir, "/Figures"))
+zip("CoralPercentCoverFigures", files=fig_list)
+setwd(wd)
