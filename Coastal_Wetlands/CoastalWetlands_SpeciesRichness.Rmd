@@ -29,7 +29,7 @@ All scripts and outputs can be found on the SEACAR GitHub repository:
 
 https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
 
-This markdown file is designed to be compiled by [SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coastal_Wetlands/SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coastal_Wetlands/SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R).
+This markdown file is designed to be compiled by [CoastalWetlands_SpeciesRichness_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coastal_Wetlands/SEACAR_CoastalWetlands_SpeciesRichness_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/Coastal_Wetlands/CoastalWetlands_SpeciesRichness_ReportRender.R).
 
 # Libraries and Settings
 
@@ -357,7 +357,7 @@ The plots shown here are the species richness for each managed area with a yearl
 12. Save figure as png file
    + [Coastal Wetlands Figures in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output/Figures) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/Coastal_Wetlands/output/Figures)
 
-```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis", eval=APP_Plots}
+```{r SpeciesRichPlot, warning=FALSE, fig.height=6, fig.width=8, results="asis"}
 # Defines standard plot theme: black and white, no major or minor grid lines,
 # Arial font. Title is centered, size 12, and blue (hex coded). Subtitle is
 # centered, size 10, and blue (hex coded). Legend title is size 10 and the
@@ -422,9 +422,16 @@ if(n==0){
       }else if(t<10 & t>=4){
          # Set breaks to every 2 years if between 10 and 4 years of data
          brk <- -2
-      }else if(t<4){
-         # Set breaks to every year if less than 4 years of data
+      }else if(t<4 & t>=2){
+         # Set breaks to every year if between 4 and 2 years of data
          brk <- -1
+      }else if(t<2){
+         # Set breaks to every year if less than 2 years of data
+         brk <- -1
+         # Sets t_max to be 1 year greater and t_min to be 1 year lower
+         # Forces graph to have at least 3 tick marks
+         t_max <- t_max+1
+         t_min <- t_min-1
       }
       # Determine range of data values for the managed area
       y_range <- max(plot_data$Mean) - min(plot_data$Mean)
