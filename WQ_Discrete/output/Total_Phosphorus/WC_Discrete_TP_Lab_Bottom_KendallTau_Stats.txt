@@ -1,20 +1,20 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
-1|Alligator Harbor Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|7|3|2020|2022|2022-09-20T09:24:00Z|0.04||||||||
+1|Alligator Harbor Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|7|3|2020|2022|2022-09-20T09:24:00Z|0.04|||    NA|||||
 2|Apalachicola Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|128|13|2000|2022|2022-05-26T10:10:00Z|0.038|TRUE|-0.3537|0.0028|-0.00118421052631579|0.047412962962963|8.1921|0.696|-1
 3|Apalachicola National Estuarine Research Reserve|Total Phosphorus|Bottom|Lab|TRUE|168|15|1999|2022|2022-05-26T10:10:00Z|0.034|TRUE|-0.1|0.3434|-0.000264705882352941|0.0338630169172932|8.8502|0.6357|0
 4|Banana River Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|215|25|1997|2022|2022-11-30T10:18:00Z|0.0375|TRUE|0.1275|0.1574|0.000339649621212121|0.0365340277777778|6.573|0.8325|0
 5|Big Bend Seagrasses Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|171|21|1992|2023|2023-02-14T09:09:00Z|0.046|TRUE|-0.1505|0.0793|-0.00066827485380117|0.0590857843137255|7.7458|0.7359|0
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-6|Biscayne Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|371|7|1970|2022|2022-11-15T11:50:00Z|0.01||||||||
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
+6|Biscayne Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|371|7|1970|2022|2022-11-15T11:50:00Z|0.01|||    NA|||||
 8|Boca Ciega Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|100|19|1999|2022|2022-12-19T09:47:00Z|0.06|TRUE|0.219|0.0409|0.000666666666666667|0.0492647058823529|11.8589|0.3743|1
 9|Cape Haze Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|83|16|2003|2023|2023-04-10T10:20:00Z|0.073|TRUE|0.1474|0.2505|0.00205|0.0167310606060606|16.9395|0.1097|0
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|18|4|2002|2023|2023-03-15T12:20:00Z|0.0505||||||||
-11|Cockroach Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|38|7|2002|2023|2023-03-20T11:11:00Z|0.1925||||||||
-13|Coupon Bight Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|1|1|2020|2020|2020-10-26T11:28:00Z|0.01||||||||
-14|Estero Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|96|6|2017|2022|2022-11-14T10:38:00Z|0.044||||||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|18|4|2002|2023|2023-03-15T12:20:00Z|0.0505|||    NA|||||
+11|Cockroach Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|38|7|2002|2023|2023-03-20T11:11:00Z|0.1925|||    NA|||||
+13|Coupon Bight Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|1|1|2020|2020|2020-10-26T11:28:00Z|0.01|||    NA|||||
+14|Estero Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|96|6|2017|2022|2022-11-14T10:38:00Z|0.044|||    NA|||||
 15|Florida Keys National Marine Sanctuary|Total Phosphorus|Bottom|Lab|TRUE|7851|28|1995|2022|2022-11-30T13:32:00Z|0.00557528|TRUE|0.0967|0.0561|0.000028972413405308|0.00577128332182252|12.3507|0.3379|0
-16|Fort Clinch State Park Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
-17|Fort Pickens State Park Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|2|2|2002|2022|2022-06-27T11:55:00Z|0.018||||||||
+16|Fort Clinch State Park Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
+17|Fort Pickens State Park Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|2|2|2002|2022|2022-06-27T11:55:00Z|0.018|||    NA|||||
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|470|19|2001|2023|2023-04-10T09:10:00Z|0.124|TRUE|0.0428|0.5323|0.000951190476190476|0.0910984848484848|7.4413|0.7623|0
 19|Guana River Marsh Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|115|24|1997|2023|2023-02-07T13:50:00Z|0.0839|TRUE|-0.1018|0.3683|-0.000915208333333333|0.104393044448242|4.7502|0.9427|0
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|Total Phosphorus|Bottom|Lab|TRUE|168|27|1997|2023|2023-02-07T13:50:00Z|0.075|TRUE|-0.0206|0.8653|-0.0000652173913043479|0.058747356442577|12.1999|0.3488|0
@@ -22,24 +22,24 @@ AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N
 22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|63|17|1998|2023|2023-02-27T11:04:00Z|0.062|TRUE|-0.0411|0.4951|-0.000688888888888889|0.0755166666666667|6.291|0.7105|0
 23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|33|12|1991|2023|2023-02-27T12:49:00Z|0.034|TRUE|-0.4667|0.1814|-0.00104944444444444|0.0434777777777778|3.8266|0.5746|0
 25|Lemon Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|205|22|1997|2023|2023-02-01T12:03:00Z|0.1|TRUE|-0.1044|0.1763|-0.00183333333333334|0.142347222222222|5.2859|0.9165|0
-26|Lignumvitae Key Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|18|4|2020|2023|2023-03-07T12:41:00Z|0.015||||||||
+26|Lignumvitae Key Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|18|4|2020|2023|2023-03-07T12:41:00Z|0.015|||    NA|||||
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|156|32|1991|2023|2023-04-05T10:30:00Z|0.0405|TRUE|-0.0311|0.7964|0.0000833333333333334|0.0505853886693017|10.7883|0.4612|0
 28|Matlacha Pass Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|140|12|2005|2022|2022-12-29T10:55:00Z|0.0605|TRUE|0.055|0.7793|0.00028452380952381|0.0541182983682984|14.353|0.2141|0
 29|Mosquito Lagoon Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|57|17|1998|2023|2023-02-08T11:36:00Z|0.0586|TRUE|0.4522|0.0019|0.00202156862745098|0.00927423076923077|16.1426|0.1359|1
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|28|14|1997|2022|2022-08-02T13:40:00Z|0.0705|TRUE|0.2698|0.5563|0.00163447368421053|0.0439605263157895|8.3263|0.3047|0
 48|Nature Coast Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|364|17|1996|2022|2022-04-25T10:32:00Z|0.009|TRUE|0.1328|0.0587|0.0000833333333333334|0.00886825980392156|17.036|0.1068|0
-31|North Fork St. Lucie Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|24|13|1999|2022|2022-12-14T13:29:00Z|0.173||||||||
+31|North Fork St. Lucie Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|24|13|1999|2022|2022-12-14T13:29:00Z|0.173|||    NA|||||
 33|Pellicer Creek Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|25|12|2006|2020|2020-12-10T11:45:00Z|0.085|TRUE|-0.6667|0.0242|-0.00327083333333333|0.114298214285714|0.8128|0.9762|-1
 34|Pine Island Sound Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|72|12|2005|2023|2023-01-12T08:53:00Z|0.039|TRUE|0.1301|0.3874|0.00117857142857143|0.0261375|10.5303|0.3953|0
 35|Pinellas County Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|477|24|1999|2023|2023-03-07T11:08:00Z|0.08|TRUE|0.1244|0.0335|0.000984126984126984|0.0728448660714286|7.4291|0.7633|1
-37|Rocky Bayou State Park Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|5|3|2012|2021|2021-05-15T16:20:00Z|0.014||||||||
-38|Rookery Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|14|6|2002|2023|2023-03-14T11:35:00Z|0.037||||||||
+37|Rocky Bayou State Park Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|5|3|2012|2021|2021-05-15T16:20:00Z|0.014|||    NA|||||
+38|Rookery Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|14|6|2002|2023|2023-03-14T11:35:00Z|0.037|||    NA|||||
 39|Rookery Bay National Estuarine Research Reserve|Total Phosphorus|Bottom|Lab|TRUE|40|12|2002|2023|2023-03-15T12:20:00Z|0.052|TRUE|-0.2222|0.5661|-0.00199342105263158|0.0977222222222222|9.1184|0.3324|0
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|Total Phosphorus|Bottom|Lab|TRUE|3964|10|2009|2021|2021-08-19T00:00:00Z|0|TRUE|-0.3276|0.0034|-0.000321904761904762|0.00818408817268476|13.6328|0.254|-2
-40|St. Andrews State Park Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|9|6|2017|2022|2022-11-28T12:07:00Z|0.009||||||||
-41|St. Joseph Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|10|6|2008|2022|2022-07-18T11:50:00Z|0.013||||||||
-42|St. Joseph Bay State Buffer Preserve|Total Phosphorus|Bottom|Lab|FALSE|0|0|Inf|-Inf||||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|Total Phosphorus|Bottom|Lab|TRUE|3964|10|2009|2021|2021-08-19T00:00:00Z|0|TRUE|-0.3276|0.0034|-0.000321904761904762|0.00818408817268477|13.6328|0.254|-2
+40|St. Andrews State Park Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|9|6|2017|2022|2022-11-28T12:07:00Z|0.009|||    NA|||||
+41|St. Joseph Bay Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|10|6|2008|2022|2022-07-18T11:50:00Z|0.013|||    NA|||||
+42|St. Joseph Bay State Buffer Preserve|Total Phosphorus|Bottom|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
 43|St. Martins Marsh Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|140|22|1996|2022|2022-05-04T09:24:00Z|0.014|TRUE|0.109|0.2193|0.000130681818181818|0.0149761904761905|9.1683|0.6064|0
 44|Terra Ceia Aquatic Preserve|Total Phosphorus|Bottom|Lab|TRUE|77|22|1996|2023|2023-02-08T11:38:00Z|0.153|TRUE|0.1064|0.3234|0.00265|0.147687101787102|6.9342|0.8044|0
-45|Tomoka Marsh Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|85|9|2005|2023|2023-03-14T11:53:00Z|0.0941||||||||
-47|Yellow River Marsh Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|1|1|2022|2022|2022-03-14T13:41:00Z|0.014||||||||
+45|Tomoka Marsh Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|85|9|2005|2023|2023-03-14T11:53:00Z|0.0941|||    NA|||||
+47|Yellow River Marsh Aquatic Preserve|Total Phosphorus|Bottom|Lab|FALSE|1|1|2022|2022|2022-03-14T13:41:00Z|0.014|||    NA|||||
