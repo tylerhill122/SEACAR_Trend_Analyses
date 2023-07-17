@@ -1,45 +1,45 @@
 AreaID|ManagedAreaName|ParameterName|RelativeDepth|ActivityType|SufficientData|N_Data|N_Years|EarliestYear|LatestYear|LastSampleDate|Median|Independent|tau|p|SennSlope|SennIntercept|ChiSquared|pChiSquared|Trend
 1|Alligator Harbor Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|326|16|2001|2022|2022-07-21T09:41:00Z|8|TRUE|0.1615|0.2488|0.142857142857143|6.36263736263736|4.3991|0.4935|0
-2|Apalachicola Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|16|2|2007|2008|2008-07-11T00:00:00Z|7||||||||
-3|Apalachicola National Estuarine Research Reserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|131|9|2007|2023|2023-03-01T12:20:00Z|21||||||||
-4|Banana River Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|303|7|2016|2022|2022-11-30T10:18:00Z|11.97488||||||||
-5|Big Bend Seagrasses Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|2259|23|2001|2023|2023-01-19T11:35:00Z|17|TRUE|0.3964|0|1.0125|-4.51381179787234|3.1569|0.9885|1
-7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf||||||||||
+2|Apalachicola Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|16|2|2007|2008|2008-07-11T00:00:00Z|7|||    NA|||||
+3|Apalachicola National Estuarine Research Reserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|131|9|2007|2023|2023-03-01T12:20:00Z|21|||    NA|||||
+4|Banana River Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|303|7|2016|2022|2022-11-30T10:18:00Z|11.97488|||    NA|||||
+5|Big Bend Seagrasses Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|2259|23|2001|2023|2023-01-19T11:35:00Z|17|TRUE|0.3964|0.0000|1.0125|-4.51381179787234|3.1569|0.9885|1
+7|Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
 6|Biscayne Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|336|14|2001|2022|2022-07-21T11:20:00Z|17.307|TRUE|0.2209|0.0224|0.950506666666666|11.8507666666667|10.6935|0.4693|1
-8|Boca Ciega Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf||||||||||
-9|Cape Haze Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|25|6|2006|2021|2021-11-08T10:18:00Z|6.7||||||||
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|8|1|2001|2001|2001-06-21T00:00:00Z|13||||||||
-11|Cockroach Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|238|16|2001|2023|2023-03-21T09:19:00Z|41.45|TRUE|-0.1839|0.113|-1.00074074074074|62.9996217948718|11.6131|0.3934|0
-13|Coupon Bight Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf||||||||||
+8|Boca Ciega Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
+9|Cape Haze Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|25|6|2006|2021|2021-11-08T10:18:00Z|6.7|||    NA|||||
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|8|1|2001|2001|2001-06-21T00:00:00Z|13|||    NA|||||
+11|Cockroach Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|238|16|2001|2023|2023-03-21T09:19:00Z|41.45|TRUE|-0.1839|0.1130|-1.00074074074074|62.9996217948718|11.6131|0.3934|0
+13|Coupon Bight Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
 14|Estero Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|1686|13|2011|2023|2023-02-14T10:40:00Z|13.85|TRUE|0.2049|0.0152|0.659010416666667|12.5438589504052|10.2996|0.5037|1
 15|Florida Keys National Marine Sanctuary|Colored dissolved organic matter, CDOM|All|Lab|TRUE|1243|22|2001|2022|2022-07-17T13:47:00Z|7|TRUE|-0.0558|0.5295|-0.0253333333333335|8.59896527777778|9.2376|0.6|0
-16|Fort Clinch State Park Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf||||||||||
-17|Fort Pickens State Park Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|6|2|2021|2022|2022-04-12T14:23:00Z|8||||||||
+16|Fort Clinch State Park Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
+17|Fort Pickens State Park Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|6|2|2021|2022|2022-04-12T14:23:00Z|8|||    NA|||||
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|970|15|2001|2023|2023-01-30T09:53:00Z|12|TRUE|-0.2608|0.0015|-0.445799145299145|21.5928958333333|14.4072|0.2113|-1
 19|Guana River Marsh Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|165|10|2007|2023|2023-03-22T11:50:00Z|17.4|TRUE|-0.1926|0.0411|-0.553322587412587|23.8225236363636|5.4908|0.9051|-1
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|1427|11|2007|2023|2023-03-22T11:50:00Z|38.7|TRUE|-0.1441|0.12|-1.1|49.0911336762218|6.4098|0.8447|0
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|360|8|2016|2023|2023-03-22T10:00:00Z|12.10343||||||||
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|134|8|2016|2023|2023-02-27T11:04:00Z|10||||||||
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|260|4|2020|2023|2023-03-27T08:56:00Z|7||||||||
-25|Lemon Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|453|8|2006|2023|2023-02-01T12:40:00Z|9||||||||
-26|Lignumvitae Key Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf||||||||||
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|1427|11|2007|2023|2023-03-22T11:50:00Z|38.7|TRUE|-0.1441|0.1200|-1.1|49.0911336762218|6.4098|0.8447|0
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|360|8|2016|2023|2023-03-22T10:00:00Z|12.10343|||    NA|||||
+22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|134|8|2016|2023|2023-02-27T11:04:00Z|10|||    NA|||||
+23|Jensen Beach to Jupiter Inlet Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|260|4|2020|2023|2023-03-27T08:56:00Z|7|||    NA|||||
+25|Lemon Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|453|8|2006|2023|2023-02-01T12:40:00Z|9|||    NA|||||
+26|Lignumvitae Key Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
 27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|574|23|2001|2023|2023-04-05T10:45:00Z|39|TRUE|0.2452|0.0149|0.772727272727273|18.1366574754902|13.3258|0.2726|1
-28|Matlacha Pass Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|358|7|2017|2023|2023-01-30T09:15:00Z|21.2||||||||
-29|Mosquito Lagoon Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|78|4|2020|2023|2023-02-08T11:36:00Z|12.190505||||||||
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|295|4|2020|2023|2023-03-21T12:20:00Z|30||||||||
-48|Nature Coast Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|3873|14|1999|2023|2023-01-19T10:51:00Z|10.208|TRUE|0.0967|0.207|0.0490189947600662|10.5345055521861|3.4176|0.984|0
-31|North Fork St. Lucie Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|116|4|2020|2023|2023-03-13T13:58:00Z|46||||||||
-33|Pellicer Creek Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|908|6|2007|2012|2012-11-28T13:48:00Z|54.25||||||||
-34|Pine Island Sound Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|1219|11|2001|2023|2023-03-27T12:29:00Z|7|TRUE|-0.0553|0.7479|-0.0340200474129046|10.210963394914|15.7375|0.1512|0
+28|Matlacha Pass Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|358|7|2017|2023|2023-01-30T09:15:00Z|21.2|||    NA|||||
+29|Mosquito Lagoon Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|78|4|2020|2023|2023-02-08T11:36:00Z|12.190505|||    NA|||||
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|295|4|2020|2023|2023-03-21T12:20:00Z|30|||    NA|||||
+48|Nature Coast Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|3873|14|1999|2023|2023-01-19T10:51:00Z|10.208|TRUE|0.0967|0.2070|0.0490189947600662|10.5345055521861|3.4176|0.984|0
+31|North Fork St. Lucie Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|116|4|2020|2023|2023-03-13T13:58:00Z|46|||    NA|||||
+33|Pellicer Creek Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|908|6|2007|2012|2012-11-28T13:48:00Z|54.25|||    NA|||||
+34|Pine Island Sound Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|1219|11|2001|2023|2023-03-27T12:29:00Z|7|TRUE|-0.0553|0.7479|-0.0340200474129046|10.2109633949141|15.7375|0.1512|0
 35|Pinellas County Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|721|18|2001|2023|2023-03-27T13:57:00Z|11|TRUE|0.2378|0.0001|0.36498|17.9268049436441|20.5896|0.0379|1
 37|Rocky Bayou State Park Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|116|22|2001|2022|2022-07-12T10:30:00Z|15|TRUE|0.1186|0.1492|0.3|10.5680555555556|9.6046|0.5663|0
 38|Rookery Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|183|11|2001|2021|2021-08-16T12:00:00Z|7|TRUE|0.5051|0.0515|0.325|4.7|3.7997|0.9559|0
 39|Rookery Bay National Estuarine Research Reserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|193|12|2001|2017|2017-01-27T00:00:00Z|8|TRUE|0.3619|0.1533|0.277777777777777|5.61538461538462|7.8132|0.6471|0
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf||||||||||
+12|Southeast Florida Coral Reef Ecosystem Conservation Area|Colored dissolved organic matter, CDOM|All|Lab|FALSE|0|0|Inf|-Inf|||||    NA|||||
 40|St. Andrews State Park Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|149|21|2001|2022|2022-04-26T11:05:00Z|6|TRUE|0.2034|0.6143|0|3|12.1133|0.2775|0
 41|St. Joseph Bay Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|374|21|2001|2022|2022-07-18T12:33:00Z|6|TRUE|0.2278|0.0051|0.126318082788671|4.81388888888889|8.7158|0.6481|1
-42|St. Joseph Bay State Buffer Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|57|7|2016|2022|2022-01-10T12:44:00Z|104||||||||
-43|St. Martins Marsh Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|732|24|1999|2023|2023-01-17T09:55:00Z|13|TRUE|0.2657|0|0.221359027777778|13.0886813044662|4.6951|0.945|1
-44|Terra Ceia Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|481|6|2018|2023|2023-03-27T11:36:00Z|6||||||||
-45|Tomoka Marsh Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|172|5|2001|2023|2023-03-14T12:17:00Z|52.155385||||||||
-47|Yellow River Marsh Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|15|6|2001|2020|2020-12-08T12:35:00Z|15||||||||
+42|St. Joseph Bay State Buffer Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|57|7|2016|2022|2022-01-10T12:44:00Z|104|||    NA|||||
+43|St. Martins Marsh Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|TRUE|732|24|1999|2023|2023-01-17T09:55:00Z|13|TRUE|0.2657|0.0000|0.221359027777778|13.0886813044662|4.6951|0.945|1
+44|Terra Ceia Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|481|6|2018|2023|2023-03-27T11:36:00Z|6|||    NA|||||
+45|Tomoka Marsh Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|172|5|2001|2023|2023-03-14T12:17:00Z|52.155385|||    NA|||||
+47|Yellow River Marsh Aquatic Preserve|Colored dissolved organic matter, CDOM|All|Lab|FALSE|15|6|2001|2020|2020-12-08T12:35:00Z|15|||    NA|||||
