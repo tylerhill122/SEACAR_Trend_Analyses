@@ -12,6 +12,7 @@ library(data.table)
 library(knitr)
 library(readr)
 library(dplyr)
+library(rstudioapi)
 library(tictoc)
 
 # Gets directory of this script and sets it as the working directory

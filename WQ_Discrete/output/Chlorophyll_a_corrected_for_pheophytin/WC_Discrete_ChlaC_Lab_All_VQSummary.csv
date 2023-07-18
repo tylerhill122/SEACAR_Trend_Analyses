@@ -135,7 +135,7 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 9,Cape Haze Aquatic Preserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,10,10,0,0,3,30,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,2019,Chlorophyll a corrected for pheophytin,All,Lab,10,10,0,0,2,20,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,2020,Chlorophyll a corrected for pheophytin,All,Lab,4,4,0,0,0,0,0,0,0,0,0,0
-9,Cape Haze Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,41,41,0,0,6,14.6341463414634,4,9.75609756097561,0,0,2,4.87804878048781
+9,Cape Haze Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,40,40,0,0,6,15,4,10,0,0,2,5
 9,Cape Haze Aquatic Preserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,27,27,0,0,10,37.037037037037,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,2023,Chlorophyll a corrected for pheophytin,All,Lab,4,4,0,0,0,0,2,50,0,0,0,0
 10,Cape Romano-Ten Thousand Islands Aquatic Preserve,2002,Chlorophyll a corrected for pheophytin,All,Lab,3,0,0,0,1,33.3333333333333,0,0,0,0,2,66.6666666666667
@@ -251,9 +251,9 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,179,179,0,0,56,31.2849162011173,0,0,0,0,4,2.23463687150838
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2019,Chlorophyll a corrected for pheophytin,All,Lab,212,212,0,0,60,28.3018867924528,0,0,0,0,0,0
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2020,Chlorophyll a corrected for pheophytin,All,Lab,278,278,0,0,89,32.0143884892086,0,0,0,0,17,6.11510791366907
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,471,471,0,0,129,27.3885350318471,0,0,0,0,24,5.09554140127389
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,273,269,0,0,112,41.025641025641,0,0,0,0,41,15.018315018315
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2023,Chlorophyll a corrected for pheophytin,All,Lab,25,25,0,0,6,24,2,8,0,0,5,20
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,470,470,0,0,129,27.4468085106383,0,0,0,0,24,5.10638297872341
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,271,267,0,0,111,40.9594095940959,0,0,0,0,41,15.1291512915129
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2023,Chlorophyll a corrected for pheophytin,All,Lab,24,24,0,0,6,25,2,8.33333333333333,0,0,5,20.8333333333333
 19,Guana River Marsh Aquatic Preserve,2002,Chlorophyll a corrected for pheophytin,All,Lab,20,20,0,0,0,0,0,0,0,0,0,0
 19,Guana River Marsh Aquatic Preserve,2003,Chlorophyll a corrected for pheophytin,All,Lab,22,22,0,0,0,0,0,0,0,0,0,0
 19,Guana River Marsh Aquatic Preserve,2004,Chlorophyll a corrected for pheophytin,All,Lab,52,52,0,0,1,1.92307692307692,0,0,0,0,25,48.0769230769231
@@ -270,11 +270,11 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 19,Guana River Marsh Aquatic Preserve,2015,Chlorophyll a corrected for pheophytin,All,Lab,72,70,0,0,1,1.38888888888889,0,0,0,0,0,0
 19,Guana River Marsh Aquatic Preserve,2016,Chlorophyll a corrected for pheophytin,All,Lab,72,72,0,0,1,1.38888888888889,0,0,0,0,0,0
 19,Guana River Marsh Aquatic Preserve,2017,Chlorophyll a corrected for pheophytin,All,Lab,137,137,0,0,3,2.18978102189781,0,0,0,0,1,0.72992700729927
-19,Guana River Marsh Aquatic Preserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,246,244,0,0,1,0.40650406504065,0,0,0,0,0,0
+19,Guana River Marsh Aquatic Preserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,245,243,0,0,1,0.408163265306122,0,0,0,0,0,0
 19,Guana River Marsh Aquatic Preserve,2019,Chlorophyll a corrected for pheophytin,All,Lab,304,298,0,0,6,1.97368421052632,0,0,0,0,3,0.986842105263158
 19,Guana River Marsh Aquatic Preserve,2020,Chlorophyll a corrected for pheophytin,All,Lab,301,288,0,0,7,2.32558139534884,10,3.32225913621262,0,0,1,0.332225913621262
 19,Guana River Marsh Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,283,281,0,0,8,2.82685512367491,18,6.36042402826855,0,0,9,3.18021201413428
-19,Guana River Marsh Aquatic Preserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,215,215,0,0,2,0.930232558139535,0,0,0,0,15,6.97674418604651
+19,Guana River Marsh Aquatic Preserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,214,214,0,0,2,0.934579439252336,0,0,0,0,15,7.00934579439252
 19,Guana River Marsh Aquatic Preserve,2023,Chlorophyll a corrected for pheophytin,All,Lab,24,24,0,0,0,0,0,0,0,0,1,4.16666666666667
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2002,Chlorophyll a corrected for pheophytin,All,Lab,132,132,0,0,0,0,0,0,0,0,0,0
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2003,Chlorophyll a corrected for pheophytin,All,Lab,220,220,0,0,0,0,0,0,0,0,0,0
@@ -292,11 +292,11 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2015,Chlorophyll a corrected for pheophytin,All,Lab,722,666,0,0,45,6.23268698060942,30,4.15512465373961,0,0,14,1.93905817174515
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2016,Chlorophyll a corrected for pheophytin,All,Lab,678,634,0,0,45,6.63716814159292,36,5.30973451327434,0,0,4,0.589970501474926
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2017,Chlorophyll a corrected for pheophytin,All,Lab,797,763,0,0,59,7.40276035131744,26,3.26223337515684,0,0,21,2.63488080301129
-20,Guana Tolomato Matanzas National Estuarine Research Reserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,977,936,0,0,70,7.16479017400205,39,3.99181166837257,0,0,14,1.43295803480041
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,976,935,0,0,70,7.17213114754098,39,3.99590163934426,0,0,14,1.4344262295082
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2019,Chlorophyll a corrected for pheophytin,All,Lab,981,943,0,0,79,8.05300713557594,26,2.65035677879715,0,0,14,1.42711518858308
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2020,Chlorophyll a corrected for pheophytin,All,Lab,841,764,0,0,91,10.820451843044,22,2.61593341260404,0,0,20,2.37812128418549
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,653,625,0,0,50,7.65696784073507,20,3.06278713629403,0,0,18,2.75650842266463
-20,Guana Tolomato Matanzas National Estuarine Research Reserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,271,271,0,0,8,2.9520295202952,0,0,0,0,26,9.59409594095941
+20,Guana Tolomato Matanzas National Estuarine Research Reserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,270,270,0,0,8,2.96296296296296,0,0,0,0,26,9.62962962962963
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,2023,Chlorophyll a corrected for pheophytin,All,Lab,32,32,0,0,1,3.125,0,0,0,0,1,3.125
 21,Indian River-Malabar to Vero Beach Aquatic Preserve,2003,Chlorophyll a corrected for pheophytin,All,Lab,6,6,0,0,0,0,0,0,0,0,1,16.6666666666667
 21,Indian River-Malabar to Vero Beach Aquatic Preserve,2005,Chlorophyll a corrected for pheophytin,All,Lab,12,12,0,0,7,58.3333333333333,0,0,0,0,0,0
@@ -368,8 +368,8 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 25,Lemon Bay Aquatic Preserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,54,54,0,0,2,3.7037037037037,0,0,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2019,Chlorophyll a corrected for pheophytin,All,Lab,92,92,0,0,7,7.60869565217391,0,0,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2020,Chlorophyll a corrected for pheophytin,All,Lab,46,46,0,0,14,30.4347826086957,0,0,0,0,0,0
-25,Lemon Bay Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,106,104,0,0,36,33.9622641509434,0,0,0,0,2,1.88679245283019
-25,Lemon Bay Aquatic Preserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,61,60,0,0,25,40.9836065573771,4,6.55737704918033,0,0,0,0
+25,Lemon Bay Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,105,103,0,0,35,33.3333333333333,0,0,0,0,2,1.9047619047619
+25,Lemon Bay Aquatic Preserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,60,59,0,0,24,40,4,6.66666666666667,0,0,0,0
 26,Lignumvitae Key Aquatic Preserve,2016,Chlorophyll a corrected for pheophytin,All,Lab,5,0,0,0,1,20,0,0,0,0,4,80
 26,Lignumvitae Key Aquatic Preserve,2017,Chlorophyll a corrected for pheophytin,All,Lab,15,0,0,0,6,40,0,0,0,0,3,20
 26,Lignumvitae Key Aquatic Preserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,7,0,0,0,5,71.4285714285714,0,0,0,0,1,14.2857142857143
@@ -500,7 +500,7 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 34,Pine Island Sound Aquatic Preserve,2018,Chlorophyll a corrected for pheophytin,All,Lab,195,191,0,0,59,30.2564102564103,0,0,0,0,0,0
 34,Pine Island Sound Aquatic Preserve,2019,Chlorophyll a corrected for pheophytin,All,Lab,376,376,0,0,78,20.7446808510638,0,0,0,0,3,0.797872340425532
 34,Pine Island Sound Aquatic Preserve,2020,Chlorophyll a corrected for pheophytin,All,Lab,370,370,0,0,57,15.4054054054054,1,0.27027027027027,0,0,7,1.89189189189189
-34,Pine Island Sound Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,490,489,0,0,95,19.3877551020408,0,0,0,0,6,1.22448979591837
+34,Pine Island Sound Aquatic Preserve,2021,Chlorophyll a corrected for pheophytin,All,Lab,489,488,0,0,94,19.2229038854806,0,0,0,0,6,1.22699386503067
 34,Pine Island Sound Aquatic Preserve,2022,Chlorophyll a corrected for pheophytin,All,Lab,286,286,0,0,111,38.8111888111888,6,2.0979020979021,0,0,24,8.39160839160839
 34,Pine Island Sound Aquatic Preserve,2023,Chlorophyll a corrected for pheophytin,All,Lab,13,13,0,0,7,53.8461538461539,0,0,0,0,3,23.0769230769231
 35,Pinellas County Aquatic Preserve,2000,Chlorophyll a corrected for pheophytin,All,Lab,4,4,0,0,0,0,0,0,0,0,0,0

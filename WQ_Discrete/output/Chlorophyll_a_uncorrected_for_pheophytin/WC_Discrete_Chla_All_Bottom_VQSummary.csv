@@ -1,21 +1,7 @@
 AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_AnalysisUse,N_H,perc_H,N_I,perc_I,N_Q,perc_Q,N_S,perc_S,N_U,perc_U
 1,Alligator Harbor Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,2011,Chlorophyll a uncorrected for pheophytin,Bottom,All,22,0,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,2012,Chlorophyll a uncorrected for pheophytin,Bottom,All,4,0,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,2013,Chlorophyll a uncorrected for pheophytin,Bottom,All,9,0,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,2015,Chlorophyll a uncorrected for pheophytin,Bottom,All,8,0,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,2016,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,2017,Chlorophyll a uncorrected for pheophytin,Bottom,All,3,0,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,2018,Chlorophyll a uncorrected for pheophytin,Bottom,All,3,0,0,0,0,0,0,0,0,0,0,0
-2,Apalachicola Bay Aquatic Preserve,2019,Chlorophyll a uncorrected for pheophytin,Bottom,All,3,0,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,2011,Chlorophyll a uncorrected for pheophytin,Bottom,All,34,0,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,2012,Chlorophyll a uncorrected for pheophytin,Bottom,All,5,0,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,2013,Chlorophyll a uncorrected for pheophytin,Bottom,All,12,0,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,2015,Chlorophyll a uncorrected for pheophytin,Bottom,All,13,0,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,2016,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,2017,Chlorophyll a uncorrected for pheophytin,Bottom,All,8,0,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,2018,Chlorophyll a uncorrected for pheophytin,Bottom,All,4,0,0,0,0,0,0,0,0,0,0,0
-3,Apalachicola National Estuarine Research Reserve,2019,Chlorophyll a uncorrected for pheophytin,Bottom,All,5,0,0,0,0,0,0,0,0,0,0,0
+2,Apalachicola Bay Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
+3,Apalachicola National Estuarine Research Reserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 4,Banana River Aquatic Preserve,2014,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 5,Big Bend Seagrasses Aquatic Preserve,1995,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 5,Big Bend Seagrasses Aquatic Preserve,2008,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
@@ -27,8 +13,7 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 5,Big Bend Seagrasses Aquatic Preserve,2014,Chlorophyll a uncorrected for pheophytin,Bottom,All,3,0,0,0,0,0,0,0,0,0,0,0
 5,Big Bend Seagrasses Aquatic Preserve,2015,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 7,Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-6,Biscayne Bay Aquatic Preserve,2019,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
-6,Biscayne Bay Aquatic Preserve,2020,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
+6,Biscayne Bay Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 8,Boca Ciega Bay Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 10,Cape Romano-Ten Thousand Islands Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
@@ -63,52 +48,31 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 20,Guana Tolomato Matanzas National Estuarine Research Reserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 21,Indian River-Malabar to Vero Beach Aquatic Preserve,2018,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 22,Indian River-Vero Beach to Ft. Pierce Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-23,Jensen Beach to Jupiter Inlet Aquatic Preserve,2001,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-23,Jensen Beach to Jupiter Inlet Aquatic Preserve,2002,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
-23,Jensen Beach to Jupiter Inlet Aquatic Preserve,2003,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-23,Jensen Beach to Jupiter Inlet Aquatic Preserve,2005,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-23,Jensen Beach to Jupiter Inlet Aquatic Preserve,2010,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-23,Jensen Beach to Jupiter Inlet Aquatic Preserve,2013,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-25,Lemon Bay Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
+23,Jensen Beach to Jupiter Inlet Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
+25,Lemon Bay Aquatic Preserve,2003,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 26,Lignumvitae Key Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,1997,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,1,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,1998,Chlorophyll a uncorrected for pheophytin,Bottom,All,11,11,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2000,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,2,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2001,Chlorophyll a uncorrected for pheophytin,Bottom,All,10,10,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2002,Chlorophyll a uncorrected for pheophytin,Bottom,All,8,8,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2003,Chlorophyll a uncorrected for pheophytin,Bottom,All,5,5,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2004,Chlorophyll a uncorrected for pheophytin,Bottom,All,17,17,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2005,Chlorophyll a uncorrected for pheophytin,Bottom,All,13,13,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2006,Chlorophyll a uncorrected for pheophytin,Bottom,All,4,4,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2007,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,2,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2008,Chlorophyll a uncorrected for pheophytin,Bottom,All,4,4,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2009,Chlorophyll a uncorrected for pheophytin,Bottom,All,10,10,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2010,Chlorophyll a uncorrected for pheophytin,Bottom,All,17,17,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2011,Chlorophyll a uncorrected for pheophytin,Bottom,All,5,5,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2012,Chlorophyll a uncorrected for pheophytin,Bottom,All,7,7,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2013,Chlorophyll a uncorrected for pheophytin,Bottom,All,7,7,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2016,Chlorophyll a uncorrected for pheophytin,Bottom,All,7,7,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2017,Chlorophyll a uncorrected for pheophytin,Bottom,All,8,8,0,0,0,0,0,0,0,0,0,0
-27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,2019,Chlorophyll a uncorrected for pheophytin,Bottom,All,5,5,0,0,0,0,0,0,0,0,0,0
+27,Loxahatchee River-Lake Worth Creek Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 28,Matlacha Pass Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 29,Mosquito Lagoon Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 30,Nassau River-St. Johns River Marshes Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-48,Nature Coast Aquatic Preserve,2007,Chlorophyll a uncorrected for pheophytin,Bottom,All,51,0,0,0,0,0,0,0,0,0,0,0
-48,Nature Coast Aquatic Preserve,2008,Chlorophyll a uncorrected for pheophytin,Bottom,All,92,0,0,0,0,0,0,0,0,0,0,0
-48,Nature Coast Aquatic Preserve,2009,Chlorophyll a uncorrected for pheophytin,Bottom,All,89,0,0,0,0,0,0,0,0,0,0,0
+48,Nature Coast Aquatic Preserve,2007,Chlorophyll a uncorrected for pheophytin,Bottom,All,76,0,0,0,0,0,0,0,0,0,0,0
+48,Nature Coast Aquatic Preserve,2008,Chlorophyll a uncorrected for pheophytin,Bottom,All,206,0,0,0,0,0,0,0,0,0,0,0
+48,Nature Coast Aquatic Preserve,2009,Chlorophyll a uncorrected for pheophytin,Bottom,All,181,0,0,0,0,0,0,0,0,0,0,0
 48,Nature Coast Aquatic Preserve,2011,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 48,Nature Coast Aquatic Preserve,2015,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
 31,North Fork St. Lucie Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 33,Pellicer Creek Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 34,Pine Island Sound Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,2008,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,2009,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,2013,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,2014,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,2015,Chlorophyll a uncorrected for pheophytin,Bottom,All,4,0,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,2016,Chlorophyll a uncorrected for pheophytin,Bottom,All,31,0,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,2017,Chlorophyll a uncorrected for pheophytin,Bottom,All,76,0,0,0,0,0,0,0,0,0,0,0
-35,Pinellas County Aquatic Preserve,2018,Chlorophyll a uncorrected for pheophytin,Bottom,All,26,0,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2005,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,1,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2008,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,1,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2009,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,2,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2012,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,1,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2013,Chlorophyll a uncorrected for pheophytin,Bottom,All,3,3,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2014,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,2,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2015,Chlorophyll a uncorrected for pheophytin,Bottom,All,3,3,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2016,Chlorophyll a uncorrected for pheophytin,Bottom,All,29,29,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2017,Chlorophyll a uncorrected for pheophytin,Bottom,All,76,76,0,0,0,0,0,0,0,0,0,0
+35,Pinellas County Aquatic Preserve,2018,Chlorophyll a uncorrected for pheophytin,Bottom,All,26,26,0,0,0,0,0,0,0,0,0,0
 37,Rocky Bayou State Park Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 38,Rookery Bay Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 39,Rookery Bay National Estuarine Research Reserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
@@ -119,10 +83,9 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 41,St. Joseph Bay Aquatic Preserve,2009,Chlorophyll a uncorrected for pheophytin,Bottom,All,2,0,0,0,0,0,0,0,0,0,0,0
 41,St. Joseph Bay Aquatic Preserve,2014,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 42,St. Joseph Bay State Buffer Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
-43,St. Martins Marsh Aquatic Preserve,2007,Chlorophyll a uncorrected for pheophytin,Bottom,All,19,0,0,0,0,0,0,0,0,0,0,0
-43,St. Martins Marsh Aquatic Preserve,2008,Chlorophyll a uncorrected for pheophytin,Bottom,All,34,0,0,0,0,0,0,0,0,0,0,0
-43,St. Martins Marsh Aquatic Preserve,2009,Chlorophyll a uncorrected for pheophytin,Bottom,All,35,0,0,0,0,0,0,0,0,0,0,0
-44,Terra Ceia Aquatic Preserve,2016,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
+43,St. Martins Marsh Aquatic Preserve,2007,Chlorophyll a uncorrected for pheophytin,Bottom,All,32,0,0,0,0,0,0,0,0,0,0,0
+43,St. Martins Marsh Aquatic Preserve,2008,Chlorophyll a uncorrected for pheophytin,Bottom,All,64,0,0,0,0,0,0,0,0,0,0,0
+43,St. Martins Marsh Aquatic Preserve,2009,Chlorophyll a uncorrected for pheophytin,Bottom,All,67,0,0,0,0,0,0,0,0,0,0,0
 44,Terra Ceia Aquatic Preserve,2017,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 45,Tomoka Marsh Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0
 47,Yellow River Marsh Aquatic Preserve,,Chlorophyll a uncorrected for pheophytin,Bottom,All,1,0,0,0,0,0,0,0,0,0,0,0

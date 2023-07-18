@@ -1,97 +1,45 @@
 AreaID|ManagedAreaName|Month|ParameterName|RelativeDepth|ActivityType|N_Data|Min|Max|Median|Mean|StandardDeviation|Programs|ProgramIDs
-2|Apalachicola Bay Aquatic Preserve|1|Salinity|All|Lab|4|6.9|27.6|16.35|16.8|8.50215658916411|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2|Salinity|All|Lab|4|6|25.6|13.35|14.575|8.80392904711679|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|3|Salinity|All|Lab|8|1.3|24.5|13.9|12.1875|7.87970947615275|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-2|Apalachicola Bay Aquatic Preserve|4|Salinity|All|Lab|12|0.1|33.9|8.6|12.825|12.5632309828035|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-2|Apalachicola Bay Aquatic Preserve|5|Salinity|All|Lab|7|0.1|33.5|13.9|17.3571428571429|13.9909324376966|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-2|Apalachicola Bay Aquatic Preserve|6|Salinity|All|Lab|6|3.5|37.6|21.05|21.3833333333333|10.9857028298906|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 129, 5002
-2|Apalachicola Bay Aquatic Preserve|7|Salinity|All|Lab|6|22.1|34.3|31.35|29.2|5.35835795743435|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|8|Salinity|All|Lab|8|7.9|33.5|23.15|22.25|8.87226819123176|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|9|Salinity|All|Lab|14|0.5|31.3|22.8|20.7928571428571|8.85954194732908|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|10|Salinity|All|Lab|14|9.6|32.2|20.35|22.45|6.54249423150153|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 129, 355, 5002
-2|Apalachicola Bay Aquatic Preserve|11|Salinity|All|Lab|3|19.7|32.4|20.3|24.1333333333333|7.16542624924249|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-2|Apalachicola Bay Aquatic Preserve|12|Salinity|All|Lab|6|3.1|29.2|22.115|19.7716666666667|9.58361188000989|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, NRDA Oyster Cultch Recovery Project|69, 4044, 5002
-3|Apalachicola National Estuarine Research Reserve|1|Salinity|All|Lab|12|0|29.1|9.15|12.1583333333333|10.3762366915365|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-3|Apalachicola National Estuarine Research Reserve|2|Salinity|All|Lab|6|0.1|29.8|16.2|16.5666666666667|11.5154968050305|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-3|Apalachicola National Estuarine Research Reserve|3|Salinity|All|Lab|17|0.1|29.9|14.9|13.2176470588235|9.41250732364374|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 129, 5002
-3|Apalachicola National Estuarine Research Reserve|4|Salinity|All|Lab|12|0.1|32.4|6.05|9.23333333333333|9.97417878445351|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|5|Salinity|All|Lab|8|3.6|35.1|23.6|21.6625|11.8344457894258|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-3|Apalachicola National Estuarine Research Reserve|6|Salinity|All|Lab|10|0.1|36.4|18.55|17.36|11.4359277911521|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 129, 5002
-3|Apalachicola National Estuarine Research Reserve|7|Salinity|All|Lab|8|8.7|33.3|20.45|21.175|9.33453648707698|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-3|Apalachicola National Estuarine Research Reserve|8|Salinity|All|Lab|13|0.1|32|18.3|16.7384615384615|11.2570376847507|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|9|Salinity|All|Lab|23|0.1|31.4|24|23.304347826087|6.82538565416367|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 129, 355, 5002
-3|Apalachicola National Estuarine Research Reserve|10|Salinity|All|Lab|16|0.1|32.2|22.45|21.3875|9.58136211610854|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-3|Apalachicola National Estuarine Research Reserve|11|Salinity|All|Lab|7|1.2|32.4|25.5|19.8371428571429|12.7581996042881|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, NRDA Oyster Cultch Recovery Project|69, 129, 4044, 5002
-3|Apalachicola National Estuarine Research Reserve|12|Salinity|All|Lab|10|3.1|27.3|19.6|15.993|8.90499491546427|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, NRDA Oyster Cultch Recovery Project|69, 4044, 5002
-5|Big Bend Seagrasses Aquatic Preserve|1|Salinity|All|Lab|10|0.3|35.4|15.65|16.35|12.5820197989918|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2|Salinity|All|Lab|11|0.07|31|22.7|19.9563636363636|10.759630358639|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|3|Salinity|All|Lab|20|9.4|30.2|20.7|21.47|6.05049802212921|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|4|Salinity|All|Lab|20|0.5|30.5|18.9|18.97|7.6820433137079|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|5|Salinity|All|Lab|24|8.5|36|19.5|21.88375|7.23431365243028|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|6|Salinity|All|Lab|16|3.4|34.4|23.05|20.5375|9.74391262960282|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|7|Salinity|All|Lab|14|11.5|34.3|24|23.1714285714286|7.84645226754189|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|8|Salinity|All|Lab|14|3.2|32.8|22.55|22.05|7.9402334784506|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|9|Salinity|All|Lab|20|0.14|31.4|20.95|20.647|6.68591378630436|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-5|Big Bend Seagrasses Aquatic Preserve|10|Salinity|All|Lab|11|1|31.32|21.1|19.4109090909091|8.26187079848802|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-5|Big Bend Seagrasses Aquatic Preserve|11|Salinity|All|Lab|7|17.9|34.8|26.5|26.3571428571429|5.29429162490354|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-5|Big Bend Seagrasses Aquatic Preserve|12|Salinity|All|Lab|9|8.9|32.7|27|25.3555555555556|7.02657653326126|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-6|Biscayne Bay Aquatic Preserve|1|Salinity|All|Lab|23|25.31|38.5|34.92|33.8234782608696|3.688751462457|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|2|Salinity|All|Lab|27|22.76|35.99|33.78|33.4766666666667|2.51634502954033|Florida STORET / WIN, SERC Water Quality Monitoring Network|509, 5002
-6|Biscayne Bay Aquatic Preserve|3|Salinity|All|Lab|23|0.31|37.83|34.08|32.0282608695652|7.33269183623704|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|4|Salinity|All|Lab|1|37.02|37.02|37.02|37.02||Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|5|Salinity|All|Lab|6|34.24|41.35|38.035|37.95|3.32534509487361|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|6|Salinity|All|Lab|2|0.15|34.8|17.475|17.475|24.5012499681139|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|7|Salinity|All|Lab|18|0.33|36.26|31.335|29.3|7.75311170927329|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|8|Salinity|All|Lab|5|0.41|36.51|32.35|26.726|14.9184275310771|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|9|Salinity|All|Lab|6|26.8|35.55|31.845|31.5966666666667|3.73384341753463|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|10|Salinity|All|Lab|4|16.88|34.39|32.505|29.07|8.18146278689412|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|11|Salinity|All|Lab|7|21.3|34.88|32.5|31.0385714285714|4.50082003110333|Florida STORET / WIN|5002
-6|Biscayne Bay Aquatic Preserve|12|Salinity|All|Lab|4|26.3|32.5|30.53|29.965|2.80903898157359|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|1|Salinity|All|Lab|6|26.4|32.37|30.965|30.505|2.14860652516928|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-8|Boca Ciega Bay Aquatic Preserve|2|Salinity|All|Lab|5|31.28|35.2|31.9|32.52|1.64456681226395|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|3|Salinity|All|Lab|6|28.9|34.8|33.27|32.8066666666667|2.09367300853468|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-8|Boca Ciega Bay Aquatic Preserve|4|Salinity|All|Lab|3|33.65|34.6|34.15|34.1333333333333|0.47521924764611|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|5|Salinity|All|Lab|7|32.3|35.15|34.49|34.1328571428571|0.973545312859385|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|6|Salinity|All|Lab|18|27.96|35.65|34.3|33.5194444444445|2.38541517467202|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-8|Boca Ciega Bay Aquatic Preserve|7|Salinity|All|Lab|6|31.89|35.2|34.09|33.7116666666667|1.4351085905487|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-8|Boca Ciega Bay Aquatic Preserve|8|Salinity|All|Lab|9|28.1|34.88|33.59|33.0255555555556|2.03410982441405|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-8|Boca Ciega Bay Aquatic Preserve|9|Salinity|All|Lab|9|27|33.45|29.37|29.9888888888889|2.07603856204819|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|10|Salinity|All|Lab|4|31.42|33.97|32.31|32.5025|1.06703248935228|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|11|Salinity|All|Lab|3|33.71|34.1|33.76|33.8566666666667|0.212210587231961|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-8|Boca Ciega Bay Aquatic Preserve|12|Salinity|All|Lab|8|26.7|34.02|32.28|31.335|2.48298783151037|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|1|Salinity|All|Lab|10|7.2|34.4|23.3|22.943|8.39034637081344|Florida STORET / WIN, Lagoon Watch (Formerly Marine Discovery Center)|3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2|Salinity|All|Lab|3|32|34.2|33|33.0666666666667|1.10151410945722|Lagoon Watch (Formerly Marine Discovery Center)|3001
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3|Salinity|All|Lab|7|7.53|37.8|27|21.71|11.4035228474947|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network, Lagoon Watch (Formerly Marine Discovery Center)|69, 95, 3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|4|Salinity|All|Lab|9|13.59|35.6|31.5|28.62|7.44887239788681|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5|Salinity|All|Lab|9|1.2|36.2|32|23.6766666666667|13.9362315566296|Florida STORET / WIN, Lagoon Watch (Formerly Marine Discovery Center)|3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|6|Salinity|All|Lab|6|12.1|35.4|32.995|27.6616666666667|10.1006701097831|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|7|Salinity|All|Lab|11|1.6|39.88|22.32|20.3727272727273|14.5489711601261|Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network, Lagoon Watch (Formerly Marine Discovery Center)|95, 3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|8|Salinity|All|Lab|12|7.2|32.17|27.275|23.3683333333333|8.19846641239394|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Lagoon Watch (Formerly Marine Discovery Center)|69, 3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|9|Salinity|All|Lab|10|10|34.3|21.05|22.95|8.21276107313761|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Lagoon Watch (Formerly Marine Discovery Center)|69, 3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|10|Salinity|All|Lab|12|7.5|27|15.35|15.9866666666667|5.77119860456503|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Lagoon Watch (Formerly Marine Discovery Center)|69, 3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|11|Salinity|All|Lab|8|7.26|28.45|17.48|17.97875|6.88151237011167|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Lagoon Watch (Formerly Marine Discovery Center)|69, 3001, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|12|Salinity|All|Lab|8|2.72|33.32|19.715|19.79625|9.29925025779728|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Lagoon Watch (Formerly Marine Discovery Center)|69, 3001, 5002
-35|Pinellas County Aquatic Preserve|1|Salinity|All|Lab|17|0.2|32.42|25.5|20.6529411764706|12.5033459345418|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-35|Pinellas County Aquatic Preserve|2|Salinity|All|Lab|15|13.29|35.2|26.52|26.112|6.65649865062063|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-35|Pinellas County Aquatic Preserve|3|Salinity|All|Lab|23|0.25|34.8|25.35|25.4430434782609|8.39580925482936|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-35|Pinellas County Aquatic Preserve|4|Salinity|All|Lab|21|0.39|34.15|26.05|24.9967142857143|7.61556627666556|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-35|Pinellas County Aquatic Preserve|5|Salinity|All|Lab|52|0.3|36.79|27.6|26.3463461444231|9.82367428202636|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-35|Pinellas County Aquatic Preserve|6|Salinity|All|Lab|48|0.32|35.65|28.17|26.2014583333333|10.7752786387595|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-35|Pinellas County Aquatic Preserve|7|Salinity|All|Lab|24|0.14|37.07|25.855|23.1745833333333|11.7283977107838|Environmental Monitoring Assessment Program, Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 115, 5002
-35|Pinellas County Aquatic Preserve|8|Salinity|All|Lab|42|0.03|35.06|24.505|22.9454761904762|10.6666794161872|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-35|Pinellas County Aquatic Preserve|9|Salinity|All|Lab|46|0.16|33.86|23.425|20.055652173913|11.751233439218|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-35|Pinellas County Aquatic Preserve|10|Salinity|All|Lab|30|0.2|34|29.605|23.2953333333333|11.8944486423603|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-35|Pinellas County Aquatic Preserve|11|Salinity|All|Lab|30|0.25|36|25.2|21.4993333333333|11.9825769876253|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-35|Pinellas County Aquatic Preserve|12|Salinity|All|Lab|47|0.23|34.23|22.2|21.2208510638298|10.9252565047566|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-44|Terra Ceia Aquatic Preserve|1|Salinity|All|Lab|3|28.9|30.79|29.81|29.8333333333333|0.945216024691358|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2|Salinity|All|Lab|2|28.1|29.54|28.82|28.82|1.01823376490863|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-44|Terra Ceia Aquatic Preserve|3|Salinity|All|Lab|6|28.7|34.5|32.62|32.1566666666667|2.1084749623049|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-44|Terra Ceia Aquatic Preserve|4|Salinity|All|Lab|6|2.6|34.3|31.53|26.41|12.0487376932192|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN, Harmful Algal Bloom Marine Observation Network|69, 95, 5002
-44|Terra Ceia Aquatic Preserve|5|Salinity|All|Lab|10|26.7|37.8|33.855|34.082|3.29056158665289|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-44|Terra Ceia Aquatic Preserve|6|Salinity|All|Lab|11|29.6|36.01|33.83|33.3054545454545|2.23089831070967|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-44|Terra Ceia Aquatic Preserve|7|Salinity|All|Lab|3|27.2|32.3|30|29.8333333333333|2.55408170059874|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-44|Terra Ceia Aquatic Preserve|8|Salinity|All|Lab|11|8.2|34.5|31.38|27.7618181818182|7.73033222854208|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-44|Terra Ceia Aquatic Preserve|9|Salinity|All|Lab|8|9.8|33|29.64|27.24|7.60039096738733|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-44|Terra Ceia Aquatic Preserve|10|Salinity|All|Lab|5|23.8|32.6|27.06|27.272|3.70282594784038|Fisheries-Independent Monitoring (FIM) Program, Harmful Algal Bloom Marine Observation Network, Tampa Bay Benthic Monitoring|69, 95, 4067
-44|Terra Ceia Aquatic Preserve|11|Salinity|All|Lab|2|26.9|33.39|30.145|30.145|4.5891230099007|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
-44|Terra Ceia Aquatic Preserve|12|Salinity|All|Lab|8|29.54|32.4|30.45|30.755|1.05026527261313|Fisheries-Independent Monitoring (FIM) Program, Florida STORET / WIN|69, 5002
+1|Alligator Harbor Aquatic Preserve|1|Salinity|All|Lab|14|27.8|34.9|32.15|32.1857142857143|2.52704057465132|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|2|Salinity|All|Lab|29|28.8|33.4|31.2|31.2|1.4121918121437|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|3|Salinity|All|Lab|23|3.1|33.9|31.4|29.9173913043478|5.99550226676882|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|4|Salinity|All|Lab|5|29|34.7|31.5|31.22|2.31451938855565|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|5|Salinity|All|Lab|34|27.7|37.4|32.4|31.8411764705882|2.39571810542094|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|6|Salinity|All|Lab|45|24.6|39.5|32.4|31.8288888888889|3.21753874188883|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|7|Salinity|All|Lab|40|23.5|36.5|31.5|30.4625|3.53877332795796|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|8|Salinity|All|Lab|5|29.7|35|30.1|31.92|2.76983754036225|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|9|Salinity|All|Lab|12|25.3|33.5|31.55|30.7333333333333|2.83174643617466|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|10|Salinity|All|Lab|30|26.5|34.6|32.5|31.5066666666667|2.4391820750822|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|11|Salinity|All|Lab|13|30.1|33.4|31|31.2923076923077|1.06102272867702|Florida STORET / WIN|5002
+1|Alligator Harbor Aquatic Preserve|12|Salinity|All|Lab|22|30.4|35|30.95|31.3954545454545|1.19820392283311|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|1|Salinity|All|Lab|18|0.1|22.5|5.45|7.21666666666667|6.99968486685609|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|3|Salinity|All|Lab|15|1|27.2|9.8|11.1066666666667|8.08865754945658|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|5|Salinity|All|Lab|13|10.8|33.5|21.8|22.1769230769231|7.58772625650068|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|6|Salinity|All|Lab|26|7.2|37.3|24.9|25.9269230769231|6.8876444561146|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|9|Salinity|All|Lab|23|12.6|32.3|21.9|22.4|4.88103938260546|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|10|Salinity|All|Lab|50|11.1|34.4|23.5|22.598|4.89266381265599|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|11|Salinity|All|Lab|25|3.6|32.7|22.2|21.36|6.75388776927778|Florida STORET / WIN|5002
+2|Apalachicola Bay Aquatic Preserve|12|Salinity|All|Lab|2|20|25.4|22.7|22.7|3.81837661840736|Florida STORET / WIN|5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1|Salinity|All|Lab|30|0.38|36.1|31.8|25.7006666666667|12.3365484284072|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2|Salinity|All|Lab|11|0.4|38|26.2|22.0727272727273|12.037781432564|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|3|Salinity|All|Lab|43|0.6|36.91|26|23.3341860465116|11.1959495721312|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|4|Salinity|All|Lab|12|10|36|31.2|25.8416666666667|9.65744727548579|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5|Salinity|All|Lab|40|0.6|43.1|31.7|24.80575|13.6195688563674|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|6|Salinity|All|Lab|6|25.53|35.4|31.61|31.4483333333333|3.6813172461317|Florida STORET / WIN|5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|7|Salinity|All|Lab|8|0.22|34.15|28.325|22.82625|12.8882958393597|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|8|Salinity|All|Lab|6|0.2|34|15.95|15.7016666666667|14.6969390237106|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|9|Salinity|All|Lab|22|0.17|36.4|22.605|20.0468181818182|13.0234650448677|Florida STORET / WIN, RiverKeeper|5002, 10000
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10|Salinity|All|Lab|20|0.21|34.32|9|12.6555|12.024223566136|Florida STORET / WIN|5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|11|Salinity|All|Lab|6|10|16|15|14.2|2.29782505861521|Florida STORET / WIN|5002
+27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|12|Salinity|All|Lab|9|10|34.3|28|23.58|9.10160425419607|Florida STORET / WIN, RiverKeeper|5002, 10000
+35|Pinellas County Aquatic Preserve|1|Salinity|All|Lab|59|0.22|32.35|25.1|24.474406779661|6.27931450003088|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2|Salinity|All|Lab|45|21.28|31.61|25.41|26.2713333333333|2.81939677623037|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|3|Salinity|All|Lab|56|0.25|32.41|24.88|24.4975|4.91693298713741|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|4|Salinity|All|Lab|35|22.38|34.88|26.47|26.9511428571429|3.45742914642094|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|5|Salinity|All|Lab|65|20.7|34.7|29.1|28.5149230769231|4.13489197375402|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|6|Salinity|All|Lab|65|18.33|34.38|29.17|28.3624615384615|4.13474305080181|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|7|Salinity|All|Lab|31|0.19|32.9|29.9|27.6525806451613|6.48221925359|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|8|Salinity|All|Lab|53|14.8|30.9|23.9|24.2296226415094|4.33183473398448|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|9|Salinity|All|Lab|66|0.15|33.3|24.235|21.3384848484849|7.05944021368098|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|10|Salinity|All|Lab|48|13.73|31.75|22.53|22.561875|5.45521326152547|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|11|Salinity|All|Lab|54|15.05|32.75|25.68|23.7466666666667|5.31266766661054|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|12|Salinity|All|Lab|73|18.6|32.5|24.61|24.6943835616438|4.25296628062938|Florida STORET / WIN|5002
