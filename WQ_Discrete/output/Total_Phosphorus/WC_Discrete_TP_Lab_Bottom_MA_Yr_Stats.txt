@@ -1,112 +1,26 @@
 AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N_Data|Min|Max|Median|Mean|StandardDeviation|Programs|ProgramIDs
-2|Apalachicola Bay Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|25|0.021|0.2|0.051|0.05956|0.0362825486058151|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|32|0.004|0.12|0.042|0.04678125|0.0250492860950361|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|26|0.017|0.1|0.042|0.0444230769230769|0.0216465666135266|Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|5|0.017|0.058|0.031|0.034|0.0154434452114805|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-2|Apalachicola Bay Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|1|0.021|0.021|0.021|0.021||Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-2|Apalachicola Bay Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|12|0.008|0.064|0.0295|0.0314166666666667|0.0132147186076279|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-2|Apalachicola Bay Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|6|0.026|0.048|0.034|0.0346666666666667|0.00835862827661732|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-2|Apalachicola Bay Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|2|0.019|0.054|0.0365|0.0365|0.0247487373415292|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-2|Apalachicola Bay Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|6|0.017|0.049|0.0245|0.029|0.0118152443901935|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
-2|Apalachicola Bay Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|9|0.018|0.044|0.033|0.0322222222222222|0.00916212008458983|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-2|Apalachicola Bay Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|1|0.02|0.02|0.02|0.02||Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|1|0.021|0.021|0.021|0.021||Florida STORET / WIN|5002
-2|Apalachicola Bay Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|2|0.04|0.056|0.048|0.048|0.0113137084989848|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|1999|Total Phosphorus|Bottom|Lab|1|0.033|0.033|0.033|0.033||Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2000|Total Phosphorus|Bottom|Lab|33|0.021|0.2|0.041|0.0522121212121212|0.0341227174838823|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2001|Total Phosphorus|Bottom|Lab|45|0.004|0.12|0.034|0.0405777777777778|0.0241656112622207|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2002|Total Phosphorus|Bottom|Lab|36|0.004|0.1|0.037|0.0422777777777778|0.0204137364272353|Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2004|Total Phosphorus|Bottom|Lab|1|0.031|0.031|0.031|0.031||Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2005|Total Phosphorus|Bottom|Lab|1|0.037|0.037|0.037|0.037||Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2013|Total Phosphorus|Bottom|Lab|4|0.019|0.05|0.026|0.03025|0.0135738719604982|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-3|Apalachicola National Estuarine Research Reserve|2015|Total Phosphorus|Bottom|Lab|13|0.008|0.069|0.022|0.0283076923076923|0.0173608017066447|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-3|Apalachicola National Estuarine Research Reserve|2016|Total Phosphorus|Bottom|Lab|4|0.027|0.042|0.032|0.03325|0.0065|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-3|Apalachicola National Estuarine Research Reserve|2017|Total Phosphorus|Bottom|Lab|8|0.013|0.2|0.029|0.048375|0.0617204238018965|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
-3|Apalachicola National Estuarine Research Reserve|2018|Total Phosphorus|Bottom|Lab|5|0.02|0.037|0.024|0.0282|0.00775886589650833|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program, Florida STORET / WIN|355, 5002
-3|Apalachicola National Estuarine Research Reserve|2019|Total Phosphorus|Bottom|Lab|9|0.02|0.046|0.032|0.0322222222222222|0.00720724943681322|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|355
-3|Apalachicola National Estuarine Research Reserve|2020|Total Phosphorus|Bottom|Lab|1|0.02|0.02|0.02|0.02||Florida STORET / WIN|5002
-3|Apalachicola National Estuarine Research Reserve|2021|Total Phosphorus|Bottom|Lab|3|0.021|0.037|0.032|0.03|0.00818535277187245|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-3|Apalachicola National Estuarine Research Reserve|2022|Total Phosphorus|Bottom|Lab|4|0.035|0.056|0.038|0.04175|0.00974251849711699|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|2|0.00698|0.05639|0.031685|0.031685|0.0349381460584273|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|8|0.0147|0.06483|0.03027|0.03273125|0.0166923664653723|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|7|0.022|0.089|0.06114|0.0591628571428571|0.021242229727821|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|8|0.001|0.082|0.029|0.033625|0.0266240358645019|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|9|0.007|0.066|0.038|0.0322222222222222|0.0187335112684314|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|10|0.004|0.083|0.0365|0.0436|0.0276815221161458|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|4|0.007|0.044|0.0275|0.0265|0.0152861593170641|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|6|0.03|0.077|0.0555|0.055|0.0179777640433954|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|9|0.004|0.043|0.008|0.0134444444444444|0.0136575172625839|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|7|0.009|0.076|0.032|0.0344285714285714|0.0234865716446451|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.021|0.021|0.021|0.021||Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|1|0.068|0.068|0.068|0.068||Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|3|0.022|0.057|0.025|0.0346666666666667|0.019399312702602|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|1|0.0481|0.0481|0.0481|0.0481||Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|5|0.0183|0.1278|0.0347|0.05148|0.0450905976895406|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|2|0.0394|0.0526|0.046|0.046|0.00933380951166243|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|4|0.0178|0.048|0.04015|0.036525|0.0135399101424886|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|5|0.0235|0.0565|0.0375|0.0367|0.0132096555594762|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|4|0.0327|0.1612|0.08485|0.0909|0.0534592056307112|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|5|0.0044|0.1969|0.0475|0.0676|0.0769354599648303|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|4|0.0067|0.0878|0.0483|0.047775|0.0336322637755276|Florida STORET / WIN|5002
-4|Banana River Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|1|0.079|0.079|0.079|0.079||Shellfish Harvest Area Classification Program|540
-4|Banana River Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|35|0.0185|0.2438|0.0436|0.0645742857142857|0.0592275688135435|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Shellfish Harvest Area Classification Program|103, 540, 5002
-4|Banana River Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|40|0.0146|0.0851|0.04035|0.04256|0.0182936699154204|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-4|Banana River Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|34|0.01|0.0905|0.03045|0.0381382352941177|0.0213329026666645|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|1992|Total Phosphorus|Bottom|Lab|1|0.04|0.04|0.04|0.04||Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|3|0.057|0.095|0.089|0.0803333333333333|0.0204287379280594|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|11|0.021|0.13|0.063|0.0685454545454545|0.031844508588966|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|11|0.015|0.16|0.042|0.052|0.0430650670497562|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|15|0.023|0.14|0.043|0.06|0.0405568384228498|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|14|0.03|0.16|0.0615|0.0849285714285714|0.0485282856228664|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|4|0.049|0.1|0.0795|0.077|0.0212132034355964|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|1|0.045|0.045|0.045|0.045||Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|1|0.042|0.042|0.042|0.042||Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|3|0.046|0.094|0.089|0.0763333333333333|0.0263881286440197|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|2|0.039|0.11943|0.079215|0.079215|0.056872598410834|Florida STORET / WIN, National Aquatic Resource Surveys, National Coastal Condition Assessment|118, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|6|0.019|0.07|0.0575|0.0491666666666667|0.0229731727601276|Florida LAKEWATCH Program, Florida STORET / WIN|514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|4|0.0391|0.06|0.049|0.049275|0.00914161728944428|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|5|0.016|0.071|0.059|0.04938|0.0215353662611064|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|3|0.014|0.069|0.022|0.035|0.0297153159162073|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|24|0.008|0.13|0.031|0.0364583333333333|0.0290366772063955|Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|15|0.008|0.072|0.03|0.0357733333333333|0.0210906704718551|Florida STORET / WIN, Shellfish Harvest Area Classification Program, Suwannee River Water Management District Water Resource Monitoring Program|477, 540, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|16|0.024|0.1875|0.069|0.07171875|0.0433952872825303|Florida LAKEWATCH Program, Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|19|0.008|0.1679|0.049|0.0622368421052632|0.0473666808647213|EPA STOrage and RETrieval Data Warehouse (STORET), Florida LAKEWATCH Program, Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|103, 477, 514, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|12|0.009|0.0858|0.05855|0.0538666666666667|0.0243989319189976|Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 5002
-5|Big Bend Seagrasses Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|1|0.023|0.023|0.023|0.023||Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|9|0.04|0.1|0.07|0.0677777777777778|0.0171593835683117|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|4|0.03|0.08|0.035|0.045|0.0238047614284762|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|8|0.03|0.07|0.05|0.04875|0.0124642345475823|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|1|0.02|0.02|0.02|0.02||Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|4|0.02|0.1|0.045|0.0525|0.0340342964277702|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|5|0.02|0.09|0.03|0.0422|0.029312113536898|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|3|0.06|0.12|0.06|0.08|0.0346410161513775|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|2|0.05|0.08|0.065|0.065|0.0212132034355964|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.18|0.18|0.18|0.18||Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|6|0.06|0.1|0.07|0.0733333333333333|0.0150554530541816|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|2|0.05|0.06|0.055|0.055|0.00707106781186547|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|1|0.05|0.05|0.05|0.05||Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|2|0.06|0.07|0.065|0.065|0.00707106781186548|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|4|0.05|0.09|0.06|0.065|0.0191485421551268|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|3|0.05|0.08|0.07|0.0666666666666667|0.0152752523165195|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|5|0.06|0.09|0.08|0.078|0.0109544511501033|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|12|0.0099|0.07|0.06|0.047475|0.0242102955184547|Florida STORET / WIN|5002
-8|Boca Ciega Bay Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|20|0.02|0.73|0.06|0.0945|0.152849254943693|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-8|Boca Ciega Bay Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|8|0.03|0.19|0.05|0.0825|0.0615861765565711|Florida STORET / WIN|5002
-9|Cape Haze Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|1|1.26|1.26|1.26|1.26||Coastal Charlotte Harbor Monitoring Network|513
-9|Cape Haze Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|3|0.031|0.124|0.068|0.0743333333333333|0.0468223593311287|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|2|0.015|0.069|0.042|0.042|0.0381837661840736|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|7|0.01|0.214|0.065|0.0967142857142857|0.0804895734152656|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|8|0.022|0.165|0.083|0.084|0.0524676771246559|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|10|0.008|0.186|0.05|0.0725|0.0626405087250521|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|9|0.009|0.428|0.088|0.172111111111111|0.165733554572124|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|10|0.02|0.187|0.058|0.0774|0.0599670279774181|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|4|0.036|0.143|0.049|0.06925|0.0496546406021968|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|1|0.027|0.027|0.027|0.027||Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|1|0.073|0.073|0.073|0.073||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-9|Cape Haze Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|1|0.071|0.071|0.071|0.071||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-9|Cape Haze Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|6|0.041|0.129|0.067|0.0786666666666667|0.0393480198569975|Southwest Florida Water Management District - Water Quality Monitoring|479
-9|Cape Haze Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|8|0.053|0.31|0.0785|0.109125|0.0855543895509083|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program, Southwest Florida Water Management District - Water Quality Monitoring|479, 5028
-9|Cape Haze Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|10|0.068|0.25|0.0895|0.1163|0.0590368058455439|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
+5|Big Bend Seagrasses Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|7|0.048|0.095|0.057|0.065|0.019157244060668|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|21|0.017|0.13|0.051|0.0597142857142857|0.028736984631556|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|24|0.015|0.16|0.0505|0.0550833333333333|0.0335000540773952|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|28|0.023|0.16|0.0555|0.0681785714285714|0.0363807576035674|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|24|0.03|0.18|0.11|0.09825|0.047779611806165|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|3|0.049|0.14|0.083|0.0906666666666667|0.0459818804893116|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|2|0.059|0.14|0.0995|0.0995|0.0572756492761104|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|9|0.013|0.056|0.031|0.0311111111111111|0.0134948549866648|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|30|0.012|0.13|0.058|0.0564666666666667|0.0346347775522228|Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|12|0.026|0.072|0.0345|0.0406333333333333|0.0151285000958957|Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|15|0.014|0.1875|0.057|0.0662266666666667|0.0456126152140684|Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|14|0.028|0.1679|0.04945|0.0731857142857143|0.05188079320227|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|103, 477, 5002
+5|Big Bend Seagrasses Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|9|0.0278|0.0858|0.0671|0.0573777777777778|0.0226823597635794|Florida STORET / WIN, Suwannee River Water Management District Water Resource Monitoring Program|477, 5002
+9|Cape Haze Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|9|0.033|0.214|0.051|0.0845555555555556|0.07096497571181|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|9|0.026|0.165|0.106|0.099|0.0438776708588776|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|17|0.008|0.244|0.105|0.0972941176470588|0.0648312855667331|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|13|0.009|0.428|0.074|0.139384615384615|0.148422560314315|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|15|0.01|0.221|0.058|0.0786|0.0653745254011727|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|2|0.045|0.087|0.066|0.066|0.029698484809835|Southwest Florida Water Management District - Water Quality Monitoring|479
+9|Cape Haze Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|8|0.031|0.129|0.0475|0.068125|0.0386723877130514|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+9|Cape Haze Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|10|0.053|0.31|0.085|0.1083|0.0755087191433325|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program, Southwest Florida Water Management District - Water Quality Monitoring|479, 5028
+9|Cape Haze Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|10|0.078|0.25|0.097|0.1195|0.0569585619356544|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
 9|Cape Haze Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|2|0.031|0.11|0.0705|0.0705|0.0558614357137373|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|1995|Total Phosphorus|Bottom|Lab|235|0.00030974|0.01068595|0.00418146|0.00439904306382979|0.00136438945693261|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|1996|Total Phosphorus|Bottom|Lab|248|0.00309738|0.01502227|0.00534297|0.00562347423387097|0.00153571542316946|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
@@ -123,368 +37,66 @@ AreaID|ManagedAreaName|Year|ParameterName|RelativeDepth|ActivityType|N_Data|Min|
 15|Florida Keys National Marine Sanctuary|2007|Total Phosphorus|Bottom|Lab|315|0.00276377|0.01821378|0.00635324|0.00698190784126984|0.00233606693547458|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2008|Total Phosphorus|Bottom|Lab|324|0.0027602|0.04960031|0.006159085|0.00798941712962963|0.00592584760414407|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2009|Total Phosphorus|Bottom|Lab|324|0.00092921|0.01958618|0.005287285|0.00564031021604938|0.00199180966650302|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2010|Total Phosphorus|Bottom|Lab|324|0.003|0.02970827|0.00507872|0.00649261858024691|0.00348287013343549|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
+15|Florida Keys National Marine Sanctuary|2010|Total Phosphorus|Bottom|Lab|323|0.00300834|0.02970827|0.00509497|0.00650343164086687|0.00348282297860498|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2011|Total Phosphorus|Bottom|Lab|320|0.00166003|0.05196947|0.00420086|0.004934588125|0.00355822175992415|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2012|Total Phosphorus|Bottom|Lab|256|0.00264983|0.02700565|0.00458778|0.005162030390625|0.00198556124411661|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2013|Total Phosphorus|Bottom|Lab|257|0.00137007|0.03111399|0.00439632|0.00508470081712062|0.00314208722636543|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2014|Total Phosphorus|Bottom|Lab|254|0.00123019|0.02180201|0.00541333|0.0060090325984252|0.0033961205925709|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2015|Total Phosphorus|Bottom|Lab|261|0.00350901|0.01330651|0.00545761|0.00583308482758621|0.0015735813461935|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2016|Total Phosphorus|Bottom|Lab|271|0.0031|0.01504697|0.005177|0.00589137988929889|0.00213909540377295|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2017|Total Phosphorus|Bottom|Lab|273|0.00362752|0.01879659|0.00519103|0.00592782970695971|0.00217810068003418|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2018|Total Phosphorus|Bottom|Lab|273|0.00344204|0.02096|0.005828|0.00622660978021978|0.0017316633219181|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2019|Total Phosphorus|Bottom|Lab|217|0.003844|0.021545|0.005673|0.00598311843317972|0.00153260506782761|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2020|Total Phosphorus|Bottom|Lab|407|0.00406|0.06333504|0.00749333|0.00956877135135135|0.00614760515121869|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida LAKEWATCH Program, Florida STORET / WIN|297, 514, 5002
-15|Florida Keys National Marine Sanctuary|2021|Total Phosphorus|Bottom|Lab|107|0.00384|0.032|0.015|0.0144457943925234|0.00372480898266297|EPA STOrage and RETrieval Data Warehouse (STORET), Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida LAKEWATCH Program, Florida STORET / WIN|103, 297, 514, 5002
-15|Florida Keys National Marine Sanctuary|2022|Total Phosphorus|Bottom|Lab|5|0.002|0.007|0.007|0.006|0.00223606797749979|Florida STORET / WIN|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|2|0.0002|0.1|0.0501|0.0501|0.0705692567624175|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|1|0.058|0.058|0.058|0.058||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|3|0.117|0.177|0.144|0.146|0.0300499584026334|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|12|0.063|0.592|0.1565|0.205916666666667|0.159824596089436|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|9|0.02|0.169|0.062|0.0732222222222222|0.0553099850338476|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|19|0.063|0.403|0.122|0.167842105263158|0.109783252698667|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|35|0.047|0.388|0.198|0.213628571428571|0.10271951693648|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|34|0.032|0.442|0.1145|0.158352941176471|0.110518031533853|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|27|0.013|0.392|0.123|0.127666666666667|0.0794732659452221|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|36|0.008|0.454|0.1335|0.160972222222222|0.120015590918397|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|40|0.008|0.602|0.128|0.16465|0.129616703181302|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|2|0.028|0.079|0.0535|0.0535|0.0360624458405139|Southwest Florida Water Management District - Water Quality Monitoring|479
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|3|0.038|0.16|0.04|0.0793333333333333|0.0698665394400877|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|14|0.031|0.57|0.18|0.216285714285714|0.1827930433668|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|15|0.019|0.4|0.052|0.128066666666667|0.120557316935417|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|78|0.037|0.364|0.1|0.129371794871795|0.0841354981638669|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|76|0.014|0.473|0.1195|0.139434210526316|0.0991613278822365|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|60|0.027|0.493|0.15|0.16425|0.104095722734056|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|4|0.055|0.2|0.17|0.14875|0.0645981165876117|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|2|0.101|0.109|0.105|0.105|0.00565685424949238|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|2|0.083|0.14|0.1115|0.1115|0.0403050865276332|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|3|0.044|0.587|0.06|0.230333333333333|0.308985975949287|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|3|0.049|0.08|0.068|0.0656666666666667|0.0156311654502578|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|1|0.094|0.094|0.094|0.094||Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|2|0.104|0.233|0.1685|0.1685|0.0912167747730646|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|4|0.09292|0.198|0.1365|0.14098|0.0433654424628644|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|2|0.062|0.11109|0.086545|0.086545|0.0347118718884476|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|1|0.10962|0.10962|0.10962|0.10962||Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|3|0.044|0.09479|0.0839|0.07423|0.0267401888549801|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-19|Guana River Marsh Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|3|0.1115|0.1456|0.1188|0.1253|0.0179552220816118|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|3|0.0676|0.1727|0.1116|0.1173|0.0527813414001577|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|1|0.0491|0.0491|0.0491|0.0491||Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|2|0.0719|0.0956|0.08375|0.08375|0.0167584307141212|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|2|0.0332|0.1142|0.0737|0.0737|0.0572756492761104|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|5|0.0591|0.2158|0.0929|0.11962|0.0636014701087954|Florida STORET / WIN|5002
-19|Guana River Marsh Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|2|0.069|0.0861|0.07755|0.07755|0.01209152595829|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-19|Guana River Marsh Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|1|0.081|0.081|0.081|0.081||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-19|Guana River Marsh Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|12|0.047|0.151|0.067|0.0786583333333333|0.0302498822937855|Guana River and Guana Lake Water Quality Monitoring|5014
-19|Guana River Marsh Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|11|0.035|0.19|0.069|0.0810909090909091|0.0456277427569117|Guana River and Guana Lake Water Quality Monitoring|5014
-19|Guana River Marsh Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|17|0.039|0.28|0.068|0.0904411764705882|0.0577055138052631|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-19|Guana River Marsh Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|13|0.055|0.16|0.088|0.0921538461538462|0.0343871249012528|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-19|Guana River Marsh Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|19|0.049|0.4|0.085|0.0956842105263158|0.0755961879047548|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-19|Guana River Marsh Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|1|0.065|0.065|0.065|0.065||Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1997|Total Phosphorus|Bottom|Lab|2|0.037|0.053|0.045|0.045|0.0113137084989848|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1998|Total Phosphorus|Bottom|Lab|3|0.059|0.113|0.074|0.082|0.0278747197295327|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|1999|Total Phosphorus|Bottom|Lab|2|0.018|0.964|0.491|0.491|0.668923015002474|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2000|Total Phosphorus|Bottom|Lab|4|0.045|0.106|0.0805|0.078|0.0270678160675491|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2001|Total Phosphorus|Bottom|Lab|2|0.038|0.106|0.072|0.072|0.0480832611206852|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2002|Total Phosphorus|Bottom|Lab|4|0.025|0.153|0.1055|0.09725|0.0531938279627753|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2003|Total Phosphorus|Bottom|Lab|2|0.08|0.132|0.106|0.106|0.0367695526217005|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2004|Total Phosphorus|Bottom|Lab|3|0.058|0.11207|0.08648|0.0855166666666667|0.0270478692937786|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2005|Total Phosphorus|Bottom|Lab|5|0.033|0.11967|0.089|0.076564|0.0363679148426192|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2006|Total Phosphorus|Bottom|Lab|2|0.05645|0.10962|0.083035|0.083035|0.0375968675556887|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2007|Total Phosphorus|Bottom|Lab|1|0.114|0.114|0.114|0.114||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2008|Total Phosphorus|Bottom|Lab|2|0.0741|0.1188|0.09645|0.09645|0.0316076731190387|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2009|Total Phosphorus|Bottom|Lab|2|0.0676|0.1045|0.08605|0.08605|0.0260922402257836|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2010|Total Phosphorus|Bottom|Lab|2|0.075|0.0998|0.0874|0.0874|0.0175362481734264|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2011|Total Phosphorus|Bottom|Lab|4|0.039|0.089|0.07125|0.067625|0.0224856065072748|Florida STORET / WIN|5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2012|Total Phosphorus|Bottom|Lab|2|0.052|0.0533|0.05265|0.05265|0.000919238815542514|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2013|Total Phosphorus|Bottom|Lab|5|0.0408|0.0719|0.0545|0.05412|0.0118489240017818|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2014|Total Phosphorus|Bottom|Lab|8|0.033|0.15|0.0705|0.08025|0.0355196122887463|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2015|Total Phosphorus|Bottom|Lab|8|0.071|0.46|0.11345|0.1552875|0.128262904530388|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2016|Total Phosphorus|Bottom|Lab|1|0.16|0.16|0.16|0.16||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2017|Total Phosphorus|Bottom|Lab|6|0.0373|0.17|0.081|0.08905|0.0434761428831952|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Total Phosphorus|Bottom|Lab|13|0.047|0.151|0.064|0.0759153846153846|0.0282242757850355|Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Total Phosphorus|Bottom|Lab|19|0.0291|0.19|0.069|0.0763157894736842|0.0385460224660498|Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|Total Phosphorus|Bottom|Lab|23|0.0278|0.28|0.068|0.0831652173913044|0.054844993213897|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Total Phosphorus|Bottom|Lab|19|0.03|0.18|0.063|0.0812631578947369|0.0438404203463009|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|Total Phosphorus|Bottom|Lab|23|0.025|0.4|0.081|0.0911739130434783|0.0702273270910671|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|2023|Total Phosphorus|Bottom|Lab|1|0.065|0.065|0.065|0.065||Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|1|0.093|0.093|0.093|0.093||Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|10|0.02755|0.17149|0.08781|0.101126|0.0503112486207387|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|7|0.021|0.1404|0.104|0.0936285714285714|0.0407614897620174|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|3|0.054|0.142|0.111|0.102333333333333|0.0446355613085949|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|6|0.043|0.073|0.056|0.0573333333333333|0.0110935416647104|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|5|0.007|0.18|0.041|0.062|0.0698605754342175|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|4|0.004|0.147|0.0325|0.054|0.0672953688352079|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|5|0.027|0.248|0.065|0.0938|0.0878902724992931|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|7|0.008|0.102|0.062|0.0522857142857143|0.0379943604837801|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|6|0.019|0.111|0.046|0.0536666666666667|0.0362252214163926|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.161|0.161|0.161|0.161||Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|1|0.039|0.039|0.039|0.039||Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|8|0.019|0.251|0.0465|0.0804625|0.0767222623214037|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|10|0.015|0.2336|0.07195|0.089|0.0739250371059164|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|9|0.0453|0.1977|0.0957|0.0947666666666667|0.0482988612702204|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|3|0.0591|0.1167|0.082|0.0859333333333333|0.0290007471168129|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|2|0.0317|0.0394|0.03555|0.03555|0.00544472221513642|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|9|0.0258|0.084|0.0341|0.0418222222222222|0.0198037103706463|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|7|0.0312|0.122|0.0723|0.0746571428571429|0.0325643392451957|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|6|0.0301|0.0919|0.06205|0.0592|0.0236898290411729|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|1|0.067|0.067|0.067|0.067||Shellfish Harvest Area Classification Program|540
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|1|0.048|0.048|0.048|0.048||Shellfish Harvest Area Classification Program|540
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|15|0.0281|0.2447|0.07|0.09722|0.059044017478488|Florida STORET / WIN|5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|29|0.0271|0.45|0.0756|0.0959448275862069|0.0869653978241876|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|21|0.0178|0.1879|0.0797|0.0862047619047619|0.0498771638747681|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|3|0.08162|0.12737|0.09156|0.100183333333333|0.0240631883451328|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|7|0.062|0.126|0.101|0.0964285714285714|0.0242546019197536|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|2|0.056|0.072|0.064|0.064|0.0113137084989848|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|5|0.037|0.165|0.046|0.0792|0.0547284204047586|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|3|0.044|0.075|0.049|0.056|0.0166433169770932|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|3|0.039|0.159|0.11|0.102666666666667|0.0603351749258534|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.047|0.047|0.047|0.047||Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|1|0.082|0.082|0.082|0.082||Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|6|0.022|0.0933|0.0678|0.0657833333333333|0.0241197360405678|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|3|0.0532|0.0983|0.0618|0.0711|0.0239451456458298|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|3|0.039|0.0596|0.0548|0.0511333333333333|0.0107783734085127|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|2|0.0791|0.11|0.09455|0.09455|0.0218495995386643|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|1|0.0564|0.0564|0.0564|0.0564||Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|6|0.033|0.1636|0.10435|0.102566666666667|0.0453829336498498|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|7|0.0445|0.0883|0.0555|0.0593285714285714|0.0149687134033751|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|9|0.026|0.0596|0.0476|0.0463666666666667|0.0101765662185238|Florida STORET / WIN|5002
-22|Indian River-Vero Beach to Ft. Pierce Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|1|0.05|0.05|0.05|0.05||Florida STORET / WIN|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1991|Total Phosphorus|Bottom|Lab|1|0.022|0.022|0.022|0.022||RiverKeeper|10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|1993|Total Phosphorus|Bottom|Lab|1|0.045|0.045|0.045|0.045||RiverKeeper|10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|1|0.1002|0.1002|0.1002|0.1002||Florida STORET / WIN|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|1|0.021|0.021|0.021|0.021||RiverKeeper|10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|1|0.013|0.013|0.013|0.013||RiverKeeper|10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|1|0.019|0.019|0.019|0.019||Florida STORET / WIN|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|2|0.009|0.018|0.0135|0.0135|0.00636396103067893|RiverKeeper|10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|1|0.01|0.01|0.01|0.01||RiverKeeper|10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|1|0.016|0.016|0.016|0.016||RiverKeeper|10000
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|5|0.039|0.08|0.053|0.0582|0.0159593232939245|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|12|0.019|0.115|0.0365|0.0416666666666667|0.0243733585305884|Florida STORET / WIN|5002
-23|Jensen Beach to Jupiter Inlet Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|6|0.006|0.04|0.0285|0.0268333333333333|0.0118053660115503|Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|1|0.08|0.08|0.08|0.08||Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|1|0.57|0.57|0.57|0.57||Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|2|0.22|0.31|0.265|0.265|0.0636396103067893|Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|1|0.31|0.31|0.31|0.31||Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|2|0.14|0.22|0.18|0.18|0.0565685424949238|Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|4|0.28|0.35|0.32|0.3175|0.0330403793359983|Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|2|0.16|0.16|0.16|0.16|0|Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|2|0.058|0.19|0.124|0.124|0.0933380951166243|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-25|Lemon Bay Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|4|0.07|0.24|0.185|0.17|0.0804155872120988|Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|2|0.041|0.11|0.0755|0.0755|0.0487903679018718|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-25|Lemon Bay Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|7|0.008|0.17|0.046|0.0574285714285714|0.0605058045228091|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-25|Lemon Bay Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|9|0.033|0.26|0.064|0.0898888888888889|0.0727829726729481|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-25|Lemon Bay Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|10|0.025|0.16|0.0625|0.0741|0.0512411509975679|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-25|Lemon Bay Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|9|0.022|0.13|0.034|0.0471111111111111|0.0344544788251268|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-25|Lemon Bay Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|4|0.008|0.12|0.105|0.0845|0.0516494595002374|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+15|Florida Keys National Marine Sanctuary|2015|Total Phosphorus|Bottom|Lab|256|0.00350901|0.01330651|0.005452815|0.005839043515625|0.00158317030225621|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2016|Total Phosphorus|Bottom|Lab|258|0.0031|0.01504697|0.00518547|0.00590869748062015|0.0021450836830179|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
+15|Florida Keys National Marine Sanctuary|2017|Total Phosphorus|Bottom|Lab|257|0.00362752|0.01879659|0.00520157|0.00590913428015564|0.00215476401092067|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2018|Total Phosphorus|Bottom|Lab|257|0.00344204|0.009889|0.00582338|0.00611484229571985|0.00128315806476508|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2019|Total Phosphorus|Bottom|Lab|206|0.003844|0.021545|0.005673|0.00598775097087379|0.00154860101422433|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2020|Total Phosphorus|Bottom|Lab|419|0.004061|0.06333504|0.00775715|0.00995754162291169|0.00616481053264198|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
+15|Florida Keys National Marine Sanctuary|2021|Total Phosphorus|Bottom|Lab|136|0.00828|0.032|0.015|0.0153255882352941|0.00212871262250072|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
+15|Florida Keys National Marine Sanctuary|2022|Total Phosphorus|Bottom|Lab|2|0.007|0.007|0.007|0.007|0|Florida STORET / WIN|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|1|0.1|0.1|0.1|0.1||Florida STORET / WIN|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|21|0.058|0.439|0.188|0.207238095238095|0.11310477654012|Southwest Florida Water Management District - Water Quality Monitoring|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|34|0.047|0.386|0.1935|0.219764705882353|0.0874840448911511|Southwest Florida Water Management District - Water Quality Monitoring|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|30|0.051|0.442|0.1175|0.170233333333333|0.110391055151544|Southwest Florida Water Management District - Water Quality Monitoring|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|23|0.013|0.376|0.134|0.142826086956522|0.0827546495117361|Southwest Florida Water Management District - Water Quality Monitoring|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|35|0.008|0.454|0.134|0.155514285714286|0.109479617073782|Southwest Florida Water Management District - Water Quality Monitoring|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|33|0.015|0.602|0.144|0.184272727272727|0.144100935269187|Southwest Florida Water Management District - Water Quality Monitoring|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|1|0.028|0.028|0.028|0.028||Southwest Florida Water Management District - Water Quality Monitoring|479
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|8|0.038|0.26|0.1095|0.128625|0.0918647103081483|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|27|0.039|0.67|0.17|0.207962962962963|0.176753736002618|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|26|0.031|0.4|0.056|0.128769230769231|0.107085501424724|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|99|0.043|0.41|0.114|0.140070707070707|0.0919093666836456|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|96|0.03|0.54|0.1155|0.139322916666667|0.104093833660502|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|77|0.028|0.493|0.136|0.160064935064935|0.107107341345314|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|476, 513, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|7|0.046|0.24|0.16|0.138857142857143|0.0753357563874963|Florida STORET / WIN|5002
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2004|Total Phosphorus|Bottom|Lab|1|0.155|0.155|0.155|0.155||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2007|Total Phosphorus|Bottom|Lab|1|0.065|0.065|0.065|0.065||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2008|Total Phosphorus|Bottom|Lab|2|0.09|0.105|0.0975|0.0975|0.0106066017177982|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2009|Total Phosphorus|Bottom|Lab|1|0.101|0.101|0.101|0.101||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2018|Total Phosphorus|Bottom|Lab|23|0.0413|0.17|0.064|0.0807652173913044|0.0394053135399005|Guana River and Guana Lake Water Quality Monitoring|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2019|Total Phosphorus|Bottom|Lab|18|0.035|0.64|0.072|0.117222222222222|0.137554077304188|Guana River and Guana Lake Water Quality Monitoring|5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2020|Total Phosphorus|Bottom|Lab|33|0.028|0.28|0.078|0.0891212121212121|0.0494126486689881|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2021|Total Phosphorus|Bottom|Lab|35|0.03|0.18|0.074|0.0822942857142857|0.0364253543150206|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|103, 5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2022|Total Phosphorus|Bottom|Lab|39|0.025|0.4|0.084|0.0926410256410256|0.0647149568571721|Florida STORET / WIN, Guana River and Guana Lake Water Quality Monitoring|5002, 5014
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|2023|Total Phosphorus|Bottom|Lab|2|0.065|0.066|0.0655|0.0655|0.000707106781186548|Florida STORET / WIN|5002
+25|Lemon Bay Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|1|0.041|0.041|0.041|0.041||Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|7|0.008|0.062|0.009|0.0277142857142857|0.0247164876530781|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|10|0.008|0.064|0.043|0.0366|0.0189279335022782|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|10|0.021|0.085|0.0275|0.0374|0.0206408440826543|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|9|0.016|0.046|0.03|0.031|0.01|Southwest Florida Water Management District - Water Quality Monitoring|479
+25|Lemon Bay Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|2|0.008|0.056|0.032|0.032|0.0339411254969543|Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|6|0.056|0.16|0.0785|0.101166666666667|0.0463310550998644|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-25|Lemon Bay Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|11|0.045|0.27|0.064|0.110909090909091|0.0808522783172553|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-25|Lemon Bay Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|12|0.031|0.32|0.125|0.11975|0.0848143694943686|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-25|Lemon Bay Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|23|0.04|0.21|0.12|0.113347826086957|0.0543353297886477|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|49|0.028|0.22|0.11|0.107755102040816|0.0571990423187038|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|103, 476, 479, 5002
-25|Lemon Bay Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|40|0.026|0.22|0.1|0.10435|0.0444242657183592|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-25|Lemon Bay Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|4|0.09|0.2|0.14|0.1425|0.0457347424467075|Florida STORET / WIN|5002
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1991|Total Phosphorus|Bottom|Lab|2|0.054|0.054|0.054|0.054|0|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1993|Total Phosphorus|Bottom|Lab|3|0.027|0.05|0.038|0.0383333333333333|0.0115036226178249|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1994|Total Phosphorus|Bottom|Lab|3|0.025|0.19|0.05|0.0883333333333333|0.088928810479694|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1995|Total Phosphorus|Bottom|Lab|3|0.025|0.08|0.025|0.0433333333333333|0.0317542648054294|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1996|Total Phosphorus|Bottom|Lab|2|0.04|0.05|0.045|0.045|0.00707106781186548|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|5|0.018|0.07|0.04|0.0416|0.018514858897653|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|1|0.06|0.06|0.06|0.06||RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|2|0.049|0.1|0.0745|0.0745|0.0360624458405139|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|1|0.036|0.036|0.036|0.036||RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|2|0.04|0.044|0.042|0.042|0.00282842712474619|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|3|0.046|0.057|0.052|0.0516666666666667|0.0055075705472861|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|1|0.044|0.044|0.044|0.044||RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|1|0.055|0.055|0.055|0.055||RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|5|0.021|0.069|0.035|0.044|0.0216333076527839|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|2|0.024|0.036|0.03|0.03|0.00848528137423857|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|13|0.014|0.185|0.041|0.0616923076923077|0.0542822632409897|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|9|0.008|0.122|0.038|0.046|0.0364588809482683|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|17|0.005|0.09|0.044|0.0474705882352941|0.0245741674504418|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|4|0.016|0.053|0.0345|0.0345|0.0162992842378635|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|3|0.034|0.094|0.047|0.0583333333333333|0.0315647482697603|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|11|0.006|0.069|0.031|0.0340909090909091|0.0189602454913144|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|6|0.018|0.053|0.034|0.0343333333333333|0.0117075474232081|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|7|0.031|0.073|0.056|0.053|0.0175783958312469|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|5|0.021|0.067|0.039|0.0398|0.0184715998224301|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|4|0.018|0.058|0.0395|0.03875|0.017764665303161|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|5|0.019|0.076|0.023|0.0332|0.024273442277518|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|8|0.005|0.177|0.0495|0.061625|0.0534574263182528|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|8|0.021|0.071|0.0455|0.046375|0.0220125775734822|RiverKeeper|10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|6|0.028|0.071|0.043|0.0456666666666667|0.0183266654541045|Florida LAKEWATCH Program, RiverKeeper|514, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|7|0.036|0.077|0.042|0.0467142857142857|0.014430457208214|EPA STOrage and RETrieval Data Warehouse (STORET), RiverKeeper|103, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|5|0.017|0.073|0.028|0.0348|0.0221630322835121|Florida STORET / WIN, RiverKeeper|5002, 10000
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|2|0.045|0.085|0.065|0.065|0.0282842712474619|Florida STORET / WIN|5002
-28|Matlacha Pass Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|2|0.078|0.11|0.094|0.094|0.0226274169979695|Florida STORET / WIN|5002
-28|Matlacha Pass Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.04|0.04|0.04|0.04||Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
-28|Matlacha Pass Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|13|0.038|0.22|0.052|0.0645384615384615|0.0474475418833182|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
-28|Matlacha Pass Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|14|0.033|0.1|0.057|0.0596428571428571|0.0183538180595384|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
-28|Matlacha Pass Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|27|0.027|0.1|0.051|0.0534074074074074|0.0187334732482532|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
-28|Matlacha Pass Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|1|0.055|0.055|0.055|0.055||Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
-28|Matlacha Pass Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|1|0.053|0.053|0.053|0.053||Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
-28|Matlacha Pass Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|1|0.044|0.044|0.044|0.044||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-28|Matlacha Pass Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|2|0.058|0.066|0.062|0.062|0.00565685424949238|Florida STORET / WIN|5002
-28|Matlacha Pass Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|4|0.032|0.13|0.1|0.0905|0.0414849370253831|Coastal Charlotte Harbor Monitoring Network, Florida STORET / WIN|513, 5002
-28|Matlacha Pass Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|40|0.036|0.1|0.1|0.080075|0.0242332548582654|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET)|103, 513, 5028
-28|Matlacha Pass Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|34|0.023|0.24|0.0545|0.0756764705882353|0.0521232342703534|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program, Coastal Charlotte Harbor Monitoring Network|513, 5028
-29|Mosquito Lagoon Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|2|0.02774|0.06432|0.04603|0.04603|0.0258659660558039|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|3|0.025|0.053|0.026|0.0346666666666667|0.0158850034099251|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|2|0.014|0.021|0.0175|0.0175|0.00494974746830583|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|2|0.022|0.045|0.0335|0.0335|0.0162634559672906|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|2|0.014|0.035|0.0245|0.0245|0.0148492424049175|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|1|0.063|0.063|0.063|0.063||Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.063|0.063|0.063|0.063||Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|1|0.032|0.032|0.032|0.032||Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|2|0.0242|0.041|0.0326|0.0326|0.011879393923934|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|3|0.0246|0.1239|0.1222|0.0902333333333333|0.0568464891909196|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|1|0.0493|0.0493|0.0493|0.0493||Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|3|0.0321|0.0789|0.0357|0.0489|0.0260430412970528|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|1|0.0416|0.0416|0.0416|0.0416||Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|6|0.0253|0.0998|0.07705|0.07265|0.0282810714082759|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|16|0.0208|0.1182|0.064|0.06578125|0.0309347101435696|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|10|0.0269|0.1251|0.0727|0.07289|0.0281712402598426|Florida STORET / WIN|5002
-29|Mosquito Lagoon Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|1|0.0586|0.0586|0.0586|0.0586||Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|1|0.06|0.06|0.06|0.06||EPA STOrage and RETrieval Data Warehouse (STORET)|103
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|1|0.055|0.055|0.055|0.055||EPA STOrage and RETrieval Data Warehouse (STORET)|103
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|1|0.082|0.082|0.082|0.082||Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|1|0.08841|0.08841|0.08841|0.08841||Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.074|0.074|0.074|0.074||Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|1|0.0451|0.0451|0.0451|0.0451||Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|1|0.1213|0.1213|0.1213|0.1213||Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|1|0.0381|0.0381|0.0381|0.0381||Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|5|0.0273|0.1432|0.0538|0.06722|0.047391792538371|Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|2|0.0462|0.0923|0.06925|0.06925|0.0325976226126998|Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|2|0.043|0.0755|0.05925|0.05925|0.0229809703885628|Florida STORET / WIN|5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|3|0.0235|0.31|0.087|0.140166666666667|0.150467881401093|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|6|0.0519|0.115|0.067|0.07865|0.0268427830151793|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|2|0.114|0.135|0.1245|0.1245|0.0148492424049175|Florida STORET / WIN|5002
-48|Nature Coast Aquatic Preserve|1996|Total Phosphorus|Bottom|Lab|1|0.009|0.009|0.009|0.009||Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|4|0.005|0.008|0.006|0.00625|0.0015|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|11|0.006|0.042|0.012|0.0178181818181818|0.0125603995304145|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|11|0.005|0.042|0.01|0.0137272727272727|0.0108082460102545|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|14|0.004|0.027|0.008|0.0103571428571429|0.00672088756566643|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|15|0.004|0.03|0.009|0.011|0.00722100111777149|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|17|0.004|0.018|0.005|0.00735294117647059|0.00399908077673151|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|13|0.004|0.024|0.008|0.00976923076923077|0.00573227479792921|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|19|0.004|0.015|0.007|0.00826315789473684|0.0032462303824446|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|46|0.004|0.045|0.008|0.00869565217391304|0.00623563082514028|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|81|0.003|0.024|0.008|0.00860493827160494|0.00349527900297558|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|82|0.005|0.044|0.011|0.0118170731707317|0.00635401700254682|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|26|0.005|0.023|0.0095|0.00961538461538462|0.00352223705138565|Southwest Florida Water Management District - Water Quality Monitoring|479
-48|Nature Coast Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|1|0.025|0.025|0.025|0.025||Florida STORET / WIN|5002
-48|Nature Coast Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|2|0.016|0.024|0.02|0.02|0.00565685424949238|Florida STORET / WIN|5002
-48|Nature Coast Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|14|0.006|0.168|0.0085|0.0207857142857143|0.0424647882575463|EPA STOrage and RETrieval Data Warehouse (STORET), Florida LAKEWATCH Program|103, 514
-48|Nature Coast Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|7|0.007|0.014|0.009|0.00985714285714286|0.00241029537806548|Florida LAKEWATCH Program|514
-33|Pellicer Creek Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|1|0.186|0.186|0.186|0.186||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.114|0.114|0.114|0.114||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|1|0.1|0.1|0.1|0.1||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|1|0.075|0.075|0.075|0.075||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|2|0.057|0.095|0.076|0.076|0.0268700576850888|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|2|0.071|0.1|0.0855|0.0855|0.0205060966544099|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|5|0.071|0.19|0.09|0.116|0.0517252356205363|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|2|0.064|0.096|0.08|0.08|0.0226274169979695|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|1|0.14|0.14|0.14|0.14||Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|2|0.081|0.085|0.083|0.083|0.00282842712474619|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|4|0.057|0.086|0.0715|0.0715|0.0167431578064991|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054
-33|Pellicer Creek Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|3|0.054|0.078|0.071|0.0676666666666667|0.0123423390543824|Florida STORET / WIN, Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|4054, 5002
-34|Pine Island Sound Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|1|0.047|0.047|0.047|0.047||Florida STORET / WIN|5002
-34|Pine Island Sound Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|2|0.045|0.06|0.0525|0.0525|0.0106066017177982|Florida STORET / WIN|5002
-34|Pine Island Sound Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|1|0.048|0.048|0.048|0.048||Florida STORET / WIN|5002
-34|Pine Island Sound Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|1|0.018|0.018|0.018|0.018||Florida STORET / WIN|5002
-34|Pine Island Sound Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|1|0.047|0.047|0.047|0.047||Florida STORET / WIN|5002
-34|Pine Island Sound Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|3|0.055|0.1|0.073|0.076|0.0226495033058123|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-34|Pine Island Sound Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|8|0.007|0.075|0.038|0.037|0.0199857091800259|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-34|Pine Island Sound Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|13|0.022|0.066|0.035|0.041|0.014543039572249|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-34|Pine Island Sound Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|9|0.018|0.14|0.029|0.0464444444444445|0.0393100213403374|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Coastal Charlotte Harbor Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 476, 513, 5002
-34|Pine Island Sound Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|18|0.021|0.12|0.04|0.0444444444444444|0.0233999050330457|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN, River, Estuary and Coastal Observing Network|103, 303, 476, 5002
-34|Pine Island Sound Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|14|0.023|0.049|0.0355|0.035|0.00819005024874226|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, River, Estuary and Coastal Observing Network|303, 476, 5002
-34|Pine Island Sound Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|1|0.042|0.042|0.042|0.042||Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|22|0.03|0.13|0.075|0.0809090909090909|0.0308466392256134|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|15|0.02|0.1|0.04|0.0475333333333333|0.0219377908337797|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|20|0.03|0.13|0.05|0.0575|0.0317680740101724|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|9|0.02|0.22|0.14|0.123333333333333|0.0696419413859206|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|15|0.000011|0.19|0.05|0.0640007333333333|0.0517953335687226|Florida LAKEWATCH Program, Florida STORET / WIN|514, 5002
-35|Pinellas County Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|19|0.02|0.23|0.05|0.07|0.0519615242270663|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|10|0.09|0.33|0.185|0.198|0.0863841549256704|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|16|0.05|0.18|0.1|0.1021875|0.0454697243595487|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|6|0.05|0.248|0.126|0.14|0.0880545285604324|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|8|0.06|0.15|0.08|0.09125|0.0269589635239509|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|13|0.05|0.18|0.1|0.108461538461538|0.0446926828176145|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|8|0.047|0.13|0.114|0.098375|0.0347149103412352|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|11|0.043|0.24|0.12|0.127454545454545|0.0687318901767784|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|8|0.047|0.137|0.0805|0.083|0.0336791584557232|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|6|0.05|0.11|0.0775|0.0785|0.0247689321530017|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|9|0.06|0.241|0.1|0.103777777777778|0.0552692902473376|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|11|0.05|0.227|0.135|0.122909090909091|0.0480155277914438|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|11|0.05|0.171|0.12|0.115454545454545|0.050234178875271|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|11|0.05|0.19|0.09|0.0975454545454545|0.0398029236020764|Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|1|0.053|0.053|0.053|0.053||Florida STORET / WIN|5002
-35|Pinellas County Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|65|0.0099|0.29|0.08|0.0974061538461538|0.0647105016518838|Florida LAKEWATCH Program, Florida STORET / WIN|514, 5002
-35|Pinellas County Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|106|0.01|0.73|0.09|0.11027358490566|0.0982640304310273|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-35|Pinellas County Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|70|0.01|0.2|0.0695|0.0750857142857143|0.0457167532977911|Florida LAKEWATCH Program, Florida STORET / WIN|514, 5002
-35|Pinellas County Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|7|0.048|0.14|0.048|0.0874285714285714|0.0491760685118861|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2002|Total Phosphorus|Bottom|Lab|2|0.073|0.077|0.075|0.075|0.00282842712474619|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2010|Total Phosphorus|Bottom|Lab|1|0.129|0.129|0.129|0.129||Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2011|Total Phosphorus|Bottom|Lab|1|0.448|0.448|0.448|0.448||Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2012|Total Phosphorus|Bottom|Lab|1|0.091|0.091|0.091|0.091||Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2014|Total Phosphorus|Bottom|Lab|1|0.161|0.161|0.161|0.161||Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2015|Total Phosphorus|Bottom|Lab|2|0.046|0.133|0.0895|0.0895|0.0615182899632296|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2017|Total Phosphorus|Bottom|Lab|1|0.12|0.12|0.12|0.12||Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2018|Total Phosphorus|Bottom|Lab|2|0.028|0.059|0.0435|0.0435|0.021920310216783|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2019|Total Phosphorus|Bottom|Lab|1|0.083|0.083|0.083|0.083||Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2021|Total Phosphorus|Bottom|Lab|7|0.025|0.065|0.04|0.0428571428571429|0.0145307555599445|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2022|Total Phosphorus|Bottom|Lab|16|0.025|0.116|0.044|0.0495|0.0227596133534821|Florida STORET / WIN|5002
-39|Rookery Bay National Estuarine Research Reserve|2023|Total Phosphorus|Bottom|Lab|5|0.033|0.06|0.036|0.0402|0.0113446022407134|Florida STORET / WIN|5002
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2009|Total Phosphorus|Bottom|Lab|12|0.0041|0.0085|0.0054|0.00540833333333333|0.00112367767404693|Southeast Florida Coral Reef Initiative (SEFCRI) Water Quality Monitoring Report|5058
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2010|Total Phosphorus|Bottom|Lab|62|0.0034|0.0238|0.0051|0.00616935483870968|0.00326409120280395|Southeast Florida Coral Reef Initiative (SEFCRI) Water Quality Monitoring Report|5058
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2011|Total Phosphorus|Bottom|Lab|60|0.0027|0.0115|0.0045|0.00490333333333333|0.00162438688998698|Southeast Florida Coral Reef Initiative (SEFCRI) Water Quality Monitoring Report|5058
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2014|Total Phosphorus|Bottom|Lab|3|0.005|0.011|0.007|0.00766666666666667|0.00305505046330389|Florida STORET / WIN|5002
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2015|Total Phosphorus|Bottom|Lab|4|0.006|0.009|0.008|0.00775|0.00125830573921179|Florida STORET / WIN|5002
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2017|Total Phosphorus|Bottom|Lab|286|0|0.628|0.008|0.0746153846153846|0.123695376990407|Southeast Florida Water Quality Assessment Survey|5033
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2018|Total Phosphorus|Bottom|Lab|852|0|0.149|0|0.00728286384976526|0.0172141017606728|Southeast Florida Water Quality Assessment Survey|5033
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2019|Total Phosphorus|Bottom|Lab|1079|0|0.14|0|0.00400185356811863|0.00928471504577931|Southeast Florida Water Quality Assessment Survey|5033
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2020|Total Phosphorus|Bottom|Lab|1006|0|0.058|0|0.00365109343936382|0.00665335988867097|EPA STOrage and RETrieval Data Warehouse (STORET), Southeast Florida Water Quality Assessment Survey|103, 5033
-12|Southeast Florida Coral Reef Ecosystem Conservation Area|2021|Total Phosphorus|Bottom|Lab|600|0|0.044|0.001|0.00313166666666667|0.00518257616587356|EPA STOrage and RETrieval Data Warehouse (STORET), Southeast Florida Water Quality Assessment Survey|103, 5033
-43|St. Martins Marsh Aquatic Preserve|1996|Total Phosphorus|Bottom|Lab|3|0.009|0.021|0.019|0.0163333333333333|0.00642910050732864|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|8|0.005|0.03|0.0095|0.0135|0.00870139561876632|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|1998|Total Phosphorus|Bottom|Lab|5|0.008|0.041|0.02|0.0224|0.0147749788493926|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|4|0.011|0.021|0.012|0.014|0.00469041575982343|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|2|0.007|0.015|0.011|0.011|0.00565685424949238|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|3|0.004|0.03|0.024|0.0193333333333333|0.0136137185711081|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|5|0.007|0.025|0.01|0.013|0.0073824115301167|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|3|0.006|0.03|0.007|0.0143333333333333|0.0135769412362775|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|4|0.007|0.024|0.0125|0.014|0.00743863786814047|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|24|0.006|0.038|0.014|0.0172916666666667|0.00932728194094062|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|27|0.004|0.029|0.012|0.0144074074074074|0.00702336353378033|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|34|0.01|0.052|0.0165|0.0195294117647059|0.00930048970401037|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2010|Total Phosphorus|Bottom|Lab|1|0.0188475|0.0188475|0.0188475|0.0188475||National Aquatic Resource Surveys, National Coastal Condition Assessment|118
-43|St. Martins Marsh Aquatic Preserve|2011|Total Phosphorus|Bottom|Lab|1|0.04|0.04|0.04|0.04||Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2014|Total Phosphorus|Bottom|Lab|1|0.017|0.017|0.017|0.017||Florida STORET / WIN|5002
-43|St. Martins Marsh Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|7|0.006|0.023|0.008|0.012|0.00670820393249937|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|1|0.021|0.021|0.021|0.021||Florida STORET / WIN|5002
-43|St. Martins Marsh Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|1|0.033|0.033|0.033|0.033||Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|1|0.016|0.016|0.016|0.016||Florida STORET / WIN|5002
-43|St. Martins Marsh Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|2|0.005|0.034|0.0195|0.0195|0.0205060966544099|Southwest Florida Water Management District - Water Quality Monitoring|479
-43|St. Martins Marsh Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|2|0.015|0.021|0.018|0.018|0.00424264068711929|EPA STOrage and RETrieval Data Warehouse (STORET), Southwest Florida Water Management District - Water Quality Monitoring|103, 479
-43|St. Martins Marsh Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|1|0.013|0.013|0.013|0.013||Florida LAKEWATCH Program|514
-44|Terra Ceia Aquatic Preserve|1996|Total Phosphorus|Bottom|Lab|1|0.264|0.264|0.264|0.264||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|1997|Total Phosphorus|Bottom|Lab|1|0.231|0.231|0.231|0.231||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|1|0.189|0.189|0.189|0.189||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2000|Total Phosphorus|Bottom|Lab|3|0.022|0.35|0.194|0.188666666666667|0.164065027758305|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|3|0.074|0.954|0.127|0.385|0.493480496068487|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2002|Total Phosphorus|Bottom|Lab|9|0.045|0.406|0.175|0.224333333333333|0.13892713917734|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2003|Total Phosphorus|Bottom|Lab|3|0.06|0.319|0.078|0.152333333333333|0.144617887321497|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2004|Total Phosphorus|Bottom|Lab|1|0.18|0.18|0.18|0.18||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2005|Total Phosphorus|Bottom|Lab|1|0.11|0.11|0.11|0.11||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2006|Total Phosphorus|Bottom|Lab|3|0.061|0.15|0.11|0.107|0.0445757781760453|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|3|0.12|1.667|0.7|0.829|0.781526071222196|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|1|0.024|0.024|0.024|0.024||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|1|0.24|0.24|0.24|0.24||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2015|Total Phosphorus|Bottom|Lab|1|0.097|0.097|0.097|0.097||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2016|Total Phosphorus|Bottom|Lab|2|0.07|0.4|0.235|0.235|0.233345237791561|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2017|Total Phosphorus|Bottom|Lab|2|0.027|0.028|0.0275|0.0275|0.000707106781186548|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|1|0.069|0.069|0.069|0.069||Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|5|0.038|0.421|0.145|0.1726|0.151543063186673|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|5|0.05|0.121|0.109|0.0978|0.0287349960849136|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-44|Terra Ceia Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|15|0.069|0.73|0.203|0.283866666666667|0.223505789847239|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
-44|Terra Ceia Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|13|0.037|0.77|0.222|0.269230769230769|0.229770593508015|Florida STORET / WIN|5002
-44|Terra Ceia Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|2|0.201|0.269|0.235|0.235|0.0480832611206852|Florida STORET / WIN|5002
+25|Lemon Bay Aquatic Preserve|2018|Total Phosphorus|Bottom|Lab|16|0.037|0.27|0.0635|0.0960625|0.0707770855103072|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+25|Lemon Bay Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|17|0.031|0.32|0.087|0.113352941176471|0.0944251960392925|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+25|Lemon Bay Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|34|0.039|0.22|0.098|0.104764705882353|0.0549881854106804|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|71|0.028|0.23|0.11|0.109464788732394|0.0574788982362634|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
+25|Lemon Bay Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|55|0.023|0.26|0.092|0.1038|0.0523458583737901|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+25|Lemon Bay Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|6|0.09|0.2|0.12|0.13|0.0404969134626332|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|1999|Total Phosphorus|Bottom|Lab|3|0.07|0.12|0.12|0.103333333333333|0.0288675134594813|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2001|Total Phosphorus|Bottom|Lab|3|0.03|0.09|0.05|0.0566666666666667|0.0305505046330389|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2007|Total Phosphorus|Bottom|Lab|1|0.1|0.1|0.1|0.1||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2008|Total Phosphorus|Bottom|Lab|1|0.25|0.25|0.25|0.25||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2009|Total Phosphorus|Bottom|Lab|1|0.126|0.126|0.126|0.126||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2012|Total Phosphorus|Bottom|Lab|2|0.037|0.128|0.0825|0.0825|0.0643467170879758|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2013|Total Phosphorus|Bottom|Lab|1|0.095|0.095|0.095|0.095||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2019|Total Phosphorus|Bottom|Lab|1|0.000111|0.000111|0.000111|0.000111||Florida LAKEWATCH Program|514
+35|Pinellas County Aquatic Preserve|2020|Total Phosphorus|Bottom|Lab|164|0.0099|0.31|0.08|0.0900073170731707|0.0587192588268527|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|Total Phosphorus|Bottom|Lab|273|0.01|0.73|0.08|0.0942307692307692|0.0761407477080339|EPA STOrage and RETrieval Data Warehouse (STORET), Florida STORET / WIN|103, 5002
+35|Pinellas County Aquatic Preserve|2022|Total Phosphorus|Bottom|Lab|106|0.01|0.2|0.07|0.0766981132075472|0.0394358236490922|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2023|Total Phosphorus|Bottom|Lab|9|0.048|0.14|0.048|0.0823333333333333|0.0445421149026402|Florida STORET / WIN|5002

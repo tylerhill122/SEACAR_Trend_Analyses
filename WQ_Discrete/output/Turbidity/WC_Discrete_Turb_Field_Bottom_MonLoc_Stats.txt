@@ -10,14 +10,35 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 2|Apalachicola Bay Aquatic Preserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|7|Turbidity|Bottom|Field|2000-09-13|2020-12-01|40|1.4|19.9|7.27|8.10825|4.86147697695216
 2|Apalachicola Bay Aquatic Preserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|8|Turbidity|Bottom|Field|2000-09-14|2020-12-01|23|2.5|61|10.9|14.1795652173913|12.7722196683629
 2|Apalachicola Bay Aquatic Preserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|9|Turbidity|Bottom|Field|2000-09-14|2020-12-01|23|2.6|55|12.28|15.5765217391304|11.6477475812028
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbnut|Turbidity|Bottom|Field|2017-09-05|2019-12-03|22|2.57|12.66|5.11|6.10863636363636|2.91920291706412
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebnut|Turbidity|Bottom|Field|2017-01-04|2019-12-03|33|2.1|46.7|7.66|10.8263636363636|8.50523471831533
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcnut|Turbidity|Bottom|Field|2018-02-06|2019-12-03|20|1.26|10.5|3.44|3.6845|2.07087948517176
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|EB|Turbidity|Bottom|Field|2011-01-11|2013-12-03|35|4.8|55.4|12.5|15.2742857142857|10.6042816784526
-2|Apalachicola Bay Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLTLHR_WQX-G2TLHR0027|Turbidity|Bottom|Field|2021-05-24|2021-05-24|1|5.5|5.5|5.5|5.5|
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS225|Turbidity|Bottom|Field|2003-07-18|2008-07-21|2|5.4|7.3|6.35|6.35|1.34350288425444
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS257|Turbidity|Bottom|Field|1998-09-23|1998-09-23|1|10|10|10|10|
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS321|Turbidity|Bottom|Field|1999-06-28|1999-07-12|2|0.03|3.1|1.565|1.565|2.1708178182427
+2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0027|Turbidity|Bottom|Field|2021-01-26|2021-01-26|1|5.4|5.4|5.4|5.4|
+2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0035|Turbidity|Bottom|Field|2018-07-05|2018-07-05|1|9|9|9|9|
+2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0051|Turbidity|Bottom|Field|2022-09-01|2022-09-01|1|5.1|5.1|5.1|5.1|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-BF-MP1|Turbidity|Bottom|Field|2021-07-16|2021-07-16|1|17.7|17.7|17.7|17.7|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CL-MP1|Turbidity|Bottom|Field|2021-07-16|2021-07-16|1|13.6|13.6|13.6|13.6|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CP-MP1|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|6.9|6.9|6.9|6.9|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CP-MP2|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|6.9|6.9|6.9|6.9|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CT-MP1|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|3.4|3.4|3.4|3.4|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CT-MP2|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|3.4|3.4|3.4|3.4|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-DB-MP1|Turbidity|Bottom|Field|2021-09-30|2021-09-30|1|5.3|5.3|5.3|5.3|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-DB-MP2|Turbidity|Bottom|Field|2021-09-30|2021-09-30|1|5.3|5.3|5.3|5.3|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-DB-MP3|Turbidity|Bottom|Field|2021-09-30|2021-09-30|1|5.3|5.3|5.3|5.3|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-DB-MP4|Turbidity|Bottom|Field|2021-12-03|2021-12-03|1|2.9|2.9|2.9|2.9|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-EMN-MP1|Turbidity|Bottom|Field|2021-07-16|2021-07-16|1|10.2|10.2|10.2|10.2|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-EMS-MP1|Turbidity|Bottom|Field|2021-07-16|2021-07-16|1|22.8|22.8|22.8|22.8|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-GP-MP1|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|4.1|4.1|4.1|4.1|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-HB-MP1|Turbidity|Bottom|Field|2021-09-22|2021-09-22|1|4.8|4.8|4.8|4.8|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-HB-MP2|Turbidity|Bottom|Field|2021-09-22|2021-09-22|1|4.8|4.8|4.8|4.8|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-HB-MP3|Turbidity|Bottom|Field|2021-09-22|2021-09-22|1|4.8|4.8|4.8|4.8|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-LG-MP1|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|7.1|7.1|7.1|7.1|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-LG-MP2|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|7.1|7.1|7.1|7.1|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-LH-MP2|Turbidity|Bottom|Field|2021-09-22|2021-09-22|1|5.9|5.9|5.9|5.9|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NBM-MP1|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|3.7|3.7|3.7|3.7|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NBM-MP2|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|3.7|3.7|3.7|3.7|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NBN-MP1|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|7|7|7|7|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NBN-MP2|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|7|7|7|7|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NS-MP1|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|5.9|5.9|5.9|5.9|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-RC1-MP1|Turbidity|Bottom|Field|2021-07-13|2021-07-13|1|10.4|10.4|10.4|10.4|
+2|Apalachicola Bay Aquatic Preserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-RC2-MP1|Turbidity|Bottom|Field|2021-07-13|2021-07-13|1|28.8|28.8|28.8|28.8|
 3|Apalachicola National Estuarine Research Reserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|1|Turbidity|Bottom|Field|2000-09-13|2001-05-15|5|2|41.8|7.2|12.59|16.6449842294909
 3|Apalachicola National Estuarine Research Reserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|10|Turbidity|Bottom|Field|2016-09-28|2020-12-01|18|2.9|74.1|10.88|17.8911111111111|18.5984480342056
 3|Apalachicola National Estuarine Research Reserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|11|Turbidity|Bottom|Field|2000-09-14|2003-02-19|22|0.45|20.3|4.8|6.33045454545455|5.63244130210383
@@ -31,418 +52,292 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|7|Turbidity|Bottom|Field|2000-09-13|2020-12-01|40|1.4|19.9|7.27|8.10825|4.86147697695216
 3|Apalachicola National Estuarine Research Reserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|8|Turbidity|Bottom|Field|2000-09-14|2020-12-01|23|2.5|61|10.9|14.1795652173913|12.7722196683629
 3|Apalachicola National Estuarine Research Reserve|129|Apalachicola National Estuarine Research Reserve Juvenile Fish and Benthic Macroinvertebrate  Monitoring|9|Turbidity|Bottom|Field|2000-09-14|2020-12-01|23|2.6|55|12.28|15.5765217391304|11.6477475812028
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apacpnut|Turbidity|Bottom|Field|2017-09-05|2019-12-03|26|1.41|19.5|4.87|6.24192307692308|3.96905229920773
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbnut|Turbidity|Bottom|Field|2017-09-05|2019-12-03|22|2.57|12.66|5.11|6.10863636363636|2.91920291706412
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebnut|Turbidity|Bottom|Field|2017-01-04|2019-12-03|33|2.1|46.7|7.66|10.8263636363636|8.50523471831533
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apapcnut|Turbidity|Bottom|Field|2018-02-06|2019-12-03|20|1.26|10.5|3.44|3.6845|2.07087948517176
-3|Apalachicola National Estuarine Research Reserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|EB|Turbidity|Bottom|Field|2011-01-11|2013-12-03|35|4.8|55.4|12.5|15.2742857142857|10.6042816784526
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLGW_11275|Turbidity|Bottom|Field|2001-09-05|2001-09-05|1|12|12|12|12|
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS100|Turbidity|Bottom|Field|2000-05-08|2000-05-08|1|5|5|5|5|
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS152|Turbidity|Bottom|Field|1997-09-08|1997-09-08|1|1|1|1|1|
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS160|Turbidity|Bottom|Field|1995-05-01|2009-06-15|3|2|4.2|2.6|2.93333333333333|1.13724814061547
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS257|Turbidity|Bottom|Field|2001-09-26|2001-09-26|1|2.5|2.5|2.5|2.5|
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS321|Turbidity|Bottom|Field|1995-08-21|1999-09-07|3|1.8|4.6|3|3.13333333333333|1.4047538337137
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS346|Turbidity|Bottom|Field|1996-02-12|1996-02-12|1|3.6|3.6|3.6|3.6|
-5|Big Bend Seagrasses Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLSUW_WQX-127905|Turbidity|Bottom|Field|2021-02-10|2021-02-10|1|4.58|4.58|4.58|4.58|
-5|Big Bend Seagrasses Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLSUW_WQX-127919|Turbidity|Bottom|Field|2020-12-09|2020-12-09|1|1.72|1.72|1.72|1.72|
-5|Big Bend Seagrasses Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLWQA_WQX-G1NED0016|Turbidity|Bottom|Field|2021-10-13|2021-10-13|1|0.9|0.9|0.9|0.9|
-5|Big Bend Seagrasses Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLWQA_WQX-G1NED0019|Turbidity|Bottom|Field|2021-10-13|2021-10-13|1|2|2|2|2|
-5|Big Bend Seagrasses Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLWQA_WQX-G1NED0023|Turbidity|Bottom|Field|2021-09-15|2021-09-15|1|6.9|6.9|6.9|6.9|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050021|Turbidity|Bottom|Field|2011-02-16|2011-02-16|1|1.2|1.2|1.2|1.2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_13405|Turbidity|Bottom|Field|2002-03-13|2002-03-13|1|1.6|1.6|1.6|1.6|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_13407|Turbidity|Bottom|Field|2002-03-13|2002-03-13|1|11|11|11|11|
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLGW_11255|Turbidity|Bottom|Field|2001-09-05|2001-09-05|1|10|10|10|10|
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0027|Turbidity|Bottom|Field|2020-08-05|2020-08-05|1|5.3|5.3|5.3|5.3|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-BF-MP1|Turbidity|Bottom|Field|2021-07-16|2021-07-16|1|17.7|17.7|17.7|17.7|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CL-MP1|Turbidity|Bottom|Field|2021-07-16|2021-07-16|1|13.6|13.6|13.6|13.6|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CP-MP1|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|6.9|6.9|6.9|6.9|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CP-MP2|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|6.9|6.9|6.9|6.9|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CT-MP1|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|3.4|3.4|3.4|3.4|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-CT-MP2|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|3.4|3.4|3.4|3.4|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-DB-MP1|Turbidity|Bottom|Field|2021-09-30|2021-09-30|1|5.3|5.3|5.3|5.3|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-DB-MP2|Turbidity|Bottom|Field|2021-09-30|2021-09-30|1|5.3|5.3|5.3|5.3|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-DB-MP3|Turbidity|Bottom|Field|2021-09-30|2021-09-30|1|5.3|5.3|5.3|5.3|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-DB-MP4|Turbidity|Bottom|Field|2021-12-03|2021-12-03|1|2.9|2.9|2.9|2.9|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-EMN-MP1|Turbidity|Bottom|Field|2021-07-16|2021-07-16|1|10.2|10.2|10.2|10.2|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-EMS-MP1|Turbidity|Bottom|Field|2021-07-16|2021-07-16|1|22.8|22.8|22.8|22.8|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-GP-MP1|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|4.1|4.1|4.1|4.1|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-HB-MP1|Turbidity|Bottom|Field|2021-09-22|2021-09-22|1|4.8|4.8|4.8|4.8|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-HB-MP2|Turbidity|Bottom|Field|2021-09-22|2021-09-22|1|4.8|4.8|4.8|4.8|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-HB-MP3|Turbidity|Bottom|Field|2021-09-22|2021-09-22|1|4.8|4.8|4.8|4.8|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-LG-MP1|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|7.1|7.1|7.1|7.1|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-LG-MP2|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|7.1|7.1|7.1|7.1|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-LH-MP2|Turbidity|Bottom|Field|2021-09-22|2021-09-22|1|5.9|5.9|5.9|5.9|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NBM-MP1|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|3.7|3.7|3.7|3.7|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NBM-MP2|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|3.7|3.7|3.7|3.7|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NBN-MP1|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|7|7|7|7|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NBN-MP2|Turbidity|Bottom|Field|2021-12-02|2021-12-02|1|7|7|7|7|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-NS-MP1|Turbidity|Bottom|Field|2021-09-21|2021-09-21|1|5.9|5.9|5.9|5.9|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-RC1-MP1|Turbidity|Bottom|Field|2021-07-13|2021-07-13|1|10.4|10.4|10.4|10.4|
+3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-RC2-MP1|Turbidity|Bottom|Field|2021-07-13|2021-07-13|1|28.8|28.8|28.8|28.8|
+5|Big Bend Seagrasses Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|NARS_WQX-FLW05-0020|Turbidity|Bottom|Field|2005-08-18|2005-08-18|1|2.77|2.77|2.77|2.77|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14057|Turbidity|Bottom|Field|2002-08-20|2002-08-20|1|2.1|2.1|2.1|2.1|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14060|Turbidity|Bottom|Field|2002-08-05|2002-08-05|1|3.8|3.8|3.8|3.8|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14067|Turbidity|Bottom|Field|2002-08-26|2002-08-26|1|3.6|3.6|3.6|3.6|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14070|Turbidity|Bottom|Field|2002-08-14|2002-08-14|1|0.95|0.95|0.95|0.95|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3525|Turbidity|Bottom|Field|1999-01-05|1999-09-20|5|1.8|4.6|2.3|2.92|1.18194754536739
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3526|Turbidity|Bottom|Field|1999-01-05|1999-01-05|1|2|2|2|2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3528|Turbidity|Bottom|Field|2001-09-17|2001-11-08|2|0.8|1.3|1.05|1.05|0.353553390593274
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3564|Turbidity|Bottom|Field|2001-01-09|2003-02-06|3|0.35|1.3|0.35|0.666666666666667|0.548482755730145
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6976|Turbidity|Bottom|Field|1999-11-01|2006-12-13|7|1.1|4.8|2.6|2.7|1.29357386079548
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6977|Turbidity|Bottom|Field|2000-02-02|2000-08-22|2|0.75|0.75|0.75|0.75|0
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3564|Turbidity|Bottom|Field|2001-03-08|2002-02-05|3|0.45|0.7|0.65|0.6|0.13228756555323
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6976|Turbidity|Bottom|Field|1999-10-06|2003-02-06|16|1.7|6.8|3.05|3.3|1.44867755786671
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9683|Turbidity|Bottom|Field|2001-10-22|2001-10-22|1|0.2|0.2|0.2|0.2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9693|Turbidity|Bottom|Field|2002-01-22|2002-04-09|2|0.6|1.1|0.85|0.85|0.353553390593274
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9717|Turbidity|Bottom|Field|2001-09-25|2008-04-08|2|0.1|0.25|0.175|0.175|0.106066017177982
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS118|Turbidity|Bottom|Field|1995-01-10|1995-01-10|1|1.4|1.4|1.4|1.4|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE010C1|Turbidity|Bottom|Field|1995-11-16|1995-11-16|1|2.1|2.1|2.1|2.1|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE020C1|Turbidity|Bottom|Field|1996-06-13|1996-06-13|1|2.8|2.8|2.8|2.8|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE050C1|Turbidity|Bottom|Field|1997-06-04|1997-06-04|1|2|2|2|2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE060C1|Turbidity|Bottom|Field|1996-06-13|1996-06-13|1|1.8|1.8|1.8|1.8|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE080C1|Turbidity|Bottom|Field|1995-12-06|1995-12-06|1|2.2|2.2|2.2|2.2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SUW275C1|Turbidity|Bottom|Field|1993-02-04|1993-02-04|1|5.2|5.2|5.2|5.2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_TAY76992|Turbidity|Bottom|Field|2014-09-18|2014-09-18|1|1.02|1.02|1.02|1.02|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_WAS005C1|Turbidity|Bottom|Field|2014-06-09|2016-11-30|7|0.43|1.79|0.95|1.02285714285714|0.527058323329094
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_44059|Turbidity|Bottom|Field|2017-10-19|2021-07-20|3|0.35|0.45|0.4|0.4|0.05
-5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127860|Turbidity|Bottom|Field|2020-11-19|2021-08-17|3|0.53|2.18622|0.68|1.13207333333333|0.915993393062053
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9693|Turbidity|Bottom|Field|2001-10-03|2002-04-09|3|0.55|1.1|0.6|0.75|0.304138126514911
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0019|Turbidity|Bottom|Field|2018-11-20|2018-11-20|1|1.1|1.1|1.1|1.1|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0101|Turbidity|Bottom|Field|2020-10-14|2020-10-14|1|2.9|2.9|2.9|2.9|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_HAB_072820_0001|Turbidity|Bottom|Field|2020-07-28|2020-07-28|1|1.6|1.6|1.6|1.6|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_44059|Turbidity|Bottom|Field|2018-10-30|2021-07-20|3|0.4|0.5|0.45|0.45|0.05
+5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127860|Turbidity|Bottom|Field|2020-11-19|2021-02-10|2|0.53|0.68|0.605|0.605|0.106066017177982
 5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127861|Turbidity|Bottom|Field|2019-09-25|2021-12-09|9|1.83563|3.82|2.4|2.47278555555556|0.570050665733124
-5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127919|Turbidity|Bottom|Field|2021-03-11|2021-09-09|2|1.28|4.46614|2.87307|2.87307|2.25294119980971
-5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127942|Turbidity|Bottom|Field|2019-12-18|2022-09-20|9|0.5|2.25|0.59|0.882222222222222|0.601140120474789
-5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127943|Turbidity|Bottom|Field|2020-02-17|2020-02-17|1|0.5|0.5|0.5|0.5|
-5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127946|Turbidity|Bottom|Field|2019-12-18|2022-09-20|6|1.62442|10.6|2.555|3.916025|3.41419679941125
-5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_129841|Turbidity|Bottom|Field|2020-08-13|2021-08-26|3|1.59768|3.32|1.6907|2.20279333333333|0.9686465981633
-6|Biscayne Bay Aquatic Preserve|4058|City of Miami Beach Water Monitoring|18|Turbidity|Bottom|Field|2018-04-19|2018-04-19|1|7.19|7.19|7.19|7.19|
-6|Biscayne Bay Aquatic Preserve|4058|City of Miami Beach Water Monitoring|22|Turbidity|Bottom|Field|2017-07-28|2017-07-28|1|8.9|8.9|8.9|8.9|
-6|Biscayne Bay Aquatic Preserve|4058|City of Miami Beach Water Monitoring|52-2018-01-01|Turbidity|Bottom|Field|2020-09-23|2020-09-23|1|2.07|2.07|2.07|2.07|
-6|Biscayne Bay Aquatic Preserve|4058|City of Miami Beach Water Monitoring|71-2018-01-01|Turbidity|Bottom|Field|2020-11-18|2020-11-18|1|2.07|2.07|2.07|2.07|
-6|Biscayne Bay Aquatic Preserve|4058|City of Miami Beach Water Monitoring|74-2018-01-01|Turbidity|Bottom|Field|2021-03-30|2021-03-30|1|1.94|1.94|1.94|1.94|
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB09|Turbidity|Bottom|Field|2004-10-04|2013-12-02|4|0.3|0.7|0.65|0.575|0.189296944860009
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB11|Turbidity|Bottom|Field|2001-07-09|2009-07-06|4|0.8|4.4|1.35|1.975|1.63783393541592
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB14|Turbidity|Bottom|Field|1996-09-09|2016-12-05|7|0.2|1.6|0.5|0.7|0.568624070307733
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB15|Turbidity|Bottom|Field|1996-09-09|2007-07-09|4|0.5|1.7|0.65|0.875|0.556027577253743
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB16|Turbidity|Bottom|Field|2001-10-02|2013-01-08|8|0.4|2.3|0.75|0.8625|0.59985117201805
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB17|Turbidity|Bottom|Field|2004-09-07|2014-02-11|2|0.3|0.7|0.5|0.5|0.282842712474619
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB18|Turbidity|Bottom|Field|1995-04-04|1996-02-06|2|0.16|0.77|0.465|0.465|0.431335136523794
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB23|Turbidity|Bottom|Field|2009-05-05|2009-05-05|1|0.4|0.4|0.4|0.4|
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB32|Turbidity|Bottom|Field|2000-04-06|2004-06-10|2|0.7|0.9|0.8|0.8|0.14142135623731
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB34|Turbidity|Bottom|Field|2002-08-08|2016-02-04|2|0.364|0.4|0.382|0.382|0.0254558441227157
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_BB36|Turbidity|Bottom|Field|2011-03-10|2014-07-10|4|0.2|0.8|0.3|0.4|0.270801280154532
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_CG01|Turbidity|Bottom|Field|2001-12-06|2001-12-06|1|1|1|1|1|
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_LR03|Turbidity|Bottom|Field|2009-06-01|2009-08-03|2|1.3|3.1|2.2|2.2|1.27279220613579
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_MR03|Turbidity|Bottom|Field|2007-05-08|2015-07-07|6|0.6|1.9|1.3|1.25|0.472228758124704
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLDADE_OL03|Turbidity|Bottom|Field|2009-06-01|2015-02-02|2|0.9|2.2|1.55|1.55|0.919238815542512
-6|Biscayne Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLDADE_BB08|Turbidity|Bottom|Field|2021-02-04|2021-02-04|1|1|1|1|1|
-14|Estero Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_EBV003|Turbidity|Bottom|Field|2017-12-04|2022-04-04|11|1.8|13|5.2|5.81818181818182|3.30085388401795
-14|Estero Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_EBV004|Turbidity|Bottom|Field|2018-01-02|2022-01-03|7|2.4|55|6.8|12.6857142857143|18.8140398436406
-14|Estero Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_EBV005|Turbidity|Bottom|Field|2017-12-04|2022-11-07|18|2|9.1|4.1|4.86111111111111|2.34022092694859
-14|Estero Bay Aquatic Preserve|4063|Estero Bay Tributary Monitoring|WIN_21FLEECO_MULLGR01|Turbidity|Bottom|Field|2021-06-08|2021-06-08|1|5.33|5.33|5.33|5.33|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_AC02889|Turbidity|Bottom|Field|2006-11-28|2006-11-28|1|1.9|1.9|1.9|1.9|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_AC20367|Turbidity|Bottom|Field|2007-11-05|2007-11-05|1|2.01|2.01|2.01|2.01|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_AC22011|Turbidity|Bottom|Field|2007-12-17|2007-12-17|1|3.2|3.2|3.2|3.2|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-01|Turbidity|Bottom|Field|2015-04-13|2015-04-13|1|0.785|0.785|0.785|0.785|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-02|Turbidity|Bottom|Field|2015-07-13|2015-07-13|1|3.61|3.61|3.61|3.61|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-03|Turbidity|Bottom|Field|2017-02-07|2017-02-07|1|6.51|6.51|6.51|6.51|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-05|Turbidity|Bottom|Field|2000-10-10|2003-10-07|5|2.8|7.3|5.7|5.4|1.69705627484771
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-07|Turbidity|Bottom|Field|2002-02-05|2002-09-04|2|2.7|3.4|3.05|3.05|0.494974746830583
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-08|Turbidity|Bottom|Field|2001-11-14|2001-11-14|1|2|2|2|2|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-09|Turbidity|Bottom|Field|2017-11-07|2017-11-07|1|6.57|6.57|6.57|6.57|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-14|Turbidity|Bottom|Field|2004-10-26|2012-02-21|5|2|5.7|4.29|3.92|1.40795951646345
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-AD36062|Turbidity|Bottom|Field|2016-09-08|2016-09-08|1|3.39|3.39|3.39|3.39|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-AD37523|Turbidity|Bottom|Field|2016-10-19|2016-10-19|1|1.11|1.11|1.11|1.11|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-AD57736|Turbidity|Bottom|Field|2017-11-08|2017-11-08|1|2.9|2.9|2.9|2.9|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_HENDGR02|Turbidity|Bottom|Field|2013-12-12|2013-12-12|1|2.21|2.21|2.21|2.21|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_MULLGR01|Turbidity|Bottom|Field|2014-06-23|2014-06-23|1|4|4|4|4|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_SPRIGR01|Turbidity|Bottom|Field|2003-03-04|2003-03-04|1|11.2|11.2|11.2|11.2|
+5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127942|Turbidity|Bottom|Field|2019-12-18|2021-06-10|6|0.54|2.25|0.83|1.07333333333333|0.668361179802258
+5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127943|Turbidity|Bottom|Field|2020-02-17|2020-02-17|1|0.17|0.17|0.17|0.17|
+5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127946|Turbidity|Bottom|Field|2019-09-25|2022-09-20|7|1.62442|10.6|2.45667|3.91897428571429|3.14848961285597
+5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_129841|Turbidity|Bottom|Field|2020-08-13|2022-02-24|5|1.59768|3.92|2.52|2.609676|1.01220103580267
+15|Florida Keys National Marine Sanctuary|103|EPA STOrage and RETrieval Data Warehouse (STORET)|NARS_WQX-FLW05-ALT0131|Turbidity|Bottom|Field|2005-08-04|2005-08-04|1|2.16|2.16|2.16|2.16|
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|209|Turbidity|Bottom|Field|2008-07-29|2017-06-06|2|1.08|1.981|1.5305|1.5305|0.637103209849079
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|211|Turbidity|Bottom|Field|1995-03-28|2020-03-11|76|0|3.9882845|0.71|0.912066465789474|0.797351299028081
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|212|Turbidity|Bottom|Field|1995-03-28|2020-11-13|87|0|3.38|0.47|0.681311772413793|0.676622050072681
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|213|Turbidity|Bottom|Field|1995-03-28|2020-11-13|83|0|10.478|0.11|0.341243375903614|1.17753064093758
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|214|Turbidity|Bottom|Field|1995-07-25|2020-09-11|39|0|4.44|0.74|0.886204994871795|0.939766299783169
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|215|Turbidity|Bottom|Field|1995-03-28|2020-03-11|40|0|4.32|0.72|0.93498516|0.778590950357918
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|216|Turbidity|Bottom|Field|1997-10-22|2020-11-13|34|0|8.742|0.085|0.410624808823529|1.48697529776361
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|211|Turbidity|Bottom|Field|1995-03-28|2020-11-13|99|0|4.14|0.69|0.902590682828283|0.828373801725274
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|212|Turbidity|Bottom|Field|1995-03-28|2020-11-13|101|0|3.38|0.475|0.710330405940594|0.693374682564837
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|213|Turbidity|Bottom|Field|1995-03-28|2020-11-13|101|0|10.478|0.13|0.34449729009901|1.07703078742911
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|214|Turbidity|Bottom|Field|1995-07-25|2020-11-13|49|0|4.44|0.75|0.954887265306122|0.997666788007952
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|215|Turbidity|Bottom|Field|1995-03-28|2020-11-13|53|0|4.52|0.64|0.949354250943396|0.890371333456215
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|216|Turbidity|Bottom|Field|1997-10-22|2020-11-13|50|0|8.742|0.115|0.370319548|1.23041886160062
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|216i|Turbidity|Bottom|Field|1995-07-25|1997-07-29|7|0.11|0.35|0.25|0.252686|0.0844599836530097
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|217|Turbidity|Bottom|Field|1995-07-25|2020-03-11|39|0|3.95|0.63|0.883257241025641|0.93866788588788
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|218|Turbidity|Bottom|Field|1995-07-25|2020-03-12|46|0|80|0.3075|2.42505632173913|11.7439841138644
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|219|Turbidity|Bottom|Field|1998-02-10|2020-11-13|76|0|7.099|0.115|0.315290006578947|0.84550890875014
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|219i|Turbidity|Bottom|Field|1995-03-28|1997-06-18|9|0.045|0.52617|0.145|0.190685555555556|0.155324675688629
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|220|Turbidity|Bottom|Field|1995-03-28|2020-09-11|83|0|7.95|0.69|0.922525336144578|1.08656068588274
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|221|Turbidity|Bottom|Field|1995-03-28|2011-04-14|55|0.01|6.55|0.6793712|0.931538141818182|0.986508780301766
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|222|Turbidity|Bottom|Field|1995-03-28|2020-09-19|82|0|27.665|0.12|0.549580458536585|3.04072962311673
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|223|Turbidity|Bottom|Field|1995-07-26|2020-11-14|39|0|4.57|0.77|1.08247365128205|1.16845864534249
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|224|Turbidity|Bottom|Field|1995-07-26|2020-11-15|44|0|2.485|0.2675|0.380753270454545|0.476814869228096
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|225|Turbidity|Bottom|Field|1998-02-11|2020-03-14|78|0|8.225|0.12|0.363591846153846|0.985338241671603
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|225i|Turbidity|Bottom|Field|1995-03-28|1997-06-17|7|0|0.15|0.025|0.0464285714285714|0.056987885095159
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|226|Turbidity|Bottom|Field|1995-07-26|2020-11-14|38|0|4.6|0.72|0.903147026315789|0.885315635279816
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|227|Turbidity|Bottom|Field|1995-03-28|2020-09-11|82|0|6.146|0.51|0.821234902439024|1.12919234589079
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|228|Turbidity|Bottom|Field|1995-03-28|2020-07-07|78|0|6.358|0.115|0.295524033333333|0.754448013390067
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|229|Turbidity|Bottom|Field|1995-07-26|2019-05-27|15|0.26|3.9089194|0.8136813|1.15301418|0.920864888309528
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|230|Turbidity|Bottom|Field|1995-03-27|2020-11-15|78|0|5.53|0.5389002|0.981712198717949|1.23887026939114
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|231|Turbidity|Bottom|Field|1997-10-23|2020-11-15|67|0|4.823|0.125|0.299451586567164|0.670840184303807
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|217|Turbidity|Bottom|Field|1995-07-25|2020-11-13|49|0|3.95|0.63|0.874469546938776|0.918239534958167
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|218|Turbidity|Bottom|Field|1995-07-25|2020-11-13|53|0|80|0.2785855|2.13338771320755|10.9503262522818
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|219|Turbidity|Bottom|Field|1997-10-11|2020-11-13|90|0|7.099|0.13|0.313592988888889|0.781738721914298
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|219i|Turbidity|Bottom|Field|1995-03-28|1997-07-30|10|0.05|0.52617|0.1475|0.187117|0.146477966492499
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|220|Turbidity|Bottom|Field|1995-03-28|2020-11-14|100|0|7.95|0.7|0.943769448|1.04221270139954
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|221|Turbidity|Bottom|Field|1995-03-28|2011-07-18|65|0|6.55|0.65|0.867255495384615|0.925600802099966
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|222|Turbidity|Bottom|Field|1995-03-28|2020-11-15|101|0|27.665|0.135|0.520008725742574|2.74772482017892
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|223|Turbidity|Bottom|Field|1995-07-26|2020-11-14|50|0|5.62|0.795|1.162975702|1.27803261079129
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|224|Turbidity|Bottom|Field|1995-07-26|2020-11-15|51|0|2.485|0.25|0.373807537254902|0.458595015941317
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|225|Turbidity|Bottom|Field|1997-10-11|2020-11-15|90|0|8.225|0.115|0.338194944444444|0.92112926537005
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|225i|Turbidity|Bottom|Field|1995-03-28|1997-07-30|9|0|0.17|0.025|0.055|0.0673145600891813
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|226|Turbidity|Bottom|Field|1995-07-26|2020-11-14|50|0|5|0.745|0.98920259|1.00979900112488
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|227|Turbidity|Bottom|Field|1995-03-28|2020-11-14|100|0|6.146|0.555|1.014119043|1.2863990231623
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|228|Turbidity|Bottom|Field|1995-03-28|2020-11-15|100|0|6.358|0.1325|0.311381528|0.692170403374727
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|229|Turbidity|Bottom|Field|1995-07-26|2019-05-27|21|0|3.9089194|0.8136813|1.04785747619048|0.847770115647091
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|230|Turbidity|Bottom|Field|1995-03-27|2020-11-15|100|0|11.179982|0.5264002|1.097482408|1.77819339469779
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|231|Turbidity|Bottom|Field|1997-10-23|2020-11-15|90|0|4.823|0.13|0.289993722222222|0.597958655214757
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|231i|Turbidity|Bottom|Field|1995-03-27|1997-07-30|9|0|0.265|0.105|0.107222222222222|0.0980468992087177
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|232|Turbidity|Bottom|Field|1995-07-26|2020-11-15|42|0|7.33|0.8225|1.41175645|1.56459306784521
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|233|Turbidity|Bottom|Field|1995-03-27|2011-07-15|57|0|3.389004|0.49|0.611430714035088|0.582629669302235
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|234|Turbidity|Bottom|Field|1995-03-27|2011-04-05|51|0|1.7|0.235|0.342741223529412|0.376001500862235
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|235|Turbidity|Bottom|Field|1995-07-26|2020-11-15|36|0.12|10.35|1.03311515|1.66812472222222|1.84235275364902
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|236|Turbidity|Bottom|Field|1995-03-27|2011-07-15|54|0|6.45|0.5075|0.784187218518519|1.01005237370915
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|237|Turbidity|Bottom|Field|1995-03-27|2020-09-20|79|0|9.656|0.185|0.392665548101266|1.12016607058021
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|238|Turbidity|Bottom|Field|1995-07-27|2020-09-14|17|0|4.88481|1.6256471|1.97226052352941|1.45991675713094
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|239|Turbidity|Bottom|Field|1995-03-24|2020-11-15|84|0|6.993|0.19|0.387134655952381|0.837968284974864
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|240|Turbidity|Bottom|Field|1995-03-24|2011-07-15|56|0|2.45|0.21|0.3043698|0.378772238090096
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|241|Turbidity|Bottom|Field|1995-07-27|2020-10-28|14|0|6.81648|1.12198415|1.537631|1.66013275123637
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|242|Turbidity|Bottom|Field|1995-03-24|2019-08-16|79|0|16.9|0.75|1.17998223797468|2.03704868194768
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|243|Turbidity|Bottom|Field|1998-02-12|2020-12-13|76|0|7.549|0.17|0.456376556578947|1.08829554612526
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|243i|Turbidity|Bottom|Field|1995-03-24|1997-06-06|6|0.01|0.32|0.11|0.120113666666667|0.106915768344368
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|244|Turbidity|Bottom|Field|1996-03-16|2020-10-28|76|0|13.3|0.83|1.29833860131579|1.77796432707466
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|232|Turbidity|Bottom|Field|1995-07-26|2020-11-15|48|0|7.33|0.8693132|1.560900575|1.69536194521411
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|233|Turbidity|Bottom|Field|1995-03-27|2011-07-15|65|0|3.389004|0.39|0.566868596923077|0.559911140569996
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|234|Turbidity|Bottom|Field|1995-03-27|2011-07-15|63|0|1.7|0.18|0.310416807936508|0.352410209134035
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|235|Turbidity|Bottom|Field|1995-07-26|2020-11-15|50|0.12|10.35|0.9912543|1.705398138|1.81221526139262
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|236|Turbidity|Bottom|Field|1995-03-27|2011-07-15|64|0|6.45|0.4825|0.7371239484375|0.95557212404549
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|237|Turbidity|Bottom|Field|1995-03-27|2020-11-15|104|0|9.656|0.19|0.391844923076923|0.996136126161654
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|238|Turbidity|Bottom|Field|1995-07-27|2019-12-11|18|0|4.88481|1.24905605|1.76320936666667|1.51312682248765
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|239|Turbidity|Bottom|Field|1995-03-24|2020-11-15|99|0|6.993|0.17|0.367735581818182|0.78536996763989
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|240|Turbidity|Bottom|Field|1995-03-24|2011-07-15|64|0|2.45|0.1975|0.3077998421875|0.383486165153854
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|241|Turbidity|Bottom|Field|1995-07-27|2020-10-28|16|0|6.81648|1.19281565|1.55704994375|1.55256844632968
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|242|Turbidity|Bottom|Field|1995-03-24|2020-12-13|100|0|16.9|0.705|1.132647447|1.86984851179867
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|243|Turbidity|Bottom|Field|1997-10-23|2020-12-13|92|0|7.549|0.16|0.422902217391304|1.00011463676569
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|243i|Turbidity|Bottom|Field|1995-03-24|1997-07-30|9|0|0.6|0.105|0.146742444444444|0.196824337960979
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|244|Turbidity|Bottom|Field|1996-03-16|2020-10-28|96|0|13.3|0.88430135|1.3093369125|1.66182000400929
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|244i|Turbidity|Bottom|Field|1995-03-24|1995-12-08|4|0.635|2.834268|0.778846|1.25674|1.05796067858372
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|245|Turbidity|Bottom|Field|1996-03-16|2011-07-15|46|0.16|6.3|0.775|1.16286534347826|1.20798173095805
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|246|Turbidity|Bottom|Field|1995-03-24|2020-07-09|83|0|8.198|0.16|0.386876603614458|0.942171987088734
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|247|Turbidity|Bottom|Field|1995-07-27|2020-12-13|37|0|6.19|0.7587363|1.40676055675676|1.68462580527393
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|248|Turbidity|Bottom|Field|1998-01-27|2020-09-20|69|0|5.524|0.28|0.4778672|0.752326193347656
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|245|Turbidity|Bottom|Field|1996-03-16|2011-07-15|61|0.16|6.3|0.735|1.1026465852459|1.0953322819515
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|246|Turbidity|Bottom|Field|1995-03-24|2020-12-13|102|0|8.198|0.1575|0.356815099019608|0.856307586505042
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|247|Turbidity|Bottom|Field|1995-07-27|2020-12-13|52|0|6.19|0.78936815|1.26190013461538|1.46650428858346
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|248|Turbidity|Bottom|Field|1998-01-27|2020-12-13|88|0|5.524|0.2575|0.462734655681818|0.694548030032117
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|248i|Turbidity|Bottom|Field|1995-03-24|1997-08-08|9|0.135|2.6|0.51|0.760257333333333|0.796173835279708
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|249|Turbidity|Bottom|Field|1998-01-27|2020-01-07|67|0|5.498|0.15|0.314818556716418|0.682980732094474
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|249i|Turbidity|Bottom|Field|1995-03-24|1997-10-23|8|0.1|0.783726|0.19|0.25859075|0.225372084464622
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|250|Turbidity|Bottom|Field|1996-03-16|2020-12-13|40|0|4.0371245|0.705|0.98283846|0.98063035969814
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|251|Turbidity|Bottom|Field|1995-03-24|2011-07-14|54|0.125|10.819786|0.705|1.15892363333333|1.60865274883863
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|252|Turbidity|Bottom|Field|1995-03-24|2020-03-30|80|0|17.411|0.1975|0.52364668125|1.94265444472462
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|253|Turbidity|Bottom|Field|1995-07-28|2020-01-29|14|0|23.695244|0.71905375|2.50411565|6.13460273293183
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|254|Turbidity|Bottom|Field|1995-07-28|2017-05-09|11|0|10.062766|0.8318944|1.97649022727273|2.82725473792618
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|255|Turbidity|Bottom|Field|1995-03-23|2020-12-13|75|0|10.147|0.42|0.937724350666667|1.62318638184002
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|256|Turbidity|Bottom|Field|1995-03-24|2020-12-13|73|0|28.52|0.21|0.738947104109589|3.33113645366818
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|257|Turbidity|Bottom|Field|1995-07-28|2010-07-12|7|0.5816911|7.3241581|0.9793378|2.4491845|2.5557771795114
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|258|Turbidity|Bottom|Field|1995-03-23|2011-07-14|52|0|14.95898|0.7975|1.37002885769231|2.18433342172411
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|259|Turbidity|Bottom|Field|1995-03-23|2020-12-14|80|0|6.675|0.2812745|0.45561150375|0.791432504094933
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|260|Turbidity|Bottom|Field|1995-07-28|2020-10-27|11|0|3.2068437|1.7355372|1.67478511818182|0.888482582519071
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|261|Turbidity|Bottom|Field|1996-05-28|2011-07-14|51|0|5.63|0.655|0.927287025490196|1.07503744878621
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|249|Turbidity|Bottom|Field|1998-01-27|2020-12-13|90|0|5.498|0.155|0.304729517777778|0.615919674476657
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|249i|Turbidity|Bottom|Field|1995-03-24|1997-10-23|10|0.05|0.783726|0.19|0.2538726|0.217278232475322
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|250|Turbidity|Bottom|Field|1996-03-16|2020-12-13|50|0|23.597564|0.705|1.467236462|3.35190625672893
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|251|Turbidity|Bottom|Field|1995-03-24|2011-07-14|63|0.125|10.819786|0.75738|1.18037854126984|1.59451663100281
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|252|Turbidity|Bottom|Field|1995-03-24|2020-12-13|101|0|17.411|0.2|0.474081425742574|1.73540983859039
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|253|Turbidity|Bottom|Field|1995-07-28|2020-01-29|16|0|23.695244|0.70307755|2.28769505625|5.74492586305116
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|254|Turbidity|Bottom|Field|1995-07-28|2017-05-09|18|0|10.062766|0.82584035|1.73166881111111|2.32323406387548
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|255|Turbidity|Bottom|Field|1995-03-23|2020-12-13|99|0|10.147|0.526746|0.893680635353535|1.43399660383327
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|256|Turbidity|Bottom|Field|1995-03-24|2020-12-13|99|0|28.52|0.215|0.63824342020202|2.86688804549311
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|257|Turbidity|Bottom|Field|1995-07-28|2010-07-12|11|0.490116|7.3241581|0.9793378|2.05539312727273|2.1596311013464
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|258|Turbidity|Bottom|Field|1995-03-23|2011-07-14|64|0|14.95898|0.7875|1.2644060765625|1.98675514728008
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|259|Turbidity|Bottom|Field|1995-03-23|2020-12-14|98|0|6.675|0.2525|0.441495191836735|0.775419119662558
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|260|Turbidity|Bottom|Field|1995-07-28|2020-10-27|18|0|3.6341941|1.74164225|1.83185355|0.875233665782096
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|261|Turbidity|Bottom|Field|1996-05-28|2011-07-14|61|0|5.63|0.665|0.954965803278689|1.02540762610353
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|261i|Turbidity|Bottom|Field|1995-03-23|1995-07-28|2|1.275|1.685172|1.480086|1.480086|0.290035402652849
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|262|Turbidity|Bottom|Field|1995-03-23|2011-07-14|50|0|3.3106288|0.6125|0.843424886|0.689875552291545
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|263|Turbidity|Bottom|Field|1995-03-23|2020-12-14|82|0|8.914|0.2475|0.494879926829268|1.02888655154534
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|264|Turbidity|Bottom|Field|1995-03-28|2020-11-15|78|0|10.783|0.115|0.322985596153846|1.22634626620873
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|265|Turbidity|Bottom|Field|1995-08-15|2010-08-04|12|0.095|4.0697028|0.97172695|1.32256181666667|1.09139555319146
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|266|Turbidity|Bottom|Field|1995-07-28|2020-01-29|11|0|4.88481|2.890156|2.29870519090909|1.70116204165561
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|267|Turbidity|Bottom|Field|1995-03-23|2020-12-14|80|0|23.658614|0.2675|0.88633231125|2.86969592840476
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|268|Turbidity|Bottom|Field|1995-03-23|2020-01-29|43|0.19|4.029|0.85|1.04552382325581|0.882550096853535
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|269|Turbidity|Bottom|Field|1995-03-23|2020-10-11|83|0|12.852753|0.71|1.31693383506024|2.0110446780656
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|270|Turbidity|Bottom|Field|1995-03-23|2020-10-11|78|0|9.696|0.4275|0.735441093589744|1.33527958535013
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|271|Turbidity|Bottom|Field|1995-03-22|2020-10-27|86|0.03|7.867|1.1625|1.37763356860465|1.15325380512777
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|272|Turbidity|Bottom|Field|1995-03-22|2020-01-29|77|0|11.221|0.74|1.17304568441558|1.51712546229891
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|273|Turbidity|Bottom|Field|1997-10-29|2020-07-09|71|0|9.272|0.28|0.645610730985916|1.29707146736296
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|262|Turbidity|Bottom|Field|1995-03-23|2011-07-14|67|0|3.3106288|0.61|0.846253144776119|0.731215609473042
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|263|Turbidity|Bottom|Field|1995-03-23|2020-12-14|97|0|8.914|0.27|0.543287558762887|1.06422686205893
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|264|Turbidity|Bottom|Field|1995-03-28|2020-11-15|96|0|10.783|0.115|0.307136026041667|1.11165410949015
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|265|Turbidity|Bottom|Field|1995-08-15|2010-08-04|12|0.095|4.0697028|1.1311416|1.403960875|1.07740893081767
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|266|Turbidity|Bottom|Field|1995-07-28|2020-10-27|17|0|4.88481|2.0957326|1.98643188235294|1.53174340060206
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|267|Turbidity|Bottom|Field|1995-03-23|2020-12-14|98|0|23.658614|0.3125|0.848260384693878|2.63883452820642
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|268|Turbidity|Bottom|Field|1995-03-23|2020-12-14|51|0|16.961422|0.8378397|1.30836835490196|2.38795575900138
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|269|Turbidity|Bottom|Field|1995-03-23|2020-12-14|100|0|12.852753|0.7075|1.2366425681|1.85678984395643
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|270|Turbidity|Bottom|Field|1995-03-23|2020-12-14|98|0|9.696|0.445|0.77977978877551|1.24636713583212
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|271|Turbidity|Bottom|Field|1995-03-22|2020-12-14|100|0.03|7.867|1.1775|1.367726285|1.10453057588579
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|272|Turbidity|Bottom|Field|1995-03-22|2020-12-14|100|0|11.221|0.8|1.271388978|1.63065277754693
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|273|Turbidity|Bottom|Field|1997-10-29|2020-12-14|89|0|9.272|0.31|0.615301611235955|1.17859532992991
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|273i|Turbidity|Bottom|Field|1995-03-22|1997-08-07|9|0|1.55|0.325|0.485555555555556|0.471463442673743
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|274|Turbidity|Bottom|Field|1995-03-22|2011-07-14|53|0.18|6.1677717|1|1.07021628867925|0.814154339704411
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|275|Turbidity|Bottom|Field|1995-03-22|2020-10-11|84|0.09|10.067|1.1775|1.63297588571429|1.58319261959573
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|276|Turbidity|Bottom|Field|1995-03-22|2020-01-29|81|0|10.757|0.4|0.741823822222222|1.27341523362562
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|277|Turbidity|Bottom|Field|1995-03-22|2011-07-14|53|0.205|6.3|1.185|1.65996786981132|1.37866506446409
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|278|Turbidity|Bottom|Field|1995-03-22|2020-12-16|77|0|10.916|0.99|1.45496947272727|1.65925539626945
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|279|Turbidity|Bottom|Field|1995-03-22|2011-07-14|52|0.105|6.16|0.4375|0.711477292307692|0.958639278163378
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|280|Turbidity|Bottom|Field|1995-03-22|2020-12-16|83|0|83|0.38|2.08705790240964|9.50482030072244
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|281|Turbidity|Bottom|Field|1995-12-09|2020-01-28|77|0|13.265|1.8|2.25126375194805|2.07268767891209
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|282|Turbidity|Bottom|Field|1995-08-15|2017-06-05|13|0|19.940665|1.3142918|2.98685920769231|5.17364613175607
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|283|Turbidity|Bottom|Field|1995-08-15|2010-11-02|13|0|11.288878|1.2096189|2.72700265384615|3.14754787983906
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|284|Turbidity|Bottom|Field|2008-05-09|2017-06-05|9|0|5.5511661|2.0562291|2.18375202222222|1.68345434229926
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|285|Turbidity|Bottom|Field|1995-08-15|2017-06-05|10|0|8.2563806|2.35500125|2.44529013|2.24071442524306
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|286|Turbidity|Bottom|Field|1995-08-15|2010-08-04|9|1.185|5.885|2.6085531|2.83556132222222|1.52423960396713
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|287|Turbidity|Bottom|Field|1995-08-15|2017-06-05|12|0|10.691581|1.20745425|2.25920099166667|2.96675100009761
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|288|Turbidity|Bottom|Field|1995-03-26|2017-06-05|12|0|17.909957|1.4852514|3.35072835833333|4.9910486767844
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|289|Turbidity|Bottom|Field|1995-08-15|2017-06-05|9|0|2.602|1.6012271|1.67331148888889|0.831624290216089
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|290|Turbidity|Bottom|Field|1995-08-17|2017-06-09|12|0|5.5492889|1.3030758|1.88364504166667|1.5840415150147
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|291|Turbidity|Bottom|Field|1995-08-15|2017-08-24|12|0.17|3.038|0.7923427|1.03346210833333|0.822186674225692
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|292|Turbidity|Bottom|Field|1995-08-15|2017-06-09|9|0|3.0689113|1.8778702|1.6873116|0.889513909729629
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|293|Turbidity|Bottom|Field|1995-08-15|2010-08-04|8|0.5|3.2548009|1.63930105|1.7770615875|1.01757940834085
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|294|Turbidity|Bottom|Field|1995-08-15|2017-06-09|11|0|1.9056149|1.1616667|1.21395091818182|0.517161012483837
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|295|Turbidity|Bottom|Field|1995-08-17|2017-06-09|10|0.9602015|4.9797295|1.23781045|1.90648474|1.32521557182025
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|296|Turbidity|Bottom|Field|1995-08-17|2019-02-21|14|0|21.082763|0.9293132|2.48773608571429|5.41481947043759
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297|Turbidity|Bottom|Field|1995-08-15|2010-08-04|6|0.466734|3.2190537|1.3931302|1.55269608333333|0.93679866014758
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|298|Turbidity|Bottom|Field|1995-07-28|2010-08-07|8|0.04|23.9|0.64|4.09|8.14860023036385
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|299|Turbidity|Bottom|Field|1995-07-28|2010-08-07|7|0.42|0.9|0.7|0.69|0.194593593591019
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|300|Turbidity|Bottom|Field|1995-08-17|2010-08-07|11|0.28|1.477146|0.87|0.842922363636364|0.321447675837693
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|274|Turbidity|Bottom|Field|1995-03-22|2011-07-14|64|0.18|6.1677717|1|1.0690266046875|0.767171906221129
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|275|Turbidity|Bottom|Field|1995-03-22|2020-12-16|101|0.09|18.1|1.075|1.68797004356436|2.2182275853614
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|276|Turbidity|Bottom|Field|1995-03-22|2020-12-15|100|0|10.757|0.4|0.68215534|1.16682677914139
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|277|Turbidity|Bottom|Field|1995-03-22|2011-07-14|65|0.12|6.3|1.165|1.66752007384615|1.36721003350631
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|278|Turbidity|Bottom|Field|1995-03-22|2020-12-16|100|0|16.418077|0.9975|1.575634859|2.16525143789732
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|279|Turbidity|Bottom|Field|1995-03-22|2011-07-14|62|0|6.16|0.435|0.719221414516129|0.93964329013377
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|280|Turbidity|Bottom|Field|1995-03-22|2020-12-16|100|0|83|0.37|1.816654512|8.67356652578114
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|281|Turbidity|Bottom|Field|1995-12-09|2020-12-15|99|0|17.101793|1.99|2.36419481010101|2.42565641214992
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|282|Turbidity|Bottom|Field|1995-08-15|2017-06-05|13|0|19.940665|2.2326062|3.21379633846154|5.13667526544872
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|283|Turbidity|Bottom|Field|1995-08-15|2010-08-04|12|0|11.288878|1.0940677|2.69758620833333|3.28563956437654
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|284|Turbidity|Bottom|Field|2008-02-06|2017-06-05|12|0|5.5511661|1.9549609|2.077193575|1.69599590935994
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|285|Turbidity|Bottom|Field|1995-08-15|2017-06-05|14|0|8.2563806|2.35500125|2.25952565714286|1.94729303323795
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|286|Turbidity|Bottom|Field|1995-08-15|2010-08-04|11|1.496958|5.885|2.6085531|2.92937067272727|1.33469303613516
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|287|Turbidity|Bottom|Field|1995-08-15|2017-06-05|13|0|10.691581|1.2654518|2.21910889230769|2.83978793147811
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|288|Turbidity|Bottom|Field|1995-03-26|2017-06-05|14|0|17.909957|1.4852514|3.9078801|5.22885728382649
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|289|Turbidity|Bottom|Field|1995-08-15|2017-06-05|13|0|4.3352594|1.6012271|1.83091682307692|1.05238211002139
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|290|Turbidity|Bottom|Field|1995-08-17|2017-06-09|13|0|5.5492889|1.1311416|1.82576016153846|1.53089749255118
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|291|Turbidity|Bottom|Field|1995-08-15|2017-08-24|17|0.17|5.0106451|0.8259491|1.21900588823529|1.21497833360308
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|292|Turbidity|Bottom|Field|1995-08-15|2017-06-09|14|0|9.0114332|1.37483325|2.0295393|2.14556545552106
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|293|Turbidity|Bottom|Field|1995-08-15|2010-08-04|11|0.5|19.588908|1.9003724|3.53680799090909|5.37950084872631
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|294|Turbidity|Bottom|Field|1995-08-15|2019-02-07|16|0|1.9056149|1.16146525|1.10435659375|0.562061772410979
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|295|Turbidity|Bottom|Field|1995-08-17|2017-06-09|13|0|8.6527337|1.2410317|2.23134253076923|2.30869035427697
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|296|Turbidity|Bottom|Field|1995-08-17|2020-03-19|21|0|21.082763|0.6519501|1.82276161428571|4.4730031745224
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297|Turbidity|Bottom|Field|1995-08-15|2010-08-04|9|0.466734|21.779155|1.305|3.74335592222222|6.80475122746965
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|298|Turbidity|Bottom|Field|1995-07-28|2010-08-07|10|0.04|23.9|0.72|3.455|7.30833504370942
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|299|Turbidity|Bottom|Field|1995-07-28|2010-08-07|10|0.32|0.92|0.685|0.652|0.226116980540801
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|300|Turbidity|Bottom|Field|1995-08-17|2010-08-07|10|0.28|1.477146|0.895|0.8437146|0.338824281365299
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|301|Turbidity|Bottom|Field|1995-07-28|2017-05-25|2|0.6|2.205|1.4025|1.4025|1.13490638380441
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|302|Turbidity|Bottom|Field|1995-07-28|2017-05-25|12|0|14.48|0.4|2.34625|4.22353208765537
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|303|Turbidity|Bottom|Field|1995-07-28|2010-08-07|8|0.42|1.48|1.04|0.97125|0.335023986348099
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|304|Turbidity|Bottom|Field|1995-07-28|2010-08-07|9|0.28|3.17|0.82|1.03111111111111|0.843748251026994
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|305|Turbidity|Bottom|Field|1995-07-28|2017-06-09|11|0|19.62|0.49|2.51990909090909|5.72912227927709
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|306|Turbidity|Bottom|Field|2004-12-01|2010-08-07|8|0.27|4.52|1.395|1.57125|1.31420195773492
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|307|Turbidity|Bottom|Field|1995-07-28|2017-06-09|13|0|2.81|1.36|1.48492307692308|0.79574184062614
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|308|Turbidity|Bottom|Field|1995-07-28|2010-08-07|11|0.88|2.5|1.52|1.58318181818182|0.489490922935619
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|309|Turbidity|Bottom|Field|2008-06-10|2017-06-06|9|0|17|1.11|3.62444444444444|5.40735635757232
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|310|Turbidity|Bottom|Field|2011-12-08|2019-09-28|4|0|3.51|1.2435|1.49925|1.50527148714111
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|312|Turbidity|Bottom|Field|2008-06-10|2019-02-19|11|0|27|1.91|4.54618181818182|7.95475407310851
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|313|Turbidity|Bottom|Field|2003-02-13|2003-02-13|1|2.475|2.475|2.475|2.475|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|314|Turbidity|Bottom|Field|1995-07-28|2017-06-09|8|0|2.232|0.65|0.9115|0.729849886718397
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|315|Turbidity|Bottom|Field|2000-04-07|2017-06-06|12|0|20|0.95|3.95775|6.65225230655002
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|316|Turbidity|Bottom|Field|2008-07-29|2017-06-06|8|0|3.7|1.4875|1.561125|1.13655185759384
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|317|Turbidity|Bottom|Field|1995-05-26|2017-06-06|12|0|3.104|0.38|0.842182641666667|1.03413458885165
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|318|Turbidity|Bottom|Field|1995-08-10|2020-03-26|78|0|8.3|0.91|1.47267281923077|1.66141865255855
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|319|Turbidity|Bottom|Field|1995-05-26|2020-12-15|82|0|8.71|1.0986508|1.61245770853659|1.72169608084738
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|320|Turbidity|Bottom|Field|1996-03-28|2011-07-13|45|0|1.96|0.5|0.571803995555556|0.378823900821265
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|302|Turbidity|Bottom|Field|1995-07-28|2017-05-25|12|0|14.48|0.4|2.32958333333333|4.23238190960928
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|303|Turbidity|Bottom|Field|1995-07-28|2010-08-07|10|0.42|2|1.115|1.109|0.44420840954569
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|304|Turbidity|Bottom|Field|1995-07-28|2010-08-07|10|0.28|3.17|0.795|1.005|0.799767327275738
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|305|Turbidity|Bottom|Field|1995-07-28|2017-06-09|13|0|19.62|0.49|2.21223076923077|5.28436243637531
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|306|Turbidity|Bottom|Field|1996-07-13|2010-08-07|10|0.27|4.52|0.985|1.312|1.26286974783625
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|307|Turbidity|Bottom|Field|1995-07-28|2017-06-09|14|0|2.81|1.265|1.2565|0.777782523489795
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|308|Turbidity|Bottom|Field|1995-07-28|2010-08-07|10|0.88|2.5|1.525|1.609|0.508012467038622
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|309|Turbidity|Bottom|Field|2008-06-10|2017-06-06|11|0|17|1|3.10545454545455|4.9725111636604
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|310|Turbidity|Bottom|Field|2002-09-12|2019-09-28|6|0|3.51|1.2435|1.527|1.28006874815379
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|311|Turbidity|Bottom|Field|1996-07-13|2009-01-22|3|0.4|2.76|2.11|1.75666666666667|1.21902966876665
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|312|Turbidity|Bottom|Field|2008-06-10|2019-02-19|13|0|27|1.67|3.90215384615385|7.42991993952104
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|314|Turbidity|Bottom|Field|1995-07-28|2017-06-09|13|0|2.232|0.65|0.908230769230769|0.59466855668321
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|315|Turbidity|Bottom|Field|2000-04-07|2017-06-06|13|0|20|0.65|3.58676923076923|6.48164837771286
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|316|Turbidity|Bottom|Field|2008-06-10|2017-06-06|12|0|3.7|1.46|1.4495|0.959692801227181
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|317|Turbidity|Bottom|Field|1995-05-26|2017-06-06|13|0|3.104|0.35|0.801245515384616|1.00104987232311
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|318|Turbidity|Bottom|Field|1995-08-10|2020-12-15|96|0|11.445|1.02|1.63662886979167|1.90595223411634
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|319|Turbidity|Bottom|Field|1995-05-26|2020-12-15|99|0|8.71|1.14|1.65979884040404|1.7416099762458
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|320|Turbidity|Bottom|Field|1996-03-28|2011-07-13|60|0|1.96|0.415|0.538927783333333|0.37209070858515
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|320i|Turbidity|Bottom|Field|1995-05-26|1995-05-26|1|0.120024|0.120024|0.120024|0.120024|
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|321i|Turbidity|Bottom|Field|1995-05-27|1995-05-27|1|0.050682|0.050682|0.050682|0.050682|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|322|Turbidity|Bottom|Field|1995-05-27|2020-12-15|74|0|12.933|0.58|0.938918260810811|1.56444832815627
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|323|Turbidity|Bottom|Field|1995-05-26|2011-07-13|47|0|12.275|2.68|3.42538008723404|2.69009969743766
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|324|Turbidity|Bottom|Field|1995-05-26|2020-12-15|76|0|23.4|0.905|1.84727650921053|3.07975399599275
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|325|Turbidity|Bottom|Field|1995-05-27|2020-12-15|87|0|22|1.3387118|2.14540635747126|3.05264141499558
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|326|Turbidity|Bottom|Field|1995-05-26|2011-07-13|55|0.050682|9.795|2.01|2.80905200909091|2.22930710964321
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|327|Turbidity|Bottom|Field|1995-05-26|2011-07-13|52|0|15.96|1.1325|1.91015397692308|2.56276471153089
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|328|Turbidity|Bottom|Field|1995-05-27|2020-12-15|84|0|15.975|0.23|0.518391567857143|1.7431182290188
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|329|Turbidity|Bottom|Field|1996-03-28|2011-04-12|49|0.22|7.255|1.59|1.87628505918367|1.33147363304155
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|322|Turbidity|Bottom|Field|1995-05-27|2020-12-15|99|0|12.933|0.6061111|0.951279612121212|1.42172791814203
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|323|Turbidity|Bottom|Field|1995-05-26|2011-07-13|64|0|12.275|2.3272039|3.1887979953125|2.55568209762663
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|324|Turbidity|Bottom|Field|1995-05-26|2020-12-15|100|0|23.4|0.98260075|1.818494552|2.8250833999677
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|325|Turbidity|Bottom|Field|1995-05-27|2020-12-15|102|0|22|1.2616209|1.95914606960784|2.65330290133962
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|326|Turbidity|Bottom|Field|1995-05-26|2011-07-13|64|0.050682|9.795|2.14254885|2.797094546875|2.08584764851027
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|327|Turbidity|Bottom|Field|1995-05-26|2011-07-13|65|0|15.96|1.2654518|1.86282433384615|2.33072866924847
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|328|Turbidity|Bottom|Field|1995-05-27|2020-12-15|100|0|15.975|0.2475|0.488449881|1.59949076595255
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|329|Turbidity|Bottom|Field|1996-03-28|2011-07-13|61|0.22|7.255|1.495|1.79946774098361|1.2721424589135
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|329i|Turbidity|Bottom|Field|1995-05-26|1995-08-10|2|0.050682|0.17946|0.115071|0.115071|0.0910597970676412
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|330|Turbidity|Bottom|Field|1995-05-26|2020-10-12|77|0|9.404|0.9846215|1.50390442207792|1.65453737721237
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|331|Turbidity|Bottom|Field|1995-05-27|2011-01-23|53|0.52|5.9|1.496958|1.59318981320755|1.02155554260576
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|332|Turbidity|Bottom|Field|1995-05-27|2020-01-28|86|0|9.311|0.835|1.24316056860465|1.45725400800337
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|333|Turbidity|Bottom|Field|1995-05-26|2020-01-28|72|0|18.808|0.75|1.83090595138889|3.36216150729025
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|334|Turbidity|Bottom|Field|1995-05-27|2011-04-11|49|0.050682|3.7|0.85|1.08347128163265|0.81711256961588
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|335|Turbidity|Bottom|Field|1995-05-27|2020-12-15|75|0|17.039|0.375|0.743970632|1.99997315037387
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|336|Turbidity|Bottom|Field|1995-05-26|2011-01-24|44|0.12993|4.185|1.01|1.06997287954545|0.802805197345216
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|337|Turbidity|Bottom|Field|1995-05-26|2020-10-12|76|0|13|0.5|1.01710260263158|1.89417627796316
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|330|Turbidity|Bottom|Field|1995-05-26|2020-12-15|99|0|9.404|0.9418864|1.41041363131313|1.50190621108749
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|331|Turbidity|Bottom|Field|1995-05-27|2011-07-12|64|0.42|5.9|1.498479|1.5831270359375|0.985656755032577
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|332|Turbidity|Bottom|Field|1995-05-27|2020-12-15|102|0|9.311|0.77015355|1.16295937254902|1.37013138824473
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|333|Turbidity|Bottom|Field|1995-05-26|2020-12-15|99|0|18.808|0.6793712|1.5499177020202|2.94445610540118
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|334|Turbidity|Bottom|Field|1995-05-27|2011-07-12|64|0.050682|3.7|0.8125|1.043703928125|0.766042597702064
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|335|Turbidity|Bottom|Field|1995-05-27|2020-12-15|101|0|17.039|0.3619109|0.664196483168317|1.73787448937265
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|336|Turbidity|Bottom|Field|1995-05-26|2011-04-12|63|0.12993|4.185|1.025|1.05893035396825|0.733162831377589
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|337|Turbidity|Bottom|Field|1995-05-26|2020-12-15|98|0|13|0.5|0.921997203061224|1.6866078339664
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|338i|Turbidity|Bottom|Field|1995-05-26|1995-08-10|2|0|1.061094|0.530547|0.530547|0.750306762876359
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|339|Turbidity|Bottom|Field|1995-05-27|2011-07-12|50|0.050682|2.915|0.7775|0.883329704|0.579640989965699
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|340|Turbidity|Bottom|Field|1995-05-26|2011-07-12|51|0|6.7538523|0.39|0.74216251372549|1.15837909864922
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|339|Turbidity|Bottom|Field|1995-05-27|2011-07-12|64|0.050682|2.915|0.7425|0.83960260625|0.546132619682046
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|340|Turbidity|Bottom|Field|1995-05-26|2011-07-12|64|0|6.7538523|0.43|0.70247626875|1.04138985951946
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|341i|Turbidity|Bottom|Field|1995-05-27|1995-08-09|2|0|2.626242|1.313121|1.313121|1.85703352723692
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|342|Turbidity|Bottom|Field|1995-05-26|2011-07-13|55|0|3.565|0.77|0.841747025454546|0.62303083726952
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|343|Turbidity|Bottom|Field|1995-05-26|2011-07-13|53|0|3.845|0.865|0.992031796226415|0.813268421673283
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|344|Turbidity|Bottom|Field|1995-05-26|2011-07-12|54|0.050682|4.9|0.53|0.701220494444445|0.76145832314252
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|345|Turbidity|Bottom|Field|1995-05-26|2011-07-12|50|0|3.64|0.4425|0.554976054|0.563079315636252
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|346|Turbidity|Bottom|Field|1995-05-26|2011-07-13|50|0|1.175|0.2561675|0.288375224|0.245315133824425
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|347|Turbidity|Bottom|Field|1995-05-26|2011-04-12|48|0|1.665|0.31|0.363410629166667|0.285976052740413
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|342|Turbidity|Bottom|Field|1995-05-26|2011-07-13|62|0|3.565|0.7495788|0.819628180645161|0.60342260379587
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|343|Turbidity|Bottom|Field|1995-05-26|2011-07-13|62|0|3.845|0.83|0.988782527419355|0.781498255253884
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|344|Turbidity|Bottom|Field|1995-05-26|2011-07-12|65|0.050682|4.9|0.54|0.681529304615385|0.707319894181694
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|345|Turbidity|Bottom|Field|1995-05-26|2011-07-12|64|0|3.64|0.40482295|0.4942900625|0.519224894900448
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|346|Turbidity|Bottom|Field|1995-05-26|2011-07-13|62|0|1.175|0.27|0.288161496774194|0.221438939120553
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|347|Turbidity|Bottom|Field|1995-05-26|2011-07-13|60|0|1.665|0.3425|0.387731441666667|0.286913199885806
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|348i|Turbidity|Bottom|Field|1995-05-26|1995-08-09|2|0|0|0|0|0
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|349i|Turbidity|Bottom|Field|1995-05-26|1995-08-09|2|0|0|0|0|0
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|350|Turbidity|Bottom|Field|1995-05-26|2011-07-12|52|0|2.39|0.4992735|0.587501030769231|0.495776871237836
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|350|Turbidity|Bottom|Field|1995-05-26|2011-07-12|63|0|19.17754|0.471801|0.868659463492064|2.39028232155414
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|351|Turbidity|Bottom|Field|2010-05-04|2011-07-10|4|0.3051411|2.1|0.385|0.793785275|0.871709209863379
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|375|Turbidity|Bottom|Field|2011-01-20|2011-07-09|3|0.52|1.31|1.2|1.01|0.427901857906693
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|376|Turbidity|Bottom|Field|2010-10-10|2011-07-08|4|0.67|2.4|1.3|1.4175|0.719183564884515
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|395|Turbidity|Bottom|Field|2011-01-19|2011-07-07|2|0.67|1.6|1.135|1.135|0.657609306503489
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|396|Turbidity|Bottom|Field|2011-01-19|2011-04-06|2|0.72|0.87|0.795|0.795|0.106066017177982
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|400|Turbidity|Bottom|Field|1997-10-11|2020-03-14|73|0|6.424|0.155|0.355751295890411|0.793620742644062
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|401|Turbidity|Bottom|Field|1998-02-12|2020-03-30|66|0|7.8893576|0.1875|0.542698543939394|1.28804195704857
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|402|Turbidity|Bottom|Field|1997-10-28|2020-07-09|66|0|5.0261355|0.245|0.504567581818182|0.872821389099795
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|403|Turbidity|Bottom|Field|1997-10-29|2020-03-27|65|0|16.414|0.24|0.706000326153846|2.03750379129334
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|376|Turbidity|Bottom|Field|2000-07-21|2011-07-08|4|0.67|7.975|1.85|3.08625|3.33665345068978
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|395|Turbidity|Bottom|Field|2011-01-19|2011-07-07|3|0.67|2.02|1.6|1.43|0.690869017976635
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|396|Turbidity|Bottom|Field|2011-01-19|2011-07-07|3|0.45|0.87|0.72|0.68|0.212837966537928
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|400|Turbidity|Bottom|Field|1997-10-11|2020-11-14|89|0|6.424|0.14|0.344661175280899|0.733625744212523
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|401|Turbidity|Bottom|Field|1998-02-12|2020-11-15|88|0|23.8948|0.2025|0.716553929545455|2.72839794836351
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|402|Turbidity|Bottom|Field|1997-10-28|2020-12-13|90|0|5.0261355|0.245|0.454606362222222|0.765246428937736
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|403|Turbidity|Bottom|Field|1997-10-29|2020-12-16|85|0|16.414|0.295|0.727767096470588|1.88792919610241
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|500|Turbidity|Bottom|Field|2011-12-01|2019-02-04|4|0|2.1|0.845|0.9475|0.905220967499096
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|501|Turbidity|Bottom|Field|2011-11-30|2017-05-02|2|0|0.964|0.482|0.482|0.681650937063832
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|502|Turbidity|Bottom|Field|2011-12-01|2019-08-16|4|0|1.4|0.405|0.5525|0.606485778893454
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|503|Turbidity|Bottom|Field|2011-12-12|2011-12-12|1|0|0|0|0|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|504|Turbidity|Bottom|Field|2011-12-12|2017-05-28|2|0|1.294|0.647|0.647|0.914996174855393
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|506|Turbidity|Bottom|Field|2011-12-09|2017-05-09|2|0|1.281|0.6405|0.6405|0.905803786699967
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|507|Turbidity|Bottom|Field|2011-12-09|2017-05-25|3|0|1.888|0.51|0.799333333333333|0.976688964478115
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|508|Turbidity|Bottom|Field|2011-12-08|2017-06-06|2|0|1.519|0.7595|0.7595|1.07409520062237
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|509|Turbidity|Bottom|Field|2011-12-08|2012-03-14|2|0|0.21|0.105|0.105|0.148492424049175
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_212-W|Turbidity|Bottom|Field|2021-06-26|2021-06-26|1|0.8|0.8|0.8|0.8|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_213-W|Turbidity|Bottom|Field|2015-05-15|2015-09-02|2|0.01|0.07|0.04|0.04|0.0424264068711929
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_214-W|Turbidity|Bottom|Field|2019-05-27|2020-07-14|2|0.21|0.8|0.505|0.505|0.417193000900063
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_216-W|Turbidity|Bottom|Field|2014-11-12|2014-11-12|1|0.12|0.12|0.12|0.12|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_218-W|Turbidity|Bottom|Field|2016-11-27|2016-11-27|1|0.06|0.06|0.06|0.06|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_227-W|Turbidity|Bottom|Field|2014-04-23|2017-08-16|2|0.09|0.22|0.155|0.155|0.0919238815542512
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_239-W|Turbidity|Bottom|Field|2016-11-14|2016-11-14|1|0.02|0.02|0.02|0.02|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_243-W|Turbidity|Bottom|Field|2015-09-23|2015-09-23|1|0.09|0.09|0.09|0.09|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_249-W|Turbidity|Bottom|Field|2014-02-10|2014-02-10|1|0.09|0.09|0.09|0.09|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_255-W|Turbidity|Bottom|Field|2020-12-13|2021-11-15|2|0.35|0.37|0.36|0.36|0.014142135623731
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_259-W|Turbidity|Bottom|Field|2014-04-24|2015-09-17|3|0.01|0.06|0.04|0.0366666666666667|0.0251661147842358
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_263-W|Turbidity|Bottom|Field|2018-11-29|2018-11-29|1|0.73|0.73|0.73|0.73|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_264-W|Turbidity|Bottom|Field|2014-07-16|2017-02-14|2|0|0.07|0.035|0.035|0.0494974746830583
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_288-W|Turbidity|Bottom|Field|2020-07-01|2020-07-01|1|0.76|0.76|0.76|0.76|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_289-W|Turbidity|Bottom|Field|2017-02-07|2017-02-07|1|0.58|0.58|0.58|0.58|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_318-W|Turbidity|Bottom|Field|2017-12-12|2018-04-04|2|0.96|5.74|3.35|3.35|3.3799704140717
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_324-W|Turbidity|Bottom|Field|2019-06-03|2019-06-03|1|0.67|0.67|0.67|0.67|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_325-W|Turbidity|Bottom|Field|2020-03-26|2020-03-26|1|0.4|0.4|0.4|0.4|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_333-W|Turbidity|Bottom|Field|2014-11-17|2014-11-17|1|0.21|0.21|0.21|0.21|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_335-W|Turbidity|Bottom|Field|2021-08-11|2021-08-11|1|0.06|0.06|0.06|0.06|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_337-W|Turbidity|Bottom|Field|2018-12-03|2020-07-10|2|0.08|0.35|0.215|0.215|0.190918830920368
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_403-W|Turbidity|Bottom|Field|2016-12-02|2016-12-02|1|0.15|0.15|0.15|0.15|
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_508-W|Turbidity|Bottom|Field|2021-09-01|2021-10-26|2|0.7|1.34|1.02|1.02|0.452548339959391
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLDADE_BB51|Turbidity|Bottom|Field|2001-05-09|2001-05-09|1|0.82|0.82|0.82|0.82|
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLDADE_BB55|Turbidity|Bottom|Field|2009-04-08|2009-04-08|1|0.5|0.5|0.5|0.5|
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLFTM_G5SD0002|Turbidity|Bottom|Field|2015-11-18|2015-11-18|1|0.5|0.5|0.5|0.5|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV004|Turbidity|Bottom|Field|2018-02-05|2022-01-03|9|1.4|3.7|2.7|2.57777777777778|0.895513508800646
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV006|Turbidity|Bottom|Field|2017-11-06|2022-07-05|13|1.1|7|2.4|2.83076923076923|1.57023597769285
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_GSV001|Turbidity|Bottom|Field|2017-12-04|2022-08-01|19|1.4|10|2.5|2.94736842105263|1.84642851083221
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_GSV002|Turbidity|Bottom|Field|2018-05-07|2022-05-02|11|1.4|5.6|3.1|3.17272727272727|1.27756871368307
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|513|Coastal Charlotte Harbor Monitoring Network|WIN_21FLEECO_CHNEP_RSAE50377|Turbidity|Bottom|Field|2020-06-09|2020-06-09|1|1.75|1.75|1.75|1.75|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_10273|Turbidity|Bottom|Field|2001-07-19|2001-07-19|1|3.1|3.1|3.1|3.1|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR10|Turbidity|Bottom|Field|1996-12-17|2002-07-22|5|1.4|12.2|2.4|5.38|4.87462819094954
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0052|Turbidity|Bottom|Field|2022-09-26|2022-11-08|2|3.6|16|9.8|9.8|8.76812408671319
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0073|Turbidity|Bottom|Field|2022-03-16|2022-03-16|1|6.2|6.2|6.2|6.2|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_TP-HI|Turbidity|Bottom|Field|2020-05-27|2020-06-09|2|1.4|1.9|1.65|1.65|0.353553390593274
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670049|Turbidity|Bottom|Field|2020-02-12|2021-07-20|2|1.7|3.2|2.45|2.45|1.06066017177982
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670057|Turbidity|Bottom|Field|2020-01-13|2021-05-18|2|1.04|2|1.52|1.52|0.678822509939086
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670062|Turbidity|Bottom|Field|2020-11-03|2020-11-03|1|0.94|0.94|0.94|0.94|
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|504|Turbidity|Bottom|Field|2011-12-12|2020-12-13|3|0|2.62|1.294|1.30466666666667|1.31003256956968
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|506|Turbidity|Bottom|Field|2011-12-09|2020-10-27|3|0|1.281|0.65|0.643666666666667|0.640523483826575
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|507|Turbidity|Bottom|Field|2011-12-09|2017-05-25|3|0|1.888|0.67|0.852666666666667|0.957163169649425
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|508|Turbidity|Bottom|Field|2017-06-06|2017-06-06|1|1.519|1.519|1.519|1.519|
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|509|Turbidity|Bottom|Field|2011-12-08|2016-02-26|3|0|1.07|0.21|0.426666666666667|0.566950909103543
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|WIN_21FLFWC_296-W|Turbidity|Bottom|Field|2014-05-25|2014-05-25|1|0.72|0.72|0.72|0.72|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV004|Turbidity|Bottom|Field|2017-11-06|2022-02-07|2|0.85|1.6|1.225|1.225|0.530330085889911
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV006|Turbidity|Bottom|Field|2022-05-02|2022-05-02|1|0.55|0.55|0.55|0.55|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0046|Turbidity|Bottom|Field|2022-09-20|2022-09-20|1|0.9|0.9|0.9|0.9|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0052|Turbidity|Bottom|Field|2022-09-26|2023-03-15|4|1.3|16|6.8|7.725|6.63193033739047
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0218|Turbidity|Bottom|Field|2022-03-16|2022-03-16|1|1.5|1.5|1.5|1.5|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_TP-HI|Turbidity|Bottom|Field|2020-08-18|2020-09-15|2|1.8|2.9|2.35|2.35|0.777817459305202
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670071|Turbidity|Bottom|Field|2013-02-14|2013-02-14|1|3|3|3|3|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670093|Turbidity|Bottom|Field|2014-07-08|2014-07-08|1|1.4|1.4|1.4|1.4|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670103|Turbidity|Bottom|Field|2011-10-26|2011-11-15|2|1.27|4.1|2.685|2.685|2.00111219075793
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670142|Turbidity|Bottom|Field|2013-12-04|2013-12-04|1|1.3|1.3|1.3|1.3|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670144|Turbidity|Bottom|Field|2010-08-17|2014-07-10|4|1.9|3|2.55|2.5|0.469041575982343
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670145|Turbidity|Bottom|Field|2013-08-08|2016-01-06|3|1.4|7.6|3.7|4.23333333333333|3.13421973277773
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670146|Turbidity|Bottom|Field|2010-11-15|2010-11-15|1|2.1|2.1|2.1|2.1|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670147|Turbidity|Bottom|Field|2010-07-06|2015-11-04|7|0.9|6.2|3|2.92857142857143|1.72695713681057
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670148|Turbidity|Bottom|Field|2010-09-08|2015-08-18|6|1.4|12.3|2.9|4.33333333333333|3.97827433275619
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670149|Turbidity|Bottom|Field|2014-01-16|2014-01-16|1|4.3|4.3|4.3|4.3|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670150|Turbidity|Bottom|Field|2010-07-06|2015-07-07|2|1.95|3.2|2.575|2.575|0.883883476483185
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670052|Turbidity|Bottom|Field|2021-03-16|2021-03-16|1|2.33|2.33|2.33|2.33|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670053|Turbidity|Bottom|Field|2020-12-14|2020-12-14|1|1.61|1.61|1.61|1.61|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670064|Turbidity|Bottom|Field|2020-01-13|2021-03-16|2|2.8|7.69|5.245|5.245|3.45775216000222
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670065|Turbidity|Bottom|Field|2020-03-09|2021-07-20|3|1.6|2.2|1.9|1.9|0.3
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670068|Turbidity|Bottom|Field|2021-06-07|2021-06-07|1|0.841|0.841|0.841|0.841|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670078|Turbidity|Bottom|Field|2020-03-11|2021-04-12|2|0.63|1.09|0.86|0.86|0.325269119345812
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670079|Turbidity|Bottom|Field|2020-01-15|2020-11-04|2|0.89|1.6|1.245|1.245|0.502045814642449
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670083|Turbidity|Bottom|Field|2020-04-22|2020-04-22|1|0.95|0.95|0.95|0.95|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670084|Turbidity|Bottom|Field|2021-06-09|2021-06-09|1|0.76|0.76|0.76|0.76|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670085|Turbidity|Bottom|Field|2020-01-15|2021-04-12|3|0.736|1.3|1.2|1.07866666666667|0.300940747213357
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670065|Turbidity|Bottom|Field|2020-03-09|2021-07-20|2|1.9|2.2|2.05|2.05|0.212132034355964
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670072|Turbidity|Bottom|Field|2020-01-13|2020-01-13|1|1.3|1.3|1.3|1.3|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670085|Turbidity|Bottom|Field|2020-11-04|2021-04-12|3|0.736|1.9|1.2|1.27866666666667|0.585973833317951
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670086|Turbidity|Bottom|Field|2021-06-09|2021-06-09|1|0.48|0.48|0.48|0.48|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670088|Turbidity|Bottom|Field|2020-03-11|2020-03-11|1|1.1|1.1|1.1|1.1|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670089|Turbidity|Bottom|Field|2020-04-22|2020-04-22|1|0.8|0.8|0.8|0.8|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670090|Turbidity|Bottom|Field|2020-03-11|2020-03-11|1|0.78|0.78|0.78|0.78|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670091|Turbidity|Bottom|Field|2020-04-22|2021-06-09|2|0.65|1.1|0.875|0.875|0.318198051533946
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670092|Turbidity|Bottom|Field|2021-04-12|2021-04-12|1|0.717|0.717|0.717|0.717|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670096|Turbidity|Bottom|Field|2020-01-15|2020-12-15|2|0.66|0.87|0.765|0.765|0.148492424049175
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670097|Turbidity|Bottom|Field|2021-05-17|2021-07-19|2|1.21|1.8|1.505|1.505|0.417193000900063
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670098|Turbidity|Bottom|Field|2020-12-15|2021-07-19|2|0.57|1.9|1.235|1.235|0.940452018978108
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670099|Turbidity|Bottom|Field|2020-03-11|2020-03-11|1|0.38|0.38|0.38|0.38|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670104|Turbidity|Bottom|Field|2020-02-11|2021-05-17|2|1.4|1.67|1.535|1.535|0.190918830920368
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670105|Turbidity|Bottom|Field|2020-12-15|2020-12-15|1|0.77|0.77|0.77|0.77|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670106|Turbidity|Bottom|Field|2020-01-15|2020-01-15|1|1.4|1.4|1.4|1.4|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670107|Turbidity|Bottom|Field|2021-05-17|2021-05-17|1|2.13|2.13|2.13|2.13|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670114|Turbidity|Bottom|Field|2021-04-12|2021-04-12|1|1.01|1.01|1.01|1.01|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670115|Turbidity|Bottom|Field|2021-07-19|2021-07-19|1|2.5|2.5|2.5|2.5|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670116|Turbidity|Bottom|Field|2020-12-15|2020-12-15|1|0.41|0.41|0.41|0.41|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670117|Turbidity|Bottom|Field|2020-03-11|2021-07-19|3|0.65|5|3.8|3.15|2.2466641938661
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670119|Turbidity|Bottom|Field|2020-04-21|2020-04-21|1|15|15|15|15|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670126|Turbidity|Bottom|Field|2021-05-17|2021-05-17|1|2.18|2.18|2.18|2.18|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670127|Turbidity|Bottom|Field|2021-05-17|2021-05-17|1|2.01|2.01|2.01|2.01|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670140|Turbidity|Bottom|Field|2020-04-22|2020-04-22|1|2.5|2.5|2.5|2.5|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670141|Turbidity|Bottom|Field|2020-02-11|2020-02-11|1|2.1|2.1|2.1|2.1|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670105|Turbidity|Bottom|Field|2020-12-15|2021-06-09|3|0.552|1.2|0.77|0.840666666666667|0.3297291818043
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670128|Turbidity|Bottom|Field|2020-02-11|2021-04-12|2|0.809|1.2|1.0045|1.0045|0.27647875144394
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670129|Turbidity|Bottom|Field|2020-03-11|2020-03-11|1|1.9|1.9|1.9|1.9|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670147|Turbidity|Bottom|Field|2021-06-08|2021-06-08|1|2.3|2.3|2.3|2.3|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670149|Turbidity|Bottom|Field|2020-11-03|2020-11-03|1|3.5|3.5|3.5|3.5|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670150|Turbidity|Bottom|Field|2021-05-19|2021-05-19|1|3.24|3.24|3.24|3.24|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670152|Turbidity|Bottom|Field|2020-02-11|2021-07-19|2|1.4|8.1|4.75|4.75|4.73761543394987
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670154|Turbidity|Bottom|Field|2021-04-12|2021-06-09|2|0.397|1.2|0.7985|0.7985|0.567806745292798
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLI27|Turbidity|Bottom|Field|2005-04-21|2005-04-21|2|2.54|2.83|2.685|2.685|0.205060966544099
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLS02|Turbidity|Bottom|Field|2004-06-16|2005-04-13|4|2.93|6.6|5.6|5.1825|1.59286691220579
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLSUS|Turbidity|Bottom|Field|2007-02-22|2008-12-30|3|3.88|6.14|5.21|5.07666666666667|1.13588438378795
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG034|Turbidity|Bottom|Field|2011-10-17|2018-01-24|27|1.44|12.8|2.44|3.59222222222222|2.74591491455011
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG035|Turbidity|Bottom|Field|2012-07-25|2013-02-12|2|1.96|4.9|3.43|3.43|2.07889393668845
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670148|Turbidity|Bottom|Field|2020-02-10|2020-02-10|1|1.6|1.6|1.6|1.6|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670149|Turbidity|Bottom|Field|2020-04-21|2020-04-21|1|1.8|1.8|1.8|1.8|
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLI26|Turbidity|Bottom|Field|2005-04-21|2005-04-21|1|1.71|1.71|1.71|1.71|
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLI27|Turbidity|Bottom|Field|2005-04-21|2009-05-07|6|1.82|7.24|2.685|3.45833333333333|2.04499796250917
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLI28|Turbidity|Bottom|Field|2005-04-21|2005-05-26|3|3.08|5.12|4.81|4.33666666666667|1.09928764813098
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLSUS|Turbidity|Bottom|Field|2008-05-09|2009-02-04|7|2.5|6.14|4.25|4.32714285714286|1.30863432995005
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44881|Turbidity|Bottom|Field|2021-08-09|2021-08-09|1|1.69754|1.69754|1.69754|1.69754|
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44930|Turbidity|Bottom|Field|2020-05-06|2020-05-06|1|2.81293|2.81293|2.81293|2.81293|
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWPB_G5SE0079|Turbidity|Bottom|Field|2021-02-10|2022-09-07|2|2.3|2.6|2.45|2.45|0.212132034355964
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG034|Turbidity|Bottom|Field|2011-10-17|2018-01-24|32|1.44|12.8|2.725|3.5465625|2.56835407238352
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG035|Turbidity|Bottom|Field|2012-01-25|2018-01-24|5|1.18|15.1|1.98|5.024|5.80886219495694
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG036|Turbidity|Bottom|Field|2012-01-25|2019-01-17|8|2.27|13|4.315|5.32|3.63878708206065
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG037|Turbidity|Bottom|Field|2018-02-28|2019-01-17|2|2.13|4.32|3.225|3.225|1.54856385079854
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG038|Turbidity|Bottom|Field|2012-01-25|2017-01-25|4|1.59|2.82|2.26|2.2325|0.552652693832211
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG039|Turbidity|Bottom|Field|2012-01-19|2018-02-28|7|1.89|5.45|2.64|2.98857142857143|1.25115185024878
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG037|Turbidity|Bottom|Field|2013-02-12|2019-01-17|3|1.83|4.32|2.13|2.76|1.3593012911051
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG038|Turbidity|Bottom|Field|2012-01-25|2018-02-28|5|1.59|4.43|2.54|2.672|1.09310109322057
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG039|Turbidity|Bottom|Field|2012-01-19|2018-02-28|9|1.89|9.34|2.64|3.59444444444444|2.42993369822672
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG040|Turbidity|Bottom|Field|2012-01-19|2018-02-28|8|2.56|3.89|3.255|3.22375|0.488523650546068
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG041|Turbidity|Bottom|Field|2017-01-25|2017-01-25|1|3.42|3.42|3.42|3.42|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG042|Turbidity|Bottom|Field|2007-02-07|2018-03-14|9|1.58|3.3|2.51|2.51666666666667|0.494494691579192
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG042|Turbidity|Bottom|Field|2012-10-10|2018-03-14|8|1.58|3.3|2.565|2.52375|0.528148720938119
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG043|Turbidity|Bottom|Field|2012-01-19|2017-03-14|14|1.47|15.5|2.64|4.16785714285714|3.74260743861288
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG045|Turbidity|Bottom|Field|2012-07-19|2012-07-19|1|5.02|5.02|5.02|5.02|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG046|Turbidity|Bottom|Field|2012-07-19|2019-01-08|5|2.72|10.5|6.1|5.824|3.04291472111855
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG048|Turbidity|Bottom|Field|2011-11-03|2017-01-12|22|0.15|16.7|5.98|7.08590909090909|4.9972998986509
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG049|Turbidity|Bottom|Field|2017-01-12|2018-01-31|3|1.88|5.53|3.52|3.64333333333333|1.82812289885919
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG050|Turbidity|Bottom|Field|2007-06-07|2018-01-31|8|3.22|6.52|5.035|5.03125|1.2711910893781
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG050|Turbidity|Bottom|Field|2011-12-19|2018-01-31|6|3.22|6.52|4.38|4.75333333333333|1.36585016259715
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG074|Turbidity|Bottom|Field|2013-01-30|2018-01-23|6|1.76|12.7|4.195|5.975|4.60252865281684
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|3013|Seagrass (SJRWMD)|IRLSG075|Turbidity|Bottom|Field|2018-01-31|2018-01-31|1|6.09|6.09|6.09|6.09|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCOSP_COSPE6-4|Turbidity|Bottom|Field|2015-07-02|2015-07-02|1|0.96|0.96|0.96|0.96|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_038|Turbidity|Bottom|Field|2002-08-06|2012-07-02|7|1|4|1.8|1.9|1.03762549441823
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_046|Turbidity|Bottom|Field|2003-05-06|2012-12-04|2|2.1|6|4.05|4.05|2.75771644662754
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_065|Turbidity|Bottom|Field|2011-11-29|2011-11-29|1|3.3|3.3|3.3|3.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_082|Turbidity|Bottom|Field|2015-06-15|2016-01-20|2|0.6|1.1|0.85|0.85|0.353553390593274
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E1-D-05-04|Turbidity|Bottom|Field|2005-05-26|2005-05-26|1|1.1|1.1|1.1|1.1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E1-D-07-09|Turbidity|Bottom|Field|2007-12-06|2007-12-06|1|1.3|1.3|1.3|1.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E1-D-17-03|Turbidity|Bottom|Field|2017-05-08|2017-05-08|1|2.7|2.7|2.7|2.7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E2-A-08-02|Turbidity|Bottom|Field|2008-04-02|2008-04-02|1|3.5|3.5|3.5|3.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E2-B-13-03|Turbidity|Bottom|Field|2013-05-16|2013-05-16|1|0.5|0.5|0.5|0.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E2-B-15-06|Turbidity|Bottom|Field|2015-09-23|2015-09-23|1|1.6|1.6|1.6|1.6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E2-D-09-07|Turbidity|Bottom|Field|2009-10-20|2009-10-20|1|3.5|3.5|3.5|3.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E2-D-14-01|Turbidity|Bottom|Field|2014-01-28|2014-01-28|1|1.2|1.2|1.2|1.2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-B-06-09|Turbidity|Bottom|Field|2006-12-06|2006-12-06|1|0.9|0.9|0.9|0.9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-D-11-02|Turbidity|Bottom|Field|2011-03-14|2011-03-14|1|1|1|1|1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E7 98-15|Turbidity|Bottom|Field|1999-12-15|1999-12-15|1|2.6|2.6|2.6|2.6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-B-05-02|Turbidity|Bottom|Field|2005-02-23|2005-02-23|1|1.1|1.1|1.1|1.1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-B-07-02|Turbidity|Bottom|Field|2007-03-07|2007-03-07|1|2.8|2.8|2.8|2.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W3-A-07-02|Turbidity|Bottom|Field|2007-02-28|2007-02-28|1|7.6|7.6|7.6|7.6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W3-A-08-04|Turbidity|Bottom|Field|2008-06-18|2008-06-18|1|3.7|3.7|3.7|3.7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 01-18|Turbidity|Bottom|Field|2002-03-13|2002-03-13|1|4.7|4.7|4.7|4.7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 57-01|Turbidity|Bottom|Field|2002-09-25|2002-09-25|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSP580|Turbidity|Bottom|Field|2021-08-24|2022-08-22|2|3.24|4.37|3.805|3.805|0.799030662740799
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_25|Turbidity|Bottom|Field|2022-01-18|2022-11-15|2|2.5|3.1|2.8|2.8|0.424264068711929
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_46|Turbidity|Bottom|Field|2021-01-05|2023-02-06|3|1.2|2.5|1.7|1.8|0.6557438524302
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_65|Turbidity|Bottom|Field|2020-12-07|2023-03-07|3|2.3|2.8|2.4|2.5|0.264575131106459
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_67|Turbidity|Bottom|Field|2021-01-05|2021-01-05|1|0.9|0.9|0.9|0.9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_68|Turbidity|Bottom|Field|2022-03-01|2022-03-01|1|1.8|1.8|1.8|1.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-20-04|Turbidity|Bottom|Field|2020-06-15|2020-06-15|1|3.6|3.6|3.6|3.6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-21-02|Turbidity|Bottom|Field|2021-03-15|2021-03-15|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-20-03|Turbidity|Bottom|Field|2020-05-07|2020-05-07|1|6.5|6.5|6.5|6.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-21-06|Turbidity|Bottom|Field|2021-09-08|2021-09-08|1|3.8|3.8|3.8|3.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-21-07|Turbidity|Bottom|Field|2021-11-09|2021-11-09|1|5.2|5.2|5.2|5.2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-20-03|Turbidity|Bottom|Field|2020-05-21|2020-05-21|1|2.2|2.2|2.2|2.2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-21-06|Turbidity|Bottom|Field|2021-09-20|2021-09-20|1|2.6|2.6|2.6|2.6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-20-05|Turbidity|Bottom|Field|2020-08-06|2020-08-06|1|2.5|2.5|2.5|2.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-20-08|Turbidity|Bottom|Field|2020-12-09|2020-12-09|1|1.2|1.2|1.2|1.2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-D-21-03|Turbidity|Bottom|Field|2021-05-12|2021-05-12|1|5.4|5.4|5.4|5.4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-B-21-03|Turbidity|Bottom|Field|2021-05-18|2021-05-18|1|3.4|3.4|3.4|3.4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-20-08|Turbidity|Bottom|Field|2020-12-09|2020-12-09|1|2.3|2.3|2.3|2.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-20-05|Turbidity|Bottom|Field|2020-08-06|2020-08-06|1|2.8|2.8|2.8|2.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-21-06|Turbidity|Bottom|Field|2021-09-16|2021-09-16|1|9.2|9.2|9.2|9.2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-20-03|Turbidity|Bottom|Field|2020-05-04|2020-05-04|1|7.3|7.3|7.3|7.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-21-07|Turbidity|Bottom|Field|2021-11-09|2021-11-09|1|2.2|2.2|2.2|2.2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-06|Turbidity|Bottom|Field|2021-09-13|2021-09-13|1|4.8|4.8|4.8|4.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-A-21-07|Turbidity|Bottom|Field|2021-10-11|2021-10-11|1|2.9|2.9|2.9|2.9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-21-07|Turbidity|Bottom|Field|2021-10-11|2021-10-11|1|2.8|2.8|2.8|2.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-21-08|Turbidity|Bottom|Field|2021-12-01|2021-12-01|1|1.8|1.8|1.8|1.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-03|Turbidity|Bottom|Field|2020-05-06|2020-05-06|1|4.3|4.3|4.3|4.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-05|Turbidity|Bottom|Field|2020-08-06|2020-08-06|1|6.5|6.5|6.5|6.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-20-03|Turbidity|Bottom|Field|2020-05-06|2020-05-06|1|4.8|4.8|4.8|4.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-22-07|Turbidity|Bottom|Field|2022-10-17|2022-10-17|1|4.9|4.9|4.9|4.9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-08|Turbidity|Bottom|Field|2021-11-30|2021-11-30|1|1.8|1.8|1.8|1.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-B-20-05|Turbidity|Bottom|Field|2020-08-12|2020-08-12|1|6.8|6.8|6.8|6.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-A-20-03|Turbidity|Bottom|Field|2020-05-11|2020-05-11|1|4.5|4.5|4.5|4.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-B-21-02|Turbidity|Bottom|Field|2021-03-30|2021-03-30|1|3.9|3.9|3.9|3.9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-07|Turbidity|Bottom|Field|2021-10-27|2021-10-27|1|0.35|0.35|0.35|0.35|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-08|Turbidity|Bottom|Field|2021-12-08|2021-12-08|1|0.5|0.5|0.5|0.5|
-37|Rocky Bayou State Park Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCBA_NVL01|Turbidity|Bottom|Field|2003-12-18|2015-09-26|34|0|76.7|2.65|10.5617647058824|17.6587863735134
+25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_GSV006|Turbidity|Bottom|Field|2018-05-07|2019-05-06|2|2.9|4.7|3.8|3.8|1.27279220613579
+25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_LBV001B|Turbidity|Bottom|Field|2022-01-03|2022-01-03|1|2.8|2.8|2.8|2.8|
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|735138|Turbidity|Bottom|Field|2011-12-15|2014-11-04|8|1.2|8.9|3.55|4.05|2.4035687752055
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|735142|Turbidity|Bottom|Field|2013-08-08|2014-11-04|4|2.2|2.9|2.6|2.575|0.298607881119482
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|735146|Turbidity|Bottom|Field|2012-06-12|2014-10-20|7|2.7|11|3.9|5.12857142857143|2.85582112284966
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|735147|Turbidity|Bottom|Field|2012-04-11|2016-03-09|9|1.2|12|3.7|5.15555555555556|4.14038377179915
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|735149|Turbidity|Bottom|Field|2012-01-12|2015-09-01|4|1.6|2.7|2.3|2.225|0.485626742811116
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|735151|Turbidity|Bottom|Field|2015-02-04|2016-01-06|3|1.7|4|1.8|2.5|1.3
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735146|Turbidity|Bottom|Field|2020-04-21|2020-11-03|2|6|7|6.5|6.5|0.707106781186548
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735147|Turbidity|Bottom|Field|2020-04-21|2020-04-21|1|18|18|18|18|
+25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735149|Turbidity|Bottom|Field|2020-12-16|2020-12-16|1|2.21|2.21|2.21|2.21|

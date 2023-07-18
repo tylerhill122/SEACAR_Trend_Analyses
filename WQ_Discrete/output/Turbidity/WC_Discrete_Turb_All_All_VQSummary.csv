@@ -214,11 +214,11 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 9,Cape Haze Aquatic Preserve,2008,Turbidity,All,All,65,65,0,0,0,0,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,2009,Turbidity,All,All,102,102,0,0,0,0,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,2010,Turbidity,All,All,108,108,0,0,0,0,0,0,0,0,0,0
-9,Cape Haze Aquatic Preserve,2011,Turbidity,All,All,85,85,0,0,0,0,1,1.17647058823529,0,0,0,0
-9,Cape Haze Aquatic Preserve,2012,Turbidity,All,All,36,36,0,0,0,0,0,0,0,0,0,0
-9,Cape Haze Aquatic Preserve,2013,Turbidity,All,All,33,33,0,0,0,0,0,0,0,0,0,0
-9,Cape Haze Aquatic Preserve,2014,Turbidity,All,All,34,34,0,0,0,0,0,0,0,0,0,0
-9,Cape Haze Aquatic Preserve,2015,Turbidity,All,All,28,28,0,0,0,0,0,0,0,0,0,0
+9,Cape Haze Aquatic Preserve,2011,Turbidity,All,All,84,84,0,0,0,0,1,1.19047619047619,0,0,0,0
+9,Cape Haze Aquatic Preserve,2012,Turbidity,All,All,35,35,0,0,0,0,0,0,0,0,0,0
+9,Cape Haze Aquatic Preserve,2013,Turbidity,All,All,31,31,0,0,0,0,0,0,0,0,0,0
+9,Cape Haze Aquatic Preserve,2014,Turbidity,All,All,31,31,0,0,0,0,0,0,0,0,0,0
+9,Cape Haze Aquatic Preserve,2015,Turbidity,All,All,27,27,0,0,0,0,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,2016,Turbidity,All,All,5,5,0,0,0,0,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,2017,Turbidity,All,All,4,4,0,0,0,0,0,0,0,0,0,0
 9,Cape Haze Aquatic Preserve,2018,Turbidity,All,All,5,5,0,0,0,0,0,0,0,0,0,0
@@ -408,13 +408,13 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2007,Turbidity,All,All,565,565,0,0,1,0.176991150442478,23,4.07079646017699,0,0,0,0
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2008,Turbidity,All,All,401,397,0,0,0,0,0,0,0,0,0,0
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2009,Turbidity,All,All,527,527,0,0,1,0.189753320683112,0,0,0,0,0,0
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2010,Turbidity,All,All,584,584,0,0,0,0,2,0.342465753424658,0,0,0,0
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2011,Turbidity,All,All,473,471,0,0,0,0,6,1.26849894291755,0,0,0,0
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2012,Turbidity,All,All,402,401,0,0,0,0,1,0.248756218905473,0,0,0,0
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2013,Turbidity,All,All,294,294,0,0,0,0,1,0.340136054421769,0,0,0,0
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2014,Turbidity,All,All,345,345,0,0,0,0,1,0.289855072463768,0,0,0,0
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2015,Turbidity,All,All,275,275,0,0,0,0,0,0,0,0,0,0
-18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2016,Turbidity,All,All,115,115,0,0,0,0,0,0,0,0,0,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2010,Turbidity,All,All,581,581,0,0,0,0,2,0.344234079173838,0,0,0,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2011,Turbidity,All,All,467,465,0,0,0,0,6,1.2847965738758,0,0,0,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2012,Turbidity,All,All,399,398,0,0,0,0,1,0.25062656641604,0,0,0,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2013,Turbidity,All,All,290,290,0,0,0,0,1,0.344827586206897,0,0,0,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2014,Turbidity,All,All,339,339,0,0,0,0,1,0.294985250737463,0,0,0,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2015,Turbidity,All,All,270,270,0,0,0,0,0,0,0,0,0,0
+18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2016,Turbidity,All,All,114,114,0,0,0,0,0,0,0,0,0,0
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2017,Turbidity,All,All,134,134,0,0,0,0,0,0,0,0,0,0
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2018,Turbidity,All,All,145,145,0,0,42,28.9655172413793,0,0,0,0,32,22.0689655172414
 18,Gasparilla Sound-Charlotte Harbor Aquatic Preserve,2019,Turbidity,All,All,161,161,0,0,25,15.527950310559,0,0,0,0,33,20.4968944099379
@@ -588,16 +588,16 @@ AreaID,ManagedAreaName,Year,ParameterName,RelativeDepth,ActivityType,N_Total,N_A
 25,Lemon Bay Aquatic Preserve,2009,Turbidity,All,All,253,253,0,0,0,0,2,0.790513833992095,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2010,Turbidity,All,All,345,345,0,0,0,0,6,1.73913043478261,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2011,Turbidity,All,All,288,286,0,0,0,0,5,1.73611111111111,0,0,0,0
-25,Lemon Bay Aquatic Preserve,2012,Turbidity,All,All,107,107,0,0,0,0,0,0,0,0,0,0
-25,Lemon Bay Aquatic Preserve,2013,Turbidity,All,All,88,88,0,0,0,0,0,0,0,0,0,0
-25,Lemon Bay Aquatic Preserve,2014,Turbidity,All,All,88,88,0,0,0,0,0,0,0,0,0,0
+25,Lemon Bay Aquatic Preserve,2012,Turbidity,All,All,105,105,0,0,0,0,0,0,0,0,0,0
+25,Lemon Bay Aquatic Preserve,2013,Turbidity,All,All,85,85,0,0,0,0,0,0,0,0,0,0
+25,Lemon Bay Aquatic Preserve,2014,Turbidity,All,All,85,85,0,0,0,0,0,0,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2015,Turbidity,All,All,93,93,0,0,0,0,0,0,0,0,0,0
-25,Lemon Bay Aquatic Preserve,2016,Turbidity,All,All,69,69,0,0,0,0,4,5.79710144927536,0,0,0,0
+25,Lemon Bay Aquatic Preserve,2016,Turbidity,All,All,68,68,0,0,0,0,4,5.88235294117647,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2017,Turbidity,All,All,66,66,0,0,0,0,0,0,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2018,Turbidity,All,All,27,27,0,0,0,0,0,0,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2019,Turbidity,All,All,40,40,0,0,0,0,0,0,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2020,Turbidity,All,All,92,92,0,0,0,0,0,0,0,0,0,0
-25,Lemon Bay Aquatic Preserve,2021,Turbidity,All,All,231,231,0,0,0,0,0,0,0,0,0,0
+25,Lemon Bay Aquatic Preserve,2021,Turbidity,All,All,230,230,0,0,0,0,0,0,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2022,Turbidity,All,All,96,96,0,0,1,1.04166666666667,2,2.08333333333333,0,0,0,0
 25,Lemon Bay Aquatic Preserve,2023,Turbidity,All,All,6,6,0,0,0,0,0,0,0,0,0,0
 26,Lignumvitae Key Aquatic Preserve,2016,Turbidity,All,All,13,0,0,0,0,0,0,0,0,0,0,0

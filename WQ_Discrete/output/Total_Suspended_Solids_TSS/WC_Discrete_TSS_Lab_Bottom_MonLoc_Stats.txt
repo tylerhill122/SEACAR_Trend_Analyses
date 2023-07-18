@@ -1,15 +1,4 @@
 AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|RelativeDepth|ActivityType|EarliestSampleDate|LastSampleDate|N_Data|Min|Max|Median|Mean|StandardDeviation
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apadbnut|Total Suspended Solids, TSS|Bottom|Lab|2019-10-02|2019-10-02|1|22|22|22|22|
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaebnut|Total Suspended Solids, TSS|Bottom|Lab|2017-09-05|2019-06-04|2|8|10|9|9|1.4142135623731
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaegnut|Total Suspended Solids, TSS|Bottom|Lab|2015-01-06|2015-01-06|1|12|12|12|12|
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apaesnut|Total Suspended Solids, TSS|Bottom|Lab|2013-07-09|2019-07-09|6|5|38|10.5|18|14.8727939540626
-2|Apalachicola Bay Aquatic Preserve|355|Apalachicola National Estuarine Research Reserve System-Wide Monitoring Program|apanhnut|Total Suspended Solids, TSS|Bottom|Lab|2013-09-04|2013-09-04|1|7|7|7|7|
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_10029|Total Suspended Solids, TSS|Bottom|Lab|2001-03-12|2001-03-12|1|28|28|28|28|
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_10039|Total Suspended Solids, TSS|Bottom|Lab|2001-04-23|2001-04-23|1|15|15|15|15|
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_10052|Total Suspended Solids, TSS|Bottom|Lab|2001-04-23|2001-04-23|1|29|29|29|29|
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0027|Total Suspended Solids, TSS|Bottom|Lab|2020-08-05|2021-11-22|2|4|5|4.5|4.5|0.707106781186548
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0035|Total Suspended Solids, TSS|Bottom|Lab|2018-07-05|2018-07-05|1|13|13|13|13|
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0051|Total Suspended Solids, TSS|Bottom|Lab|2022-01-06|2022-09-01|4|5|17|12.5|11.75|5.7373048260195
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_10456|Total Suspended Solids, TSS|Bottom|Lab|2001-08-23|2001-08-23|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_10462|Total Suspended Solids, TSS|Bottom|Lab|2001-08-23|2001-08-23|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_13405|Total Suspended Solids, TSS|Bottom|Lab|2002-03-13|2002-03-13|1|9|9|9|9|
@@ -18,215 +7,106 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14060|Total Suspended Solids, TSS|Bottom|Lab|2002-08-05|2002-08-05|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14067|Total Suspended Solids, TSS|Bottom|Lab|2002-08-26|2002-08-26|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14070|Total Suspended Solids, TSS|Bottom|Lab|2002-08-14|2002-08-14|1|4|4|4|4|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14074|Total Suspended Solids, TSS|Bottom|Lab|2002-08-05|2002-08-05|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14077|Total Suspended Solids, TSS|Bottom|Lab|2002-08-21|2002-08-21|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14079|Total Suspended Solids, TSS|Bottom|Lab|2002-08-26|2002-08-26|1|4|4|4|4|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3525|Total Suspended Solids, TSS|Bottom|Lab|1998-11-02|1999-09-20|7|4|4|4|4|0
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3526|Total Suspended Solids, TSS|Bottom|Lab|1999-01-05|2011-07-14|6|3|4|4|3.83333333333333|0.408248290463863
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3528|Total Suspended Solids, TSS|Bottom|Lab|1999-10-11|2001-12-10|5|4|6|4|4.6|0.894427190999916
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3564|Total Suspended Solids, TSS|Bottom|Lab|1998-10-22|2011-02-16|9|4|5|4|4.11111111111111|0.333333333333333
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_44061|Total Suspended Solids, TSS|Bottom|Lab|2015-10-12|2016-05-17|2|2|3|2.5|2.5|0.707106781186548
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6976|Total Suspended Solids, TSS|Bottom|Lab|1999-11-01|2003-05-05|18|4|4|4|4|0
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6977|Total Suspended Solids, TSS|Bottom|Lab|1999-12-16|2000-08-22|6|4|4|4|4|0
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3525|Total Suspended Solids, TSS|Bottom|Lab|1998-11-02|1999-09-20|10|4|7|4|4.3|0.948683298050514
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3526|Total Suspended Solids, TSS|Bottom|Lab|1998-11-02|1999-06-14|6|4|4|4|4|0
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3528|Total Suspended Solids, TSS|Bottom|Lab|1999-10-11|2001-12-10|7|4|6|4|4.42857142857143|0.786795792469443
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3564|Total Suspended Solids, TSS|Bottom|Lab|1998-10-22|2003-02-06|15|4|6|4|4.2|0.560611910581388
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6976|Total Suspended Solids, TSS|Bottom|Lab|1999-11-01|2003-05-05|37|4|4|4|4|0
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6977|Total Suspended Solids, TSS|Bottom|Lab|1999-10-06|2000-09-18|9|4|5|4|4.11111111111111|0.333333333333333
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9683|Total Suspended Solids, TSS|Bottom|Lab|2001-10-22|2001-10-22|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9693|Total Suspended Solids, TSS|Bottom|Lab|2001-10-03|2002-04-09|3|4|4|4|4|0
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9695|Total Suspended Solids, TSS|Bottom|Lab|2001-09-27|2004-11-01|2|4|4|4|4|0
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9695|Total Suspended Solids, TSS|Bottom|Lab|2001-09-27|2001-09-27|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9717|Total Suspended Solids, TSS|Bottom|Lab|2001-09-25|2001-09-25|1|4|4|4|4|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGWMS_43663|Total Suspended Solids, TSS|Bottom|Lab|2014-09-03|2014-09-03|1|2|2|2|2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGWMS_44324|Total Suspended Solids, TSS|Bottom|Lab|2014-10-22|2014-10-22|1|2|2|2|2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGWMS_9717|Total Suspended Solids, TSS|Bottom|Lab|2015-12-03|2015-12-03|1|2|2|2|2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLNWFD_S292|Total Suspended Solids, TSS|Bottom|Lab|2000-05-22|2001-03-21|2|4|4|4|4|0
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPNS_22030021|Total Suspended Solids, TSS|Bottom|Lab|2011-02-24|2012-03-01|2|2|4|3|3|1.4142135623731
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_AUC050C1|Total Suspended Solids, TSS|Bottom|Lab|2000-11-16|2001-07-09|2|1|1|1|1|0
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_ECN010C1|Total Suspended Solids, TSS|Bottom|Lab|1991-12-13|2001-10-18|4|1|4|1|1.75|1.5
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLNWFD_S292|Total Suspended Solids, TSS|Bottom|Lab|2001-07-25|2001-07-25|1|4|4|4|4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE010C1|Total Suspended Solids, TSS|Bottom|Lab|1995-10-03|1997-09-09|7|4|12|6|7|3
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE020C1|Total Suspended Solids, TSS|Bottom|Lab|1995-11-16|1997-09-09|7|2|66|7|15.8571428571429|22.5715792641142
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE040C1|Total Suspended Solids, TSS|Bottom|Lab|1996-08-22|1997-09-09|6|4|49|16|22.1666666666667|18.9147208984607
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE050C1|Total Suspended Solids, TSS|Bottom|Lab|1996-04-03|1997-07-14|4|0|24|13|12.5|10.1159939369957
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE060C1|Total Suspended Solids, TSS|Bottom|Lab|1996-02-07|1997-10-02|6|2|14|7|6.66666666666667|4.45720390678581
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE060C1|Total Suspended Solids, TSS|Bottom|Lab|1996-02-07|1996-11-06|5|2|14|7|6.6|4.97995983919549
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE070C1|Total Suspended Solids, TSS|Bottom|Lab|1996-04-03|1997-10-02|5|4|39|18|23|15.1327459504216
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE080C1|Total Suspended Solids, TSS|Bottom|Lab|1995-12-06|1997-05-07|4|6|30|19.5|18.75|11.1766124861993
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SUW275C1|Total Suspended Solids, TSS|Bottom|Lab|1993-11-11|2002-01-16|2|0|4|2|2|2.82842712474619
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SUW305C1|Total Suspended Solids, TSS|Bottom|Lab|1991-04-16|1991-04-16|1|5|5|5|5|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_WAS010C1|Total Suspended Solids, TSS|Bottom|Lab|2000-08-22|2000-09-18|2|1|1|1|1|0
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_APALACHEEBAYSM3|Total Suspended Solids, TSS|Bottom|Lab|2010-11-17|2010-11-17|1|19|19|19|19|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_3528|Total Suspended Solids, TSS|Bottom|Lab|2022-01-19|2022-01-19|1|14|14|14|14|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLMCGL_WS B|Total Suspended Solids, TSS|Bottom|Lab|2021-09-16|2021-09-16|1|0.638|0.638|0.638|0.638|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_9717|Total Suspended Solids, TSS|Bottom|Lab|2021-03-29|2021-03-29|1|2|2|2|2|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0019|Total Suspended Solids, TSS|Bottom|Lab|2016-10-24|2018-11-20|7|2|3|2|2.42857142857143|0.534522483824849
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0031|Total Suspended Solids, TSS|Bottom|Lab|2018-02-13|2018-05-24|3|3|3|3|3|0
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0032|Total Suspended Solids, TSS|Bottom|Lab|2018-06-20|2018-10-22|2|3|3|3|3|0
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0043|Total Suspended Solids, TSS|Bottom|Lab|2017-11-08|2019-07-02|3|2|21|6|9.66666666666667|10.0166528008778
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SUW275C1|Total Suspended Solids, TSS|Bottom|Lab|1993-02-04|1993-02-04|1|4|4|4|4|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0001|Total Suspended Solids, TSS|Bottom|Lab|2016-08-03|2016-08-03|1|5|5|5|5|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0008|Total Suspended Solids, TSS|Bottom|Lab|2017-10-18|2017-10-18|1|2|2|2|2|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0019|Total Suspended Solids, TSS|Bottom|Lab|2018-04-11|2018-11-20|7|2|5|3|3.14285714285714|1.0690449676497
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0031|Total Suspended Solids, TSS|Bottom|Lab|2018-02-13|2018-03-27|2|3|3|3|3|0
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0032|Total Suspended Solids, TSS|Bottom|Lab|2018-04-03|2019-01-08|6|2|6|3|3.5|1.37840487520902
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0043|Total Suspended Solids, TSS|Bottom|Lab|2017-11-08|2019-07-02|4|2|21|5|8.25|8.65544144839919
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0044|Total Suspended Solids, TSS|Bottom|Lab|2018-07-19|2018-07-19|2|2|2|2|2|0
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0073|Total Suspended Solids, TSS|Bottom|Lab|2017-08-10|2017-08-10|1|4|4|4|4|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0091|Total Suspended Solids, TSS|Bottom|Lab|2018-03-14|2019-01-28|4|2|6|4|4|1.63299316185545
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0091|Total Suspended Solids, TSS|Bottom|Lab|2018-03-14|2020-01-14|6|2|6|4.5|4.5|1.51657508881031
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0101|Total Suspended Solids, TSS|Bottom|Lab|2019-01-08|2020-10-14|2|2|7|4.5|4.5|3.53553390593274
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_HAB_072820_0001|Total Suspended Solids, TSS|Bottom|Lab|2020-07-28|2020-07-28|1|3|3|3|3|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_44059|Total Suspended Solids, TSS|Bottom|Lab|2018-01-17|2022-01-19|9|2|3|2|2.22222222222222|0.440958551844098
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_G1WA0011|Total Suspended Solids, TSS|Bottom|Lab|2017-10-11|2017-10-11|1|7|7|7|7|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_44059|Total Suspended Solids, TSS|Bottom|Lab|2018-04-19|2022-01-19|9|2|3|2|2.11111111111111|0.333333333333333
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_G1WA0008|Total Suspended Solids, TSS|Bottom|Lab|2017-12-19|2017-12-19|1|3|3|3|3|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_G1WA0011|Total Suspended Solids, TSS|Bottom|Lab|2017-10-11|2017-12-19|2|3|7|5|5|2.82842712474619
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_G1WA0055|Total Suspended Solids, TSS|Bottom|Lab|2017-12-19|2017-12-19|1|3|3|3|3|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWQA_G1WA0056|Total Suspended Solids, TSS|Bottom|Lab|2017-12-19|2017-12-19|1|3|3|3|3|
-5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127860|Total Suspended Solids, TSS|Bottom|Lab|2021-09-14|2021-12-07|3|2|4|2|2.66666666666667|1.15470053837925
-9|Cape Haze Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0029|Total Suspended Solids, TSS|Bottom|Lab|2020-07-27|2020-07-27|1|6|6|6|6|
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670095|Total Suspended Solids, TSS|Bottom|Lab|2008-10-07|2014-12-02|6|2|17.7|7.7|8.21166666666667|6.01212247602015
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670102|Total Suspended Solids, TSS|Bottom|Lab|2010-10-12|2015-05-18|5|1.33|11.6|1.6|3.95|4.40957480943458
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670110|Total Suspended Solids, TSS|Bottom|Lab|2010-10-12|2012-05-10|2|9.33|13.3|11.315|11.315|2.80721392131059
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670120|Total Suspended Solids, TSS|Bottom|Lab|2010-12-16|2014-05-08|2|10.3|16.9|13.6|13.6|4.66690475583121
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670121|Total Suspended Solids, TSS|Bottom|Lab|2010-07-06|2014-10-20|5|5.37|29.2|10|12.756|9.40762084695169
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670133|Total Suspended Solids, TSS|Bottom|Lab|2010-09-08|2011-01-04|2|7|12.1|9.55|9.55|3.60624458405139
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670134|Total Suspended Solids, TSS|Bottom|Lab|2009-04-15|2014-11-04|5|4.22|14.5|7.22|8.286|4.06417027202355
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670135|Total Suspended Solids, TSS|Bottom|Lab|2012-05-10|2015-02-04|5|7.2|20.9|7.33|10.086|6.04772105838224
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670136|Total Suspended Solids, TSS|Bottom|Lab|2011-11-15|2014-06-03|5|3.24|30.5|11.2|12.742|10.7022623776471
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670137|Total Suspended Solids, TSS|Bottom|Lab|2011-02-01|2013-12-05|4|5.41|14.8|9.005|9.555|4.18242752477553
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670135|Total Suspended Solids, TSS|Bottom|Lab|2021-06-08|2021-06-08|1|53.6|53.6|53.6|53.6|
-14|Estero Bay Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLEECO_WQX-EB-RANDOMAE77527|Total Suspended Solids, TSS|Bottom|Lab|2021-02-18|2021-02-18|1|14|14|14|14|
-14|Estero Bay Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLEECO_WQX-EB-RANDOMAE77529|Total Suspended Solids, TSS|Bottom|Lab|2021-02-18|2021-02-18|1|26.1|26.1|26.1|26.1|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_48-10GR|Total Suspended Solids, TSS|Bottom|Lab|1998-04-06|2003-09-11|3|1|2.4|1|1.46666666666667|0.808290376865476
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-02|Total Suspended Solids, TSS|Bottom|Lab|2003-06-16|2003-06-16|1|2.4|2.4|2.4|2.4|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-04|Total Suspended Solids, TSS|Bottom|Lab|2008-05-28|2008-05-28|1|21.3|21.3|21.3|21.3|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-06|Total Suspended Solids, TSS|Bottom|Lab|2003-06-16|2003-07-15|2|2.4|2.4|2.4|2.4|0
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-09|Total Suspended Solids, TSS|Bottom|Lab|2003-06-16|2003-06-16|1|2.4|2.4|2.4|2.4|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-AD17800|Total Suspended Solids, TSS|Bottom|Lab|2015-03-03|2015-03-03|1|69.9|69.9|69.9|69.9|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-AD21971|Total Suspended Solids, TSS|Bottom|Lab|2015-07-07|2015-07-07|1|0.6|0.6|0.6|0.6|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_HENDGR02|Total Suspended Solids, TSS|Bottom|Lab|2003-07-02|2005-11-16|3|2.4|26|14|14.1333333333333|11.8005649582269
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_48-10GR|Total Suspended Solids, TSS|Bottom|Lab|2022-02-17|2023-01-24|3|3.85|5.3|4.1|4.41666666666667|0.775134396948899
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-01|Total Suspended Solids, TSS|Bottom|Lab|2021-01-12|2022-08-16|4|3.8|11.5|7|7.325|3.18708330609666
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-02|Total Suspended Solids, TSS|Bottom|Lab|2020-02-18|2023-01-17|4|6.75|16.4|12.05|11.8125|3.9745806906725
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-04|Total Suspended Solids, TSS|Bottom|Lab|2020-08-18|2021-11-08|5|4.9|31.8|10.3|15.1|11.7283843729646
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-05|Total Suspended Solids, TSS|Bottom|Lab|2019-08-13|2020-08-18|3|7.1|16.1|10.2|11.1333333333333|4.57201633126276
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-06|Total Suspended Solids, TSS|Bottom|Lab|2019-09-10|2022-08-16|8|2.7|8.7|5.075|5.2625|2.04026433861609
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-07|Total Suspended Solids, TSS|Bottom|Lab|2018-01-08|2023-01-17|6|7.55|20.2|10.175|11.3333333333333|4.58668362399966
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-08|Total Suspended Solids, TSS|Bottom|Lab|2021-09-14|2022-04-18|2|4.55|23.8|14.175|14.175|13.611805537841
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-09|Total Suspended Solids, TSS|Bottom|Lab|2019-02-19|2023-01-18|7|5.45|25.2|7.5|12.7928571428571|8.85576218117468
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-10|Total Suspended Solids, TSS|Bottom|Lab|2018-12-11|2022-01-12|4|4.65|20|12.95|12.6375|6.29938819780673
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-11|Total Suspended Solids, TSS|Bottom|Lab|2018-03-06|2023-01-18|7|4.3|26.2|8.05|10.3471428571429|7.24392093249163
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-12|Total Suspended Solids, TSS|Bottom|Lab|2020-10-14|2021-11-09|3|3.95|8|6.95|6.3|2.10178495569837
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-13|Total Suspended Solids, TSS|Bottom|Lab|2018-05-03|2022-09-14|7|5.35|10.1|7.85|7.90714285714286|1.85885909709616
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-14|Total Suspended Solids, TSS|Bottom|Lab|2019-08-19|2021-11-09|4|4.95|14.5|6.95|8.3375|4.3184439713088
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAD67077|Total Suspended Solids, TSS|Bottom|Lab|2018-02-26|2018-02-26|1|5.73|5.73|5.73|5.73|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAD69606|Total Suspended Solids, TSS|Bottom|Lab|2018-03-19|2018-03-19|1|11.9|11.9|11.9|11.9|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAD77167|Total Suspended Solids, TSS|Bottom|Lab|2018-06-20|2018-06-20|1|8.83|8.83|8.83|8.83|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAD82582|Total Suspended Solids, TSS|Bottom|Lab|2018-08-09|2018-08-09|1|5.2|5.2|5.2|5.2|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAD82584|Total Suspended Solids, TSS|Bottom|Lab|2018-08-09|2018-08-09|1|8.8|8.8|8.8|8.8|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAD88796|Total Suspended Solids, TSS|Bottom|Lab|2018-10-11|2018-10-11|1|3.25|3.25|3.25|3.25|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAD97130|Total Suspended Solids, TSS|Bottom|Lab|2019-01-10|2019-01-10|1|17.6|17.6|17.6|17.6|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE03918|Total Suspended Solids, TSS|Bottom|Lab|2019-03-21|2019-03-21|1|13|13|13|13|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE03926|Total Suspended Solids, TSS|Bottom|Lab|2019-03-21|2019-03-21|1|4.75|4.75|4.75|4.75|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE06447|Total Suspended Solids, TSS|Bottom|Lab|2019-04-04|2019-04-04|1|25.3|25.3|25.3|25.3|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE14483|Total Suspended Solids, TSS|Bottom|Lab|2019-06-20|2019-06-20|1|9.85|9.85|9.85|9.85|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE14487|Total Suspended Solids, TSS|Bottom|Lab|2019-06-20|2019-06-20|1|9.75|9.75|9.75|9.75|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE15809|Total Suspended Solids, TSS|Bottom|Lab|2019-07-18|2019-07-18|1|3.25|3.25|3.25|3.25|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE15813|Total Suspended Solids, TSS|Bottom|Lab|2019-07-18|2019-07-18|1|2.3|2.3|2.3|2.3|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE20332|Total Suspended Solids, TSS|Bottom|Lab|2019-08-20|2019-08-20|1|9.6|9.6|9.6|9.6|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE33386|Total Suspended Solids, TSS|Bottom|Lab|2019-12-16|2019-12-16|1|35.6|35.6|35.6|35.6|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE47458|Total Suspended Solids, TSS|Bottom|Lab|2020-05-14|2020-05-14|1|4.5|4.5|4.5|4.5|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE70595|Total Suspended Solids, TSS|Bottom|Lab|2020-12-09|2020-12-09|1|5.7|5.7|5.7|5.7|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE74319|Total Suspended Solids, TSS|Bottom|Lab|2021-01-20|2021-01-20|1|7|7|7|7|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE74323|Total Suspended Solids, TSS|Bottom|Lab|2021-01-20|2021-01-20|1|3.5|3.5|3.5|3.5|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE74325|Total Suspended Solids, TSS|Bottom|Lab|2021-01-20|2021-01-20|1|26.4|26.4|26.4|26.4|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE77523|Total Suspended Solids, TSS|Bottom|Lab|2021-02-18|2021-02-18|1|19.1|19.1|19.1|19.1|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE79443|Total Suspended Solids, TSS|Bottom|Lab|2021-03-16|2021-03-16|1|25|25|25|25|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE85953|Total Suspended Solids, TSS|Bottom|Lab|2021-05-04|2021-05-04|1|9.1|9.1|9.1|9.1|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAE98867|Total Suspended Solids, TSS|Bottom|Lab|2021-09-23|2021-09-23|1|5.15|5.15|5.15|5.15|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF02910|Total Suspended Solids, TSS|Bottom|Lab|2021-10-18|2021-10-18|1|21.5|21.5|21.5|21.5|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF08171|Total Suspended Solids, TSS|Bottom|Lab|2021-12-08|2021-12-08|1|10.9|10.9|10.9|10.9|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF11294|Total Suspended Solids, TSS|Bottom|Lab|2022-01-04|2022-01-04|1|20|20|20|20|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF11302|Total Suspended Solids, TSS|Bottom|Lab|2022-01-04|2022-01-04|1|53.4|53.4|53.4|53.4|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF14753|Total Suspended Solids, TSS|Bottom|Lab|2022-02-22|2022-02-22|1|26.3|26.3|26.3|26.3|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF26862|Total Suspended Solids, TSS|Bottom|Lab|2022-06-15|2022-06-15|1|12.3|12.3|12.3|12.3|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF29689|Total Suspended Solids, TSS|Bottom|Lab|2022-07-14|2022-07-14|1|5.75|5.75|5.75|5.75|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF38883|Total Suspended Solids, TSS|Bottom|Lab|2022-10-24|2022-10-24|1|7.45|7.45|7.45|7.45|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-RANDOMAF38887|Total Suspended Solids, TSS|Bottom|Lab|2022-10-24|2022-10-24|1|5.6|5.6|5.6|5.6|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0129|Total Suspended Solids, TSS|Bottom|Lab|2023-02-14|2023-02-14|1|5|5|5|5|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|513|Coastal Charlotte Harbor Monitoring Network|WIN_21FLEECO_CHNEP_RSAE19109|Total Suspended Solids, TSS|Bottom|Lab|2019-08-05|2019-08-05|1|1|1|1|1|
+5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127860|Total Suspended Solids, TSS|Bottom|Lab|2021-09-14|2022-08-25|4|2|4|3|3|1.15470053837925
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|513|Coastal Charlotte Harbor Monitoring Network|WIN_CHNEPMP_212_223|Total Suspended Solids, TSS|Bottom|Lab|2022-01-26|2022-01-26|1|25|25|25|25|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|513|Coastal Charlotte Harbor Monitoring Network|WIN_CHNEPMP_222_224|Total Suspended Solids, TSS|Bottom|Lab|2022-02-24|2022-02-24|1|46|46|46|46|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLEECO_WQX-CHNEP_RSAE92585|Total Suspended Solids, TSS|Bottom|Lab|2021-07-12|2021-07-12|1|13.9|13.9|13.9|13.9|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLEECO_WQX-PI-08|Total Suspended Solids, TSS|Bottom|Lab|2021-05-11|2021-05-11|1|10.4|10.4|10.4|10.4|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_CH-AD29718|Total Suspended Solids, TSS|Bottom|Lab|2016-03-01|2016-03-01|1|63.9|63.9|63.9|63.9|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_CH-AD56303|Total Suspended Solids, TSS|Bottom|Lab|2017-10-23|2017-10-23|1|10.2|10.2|10.2|10.2|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_PI-07|Total Suspended Solids, TSS|Bottom|Lab|2004-05-24|2004-05-24|1|2.4|2.4|2.4|2.4|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLFTM_CHARHB0095FTM|Total Suspended Solids, TSS|Bottom|Lab|2014-01-08|2014-01-08|1|3|3|3|3|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|513|Coastal Charlotte Harbor Monitoring Network|WIN_CHNEPMP_223_223|Total Suspended Solids, TSS|Bottom|Lab|2022-01-26|2022-01-26|1|17|17|17|17|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_10273|Total Suspended Solids, TSS|Bottom|Lab|2001-07-19|2001-07-19|1|28|28|28|28|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR10|Total Suspended Solids, TSS|Bottom|Lab|1996-08-26|2016-12-22|190|1|92|12|16.3676315789474|13.3722539156338
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR9|Total Suspended Solids, TSS|Bottom|Lab|1996-08-26|2016-12-22|194|0.8|78.7|8.9|11.2601030927835|10.3793337906391
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_PI-07|Total Suspended Solids, TSS|Bottom|Lab|2018-02-19|2022-02-07|3|3.87|7.75|5.35|5.65666666666667|1.9580943116544
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_PI-08|Total Suspended Solids, TSS|Bottom|Lab|2018-09-06|2023-01-30|3|2.18|5.8|2.35|3.44333333333333|2.04270245834613
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0039|Total Suspended Solids, TSS|Bottom|Lab|2020-07-27|2022-10-31|4|3|7|5.5|5.25|1.70782512765993
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR10|Total Suspended Solids, TSS|Bottom|Lab|1996-08-26|2016-12-22|192|0.57|92|12|16.2030729166667|13.3989092872851
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR9|Total Suspended Solids, TSS|Bottom|Lab|1996-08-26|2016-12-22|195|0.57|78.7|8.8|11.2052820512821|10.3808140483603
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0039|Total Suspended Solids, TSS|Bottom|Lab|2021-01-14|2021-01-14|1|3|3|3|3|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0044|Total Suspended Solids, TSS|Bottom|Lab|2021-02-02|2021-02-02|1|2|2|2|2|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0046|Total Suspended Solids, TSS|Bottom|Lab|2021-07-28|2023-04-10|5|3|9|5|5.6|2.40831891575846
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0052|Total Suspended Solids, TSS|Bottom|Lab|2022-03-07|2023-03-15|4|3|7|4|4.5|1.73205080756888
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0073|Total Suspended Solids, TSS|Bottom|Lab|2020-06-22|2022-09-14|4|5|18|6.5|9|6.05530070819498
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0218|Total Suspended Solids, TSS|Bottom|Lab|2022-03-16|2023-03-22|6|3|7|4|4.5|1.37840487520902
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_58416|Total Suspended Solids, TSS|Bottom|Lab|2021-05-12|2021-05-12|1|7|7|7|7|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_TP-HI|Total Suspended Solids, TSS|Bottom|Lab|2020-05-27|2020-09-29|7|2|9|3|4.57142857142857|2.8784916685157
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_FLPRMRWS_PR10|Total Suspended Solids, TSS|Bottom|Lab|2020-01-29|2022-12-20|37|2.33|77.1|12.6|21.6945945945946|18.2828366074418
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_FLPRMRWS_PR103_1122|Total Suspended Solids, TSS|Bottom|Lab|2022-11-01|2022-11-01|1|14|14|14|14|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_FLPRMRWS_PR9|Total Suspended Solids, TSS|Bottom|Lab|2020-01-29|2022-12-20|39|1.67|57.7|12|16.8379487179487|14.7536586326895
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670049|Total Suspended Solids, TSS|Bottom|Lab|2010-09-07|2015-04-06|10|2.16|25.1|7.775|9.909|7.11911737662909
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670052|Total Suspended Solids, TSS|Bottom|Lab|2010-08-18|2015-12-08|9|3.56|30.6|9.5|13.1233333333333|8.76337691760431
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670053|Total Suspended Solids, TSS|Bottom|Lab|2011-01-05|2015-09-03|8|2.46|36|7.02|13.1975|12.836819532668
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670054|Total Suspended Solids, TSS|Bottom|Lab|2010-02-17|2014-07-09|9|2.67|13.7|5.73|6.72555555555556|3.22051281285726
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670056|Total Suspended Solids, TSS|Bottom|Lab|2011-08-02|2015-12-08|5|4|15.3|6.89|7.824|4.3634882834723
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670057|Total Suspended Solids, TSS|Bottom|Lab|2011-05-04|2014-12-03|7|5.23|20.2|11.8|11.6514285714286|4.89740212960378
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0046|Total Suspended Solids, TSS|Bottom|Lab|2021-08-26|2023-04-10|9|2|14|7|6.88888888888889|3.68932393686311
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0052|Total Suspended Solids, TSS|Bottom|Lab|2022-03-07|2023-03-15|6|3|19|5.5|7.5|5.95818764390649
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0073|Total Suspended Solids, TSS|Bottom|Lab|2020-06-22|2022-05-04|3|5|18|7|10|7
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0218|Total Suspended Solids, TSS|Bottom|Lab|2022-03-16|2023-03-22|7|3|32|4|8.42857142857143|10.4699115382628
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_TP-HI|Total Suspended Solids, TSS|Bottom|Lab|2020-05-27|2020-09-22|9|2|9|5|5.22222222222222|2.10818510677892
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_FLPRMRWS_PR10|Total Suspended Solids, TSS|Bottom|Lab|2020-01-29|2022-12-20|35|2.33|77.1|13|22.62|18.367260835199
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_FLPRMRWS_PR9|Total Suspended Solids, TSS|Bottom|Lab|2020-01-29|2022-12-20|34|1.67|57.7|12.35|17.7376470588235|15.9421520654433
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670049|Total Suspended Solids, TSS|Bottom|Lab|2010-06-02|2015-04-06|16|2.16|25.1|9.66|10.210625|6.58630849439451
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670052|Total Suspended Solids, TSS|Bottom|Lab|2010-08-18|2015-12-08|11|3.22|30.6|9.5|11.9936363636364|8.39511199773687
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670053|Total Suspended Solids, TSS|Bottom|Lab|2010-06-02|2015-05-19|13|2.46|36|7.2|12.09|11.0161888449076
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670054|Total Suspended Solids, TSS|Bottom|Lab|2010-11-16|2014-07-09|11|2.67|15.2|6.88|8.31181818181818|3.91806283303833
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670056|Total Suspended Solids, TSS|Bottom|Lab|2011-08-02|2015-12-08|6|4|15.3|6.31|7.42166666666667|4.02532690183874
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670057|Total Suspended Solids, TSS|Bottom|Lab|2011-01-05|2014-12-03|9|4.97|33|11.8|13.2811111111111|8.80630093235015
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670058|Total Suspended Solids, TSS|Bottom|Lab|2010-09-07|2014-05-07|5|4.11|14.4|10.4|9.602|3.84935319242077
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670061|Total Suspended Solids, TSS|Bottom|Lab|2011-03-02|2014-03-05|7|6.42|59.3|17.1|21.2614285714286|18.0568735098959
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670062|Total Suspended Solids, TSS|Bottom|Lab|2009-06-04|2009-06-04|1|5.58|5.58|5.58|5.58|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670061|Total Suspended Solids, TSS|Bottom|Lab|2012-01-11|2012-01-11|1|26.1|26.1|26.1|26.1|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670062|Total Suspended Solids, TSS|Bottom|Lab|2011-11-16|2015-01-06|5|1.44|9.75|3.57|4.694|3.56382238614665
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670063|Total Suspended Solids, TSS|Bottom|Lab|2011-03-02|2015-09-03|4|2.78|30.2|4.42|10.455|13.203420011497
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670065|Total Suspended Solids, TSS|Bottom|Lab|2009-02-11|2015-09-03|2|4|13.8|8.9|8.9|6.92964645562817
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670068|Total Suspended Solids, TSS|Bottom|Lab|2012-11-08|2012-11-08|1|5.26|5.26|5.26|5.26|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670069|Total Suspended Solids, TSS|Bottom|Lab|2010-11-16|2014-07-09|4|5.63|12|7.775|8.295|3.13960188558996
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670068|Total Suspended Solids, TSS|Bottom|Lab|2014-06-04|2015-08-19|3|4|7.63|4.89|5.50666666666667|1.89193904059653
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670069|Total Suspended Solids, TSS|Bottom|Lab|2010-11-16|2014-07-09|5|5.21|12|5.75|7.678|3.04897851747106
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670070|Total Suspended Solids, TSS|Bottom|Lab|2010-09-07|2015-12-08|9|4|28.3|7.08|9.82777777777778|7.45414612443601
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670076|Total Suspended Solids, TSS|Bottom|Lab|2011-04-13|2015-01-05|5|3.56|18|4.42|7.942|6.08366008254899
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670077|Total Suspended Solids, TSS|Bottom|Lab|2012-04-10|2012-07-11|2|6.94|14.7|10.82|10.82|5.48714862200761
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670079|Total Suspended Solids, TSS|Bottom|Lab|2009-08-12|2009-08-12|1|6.49|6.49|6.49|6.49|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670071|Total Suspended Solids, TSS|Bottom|Lab|2013-02-14|2013-02-14|1|6.5|6.5|6.5|6.5|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670076|Total Suspended Solids, TSS|Bottom|Lab|2011-04-13|2015-01-05|5|3.56|18|9.41|9.378|5.88875368817545
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670080|Total Suspended Solids, TSS|Bottom|Lab|2010-06-02|2015-02-02|2|2.16|7.22|4.69|4.69|3.57796031280393
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670082|Total Suspended Solids, TSS|Bottom|Lab|2010-07-06|2012-08-14|3|4.21|6.45|4.24|4.96666666666667|1.2846919215646
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670083|Total Suspended Solids, TSS|Bottom|Lab|2008-08-12|2008-08-12|1|3.5|3.5|3.5|3.5|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670084|Total Suspended Solids, TSS|Bottom|Lab|2009-02-11|2009-02-11|1|4.11|4.11|4.11|4.11|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670085|Total Suspended Solids, TSS|Bottom|Lab|2015-07-06|2015-07-06|1|10.8|10.8|10.8|10.8|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670086|Total Suspended Solids, TSS|Bottom|Lab|2009-01-06|2010-05-04|2|1.84|24.2|13.02|13.02|15.8109076273312
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670087|Total Suspended Solids, TSS|Bottom|Lab|2011-07-19|2014-06-05|4|3.47|19.8|7.625|9.63|7.06389411019163
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670084|Total Suspended Solids, TSS|Bottom|Lab|2012-06-14|2012-06-14|3|2.81|33.2|8.44|14.8166666666667|16.1673879564181
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670087|Total Suspended Solids, TSS|Bottom|Lab|2010-07-06|2014-06-05|6|3.47|19.8|7.625|8.57833333333333|5.81120096595073
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670088|Total Suspended Solids, TSS|Bottom|Lab|2012-02-14|2012-11-06|2|1.89|4.89|3.39|3.39|2.12132034355964
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670089|Total Suspended Solids, TSS|Bottom|Lab|2009-05-04|2014-04-10|3|3.89|10.2|8.32|7.47|3.23973764369895
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670090|Total Suspended Solids, TSS|Bottom|Lab|2013-02-12|2013-02-12|1|9.78|9.78|9.78|9.78|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670093|Total Suspended Solids, TSS|Bottom|Lab|2007-11-13|2008-03-05|2|3.6|8.1|5.85|5.85|3.18198051533946
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670096|Total Suspended Solids, TSS|Bottom|Lab|2010-01-07|2010-01-07|1|4.42|4.42|4.42|4.42|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670097|Total Suspended Solids, TSS|Bottom|Lab|2008-10-07|2008-10-07|1|5.08|5.08|5.08|5.08|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670098|Total Suspended Solids, TSS|Bottom|Lab|2007-08-07|2013-03-05|5|4.23|10|8.62|7.286|2.66024998825298
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670100|Total Suspended Solids, TSS|Bottom|Lab|2009-02-10|2013-06-11|2|2.87|5.74|4.305|4.305|2.02939646200539
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670103|Total Suspended Solids, TSS|Bottom|Lab|2011-10-26|2011-10-26|1|8.47|8.47|8.47|8.47|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670104|Total Suspended Solids, TSS|Bottom|Lab|2008-03-05|2015-04-07|6|3.7|8.11|5.905|5.91166666666667|1.45823752066207
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670105|Total Suspended Solids, TSS|Bottom|Lab|2007-08-07|2015-06-03|4|3.63|31.7|6.575|12.12|13.1938344186467
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670106|Total Suspended Solids, TSS|Bottom|Lab|2014-10-22|2014-10-22|1|4.56|4.56|4.56|4.56|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670107|Total Suspended Solids, TSS|Bottom|Lab|2011-04-12|2012-02-14|3|2.4|9.25|7.38|6.34333333333333|3.54071085141576
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670114|Total Suspended Solids, TSS|Bottom|Lab|2008-07-24|2014-10-22|5|2.74|8.9|4.8|5.214|2.68366913012763
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670115|Total Suspended Solids, TSS|Bottom|Lab|2011-02-01|2012-05-08|2|2.13|5.63|3.88|3.88|2.47487373415292
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670116|Total Suspended Solids, TSS|Bottom|Lab|2010-01-07|2013-03-05|2|3.24|7.37|5.305|5.305|2.92035100630044
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670117|Total Suspended Solids, TSS|Bottom|Lab|2009-08-11|2012-09-11|2|8.1|9.47|8.785|8.785|0.968736290225571
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670118|Total Suspended Solids, TSS|Bottom|Lab|2015-01-05|2015-04-07|3|3.78|10.2|4.65|6.21|3.48271445857969
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670119|Total Suspended Solids, TSS|Bottom|Lab|2014-03-11|2015-07-07|5|4.53|16.4|13.8|11.416|5.4133658660763
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670126|Total Suspended Solids, TSS|Bottom|Lab|2011-01-04|2011-01-04|1|2.16|2.16|2.16|2.16|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670093|Total Suspended Solids, TSS|Bottom|Lab|2014-07-08|2014-07-08|1|4.32|4.32|4.32|4.32|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670103|Total Suspended Solids, TSS|Bottom|Lab|2011-10-26|2011-11-15|2|2.44|8.47|5.455|5.455|4.26385389055488
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670107|Total Suspended Solids, TSS|Bottom|Lab|2011-04-12|2011-04-12|1|9.25|9.25|9.25|9.25|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670114|Total Suspended Solids, TSS|Bottom|Lab|2012-07-11|2014-06-05|2|6.89|11|8.945|8.945|2.90620887067671
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670118|Total Suspended Solids, TSS|Bottom|Lab|2015-01-05|2015-10-21|5|3.78|10.2|4.65|5.972|2.58572426990969
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670119|Total Suspended Solids, TSS|Bottom|Lab|2013-07-18|2015-07-07|6|4.53|16.4|11.31|10.9833333333333|4.95649338410399
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670129|Total Suspended Solids, TSS|Bottom|Lab|2011-02-01|2015-08-17|3|3.68|9.47|4.62|5.92333333333333|3.10725495145367
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670132|Total Suspended Solids, TSS|Bottom|Lab|2010-03-09|2010-03-09|1|11|11|11|11|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670141|Total Suspended Solids, TSS|Bottom|Lab|2013-09-17|2015-04-07|2|5.3|5.6|5.45|5.45|0.212132034355964
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670142|Total Suspended Solids, TSS|Bottom|Lab|2013-12-04|2013-12-04|1|6.49|6.49|6.49|6.49|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670144|Total Suspended Solids, TSS|Bottom|Lab|2010-08-17|2014-07-10|3|6.6|11.4|8.12|8.70666666666667|2.45318840151614
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670145|Total Suspended Solids, TSS|Bottom|Lab|2002-08-08|2016-01-06|5|0.6|20|9.89|9.864|7.51143328533243
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670144|Total Suspended Solids, TSS|Bottom|Lab|2010-08-17|2014-07-10|4|6.6|11.4|9.76|9.38|2.4136279746473
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670145|Total Suspended Solids, TSS|Bottom|Lab|2013-06-12|2016-01-06|4|5.13|20|11.795|12.18|6.28249950258653
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670146|Total Suspended Solids, TSS|Bottom|Lab|2010-11-15|2010-11-15|1|10.5|10.5|10.5|10.5|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670147|Total Suspended Solids, TSS|Bottom|Lab|2010-07-06|2015-11-04|5|4.54|16.6|11.6|11.292|4.73074201368031
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670148|Total Suspended Solids, TSS|Bottom|Lab|2007-08-07|2015-08-18|11|2.89|19|6.59|7.94636363636364|4.18228949913148
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670148|Total Suspended Solids, TSS|Bottom|Lab|2010-09-08|2015-08-18|6|6.5|24.8|7.915|10.7366666666667|7.1013932905217
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670149|Total Suspended Solids, TSS|Bottom|Lab|2014-01-16|2014-01-16|1|17|17|17|17|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670150|Total Suspended Solids, TSS|Bottom|Lab|2010-07-06|2015-07-07|2|9.54|29.2|19.37|19.37|13.9017193181275
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670152|Total Suspended Solids, TSS|Bottom|Lab|2012-08-14|2012-08-14|1|9.13|9.13|9.13|9.13|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670154|Total Suspended Solids, TSS|Bottom|Lab|2010-07-06|2010-07-06|1|5.55|5.55|5.55|5.55|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670155|Total Suspended Solids, TSS|Bottom|Lab|2007-12-12|2015-11-03|2|3.59|3.6|3.595|3.595|0.00707106781186564
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670049|Total Suspended Solids, TSS|Bottom|Lab|2020-02-12|2021-07-20|3|4|13.8|8|8.6|4.92747399790197
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670057|Total Suspended Solids, TSS|Bottom|Lab|2020-01-13|2020-11-03|2|7.25|12|9.625|9.625|3.3587572106361
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670062|Total Suspended Solids, TSS|Bottom|Lab|2020-11-03|2021-06-07|2|11|22.2|16.6|16.6|7.91959594928933
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670052|Total Suspended Solids, TSS|Bottom|Lab|2020-01-13|2021-03-16|3|17.4|21.5|17.5|18.8|2.3388031127053
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670053|Total Suspended Solids, TSS|Bottom|Lab|2020-12-14|2020-12-14|1|8.2|8.2|8.2|8.2|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670056|Total Suspended Solids, TSS|Bottom|Lab|2020-02-12|2020-11-03|2|7.25|14|10.625|10.625|4.7729707730092
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670057|Total Suspended Solids, TSS|Bottom|Lab|2020-01-13|2021-05-18|3|7.25|21.7|12|13.65|7.36495078055516
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670058|Total Suspended Solids, TSS|Bottom|Lab|2020-02-12|2020-02-12|1|6.25|6.25|6.25|6.25|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670061|Total Suspended Solids, TSS|Bottom|Lab|2020-01-13|2020-11-03|2|12.8|39.5|26.15|26.15|18.8797510576808
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670062|Total Suspended Solids, TSS|Bottom|Lab|2020-01-13|2021-06-07|4|7.04|22.2|9.5|12.06|6.9672376161575
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670064|Total Suspended Solids, TSS|Bottom|Lab|2020-01-13|2021-03-16|2|10.5|24.3|17.4|17.4|9.75807358037436
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670065|Total Suspended Solids, TSS|Bottom|Lab|2020-03-09|2021-07-20|3|10|27|12.3|16.4333333333333|9.22297854997686
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670068|Total Suspended Solids, TSS|Bottom|Lab|2021-05-18|2021-06-07|2|15.8|26.3|21.05|21.05|7.42462120245875
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670069|Total Suspended Solids, TSS|Bottom|Lab|2020-03-09|2020-03-09|1|6.75|6.75|6.75|6.75|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670070|Total Suspended Solids, TSS|Bottom|Lab|2020-01-13|2021-06-07|2|11.8|16.2|14|14|3.11126983722081
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670072|Total Suspended Solids, TSS|Bottom|Lab|2020-01-13|2020-03-09|2|7|8.25|7.625|7.625|0.883883476483184
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670077|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2021-06-09|2|7.2|23.7|15.45|15.45|11.667261889578
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670078|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2021-06-09|3|3.8|22.3|14|13.3666666666667|9.26624699289488
@@ -234,10 +114,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670080|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2020-04-22|2|2.01|4.8|3.405|3.405|1.97282791951047
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670083|Total Suspended Solids, TSS|Bottom|Lab|2020-04-22|2020-04-22|1|3.2|3.2|3.2|3.2|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670084|Total Suspended Solids, TSS|Bottom|Lab|2021-06-09|2021-06-09|1|20.7|20.7|20.7|20.7|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670085|Total Suspended Solids, TSS|Bottom|Lab|2020-11-04|2021-04-12|3|8.8|18|14|13.6|4.61302503786832
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670086|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2021-06-09|2|3.25|17.3|10.275|10.275|9.93485027567099
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670087|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2020-02-11|1|5.16|5.16|5.16|5.16|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670088|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2020-03-11|1|4.6|4.6|4.6|4.6|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670085|Total Suspended Solids, TSS|Bottom|Lab|2020-01-15|2021-04-12|4|3.6|18|11.4|11.1|6.25992545216528
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670086|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2021-06-09|3|3.25|17.3|13.3|11.2833333333333|7.23884198842145
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670087|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2021-05-17|2|5.16|18.8|11.98|11.98|9.64493649538451
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670088|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2020-03-11|2|3.37|4.6|3.985|3.985|0.869741340859453
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670089|Total Suspended Solids, TSS|Bottom|Lab|2020-04-22|2020-04-22|1|5|5|5|5|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670090|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2020-03-11|1|5.4|5.4|5.4|5.4|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670091|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2021-06-09|3|4.42|22.7|8.4|11.84|9.61326167333439
@@ -250,8 +130,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670104|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2021-05-17|2|7.79|11.5|9.645|9.645|2.62336615820209
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670105|Total Suspended Solids, TSS|Bottom|Lab|2020-12-15|2021-06-09|3|7.71|27|8|14.2366666666667|11.0543219300567
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670106|Total Suspended Solids, TSS|Bottom|Lab|2020-01-15|2020-01-15|1|3.2|3.2|3.2|3.2|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670107|Total Suspended Solids, TSS|Bottom|Lab|2021-05-17|2021-05-17|1|32.3|32.3|32.3|32.3|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670114|Total Suspended Solids, TSS|Bottom|Lab|2021-04-12|2021-04-12|1|9.2|9.2|9.2|9.2|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670107|Total Suspended Solids, TSS|Bottom|Lab|2020-04-22|2021-05-17|2|32.3|42.8|37.55|37.55|7.42462120245875
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670114|Total Suspended Solids, TSS|Bottom|Lab|2021-04-12|2021-05-17|2|9.2|42.5|25.85|25.85|23.546655813512
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670115|Total Suspended Solids, TSS|Bottom|Lab|2021-07-19|2021-07-19|1|39.3|39.3|39.3|39.3|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670116|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2020-12-15|2|6|7.71|6.855|6.855|1.209152595829
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670117|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2021-07-19|3|4.75|42.7|39.7|29.05|21.0978079430068
@@ -259,366 +139,13 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670126|Total Suspended Solids, TSS|Bottom|Lab|2021-05-17|2021-05-17|1|7.54|7.54|7.54|7.54|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670127|Total Suspended Solids, TSS|Bottom|Lab|2021-05-17|2021-05-17|1|12.9|12.9|12.9|12.9|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670128|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2021-04-12|2|0.8|7|3.9|3.9|4.3840620433566
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670129|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2020-03-11|1|9|9|9|9|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670140|Total Suspended Solids, TSS|Bottom|Lab|2020-04-22|2020-04-22|1|7.2|7.2|7.2|7.2|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670141|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2020-02-11|1|6.49|6.49|6.49|6.49|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670147|Total Suspended Solids, TSS|Bottom|Lab|2021-06-08|2021-06-08|1|33.7|33.7|33.7|33.7|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670149|Total Suspended Solids, TSS|Bottom|Lab|2020-11-03|2020-11-03|1|14|14|14|14|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670150|Total Suspended Solids, TSS|Bottom|Lab|2021-05-19|2021-05-19|1|19|19|19|19|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670148|Total Suspended Solids, TSS|Bottom|Lab|2020-02-10|2020-02-10|1|6.6|6.6|6.6|6.6|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670149|Total Suspended Solids, TSS|Bottom|Lab|2020-04-21|2020-11-03|2|5|14|9.5|9.5|6.36396103067893
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670150|Total Suspended Solids, TSS|Bottom|Lab|2020-01-14|2021-05-19|2|6|19|12.5|12.5|9.19238815542512
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670152|Total Suspended Solids, TSS|Bottom|Lab|2020-02-11|2021-07-19|2|5.85|36|20.925|20.925|21.3192694527744
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670154|Total Suspended Solids, TSS|Bottom|Lab|2020-03-11|2021-06-09|4|8.2|30.8|21.9|20.7|10.2169793318117
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_STOKESCR|Total Suspended Solids, TSS|Bottom|Lab|2007-08-27|2007-08-27|1|24.5|24.5|24.5|24.5|
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_27010010|Total Suspended Solids, TSS|Bottom|Lab|2020-10-01|2022-06-13|4|5|29|26.5|21.75|11.295279249905
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_27010019|Total Suspended Solids, TSS|Bottom|Lab|2021-02-25|2023-02-07|4|12|40|25|25.5|13.1782649338472
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_27010069|Total Suspended Solids, TSS|Bottom|Lab|2022-02-15|2022-02-15|1|17|17|17|17|
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_27010165|Total Suspended Solids, TSS|Bottom|Lab|2020-10-12|2022-06-14|5|26|105|31|44.4|34.0484948272314
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0588|Total Suspended Solids, TSS|Bottom|Lab|2020-02-20|2020-10-28|3|9|39|14|20.6666666666667|16.0727512683216
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0595|Total Suspended Solids, TSS|Bottom|Lab|2021-02-25|2022-10-24|4|7|37|16|19|12.7540843131393
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0019|Total Suspended Solids, TSS|Bottom|Lab|2019-07-15|2022-07-11|5|2|7|4|4.2|1.92353840616713
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0020|Total Suspended Solids, TSS|Bottom|Lab|2018-09-06|2022-07-11|8|8|28|18|17.375|6.52330985225839
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0021|Total Suspended Solids, TSS|Bottom|Lab|2018-12-05|2022-11-07|9|10|38|20|21.1111111111111|9.07530226004132
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0022|Total Suspended Solids, TSS|Bottom|Lab|2018-07-11|2022-11-07|15|6|34|18|18|7.09124208342335
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0023|Total Suspended Solids, TSS|Bottom|Lab|2020-07-15|2020-07-15|1|29|29|29|29|
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0024|Total Suspended Solids, TSS|Bottom|Lab|2022-09-07|2022-09-07|1|7|7|7|7|
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0025|Total Suspended Solids, TSS|Bottom|Lab|2022-07-11|2022-07-11|1|29|29|29|29|
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0022|Total Suspended Solids, TSS|Bottom|Lab|2018-09-06|2018-09-06|1|77|77|77|77|
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0025|Total Suspended Solids, TSS|Bottom|Lab|2018-09-06|2018-09-06|1|10|10|10|10|
-19|Guana River Marsh Aquatic Preserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLGTM_GTMPINUT|Total Suspended Solids, TSS|Bottom|Lab|2013-08-19|2013-10-02|2|7|14|10.5|10.5|4.94974746830583
-19|Guana River Marsh Aquatic Preserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLWQA_GTMPINUT|Total Suspended Solids, TSS|Bottom|Lab|2014-10-20|2020-07-07|18|9|68|17|21.1111111111111|13.7835745764506
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010010|Total Suspended Solids, TSS|Bottom|Lab|2020-10-01|2022-06-13|4|5|29|26.5|21.75|11.295279249905
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010019|Total Suspended Solids, TSS|Bottom|Lab|2021-02-25|2023-02-07|4|12|33|16|19.25|9.39414711402797
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010078|Total Suspended Solids, TSS|Bottom|Lab|2022-01-31|2022-11-07|3|2|3|2|2.33333333333333|0.577350269189626
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010079|Total Suspended Solids, TSS|Bottom|Lab|2020-02-18|2021-03-25|5|2|10|5|5.2|3.42052627529741
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010138|Total Suspended Solids, TSS|Bottom|Lab|2021-07-22|2021-07-22|1|17|17|17|17|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010165|Total Suspended Solids, TSS|Bottom|Lab|2020-10-12|2021-06-07|3|26|105|31|54|44.2379927211893
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0004|Total Suspended Solids, TSS|Bottom|Lab|2020-06-16|2020-06-16|1|22|22|22|22|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0588|Total Suspended Solids, TSS|Bottom|Lab|2020-02-20|2020-10-28|3|9|39|14|20.6666666666667|16.0727512683216
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0591|Total Suspended Solids, TSS|Bottom|Lab|2020-07-29|2022-01-31|7|6|50|9|16.5714285714286|15.6934927369822
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0592|Total Suspended Solids, TSS|Bottom|Lab|2020-10-14|2020-12-10|2|3|7|5|5|2.82842712474619
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0593|Total Suspended Solids, TSS|Bottom|Lab|2020-03-05|2021-02-23|2|2|10|6|6|5.65685424949238
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0595|Total Suspended Solids, TSS|Bottom|Lab|2021-02-25|2022-10-24|4|7|37|16|19|12.7540843131393
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44724|Total Suspended Solids, TSS|Bottom|Lab|2020-08-19|2021-06-22|4|12.2|20|13.4|14.75|3.65741256445956
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44732|Total Suspended Solids, TSS|Bottom|Lab|2020-08-19|2021-03-24|3|8.1|12.4|11.9|10.8|2.35159520326097
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44872|Total Suspended Solids, TSS|Bottom|Lab|2021-08-24|2021-08-24|1|16.9|16.9|16.9|16.9|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44873|Total Suspended Solids, TSS|Bottom|Lab|2020-07-22|2021-07-22|4|9.1|32.3|14.5|17.6|10.1304820549995
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0019|Total Suspended Solids, TSS|Bottom|Lab|2019-12-16|2022-07-11|4|2|7|4|4.25|2.21735578260835
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0020|Total Suspended Solids, TSS|Bottom|Lab|2018-09-06|2022-07-11|8|8|28|18|17.375|6.52330985225839
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0021|Total Suspended Solids, TSS|Bottom|Lab|2018-12-05|2022-11-07|10|10|38|20.5|21.1|8.55634916954136
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0022|Total Suspended Solids, TSS|Bottom|Lab|2018-07-11|2022-11-07|14|6|34|17.5|17.7142857142857|7.26878014767023
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0023|Total Suspended Solids, TSS|Bottom|Lab|2020-07-15|2020-07-15|1|29|29|29|29|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0024|Total Suspended Solids, TSS|Bottom|Lab|2022-09-07|2022-09-07|1|7|7|7|7|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0025|Total Suspended Solids, TSS|Bottom|Lab|2022-07-11|2022-07-11|1|29|29|29|29|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0022|Total Suspended Solids, TSS|Bottom|Lab|2018-09-06|2018-09-06|1|77|77|77|77|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLGTM_GTMPCNUT|Total Suspended Solids, TSS|Bottom|Lab|2012-12-11|2013-12-01|9|4|27|6|8.66666666666667|7.14142842854285
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLGTM_GTMPINUT|Total Suspended Solids, TSS|Bottom|Lab|2013-07-18|2013-07-18|1|14|14|14|14|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLGTM_GTMSSNUT|Total Suspended Solids, TSS|Bottom|Lab|2013-07-18|2013-07-18|1|28|28|28|28|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLWQA_GTMFMNUT|Total Suspended Solids, TSS|Bottom|Lab|2014-11-04|2019-10-15|5|6|9|8|8|1.22474487139159
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLWQA_GTMPCNUT|Total Suspended Solids, TSS|Bottom|Lab|2014-02-25|2020-05-05|43|4|428|14|35.4883720930233|81.7217614234052
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLWQA_GTMPINUT|Total Suspended Solids, TSS|Bottom|Lab|2014-10-20|2020-07-07|15|7|38|14|16.7333333333333|8.2848111166215
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLWQA_GTMSSNUT|Total Suspended Solids, TSS|Bottom|Lab|2014-09-18|2019-08-13|16|10|34|21.5|20.9375|7.7241504387214
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLI27|Total Suspended Solids, TSS|Bottom|Lab|2015-06-02|2015-06-02|1|4.8|4.8|4.8|4.8|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLI28|Total Suspended Solids, TSS|Bottom|Lab|2007-05-21|2007-05-21|1|9.2|9.2|9.2|9.2|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLIRJ01|Total Suspended Solids, TSS|Bottom|Lab|2009-04-06|2009-04-06|1|12.2|12.2|12.2|12.2|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLIRJ10|Total Suspended Solids, TSS|Bottom|Lab|1999-01-13|1999-01-13|1|5.6|5.6|5.6|5.6|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLS01|Total Suspended Solids, TSS|Bottom|Lab|2008-01-09|2008-01-09|1|8.6|8.6|8.6|8.6|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLS02|Total Suspended Solids, TSS|Bottom|Lab|2004-02-11|2004-02-11|1|6|6|6|6|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44881|Total Suspended Solids, TSS|Bottom|Lab|2021-04-06|2021-08-09|2|2.6|3.9|3.25|3.25|0.919238815542512
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44929|Total Suspended Solids, TSS|Bottom|Lab|2022-05-02|2022-05-02|1|9.3332|9.3332|9.3332|9.3332|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44930|Total Suspended Solids, TSS|Bottom|Lab|2020-05-06|2022-08-02|8|7.5|25|10.75|13.65|6.84021720624217
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44936|Total Suspended Solids, TSS|Bottom|Lab|2020-09-14|2022-09-01|10|5.1|19|12.92225|12.58445|4.58079035180854
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWPB_G5SE0079|Total Suspended Solids, TSS|Bottom|Lab|2020-09-21|2022-04-12|7|3|8|5|5.28571428571429|1.60356745147455
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWPB_G5SE0106|Total Suspended Solids, TSS|Bottom|Lab|2022-03-17|2023-02-15|2|6|9|7.5|7.5|2.12132034355964
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLLOX_WQX-30|Total Suspended Solids, TSS|Bottom|Lab|2021-01-13|2021-04-14|2|6.7|18.5|12.6|12.6|8.34386001800126
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLLOX_WQX-42|Total Suspended Solids, TSS|Bottom|Lab|2021-07-13|2021-07-13|1|5.8|5.8|5.8|5.8|
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_60215|Total Suspended Solids, TSS|Bottom|Lab|2022-04-21|2022-04-21|1|8|8|8|8|
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLWPB_G2SE0073|Total Suspended Solids, TSS|Bottom|Lab|2023-04-05|2023-04-05|1|6|6|6|6|
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|30|Total Suspended Solids, TSS|Bottom|Lab|1994-03-18|2014-11-19|4|2.4|16.4|3.05|6.225|6.80018382104484
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|40|Total Suspended Solids, TSS|Bottom|Lab|1995-09-19|2015-01-19|6|1.4|21.2|5.55|7.96666666666667|7.41961364672492
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|42|Total Suspended Solids, TSS|Bottom|Lab|2006-05-08|2014-07-10|2|2.4|5.6|4|4|2.26274169979695
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|51|Total Suspended Solids, TSS|Bottom|Lab|1995-11-21|2013-09-10|6|4.3|10.6|6.65|7.08333333333333|2.48951133089743
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|60|Total Suspended Solids, TSS|Bottom|Lab|1995-11-22|2014-02-12|5|3.6|13.8|6.7|8|3.87749919406826
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|62|Total Suspended Solids, TSS|Bottom|Lab|1995-11-22|2015-01-12|6|1.4|7|3.9|4.13333333333333|2.05296533498904
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|65|Total Suspended Solids, TSS|Bottom|Lab|1995-07-12|2016-08-15|6|1.6|5.2|3.3|3.38333333333333|1.36296245974226
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|66|Total Suspended Solids, TSS|Bottom|Lab|1996-07-18|2006-03-15|2|1.3|4|2.65|2.65|1.90918830920368
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|67|Total Suspended Solids, TSS|Bottom|Lab|2002-07-18|2015-12-14|6|0.6|5.2|2.55|2.65|1.75014285131243
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|71|Total Suspended Solids, TSS|Bottom|Lab|2001-01-10|2014-11-20|4|4.5|23|7.25|10.5|8.70670239910993
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|72|Total Suspended Solids, TSS|Bottom|Lab|2001-03-14|2015-08-10|6|2.4|15|6.2|7.41666666666667|5.06454999646234
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|73|Total Suspended Solids, TSS|Bottom|Lab|1996-03-05|2009-09-10|5|3|26|7.2|10.46|9.54609867956539
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|75|Total Suspended Solids, TSS|Bottom|Lab|2014-01-09|2015-05-12|2|5.9|7.6|6.75|6.75|1.20208152801713
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|WIN_21FLLOX_40|Total Suspended Solids, TSS|Bottom|Lab|2020-06-15|2022-09-14|4|2.6|8.3|4.15|4.8|2.45356882927706
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|WIN_21FLLOX_42|Total Suspended Solids, TSS|Bottom|Lab|2020-07-14|2020-07-14|1|7.1|7.1|7.1|7.1|
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|WIN_21FLLOX_62|Total Suspended Solids, TSS|Bottom|Lab|2021-01-12|2021-01-12|1|3.6|3.6|3.6|3.6|
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|WIN_21FLLOX_66|Total Suspended Solids, TSS|Bottom|Lab|2020-08-18|2022-09-14|8|1.5|4.9|3|3.1375|1.11859286605985
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|WIN_21FLLOX_71|Total Suspended Solids, TSS|Bottom|Lab|2021-01-13|2021-01-13|1|8|8|8|8|
-27|Loxahatchee River-Lake Worth Creek Aquatic Preserve|10000|RiverKeeper|WIN_21FLLOX_75|Total Suspended Solids, TSS|Bottom|Lab|2020-04-06|2020-04-06|1|11.4|11.4|11.4|11.4|
-33|Pellicer Creek Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0592|Total Suspended Solids, TSS|Bottom|Lab|2020-07-16|2020-12-10|3|3|16|7|8.66666666666667|6.65832811847939
-33|Pellicer Creek Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0593|Total Suspended Solids, TSS|Bottom|Lab|2020-03-05|2021-02-23|2|2|10|6|6|5.65685424949238
-33|Pellicer Creek Aquatic Preserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLGTM_GTMPCNUT|Total Suspended Solids, TSS|Bottom|Lab|2012-12-11|2018-08-07|13|4|104|8|17.8461538461538|26.8509656991021
-33|Pellicer Creek Aquatic Preserve|4054|Guana Tolomato Matanzas National Estuarine Research Reserve System-Wide Monitoring Program|WIN_21FLWQA_GTMPCNUT|Total Suspended Solids, TSS|Bottom|Lab|2014-02-26|2019-12-09|44|5|360|17.5|31.5681818181818|58.1423264657504
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-01-01|Total Suspended Solids, TSS|Bottom|Lab|2020-12-07|2020-12-07|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-E1-B-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-03|2021-02-03|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-E3-A-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-10|2020-12-10|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-E3-D-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-10|2020-12-10|1|2|2|2|2|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-E4-D-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-08|2021-09-08|1|15|15|15|15|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-W2-C-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-18|2021-05-18|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-W4-C-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-08-05|2021-08-05|1|32|32|32|32|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-W4-D-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-10|2021-05-10|1|53|53|53|53|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-W5-A-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-08-03|2021-08-03|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-W7-A-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-15|2020-12-15|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|103|EPA STOrage and RETrieval Data Warehouse (STORET)|21FLPDEM_WQX-W8-D-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-21|2021-09-21|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCOSP_COSPE6-D1705|Total Suspended Solids, TSS|Bottom|Lab|2017-08-07|2017-08-07|1|6.5|6.5|6.5|6.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_028|Total Suspended Solids, TSS|Bottom|Lab|2005-10-26|2006-05-23|2|10|17|13.5|13.5|4.94974746830583
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E1-A-17-05|Total Suspended Solids, TSS|Bottom|Lab|2017-08-07|2017-08-07|1|21|21|21|21|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E1-B-03-04|Total Suspended Solids, TSS|Bottom|Lab|2003-05-13|2003-05-13|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E6-D-06-09|Total Suspended Solids, TSS|Bottom|Lab|2006-12-14|2006-12-14|1|1|1|1|1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-D-07-07|Total Suspended Solids, TSS|Bottom|Lab|2007-09-17|2007-09-17|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W2-A-08-06|Total Suspended Solids, TSS|Bottom|Lab|2008-09-22|2008-09-22|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W2-D-03-01|Total Suspended Solids, TSS|Bottom|Lab|2003-01-16|2003-01-16|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W2-D-06-06|Total Suspended Solids, TSS|Bottom|Lab|2006-08-03|2006-08-03|1|19|19|19|19|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4-B-06-05|Total Suspended Solids, TSS|Bottom|Lab|2006-06-21|2006-06-21|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 57-01|Total Suspended Solids, TSS|Bottom|Lab|2002-01-16|2002-01-16|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-D-06-03|Total Suspended Solids, TSS|Bottom|Lab|2006-04-06|2006-04-06|1|1|1|1|1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-A-06-03|Total Suspended Solids, TSS|Bottom|Lab|2006-04-17|2006-04-17|1|64|64|64|64|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_24040131|Total Suspended Solids, TSS|Bottom|Lab|2004-05-25|2004-05-25|1|36|36|36|36|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSP-CBD01|Total Suspended Solids, TSS|Bottom|Lab|2020-02-20|2022-06-13|6|4.3|16|9.8|9.6|4.31230796673893
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSP580|Total Suspended Solids, TSS|Bottom|Lab|2020-02-20|2022-10-20|3|5.6|16|13|11.5333333333333|5.35288084430555
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE6-A2002|Total Suspended Solids, TSS|Bottom|Lab|2020-03-23|2020-03-23|1|6.5|6.5|6.5|6.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE6-A2205|Total Suspended Solids, TSS|Bottom|Lab|2022-08-16|2022-08-16|1|4.7|4.7|4.7|4.7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE6-A2206|Total Suspended Solids, TSS|Bottom|Lab|2022-09-15|2022-09-15|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE6-A2207|Total Suspended Solids, TSS|Bottom|Lab|2022-10-25|2022-10-25|1|3.4|3.4|3.4|3.4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE6-B2207|Total Suspended Solids, TSS|Bottom|Lab|2022-10-25|2022-10-25|1|4.1|4.1|4.1|4.1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE6-C1906|Total Suspended Solids, TSS|Bottom|Lab|2021-03-16|2021-03-16|1|5|5|5|5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE6-C2105|Total Suspended Solids, TSS|Bottom|Lab|2021-08-31|2021-08-31|1|3.7|3.7|3.7|3.7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE6-D2206|Total Suspended Solids, TSS|Bottom|Lab|2022-09-15|2022-09-15|1|3.2|3.2|3.2|3.2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-A2104|Total Suspended Solids, TSS|Bottom|Lab|2021-06-22|2021-06-22|1|22|22|22|22|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-A2107|Total Suspended Solids, TSS|Bottom|Lab|2021-10-27|2021-10-27|1|2.1|2.1|2.1|2.1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-A2108|Total Suspended Solids, TSS|Bottom|Lab|2021-12-20|2021-12-20|1|7.9|7.9|7.9|7.9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-B2002|Total Suspended Solids, TSS|Bottom|Lab|2020-03-25|2020-03-25|1|2.9|2.9|2.9|2.9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-B2104|Total Suspended Solids, TSS|Bottom|Lab|2021-06-22|2021-06-22|1|6.8|6.8|6.8|6.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-B2204|Total Suspended Solids, TSS|Bottom|Lab|2022-06-27|2022-06-27|1|4.1|4.1|4.1|4.1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-B2207|Total Suspended Solids, TSS|Bottom|Lab|2022-10-17|2022-10-17|1|2.8|2.8|2.8|2.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-B2208|Total Suspended Solids, TSS|Bottom|Lab|2022-12-13|2022-12-13|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-C2003|Total Suspended Solids, TSS|Bottom|Lab|2020-06-23|2020-06-23|1|4.8|4.8|4.8|4.8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-C2102|Total Suspended Solids, TSS|Bottom|Lab|2021-03-15|2021-03-15|1|26|26|26|26|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-C2204|Total Suspended Solids, TSS|Bottom|Lab|2022-06-27|2022-06-27|1|3.5|3.5|3.5|3.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-C2208|Total Suspended Solids, TSS|Bottom|Lab|2022-12-13|2022-12-13|1|6.9|6.9|6.9|6.9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-D2003|Total Suspended Solids, TSS|Bottom|Lab|2020-06-23|2020-06-23|1|3.2|3.2|3.2|3.2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-D2007|Total Suspended Solids, TSS|Bottom|Lab|2020-12-22|2020-12-22|1|2|2|2|2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-D2102|Total Suspended Solids, TSS|Bottom|Lab|2021-03-15|2021-03-15|1|3.5|3.5|3.5|3.5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-D2104|Total Suspended Solids, TSS|Bottom|Lab|2021-06-22|2021-06-22|1|8.4|8.4|8.4|8.4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-D2205|Total Suspended Solids, TSS|Bottom|Lab|2022-08-15|2022-08-15|1|3.3|3.3|3.3|3.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSPE7-D2208|Total Suspended Solids, TSS|Bottom|Lab|2022-12-13|2022-12-13|1|6.4|6.4|6.4|6.4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_01-01|Total Suspended Solids, TSS|Bottom|Lab|2021-08-19|2021-12-09|2|7|8|7.5|7.5|0.707106781186548
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_01-32|Total Suspended Solids, TSS|Bottom|Lab|2020-09-14|2020-09-14|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_19-02|Total Suspended Solids, TSS|Bottom|Lab|2020-05-06|2021-12-20|2|5|22|13.5|13.5|12.0208152801713
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-A-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-01|2022-02-01|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-15|2020-06-15|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-21-04|Total Suspended Solids, TSS|Bottom|Lab|2021-07-08|2021-07-08|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-07-29|2021-07-29|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-01|2022-02-01|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-11-23|2020-11-23|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-03-15|2021-03-15|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-17|2021-05-17|1|15|15|15|15|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-21-04|Total Suspended Solids, TSS|Bottom|Lab|2021-07-08|2021-07-08|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-17|2022-03-17|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-15|2020-06-15|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-03-15|2021-03-15|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-17|2021-05-17|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-21-04|Total Suspended Solids, TSS|Bottom|Lab|2021-07-08|2021-07-08|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-15|2021-12-15|1|28|28|28|28|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-01|2022-02-01|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-A-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-07|2020-05-07|1|21|21|21|21|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-A-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-11-23|2020-11-23|1|17|17|17|17|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-A-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-01|2022-02-01|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-01|2022-02-01|1|15|15|15|15|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-17|2022-03-17|1|31|31|31|31|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-C-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-07|2020-05-07|1|19|19|19|19|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-C-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-17|2022-03-17|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-07|2020-05-07|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-08-03|2021-08-03|1|19|19|19|19|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-15|2021-12-15|1|28|28|28|28|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-A-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-07-27|2021-07-27|1|17|17|17|17|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-A-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-24|2022-02-24|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-05|2020-05-05|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-08|2021-09-08|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-11-09|2021-11-09|1|19|19|19|19|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-21|2022-03-21|1|26|26|26|26|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-C-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-10|2020-09-10|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-16|2020-06-16|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-10|2020-09-10|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-07-27|2021-07-27|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-14|2021-12-14|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-21|2022-03-21|1|15|15|15|15|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-22-05|Total Suspended Solids, TSS|Bottom|Lab|2022-08-15|2022-08-15|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-A-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-07-27|2021-07-27|1|15|15|15|15|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-A-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-11-09|2021-11-09|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-A-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-21|2022-03-21|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-B-22-06|Total Suspended Solids, TSS|Bottom|Lab|2022-09-22|2022-09-22|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-C-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-05|2020-05-05|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-C-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-10|2020-09-10|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-D-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-05|2020-05-05|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-D-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-21|2022-03-21|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-D-22-08|Total Suspended Solids, TSS|Bottom|Lab|2022-12-05|2022-12-05|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-21|2020-05-21|1|5|5|5|5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-20|2021-09-20|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-08-06|2020-08-06|1|5|5|5|5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-08-31|2020-08-31|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-20|2021-09-20|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-10-27|2021-10-27|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-29|2022-03-29|1|15|15|15|15|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-23|2020-09-23|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-10-21|2020-10-21|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-B-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-16|2021-12-16|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-C-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-03-30|2021-03-30|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-C-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-12|2021-05-12|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-D-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-02|2020-12-02|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-D-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-03-30|2021-03-30|1|17|17|17|17|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-D-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-12|2021-05-12|1|27|27|27|27|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-A-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-11-04|2020-11-04|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-B-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-18|2021-05-18|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-B-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-08-05|2021-08-05|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-C-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-04-12|2022-04-12|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-09|2020-12-09|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-11|2021-02-11|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-04-06|2021-04-06|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-20|2021-09-20|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-29|2022-03-29|1|17|17|17|17|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-24|2020-06-24|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-10-15|2020-10-15|1|5|5|5|5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-10-27|2021-10-27|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-29|2022-03-29|1|19|19|19|19|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-21|2020-05-21|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-10-15|2020-10-15|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-D-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-04-06|2021-04-06|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-03|2021-02-03|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-04-05|2021-04-05|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-10|2021-05-10|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-07-29|2021-07-29|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-10-21|2021-10-21|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-24|2022-02-24|1|5|5|5|5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-22-06|Total Suspended Solids, TSS|Bottom|Lab|2022-09-08|2022-09-08|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-07-23|2020-07-23|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-17|2020-12-17|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-16|2021-09-16|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-24|2022-02-24|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-28|2022-03-28|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-A-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-16|2020-06-16|1|21|21|21|21|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-A-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-24|2022-02-24|1|18|18|18|18|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-11|2020-05-11|1|35|35|35|35|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-17|2020-12-17|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-24|2022-02-24|1|23|23|23|23|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-A-21-04|Total Suspended Solids, TSS|Bottom|Lab|2021-06-17|2021-06-17|1|19|19|19|19|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-A-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-15|2021-12-15|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-A-22-04|Total Suspended Solids, TSS|Bottom|Lab|2022-06-27|2022-06-27|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-B-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-08-31|2020-08-31|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-B-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-08|2020-12-08|1|1|1|1|1|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-15|2021-12-15|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-09|2022-02-09|1|19|19|19|19|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-22-05|Total Suspended Solids, TSS|Bottom|Lab|2022-07-26|2022-07-26|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-22-06|Total Suspended Solids, TSS|Bottom|Lab|2022-09-12|2022-09-12|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-10-29|2020-10-29|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-08|2020-12-08|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-03-15|2021-03-15|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-22-05|Total Suspended Solids, TSS|Bottom|Lab|2022-07-26|2022-07-26|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-04|2020-05-04|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-25|2020-06-25|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-08-10|2020-08-10|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-03|2020-12-03|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-04-12|2022-04-12|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-22-07|Total Suspended Solids, TSS|Bottom|Lab|2022-11-02|2022-11-02|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-04|2020-05-04|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-24|2020-09-24|1|15|15|15|15|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-04-12|2021-04-12|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-11-09|2021-11-09|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-14|2021-12-14|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-08-10|2020-08-10|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-10-14|2020-10-14|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-21-04|Total Suspended Solids, TSS|Bottom|Lab|2021-06-29|2021-06-29|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-23|2021-02-23|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-14|2021-12-14|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-10|2022-02-10|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-A-22-07|Total Suspended Solids, TSS|Bottom|Lab|2022-11-02|2022-11-02|1|20|20|20|20|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-A-22-08|Total Suspended Solids, TSS|Bottom|Lab|2022-12-05|2022-12-05|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-04-12|2021-04-12|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-04|Total Suspended Solids, TSS|Bottom|Lab|2021-06-29|2021-06-29|1|26|26|26|26|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-08-18|2021-08-18|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-13|2021-09-13|1|22|22|22|22|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-C-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-24|2020-09-24|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-C-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-10|2022-02-10|1|17|17|17|17|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-D-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-24|2020-09-24|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-A-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-11|2020-06-11|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-A-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-02|2022-02-02|1|33|33|33|33|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-A-22-04|Total Suspended Solids, TSS|Bottom|Lab|2022-06-20|2022-06-20|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-05|2020-05-05|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-11|2020-06-11|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-08-05|2021-08-05|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-10-11|2021-10-11|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-01|2021-12-01|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-04-05|2022-04-05|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-C-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-15|2021-09-15|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-C-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-10-11|2021-10-11|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-C-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-01|2021-12-01|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-D-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-10-11|2021-10-11|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-06|2020-05-06|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-08-06|2020-08-06|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-28|2020-09-28|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-09|2021-02-09|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-23|2021-09-23|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-11-04|2021-11-04|1|33|33|33|33|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-06|2020-05-06|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-20-04|Total Suspended Solids, TSS|Bottom|Lab|2020-06-15|2020-06-15|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-11-23|2020-11-23|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-09|2021-02-09|1|2|2|2|2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-13|2021-05-13|1|20|20|20|20|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-23|2021-09-23|1|17|17|17|17|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-11-04|2021-11-04|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-30|2022-03-30|1|19|19|19|19|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-06|2020-05-06|1|5|5|5|5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-28|2020-09-28|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-09|2021-02-09|1|2|2|2|2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-06|Total Suspended Solids, TSS|Bottom|Lab|2021-09-23|2021-09-23|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-22-06|Total Suspended Solids, TSS|Bottom|Lab|2022-09-07|2022-09-07|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-06|2020-05-06|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-08-06|2020-08-06|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-09|2021-02-09|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-05|Total Suspended Solids, TSS|Bottom|Lab|2021-08-03|2021-08-03|1|21|21|21|21|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-11-30|2021-11-30|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-22-04|Total Suspended Solids, TSS|Bottom|Lab|2022-06-28|2022-06-28|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-A-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-22|2020-12-22|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-B-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-08-12|2020-08-12|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-B-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-04-05|2022-04-05|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-C-22-06|Total Suspended Solids, TSS|Bottom|Lab|2022-09-13|2022-09-13|1|12|12|12|12|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-D-20-07|Total Suspended Solids, TSS|Bottom|Lab|2020-10-20|2020-10-20|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-D-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-04-06|2021-04-06|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-A-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-11|2020-05-11|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-A-22-06|Total Suspended Solids, TSS|Bottom|Lab|2022-09-26|2022-09-26|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-B-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-08-11|2020-08-11|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-B-21-02|Total Suspended Solids, TSS|Bottom|Lab|2021-03-30|2021-03-30|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-B-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-17|2021-05-17|1|15|15|15|15|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-B-22-01|Total Suspended Solids, TSS|Bottom|Lab|2022-02-01|2022-02-01|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-B-22-06|Total Suspended Solids, TSS|Bottom|Lab|2022-09-26|2022-09-26|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-C-21-03|Total Suspended Solids, TSS|Bottom|Lab|2021-05-17|2021-05-17|1|13|13|13|13|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-C-22-04|Total Suspended Solids, TSS|Bottom|Lab|2022-07-06|2022-07-06|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-C-22-08|Total Suspended Solids, TSS|Bottom|Lab|2022-12-08|2022-12-08|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-D-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-11|2020-05-11|1|8|8|8|8|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-D-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-08|2021-12-08|1|10|10|10|10|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-D-22-04|Total Suspended Solids, TSS|Bottom|Lab|2022-07-06|2022-07-06|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-A-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-15|2020-12-15|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-A-21-04|Total Suspended Solids, TSS|Bottom|Lab|2021-07-08|2021-07-08|1|16|16|16|16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-A-22-02|Total Suspended Solids, TSS|Bottom|Lab|2022-03-14|2022-03-14|1|20|20|20|20|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-B-20-05|Total Suspended Solids, TSS|Bottom|Lab|2020-08-11|2020-08-11|1|6|6|6|6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-B-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-10|2020-09-10|1|9|9|9|9|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-C-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-11|2020-05-11|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-C-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-15|2020-12-15|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-20-03|Total Suspended Solids, TSS|Bottom|Lab|2020-05-11|2020-05-11|1|4|4|4|4|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-20-06|Total Suspended Solids, TSS|Bottom|Lab|2020-09-10|2020-09-10|1|5|5|5|5|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-20-08|Total Suspended Solids, TSS|Bottom|Lab|2020-12-15|2020-12-15|1|2|2|2|2|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-01|Total Suspended Solids, TSS|Bottom|Lab|2021-02-04|2021-02-04|1|7|7|7|7|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-04|Total Suspended Solids, TSS|Bottom|Lab|2021-07-08|2021-07-08|1|14|14|14|14|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-07|Total Suspended Solids, TSS|Bottom|Lab|2021-10-27|2021-10-27|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-08|Total Suspended Solids, TSS|Bottom|Lab|2021-12-08|2021-12-08|1|11|11|11|11|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G1SW0109|Total Suspended Solids, TSS|Bottom|Lab|2020-09-16|2022-11-14|4|3|10|6.5|6.5|3.10912635102961
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0080|Total Suspended Solids, TSS|Bottom|Lab|2021-07-26|2022-10-06|5|3|4|4|3.6|0.547722557505166
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0081|Total Suspended Solids, TSS|Bottom|Lab|2021-07-26|2021-12-16|2|3|4|3.5|3.5|0.707106781186548
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0152|Total Suspended Solids, TSS|Bottom|Lab|2022-08-30|2022-08-30|1|3|3|3|3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0162|Total Suspended Solids, TSS|Bottom|Lab|2020-12-03|2021-12-27|5|3|16|9|9.6|6.26897120746299
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0173|Total Suspended Solids, TSS|Bottom|Lab|2020-09-16|2020-09-16|1|5|5|5|5|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670157|Total Suspended Solids, TSS|Bottom|Lab|2020-11-04|2020-11-04|1|42.7|42.7|42.7|42.7|
