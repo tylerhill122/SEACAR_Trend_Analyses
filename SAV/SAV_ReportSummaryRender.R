@@ -5,12 +5,12 @@
 ## Set working directory to "Source File Location" in "Session" menu
  out_dir <- "output"
 
-#Renders SEACAR_SAV_ReportSummary.Rmd and writes the
+#Renders SAV_Report.Rmd and writes the
 #report to a pdf and Word document stored in output directory
-file_out <-  "SEACAR_SAV_ReportSummary"
+file_out <-  "SAV_Report"
 
 
-rmarkdown::render(input = "SEACAR_SAV_ReportSummary.Rmd", 
+rmarkdown::render(input = "SAV_ReportSummary.Rmd", 
                   output_format = "pdf_document",
                   output_file = paste0(file_out, ".pdf"),
                   output_dir = out_dir,
