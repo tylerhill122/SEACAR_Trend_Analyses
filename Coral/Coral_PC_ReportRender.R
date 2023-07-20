@@ -24,7 +24,7 @@ out_dir <- "output/PercentCover"
 param_name <- "PercentCover"
 
 #Sets abbreviation or label to be used in file names
-param_file <- "PercentCover"
+param_file <- "PC"
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
 MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
@@ -41,7 +41,7 @@ file_short <- sub("data/", "", file_in)
 file_out <-  paste0("Coral_", param_file, "_Report")
 
 
-rmarkdown::render(input = "Coral_PercentCover.Rmd", 
+rmarkdown::render(input = "Coral_PC.Rmd", 
                   output_format = "pdf_document",
                   output_file = paste0(file_out, ".pdf"),
                   output_dir = out_dir,
@@ -60,5 +60,5 @@ unlink(paste0(out_dir, "/", file_out, "_files"), recursive=TRUE)
 #Gets list of all image files in output/Figures and creates zip directory
 fig_list <- list.files(paste0(out_dir, "/Figures"), pattern=".png", full=FALSE)
 setwd(paste0(out_dir, "/Figures"))
-zip("CoralPercentCoverFigures", files=fig_list)
+zip("CoralPCFigures", files=fig_list)
 setwd(wd)
