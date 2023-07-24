@@ -9,6 +9,8 @@ file_list <- list.files("output", pattern="ModelResults", full.names=TRUE)
 #Include only those that are txt
 file_in <- file_list[grep("csv", file_list)]
 
+#Set output directory
+out_dir <- "output"
 
 #Read in file
 data <- fread(file_in, sep = ",", header = TRUE, stringsAsFactors = FALSE, na.strings = "")

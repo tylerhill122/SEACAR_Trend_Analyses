@@ -510,18 +510,19 @@ oysterraw[, Subtidal := ifelse(ProgramID %in%
 #Create variables for relative year and size class category for data that
 #should be included in analyses and counts of live oysters measured
 for(i in unique(oysterraw$ManagedAreaName)){
-      oysterraw[ManagedAreaName==i & !is.na(LiveDate), `:=`
-                (RelYear=(LiveDate-min(LiveDate))+1,
-                      #adding 1 to each RelYear to avoid min(RelYear)==0,
-                      #because it is used later as an index for plotting years so
-                      #it needs to start from 1
-                      SizeClass=fcase(ShellHeight_mm >= 25 &
-                                            ShellHeight_mm < 75, "25to75mm",
-                                      ShellHeight_mm >= 75, "o75mm",
-                                      default=NA))]
-      
-      oysterraw[ManagedAreaName==i & !is.na(LiveDate),
-                counts := length(ShellHeight_mm), by=c("QuadIdentifier")]
+   oysterraw[ManagedAreaName==i & !is.na(LiveDate), `:=`
+             (RelYear=(LiveDate-min(LiveDate))+1,
+                YearDiff=min(LiveDate)-1,
+                #adding 1 to each RelYear to avoid min(RelYear)==0,
+                #because it is used later as an index for plotting years so
+                #it needs to start from 1
+                SizeClass=fcase(ShellHeight_mm >= 25 &
+                                   ShellHeight_mm < 75, "25to75mm",
+                                ShellHeight_mm >= 75, "o75mm",
+                                default=NA))]
+   
+   oysterraw[ManagedAreaName==i & !is.na(LiveDate),
+             counts := length(ShellHeight_mm), by=c("QuadIdentifier")]
 }
 
 #Remove unrealistically high shell heights from ID_5017
@@ -1081,9 +1082,10 @@ diagnosticplots <- function(model, indicator, managedarea, sizeclass="",
                    str_detect(indicator, "ensity") ~ "Den",
                    str_detect(indicator, "^S|^s") ~ "SH")
   ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
-               ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
-                      ifelse(str_detect(managedarea, "NMS|National M"),
-                             "MS", "AP")))
+               ifelse(str_detect(managedarea, "NERR"), "ERR", 
+                      ifelse(str_detect(managedarea, "NMS"),
+                             "MS",
+                             ifelse(str_detect(managedarea, "AP"), "P", ""))))
   if(sizeclass != ""){
     size <- case_when(str_detect(sizeclass, "25") &
                         str_detect(sizeclass, "75") ~ "25to75", 
@@ -1188,9 +1190,10 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
                    str_detect(indicator, "ensity") ~ "Den",
                    str_detect(indicator, "^S|^s") ~ "SH")
   ma <- paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', managedarea, perl=TRUE),
-               ifelse(str_detect(managedarea, "NERR|National E"), "ERR", 
-                      ifelse(str_detect(managedarea, "NMS|National M"), "MS",
-                             "AP")))
+               ifelse(str_detect(managedarea, "NERR"), "ERR", 
+                      ifelse(str_detect(managedarea, "NMS"),
+                             "MS",
+                             ifelse(str_detect(managedarea, "AP"), "P", ""))))
   if(sizeclass != ""){
     size <- case_when(str_detect(sizeclass, "25") &
                         str_detect(sizeclass, "75") ~ "25to75",
@@ -1208,252 +1211,18 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
   }
   
   
-  if(ind=="SH"){
-    #Marginal effects plot including random effects
-    nyrs <- (max(data[!is.na(RelYear), RelYear])+1) -
-      (min(data[!is.na(RelYear), RelYear])+1)
-    maxyr <- max(data[!is.na(RelYear), RelYear])
-    minyr <- min(data[!is.na(RelYear), RelYear]) #+ 1
-    if(minyr > 0){
-      maxyr <- maxyr-(minyr-1)
-      minyr <- minyr-(minyr-1)
-    }
-    # Creates break intervals for plots based on number of years of data
-    if(nyrs>=40){
-       # Set breaks to every 10 years if more than 40 years of data
-       brk <- 10
-    }else if(nyrs<40 & nyrs>=20){
-       # Set breaks to every 5 years if between 40 and 20 years of data
-       brk <- 5
-    }else if(nyrs<20 & nyrs>=12){
-       # Set breaks to every 3 years if between 20 and 12 years of data
-       brk <- 3
-    }else if(nyrs<12 & nyrs>=8){
-       # Set breaks to every 2 years if between 12 and 8 years of data
-       brk <- 2
-    } else if(nyrs<8){
-       # Set breaks to every year if less than 8 years of data
-       brk <- 1
-    }
-    breaks <- seq(minyr, maxyr, brk)
-    # nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
-    # breaks <- if(minyr==0){
-    #   c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
-    #                                            (nyrs/nbreaks)/nbreaks)),
-    #     maxyr)+1
-    # } else{
-    #   c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
-    #                                            (nyrs/nbreaks)/nbreaks)),
-    #     maxyr)
-    # }
-    yrlist <- c(min(data[!is.na(LiveDate), LiveDate]):max(data[!is.na(LiveDate),
-                                                               LiveDate]))
-    
-    set.seed(987)
-    if(length(models)==2){
-      liveplot_1 <- plot(conditional_effects(models[[1]],
-                                             re_formula=NULL),
-                         plot=FALSE)
-      histplot_1 <- plot(conditional_effects(models[[2]],
-                                             re_formula=NULL),
-                         plot=FALSE)
-      present <- "Both"
-    } else{
-      if(str_detect(models[[1]]$file, "hist")){
-        histplot_1 <- plot(conditional_effects(models[[1]],
-                                               re_formula=NULL),
-                           plot=FALSE)
-        present <- "hist"
-      } else{
-        liveplot_1 <- plot(conditional_effects(models[[1]],
-                                               re_formula=NULL),
-                           plot=FALSE)
-        present <- "live"
-      }
-    }
-    
-    plot1 <- ggplot() +
-      geom_point(data=data[!is.na(RelYear) & !is.na(LiveDate), ],
-                  aes(x=RelYear, y=ShellHeight_mm), position=plot_jitter, 
-                  shape=21, size=3, color="#333333", fill="#cccccc",
-                  alpha=0.75, inherit.aes=FALSE) +
-      {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
-        list(geom_ribbon(data=liveplot_1$RelYear$data,
-                         aes(x=RelYear, y=ShellHeight_mm,
-                             ymin=lower__, ymax=upper__),
-                         fill="grey", alpha=0.4),
-             geom_line(data=liveplot_1$RelYear$data,
-                       aes(x=RelYear, y=estimate__,
-                           color="live"), lwd=1))
-      }} +
-      {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
-        list(geom_ribbon(data=histplot_1$RelYear$data,
-                         aes(x=RelYear, y=ShellHeight_mm,
-                             ymin=lower__, ymax=upper__),
-                         fill="grey", alpha=0.4,
-                         inherit.aes=FALSE),
-             geom_line(data=histplot_1$RelYear$data,
-                       aes(x=RelYear, y=estimate__,
-                           color="hist"),
-                       lwd=1, inherit.aes=FALSE))
-      }} +
-      scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
-      plot_theme +
-      theme(legend.position="right"
-            #legend.position=ifelse(zoom==TRUE, "none", "right")
-      ) +
-      labs(subtitle=managedarea,
-           subtitle=sizelab,
-           x="Year",
-           y="Shell height (mm)") +
-      scale_color_manual(name="Trendlines",
-                         values=c("hist"="red", "live"="#000099"),
-                         labels=c("Dead Shells", "Live Oysters")) +
-      coord_cartesian(ylim=c(ifelse(size=="25to75", 20,
-                                    ifelse(size=="35to75", 35, 70)),
-                             ifelse(size=="o75", 250, 80)))
-    
-    ggsave(paste0("output/Shell_Height/Figures/Oyster_SH_GLMM_", ma, ".png"),
-           plot1,
-           width=8,
-           height=4,
-           units="in",
-           dpi=200)
-    
-    if(zoom==TRUE){
-      zoomplot <- plot1 +
-        {if(length(models)==1)
-          geom_boxplot(data=subset(data,
-                                   data$LiveDate_Qualifier=="Exact" &
-                                     !is.na(data$RelYear) &
-                                     !is.na(data$LiveDate)),
-                       aes(x=RelYear, y=ShellHeight_mm,
-                           group=LiveDate_Qualifier),
-                       color="blue", alpha=0.5, lwd=1,
-                       inherit.aes=FALSE)} +
-        coord_cartesian(xlim=c(ifelse(min(data[LiveDate_Qualifier=="Exact" &
-                                                 !is.na(RelYear) &
-                                                 !is.na(LiveDate),
-                                               RelYear]) -
-                                        max(data[LiveDate_Qualifier==
-                                                   "Estimate" &
-                                                   !is.na(RelYear) &
-                                                   !is.na(LiveDate),
-                                                 RelYear]) > 50, 
-                                      min(data[LiveDate_Qualifier=="Exact" &
-                                                 !is.na(RelYear) &
-                                                 !is.na(LiveDate),
-                                               RelYear]-5), 
-                                      max(data[LiveDate_Qualifier ==
-                                                 "Estimate" &
-                                                 !is.na(RelYear) &
-                                                 !is.na(LiveDate),
-                                               RelYear]-5)),
-                               ifelse(min(data[LiveDate_Qualifier =="Exact" &
-                                                 !is.na(RelYear) &
-                                                 !is.na(LiveDate),
-                                               RelYear]) -
-                                        max(data[LiveDate_Qualifier ==
-                                                   "Estimate" &
-                                                   !is.na(RelYear) &
-                                                   !is.na(LiveDate),
-                                                 RelYear]) > 50,
-                                      max(data[LiveDate_Qualifier =="Exact" &
-                                                 !is.na(RelYear) &
-                                                 !is.na(LiveDate),
-                                               RelYear]+5),
-                                      max(data[LiveDate_Qualifier ==
-                                                 "Estimate" &
-                                                 !is.na(RelYear) &
-                                                 !is.na(LiveDate),
-                                               RelYear]-5))),
-                        
-                        ylim=c(ifelse(size=="25to75",
-                                      20,
-                                      ifelse(size=="35to75", 35,
-                                             70)),
-                               ifelse(size=="o75", 250, 80))) +
-        theme(legend.position="right") +
-        labs(title=paste0("post-",
-                          yrlist[max(data[LiveDate_Qualifier==
-                                            "Estimate" &
-                                            !is.na(RelYear) &
-                                            !is.na(LiveDate),
-                                          RelYear])-5]),
-             x="",
-             y=NULL)
-      
-      cplot <- grid.arrange(grobs=list(plot1, zoomplot), ncol=2)
-      
-      ggsave(paste0("output/Shell_Height/Figures/Oyster_SH_GLMM_", ma,
-                    "_Zoom.png"),
-             cplot,
-             width=8,
-             height=4,
-             units="in",
-             dpi=200)
-    }
-    
-    if("Region.y" %in% if(present=="hist"){names(histplot_1)}
-       else{names(liveplot_1)}){
-      #Plot of modeled mean shell heights
-      meanSH_test_hist <- histplot_1$Region.y$data
-      meanSH_test <- liveplot_1$Region.y$data
-      meanSH_test_hist$data <- "Historical data"
-      meanSH_test$data <- "Real-time data"
-      meanSH <- rbind(meanSH_test[, c("effect1__", "estimate__",
-                                      "se__", "lower__", "upper__",
-                                      "data")],
-                      meanSH_test_hist[, c("effect1__",
-                                           "estimate__", "se__",
-                                           "lower__", "upper__",
-                                           "data")])
-      setnames(meanSH, c("effect1__"), c("Region"))
-      
-      meanshplot <- ggplot(meanSH, aes(x=Region, y=estimate__,
-                                       ymin=lower__, ymax=upper__,
-                                       fill=data)) +
-        geom_pointinterval(
-          position=position_jitter(width=0.25, height=0),
-          size=3, fatten_point=4, shape=21, color="black") +
-        ylab(paste0("ShellHeight_mm | ",
-                    ifelse(size=="25to75", "trunc(lb=25, ub=75)",
-                           ifelse(size=="35to75",
-                                  "trunc(lb=35, ub=75)",
-                                  "trunc(lb=75, ub=250)")))) +
-        theme_bw()+
-        theme(axis.title=element_text(size=13), 
-              axis.text=element_text(size=12), 
-              legend.text=element_text(size=12), 
-              legend.title=element_text(size=13), 
-              axis.text.x=element_text(angle=45, hjust=1)) +
-        labs(fill=NULL)
-      
-      ggsave(paste0("output/Shell_Height/Figures/Oyster_SH_GLMM_", ma,
-                    "MeanRes", ".png"),
-             meanshplot,
-             width=8,
-             height=4,
-             units="in",
-             dpi=200)
-    }
-  }
-  
   
   
   if(ind=="Den"){ 
-    nyrs <- max(data$RelYear)-min(data$RelYear)
-    maxyr <- max(data$RelYear)
-    minyr <- min(data$RelYear)
-    if(grepl("Natural", unique(data$MA_plotlab))==TRUE){
-      type <- "Natural"
-    } else{
-      type <- "Restored"
-    }
-    if(minyr > 0){
-      maxyr <- maxyr-(minyr-1)
-      minyr <- minyr-(minyr-1)
-    }
+     nyrs <- max(data$LiveDate)-min(data$LiveDate)+1
+     maxyr <- max(data$LiveDate)
+     minyr <- min(data$LiveDate)
+     if(grepl("Natural", unique(data$MA_plotlab))==TRUE){
+        type <- "Natural"
+     } else{
+        type <- "Restored"
+     }
+     yrdiff <- unique(data$YearDiff)
     # Creates break intervals for plots based on number of years of data
     if(nyrs>=40){
        # Set breaks to every 10 years if more than 40 years of data
@@ -1467,11 +1236,15 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
     }else if(nyrs<12 & nyrs>=8){
        # Set breaks to every 2 years if between 12 and 8 years of data
        brk <- 2
-    } else if(nyrs<8){
+    }else if(nyrs<8){
        # Set breaks to every year if less than 8 years of data
        brk <- 1
+    }else if(nyrs<3){
+       brk <- 1
+       maxyr <- maxyr + 1
+       minyr <- minyr - 1
     }
-    breaks <- seq(minyr, maxyr, brk)
+    yrlist <- seq(minyr,maxyr,brk)
     # nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
     # breaks <- if(minyr==0){
     #   c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
@@ -1482,33 +1255,33 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
     #                                            (nyrs/nbreaks)/nbreaks)),
     #     maxyr)
     # }
-    yrlist <- c(min(data$Year):max(data$Year))
     
     denplots <- plot(conditional_effects(models[[1]], re_formula=NULL),
                      plot=FALSE)
     
     plot1 <- ggplot() +
        {if("meanDen_int" %in% colnames(data)){
-          geom_point(data=data, aes(x=RelYear - (min(RelYear)-1),
+          geom_point(data=data, aes(x=LiveDate,
                                      y=meanDen_int), position=plot_jitter,
                       shape=21, size=2, color="#333333", fill="#cccccc",
                       alpha=1, inherit.aes=FALSE)
        } else{
-          geom_point(data=data, aes(x=RelYear-(min(RelYear)-1),
+          geom_point(data=data, aes(x=LiveDate,
                                      y=Density_m2), position=plot_jitter,
                       shape=21, size=2, color="#333333", fill="#cccccc",
                       alpha=1, inherit.aes=FALSE)
       }
       } +
       list(geom_ribbon(data=denplots$RelYear$data,
-                       aes(x=RelYear-(min(RelYear)-1), y=Density_m2,
+                       aes(x=RelYear+yrdiff, y=Density_m2,
                            ymin=lower__, ymax=upper__),
                        fill="#000099", alpha=0.5, inherit.aes=FALSE),
            geom_line(data=denplots$RelYear$data,
-                     aes(x=RelYear-(min(RelYear)-1),
+                     aes(x=RelYear+yrdiff,
                          y=estimate__),
                      color="#000099", lwd=0.75, inherit.aes=FALSE)) +
-      scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
+      scale_x_continuous(limits=c(minyr-0.25, maxyr+0.25),
+                         breaks=yrlist) +
       plot_theme +
       {if("meanDen_int" %in% colnames(data)){
         labs(title="Oyster Density",
@@ -1542,13 +1315,10 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
   
   #Marginal effects plot including random effects for percent live
   if(ind=="Pct"){
-    nyrs <- max(data$RelYear)-min(data$RelYear)
-    maxyr <- max(data$RelYear)
-    minyr <- min(data$RelYear)
-    if(minyr > 0){
-      maxyr <- maxyr-(minyr-1)
-      minyr <- minyr-(minyr-1)
-    }
+    nyrs <- max(data$LiveDate)-min(data$LiveDate)+1
+    maxyr <- max(data$LiveDate)
+    minyr <- min(data$LiveDate)
+    yrdiff <- unique(data$YearDiff)
     # Creates break intervals for plots based on number of years of data
     if(nyrs>=40){
        # Set breaks to every 10 years if more than 40 years of data
@@ -1562,11 +1332,15 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
     }else if(nyrs<12 & nyrs>=8){
        # Set breaks to every 2 years if between 12 and 8 years of data
        brk <- 2
-    } else if(nyrs<8){
+    }else if(nyrs<8){
        # Set breaks to every year if less than 8 years of data
        brk <- 1
+    }else if(nyrs<3){
+       brk <- 1
+       maxyr <- maxyr + 1
+       minyr <- minyr - 1
     }
-    breaks <- seq(minyr, maxyr, brk)
+    yrlist <- seq(minyr,maxyr,brk)
     # nbreaks <- ifelse(nyrs < 11, nyrs+1, 12)
     # breaks <- if(minyr==0){
     #   c(minyr, round(minyr+c(1:(nbreaks-2))*((nyrs/nbreaks) +
@@ -1577,39 +1351,39 @@ meplots <- function(models, data, indicator, managedarea, sizeclass="",
     #                                            (nyrs/nbreaks)/nbreaks)),
     #     maxyr)
     # }
-    yrlist <- c(min(data$Year):max(data$Year))
     
     set.seed(987)
     pctplots <- plot(conditional_effects(models[[1]], re_formula=NULL),
                      plot=FALSE)
     
     plot1 <- ggplot() +
-      geom_point(data=data, aes(x=RelYear-(min(RelYear)-1),
+      geom_point(data=data, aes(x=LiveDate,
                                  y=100*PercentLive_dec), position=plot_jitter,
                   shape=21, size=2, color="#333333", fill="#cccccc",
                   alpha=1, inherit.aes=FALSE) +
       {if(names(pctplots$RelYear$data[2])=="PercentLive_dec"){
         list(geom_ribbon(data=pctplots$RelYear$data,
-                         aes(x=RelYear-(min(RelYear)-1),
+                         aes(x=RelYear+yrdiff,
                              y=100*PercentLive_dec, ymin=100*lower__,
                              ymax=100*upper__), fill="#000099",
                          alpha=0.5, inherit.aes=FALSE),
              geom_line(data=pctplots$RelYear$data,
-                       aes(x=RelYear-(min(RelYear)-1),
+                       aes(x=RelYear+yrdiff,
                            y=100*estimate__), color="#000099",
                        lwd=0.75, inherit.aes=FALSE))
       } else{
         list(geom_ribbon(data=pctplots$RelYear$data,
-                         aes(x=RelYear-(min(RelYear)-1),
+                         aes(x=RelYear+yrdiff,
                              y=100*LiveObs, ymin=100*lower__,
                              ymax=100*upper__), fill="#000099",
                          alpha=0.5, inherit.aes=FALSE),
              geom_line(data=pctplots$RelYear$data,
-                       aes(x=RelYear-(min(RelYear)-1),
+                       aes(x=RelYear+yrdiff,
                            y=100*estimate__), color="#000099",
                        lwd=0.75, inherit.aes=FALSE))
       }} +
-      scale_x_continuous(breaks=breaks, labels=c(yrlist[breaks])) +
+      scale_x_continuous(limits=c(minyr-0.25, maxyr+0.25),
+                         breaks=yrlist) +
       plot_theme +
       theme(legend.text=element_text(size=10), 
             legend.title=element_text(size=10)) +
@@ -1829,20 +1603,19 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
   y_labs <- seq(0, 300, 50)
   y_minor <- seq(0, 300, 25)
   ylim_upper <- ceiling(y_max/25)*25
+    
+  maxyr_hist <- max(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Estimate",
+                          LiveDate],
+                    data2[!is.na(LiveDate) & LiveDate_Qualifier=="Estimate",
+                          LiveDate])
+  minyr_hist <- min(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Estimate",
+                          LiveDate],
+                    data2[!is.na(LiveDate) & LiveDate_Qualifier=="Estimate",
+                          LiveDate])
+  nyrs_hist <- (maxyr_hist)-(minyr_hist)+1
+  yrdiff1 <- unique(data1$YearDiff)
+  yrdiff2 <- unique(data2$YearDiff)
   
-  maxyr_hist <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
-                          RelYear],
-                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
-                          RelYear])
-  minyr_hist <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
-                          RelYear],
-                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Estimate",
-                          RelYear])
-  nyrs_hist <- (maxyr_hist)-(minyr_hist)
-  if(minyr_hist > 0){
-    maxyr_hist <- maxyr_hist-(minyr_hist-1)
-    minyr_hist <- minyr_hist-(minyr_hist-1)
-  }
   # Creates break intervals for plots based on number of years of data
   if(nyrs_hist>=40){
      # Set breaks to every 10 years if more than 30 years of data
@@ -1856,12 +1629,16 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
   }else if(nyrs_hist<12 & nyrs_hist>=8){
      # Set breaks to every 2 years if between 9 and 6 years of data
      brk <- 2
-  } else if(nyrs_hist<8){
+  }else if(nyrs_hist<8 & nyrs_hist>=3){
      # Set breaks to every year if less than 6 years of data
      brk <- 1
+  }else if(nyrs_hist<3){
+     brk <- 1
+     maxyr_hist <- maxyr_hist + 1
+     minyr_hist <- minyr_hist - 1
   }
- breaks_hist <- seq(minyr_hist, maxyr_hist, brk)
   
+  yrlist_hist <- seq(minyr_hist,maxyr_hist,brk)
   # nbreaks_hist <- ifelse(nyrs_hist < 11, nyrs_hist+1, 12)
   # breaks_hist <- if(minyr_hist==0){
   #   c(minyr_hist, round(minyr_hist+c(1:(nbreaks_hist-2))*
@@ -1874,25 +1651,19 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
   #                            (nyrs_hist/nbreaks_hist)/nbreaks_hist)),
   #     maxyr_hist)
   # }
-  yrlist_hist <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier==
-                               "Estimate",LiveDate],
-                       data2[!is.na(LiveDate) & LiveDate_Qualifier==
-                               "Estimate", LiveDate]):
-                     max(data1[!is.na(LiveDate) & LiveDate_Qualifier==
-                                 "Estimate", LiveDate],
-                         data2[!is.na(LiveDate) & LiveDate_Qualifier==
-                                 "Estimate", LiveDate]))
+
   
   ## Live plot settings
-  maxyr_live <- max(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
-                          RelYear],
-                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
-                          RelYear])
-  minyr_live <- min(data1[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
-                          RelYear],
-                    data2[!is.na(RelYear) & LiveDate_Qualifier=="Exact",
-                          RelYear])
-  nyrs_live <- (maxyr_live)-(minyr_live)
+  maxyr_live <- max(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                          LiveDate],
+                    data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                          LiveDate])
+  minyr_live <- min(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                          LiveDate],
+                    data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
+                          LiveDate])
+  nyrs_live <- (maxyr_live)-(minyr_live)+1
+  
   
   # Creates break intervals for plots based on number of years of data
   if(nyrs_live>=40){
@@ -1904,14 +1675,18 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
   }else if(nyrs_live<20 & nyrs_live>=12){
      # Set breaks to every 3 years if between 15 and 9 years of data
      brk <- 3
-  }else if(nyrs_live<12 & nyrs_live>=9){
+  }else if(nyrs_live<12 & nyrs_live>=8){
      # Set breaks to every 2 years if between 9 and 6 years of data
      brk <- 2
-  } else if(nyrs_live<9){
+  } else if(nyrs_live<8 & nyrs_live>=3){
      # Set breaks to every year if less than 6 years of data
      brk <- 1
+  }else if(nyrs_live<3){
+     brk <- 1
+     maxyr_live <- maxyr_live + 1
+     minyr_live <- minyr_live - 1
   }
- breaks_live <- seq(minyr_live, maxyr_live, brk)
+  yrlist_live <- seq(minyr_live,maxyr_live,brk)
  
   # nbreaks_live <- ifelse(nyrs_live < 11, nyrs_live+1, 12)
   # breaks_live <- if(minyr_live==0){
@@ -1925,16 +1700,8 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
   #                            (nyrs_live/nbreaks_live)/nbreaks_live)),
   #     maxyr_live)
   # }
-  yr_breaks_live <- breaks_live-min(breaks_live)+1
+  #yr_breaks_live <- breaks_live-min(breaks_live)+1
   
-  yrlist_live <- c(min(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
-                             LiveDate],
-                       data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
-                             LiveDate]):
-                     max(data1[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
-                               LiveDate],
-                         data2[!is.na(LiveDate) & LiveDate_Qualifier=="Exact",
-                               LiveDate]))
   ## Check data for Exact and Estimate
   n_hist1 <- nrow(data1[data1$LiveDate_Qualifier=="Estimate" &
                           !is.na(data1$ShellHeight_mm),])
@@ -2032,49 +1799,49 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
   plot_leg <- ggplot() +
     {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
       list(geom_ribbon(data=histplot_1$RelYear$data,
-                       aes(x=RelYear, y=ShellHeight_mm,
+                       aes(x=RelYear+yrdiff1, y=ShellHeight_mm,
                            ymin=lower__, ymax=upper__,
                            fill="size1"), alpha=a_ribb,
                        inherit.aes=FALSE),
            geom_line(data=histplot_1$RelYear$data,
-                     aes(x=RelYear, y=estimate__, color="size1"),
+                     aes(x=RelYear+yrdiff1, y=estimate__, color="size1"),
                      lwd=0.75, inherit.aes=FALSE))
       
     }} +
     {if(class(try(histplot_2, silent=TRUE)) != "try-error"){
       list(geom_ribbon(data=histplot_2$RelYear$data,
-                       aes(x=RelYear, y=ShellHeight_mm,
+                       aes(x=RelYear+yrdiff2, y=ShellHeight_mm,
                            ymin=lower__, ymax=upper__,
                            fill="size2"), alpha=a_ribb,
                        inherit.aes=FALSE),
            geom_line(data=histplot_2$RelYear$data,
-                     aes(x=RelYear, y=estimate__, color="size2"),
+                     aes(x=RelYear+yrdiff2, y=estimate__, color="size2"),
                      lwd=0.75, inherit.aes=FALSE))
     }} +
     {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
       list(geom_ribbon(data=liveplot_1$RelYear$data,
-                       aes(x=RelYear, y=ShellHeight_mm,
+                       aes(x=RelYear+yrdiff1, y=ShellHeight_mm,
                            ymin=lower__, ymax=upper__,
                            fill="size1"), alpha=a_ribb),
            geom_line(data=liveplot_1$RelYear$data,
-                     aes(x=RelYear, y=estimate__, color="size1"),
+                     aes(x=RelYear+yrdiff1, y=estimate__, color="size1"),
                      lwd=0.75))
     }} +
     {if(class(try(liveplot_2, silent=TRUE)) != "try-error"){
       list(geom_ribbon(data=liveplot_2$RelYear$data,
-                       aes(x=RelYear, y=ShellHeight_mm,
+                       aes(x=RelYear+yrdiff2, y=ShellHeight_mm,
                            ymin=lower__, ymax=upper__, fill="size2"),
                        alpha=a_ribb),
            geom_line(data=liveplot_2$RelYear$data,
-                     aes(x=RelYear, y=estimate__, color="size2"),
+                     aes(x=RelYear+yrdiff2, y=estimate__, color="size2"),
                      lwd=0.75))
     }} +
     geom_point(data=data1[!is.na(RelYear) & !is.na(LiveDate), ],
-                aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                aes(x=LiveDate, y=ShellHeight_mm, shape="size1"),
                 position=plot_jitter, size=2, color="#333333", fill="#cccccc",
                 alpha=1, inherit.aes=FALSE) +
     geom_point(data=data2[!is.na(RelYear) & !is.na(LiveDate), ],
-                aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                aes(x=LiveDate, y=ShellHeight_mm, shape="size2"),
                 position=plot_jitter, size=2, color="#333333", fill="#cccccc",
                 alpha=1, inherit.aes=FALSE) +
     plot_theme +
@@ -2099,37 +1866,37 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
       geom_point(data=data1[!is.na(RelYear) &
                                !is.na(LiveDate) &
                                LiveDate_Qualifier=="Estimate", ],
-                  aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                  aes(x=LiveDate, y=ShellHeight_mm, shape="size1"),
                   position=plot_jitter, size=2, color="#333333", fill="#cccccc",
                   alpha=1, inherit.aes=FALSE) 
     }} +
     {if(n_hist2>0){
       geom_point(data=data2[!is.na(RelYear) & !is.na(LiveDate) &
                                LiveDate_Qualifier=="Estimate", ],
-                  aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                  aes(x=LiveDate, y=ShellHeight_mm, shape="size2"),
                   position=plot_jitter, size=2, color="#333333", fill="#cccccc",
                   alpha=1, inherit.aes=FALSE)
     }} +
     {if(class(try(histplot_1, silent=TRUE)) != "try-error"){
       list(geom_ribbon(data=histplot_1$RelYear$data,
-                       aes(x=RelYear, y=ShellHeight_mm,
+                       aes(x=RelYear+yrdiff1, y=ShellHeight_mm,
                            ymin=lower__, ymax=upper__, fill="size1"),
                        alpha=0.5, inherit.aes=FALSE),
            geom_line(data=histplot_1$RelYear$data,
-                     aes(x=RelYear, y=estimate__, color="size1"),
+                     aes(x=RelYear+yrdiff1, y=estimate__, color="size1"),
                      lwd=0.75, inherit.aes=FALSE))
     }} +
     {if(class(try(histplot_2, silent=TRUE)) != "try-error"){
       list(geom_ribbon(data=histplot_2$RelYear$data,
-                       aes(x=RelYear, y=ShellHeight_mm,
+                       aes(x=RelYear+yrdiff2, y=ShellHeight_mm,
                            ymin=lower__, ymax=upper__, fill="size2"),
                        alpha=0.5, inherit.aes=FALSE),
            geom_line(data=histplot_2$RelYear$data,
-                     aes(x=RelYear, y=estimate__, color="size2"),
+                     aes(x=RelYear+yrdiff2, y=estimate__, color="size2"),
                      lwd=0.75, inherit.aes=FALSE))
     }} +
-    scale_x_continuous(breaks=breaks_hist,
-                       labels=c(yrlist_hist[breaks_hist])) +
+    scale_x_continuous(limits=c(minyr_hist-0.25, maxyr_hist+0.25),
+                       breaks=yrlist_hist) +
     scale_y_continuous(breaks=y_breaks,
                        labels=y_labs, minor_breaks=y_minor) +
     plot_theme +
@@ -2155,37 +1922,37 @@ meplotssh <- function(models1, data1, sizeclass1="", models2, data2,
     {if(n_live1>0){
       geom_point(data=data1[!is.na(RelYear) & !is.na(LiveDate) &
                                LiveDate_Qualifier=="Exact", ],
-                  aes(x=RelYear, y=ShellHeight_mm, shape="size1"),
+                  aes(x=LiveDate, y=ShellHeight_mm, shape="size1"),
                   position=plot_jitter, size=2, color="#333333", fill="#cccccc",
                   alpha=1, inherit.aes=FALSE) 
     }} +
     {if(n_live2>0){
       geom_point(data=data2[!is.na(RelYear) & !is.na(LiveDate) &
                                LiveDate_Qualifier=="Exact", ],
-                  aes(x=RelYear, y=ShellHeight_mm, shape="size2"),
+                  aes(x=LiveDate, y=ShellHeight_mm, shape="size2"),
                   position=plot_jitter, size=2, color="#333333", fill="#cccccc",
                   alpha=1, inherit.aes=FALSE)
     }} +
     {if(class(try(liveplot_1, silent=TRUE)) != "try-error"){
       list(geom_ribbon(data=liveplot_1$RelYear$data,
-                       aes(x=RelYear, y=ShellHeight_mm,
+                       aes(x=RelYear+yrdiff1, y=ShellHeight_mm,
                            ymin=lower__, ymax=upper__, fill="size1"),
                        alpha=0.5),
            geom_line(data=liveplot_1$RelYear$data,
-                     aes(x=RelYear, y=estimate__, color="size1"),
+                     aes(x=RelYear+yrdiff1, y=estimate__, color="size1"),
                      lwd=0.75))
     }} +
     {if(class(try(liveplot_2, silent=TRUE)) != "try-error"){
       list(geom_ribbon(data=liveplot_2$RelYear$data,
-                       aes(x=RelYear, y=ShellHeight_mm,
+                       aes(x=RelYear+yrdiff2, y=ShellHeight_mm,
                            ymin=lower__, ymax=upper__, fill="size2"),
                        alpha=0.5),
            geom_line(data=liveplot_2$RelYear$data,
-                     aes(x=RelYear, y=estimate__, color="size2"),
+                     aes(x=RelYear+yrdiff2, y=estimate__, color="size2"),
                      lwd=0.75))
     }} +
-    scale_x_continuous(breaks=breaks_live,
-                       labels=c(yrlist_live[yr_breaks_live])) +
+    scale_x_continuous(limits=c(minyr_live-0.25, maxyr_live+0.25),
+                       breaks=yrlist_live) +
     scale_y_continuous(breaks=y_breaks,
                        labels=y_labs, minor_breaks=y_minor) +
     plot_theme +
@@ -3049,6 +2816,7 @@ modresultssh(data1, models1, data2, models2, "Size class", meplotzoom=FALSE)
 Subsets data for that which is related to density. The data is further subset for each managed area. Appropriate GLMMs are called from file for each shell size class, or are created if they don't exist. Data and models are then sent to the modresults function to create figures and save data.
 
 ```{r Density}
+oysterraw$YearDiff <- oysterraw$LiveDate-oysterraw$RelYear
 # #Make a collapsed version of the oysterraw table for density
 oysterraw_den <- oysterraw[, c("ProgramID", "ProgramName", "LocationID",
                                "ProgramLocationID", "QuadIdentifier",
@@ -3061,7 +2829,7 @@ oysterraw_den <- oysterraw[, c("ProgramID", "ProgramName", "LocationID",
                                "Number_of_Oysters_Counted_Live_Count",
                                "Number_of_Oysters_Counted_Dead_Count",
                                "ObsIndex", "UniversalReefID", "Region.y",
-                               "MA_plotlab", "Subtidal", "RelYear")]
+                               "MA_plotlab", "Subtidal", "RelYear", "YearDiff")]
 oysterraw_den[!is.na(Density_m2), DensIndex := ObsIndex]
 oysterraw_den[!is.na(Number_of_Oysters_Counted_Total_Count), NTotIndex := ObsIndex]
 oysterraw_den[!is.na(Number_of_Oysters_Counted_Live_Count), NLiveIndex := ObsIndex]
@@ -3462,7 +3230,7 @@ if(PI_R>0){
 Subsets data for that which is related to percent live. The data is further subset for each managed area. Appropriate GLMMs are called from file for each shell size class, or are created if they don't exist. Data and models are then sent to the modresults function to create figures and save data.
 
 ```{r PercentLive}
-#Make a collapsed version of the oysterraw table for density
+#Make a collapsed version of the oysterraw table for percent live
 oysterraw_pct <- oysterraw[, c("ProgramID", "ProgramName", "ProgramLocationID",
                                "QuadIdentifier", "ReefIdentifier", "LiveDate",
                                "LiveDate_Qualifier", "SampleDate", "Year",
@@ -3474,7 +3242,7 @@ oysterraw_pct <- oysterraw[, c("ProgramID", "ProgramName", "ProgramLocationID",
                                "Number_of_Oysters_Counted_Live_Count",
                                "Number_of_Oysters_Counted_Dead_Count",
                                "ObsIndex", "UniversalReefID", "Region.y",
-                               "MA_plotlab", "Subtidal", "RelYear")]
+                               "MA_plotlab", "Subtidal", "RelYear", "YearDiff")]
 oysterraw_pct[!is.na(PercentLive_pct), PctIndex := ObsIndex]
 oysterraw_pct[!is.na(Number_of_Oysters_Counted_Total_Count),
               NTotIndex := ObsIndex]

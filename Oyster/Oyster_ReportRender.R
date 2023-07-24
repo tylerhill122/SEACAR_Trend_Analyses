@@ -44,7 +44,7 @@ file_short <- sub("data/", "", file_in)
 
 #Renders Oyster.Rmd for each parameter combination and writes the
 #report to an html and Word document stored in output directory
-file_out <-  paste0("Oyster_AllPrameters_Report")
+file_out <-  paste0("Oyster_AllParameters_Report")
 
 
 rmarkdown::render(input = "Oyster.Rmd", 
