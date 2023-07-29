@@ -124,11 +124,8 @@ data <- data[!is.na(data$ResultValue),]
 # Changes "Sample" to "Lab" for ActivityType
 data$ActivityType <- gsub("Sample", "Lab", data$ActivityType)
 
-# Gets data for the specific activity type for Chlorophyll, salinity, TSS,
-# and Turbidity
-if((param_name=="Chlorophyll_a_uncorrected_for_pheophytin" |
-    param_name=="Salinity" | param_name=="Total_Suspended_Solids_TSS" |
-    param_name=="Turbidity") & activity!="All"){
+# Gets data for the specific activity type if it is not All
+if(activity!="All"){
    data <- data[grep(activity, data$ActivityType[!is.na(data$ActivityType)]),]
 }
 

@@ -8,6 +8,11 @@
 
 library(data.table)
 library(dplyr)
+library(rstudioapi)
+
+# Gets directory of this script and sets it as the working directory
+wd <- dirname(getActiveDocumentContext()$path)
+setwd(wd)
 
 out_dir <- "output"
 
