@@ -25,8 +25,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS009|Water Temperature|Bottom|Field|1998-12-01|2017-04-12|112|11.1|31.4|26.1|24.5232142857143|5.11783636263891
 1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS010|Water Temperature|Bottom|Field|1998-11-24|2017-09-14|155|10.7|32.8|25.8|24.3864516129032|5.40823178991274
 1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS011|Water Temperature|Bottom|Field|1998-11-24|2017-08-22|148|10.4|31.7|26.5|24.1439189189189|5.58176362970262
-1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS012|Water Temperature|Bottom|Field|1999-03-30|2017-09-14|79|13.6|31.5|27.1|25.0987341772152|4.86856725280642
-1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS013|Water Temperature|Bottom|Field|2008-06-25|2017-08-22|50|14.1|31.6|27.65|25|5.33203640693666
+1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS012|Water Temperature|Bottom|Field|1999-03-30|2017-02-07|68|13.6|30.6|26.35|24.55|4.95401239461208
+1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS013|Water Temperature|Bottom|Field|2009-07-28|2017-08-22|33|14.1|31.6|26.5|24.7606060606061|5.36219051519173
 1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS014|Water Temperature|Bottom|Field|1998-11-17|2017-09-14|186|10.9|31.6|25.1|23.7741935483871|5.61078889718933
 1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS015|Water Temperature|Bottom|Field|1998-11-24|2000-07-06|36|11.4|31.1|24.5|23.1888888888889|5.36660455450599
 1|Alligator Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_18SEAS017|Water Temperature|Bottom|Field|1998-12-29|2017-09-14|81|14.1|33.3|27.1|25.7395061728395|4.76538768130007
@@ -164,7 +164,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS347|Water Temperature|Bottom|Field|1995-07-17|2017-12-21|451|5|31.7|19|19.6421286031042|5.83461310848001
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS349|Water Temperature|Bottom|Field|1995-09-25|2017-12-21|448|5.5|31.7|19.2|19.6828125|5.74758341519749
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS350|Water Temperature|Bottom|Field|1995-02-23|2017-12-21|241|11.1|31.6|26.6|24.6207468879668|5.37259879138275
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS352|Water Temperature|Bottom|Field|1995-01-09|2017-12-21|448|6.8|31.6|21.5|21.7140625|6.21234993674513
+2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS352|Water Temperature|Bottom|Field|1995-01-09|2017-12-21|450|6.8|31.6|21.4|21.6886666666667|6.2112033629592
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS354|Water Temperature|Bottom|Field|1995-11-18|2017-10-09|108|10.3|32|26|23.65|6.36803495270547
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS355|Water Temperature|Bottom|Field|1995-03-27|2017-10-10|131|10.1|31.2|22.7|22.3992366412214|5.20928898416024
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS356|Water Temperature|Bottom|Field|1995-03-27|2017-10-10|107|8.7|31.1|23.7|22.703738317757|5.3989154262623
@@ -173,7 +173,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS360|Water Temperature|Bottom|Field|1995-01-11|2017-10-10|119|10.5|31|23.7|22.8579831932773|5.24997975457467
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS371|Water Temperature|Bottom|Field|1995-01-09|2017-12-21|385|5.6|31.8|18.3|18.9405194805195|5.63940468011508
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS372|Water Temperature|Bottom|Field|1995-03-27|2017-10-09|186|7.1|31.7|19.9|19.7978494623656|5.99835974867407
-2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS373|Water Temperature|Bottom|Field|1995-01-11|2017-12-21|355|1.7|31|18.7|19.1315492957746|5.57312625852555
+2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS373|Water Temperature|Bottom|Field|1995-01-11|2017-12-21|354|1.7|31|18.7|19.1519774011299|5.56768896264482
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS374|Water Temperature|Bottom|Field|2009-08-26|2017-12-21|113|9.6|31|18.7|19.670796460177|5.97358293739924
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS375|Water Temperature|Bottom|Field|1995-09-25|2017-12-21|323|3.6|30.9|18.1|18.9526315789474|5.61789102555617
 2|Apalachicola Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS380|Water Temperature|Bottom|Field|1995-01-24|2017-11-07|255|9.4|31.6|27.5|24.4058823529412|6.34417743359526
@@ -321,10 +321,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLGW_42534|Water Temperature|Bottom|Field|2012-10-02|2012-10-02|1|26.2|26.2|26.2|26.2|
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLGW_46214|Water Temperature|Bottom|Field|2014-07-30|2014-07-30|1|25.6|25.6|25.6|25.6|
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLGW_48193|Water Temperature|Bottom|Field|2015-10-28|2015-10-28|1|24.5|24.5|24.5|24.5|
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A1|Water Temperature|Bottom|Field|2000-08-15|2001-05-15|6|13.8|30|23.8|23.5333333333333|5.6563828253281
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A1|Water Temperature|Bottom|Field|2000-08-15|2001-05-15|5|13.8|30|24.2|23.88|6.25235955460017
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A11|Water Temperature|Bottom|Field|2000-09-14|2002-12-17|17|12.1|29.9|19.1|20.1941176470588|5.65558027396784
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A12|Water Temperature|Bottom|Field|2000-09-14|2001-04-24|5|15.5|28.5|21.8|20.98|5.15916659936467
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A2|Water Temperature|Bottom|Field|2000-08-15|2002-10-22|16|12.7|30.5|22.5|20.84375|5.57589678885827
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A2|Water Temperature|Bottom|Field|2000-08-15|2002-07-16|8|15.6|30.5|23.6|23.5875|5.58887606896823
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A3|Water Temperature|Bottom|Field|2000-08-15|2001-05-15|2|24.6|31.3|27.95|27.95|4.73761543394987
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A4|Water Temperature|Bottom|Field|2000-08-16|2002-12-17|18|11.9|30.2|23.1|21.7777777777778|6.36299555384888
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLNWFD_A5|Water Temperature|Bottom|Field|2000-08-16|2001-10-16|8|12.1|30|22.5|21.275|6.57565857646865
@@ -366,7 +366,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS155|Water Temperature|Bottom|Field|1995-03-09|2017-10-11|458|8.6|31.3|20.65|21.2827510917031|6.29099487243115
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS160|Water Temperature|Bottom|Field|1995-01-05|2017-08-28|479|2.5|31.4|19.7|20.4025052192067|6.77467240384109
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS162|Water Temperature|Bottom|Field|1995-02-21|2017-08-21|159|9|31.4|28.4|26.3477987421384|5.38794759634975
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS163|Water Temperature|Bottom|Field|1995-02-21|2017-08-28|154|8.7|31.3|28.4|25.8538961038961|5.72653647637722
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS163|Water Temperature|Bottom|Field|1995-02-21|2017-08-28|156|8.7|31.3|28.35|25.7173076923077|5.82051060238331
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS200|Water Temperature|Bottom|Field|1995-09-25|2012-07-02|322|2|31.3|18.65|19.3527950310559|6.78671105854115
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS205|Water Temperature|Bottom|Field|2003-02-03|2017-08-28|179|9.7|31.4|24.5|22.9810055865922|6.07817768142187
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS221|Water Temperature|Bottom|Field|1995-03-06|2017-11-07|226|9|32.1|28.6|26.7880530973451|5.03229470227067
@@ -381,7 +381,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS246|Water Temperature|Bottom|Field|1995-01-24|2017-11-07|239|10.1|32.5|27.9|24.7782426778243|6.32527505029374
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS250|Water Temperature|Bottom|Field|1995-03-06|2017-08-21|100|12.4|31.6|28.6|26.865|4.73611473977171
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS253|Water Temperature|Bottom|Field|1995-01-24|2017-11-07|110|11.8|31.7|28.55|26.6563636363636|4.90074937674958
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS254|Water Temperature|Bottom|Field|1995-06-06|2017-08-21|68|13.8|32|28.7|27.6367647058824|3.74225187262145
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS254|Water Temperature|Bottom|Field|1995-06-06|2017-08-21|67|13.8|32|28.7|27.6298507462687|3.77005807066333
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS255|Water Temperature|Bottom|Field|1995-08-21|2017-11-07|130|11.4|31.8|28.35|26.8707692307692|4.36516240414372
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS257|Water Temperature|Bottom|Field|1995-03-06|2017-11-07|209|10.6|31.9|28.4|27.0301435406699|4.40692205496396
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS259|Water Temperature|Bottom|Field|1995-06-28|2017-11-07|196|10.4|32.2|28.6|26.9520408163265|4.65835295184537
@@ -389,7 +389,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS265|Water Temperature|Bottom|Field|1995-07-31|2017-08-21|145|9.1|31.8|28.4|26.6537931034483|5.06096198433623
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS270|Water Temperature|Bottom|Field|1995-03-24|2017-08-21|235|9.1|31.9|27.8|25.5374468085106|5.68575610743059
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS275|Water Temperature|Bottom|Field|1995-08-21|2017-08-21|107|10.4|31.5|28.4|26.7355140186916|4.82010828063704
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS280|Water Temperature|Bottom|Field|1995-01-05|2017-11-07|399|6.3|39.2|19.3|20.3007518796993|6.40467985588445
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS280|Water Temperature|Bottom|Field|1995-01-05|2017-11-07|398|6.3|39.2|19.25|20.2804020100503|6.39981248459522
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS285|Water Temperature|Bottom|Field|1995-02-23|2017-08-21|145|11.1|31.3|28.3|26.5310344827586|4.90531906937905
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS320|Water Temperature|Bottom|Field|1995-01-05|2017-11-07|135|8.6|31.4|25.7|23.3814814814815|6.25038727379478
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS321|Water Temperature|Bottom|Field|1995-01-05|2017-08-21|184|10.6|31.6|28|25.6836956521739|5.36127130290652
@@ -411,7 +411,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS347|Water Temperature|Bottom|Field|1995-07-17|2017-12-21|451|5|31.7|19|19.6421286031042|5.83461310848001
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS349|Water Temperature|Bottom|Field|1995-09-25|2017-12-21|448|5.5|31.7|19.2|19.6828125|5.74758341519749
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS350|Water Temperature|Bottom|Field|1995-02-23|2017-12-21|241|11.1|31.6|26.6|24.6207468879668|5.37259879138275
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS352|Water Temperature|Bottom|Field|1995-01-09|2017-12-21|450|6.8|31.6|21.6|21.7302222222222|6.2033773719728
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS352|Water Temperature|Bottom|Field|1995-01-09|2017-12-21|449|6.8|31.6|21.5|21.6884187082405|6.2291580664765
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS354|Water Temperature|Bottom|Field|1995-11-18|2017-10-09|108|10.3|32|26|23.65|6.36803495270547
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS355|Water Temperature|Bottom|Field|1995-03-27|2017-10-10|131|10.1|31.2|22.7|22.3992366412214|5.20928898416024
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS356|Water Temperature|Bottom|Field|1995-03-27|2017-10-10|107|8.7|31.1|23.7|22.703738317757|5.3989154262623
@@ -421,7 +421,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS371|Water Temperature|Bottom|Field|1995-01-09|2017-12-21|385|5.6|31.8|18.3|18.9405194805195|5.63940468011508
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS372|Water Temperature|Bottom|Field|1995-03-27|2017-10-09|186|7.1|31.7|19.9|19.7978494623656|5.99835974867407
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS373|Water Temperature|Bottom|Field|1995-01-11|2017-12-21|354|1.7|31|18.7|19.1519774011299|5.56768896264482
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS374|Water Temperature|Bottom|Field|2009-08-26|2017-12-21|115|9.6|31|18.5|19.5669565217391|5.97263822131012
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS374|Water Temperature|Bottom|Field|2009-08-26|2017-12-21|113|9.6|31|18.7|19.670796460177|5.97358293739924
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS375|Water Temperature|Bottom|Field|1995-09-25|2017-12-21|323|3.6|30.9|18.1|18.9526315789474|5.61789102555617
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS380|Water Temperature|Bottom|Field|1995-01-24|2017-11-07|255|9.4|31.6|27.5|24.4058823529412|6.34417743359526
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS400|Water Temperature|Bottom|Field|1995-06-28|2010-09-20|337|4.8|32.1|19.1|19.8679525222552|6.93095924767829
@@ -429,7 +429,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_16SEAS410|Water Temperature|Bottom|Field|1995-06-06|2017-11-07|243|8.5|32.1|27.9|24.8205761316872|6.26716390948518
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLWQA_294245708501143|Water Temperature|Bottom|Field|2003-06-19|2003-06-19|1|28.91|28.91|28.91|28.91|
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLWQA_294247208500491|Water Temperature|Bottom|Field|2003-06-19|2003-06-19|1|28.97|28.97|28.97|28.97|
-3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLGW_3524|Water Temperature|Bottom|Field|2020-03-26|2020-07-22|3|22.4|30|25.2|25.8666666666667|3.84360941477322
+3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLGW_3524|Water Temperature|Bottom|Field|2020-03-26|2020-05-19|2|22.4|25.2|23.8|23.8|1.97989898732233
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0013|Water Temperature|Bottom|Field|2017-04-19|2022-10-18|16|12|30.3|22.2|22.191875|5.8068571175235
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0014|Water Temperature|Bottom|Field|2017-04-19|2019-11-13|10|12.2|29.5|21.6|21.454|5.67225645870612
 3|Apalachicola National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G2TLHR0024|Water Temperature|Bottom|Field|2017-08-29|2023-03-01|4|20.8|29.3|27.15|26.1|3.77447568102732
@@ -510,7 +510,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 4|Banana River Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|IRM2010060302|Water Temperature|Bottom|Field|2010-06-03|2010-06-03|1|29.2|29.2|29.2|29.2|
 4|Banana River Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|IRM2012101302|Water Temperature|Bottom|Field|2012-10-18|2012-10-18|1|25.8|25.8|25.8|25.8|
 4|Banana River Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|IRM2015010303|Water Temperature|Bottom|Field|2015-01-06|2015-01-06|1|21.6|21.6|21.6|21.6|
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_BRMIC01|Water Temperature|Bottom|Field|2005-12-15|2007-07-19|4|18.07|31.4|24.815|24.775|5.94640787927188
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_BRMIC01|Water Temperature|Bottom|Field|2005-12-15|2006-06-28|3|18.07|27.75|21.88|22.5666666666667|4.87639552675266
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_BRMIC03|Water Temperature|Bottom|Field|2005-12-15|2006-06-28|2|18.56|27.78|23.17|23.17|6.51952452253997
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_BRMIC04|Water Temperature|Bottom|Field|2005-12-15|2005-12-15|1|18.01|18.01|18.01|18.01|
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_BRMIC05|Water Temperature|Bottom|Field|2006-03-30|2007-04-23|3|20.4|28.22|22.88|23.8333333333333|3.99621487577099
@@ -520,9 +520,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_BRMIS03|Water Temperature|Bottom|Field|2005-12-15|2006-06-28|3|19.21|28.51|24.21|23.9766666666667|4.6543886100468
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_BRMIS04|Water Temperature|Bottom|Field|2007-04-23|2007-04-23|1|22.74|22.74|22.74|22.74|
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MR03|Water Temperature|Bottom|Field|1999-11-22|2005-08-30|55|10.39|31.57|25.8|24.8954545454545|5.17613570224746
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MRB01|Water Temperature|Bottom|Field|1997-01-23|2005-07-28|10|18.31|31.8|27.685|25.863|5.0989084888609
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MRB02|Water Temperature|Bottom|Field|1997-01-23|2005-07-28|10|17.56|32.14|27.985|25.747|5.48855992041628
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MRB03|Water Temperature|Bottom|Field|1997-08-04|2005-07-28|9|18.81|32.23|30.5|26.83|5.70745565028761
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MRB01|Water Temperature|Bottom|Field|1997-01-23|2005-07-28|9|18.31|31.8|29.3|25.84|5.40765892045717
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MRB03|Water Temperature|Bottom|Field|1998-01-22|1999-09-23|4|18.81|31.5|22.47|23.8125|6.05635960513134
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MRB04|Water Temperature|Bottom|Field|1997-01-23|2005-07-28|10|18.05|31.79|28.065|25.778|5.62051757205489
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MRB05|Water Temperature|Bottom|Field|1997-01-23|2005-07-28|9|17.34|31.78|26.09|25.2822222222222|5.74850801899453
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCEN_27010490|Water Temperature|Bottom|Field|2005-02-15|2005-02-15|1|17.2|17.2|17.2|17.2|
@@ -531,7 +530,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCEN_27010498|Water Temperature|Bottom|Field|2005-02-15|2010-08-24|3|18.1|29.2|24.1|23.8|5.55607775323564
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCEN_27010500|Water Temperature|Bottom|Field|2005-06-15|2005-06-15|1|30.4|30.4|30.4|30.4|
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0120|Water Temperature|Bottom|Field|2000-09-05|2000-09-05|1|31|31|31|31|
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0200|Water Temperature|Bottom|Field|1991-11-20|2003-09-09|299|11|38|26|25.1672240802676|5.32552382525681
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0200|Water Temperature|Bottom|Field|1991-11-20|2003-09-09|289|11|38|26|25.0328719723183|5.28179450390383
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0250|Water Temperature|Bottom|Field|2004-11-28|2004-12-28|5|12|22|16|16.8|3.63318042491699
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0400|Water Temperature|Bottom|Field|1991-11-20|1994-01-26|88|12.5|31.5|23.5|23.5034090909091|4.96469023847957
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0450|Water Temperature|Bottom|Field|1994-02-07|2004-05-08|108|8|31|25.5|23.5555555555556|5.30091392813732
@@ -540,7 +539,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0745|Water Temperature|Bottom|Field|2004-11-28|2004-12-27|5|10|22|19|18.2|4.91934955049954
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0770|Water Temperature|Bottom|Field|2000-10-22|2001-09-09|43|11|28|23.5|22.6046511627907|4.44484471250374
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0771|Water Temperature|Bottom|Field|2001-10-07|2004-12-19|90|11|32|24|22.9777777777778|4.72140185280605
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0900|Water Temperature|Bottom|Field|1992-01-17|2000-10-14|129|5.5|32.2|27|25.7713178294574|4.75636405576862
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0900|Water Temperature|Bottom|Field|1992-01-17|2000-10-14|114|5.5|32.2|27|25.6842105263158|4.83368671381605
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA1050|Water Temperature|Bottom|Field|2004-03-15|2004-04-24|5|18|24|21|21|2.23606797749979
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BRL072|Water Temperature|Bottom|Field|1999-06-03|1999-06-03|1|28.6|28.6|28.6|28.6|
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR1900|Water Temperature|Bottom|Field|1991-11-24|2004-12-28|547|6|30|22.5|21.9310786106033|5.1514057371654
@@ -557,7 +556,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS028|Water Temperature|Bottom|Field|1996-01-28|2017-09-28|133|1.68|31.4|25|23.209022556391|7.03671194141533
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS032|Water Temperature|Bottom|Field|1996-01-31|2016-07-19|89|1.65|32|25.2|23.7133707865169|6.69329565240476
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS034|Water Temperature|Bottom|Field|1996-01-28|2010-10-12|27|17.1|30.7|26.2|25.7518518518519|3.51035505221233
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS036|Water Temperature|Bottom|Field|1996-01-28|2017-09-28|138|1.7|31.5|24.85|23.2692753623188|6.84512129932365
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS036|Water Temperature|Bottom|Field|1996-01-28|2017-09-28|128|1.7|31.5|24.8|23.26140625|6.99828918737979
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS044|Water Temperature|Bottom|Field|1996-01-28|2017-09-28|197|1.68|31.4|26.1|23.9662944162437|6.43266036425493
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS050|Water Temperature|Bottom|Field|1996-01-28|2011-11-16|42|12.7|31.1|25.4|24.2190476190476|4.38529906064976
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS051|Water Temperature|Bottom|Field|1996-01-28|2016-04-14|21|2.42|29.9|26|24.3866666666667|6.22369129482925
@@ -590,7 +589,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS146|Water Temperature|Bottom|Field|1996-01-28|2017-12-13|181|1.63|31.5|25.9|23.8313259668508|6.26812982997142
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS156|Water Temperature|Bottom|Field|1996-01-28|2017-12-13|63|1.8|31|26.1|24.4684126984127|5.98990985078084
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS158|Water Temperature|Bottom|Field|1996-03-13|2016-02-29|47|1.62|31.5|26|23.1476595744681|7.95364046064714
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS160|Water Temperature|Bottom|Field|1996-01-28|2017-12-13|195|1.61|32|26.2|24.3314358974359|6.09361842885134
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS160|Water Temperature|Bottom|Field|1996-01-28|2017-12-13|191|1.61|32|26.1|24.209057591623|6.09657670568039
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS164|Water Temperature|Bottom|Field|1996-01-28|2017-09-28|117|1.7|31.2|26.2|24.1113675213675|6.78138729398381
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS168|Water Temperature|Bottom|Field|2007-09-12|2007-09-12|1|28.6|28.6|28.6|28.6|
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_79SEAS170|Water Temperature|Bottom|Field|1996-12-17|2005-04-05|2|18.4|21.9|20.15|20.15|2.47487373415292
@@ -764,10 +763,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050021|Water Temperature|Bottom|Field|2011-02-16|2012-01-05|4|8.52|29.69|15.96|17.5325|8.92036387523887
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050023|Water Temperature|Bottom|Field|1999-02-02|2006-10-10|9|9.2|24.8|20|17.9111111111111|5.9700176809714
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050038|Water Temperature|Bottom|Field|2003-06-26|2006-11-07|6|18.1|24.6|22.05|21.9|2.34350165350912
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050039FLA|Water Temperature|Bottom|Field|2003-01-07|2012-01-05|8|9.5|28.3|16.26|17.8525|7.4499947267479
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050039FLA|Water Temperature|Bottom|Field|2003-01-07|2012-01-05|5|9.5|24.1|12|15.478|6.41770363915318
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050049|Water Temperature|Bottom|Field|2003-01-06|2003-12-17|3|14.8|26.5|19|20.1|5.92705660509498
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050066|Water Temperature|Bottom|Field|2001-06-21|2012-06-07|16|11.3|24.3|21.35|19.90625|3.6763874931786
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050067|Water Temperature|Bottom|Field|2003-01-06|2003-06-25|2|11.2|24.2|17.7|17.7|9.19238815542512
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_22050067|Water Temperature|Bottom|Field|2003-01-06|2003-01-06|1|11.2|11.2|11.2|11.2|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_23020019|Water Temperature|Bottom|Field|2011-07-21|2011-07-21|1|27.16|27.16|27.16|27.16|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_23020020|Water Temperature|Bottom|Field|2011-07-21|2011-07-21|1|28.95|28.95|28.95|28.95|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_23020021|Water Temperature|Bottom|Field|2011-12-20|2011-12-20|1|15.6|15.6|15.6|15.6|
@@ -797,9 +796,9 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_22848|Water Temperature|Bottom|Field|2004-09-28|2004-09-28|1|21.65|21.65|21.65|21.65|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_34879|Water Temperature|Bottom|Field|2009-01-12|2017-06-20|30|19.1|23.8|22.05|21.8333333333333|1.26718077890914
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3525|Water Temperature|Bottom|Field|1998-11-02|1999-09-20|10|13|25|19.9|20.37|3.68873660997607
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3526|Water Temperature|Bottom|Field|1998-11-02|2017-06-05|186|8|28.4|21.085|20.5798387096774|4.5208073275427
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3526|Water Temperature|Bottom|Field|1998-11-02|2017-06-05|182|8|28.4|21.185|20.6513186813187|4.46377419001321
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3528|Water Temperature|Bottom|Field|1999-10-11|2017-06-20|85|16.18|24.8|20.82|20.6748235294118|2.03033460282776
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3564|Water Temperature|Bottom|Field|1998-10-22|2017-06-05|201|5.9|31.4|20.6|20.0513930348259|5.30696260112611
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3564|Water Temperature|Bottom|Field|1998-10-22|2017-06-05|185|5.9|31.4|20.5|19.9447567567568|5.37019118256048
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_38600|Water Temperature|Bottom|Field|2010-05-25|2010-05-25|1|25.3|25.3|25.3|25.3|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_39104|Water Temperature|Bottom|Field|2010-10-25|2010-10-25|1|18.9|18.9|18.9|18.9|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_39450|Water Temperature|Bottom|Field|2010-11-02|2010-11-02|1|18.1|18.1|18.1|18.1|
@@ -809,7 +808,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_44059|Water Temperature|Bottom|Field|2014-04-21|2017-04-26|6|20|21.8|21.4|21.2333333333333|0.650128192487195
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_44061|Water Temperature|Bottom|Field|2016-04-26|2017-06-20|9|20.4|21.3|20.9|20.9|0.291547594742266
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_47483|Water Temperature|Bottom|Field|2015-05-13|2015-05-13|1|22.1|22.1|22.1|22.1|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6976|Water Temperature|Bottom|Field|1999-10-06|2017-06-05|254|5.8|27.9|20|19.4985826771654|4.41638562796283
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6976|Water Temperature|Bottom|Field|1999-10-06|2017-06-05|243|5.8|27.9|20|19.4931687242798|4.44077093861705
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_6977|Water Temperature|Bottom|Field|1999-11-01|2000-12-14|12|8.2|28.6|19.045|18.9158333333333|6.22854055331122
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9683|Water Temperature|Bottom|Field|2001-10-22|2001-10-22|1|22.5|22.5|22.5|22.5|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9693|Water Temperature|Bottom|Field|2001-10-03|2002-04-09|3|19.33|20.43|19.87|19.8766666666667|0.550030302195555
@@ -844,9 +843,9 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS140|Water Temperature|Bottom|Field|1995-01-10|2017-07-11|247|4.4|31.9|23.4|22.3894736842105|6.4717248148843
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS141|Water Temperature|Bottom|Field|2004-10-25|2017-10-18|176|10|31.8|23.6|23.0914772727273|6.11758926184354
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS158|Water Temperature|Bottom|Field|1995-04-10|1997-07-28|3|24.3|29.5|29|27.6|2.86879765755621
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS160|Water Temperature|Bottom|Field|1995-06-27|2017-07-11|26|13.5|32|28.05|26.3038461538462|4.77229343349554
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS164|Water Temperature|Bottom|Field|1995-01-10|2017-08-01|150|9.6|32|24.35|23.298|5.76784037143328
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS165|Water Temperature|Bottom|Field|1995-01-17|2017-10-18|189|5.8|31.4|25.3|23.5798941798942|5.94162363989038
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS160|Water Temperature|Bottom|Field|1995-06-27|2017-07-11|27|13.5|32|27.6|26.1333333333333|4.76275615099557
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS164|Water Temperature|Bottom|Field|1995-01-10|2017-08-01|151|9.6|32|24.4|23.346357615894|5.76604746002479
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS165|Water Temperature|Bottom|Field|1995-01-17|2017-10-18|190|5.8|31.4|25.15|23.5484210526316|5.94174298190746
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS166|Water Temperature|Bottom|Field|1995-01-17|1998-08-03|30|13|30.8|23.4|22.7266666666667|5.28641285935371
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS186|Water Temperature|Bottom|Field|2015-07-28|2017-10-18|8|19.4|30.6|23.95|24.5|4.55725481277616
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS188|Water Temperature|Bottom|Field|1997-08-07|2017-10-18|98|12.3|32.2|28.2|26.5132653061225|4.691704408718
@@ -856,7 +855,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS328|Water Temperature|Bottom|Field|1998-04-01|2004-09-28|75|10.6|32.7|23.7|23.1386666666667|5.7751071906124
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS360|Water Temperature|Bottom|Field|1995-01-10|2017-10-18|346|7.7|31.8|23.75|22.9098265895954|6.14657359236538
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS361|Water Temperature|Bottom|Field|1995-03-13|2017-10-18|189|10.5|32|26|24.6396825396825|5.22191188440308
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS362|Water Temperature|Bottom|Field|1995-01-17|2017-10-18|199|9.1|32|25.7|24.113567839196|5.62330709287503
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS362|Water Temperature|Bottom|Field|1995-01-17|2017-10-18|196|9.1|32|25.6|24.0520408163265|5.6429075900745
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS370|Water Temperature|Bottom|Field|1995-03-13|2017-10-18|55|15|32|27.5|26.0909090909091|4.0398603169505
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS371|Water Temperature|Bottom|Field|1995-02-01|2017-10-18|242|9.7|32|25.2|23.552479338843|5.73630916095252
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS372|Water Temperature|Bottom|Field|1995-06-07|2017-10-18|129|11.7|32.3|26.6|25.0883720930233|4.6899265037381
@@ -873,7 +872,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS384|Water Temperature|Bottom|Field|1995-01-10|2017-10-18|205|10.2|32|26.4|24.62|5.42814379857785
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS390|Water Temperature|Bottom|Field|1995-04-10|2017-09-18|117|13.2|32.3|27.6|26.3777777777778|4.24520238563713
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS391|Water Temperature|Bottom|Field|1995-04-03|1999-03-25|57|13.2|32.6|25.4|24.1298245614035|5.19879673277112
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS393|Water Temperature|Bottom|Field|1995-01-10|2017-10-18|255|8.3|32.6|25.9|24.141568627451|5.88775566927324
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS393|Water Temperature|Bottom|Field|1995-01-10|2017-10-18|257|8.3|32.6|25.6|24.1233463035019|5.86983147722417
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS394|Water Temperature|Bottom|Field|1995-04-10|2017-09-18|53|13.4|32.1|28.4|27.0679245283019|4.32309422595693
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS395|Water Temperature|Bottom|Field|1995-04-10|2017-10-18|100|11.9|32.2|27.45|26.252|4.42272551828632
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_25SEAS396|Water Temperature|Bottom|Field|1995-03-13|2017-10-18|157|10.8|32|27.1|25.3|5.24268721466093
@@ -888,8 +887,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS208|Water Temperature|Bottom|Field|1995-02-23|2017-12-06|162|9.1|32.4|24.35|23.2802469135802|5.66493891034225
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS210|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|240|9.4|32.4|23.5|23.0220833333333|5.56156601705528
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS214|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|407|4.8|34.5|22.1|21.8515970515971|5.84634036975321
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS216|Water Temperature|Bottom|Field|1995-02-23|2017-12-19|355|5.9|35.5|22.5|22.0647887323944|5.67184787870714
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS218|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|348|6.4|35|22.55|22.092816091954|5.80985747845598
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS216|Water Temperature|Bottom|Field|1995-02-23|2017-12-19|354|5.9|35.5|22.55|22.0779661016949|5.67443152999923
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS218|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|346|6.4|35|22.45|22.0725433526012|5.82011234560867
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS220|Water Temperature|Bottom|Field|1995-02-23|2006-12-07|197|9.2|35.1|23|22.3375634517767|6.08324984912018
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS222|Water Temperature|Bottom|Field|1995-02-23|2017-12-19|188|6.3|32.1|23.5|22.6936170212766|5.59704483735538
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS223|Water Temperature|Bottom|Field|1995-03-16|2017-12-27|322|6.3|32.9|22|21.9090062111801|5.79837872978666
@@ -903,12 +902,12 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS234|Water Temperature|Bottom|Field|1995-03-16|2017-12-19|132|4.9|31.6|23.8|23.2795454545455|5.60377106719133
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS235|Water Temperature|Bottom|Field|1995-02-23|2017-12-19|279|7.5|32.3|23|22.6326164874552|5.52726179816757
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS236|Water Temperature|Bottom|Field|1995-02-23|2017-12-06|167|11.4|31.6|25.5|24.2263473053892|5.02001060327223
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS237|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|292|7.3|32.3|22.95|22.6503424657534|5.51291827651665
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS237|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|290|7.3|32.3|22.95|22.6396551724138|5.51148971801857
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS238|Water Temperature|Bottom|Field|1995-03-16|2017-12-27|207|12.2|32.7|24.2|23.9188405797102|5.14366257336507
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS239|Water Temperature|Bottom|Field|1995-02-23|2017-12-19|261|7|31.9|23.4|22.6659003831418|5.61589314542287
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS239|Water Temperature|Bottom|Field|1995-02-23|2017-12-19|260|7|31.9|23.4|22.6653846153846|5.62671799986062
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS241|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|156|12.2|32.4|24.65|23.7903846153846|5.42531436694215
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS244|Water Temperature|Bottom|Field|1995-02-23|2017-12-06|181|12.6|30.3|24|23.2193370165746|4.46834689817784
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS245|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|384|5.8|31.9|22.45|22.1583333333333|5.83315304955775
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS245|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|381|5.8|31.9|22.4|22.1488188976378|5.8447529254213
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS247|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|396|5.2|32.3|22|21.909595959596|5.88602368097912
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS250|Water Temperature|Bottom|Field|1995-02-23|2017-12-27|57|5.2|32.1|25.4|24.1789473684211|5.97870437595284
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_28SEAS401|Water Temperature|Bottom|Field|1995-02-23|2017-12-19|116|12.3|32.6|24.7|24.0008620689655|4.92426989847059
@@ -950,7 +949,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS130|Water Temperature|Bottom|Field|2014-01-13|2017-09-14|65|11.1|31.7|24.9|23.5415384615385|5.75903888215333
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS133|Water Temperature|Bottom|Field|1995-01-31|2018-01-11|110|11.5|31.9|26.75|25.18|5.09397557473172
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS170|Water Temperature|Bottom|Field|1995-01-05|2018-03-22|528|8.3|32.3|22.35|21.9575757575758|5.95346433309274
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS180|Water Temperature|Bottom|Field|1995-01-05|2018-03-13|353|7.5|32|22.9|22.3201133144476|5.96086841490824
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS180|Water Temperature|Bottom|Field|1995-01-05|2018-03-13|352|7.5|32|22.95|22.3335227272727|5.96401947479871
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS190|Water Temperature|Bottom|Field|1995-01-05|2018-03-13|475|7.2|32.1|22.3|21.7978947368421|5.84095064345489
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS200|Water Temperature|Bottom|Field|1995-04-20|2018-03-13|193|10.5|32.2|25.5|24.0238341968912|5.35623194410332
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS441|Water Temperature|Bottom|Field|1995-03-01|2018-03-26|186|11|31.5|26.7|24.902688172043|5.19755069962869
@@ -979,10 +978,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS716|Water Temperature|Bottom|Field|1995-03-01|2018-03-26|153|9.7|31.5|27.1|24.5019607843137|5.92034261308809
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS996|Water Temperature|Bottom|Field|1995-01-31|2018-03-22|170|11.5|31.7|26.05|24.5370588235294|5.20272830645988
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS997|Water Temperature|Bottom|Field|1998-12-03|2017-08-07|37|14.7|31.5|29|27.2783783783784|4.32294492826972
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS998|Water Temperature|Bottom|Field|1995-01-31|2018-02-22|147|7.6|32.1|26.8|24.8891156462585|5.41463174036745
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS010|Water Temperature|Bottom|Field|1995-02-14|2017-11-14|175|9.1|31.2|24.1|23.3657142857143|4.85912714225146
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_30SEAS998|Water Temperature|Bottom|Field|1995-01-31|2018-02-22|146|7.6|32.1|26.8|24.9054794520548|5.42962221105182
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS010|Water Temperature|Bottom|Field|1995-02-14|2017-11-14|174|9.1|31.2|24.25|23.3655172413793|4.87314992518624
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS020|Water Temperature|Bottom|Field|1995-01-31|2017-11-14|169|8.3|31.5|24.7|23.6431952662722|5.20623177099433
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS030|Water Temperature|Bottom|Field|1995-02-14|2017-11-14|168|10.7|31.4|24.9|23.8529761904762|4.99898104102541
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS030|Water Temperature|Bottom|Field|1995-02-14|2017-11-14|168|10.7|31.4|24.9|23.8821428571429|4.98888970918057
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS040|Water Temperature|Bottom|Field|1995-01-31|2017-11-14|185|9.3|31.4|24.6|23.76|5.11359228790843
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS050|Water Temperature|Bottom|Field|1995-01-31|2017-11-14|163|9.1|31.5|25.4|24.159509202454|5.1542819072935
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS051|Water Temperature|Bottom|Field|1995-03-20|2017-11-14|203|8.2|31.9|25.9|24.4162561576355|5.15290764533823
@@ -1012,8 +1011,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS996|Water Temperature|Bottom|Field|2014-02-24|2016-08-11|22|15|31.2|26.1|24.8318181818182|4.55990667862281
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS997|Water Temperature|Bottom|Field|2014-05-08|2016-05-05|8|15.1|30|23.15|23.425|5.15689552236338
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_32SEAS998|Water Temperature|Bottom|Field|2014-02-24|2016-08-11|24|14.9|31.1|26|24.75|4.53450538983413
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_34SEAS162|Water Temperature|Bottom|Field|1995-03-30|2017-12-12|112|10.1|31.8|25.85|24.4741071428571|4.81047553484059
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_34SEAS170|Water Temperature|Bottom|Field|1995-01-12|2017-12-12|103|11.8|31.7|25.8|24.5466019417476|4.67458324731463
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_34SEAS162|Water Temperature|Bottom|Field|1995-03-30|2017-12-12|113|10.1|31.8|25.9|24.4964601769912|4.7948433834757
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_34SEAS170|Water Temperature|Bottom|Field|1995-01-12|2017-12-12|105|11.8|31.7|25.8|24.5695238095238|4.63946539960578
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_34SEAS180|Water Temperature|Bottom|Field|1995-03-30|2017-12-12|49|12|32.1|27|25.3714285714286|4.57274534606947
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_34SEAS190|Water Temperature|Bottom|Field|1995-03-30|2017-11-01|36|13|30.4|27.05|25.4027777777778|4.34323685161267
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_34SEAS191|Water Temperature|Bottom|Field|1995-01-12|2017-12-12|54|12.3|31|26.35|24.7759259259259|4.84195248257003
@@ -1025,7 +1024,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_ECN010C1|Water Temperature|Bottom|Field|1989-02-10|2007-04-23|95|8.7|27|20.3|19.7201052631579|4.09303235005406
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_ECN015C1|Water Temperature|Bottom|Field|1994-12-16|1999-07-06|15|13|25.6|21.7|20.76|3.64707319053825
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE010C1|Water Temperature|Bottom|Field|1995-10-03|1999-07-13|11|15.2|29.1|25|23.2545454545455|5.35973201501038
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE020C1|Water Temperature|Bottom|Field|1995-11-16|1999-09-28|51|12.2|30.4|20.4|21.8117647058824|5.38377737499698
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE020C1|Water Temperature|Bottom|Field|1995-11-16|1999-09-28|49|12.2|29.4|20.4|21.5408163265306|5.30314051480139
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE030C1|Water Temperature|Bottom|Field|1995-10-03|2007-04-18|86|12.5|30.2|22.65|22.4339534883721|5.29129880176653
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE040C1|Water Temperature|Bottom|Field|1995-10-03|1999-09-28|59|9|30.9|21.8|21.9830508474576|5.9655664974335
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE050C1|Water Temperature|Bottom|Field|1995-10-03|2017-09-19|106|13|30.2|21.6|21.9284905660377|5.03427089201563
@@ -1056,13 +1055,12 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQA_G1WA0056|Water Temperature|Bottom|Field|2016-03-08|2017-08-16|4|18.45|29.74|19.04|21.5675|5.47256414611408
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_6976|Water Temperature|Bottom|Field|2015-06-24|2015-06-24|1|22.62|22.62|22.62|22.62|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_34879|Water Temperature|Bottom|Field|2020-03-25|2020-07-21|2|21.1|22.17|21.635|21.635|0.756604255869606
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_3526|Water Temperature|Bottom|Field|2020-02-05|2020-07-07|3|17.1|25|17.7|19.9333333333333|4.39810565281615
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_3528|Water Temperature|Bottom|Field|2020-03-25|2022-10-19|13|14.9|22.1|21.1|19.8153846153846|2.38322126327867
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_3528|Water Temperature|Bottom|Field|2022-05-17|2022-10-19|4|17.8|22.1|21.55|20.75|2.00416233540765
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_3564|Water Temperature|Bottom|Field|2020-02-05|2020-07-07|3|14.4|24.6|16|18.3333333333333|5.48573908724552
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_44061|Water Temperature|Bottom|Field|2020-03-25|2021-10-18|3|20.7|21.1|21|20.9333333333333|0.208166599946614
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_44061|Water Temperature|Bottom|Field|2021-10-18|2021-10-18|1|21|21|21|21|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_59244|Water Temperature|Bottom|Field|2021-09-29|2021-09-29|1|22.4|22.4|22.4|22.4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_61108|Water Temperature|Bottom|Field|2022-07-26|2022-07-26|1|23.7|23.7|23.7|23.7|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_6976|Water Temperature|Bottom|Field|2020-02-05|2022-10-12|9|15.1|25.1|21.4|21.3888888888889|3.48297446317241
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_6976|Water Temperature|Bottom|Field|2020-02-05|2021-04-14|3|17.8|25.1|19.7|20.8666666666667|3.78725934328946
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_9717|Water Temperature|Bottom|Field|2021-03-29|2021-03-29|1|20.4|20.4|20.4|20.4|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0001|Water Temperature|Bottom|Field|2016-08-03|2016-08-03|1|22.2|22.2|22.2|22.2|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0008|Water Temperature|Bottom|Field|2017-10-18|2017-10-18|1|18.5|18.5|18.5|18.5|
@@ -2857,13 +2855,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 01-18|Water Temperature|Bottom|Field|2002-02-13|2002-11-20|8|17.18|31.05|27.96|25.10875|5.65512267771443
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 01-30|Water Temperature|Bottom|Field|2002-02-13|2002-11-20|7|16.86|31.15|26.8|24.5942857142857|6.03005488405884
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 56-01|Water Temperature|Bottom|Field|1999-01-20|2002-11-20|43|14.64|31.15|26.65|24.8802325581395|4.75824972241049
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 57-01|Water Temperature|Bottom|Field|1999-01-20|2002-06-05|36|14.74|30.8|25.975|24.7816666666667|4.59238220161544
+8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 57-01|Water Temperature|Bottom|Field|1999-01-20|2002-06-05|29|14.74|30.27|23.47|24.2024137931035|4.72470532351899
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 99-70|Water Temperature|Bottom|Field|2000-01-18|2000-11-20|12|14.49|30.1|25.03|24.3616666666667|5.32651998508549
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-02|Water Temperature|Bottom|Field|2004-02-26|2004-02-26|1|19.67|19.67|19.67|19.67|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-04|Water Temperature|Bottom|Field|2004-05-04|2004-05-04|1|25.03|25.03|25.03|25.03|
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-05|Water Temperature|Bottom|Field|2004-06-23|2004-06-23|1|30.93|30.93|30.93|30.93|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-06|Water Temperature|Bottom|Field|2004-07-26|2004-07-26|1|30.46|30.46|30.46|30.46|
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-07|Water Temperature|Bottom|Field|2004-09-13|2004-09-13|1|29.03|29.03|29.03|29.03|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-08|Water Temperature|Bottom|Field|2004-10-26|2004-10-26|1|25.76|25.76|25.76|25.76|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-09|Water Temperature|Bottom|Field|2004-12-06|2004-12-06|1|19.58|19.58|19.58|19.58|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-05-01|Water Temperature|Bottom|Field|2005-01-11|2005-01-11|1|18.3|18.3|18.3|18.3|
@@ -2950,10 +2945,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-D-11-01|Water Temperature|Bottom|Field|2011-02-17|2011-02-17|1|15.69|15.69|15.69|15.69|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6 00-37|Water Temperature|Bottom|Field|2001-01-17|2001-11-19|12|12.96|30.96|23.88|23.8883333333333|5.63511689534853
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6 01-001|Water Temperature|Bottom|Field|2002-07-02|2002-10-23|2|26.63|28.61|27.62|27.62|1.40007142674936
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6 58-01|Water Temperature|Bottom|Field|1999-01-20|2002-11-20|43|14.63|31.55|27.2|25.0704651162791|4.72548962113646
+8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6 58-01|Water Temperature|Bottom|Field|1999-01-20|2002-11-20|38|14.63|31.55|27.21|24.9094736842105|4.85575999416264
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6 58-02|Water Temperature|Bottom|Field|1999-01-20|2002-11-20|44|14.42|31.11|26.855|24.7034090909091|4.78278693844082
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6 98-40|Water Temperature|Bottom|Field|1999-01-20|1999-11-17|11|18.74|30.06|26|24.7818181818182|4.14780621095494
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6 99-23|Water Temperature|Bottom|Field|2000-01-18|2000-11-20|12|14.47|30.56|24.88|24.4875|5.39081057322214
+8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6 99-23|Water Temperature|Bottom|Field|2000-01-18|2000-10-25|11|14.47|30.56|26.46|24.7536363636364|5.570636000902
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W7-A-04-01|Water Temperature|Bottom|Field|2004-01-07|2004-01-07|1|18.11|18.11|18.11|18.11|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W7-A-04-02|Water Temperature|Bottom|Field|2004-02-18|2004-02-18|1|16.24|16.24|16.24|16.24|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W7-A-04-04|Water Temperature|Bottom|Field|2004-05-17|2004-05-17|1|25.99|25.99|25.99|25.99|
@@ -3140,10 +3135,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 99-63|Water Temperature|Bottom|Field|2000-01-12|2000-11-27|9|18.93|30.68|24.32|24.59|4.60315381016103
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS005|Water Temperature|Bottom|Field|2007-03-12|2017-08-09|18|13.6|31.2|22.5|23.5611111111111|5.77073131147873
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS626|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|22|16.9|32.4|24.7|24.5454545454546|4.73213203461966
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS627|Water Temperature|Bottom|Field|1995-01-18|2016-09-26|111|10.8|32.2|24.7|24.0414414414414|5.14958901217049
+8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS627|Water Temperature|Bottom|Field|1995-01-18|2016-09-26|110|10.8|32.2|24.9|24.1409090909091|5.18732215045269
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS640|Water Temperature|Bottom|Field|2008-03-13|2017-08-09|28|10.9|34.8|21.95|23.3321428571429|5.33632232711218
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS648|Water Temperature|Bottom|Field|1995-01-18|2017-08-09|131|10.4|32|24.3|23.9129770992366|5.09888972751105
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS652|Water Temperature|Bottom|Field|1997-03-19|2016-12-12|39|10.9|30.4|22.3|22.874358974359|5.38476007131618
+8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS652|Water Temperature|Bottom|Field|1997-03-19|2016-12-12|37|10.9|30.4|22.3|22.5243243243243|5.30541680242443
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS660|Water Temperature|Bottom|Field|1995-01-18|2017-08-09|139|10|32.7|24.6|24.0834532374101|5.16265291203938
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS663|Water Temperature|Bottom|Field|2008-07-10|2017-08-09|34|9.8|32.8|21.25|23.3617647058824|6.20449566753121
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS676|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|40|10.1|30.9|21.85|22.6425|5.05345210773074
@@ -3154,7 +3149,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS705|Water Temperature|Bottom|Field|1995-01-18|2017-08-09|145|10.3|32.3|23.9|23.7875862068966|5.09034874867545
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS720|Water Temperature|Bottom|Field|2006-09-21|2017-08-09|19|10.2|31.5|25.6|23.6105263157895|6.63340826899399
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS721|Water Temperature|Bottom|Field|2006-12-19|2017-08-09|18|9.4|31.5|24.5|23.55|6.47994644131824
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS731|Water Temperature|Bottom|Field|2006-12-19|2017-08-09|43|9.3|31.4|23|23.1651162790698|5.35051771953982
+8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS731|Water Temperature|Bottom|Field|2006-12-19|2017-08-09|42|9.3|31.4|22.95|23.0142857142857|5.32204671011717
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS732|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|43|9.5|33.4|24.5|24.2906976744186|5.90527665387524
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS733|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|23|10.6|32.5|21.1|23.1695652173913|5.92294726870214
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS743|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|43|9.6|32|23.8|23.8023255813954|5.27692588955481
@@ -3752,7 +3747,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 8|Boca Ciega Bay Aquatic Preserve|4067|Tampa Bay Benthic Monitoring|965|Water Temperature|Bottom|Field|2000-09-25|2000-09-25|62|29.71|31.19|30.42|30.3490322580645|0.46777011895616
 8|Boca Ciega Bay Aquatic Preserve|4067|Tampa Bay Benthic Monitoring|966|Water Temperature|Bottom|Field|2000-09-25|2000-09-25|1|29.75|29.75|29.75|29.75|
 8|Boca Ciega Bay Aquatic Preserve|4067|Tampa Bay Benthic Monitoring|968|Water Temperature|Bottom|Field|2000-09-18|2000-09-18|57|25.97|27.12|26.91|26.9252631578947|0.190854331729331
-9|Cape Haze Aquatic Preserve|5028|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|WIN_21FLCHAR_CHWW1|Water Temperature|Bottom|Field|2021-06-15|2022-09-07|12|16.3|30.9|25.55|24.9333333333333|5.34183035252445
 9|Cape Haze Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|CHM2004070407|Water Temperature|Bottom|Field|2004-07-06|2004-07-06|1|33.9|33.9|33.9|33.9|
 9|Cape Haze Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|CHM2014030601|Water Temperature|Bottom|Field|2014-03-04|2014-03-04|1|22.7|22.7|22.7|22.7|
 9|Cape Haze Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|CHM2015120901|Water Temperature|Bottom|Field|2015-12-21|2015-12-21|1|19.6|19.6|19.6|19.6|
@@ -3768,7 +3762,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 9|Cape Haze Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_58SEAS190|Water Temperature|Bottom|Field|1995-06-26|2017-10-02|20|19|32.3|28.9|28.685|3.18074387194998
 9|Cape Haze Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_58SEAS200|Water Temperature|Bottom|Field|1995-06-07|2012-07-18|28|20.3|33.8|30.45|30.0178571428571|2.65777037876551
 9|Cape Haze Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR104_0815|Water Temperature|Bottom|Field|2015-08-07|2015-08-07|1|29.6|29.6|29.6|29.6|
-9|Cape Haze Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0029|Water Temperature|Bottom|Field|2020-07-27|2023-04-10|3|19.4|31.1|24.1|24.8666666666667|5.88755750148849
 9|Cape Haze Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|9475|Water Temperature|Bottom|Field|1967-10-12|1967-10-12|1|26.5|26.5|26.5|26.5|
 9|Cape Haze Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|9540|Water Temperature|Bottom|Field|2015-11-09|2018-11-06|32|15|32.1|27.25|26.5225|4.04048783384926
 9|Cape Haze Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|9558|Water Temperature|Bottom|Field|2017-02-21|2018-05-21|12|21.3|31.9|25.6|25.4416666666667|2.98708076809977
@@ -3801,26 +3794,26 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_15159|Water Temperature|Bottom|Field|2002-10-15|2002-10-15|1|28.56|28.56|28.56|28.56|
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_15172|Water Temperature|Bottom|Field|2002-10-15|2002-10-15|1|29.79|29.79|29.79|29.79|
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_15173|Water Temperature|Bottom|Field|2002-10-15|2002-10-15|1|28.8|28.8|28.8|28.8|
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS028|Water Temperature|Bottom|Field|2008-05-28|2017-11-15|33|16|32.7|27.9|26.2|4.87506410214266
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS028|Water Temperature|Bottom|Field|2008-05-28|2017-09-19|32|16|32.7|28.25|26.28125|4.93031684514782
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS029|Water Temperature|Bottom|Field|2008-05-28|2017-11-15|42|15.7|33|28.15|27.2880952380952|4.08651574296952
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS031|Water Temperature|Bottom|Field|1995-01-23|2017-11-15|144|15.1|32.7|26.65|25.8027777777778|4.52934402148449
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS032|Water Temperature|Bottom|Field|1995-01-23|2017-10-31|124|15.2|33|26.2|25.6161290322581|4.58651943237359
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS034|Water Temperature|Bottom|Field|1995-01-23|2017-11-15|135|14.9|33|26.7|25.6962962962963|4.71052184274273
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS035|Water Temperature|Bottom|Field|2008-09-22|2017-08-14|21|17.9|33.2|29.4|27.8428571428571|4.76923174406229
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS036|Water Temperature|Bottom|Field|2009-11-05|2017-11-15|20|18.4|33.2|29.3|27.61|4.224352955748
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS037|Water Temperature|Bottom|Field|1997-04-22|2017-11-15|26|19|32.7|29.2|27.5307692307692|3.82714193421349
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS037|Water Temperature|Bottom|Field|1997-04-22|2017-11-15|24|19|32.7|29.25|27.7916666666667|3.86353258792663
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS038|Water Temperature|Bottom|Field|1995-04-13|2017-11-15|74|16.3|32.8|26.8|26.2878378378378|4.35254460931567
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS077|Water Temperature|Bottom|Field|1995-04-13|2017-11-15|33|18.4|31.9|28.1|26.7181818181818|3.67920291515827
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS113|Water Temperature|Bottom|Field|2008-06-18|2017-11-15|34|18.8|32.6|26.9|26.6676470588235|4.12646452152631
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS114|Water Temperature|Bottom|Field|1997-04-22|2015-09-24|15|18.3|31.9|25.5|25.5266666666667|3.85384162078506
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS187|Water Temperature|Bottom|Field|1995-05-15|2017-10-31|50|16.2|32.5|28.9|27.164|4.35977718958861
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS281|Water Temperature|Bottom|Field|1995-01-23|2017-11-15|138|15.1|32.6|26.15|25.7413043478261|4.58331993689319
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS281|Water Temperature|Bottom|Field|1995-01-23|2017-11-15|131|15.1|32.6|26|25.5702290076336|4.58986667573234
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS299|Water Temperature|Bottom|Field|2009-04-21|2017-11-15|36|15.7|32.6|26.55|26.0583333333333|4.5178613777507
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS300|Water Temperature|Bottom|Field|2009-04-21|2017-11-15|41|15.6|32.3|28|26.5121951219512|4.4911131761486
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS301|Water Temperature|Bottom|Field|2008-05-28|2017-11-15|50|15.6|32.4|28.35|26.832|4.27276328883885
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS302|Water Temperature|Bottom|Field|2008-05-28|2017-09-19|36|15.9|32|26.55|26.0861111111111|4.5139246640829
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS303|Water Temperature|Bottom|Field|2008-10-27|2017-11-15|30|15.6|32.1|26|26.1333333333333|4.13173866160677
-10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS401|Water Temperature|Bottom|Field|1995-04-13|2017-11-15|57|16.3|32.2|27.5|26.621052631579|4.12482626656242
+10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS401|Water Temperature|Bottom|Field|1995-04-13|2017-11-15|56|16.3|32.2|27.7|26.7553571428571|4.03443900089567
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS771|Water Temperature|Bottom|Field|1995-01-23|2017-11-15|82|15.7|32.7|28.1|26.9268292682927|4.37995007526899
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSFWM_20248|Water Temperature|Bottom|Field|2022-03-16|2023-03-15|3|23|26.1|23.6|24.2333333333333|1.64418166068514
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSFWM_20254|Water Temperature|Bottom|Field|2021-11-17|2023-03-15|5|20.4|26.2|22.3|22.76|2.28757513537807
@@ -6361,10 +6354,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 10|Cape Romano-Ten Thousand Islands Aquatic Preserve|509|SERC Water Quality Monitoring Network|76|Water Temperature|Bottom|Field|2002-02-21|2007-07-15|51|16.86|33.14|26.51|26.1680392156863|4.23302682231419
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_43840|Water Temperature|Bottom|Field|2013-05-16|2013-05-16|1|22.8|22.8|22.8|22.8|
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_45605|Water Temperature|Bottom|Field|2014-05-14|2014-05-14|1|27.1|27.1|27.1|27.1|
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_112|Water Temperature|Bottom|Field|1999-01-20|2017-06-21|199|9.72|31.55|25.36|24.7386934673367|4.61794023583294
+11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_112|Water Temperature|Bottom|Field|1999-01-20|2017-06-21|197|9.72|31.55|25.36|24.7535025380711|4.6166539053606
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_136|Water Temperature|Bottom|Field|1999-01-20|2003-12-10|47|16.4|32.5|26.2|25.4504255319149|4.26933298804535
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1603|Water Temperature|Bottom|Field|2009-01-26|2017-06-21|100|9.04|31.8|25.52|24.9388|4.96519853835197
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1604|Water Temperature|Bottom|Field|2009-01-26|2017-06-21|102|9.35|31.68|25.24|24.8261764705882|4.87941362410325
+11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1604|Water Temperature|Bottom|Field|2009-01-26|2017-06-21|95|9.35|31.68|25.83|24.8385263157895|5.02757205655718
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1606|Water Temperature|Bottom|Field|2009-01-26|2017-06-21|102|10.05|31.61|25.41|24.713137254902|4.83809367997583
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1607|Water Temperature|Bottom|Field|2009-03-25|2017-06-21|88|14.65|31.72|26.925|25.6384090909091|4.2298992913105
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1608|Water Temperature|Bottom|Field|2009-03-25|2017-06-21|95|10.79|31.84|25.97|24.9950526315789|4.57656841472377
@@ -6376,21 +6369,9 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1616|Water Temperature|Bottom|Field|2009-01-26|2017-06-21|92|8.99|28.69|24.255|22.5838043478261|4.7415008618409
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_180|Water Temperature|Bottom|Field|2009-01-26|2017-06-21|101|8.91|32.07|25.07|24.8032673267327|5.07794251816834
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_181|Water Temperature|Bottom|Field|2009-03-25|2017-06-21|100|11.73|32.04|25.515|24.6523|4.62317501094412
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_182|Water Temperature|Bottom|Field|2009-01-26|2017-06-21|99|10.28|30.98|25.22|23.7840404040404|4.58789888310719
+11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_182|Water Temperature|Bottom|Field|2009-01-26|2017-06-21|98|10.28|30.98|25.085|23.7566326530612|4.60333360692604
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_CROACH W|Water Temperature|Bottom|Field|2017-06-08|2017-06-08|1|26.8|26.8|26.8|26.8|
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLGW_57528|Water Temperature|Bottom|Field|2020-06-02|2020-06-02|1|27.1|27.1|27.1|27.1|
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_112|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|35|16.23|30.66|24.51|24.3634285714286|4.58922840038763
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1603|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|35|16.35|30.97|23.93|24.0131428571429|4.60401983656263
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1604|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|31|16.25|30.74|24.52|24.1429032258065|4.54311287815479
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1606|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|33|16.18|30.42|24.58|24.3242424242424|4.53447490779185
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1607|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|68|16.2|30.51|23.58|23.6510294117647|4.49933996476428
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1608|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|68|16.07|30.3|23.555|23.7841176470588|4.37837093513719
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1610|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|68|15.9|30.12|23.595|23.5326470588235|4.38936966121869
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1611|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|33|15.69|30.08|23.6|23.7666666666667|4.45370889446837
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1612|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|34|15.18|29.87|23.4|23.0997058823529|4.31981024084786
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1614|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|44|13.87|29.31|22.85|22.3386363636364|4.35148442510171
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1615|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|32|13.38|28.84|23.39|22.31875|4.59714059094381
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_1616|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|49|13.47|28.49|23.26|22.3061224489796|4.25733035301395
+11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_112|Water Temperature|Bottom|Field|2020-12-16|2021-04-21|5|18|26.39|21.92|22.102|3.11385131308481
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_180|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|58|16|30.92|24.04|23.6962068965517|4.78589441588003
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_181|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|54|15.83|30.41|23.585|23.4342592592593|4.46651761774535
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_182|Water Temperature|Bottom|Field|2020-08-18|2023-03-20|44|14.5|29.46|23.735|23.0861363636364|4.14250862985394
@@ -6582,7 +6563,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 14|Estero Bay Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|EBM2006090301|Water Temperature|Bottom|Field|2006-09-13|2006-09-13|1|29.5|29.5|29.5|29.5|
 14|Estero Bay Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|EBM2006100202|Water Temperature|Bottom|Field|2006-10-10|2006-10-10|1|25.6|25.6|25.6|25.6|
 14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLFTM_G1SD0043|Water Temperature|Bottom|Field|2015-03-23|2015-12-16|5|26|29.6|26.7|27.48|1.57702251093635
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0104|Water Temperature|Bottom|Field|2021-01-19|2021-07-14|4|19.2|27.9|25.55|24.55|4.05996715914468
 14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0129|Water Temperature|Bottom|Field|2023-02-14|2023-02-14|1|20.2|20.2|20.2|20.2|
 14|Estero Bay Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|5146|Water Temperature|Bottom|Field|2012-01-05|2017-03-22|4|14|27.6|21.7|21.25|5.5770362499569
 14|Estero Bay Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|5162|Water Temperature|Bottom|Field|2015-01-05|2018-08-06|9|17.9|31.5|25.7|25.3888888888889|3.94634148435119
@@ -10025,10 +10005,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|4049|The South Florida Fisheries Habitat Assessment Program (FHAP)|MAN-2022-6|Water Temperature|Bottom|Field|2022-05-19|2022-05-19|1|30|30|30|30|
 15|Florida Keys National Marine Sanctuary|4049|The South Florida Fisheries Habitat Assessment Program (FHAP)|MAN-2022-7|Water Temperature|Bottom|Field|2022-05-19|2022-05-19|1|30.1|30.1|30.1|30.1|
 15|Florida Keys National Marine Sanctuary|4049|The South Florida Fisheries Habitat Assessment Program (FHAP)|MAN-2022-8|Water Temperature|Bottom|Field|2022-05-19|2022-05-19|1|30.1|30.1|30.1|30.1|
-15|Florida Keys National Marine Sanctuary|899|USGS Coral Reef Ecosystem Studies (CREST) Project|1B|Water Temperature|Bottom|Field|2014-07-08|2015-02-04|25|23.1|31.9|29.2|27.192|3.03753189283668
-15|Florida Keys National Marine Sanctuary|899|USGS Coral Reef Ecosystem Studies (CREST) Project|2B|Water Temperature|Bottom|Field|2014-07-08|2015-02-04|23|22.9|31.6|29|27.2|3.05122926047847
-15|Florida Keys National Marine Sanctuary|899|USGS Coral Reef Ecosystem Studies (CREST) Project|3B|Water Temperature|Bottom|Field|2014-07-11|2015-01-31|20|22.2|30.8|29.3|26.835|3.5840692838698
-15|Florida Keys National Marine Sanctuary|899|USGS Coral Reef Ecosystem Studies (CREST) Project|4B|Water Temperature|Bottom|Field|2014-07-11|2015-01-31|17|23|30.9|29.4|27.0529411764706|3.30191566500774
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV004|Water Temperature|Bottom|Field|2017-11-06|2022-05-02|22|16.7|30.4|23.5|23.5909090909091|3.82720948832599
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV006|Water Temperature|Bottom|Field|2017-11-06|2022-11-07|43|14.8|31.4|23.8|23.3883720930233|4.61535786686175
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_GSV001|Water Temperature|Bottom|Field|2017-11-06|2022-09-06|38|13.7|32.1|24.65|24.9973684210526|5.16356711199311
@@ -10138,9 +10114,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR9|Water Temperature|Bottom|Field|2007-01-30|2016-12-22|114|12.84|30.93|24.01|23.9628947368421|4.98317589382731
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0039|Water Temperature|Bottom|Field|2020-07-27|2022-10-31|9|16.8|31.6|28.7|27.4444444444444|4.8688066071449
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0044|Water Temperature|Bottom|Field|2021-02-02|2021-07-26|5|17|30|24.5|23.6|4.89131884055824
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0046|Water Temperature|Bottom|Field|2021-07-28|2023-04-10|10|21|30.7|26.9|26.728|2.96682696196159
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0046|Water Temperature|Bottom|Field|2021-07-28|2023-04-10|8|21|30.7|27.35|26.85|3.31188336578622
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0052|Water Temperature|Bottom|Field|2022-03-07|2023-03-15|8|14.4|26.6|21.85|21.525|3.47141387416054
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0073|Water Temperature|Bottom|Field|2020-06-22|2022-11-29|12|17.7|31.1|27.55|26.525|4.13656093435554
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0217|Water Temperature|Bottom|Field|2022-03-16|2022-10-31|4|22.7|28.7|26.2|25.95|2.46779253585061
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0218|Water Temperature|Bottom|Field|2022-03-16|2023-03-22|6|20.4|28.1|22.95|23.7|3.14896808494465
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0240|Water Temperature|Bottom|Field|2023-02-09|2023-03-01|2|22.6|25.2|23.9|23.9|1.83847763108502
@@ -10175,15 +10150,15 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670062|Water Temperature|Bottom|Field|2010-08-18|2015-12-08|35|20.53|31.41|25.65|25.3174285714286|3.10449990559922
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670063|Water Temperature|Bottom|Field|2011-03-02|2015-09-03|16|17.31|30.25|22.725|23.318125|4.22154034881424
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670064|Water Temperature|Bottom|Field|2010-10-13|2015-10-20|18|22.91|30.48|27.87|26.9844444444444|2.50275194940718
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670065|Water Temperature|Bottom|Field|2010-09-07|2015-09-03|15|17.95|30.99|28.8|26.5626666666667|4.76818094495265
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670065|Water Temperature|Bottom|Field|2010-09-07|2015-09-03|12|18.04|30.99|28.945|27.6675|4.11428139091584
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670066|Water Temperature|Bottom|Field|2010-07-07|2015-12-08|22|20.07|31.09|28.275|27.075|3.68058580999844
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670068|Water Temperature|Bottom|Field|2010-08-18|2015-10-20|35|17.23|31.54|25.95|25.5454285714286|3.959322092047
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670068|Water Temperature|Bottom|Field|2010-08-18|2015-10-20|32|17.23|31.54|25.94|25.324375|4.03812790982765
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670069|Water Temperature|Bottom|Field|2010-09-07|2015-12-08|27|19.67|31.11|26.51|25.2755555555556|3.96310613741422
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670070|Water Temperature|Bottom|Field|2010-09-07|2015-12-08|26|20.51|30.45|25.165|25.4307692307692|3.61474416585951
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670071|Water Temperature|Bottom|Field|2011-05-04|2015-10-20|13|19.29|29.03|22.6|23.6238461538462|2.90436607673556
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670072|Water Temperature|Bottom|Field|2010-12-15|2015-01-06|20|12.15|30.46|21.37|22.334|6.03777093758424
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670076|Water Temperature|Bottom|Field|2011-04-13|2015-12-07|18|18.11|29.85|26.875|25.5883333333333|3.82845883598394
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670077|Water Temperature|Bottom|Field|2010-12-15|2015-11-03|25|11.61|31.42|24.16|23.6908|5.06501885485138
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670076|Water Temperature|Bottom|Field|2011-04-13|2015-12-07|17|18.11|29.85|27.61|25.7347058823529|3.8940228518318
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670077|Water Temperature|Bottom|Field|2010-12-15|2015-11-03|24|11.61|31.42|23.305|23.5829166666667|5.14453148174512
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670078|Water Temperature|Bottom|Field|2010-06-02|2015-07-06|16|17.66|30.58|28.59|26.010625|4.67095060810252
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670079|Water Temperature|Bottom|Field|2010-07-07|2015-09-02|25|19.6|30.64|27.01|25.6492|4.34223437107365
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670080|Water Temperature|Bottom|Field|2010-06-02|2015-11-03|40|12.3|30.93|26.83|25.18325|5.01200118049999
@@ -10310,10 +10285,9 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_915960|Water Temperature|Bottom|Field|2021-06-07|2021-06-07|1|29.4|29.4|29.4|29.4|
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010010|Water Temperature|Bottom|Field|2004-04-22|2005-10-03|15|11.3|32.5|25|23.664|6.8884798240043
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010018FLA|Water Temperature|Bottom|Field|2010-03-03|2010-11-09|4|12.83|29.4|22.4|21.7575|8.10871290649755
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010019|Water Temperature|Bottom|Field|2004-04-22|2005-10-03|17|12.9|36.1|25|24.6835294117647|6.13749637594238
+19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010019|Water Temperature|Bottom|Field|2004-08-31|2005-10-03|14|12.9|36.1|26.65|25.1871428571429|6.54248885666307
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010029FLA|Water Temperature|Bottom|Field|2010-05-05|2010-11-23|4|20.56|31.4|29.875|27.9275|4.97611210350678
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010049|Water Temperature|Bottom|Field|2010-03-03|2010-11-09|4|12.63|28.9|22.4|21.5825|8.02806898741327
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010054|Water Temperature|Bottom|Field|2004-06-29|2005-10-03|9|12.2|30.7|25|23.88|6.48653220141548
+19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010054|Water Temperature|Bottom|Field|2004-06-29|2005-10-03|7|20.6|30.7|28.3|26.6|3.96274315762873
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010065|Water Temperature|Bottom|Field|2005-10-20|2006-11-08|11|20.6|29.3|23.6|24.6090909090909|3.1392529510871
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010066|Water Temperature|Bottom|Field|2005-09-16|2006-11-08|12|20.7|29.1|24.85|24.85|3.12395437051998
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010067|Water Temperature|Bottom|Field|2005-09-16|2006-11-08|10|20.7|29|24.85|24.96|3.07758924412527
@@ -10353,7 +10327,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS614|Water Temperature|Bottom|Field|1995-03-06|2014-07-29|25|3.02|30.5|21.4|21.7768|7.06468607464856
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS615|Water Temperature|Bottom|Field|1996-11-13|2002-02-19|7|14.9|26.9|18.6|18.9857142857143|4.17309979568688
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS617|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|121|1.52|33.6|21.8|20.3227272727273|8.17634015518761
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS618|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|125|1.48|30.1|22|20.29944|8.06018713302333
+19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS618|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|117|1.48|30.1|21.7|20.2065811965812|7.81892974446975
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS619|Water Temperature|Bottom|Field|1995-03-06|2017-01-18|45|1.53|30.8|22.9|21.7555555555556|7.3589162231811
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS620|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|130|1.52|30.8|22.1|20.7224615384615|8.04727216158962
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS621|Water Temperature|Bottom|Field|1995-03-06|2017-12-06|59|2.18|31.1|21.7|21.1910169491525|7.11696629841755
@@ -10363,7 +10337,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_JXTR17|Water Temperature|Bottom|Field|1997-09-08|2017-06-19|115|10.53|30.7|22.8|22.4301913043478|5.58428058457776
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_SMITHCR|Water Temperature|Bottom|Field|1997-04-14|2011-09-21|78|5.65|31.61|23.87|23.2402564102564|5.8819260858034
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_STOKESCR|Water Temperature|Bottom|Field|1997-06-16|2011-09-21|48|6.57|30.83|26.75|23.8160416666667|6.12143174032174
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_TOL|Water Temperature|Bottom|Field|1997-05-27|2017-06-19|127|7.87|32.056|23.66|22.8520393700787|5.59197867613162
+19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_TOL|Water Temperature|Bottom|Field|1997-05-27|2017-06-19|126|7.87|32.056|23.67|22.9087222222222|5.57755133174247
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_TOLG10|Water Temperature|Bottom|Field|2008-07-25|2008-07-25|1|28.97|28.97|28.97|28.97|
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_TOLG11|Water Temperature|Bottom|Field|2008-07-25|2008-07-25|2|28.99|29.02|29.005|29.005|0.0212132034355972
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_TOLG2|Water Temperature|Bottom|Field|2008-07-25|2008-07-25|1|29.61|29.61|29.61|29.61|
@@ -10384,17 +10358,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0608|Water Temperature|Bottom|Field|2022-03-30|2022-03-30|1|22.2|22.2|22.2|22.2|
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLA_NEHAB0092|Water Temperature|Bottom|Field|2022-08-25|2022-08-25|1|30.8|30.8|30.8|30.8|
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44869|Water Temperature|Bottom|Field|2020-05-19|2021-08-24|13|13.592|30.453|25.865|23.9026153846154|5.61764861157023
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0019|Water Temperature|Bottom|Field|2018-07-11|2022-11-07|14|14.1|32.3|24.8|23.9571428571429|6.60870222168809
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0020|Water Temperature|Bottom|Field|2018-07-11|2022-11-07|19|13|32.7|25.1|23.9736842105263|6.31759818155806
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0021|Water Temperature|Bottom|Field|2018-07-11|2022-11-07|19|12.7|31.9|24.9|23.6842105263158|6.3023155495857
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0022|Water Temperature|Bottom|Field|2018-07-11|2022-11-07|18|13.8|30.9|25.45|24.1277777777778|5.9398757716813
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0023|Water Temperature|Bottom|Field|2020-07-15|2022-11-07|8|14.1|30.4|23.65|23.175|6.10052690932747
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0024|Water Temperature|Bottom|Field|2021-10-06|2022-11-07|8|14|30.1|23.45|23.325|5.89036743942418
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0025|Water Temperature|Bottom|Field|2021-10-06|2022-11-07|8|14.1|30|23.35|23.375|5.77624445466083
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0019|Water Temperature|Bottom|Field|2018-09-06|2018-09-06|1|28.4|28.4|28.4|28.4|
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0020|Water Temperature|Bottom|Field|2018-09-06|2018-09-06|1|28.8|28.8|28.8|28.8|
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0021|Water Temperature|Bottom|Field|2018-09-06|2018-09-06|1|28.9|28.9|28.9|28.9|
-19|Guana River Marsh Aquatic Preserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0022|Water Temperature|Bottom|Field|2018-09-06|2018-09-06|1|29.2|29.2|29.2|29.2|
 19|Guana River Marsh Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|23968|Water Temperature|Bottom|Field|2007-10-17|2007-10-17|1|25.5|25.5|25.5|25.5|
 19|Guana River Marsh Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|23972|Water Temperature|Bottom|Field|2015-02-04|2015-02-04|1|13.5|13.5|13.5|13.5|
 19|Guana River Marsh Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|23973|Water Temperature|Bottom|Field|2015-01-07|2015-01-07|1|15|15|15|15|
@@ -10402,23 +10365,23 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 19|Guana River Marsh Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|24119|Water Temperature|Bottom|Field|2014-04-09|2017-10-17|7|12.3|28|25.4|22.6714285714286|5.81570124339111
 19|Guana River Marsh Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|24483|Water Temperature|Bottom|Field|2014-04-02|2014-04-02|1|17|17|17|17|
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010010|Water Temperature|Bottom|Field|2004-04-22|2005-10-03|15|11.3|32.5|25|23.664|6.8884798240043
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010016|Water Temperature|Bottom|Field|2004-04-26|2015-09-16|16|12.8|28|23.935|22.115625|4.94566607411648
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010016|Water Temperature|Bottom|Field|2004-04-26|2015-09-16|13|12.8|28|23.86|21.4423076923077|5.26097924003722
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010018FLA|Water Temperature|Bottom|Field|2010-03-03|2010-11-09|4|12.83|29.4|22.4|21.7575|8.10871290649755
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010019|Water Temperature|Bottom|Field|2004-04-22|2005-10-03|17|12.9|36.1|25|24.6835294117647|6.13749637594238
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010029FLA|Water Temperature|Bottom|Field|2010-05-05|2010-11-23|4|20.56|31.4|29.875|27.9275|4.97611210350678
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010049|Water Temperature|Bottom|Field|2010-03-03|2010-11-09|4|12.63|28.9|22.4|21.5825|8.02806898741327
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010054|Water Temperature|Bottom|Field|2004-06-29|2005-10-03|9|12.2|30.7|25|23.88|6.48653220141548
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010065|Water Temperature|Bottom|Field|2005-10-20|2006-11-08|11|20.6|29.3|23.6|24.6090909090909|3.1392529510871
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010054|Water Temperature|Bottom|Field|2005-01-04|2005-10-03|6|12.2|30.7|21.5|21.7866666666667|6.97563378243631
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010065|Water Temperature|Bottom|Field|2006-03-21|2006-05-24|3|21.4|26.4|23.6|23.8|2.50599281722833
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010066|Water Temperature|Bottom|Field|2005-09-16|2006-11-08|12|20.7|29.1|24.85|24.85|3.12395437051998
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010067|Water Temperature|Bottom|Field|2005-09-16|2006-11-08|10|20.7|29|24.85|24.96|3.07758924412527
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010069|Water Temperature|Bottom|Field|2009-02-09|2009-04-15|2|12.2|21.3|16.75|16.75|6.43467170879758
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010072|Water Temperature|Bottom|Field|2009-02-09|2009-07-08|3|12.1|28.1|19.3|19.8333333333333|8.01332224070225
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010072|Water Temperature|Bottom|Field|2009-04-15|2009-07-08|2|19.3|28.1|23.7|23.7|6.22253967444162
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010073|Water Temperature|Bottom|Field|2009-01-15|2009-04-21|3|15|23.8|15.5|18.1|4.94267134250296
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010074|Water Temperature|Bottom|Field|2009-01-15|2009-10-07|4|13.85|24.53|20.3|19.745|5.08210258324905
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010077FLA|Water Temperature|Bottom|Field|2010-03-02|2010-03-02|1|11.9|11.9|11.9|11.9|
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010078|Water Temperature|Bottom|Field|2010-03-02|2016-03-02|4|12.9|24.4|19.7|19.175|5.36803812703797
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010079|Water Temperature|Bottom|Field|2010-03-02|2015-12-15|11|10.5|28.73|20.9|20.1581818181818|6.03945331662034
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010080|Water Temperature|Bottom|Field|2010-03-02|2010-08-04|2|13|25|19|19|8.48528137423857
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010079|Water Temperature|Bottom|Field|2010-03-02|2015-03-04|7|10.5|26.3|18.31|17.58|5.84513758035971
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010080|Water Temperature|Bottom|Field|2010-08-04|2010-08-04|1|25|25|25|25|
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010081FLA|Water Temperature|Bottom|Field|2010-03-03|2010-11-09|4|12.52|28.88|18.58|19.64|6.90265649345719
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010082|Water Temperature|Bottom|Field|2010-03-03|2014-05-28|6|12.93|29.35|22.35|21.7466666666667|6.65916411170852
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010084|Water Temperature|Bottom|Field|2010-05-05|2014-05-28|4|16.7|27|25.45|23.65|4.83769917763944
@@ -10435,8 +10398,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010148|Water Temperature|Bottom|Field|2005-01-04|2005-10-03|3|11.3|28.3|16.22|18.6066666666667|8.74769302921252
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010155|Water Temperature|Bottom|Field|2005-03-16|2005-03-16|1|17.2|17.2|17.2|17.2|
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010156|Water Temperature|Bottom|Field|2005-06-30|2005-06-30|1|28.2|28.2|28.2|28.2|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010165|Water Temperature|Bottom|Field|1999-05-19|2009-10-06|19|12.5|30.9|25|23.8842105263158|5.37145367846387
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010166|Water Temperature|Bottom|Field|1999-01-27|2010-07-01|22|11.3|31.4|24.75|23.1863636363636|6.38795708117984
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010165|Water Temperature|Bottom|Field|1999-05-19|2005-09-14|13|12.5|30.9|24.4|23.4384615384615|6.32475802719472
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010166|Water Temperature|Bottom|Field|1999-01-27|2010-07-01|19|11.3|31.4|25.5|23.8|6.40485926638691
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010168|Water Temperature|Bottom|Field|2005-01-26|2005-12-14|12|12.7|33.1|23.39|22.5483333333333|7.24267885313832
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010169|Water Temperature|Bottom|Field|2005-01-26|2005-11-14|9|11.4|31.4|21.54|22.5722222222222|7.47792380573943
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010171|Water Temperature|Bottom|Field|1999-01-27|2014-12-03|33|12.9|32.2|22.9|23.1166666666667|5.21854665272494
@@ -10446,7 +10409,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010183|Water Temperature|Bottom|Field|1999-01-27|2014-11-19|36|11.4|34.1|23.9|23.5069444444444|5.51918928800466
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010184|Water Temperature|Bottom|Field|1999-01-27|2014-11-19|61|11.1|32.3|24.3|23.5116393442623|5.79110127129773
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010185|Water Temperature|Bottom|Field|1999-02-17|2014-07-22|8|15|29.2|21.75|21.8|5.72063932491066
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010316|Water Temperature|Bottom|Field|2014-02-27|2014-11-25|8|13.4|29.5|21.85|22.15|6.08111831820431
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010965|Water Temperature|Bottom|Field|2014-03-20|2017-05-15|6|17.3|28.4|26.41|25.1016666666667|3.96430279704599
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010966|Water Temperature|Bottom|Field|2014-03-20|2015-07-14|10|18.7|29.3|27.15|25.484|4.01101040193671
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010969|Water Temperature|Bottom|Field|2014-01-13|2014-09-17|8|15.7|29.1|21.9|22.40625|5.74943708424697
@@ -10470,7 +10432,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_88SEAS031|Water Temperature|Bottom|Field|1995-03-14|2017-04-10|115|1.76|32.6|22.8|21.5189565217391|6.52938518020084
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_88SEAS032|Water Temperature|Bottom|Field|1995-03-14|2017-01-17|39|1.89|30.1|21.9|20.8689743589744|6.04518633854626
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_88SEAS050|Water Temperature|Bottom|Field|1995-03-14|2017-12-04|26|1.96|29.8|21.15|21.2638461538462|6.27688335206133
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_88SEAS061|Water Temperature|Bottom|Field|1995-03-14|2009-01-28|202|4.6|32.8|23.4|21.9490099009901|5.48343720598142
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_88SEAS061|Water Temperature|Bottom|Field|1995-03-14|2009-01-28|197|4.6|32.8|23.6|21.9741116751269|5.54954400109758
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_88SEAS081|Water Temperature|Bottom|Field|1995-03-21|2008-05-20|36|12.4|29.1|22.7|21.5944444444444|5.35237968140978
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_88SEAS091|Water Temperature|Bottom|Field|1995-03-14|2017-09-25|47|10.7|28.8|22.5|21.1765957446808|5.33382205593038
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_88SEAS100|Water Temperature|Bottom|Field|1995-05-09|2017-12-04|277|1.79|32.6|23.3|21.854440433213|5.85988346271665
@@ -10498,7 +10460,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS190|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|148|1.47|30.3|22|20.2964864864865|7.70449439157094
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS195|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|71|1.48|29.9|22|20.6184507042254|7.36194978984844
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS200|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|78|1.48|29.9|22.05|20.7184615384615|7.71067485329959
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS201|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|138|1.47|30.5|21.9|20.1199275362319|7.88946914262138
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS201|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|124|1.47|30.5|21.35|19.8813709677419|7.77671230037009
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS205|Water Temperature|Bottom|Field|1995-03-06|2017-04-11|38|1.48|30|22.05|20.6528947368421|8.1749977792855
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS210|Water Temperature|Bottom|Field|1995-01-10|2017-12-06|213|1.48|30.5|22.1|20.4233802816901|7.93006167330618
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_92SEAS600|Water Temperature|Bottom|Field|1995-03-06|2017-01-18|32|1.48|30.6|20.65|19.8709375|8.14627932461669
@@ -10550,10 +10512,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010165|Water Temperature|Bottom|Field|2020-02-20|2023-03-22|13|14.4|29.9|24.3|22.8923076923077|5.33564453127292
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010183|Water Temperature|Bottom|Field|2020-02-20|2020-02-20|1|19.4|19.4|19.4|19.4|
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_27010965|Water Temperature|Bottom|Field|2020-03-05|2022-03-15|11|14.1|31.7|22.4|21.9|6.09491591410415
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0004|Water Temperature|Bottom|Field|2020-02-18|2022-09-08|13|13.4|29.8|26.5|23.7692307692308|5.75346049715366
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0004|Water Temperature|Bottom|Field|2020-02-18|2022-09-08|12|13.4|29.8|26.75|24.375|5.55945141178516
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0587|Water Temperature|Bottom|Field|2020-03-23|2023-03-22|11|15.7|28.5|22.4|21.5454545454545|4.61071873710892
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0588|Water Temperature|Bottom|Field|2020-02-20|2023-03-22|6|17.9|27.8|25.125|23.6416666666667|3.96515027037648
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0589|Water Temperature|Bottom|Field|2020-02-18|2022-09-08|13|13.3|29.7|26.7|23.7692307692308|5.79588713591869
+20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0589|Water Temperature|Bottom|Field|2020-02-18|2022-09-08|12|13.3|29.7|26.75|24.375|5.60732070195253
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0591|Water Temperature|Bottom|Field|2020-03-10|2022-09-21|14|12.8|30.2|23.8|22.9928571428571|5.96366746812141
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0592|Water Temperature|Bottom|Field|2020-03-05|2022-03-15|7|13.2|32.2|17.5|20.5857142857143|7.28821619040594
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLA_G5NE0593|Water Temperature|Bottom|Field|2020-07-16|2021-12-01|9|12.2|28.5|20.3|20.6888888888889|6.12054826883271
@@ -10568,17 +10530,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44869|Water Temperature|Bottom|Field|2020-05-19|2021-08-24|13|13.592|30.453|25.865|23.9026153846154|5.61764861157023
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44872|Water Temperature|Bottom|Field|2020-05-19|2021-09-30|16|14.471|30.282|26.314|24.4388125|5.32440592265153
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44873|Water Temperature|Bottom|Field|2020-05-19|2021-09-30|15|14.064|30.408|25.482|23.9795333333333|5.32923447821632
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0019|Water Temperature|Bottom|Field|2018-07-11|2022-11-07|14|14.1|32.3|24.8|23.9571428571429|6.60870222168809
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0020|Water Temperature|Bottom|Field|2018-07-11|2022-11-07|19|13|32.7|25.1|23.9736842105263|6.31759818155806
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0021|Water Temperature|Bottom|Field|2018-07-11|2022-11-07|19|12.7|31.9|24.9|23.6842105263158|6.3023155495857
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0022|Water Temperature|Bottom|Field|2018-07-11|2022-11-07|18|13.8|30.9|25.45|24.1277777777778|5.9398757716813
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0023|Water Temperature|Bottom|Field|2020-07-15|2022-11-07|8|14.1|30.4|23.65|23.175|6.10052690932747
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0024|Water Temperature|Bottom|Field|2021-10-06|2022-11-07|8|14|30.1|23.45|23.325|5.89036743942418
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLA_G5NE0025|Water Temperature|Bottom|Field|2021-10-06|2022-11-07|8|14.1|30|23.35|23.375|5.77624445466083
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0019|Water Temperature|Bottom|Field|2018-09-06|2018-09-06|1|28.4|28.4|28.4|28.4|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0020|Water Temperature|Bottom|Field|2018-09-06|2018-09-06|1|28.8|28.8|28.8|28.8|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0021|Water Temperature|Bottom|Field|2018-09-06|2018-09-06|1|28.9|28.9|28.9|28.9|
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5014|Guana River and Guana Lake Water Quality Monitoring|WIN_21FLWQA_G5NE0022|Water Temperature|Bottom|Field|2018-09-06|2018-09-06|1|29.2|29.2|29.2|29.2|
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|95|Harmful Algal Bloom Marine Observation Network|22495|Water Temperature|Bottom|Field|2015-03-17|2017-03-08|4|20.4|29.9|24.65|24.9|3.95052739095259
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|95|Harmful Algal Bloom Marine Observation Network|22526|Water Temperature|Bottom|Field|2015-07-22|2018-06-25|2|28.3|29.6|28.95|28.95|0.919238815542512
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|95|Harmful Algal Bloom Marine Observation Network|22921|Water Temperature|Bottom|Field|2016-12-12|2016-12-12|1|18.6|18.6|18.6|18.6|
@@ -10724,7 +10675,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|IRM2012090201|Water Temperature|Bottom|Field|2012-09-06|2012-09-06|1|27.5|27.5|27.5|27.5|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|IRM2012100104|Water Temperature|Bottom|Field|2012-10-01|2012-10-01|1|30|30|30|30|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|69|Fisheries-Independent Monitoring (FIM) Program|IRM2016080807|Water Temperature|Bottom|Field|2016-08-15|2016-08-15|1|33.3|33.3|33.3|33.3|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MAS11|Water Temperature|Bottom|Field|2005-12-21|2007-04-24|4|16.55|30.17|23.955|23.6575|5.58386589499903
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MAS11|Water Temperature|Bottom|Field|2005-12-21|2005-12-21|1|16.55|16.55|16.55|16.55|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MAS13|Water Temperature|Bottom|Field|2005-12-21|2007-04-24|3|17.13|25.27|24.5|22.3|4.49387360747941
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MAS14|Water Temperature|Bottom|Field|2005-12-21|2007-04-24|2|17.13|24.05|20.59|20.59|4.89317892581091
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLBREV_MAS15|Water Temperature|Bottom|Field|2005-12-21|2007-04-24|4|17.33|30.74|25.7|24.8675|5.57582505105747
@@ -10740,7 +10691,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCEN_27020343|Water Temperature|Bottom|Field|2005-03-15|2005-03-15|1|22.45|22.45|22.45|22.45|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCEN_27020344|Water Temperature|Bottom|Field|2005-03-15|2005-05-26|2|22.5|27.1|24.8|24.8|3.25269119345812
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCEN_27020346|Water Temperature|Bottom|Field|2015-07-13|2015-07-13|1|28.7|28.7|28.7|28.7|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCEN_G5CE0056|Water Temperature|Bottom|Field|2016-04-27|2016-04-27|1|28.3|28.3|28.3|28.3|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_43693|Water Temperature|Bottom|Field|2013-05-16|2013-05-16|1|25.2|25.2|25.2|25.2|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_49579|Water Temperature|Bottom|Field|2016-05-18|2016-05-18|1|24.1|24.1|24.1|24.1|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2770|Water Temperature|Bottom|Field|1994-11-06|2004-11-06|125|12.5|33.5|26.5|25.284|4.93193019860085
@@ -10754,11 +10704,11 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2965|Water Temperature|Bottom|Field|2001-08-23|2002-01-14|2|17|30|23.5|23.5|9.19238815542512
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2970|Water Temperature|Bottom|Field|1998-02-04|2000-06-28|91|10|30|23|23.1098901098901|4.3036174691907
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3010|Water Temperature|Bottom|Field|1994-02-07|2004-11-08|50|12.5|33|25.25|23.74|5.15498569843025
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3070|Water Temperature|Bottom|Field|1993-12-30|2004-11-15|112|12|31|25|23.9419642857143|4.26685609924754
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3070|Water Temperature|Bottom|Field|1994-01-06|2004-11-15|98|12|30|24.75|23.6122448979592|4.25630557837664
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3100|Water Temperature|Bottom|Field|1991-06-22|1996-01-27|60|10.5|29|20.75|21.0166666666667|4.44644846532626
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3120|Water Temperature|Bottom|Field|1994-09-26|2004-09-02|424|9|31|25|23.9127358490566|4.53545820727272
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3130|Water Temperature|Bottom|Field|1994-09-26|2004-12-31|43|9|30|25|23.1162790697674|5.65643040023006
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3180|Water Temperature|Bottom|Field|2000-05-25|2004-08-31|175|10|30|25|24.1142857142857|4.19065345199049
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3180|Water Temperature|Bottom|Field|2000-05-25|2004-08-31|154|10|30|26|24.1883116883117|4.20359242646529
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3200|Water Temperature|Bottom|Field|1991-11-03|1993-05-15|55|15|32|24|24.3272727272727|4.63702708661705
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3310|Water Temperature|Bottom|Field|1996-07-02|2004-12-29|164|12|33|24.5|24.4993902439024|4.72011096042002
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3320|Water Temperature|Bottom|Field|1996-07-16|2004-08-19|85|12|34|27|25.2047058823529|5.08241379385709
@@ -10791,7 +10741,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_72SEAS032|Water Temperature|Bottom|Field|1995-01-10|2017-11-07|187|1.84|31.1|24.7|22.4967379679144|7.57104434145101
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_72SEAS033|Water Temperature|Bottom|Field|1996-07-17|2017-10-11|53|2.69|30.7|25.6|24.1243396226415|5.26791212086986
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_72SEAS034|Water Temperature|Bottom|Field|1996-01-23|2011-11-17|4|15.3|25.2|21.5|20.875|4.5850299889968
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_72SEAS035|Water Temperature|Bottom|Field|1995-01-10|2017-08-02|131|1.65|31.8|24.7|22.6637404580153|8.04786243343563
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_72SEAS035|Water Temperature|Bottom|Field|1995-01-10|2017-08-02|117|1.65|31.8|25|23.0495726495727|7.64266556148853
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_72SEAS036|Water Temperature|Bottom|Field|1995-01-10|2017-08-02|133|1.64|31.6|24.4|22.508045112782|7.8720242534201
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_72SEAS039|Water Temperature|Bottom|Field|1995-01-10|2017-11-07|185|1.65|30.8|25|22.7225405405405|7.61664685222082
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_72SEAS040|Water Temperature|Bottom|Field|1995-01-10|2017-11-07|185|1.76|30|24.5|22.1538918918919|7.67652371145931
@@ -10816,13 +10766,13 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS251|Water Temperature|Bottom|Field|1998-09-10|2005-12-14|5|16.3|28.7|24.2|23.18|5.61132782859815
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS252|Water Temperature|Bottom|Field|1998-06-25|2009-10-08|6|21.7|30.5|28.7|27.35|3.42154935665117
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS253|Water Temperature|Bottom|Field|1995-07-13|2017-12-26|121|1.83|31.2|24.1|22.095867768595|8.08147167594095
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS255|Water Temperature|Bottom|Field|1995-04-27|2017-10-11|42|1.78|30.2|24.1|22.9971428571429|6.1273836718473
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS255|Water Temperature|Bottom|Field|1995-04-27|2017-10-11|41|1.78|30.2|24.5|23.1824390243902|6.08320178051321
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS263|Water Temperature|Bottom|Field|1996-02-07|2017-12-26|75|1.78|31.8|23.1|20.728|9.3999141744213
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS264|Water Temperature|Bottom|Field|1995-07-13|2017-07-18|126|1.79|32|24.1|22.087380952381|8.40306241115192
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS265|Water Temperature|Bottom|Field|1999-06-16|2013-10-15|4|24|29.5|27.35|27.05|2.40069434400411
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS270|Water Temperature|Bottom|Field|1995-04-27|2017-10-30|12|14.3|29.1|24.7|22.625|5.48189167748108
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS272|Water Temperature|Bottom|Field|1995-07-13|2017-01-05|96|1.77|31.8|24.65|23.2544791666667|7.07121293396375
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS275|Water Temperature|Bottom|Field|1995-04-07|2008-01-24|8|16.3|30.1|22.1|22.4875|4.78582355952005
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS275|Water Temperature|Bottom|Field|1995-04-07|2008-01-24|7|16.3|30.1|21.8|22.5|5.16913919332804
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS278|Water Temperature|Bottom|Field|1995-04-27|2013-10-15|26|13.5|30.2|24.9|24.6423076923077|4.44928516298275
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS280|Water Temperature|Bottom|Field|1995-01-18|2017-12-26|248|1.82|32|24.85|22.9043951612903|7.58094941050742
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS281|Water Temperature|Bottom|Field|1995-04-27|2011-10-11|2|24.3|24.6|24.45|24.45|0.212132034355965
@@ -10831,7 +10781,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS285|Water Temperature|Bottom|Field|1995-04-27|2017-10-30|32|13.2|30.7|25.05|23.728125|4.79113659994733
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS286|Water Temperature|Bottom|Field|1995-04-27|2017-09-27|58|1.81|31.3|24.65|19.3641379310345|11.4325445026557
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS305|Water Temperature|Bottom|Field|1995-04-07|2012-08-29|37|16.1|32|25.2|24.7108108108108|4.33703584028077
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS310|Water Temperature|Bottom|Field|1995-01-18|2017-12-26|235|1.84|31.7|25.2|22.9189787234043|7.5865580505985
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS310|Water Temperature|Bottom|Field|1995-01-18|2017-12-26|229|1.84|31.7|25.2|22.962096069869|7.56061702493571
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS321|Water Temperature|Bottom|Field|2000-11-27|2017-10-11|7|16|29.8|27|24.8142857142857|5.07458654191931
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS324|Water Temperature|Bottom|Field|1995-07-13|2015-01-21|20|1.89|31.8|24.15|22.7995|7.40944665523966
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_74SEAS326|Water Temperature|Bottom|Field|1996-02-07|2017-10-11|146|1.83|31.3|24.65|22.1850684931507|8.56799137500575
@@ -10879,10 +10829,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLSG46M|Water Temperature|Bottom|Field|1997-05-29|1997-09-17|3|26.77|29.39|28.5|28.22|1.33225372958757
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLSG50E|Water Temperature|Bottom|Field|1997-05-29|1997-09-17|3|27.82|29.61|28.7|28.71|0.895041898460625
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLSG50M|Water Temperature|Bottom|Field|1997-05-29|1997-09-17|3|27.76|29.58|29.13|28.8233333333333|0.947962727818626
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLSUS|Water Temperature|Bottom|Field|1998-02-26|2017-06-07|2115|11.74|37.36|25.26|24.6760609929078|4.36624506075025
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLSUS|Water Temperature|Bottom|Field|1998-02-26|2017-06-07|2106|11.74|37.36|25.26|24.6830906932574|4.36784596056669
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLTSSMBT01|Water Temperature|Bottom|Field|2003-09-25|2003-09-25|1|29.56|29.56|29.56|29.56|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLTSSMBT02|Water Temperature|Bottom|Field|2003-09-25|2003-09-25|1|29.74|29.74|29.74|29.74|
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLTUS|Water Temperature|Bottom|Field|2000-03-13|2017-06-06|374|12.68|32.64|25.556|25.0377245989305|4.67635009096632
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLTUS|Water Temperature|Bottom|Field|2000-03-13|2017-05-01|370|12.68|32.64|25.556|25.0227432432432|4.69340854712925
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCEN_G5CE0128|Water Temperature|Bottom|Field|2020-10-27|2020-10-27|1|27.4|27.4|27.4|27.4|
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCEN_G5CE0136|Water Temperature|Bottom|Field|2021-03-09|2021-08-25|3|17.9|30.7|26.9|25.1666666666667|6.57368491284252
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCEN_G5CE0138|Water Temperature|Bottom|Field|2021-03-09|2021-03-09|1|19|19|19|19|
@@ -11037,7 +10987,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-4-04|Water Temperature|Bottom|Field|1995-04-18|1997-04-22|4|22.66|26.56|24.455|24.5325|1.93623991282072
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-4-05|Water Temperature|Bottom|Field|2017-05-03|2017-05-03|1|28.6|28.6|28.6|28.6|
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-4-06|Water Temperature|Bottom|Field|2017-06-13|2017-06-13|1|27.3|27.3|27.3|27.3|
-25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-4-07|Water Temperature|Bottom|Field|1997-07-16|2017-07-05|3|29.86|32.2|30.35|30.8033333333333|1.234112366575
+25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-4-07|Water Temperature|Bottom|Field|1997-07-16|2017-07-05|4|27.3|32.2|30.105|29.9275|2.02081460472421
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-4-08|Water Temperature|Bottom|Field|2017-08-09|2017-08-09|1|31.6|31.6|31.6|31.6|
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-4-10|Water Temperature|Bottom|Field|2016-10-05|2016-10-05|1|28.9|28.9|28.9|28.9|
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-4-11|Water Temperature|Bottom|Field|1997-11-13|2016-11-02|3|22.23|24.4|22.24|22.9566666666667|1.24997333304888
@@ -11049,12 +10999,12 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-5-09|Water Temperature|Bottom|Field|2016-09-07|2017-09-06|2|28.9|29.6|29.25|29.25|0.494974746830585
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-5-11|Water Temperature|Bottom|Field|1997-11-13|2016-11-02|3|22.2|23.8|22.21|22.7366666666667|0.920887253323301
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS001|Water Temperature|Bottom|Field|1997-12-08|2017-12-06|136|11|32.2|26.65|25.5470588235294|4.45387789711843
-25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS003|Water Temperature|Bottom|Field|1997-12-08|2017-12-06|111|11.5|32.3|27.4|25.9252252252252|4.69551949819222
+25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS003|Water Temperature|Bottom|Field|1997-12-08|2017-12-06|110|11.5|32.3|27.4|25.9872727272727|4.67107258552566
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS004|Water Temperature|Bottom|Field|2008-03-27|2017-12-06|72|11.3|32.6|28.4|26.7625|4.64480438193891
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS005|Water Temperature|Bottom|Field|2008-03-27|2017-12-06|64|1.2|33.1|28.35|26.3078125|5.73314796731075
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS006|Water Temperature|Bottom|Field|2008-03-27|2017-12-04|61|12.2|31.9|28.1|25.9131147540984|4.758307661688
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS008|Water Temperature|Bottom|Field|2008-03-27|2017-12-06|63|11.2|32.5|27.9|26.4301587301587|4.57202697056346
-25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS009|Water Temperature|Bottom|Field|2008-03-27|2017-12-04|65|13.1|31.8|27.7|26.1030769230769|4.64320636894543
+25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS009|Water Temperature|Bottom|Field|2008-03-27|2017-12-04|59|13.1|31.8|26.1|25.735593220339|4.68823776582617
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS111|Water Temperature|Bottom|Field|1996-05-22|2017-10-17|23|14.1|31.5|28.3|26.7521739130435|4.81247144645295
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS113|Water Temperature|Bottom|Field|1995-01-03|2017-12-06|117|10.8|33|27.8|26.6683760683761|4.48208405906513
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_56SEAS115|Water Temperature|Bottom|Field|1995-01-03|2017-12-06|137|10.6|33.3|27.3|26.0467153284672|4.90354090390887
@@ -11154,9 +11104,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735147|Water Temperature|Bottom|Field|2020-02-10|2021-07-21|6|19|31.3|27.3|25.8666666666667|5.61165453914144
 25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735149|Water Temperature|Bottom|Field|2020-01-14|2021-03-17|6|20.9|26.8|23.2|23.15|2.16494803632789
 25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735151|Water Temperature|Bottom|Field|2020-01-14|2021-07-21|15|20.6|31.1|23.8|25.1333333333333|3.25305717016793
-28|Matlacha Pass Aquatic Preserve|5028|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|WIN_21FLCHAR_MP1A|Water Temperature|Bottom|Field|2007-11-27|2022-12-13|48|14|31.61|24.305|24.239375|5.27536119818128
-28|Matlacha Pass Aquatic Preserve|5028|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|WIN_21FLCHAR_MP2B|Water Temperature|Bottom|Field|2007-12-19|2022-12-13|46|14.23|30.73|25.275|24.3073913043478|5.11569933734821
-28|Matlacha Pass Aquatic Preserve|5028|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|WIN_21FLCHAR_MP3C|Water Temperature|Bottom|Field|2010-01-26|2022-12-13|29|14.73|30.6|27.8|25.3303448275862|4.78704761589513
 28|Matlacha Pass Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_MPV001|Water Temperature|Bottom|Field|2019-10-07|2019-11-04|2|25.9|27.6|26.75|26.75|1.20208152801713
 28|Matlacha Pass Aquatic Preserve|513|Coastal Charlotte Harbor Monitoring Network|WIN_CHNEPMP_211_218|Water Temperature|Bottom|Field|2021-08-24|2021-08-24|2|29.94|30.9|30.42|30.42|0.678822509939084
 28|Matlacha Pass Aquatic Preserve|513|Coastal Charlotte Harbor Monitoring Network|WIN_CHNEPMP_211_219|Water Temperature|Bottom|Field|2021-09-28|2021-09-28|1|28.83|28.83|28.83|28.83|
@@ -11277,10 +11224,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 28|Matlacha Pass Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|8161|Water Temperature|Bottom|Field|2016-12-05|2016-12-05|1|22.7|22.7|22.7|22.7|
 28|Matlacha Pass Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|8460|Water Temperature|Bottom|Field|2008-09-25|2018-08-14|24|14.3|32|28.65|26.9125|4.9816456596451
 28|Matlacha Pass Aquatic Preserve|95|Harmful Algal Bloom Marine Observation Network|8834|Water Temperature|Bottom|Field|2013-10-24|2018-08-22|11|23.21|33.49|28.3|28.2045454545455|3.38062823639738
-29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS030|Water Temperature|Bottom|Field|1995-01-05|2017-10-10|84|1.66|31.6|23|22.8029761904762|6.19884458331559
+29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS030|Water Temperature|Bottom|Field|1995-01-05|2017-10-10|82|1.66|31.6|23.05|22.9298780487805|6.21563987030217
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS032|Water Temperature|Bottom|Field|1998-10-07|2017-10-10|68|1.93|31.4|25.35|23.3389705882353|6.32711061822389
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS035|Water Temperature|Bottom|Field|1995-01-09|2017-10-10|268|1.68|31.6|25.65|23.4123507462687|6.20824654511286
-29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS043|Water Temperature|Bottom|Field|1996-03-22|2017-10-10|199|1.68|31.9|26.1|23.733567839196|6.42455295258562
+29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS043|Water Temperature|Bottom|Field|1996-03-22|2017-10-10|198|1.68|31.9|26.15|23.7620202020202|6.428256543767
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS045|Water Temperature|Bottom|Field|1995-05-02|2017-10-10|29|1.99|30.2|23.1|21.8893103448276|6.60309663882597
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS050|Water Temperature|Bottom|Field|1995-03-15|2017-10-10|37|2.62|31.5|22.9|22.0032432432432|6.86119120450267
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS058|Water Temperature|Bottom|Field|1995-01-05|2017-10-10|117|1.66|32|23.3|22.4994871794872|6.69781241257609
@@ -11288,7 +11235,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS061|Water Temperature|Bottom|Field|1995-05-02|2016-12-12|70|1.96|30.9|23.55|22.668|5.95359582004068
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS062|Water Temperature|Bottom|Field|1995-03-20|2017-10-10|101|1.67|31.4|23.3|22.8045544554455|6.31277411678138
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_82SEAS064|Water Temperature|Bottom|Field|1995-05-02|2017-08-08|71|1.98|31.2|23.3|22.736338028169|6.14946530531293
-29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLV11|Water Temperature|Bottom|Field|1997-05-28|2017-06-13|326|8.35|33.82|24.535|24.0010736196319|5.30953665202331
+29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_IRLV11|Water Temperature|Bottom|Field|1997-05-28|2017-06-13|309|8.35|33.82|24.51|23.9002912621359|5.34581681152875
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_MOSG15|Water Temperature|Bottom|Field|2008-08-12|2008-08-12|1|29.64|29.64|29.64|29.64|
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_ML1|Water Temperature|Bottom|Field|2013-04-03|2013-04-03|1|22.92|22.92|22.92|22.92|
 29|Mosquito Lagoon Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSJWM_44955|Water Temperature|Bottom|Field|2020-05-06|2022-11-08|24|12|32.1|26.15|25.0833333333333|5.15959778232396
@@ -11574,14 +11521,14 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS062|Water Temperature|Bottom|Field|1995-01-11|2014-02-03|47|16.2|33.1|27.4|26.3042553191489|4.52096360673198
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS070|Water Temperature|Bottom|Field|1997-03-04|2017-11-13|20|16|30.7|27.05|25.215|5.12961217370588
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS080|Water Temperature|Bottom|Field|1995-01-11|2017-11-20|76|15.5|34.5|24.6|25.0539473684211|4.6391792604432
-34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS090|Water Temperature|Bottom|Field|1995-01-11|2017-11-13|84|17|32|28.5|26.2595238095238|4.62145648161643
+34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS090|Water Temperature|Bottom|Field|1995-01-11|2017-11-13|83|17|32|28.5|26.2746987951807|4.64744470501996
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS091|Water Temperature|Bottom|Field|1995-01-11|2017-11-20|143|5|34.6|26.5|25.6272727272727|4.89694043339253
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS100|Water Temperature|Bottom|Field|2008-07-08|2017-11-20|18|15.1|33.5|25.75|24.8277777777778|5.70147613038584
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS120|Water Temperature|Bottom|Field|1995-01-11|2017-11-20|144|5.9|36.3|25.55|25.1152777777778|5.16963051315852
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS130|Water Temperature|Bottom|Field|1995-01-11|2016-09-22|71|15.4|34.6|26.2|25.7183098591549|4.67486622754842
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS300|Water Temperature|Bottom|Field|1996-06-24|2017-11-20|41|12.8|32.5|28|25.8170731707317|5.03889384880374
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS301|Water Temperature|Bottom|Field|1995-04-12|2017-12-04|76|11.7|32.6|26.8|25.7368421052632|4.96649687688115
-34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS302|Water Temperature|Bottom|Field|1999-05-04|2017-12-04|102|12.9|33.9|26.9|25.8754901960784|4.44389527361674
+34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS302|Water Temperature|Bottom|Field|1999-05-04|2017-12-04|99|12.9|33.9|26.5|25.8|4.48453123616764
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS310|Water Temperature|Bottom|Field|2008-06-03|2017-12-04|54|13.8|33.1|27.6|25.8555555555556|5.12609552641306
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS311|Water Temperature|Bottom|Field|1995-01-11|2017-12-04|144|12|34.2|26.7|25.4673611111111|4.92341103345548
 34|Pine Island Sound Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_62SEAS320|Water Temperature|Bottom|Field|2008-06-03|2017-12-04|44|14.2|32.6|29|26.8204545454545|4.80012497635046
@@ -11638,24 +11585,24 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_35645|Water Temperature|Bottom|Field|2008-12-22|2008-12-22|1|18.9|18.9|18.9|18.9|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_35648|Water Temperature|Bottom|Field|2008-12-22|2008-12-22|1|19.4|19.4|19.4|19.4|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_39475|Water Temperature|Bottom|Field|2010-12-09|2010-12-09|1|13.3|13.3|13.3|13.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_025|Water Temperature|Bottom|Field|1999-01-26|2017-06-19|220|10.83|32.97|24.795|24.4362272727273|5.18585825916832
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_028|Water Temperature|Bottom|Field|1999-01-26|2017-06-19|219|11.49|32.08|24.78|24.3098173515982|5.03082169620069
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_032|Water Temperature|Bottom|Field|1999-01-05|2017-06-13|219|9.2|31.93|24.4|23.9371689497717|5.23201473496791
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_033|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|221|11.46|32.27|24.78|24.0721719457014|5.20200789794674
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_025|Water Temperature|Bottom|Field|1999-01-26|2017-06-19|210|10.83|32.97|24.93|24.5191428571429|5.23940957159488
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_028|Water Temperature|Bottom|Field|1999-01-26|2017-06-19|217|11.49|32.08|24.78|24.2886635944701|5.03062634733415
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_032|Water Temperature|Bottom|Field|1999-04-06|2017-06-13|210|9.2|31.93|24.495|24.0009523809524|5.23920170401267
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_033|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|215|11.46|32.27|24.75|24.0067441860465|5.21846976932116
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_038|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|224|10.43|32.61|25.025|24.176875|5.39681346460565
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_046|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|230|9.2|32.11|24.26|23.5872608695652|5.5652321264801
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_064|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|135|10.5|31.98|26.83|25.4127407407407|4.90048557289923
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_065|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|230|9.89|31.83|24.415|23.7883043478261|5.29012742794643
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_064|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|134|10.5|31.98|26.96|25.4665671641791|4.87865214722781
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_065|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|216|9.89|31.83|24.415|23.8207407407407|5.20099493231443
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_066|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|224|10.48|31.86|24.53|23.8366964285714|5.27888184389279
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_067|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|221|9.92|32.37|24.71|24.0515384615385|5.41835671034673
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_068|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|221|10.8|32.3|24.75|24.1095022624434|5.29226590294695
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_082|Water Temperature|Bottom|Field|1999-01-26|2017-05-16|216|11.98|32.24|24.73|24.3144907407407|5.06068445778921
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_068|Water Temperature|Bottom|Field|1999-01-05|2017-06-05|219|10.8|32.3|24.75|24.1182191780822|5.31102678676377
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_082|Water Temperature|Bottom|Field|1999-01-26|2017-05-16|213|12.6|32.24|24.83|24.3784976525822|5.01966948061025
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_01-01|Water Temperature|Bottom|Field|2004-01-06|2011-01-26|28|15.98|32.15|24.245|24.5214285714286|5.12763227020159
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_01-06|Water Temperature|Bottom|Field|1999-02-24|2002-12-03|21|14.4|32.02|23.94|23.8271428571429|5.64087151321242
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_05-01|Water Temperature|Bottom|Field|1999-01-27|2002-11-13|26|16.02|30.48|26.63|24.8880769230769|4.40316705949776
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_07-01|Water Temperature|Bottom|Field|1999-01-27|2002-12-03|40|11.91|32.03|25.615|23.95225|5.6830068276014
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_07-01|Water Temperature|Bottom|Field|1999-01-27|2002-05-15|39|11.91|32.03|25.72|24.18|5.56929741387642
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_07-04|Water Temperature|Bottom|Field|1999-01-27|2002-12-03|42|9.2|32.17|24.555|23.1304761904762|6.08093941410008
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_08-01|Water Temperature|Bottom|Field|1999-01-27|2002-11-13|27|16.25|32.13|27.08|26.3|4.07195946027878
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_08-01|Water Temperature|Bottom|Field|1999-01-27|2002-11-13|25|16.25|32.13|27.16|26.7892|3.80528351987952
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_AMB 01-1|Water Temperature|Bottom|Field|1999-01-27|2001-11-28|36|12.09|32.06|24.585|24.2455555555556|5.59178195183122
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E1-A-04-02|Water Temperature|Bottom|Field|2004-03-02|2004-03-02|1|18.41|18.41|18.41|18.41|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E1-A-04-07|Water Temperature|Bottom|Field|2004-09-16|2004-09-16|1|27.3|27.3|27.3|27.3|
@@ -11849,8 +11796,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-B-06-05|Water Temperature|Bottom|Field|2006-06-28|2006-06-28|1|30.18|30.18|30.18|30.18|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-B-06-06|Water Temperature|Bottom|Field|2006-07-31|2006-07-31|1|31.38|31.38|31.38|31.38|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-B-06-07|Water Temperature|Bottom|Field|2006-09-07|2006-09-07|1|29.69|29.69|29.69|29.69|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-B-06-09|Water Temperature|Bottom|Field|2006-12-06|2006-12-06|1|19.02|19.02|19.02|19.02|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-B1-04-08|Water Temperature|Bottom|Field|2004-11-03|2004-11-03|1|26.26|26.26|26.26|26.26|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-C-04-01|Water Temperature|Bottom|Field|2004-01-21|2004-01-21|1|15.43|15.43|15.43|15.43|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-C-04-02|Water Temperature|Bottom|Field|2004-03-04|2004-03-04|1|21.93|21.93|21.93|21.93|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-C-04-04|Water Temperature|Bottom|Field|2004-05-18|2004-05-18|1|27.06|27.06|27.06|27.06|
@@ -11869,7 +11814,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-C-06-07|Water Temperature|Bottom|Field|2006-09-07|2006-09-07|1|29.23|29.23|29.23|29.23|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-C-06-08|Water Temperature|Bottom|Field|2006-10-25|2006-10-25|1|21.77|21.77|21.77|21.77|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-C-11-01|Water Temperature|Bottom|Field|2011-01-27|2011-01-27|1|15.48|15.48|15.48|15.48|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-C1-06-09|Water Temperature|Bottom|Field|2006-12-06|2006-12-06|1|19.32|19.32|19.32|19.32|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-D-04-01|Water Temperature|Bottom|Field|2004-01-21|2004-01-21|1|15.41|15.41|15.41|15.41|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-D-04-02|Water Temperature|Bottom|Field|2004-03-04|2004-03-04|1|22.2|22.2|22.2|22.2|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E4-D-04-03|Water Temperature|Bottom|Field|2004-04-01|2004-04-01|1|22.12|22.12|22.12|22.12|
@@ -11898,7 +11842,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E5-A-05-07|Water Temperature|Bottom|Field|2005-09-14|2005-09-14|1|31.59|31.59|31.59|31.59|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E5-A-06-01|Water Temperature|Bottom|Field|2006-01-23|2006-01-23|1|17.92|17.92|17.92|17.92|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E5-A-06-02|Water Temperature|Bottom|Field|2006-02-15|2006-02-15|1|13.65|13.65|13.65|13.65|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E5-A-06-04|Water Temperature|Bottom|Field|2006-05-04|2006-05-04|1|25|25|25|25|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E5-A-06-05|Water Temperature|Bottom|Field|2006-06-19|2006-06-19|1|28.98|28.98|28.98|28.98|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E5-A-06-06|Water Temperature|Bottom|Field|2006-08-02|2006-08-02|1|30.76|30.76|30.76|30.76|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E5-A-06-07|Water Temperature|Bottom|Field|2006-09-19|2006-09-19|1|30.03|30.03|30.03|30.03|
@@ -12154,9 +12097,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-C-06-09|Water Temperature|Bottom|Field|2006-11-28|2006-11-28|1|17.06|17.06|17.06|17.06|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-C-11-01|Water Temperature|Bottom|Field|2011-02-10|2011-02-10|1|16.98|16.98|16.98|16.98|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-C2-04-08|Water Temperature|Bottom|Field|2004-10-25|2004-10-25|1|25.02|25.02|25.02|25.02|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-D-04-01|Water Temperature|Bottom|Field|2004-01-12|2004-01-12|1|14.3|14.3|14.3|14.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-D-04-02|Water Temperature|Bottom|Field|2004-03-03|2004-03-03|1|18.76|18.76|18.76|18.76|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-D-04-03|Water Temperature|Bottom|Field|2004-04-20|2004-04-20|1|22.02|22.02|22.02|22.02|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-D-04-04|Water Temperature|Bottom|Field|2004-05-04|2004-05-04|1|24.68|24.68|24.68|24.68|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-D-04-05|Water Temperature|Bottom|Field|2004-06-22|2004-06-22|1|30.82|30.82|30.82|30.82|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT-D-04-06|Water Temperature|Bottom|Field|2004-07-26|2004-07-26|1|27.95|27.95|27.95|27.95|
@@ -12239,7 +12179,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_RB-D-06-06|Water Temperature|Bottom|Field|2006-08-02|2006-08-02|1|31.38|31.38|31.38|31.38|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_RB-D-06-07|Water Temperature|Bottom|Field|2006-09-19|2006-09-19|1|29.61|29.61|29.61|29.61|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_RB 62-01|Water Temperature|Bottom|Field|1999-08-18|2002-11-20|17|15.26|31.24|28.8|25.8647058823529|5.05875369736344
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_RB 62-02|Water Temperature|Bottom|Field|1999-01-06|2001-10-10|19|9.68|31.17|24.77|24.1542105263158|6.14210452151511
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_RB 62-02|Water Temperature|Bottom|Field|1999-03-03|2001-10-10|16|19.38|31.17|26.28|26.04|4.14850816559399
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA-A-04-01|Water Temperature|Bottom|Field|2004-01-12|2004-01-12|1|12.18|12.18|12.18|12.18|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA-A-04-02|Water Temperature|Bottom|Field|2004-03-02|2004-03-02|1|19.33|19.33|19.33|19.33|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA-A-04-04|Water Temperature|Bottom|Field|2004-05-24|2004-05-24|1|28.6|28.6|28.6|28.6|
@@ -12271,7 +12211,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA-B-11-01|Water Temperature|Bottom|Field|2011-02-10|2011-02-10|1|18.29|18.29|18.29|18.29|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA 26-08|Water Temperature|Bottom|Field|1999-01-13|2002-08-21|45|10.82|31.77|26.17|24.2133333333333|5.32771313724071
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA 26-10|Water Temperature|Bottom|Field|1999-01-13|2002-12-11|44|11.01|30.52|26.28|23.7618181818182|5.62981526101435
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA 26-7B|Water Temperature|Bottom|Field|1999-01-13|2002-08-21|41|10.93|31.76|26.49|24.3075609756098|5.22084178101952
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA 26-7B|Water Temperature|Bottom|Field|1999-02-10|2002-08-21|39|10.93|31.76|26.49|24.4974358974359|5.06331372560901
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SA 26-9B|Water Temperature|Bottom|Field|1999-01-13|2002-08-21|40|10.88|31.47|26.11|24.21725|5.26347695724862
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SB-A-04-01|Water Temperature|Bottom|Field|2004-01-12|2004-01-12|1|12.72|12.72|12.72|12.72|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_SB-A-04-02|Water Temperature|Bottom|Field|2004-03-02|2004-03-02|1|18.12|18.12|18.12|18.12|
@@ -12354,7 +12294,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-B-11-01|Water Temperature|Bottom|Field|2011-02-15|2011-02-15|1|14.95|14.95|14.95|14.95|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-B1-06-01|Water Temperature|Bottom|Field|2006-01-23|2006-01-23|1|18.73|18.73|18.73|18.73|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-B1-06-06|Water Temperature|Bottom|Field|2006-07-31|2006-07-31|1|30.83|30.83|30.83|30.83|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-B2-04-07|Water Temperature|Bottom|Field|2004-09-20|2004-09-20|1|27.48|27.48|27.48|27.48|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-C-04-02|Water Temperature|Bottom|Field|2004-02-25|2004-02-25|1|19.42|19.42|19.42|19.42|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-C-04-03|Water Temperature|Bottom|Field|2004-03-23|2004-03-23|1|18.39|18.39|18.39|18.39|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-C-04-04|Water Temperature|Bottom|Field|2004-05-11|2004-05-11|1|25.6|25.6|25.6|25.6|
@@ -12562,7 +12501,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W3-D1-06-09|Water Temperature|Bottom|Field|2006-12-05|2006-12-05|1|19.25|19.25|19.25|19.25|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W3 55-01|Water Temperature|Bottom|Field|1999-01-13|2002-01-30|36|10.23|31.27|24.36|24.2188888888889|5.32860838320732
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W3 55-02|Water Temperature|Bottom|Field|1999-02-03|2002-11-12|23|13.32|31.31|24.14|24.4069565217391|4.7124269319463
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W3 55-03|Water Temperature|Bottom|Field|1999-02-03|2002-11-12|24|13.65|31.42|25.06|25.0158333333333|4.58740043528175
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W3 55-03|Water Temperature|Bottom|Field|1999-03-31|2002-11-12|21|18.19|31.42|28.07|25.9680952380952|3.84785475173845
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W3 56-02|Water Temperature|Bottom|Field|1999-02-03|2002-11-12|23|13.73|31.68|25.9|25.244347826087|4.62002540930336
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4-A-04-01|Water Temperature|Bottom|Field|2004-01-22|2004-01-22|1|15.23|15.23|15.23|15.23|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4-A-04-02|Water Temperature|Bottom|Field|2004-02-24|2004-02-24|1|19.71|19.71|19.71|19.71|
@@ -12657,7 +12596,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 01-30|Water Temperature|Bottom|Field|2002-02-13|2002-11-20|7|16.86|31.15|26.8|24.5942857142857|6.03005488405884
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 56-01|Water Temperature|Bottom|Field|1999-01-20|2002-11-20|43|14.64|31.15|26.65|24.8802325581395|4.75824972241049
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 57-01|Water Temperature|Bottom|Field|1999-01-20|2002-06-05|36|14.74|30.8|25.975|24.7816666666667|4.59238220161544
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 99-70|Water Temperature|Bottom|Field|2000-01-18|2000-11-20|12|14.49|30.1|25.03|24.3616666666667|5.32651998508549
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 99-70|Water Temperature|Bottom|Field|2000-02-09|2000-11-20|11|14.49|30.1|26.88|25.0481818181818|4.99877948739854
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W5-A-05-07|Water Temperature|Bottom|Field|2005-09-19|2005-09-19|1|29.6|29.6|29.6|29.6|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W5-A-05-08|Water Temperature|Bottom|Field|2005-10-13|2005-10-13|1|27.79|27.79|27.79|27.79|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W5-A-06-07|Water Temperature|Bottom|Field|2006-09-07|2006-09-07|1|30.67|30.67|30.67|30.67|
@@ -12672,9 +12611,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W5-D-06-07|Water Temperature|Bottom|Field|2006-09-07|2006-09-07|1|30.49|30.49|30.49|30.49|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W5-D2-04-03|Water Temperature|Bottom|Field|2004-04-20|2004-04-20|1|22.72|22.72|22.72|22.72|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-02|Water Temperature|Bottom|Field|2004-02-26|2004-02-26|1|19.67|19.67|19.67|19.67|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-04|Water Temperature|Bottom|Field|2004-05-04|2004-05-04|1|25.03|25.03|25.03|25.03|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-05|Water Temperature|Bottom|Field|2004-06-23|2004-06-23|1|30.93|30.93|30.93|30.93|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-06|Water Temperature|Bottom|Field|2004-07-26|2004-07-26|1|30.46|30.46|30.46|30.46|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-07|Water Temperature|Bottom|Field|2004-09-13|2004-09-13|1|29.03|29.03|29.03|29.03|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-08|Water Temperature|Bottom|Field|2004-10-26|2004-10-26|1|25.76|25.76|25.76|25.76|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W6-A-04-09|Water Temperature|Bottom|Field|2004-12-06|2004-12-06|1|19.58|19.58|19.58|19.58|
@@ -12892,9 +12829,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-A-05-07|Water Temperature|Bottom|Field|2005-09-06|2005-09-06|1|29.09|29.09|29.09|29.09|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-A-05-09|Water Temperature|Bottom|Field|2005-12-12|2005-12-12|1|17.62|17.62|17.62|17.62|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-A-06-03|Water Temperature|Bottom|Field|2006-04-17|2006-04-17|1|24.35|24.35|24.35|24.35|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-A-06-04|Water Temperature|Bottom|Field|2006-05-17|2006-05-17|1|25.16|25.16|25.16|25.16|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-A-06-05|Water Temperature|Bottom|Field|2006-07-06|2006-07-06|1|30.61|30.61|30.61|30.61|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-A-06-06|Water Temperature|Bottom|Field|2006-07-27|2006-07-27|1|31.31|31.31|31.31|31.31|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-A1-05-01|Water Temperature|Bottom|Field|2005-01-04|2005-01-04|1|17|17|17|17|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-B-04-02|Water Temperature|Bottom|Field|2004-02-18|2004-02-18|1|16.9|16.9|16.9|16.9|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8-B-04-07|Water Temperature|Bottom|Field|2004-08-31|2004-08-31|1|31.57|31.57|31.57|31.57|
@@ -12957,11 +12891,11 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 00-84|Water Temperature|Bottom|Field|2001-02-06|2001-11-28|11|15.45|30.47|22.68|24.2709090909091|4.90966079183777
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 00-90|Water Temperature|Bottom|Field|2001-01-10|2001-11-14|12|10.72|30.75|22.765|23.2108333333333|6.40185265561794
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 00-99|Water Temperature|Bottom|Field|2001-02-06|2001-11-28|11|15.07|30.93|22.74|24.21|5.20261857145034
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 01-72|Water Temperature|Bottom|Field|2002-01-23|2002-12-04|5|16.49|31.07|23.32|23.762|6.39318152409268
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 01-72|Water Temperature|Bottom|Field|2002-01-23|2002-03-20|2|18.63|23.32|20.975|20.975|3.31633080376491
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 01-78|Water Temperature|Bottom|Field|2002-06-26|2002-09-18|2|28.62|28.88|28.75|28.75|0.183847763108501
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 01-90|Water Temperature|Bottom|Field|2002-01-23|2002-12-04|11|16.72|31.28|27.39|25.6163636363636|4.79288696450745
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 60-01|Water Temperature|Bottom|Field|1999-01-07|2002-08-05|37|14.51|31.36|25.64|24.7751351351351|5.08247513062813
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 60-02|Water Temperature|Bottom|Field|1999-01-07|2002-12-04|46|14.19|31.17|25.415|24.415|5.06595203293517
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 60-01|Water Temperature|Bottom|Field|1999-01-07|2002-08-05|33|14.51|31.36|25.64|24.7445454545455|5.24549752818375
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 60-02|Water Temperature|Bottom|Field|1999-01-07|2002-12-04|45|14.19|31.17|24.74|24.3471111111111|5.10199097600064
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 60-03|Water Temperature|Bottom|Field|1999-01-27|2001-10-31|17|14.44|30.83|22.74|24.0876470588235|5.42496719968398
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 60-04|Water Temperature|Bottom|Field|1999-01-07|2002-12-04|42|14.19|31.19|25.87|24.6195238095238|5.22050271029522
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 60-05|Water Temperature|Bottom|Field|2001-01-11|2002-11-13|15|10.91|30.07|23.91|22.8533333333333|6.03130602613998
@@ -12978,7 +12912,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS005|Water Temperature|Bottom|Field|2007-03-12|2017-08-09|18|13.6|31.2|22.5|23.5611111111111|5.77073131147873
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS626|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|22|16.9|32.4|24.7|24.5454545454546|4.73213203461966
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS627|Water Temperature|Bottom|Field|1995-01-18|2016-09-26|109|10.8|32.2|24.9|24.0899082568807|5.18350205073981
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS640|Water Temperature|Bottom|Field|2008-03-13|2017-08-09|29|10.9|34.8|21.2|23.2275862068966|5.27032775829008
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS640|Water Temperature|Bottom|Field|2008-03-13|2017-08-09|29|10.9|34.8|22.7|23.6379310344828|5.49281438355755
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS648|Water Temperature|Bottom|Field|1995-01-18|2017-08-09|131|10.4|32|24.3|23.9129770992366|5.09888972751105
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS652|Water Temperature|Bottom|Field|1997-03-19|2016-12-12|37|10.9|30.4|22.3|22.5243243243243|5.30541680242443
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS660|Water Temperature|Bottom|Field|1995-01-18|2017-08-09|139|10|32.7|24.6|24.0834532374101|5.16265291203938
@@ -12988,14 +12922,14 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS686|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|52|10.4|33.6|22.6|23.5115384615385|5.84088543670959
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS696|Water Temperature|Bottom|Field|1995-07-26|2017-08-09|54|10.1|33.6|24.2|23.6814814814815|5.70365900678576
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS701|Water Temperature|Bottom|Field|2006-06-26|2016-06-15|30|10|31.5|23.95|23.4366666666667|6.13747579998506
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS705|Water Temperature|Bottom|Field|1995-01-18|2017-08-09|146|10.3|32.3|24|23.7897260273973|5.07283134506321
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS705|Water Temperature|Bottom|Field|1995-01-18|2017-08-09|145|10.3|32.3|23.9|23.7875862068966|5.09034874867545
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS720|Water Temperature|Bottom|Field|2006-09-21|2017-08-09|19|10.2|31.5|25.6|23.6105263157895|6.63340826899399
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS721|Water Temperature|Bottom|Field|2006-12-19|2017-08-09|18|9.4|31.5|24.5|23.55|6.47994644131824
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS721|Water Temperature|Bottom|Field|2009-08-18|2017-08-09|17|9.4|31.5|23.9|23.2176470588235|6.51932083254437
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS731|Water Temperature|Bottom|Field|2006-12-19|2017-08-09|43|9.3|31.4|23|23.1651162790698|5.35051771953982
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS732|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|43|9.5|33.4|24.5|24.2906976744186|5.90527665387524
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS733|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|23|10.6|32.5|21.1|23.1695652173913|5.92294726870214
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS743|Water Temperature|Bottom|Field|2006-06-26|2017-08-09|43|9.6|32|23.8|23.8023255813954|5.27692588955481
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS872|Water Temperature|Bottom|Field|1995-08-29|2017-08-09|54|10.6|31.5|22.75|23.4333333333333|5.52995274468874
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS872|Water Temperature|Bottom|Field|1995-08-29|2017-08-09|55|10.6|33|22.9|23.6072727272727|5.62832961686629
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS875|Water Temperature|Bottom|Field|1995-01-18|2017-08-09|158|11.3|33.1|25.7|24.4411392405063|4.85320997912801
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS906|Water Temperature|Bottom|Field|1995-01-18|2017-01-26|116|11.2|33.1|26.1|25.1818965517241|4.52045782863968
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_42SEAS908|Water Temperature|Bottom|Field|1995-08-29|2017-08-09|36|10.6|32.6|23.25|23.6277777777778|6.02184647102821
@@ -15052,16 +14986,15 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCOLL_ROOKERY2|Water Temperature|Bottom|Field|1989-04-11|1991-08-15|4|26.01|31.11|28.945|28.7525|2.23153721307383
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLCOLL_ROOKERY6|Water Temperature|Bottom|Field|1989-04-11|1989-04-11|1|25.78|25.78|25.78|25.78|
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLFTM_EVRGWC0029FTM|Water Temperature|Bottom|Field|2015-04-21|2015-04-21|1|30.2|30.2|30.2|30.2|
-38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLFTM_EVRGWC0089FTM|Water Temperature|Bottom|Field|2015-03-17|2015-03-17|1|26.18|26.18|26.18|26.18|
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLFTM_G1SD0035|Water Temperature|Bottom|Field|2015-10-19|2015-10-19|1|25.6|25.6|25.6|25.6|
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLFTM_G1SD0036|Water Temperature|Bottom|Field|2015-12-16|2015-12-16|1|25.7|25.7|25.7|25.7|
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLFTM_G1SD0037|Water Temperature|Bottom|Field|2015-06-17|2017-02-27|8|19.4|35|25.9|26.1|4.94108143165904
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_13728|Water Temperature|Bottom|Field|2002-07-17|2002-07-17|1|32.98|32.98|32.98|32.98|
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS020|Water Temperature|Bottom|Field|1995-06-21|2017-10-31|31|4.4|32.8|25.2|24.9290322580645|6.1979670617812
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS021|Water Temperature|Bottom|Field|1995-05-15|2017-11-15|43|15.6|32.4|27.3|26.0604651162791|4.29973086283337
-38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS030|Water Temperature|Bottom|Field|1995-04-13|2017-11-15|55|15.1|32.6|27|26.3|4.63601041765359
+38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS030|Water Temperature|Bottom|Field|1995-04-13|2017-11-15|54|15.1|32.6|27.3|26.3981481481482|4.6215039102799
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOMI_EAST_RIVER_MARKER_3|Water Temperature|Bottom|Field|2023-01-16|2023-03-27|3|16.3|26.2|25.6|22.7|5.55067563455117
-38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0067|Water Temperature|Bottom|Field|2021-01-25|2022-12-19|8|20.9|30.6|25.9|25.7375|4.24295634804656
+38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0067|Water Temperature|Bottom|Field|2022-01-11|2022-01-11|1|21.9|21.9|21.9|21.9|
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSFWM_16690|Water Temperature|Bottom|Field|2021-11-16|2022-09-20|3|21.4|30.5|22.4|24.7666666666667|4.99032397077919
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSFWM_16692|Water Temperature|Bottom|Field|2021-11-16|2023-01-17|5|16.4|30.3|21|22.08|5.07217901892274
 38|Rookery Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSFWM_16694|Water Temperature|Bottom|Field|2022-03-15|2023-03-14|4|16.3|30.7|23.9|23.7|6.02660766932775
@@ -15562,10 +15495,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLCOLL_ROOKERY6|Water Temperature|Bottom|Field|1989-04-11|1989-04-11|1|25.78|25.78|25.78|25.78|
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLFTM_EVRGWC0029FTM|Water Temperature|Bottom|Field|2015-04-21|2015-04-21|1|30.2|30.2|30.2|30.2|
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLFTM_EVRGWC0089FTM|Water Temperature|Bottom|Field|2015-03-17|2015-03-17|1|26.18|26.18|26.18|26.18|
-39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLFTM_G1SD0035|Water Temperature|Bottom|Field|2015-10-19|2015-10-19|1|25.6|25.6|25.6|25.6|
-39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLFTM_G1SD0036|Water Temperature|Bottom|Field|2015-12-16|2015-12-16|1|25.7|25.7|25.7|25.7|
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLFTM_G1SD0037|Water Temperature|Bottom|Field|2015-06-17|2017-02-27|8|19.4|35|25.9|26.1|4.94108143165904
-39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLFTM_G1SD0054|Water Temperature|Bottom|Field|2017-02-27|2017-02-27|1|23.9|23.9|23.9|23.9|
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLGW_13728|Water Temperature|Bottom|Field|2002-07-17|2002-07-17|1|32.98|32.98|32.98|32.98|
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLGW_15159|Water Temperature|Bottom|Field|2002-10-15|2002-10-15|1|28.56|28.56|28.56|28.56|
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLGW_15163|Water Temperature|Bottom|Field|2002-10-21|2002-10-21|1|29.67|29.67|29.67|29.67|
@@ -15595,10 +15525,9 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS401|Water Temperature|Bottom|Field|1995-04-13|2017-11-15|57|16.3|32.2|27.5|26.621052631579|4.12482626656242
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLSEAS_66SEAS771|Water Temperature|Bottom|Field|1995-01-23|2017-11-15|82|15.7|32.7|28.1|26.9268292682927|4.37995007526899
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLCOMI_EAST_RIVER_MARKER_3|Water Temperature|Bottom|Field|2023-01-16|2023-03-27|3|16.3|26.2|25.6|22.7|5.55067563455117
-39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0067|Water Temperature|Bottom|Field|2021-01-25|2022-12-19|8|20.9|30.6|25.9|25.7375|4.24295634804656
+39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0067|Water Temperature|Bottom|Field|2022-01-11|2022-01-11|1|21.9|21.9|21.9|21.9|
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0110|Water Temperature|Bottom|Field|2021-01-25|2022-12-12|8|20.6|31|26|26.175|4.04889755718411
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0111|Water Temperature|Bottom|Field|2021-01-25|2023-02-14|9|19.8|30.5|23.8|25.0888888888889|4.06184823831604
-39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0112|Water Temperature|Bottom|Field|2021-01-25|2023-02-14|9|20.6|29.3|25.7|25.2944444444444|3.0488157992535
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSFWM_16690|Water Temperature|Bottom|Field|2021-11-16|2022-09-20|3|21.4|30.5|22.4|24.7666666666667|4.99032397077919
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSFWM_16692|Water Temperature|Bottom|Field|2021-11-16|2023-01-17|5|16.4|30.3|21|22.08|5.07217901892274
 39|Rookery Bay National Estuarine Research Reserve|5002|Florida STORET / WIN|WIN_21FLSFWM_16694|Water Temperature|Bottom|Field|2022-03-15|2023-03-14|4|16.3|30.7|23.9|23.7|6.02660766932775
@@ -18771,8 +18700,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 43|St. Martins Marsh Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|21058|Water Temperature|Bottom|Field|2015-04-27|2015-10-21|3|22|30.07|25.04|25.7033333333333|4.07568808096662
 43|St. Martins Marsh Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_868488|Water Temperature|Bottom|Field|2017-08-30|2021-02-02|8|14.9|29.8|21.2|22.1375|5.56364153615751
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_7656|Water Temperature|Bottom|Field|2000-07-31|2000-07-31|1|30.07|30.07|30.07|30.07|
-44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_022|Water Temperature|Bottom|Field|2003-11-24|2017-06-19|162|10.03|30.99|24.355|24.0069135802469|5.10161553805021
-44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_024|Water Temperature|Bottom|Field|1999-01-26|2017-06-19|221|10.12|31.3|24.51|24.0819909502262|5.16657884166984
+44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_022|Water Temperature|Bottom|Field|2004-01-28|2017-02-20|146|10.03|30.99|24.82|24.1624657534247|5.06506650555702
+44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_024|Water Temperature|Bottom|Field|1999-01-26|2017-06-19|209|10.12|31.3|24.46|23.9786602870813|5.20751529083042
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_090|Water Temperature|Bottom|Field|1999-01-26|2017-06-19|221|11.65|32.01|24.4|24.0448416289593|5.08724872931288
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_092|Water Temperature|Bottom|Field|1999-01-26|2017-06-19|219|11.57|32.13|24.58|24.0947488584475|5.15469985119451
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMANA_361|Water Temperature|Bottom|Field|2017-04-11|2017-04-11|1|22.44|22.44|22.44|22.44|
@@ -18794,7 +18723,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_48SEAS210|Water Temperature|Bottom|Field|2008-10-30|2008-10-30|1|16.9|16.9|16.9|16.9|
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_48SEAS250|Water Temperature|Bottom|Field|2014-10-08|2014-10-08|1|26.5|26.5|26.5|26.5|
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_48SEAS260|Water Temperature|Bottom|Field|2008-10-30|2011-09-13|6|13.7|30.1|25.5|23.7166666666667|7.05221005548379
-44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_48SEAS290|Water Temperature|Bottom|Field|1996-08-12|2017-08-16|11|2.2|32.9|29.9|27.3|8.82099767600015
+44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_48SEAS290|Water Temperature|Bottom|Field|2008-07-10|2017-08-16|10|2.2|32.9|30.35|27.09|9.26911838070674
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_48SEAS310|Water Temperature|Bottom|Field|1995-07-25|2017-07-25|16|17.2|32.1|30.6|29.7875|3.48403501704561
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_48SEAS320|Water Temperature|Bottom|Field|1995-08-28|2016-09-07|11|14.8|31.6|29.4|25.4636363636364|6.38721734830947
 44|Terra Ceia Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSEAS_48SEAS330|Water Temperature|Bottom|Field|1999-03-10|2017-12-05|77|1.2|33.5|29.1|26.5597402597403|5.79176501913799

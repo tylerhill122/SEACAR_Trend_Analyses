@@ -9,6 +9,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 5|Big Bend Seagrasses Aquatic Preserve|1999|6|Total Nitrogen|Bottom|Lab|2|0.313|0.404|0.3585|0.3585|0.0643467170879759|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1999|8|Total Nitrogen|Bottom|Lab|1|0.392|0.392|0.392|0.392||Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1999|9|Total Nitrogen|Bottom|Lab|1|0.302|0.302|0.302|0.302||Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|1999|10|Total Nitrogen|Bottom|Lab|1|0.66|0.66|0.66|0.66||Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1999|11|Total Nitrogen|Bottom|Lab|2|0.115|0.253|0.184|0.184|0.0975807358037436|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|1999|12|Total Nitrogen|Bottom|Lab|3|0.154|0.233|0.211|0.199333333333333|0.0407717222267264|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2000|1|Total Nitrogen|Bottom|Lab|2|0.221|0.24|0.2305|0.2305|0.0134350288425444|Florida STORET / WIN|5002
@@ -43,10 +44,10 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 5|Big Bend Seagrasses Aquatic Preserve|2002|12|Total Nitrogen|Bottom|Lab|1|1.104|1.104|1.104|1.104||Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2003|2|Total Nitrogen|Bottom|Lab|2|0.442|1.106|0.774|0.774|0.469518902707868|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2003|5|Total Nitrogen|Bottom|Lab|1|1.704|1.704|1.704|1.704||Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2005|10|Total Nitrogen|Bottom|Lab|1|0.236|0.236|0.236|0.236||Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2006|6|Total Nitrogen|Bottom|Lab|1|0.51|0.51|0.51|0.51||Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2007|7|Total Nitrogen|Bottom|Lab|1|0.44|0.44|0.44|0.44||Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2008|6|Total Nitrogen|Bottom|Lab|1|0.763|0.763|0.763|0.763||Florida STORET / WIN|5002
+5|Big Bend Seagrasses Aquatic Preserve|2012|10|Total Nitrogen|Bottom|Lab|1|1.205|1.205|1.205|1.205||Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2016|10|Total Nitrogen|Bottom|Lab|1|0.482|0.482|0.482|0.482||Florida STORET / WIN|5002
-5|Big Bend Seagrasses Aquatic Preserve|2016|12|Total Nitrogen|Bottom|Lab|1|0.401|0.401|0.401|0.401||Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2017|8|Total Nitrogen|Bottom|Lab|1|1.004|1.004|1.004|1.004||Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2017|10|Total Nitrogen|Bottom|Lab|3|0.35|0.61|0.544|0.501333333333333|0.135149300158504|Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2017|11|Total Nitrogen|Bottom|Lab|1|0.724|0.724|0.724|0.724||Florida STORET / WIN|5002
@@ -74,7 +75,6 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 5|Big Bend Seagrasses Aquatic Preserve|2021|7|Total Nitrogen|Bottom|Lab|1|0.491|0.491|0.491|0.491||Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2021|10|Total Nitrogen|Bottom|Lab|1|0.5|0.5|0.5|0.5||Florida STORET / WIN|5002
 5|Big Bend Seagrasses Aquatic Preserve|2022|1|Total Nitrogen|Bottom|Lab|1|0.395|0.395|0.395|0.395||Florida STORET / WIN|5002
-9|Cape Haze Aquatic Preserve|2008|8|Total Nitrogen|Bottom|Lab|1|0.9|0.9|0.9|0.9||Southwest Florida Water Management District - Water Quality Monitoring|479
 9|Cape Haze Aquatic Preserve|2010|6|Total Nitrogen|Bottom|Lab|1|0.479|0.479|0.479|0.479||Southwest Florida Water Management District - Water Quality Monitoring|479
 9|Cape Haze Aquatic Preserve|2010|9|Total Nitrogen|Bottom|Lab|1|0.582|0.582|0.582|0.582||Southwest Florida Water Management District - Water Quality Monitoring|479
 9|Cape Haze Aquatic Preserve|2010|10|Total Nitrogen|Bottom|Lab|4|0.296|0.737|0.5465|0.5315|0.204738044013971|Southwest Florida Water Management District - Water Quality Monitoring|479
@@ -135,59 +135,6 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 9|Cape Haze Aquatic Preserve|2022|8|Total Nitrogen|Bottom|Lab|2|0.774|0.844|0.809|0.809|0.0494974746830583|Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
 9|Cape Haze Aquatic Preserve|2022|9|Total Nitrogen|Bottom|Lab|1|0.924|0.924|0.924|0.924||Charlotte Harbor Aquatic Preserves Monthly Water Quality Program|5028
 9|Cape Haze Aquatic Preserve|2023|4|Total Nitrogen|Bottom|Lab|1|0.944|0.944|0.944|0.944||Florida STORET / WIN|5002
-14|Estero Bay Aquatic Preserve|1995|8|Total Nitrogen|Bottom|Lab|1|0.15|0.15|0.15|0.15||Florida STORET / WIN|5002
-14|Estero Bay Aquatic Preserve|2001|3|Total Nitrogen|Bottom|Lab|1|0.05|0.05|0.05|0.05||Florida STORET / WIN|5002
-14|Estero Bay Aquatic Preserve|2005|11|Total Nitrogen|Bottom|Lab|1|0.65|0.65|0.65|0.65||Florida STORET / WIN|5002
-14|Estero Bay Aquatic Preserve|2013|4|Total Nitrogen|Bottom|Lab|1|0.81|0.81|0.81|0.81||Florida STORET / WIN|5002
-14|Estero Bay Aquatic Preserve|2014|6|Total Nitrogen|Bottom|Lab|1|0.074|0.074|0.074|0.074||Florida STORET / WIN|5002
-14|Estero Bay Aquatic Preserve|2017|11|Total Nitrogen|Bottom|Lab|3|0.468|0.594|0.47|0.510666666666667|0.0721757115194116|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2017|12|Total Nitrogen|Bottom|Lab|3|0.594|0.754|0.724|0.690666666666667|0.0850490054811538|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2018|1|Total Nitrogen|Bottom|Lab|1|0.904|0.904|0.904|0.904||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2018|2|Total Nitrogen|Bottom|Lab|3|0.364|1.09|0.485|0.646333333333333|0.388960580693383|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2018|3|Total Nitrogen|Bottom|Lab|3|0.504|0.634|0.614|0.584|0.07|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2018|4|Total Nitrogen|Bottom|Lab|3|0.524|0.564|0.534|0.540666666666667|0.0208166599946613|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2018|5|Total Nitrogen|Bottom|Lab|4|0.544|0.734|0.634|0.6365|0.0963932916061417|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2018|7|Total Nitrogen|Bottom|Lab|1|0.815|0.815|0.815|0.815||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2018|8|Total Nitrogen|Bottom|Lab|2|0.634|0.754|0.694|0.694|0.0848528137423857|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|2|Total Nitrogen|Bottom|Lab|3|0.364|0.571|0.404|0.446333333333333|0.109801335753867|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|3|Total Nitrogen|Bottom|Lab|4|0.218|0.652|0.4945|0.46475|0.182189233124976|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|4|Total Nitrogen|Bottom|Lab|4|0.494|0.855|0.519|0.59675|0.172617834150086|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|5|Total Nitrogen|Bottom|Lab|4|0.484|0.824|0.494|0.574|0.166733320005331|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|6|Total Nitrogen|Bottom|Lab|2|0.494|0.534|0.514|0.514|0.0282842712474619|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|7|Total Nitrogen|Bottom|Lab|3|0.588|0.654|0.594|0.612|0.0364965751817894|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|10|Total Nitrogen|Bottom|Lab|1|0.554|0.554|0.554|0.554||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|11|Total Nitrogen|Bottom|Lab|1|0.534|0.534|0.534|0.534||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2019|12|Total Nitrogen|Bottom|Lab|2|0.584|0.584|0.584|0.584|0|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2020|1|Total Nitrogen|Bottom|Lab|3|0.524|1.404|0.628|0.852|0.480865885668759|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2020|2|Total Nitrogen|Bottom|Lab|4|0.447|0.54|0.494|0.49375|0.0413309811158651|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2020|3|Total Nitrogen|Bottom|Lab|2|0.395|0.404|0.3995|0.3995|0.00636396103067893|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2020|9|Total Nitrogen|Bottom|Lab|1|0.614|0.614|0.614|0.614||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2020|10|Total Nitrogen|Bottom|Lab|2|0.455|0.651|0.553|0.553|0.138592929112563|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2020|11|Total Nitrogen|Bottom|Lab|1|0.496|0.496|0.496|0.496||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2020|12|Total Nitrogen|Bottom|Lab|3|0.419|0.625|0.486|0.51|0.105076162853427|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|1|Total Nitrogen|Bottom|Lab|3|0.424|0.514|0.504|0.480666666666667|0.0493288286231625|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|2|Total Nitrogen|Bottom|Lab|1|0.634|0.634|0.634|0.634||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|3|Total Nitrogen|Bottom|Lab|4|0.374|0.474|0.405|0.4145|0.0422808073085965|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|4|Total Nitrogen|Bottom|Lab|5|0.444|0.833|0.494|0.5484|0.160493925118679|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|5|Total Nitrogen|Bottom|Lab|4|0.394|0.464|0.454|0.4415|0.0330403793359984|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|6|Total Nitrogen|Bottom|Lab|3|0.544|0.634|0.564|0.580666666666667|0.0472581562625261|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|8|Total Nitrogen|Bottom|Lab|2|0.524|0.674|0.599|0.599|0.106066017177982|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|9|Total Nitrogen|Bottom|Lab|3|0.524|0.614|0.544|0.560666666666667|0.0472581562625261|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|10|Total Nitrogen|Bottom|Lab|2|0.526|0.736|0.631|0.631|0.148492424049175|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|11|Total Nitrogen|Bottom|Lab|4|0.504|0.688|0.5825|0.58925|0.0767132105094466|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2021|12|Total Nitrogen|Bottom|Lab|3|0.384|0.504|0.444|0.444|0.06|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|1|Total Nitrogen|Bottom|Lab|3|0.369|2.305|0.687|1.12033333333333|1.03819908174364|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-14|Estero Bay Aquatic Preserve|2022|2|Total Nitrogen|Bottom|Lab|2|0.464|0.544|0.504|0.504|0.0565685424949238|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|3|Total Nitrogen|Bottom|Lab|3|0.404|0.594|0.484|0.494|0.0953939201416945|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|4|Total Nitrogen|Bottom|Lab|3|0.166|0.464|0.324|0.318|0.149090576496303|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|5|Total Nitrogen|Bottom|Lab|2|0.436|0.544|0.49|0.49|0.0763675323681472|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|6|Total Nitrogen|Bottom|Lab|3|0.606|0.798|0.706|0.703333333333333|0.0960277737601645|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|7|Total Nitrogen|Bottom|Lab|2|0.723|0.8|0.7615|0.7615|0.0544472221513642|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|8|Total Nitrogen|Bottom|Lab|2|0.555|0.608|0.5815|0.5815|0.037476659402887|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|9|Total Nitrogen|Bottom|Lab|1|0.698|0.698|0.698|0.698||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|10|Total Nitrogen|Bottom|Lab|1|0.944|0.944|0.944|0.944||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2022|11|Total Nitrogen|Bottom|Lab|1|0.745|0.745|0.745|0.745||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-14|Estero Bay Aquatic Preserve|2023|2|Total Nitrogen|Bottom|Lab|1|0.726|0.726|0.726|0.726||Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|1995|3|Total Nitrogen|Bottom|Lab|50|0.0668903|0.23190589|0.113568755|0.118237055|0.0332345533270263|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|1995|5|Total Nitrogen|Bottom|Lab|33|0.10569591|0.2520851|0.13166106|0.141277596666667|0.0348240178758701|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|1995|7|Total Nitrogen|Bottom|Lab|36|0.14075442|0.32914694|0.2059854|0.2133565975|0.0460928476342918|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
@@ -256,7 +203,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2003|2|Total Nitrogen|Bottom|Lab|25|0.105196|0.37813188|0.18200247|0.1952592284|0.0647809332029982|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2003|3|Total Nitrogen|Bottom|Lab|25|0.064047|0.12523062|0.08629061|0.0865663228|0.0149368617226136|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2003|4|Total Nitrogen|Bottom|Lab|29|0.1429623|0.30343733|0.18570828|0.188994546896552|0.0314585357096581|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2003|5|Total Nitrogen|Bottom|Lab|26|0.12398467|0.749792|0.250811585|0.266874369615385|0.125101407298584|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2003|5|Total Nitrogen|Bottom|Lab|27|0.09|0.749792|0.24692752|0.260323467037037|0.127307155603627|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
 15|Florida Keys National Marine Sanctuary|2003|6|Total Nitrogen|Bottom|Lab|25|0.14921698|0.31292357|0.1847374|0.1967838384|0.0421640590451586|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2003|7|Total Nitrogen|Bottom|Lab|29|0.21810585|0.35798657|0.29302667|0.287874335517241|0.045327087583752|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2003|8|Total Nitrogen|Bottom|Lab|17|0.11838179|0.46486874|0.31522732|0.293602267647059|0.0879688992584389|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
@@ -308,7 +255,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2008|4|Total Nitrogen|Bottom|Lab|19|0.10197368|0.16441555|0.12504341|0.126953927894737|0.017107207201195|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2008|5|Total Nitrogen|Bottom|Lab|38|0.10037621|0.17970246|0.141791225|0.136055683684211|0.0194483838068252|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2008|6|Total Nitrogen|Bottom|Lab|24|0.08031722|0.16435672|0.11711457|0.1182808625|0.0176833800355372|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2008|7|Total Nitrogen|Bottom|Lab|30|0.12733561|0.53378133|0.186694605|0.214887795333333|0.0840079149156157|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
+15|Florida Keys National Marine Sanctuary|2008|7|Total Nitrogen|Bottom|Lab|29|0.12733561|0.53378133|0.18481981|0.212642546896552|0.0845738838052506|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2008|8|Total Nitrogen|Bottom|Lab|24|0.08660623|0.60963111|0.17533972|0.191648452916667|0.108336472726725|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2008|9|Total Nitrogen|Bottom|Lab|28|0.0380541|0.18401442|0.09256853|0.0955356225|0.0309354186355153|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2008|10|Total Nitrogen|Bottom|Lab|43|0.11687611|0.39726433|0.16628404|0.181635913255814|0.0499795770387513|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
@@ -317,19 +264,19 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2009|1|Total Nitrogen|Bottom|Lab|54|0.01886983|0.20882239|0.11190338|0.106423114259259|0.0387325829401173|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2009|2|Total Nitrogen|Bottom|Lab|28|0.02256199|0.27575481|0.167889905|0.168191878214286|0.0492915036330537|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2009|4|Total Nitrogen|Bottom|Lab|43|0.06994588|0.3022947|0.12824961|0.134329846976744|0.0436765203865197|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2009|5|Total Nitrogen|Bottom|Lab|38|0.07343643|0.23912658|0.119525475|0.134159411315789|0.0457785927285107|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2009|7|Total Nitrogen|Bottom|Lab|81|0.14546938|0.49018758|0.1965077|0.225382060987654|0.0783723233170383|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2009|10|Total Nitrogen|Bottom|Lab|82|0.08952242|0.9484868|0.171020405|0.193230625487805|0.0964541869874999|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2009|5|Total Nitrogen|Bottom|Lab|37|0.07343643|0.23912658|0.1183279|0.132023798918919|0.0444495975347713|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2009|7|Total Nitrogen|Bottom|Lab|80|0.14546938|0.49018758|0.19680009|0.226307565625|0.0784200942769572|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2009|10|Total Nitrogen|Bottom|Lab|81|0.08952242|0.9484868|0.17165561|0.193591330123457|0.0969994876884898|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2010|2|Total Nitrogen|Bottom|Lab|29|0.14519868|0.3978296|0.18950313|0.214254489655172|0.0689775788478809|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2010|3|Total Nitrogen|Bottom|Lab|52|0.084806|1.07642652|0.168882935|0.221811326346154|0.149507593877749|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2010|5|Total Nitrogen|Bottom|Lab|81|0.07691492|0.81476238|0.19446773|0.256201528271605|0.156173839739744|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2010|7|Total Nitrogen|Bottom|Lab|78|0.156982|0.8805454|0.2754276|0.324059651282051|0.14232566216984|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2010|8|Total Nitrogen|Bottom|Lab|3|0.250033|0.2698675|0.2534042|0.257768233333333|0.0106129843947559|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2010|10|Total Nitrogen|Bottom|Lab|69|0.1629026|0.9001216|0.2931201|0.348130832318841|0.163530302589028|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2010|10|Total Nitrogen|Bottom|Lab|68|0.1629026|0.9001216|0.29685775|0.350140025441176|0.163885924001627|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2010|11|Total Nitrogen|Bottom|Lab|11|0.1241093|0.2155951|0.1500982|0.157193972727273|0.027741547536289|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2011|1|Total Nitrogen|Bottom|Lab|86|0.07997405|0.92270957|0.1632775|0.185002566976744|0.109699885024615|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2011|1|Total Nitrogen|Bottom|Lab|85|0.07997405|0.92270957|0.16191885|0.184137801176471|0.110055664618833|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2011|4|Total Nitrogen|Bottom|Lab|86|0.06452747|0.5477278|0.122763825|0.142374970581395|0.0791238668865323|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2011|7|Total Nitrogen|Bottom|Lab|86|0.05702268|0.57929623|0.141321955|0.16192987|0.0779288594069176|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2011|7|Total Nitrogen|Bottom|Lab|85|0.05702268|0.57929623|0.14050484|0.160676828352941|0.0775149430440325|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2011|11|Total Nitrogen|Bottom|Lab|12|0.0785302|0.1518258|0.1024366|0.106390375|0.024235178553054|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2011|12|Total Nitrogen|Bottom|Lab|50|0.0802886|0.3135111|0.1358924|0.143974852|0.048080434673942|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2012|3|Total Nitrogen|Bottom|Lab|63|0.0579082|0.9333324|0.0993146|0.114622663492064|0.108088017970585|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
@@ -384,23 +331,23 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 15|Florida Keys National Marine Sanctuary|2019|5|Total Nitrogen|Bottom|Lab|51|0.07086424|0.57734609|0.1203634|0.153047171764706|0.0949205098874346|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2019|6|Total Nitrogen|Bottom|Lab|12|0.10326977|0.19970018|0.11465538|0.1260234475|0.031321066957557|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2019|8|Total Nitrogen|Bottom|Lab|9|0.01|0.13|0.08|0.07|0.0447213595499958|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2019|9|Total Nitrogen|Bottom|Lab|49|0.07|0.16|0.09|0.0978911563265306|0.0223471544845916|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2019|9|Total Nitrogen|Bottom|Lab|48|0.07|0.16|0.09|0.09826388875|0.0224291854710421|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2019|10|Total Nitrogen|Bottom|Lab|3|0.04333333|0.06|0.04666667|0.05|0.00881917166682336|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2019|11|Total Nitrogen|Bottom|Lab|14|0.04|0.12|0.05333333|0.0595238092857143|0.0214379308270198|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2019|12|Total Nitrogen|Bottom|Lab|4|0.12666667|0.18|0.155|0.1541666675|0.0280706786193023|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2020|1|Total Nitrogen|Bottom|Lab|39|0.03666667|0.22666667|0.07666667|0.0860683764102564|0.0430005564739578|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2020|3|Total Nitrogen|Bottom|Lab|64|0.05666667|0.23666667|0.11|0.11687500015625|0.0312743728661376|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2020|1|Total Nitrogen|Bottom|Lab|38|0.03666667|0.22666667|0.075|0.0852631581578947|0.0432787709939304|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
+15|Florida Keys National Marine Sanctuary|2020|3|Total Nitrogen|Bottom|Lab|63|0.05666667|0.23666667|0.11|0.117513227619048|0.0311026062620808|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2020|6|Total Nitrogen|Bottom|Lab|10|0.06333333|0.29333333|0.103333335|0.127333334|0.0711423537201259|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
 15|Florida Keys National Marine Sanctuary|2020|7|Total Nitrogen|Bottom|Lab|54|0.06|0.23666667|0.111666665|0.123148147962963|0.0317908298784507|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2020|8|Total Nitrogen|Bottom|Lab|50|0.064|0.632|0.2215|0.24206|0.115807442219701|Florida STORET / WIN|5002
+15|Florida Keys National Marine Sanctuary|2020|8|Total Nitrogen|Bottom|Lab|46|0.064|0.632|0.2215|0.242|0.117105840066915|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2020|9|Total Nitrogen|Bottom|Lab|34|0.04666667|0.23666667|0.075|0.0847058823529412|0.0379093164020837|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2020|10|Total Nitrogen|Bottom|Lab|75|0.047|0.543|0.121|0.139713604|0.0853484904951967|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
-15|Florida Keys National Marine Sanctuary|2020|11|Total Nitrogen|Bottom|Lab|36|0.00932154|1.91705745|0.10208193|0.214397486666667|0.355617584930824|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
+15|Florida Keys National Marine Sanctuary|2020|10|Total Nitrogen|Bottom|Lab|74|0.047|0.543|0.1205|0.139214238243243|0.0858206967424521|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
+15|Florida Keys National Marine Sanctuary|2020|11|Total Nitrogen|Bottom|Lab|35|0.00932154|1.91705745|0.10144801|0.216437414857143|0.360595589353185|Florida Keys National Marine Sanctuary Water Quality Monitoring Project, Florida STORET / WIN|297, 5002
 15|Florida Keys National Marine Sanctuary|2020|12|Total Nitrogen|Bottom|Lab|38|0.07548401|0.22408532|0.111666665|0.125800002631579|0.0411132277934569|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|297
-15|Florida Keys National Marine Sanctuary|2021|2|Total Nitrogen|Bottom|Lab|47|0.062|0.441|0.285|0.256276595744681|0.093726638162278|Florida STORET / WIN|5002
+15|Florida Keys National Marine Sanctuary|2021|2|Total Nitrogen|Bottom|Lab|45|0.062|0.441|0.205|0.251822222222222|0.0933104030273759|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2021|3|Total Nitrogen|Bottom|Lab|13|0.068|0.297|0.194|0.172923076923077|0.074933816952541|Florida STORET / WIN|5002
-15|Florida Keys National Marine Sanctuary|2021|4|Total Nitrogen|Bottom|Lab|35|0.072|0.469|0.172|0.203571428571429|0.0973375828856296|Florida STORET / WIN|5002
-15|Florida Keys National Marine Sanctuary|2021|5|Total Nitrogen|Bottom|Lab|39|0.083|0.468|0.162|0.206538461538462|0.115663724503372|Florida STORET / WIN|5002
+15|Florida Keys National Marine Sanctuary|2021|4|Total Nitrogen|Bottom|Lab|34|0.072|0.469|0.1715|0.203058823529412|0.0987534245440635|Florida STORET / WIN|5002
+15|Florida Keys National Marine Sanctuary|2021|5|Total Nitrogen|Bottom|Lab|33|0.083|0.468|0.161|0.206424242424242|0.114883917037762|Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2022|4|Total Nitrogen|Bottom|Lab|1|0.394|0.394|0.394|0.394||Florida STORET / WIN|5002
 15|Florida Keys National Marine Sanctuary|2022|9|Total Nitrogen|Bottom|Lab|1|0.291|0.291|0.291|0.291||Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1996|8|Total Nitrogen|Bottom|Lab|2|0.64|0.85|0.745|0.745|0.148492424049175|Florida STORET / WIN|5002
@@ -441,7 +388,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|7|Total Nitrogen|Bottom|Lab|2|1.12|1.22|1.17|1.17|0.0707106781186547|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|8|Total Nitrogen|Bottom|Lab|2|0.94|1.14|1.04|1.04|0.141421356237309|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|9|Total Nitrogen|Bottom|Lab|2|0.56|0.88|0.72|0.72|0.226274169979695|Florida STORET / WIN|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|10|Total Nitrogen|Bottom|Lab|2|0.67|0.99|0.83|0.83|0.226274169979695|Florida STORET / WIN|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|10|Total Nitrogen|Bottom|Lab|1|0.67|0.67|0.67|0.67||Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|11|Total Nitrogen|Bottom|Lab|2|0.59|0.93|0.76|0.76|0.240416305603426|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|1999|12|Total Nitrogen|Bottom|Lab|2|0.73|0.77|0.75|0.75|0.0282842712474619|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2000|1|Total Nitrogen|Bottom|Lab|2|0.54|0.56|0.55|0.55|0.014142135623731|Florida STORET / WIN|5002
@@ -505,7 +452,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|11|Total Nitrogen|Bottom|Lab|2|0.411|0.449|0.43|0.43|0.0268700576850888|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2007|12|Total Nitrogen|Bottom|Lab|4|0.113|0.201|0.1595|0.15825|0.042390053864871|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|1|Total Nitrogen|Bottom|Lab|2|0.201|0.211|0.206|0.206|0.00707106781186546|Florida STORET / WIN|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|2|Total Nitrogen|Bottom|Lab|2|0.244|0.637|0.4405|0.4405|0.277892965006313|Florida STORET / WIN|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|2|Total Nitrogen|Bottom|Lab|3|0.244|0.66|0.637|0.513666666666667|0.233821156727387|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|3|Total Nitrogen|Bottom|Lab|2|0.141|0.222|0.1815|0.1815|0.0572756492761104|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|4|Total Nitrogen|Bottom|Lab|2|0.321|0.442|0.3815|0.3815|0.0855599205235723|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2008|5|Total Nitrogen|Bottom|Lab|2|0.41|0.476|0.443|0.443|0.0466690475583121|Florida STORET / WIN|5002
@@ -534,13 +481,13 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|4|Total Nitrogen|Bottom|Lab|2|0.562|0.869|0.7155|0.7155|0.21708178182427|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|5|Total Nitrogen|Bottom|Lab|2|0.579|0.608|0.5935|0.5935|0.0205060966544099|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|6|Total Nitrogen|Bottom|Lab|5|0.495|0.889|0.684|0.6898|0.180606478289125|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|7|Total Nitrogen|Bottom|Lab|7|0.517|0.951|0.71|0.706428571428571|0.153593464642713|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|7|Total Nitrogen|Bottom|Lab|6|0.517|0.951|0.68|0.69|0.16137533888423|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|8|Total Nitrogen|Bottom|Lab|5|0.483|0.958|0.759|0.7682|0.182443689942952|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|9|Total Nitrogen|Bottom|Lab|6|0.678|1.8|1.039|1.07233333333333|0.40547733187771|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|10|Total Nitrogen|Bottom|Lab|5|0.436|1.15|0.639|0.7786|0.302071680235006|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|11|Total Nitrogen|Bottom|Lab|5|0.419|0.678|0.439|0.5224|0.129839516326887|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2010|12|Total Nitrogen|Bottom|Lab|3|0.221|0.518|0.349|0.362666666666667|0.148970914387116|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|1|Total Nitrogen|Bottom|Lab|5|0.373|0.781|0.459|0.5256|0.168676613672435|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|1|Total Nitrogen|Bottom|Lab|6|0.373|0.781|0.504|0.5295|0.151171095120727|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|2|Total Nitrogen|Bottom|Lab|3|0.228|0.473|0.439|0.38|0.132729047310677|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|3|Total Nitrogen|Bottom|Lab|6|0.356|0.74|0.5705|0.556166666666667|0.145671433941822|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2011|4|Total Nitrogen|Bottom|Lab|5|0.48|0.916|0.511|0.5976|0.181791914011597|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
@@ -578,7 +525,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2013|12|Total Nitrogen|Bottom|Lab|4|0.364|0.654|0.501|0.505|0.12759571570655|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|1|Total Nitrogen|Bottom|Lab|4|0.403|0.654|0.527|0.52775|0.102681952325291|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|2|Total Nitrogen|Bottom|Lab|6|0.388|0.648|0.449|0.473333333333333|0.0914891614709998|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|3|Total Nitrogen|Bottom|Lab|7|0.249|1.084|0.596|0.620285714285714|0.251779476450931|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|3|Total Nitrogen|Bottom|Lab|6|0.249|1.084|0.572|0.618|0.27573102835916|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|4|Total Nitrogen|Bottom|Lab|4|0.627|0.839|0.7565|0.74475|0.0922763060956965|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|5|Total Nitrogen|Bottom|Lab|5|0.587|0.877|0.694|0.7056|0.114143768993318|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2014|6|Total Nitrogen|Bottom|Lab|8|0.575|1|0.6555|0.7165|0.147634684271685|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
@@ -592,7 +539,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|2|Total Nitrogen|Bottom|Lab|4|0.433|1.43|0.6975|0.8145|0.432814432907838|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|3|Total Nitrogen|Bottom|Lab|3|0.685|0.962|0.773|0.806666666666667|0.141535625668357|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|4|Total Nitrogen|Bottom|Lab|5|0.566|0.868|0.706|0.6984|0.129380446745248|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|5|Total Nitrogen|Bottom|Lab|6|0.537|0.759|0.6115|0.617166666666667|0.0782621662533479|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|5|Total Nitrogen|Bottom|Lab|5|0.537|0.759|0.614|0.6296|0.0806027294823196|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|6|Total Nitrogen|Bottom|Lab|3|0.489|1.18|0.665|0.778|0.359091910240261|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|7|Total Nitrogen|Bottom|Lab|4|0.34|0.854|0.7265|0.66175|0.237964107937871|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2015|8|Total Nitrogen|Bottom|Lab|6|0.659|1.458|1.1285|1.10583333333333|0.344903126495929|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
@@ -616,7 +563,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2017|12|Total Nitrogen|Bottom|Lab|4|0.565|0.68|0.6325|0.6275|0.0478086463588614|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|1|Total Nitrogen|Bottom|Lab|3|0.725|1.113|0.824|0.887333333333333|0.201604398100174|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|2|Total Nitrogen|Bottom|Lab|4|0.4|0.503|0.4445|0.448|0.0490374006923967|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|3|Total Nitrogen|Bottom|Lab|4|0.464|0.814|0.641|0.64|0.147141655103736|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|3|Total Nitrogen|Bottom|Lab|3|0.464|0.684|0.598|0.582|0.110869292412282|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|4|Total Nitrogen|Bottom|Lab|3|0.518|1.104|0.574|0.732|0.323375942209683|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|5|Total Nitrogen|Bottom|Lab|4|0.577|0.834|0.636|0.67075|0.114633837354712|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2018|6|Total Nitrogen|Bottom|Lab|2|1.83|1.94|1.885|1.885|0.0777817459305201|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
@@ -637,7 +584,7 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|4|Total Nitrogen|Bottom|Lab|12|0.412|1.137|0.644|0.693333333333333|0.213658748021373|Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|479, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|5|Total Nitrogen|Bottom|Lab|3|0.346|0.594|0.367|0.435666666666667|0.13752211943296|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|6|Total Nitrogen|Bottom|Lab|7|0.336|0.964|0.654|0.684571428571429|0.239487548140369|Florida STORET / WIN|5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|7|Total Nitrogen|Bottom|Lab|5|0.424|0.915|0.714|0.7002|0.184762550317969|Florida STORET / WIN|5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|7|Total Nitrogen|Bottom|Lab|4|0.424|0.804|0.679|0.6465|0.162147052599382|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|8|Total Nitrogen|Bottom|Lab|6|0.428|0.944|0.724|0.696833333333333|0.195262302215934|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|9|Total Nitrogen|Bottom|Lab|8|0.394|1.15|0.931|0.873|0.263346051531332|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2020|10|Total Nitrogen|Bottom|Lab|4|0.334|1.499|1.073|0.99475|0.552860063668918|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
@@ -659,18 +606,18 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|2|Total Nitrogen|Bottom|Lab|6|0.354|0.754|0.507|0.514|0.144703835470937|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|3|Total Nitrogen|Bottom|Lab|9|0.404|0.844|0.606|0.607888888888889|0.145331039737253|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|4|Total Nitrogen|Bottom|Lab|7|0.224|1.543|0.384|0.669857142857143|0.480131033702061|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|5|Total Nitrogen|Bottom|Lab|8|0.364|0.954|0.5645|0.6125|0.198433868076999|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|5|Total Nitrogen|Bottom|Lab|7|0.364|0.954|0.574|0.620714285714286|0.21285888462055|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|6|Total Nitrogen|Bottom|Lab|4|0.312|0.833|0.7285|0.6505|0.236376112724333|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|7|Total Nitrogen|Bottom|Lab|5|0.434|1.172|0.981|0.8824|0.288144581764086|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|8|Total Nitrogen|Bottom|Lab|5|0.552|1.104|0.619|0.7748|0.262862511591136|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|9|Total Nitrogen|Bottom|Lab|8|0.525|1.239|0.9935|0.91925|0.266946623878258|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|9|Total Nitrogen|Bottom|Lab|7|0.525|1.239|0.994|0.937142857142857|0.28310623952351|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|10|Total Nitrogen|Bottom|Lab|6|0.164|1.257|0.94|0.881|0.377490132321363|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|11|Total Nitrogen|Bottom|Lab|7|0.464|1.281|0.92|0.886285714285714|0.253047238202484|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2022|12|Total Nitrogen|Bottom|Lab|2|0.625|0.888|0.7565|0.7565|0.185969083452062|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2023|1|Total Nitrogen|Bottom|Lab|2|0.524|0.574|0.549|0.549|0.0353553390593273|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2023|3|Total Nitrogen|Bottom|Lab|3|0.674|0.784|0.694|0.717333333333333|0.0585946527708232|Florida STORET / WIN|5002
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|2023|4|Total Nitrogen|Bottom|Lab|1|1.22|1.22|1.22|1.22||Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2001|6|Total Nitrogen|Bottom|Lab|1|0.535|0.535|0.535|0.535||Florida STORET / WIN|5002
+25|Lemon Bay Aquatic Preserve|2005|2|Total Nitrogen|Bottom|Lab|1|0.305|0.305|0.305|0.305||Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|2011|12|Total Nitrogen|Bottom|Lab|1|0.344|0.344|0.344|0.344||Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2012|1|Total Nitrogen|Bottom|Lab|1|0.383|0.383|0.383|0.383||Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2012|4|Total Nitrogen|Bottom|Lab|1|0.214|0.214|0.214|0.214||Southwest Florida Water Management District - Water Quality Monitoring|479
@@ -719,8 +666,8 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 25|Lemon Bay Aquatic Preserve|2020|2|Total Nitrogen|Bottom|Lab|2|0.59|0.707|0.6485|0.6485|0.0827314933988261|Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2020|3|Total Nitrogen|Bottom|Lab|1|0.687|0.687|0.687|0.687||Southwest Florida Water Management District - Water Quality Monitoring|479
 25|Lemon Bay Aquatic Preserve|2020|4|Total Nitrogen|Bottom|Lab|2|0.725|0.757|0.741|0.741|0.0226274169979695|Southwest Florida Water Management District - Water Quality Monitoring|479
-25|Lemon Bay Aquatic Preserve|2020|8|Total Nitrogen|Bottom|Lab|4|0.575|0.685|0.625|0.6275|0.051234753829798|Florida STORET / WIN|5002
-25|Lemon Bay Aquatic Preserve|2020|9|Total Nitrogen|Bottom|Lab|3|0.526|0.695|0.665|0.628666666666667|0.0901683610438458|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+25|Lemon Bay Aquatic Preserve|2020|8|Total Nitrogen|Bottom|Lab|3|0.575|0.655|0.595|0.608333333333333|0.0416333199893227|Florida STORET / WIN|5002
+25|Lemon Bay Aquatic Preserve|2020|9|Total Nitrogen|Bottom|Lab|2|0.526|0.695|0.6105|0.6105|0.119501046020527|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 25|Lemon Bay Aquatic Preserve|2020|10|Total Nitrogen|Bottom|Lab|3|0.835|0.875|0.835|0.848333333333333|0.0230940107675851|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|2020|11|Total Nitrogen|Bottom|Lab|11|0.475|0.921|0.607|0.645454545454546|0.156569066955362|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
 25|Lemon Bay Aquatic Preserve|2020|12|Total Nitrogen|Bottom|Lab|6|0.326|0.561|0.4695|0.454166666666667|0.0771995250417169|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN, Southwest Florida Water Management District - Water Quality Monitoring|476, 479, 5002
@@ -737,15 +684,63 @@ AreaID|ManagedAreaName|Year|Month|ParameterName|RelativeDepth|ActivityType|N_Dat
 25|Lemon Bay Aquatic Preserve|2021|11|Total Nitrogen|Bottom|Lab|7|0.414|0.658|0.572|0.554714285714286|0.0833240947259841|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 25|Lemon Bay Aquatic Preserve|2021|12|Total Nitrogen|Bottom|Lab|6|0.374|0.615|0.427|0.459333333333333|0.0863149272528609|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|1|Total Nitrogen|Bottom|Lab|6|0.414|0.596|0.4705|0.483666666666667|0.0715168977701541|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-25|Lemon Bay Aquatic Preserve|2022|2|Total Nitrogen|Bottom|Lab|8|0.294|0.435|0.383|0.373|0.0496933453435022|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
+25|Lemon Bay Aquatic Preserve|2022|2|Total Nitrogen|Bottom|Lab|7|0.294|0.435|0.385|0.381428571428571|0.0470951417977734|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|3|Total Nitrogen|Bottom|Lab|8|0.344|0.544|0.435|0.43675|0.074265450532917|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|4|Total Nitrogen|Bottom|Lab|4|0.415|0.525|0.475|0.4725|0.0478713553878169|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
 25|Lemon Bay Aquatic Preserve|2022|5|Total Nitrogen|Bottom|Lab|3|0.435|0.535|0.445|0.471666666666667|0.055075705472861|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|2022|6|Total Nitrogen|Bottom|Lab|4|0.493|0.825|0.5815|0.62025|0.145330370764912|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|2022|7|Total Nitrogen|Bottom|Lab|5|0.655|0.886|0.675|0.7392|0.108642533107434|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network, Florida STORET / WIN|476, 5002
-25|Lemon Bay Aquatic Preserve|2022|8|Total Nitrogen|Bottom|Lab|2|0.454|0.788|0.621|0.621|0.236173664916307|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
+25|Lemon Bay Aquatic Preserve|2022|8|Total Nitrogen|Bottom|Lab|1|0.788|0.788|0.788|0.788||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
 25|Lemon Bay Aquatic Preserve|2022|9|Total Nitrogen|Bottom|Lab|2|0.805|0.835|0.82|0.82|0.0212132034355964|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|2022|10|Total Nitrogen|Bottom|Lab|3|1.091|1.585|1.128|1.268|0.275152684886046|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|2022|11|Total Nitrogen|Bottom|Lab|1|0.924|0.924|0.924|0.924||Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|476
 25|Lemon Bay Aquatic Preserve|2022|12|Total Nitrogen|Bottom|Lab|3|0.505|0.646|0.535|0.562|0.0742765104188397|Florida STORET / WIN|5002
 25|Lemon Bay Aquatic Preserve|2023|2|Total Nitrogen|Bottom|Lab|6|0.425|0.593|0.49|0.499666666666667|0.0647662463530709|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|1999|9|Total Nitrogen|Bottom|Lab|1|0.48|0.48|0.48|0.48||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|1999|12|Total Nitrogen|Bottom|Lab|1|0.41|0.41|0.41|0.41||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2001|8|Total Nitrogen|Bottom|Lab|2|0.43|0.51|0.47|0.47|0.0565685424949238|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2001|10|Total Nitrogen|Bottom|Lab|1|0.58|0.58|0.58|0.58||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2002|5|Total Nitrogen|Bottom|Lab|1|0.95|0.95|0.95|0.95||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2004|3|Total Nitrogen|Bottom|Lab|1|0.31|0.31|0.31|0.31||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2005|10|Total Nitrogen|Bottom|Lab|1|0.48|0.48|0.48|0.48||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2006|9|Total Nitrogen|Bottom|Lab|1|1.217|1.217|1.217|1.217||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2009|5|Total Nitrogen|Bottom|Lab|1|0.6|0.6|0.6|0.6||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2012|3|Total Nitrogen|Bottom|Lab|1|0.86|0.86|0.86|0.86||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2013|12|Total Nitrogen|Bottom|Lab|1|0.48|0.48|0.48|0.48||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2015|7|Total Nitrogen|Bottom|Lab|1|0.87|0.87|0.87|0.87||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2016|6|Total Nitrogen|Bottom|Lab|1|0.68|0.68|0.68|0.68||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|5|Total Nitrogen|Bottom|Lab|23|0.51|2.45|0.91|0.933478260869565|0.373358330143774|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|6|Total Nitrogen|Bottom|Lab|16|0.6|2.04|1.015|1.0575|0.354992957676628|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|7|Total Nitrogen|Bottom|Lab|2|0.598|3.08|1.839|1.839|1.75503903090501|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|8|Total Nitrogen|Bottom|Lab|20|0.422|1.33|0.99|0.95985|0.251738016492083|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|9|Total Nitrogen|Bottom|Lab|16|0.412|1.59|0.945|1.00825|0.340808352792788|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|10|Total Nitrogen|Bottom|Lab|16|0.317|1.46|0.615|0.63075|0.275021574911254|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|11|Total Nitrogen|Bottom|Lab|10|0.246|1.06|0.705|0.6939|0.292542285642416|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2020|12|Total Nitrogen|Bottom|Lab|35|0.194|1.65|0.79|0.853314285714286|0.340511792266096|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|1|Total Nitrogen|Bottom|Lab|7|0.194|0.96|0.293|0.370428571428571|0.264604646685615|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|2|Total Nitrogen|Bottom|Lab|29|0.26|1.43|0.66|0.725758620689655|0.289385266577819|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|3|Total Nitrogen|Bottom|Lab|23|0.264|1.21|0.83|0.777391304347826|0.307027795474084|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|4|Total Nitrogen|Bottom|Lab|13|0.368|1.66|1.01|0.910538461538462|0.334980252001173|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|5|Total Nitrogen|Bottom|Lab|24|0.212|3.05|1.05|1.117125|0.549380941131253|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|6|Total Nitrogen|Bottom|Lab|14|0.246|2.99|1.385|1.37328571428571|0.629818341156514|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|7|Total Nitrogen|Bottom|Lab|24|0.286|1.97|1.33|1.23529166666667|0.406022325276811|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|8|Total Nitrogen|Bottom|Lab|16|0.386|1.7|1.295|1.184|0.441615368090076|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|9|Total Nitrogen|Bottom|Lab|23|0.509|1.6|1.14|1.17560869565217|0.210032192149514|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|10|Total Nitrogen|Bottom|Lab|13|0.244|1.88|1.33|1.293|0.481207162595626|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|11|Total Nitrogen|Bottom|Lab|18|0.436|1.72|1.41|1.33977777777778|0.318398114751209|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2021|12|Total Nitrogen|Bottom|Lab|30|0.338|1.39|1.025|0.949966666666667|0.286437630369953|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|1|Total Nitrogen|Bottom|Lab|4|0.183|0.4|0.344|0.31775|0.103844033691558|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|2|Total Nitrogen|Bottom|Lab|17|0.183|2.26|0.49|0.738235294117647|0.607693439306753|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|3|Total Nitrogen|Bottom|Lab|29|0.183|1.41|0.84|0.818620689655172|0.346661466583457|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|4|Total Nitrogen|Bottom|Lab|11|0.423|1.63|1.02|0.959272727272727|0.426896730113757|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|5|Total Nitrogen|Bottom|Lab|2|0.426|0.44|0.433|0.433|0.00989949493661167|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|6|Total Nitrogen|Bottom|Lab|4|0.409|0.654|0.483|0.50725|0.104407455033952|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|7|Total Nitrogen|Bottom|Lab|1|1.12|1.12|1.12|1.12||Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|8|Total Nitrogen|Bottom|Lab|5|0.474|0.98|0.586|0.6448|0.1955855311622|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|9|Total Nitrogen|Bottom|Lab|2|0.544|0.669|0.6065|0.6065|0.0883883476483184|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|10|Total Nitrogen|Bottom|Lab|3|0.237|0.962|0.384|0.527666666666667|0.383257528736662|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|11|Total Nitrogen|Bottom|Lab|4|0.437|0.877|0.7095|0.68325|0.190323190039119|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2022|12|Total Nitrogen|Bottom|Lab|4|0.309|0.421|0.376|0.3705|0.0522589705218157|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2023|1|Total Nitrogen|Bottom|Lab|3|0.33|0.414|0.376|0.373333333333333|0.0420634441449263|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2023|2|Total Nitrogen|Bottom|Lab|3|0.327|0.531|0.435|0.431|0.102058806577385|Florida STORET / WIN|5002
+35|Pinellas County Aquatic Preserve|2023|3|Total Nitrogen|Bottom|Lab|3|0.341|0.435|0.413|0.396333333333333|0.0491663841799794|Florida STORET / WIN|5002

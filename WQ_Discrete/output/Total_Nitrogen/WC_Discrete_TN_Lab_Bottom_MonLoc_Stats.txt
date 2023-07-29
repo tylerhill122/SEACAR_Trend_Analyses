@@ -10,7 +10,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14074|Total Nitrogen|Bottom|Lab|2002-08-05|2002-08-05|1|0.796|0.796|0.796|0.796|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14077|Total Nitrogen|Bottom|Lab|2002-08-21|2002-08-21|1|1.115|1.115|1.115|1.115|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_14079|Total Nitrogen|Bottom|Lab|2002-08-26|2002-08-26|1|0.976|0.976|0.976|0.976|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_34879|Total Nitrogen|Bottom|Lab|2016-12-16|2016-12-16|1|0.401|0.401|0.401|0.401|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3525|Total Nitrogen|Bottom|Lab|1998-11-02|1999-09-20|9|0.205|1.02|0.404|0.498666666666667|0.273214201680659
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3526|Total Nitrogen|Bottom|Lab|1998-11-02|1999-06-14|6|0.195|0.617|0.3065|0.345666666666667|0.153773426399579
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_3528|Total Nitrogen|Bottom|Lab|2000-03-13|2001-12-10|6|0.27|0.36|0.3|0.303333333333333|0.0338624669312008
@@ -20,8 +19,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9683|Total Nitrogen|Bottom|Lab|2001-10-22|2001-10-22|1|1.86|1.86|1.86|1.86|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9693|Total Nitrogen|Bottom|Lab|2001-10-03|2002-04-09|3|0.3|0.37|0.32|0.33|0.0360555127546399
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_9717|Total Nitrogen|Bottom|Lab|2001-09-25|2001-09-25|1|0.22|0.22|0.22|0.22|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLKWAT_WAK-WA-RIVER-1|Total Nitrogen|Bottom|Lab|2006-06-29|2006-06-29|1|0.51|0.51|0.51|0.51|
-5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQA_301156608410406|Total Nitrogen|Bottom|Lab|2005-10-25|2005-10-25|1|0.236|0.236|0.236|0.236|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLKWAT_WAK-WA-LOWER-1|Total Nitrogen|Bottom|Lab|1999-10-29|1999-10-29|1|0.66|0.66|0.66|0.66|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLKWAT_WAK-WA-RIVER-1|Total Nitrogen|Bottom|Lab|2007-07-18|2007-07-18|1|0.44|0.44|0.44|0.44|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSUW_SRE030C1|Total Nitrogen|Bottom|Lab|2008-06-18|2008-06-18|1|0.763|0.763|0.763|0.763|
+5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQA_25SEAS122|Total Nitrogen|Bottom|Lab|2012-10-02|2012-10-02|1|1.205|1.205|1.205|1.205|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_9717|Total Nitrogen|Bottom|Lab|2021-03-29|2021-03-29|1|0.3|0.3|0.3|0.3|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0008|Total Nitrogen|Bottom|Lab|2017-10-18|2017-10-18|1|0.35|0.35|0.35|0.35|
 5|Big Bend Seagrasses Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTLHR_G1TLHR0019|Total Nitrogen|Bottom|Lab|2016-10-24|2018-11-20|10|0.482|1.653|1.13|1.1355|0.388859943367218
@@ -49,7 +50,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670133|Total Nitrogen|Bottom|Lab|2010-09-08|2014-01-16|3|0.316|0.582|0.46|0.452666666666667|0.133151542737339
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670134|Total Nitrogen|Bottom|Lab|2010-11-15|2014-11-04|8|0.338|0.739|0.496|0.493125|0.144895467246465
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670135|Total Nitrogen|Bottom|Lab|2012-04-11|2015-02-04|8|0.372|0.88|0.5085|0.531|0.158915071657788
-9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670136|Total Nitrogen|Bottom|Lab|2008-08-13|2014-06-03|6|0.411|1.084|0.739|0.7185|0.265622852932499
+9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670136|Total Nitrogen|Bottom|Lab|2011-11-15|2014-06-03|5|0.411|1.084|0.661|0.6822|0.279842277006174
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670137|Total Nitrogen|Bottom|Lab|2010-06-01|2014-09-09|8|0.443|0.757|0.662|0.63425|0.126894500612573
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670095|Total Nitrogen|Bottom|Lab|2020-04-22|2020-04-22|1|0.734|0.734|0.734|0.734|
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670110|Total Nitrogen|Bottom|Lab|2020-12-16|2021-07-21|2|0.542|0.98|0.761|0.761|0.309712770159708
@@ -58,23 +59,12 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670134|Total Nitrogen|Bottom|Lab|2020-03-10|2021-04-14|3|0.567|1.16|0.582|0.769666666666667|0.338121772935925
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670135|Total Nitrogen|Bottom|Lab|2021-03-17|2021-06-08|2|0.561|0.639|0.6|0.6|0.0551543289325507
 9|Cape Haze Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_670136|Total Nitrogen|Bottom|Lab|2020-04-21|2021-05-19|2|0.597|0.875|0.736|0.736|0.19657568516986
-14|Estero Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_EBERS2|Total Nitrogen|Bottom|Lab|2021-04-05|2021-04-05|1|0.833|0.833|0.833|0.833|
-14|Estero Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_EBV003|Total Nitrogen|Bottom|Lab|2017-12-04|2022-06-06|27|0.395|2.305|0.594|0.659555555555556|0.347770849989708
-14|Estero Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_EBV004|Total Nitrogen|Bottom|Lab|2017-11-06|2022-08-01|34|0.166|1.09|0.5|0.515411764705882|0.168333384514914
-14|Estero Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_EBV005|Total Nitrogen|Bottom|Lab|2017-11-06|2022-11-07|38|0.324|0.815|0.5625|0.575157894736842|0.120530477544353
-14|Estero Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_EBV006|Total Nitrogen|Bottom|Lab|2017-11-06|2022-10-11|19|0.364|1.404|0.494|0.564315789473684|0.240422325787024
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_AB82412|Total Nitrogen|Bottom|Lab|2005-11-14|2005-11-14|1|0.65|0.65|0.65|0.65|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-07|Total Nitrogen|Bottom|Lab|2001-03-28|2014-06-09|2|0.05|0.074|0.062|0.062|0.0169705627484771
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_EB-14|Total Nitrogen|Bottom|Lab|1995-08-10|1995-08-10|1|0.15|0.15|0.15|0.15|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLEECO_SPRIGR02|Total Nitrogen|Bottom|Lab|2013-04-17|2013-04-17|1|0.81|0.81|0.81|0.81|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLEECO_EB-02|Total Nitrogen|Bottom|Lab|2022-01-10|2022-01-10|1|0.687|0.687|0.687|0.687|
-14|Estero Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G1SD0129|Total Nitrogen|Bottom|Lab|2023-02-14|2023-02-14|1|0.726|0.726|0.726|0.726|
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|211|Total Nitrogen|Bottom|Lab|1995-03-28|2020-11-13|98|0.02|0.749792|0.148519985|0.160332376530612|0.0854021173786805
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|212|Total Nitrogen|Bottom|Lab|1995-03-28|2020-11-13|100|0.02236651|0.48520002|0.12127266|0.1385568142|0.0744608361335574
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|213|Total Nitrogen|Bottom|Lab|1995-03-28|2020-11-13|101|0.0290276|0.49114453|0.1014104|0.119351457821782|0.066620458639985
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|213|Total Nitrogen|Bottom|Lab|1995-03-28|2020-11-13|100|0.0290276|0.49114453|0.1008726|0.1184299154|0.0663059348430173
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|214|Total Nitrogen|Bottom|Lab|1996-03-14|2020-11-13|37|0.0708722|0.2575986|0.12649852|0.134983563783784|0.0417898439756407
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|215|Total Nitrogen|Bottom|Lab|1995-03-28|2020-11-13|41|0.04718273|0.20768276|0.1143114|0.117298569268293|0.0313599068349653
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|216|Total Nitrogen|Bottom|Lab|1997-10-22|2020-11-13|39|0.0341628|0.57734609|0.09408791|0.107522815897436|0.0827886875033697
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|216|Total Nitrogen|Bottom|Lab|1997-10-22|2020-11-13|38|0.0341628|0.57734609|0.094154655|0.108334819736842|0.0837424592063943
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|216i|Total Nitrogen|Bottom|Lab|1995-12-06|1997-07-29|6|0.08222592|0.22158599|0.11406426|0.126617688333333|0.0482902055200416
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|217|Total Nitrogen|Bottom|Lab|1996-03-14|2020-11-13|38|0.03|0.25029973|0.1233988|0.131093617368421|0.0489419984641434
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|218|Total Nitrogen|Bottom|Lab|1996-03-14|2020-11-13|39|0.020706|0.18628911|0.0873642|0.0972364738461538|0.0359601885405336
@@ -89,7 +79,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|225i|Total Nitrogen|Bottom|Lab|1995-03-28|1997-07-30|9|0.0794746|0.15671583|0.10561052|0.115361456666667|0.029292036241698
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|226|Total Nitrogen|Bottom|Lab|1996-03-15|2020-11-14|38|0.0408758|0.42889055|0.13685583|0.150420387368421|0.0695923378425887
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|227|Total Nitrogen|Bottom|Lab|1995-03-28|2020-11-14|98|0.01|0.41483154|0.12634091|0.144287950204082|0.0713589324519466
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|228|Total Nitrogen|Bottom|Lab|1995-03-28|2020-11-15|101|0.019852|0.40998515|0.11785518|0.13539225990099|0.0775259750541469
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|228|Total Nitrogen|Bottom|Lab|1995-03-28|2020-11-15|100|0.019852|0.40998515|0.11717389|0.1340617984|0.0767489275398298
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|229|Total Nitrogen|Bottom|Lab|1996-03-15|1996-03-15|1|0.16471879|0.16471879|0.16471879|0.16471879|
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|230|Total Nitrogen|Bottom|Lab|1995-03-27|2020-11-15|102|0.0192738|0.54259127|0.13371315|0.148054333137255|0.0812033911059851
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|231|Total Nitrogen|Bottom|Lab|1997-10-23|2020-11-15|93|0.0035238|0.46001428|0.11763807|0.134112707096774|0.0739255895715938
@@ -105,14 +95,14 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|240|Total Nitrogen|Bottom|Lab|1995-03-24|2011-07-15|65|0.02718663|0.5231202|0.12896592|0.149551843076923|0.0886387776619139
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|241|Total Nitrogen|Bottom|Lab|1996-03-16|1996-03-16|1|0.19217192|0.19217192|0.19217192|0.19217192|
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|242|Total Nitrogen|Bottom|Lab|1995-03-24|2020-12-13|102|0.0346178|0.58840445|0.1624712|0.179433722843137|0.0917412782691674
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|243|Total Nitrogen|Bottom|Lab|1997-10-23|2020-12-13|92|0.0142884|0.362418|0.122505|0.1374027325|0.0731545057179393
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|243|Total Nitrogen|Bottom|Lab|1997-10-23|2020-12-13|91|0.0142884|0.362418|0.1242612|0.138033531758242|0.0733077722135722
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|243i|Total Nitrogen|Bottom|Lab|1995-03-24|1997-07-30|8|0.0668903|0.2372735|0.118104615|0.13112233375|0.0529950864824445
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|244|Total Nitrogen|Bottom|Lab|1996-03-16|2020-12-13|97|0.04891342|0.60179611|0.1732127|0.189778468247423|0.0910360556313421
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|244i|Total Nitrogen|Bottom|Lab|1995-03-24|1995-12-08|3|0.09597769|0.24962502|0.12339903|0.156333913333333|0.0819475772013269
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|245|Total Nitrogen|Bottom|Lab|1996-03-16|2011-07-15|60|0.03655982|0.73992794|0.181202205|0.19361644|0.113606412816355
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|246|Total Nitrogen|Bottom|Lab|1995-03-24|2020-12-13|101|0.01631536|0.33029951|0.1187004|0.128605191782178|0.0604354507848278
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|247|Total Nitrogen|Bottom|Lab|1996-03-16|2020-12-13|38|0.0592102|0.42328665|0.160042425|0.170544102894737|0.0732932115685831
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|248|Total Nitrogen|Bottom|Lab|1998-01-27|2020-12-13|89|0.0261744|0.370048|0.12398467|0.136978917303371|0.0698930897850058
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|248|Total Nitrogen|Bottom|Lab|1998-01-27|2020-12-13|88|0.0261744|0.370048|0.122854535|0.136113029204545|0.0698118764741456
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|248i|Total Nitrogen|Bottom|Lab|1995-03-24|1997-08-08|9|0.09421524|0.26196816|0.16783928|0.163381823333333|0.0490763004864171
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|249|Total Nitrogen|Bottom|Lab|1998-01-27|2020-12-13|88|0.02076322|0.37131076|0.11491177|0.128795044318182|0.0706506924414027
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|249i|Total Nitrogen|Bottom|Lab|1995-03-24|1997-10-23|10|0.09244422|0.19581367|0.129708265|0.1375986|0.033314057884919
@@ -141,7 +131,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|272|Total Nitrogen|Bottom|Lab|1995-03-22|2020-12-14|101|0.0259574|0.72792164|0.13420022|0.15322667049505|0.0947457104476783
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|273|Total Nitrogen|Bottom|Lab|1997-10-29|2020-12-14|92|0.025445|0.48711612|0.119054885|0.14145495076087|0.0833217715637694
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|273i|Total Nitrogen|Bottom|Lab|1995-03-22|1997-08-07|9|0.10004714|0.18374409|0.13274666|0.13790063|0.0321154520112979
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|274|Total Nitrogen|Bottom|Lab|1995-03-22|2011-07-14|64|0.04763448|0.83649319|0.165700515|0.19068466640625|0.117860792875379
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|274|Total Nitrogen|Bottom|Lab|1995-03-22|2011-07-14|63|0.04763448|0.83649319|0.16579982|0.191108017460317|0.118758419031188
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|275|Total Nitrogen|Bottom|Lab|1995-03-22|2020-12-16|100|0.0393876|0.75369134|0.152478485|0.1613379061|0.0926859100357915
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|276|Total Nitrogen|Bottom|Lab|1995-03-22|2020-12-15|101|0.02204281|0.96784676|0.12774315|0.155584400990099|0.134078595974467
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|277|Total Nitrogen|Bottom|Lab|1995-03-22|2011-07-14|64|0.02892721|0.90497349|0.16560372|0.1862776778125|0.127302350140054
@@ -159,7 +149,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|321i|Total Nitrogen|Bottom|Lab|1995-05-27|1995-08-09|2|0.18501242|0.22920939|0.207110905|0.207110905|0.0312519771948984
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|322|Total Nitrogen|Bottom|Lab|1995-05-27|2020-12-15|102|0.0317382|0.55097449|0.11961113|0.147086328921569|0.0975180428573829
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|323|Total Nitrogen|Bottom|Lab|1995-05-26|2011-07-13|65|0.03833214|0.38725565|0.17321544|0.179628404461538|0.0803502786546252
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|324|Total Nitrogen|Bottom|Lab|1995-05-26|2020-12-15|102|0.035903|0.39505215|0.129841845|0.152454776078431|0.0734802694904308
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|324|Total Nitrogen|Bottom|Lab|1995-05-26|2020-12-15|100|0.035903|0.39505215|0.129841845|0.1525705382|0.0740915353889009
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|325|Total Nitrogen|Bottom|Lab|1995-05-27|2020-12-15|102|0.03463651|0.60358226|0.13513199|0.16298966|0.0935205937852851
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|326|Total Nitrogen|Bottom|Lab|1995-05-26|2011-07-13|65|0.03994694|0.38479103|0.14712988|0.164754603692308|0.0739727801088815
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|327|Total Nitrogen|Bottom|Lab|1995-05-26|2011-07-13|65|0.03220352|0.40851138|0.15666774|0.167119642307692|0.07843936277307
@@ -189,29 +179,23 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|350|Total Nitrogen|Bottom|Lab|1995-05-26|2011-07-12|65|0.02814211|0.62324867|0.12119717|0.159804116769231|0.110482484714034
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|351|Total Nitrogen|Bottom|Lab|2010-05-04|2011-07-10|4|0.1301331|0.17723658|0.146851235|0.1502680375|0.0225433746146525
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|375|Total Nitrogen|Bottom|Lab|2011-01-20|2011-07-09|3|0.13847164|0.33301054|0.16463615|0.212039443333333|0.105577696827678
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|376|Total Nitrogen|Bottom|Lab|2011-01-18|2011-07-08|3|0.16027587|0.25850766|0.25425913|0.224347553333333|0.0555283527188177
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|376|Total Nitrogen|Bottom|Lab|2011-04-07|2011-07-08|2|0.16027587|0.25425913|0.2072675|0.2072675|0.0664562004640184
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|395|Total Nitrogen|Bottom|Lab|2011-01-19|2011-07-07|3|0.14986609|0.24920895|0.19114663|0.196740556666667|0.0499071134199218
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|396|Total Nitrogen|Bottom|Lab|2011-01-19|2011-07-07|3|0.1718454|0.23364016|0.19254488|0.19934348|0.0314533593171604
-15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|400|Total Nitrogen|Bottom|Lab|1997-10-11|2020-11-14|91|0.03203138|0.55827088|0.10417593|0.130234838791209|0.0853246950684696
+15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|400|Total Nitrogen|Bottom|Lab|1997-10-11|2020-11-14|90|0.03203138|0.55827088|0.102898895|0.130000318222222|0.0857732098381601
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|401|Total Nitrogen|Bottom|Lab|1998-02-12|2020-11-15|90|0.03398431|0.4937336|0.110814115|0.133135726|0.0768156121242933
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|402|Total Nitrogen|Bottom|Lab|1997-10-28|2020-12-13|91|0.015414|0.9333324|0.12533851|0.156166558131868|0.123644569674059
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|403|Total Nitrogen|Bottom|Lab|1997-10-29|2020-12-16|90|0.0283262|0.49823118|0.11465746|0.136556336555556|0.07856764899187
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|500|Total Nitrogen|Bottom|Lab|2012-12-13|2013-02-09|2|0.0602378|0.0691908|0.0647143|0.0647143|0.00633072701196316
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLKWAT_MON-RA-ODKEY-9|Total Nitrogen|Bottom|Lab|2008-07-26|2008-07-26|1|0.28|0.28|0.28|0.28|
+15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLKWAT_MON-VERNIER-6-1|Total Nitrogen|Bottom|Lab|2003-05-16|2003-05-16|1|0.09|0.09|0.09|0.09|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-BLOCK 02|Total Nitrogen|Bottom|Lab|2020-08-25|2021-05-05|2|0.414|0.494|0.454|0.454|0.0565685424949238
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-BLOCK 03|Total Nitrogen|Bottom|Lab|2021-05-05|2021-05-05|1|0.438|0.438|0.438|0.438|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-BLOCK 04|Total Nitrogen|Bottom|Lab|2020-11-16|2021-05-05|2|0.416|0.511|0.4635|0.4635|0.067175144212722
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-BLOCK 10|Total Nitrogen|Bottom|Lab|2021-05-05|2021-05-05|1|0.414|0.414|0.414|0.414|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-POINT B|Total Nitrogen|Bottom|Lab|2021-05-05|2021-05-05|1|0.468|0.468|0.468|0.468|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-POINT C|Total Nitrogen|Bottom|Lab|2020-08-25|2021-05-05|4|0.413|0.544|0.4785|0.4785|0.0616252112910509
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-POINT D|Total Nitrogen|Bottom|Lab|2020-08-25|2021-05-05|4|0.399|0.52|0.4685|0.464|0.065079438637202
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_09-BLOCK 01|Total Nitrogen|Bottom|Lab|2021-05-06|2021-05-06|1|0.265|0.265|0.265|0.265|
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_09-BLOCK 03|Total Nitrogen|Bottom|Lab|2020-08-23|2020-08-23|1|0.14|0.14|0.14|0.14|
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_09-BLOCK 04|Total Nitrogen|Bottom|Lab|2020-11-17|2021-05-06|2|0.087|0.143|0.115|0.115|0.0395979797464467
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_09-BLOCK 07|Total Nitrogen|Bottom|Lab|2021-02-05|2021-05-06|2|0.083|0.316|0.1995|0.1995|0.164755880016466
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_09-BLOCK 08|Total Nitrogen|Bottom|Lab|2021-02-05|2021-02-05|1|0.359|0.359|0.359|0.359|
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_09-POINT B|Total Nitrogen|Bottom|Lab|2020-08-23|2021-05-06|3|0.094|0.402|0.354|0.283333333333333|0.165714614121185
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_09-POINT C|Total Nitrogen|Bottom|Lab|2020-08-23|2021-05-06|3|0.179|0.359|0.197|0.245|0.0991362698511498
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_09-POINT D|Total Nitrogen|Bottom|Lab|2020-08-23|2021-05-06|4|0.085|0.354|0.148|0.18375|0.117346708517964
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 02|Total Nitrogen|Bottom|Lab|2021-02-05|2021-02-05|1|0.321|0.321|0.321|0.321|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 03|Total Nitrogen|Bottom|Lab|2020-08-12|2020-08-12|1|0.272|0.272|0.272|0.272|
@@ -221,7 +205,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 11|Total Nitrogen|Bottom|Lab|2021-02-05|2021-02-05|1|0.301|0.301|0.301|0.301|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 13|Total Nitrogen|Bottom|Lab|2020-10-15|2020-10-15|1|0.084|0.084|0.084|0.084|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 14|Total Nitrogen|Bottom|Lab|2020-08-12|2020-08-12|1|0.228|0.228|0.228|0.228|
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 15|Total Nitrogen|Bottom|Lab|2020-08-12|2020-08-12|1|0.25|0.25|0.25|0.25|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 17|Total Nitrogen|Bottom|Lab|2021-02-05|2021-05-06|2|0.132|0.287|0.2095|0.2095|0.109601551083915
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 18|Total Nitrogen|Bottom|Lab|2020-08-12|2021-05-06|3|0.08|0.206|0.14|0.142|0.0630238050263549
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_10-BLOCK 19|Total Nitrogen|Bottom|Lab|2021-02-05|2021-02-05|1|0.285|0.285|0.285|0.285|
@@ -253,7 +236,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_16-BLOCK 01|Total Nitrogen|Bottom|Lab|2020-08-22|2020-08-22|1|0.255|0.255|0.255|0.255|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_16-BLOCK 05|Total Nitrogen|Bottom|Lab|2021-02-05|2021-05-06|2|0.062|0.23|0.146|0.146|0.11879393923934
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_16-BLOCK 06|Total Nitrogen|Bottom|Lab|2020-08-22|2020-11-17|2|0.166|0.237|0.2015|0.2015|0.0502045814642449
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_16-BLOCK 08|Total Nitrogen|Bottom|Lab|2020-08-22|2021-05-06|2|0.162|0.23|0.196|0.196|0.0480832611206852
+15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_16-BLOCK 08|Total Nitrogen|Bottom|Lab|2020-08-22|2020-08-22|1|0.23|0.23|0.23|0.23|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_16-BLOCK 10|Total Nitrogen|Bottom|Lab|2020-08-22|2020-08-22|1|0.257|0.257|0.257|0.257|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_16-BLOCK 15|Total Nitrogen|Bottom|Lab|2020-08-22|2020-08-22|1|0.251|0.251|0.251|0.251|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_16-BLOCK 21|Total Nitrogen|Bottom|Lab|2021-05-06|2021-05-06|1|0.106|0.106|0.106|0.106|
@@ -301,7 +284,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_39-BLOCK 04|Total Nitrogen|Bottom|Lab|2021-03-13|2021-04-16|2|0.293|0.469|0.381|0.381|0.124450793488832
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_39-BLOCK 08|Total Nitrogen|Bottom|Lab|2020-10-05|2020-10-05|1|0.408|0.408|0.408|0.408|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_39-POINT D|Total Nitrogen|Bottom|Lab|2020-10-05|2021-04-16|3|0.297|0.543|0.447|0.429|0.123983869918631
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_42-BLOCK 01|Total Nitrogen|Bottom|Lab|2020-10-06|2021-04-16|3|0.181|0.221|0.194|0.198666666666667|0.0204042479237372
+15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_42-BLOCK 01|Total Nitrogen|Bottom|Lab|2020-10-06|2021-03-13|2|0.181|0.194|0.1875|0.1875|0.00919238815542513
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_42-BLOCK 02|Total Nitrogen|Bottom|Lab|2021-03-13|2021-03-13|1|0.197|0.197|0.197|0.197|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_42-BLOCK 03|Total Nitrogen|Bottom|Lab|2020-10-06|2020-10-06|1|0.203|0.203|0.203|0.203|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_42-BLOCK 04|Total Nitrogen|Bottom|Lab|2021-04-16|2021-04-16|1|0.203|0.203|0.203|0.203|
@@ -347,27 +330,27 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLWPB_G5SE0123|Total Nitrogen|Bottom|Lab|2022-04-27|2022-04-27|1|0.394|0.394|0.394|0.394|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLWPB_G5SE0126|Total Nitrogen|Bottom|Lab|2022-09-21|2022-09-21|1|0.291|0.291|0.291|0.291|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV004|Total Nitrogen|Bottom|Lab|2017-11-06|2022-05-02|22|0.384|1.83|0.6445|0.727545454545455|0.308481029326838
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV006|Total Nitrogen|Bottom|Lab|2017-11-06|2022-11-07|44|0.374|1.94|0.767|0.804113636363636|0.30855147065325
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_CHV006|Total Nitrogen|Bottom|Lab|2017-11-06|2022-11-07|43|0.374|1.94|0.764|0.803883720930233|0.312199280779374
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_GSV001|Total Nitrogen|Bottom|Lab|2017-11-06|2022-09-06|42|0.319|1.009|0.579|0.607119047619048|0.152757292330175
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_GSV002|Total Nitrogen|Bottom|Lab|2017-11-06|2022-11-07|33|0.224|0.754|0.434|0.453333333333333|0.125125853310444
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLGW_10273|Total Nitrogen|Bottom|Lab|2001-07-19|2001-07-19|1|1.404|1.404|1.404|1.404|
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR10|Total Nitrogen|Bottom|Lab|1996-08-26|2016-12-22|219|0.187|2.119|0.71|0.788787671232877|0.341012800324151
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR10|Total Nitrogen|Bottom|Lab|1996-08-26|2016-12-22|218|0.187|2.119|0.7075|0.787864678899083|0.34152334947959
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|STORET_FLPRMRWS_PR9|Total Nitrogen|Bottom|Lab|1996-08-26|2016-12-22|220|0.113|1.773|0.542|0.582792454545455|0.292027840443249
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0039|Total Nitrogen|Bottom|Lab|2020-07-27|2022-10-31|7|0.164|1.004|0.714|0.671428571428571|0.31185619396492
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0044|Total Nitrogen|Bottom|Lab|2021-02-02|2021-02-02|1|0.84|0.84|0.84|0.84|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0046|Total Nitrogen|Bottom|Lab|2021-07-28|2023-04-10|8|0.954|1.304|1.104|1.09225|0.125043706644631
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0052|Total Nitrogen|Bottom|Lab|2022-03-07|2023-03-15|7|0.574|1.104|0.784|0.814|0.181842422626478
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G2SD0052|Total Nitrogen|Bottom|Lab|2022-03-07|2023-03-15|6|0.574|1.104|0.764|0.817333333333333|0.198963983340369
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0073|Total Nitrogen|Bottom|Lab|2020-06-22|2022-11-29|7|0.574|1.18|0.92|0.923857142857143|0.195917013529903
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLFTM_G3SD0218|Total Nitrogen|Bottom|Lab|2022-03-16|2023-03-22|7|0.524|1.239|0.695|0.777|0.235519284419203
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_TP-HI|Total Nitrogen|Bottom|Lab|2020-05-27|2020-09-29|14|0.594|1.15|0.844|0.841857142857143|0.179223477661424
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_FLPRMRWS_PR10|Total Nitrogen|Bottom|Lab|2020-01-29|2022-12-20|36|0.257|1.899|0.715|0.833444444444444|0.382615319269475
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_TP-HI|Total Nitrogen|Bottom|Lab|2020-05-27|2020-09-29|13|0.594|1.15|0.844|0.836230769230769|0.185250350357813
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_FLPRMRWS_PR10|Total Nitrogen|Bottom|Lab|2020-01-29|2022-12-20|35|0.257|1.899|0.754|0.8414|0.385168427635312
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|5002|Florida STORET / WIN|WIN_FLPRMRWS_PR9|Total Nitrogen|Bottom|Lab|2020-01-29|2022-12-20|35|0.296|1.543|0.58|0.633857142857143|0.282849070422117
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670049|Total Nitrogen|Bottom|Lab|2010-06-02|2015-04-06|16|0.518|1.265|0.865|0.882625|0.247567061621695
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670052|Total Nitrogen|Bottom|Lab|2010-08-18|2015-12-08|12|0.566|1.43|0.944|0.934|0.257916829441374
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670053|Total Nitrogen|Bottom|Lab|2010-06-02|2015-05-19|13|0.478|1.224|0.684|0.705307692307692|0.188609112812445
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670054|Total Nitrogen|Bottom|Lab|2010-11-16|2014-07-09|11|0.469|1.266|0.743|0.762363636363636|0.253539059210715
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670056|Total Nitrogen|Bottom|Lab|2011-08-02|2013-06-13|5|0.425|1.117|0.596|0.679|0.266136243304064
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670057|Total Nitrogen|Bottom|Lab|2011-01-05|2014-12-03|9|0.429|1.314|0.634|0.765666666666667|0.33212798737836
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670057|Total Nitrogen|Bottom|Lab|2011-01-05|2014-12-03|8|0.429|1.314|0.6745|0.782125|0.351114323058947
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670058|Total Nitrogen|Bottom|Lab|2010-09-07|2014-05-07|5|0.414|1.08|0.57|0.6484|0.275841077434091
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670061|Total Nitrogen|Bottom|Lab|2011-03-02|2014-03-05|6|0.548|1.154|0.685|0.744|0.221519299384952
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670062|Total Nitrogen|Bottom|Lab|2011-11-16|2015-01-06|5|0.399|1.19|0.723|0.7386|0.298102834605778
@@ -376,8 +359,9 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670069|Total Nitrogen|Bottom|Lab|2010-11-16|2014-07-09|5|0.388|0.684|0.45|0.5188|0.130903399497492
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670070|Total Nitrogen|Bottom|Lab|2010-09-07|2015-12-08|9|0.579|1.386|0.764|0.831666666666667|0.259715709959948
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670071|Total Nitrogen|Bottom|Lab|2013-02-14|2013-02-14|1|0.496|0.496|0.496|0.496|
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670072|Total Nitrogen|Bottom|Lab|2011-01-05|2011-01-05|1|0.549|0.549|0.549|0.549|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670076|Total Nitrogen|Bottom|Lab|2011-04-13|2015-01-05|5|0.48|1.259|0.726|0.7866|0.289318682424762
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670080|Total Nitrogen|Bottom|Lab|2010-06-02|2015-02-02|3|0.495|0.805|0.626|0.642|0.155618122337985
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670080|Total Nitrogen|Bottom|Lab|2010-06-02|2015-02-02|2|0.495|0.626|0.5605|0.5605|0.0926309883354377
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670082|Total Nitrogen|Bottom|Lab|2010-07-06|2012-08-14|3|0.629|1.055|0.71|0.798|0.22622334097082
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670084|Total Nitrogen|Bottom|Lab|2012-06-14|2012-06-14|1|0.732|0.732|0.732|0.732|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670087|Total Nitrogen|Bottom|Lab|2010-07-06|2014-06-05|6|0.301|0.892|0.708|0.627|0.235946604128985
@@ -388,8 +372,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670114|Total Nitrogen|Bottom|Lab|2012-07-11|2012-07-11|1|0.932|0.932|0.932|0.932|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670118|Total Nitrogen|Bottom|Lab|2015-01-05|2015-10-21|3|0.602|0.706|0.653|0.653666666666667|0.0520032050294338
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670119|Total Nitrogen|Bottom|Lab|2013-07-18|2015-07-07|6|0.249|0.542|0.3205|0.354166666666667|0.104106515966421
-18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670125|Total Nitrogen|Bottom|Lab|2015-05-18|2015-05-18|1|0.555|0.555|0.555|0.555|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670129|Total Nitrogen|Bottom|Lab|2011-02-01|2015-08-17|3|0.228|0.831|0.391|0.483333333333333|0.311923601757439
+18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670132|Total Nitrogen|Bottom|Lab|2008-02-07|2008-02-07|1|0.66|0.66|0.66|0.66|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670142|Total Nitrogen|Bottom|Lab|2013-12-04|2013-12-04|1|0.364|0.364|0.364|0.364|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670144|Total Nitrogen|Bottom|Lab|2010-08-17|2014-07-10|4|0.483|1.084|0.7385|0.761|0.247053300591863
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670145|Total Nitrogen|Bottom|Lab|2013-06-12|2016-01-06|4|0.435|0.749|0.5145|0.55325|0.142136964462685
@@ -455,9 +439,9 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_LBV001B|Total Nitrogen|Bottom|Lab|2018-07-09|2022-08-01|16|0.381|0.93|0.723|0.705375|0.181043595118229
 25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_LBV002|Total Nitrogen|Bottom|Lab|2017-11-06|2019-07-01|8|0.374|0.884|0.769|0.724125|0.179013517047496
 25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_LBV004|Total Nitrogen|Bottom|Lab|2017-11-06|2022-03-07|13|0.364|0.674|0.534|0.523769230769231|0.112830369616041
-25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_LBV005|Total Nitrogen|Bottom|Lab|2017-11-06|2022-08-01|16|0.264|0.634|0.374|0.39975|0.107112090820785
-25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_LBV007|Total Nitrogen|Bottom|Lab|2019-02-04|2022-03-07|7|0.304|0.614|0.354|0.398285714285714|0.107835854095804
-25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-5-06|Total Nitrogen|Bottom|Lab|2001-06-06|2001-06-06|1|0.535|0.535|0.535|0.535|
+25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_LBV005|Total Nitrogen|Bottom|Lab|2017-11-06|2022-03-07|15|0.264|0.634|0.374|0.396133333333333|0.109855662879374
+25|Lemon Bay Aquatic Preserve|476|Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network|WIN_21FLCHAR_LBV007|Total Nitrogen|Bottom|Lab|2019-02-04|2022-03-07|6|0.304|0.614|0.384|0.412333333333333|0.110890336218566
+25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSARA_LB-5-02|Total Nitrogen|Bottom|Lab|2005-02-09|2005-02-09|1|0.305|0.305|0.305|0.305|
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-1-01|Total Nitrogen|Bottom|Lab|2022-01-05|2022-01-05|1|0.526|0.526|0.526|0.526|
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-1-02|Total Nitrogen|Bottom|Lab|2022-02-02|2023-02-01|2|0.355|0.555|0.455|0.455|0.14142135623731
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-1-03|Total Nitrogen|Bottom|Lab|2021-03-10|2022-03-02|2|0.323|0.382|0.3525|0.3525|0.0417193000900063
@@ -472,7 +456,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-2-05|Total Nitrogen|Bottom|Lab|2021-05-05|2022-05-11|2|0.445|0.545|0.495|0.495|0.0707106781186548
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-2-06|Total Nitrogen|Bottom|Lab|2022-06-01|2022-06-01|1|0.548|0.548|0.548|0.548|
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-2-07|Total Nitrogen|Bottom|Lab|2022-07-06|2022-07-06|1|0.675|0.675|0.675|0.675|
-25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-2-08|Total Nitrogen|Bottom|Lab|2020-08-12|2021-08-11|2|0.685|0.868|0.7765|0.7765|0.129400540957138
+25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-2-08|Total Nitrogen|Bottom|Lab|2021-08-11|2021-08-11|1|0.868|0.868|0.868|0.868|
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-2-09|Total Nitrogen|Bottom|Lab|2020-09-09|2021-09-01|2|0.695|0.855|0.775|0.775|0.113137084989848
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-2-10|Total Nitrogen|Bottom|Lab|2020-10-07|2022-10-12|3|0.656|1.091|0.875|0.874|0.217501724131097
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-2-11|Total Nitrogen|Bottom|Lab|2020-11-04|2021-11-09|2|0.607|0.614|0.6105|0.6105|0.00494974746830584
@@ -505,7 +489,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-5-04|Total Nitrogen|Bottom|Lab|2021-04-07|2022-04-06|2|0.415|0.485|0.45|0.45|0.0494974746830583
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-5-07|Total Nitrogen|Bottom|Lab|2021-07-14|2022-07-06|2|0.415|0.655|0.535|0.535|0.169705627484771
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-5-08|Total Nitrogen|Bottom|Lab|2020-08-12|2021-08-11|2|0.575|0.955|0.765|0.765|0.268700576850888
-25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-5-09|Total Nitrogen|Bottom|Lab|2020-09-09|2022-09-07|5|0.665|0.835|0.755|0.761|0.0650384501660364
+25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-5-09|Total Nitrogen|Bottom|Lab|2021-09-01|2022-09-07|4|0.745|0.835|0.78|0.785|0.0424264068711929
 25|Lemon Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLSARA_LB-5-11|Total Nitrogen|Bottom|Lab|2020-11-04|2021-11-09|3|0.475|0.525|0.485|0.495|0.0264575131106459
 25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|670109|Total Nitrogen|Bottom|Lab|2015-09-01|2015-09-01|1|0.633|0.633|0.633|0.633|
 25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|735138|Total Nitrogen|Bottom|Lab|2011-12-15|2014-11-04|8|0.344|0.554|0.438|0.436125|0.071527092769104
@@ -520,3 +504,381 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735147|Total Nitrogen|Bottom|Lab|2020-04-21|2020-04-21|1|0.757|0.757|0.757|0.757|
 25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735149|Total Nitrogen|Bottom|Lab|2020-12-16|2020-12-16|1|0.561|0.561|0.561|0.561|
 25|Lemon Bay Aquatic Preserve|479|Southwest Florida Water Management District - Water Quality Monitoring|WIN_21FLSWFD_735151|Total Nitrogen|Bottom|Lab|2021-03-17|2021-03-17|1|0.463|0.463|0.463|0.463|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_028|Total Nitrogen|Bottom|Lab|2005-10-26|2005-10-26|1|0.48|0.48|0.48|0.48|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E2 63-01|Total Nitrogen|Bottom|Lab|1999-09-08|1999-09-08|1|0.48|0.48|0.48|0.48|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E3-C-16-04|Total Nitrogen|Bottom|Lab|2016-06-30|2016-06-30|1|0.68|0.68|0.68|0.68|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E3-D-04-02|Total Nitrogen|Bottom|Lab|2004-03-04|2004-03-04|1|0.31|0.31|0.31|0.31|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_E7 98-15|Total Nitrogen|Bottom|Lab|1999-12-15|1999-12-15|1|0.41|0.41|0.41|0.41|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_LT 03-22|Total Nitrogen|Bottom|Lab|2002-05-21|2002-05-21|1|0.95|0.95|0.95|0.95|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_RB-D-13-08|Total Nitrogen|Bottom|Lab|2013-12-03|2013-12-03|1|0.48|0.48|0.48|0.48|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W1-A-15-05|Total Nitrogen|Bottom|Lab|2015-07-23|2015-07-23|1|0.87|0.87|0.87|0.87|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4-D-12-02|Total Nitrogen|Bottom|Lab|2012-03-19|2012-03-19|1|0.86|0.86|0.86|0.86|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W4 00-38|Total Nitrogen|Bottom|Lab|2001-10-24|2001-10-24|1|0.58|0.58|0.58|0.58|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W7-B-09-03|Total Nitrogen|Bottom|Lab|2009-05-13|2009-05-13|1|0.6|0.6|0.6|0.6|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 00-07|Total Nitrogen|Bottom|Lab|2001-08-22|2001-08-22|1|0.51|0.51|0.51|0.51|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLPDEM_W8 60-07|Total Nitrogen|Bottom|Lab|2001-08-22|2001-08-22|1|0.43|0.43|0.43|0.43|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_280447308242353|Total Nitrogen|Bottom|Lab|2006-09-19|2006-09-19|1|1.217|1.217|1.217|1.217|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_25|Total Nitrogen|Bottom|Lab|2020-12-15|2022-12-13|8|0.194|0.437|0.294|0.305875|0.0945023620264141
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_38|Total Nitrogen|Bottom|Lab|2021-01-05|2021-12-06|3|0.264|0.338|0.293|0.298333333333333|0.0372871738448134
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_46|Total Nitrogen|Bottom|Lab|2020-10-06|2023-03-07|17|0.183|0.557|0.341|0.368176470588235|0.097733844760987
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_64|Total Nitrogen|Bottom|Lab|2020-08-04|2023-03-07|31|0.183|0.877|0.412|0.410354838709677|0.141107889783455
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_65|Total Nitrogen|Bottom|Lab|2020-08-04|2023-03-07|24|0.183|0.777|0.372|0.383333333333333|0.130154311982109
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_67|Total Nitrogen|Bottom|Lab|2020-11-16|2021-01-05|2|0.217|0.246|0.2315|0.2315|0.0205060966544099
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLHILL_68|Total Nitrogen|Bottom|Lab|2022-03-01|2022-03-01|1|0.183|0.183|0.183|0.183|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_01-01|Total Nitrogen|Bottom|Lab|2020-12-07|2021-12-09|3|0.69|0.99|0.81|0.83|0.150996688705415
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_01-33|Total Nitrogen|Bottom|Lab|2020-10-22|2020-12-07|2|0.61|0.91|0.76|0.76|0.212132034355964
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_01-35|Total Nitrogen|Bottom|Lab|2020-10-22|2020-12-07|2|0.63|0.72|0.675|0.675|0.0636396103067893
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-02|2020-12-02|1|0.7|0.7|0.7|0.7|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-A-21-02|Total Nitrogen|Bottom|Lab|2021-03-15|2021-03-15|1|1.03|1.03|1.03|1.03|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-A-21-04|Total Nitrogen|Bottom|Lab|2021-07-08|2021-07-08|1|1.03|1.03|1.03|1.03|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-A-21-05|Total Nitrogen|Bottom|Lab|2021-07-29|2021-07-29|1|1.03|1.03|1.03|1.03|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-A-21-07|Total Nitrogen|Bottom|Lab|2021-11-15|2021-11-15|1|1.36|1.36|1.36|1.36|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-A-22-01|Total Nitrogen|Bottom|Lab|2022-02-01|2022-02-01|1|0.47|0.47|0.47|0.47|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-20-04|Total Nitrogen|Bottom|Lab|2020-06-15|2020-06-15|1|1.01|1.01|1.01|1.01|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-20-07|Total Nitrogen|Bottom|Lab|2020-11-23|2020-11-23|1|0.98|0.98|0.98|0.98|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-20-08|Total Nitrogen|Bottom|Lab|2020-12-02|2020-12-02|1|0.68|0.68|0.68|0.68|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-21-02|Total Nitrogen|Bottom|Lab|2021-03-15|2021-03-15|1|0.84|0.84|0.84|0.84|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-17|2021-05-17|1|0.88|0.88|0.88|0.88|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-21-05|Total Nitrogen|Bottom|Lab|2021-07-29|2021-07-29|1|1.08|1.08|1.08|1.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-21-07|Total Nitrogen|Bottom|Lab|2021-11-15|2021-11-15|1|0.82|0.82|0.82|0.82|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-21-08|Total Nitrogen|Bottom|Lab|2021-12-15|2021-12-15|1|1.39|1.39|1.39|1.39|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-B-22-01|Total Nitrogen|Bottom|Lab|2022-02-01|2022-02-01|1|0.49|0.49|0.49|0.49|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-20-07|Total Nitrogen|Bottom|Lab|2020-11-23|2020-11-23|1|0.99|0.99|0.99|0.99|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-20-08|Total Nitrogen|Bottom|Lab|2020-12-02|2020-12-02|1|0.64|0.64|0.64|0.64|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-21-01|Total Nitrogen|Bottom|Lab|2021-02-03|2021-02-03|1|0.5|0.5|0.5|0.5|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-21-02|Total Nitrogen|Bottom|Lab|2021-03-15|2021-03-15|1|0.82|0.82|0.82|0.82|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-21-03|Total Nitrogen|Bottom|Lab|2021-05-17|2021-05-17|1|0.74|0.74|0.74|0.74|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-C-22-02|Total Nitrogen|Bottom|Lab|2022-03-17|2022-03-17|1|0.62|0.62|0.62|0.62|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-20-03|Total Nitrogen|Bottom|Lab|2020-05-07|2020-05-07|1|0.96|0.96|0.96|0.96|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-20-04|Total Nitrogen|Bottom|Lab|2020-06-15|2020-06-15|1|0.79|0.79|0.79|0.79|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-20-05|Total Nitrogen|Bottom|Lab|2020-08-05|2020-08-05|1|1.06|1.06|1.06|1.06|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-03|2021-02-03|1|0.55|0.55|0.55|0.55|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-21-02|Total Nitrogen|Bottom|Lab|2021-03-15|2021-03-15|1|0.87|0.87|0.87|0.87|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-21-03|Total Nitrogen|Bottom|Lab|2021-05-17|2021-05-17|1|1.08|1.08|1.08|1.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E1-D-22-01|Total Nitrogen|Bottom|Lab|2022-02-01|2022-02-01|1|0.49|0.49|0.49|0.49|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-A-20-03|Total Nitrogen|Bottom|Lab|2020-05-07|2020-05-07|1|1.27|1.27|1.27|1.27|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-A-21-01|Total Nitrogen|Bottom|Lab|2021-02-03|2021-02-03|1|0.77|0.77|0.77|0.77|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-A-21-07|Total Nitrogen|Bottom|Lab|2021-10-18|2021-10-18|1|1.84|1.84|1.84|1.84|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-A-22-02|Total Nitrogen|Bottom|Lab|2022-03-17|2022-03-17|1|0.7|0.7|0.7|0.7|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-20-04|Total Nitrogen|Bottom|Lab|2020-06-15|2020-06-15|1|0.79|0.79|0.79|0.79|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-20-05|Total Nitrogen|Bottom|Lab|2020-08-05|2020-08-05|1|0.89|0.89|0.89|0.89|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-21-01|Total Nitrogen|Bottom|Lab|2021-02-03|2021-02-03|1|0.77|0.77|0.77|0.77|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-21-04|Total Nitrogen|Bottom|Lab|2021-07-08|2021-07-08|1|1.33|1.33|1.33|1.33|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-15|2021-09-15|1|1.02|1.02|1.02|1.02|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-21-07|Total Nitrogen|Bottom|Lab|2021-10-18|2021-10-18|1|1.86|1.86|1.86|1.86|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-21-08|Total Nitrogen|Bottom|Lab|2021-12-15|2021-12-15|1|0.91|0.91|0.91|0.91|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-22-01|Total Nitrogen|Bottom|Lab|2022-02-01|2022-02-01|1|0.53|0.53|0.53|0.53|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-B-22-02|Total Nitrogen|Bottom|Lab|2022-03-17|2022-03-17|1|0.95|0.95|0.95|0.95|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-C-20-03|Total Nitrogen|Bottom|Lab|2020-05-07|2020-05-07|1|1.01|1.01|1.01|1.01|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-C-20-05|Total Nitrogen|Bottom|Lab|2020-08-05|2020-08-05|1|1.03|1.03|1.03|1.03|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-C-20-07|Total Nitrogen|Bottom|Lab|2020-11-23|2020-11-23|1|0.68|0.68|0.68|0.68|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-C-21-03|Total Nitrogen|Bottom|Lab|2021-05-17|2021-05-17|1|0.77|0.77|0.77|0.77|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-C-22-02|Total Nitrogen|Bottom|Lab|2022-03-17|2022-03-17|1|0.84|0.84|0.84|0.84|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-20-03|Total Nitrogen|Bottom|Lab|2020-05-07|2020-05-07|1|1|1|1|1|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-20-08|Total Nitrogen|Bottom|Lab|2020-12-02|2020-12-02|1|0.75|0.75|0.75|0.75|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-03|2021-02-03|1|0.51|0.51|0.51|0.51|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-21-05|Total Nitrogen|Bottom|Lab|2021-08-03|2021-08-03|1|1.67|1.67|1.67|1.67|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-21-06|Total Nitrogen|Bottom|Lab|2021-09-15|2021-09-15|1|1.1|1.1|1.1|1.1|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-21-07|Total Nitrogen|Bottom|Lab|2021-10-18|2021-10-18|1|1.6|1.6|1.6|1.6|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E2-D-21-08|Total Nitrogen|Bottom|Lab|2021-12-15|2021-12-15|1|1.09|1.09|1.09|1.09|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-A-20-03|Total Nitrogen|Bottom|Lab|2020-05-05|2020-05-05|1|0.71|0.71|0.71|0.71|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-A-20-04|Total Nitrogen|Bottom|Lab|2020-06-16|2020-06-16|1|0.6|0.6|0.6|0.6|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-A-20-06|Total Nitrogen|Bottom|Lab|2020-09-10|2020-09-10|1|0.85|0.85|0.85|0.85|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-A-21-02|Total Nitrogen|Bottom|Lab|2021-03-31|2021-03-31|1|0.53|0.53|0.53|0.53|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-A-21-05|Total Nitrogen|Bottom|Lab|2021-07-27|2021-07-27|1|1.97|1.97|1.97|1.97|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-A-21-06|Total Nitrogen|Bottom|Lab|2021-09-08|2021-09-08|1|1.35|1.35|1.35|1.35|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-20-03|Total Nitrogen|Bottom|Lab|2020-05-05|2020-05-05|1|0.59|0.59|0.59|0.59|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-20-07|Total Nitrogen|Bottom|Lab|2020-10-14|2020-10-14|1|0.71|0.71|0.71|0.71|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-21-01|Total Nitrogen|Bottom|Lab|2021-02-09|2021-02-09|1|0.49|0.49|0.49|0.49|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-21-04|Total Nitrogen|Bottom|Lab|2021-06-16|2021-06-16|1|1.35|1.35|1.35|1.35|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-08|2021-09-08|1|1.13|1.13|1.13|1.13|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-21-07|Total Nitrogen|Bottom|Lab|2021-11-09|2021-11-09|1|1.11|1.11|1.11|1.11|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-B-22-02|Total Nitrogen|Bottom|Lab|2022-03-21|2022-03-21|1|0.72|0.72|0.72|0.72|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-C-20-06|Total Nitrogen|Bottom|Lab|2020-09-10|2020-09-10|1|0.73|0.73|0.73|0.73|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-C-21-01|Total Nitrogen|Bottom|Lab|2021-02-09|2021-02-09|1|0.5|0.5|0.5|0.5|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-C-21-02|Total Nitrogen|Bottom|Lab|2021-03-31|2021-03-31|1|0.55|0.55|0.55|0.55|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-C-21-07|Total Nitrogen|Bottom|Lab|2021-11-09|2021-11-09|1|1.18|1.18|1.18|1.18|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-C-21-08|Total Nitrogen|Bottom|Lab|2021-12-14|2021-12-14|1|1.27|1.27|1.27|1.27|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-20-06|Total Nitrogen|Bottom|Lab|2020-09-10|2020-09-10|1|0.81|0.81|0.81|0.81|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-09|2021-02-09|1|0.66|0.66|0.66|0.66|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-21-02|Total Nitrogen|Bottom|Lab|2021-03-31|2021-03-31|1|0.65|0.65|0.65|0.65|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-21-04|Total Nitrogen|Bottom|Lab|2021-06-16|2021-06-16|1|1.36|1.36|1.36|1.36|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-21-05|Total Nitrogen|Bottom|Lab|2021-07-27|2021-07-27|1|1.47|1.47|1.47|1.47|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-21-07|Total Nitrogen|Bottom|Lab|2021-11-09|2021-11-09|1|1.08|1.08|1.08|1.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-21-08|Total Nitrogen|Bottom|Lab|2021-12-14|2021-12-14|1|1.19|1.19|1.19|1.19|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E3-D-22-02|Total Nitrogen|Bottom|Lab|2022-03-21|2022-03-21|1|0.89|0.89|0.89|0.89|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-10|2020-12-10|1|0.53|0.53|0.53|0.53|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-A-21-02|Total Nitrogen|Bottom|Lab|2021-03-31|2021-03-31|1|0.52|0.52|0.52|0.52|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-A-21-03|Total Nitrogen|Bottom|Lab|2021-05-11|2021-05-11|1|0.92|0.92|0.92|0.92|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-A-21-04|Total Nitrogen|Bottom|Lab|2021-06-16|2021-06-16|1|1.18|1.18|1.18|1.18|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-A-21-05|Total Nitrogen|Bottom|Lab|2021-07-27|2021-07-27|1|1.37|1.37|1.37|1.37|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-B-21-02|Total Nitrogen|Bottom|Lab|2021-03-31|2021-03-31|1|0.63|0.63|0.63|0.63|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-08|2021-09-08|1|1.08|1.08|1.08|1.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-B-22-01|Total Nitrogen|Bottom|Lab|2022-02-15|2022-02-15|1|0.66|0.66|0.66|0.66|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-C-20-03|Total Nitrogen|Bottom|Lab|2020-05-05|2020-05-05|1|0.93|0.93|0.93|0.93|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-C-20-04|Total Nitrogen|Bottom|Lab|2020-06-16|2020-06-16|1|0.73|0.73|0.73|0.73|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-C-20-06|Total Nitrogen|Bottom|Lab|2020-09-10|2020-09-10|1|0.73|0.73|0.73|0.73|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-D-20-03|Total Nitrogen|Bottom|Lab|2020-05-05|2020-05-05|1|0.77|0.77|0.77|0.77|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-09|2021-02-09|1|0.54|0.54|0.54|0.54|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-D-21-04|Total Nitrogen|Bottom|Lab|2021-06-16|2021-06-16|1|1.05|1.05|1.05|1.05|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E4-D-22-02|Total Nitrogen|Bottom|Lab|2022-03-21|2022-03-21|1|0.94|0.94|0.94|0.94|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-20-03|Total Nitrogen|Bottom|Lab|2020-05-21|2020-05-21|1|0.95|0.95|0.95|0.95|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-09|2020-12-09|1|0.93|0.93|0.93|0.93|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-21-02|Total Nitrogen|Bottom|Lab|2021-04-06|2021-04-06|1|0.73|0.73|0.73|0.73|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-21-04|Total Nitrogen|Bottom|Lab|2021-07-01|2021-07-01|1|0.98|0.98|0.98|0.98|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-21-05|Total Nitrogen|Bottom|Lab|2021-08-09|2021-08-09|1|1.13|1.13|1.13|1.13|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-21-06|Total Nitrogen|Bottom|Lab|2021-09-20|2021-09-20|1|1.27|1.27|1.27|1.27|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-21-08|Total Nitrogen|Bottom|Lab|2021-12-01|2021-12-01|1|0.96|0.96|0.96|0.96|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-22-01|Total Nitrogen|Bottom|Lab|2022-02-23|2022-02-23|1|0.42|0.42|0.42|0.42|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-A-22-02|Total Nitrogen|Bottom|Lab|2022-03-29|2022-03-29|1|0.61|0.61|0.61|0.61|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-20-04|Total Nitrogen|Bottom|Lab|2020-06-24|2020-06-24|1|0.71|0.71|0.71|0.71|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-20-05|Total Nitrogen|Bottom|Lab|2020-08-06|2020-08-06|1|0.76|0.76|0.76|0.76|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-20-06|Total Nitrogen|Bottom|Lab|2020-08-31|2020-08-31|1|0.74|0.74|0.74|0.74|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-21-01|Total Nitrogen|Bottom|Lab|2021-02-11|2021-02-11|1|0.9|0.9|0.9|0.9|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-11|2021-05-11|1|0.75|0.75|0.75|0.75|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-20|2021-09-20|1|1.14|1.14|1.14|1.14|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-C-20-04|Total Nitrogen|Bottom|Lab|2020-06-24|2020-06-24|1|1.21|1.21|1.21|1.21|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-C-20-07|Total Nitrogen|Bottom|Lab|2020-10-15|2020-10-15|1|0.45|0.45|0.45|0.45|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-C-21-01|Total Nitrogen|Bottom|Lab|2021-02-11|2021-02-11|1|0.76|0.76|0.76|0.76|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-C-21-02|Total Nitrogen|Bottom|Lab|2021-04-06|2021-04-06|1|1.01|1.01|1.01|1.01|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-C-21-03|Total Nitrogen|Bottom|Lab|2021-05-11|2021-05-11|1|0.88|0.88|0.88|0.88|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-20-07|Total Nitrogen|Bottom|Lab|2020-10-15|2020-10-15|1|0.63|0.63|0.63|0.63|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-20-08|Total Nitrogen|Bottom|Lab|2020-12-09|2020-12-09|1|0.91|0.91|0.91|0.91|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-11|2021-02-11|1|0.85|0.85|0.85|0.85|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-21-02|Total Nitrogen|Bottom|Lab|2021-04-06|2021-04-06|1|0.91|0.91|0.91|0.91|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-21-04|Total Nitrogen|Bottom|Lab|2021-07-01|2021-07-01|1|0.85|0.85|0.85|0.85|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-21-05|Total Nitrogen|Bottom|Lab|2021-08-09|2021-08-09|1|1.22|1.22|1.22|1.22|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-21-07|Total Nitrogen|Bottom|Lab|2021-10-27|2021-10-27|1|1.15|1.15|1.15|1.15|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-21-08|Total Nitrogen|Bottom|Lab|2021-12-01|2021-12-01|1|0.63|0.63|0.63|0.63|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-22-01|Total Nitrogen|Bottom|Lab|2022-02-23|2022-02-23|1|0.37|0.37|0.37|0.37|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_E5-D-22-02|Total Nitrogen|Bottom|Lab|2022-03-29|2022-03-29|1|1.41|1.41|1.41|1.41|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-20-04|Total Nitrogen|Bottom|Lab|2020-06-23|2020-06-23|1|1.24|1.24|1.24|1.24|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-20-06|Total Nitrogen|Bottom|Lab|2020-09-23|2020-09-23|1|1.36|1.36|1.36|1.36|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-20-07|Total Nitrogen|Bottom|Lab|2020-10-21|2020-10-21|1|0.48|0.48|0.48|0.48|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-21-03|Total Nitrogen|Bottom|Lab|2021-05-12|2021-05-12|1|1.48|1.48|1.48|1.48|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-21-05|Total Nitrogen|Bottom|Lab|2021-07-27|2021-07-27|1|1.63|1.63|1.63|1.63|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-21-08|Total Nitrogen|Bottom|Lab|2021-12-16|2021-12-16|1|0.82|0.82|0.82|0.82|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-B-20-04|Total Nitrogen|Bottom|Lab|2020-06-23|2020-06-23|1|1.32|1.32|1.32|1.32|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-B-20-05|Total Nitrogen|Bottom|Lab|2020-08-03|2020-08-03|1|1.2|1.2|1.2|1.2|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-B-20-06|Total Nitrogen|Bottom|Lab|2020-09-23|2020-09-23|1|1.48|1.48|1.48|1.48|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-B-20-08|Total Nitrogen|Bottom|Lab|2020-12-02|2020-12-02|1|1.23|1.23|1.23|1.23|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-B-21-02|Total Nitrogen|Bottom|Lab|2021-03-30|2021-03-30|1|1.07|1.07|1.07|1.07|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-B-21-04|Total Nitrogen|Bottom|Lab|2021-06-22|2021-06-22|1|1.58|1.58|1.58|1.58|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-C-21-02|Total Nitrogen|Bottom|Lab|2021-03-30|2021-03-30|1|0.64|0.64|0.64|0.64|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-C-21-03|Total Nitrogen|Bottom|Lab|2021-05-12|2021-05-12|1|1.04|1.04|1.04|1.04|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-C-21-04|Total Nitrogen|Bottom|Lab|2021-06-22|2021-06-22|1|1.59|1.59|1.59|1.59|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-C-21-05|Total Nitrogen|Bottom|Lab|2021-07-27|2021-07-27|1|1.8|1.8|1.8|1.8|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-D-20-04|Total Nitrogen|Bottom|Lab|2020-06-23|2020-06-23|1|1.2|1.2|1.2|1.2|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-23|2021-02-23|1|1.43|1.43|1.43|1.43|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-D-21-02|Total Nitrogen|Bottom|Lab|2021-03-30|2021-03-30|1|1.12|1.12|1.12|1.12|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-D-21-05|Total Nitrogen|Bottom|Lab|2021-07-27|2021-07-27|1|1.61|1.61|1.61|1.61|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-A-21-01|Total Nitrogen|Bottom|Lab|2021-02-03|2021-02-03|1|0.9|0.9|0.9|0.9|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-A-21-02|Total Nitrogen|Bottom|Lab|2021-04-12|2021-04-12|1|0.78|0.78|0.78|0.78|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-B-20-03|Total Nitrogen|Bottom|Lab|2020-05-04|2020-05-04|1|0.95|0.95|0.95|0.95|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-18|2021-05-18|1|1.02|1.02|1.02|1.02|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-C-20-05|Total Nitrogen|Bottom|Lab|2020-08-12|2020-08-12|1|1.17|1.17|1.17|1.17|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-C-22-02|Total Nitrogen|Bottom|Lab|2022-04-12|2022-04-12|1|0.89|0.89|0.89|0.89|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-D-21-07|Total Nitrogen|Bottom|Lab|2021-10-13|2021-10-13|1|1.11|1.11|1.11|1.11|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_LT-D-22-02|Total Nitrogen|Bottom|Lab|2022-04-12|2022-04-12|1|1.02|1.02|1.02|1.02|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-20-03|Total Nitrogen|Bottom|Lab|2020-05-21|2020-05-21|1|0.84|0.84|0.84|0.84|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-20-07|Total Nitrogen|Bottom|Lab|2020-10-15|2020-10-15|1|0.53|0.53|0.53|0.53|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-09|2020-12-09|1|0.69|0.69|0.69|0.69|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-21-01|Total Nitrogen|Bottom|Lab|2021-02-11|2021-02-11|1|0.59|0.59|0.59|0.59|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-21-06|Total Nitrogen|Bottom|Lab|2021-09-20|2021-09-20|1|1.08|1.08|1.08|1.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-21-08|Total Nitrogen|Bottom|Lab|2021-12-01|2021-12-01|1|1.04|1.04|1.04|1.04|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-A-22-02|Total Nitrogen|Bottom|Lab|2022-03-29|2022-03-29|1|1.17|1.17|1.17|1.17|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-20-06|Total Nitrogen|Bottom|Lab|2020-08-31|2020-08-31|1|0.81|0.81|0.81|0.81|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-20-07|Total Nitrogen|Bottom|Lab|2020-10-15|2020-10-15|1|0.45|0.45|0.45|0.45|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-21-01|Total Nitrogen|Bottom|Lab|2021-02-11|2021-02-11|1|0.82|0.82|0.82|0.82|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-11|2021-05-11|1|1.23|1.23|1.23|1.23|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-21-07|Total Nitrogen|Bottom|Lab|2021-10-27|2021-10-27|1|1.2|1.2|1.2|1.2|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-22-01|Total Nitrogen|Bottom|Lab|2022-02-03|2022-02-03|1|0.47|0.47|0.47|0.47|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-B-22-02|Total Nitrogen|Bottom|Lab|2022-03-29|2022-03-29|1|1.27|1.27|1.27|1.27|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-20-03|Total Nitrogen|Bottom|Lab|2020-05-21|2020-05-21|1|1|1|1|1|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-20-05|Total Nitrogen|Bottom|Lab|2020-08-06|2020-08-06|1|0.8|0.8|0.8|0.8|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-21-04|Total Nitrogen|Bottom|Lab|2021-07-01|2021-07-01|1|0.93|0.93|0.93|0.93|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-21-05|Total Nitrogen|Bottom|Lab|2021-08-09|2021-08-09|1|1.09|1.09|1.09|1.09|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-21-06|Total Nitrogen|Bottom|Lab|2021-09-20|2021-09-20|1|1.15|1.15|1.15|1.15|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-C-22-02|Total Nitrogen|Bottom|Lab|2022-03-29|2022-03-29|1|1.29|1.29|1.29|1.29|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-D-20-03|Total Nitrogen|Bottom|Lab|2020-05-21|2020-05-21|1|0.89|0.89|0.89|0.89|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-D-20-06|Total Nitrogen|Bottom|Lab|2020-08-31|2020-08-31|1|0.72|0.72|0.72|0.72|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-11|2021-02-11|1|0.52|0.52|0.52|0.52|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-D-21-02|Total Nitrogen|Bottom|Lab|2021-04-06|2021-04-06|1|0.74|0.74|0.74|0.74|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-D-21-03|Total Nitrogen|Bottom|Lab|2021-05-11|2021-05-11|1|1.19|1.19|1.19|1.19|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-D-21-06|Total Nitrogen|Bottom|Lab|2021-09-20|2021-09-20|1|1.02|1.02|1.02|1.02|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_RB-D-22-02|Total Nitrogen|Bottom|Lab|2022-03-29|2022-03-29|1|1.22|1.22|1.22|1.22|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-01|Total Nitrogen|Bottom|Lab|2021-02-03|2021-02-03|1|1.08|1.08|1.08|1.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-05|Total Nitrogen|Bottom|Lab|2021-07-29|2021-07-29|1|1.41|1.41|1.41|1.41|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-06|Total Nitrogen|Bottom|Lab|2021-09-16|2021-09-16|1|1.07|1.07|1.07|1.07|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-07|Total Nitrogen|Bottom|Lab|2021-10-21|2021-10-21|1|1.24|1.24|1.24|1.24|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-21-08|Total Nitrogen|Bottom|Lab|2021-12-13|2021-12-13|1|1.23|1.23|1.23|1.23|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-A-22-01|Total Nitrogen|Bottom|Lab|2022-02-24|2022-02-24|1|1.21|1.21|1.21|1.21|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-20-08|Total Nitrogen|Bottom|Lab|2020-12-17|2020-12-17|1|1.15|1.15|1.15|1.15|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-21-01|Total Nitrogen|Bottom|Lab|2021-02-03|2021-02-03|1|1.07|1.07|1.07|1.07|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-10|2021-05-10|1|1.3|1.3|1.3|1.3|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-16|2021-09-16|1|1.13|1.13|1.13|1.13|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SA-B-22-02|Total Nitrogen|Bottom|Lab|2022-03-28|2022-03-28|1|1.26|1.26|1.26|1.26|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-A-20-04|Total Nitrogen|Bottom|Lab|2020-06-16|2020-06-16|1|2.04|2.04|2.04|2.04|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-17|2020-12-17|1|1.58|1.58|1.58|1.58|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-A-21-04|Total Nitrogen|Bottom|Lab|2021-06-16|2021-06-16|1|2.99|2.99|2.99|2.99|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-A-21-07|Total Nitrogen|Bottom|Lab|2021-10-21|2021-10-21|1|1.88|1.88|1.88|1.88|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-A-22-01|Total Nitrogen|Bottom|Lab|2022-02-24|2022-02-24|1|2.26|2.26|2.26|2.26|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-20-03|Total Nitrogen|Bottom|Lab|2020-05-11|2020-05-11|1|2.45|2.45|2.45|2.45|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-20-05|Total Nitrogen|Bottom|Lab|2020-07-23|2020-07-23|1|3.08|3.08|3.08|3.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-20-08|Total Nitrogen|Bottom|Lab|2020-12-17|2020-12-17|1|1.65|1.65|1.65|1.65|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-21-02|Total Nitrogen|Bottom|Lab|2021-04-05|2021-04-05|1|1.66|1.66|1.66|1.66|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-10|2021-05-10|1|3.05|3.05|3.05|3.05|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-16|2021-09-16|1|1.45|1.45|1.45|1.45|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-21-07|Total Nitrogen|Bottom|Lab|2021-10-21|2021-10-21|1|1.37|1.37|1.37|1.37|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_SB-B-22-01|Total Nitrogen|Bottom|Lab|2022-02-24|2022-02-24|1|2.14|2.14|2.14|2.14|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-A-21-01|Total Nitrogen|Bottom|Lab|2021-02-10|2021-02-10|1|1.02|1.02|1.02|1.02|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-A-21-07|Total Nitrogen|Bottom|Lab|2021-11-04|2021-11-04|1|1.6|1.6|1.6|1.6|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-A-21-08|Total Nitrogen|Bottom|Lab|2021-12-15|2021-12-15|1|0.91|0.91|0.91|0.91|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-B-20-08|Total Nitrogen|Bottom|Lab|2020-12-08|2020-12-08|1|0.48|0.48|0.48|0.48|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-B-21-02|Total Nitrogen|Bottom|Lab|2021-03-15|2021-03-15|2|0.83|1.05|0.94|0.94|0.155563491861041
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-03|2021-05-03|1|1.17|1.17|1.17|1.17|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-B-21-05|Total Nitrogen|Bottom|Lab|2021-08-11|2021-08-11|1|1.64|1.64|1.64|1.64|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-B-21-07|Total Nitrogen|Bottom|Lab|2021-11-04|2021-11-04|1|1.39|1.39|1.39|1.39|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-20-08|Total Nitrogen|Bottom|Lab|2020-12-08|2020-12-08|1|1.1|1.1|1.1|1.1|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-21-02|Total Nitrogen|Bottom|Lab|2021-03-15|2021-03-15|1|1.04|1.04|1.04|1.04|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-21-04|Total Nitrogen|Bottom|Lab|2021-06-17|2021-06-17|1|1.34|1.34|1.34|1.34|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-21-07|Total Nitrogen|Bottom|Lab|2021-11-04|2021-11-04|1|1.4|1.4|1.4|1.4|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-C-21-08|Total Nitrogen|Bottom|Lab|2021-12-15|2021-12-15|1|1.07|1.07|1.07|1.07|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-20-06|Total Nitrogen|Bottom|Lab|2020-08-31|2020-08-31|1|1.22|1.22|1.22|1.22|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-20-07|Total Nitrogen|Bottom|Lab|2020-10-29|2020-10-29|1|0.68|0.68|0.68|0.68|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-20-08|Total Nitrogen|Bottom|Lab|2020-12-08|2020-12-08|1|0.64|0.64|0.64|0.64|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-21-04|Total Nitrogen|Bottom|Lab|2021-06-17|2021-06-17|2|1.41|1.5|1.455|1.455|0.0636396103067894
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-21-08|Total Nitrogen|Bottom|Lab|2021-12-15|2021-12-15|2|1.06|1.3|1.18|1.18|0.169705627484771
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W1-D-22-02|Total Nitrogen|Bottom|Lab|2022-04-04|2022-04-04|1|1.18|1.18|1.18|1.18|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-20-03|Total Nitrogen|Bottom|Lab|2020-05-04|2020-05-04|1|0.95|0.95|0.95|0.95|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-03|2020-12-03|1|0.9|0.9|0.9|0.9|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-21-04|Total Nitrogen|Bottom|Lab|2021-06-29|2021-06-29|1|1.48|1.48|1.48|1.48|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-A-21-06|Total Nitrogen|Bottom|Lab|2021-09-13|2021-09-13|1|1.42|1.42|1.42|1.42|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-20-03|Total Nitrogen|Bottom|Lab|2020-05-04|2020-05-04|1|0.91|0.91|0.91|0.91|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-20-04|Total Nitrogen|Bottom|Lab|2020-06-25|2020-06-25|1|1.15|1.15|1.15|1.15|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-20-05|Total Nitrogen|Bottom|Lab|2020-08-10|2020-08-10|1|1.16|1.16|1.16|1.16|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-20-06|Total Nitrogen|Bottom|Lab|2020-09-24|2020-09-24|1|1.59|1.59|1.59|1.59|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-21-02|Total Nitrogen|Bottom|Lab|2021-04-12|2021-04-12|1|1.03|1.03|1.03|1.03|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-18|2021-05-18|1|0.91|0.91|0.91|0.91|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-21-07|Total Nitrogen|Bottom|Lab|2021-11-09|2021-11-09|1|1.61|1.61|1.61|1.61|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-21-08|Total Nitrogen|Bottom|Lab|2021-12-14|2021-12-14|1|1.11|1.11|1.11|1.11|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-B-22-02|Total Nitrogen|Bottom|Lab|2022-04-12|2022-04-12|1|1.22|1.22|1.22|1.22|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-20-05|Total Nitrogen|Bottom|Lab|2020-08-10|2020-08-10|1|1.33|1.33|1.33|1.33|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-20-07|Total Nitrogen|Bottom|Lab|2020-10-14|2020-10-14|1|0.62|0.62|0.62|0.62|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-20-08|Total Nitrogen|Bottom|Lab|2020-12-03|2020-12-03|1|1.24|1.24|1.24|1.24|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-21-06|Total Nitrogen|Bottom|Lab|2021-09-13|2021-09-13|1|1.6|1.6|1.6|1.6|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-21-07|Total Nitrogen|Bottom|Lab|2021-11-09|2021-11-09|1|1.72|1.72|1.72|1.72|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-C-21-08|Total Nitrogen|Bottom|Lab|2021-12-14|2021-12-14|1|0.97|0.97|0.97|0.97|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-20-04|Total Nitrogen|Bottom|Lab|2020-06-25|2020-06-25|1|1.38|1.38|1.38|1.38|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-20-08|Total Nitrogen|Bottom|Lab|2020-12-03|2020-12-03|1|1.37|1.37|1.37|1.37|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-23|2021-02-23|1|1.34|1.34|1.34|1.34|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-21-05|Total Nitrogen|Bottom|Lab|2021-08-18|2021-08-18|1|1.53|1.53|1.53|1.53|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-21-08|Total Nitrogen|Bottom|Lab|2021-12-14|2021-12-14|1|1.07|1.07|1.07|1.07|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W2-D-22-01|Total Nitrogen|Bottom|Lab|2022-02-10|2022-02-10|1|0.61|0.61|0.61|0.61|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-03|2020-12-03|1|1.26|1.26|1.26|1.26|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-02|Total Nitrogen|Bottom|Lab|2021-04-12|2021-04-12|1|1.12|1.12|1.12|1.12|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-04|Total Nitrogen|Bottom|Lab|2021-06-29|2021-06-29|1|1.72|1.72|1.72|1.72|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-05|Total Nitrogen|Bottom|Lab|2021-08-18|2021-08-18|1|1.37|1.37|1.37|1.37|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-13|2021-09-13|1|1.23|1.23|1.23|1.23|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-C-20-06|Total Nitrogen|Bottom|Lab|2020-09-24|2020-09-24|1|1.25|1.25|1.25|1.25|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-C-20-08|Total Nitrogen|Bottom|Lab|2020-12-03|2020-12-03|1|1.08|1.08|1.08|1.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-C-22-01|Total Nitrogen|Bottom|Lab|2022-02-10|2022-02-10|1|0.73|0.73|0.73|0.73|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W3-D-21-06|Total Nitrogen|Bottom|Lab|2021-09-13|2021-09-13|1|1.37|1.37|1.37|1.37|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-A-21-01|Total Nitrogen|Bottom|Lab|2021-01-27|2021-01-27|1|0.96|0.96|0.96|0.96|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-A-21-02|Total Nitrogen|Bottom|Lab|2021-04-06|2021-04-06|1|1.03|1.03|1.03|1.03|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-A-22-01|Total Nitrogen|Bottom|Lab|2022-02-02|2022-02-02|1|0.99|0.99|0.99|0.99|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-20-03|Total Nitrogen|Bottom|Lab|2020-05-05|2020-05-05|1|0.75|0.75|0.75|0.75|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-20-08|Total Nitrogen|Bottom|Lab|2020-12-22|2020-12-22|1|0.63|0.63|0.63|0.63|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-21-05|Total Nitrogen|Bottom|Lab|2021-08-05|2021-08-05|1|1.6|1.6|1.6|1.6|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-21-07|Total Nitrogen|Bottom|Lab|2021-10-11|2021-10-11|1|1.33|1.33|1.33|1.33|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-21-08|Total Nitrogen|Bottom|Lab|2021-12-01|2021-12-01|1|1.37|1.37|1.37|1.37|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-B-22-02|Total Nitrogen|Bottom|Lab|2022-04-05|2022-04-05|1|1.11|1.11|1.11|1.11|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-C-20-08|Total Nitrogen|Bottom|Lab|2020-12-22|2020-12-22|1|0.57|0.57|0.57|0.57|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-C-21-07|Total Nitrogen|Bottom|Lab|2021-10-11|2021-10-11|1|1.42|1.42|1.42|1.42|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-D-21-02|Total Nitrogen|Bottom|Lab|2021-04-06|2021-04-06|1|1.04|1.04|1.04|1.04|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-D-21-03|Total Nitrogen|Bottom|Lab|2021-05-10|2021-05-10|1|1.59|1.59|1.59|1.59|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W4-D-22-02|Total Nitrogen|Bottom|Lab|2022-04-05|2022-04-05|1|1.54|1.54|1.54|1.54|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-03|Total Nitrogen|Bottom|Lab|2020-05-06|2020-05-06|1|0.72|0.72|0.72|0.72|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-04|Total Nitrogen|Bottom|Lab|2020-06-15|2020-06-15|1|1.02|1.02|1.02|1.02|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-05|Total Nitrogen|Bottom|Lab|2020-08-06|2020-08-06|1|1.08|1.08|1.08|1.08|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-06|Total Nitrogen|Bottom|Lab|2020-09-28|2020-09-28|1|0.88|0.88|0.88|0.88|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-07|Total Nitrogen|Bottom|Lab|2020-11-23|2020-11-23|1|0.92|0.92|0.92|0.92|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-28|2020-12-28|1|0.92|0.92|0.92|0.92|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-01|Total Nitrogen|Bottom|Lab|2021-02-09|2021-02-09|1|0.81|0.81|0.81|0.81|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-02|Total Nitrogen|Bottom|Lab|2021-03-18|2021-03-18|1|1.1|1.1|1.1|1.1|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-03|Total Nitrogen|Bottom|Lab|2021-05-13|2021-05-13|1|1.06|1.06|1.06|1.06|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-04|Total Nitrogen|Bottom|Lab|2021-07-01|2021-07-01|1|1.33|1.33|1.33|1.33|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-06|Total Nitrogen|Bottom|Lab|2021-09-23|2021-09-23|1|1.06|1.06|1.06|1.06|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-07|Total Nitrogen|Bottom|Lab|2021-11-04|2021-11-04|1|1.53|1.53|1.53|1.53|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-21-08|Total Nitrogen|Bottom|Lab|2021-11-30|2021-11-30|1|1.58|1.58|1.58|1.58|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-22-01|Total Nitrogen|Bottom|Lab|2022-03-07|2022-03-07|1|0.92|0.92|0.92|0.92|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-A-22-02|Total Nitrogen|Bottom|Lab|2022-03-30|2022-03-30|1|1.38|1.38|1.38|1.38|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-20-03|Total Nitrogen|Bottom|Lab|2020-05-06|2020-05-06|1|0.61|0.61|0.61|0.61|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-20-04|Total Nitrogen|Bottom|Lab|2020-06-15|2020-06-15|1|0.8|0.8|0.8|0.8|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-20-07|Total Nitrogen|Bottom|Lab|2020-11-23|2020-11-23|1|0.73|0.73|0.73|0.73|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-20-08|Total Nitrogen|Bottom|Lab|2020-12-28|2020-12-28|1|0.79|0.79|0.79|0.79|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-01|Total Nitrogen|Bottom|Lab|2021-02-09|2021-02-09|1|0.66|0.66|0.66|0.66|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-02|Total Nitrogen|Bottom|Lab|2021-03-18|2021-03-18|1|1.21|1.21|1.21|1.21|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-03|Total Nitrogen|Bottom|Lab|2021-05-13|2021-05-13|1|1.46|1.46|1.46|1.46|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-05|Total Nitrogen|Bottom|Lab|2021-08-03|2021-08-03|1|1.38|1.38|1.38|1.38|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-23|2021-09-23|1|1.18|1.18|1.18|1.18|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-21-08|Total Nitrogen|Bottom|Lab|2021-11-30|2021-11-30|1|1.43|1.43|1.43|1.43|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-22-01|Total Nitrogen|Bottom|Lab|2022-03-07|2022-03-07|1|0.75|0.75|0.75|0.75|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-B-22-02|Total Nitrogen|Bottom|Lab|2022-03-30|2022-03-30|1|0.87|0.87|0.87|0.87|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-20-03|Total Nitrogen|Bottom|Lab|2020-05-06|2020-05-06|1|0.51|0.51|0.51|0.51|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-20-06|Total Nitrogen|Bottom|Lab|2020-09-28|2020-09-28|1|0.82|0.82|0.82|0.82|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-20-08|Total Nitrogen|Bottom|Lab|2020-12-28|2020-12-28|1|1|1|1|1|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-01|Total Nitrogen|Bottom|Lab|2021-02-09|2021-02-09|1|0.94|0.94|0.94|0.94|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-02|Total Nitrogen|Bottom|Lab|2021-03-18|2021-03-18|1|1.02|1.02|1.02|1.02|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-03|Total Nitrogen|Bottom|Lab|2021-05-13|2021-05-13|1|1.09|1.09|1.09|1.09|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-04|Total Nitrogen|Bottom|Lab|2021-07-01|2021-07-01|1|1.31|1.31|1.31|1.31|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-05|Total Nitrogen|Bottom|Lab|2021-08-03|2021-08-03|1|1.42|1.42|1.42|1.42|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-06|Total Nitrogen|Bottom|Lab|2021-09-23|2021-09-23|1|1.22|1.22|1.22|1.22|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-07|Total Nitrogen|Bottom|Lab|2021-11-04|2021-11-04|1|1.35|1.35|1.35|1.35|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-21-08|Total Nitrogen|Bottom|Lab|2021-11-30|2021-11-30|1|1.42|1.42|1.42|1.42|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-22-01|Total Nitrogen|Bottom|Lab|2022-03-07|2022-03-07|1|0.89|0.89|0.89|0.89|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-C-22-02|Total Nitrogen|Bottom|Lab|2022-03-30|2022-03-30|1|0.67|0.67|0.67|0.67|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-20-04|Total Nitrogen|Bottom|Lab|2020-06-15|2020-06-15|1|0.93|0.93|0.93|0.93|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-20-05|Total Nitrogen|Bottom|Lab|2020-08-06|2020-08-06|1|0.79|0.79|0.79|0.79|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-20-07|Total Nitrogen|Bottom|Lab|2020-11-23|2020-11-23|1|1.06|1.06|1.06|1.06|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-20-08|Total Nitrogen|Bottom|Lab|2020-12-28|2020-12-28|1|0.99|0.99|0.99|0.99|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-09|2021-02-09|1|0.64|0.64|0.64|0.64|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-02|Total Nitrogen|Bottom|Lab|2021-03-18|2021-03-18|1|1.16|1.16|1.16|1.16|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-03|Total Nitrogen|Bottom|Lab|2021-05-13|2021-05-13|1|0.98|0.98|0.98|0.98|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-05|Total Nitrogen|Bottom|Lab|2021-08-03|2021-08-03|1|1.7|1.7|1.7|1.7|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-07|Total Nitrogen|Bottom|Lab|2021-11-04|2021-11-04|1|1.58|1.58|1.58|1.58|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-21-08|Total Nitrogen|Bottom|Lab|2021-11-30|2021-11-30|1|1.52|1.52|1.52|1.52|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W5-D-22-01|Total Nitrogen|Bottom|Lab|2022-03-07|2022-03-07|1|0.94|0.94|0.94|0.94|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-A-20-07|Total Nitrogen|Bottom|Lab|2020-10-20|2020-10-20|1|0.87|0.87|0.87|0.87|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-22|2020-12-22|1|0.68|0.68|0.68|0.68|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-B-20-03|Total Nitrogen|Bottom|Lab|2020-05-05|2020-05-05|1|1.1|1.1|1.1|1.1|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-B-20-05|Total Nitrogen|Bottom|Lab|2020-08-12|2020-08-12|1|1.23|1.23|1.23|1.23|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-B-22-02|Total Nitrogen|Bottom|Lab|2022-04-05|2022-04-05|1|1.63|1.63|1.63|1.63|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-D-20-07|Total Nitrogen|Bottom|Lab|2020-10-20|2020-10-20|1|0.88|0.88|0.88|0.88|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W6-D-21-02|Total Nitrogen|Bottom|Lab|2021-04-06|2021-04-06|1|1.05|1.05|1.05|1.05|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-A-20-03|Total Nitrogen|Bottom|Lab|2020-05-11|2020-05-11|1|0.85|0.85|0.85|0.85|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-B-20-05|Total Nitrogen|Bottom|Lab|2020-08-11|2020-08-11|1|0.95|0.95|0.95|0.95|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-B-21-06|Total Nitrogen|Bottom|Lab|2021-09-21|2021-09-21|1|1.33|1.33|1.33|1.33|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W7-D-21-08|Total Nitrogen|Bottom|Lab|2021-12-08|2021-12-08|1|0.88|0.88|0.88|0.88|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-A-20-08|Total Nitrogen|Bottom|Lab|2020-12-15|2020-12-15|1|0.69|0.69|0.69|0.69|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-A-21-03|Total Nitrogen|Bottom|Lab|2021-05-17|2021-05-17|1|1.78|1.78|1.78|1.78|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-A-21-04|Total Nitrogen|Bottom|Lab|2021-07-08|2021-07-08|1|1.33|1.33|1.33|1.33|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-B-20-03|Total Nitrogen|Bottom|Lab|2020-05-11|2020-05-11|1|0.75|0.75|0.75|0.75|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-B-20-05|Total Nitrogen|Bottom|Lab|2020-08-11|2020-08-11|1|1.26|1.26|1.26|1.26|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-B-20-06|Total Nitrogen|Bottom|Lab|2020-09-10|2020-09-10|1|1.01|1.01|1.01|1.01|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-B-21-05|Total Nitrogen|Bottom|Lab|2021-07-27|2021-07-27|1|1.59|1.59|1.59|1.59|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-B-22-02|Total Nitrogen|Bottom|Lab|2022-03-14|2022-03-14|1|0.75|0.75|0.75|0.75|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-C-20-06|Total Nitrogen|Bottom|Lab|2020-09-10|2020-09-10|1|1.32|1.32|1.32|1.32|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-C-21-04|Total Nitrogen|Bottom|Lab|2021-07-08|2021-07-08|1|1.45|1.45|1.45|1.45|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-20-06|Total Nitrogen|Bottom|Lab|2020-09-10|2020-09-10|1|1.19|1.19|1.19|1.19|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-01|Total Nitrogen|Bottom|Lab|2021-02-04|2021-02-04|1|0.64|0.64|0.64|0.64|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-05|Total Nitrogen|Bottom|Lab|2021-07-27|2021-07-27|1|1.49|1.49|1.49|1.49|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_W8-D-21-08|Total Nitrogen|Bottom|Lab|2021-12-08|2021-12-08|1|1.01|1.01|1.01|1.01|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G1SW0099|Total Nitrogen|Bottom|Lab|2020-07-14|2020-07-14|1|0.598|0.598|0.598|0.598|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G1SW0109|Total Nitrogen|Bottom|Lab|2020-09-16|2022-11-14|6|0.54|0.767|0.566|0.604166666666667|0.0887657967162277
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0080|Total Nitrogen|Bottom|Lab|2021-07-26|2022-10-06|6|0.539|1.22|0.906|0.9085|0.247641474716979
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0081|Total Nitrogen|Bottom|Lab|2021-07-26|2021-12-16|2|0.719|0.771|0.745|0.745|0.0367695526217005
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0152|Total Nitrogen|Bottom|Lab|2022-08-30|2022-08-30|1|0.98|0.98|0.98|0.98|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0162|Total Nitrogen|Bottom|Lab|2020-10-06|2021-12-27|6|1.024|1.46|1.125|1.159|0.152833242457261
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_G5SW0173|Total Nitrogen|Bottom|Lab|2020-09-16|2020-09-16|1|1.16|1.16|1.16|1.16|
+35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLTPA_HAB-SW-0086|Total Nitrogen|Bottom|Lab|2022-06-30|2022-08-18|2|0.627|0.654|0.6405|0.6405|0.0190918830920368

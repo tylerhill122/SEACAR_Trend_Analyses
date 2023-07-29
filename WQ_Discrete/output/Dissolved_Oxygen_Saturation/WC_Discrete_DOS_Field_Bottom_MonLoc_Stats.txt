@@ -154,12 +154,11 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-RC1-MP1|Dissolved Oxygen Saturation|Bottom|Field|2017-07-05|2021-07-13|4|63|113.9|98.65|93.55|23.4069078122962
 3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-RC1-MP2|Dissolved Oxygen Saturation|Bottom|Field|2017-07-05|2019-11-05|3|88.6|113.9|109.7|104.066666666667|13.5581463826488
 3|Apalachicola National Estuarine Research Reserve|4044|NRDA Oyster Cultch Recovery Project|NRDA_APA-RC2-MP1|Dissolved Oxygen Saturation|Bottom|Field|2017-07-05|2021-07-13|4|62.6|107.9|81.05|83.15|21.5215395979625
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0120|Dissolved Oxygen Saturation|Bottom|Field|2000-09-05|2000-09-05|1|112|112|112|112|
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0200|Dissolved Oxygen Saturation|Bottom|Field|1991-11-20|2003-09-09|263|5|176|99|97.893536121673|31.3100122397892
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0200|Dissolved Oxygen Saturation|Bottom|Field|1991-11-20|2003-09-09|147|5|176|99|98.3265306122449|34.8142159723771
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0250|Dissolved Oxygen Saturation|Bottom|Field|2004-11-28|2004-12-28|5|78|91|89|86.8|5.26307894677631
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0400|Dissolved Oxygen Saturation|Bottom|Field|1991-11-20|1994-01-26|85|18|119|66|67|21.1913054947407
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0450|Dissolved Oxygen Saturation|Bottom|Field|1994-02-07|2004-05-08|104|17|124|64.5|64.5961538461538|20.5891474998898
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0600|Dissolved Oxygen Saturation|Bottom|Field|1991-11-16|2004-03-20|34|40|139|81|80.1176470588236|21.9583140958559
+4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0600|Dissolved Oxygen Saturation|Bottom|Field|1991-11-16|1994-04-24|28|40|139|83|82.0714285714286|22.8342312417589
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0733|Dissolved Oxygen Saturation|Bottom|Field|2004-03-28|2004-12-18|17|17|157|76|71.1764705882353|31.5619139433068
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0745|Dissolved Oxygen Saturation|Bottom|Field|2004-11-28|2004-12-27|5|88|127|103|105.8|14.1315250415516
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0770|Dissolved Oxygen Saturation|Bottom|Field|2000-10-22|2001-09-09|43|30|109|73|73.8604651162791|16.8587710608834
@@ -167,7 +166,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA0900|Dissolved Oxygen Saturation|Bottom|Field|1992-01-17|2000-10-14|127|37|179|94|95.3228346456693|22.4389407446582
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BA1050|Dissolved Oxygen Saturation|Bottom|Field|2004-03-15|2004-04-24|5|73|77|75|75.4|1.67332005306815
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_BRL072|Dissolved Oxygen Saturation|Bottom|Field|1999-06-03|1999-06-03|1|99|99|99|99|
-4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR1900|Dissolved Oxygen Saturation|Bottom|Field|1991-11-24|2004-12-28|542|20|133|72|71.9040590405904|17.1638300788657
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2235|Dissolved Oxygen Saturation|Bottom|Field|2004-03-19|2004-08-20|17|95|184|145|143.705882352941|24.8590142249304
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_PE0010|Dissolved Oxygen Saturation|Bottom|Field|1996-12-07|1999-03-14|50|41|110|73.5|72.32|13.5291672820961
 4|Banana River Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_SY0010|Dissolved Oxygen Saturation|Bottom|Field|2000-03-19|2001-02-18|33|33|107|65|68.2424242424243|14.0624284509964
@@ -297,13 +295,9 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_127946|Dissolved Oxygen Saturation|Bottom|Field|2019-09-25|2022-09-20|2|28.4|46.6|37.5|37.5|12.8693434175952
 5|Big Bend Seagrasses Aquatic Preserve|477|Suwannee River Water Management District Water Resource Monitoring Program|WIN_21FLSUW_129841|Dissolved Oxygen Saturation|Bottom|Field|2020-02-13|2021-08-26|3|39.5|83.3|78.6|67.1333333333333|24.0462748327747
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_274414908241375|Dissolved Oxygen Saturation|Bottom|Field|2010-04-05|2010-11-01|6|43.8|96.7|77.05|74.7333333333333|21.4409576900536
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB10|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-07-27|2|88|97.3|92.65|92.65|6.57609306503489
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB11|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-07-27|2|84|107|95.5|95.5|16.2634559672906
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB13|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-03-23|1|100.6|100.6|100.6|100.6|
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB14|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-03-23|1|103.3|103.3|103.3|103.3|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB15|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-03-23|1|90.6|90.6|90.6|90.6|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB8|Dissolved Oxygen Saturation|Bottom|Field|2016-07-27|2016-07-27|1|86|86|86|86|
-8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB9|Dissolved Oxygen Saturation|Bottom|Field|2016-07-27|2016-07-27|1|75|75|75|75|
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSP-CBD01|Dissolved Oxygen Saturation|Bottom|Field|2021-08-24|2021-12-13|2|48.6|75.4|62|62|18.9504617357995
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSP580|Dissolved Oxygen Saturation|Bottom|Field|2021-08-24|2022-12-19|8|65.9|94.7|80.75|80.85|8.73466002282205
 8|Boca Ciega Bay Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLPDEM_FD-A-20-03|Dissolved Oxygen Saturation|Bottom|Field|2020-05-20|2020-05-20|2|104|105|104.5|104.5|0.707106781186548
@@ -870,14 +864,13 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 8|Boca Ciega Bay Aquatic Preserve|4067|Tampa Bay Benthic Monitoring|965|Dissolved Oxygen Saturation|Bottom|Field|2000-09-25|2000-09-25|62|41.5|124|52.7|60.8161290322581|19.1856605738559
 8|Boca Ciega Bay Aquatic Preserve|4067|Tampa Bay Benthic Monitoring|966|Dissolved Oxygen Saturation|Bottom|Field|2000-09-25|2000-09-25|1|66.5|66.5|66.5|66.5|
 8|Boca Ciega Bay Aquatic Preserve|4067|Tampa Bay Benthic Monitoring|968|Dissolved Oxygen Saturation|Bottom|Field|2000-09-18|2000-09-18|59|77.8|112.8|91.9|92.5271186440678|7.49447682856894
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_112|Dissolved Oxygen Saturation|Bottom|Field|2004-01-14|2017-06-21|136|30.7|110.9|65.35|65.4632352941177|14.6954757906846
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1603|Dissolved Oxygen Saturation|Bottom|Field|2009-01-26|2017-06-21|97|39|131.8|72.9|73.8618556701031|17.0632246079286
+11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_112|Dissolved Oxygen Saturation|Bottom|Field|2004-01-14|2013-02-20|89|30.7|97.8|65.5|65.5202247191011|14.2927522937587
+11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1603|Dissolved Oxygen Saturation|Bottom|Field|2009-01-26|2017-06-21|69|40.7|131.8|74.8|74.0347826086957|16.3580689397416
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1604|Dissolved Oxygen Saturation|Bottom|Field|2009-01-26|2017-06-21|99|38|115.5|72.3|72.1262626262626|14.6247245629642
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1606|Dissolved Oxygen Saturation|Bottom|Field|2009-01-26|2017-06-21|100|26.3|112.9|66.6|66.792|16.3835694979742
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1607|Dissolved Oxygen Saturation|Bottom|Field|2009-03-25|2017-06-21|86|21.8|116|64.85|65.4790697674419|15.7991371043527
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1608|Dissolved Oxygen Saturation|Bottom|Field|2009-03-25|2017-06-21|93|20.2|119.7|64|65.6494623655914|15.8906906275609
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1610|Dissolved Oxygen Saturation|Bottom|Field|2009-03-25|2017-06-21|97|6|115.8|64.5|64.9917525773196|15.9665775273897
-11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1611|Dissolved Oxygen Saturation|Bottom|Field|2009-01-26|2017-06-21|99|12.6|114.7|60.1|61.8515151515152|16.161540159711
+11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1608|Dissolved Oxygen Saturation|Bottom|Field|2009-03-25|2015-11-18|76|20.2|119.7|62.65|65.1539473684211|16.8150285224417
+11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1611|Dissolved Oxygen Saturation|Bottom|Field|2009-08-24|2017-06-21|92|12.6|114.7|59.9|61.6152173913044|15.8025031734098
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1612|Dissolved Oxygen Saturation|Bottom|Field|2009-03-25|2017-06-21|97|29.1|101.1|63|64.3061855670103|13.7887168126772
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1614|Dissolved Oxygen Saturation|Bottom|Field|2009-01-26|2017-06-21|98|39.5|107.3|63.6|66.9051020408163|13.7887924940181
 11|Cockroach Bay Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLHILL_1615|Dissolved Oxygen Saturation|Bottom|Field|2009-01-26|2017-06-21|100|27.1|94.7|65.3|66.131|12.3066927262602
@@ -1231,14 +1224,12 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|507|Dissolved Oxygen Saturation|Bottom|Field|2011-12-09|2020-12-11|36|82.48321609|119.88002661|96.907164335|96.8042878294445|6.08553772031831
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|508|Dissolved Oxygen Saturation|Bottom|Field|2012-05-11|2020-12-16|25|73.33925847|100.7060985|96.01218089|95.2883010472|5.15977523467597
 15|Florida Keys National Marine Sanctuary|297|Florida Keys National Marine Sanctuary Water Quality Monitoring Project|509|Dissolved Oxygen Saturation|Bottom|Field|2011-12-08|2020-12-16|23|93.6751147|100.92390804|97.19719019|97.1511459834783|2.26545459375915
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLDADE_BB50|Dissolved Oxygen Saturation|Bottom|Field|2015-12-09|2015-12-09|1|94.2|94.2|94.2|94.2|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLFTM_FLKEYS0003FTM|Dissolved Oxygen Saturation|Bottom|Field|2015-11-17|2015-11-17|1|95|95|95|95|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLFTM_FLKEYS0007FTM|Dissolved Oxygen Saturation|Bottom|Field|2015-11-17|2015-11-17|1|101|101|101|101|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLFTM_FLKEYS0022FTM|Dissolved Oxygen Saturation|Bottom|Field|2015-07-15|2017-06-29|7|24|107|83|77.7142857142857|29.0098505437624
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLFTM_G5SD0002|Dissolved Oxygen Saturation|Bottom|Field|2015-05-19|2017-04-11|13|47|237|137|138.515384615385|50.6229830240812
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLFTM_G5SD0007|Dissolved Oxygen Saturation|Bottom|Field|2015-11-18|2015-11-18|1|97|97|97|97|
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLFTM_G5SD0071|Dissolved Oxygen Saturation|Bottom|Field|2016-08-22|2016-08-22|1|126|126|126|126|
-15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLFTM_G5SD0073|Dissolved Oxygen Saturation|Bottom|Field|2016-04-18|2017-03-07|3|110|116|111|112.333333333333|3.21455025366432
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|STORET_21FLWPB_G4SE0093|Dissolved Oxygen Saturation|Bottom|Field|2017-02-02|2017-06-15|4|78|110|94.5|94.25|15.1959424408842
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-BLOCK 02|Dissolved Oxygen Saturation|Bottom|Field|2020-08-25|2021-05-05|5|67.9|97.4|91.6|85.24|14.2724559904734
 15|Florida Keys National Marine Sanctuary|5002|Florida STORET / WIN|WIN_21FLMONR_04-BLOCK 03|Dissolved Oxygen Saturation|Bottom|Field|2021-05-05|2021-05-05|2|99.9|106.3|103.1|103.1|4.5254833995939
@@ -1735,7 +1726,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|102|National Status and Trends Mussel Watch|TPA_226A|Dissolved Oxygen Saturation|Bottom|Field|1992-08-26|1992-08-26|1|3.8|3.8|3.8|3.8|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|102|National Status and Trends Mussel Watch|TPA_226B|Dissolved Oxygen Saturation|Bottom|Field|1992-08-26|1992-08-26|1|3.8|3.8|3.8|3.8|
 18|Gasparilla Sound-Charlotte Harbor Aquatic Preserve|102|National Status and Trends Mussel Watch|TPA_226C|Dissolved Oxygen Saturation|Bottom|Field|1992-08-26|1992-08-26|1|3.6|3.6|3.6|3.6|
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010010|Dissolved Oxygen Saturation|Bottom|Field|2004-04-22|2005-09-06|12|36|109.2|92|83.4416666666667|23.3939175596538
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010018FLA|Dissolved Oxygen Saturation|Bottom|Field|2010-03-03|2010-11-09|4|59|98|80.5|79.5|20.3715487874634
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010019|Dissolved Oxygen Saturation|Bottom|Field|2004-04-22|2005-08-23|13|41.1|104|81.9|76.2307692307692|20.9525807724404
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010029FLA|Dissolved Oxygen Saturation|Bottom|Field|2010-05-05|2010-11-23|4|80|92|84.5|85.25|5.37742193496723
@@ -1758,10 +1748,8 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010166|Dissolved Oxygen Saturation|Bottom|Field|1999-05-19|2010-07-01|18|37|91.7|66.5|66.7611111111111|15.9227229007844
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010168|Dissolved Oxygen Saturation|Bottom|Field|2005-01-26|2005-12-14|10|40|115|73|77.54|24.5262761588918
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010169|Dissolved Oxygen Saturation|Bottom|Field|2005-01-26|2005-11-14|7|48|108|85|82.4285714285714|24.1444068254406
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010171|Dissolved Oxygen Saturation|Bottom|Field|1999-05-19|2014-12-03|27|39.9|98.5|71.5|68.7777777777778|14.4365011031955
+19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010171|Dissolved Oxygen Saturation|Bottom|Field|1999-12-22|2014-12-03|17|39.9|98.5|63.2|64.4470588235294|14.1494309800367
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010173|Dissolved Oxygen Saturation|Bottom|Field|2004-06-29|2005-12-13|5|47|86|70.8|68.76|15.9683436836762
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010183|Dissolved Oxygen Saturation|Bottom|Field|1999-07-19|2014-11-19|29|30.3|118|65|66.7172413793104|19.2512350061258
-19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010184|Dissolved Oxygen Saturation|Bottom|Field|1999-06-24|2014-11-19|51|44.5|128|72|74.5705882352941|17.2422538447576
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010185|Dissolved Oxygen Saturation|Bottom|Field|2000-02-23|2014-07-22|7|45|97.2|79|75.1714285714286|17.3187484426285
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_27010316|Dissolved Oxygen Saturation|Bottom|Field|2014-02-27|2014-11-25|7|36|87|65.3|64.6428571428571|15.7408023030231
 19|Guana River Marsh Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_JXTR17|Dissolved Oxygen Saturation|Bottom|Field|2012-11-01|2017-06-19|55|59.9|101|91|87.5509090909091|9.38684802395968
@@ -1829,14 +1817,10 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010168|Dissolved Oxygen Saturation|Bottom|Field|2005-01-26|2005-12-14|10|40|115|73|77.54|24.5262761588918
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010169|Dissolved Oxygen Saturation|Bottom|Field|2005-01-26|2005-11-14|7|48|108|85|82.4285714285714|24.1444068254406
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010171|Dissolved Oxygen Saturation|Bottom|Field|1999-05-19|2014-12-03|27|39.9|98.5|71.5|68.7777777777778|14.4365011031955
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010173|Dissolved Oxygen Saturation|Bottom|Field|2004-06-29|2005-12-13|5|47|86|70.8|68.76|15.9683436836762
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010174|Dissolved Oxygen Saturation|Bottom|Field|2004-04-22|2005-06-07|3|62|89.3|87.1|79.4666666666667|15.1665201458124
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010175|Dissolved Oxygen Saturation|Bottom|Field|2005-05-24|2014-10-28|5|59|94.1|91|83.62|14.927223452471
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010183|Dissolved Oxygen Saturation|Bottom|Field|1999-07-19|2014-11-19|29|30.3|118|65|66.7172413793104|19.2512350061258
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010184|Dissolved Oxygen Saturation|Bottom|Field|1999-06-24|2014-11-19|51|44.5|128|72|74.5705882352941|17.2422538447576
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010185|Dissolved Oxygen Saturation|Bottom|Field|2000-02-23|2014-07-22|7|45|97.2|79|75.1714285714286|17.3187484426285
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010316|Dissolved Oxygen Saturation|Bottom|Field|2014-02-27|2014-11-25|7|36|87|65.3|64.6428571428571|15.7408023030231
-20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010965|Dissolved Oxygen Saturation|Bottom|Field|2014-03-20|2017-05-15|6|54.7|83.4|65.25|65.3666666666667|10.4108917325399
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010966|Dissolved Oxygen Saturation|Bottom|Field|2014-03-20|2015-09-16|9|44|114.8|63.5|68.5|20.6281967219629
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010969|Dissolved Oxygen Saturation|Bottom|Field|2014-02-04|2014-08-20|5|71.6|91.2|80.6|79.52|7.7127815993972
 20|Guana Tolomato Matanzas National Estuarine Research Reserve|5002|Florida STORET / WIN|STORET_21FLA_27010970|Dissolved Oxygen Saturation|Bottom|Field|2014-02-04|2014-07-15|2|95|101|98|98|4.24264068711929
@@ -1895,23 +1879,19 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2770|Dissolved Oxygen Saturation|Bottom|Field|2001-03-10|2004-11-06|122|14|203|107|100.811475409836|43.1404264716088
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2820|Dissolved Oxygen Saturation|Bottom|Field|2002-07-01|2003-01-07|24|39|114|82.5|79.375|19.4216654012091
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2860|Dissolved Oxygen Saturation|Bottom|Field|1994-10-27|1997-12-16|50|50|131|92|91.96|18.8516875225795
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2875|Dissolved Oxygen Saturation|Bottom|Field|2001-08-14|2004-12-12|105|36|138|86|83.4|19.232684520008
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2880|Dissolved Oxygen Saturation|Bottom|Field|1994-05-21|1997-11-08|13|26|140|58|71.4615384615385|35.8576244440319
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2890|Dissolved Oxygen Saturation|Bottom|Field|1994-12-10|1997-02-07|64|49|119|84.5|84.46875|17.0517128963167
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2900|Dissolved Oxygen Saturation|Bottom|Field|1994-05-23|2004-08-28|419|19|157|82|83.7398568019093|22.4156389993634
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2900|Dissolved Oxygen Saturation|Bottom|Field|1994-05-23|2004-08-28|260|19|153|85|87.15|20.8366648558881
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2960|Dissolved Oxygen Saturation|Bottom|Field|1993-09-20|2004-10-31|57|43|127|87|86.7017543859649|18.7006158342835
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2965|Dissolved Oxygen Saturation|Bottom|Field|2001-08-23|2002-01-14|2|70|107|88.5|88.5|26.1629509039023
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR2970|Dissolved Oxygen Saturation|Bottom|Field|1998-02-04|2000-06-28|87|27|100|57|58|17.1036511809885
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3010|Dissolved Oxygen Saturation|Bottom|Field|1994-02-07|2004-11-08|50|27|121|84|80.28|22.6085048111528
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3070|Dissolved Oxygen Saturation|Bottom|Field|1993-12-30|2004-11-15|109|7|107|74|70.9357798165138|18.8543517078005
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3100|Dissolved Oxygen Saturation|Bottom|Field|1991-06-22|1996-01-27|60|34|97|69|68.25|16.7358591966725
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3120|Dissolved Oxygen Saturation|Bottom|Field|1994-09-26|2004-09-02|419|15|127|86|82.8353221957041|15.7495072628554
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3130|Dissolved Oxygen Saturation|Bottom|Field|1994-09-26|2004-12-31|41|65|120|94|93.7073170731707|14.1637634519202
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3180|Dissolved Oxygen Saturation|Bottom|Field|2000-05-25|2004-08-31|174|16|140|82|79.4080459770115|20.6568479786743
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3180|Dissolved Oxygen Saturation|Bottom|Field|2000-05-25|2004-08-31|157|16|140|82|79.1592356687898|20.5212552579215
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3200|Dissolved Oxygen Saturation|Bottom|Field|1991-11-03|1993-05-15|55|40|112|92|88.8727272727273|16.6467153310535
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3310|Dissolved Oxygen Saturation|Bottom|Field|1996-07-02|2004-12-29|176|32|140|89|88.2386363636364|19.5769510646324
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3320|Dissolved Oxygen Saturation|Bottom|Field|1996-07-16|2004-08-19|85|5|141|65|64.3176470588235|22.4129064458437
-21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3400|Dissolved Oxygen Saturation|Bottom|Field|1997-03-16|2004-08-25|134|20|114|63|62.2238805970149|16.1950710923072
+21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3400|Dissolved Oxygen Saturation|Bottom|Field|2000-08-20|2004-08-14|77|20|114|66|64.9220779220779|16.7094097613529
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IR3540|Dissolved Oxygen Saturation|Bottom|Field|2002-01-22|2004-05-26|8|62|96|90.5|86|10.9283379993744
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IRE430|Dissolved Oxygen Saturation|Bottom|Field|1997-12-31|1998-03-31|2|83|90|86.5|86.5|4.94974746830583
 21|Indian River-Malabar to Vero Beach Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLMRC_IRL430|Dissolved Oxygen Saturation|Bottom|Field|1997-08-19|2002-07-12|2|73|88|80.5|80.5|10.6066017177982
@@ -2145,7 +2125,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_JX1304017|Dissolved Oxygen Saturation|Bottom|Field|2013-04-16|2013-04-16|1|83.4|83.4|83.4|83.4|
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_JX1312013|Dissolved Oxygen Saturation|Bottom|Field|2013-12-09|2013-12-09|1|83|83|83|83|
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLA_JX1404016|Dissolved Oxygen Saturation|Bottom|Field|2014-04-15|2014-04-15|1|67.9|67.9|67.9|67.9|
-30|Nassau River-St. Johns River Marshes Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_JAXSJR01|Dissolved Oxygen Saturation|Bottom|Field|2012-10-24|2015-11-17|34|84.7|108.6|95.35|96.1529411764706|4.76503904999215
+30|Nassau River-St. Johns River Marshes Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_JAXSJR01|Dissolved Oxygen Saturation|Bottom|Field|2012-10-24|2014-06-16|18|89.9|108.6|99.25|98.6|4.48041489675441
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_NCB19020038|Dissolved Oxygen Saturation|Bottom|Field|2014-12-18|2017-06-22|18|59.6|95.5|88.2|83.9444444444444|9.8814872792345
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_NCBCM24|Dissolved Oxygen Saturation|Bottom|Field|2014-11-19|2017-06-22|18|15.1|90.3|78.3|74.4888888888889|17.832484861619
 30|Nassau River-St. Johns River Marshes Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLSJWM_NCBGD|Dissolved Oxygen Saturation|Bottom|Field|2014-11-19|2017-06-22|22|43.6|91.2|82|79.2681818181818|11.4397963003691
@@ -2187,8 +2167,6 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_275005708246200|Dissolved Oxygen Saturation|Bottom|Field|2010-03-29|2010-10-05|3|58.2|108.6|74.4|80.4|25.7301379708699
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_275146608209378|Dissolved Oxygen Saturation|Bottom|Field|2011-12-27|2011-12-27|1|76.9|76.9|76.9|76.9|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_275356708249530|Dissolved Oxygen Saturation|Bottom|Field|2010-06-21|2010-11-22|2|49|88.6|68.8|68.8|28.0014285349873
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_28020958240534|Dissolved Oxygen Saturation|Bottom|Field|2011-02-14|2011-11-21|8|43.3|72.7|61.1|62.2375|9.78072996107287
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_28024368247030|Dissolved Oxygen Saturation|Bottom|Field|2015-11-04|2015-11-24|2|71|100|85.5|85.5|20.5060966544099
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_2808270824543|Dissolved Oxygen Saturation|Bottom|Field|2012-09-25|2012-12-13|4|69|84.2|77.2|76.9|7.96450458806657
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_280845508245483|Dissolved Oxygen Saturation|Bottom|Field|2010-09-13|2010-10-27|2|94.4|139.7|117.05|117.05|32.0319371877506
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_2808520824616|Dissolved Oxygen Saturation|Bottom|Field|2012-03-28|2012-12-13|3|30.4|98.2|74|67.5333333333333|34.3594722505066
@@ -2199,10 +2177,7 @@ AreaID|ManagedAreaName|ProgramID|ProgramName|ProgramLocationID|ParameterName|Rel
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLTPA_G5SW0081|Dissolved Oxygen Saturation|Bottom|Field|2015-09-22|2015-10-26|5|75|91|80|82.8|7.25947656515262
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB10|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-07-27|2|88|97.3|92.65|92.65|6.57609306503489
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB11|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-07-27|2|84|107|95.5|95.5|16.2634559672906
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB13|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-03-23|1|100.6|100.6|100.6|100.6|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB14|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-03-23|1|103.3|103.3|103.3|103.3|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB15|Dissolved Oxygen Saturation|Bottom|Field|2016-03-23|2016-03-23|1|90.6|90.6|90.6|90.6|
-35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB8|Dissolved Oxygen Saturation|Bottom|Field|2016-07-27|2016-07-27|1|86|86|86|86|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|STORET_21FLWQSP_PIN16CLB9|Dissolved Oxygen Saturation|Bottom|Field|2016-07-27|2016-07-27|1|75|75|75|75|
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSP-CBD01|Dissolved Oxygen Saturation|Bottom|Field|2021-08-24|2021-12-13|2|48.6|75.4|62|62|18.9504617357995
 35|Pinellas County Aquatic Preserve|5002|Florida STORET / WIN|WIN_21FLCOSP_COSP580|Dissolved Oxygen Saturation|Bottom|Field|2021-08-24|2022-12-19|8|65.9|94.7|80.75|80.85|8.73466002282205
