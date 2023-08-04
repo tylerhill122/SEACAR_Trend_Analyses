@@ -126,7 +126,7 @@ data$ActivityType <- gsub("Sample", "Lab", data$ActivityType)
 
 # Gets data for the specific activity type if it is not All
 if(activity!="All"){
-   data <- data[grep(activity, data$ActivityType[!is.na(data$ActivityType)]),]
+   data <- data[grep(activity, data$ActivityType),]
 }
 
 # Changes RelativeDepth to Bottom for the QAQC flag 12Q that indicates
