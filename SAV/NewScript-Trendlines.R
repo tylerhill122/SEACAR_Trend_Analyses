@@ -9,25 +9,16 @@ addfits_blacktrendlines <- function(models, plot_i, param) {
   aucol <- as.name(names(plot_i$data)[1])
   regression_data <- data.frame()
   
-  mods <- list.files(here::here("output/models/"))
-  models2 <- str_subset(mods, "_lme")
-  
   for (i in seq_along(models)) {
+    model <- models[[i]]
     
-    model <- models[[i]]  # Access the model from the models list
+    model <- get(model)
     
-    model <- get(model) # Access previously stored model variable
-    
-    # Extract species and managed area info from the model object
     species <- model$data$analysisunit
     managed_area <- model$data$ManagedAreaName
     
-    # Filter SAV4 data for the specific species and managed area
-    species_data <- SAV4[ManagedAreaName == managed_area & 
-                           !is.na(eval(p)) & 
-                           eval(aucol) == species, ]
+    species_data <- SAV4[ManagedAreaName == managed_area & !is.na(eval(p)) & eval(aucol) == species, ]
     
-    # Predict using the model
     predicted_values <- predict(model, level = 0, newdata = species_data)
     
     # Add predicted values to the regression_data dataframe
@@ -38,7 +29,7 @@ addfits_blacktrendlines <- function(models, plot_i, param) {
     ))
   }
   
-  # Add the regression lines to the plot
+  # Plot all the regression lines on the same plot
   plot_i <- plot_i +
     geom_line(data = regression_data,
               aes(x = relyear, y = fit, color = species),
@@ -636,10 +627,9 @@ for(p in parameters$column){
       
       #create base plot of seagrass percent cover data over time for managed area i
       plot_i <- ggplot(data = droplevels(plotdat),
-                       aes(x = relyear, y = data)) + #SAV4[ManagedAreaName == i & !is.na(eval(p)), ]    size = npt   fill = analysisunit,   y = eval(p)
-        # geom_hline(yintercept = 0, color = "grey20") +
-        geom_point(shape = 21, #fill = "grey90", #stroke = 2,
-                   alpha = 0, color = "grey50") + #fill = analysisunit  shape = 21, color = "#333333", , color = analysisunit   size = 0.5, width = 0.001, height = 0.3
+                       aes(x = relyear, y = data)) +
+        geom_point(shape = 21,
+                   alpha = 0, color = "grey50") +
         geom_hline(yintercept = 0, color = "grey10", lwd = 0.5) +
         labs(title = parameters[column == p, name], subtitle = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
                                                                       ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
@@ -663,126 +653,11 @@ for(p in parameters$column){
       
       if(length(models) > 0){
         #make sure that no failed models slipped through
-        # classes <- lapply(models, function(x) class(eval(x)))
-        # models <- models[classes != "try-error"]
+        classes <- lapply(models, function(x) class(eval(x)))
+        models <- models[classes != "try-error"]
         
-        plot_i <- addfits_blacktrendlines(models, plot_i, p) + 
-          {if(usenames == "common"){
-            facet_wrap(~factor(eval(aucol), levels = c("Total SAV",
-                                                       "Total seagrass",
-                                                       "Unidentified Halophila",
-                                                       "Halophila spp.",
-                                                       "Johnson's seagrass",
-                                                       "Manatee grass",
-                                                       "Paddle grass",
-                                                       "Shoal grass",
-                                                       "Star grass",
-                                                       "Turtle grass",
-                                                       "Widgeon grass",
-                                                       "Attached algae",
-                                                       "Drift algae")),
-                       # labeller = c("Total SAV",
-                       #                                     "Total seagrass",
-                       #                                     "Halophila spp.",
-                       #                                     "Halophila spp.",
-                       #                                     "Johnson's seagrass",
-                       #                                     "Manatee grass",
-                       #                                     "Paddle grass",
-                       #                                     "Shoal grass",
-                       #                                     "Star grass",
-                       #                                     "Turtle grass",
-                       #                                     "Widgeon grass",
-                       #                                     "Attached algae",
-                       #                                     "Drift algae"),
-                       ncol = 3, strip.position = "top")
-          } else{
-            facet_wrap(~factor(eval(aucol), levels = c("Total SAV",
-                                                       "Total seagrass",
-                                                       "Halodule wrightii",
-                                                       "Halophila decipiens",
-                                                       "Halophila engelmannii",
-                                                       "Halophila johnsonii",
-                                                       "Unidentified Halophila",
-                                                       "Halophila spp.",
-                                                       "Ruppia maritima",
-                                                       "Syringodium filiforme",
-                                                       "Thalassia testudinum",
-                                                       "Attached algae",
-                                                       "Drift algae")),
-                       labeller = c("Total SAV",
-                                    "Total seagrass",
-                                    "Halodule wrightii",
-                                    "Halophila decipiens",
-                                    "Halophila engelmannii",
-                                    "Halophila johnsonii",
-                                    "Halophila spp.",
-                                    "Halophila spp.",
-                                    "Ruppia maritima",
-                                    "Syringodium filiforme",
-                                    "Thalassia testudinum",
-                                    "Attached algae",
-                                    "Drift algae"), 
-                       ncol = 3, strip.position = "top")
-          }}
+        plot_i <- addfits_blacktrendlines(models, plot_i, p)
       }
-      #plot_i
-      
-      # #create base plot of seagrass percent cover data over time for managed area i
-      # plot_i <- ggplot(data = plotdat,
-      #                  aes(x = relyear, y = eval(p))) + #SAV4[ManagedAreaName == i & !is.na(eval(p)), ]     y = data    size = npt
-      #   geom_jitter(data = plotdat[modeled == "Not modeled", ], aes(fill = analysisunit), shape = 21, #stroke = 2,
-      #               alpha = 0.9, color = "#333333", size = 3) + #fill = analysisunit  shape = 21, color = "#333333", , color = analysisunit   size = 0.5, width = 0.001, height = 0.3
-      #   labs(title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-      #                       ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
-      #        x = "Year",
-      #        y = parameters[column == p, name],
-      #        color = "Species",
-      #        fill = "Species",
-      #        size = "Number of\nobservations") +
-      #   plot_theme +
-      #   ylim(0, 100) +
-      #   # scale_size_area(limits = c(1, max(plotdat$npt))) +
-      #   scale_color_manual(values = subset(spcols, names(spcols) %in% unique(plotdat[, analysisunit])), 
-      #                      aesthetics = c("color", "fill")) +
-      #   scale_x_continuous(breaks = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
-      #                                     to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
-      #                                     by = 3)),
-      #                      labels = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
-      #                                     to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
-      #                                     by = 3))) +
-      #   theme_bw()
-      # 
-      # if(length(models) > 0){
-      #   plot_i <- plot_i + theme(legend.position = "none") + labs(title = "Unmodeled species")
-      #   
-      #   plot_i_mod <- ggplot(data = plotdat,
-      #                        aes(x = relyear, y = eval(p))) + #SAV4[ManagedAreaName == i & !is.na(eval(p)), ]     y = data    size = npt
-      #     # geom_jitter(data = plotdat[modeled == "Not modeled", ], aes(fill = analysisunit), shape = 21, #stroke = 2,
-      #     #             alpha = 0.9, color = "#333333", size = 3) + #fill = analysisunit  shape = 21, color = "#333333", , color = analysisunit   size = 0.5, width = 0.001, height = 0.3
-      #     labs(title = "Modeled species",
-      #          x = "Year",
-      #          y = parameters[column == p, name],
-      #          color = "Species",
-      #          fill = "Species",
-      #          size = "Number of\nobservations") +
-      #     plot_theme +
-      #     ylim(0, 100) +
-      #     # scale_size_area(limits = c(1, max(plotdat$npt))) +
-      #     scale_color_manual(values = subset(spcols, names(spcols) %in% unique(plotdat[, analysisunit])), 
-      #                        aesthetics = c("color", "fill")) +
-      #     scale_x_continuous(breaks = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
-      #                                       to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
-      #                                       by = 3)),
-      #                        labels = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
-      #                                       to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
-      #                                       by = 3))) +
-      #     theme_bw()
-      #   plot_i_mod <- addfits(models, plot_i_mod, p)
-      # }
-      # 
-      # 
-      # plot_i2 <- plot_i_mod / plot_i + plot_layout(guides = "collect") + plot_annotation(tag_levels = "A", title = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-      #                                                                                                          ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))))
       
       #Save the plot object as .rds
       saveRDS(plot_i, here::here(paste0("output/Figures/BB/SAV_", parameters[column == p, type], "_", 
