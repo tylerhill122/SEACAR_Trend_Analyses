@@ -5,36 +5,48 @@ file_in <- list.files(data_dir, pattern="SAV_DataUsed.txt", full=TRUE)
 SAV4 <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
               na.strings=c("NULL","","NA"))
 
-addfits_blacktrendlines <- function(models, plot_i, param) {
+addfits <- function(models, plot_i, param) {
+  # aucol determines whether analysisunit or analysisunit_halid is used
   aucol <- as.name(names(plot_i$data)[1])
+  # empty data frame to fill with regression data
   regression_data <- data.frame()
   
   for (i in seq_along(models)) {
-    model <- models[[i]]
+    # finding model name, calling previously created model variable
+    model <- get(models[[i]])
     
-    model <- get(model)
+    # declaring species & managed area of each model
+    species <- unique(model$data[[aucol]])
+    managed_area <- unique(model$data$ManagedAreaName)
     
-    species <- model$data$analysisunit
-    managed_area <- model$data$ManagedAreaName
+    #extract p-value
+    p_val <- summary(model)$tTab[2,5]
     
-    species_data <- SAV4[ManagedAreaName == managed_area & !is.na(eval(p)) & eval(aucol) == species, ]
-    
-    predicted_values <- predict(model, level = 0, newdata = species_data)
-    
-    # Add predicted values to the regression_data dataframe
-    regression_data <- rbind(regression_data, data.frame(
-      relyear = species_data$relyear,
-      fit = predicted_values,
-      species = unique(species_data$analysisunit)
-    ))
+    # only plot models with p-values <= 0.05
+    if(p_val <= 0.05) {
+      
+      # filter dataframe for managed_area & species
+      species_data <- SAV4 %>%
+        filter(ManagedAreaName == managed_area,
+               !is.na({{p}}),
+               {{ aucol }} == species)
+      
+      # create predicted values variable for each model
+      predicted_values <- predict(model, level = 0, newdata = species_data)
+      
+      # Add predicted values to the regression_data dataframe, with species & relyear
+      regression_data <- rbind(regression_data, data.frame(
+        relyear = species_data$relyear,
+        fit = predicted_values,
+        species = unique(species_data[[aucol]])))
+      
+      # Plot all the regression lines on the same plot
+      plot_i <- plot_i +
+        geom_line(data = regression_data,
+                  aes(x = relyear, y = fit, color = species),
+                  size = 1.2, alpha = 0.9, inherit.aes = FALSE)
+    }
   }
-  
-  # Plot all the regression lines on the same plot
-  plot_i <- plot_i +
-    geom_line(data = regression_data,
-              aes(x = relyear, y = fit, color = species),
-              size = 0.75, alpha = 0.7, inherit.aes = FALSE)
-  
   return(plot_i)
 }
 
@@ -45,108 +57,6 @@ EDA <- "no" #Create and export Exploratory Data Analysis plots ("maps and plots"
 #                                                   "no" (or anything else) = skip all EDA output)
 
 Analyses <- c("BB_pct", "PC") #Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
-
-
-if(str_detect(EDA, "maps")){
-  # Code source for original rotate sf function: https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/geospatial-data/
-  #' Rotate simple features for 3D layers
-  #' Rotates a simple features layer using a shear matrix transformation on the 
-  #' \code{geometry} column. This can get nice for visualisation and works with
-  #' points, lines and polygons.
-  #'
-  #' @param data an object of class \code{sf}
-  #' @param x_add integer; x value to move geometry in space
-  #' @param y_add integer; x value to move geometry in space
-  #'
-  #' #' @importFrom magrittr %>%
-  
-  rotate_sf <- function(data, x_add = 0, y_add = 0, ma, coast = "Atlantic"){
-    
-    if(coast == "Atlantic"){
-      if(unique(ma) %in% c("Banana River", "Indian River-Malabar to Vero Beach", 
-                           "Indian River-Vero Beach to Ft. Pierce", "Jensen Beach to Jupiter Inlet", 
-                           "Mosquito Lagoon")){
-        shear_matrix <- function (x) { 
-          #matrix(c(2, 1.2, 0, 1), 2, 2)
-          # matrix(c(0.2, -0.3, 0.5, 0.7), 2, 2)
-          # matrix(c(0.2, -0.3, 0, 0.7), 2, 2)
-          matrix(c(1, 1.2, 0, 1), 2, 2)
-        }
-        
-        rotate_matrix <- function(x) { 
-          matrix(c(cos(x), sin(x), -sin(x), cos(x)), 2, 2) 
-        }
-        
-        data %>% 
-          dplyr::mutate(
-            geometry = 
-              # .$geometry * shear_matrix() * rotate_matrix(pi*0.6) + c(x_add, y_add)
-              .$geometry * shear_matrix() * rotate_matrix(pi*0.2) + c(x_add, y_add)
-          )
-      } else{
-        shear_matrix <- function (x) { 
-          #matrix(c(2, 1.2, 0, 1), 2, 2)
-          matrix(c(2, 1.2, 0, 1), 2, 2) 
-        }
-        
-        rotate_matrix <- function(x) { 
-          matrix(c(cos(x), sin(x), -sin(x), cos(x)), 2, 2) 
-        }
-        
-        data %>% 
-          dplyr::mutate(
-            geometry = 
-              .$geometry * shear_matrix() * rotate_matrix(pi/20) + c(x_add, y_add)
-          )
-      }
-      
-    } else{
-      shear_matrix <- function (x) { 
-        #matrix(c(2, 1.2, 0, 1), 2, 2)
-        matrix(c(2, -1.2, 0, 1), 2, 2) 
-      }
-      
-      rotate_matrix <- function(x) { 
-        matrix(c(cos(x), sin(x), -sin(x), cos(x)), 2, 2) 
-      }
-      
-      data %>% 
-        dplyr::mutate(
-          geometry = 
-            .$geometry * shear_matrix() * rotate_matrix(pi*1.98) + c(x_add, y_add)
-        )
-    }
-  }
-  
-  
-  #Create model objects, tables and plots for all MAs w/ >5 yrs of data-------------------------------------------------
-  #Load geospatial data
-  GeoDBdate <- "6june2023"
-  locs_pts <- st_read(here::here(paste0("mapping/SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Point.shp")))
-  locs_lns <- st_read(here::here(paste0("mapping/SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Line.shp")))
-  rcp <- st_read(here::here("mapping/orcp_all_sites/orcp_all_sites/ORCP_Managed_Areas.shp"))
-  counties <- st_read(here::here("mapping/FLCounties/Counties_-_Detailed_Shoreline.shp"))
-  corners <- fread(here::here("mapping/MApolygons_corners.csv"))
-  #add 20% of difference (xmax-xmin) to xmax to help prevent year labels from getting cut off map images and 10% to ymax
-  corners[, `:=` (xmax = xmax + (xmax-xmin)*0.25, ymax = ymax + (ymax-ymin)*0.1)]
-  
-  locs_pts <- st_make_valid(locs_pts)
-  locs_lns <- st_make_valid(locs_lns)
-  rcp <- st_make_valid(rcp)
-  counties <- st_make_valid(counties)
-  
-  locs_pts <- st_transform(locs_pts, crs = 4326)
-  locs_lns <- st_transform(locs_lns, crs = 4326)
-  rcp <- st_transform(rcp, crs = 4326)
-  counties <- st_transform(counties, crs = 4326)
-  
-  locs_pts_rcp <- locs_pts[rcp, , op = st_intersects]
-  locs_lns_rcp <- locs_lns[rcp, , op = st_intersects]
-  
-  pnames <- distinct(SAV4[, .(ProgramID, ProgramName)])
-  locs_pts_rcp <- merge(locs_pts_rcp, pnames, by = "ProgramID", all.x = TRUE)
-  locs_lns_rcp <- merge(locs_lns_rcp, pnames, by = "ProgramID", all.x = TRUE)
-}
 
 #Empty data.table to house names of any failed models generated below.
 failedmods <- data.table(model = character(),
@@ -403,6 +313,7 @@ for(p in parameters$column){
   ma_include <- unique(subset(nyears, nyears$nyr >= 5)$ManagedAreaName)
   
   #Subset ma_include to first 5 entries
+  # ma_include <- "Big Bend Seagrasses"
   ma_include <- ma_include[c(1,2,3,4,5)]
   
   #For each managed area, make sure there are multiple levels of BB scores per species; remove ones that don't from further consideration.
@@ -578,7 +489,6 @@ for(p in parameters$column){
       setDT(plotdat)
       setnames(plotdat, "eval(p)", "data")
       
-      
       #split modeled vs unmodeled data
       modeledsp <- c()
       for(u in seq_along(models)){
@@ -625,38 +535,34 @@ for(p in parameters$column){
       }
       miny <- ifelse(floor(min(miny)) < 0, floor(min(miny)), 0)
       
+      # Scale x-axis data
+      breaks_seq <- seq(from = min(plotdat$relyear),
+                        to = max(plotdat$relyear),
+                        by = 3)
+      labels_seq <- seq(from = min(plotdat$Year),
+                        to = max(plotdat$Year),
+                        by = 3)
+      
       #create base plot of seagrass percent cover data over time for managed area i
       plot_i <- ggplot(data = droplevels(plotdat),
                        aes(x = relyear, y = data)) +
-        geom_point(shape = 21,
-                   alpha = 0, color = "grey50") +
-        geom_hline(yintercept = 0, color = "grey10", lwd = 0.5) +
+        # geom_point(shape = 21, alpha=0.9, color="grey50") +
         labs(title = parameters[column == p, name], subtitle = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
                                                                       ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
              x = "Year",
              y = parameters[column == p, name]) +
-             #color = "Species",
-             #fill = "Species",
-             #fill = "Number of\nobservations") +
         plot_theme +
         ylim(miny, 100) +
-        # scale_size_area(limits = c(1, max(plotdat$npt))) +
-        # scale_color_manual(values = subset(spcols, names(spcols) %in% unique(plotdat[, analysisunit])),
-        #                    aesthetics = c("color", "fill")) +
         scale_fill_continuous_sequential(palette = "YlGnBu") +
-        scale_x_continuous(breaks = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
-                                          to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), relyear]),
-                                          by = 3)),
-                           labels = c(seq(from = min(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
-                                          to = max(SAV4[ManagedAreaName == i & !is.na(eval(p)), Year]),
-                                          by = 3)))
+        scale_x_continuous(breaks = breaks_seq, labels = labels_seq) +
+        scale_colour_manual(values=spcols)
       
       if(length(models) > 0){
         #make sure that no failed models slipped through
         classes <- lapply(models, function(x) class(eval(x)))
         models <- models[classes != "try-error"]
         
-        plot_i <- addfits_blacktrendlines(models, plot_i, p)
+        plot_i <- addfits(models, plot_i, p)
       }
       
       #Save the plot object as .rds
@@ -675,24 +581,6 @@ for(p in parameters$column){
                                                              paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_lmeresults.rds"),
                                                              paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_lmeresults.rds"))))))
     }
-    
-    if(paste0(p) == "BB_all" & "BB_all" %in% Analyses) next #{
-    #   saveRDS(olrmodresults, here::here(paste0("output/tables/SAV_", parameters[column == p, type], "_", 
-    #                                            ifelse(stringr::str_detect(i, "NERR"), 
-    #                                                   paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_olrresults.rds"),
-    #                                                   ifelse(stringr::str_detect(i, "NMS"),
-    #                                                          paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_olrresults.rds"),
-    #                                                          paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_olrresults.rds"))))))
-    # }
-    
-    if(paste0(p) == "PO" & "PO" %in% Analyses) next #{
-    #   saveRDS(blrmodresults, here::here(paste0("output/tables/SAV_", parameters[column == p, type], "_", 
-    #                                            ifelse(stringr::str_detect(i, "NERR"), 
-    #                                                   paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_blrresults.rds"), 
-    #                                                   ifelse(stringr::str_detect(i, "NMS"),
-    #                                                          paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_blrresults.rds"),
-    #                                                          paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_blrresults.rds"))))))
-    # }
     
     if(paste0(p) == "PA" & "PA" %in% Analyses){
       #Bar chart of proportions by analysisunit
@@ -857,56 +745,4 @@ for(m in malist){
   }
 }
 
-#Save .png versions of "barplot" .rds files --------------------------------------------------
-plots2 <- stringr::str_subset(files, "_barplot") #identify map file
-
-for(pl2 in plots2){
-  plot_pl2 <- readRDS(here::here(paste0("output/Figures/BB/", pl2)))
-  plot_pl2 <- plot_pl2 +
-    plot_theme
-  
-  png(here::here(paste0("output/website/images/barplots/", str_sub(pl2, 1, -5), ".png")),
-      width = 8,
-      height = 4,
-      units = "in",
-      res = 200)
-  
-  print(plot_pl2)
-  dev.off()
-}
-
-
-#Crop geographic scope figure images & add metadata stamp ----------------------------
-gsfigs <- list.files(here::here("output/Figures/BB/img/"), full.names = TRUE)
-gsfigs <- gsfigs[which(str_detect(gsfigs, "map"))]
-GeoDBdate2 <- paste0(str_sub(GeoDBdate, -4, -1), "-", fcase(str_detect(GeoDBdate, "jan"), "01",
-                                                            str_detect(GeoDBdate, "feb"), "02",
-                                                            str_detect(GeoDBdate, "mar"), "03",
-                                                            str_detect(GeoDBdate, "apr"), "04",
-                                                            str_detect(GeoDBdate, "may"), "05",
-                                                            str_detect(GeoDBdate, "jun"), "06",
-                                                            str_detect(GeoDBdate, "jul"), "07",
-                                                            str_detect(GeoDBdate, "aug"), "08",
-                                                            str_detect(GeoDBdate, "sep"), "09",
-                                                            str_detect(GeoDBdate, "oct"), "10",
-                                                            str_detect(GeoDBdate, "nov"), "11",
-                                                            str_detect(GeoDBdate, "dec"), "12"), "-", str_sub(GeoDBdate, 1, 2))
-
-for(gs in gsfigs){
-  fig_gs <- image_read(gs)
-  fig_gs <- image_trim(fig_gs)
-  iminfo <- image_info(fig_gs)
-  fig_gs <- image_extent(fig_gs, paste0(iminfo$width + 100, "x", iminfo$height + 100, "-50"), gravity = "north", color = "white")
-  this <- this.path::this.path()
-  fig_gs <- image_annotate(
-    fig_gs, text = paste0("Date: ", Sys.Date(), ";  Script: ", str_sub(this, max(str_locate_all(this, "/")[[1]]) + 1, -1), ";  Geodatabase ver.: ", GeoDBdate2), size = 20, 
-    color = "grey40", gravity = "southeast", location = "+10+0", font = "Arial" #location = paste0("+", iminfo$width, "+", iminfo$height - 10), 
-  )
-  #paste0(iminfo$width, iminfo$height - 10)
-  
-  image_write(fig_gs, here::here(paste0("output/Figures/BB/img/", str_sub(gs, str_locate_all(gs, "/Figures/BB/img/")[[1]][2] + 1, -5), "_", Sys.Date(), ".jpg")),
-              format = "jpeg", quality = 100)
-}
-
 toc()
-
