@@ -40,6 +40,8 @@ addfits <- function(models, plot_i, param) {
         fit = predicted_values,
         species = unique(species_data[[aucol]])))
       
+      # separate <- c("Total SAV", "Total seagrass")
+      
       # Plot all the regression lines on the same plot
       plot_i <- plot_i +
         geom_line(data = regression_data,
@@ -56,7 +58,7 @@ EDA <- "no" #Create and export Exploratory Data Analysis plots ("maps and plots"
 #                                                   "plots" = create data exploration plots only,
 #                                                   "no" (or anything else) = skip all EDA output)
 
-Analyses <- c("BB_pct", "PC") #Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
+Analyses <- c("BB_pct", "PC", "PA") #Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
 
 #Empty data.table to house names of any failed models generated below.
 failedmods <- data.table(model = character(),
@@ -64,7 +66,6 @@ failedmods <- data.table(model = character(),
 
 #Create a table of the proportion of present SAV types by managed area and year
 props_halid <- SAV4 %>% filter(str_detect(analysisunit_halid, "Total|Drift|spp\\.", negate = TRUE), !is.na(PA)) %>% group_by(ManagedAreaName, analysisunit_halid, relyear) %>% summarize(n_P = sum(PA), ntot_PA = n(), prop_P = n_P/ntot_PA)
-# props_halcom <- SAV4 %>% filter(str_detect(analysisunit_halcom, "Total", negate = TRUE)) %>% group_by(ManagedAreaName, analysisunit_halcom, relyear) %>% summarize(n_P_halcom = sum(PA), ntot_PA_halcom = n(), prop_P_halcom = n_P_halcom/ntot_PA_halcom)
 props <- SAV4 %>% filter(str_detect(analysisunit, "Total|Drift|decipiens|engelmannii|johnsonii|Unidentified", negate = TRUE), !is.na(PA)) %>% group_by(ManagedAreaName, analysisunit, relyear) %>% summarize(n_P = sum(PA), ntot_PA = n(), prop_P = n_P/ntot_PA)
 setDT(props_halid)
 setDT(props)
@@ -90,12 +91,6 @@ spcollist <- c("#005396",
                         "#F5A800",
                         "#F17B00")
                         
-# spcollist_a <- sequential_hcl(8, palette = "YlOrRd")
-# spcollist_b <- sequential_hcl(8, palette = "YlGnBu", rev = TRUE)
-# spcollist <- append(spcollist_a[4:7], spcollist_b[3:7])
-# spcollist <- rev(spcollist)
-
-# spcollist <- hcl.colors(n = 8, palette = "Blues 3")
 spp <- c("Halodule wrightii", "Halophila decipiens", "Halophila engelmannii", "Halophila johnsonii", 
          "Halophila spp.", "Ruppia maritima", "Syringodium filiforme", "Thalassia testudinum", "Attached algae")
 
@@ -314,7 +309,7 @@ for(p in parameters$column){
   
   #Subset ma_include to first 5 entries
   # ma_include <- "Big Bend Seagrasses"
-  ma_include <- ma_include[c(1,2,3,4,5)]
+  # ma_include <- ma_include[c(1,2,3,4,5)]
   
   #For each managed area, make sure there are multiple levels of BB scores per species; remove ones that don't from further consideration.
   for(i in ma_include){
@@ -415,6 +410,7 @@ for(p in parameters$column){
         
         
         #Individual model objects are needed for plotting all species together
+        ##This allows get(model) functionality within addfits function
         eval(call("<-", as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.', '\\U\\1', i, perl = TRUE), 
                                        "_", 
                                        gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE))), 
@@ -635,13 +631,6 @@ for(p in parameters$column){
                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_barplot_sp", 
                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_barplot_sp", "AP_barplot_sp")), 
                                             ".rds")))
-      
-      # saveRDS(belrmodresults, here::here(paste0("output/tables/SAV_", parameters[column == p, type], "_", 
-      #                                           ifelse(stringr::str_detect(i, "NERR"), 
-      #                                                  paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_belrresults.rds"),
-      #                                                  ifelse(stringr::str_detect(i, "NMS"),
-      #                                                         paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_belrresults.rds"),
-      #                                                         paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_belrresults.rds"))))))
     }
     
     print(paste0("  Plot objects and results tables saved: ", 
@@ -743,6 +732,25 @@ for(m in malist){
       next
     }
   }
+}
+
+#Save .png versions of "barplot" .rds files --------------------------------------------------
+files <- list.files(here::here("output/Figures/BB/")) #get file list
+plots2 <- stringr::str_subset(files, "_barplot") #identify map file
+
+for(pl2 in plots2){
+  plot_pl2 <- readRDS(here::here(paste0("output/Figures/BB/", pl2)))
+  plot_pl2 <- plot_pl2 +
+    plot_theme
+  
+  png(here::here(paste0("output/website/images/barplots/", str_sub(pl2, 1, -5), ".png")),
+      width = 8,
+      height = 4,
+      units = "in",
+      res = 200)
+  
+  print(plot_pl2)
+  dev.off()
 }
 
 toc()
