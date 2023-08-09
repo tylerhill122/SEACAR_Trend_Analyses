@@ -13,7 +13,12 @@ addfits <- function(models, plot_i, param) {
   
   for (i in seq_along(models)) {
     # finding model name, calling previously created model variable
-    model <- get(models[[i]])
+    model_name <- models[[i]]
+    model <- get(model_name)
+    
+    # selecting for Total SAV and Total Seagrass to apply aesthetic conditions later
+    is_ToSa <- grepl("ToSa", model_name)
+    is_ToSe <- grepl("ToSe", model_name)
     
     # declaring species & managed area of each model
     species <- unique(model$data[[aucol]])
@@ -21,9 +26,11 @@ addfits <- function(models, plot_i, param) {
     
     #extract p-value
     p_val <- summary(model)$tTab[2,5]
+    ## only plot models with p-values <= 0.05
+    #if(p_val <= 0.05){}
     
-    # only plot models with p-values <= 0.05
-    if(p_val <= 0.05) {
+    # exclude Drift algae from model plots
+    if(!grepl("DrAl", model_name)) {
       
       # filter dataframe for managed_area & species
       species_data <- SAV4 %>%
@@ -40,13 +47,36 @@ addfits <- function(models, plot_i, param) {
         fit = predicted_values,
         species = unique(species_data[[aucol]])))
       
-      # separate <- c("Total SAV", "Total seagrass")
-      
-      # Plot all the regression lines on the same plot
-      plot_i <- plot_i +
-        geom_line(data = regression_data,
-                  aes(x = relyear, y = fit, color = species),
-                  size = 1.2, alpha = 0.9, inherit.aes = FALSE)
+      # declare aesthetic variables
+      linetype <- ""
+      alpha <- ""
+        
+      if (is_ToSa || is_ToSe) {
+        linetype <- "dashed"
+        alpha <- 0.5
+          
+        regression_data <- regression_data %>%
+          filter(species %in% c("Total SAV", "Total seagrass"))
+        
+        # Plot Total SAV and Total seagrass
+        plot_i <- plot_i +
+          geom_line(data = regression_data,
+                    aes(x = relyear, y = fit, color=species),
+                    size = 1.2, alpha=alpha, inherit.aes = FALSE, linetype=linetype)
+      } else {
+        linetype <- "solid"
+        alpha <- 0.9
+        
+        regression_data <- regression_data %>%
+          filter(!species %in% c("Total SAV", "Total seagrass"))
+        
+        # Plot all other species
+        # note color=species is declared within aes() unlike the above plot
+        plot_i <- plot_i +
+          geom_line(data = regression_data,
+                    aes(x = relyear, y = fit, color=species),
+                    size = 1.2, alpha=alpha, inherit.aes = FALSE, linetype=linetype)
+      }
     }
   }
   return(plot_i)
@@ -58,7 +88,12 @@ EDA <- "no" #Create and export Exploratory Data Analysis plots ("maps and plots"
 #                                                   "plots" = create data exploration plots only,
 #                                                   "no" (or anything else) = skip all EDA output)
 
-Analyses <- c("BB_pct", "PC", "PA") #Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
+#Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
+# Trendplots and barplots
+#Analyses <- c("BB_pct", "PC", "PA")
+
+# Trendplots only
+Analyses <- c("BB_pct", "PC")
 
 #Empty data.table to house names of any failed models generated below.
 failedmods <- data.table(model = character(),
@@ -104,10 +139,15 @@ if(usenames == "common"){
   spcols <- setNames(spcollist, spp)
 }
 
+# Add unidentified Halophila to color list
 spindet_nm <- c("Unidentified Halophila")
 spindet_cl <- spcols["Halophila spp."][[1]]
 spindet <- setNames(spindet_cl, spindet_nm)
 spcols <- append(spcols, spindet, after = which(spcols == spcols["Halophila spp."][[1]]))
+
+# Add Total SAV and Total seagrass to spcols
+spcols <- append(spcols, setNames("#900667", c("Total SAV")))
+spcols <- append(spcols, setNames("#000099", c("Total seagrass")))
 
 if(usenames == "common"){
   SAV4[, `:=` (analysisunit_halid = fcase(analysisunit_halid == "Thalassia testudinum", "Turtle grass",
@@ -295,6 +335,10 @@ tic()
 n <- 0
 seed <- 352
 set.seed(seed)
+
+#############################
+### MODEL & PLOT CREATION ###
+#############################
 for(p in parameters$column){
   
   cat(paste0("\nStarting indicator: ", p, "\n"))
@@ -308,7 +352,7 @@ for(p in parameters$column){
   ma_include <- unique(subset(nyears, nyears$nyr >= 5)$ManagedAreaName)
   
   #Subset ma_include to first 5 entries
-  # ma_include <- "Big Bend Seagrasses"
+  ma_include <- c("Alligator Harbor", "Biscayne Bay", "Banana River", "Florida Keys NMS", "Pinellas County")
   # ma_include <- ma_include[c(1,2,3,4,5)]
   
   #For each managed area, make sure there are multiple levels of BB scores per species; remove ones that don't from further consideration.
@@ -470,13 +514,21 @@ for(p in parameters$column){
           lmemodresults <- rbind(lmemodresults, modj_i)
         }
       }
-
     }
     
-    #Final results tables and plots--------------------------------------------------------------------
+    ###### TREND PLOTS #####
     if(paste0(p) %in% c("BB_pct", "PC") & ("BB_pct" %in% Analyses | "PC" %in% Analyses)){
       #Summarize # points per category
-      # if(TRUE %in% str_detect(models, "_HaSpIn|_JoSe|_PaGr|_StGr")){
+      
+      # group_col <- if(i %in% ma_halspp) "analysisunit" else "analysisunit_halid"
+      # 
+      # plotdat <- SAV4 %>%
+      #   filter(ManagedAreaName == i, !is.na({{ p }})) %>%
+      #   group_by_at(vars(group_col, Year, relyear, {{ p }})) %>%
+      #   summarise(npt = n()) %>%
+      #   ungroup() %>%
+      #   as.data.table()
+      
       if(i %in% ma_halspp){
         plotdat <- SAV4[ManagedAreaName == i & !is.na(eval(p)), ] %>% group_by(analysisunit, Year, relyear, eval(p)) %>% summarise(npt = n())
       } else{
@@ -548,7 +600,7 @@ for(p in parameters$column){
              x = "Year",
              y = parameters[column == p, name]) +
         plot_theme +
-        ylim(miny, 100) +
+        ylim(0, 100) +
         scale_fill_continuous_sequential(palette = "YlGnBu") +
         scale_x_continuous(breaks = breaks_seq, labels = labels_seq) +
         scale_colour_manual(values=spcols)
@@ -578,6 +630,8 @@ for(p in parameters$column){
                                                              paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_lmeresults.rds"))))))
     }
     
+    
+    ###### BAR PLOTS ######
     if(paste0(p) == "PA" & "PA" %in% Analyses){
       #Bar chart of proportions by analysisunit
       breaks <- c(seq(min(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
