@@ -36,8 +36,9 @@ for (i in 1:length(files)) {
    }
 }
 
-#Add significant column to denote where p<=0.05 or not
-output$Significant <- ifelse(output$p <= 0.05, TRUE, FALSE)
+#Add statistical trend column to denote where p<=0.05 and whether LME_slope increase or decreasing
+output$StatisticalTrend <- ifelse(output$p <= 0.05 & output$LME_Slope > 0, "Significantly increasing trend",
+                                  ifelse(output$p <= 0.05 & output$LME_Slope <0, "Significantly decreasing trend", "No significant trend"))
 
 #Change column names to better match other outputs
 setnames(output, c("managed_area", "species"), c("ManagedAreaName", "Species"))
@@ -61,7 +62,6 @@ stats$Species[stats$Species=="Syringodium filiforme"] <- "Manatee grass"
 stats$Species[stats$Species=="Halodule wrightii"] <- "Shoal grass"
 stats$Species[stats$Species=="Ruppia maritima"] <- "Widgeon grass"
 
-
 stats <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName", "ShortName")],
                           stats, by="ShortName", all=TRUE)
 
@@ -71,7 +71,6 @@ stats$AreaID <- NULL
 stats <-  merge.data.frame(stats, output,
                               by=c("ManagedAreaName", "Species"), all=TRUE)
 
-
 stats <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
                          stats, by=c("ManagedAreaName"), all=TRUE)
 
@@ -80,6 +79,13 @@ stats <- stats %>% select(AreaID, everything())
 
 stats$EarliestYear[stats$EarliestYear=="Inf"] <- NA
 stats$LatestYear[stats$LatestYear=="-Inf"] <- NA
+
+#filling remaining values in StatisticalTrend column
+stats$StatisticalTrend[stats$SufficientData==FALSE] <- "Insufficient data to calculate trend"
+stats$StatisticalTrend[stats$SufficientData==TRUE & is.na(stats$LME_Slope)] <- "Model did not fit the available data"
+
+#drop rows where ManagedArea does not contain data
+stats <- stats[!apply(stats[, -c(1, 2), drop = FALSE], 1, function(row) all(is.na(row))), ]
 
 #Write output table to a pipe-delimited txt file
 fwrite(stats, "output/website/SAV_BBpct_LMEresults_All.txt", sep="|")
