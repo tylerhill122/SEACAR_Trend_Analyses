@@ -1,10 +1,24 @@
-# data directory and loading SAV4 output from previous script
-data_dir <- here::here("output")
-file_in <- list.files(data_dir, pattern="SAV_DataUsed.txt", full=TRUE)
+# # loading SAV4 from SAV4.txt output or below from script (SAV4-Creation) source
+# data_dir <- here::here("output")
+# file_in <- list.files(data_dir, pattern="SAV_DataUsed.txt", full=TRUE)
+# SAV4 <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
+#               na.strings=c("NULL","","NA"))
 
-SAV4 <- fread(file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
-              na.strings=c("NULL","","NA"))
+# importing SAV4-Creation directly by running script locally
+source("SAV4-Creation.R")
 
+# check for folder paths, creating them if they don't yet exist
+folder_paths <- c("output/models", "output/tables", "output/Figures/BB")
+for (path in folder_paths) {
+  if (!file.exists(path)) {
+    dir.create(path, recursive = TRUE)  # Create folders recursively
+    print(paste("Folder created:", path))
+  } else {
+    print(paste("Folder already exists:", path))
+  }
+}
+
+# declaring addfits function which plots Percent Cover models on a single plot
 addfits <- function(models, plot_i, param) {
   # aucol determines whether analysisunit or analysisunit_halid is used
   aucol <- as.name(names(plot_i$data)[1])
@@ -33,7 +47,7 @@ addfits <- function(models, plot_i, param) {
       # separate significant values from non-sig for display on plot
       linetypes <- "solid"
       size <- 1
-      alpha <- 1
+      alpha <- 0.7
       #alpha <- if (p_val <= 0.05) 1 else 0.8
 
       # filter dataframe for managed_area & species
@@ -77,19 +91,9 @@ addfits <- function(models, plot_i, param) {
   return(plot_i)
 }
 
-# Specify what to produce --------------
-EDA <- "no" #Create and export Exploratory Data Analysis plots ("maps and plots" = create all EDA output, 
-#                                                   "maps" = create geographic scope maps only,
-#                                                   "plots" = create data exploration plots only,
-#                                                   "no" (or anything else) = skip all EDA output)
-
-#Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
-
-# Trendplots and barplots
+# Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
+# "PA" for just barplots, ("BB_pct", "PC") for trendplots
 Analyses <- c("BB_pct", "PC", "PA")
-
-# Trendplots only
-# Analyses <- c("BB_pct", "PC")
 
 #Empty data.table to house names of any failed models generated below.
 failedmods <- data.table(model = character(),
@@ -347,7 +351,7 @@ for(p in parameters$column){
   nyears <- distinct(rbind(nyears, nyears2))
   ma_include <- unique(subset(nyears, nyears$nyr >= 5)$ManagedAreaName)
   
-  #Subset ma_include to first 5 entries
+  # Subset ma_include to first 5 entries
   # ma_include <- c("Alligator Harbor", "Biscayne Bay", "Banana River", "Florida Keys NMS", "Pinellas County")
   # ma_include <- ma_include[c(1,2,3,4,5)]
   
@@ -581,7 +585,7 @@ for(p in parameters$column){
       #create base plot of seagrass percent cover data over time for managed area i
       plot_i <- ggplot(data = droplevels(plotdat),
                        aes(x = relyear, y = data)) +
-        # geom_point(shape = 21, alpha=0.9, color="grey50") +
+        #geom_point(shape = 21, alpha=0.9, color="grey50") +
         labs(title = parameters[column == p, name], subtitle = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
                                                                       ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
              x = "Year",
