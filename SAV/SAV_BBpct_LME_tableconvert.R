@@ -4,7 +4,7 @@ library(data.table)
 library(dplyr)
 
 #List all of the files in the "tables" directory that are LME results
-files <- list.files("SAV/output/tables", pattern="lmeresults", full.names=TRUE)
+files <- list.files("output/tables", pattern="lmeresults", full.names=TRUE)
 
 #Include only those that are BBpct
 files <- files[grep("BBpct", files)]
@@ -36,6 +36,9 @@ for (i in 1:length(files)) {
    }
 }
 
+#Add significant column to denote where p<=0.05 or not
+output$Significant <- ifelse(output$p <= 0.05, TRUE, FALSE)
+
 #Change column names to better match other outputs
 setnames(output, c("managed_area", "species"), c("ManagedAreaName", "Species"))
 
@@ -46,10 +49,10 @@ output$ManagedAreaName[output$ManagedAreaName=="St. Andrews Aquatic Preserve"] <
    "St. Andrews State Park Aquatic Preserve"
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
-MA_All <- fread("SAV/data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
+MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
                 na.strings = "")
 
-stats <- fread("SAV/output/SAV_BBpct_Stats.txt", sep = "|", header = TRUE, stringsAsFactors = FALSE,
+stats <- fread("output/SAV_BBpct_Stats.txt", sep = "|", header = TRUE, stringsAsFactors = FALSE,
                na.strings = "")
 setnames(stats, c("ManagedAreaName", "analysisunit"), c("ShortName","Species"))
 
@@ -79,4 +82,7 @@ stats$EarliestYear[stats$EarliestYear=="Inf"] <- NA
 stats$LatestYear[stats$LatestYear=="-Inf"] <- NA
 
 #Write output table to a pipe-delimited txt file
-fwrite(stats, "SAV/output/website/SAV_BBpct_LMEresults_All.txt", sep="|")
+fwrite(stats, "output/website/SAV_BBpct_LMEresults_All.txt", sep="|")
+
+#excel format
+openxlsx::write.xlsx(stats, here::here("output/website/SAV_BBpct_LMEresults_All.xlsx"), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
