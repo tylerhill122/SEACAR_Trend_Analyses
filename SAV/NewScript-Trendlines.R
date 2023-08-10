@@ -86,10 +86,10 @@ EDA <- "no" #Create and export Exploratory Data Analysis plots ("maps and plots"
 #Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
 
 # Trendplots and barplots
-#Analyses <- c("BB_pct", "PC", "PA")
+Analyses <- c("BB_pct", "PC", "PA")
 
 # Trendplots only
-Analyses <- c("BB_pct", "PC")
+# Analyses <- c("BB_pct", "PC")
 
 #Empty data.table to house names of any failed models generated below.
 failedmods <- data.table(model = character(),
@@ -348,7 +348,7 @@ for(p in parameters$column){
   ma_include <- unique(subset(nyears, nyears$nyr >= 5)$ManagedAreaName)
   
   #Subset ma_include to first 5 entries
-  ma_include <- c("Alligator Harbor", "Biscayne Bay", "Banana River", "Florida Keys NMS", "Pinellas County")
+  # ma_include <- c("Alligator Harbor", "Biscayne Bay", "Banana River", "Florida Keys NMS", "Pinellas County")
   # ma_include <- ma_include[c(1,2,3,4,5)]
   
   #For each managed area, make sure there are multiple levels of BB scores per species; remove ones that don't from further consideration.
@@ -617,72 +617,69 @@ for(p in parameters$column){
                                                              paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_lmeresults.rds"),
                                                              paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_lmeresults.rds"))))))
     }
+    
+    ###### BAR PLOTS ######
+    if(paste0(p) == "PA" & "PA" %in% Analyses){
+      #Bar chart of proportions by analysisunit
+      breaks <- c(seq(min(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
+                      max(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
+                      by = 2))
+      yrlist <- sort(unique(SAV4$Year))
+
+      labels <- c()
+      for(b in breaks){
+        labels <- append(labels, yrlist[b + 1])
+      }
+
+      if(i %in% ma_halspp){
+        bpdat <- props[ManagedAreaName == i & !is.na(analysisunit) & str_detect(analysisunit, "decipiens|engelmannii|johnsonii|Unidentified|Star|Paddle|Johnson", negate = TRUE), ]
+
+        barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
+          geom_col(color = "grey20") +
+          scale_x_continuous(breaks = breaks, labels = labels) +
+          plot_theme +
+          labs(title = parameters[column == p, name], subtitle = paste0(ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
+                                                                               ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))),
+               fill = "Species",
+               x = "Year",
+               y = "Occurrence frequency (%)") +
+          theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)),
+                             labels = subset(names(spcols) ,names(spcols) %in% unique(bpdat$analysisunit)),
+                             aesthetics = c("color", "fill"))
+
+      } else{
+        bpdat <- props[ManagedAreaName == i & !is.na(analysisunit) & analysisunit != "Halophila spp.", ]
+
+        barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
+          geom_col(color = "grey20") +
+          scale_x_continuous(breaks = breaks, labels = labels) +
+          plot_theme +
+          labs(title = parameters[column == p, name], subtitle = paste0(ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
+                                                                               ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))),
+               fill = "Species",
+               x = "Year",
+               y = "Occurrence frequency (%)") +
+          theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)),
+                             labels = str_replace(subset(names(spcols) ,names(spcols) %in% unique(bpdat$analysisunit)), "Unidentified Halophila", "Halophila, unk."),
+                             aesthetics = c("color", "fill"))
+
+      }
+
+      saveRDS(barplot_sp, here::here(paste0("output/Figures/BB/SAV_", parameters[column == p, type], "_",
+                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_barplot_sp",
+                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_barplot_sp", "AP_barplot_sp")),
+                                            ".rds")))
+    }
+
+    print(paste0("  Plot objects and results tables saved: ",
+                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
+                 "_",
+                 gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE)))
   }
 }
-    
-#     ###### BAR PLOTS ######
-#     if(paste0(p) == "PA" & "PA" %in% Analyses){
-#       #Bar chart of proportions by analysisunit
-#       breaks <- c(seq(min(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
-#                       max(SAV4[ManagedAreaName == i & !is.na(PA), relyear]),
-#                       by = 2))
-#       yrlist <- sort(unique(SAV4$Year))
-#       
-#       labels <- c()
-#       for(b in breaks){
-#         labels <- append(labels, yrlist[b + 1])
-#       }
-#       
-#       if(i %in% ma_halspp){
-#         bpdat <- props[ManagedAreaName == i & !is.na(analysisunit) & str_detect(analysisunit, "decipiens|engelmannii|johnsonii|Unidentified|Star|Paddle|Johnson", negate = TRUE), ]
-#         
-#         barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
-#           geom_col(color = "grey20") +
-#           scale_x_continuous(breaks = breaks, labels = labels) +
-#           plot_theme +
-#           labs(title = parameters[column == p, name], subtitle = paste0(ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-#                                                                                ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))), 
-#                fill = "Species", 
-#                x = "Year", 
-#                y = "Occurrence frequency (%)") +
-#           theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-#           scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)),
-#                              labels = subset(names(spcols) ,names(spcols) %in% unique(bpdat$analysisunit)), 
-#                              aesthetics = c("color", "fill"))
-#         
-#       } else{
-#         bpdat <- props[ManagedAreaName == i & !is.na(analysisunit) & analysisunit != "Halophila spp.", ]
-#         
-#         barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
-#           geom_col(color = "grey20") +
-#           scale_x_continuous(breaks = breaks, labels = labels) +
-#           plot_theme +
-#           labs(title = parameters[column == p, name], subtitle = paste0(ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-#                                                                                ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))), 
-#                fill = "Species", 
-#                x = "Year", 
-#                y = "Occurrence frequency (%)") +
-#           theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-#           scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)),
-#                              labels = str_replace(subset(names(spcols) ,names(spcols) %in% unique(bpdat$analysisunit)), "Unidentified Halophila", "Halophila, unk."),
-#                              aesthetics = c("color", "fill"))
-#         
-#       }
-#       
-#       saveRDS(barplot_sp, here::here(paste0("output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-#                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-#                                             ifelse(stringr::str_detect(i, "NERR"), "ERR_barplot_sp", 
-#                                                    ifelse(stringr::str_detect(i, "NMS"), "MS_barplot_sp", "AP_barplot_sp")), 
-#                                             ".rds")))
-#     }
-#     
-#     print(paste0("  Plot objects and results tables saved: ", 
-#                  gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-#                  "_", 
-#                  gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE)))
-#   }
-# }
-
 
 
 #Save failedmodslist-----------------------------------------------------
@@ -771,6 +768,7 @@ for(m in malist){
       #      units = "in",
       #      res = 300)
       print(plot_m2)
+      print(paste0("Plot saved: ", plot_m))
       dev.off()
       
     } else{
@@ -795,6 +793,7 @@ for(pl2 in plots2){
       res = 200)
   
   print(plot_pl2)
+  print(paste0("Plot saved: ", pl2))
   dev.off()
 }
 
