@@ -5,16 +5,22 @@
 #               na.strings=c("NULL","","NA"))
 
 # importing SAV4-Creation directly by running script locally
-source("SAV4-Creation.R")
+source("SAV4-Creation.R", echo=TRUE)
 
-# check for folder paths, creating them if they don't yet exist
-folder_paths <- c("output/models", "output/tables", "output/Figures/BB")
+# check for folder paths, creating them if they don't yet exist, clearing out previous models
+folder_paths <- c("output/models", "output/tables", "output/Figures/BB", "output/website/images/barplots", "output/website/images/trendplots")
 for (path in folder_paths) {
-  if (!file.exists(path)) {
+  if (file.exists(path)) {
+    files <- list.files(path, full.names=TRUE)
+    if (length(files) > 0) {
+      file.remove(files)
+      print(paste("Contents removed from folder:", path))
+    } else {
+      print(paste("Folder is empty", path))
+    }
+  } else {
     dir.create(path, recursive = TRUE)  # Create folders recursively
     print(paste("Folder created:", path))
-  } else {
-    print(paste("Folder already exists:", path))
   }
 }
 
@@ -49,7 +55,7 @@ addfits <- function(models, plot_i, param) {
       size <- 1
       alpha <- 0.7
       #alpha <- if (p_val <= 0.05) 1 else 0.8
-
+      
       # filter dataframe for managed_area & species
       species_data <- SAV4 %>%
         filter(ManagedAreaName == managed_area,
@@ -59,41 +65,52 @@ addfits <- function(models, plot_i, param) {
       # create predicted values variable for each model
       predicted_values <- predict(model, level = 0, newdata = species_data)
       
+      # separate significant values
+      significant <- if (p_val <=0.05) TRUE else FALSE
+      
       # Add predicted values to the regression_data dataframe, with species & relyear
       regression_data <- rbind(regression_data, data.frame(
         relyear = species_data$relyear,
         fit = predicted_values,
-        species = unique(species_data[[aucol]])))
+        species = unique(species_data[[aucol]]),
+        significance = significant))
       
-      if (is_ToSa || is_ToSe) {
-        
-        regression_data <- regression_data %>%
-          filter(species %in% c("Total SAV", "Total seagrass"))
-
-        # Plot Total SAV and Total seagrass
-        plot_i <- plot_i +
-          geom_line(data = regression_data,
-                    aes(x = relyear, y = fit, color=species),
-                    size=size, alpha=alpha, inherit.aes = FALSE, linetype=linetypes)
-      } else {
-        
-        regression_data <- regression_data %>%
-          filter(!species %in% c("Total SAV", "Total seagrass"))
-
-        # Plot all other species
-        plot_i <- plot_i +
-          geom_line(data = regression_data,
-                    aes(x = relyear, y = fit, color=species),
-                    size=size, alpha=alpha, inherit.aes = FALSE, linetype=linetypes)
-      }
+      # in case we separate Total SAV and Total seagrass and treat them differently
+      #if (is_ToSa || is_ToSe) {} else {}
+      # regression_data <- regression_data %>%
+      #   filter(!species %in% c("Total SAV", "Total seagrass"))
+      
+      # Plot all other species
+      plot_i <- plot_i +
+        geom_line(data = regression_data,
+                  aes(x = relyear, y = fit, color=species, linetype=factor(significance)),
+                  size=size, alpha=0.8, inherit.aes = FALSE) +
+        scale_linetype_manual(name=NULL,
+                              values=c("TRUE" = "solid", "FALSE" = "dotdash"),
+                              labels=c("TRUE" = "Significant", "FALSE" = "Not significant")) +
+        # setting order of the legends, color first
+        guides(color = guide_legend(order=1),
+               linetype = guide_legend(order=2))
     }
   }
+  
   return(plot_i)
 }
 
 # Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
-# "PA" for just barplots, ("BB_pct", "PC") for trendplots
-Analyses <- c("BB_pct", "PC", "PA")
+# Analyses <- c("BB_pct", "PC", "PA")
+
+# Which plot output? "trendplot", "barplot" or both
+# plot_type <- c("trendplot","barplot")
+plot_type <- "trendplot"
+
+if ("trendplot" %in% plot_type && "barplot" %in% plot_type) {
+  Analyses <- c("BB_pct", "PC", "PA")
+} else if ("trendplot" %in% plot_type) {
+  Analyses <- c("BB_pct", "PC")
+} else if ("barplot" %in% plot_type) {
+  Analyses <- c("PA")
+}
 
 #Empty data.table to house names of any failed models generated below.
 failedmods <- data.table(model = character(),
@@ -585,7 +602,7 @@ for(p in parameters$column){
       #create base plot of seagrass percent cover data over time for managed area i
       plot_i <- ggplot(data = droplevels(plotdat),
                        aes(x = relyear, y = data)) +
-        #geom_point(shape = 21, alpha=0.9, color="grey50") +
+        #geom_jitter(shape = 21, alpha=0.9, color="grey50") +
         labs(title = parameters[column == p, name], subtitle = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
                                                                       ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
              x = "Year",
@@ -604,7 +621,7 @@ for(p in parameters$column){
         
         plot_i <- addfits(models, plot_i, p)
       }
-      
+
       #Save the plot object as .rds
       saveRDS(plot_i, here::here(paste0("output/Figures/BB/SAV_", parameters[column == p, type], "_", 
                                         ifelse(stringr::str_detect(i, "NERR"), 
@@ -709,96 +726,98 @@ for(f in seq_along(files)){
   }
 }
 
-
-#Save .png versions of specified "trendplot" .rds files --------------------------------------------------
-files <- list.files(here::here("output/Figures/BB/")) #get file list
-plots <- stringr::str_subset(files, "_trendplot") #identify map file
-mods <- list.files(here::here("output/models/"))
-#models2 <- str_subset(mods, paste0(str_sub(plots[1], 1, str_locate_all(plots[1], "_")[[1]][2])))
-models2 <- str_subset(mods, "_lme")
-
-malist <- c()
-for(pl in plots){
-  ma_p <- str_sub(pl, str_locate_all(pl, "_")[[1]][2], str_locate_all(pl, "_")[[1]][3])
-  malist <- append(malist, ma_p)
-}
-
-failedmodslist <- readRDS(here::here("output/models/failedmodslist.rds"))
-
-for(m in malist){
-  mods_m <- str_subset(models2, m)
-  mods_m <- setdiff(mods_m, failedmodslist$model)
-  mods_m <- setdiff(mods_m, subset(mods_m, str_detect(mods_m, "_PC_")))
-  params <- unique(str_sub(mods_m, 1, str_locate_all(mods_m, "_")[[1]][2] - 1))
+### Saving Trendplot and Barplot files
+if ("trendplot" %in% plot_type) {
+  files <- list.files(here::here("output/Figures/BB/")) #get file list
+  plots <- stringr::str_subset(files, "_trendplot") #identify map file
+  mods <- list.files(here::here("output/models/"))
+  #models2 <- str_subset(mods, paste0(str_sub(plots[1], 1, str_locate_all(plots[1], "_")[[1]][2])))
+  models2 <- str_subset(mods, "_lme")
   
-  for(param in params){
-    mods_m_p <- str_subset(mods_m, param)
-    plot_m <- try(str_subset(plots, unique(str_sub(mods_m_p, 1, str_locate_all(mods_m_p, "_")[[1]][3] - 1))), silent = TRUE)
-    
-    if(class(plot_m) != "try-error"){
-      for(w in mods_m_p){
-        aucol <- ifelse(str_sub(w, str_locate_all(w, "_")[[1]][2],
-                                ifelse(str_detect(w, "AP_"), str_locate(w, "AP_")[2],
-                                       ifelse(str_detect(w, "NERR_"), 
-                                              str_locate(w, "NERR_")[2], 
-                                              str_locate(w, "NMS_")[2]))) %in% c("_BRAP_", "_IRMVBAP_", "_IRVBPAP_", "_JBJIAP_", "_LRLWCAP_", 
-                                                                                 "_MLAP_", "_BBAP_", "_FKNMS_"), as.name("analysisunit"), as.name("analysisunit_halid"))
+  malist <- c()
+  for(pl in plots){
+    ma_p <- str_sub(pl, str_locate_all(pl, "_")[[1]][2], str_locate_all(pl, "_")[[1]][3])
+    malist <- append(malist, ma_p)
+  }
+  
+  failedmodslist <- readRDS(here::here("output/models/failedmodslist.rds"))
+  
+  for(m in malist){
+    mods_m <- str_subset(models2, m)
+    mods_m <- setdiff(mods_m, failedmodslist$model)
+    mods_m <- setdiff(mods_m, subset(mods_m, str_detect(mods_m, "_PC_")))
+    params <- unique(str_sub(mods_m, 1, str_locate_all(mods_m, "_")[[1]][2] - 1))
+  
+    for(param in params){
+      mods_m_p <- str_subset(mods_m, param)
+      plot_m <- try(str_subset(plots, unique(str_sub(mods_m_p, 1, str_locate_all(mods_m_p, "_")[[1]][3] - 1))), silent = TRUE)
+      
+      if(class(plot_m) != "try-error"){
+        for(w in mods_m_p){
+          aucol <- ifelse(str_sub(w, str_locate_all(w, "_")[[1]][2],
+                                  ifelse(str_detect(w, "AP_"), str_locate(w, "AP_")[2],
+                                         ifelse(str_detect(w, "NERR_"), 
+                                                str_locate(w, "NERR_")[2], 
+                                                str_locate(w, "NMS_")[2]))) %in% c("_BRAP_", "_IRMVBAP_", "_IRVBPAP_", "_JBJIAP_", "_LRLWCAP_", 
+                                                                                   "_MLAP_", "_BBAP_", "_FKNMS_"), as.name("analysisunit"), as.name("analysisunit_halid"))
+          
+          eval(call("<-", as.name(paste0(str_sub(w, str_locate_all(w, "_")[[1]][2] + 1, 
+                                                 ifelse(str_detect(w, "AP_"), str_locate(w, "AP_") - 1, 
+                                                        ifelse(str_detect(w, "NERR_"), str_locate(w, "NERR_"), str_locate(w, "NMS_")))), 
+                                         "_", 
+                                         str_sub(w, -8, -5))), 
+                    readRDS(here::here(paste0("output/models/", w)))))
+        }
         
-        eval(call("<-", as.name(paste0(str_sub(w, str_locate_all(w, "_")[[1]][2] + 1, 
-                                               ifelse(str_detect(w, "AP_"), str_locate(w, "AP_") - 1, 
-                                                      ifelse(str_detect(w, "NERR_"), str_locate(w, "NERR_"), str_locate(w, "NMS_")))), 
-                                       "_", 
-                                       str_sub(w, -8, -5))), 
-                  readRDS(here::here(paste0("output/models/", w)))))
+        plot_m2 <- readRDS(here::here(paste0("output/Figures/BB/", plot_m)))
+        plot_m2 <- plot_m2 +
+          plot_theme
+        
+        wid <- ifelse(length(unique(plot_m2$data$analysisunit)) == 1, 4,
+                      ifelse(length(unique(plot_m2$data$analysisunit)) == 2, 6, 8))
+        hei <- ifelse(length(unique(plot_m2$data$analysisunit)) <= 3, 3,
+                      ifelse(length(unique(plot_m2$data$analysisunit)) <= 6, 6, 9))
+        
+        png(here::here(paste0("output/website/images/trendplots/", str_sub(plot_m, 1, -5), ".png")),
+            width = wid,
+            height = hei,
+            units = "in",
+            res = 300)
+        # jpeg(here::here(paste0("output/Figures/BB/img/", str_sub(plot_m, 1, -5), ".jpg")),
+        #      width = 10,
+        #      height = 6,
+        #      units = "in",
+        #      res = 300)
+        print(plot_m2)
+        print(paste0("Plot saved: ", plot_m))
+        dev.off()
+        
+      } else{
+        next
       }
-      
-      plot_m2 <- readRDS(here::here(paste0("output/Figures/BB/", plot_m)))
-      plot_m2 <- plot_m2 +
-        plot_theme
-      
-      wid <- ifelse(length(unique(plot_m2$data$analysisunit)) == 1, 4,
-                    ifelse(length(unique(plot_m2$data$analysisunit)) == 2, 6, 8))
-      hei <- ifelse(length(unique(plot_m2$data$analysisunit)) <= 3, 3,
-                    ifelse(length(unique(plot_m2$data$analysisunit)) <= 6, 6, 9))
-      
-      png(here::here(paste0("output/website/images/trendplots/", str_sub(plot_m, 1, -5), ".png")),
-          width = wid,
-          height = hei,
-          units = "in",
-          res = 300)
-      # jpeg(here::here(paste0("output/Figures/BB/img/", str_sub(plot_m, 1, -5), ".jpg")),
-      #      width = 10,
-      #      height = 6,
-      #      units = "in",
-      #      res = 300)
-      print(plot_m2)
-      print(paste0("Plot saved: ", plot_m))
-      dev.off()
-      
-    } else{
-      next
     }
   }
-}
-
-#Save .png versions of "barplot" .rds files --------------------------------------------------
-files <- list.files(here::here("output/Figures/BB/")) #get file list
-plots2 <- stringr::str_subset(files, "_barplot") #identify map file
-
-for(pl2 in plots2){
-  plot_pl2 <- readRDS(here::here(paste0("output/Figures/BB/", pl2)))
-  plot_pl2 <- plot_pl2 +
-    plot_theme
+} 
+if ("barplot" %in% plot_type) {
+  #Save .png versions of "barplot" .rds files --------------------------------------------------
+  files <- list.files(here::here("output/Figures/BB/")) #get file list
+  plots2 <- stringr::str_subset(files, "_barplot") #identify map file
   
-  png(here::here(paste0("output/website/images/barplots/", str_sub(pl2, 1, -5), ".png")),
-      width = 8,
-      height = 4,
-      units = "in",
-      res = 200)
-  
-  print(plot_pl2)
-  print(paste0("Plot saved: ", pl2))
-  dev.off()
+  for(pl2 in plots2){
+    plot_pl2 <- readRDS(here::here(paste0("output/Figures/BB/", pl2)))
+    plot_pl2 <- plot_pl2 +
+      plot_theme
+    
+    png(here::here(paste0("output/website/images/barplots/", str_sub(pl2, 1, -5), ".png")),
+        width = 8,
+        height = 4,
+        units = "in",
+        res = 200)
+    
+    print(plot_pl2)
+    print(paste0("Plot saved: ", pl2))
+    dev.off()
+  }
 }
 
 toc()
