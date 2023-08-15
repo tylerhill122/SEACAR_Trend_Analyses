@@ -30,6 +30,7 @@ addfits <- function(models, plot_i, param) {
   aucol <- as.name(names(plot_i$data)[1])
   # empty data frame to fill with regression data
   regression_data <- data.frame()
+  plot_data <- data.frame()
   
   for (i in seq_along(models)) {
     # finding model name, calling previously created model variable
@@ -39,6 +40,7 @@ addfits <- function(models, plot_i, param) {
     # selecting for Total SAV and Total Seagrass to apply aesthetic conditions later
     is_ToSa <- grepl("ToSa", model_name)
     is_ToSe <- grepl("ToSe", model_name)
+    exclude <- c("DrAl")
     
     # declaring species & managed area of each model
     species <- unique(model$data[[aucol]])
@@ -48,12 +50,11 @@ addfits <- function(models, plot_i, param) {
     p_val <- summary(model)$tTab[2,5]
     
     # exclude Drift algae from model plots
-    if(!grepl("DrAl", model_name)) {
+    if(!grepl(paste(exclude, collapse='|'), model_name)) {
       
-      # separate significant values from non-sig for display on plot
       linetypes <- "solid"
       size <- 1
-      alpha <- 0.7
+      alpha <- 1
       #alpha <- if (p_val <= 0.05) 1 else 0.8
       
       # filter dataframe for managed_area & species
@@ -61,6 +62,9 @@ addfits <- function(models, plot_i, param) {
         filter(ManagedAreaName == managed_area,
                !is.na({{p}}),
                {{ aucol }} == species)
+      
+      plot_dat <- plotdat %>%
+        filter({{ aucol }} == species)
       
       # create predicted values variable for each model
       predicted_values <- predict(model, level = 0, newdata = species_data)
@@ -84,7 +88,8 @@ addfits <- function(models, plot_i, param) {
       plot_i <- plot_i +
         geom_line(data = regression_data,
                   aes(x = relyear, y = fit, color=species, linetype=factor(significance)),
-                  size=size, alpha=0.8, inherit.aes = FALSE) +
+                  size=size, alpha=alpha, inherit.aes = FALSE) +
+        # geom_bar(data = plot_dat, aes(x=relyear, y=npt), stat = "identity") +
         scale_linetype_manual(name=NULL,
                               values=c("TRUE" = "solid", "FALSE" = "dotdash"),
                               labels=c("TRUE" = "Significant", "FALSE" = "Not significant")) +
@@ -93,6 +98,22 @@ addfits <- function(models, plot_i, param) {
                linetype = guide_legend(order=2))
     }
   }
+  
+  # creating color scale so names line up correctly in legend
+  species_list <- c("")
+  
+  for (l in plot_i[["layers"]]) {
+    new_species <- unique(l$data$species[!l$data$species %in% species_list])
+    if (length(new_species) > 0) {
+      species_list <- append(species_list, new_species)
+    }
+  }
+  
+  # ordering species list to match spcols, with Total SAV & Total seagrass at bottom, otherwise alphabetical (Hal spp. at top)
+  species_list <- species_list[order(match(species_list, names(spcols)))]
+  # add new color scale
+  plot_i <- plot_i + scale_color_manual(values = subset(spcols, names(spcols) %in% species_list),
+                                        breaks = species_list)
   
   return(plot_i)
 }
@@ -369,7 +390,7 @@ for(p in parameters$column){
   ma_include <- unique(subset(nyears, nyears$nyr >= 5)$ManagedAreaName)
   
   # Subset ma_include to first 5 entries
-  # ma_include <- c("Alligator Harbor", "Biscayne Bay", "Banana River", "Florida Keys NMS", "Pinellas County")
+  # ma_include <- c("Banana River")
   # ma_include <- ma_include[c(1,2,3,4,5)]
   
   #For each managed area, make sure there are multiple levels of BB scores per species; remove ones that don't from further consideration.
@@ -544,7 +565,8 @@ for(p in parameters$column){
       }
       setDT(plotdat)
       setnames(plotdat, "eval(p)", "data")
-      
+      aucol <- names(plotdat[,1])
+
       #split modeled vs unmodeled data
       modeledsp <- c()
       for(u in seq_along(models)){
@@ -602,7 +624,8 @@ for(p in parameters$column){
       #create base plot of seagrass percent cover data over time for managed area i
       plot_i <- ggplot(data = droplevels(plotdat),
                        aes(x = relyear, y = data)) +
-        #geom_jitter(shape = 21, alpha=0.9, color="grey50") +
+        # geom_jitter(shape = 21, alpha=0.9, color="grey50") +
+        # geom_bar(stat = "identity") +
         labs(title = parameters[column == p, name], subtitle = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
                                                                       ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
              x = "Year",
@@ -610,9 +633,9 @@ for(p in parameters$column){
              color = "Species model projections",
              linetype = "Significance") +
         plot_theme +
-        ylim(0, 100) +
+        ylim(miny, 100) +
         scale_x_continuous(breaks = breaks_seq, labels = labels_seq) +
-        scale_colour_manual(values=spcols)
+        scale_colour_manual(values = spcols)
       
       if(length(models) > 0){
         #make sure that no failed models slipped through
@@ -772,15 +795,15 @@ if ("trendplot" %in% plot_type) {
         plot_m2 <- readRDS(here::here(paste0("output/Figures/BB/", plot_m)))
         plot_m2 <- plot_m2 +
           plot_theme
-        
-        wid <- ifelse(length(unique(plot_m2$data$analysisunit)) == 1, 4,
-                      ifelse(length(unique(plot_m2$data$analysisunit)) == 2, 6, 8))
-        hei <- ifelse(length(unique(plot_m2$data$analysisunit)) <= 3, 3,
-                      ifelse(length(unique(plot_m2$data$analysisunit)) <= 6, 6, 9))
+        au <- names(plot_m2$data[,1])
+        wid <- ifelse(length(unique(plot_m2$data$au)) == 1, 4,
+                      ifelse(length(unique(plot_m2$data$au)) == 2, 6, 8))
+        hei <- ifelse(length(unique(plot_m2$data$au)) <= 3, 3,
+                      ifelse(length(unique(plot_m2$data$au)) <= 6, 6, 9))
         
         png(here::here(paste0("output/website/images/trendplots/", str_sub(plot_m, 1, -5), ".png")),
-            width = wid,
-            height = hei,
+            width = 8,
+            height = 6,
             units = "in",
             res = 300)
         # jpeg(here::here(paste0("output/Figures/BB/img/", str_sub(plot_m, 1, -5), ".jpg")),
