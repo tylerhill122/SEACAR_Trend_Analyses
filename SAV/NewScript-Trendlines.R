@@ -63,8 +63,8 @@ addfits <- function(models, plot_i, param) {
                !is.na({{p}}),
                {{ aucol }} == species)
       
-      plot_dat <- plotdat %>%
-        filter({{ aucol }} == species)
+      # plot_dat <- plotdat %>%
+      #   filter({{ aucol }} == species)
       
       # create predicted values variable for each model
       predicted_values <- predict(model, level = 0, newdata = species_data)
@@ -111,19 +111,40 @@ addfits <- function(models, plot_i, param) {
   
   # ordering species list to match spcols, with Total SAV & Total seagrass at bottom, otherwise alphabetical (Hal spp. at top)
   species_list <- species_list[order(match(species_list, names(spcols)))]
-  # add new color scale
+  
+  # determining if scientific or common names
+  species_labels <- modify_species_labels(species_list)
+  
   plot_i <- plot_i + scale_color_manual(values = subset(spcols, names(spcols) %in% species_list),
-                                        breaks = species_list)
+                                        breaks = species_list,
+                                        labels = species_labels)
   
   return(plot_i)
+}
+
+# function to modify species labels prior to plotting (sci vs common names)
+modify_species_labels <- function(species_list) {
+  if(usenames == "common") {
+    lab <- str_replace(species_list, "Unidentified Halophila", "Halophila, unk.")
+  } else {
+    lab <- sapply(species_list, function(name) {
+      match_idx <- match(name, spp_common)
+      if (!is.na(match_idx)) {
+        return(spp[match_idx])
+      }
+      return(name)
+    })
+    lab <- str_replace(lab, "Unidentified Halophila", "Halophila, unk.")
+  }
+  return(lab)
 }
 
 # Which analyses to run? c("BB_all," "BB_pct", "PC", "PO", and/or "PA") or c("none") for just EDA plotting
 # Analyses <- c("BB_pct", "PC", "PA")
 
 # Which plot output? "trendplot", "barplot" or both
-# plot_type <- c("trendplot","barplot")
-plot_type <- "trendplot"
+plot_type <- c("trendplot","barplot")
+# plot_type <- "barplot"
 
 if ("trendplot" %in% plot_type && "barplot" %in% plot_type) {
   Analyses <- c("BB_pct", "PC", "PA")
@@ -154,7 +175,7 @@ props2 <- distinct(rbind(props_halid, props))
 setorder(props2, ManagedAreaName, relyear, analysisunit)
 props <- props2
 
-spcollist <- c("#005396",
+spcollist <- c("#005396","#005396",
                         "#0088B1",
                         "#00ADAE",
                         "#65CCB3",
@@ -162,94 +183,68 @@ spcollist <- c("#005396",
                         "#FDEBA8",
                         "#F8CD6D",
                         "#F5A800",
-                        "#F17B00")
-                        
-spp <- c("Halodule wrightii", "Halophila decipiens", "Halophila engelmannii", "Halophila johnsonii", 
-         "Halophila spp.", "Ruppia maritima", "Syringodium filiforme", "Thalassia testudinum", "Attached algae")
+                        "#F17B00",
+                        "#900667",
+                        "#000099")
 
-spp_common <- c("Halophila spp.", "Johnson's seagrass", "Manatee grass", "Paddle grass", 
-                "Shoal grass", "Star grass", "Turtle grass", "Widgeon grass", "Attached algae")
+spp <- c("Halophila spp.","Unidentified Halophila","Halophila johnsonii","Syringodium filiforme","Halophila decipiens","Halodule wrightii",
+         "Halophila engelmannii","Thalassia testudinum","Ruppia maritima","Attached algae", "Total SAV", "Total seagrass")
+
+spp_common <- c("Halophila spp.", "Unidentified Halophila", "Johnson's seagrass", "Manatee grass", "Paddle grass", 
+                "Shoal grass", "Star grass", "Turtle grass", "Widgeon grass", "Attached algae", "Total SAV", "Total seagrass")
 
 usenames <- "common" #alternative is "scientific"
-if(usenames == "common"){
-  spcols <- setNames(spcollist, spp_common)
-} else{
-  spcols <- setNames(spcollist, spp)
-}
 
-# Add unidentified Halophila to color list
-spindet_nm <- c("Unidentified Halophila")
-spindet_cl <- spcols["Halophila spp."][[1]]
-spindet <- setNames(spindet_cl, spindet_nm)
-spcols <- append(spcols, spindet, after = which(spcols == spcols["Halophila spp."][[1]]))
+spcols <- setNames(spcollist, spp_common)
 
-# Add Total SAV and Total seagrass to spcols for use in trendplots
-spcols <- append(spcols, setNames("#900667", c("Total SAV")))
-spcols <- append(spcols, setNames("#000099", c("Total seagrass")))
+SAV4[, `:=` (analysisunit_halid = fcase(analysisunit_halid == "Thalassia testudinum", "Turtle grass",
+                                        analysisunit_halid == "Syringodium filiforme", "Manatee grass",
+                                        analysisunit_halid == "Halodule wrightii", "Shoal grass",
+                                        analysisunit_halid == "Ruppia maritima", "Widgeon grass",
+                                        analysisunit_halid == "Halophila decipiens", "Paddle grass",
+                                        analysisunit_halid == "Halophila engelmannii", "Star grass",
+                                        analysisunit_halid == "Halophila johnsonii", "Johnson's seagrass",
+                                        analysisunit_halid == "Unidentified Halophila", "Unidentified Halophila",
+                                        analysisunit_halid == "Halophila spp.", "Halophila spp.",
+                                        analysisunit_halid == "Total seagrass", "Total seagrass",
+                                        analysisunit_halid == "Attached algae", "Attached algae",
+                                        analysisunit_halid == "Drift algae", "Drift algae",
+                                        analysisunit_halid == "Total SAV", "Total SAV"),
+             analysisunit = fcase(analysisunit == "Thalassia testudinum", "Turtle grass",
+                                  analysisunit == "Syringodium filiforme", "Manatee grass",
+                                  analysisunit == "Halodule wrightii", "Shoal grass",
+                                  analysisunit == "Ruppia maritima", "Widgeon grass",
+                                  analysisunit == "Halophila decipiens", "Paddle grass",
+                                  analysisunit == "Halophila engelmannii", "Star grass",
+                                  analysisunit == "Halophila johnsonii", "Johnson's seagrass",
+                                  analysisunit == "Unidentified Halophila", "Unidentified Halophila",
+                                  analysisunit == "Halophila spp.", "Halophila spp.",
+                                  analysisunit == "Total seagrass", "Total seagrass",
+                                  analysisunit == "Attached algae", "Attached algae",
+                                  analysisunit == "Drift algae", "Drift algae",
+                                  analysisunit == "Total SAV", "Total SAV"))]
 
-if(usenames == "common"){
-  SAV4[, `:=` (analysisunit_halid = fcase(analysisunit_halid == "Thalassia testudinum", "Turtle grass",
-                                          analysisunit_halid == "Syringodium filiforme", "Manatee grass",
-                                          analysisunit_halid == "Halodule wrightii", "Shoal grass",
-                                          analysisunit_halid == "Ruppia maritima", "Widgeon grass",
-                                          analysisunit_halid == "Halophila decipiens", "Paddle grass",
-                                          analysisunit_halid == "Halophila engelmannii", "Star grass",
-                                          analysisunit_halid == "Halophila johnsonii", "Johnson's seagrass",
-                                          analysisunit_halid == "Unidentified Halophila", "Unidentified Halophila",
-                                          analysisunit_halid == "Halophila spp.", "Halophila spp.",
-                                          analysisunit_halid == "Total seagrass", "Total seagrass",
-                                          analysisunit_halid == "Attached algae", "Attached algae",
-                                          analysisunit_halid == "Drift algae", "Drift algae",
-                                          analysisunit_halid == "Total SAV", "Total SAV"),
-               analysisunit = fcase(analysisunit == "Thalassia testudinum", "Turtle grass",
-                                    analysisunit == "Syringodium filiforme", "Manatee grass",
-                                    analysisunit == "Halodule wrightii", "Shoal grass",
-                                    analysisunit == "Ruppia maritima", "Widgeon grass",
-                                    analysisunit == "Halophila decipiens", "Paddle grass",
-                                    analysisunit == "Halophila engelmannii", "Star grass",
-                                    analysisunit == "Halophila johnsonii", "Johnson's seagrass",
-                                    analysisunit == "Unidentified Halophila", "Unidentified Halophila",
-                                    analysisunit == "Halophila spp.", "Halophila spp.",
-                                    analysisunit == "Total seagrass", "Total seagrass",
-                                    analysisunit == "Attached algae", "Attached algae",
-                                    analysisunit == "Drift algae", "Drift algae",
-                                    analysisunit == "Total SAV", "Total SAV"))]
-  
-  props[, analysisunit := fcase(analysisunit == "Thalassia testudinum", "Turtle grass",
-                                analysisunit == "Syringodium filiforme", "Manatee grass",
-                                analysisunit == "Halodule wrightii", "Shoal grass",
-                                analysisunit == "Ruppia maritima", "Widgeon grass",
-                                analysisunit == "Halophila decipiens", "Paddle grass",
-                                analysisunit == "Halophila engelmannii", "Star grass",
-                                analysisunit == "Halophila johnsonii", "Johnson's seagrass",
-                                analysisunit == "Unidentified Halophila", "Unidentified Halophila",
-                                analysisunit == "Halophila spp.", "Halophila spp.",
-                                analysisunit == "Attached algae", "Attached algae")]
-  
-  props <- props[, analysisunit := factor(analysisunit, levels = c("Unidentified Halophila",
-                                                                   "Halophila spp.",
-                                                                   "Johnson's seagrass",
-                                                                   "Manatee grass",
-                                                                   "Paddle grass",
-                                                                   "Shoal grass",
-                                                                   "Star grass",
-                                                                   "Turtle grass",
-                                                                   "Widgeon grass",
-                                                                   "Attached algae"))]
-}
+props[, analysisunit := fcase(analysisunit == "Thalassia testudinum", "Turtle grass",
+                              analysisunit == "Syringodium filiforme", "Manatee grass",
+                              analysisunit == "Halodule wrightii", "Shoal grass",
+                              analysisunit == "Ruppia maritima", "Widgeon grass",
+                              analysisunit == "Halophila decipiens", "Paddle grass",
+                              analysisunit == "Halophila engelmannii", "Star grass",
+                              analysisunit == "Halophila johnsonii", "Johnson's seagrass",
+                              analysisunit == "Unidentified Halophila", "Unidentified Halophila",
+                              analysisunit == "Halophila spp.", "Halophila spp.",
+                              analysisunit == "Attached algae", "Attached algae")]
 
-if(usenames != "common"){
-  props <- props[, analysisunit := factor(analysisunit, levels = c("Halodule wrightii",
-                                                                   "Halophila decipiens",
-                                                                   "Halophila engelmannii",
-                                                                   "Halophila johnsonii",
-                                                                   "Unidentified Halophila",
-                                                                   "Halophila spp.",
-                                                                   "Ruppia maritima",
-                                                                   "Syringodium filiforme",
-                                                                   "Thalassia testudinum",
-                                                                   "Attached algae"))]
-}
+props <- props[, analysisunit := factor(analysisunit, levels = c("Unidentified Halophila",
+                                                                 "Halophila spp.",
+                                                                 "Johnson's seagrass",
+                                                                 "Manatee grass",
+                                                                 "Paddle grass",
+                                                                 "Shoal grass",
+                                                                 "Star grass",
+                                                                 "Turtle grass",
+                                                                 "Widgeon grass",
+                                                                 "Attached algae"))]
 
 # prcollist <- hcl.colors(n = length(unique(SAV4$ProgramID)), palette = "viridis")
 prcollist_a <- sequential_hcl(length(unique(SAV4$ProgramName)), palette = "YlOrRd")
@@ -390,7 +385,7 @@ for(p in parameters$column){
   ma_include <- unique(subset(nyears, nyears$nyr >= 5)$ManagedAreaName)
   
   # Subset ma_include to first 5 entries
-  # ma_include <- c("Banana River")
+  # ma_include <- c("Pinellas County")
   # ma_include <- ma_include[c(1,2,3,4,5)]
   
   #For each managed area, make sure there are multiple levels of BB scores per species; remove ones that don't from further consideration.
@@ -408,12 +403,14 @@ for(p in parameters$column){
     if(i %in% ma_halspp){
       species <- subset(nyears, nyears$ManagedAreaName == i & nyears$nyr >= 5 & analysisunit %in% c("Attached algae", "Drift algae", "Halophila spp.", "Manatee grass", 
                                                                                                     "Shoal grass", "Total seagrass", "Total SAV", "Turtle grass", 
-                                                                                                    "Widgeon grass"))$analysisunit
+                                                                                                    "Widgeon grass", "Syringodium filiforme", "Halodule wrightii", "Thalassia testudinum",
+                                                                                                    "Ruppia maritima"))$analysisunit
     } else{
       species <- subset(nyears, nyears$ManagedAreaName == i & nyears$nyr >= 5 & analysisunit %in% c("Attached algae", "Drift algae", "Unidentified Halophila", 
                                                                                                     "Johnson's seagrass", "Manatee grass", "Paddle grass", 
                                                                                                     "Shoal grass", "Star grass", "Total seagrass", "Total SAV", 
-                                                                                                    "Turtle grass", "Widgeon grass"))$analysisunit
+                                                                                                    "Turtle grass", "Widgeon grass", "Syringodium filiforme", 
+                                                                                                    "Halodule wrightii", "Thalassia testudinum","Ruppia maritima"))$analysisunit
     }
     
     models <- c()
@@ -570,39 +567,20 @@ for(p in parameters$column){
       #split modeled vs unmodeled data
       modeledsp <- c()
       for(u in seq_along(models)){
-        if(usenames == "common"){
-          name_u <- fcase(str_detect(paste0(models[[u]]), "_ShGr"), "Shoal grass",
-                          str_detect(paste0(models[[u]]), "_TuGr"), "Turtle grass",
-                          str_detect(paste0(models[[u]]), "_MaGr"), "Manatee grass",
-                          str_detect(paste0(models[[u]]), "_WiGr"), "Widgeon grass",
-                          str_detect(paste0(models[[u]]), "_PaGr"), "Paddle grass",
-                          str_detect(paste0(models[[u]]), "_StGr"), "Star grass",
-                          str_detect(paste0(models[[u]]), "_JoSe"), "Johnson's seagrass",
-                          str_detect(paste0(models[[u]]), "_UnHa"), "Unidentified Halophila",
-                          str_detect(paste0(models[[u]]), "_HaSp"), "Halophila spp.",
-                          str_detect(paste0(models[[u]]), "_ToSe"), "Total seagrass",
-                          str_detect(paste0(models[[u]]), "_AtAl"), "Attached algae",
-                          str_detect(paste0(models[[u]]), "_DrAl"), "Drift algae",
-                          str_detect(paste0(models[[u]]), "_To"), "Total SAV")
-          modeledsp <- append(modeledsp, name_u)
-          
-        } else{
-          name_u <- fcase(str_detect(models[[u]], "_ThTe"), "Thalassia testudinum",
-                          str_detect(models[[u]], "_SyFi"), "Syringodium filiforme",
-                          str_detect(models[[u]], "_HaWr"), "Halodule wrightii",
-                          str_detect(models[[u]], "_RuMa"), "Ruppia maritima",
-                          str_detect(models[[u]], "_HaDe"), "Halophila decipiens",
-                          str_detect(models[[u]], "_HaEn"), "Halophila engelmannii",
-                          str_detect(models[[u]], "_HaJo"), "Halophila johnsonii",
-                          str_detect(models[[u]], "_UnHa"), "Unidentified Halophila",
-                          str_detect(models[[u]], "_HaSp"), "Halophila spp.",
-                          str_detect(models[[u]], "_ToSe"), "Total seagrass",
-                          str_detect(models[[u]], "_AtAl"), "Attached algae",
-                          str_detect(models[[u]], "_DrAl"), "Drift algae",
-                          str_detect(models[[u]], "_To"), "Total SAV")
-          modeledsp <- append(modeledsp, name_u)
-          
-        }
+        name_u <- fcase(str_detect(paste0(models[[u]]), "_ShGr"), "Shoal grass",
+                        str_detect(paste0(models[[u]]), "_TuGr"), "Turtle grass",
+                        str_detect(paste0(models[[u]]), "_MaGr"), "Manatee grass",
+                        str_detect(paste0(models[[u]]), "_WiGr"), "Widgeon grass",
+                        str_detect(paste0(models[[u]]), "_PaGr"), "Paddle grass",
+                        str_detect(paste0(models[[u]]), "_StGr"), "Star grass",
+                        str_detect(paste0(models[[u]]), "_JoSe"), "Johnson's seagrass",
+                        str_detect(paste0(models[[u]]), "_UnHa"), "Unidentified Halophila",
+                        str_detect(paste0(models[[u]]), "_HaSp"), "Halophila spp.",
+                        str_detect(paste0(models[[u]]), "_ToSe"), "Total seagrass",
+                        str_detect(paste0(models[[u]]), "_AtAl"), "Attached algae",
+                        str_detect(paste0(models[[u]]), "_DrAl"), "Drift algae",
+                        str_detect(paste0(models[[u]]), "_To"), "Total SAV")
+        modeledsp <- append(modeledsp, name_u)
       }
       
       miny <- c()
@@ -676,8 +654,15 @@ for(p in parameters$column){
       }
 
       if(i %in% ma_halspp){
+        
         bpdat <- props[ManagedAreaName == i & !is.na(analysisunit) & str_detect(analysisunit, "decipiens|engelmannii|johnsonii|Unidentified|Star|Paddle|Johnson", negate = TRUE), ]
-
+        
+        sp_list <- unique(bpdat$analysisunit)
+        sp_list <- sp_list[order(match(sp_list, names(spcols)))]
+        
+        # add color scale, determining if scientific or common names
+        sp_labels <- modify_species_labels(sp_list)
+        
         barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
           geom_col(color = "grey20") +
           scale_x_continuous(breaks = breaks, labels = labels) +
@@ -688,13 +673,19 @@ for(p in parameters$column){
                x = "Year",
                y = "Occurrence frequency (%)") +
           theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)),
-                             labels = subset(names(spcols) ,names(spcols) %in% unique(bpdat$analysisunit)),
+          scale_color_manual(values = subset(spcols, names(spcols) %in% sp_list),
+                             labels = sp_labels,
                              aesthetics = c("color", "fill"))
-
       } else{
+        
         bpdat <- props[ManagedAreaName == i & !is.na(analysisunit) & analysisunit != "Halophila spp.", ]
-
+        
+        sp_list <- unique(bpdat$analysisunit)
+        sp_list <- sp_list[order(match(sp_list, names(spcols)))]
+        
+        # add color scale, determining if scientific or common names
+        sp_labels <- modify_species_labels(sp_list)
+        
         barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
           geom_col(color = "grey20") +
           scale_x_continuous(breaks = breaks, labels = labels) +
@@ -705,11 +696,10 @@ for(p in parameters$column){
                x = "Year",
                y = "Occurrence frequency (%)") +
           theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-          scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)),
-                             labels = str_replace(subset(names(spcols) ,names(spcols) %in% unique(bpdat$analysisunit)), "Unidentified Halophila", "Halophila, unk."),
+          scale_color_manual(values = subset(spcols, names(spcols) %in% sp_list),
+                             labels = sp_labels,
                              aesthetics = c("color", "fill"))
-
-      }
+        }
 
       saveRDS(barplot_sp, here::here(paste0("output/Figures/BB/SAV_", parameters[column == p, type], "_",
                                             gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
@@ -754,8 +744,8 @@ if ("trendplot" %in% plot_type) {
   files <- list.files(here::here("output/Figures/BB/")) #get file list
   plots <- stringr::str_subset(files, "_trendplot") #identify map file
   mods <- list.files(here::here("output/models/"))
-  #models2 <- str_subset(mods, paste0(str_sub(plots[1], 1, str_locate_all(plots[1], "_")[[1]][2])))
-  models2 <- str_subset(mods, "_lme")
+  models2 <- str_subset(mods, paste0(str_sub(plots[1], 1, str_locate_all(plots[1], "_")[[1]][2])))
+  # models2 <- str_subset(mods, "_lme")
   
   malist <- c()
   for(pl in plots){
@@ -769,8 +759,8 @@ if ("trendplot" %in% plot_type) {
     mods_m <- str_subset(models2, m)
     mods_m <- setdiff(mods_m, failedmodslist$model)
     mods_m <- setdiff(mods_m, subset(mods_m, str_detect(mods_m, "_PC_")))
-    params <- unique(str_sub(mods_m, 1, str_locate_all(mods_m, "_")[[1]][2] - 1))
-  
+    # params <- unique(str_sub(mods_m, 1, str_locate_all(mods_m, "_")[[1]][2] - 1))
+    
     for(param in params){
       mods_m_p <- str_subset(mods_m, param)
       plot_m <- try(str_subset(plots, unique(str_sub(mods_m_p, 1, str_locate_all(mods_m_p, "_")[[1]][3] - 1))), silent = TRUE)
