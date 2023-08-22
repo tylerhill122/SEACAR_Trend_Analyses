@@ -1,0 +1,376 @@
+---
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  word_document:
+    toc: TRUE
+    toc_depth: 2
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+    dev: png
+    keep_md: yes
+  pdf_document:
+    toc: TRUE
+    toc_depth: 2
+    dev: png
+    extra_dependencies: ["float"]
+    keep_md: yes
+urlcolor: blue
+params:
+  managedarea: "Alligator Harbor Aquatic Preserve"
+---
+
+# Important Notes
+
+The purpose of this script is to create managed area statistics, perform seasonal Kendall Tau analysis, generate summary plots, and create reports in pdf and Word document form for each parameter in Wc Discrete.
+
+These scripts were created by [J.E. Panzik](mailto:jepanzik@usf.edu) (jepanzik@usf.edu) for SEACAR.
+The scripts were modified by [T.G. Hill](mailto:Tyler.Hill@FloridaDEP.gov) (Tyler.Hill@FloridaDEP.gov) in August of 2023, to create individual reports for each Managed Area.
+
+All scripts and outputs can be found on the SEACAR GitHub repository:
+
+https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses
+
+This markdown file is designed to be compiled by [WC_Discrete_ReportRender.R](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/WC_Discrete/WC_Discrete_ReportRender.R) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/blob/main/WC_Discrete/WC_Discrete_ReportRender.R).
+
+Note: The top 2% of data is excluded when computing mean and standard deviations in plotting sections solely for the purpose of getting y-axis scales. The exclusion of the top 2% is not used in any statistics that are exported.
+
+
+
+```{r libraries, message=FALSE, echo = FALSE}
+library(knitr)
+library(data.table)
+library(dplyr)
+library(lubridate)
+library(ggplot2)
+library(ggpubr)
+library(scales)
+library(EnvStats)
+library(tidyr)
+library(kableExtra)
+options(scipen=999)
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   echo = FALSE,
+   dpi=200
+)
+```
+
+# File Import
+
+Imports file that is determined in the WC_Discrete_ReportRender.R script. 
+
+The command `fread` is used because of its improved speed while handling large data files. Only columns that are used by the script are imported from the file, and are designated in the `select` input.
+
+The script then gets the name of the parameter as it appears in the data file and units of the parameter.
+
+The latest version of WC Discrete data is available at: https://usf.box.com/s/fbimxw4hrmazfn5b1d4jbn0addmcsld8
+
+The file being used for the analysis is: **`r file_short`**
+
+---
+title: '`r paste("SEACAR Discrete Water Quality Analysis:", activity, depth, unique(data$ParameterName), params$managedarea)`'
+---
+
+# Seasonal Kendall Tau Analysis
+
+Gets seasonal Kendall Tau statistics using the `kendallSeasonalTrendTest` from the `EnvStats` package. The `Trend` parameter is determined from a user-defined function based on the median, Senn slope, and p values from the data. Analysis modified from code created by Jason Scolaro that performed at The Water Atlas:
+[https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview](https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview)
+
+The following steps are performed:
+
+1. Set the column names for the variable holding the SKT stat values
+2. Create a data frame with the same number of columns as column names, and the same number of rows as the number of managed areas being analyzed.
+3. Starts a loop that goes through each managed area
+4. Gets data for that ManagedAreaName and the number of data rows.
+5. Gets basic statistics for the ManagedAreaName from the MA_Summ variable.
+6. Performs a seasonal Kendall Tau trend test with the assumption that data is not serially correlated (independent.obs=TRUE)
+   + If analysis returns NULL, performs SKT assuming data is serially auto-correlated (independent.obs=FALSE)
+
+7. Store the SKT result values in the skt_stats data frame created.
+8. Determines the Trend of the slope based on the statistics and SKT parameters.
+9. Merge data frames together to create a cumulative data frame with all statistics and round values to appropriate decimal points.
+10. Write summary stats to a pipe-delimited .txt file in the output directory
+   + [WC Discrete Output Files in SEACAR GitHub](https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WQ_Discrete/output) (https://github.com/FloridaSEACAR/SEACAR_Trend_Analyses/tree/main/WQ_Discrete/output)
+   
+
+
+# Appendix I: Managed Area Trendlines
+
+The plots created in this section are designed to show the general trend of the data. Data is taken and grouped by `ManagedAreaName`. The trendlines on the plots are created using the Senn slope and intercept from the seasonal Kendall Tau analysis. The scripts that create plots follow this format
+
+1. Use the data set that only has `SufficientData` of `TRUE` for the desired managed area
+2. Determine the earliest and latest year of the data to create x-axis scale and intervals
+3. Determine the minimum, mean, and standard deviation for the data to be used for y-axis scales
+   + Excludes the top 2% of values to reduce the impact of extreme outliers on the y-axis scale
+
+4. Set what values are to be used for the x-axis, y-axis, and the variable that should determine groups for the plots
+5. Set the plot type as a point plot with the size of the points
+6. Add the linear trend
+7. Create the title, x-axis, y-axis, and color fill labels
+8. Set the y and x limits
+9. Make the axis labels bold
+10. Plot the arrangement as a set of panels
+
+
+```{r Trendlines_ManagedArea, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval=APP_Plots}
+
+# Gets data to be used in plot for managed area
+plot_data <- MA_YM_Stats[MA_YM_Stats$ManagedAreaName==params$managedarea,]
+# Gets trendline data for managed area
+KT.plot_data <- KT.Plot[KT.Plot$ManagedAreaName==params$managedarea,]
+#Determine max and min time (Year) for plot x-axis
+t_min <- min(plot_data$Year)
+t_max <- max(plot_data$YearMonthDec)
+t_max_brk <- as.integer(round(t_max, 0))
+t <- t_max-t_min
+min_RV <- min(plot_data$Mean)
+
+# Sets break intervals based on the number of years spanned by data
+if(t>=30){
+  brk <- -10
+}else if(t<30 & t>=10){
+  brk <- -5
+}else if(t<10 & t>=4){
+  brk <- -2
+}else if(t<4){
+  brk <- -1
+}
+
+# Create plot object with data and trendline
+p1 <- ggplot(data=plot_data,
+      aes(x=YearMonthDec, y=Mean)) +
+  geom_line(size=0.75, color="#333333", alpha=0.6) +
+  geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
+       alpha=0.75) +
+  geom_line(data=KT.plot_data, aes(x=x, y=y),
+      color="#000099", size=1.2, alpha=0.7) +
+  labs(title=paste0(params$managedarea),
+    subtitle=parameter,
+    x="Year", y=paste0("Values (", unit, ")")) +
+  scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
+            breaks=seq(t_max_brk, t_min, brk)) +
+  plot_theme 
+# Creates ResultTable to display statistics below plot
+ResultTable <- skt_stats[skt_stats$ManagedAreaName==params$managedarea, ] %>%
+  select(RelativeDepth, N_Data, N_Years, Median, Independent, tau, p,
+      SennSlope, SennIntercept, ChiSquared, pChiSquared, Trend)
+# Create table object
+t1 <- ggtexttable(ResultTable, rows=NULL,
+        theme=ttheme(base_size=10)) %>%
+  tab_add_footnote(text="p < 0.00005 appear as 0 due to rounding.\n
+          SennIntercept is intercept value at beginning of
+          record for monitoring location",
+          size=10, face="italic")
+# Arrange and display plot and statistic table
+print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
+# Add extra space at the end to prevent the next figure from being too
+# close.
+cat("\n \n \n") 
+rm(plot_data)
+rm(KTset, leg)
+rm(plot_data)
+rm(KTset, leg)
+```
+
+
+
+# Appendix II: Managed Area Summary Box Plots
+Data is taken and grouped by `ManagedAreaName`. The scripts that create plots follow this format
+
+1. Use the data set that only has `SufficientData` of `TRUE` for the desired managed area
+2. Determine the earliest and latest year of the data to create x-axis scale and intervals
+3. Determine the minimum, mean, and standard deviation for the data to be used for y-axis scales
+   + Excludes the top 2% of values to reduce the impact of extreme outliers on the y-axis scale
+
+4. Set what values are to be used for the x-axis, y-axis, and the variable that should determine groups for the box plots
+5. Set the plot type as a box plot with the size of the outlier points
+6. Create the title, x-axis, y-axis, and color fill labels
+7. Set the y and x limits
+8. Make the axis labels bold
+9. Plot the arrangement as a set of panels
+
+The following plots are arranged by `ManagedAreaName` with data grouped by `Year`, then `Year` and `Month`, then finally `Month` only. Each managed area will have 3 sets of plots, each with 3 panels in them. Each panel goes as follows:
+
+1. Y-axis autoscaled
+2. Y-axis set to be mean + 4 times the standard deviation
+3. Y-axis set to be mean + 4 times the standard deviation for most recent 10 years of data
+
+
+```{r BoxPlots_ManagedArea, warning=FALSE, fig.height=12, fig.width=10, eval=APP_Plots}
+# Determine upper and lower bounds of time for x-axis
+plot_data <- data[data$SufficientData==TRUE &
+           data$ManagedAreaName==params$managedarea,]
+year_lower <- min(plot_data$Year)
+year_upper <- max(plot_data$Year)
+# Determine upper and lower bounds of ResultValue for y-axis
+min_RV <- min(plot_data$ResultValue)
+mn_RV <- mean(plot_data$ResultValue[plot_data$ResultValue <
+                    quantile(data$ResultValue, 0.98)])
+sd_RV <- sd(plot_data$ResultValue[plot_data$ResultValue <
+                  quantile(data$ResultValue, 0.98)])
+# Sets x- and y-axis scale
+x_scale <- ifelse(year_upper - year_lower > 30, 10, 5)
+y_scale <- mn_RV + 4 * sd_RV
+
+##Year plots
+# Create plot object for auto-scaled y-axis plot
+p1 <- ggplot(data=plot_data,
+      aes(x=Year, y=ResultValue, group=Year)) +
+  geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+         outlier.size=3, outlier.color="#333333",
+         outlier.fill="#cccccc", outlier.alpha=0.75) +
+  labs(subtitle="Autoscale",
+    x="Year", y=paste0("Values (", unit, ")")) +
+  scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+            breaks=rev(seq(year_upper,
+                  year_lower, -x_scale))) +
+  plot_theme
+# Create plot object for y-axis scaled plot
+p2 <- ggplot(data=plot_data,
+      aes(x=Year, y=ResultValue, group=Year)) +
+  geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+         outlier.size=3, outlier.color="#333333",
+         outlier.fill="#cccccc", outlier.alpha=0.75) +
+  labs(subtitle="Scaled to 4x Standard Deviation",
+    x="Year", y=paste0("Values (", unit, ")")) +
+  ylim(min_RV, y_scale) +
+  scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+            breaks=rev(seq(year_upper,
+                  year_lower, -x_scale))) +
+  plot_theme
+# Create plot object for y-axis scaled plot for past 10 years
+p3 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
+      aes(x=Year, y=ResultValue, group=Year)) +
+  geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+         outlier.size=3, outlier.color="#333333",
+         outlier.fill="#cccccc", outlier.alpha=0.75) +
+  labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
+    x="Year", y=paste0("Values (", unit, ")")) +
+  ylim(min_RV, y_scale) +
+  scale_x_continuous(limits=c(year_upper - 10.5, year_upper + 1),
+            breaks=rev(seq(year_upper, year_upper - 10,-2))) +
+  plot_theme
+# Arrange plot objects
+Yset <- ggarrange(p1, p2, p3, ncol=1)
+# Create plot title object
+p0 <- ggplot() + labs(title=paste0(params$managedarea),
+            subtitle="By Year") +
+  plot_theme + theme(panel.border=element_blank(),
+            panel.grid.major=element_blank(),
+            panel.grid.minor=element_blank(),
+            axis.line=element_blank())
+
+
+## Year & Month Plots
+# Create plot object for auto-scaled y-axis plot
+p4 <- ggplot(data=plot_data,
+      aes(x=YearMonthDec, y=ResultValue,
+          group=YearMonth, color=as.factor(Month))) +
+  geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+  labs(subtitle="Autoscale",
+    x="Year", y=paste0("Values (", unit, ")"), color="Month") +
+  scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+            breaks=rev(seq(year_upper,
+                  year_lower, -x_scale))) +
+  plot_theme +
+  theme(legend.position="none")
+# Create plot object for y-axis scaled plot
+p5 <- ggplot(data=plot_data,
+      aes(x=YearMonthDec, y=ResultValue,
+          group=YearMonth, color=as.factor(Month))) +
+  geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+  labs(subtitle="Scaled to 4x Standard Deviation",
+    x="Year", y=paste0("Values (", unit, ")"), color="Month") +
+  ylim(min_RV, y_scale) +
+  scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+            breaks=rev(seq(year_upper,
+                  year_lower, -x_scale))) +
+  plot_theme +
+  theme(legend.position="top", legend.box="horizontal") +
+  guides(color=guide_legend(nrow=1))
+# Create plot object for y-axis scaled plot for past 10 years
+p6 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
+      aes(x=YearMonthDec, y=ResultValue,
+          group=YearMonth, color=as.factor(Month))) +
+  geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+  labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
+    x="Year", y=paste0("Values (", unit, ")"), color="Month") +
+  ylim(min_RV, y_scale) +
+  scale_x_continuous(limits=c(year_upper - 10.5, year_upper + 1),
+            breaks=rev(seq(year_upper, year_upper - 10,-2))) +
+  plot_theme +
+  theme(legend.position="none")
+# Create legend object
+leg1 <- get_legend(p5)
+# Arrange plots and legend
+YMset <- ggarrange(leg1, p4, p5 + theme(legend.position="none"), p6,
+         ncol=1, heights=c(0.1, 1, 1, 1))
+# Create plot title object
+p00 <- ggplot() + labs(title=paste0(params$managedarea),
+             subtitle="By Year & Month") + plot_theme +
+  theme(panel.border=element_blank(),
+     panel.grid.major=element_blank(),
+     panel.grid.minor=element_blank(), axis.line=element_blank())
+
+## Month Plots
+# Create plot object for auto-scaled y-axis plot
+p7 <- ggplot(data=plot_data,
+      aes(x=Month, y=ResultValue,
+          group=Month, fill=as.factor(Month))) +
+  geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+         outlier.color="#333333", outlier.alpha=0.75) +
+  labs(subtitle="Autoscale",
+    x="Month", y=paste0("Values (", unit, ")"), fill="Month") +
+  scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
+  plot_theme +
+  theme(legend.position="none")
+# Create plot object for y-axis scaled plot
+p8 <- ggplot(data=plot_data,
+      aes(x=Month, y=ResultValue,
+          group=Month, fill=as.factor(Month))) +
+  geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+         outlier.color="#333333", outlier.alpha=0.75) +
+  labs(subtitle="Scaled to 4x Standard Deviation",
+    x="Month", y=paste0("Values (", unit, ")"), fill="Month") +
+  ylim(min_RV, y_scale) +
+  scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
+  plot_theme +
+  theme(legend.position="top", legend.box="horizontal") +
+  guides(fill=guide_legend(nrow=1))
+# Create plot object for y-axis scaled plot for past 10 years
+p9 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
+      aes(x=Month, y=ResultValue,
+          group=Month, fill=as.factor(Month))) +
+  geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+         outlier.color="#333333", outlier.alpha=0.75) +
+  labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
+    x="Month", y=paste0("Values (", unit, ")"), fill="Month") +
+  ylim(min_RV, y_scale) +
+  scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
+  plot_theme +
+  theme(legend.position="none")
+# Create legend object
+leg2 <- get_legend(p8)
+# Arrange plots and legend
+Mset <- ggarrange(leg2, p7, p8 + theme(legend.position="none"), p9,
+        ncol=1, heights=c(0.1, 1, 1, 1))
+# Create title object
+p000 <- ggplot() + labs(title=paste0(params$managedarea),
+           subtitle="By Month") + plot_theme +
+  theme(panel.border=element_blank(),
+     panel.grid.major=element_blank(),
+     panel.grid.minor=element_blank(), axis.line=element_blank())
+# Arrange and display plots with titles for all combinations
+print(ggarrange(p0, Yset, ncol=1, heights=c(0.07, 1)))
+print(ggarrange(p00, YMset, ncol=1, heights=c(0.07, 1)))
+print(ggarrange(p000, Mset, ncol=1, heights=c(0.07, 1, 0.7)))
+
+rm(plot_data)
+rm(p1, p2, p3, p4, p5, p6, p7, p8, p9, p0, p00, p000, leg1, leg2,
+  Yset, YMset, Mset)
+```
+
+
