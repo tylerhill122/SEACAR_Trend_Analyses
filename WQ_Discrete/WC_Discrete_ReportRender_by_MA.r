@@ -77,16 +77,16 @@ all_params_short <- c(
 #Sets the list of relative depths to cycle through. This can be edited to limit the number of depths.
 #If only one depth is desired, comment out the other depth and delete comma after remaining depth
 all_depths <- c(
-  #   "Surface",
-  #   "Bottom",
-  "All"
+    # "Surface",
+    # "Bottom",
+    "All"
 )
 
 #Sets the list of activity types to cycle through. This can be edited to limit the number of types.
 #If only one type is desired, comment out the other type and delete comma after remaining type
 all_activity <- c(
-  # "Field",
-  # "Lab",
+  "Field",
+  "Lab",
   "All"
 )
 
@@ -115,43 +115,11 @@ data <- data[!is.na(data$ResultValue),]
 # Changes "Sample" to "Lab" for ActivityType
 data$ActivityType <- gsub("Sample", "Lab", data$ActivityType)
 
-# Gets data for the specific activity type if it is not All
-if(activity!="All"){
-  data <- data[grep(activity, data$ActivityType),]
-}
-
-# Changes RelativeDepth to Bottom for the QAQC flag 12Q that indicates
-# measurements are both surface and bottom if the relative depth is bottom
-if(depth=="Bottom"){
-  data$RelativeDepth[grep("12Q", data$SEACAR_QAQCFlagCode[
-    data$RelativeDepth=="Surface"])] <- "Bottom"
-}
-# Removes missing RelativeDepth data and data for RelativeDepth not of interest
-# from all parameters except Secchi_Depth
-if(param_name!="Secchi_Depth" & depth!="All"){
-  data <- data[!is.na(data$RelativeDepth),]
-  data <- data[data$RelativeDepth==depth,]
-}
-
-# Removes data rows that have "Blank" as an ActivityType
-if(length(grep("Blank", data$ActivityType))>0){
-  data <- data[-grep("Blank", data$ActivityType),]
-}
-
-# Removes data rows with ResultValue below 0, or -2 for Water_Temperature
-if(param_name=="Water_Temperature"){
-  data <- data[data$ResultValue>=-2,]
-} else{
-  data <- data[data$ResultValue>=0,]
-}
 # Changes Include to be either TRUE or FALSE
 data$Include <- as.logical(data$Include)
 # Changes Include to be TRUE for ProgramID 476 if it had the H value qualifier
 data$Include[grep("H", data$ValueQualifier[data$ProgramID==476])] <- TRUE
-# Change Include to be FALSE for Secchi_Depth with U value qualifier
-if(param_name=="Secchi_Depth"){
-  data$Include[grep("U", data$ValueQualifier)] <- FALSE
-}
+
 # Gets AreaID for data by merging data with the managed area list
 data <- merge.data.frame(MA_All[,c("AreaID", "ManagedAreaName")],
                          data, by="ManagedAreaName", all=TRUE)
@@ -283,225 +251,6 @@ z <- nrow(MA_Exclude)
 ####### END DATA READ IN ######
 ###############################
 
-
-# Find out how much total data exists and how much passed the initial filters
-total <- length(data$Include)
-pass_filter <- length(data$Include[data$Include==TRUE])
-# Get the number and percentage of data entries impacted by value qualifier H
-count_H <- length(grep("H", data$ValueQualifier[data$ProgramID==476]))
-perc_H <- 100*count_H/length(data$ValueQualifier)
-# Get the number and percentage of data entries impacted by value qualifier I
-count_I <- length(grep("I", data$ValueQualifier))
-perc_I <- 100*count_I/length(data$ValueQualifier)
-# Get the number and percentage of data entries impacted by value qualifier Q
-count_Q <- length(grep("Q", data$ValueQualifier))
-perc_Q <- 100*count_Q/length(data$ValueQualifier)
-# Get the number and percentage of data entries impacted by value qualifier S
-count_S <- length(grep("S", data$ValueQualifier))
-perc_S <- 100*count_S/length(data$ValueQualifier)
-# Get the number and percentage of data entries impacted by value qualifier U
-count_U <- length(grep("U", data$ValueQualifier))
-perc_U <- 100*count_U/length(data$ValueQualifier)
-# Copy ValueQualifier to a new VQ_Plot to create codes for plots
-data$VQ_Plot <- data$ValueQualifier
-# Determine if data with value qualifier H should be included for plots based
-# on the parameter being observed
-inc_H <- ifelse(param_name=="pH" | param_name=="Dissolved_Oxygen" |
-                  param_name=="Dissolved_Oxygen_Saturation", TRUE, FALSE)
-# Loops through conditions to determine what indicators to include in plots.
-# If H should be included
-if (inc_H==TRUE){
-  # Remove any Value qualifiers that aren't H or U
-  data$VQ_Plot <- gsub("[^HU]+", "", data$VQ_Plot)
-  # Standardize order of qualifiers. Puts UH as HU
-  data$VQ_Plot <- gsub("UH", "HU", data$VQ_Plot)
-  # Remove anything from ValueQualifier that isn't U from programs and that
-  # aren't ProgramID 476
-  data$VQ_Plot[na.omit(data$ProgramID!=476)] <-
-    gsub("[^U]+", "", data$VQ_Plot[na.omit(data$ProgramID!=476)])
-  # Changes blank character strings to NA
-  data$VQ_Plot[data$VQ_Plot==""] <- NA
-  # Prints the number and percentage of H, I, Q, U value qualifiers
-  cat(paste0("Number of Measurements: ", total,
-             ", Number Passed Filter: ", pass_filter, "\n",
-             "Program 476 H Codes: ", count_H, " (", round(perc_H, 6), "%)\n",
-             "I Codes: ", count_I, " (", round(perc_I, 6), "%)\n",
-             "Q Codes: ", count_Q, " (", round(perc_Q, 6), "%)\n",
-             "U Codes: ", count_U, " (", round(perc_U, 6), "%)"))
-  # If Parameter is Secchi_Depth
-} else if (param_name=="Secchi_Depth") {
-  # Count the number of S ValueQualifier
-  count_S <- length(grep("S", data$ValueQualifier))
-  # Get percentage of S ValueQualifier
-  perc_S <- 100*count_S/length(data$ValueQualifier)
-  # Remove anything from ValueQualifier that isn't S or U
-  data$VQ_Plot <- gsub("[^SU]+", "", data$VQ_Plot)
-  # Change all ValueQualifier that are US to be US, standardizes codes
-  data$VQ_Plot <- gsub("US", "SU", data$VQ_Plot)
-  # Sets any blank character ValueQualifier to be NA
-  data$VQ_Plot[data$VQ_Plot==""] <- NA
-  # Prints the number and percentage of I, Q, S, U
-  cat(paste0("Number of Measurements: ", total,
-             ", Number Passed Filter: ", pass_filter, "\n",
-             "I Codes: ", count_I, " (", round(perc_I, 6), "%)\n",
-             "Q Codes: ", count_Q, " (", round(perc_Q, 6), "%)\n",
-             "S Codes: ", count_S, " (", round(perc_S, 6), "%)\n",
-             "U Codes: ", count_U, " (", round(perc_U, 6), "%)"))
-  # For all other scenarios
-} else{
-  # Remove all ValueQualifier except U
-  data$VQ_Plot <- gsub("[^U]+", "", data$VQ_Plot)
-  # Sets any blank character ValueQualifier to be NA
-  data$VQ_Plot[data$VQ_Plot==""] <- NA
-  # Prints the number and percentage of I, Q, U
-  cat(paste0("Number of Measurements: ", total,
-             ", Number Passed Filter: ", pass_filter, "\n",
-             "I Codes: ", count_I, " (", round(perc_I, 6), "%)\n",
-             "Q Codes: ", count_Q, " (", round(perc_Q, 6), "%)\n",
-             "U Codes: ", count_U, " (", round(perc_U, 6), "%)"))
-}
-# Creates a data table that summarizes the number and percentage of
-# ValueQualifier H, I, Q, S, and U for each managed area each year
-data_summ <- data %>%
-  group_by(AreaID, ManagedAreaName, Year) %>%
-  summarize(ParameterName=parameter,
-            RelativeDepth=depth,
-            ActivityType=activity,
-            N_Total=length(ResultValue),
-            N_AnalysisUse=length(ResultValue[Use_In_Analysis==TRUE]),
-            N_H=length(grep("H", ValueQualifier[ProgramID==476])),
-            perc_H=100*N_H/length(ValueQualifier),
-            N_I=length(grep("I", ValueQualifier)),
-            perc_I=100*N_I/length(ValueQualifier),
-            N_Q=length(grep("Q", ValueQualifier)),
-            perc_Q=100*N_Q/length(ValueQualifier),
-            N_S=length(grep("S", ValueQualifier)),
-            perc_S=100*N_S/length(ValueQualifier),
-            N_U=length(grep("U", ValueQualifier)),
-            perc_U=100*N_U/length(ValueQualifier))
-# Orders the data table rows based on managed area name
-data_summ <- as.data.table(data_summ[order(data_summ$ManagedAreaName,
-                                           data_summ$Year), ])
-
-#### SKT ANALYSIS ####
-
-# List for column names
-c_names <- c("AreaID", "ManagedAreaName", "Independent", "tau", "p",
-             "SennSlope", "SennIntercept", "ChiSquared", "pChiSquared", "Trend")
-
-skt_stats <- data.frame(matrix(ncol = length(c_names), nrow = n))
-
-colnames(skt_stats) <- c_names
-# Determines if there are any managed areas to analyze
-if(n==0){
-  print("There are no managed areas that qualify.")
-} else{
-  # Starts cycling through managed areas to determine seasonal Kendall Tau
-  for (i in 1:n) {
-    # Gets the number of rows of data for the managed area
-    data_SKT <- MA_YM_Stats[MA_YM_Stats$ManagedAreaName==MA_Include[i], ]
-    x <- nrow(data_SKT)
-    # Perform analysis if there is more than 1 row
-    if (x>0) {
-      # Store the managed area summary statistics to be used in
-      # trend analysis
-      SKT.med <- MA_Summ$Median[MA_Summ$ManagedAreaName==MA_Include[i]]
-      SKT.minYr <- MA_Summ$EarliestYear[MA_Summ$ManagedAreaName==
-                                          MA_Include[i]]
-      SKT.maxYr <- MA_Summ$LatestYear[MA_Summ$ManagedAreaName==MA_Include[i]]
-      SKT.ind <- TRUE
-      SKT <- kendallSeasonalTrendTest(y=data_SKT$Mean,
-                                      season=data_SKT$Month,
-                                      year=data_SKT$YearFromStart,
-                                      independent.obs=SKT.ind)
-      if(is.na(SKT$estimate[1])==TRUE){
-        SKT.ind <- FALSE
-        SKT <- kendallSeasonalTrendTest(y=data_SKT$Mean,
-                                        season=data_SKT$Month,
-                                        year=data_SKT$YearFromStart,
-                                        independent.obs=SKT.ind)
-      }
-      skt_stats$AreaID[i] <-
-        MA_Summ$AreaID[MA_Summ$ManagedAreaName==MA_Include[i]]
-      skt_stats$ManagedAreaName[i] <-
-        MA_Summ$ManagedAreaName[MA_Summ$ManagedAreaName==MA_Include[i]]
-      skt_stats$Independent[i] <- SKT.ind
-      skt_stats$tau[i] <- SKT$estimate[1]
-      skt_stats$p[i] <- SKT$p.value[2]
-      skt_stats$SennSlope[i] <- SKT$estimate[2]
-      skt_stats$SennIntercept[i] <- SKT$estimate[3]
-      skt_stats$ChiSquared[i] <- SKT$statistic[1]
-      skt_stats$pChiSquared[i] <- SKT$p.value[1]
-      # If the p value is less than 5% and the slope is greater than 10% of the
-      # median value, the trend is large (2).
-      if (skt_stats$p[i] < .05 & abs(skt_stats$SennSlope[i]) >
-          abs(SKT.med) / 10.) {
-        skt_stats$Trend[i] <- 2
-        
-        # If the p value is less than 5% and the slope is less than 10% of the
-        # median value, there is a trend (1).
-      }else if (skt_stats$p[i] < .05 & abs(skt_stats$SennSlope[i]) <
-                abs(SKT.med) / 10.) {
-        skt_stats$Trend[i] <- 1
-        
-        # Otherwise, there is no trend (0)
-      }else {
-        skt_stats$Trend[i] <- 0
-      }
-      # Sets the sign of the trend based on Senn Slope direction
-      if (skt_stats$SennSlope[i] <= 0) {
-        skt_stats$Trend[i] <- -skt_stats$Trend[i]
-      }
-    }
-  }
-  
-  # Stores as data frame
-  skt_stats <- as.data.frame(skt_stats)
-  
-}
-# Clears unused variables
-rm(SKT, data_SKT, x, SKT.med, SKT.minYr, SKT.maxYr, SKT.ind)
-# Combines the skt_stats with MA_Summ
-skt_stats <-  merge.data.frame(MA_Summ, skt_stats,
-                               by=c("AreaID","ManagedAreaName"), all=TRUE)
-
-skt_stats <- as.data.table(skt_stats[order(skt_stats$ManagedAreaName), ])
-
-# Sets variables to proper format and rounds values if necessary
-skt_stats$tau <- round(as.numeric(skt_stats$tau), digits=4)
-skt_stats$p <- format(round(as.numeric(skt_stats$p), digits=4),
-                      scientific=FALSE)
-skt_stats$SennSlope <- as.numeric(skt_stats$SennSlope)
-skt_stats$SennIntercept <- as.numeric(skt_stats$SennIntercept)
-skt_stats$ChiSquared <- round(as.numeric(skt_stats$ChiSquared), digits=4)
-skt_stats$pChiSquared <- round(as.numeric(skt_stats$pChiSquared), digits=4)
-skt_stats$Trend <- as.integer(skt_stats$Trend)
-
-# Writes combined statistics to file
-fwrite(select(skt_stats, -c(EarliestSampleDate)),
-       paste0(out_dir_param,"/WC_Discrete_", param_abrev, "_",
-              activity, "_", depth, "_KendallTau_Stats.txt"),
-       sep="|")
-
-# Removes data rows with no ResultValue (created by merging with MA_All)
-data <- data[!is.na(data$ResultValue),]
-
-# Gets x and y values for starting point for trendline
-KT.Plot <- skt_stats %>%
-  group_by(ManagedAreaName) %>%
-  summarize(x=decimal_date(EarliestSampleDate),
-            y=(x-EarliestYear)*SennSlope+SennIntercept)
-# Gets x and y values for ending point for trendline
-KT.Plot2 <- skt_stats %>%
-  group_by(ManagedAreaName) %>%
-  summarize(x=decimal_date(LastSampleDate),
-            y=(x-EarliestYear)*SennSlope+SennIntercept)
-# Combines the starting and endpoints for plotting the trendline
-KT.Plot <- bind_rows(KT.Plot, KT.Plot2)
-rm(KT.Plot2)
-KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$ManagedAreaName), ])
-KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
-
 #### SETTING PLOT THEME ####
 plot_theme <- theme_bw() +
   theme(panel.grid.major = element_blank(),
@@ -516,7 +265,7 @@ plot_theme <- theme_bw() +
         axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
                                                              b = 0, l = 0)),
         axis.text=element_text(size=10),
-        axis.text.x=element_text(angle = 60, hjust = 1))
+        axis.text.x=element_text(angle = -45, hjust = 0))
 
 ###############################
 ######## SCRIPT START #########
@@ -545,7 +294,7 @@ if(n==0){
       file_short <- sub("data/", "", file_in)
       # ma_short to create abbreviated folder names for each managed area
       ma_short <- gsub("[^::A-Z::]","", ma)
-      out_dir_param <- paste0(out_dir, "/", ma_short, "/", param_name)
+      out_dir_param <- paste0(out_dir, "/", ma_short, "/", param_abrev)
 
       #Starts for loop that cycles through each depth
       for (depth in all_depths){
