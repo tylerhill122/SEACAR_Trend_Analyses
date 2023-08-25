@@ -1,0 +1,258 @@
+---
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  word_document:
+    toc: TRUE
+    toc_depth: 2
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+    dev: png
+    keep_md: yes
+  pdf_document:
+    toc: TRUE
+    toc_depth: 2
+    dev: png
+    extra_dependencies: ["float"]
+    keep_md: yes
+urlcolor: blue
+params:
+  managedarea: ma,
+  p_inc: included_params,
+  a_inc: included_acts,
+  d_inc: included_depths
+---
+
+```{r libraries, message=FALSE, echo=FALSE}
+library(knitr)
+library(data.table)
+library(dplyr)
+library(lubridate)
+library(ggplot2)
+library(ggpubr)
+library(scales)
+library(EnvStats)
+library(tidyr)
+library(kableExtra)
+options(scipen=999)
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   echo=FALSE,
+   dpi=200
+)
+```
+
+# File Import
+
+Imports file that is determined in the WC_Discrete_ReportRender.R script. 
+
+The command `fread` is used because of its improved speed while handling large data files. Only columns that are used by the script are imported from the file, and are designated in the `select` input.
+
+The script then gets the name of the parameter as it appears in the data file and units of the parameter.
+
+The latest version of WC Discrete data is available at: https://usf.box.com/s/fbimxw4hrmazfn5b1d4jbn0addmcsld8
+
+The file being used for the analysis is: FILE_NAME
+
+---
+title: '`r paste("SEACAR Discrete Water Quality Analysis:", ma, sep="\n")`'
+---
+
+
+``` {r}
+
+# Load Data Table Function
+load_data_table <- function(p, a="All", d="All", table) {
+  
+  if (table == "data") {
+    filename_string <- paste0(p,"_",table)
+  } else {
+    filename_string <- paste0(p,"_",a,"_",d,"_",table)
+  }
+  
+  # subset file list to select desired table RDS file
+  table_file <- paste0("output/tables/",str_subset(files, filename_string))
+  
+  # importing RDS files
+  df <- lapply(table_file, readRDS)
+
+  return(df)
+}
+
+
+```
+
+
+
+```{r Trendlines_ManagedArea Function}
+
+plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, parameter) {
+  
+  MA_YM_Stats <- as.data.frame(load_data_table(p, a, d, "MA_MMYY_Stats"))
+  skt_stats <- as.data.frame(load_data_table(p, a, d, "skt_stats"))
+  
+  ### SKT STATS ###
+  # Gets x and y values for starting point for trendline
+  KT.Plot <- skt_stats %>%
+    group_by(ManagedAreaName) %>%
+    summarize(x=decimal_date(EarliestSampleDate),
+              y=(x-EarliestYear)*SennSlope+SennIntercept)
+  # Gets x and y values for ending point for trendline
+  KT.Plot2 <- skt_stats %>%
+    group_by(ManagedAreaName) %>%
+    summarize(x=decimal_date(LastSampleDate),
+              y=(x-EarliestYear)*SennSlope+SennIntercept)
+  # Combines the starting and endpoints for plotting the trendline
+  KT.Plot <- bind_rows(KT.Plot, KT.Plot2)
+  rm(KT.Plot2)
+  KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$ManagedAreaName), ])
+  KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
+
+  # Checking for mmissing values
+  check_ym <- MA_YM_Stats %>%
+    filter(ManagedAreaName == ma)
+  
+  if (nrow(check_ym) == 0) {
+    invisible()
+    # print("error")
+  } else {
+    # Gets data to be used in plot for managed area
+    plot_data <- MA_YM_Stats[MA_YM_Stats$ManagedAreaName==ma,]
+
+    # Gets trendline data for managed area
+    KT.plot_data <- KT.Plot[KT.Plot$ManagedAreaName==ma,]
+
+    #Determine max and min time (Year) for plot x-axis
+    t_min <- min(plot_data$Year)
+    t_max <- max(plot_data$YearMonthDec)
+    t_max_brk <- as.integer(round(t_max, 0))
+    t <- t_max-t_min
+    min_RV <- min(plot_data$Mean)
+
+    # Sets break intervals based on the number of years spanned by data
+    if(t>=30){
+      brk <- -10
+    }else if(t<30 & t>=10){
+      brk <- -5
+    }else if(t<10 & t>=4){
+      brk <- -2
+    }else if(t<4){
+      brk <- -1
+    }
+
+    # Create plot object with data and trendline
+    p1 <- ggplot(data=plot_data,
+          aes(x=YearMonthDec, y=Mean)) +
+      # geom_line(size=0.75, color="#333333", alpha=0.6) +
+      geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
+           alpha=0.75) +
+      geom_line(data=KT.plot_data, aes(x=x, y=y),
+          color="#000099", size=1.2, alpha=0.7) +
+      labs(title=paste0(parameter,", ",activity_label, ", ",depth_label),
+        subtitle=ma,
+        x="Year", y=y_labels) +
+      scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
+                breaks=seq(t_max_brk, t_min, brk)) +
+      plot_theme
+    # Creates ResultTable to display statistics below plot
+    ResultTable <- skt_stats[skt_stats$ManagedAreaName==ma, ] %>%
+      select(RelativeDepth, N_Data, N_Years, Median, Independent, tau, p,
+          SennSlope, SennIntercept, ChiSquared, pChiSquared, Trend)
+    # Create table object
+    t1 <- ggtexttable(ResultTable, rows=NULL,
+            theme=ttheme(base_size=10)) %>%
+      tab_add_footnote(text="p < 0.00005 appear as 0 due to rounding.\n
+              SennIntercept is intercept value at beginning of
+              record for monitoring location",
+              size=10, face="italic")
+    # Arrange and display plot and statistic table
+    print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
+    # Add extra space at the end to prevent the next figure from being too
+    # close.
+    cat("\n \n \n")
+    rm(plot_data)
+    # rm(MA_YM_Stats)
+    # rm(KT.Plot)
+    # rm(skt_stats)
+  }
+}
+
+
+```
+
+
+
+```{r Trendlines_ManagedArea, warning=FALSE, fig.height=9, fig.width=10, results="asis"}
+
+# Start looping for each parameter
+for (param in p_inc) {
+  
+  data <- as.data.frame(load_data_table(param, table="data"))
+  
+  parameter <- unique(data$ParameterName)
+  unit <- unique(data$ParameterUnits)
+  
+  y_labels <- paste0(parameter, " (" , unit, ")")
+
+  # Start looping for each depth
+  for (depth in d_inc) {
+    
+    #Because secchi depth is does not have a bottom measurement, this statement skips
+    #Secchi depth for bottom
+    if (param == "Secchi" & (depth=="Bottom" | depth=="All")){
+      next
+    }
+    
+    for (activity in a_inc) {
+      if ((param=="ChlaC" | 
+        param=="Chla" |
+        param=="CDOM" |
+        param=="TN" |
+        param=="TP" |
+        param=="TSS") & activity=="Field") { next } else if ((param=="DO" |
+            param=="DOS" |
+            param=="pH" |
+            param=="Secchi" |
+            param=="TempW") & activity=="Lab") { next } else if ((param=="ChlaC" |
+            param=="CDOM" |
+            param=="DO" |
+            param=="DOS" |
+            param=="pH" |
+            param=="Secchi" |
+            param=="TN" |
+            param=="TP" |
+            param=="TempW") & activity=="All") { next }
+      
+      
+      if (activity == "All") {
+        activity_label <- "Lab and Field Combined"
+      } else if (activity == "Field") {
+        activity_label <- "Field"
+      } else if (activity == "Lab") {
+        activity_label <- "Lab Only"
+      }
+      
+      if (depth == "All") {
+        depth_label <- "All Depths"
+      } else if (depth == "Surface") {
+        depth_label <- "Surface"
+      } else if (depth == "Bottom") {
+        depth_label <- "Bottom"
+      }
+      
+      
+      # Produce plots
+      plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter)
+      
+      }
+  }
+}
+
+plot_trendlines("Turb", "Lab", "Bottom", "Lab", "Bottom", "Turb", "Turbidity")
+
+
+```
+
+
