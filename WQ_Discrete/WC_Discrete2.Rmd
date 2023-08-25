@@ -35,6 +35,7 @@ library(scales)
 library(EnvStats)
 library(tidyr)
 library(kableExtra)
+library(glue)
 options(scipen=999)
 knitr::opts_chunk$set(
    warning=FALSE,
@@ -179,7 +180,18 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
   }
 }
 
+```
 
+
+
+```{r dynamic_variables}
+# Create conditions to determine if plots/text are shown
+dynamic_vars <- list()
+for (param in p_inc) {
+  val <- ifelse(param %in% p_inc, TRUE, FALSE)
+  assign(paste0("show_", param), val, envir = .GlobalEnv)
+  dynamic_vars[[param]] <- get(paste0("show_",param))
+}
 ```
 
 
@@ -191,10 +203,20 @@ for (param in p_inc) {
   
   data <- as.data.frame(load_data_table(param, table="data"))
   
+  # getting full parameter & unit names
   parameter <- unique(data$ParameterName)
   unit <- unique(data$ParameterUnits)
   
+  # defining labels for y-axis 
   y_labels <- paste0(parameter, " (" , unit, ")")
+  
+  # Calling dynamic variables to create subtitles for each param
+  if (get(paste0("show_", param))) {
+    cat("\\newpage")
+    subtitle <- glue("## {parameter}")
+    cat(subtitle, "\n\n")
+    cat("Parameter", parameter, "is included.\n\n")
+  }
 
   # Start looping for each depth
   for (depth in d_inc) {
@@ -249,9 +271,6 @@ for (param in p_inc) {
       }
   }
 }
-
-plot_trendlines("Turb", "Lab", "Bottom", "Lab", "Bottom", "Turb", "Turbidity")
-
 
 ```
 

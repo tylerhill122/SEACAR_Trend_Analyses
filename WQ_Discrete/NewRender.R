@@ -26,7 +26,7 @@ files <- list.files(here::here("output/tables"),pattern = "\\.rds$")
 
 # function of parameter, activity type, depth, with specified filetype
 get_files <- function(p, a, d, filetype) {
-  if (filetype == "data") {
+  if (filetype == "data" | filetype == "KT_Plot") {
     pattern <- paste0(p,"_",filetype)
     
   } else {
@@ -99,7 +99,7 @@ plot_theme <- theme_bw() +
         axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
                                                              b = 0, l = 0)),
         axis.text=element_text(size=10),
-        axis.text.x=element_text(angle = -45, hjust = 0))
+        axis.text.x=element_text(angle = -45, hjust = 1))
 
 # Bind the list of data frames using bind_rows()
 managed_area_df <- bind_rows(results_list)
