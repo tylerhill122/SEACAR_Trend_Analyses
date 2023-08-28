@@ -1,15 +1,15 @@
 ---
 date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 output:
-  word_document:
-    toc: TRUE
-    toc_depth: 2
   html_document:
     toc: TRUE
     toc_float: TRUE
     toc_depth: 2
     dev: png
     keep_md: yes
+  word_document:
+    toc: TRUE
+    toc_depth: 2
   pdf_document:
     toc: TRUE
     toc_depth: 2
@@ -22,9 +22,21 @@ params:
   p_inc: included_params,
   a_inc: included_acts,
   d_inc: included_depths
+title: '`r paste(ma)`'
+subtitle: '`r paste("SEACAR Discrete Water Quality Analysis")`'
 ---
 
-```{r libraries, message=FALSE, echo=FALSE}
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   echo=FALSE,
+   dpi=200
+)
+```
+
+
+```{r libraries, message=FALSE, echo=FALSE, warning=FALSE, include=FALSE}
 library(knitr)
 library(data.table)
 library(dplyr)
@@ -37,12 +49,6 @@ library(tidyr)
 library(kableExtra)
 library(glue)
 options(scipen=999)
-knitr::opts_chunk$set(
-   warning=FALSE,
-   message=FALSE,
-   echo=FALSE,
-   dpi=200
-)
 ```
 
 
@@ -51,12 +57,7 @@ knitr::opts_chunk$set(
 
 
 
----
-title: '`r paste("SEACAR Discrete Water Quality Analysis:", ma, sep="\n")`'
----
-
-
-``` {r}
+``` {r load_data_table function}
 
 # Load Data Table Function
 load_data_table <- function(p, a="All", d="All", table) {
@@ -105,7 +106,7 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
   KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$ManagedAreaName), ])
   KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
 
-  # Checking for mmissing values
+  # Checking for missing values
   check_ym <- MA_YM_Stats %>%
     filter(ManagedAreaName == ma)
   
@@ -177,6 +178,259 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
 ```
 
 
+```{r plot_boxplots function}
+
+plot_boxplots <- function(p, a, d, activity_label, depth_label, y_labels, parameter) {
+  data <- as.data.frame(load_data_table(p, a, d, "data"))
+  
+  plot_title <- paste0(parameter,", ",activity_label, ", ",depth_label)
+  
+  # Determine upper and lower bounds of time for x-axis
+  plot_data <- data[data$SufficientData==TRUE &
+             data$ManagedAreaName==ma,]
+  year_lower <- min(plot_data$Year)
+  year_upper <- max(plot_data$Year)
+  
+  # Determine upper and lower bounds of ResultValue for y-axis
+  min_RV <- min(plot_data$ResultValue)
+  mn_RV <- mean(plot_data$ResultValue[plot_data$ResultValue <
+                      quantile(data$ResultValue, 0.98)])
+  sd_RV <- sd(plot_data$ResultValue[plot_data$ResultValue <
+                    quantile(data$ResultValue, 0.98)])
+  # Sets x- and y-axis scale
+  x_scale <- ifelse(year_upper - year_lower > 30, 10, 5)
+  y_scale <- mn_RV + 4 * sd_RV
+  
+  ##Year plots
+  # Create plot object for auto-scaled y-axis plot
+  p1 <- ggplot(data=plot_data,
+        aes(x=Year, y=ResultValue, group=Year)) +
+    geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+           outlier.size=3, outlier.color="#333333",
+           outlier.fill="#cccccc", outlier.alpha=0.75) +
+    labs(subtitle="Autoscale",
+      x="Year", y=y_labels) +
+    scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+              breaks=rev(seq(year_upper,
+                    year_lower, -x_scale))) +
+    plot_theme
+  # Create plot object for y-axis scaled plot
+  p2 <- ggplot(data=plot_data,
+        aes(x=Year, y=ResultValue, group=Year)) +
+    geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+           outlier.size=3, outlier.color="#333333",
+           outlier.fill="#cccccc", outlier.alpha=0.75) +
+    labs(subtitle="Scaled to 4x Standard Deviation",
+      x="Year", y=y_labels) +
+    ylim(min_RV, y_scale) +
+    scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+              breaks=rev(seq(year_upper,
+                    year_lower, -x_scale))) +
+    plot_theme
+  # Create plot object for y-axis scaled plot for past 10 years
+  p3 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
+        aes(x=Year, y=ResultValue, group=Year)) +
+    geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+           outlier.size=3, outlier.color="#333333",
+           outlier.fill="#cccccc", outlier.alpha=0.75) +
+    labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
+      x="Year", y=y_labels) +
+    ylim(min_RV, y_scale) +
+    scale_x_continuous(limits=c(year_upper - 10.5, year_upper + 1),
+              breaks=rev(seq(year_upper, year_upper - 10,-2))) +
+    plot_theme
+  # Arrange plot objects
+  Yset <- ggarrange(p1, p2, p3, ncol=1)
+  # Create plot title object
+  p0 <- ggplot() + labs(title=plot_title,
+              subtitle="By Year") +
+    plot_theme + theme(panel.border=element_blank(),
+              panel.grid.major=element_blank(),
+              panel.grid.minor=element_blank(),
+              axis.line=element_blank())
+  
+  
+  ## Year & Month Plots
+  # Create plot object for auto-scaled y-axis plot
+  p4 <- ggplot(data=plot_data,
+        aes(x=YearMonthDec, y=ResultValue,
+            group=YearMonth, color=as.factor(Month))) +
+    geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+    labs(subtitle="Autoscale",
+      x="Year", y=y_labels, color="Month") +
+    scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+              breaks=rev(seq(year_upper,
+                    year_lower, -x_scale))) +
+    plot_theme +
+    theme(legend.position="none")
+  # Create plot object for y-axis scaled plot
+  p5 <- ggplot(data=plot_data,
+        aes(x=YearMonthDec, y=ResultValue,
+            group=YearMonth, color=as.factor(Month))) +
+    geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+    labs(subtitle="Scaled to 4x Standard Deviation",
+      x="Year", y=y_labels, color="Month") +
+    ylim(min_RV, y_scale) +
+    scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+              breaks=rev(seq(year_upper,
+                    year_lower, -x_scale))) +
+    plot_theme +
+    theme(legend.position="top", legend.box="horizontal") +
+    guides(color=guide_legend(nrow=1))
+  # Create plot object for y-axis scaled plot for past 10 years
+  p6 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
+        aes(x=YearMonthDec, y=ResultValue,
+            group=YearMonth, color=as.factor(Month))) +
+    geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+    labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
+      x="Year", y=y_labels, color="Month") +
+    ylim(min_RV, y_scale) +
+    scale_x_continuous(limits=c(year_upper - 10.5, year_upper + 1),
+              breaks=rev(seq(year_upper, year_upper - 10,-2))) +
+    plot_theme +
+    theme(legend.position="none")
+  # Create legend object
+  leg1 <- get_legend(p5)
+  # Arrange plots and legend
+  YMset <- ggarrange(leg1, p4, p5 + theme(legend.position="none"), p6,
+           ncol=1, heights=c(0.1, 1, 1, 1))
+  # Create plot title object
+  p00 <- ggplot() + labs(title=plot_title,
+               subtitle="By Year & Month") + plot_theme +
+    theme(panel.border=element_blank(),
+       panel.grid.major=element_blank(),
+       panel.grid.minor=element_blank(), axis.line=element_blank())
+  
+  ## Month Plots
+  # Create plot object for auto-scaled y-axis plot
+  p7 <- ggplot(data=plot_data,
+        aes(x=Month, y=ResultValue,
+            group=Month, fill=as.factor(Month))) +
+    geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+           outlier.color="#333333", outlier.alpha=0.75) +
+    labs(subtitle="Autoscale",
+      x="Month", y=y_labels, fill="Month") +
+    scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
+    plot_theme +
+    theme(legend.position="none")
+  # Create plot object for y-axis scaled plot
+  p8 <- ggplot(data=plot_data,
+        aes(x=Month, y=ResultValue,
+            group=Month, fill=as.factor(Month))) +
+    geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+           outlier.color="#333333", outlier.alpha=0.75) +
+    labs(subtitle="Scaled to 4x Standard Deviation",
+      x="Month", y=y_labels, fill="Month") +
+    ylim(min_RV, y_scale) +
+    scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
+    plot_theme +
+    theme(legend.position="top", legend.box="horizontal") +
+    guides(fill=guide_legend(nrow=1))
+  # Create plot object for y-axis scaled plot for past 10 years
+  p9 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
+        aes(x=Month, y=ResultValue,
+            group=Month, fill=as.factor(Month))) +
+    geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+           outlier.color="#333333", outlier.alpha=0.75) +
+    labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
+      x="Month", y=y_labels, fill="Month") +
+    ylim(min_RV, y_scale) +
+    scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
+    plot_theme +
+    theme(legend.position="none")
+  # Create legend object
+  leg2 <- get_legend(p8)
+  # Arrange plots and legend
+  Mset <- ggarrange(leg2, p7, p8 + theme(legend.position="none"), p9,
+          ncol=1, heights=c(0.1, 1, 1, 1))
+  # Create title object
+  p000 <- ggplot() + labs(title=plot_title,
+             subtitle="By Month") + plot_theme +
+    theme(panel.border=element_blank(),
+       panel.grid.major=element_blank(),
+       panel.grid.minor=element_blank(), axis.line=element_blank())
+  # Arrange and display plots with titles for all combinations
+  print(ggarrange(p0, Yset, ncol=1, heights=c(0.07, 1)))
+  print(ggarrange(p00, YMset, ncol=1, heights=c(0.07, 1)))
+  print(ggarrange(p000, Mset, ncol=1, heights=c(0.07, 1, 0.7)))
+  # Add extra space at the end to prevent the next figure from being too
+  # close.
+  cat("\n \n \n")
+  
+  rm(plot_data)
+  rm(p1, p2, p3, p4, p5, p6, p7, p8, p9, p0, p00, p000, leg1, leg2,
+    Yset, YMset, Mset)
+}
+
+```
+
+
+```{r VQ_Summary Barplot function}
+
+plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter) {
+  VQ_Summary <- as.data.frame(load_data_table(p, a, d, "VQSummary"))
+  
+  # Filter and subset dataframe for managed area
+  ma_vq_summary <- VQ_Summary %>% filter(ManagedAreaName == ma)
+
+  # VQSummary conditions for qualifying VQ values
+  vq_condition <- ma_vq_summary$N_H !=0 | ma_vq_summary$N_I != 0 | ma_vq_summary$N_Q != 0 | ma_vq_summary$N_S != 0 | ma_vq_summary$N_U != 0
+  
+  # apply VQ_conditions to subset dataframe
+  filtered_vq <- ma_vq_summary[vq_condition, ]
+  
+  # check to see if there are any qualifying VQ values, if not, skip
+  if (nrow(filtered_vq) != 0) {
+    # select respective perc_vq columns
+    plot_data <- filtered_vq %>% 
+      select(Year, perc_H, perc_I, perc_Q, perc_S, perc_U)
+    
+    # convert data format to "long" for plotting
+    plot_data_long <- tidyr::pivot_longer(plot_data, 
+                                          cols = starts_with("perc_"), 
+                                          names_to = "Category", 
+                                          values_to = "Percentage")
+    
+    # set year bounds for upper and lower
+    year_lower <- min(plot_data_long$Year)
+    year_upper <- max(plot_data_long$Year)
+    
+    # Use similar x-scaling to previous charts # may change
+    x_scale <- ifelse(year_upper - year_lower > 30, 10, 
+                      ifelse(year_upper == year_lower, 1, 5))
+    
+    # set title label
+    lab_title <- paste0("Percentage Distribution of Value Qualifiers by year for ", d," Depths -  ", parameter)
+    
+    # plot results
+    vq_plot <- ggplot(plot_data_long, aes(x=Year, y=Percentage, fill=Category)) + 
+      geom_bar(stat = "identity", position="stack") +
+      labs(title = lab_title,
+           subtitle = paste(ma),
+           x = "Year",
+           y = "Percentage") +
+      ylim(0, 100) +
+      scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+                         breaks=rev(seq(year_upper,
+                                        year_lower, -x_scale))) +
+      plot_theme
+    
+    # print plots
+    print(vq_plot)
+    
+    # Add extra space at the end to prevent the next figure from being too
+    # close.
+    cat("\n \n \n")
+    
+    rm(VQ_Summary, filtered_vq, plot_data, plot_data_long, vq_plot)
+  } else {
+    cat(paste0("There are no qualifying Value Qualifiers for ", parameter, " in ", ma))
+    cat("\n \n \n")
+  }
+}
+
+```
+
 
 ```{r dynamic_variables}
 # Create conditions to determine if plots/text are shown
@@ -189,8 +443,7 @@ for (param in p_inc) {
 ```
 
 
-
-```{r Trendlines_ManagedArea, warning=FALSE, fig.height=9, fig.width=10, results="asis"}
+```{r Plotting, warning=FALSE, fig.height=9, fig.width=10, results="asis"}
 
 # Start looping for each parameter
 for (param in p_inc) {
@@ -250,9 +503,14 @@ for (param in p_inc) {
     depth_label <- "Surface"
   }
   
-  # Produce plots
+  # Produce trendplots
   plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter)
   
+  # Produce boxplots
+  plot_boxplots(param, activity, depth, activity_label, depth_label, y_labels, parameter)
+  
+  # Produce VQ-plots
+  plot_vq_barplot(param, activity, depth, activity_label, depth_label, y_labels, parameter)
 }
 
 ```

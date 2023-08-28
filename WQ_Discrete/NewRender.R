@@ -78,6 +78,9 @@ for (parameter in all_params_short) {
         
         # Append the result data frame to the list
         results_list <- c(results_list, list(result_df))
+        
+        # remove files
+        rm(managed_area_names)
       } else {
         print(0)
       }
@@ -85,10 +88,7 @@ for (parameter in all_params_short) {
   }
 }
 
-# ###
-# df_results_list <- do.call(rbind, results_list)
-# ###
-
+# rl_df <- do.call(rbind, results_list)
 
 ## Setting plot theme for plots
 plot_theme <- theme_bw() +
@@ -104,14 +104,14 @@ plot_theme <- theme_bw() +
         axis.title.y = element_text(size=10, margin = margin(t = 0, r = 10,
                                                              b = 0, l = 0)),
         axis.text=element_text(size=10),
-        axis.text.x=element_text(angle = -45, hjust = 1))
+        axis.text.x=element_text(angle = -45, hjust = 0))
 
 # Bind the list of data frames using bind_rows()
 managed_area_df <- bind_rows(results_list)
 
 # Get list of managed areas to create reports for
 all_managed_areas <- unique(managed_area_df$ManagedAreaName)
-all_managed_areas <- all_managed_areas[c(1,2,3)]
+all_managed_areas <- all_managed_areas[1]
 
 # Loop through list of managed areas
 for (ma in all_managed_areas) {
@@ -131,7 +131,7 @@ for (ma in all_managed_areas) {
   for (path in output_path) {if(!dir.exists(path)){dir.create(path, recursive = TRUE)}}
   
   ### RENDERING ###
-  file_out <- "WC_Discrete_Report"
+  file_out <- paste0(ma_short,"_WC_Discrete_Report")
   rmarkdown::render(input = "WC_Discrete2.Rmd", 
                     output_format = "pdf_document",
                     output_file = paste0(file_out, ".pdf"),
