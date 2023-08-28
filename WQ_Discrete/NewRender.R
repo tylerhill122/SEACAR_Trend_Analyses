@@ -6,17 +6,17 @@ library(ggplot2)
 all_depths <- c("Surface","Bottom","All")
 all_activities <- c("Field","Lab","All")
 all_params_short <- c(
-  # "ChlaC",
-  # "Chla",
-  # "CDOM",
-  # "DO",
-  # "DOS",
-  # "pH",
-  # "Sal",
-  # "Secchi",
-  # "TN",
-  # "TP",
-  # "TSS",
+  "ChlaC",
+  "Chla",
+  "CDOM",
+  "DO",
+  "DOS",
+  "pH",
+  "Sal",
+  "Secchi",
+  "TN",
+  "TP",
+  "TSS",
   "Turb",
   "TempW"
 )
@@ -26,7 +26,7 @@ files <- list.files(here::here("output/tables"),pattern = "\\.rds$")
 
 # function of parameter, activity type, depth, with specified filetype
 get_files <- function(p, a, d, filetype) {
-  if (filetype == "data" | filetype == "KT_Plot") {
+  if (filetype == "data") {
     pattern <- paste0(p,"_",filetype)
     
   } else {
@@ -84,6 +84,11 @@ for (parameter in all_params_short) {
     }
   }
 }
+
+# ###
+# df_results_list <- do.call(rbind, results_list)
+# ###
+
 
 ## Setting plot theme for plots
 plot_theme <- theme_bw() +

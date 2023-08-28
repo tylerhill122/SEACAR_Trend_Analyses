@@ -45,17 +45,11 @@ knitr::opts_chunk$set(
 )
 ```
 
-# File Import
 
-Imports file that is determined in the WC_Discrete_ReportRender.R script. 
 
-The command `fread` is used because of its improved speed while handling large data files. Only columns that are used by the script are imported from the file, and are designated in the `select` input.
+# Parameters
 
-The script then gets the name of the parameter as it appears in the data file and units of the parameter.
 
-The latest version of WC Discrete data is available at: https://usf.box.com/s/fbimxw4hrmazfn5b1d4jbn0addmcsld8
-
-The file being used for the analysis is: FILE_NAME
 
 ---
 title: '`r paste("SEACAR Discrete Water Quality Analysis:", ma, sep="\n")`'
@@ -174,9 +168,9 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
     # close.
     cat("\n \n \n")
     rm(plot_data)
-    # rm(MA_YM_Stats)
+    rm(MA_YM_Stats)
     # rm(KT.Plot)
-    # rm(skt_stats)
+    rm(skt_stats)
   }
 }
 
@@ -207,8 +201,9 @@ for (param in p_inc) {
   parameter <- unique(data$ParameterName)
   unit <- unique(data$ParameterUnits)
   
-  # defining labels for y-axis 
-  y_labels <- paste0(parameter, " (" , unit, ")")
+  # defining labels for y-axis
+  y_labels <- ifelse(param == "pH", parameter, paste0(parameter, " (" , unit, ")"))
+  # y_labels <- paste0(parameter, " (" , unit, ")")
   
   # Calling dynamic variables to create subtitles for each param
   if (get(paste0("show_", param))) {
@@ -217,59 +212,47 @@ for (param in p_inc) {
     cat(subtitle, "\n\n")
     cat("Parameter", parameter, "is included.\n\n")
   }
-
-  # Start looping for each depth
-  for (depth in d_inc) {
-    
-    #Because secchi depth is does not have a bottom measurement, this statement skips
-    #Secchi depth for bottom
-    if (param == "Secchi" & (depth=="Bottom" | depth=="All")){
-      next
-    }
-    
-    for (activity in a_inc) {
-      if ((param=="ChlaC" | 
-        param=="Chla" |
-        param=="CDOM" |
-        param=="TN" |
-        param=="TP" |
-        param=="TSS") & activity=="Field") { next } else if ((param=="DO" |
-            param=="DOS" |
-            param=="pH" |
-            param=="Secchi" |
-            param=="TempW") & activity=="Lab") { next } else if ((param=="ChlaC" |
-            param=="CDOM" |
-            param=="DO" |
-            param=="DOS" |
-            param=="pH" |
-            param=="Secchi" |
-            param=="TN" |
-            param=="TP" |
-            param=="TempW") & activity=="All") { next }
-      
-      
-      if (activity == "All") {
-        activity_label <- "Lab and Field Combined"
-      } else if (activity == "Field") {
-        activity_label <- "Field"
-      } else if (activity == "Lab") {
-        activity_label <- "Lab Only"
-      }
-      
-      if (depth == "All") {
-        depth_label <- "All Depths"
-      } else if (depth == "Surface") {
-        depth_label <- "Surface"
-      } else if (depth == "Bottom") {
-        depth_label <- "Bottom"
-      }
-      
-      
-      # Produce plots
-      plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter)
-      
-      }
+  
+  #Because secchi depth is does not have a bottom measurement, this statement skips
+  #Secchi depth for bottom
+  if (param == "Secchi"){
+    depth <- "Surface"
+  } else {
+    depth <- "All"
   }
+  
+  # Choosing which analyses to plot, when to combine 
+  if (param == "ChlaC" |
+      param == "Chla" |
+      param == "CDOM" |
+      param == "TN" |
+      param == "TP") {activity = "Lab"} else if (
+        param == "DO" |
+        param == "DOS" |
+        param == "pH" |
+        param == "Secchi" |
+        param == "TempW") {activity = "Field"} else if (
+          param == "Sal" |
+          param == "TSS" |
+          param == "Turb") {activity = "All"}
+    
+  if (activity == "All") {
+    activity_label <- "Lab and Field Combined"
+  } else if (activity == "Field") {
+    activity_label <- "Field"
+  } else if (activity == "Lab") {
+    activity_label <- "Lab"
+  }
+  
+  if (depth == "All") {
+    depth_label <- "All Depths"
+  } else if (depth == "Surface") {
+    depth_label <- "Surface"
+  }
+  
+  # Produce plots
+  plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter)
+  
 }
 
 ```
