@@ -21,11 +21,12 @@ all_params_short <- c(
   "TempW"
 )
 
-# Declaring RDS file list of respective tables
-files <- list.files(here::here("output/tables"),pattern = "\\.rds$")
-
 # function of parameter, activity type, depth, with specified filetype
 get_files <- function(p, a, d, filetype) {
+  
+  # Declaring RDS file list of respective tables
+  files <- list.files(here::here("output/tables"),pattern = "\\.rds$")
+  
   if (filetype == "data") {
     pattern <- paste0(p,"_",filetype)
     
@@ -36,24 +37,54 @@ get_files <- function(p, a, d, filetype) {
   return(file_return)
 }
 
-# function to check the number of managed areas for each p,a,d combination
+#function to check the number of managed areas for each p,a,d combination
 n_managedareas <- function(p, a, d) {
-  ma_file <- get_files(p,a,d, "MA_Include")
-  tryCatch(
+  n <- tryCatch(
     {
-    ma_inclusion <- readRDS(paste0("output/tables/",ma_file))
-    n <- length(ma_inclusion)
-    return(n)
+      ma_file <- get_files(p, a, d, "MA_Include")
+      ma_inclusion <- readRDS(paste0("output/tables/", ma_file))
+      n <- length(ma_inclusion)
+      rm(ma_inclusion)
+      n
     },
-    error=function(e) {return(0)},
-    warning=function(w) {return(0)}
+    error = function(e) {
+      0
+    },
+    warning = function(w) {
+      0
+    }
   )
+  return(n)
 }
 
+
+# n_managedareas <- function(p, a, d) {
+#   ma_file <- get_files(p,a,d, "MA_Include")
+#   tryCatch(
+#     {
+#     ma_inclusion <- readRDS(paste0("output/tables/",ma_file))
+#     n <- length(ma_inclusion)
+#     return(n)
+#     },
+#     error=function(e) {return(0)},
+#     warning=function(w) {return(0)},
+#     finally = {
+#       if (exists("ma_inclusion", envir=.GlobalEnv)) {
+#         close(ma_inclusion)
+#       }
+#     }
+#   )
+# }
+
+#function to make a list of managed area names
 get_managed_area_names <- function(p, a, d) {
-  file <- readRDS(paste0("output/tables/",get_files(p, a, d, "MA_MMYY")))
-  ma_list <- list(unique(file$ManagedAreaName))
-  return(ma_list)
+  ma_list <- with(
+    readRDS(paste0("output/tables/",get_files(p, a, d, "MA_MMYY"))),
+    {
+      unique(ManagedAreaName)
+    }
+  )
+  return(list(ma_list))
 }
 
 #results list to record managed areas for each combination
@@ -62,6 +93,7 @@ results_list <- list()
 for (parameter in all_params_short) {
   for (depth in all_depths) {
     for (activity in all_activities) {
+      # n <- length(get_managed_area_names(parameter, activity, depth))
       n <- n_managedareas(parameter, activity, depth)
       if (n > 0) {
         print(n)
@@ -69,7 +101,7 @@ for (parameter in all_params_short) {
         
         # Concatenate the managed area names into a single character vector
         concatenated_names <- unlist(managed_area_names)
-        
+
         # Create a data frame for the current combination
         result_df <- data.frame(Parameter = parameter,
                                 Depth = depth,
@@ -78,9 +110,8 @@ for (parameter in all_params_short) {
         
         # Append the result data frame to the list
         results_list <- c(results_list, list(result_df))
-        
-        # remove files
-        rm(managed_area_names)
+        rm(result_df, concatenated_names, managed_area_names, n)
+
       } else {
         print(0)
       }
@@ -139,5 +170,5 @@ for (ma in all_managed_areas) {
                     clean=TRUE)
 
   unlink(paste0(output_path, "/", file_out, ".md"))
-  unlink(paste0(output_path, "/", file_out, "_files"), recursive=TRUE)
+  # unlink(paste0(output_path, "/", file_out, "_files"), recursive=TRUE)
 }
