@@ -52,7 +52,9 @@ library(grid)
 options(scipen=999)
 ```
 
-
+\newpage
+# Seasonal Kendall-Tau Analysis
+Here's some info about it, how cool
 
 # Parameters
 
@@ -87,31 +89,76 @@ load_data_table <- function(p, a="All", d="All", table) {
 
 
 ```{r data_exclusion_table function}
+# Function to create & display text table of excluded values
 data_exclusion_table <- function(data, parameter) {
+  
+  # Create descriptive info for QAQCFlagCodes below plot
+  qaqc <- list("2Q","6Q","9Q","12Q")
+  qaqc_desc <- list("*2Q* - Exceeds Maximum threshold. Not verified in raw data.",
+                  "*6Q* - Within threshold tolerance",
+                  "*9Q* - Surface Analysis: Activity_Depth <= 1 meter",
+                  "*12Q* - Bottom Analysis: Total_Depth minus Activity_Depth <= 1 meters")
+  # Combine list to allow code to recall dynamically
+  qaqc_list <- setNames(as.list(qaqc_desc), qaqc)
+  
   # Creates ResultTable to display statistics below plot
   data_excluded <- data %>% 
     filter(Use_In_Analysis==FALSE & ManagedAreaName==ma) %>%
-    select(ProgramID, ProgramLocationID, SampleDate, ResultValue, SEACAR_QAQCFlagCode, Include, SufficientData) %>%
+    select(ProgramID, ProgramName, ProgramLocationID, SampleDate, ResultValue, SEACAR_QAQCFlagCode, Include) %>%
     arrange(SampleDate)
   
+  # If there is excluded data, provide excluded data table
   if (nrow(data_excluded) > 0) {
-    cat("\n\n\\pagebreak\n")
-    # cat("Excluded data for ", parameter)
-    # t1 <- ggtexttable(data_excluded, rows=NULL,
-    #                   theme = ttheme(base_size=10)) %>%
-    #   tab_add_footnote(text="Additional info here. Excluded Values etc.",
-    #                    size=10, face="italic")
-    # print(t1)
     
-    data_table <- kable(data_excluded, 
+    # Gather ProgramIDs that contain excluded values
+    excluded_program_id <- unique(data_excluded$ProgramID)
+    
+    # data exclusion header
+    cat("\\newpage")
+    cat("### Excluded Data", "\n\n")
+    
+    # remove ProgramName from data-table display (some are too long)
+    data_for_table <- data_excluded %>% 
+      select(ProgramID, ProgramLocationID, SampleDate, ResultValue, SEACAR_QAQCFlagCode, Include)
+    
+    data_table <- kable(data_for_table, 
                         format="simple", 
                         col.names = c("ProgramID", "ProgramLocationID", "SampleDate", "Value", 
-                                      "QAQCFlagCode", "Include", "SufficientData"), 
+                                      "QAQCFlagCode", "Include"), 
                         caption=paste0("Excluded values for ", parameter)) %>%
       kable_styling(latex_options="scale_down",
                     position = "center")
     
+    # Print data table
     print(data_table)
+    
+    cat("\n **Programs containing excluded data:** \n \n")
+    
+    # Display ProgramName below data table
+    for (p_id in excluded_program_id) {
+      p_name <- unlist(unique(data_excluded %>% filter(ProgramID == p_id) %>% select(ProgramName)))
+      cat(paste0("*",p_id,"*", " - ",p_name, "  \n"))
+    }
+    
+    cat("  \n")
+    cat("  \n **SEACAR QAQC codes:**  \n \n")
+    cat("  \n")
+    
+    # list of unique flags for this parameter
+    unique_flags <- unique(data_excluded$SEACAR_QAQCFlagCode)
+    
+    # loop to add description if the corresponding QAQC code is listed above
+    for (code in names(qaqc_list)) {
+      for (flag in unique_flags) {
+        flag_codes <- unlist(strsplit(flag, split="/"))
+        if (code %in% flag_codes) {
+          cat(unlist(qaqc_list[code]), sep = '\n')
+          cat("\n")
+          break
+        }
+      }
+    }
+    
     cat("\n \n \n")
   }
 }
@@ -120,7 +167,7 @@ data_exclusion_table <- function(data, parameter) {
 
 
 
-```{r Trendlines_ManagedArea Function}
+```{r SKT_Trendlines_ManagedArea Function}
 
 plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, parameter) {
   
@@ -493,7 +540,7 @@ plot_boxplots <- function(p, a, d, activity_label, depth_label, y_labels, parame
 
 
 
-```{r VQ_Summary Barplot function}
+```{r VQ_Summary Barplot function, results='asis'}
 
 plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter) {
   VQ_Summary <- as.data.frame(load_data_table(p, a, d, "VQSummary"))
@@ -561,12 +608,59 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
                         labels=c("H", "I", "Q", "S", "U")) +
       plot_theme
     
-    vq_table <- ggtexttable(plot_data, theme=ttheme(base_size=10))
-    
-    vqSet <- ggarrange(vq_plot, vq_table, ncol=1)
-    
     # print plots
-    print(vqSet)
+    print(vq_plot)
+    
+    # Replace 0 values with NA, to be modified to empty string with kable function
+    plot_data[plot_data == 0] <- NA
+    options(knitr.kable.NA = "")
+    
+    # add text table beneath plot
+    vq_table <- kable(plot_data, 
+                      format="simple",
+                      digits = 1,
+                      caption=paste0("Value Qualifiers for ", parameter)) %>%
+      kable_styling(latex_options="scale_down",
+                    position = "center")
+    
+    cat("  \n")
+    print(vq_table)
+    
+    # add description for each VQ shown
+    vq <- list("N_H","N_I","N_Q","N_S","N_U")
+    vq_desc <- list("H - Value based on field kit determiniation; results may not be accurate. 
+                This code shall be used if a field screening test (e.g., field gas chromatograph data, 
+                immunoassay, or vendor-supplied field kit) was used to generate the value and the field 
+                kit or method has not been recognized by the Department as equivalent to laboratory methods.",
+                
+                "I - The reported value is greater than or equal to the laboratory method detection 
+                limit but less than the laboratory practical quantitation limit.",
+                
+                "Q - Sample held beyond the accepted holding time. This code shall be used if the value is derived 
+                from a sample that was prepared or analyzed after the approved holding time restrictions for sample 
+                preparation or analysis.",
+                
+                "S - Secchi disk visible to bottom of waterbody. The value reported is the depth of the waterbody 
+                at the location of the Secchi disk measurement.",
+                
+                "U - Indicates that the compound was analyzed for but not detected. This symbol shall be used to indicate 
+                that the specified component was not detected. The value associated with the
+                qualifier shall be the laboratory method detection limit. Unless requested by the client, 
+                less than the method detection limit values shall not be reported ")
+
+    vq_list <- setNames(as.list(vq_desc), vq)
+    
+    cat("  \n")
+    cat("**Value Qualifiers**  \n \n")
+    cat("  \n")
+    
+    # loop to add description if the corresponding VQ is listed above
+    for (vq in names(vq_list)) {
+      if (vq %in% names(plot_data)) {
+        cat(unlist(vq_list[vq]), sep = '\n')
+        cat("\n")
+      }
+    }
     
     # Add extra space at the end to prevent the next figure from being too
     # close.
@@ -592,7 +686,7 @@ plot_vq_Scatterplot <- function(p, a, d, activity_label, depth_label, y_labels, 
   if (nrow(data) != 0) {
 
     inc_H <- ifelse(p=="pH" | p=="DO" |
-                  p=="DOS", TRUE, FALSE)
+                      p=="DOS", TRUE, FALSE)
     
     if (inc_H==TRUE){
       # Remove any Value qualifiers that aren't H or U
@@ -649,10 +743,10 @@ plot_vq_Scatterplot <- function(p, a, d, activity_label, depth_label, y_labels, 
             legend.justification="right") +
       scale_fill_manual(values = scale_fill, na.value="#cccccc")
     
+    cat("\\newpage")
     print(p1)
     cat("\n \n \n")
   }
-  
 }
 
 ```
@@ -727,9 +821,12 @@ for (param in p_inc) {
     depth_label <- "Surface"
   }
   
-  # Produce trendplots
-  plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter)
+  # SKT Header (### makes sub-heading)
+  cat(glue("### Seasonal Kendall-Tau Trend Analysis"), "\n\n")
 
+  # Produce SKT-trendplots
+  plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter)
+  
   # Produce boxplots
   plot_boxplots(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
 
@@ -740,7 +837,7 @@ for (param in p_inc) {
   data_exclusion_table(data, parameter)
   
   # Produce VQ-scatter-plots
-  # plot_vq_Scatterplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
+  plot_vq_Scatterplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
 }
 
 ```
