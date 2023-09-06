@@ -22,23 +22,28 @@ all_params_short <- c(
 )
 
 # function of parameter, activity type, depth, with specified filetype
+# retrieves RDS filepath to be loaded
 get_files <- function(p, a, d, filetype) {
   
   # Declaring RDS file list of respective tables
   files <- list.files(here::here("output/tables"),pattern = "\\.rds$")
   
+  # "data" contains overall data for each param, regardless of depth/activity
   if (filetype == "data") {
     pattern <- paste0(p,"_",filetype)
     
   } else {
     pattern <- paste0(p,"_",a,"_",d,"_",filetype)
   }
+  # subset directory files for given pattern
   file_return <- str_subset(files, pattern)
   return(file_return)
 }
 
 #function to check the number of managed areas for each p,a,d combination
 n_managedareas <- function(p, a, d) {
+  # Declaring n value as count of managed areas
+  # return 0 if unable to load file (activity/depth combo not available for that param)
   n <- tryCatch(
     {
       ma_file <- get_files(p, a, d, "MA_Include")
@@ -57,25 +62,6 @@ n_managedareas <- function(p, a, d) {
   return(n)
 }
 
-
-# n_managedareas <- function(p, a, d) {
-#   ma_file <- get_files(p,a,d, "MA_Include")
-#   tryCatch(
-#     {
-#     ma_inclusion <- readRDS(paste0("output/tables/",ma_file))
-#     n <- length(ma_inclusion)
-#     return(n)
-#     },
-#     error=function(e) {return(0)},
-#     warning=function(w) {return(0)},
-#     finally = {
-#       if (exists("ma_inclusion", envir=.GlobalEnv)) {
-#         close(ma_inclusion)
-#       }
-#     }
-#   )
-# }
-
 #function to make a list of managed area names
 get_managed_area_names <- function(p, a, d) {
   ma_list <- with(
@@ -90,36 +76,83 @@ get_managed_area_names <- function(p, a, d) {
 #results list to record managed areas for each combination
 results_list <- list()
 
-for (parameter in all_params_short) {
-  for (depth in all_depths) {
-    for (activity in all_activities) {
-      # n <- length(get_managed_area_names(parameter, activity, depth))
-      n <- n_managedareas(parameter, activity, depth)
-      if (n > 0) {
-        print(n)
-        managed_area_names <- get_managed_area_names(parameter, activity, depth)
-        
-        # Concatenate the managed area names into a single character vector
-        concatenated_names <- unlist(managed_area_names)
+# for (parameter in all_params_short) {
+#   for (depth in all_depths) {
+#     for (activity in all_activities) {
+#       # n <- length(get_managed_area_names(parameter, activity, depth))
+#       n <- n_managedareas(parameter, activity, depth)
+#       if (n > 0) {
+#         print(n)
+#         managed_area_names <- get_managed_area_names(parameter, activity, depth)
+# 
+#         # Concatenate the managed area names into a single character vector
+#         concatenated_names <- unlist(managed_area_names)
+# 
+#         # Create a data frame for the current combination
+#         result_df <- data.frame(Parameter = parameter,
+#                                 Depth = depth,
+#                                 Activity = activity,
+#                                 ManagedAreaName = paste(concatenated_names))
+# 
+#         # Append the result data frame to the list
+#         results_list <- c(results_list, list(result_df))
+#         rm(result_df, concatenated_names, managed_area_names, n)
+# 
+#       } else {
+#         print(0)
+#       }
+#     }
+#   }
+# }
 
-        # Create a data frame for the current combination
-        result_df <- data.frame(Parameter = parameter,
-                                Depth = depth,
-                                Activity = activity,
-                                ManagedAreaName = paste(concatenated_names))
-        
-        # Append the result data frame to the list
-        results_list <- c(results_list, list(result_df))
-        rm(result_df, concatenated_names, managed_area_names, n)
+for (param in all_params_short) {
+  if (param == "Secchi"){
+    depth <- "Surface"
+  } else {
+    depth <- "All"
+  }
+  
+  # Choosing which analyses to plot, when to combine 
+  if (param == "ChlaC" |
+      param == "Chla" |
+      param == "CDOM" |
+      param == "TN" |
+      param == "TP") {activity = "Lab"} else if (
+        param == "DO" |
+        param == "DOS" |
+        param == "pH" |
+        param == "Secchi" |
+        param == "TempW") {activity = "Field"} else if (
+          param == "Sal" |
+          param == "TSS" |
+          param == "Turb") {activity = "All"}
+  
+  n <- n_managedareas(param, activity, depth)
+  
+  if (n > 0) {
+    print(n)
+    managed_area_names <- get_managed_area_names(param, activity, depth)
 
-      } else {
-        print(0)
-      }
-    }
+    # Concatenate the managed area names into a single character vector
+    concatenated_names <- unlist(managed_area_names)
+
+    # Create a data frame for the current combination
+    result_df <- data.frame(Parameter = param,
+                            Depth = depth,
+                            Activity = activity,
+                            ManagedAreaName = paste(concatenated_names))
+
+    # Append the result data frame to the list
+    results_list <- c(results_list, list(result_df))
+    rm(result_df, concatenated_names, managed_area_names, n)
+
+  } else {
+    print(0)
   }
 }
 
-# rl_df <- do.call(rbind, results_list)
+# Bind the list of data frames using bind_rows()
+managed_area_df <- bind_rows(results_list)
 
 ## Setting plot theme for plots
 plot_theme <- theme_bw() +
@@ -137,12 +170,9 @@ plot_theme <- theme_bw() +
         axis.text=element_text(size=10),
         axis.text.x=element_text(angle = -45, hjust = 0))
 
-# Bind the list of data frames using bind_rows()
-managed_area_df <- bind_rows(results_list)
-
 # Get list of managed areas to create reports for
 all_managed_areas <- unique(managed_area_df$ManagedAreaName)
-all_managed_areas <- all_managed_areas[1]
+all_managed_areas <- all_managed_areas[2]
 
 # Loop through list of managed areas
 for (ma in all_managed_areas) {
