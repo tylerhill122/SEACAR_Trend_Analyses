@@ -6,18 +6,27 @@ library(ggplot2)
 all_depths <- c("Surface","Bottom","All")
 all_activities <- c("Field","Lab","All")
 all_params_short <- c(
-  "ChlaC",
-  "Chla",
-  "CDOM",
-  "DO",
-  "DOS",
-  "pH",
-  "Sal",
-  "Secchi",
-  "TN",
-  "TP",
-  "TSS",
-  "Turb",
+  # "ChlaC",
+  # "Chla",
+  # "CDOM",
+  # "DO",
+  # "DOS",
+  # "pH",
+  # "Sal",
+  # "Secchi",
+  # "TN",
+  # "TP",
+  # "TSS",
+  # "Turb",
+  "TempW"
+)
+
+cont_params_short <- c(
+  # "DO",
+  # "DOS",
+  # "pH",
+  # "Sal",
+  # "Turb",
   "TempW"
 )
 
@@ -26,7 +35,7 @@ all_params_short <- c(
 get_files <- function(p, a, d, filetype) {
   
   # Declaring RDS file list of respective tables
-  files <- list.files(here::here("output/tables"),pattern = "\\.rds$")
+  files <- list.files(here::here("output/tables/disc"),pattern = "\\.rds$")
   
   # "data" contains overall data for each param, regardless of depth/activity
   if (filetype == "data") {
@@ -47,7 +56,7 @@ n_managedareas <- function(p, a, d) {
   n <- tryCatch(
     {
       ma_file <- get_files(p, a, d, "MA_Include")
-      ma_inclusion <- readRDS(paste0("output/tables/", ma_file))
+      ma_inclusion <- readRDS(paste0("output/tables/disc/", ma_file))
       n <- length(ma_inclusion)
       rm(ma_inclusion)
       n
@@ -65,7 +74,7 @@ n_managedareas <- function(p, a, d) {
 #function to make a list of managed area names
 get_managed_area_names <- function(p, a, d) {
   ma_list <- with(
-    readRDS(paste0("output/tables/",get_files(p, a, d, "MA_MMYY"))),
+    readRDS(paste0("output/tables/disc/",get_files(p, a, d, "MA_MMYY"))),
     {
       unique(ManagedAreaName)
     }
@@ -75,35 +84,6 @@ get_managed_area_names <- function(p, a, d) {
 
 #results list to record managed areas for each combination
 results_list <- list()
-
-# for (parameter in all_params_short) {
-#   for (depth in all_depths) {
-#     for (activity in all_activities) {
-#       # n <- length(get_managed_area_names(parameter, activity, depth))
-#       n <- n_managedareas(parameter, activity, depth)
-#       if (n > 0) {
-#         print(n)
-#         managed_area_names <- get_managed_area_names(parameter, activity, depth)
-# 
-#         # Concatenate the managed area names into a single character vector
-#         concatenated_names <- unlist(managed_area_names)
-# 
-#         # Create a data frame for the current combination
-#         result_df <- data.frame(Parameter = parameter,
-#                                 Depth = depth,
-#                                 Activity = activity,
-#                                 ManagedAreaName = paste(concatenated_names))
-# 
-#         # Append the result data frame to the list
-#         results_list <- c(results_list, list(result_df))
-#         rm(result_df, concatenated_names, managed_area_names, n)
-# 
-#       } else {
-#         print(0)
-#       }
-#     }
-#   }
-# }
 
 for (param in all_params_short) {
   if (param == "Secchi"){
@@ -172,7 +152,7 @@ plot_theme <- theme_bw() +
 
 # Get list of managed areas to create reports for
 all_managed_areas <- unique(managed_area_df$ManagedAreaName)
-all_managed_areas <- all_managed_areas[2]
+all_managed_areas <- all_managed_areas[c(3)]
 
 # Loop through list of managed areas
 for (ma in all_managed_areas) {
@@ -192,12 +172,17 @@ for (ma in all_managed_areas) {
   for (path in output_path) {if(!dir.exists(path)){dir.create(path, recursive = TRUE)}}
   
   ### RENDERING ###
-  file_out <- paste0(ma_short,"_WC_Discrete_Report")
+  file_out <- paste0(ma_short,"_WC_Report")
   rmarkdown::render(input = "WC_Discrete2.Rmd", 
                     output_format = "pdf_document",
                     output_file = paste0(file_out, ".pdf"),
                     output_dir = output_path,
                     clean=TRUE)
+  # rmarkdown::render(input = "WC_Discrete2.Rmd",
+  #                   output_format = "html_document",
+  #                   output_file = paste0(file_out, ".html"),
+  #                   output_dir = output_path,
+  #                   clean=TRUE)
 
   unlink(paste0(output_path, "/", file_out, ".md"))
   # unlink(paste0(output_path, "/", file_out, "_files"), recursive=TRUE)

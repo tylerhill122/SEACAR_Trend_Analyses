@@ -17,6 +17,7 @@ output:
     extra_dependencies: ["float"]
     keep_md: yes
 urlcolor: blue
+geometry: "left=3cm,right=3cm"
 params:
   managedarea: ma,
   p_inc: included_params,
@@ -49,24 +50,27 @@ library(tidyr)
 library(kableExtra)
 library(glue)
 library(grid)
+library(wqtrends)
 options(scipen=999)
 ```
 
 \newpage
-# Seasonal Kendall-Tau Analysis
-Here's some info about it, how cool
+# Seasonal Kendall Tau Analysis
 
+Gets seasonal Kendall Tau statistics using the `kendallSeasonalTrendTest` from the `EnvStats` package. The `Trend` parameter is determined from a user-defined function based on the median, Senn slope, and p values from the data. Analysis modified from code created by Jason Scolaro for The Water Atlas: 
+[https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview](https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview)
+
+\newpage
 # Parameters
 
 
-
 ``` {r load_data_table function}
-
+# For loading discrete data
 # Load Data Table Function
 load_data_table <- function(p, a="All", d="All", table) {
   
   # Declaring RDS file list of respective tables
-  files <- list.files(here::here("output/tables"),pattern = "\\.rds$")
+  files <- list.files(here::here("output/tables/disc"),pattern = "\\.rds$")
   
   if (table == "data") {
     filename_string <- paste0(p,"_",table)
@@ -75,7 +79,7 @@ load_data_table <- function(p, a="All", d="All", table) {
   }
   
   # subset file list to select desired table RDS file
-  table_file <- paste0("output/tables/",str_subset(files, filename_string))
+  table_file <- paste0("output/tables/disc/",str_subset(files, filename_string))
   
   # importing RDS files
   df <- lapply(table_file, readRDS)
@@ -88,79 +92,24 @@ load_data_table <- function(p, a="All", d="All", table) {
 
 
 
-```{r data_exclusion_table function}
-# Function to create & display text table of excluded values
-data_exclusion_table <- function(data, parameter) {
+``` {r load_cont_data_table function}
+# For loading continuous data
+# Load Data Table Function
+load_cont_data_table <- function(p, table) {
   
-  # Create descriptive info for QAQCFlagCodes below plot
-  qaqc <- list("2Q","6Q","9Q","12Q")
-  qaqc_desc <- list("*2Q* - Exceeds Maximum threshold. Not verified in raw data.",
-                  "*6Q* - Within threshold tolerance",
-                  "*9Q* - Surface Analysis: Activity_Depth <= 1 meter",
-                  "*12Q* - Bottom Analysis: Total_Depth minus Activity_Depth <= 1 meters")
-  # Combine list to allow code to recall dynamically
-  qaqc_list <- setNames(as.list(qaqc_desc), qaqc)
+  # Declaring RDS file list of respective tables
+  files <- list.files(here::here("output/tables/cont"),pattern = "\\.rds$")
   
-  # Creates ResultTable to display statistics below plot
-  data_excluded <- data %>% 
-    filter(Use_In_Analysis==FALSE & ManagedAreaName==ma) %>%
-    select(ProgramID, ProgramName, ProgramLocationID, SampleDate, ResultValue, SEACAR_QAQCFlagCode, Include) %>%
-    arrange(SampleDate)
+  # subset file list to select desired table RDS file
+  table_file <- paste0("output/tables/cont/",str_subset(files, table))
   
-  # If there is excluded data, provide excluded data table
-  if (nrow(data_excluded) > 0) {
-    
-    # Gather ProgramIDs that contain excluded values
-    excluded_program_id <- unique(data_excluded$ProgramID)
-    
-    # data exclusion header
-    cat("\\newpage")
-    cat("### Excluded Data", "\n\n")
-    
-    # remove ProgramName from data-table display (some are too long)
-    data_for_table <- data_excluded %>% 
-      select(ProgramID, ProgramLocationID, SampleDate, ResultValue, SEACAR_QAQCFlagCode, Include)
-    
-    data_table <- kable(data_for_table, 
-                        format="simple", 
-                        col.names = c("ProgramID", "ProgramLocationID", "SampleDate", "Value", 
-                                      "QAQCFlagCode", "Include"), 
-                        caption=paste0("Excluded values for ", parameter)) %>%
-      kable_styling(latex_options="scale_down",
-                    position = "center")
-    
-    # Print data table
-    print(data_table)
-    
-    cat("\n **Programs containing excluded data:** \n \n")
-    
-    # Display ProgramName below data table
-    for (p_id in excluded_program_id) {
-      p_name <- unlist(unique(data_excluded %>% filter(ProgramID == p_id) %>% select(ProgramName)))
-      cat(paste0("*",p_id,"*", " - ",p_name, "  \n"))
-    }
-    
-    cat("  \n")
-    cat("  \n **SEACAR QAQC codes:**  \n \n")
-    cat("  \n")
-    
-    # list of unique flags for this parameter
-    unique_flags <- unique(data_excluded$SEACAR_QAQCFlagCode)
-    
-    # loop to add description if the corresponding QAQC code is listed above
-    for (code in names(qaqc_list)) {
-      for (flag in unique_flags) {
-        flag_codes <- unlist(strsplit(flag, split="/"))
-        if (code %in% flag_codes) {
-          cat(unlist(qaqc_list[code]), sep = '\n')
-          cat("\n")
-          break
-        }
-      }
-    }
-    
-    cat("\n \n \n")
-  }
+  # importing RDS files
+  df <- lapply(table_file, readRDS)
+  
+  # Combine all regions into 1 single output dataframe
+  output <- do.call(rbind, df)
+  
+  return(output)
 }
 
 ```
@@ -170,10 +119,10 @@ data_exclusion_table <- function(data, parameter) {
 ```{r SKT_Trendlines_ManagedArea Function}
 
 plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, parameter) {
-  
+
   MA_YM_Stats <- as.data.frame(load_data_table(p, a, d, "MA_MMYY_Stats"))
   skt_stats <- as.data.frame(load_data_table(p, a, d, "skt_stats"))
-  
+
   ### SKT STATS ###
   # Gets x and y values for starting point for trendline
   KT.Plot <- skt_stats %>%
@@ -263,193 +212,122 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
 ```
 
 
+```{r SKT_Trendlines Continuous Function}
 
-```{r plot_boxplots_function, eval = FALSE}
-
-plot_boxplots <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data) {
-  # data <- as.data.frame(load_data_table(p, a, d, "data"))
+plot_trendlines_cont <- function(p, y_labels, parameter) {
+  Mon_YM_Stats <- as.data.frame(load_cont_data_table(p, "Mon_YM_Stats"))
+  skt_stats <- as.data.frame(load_cont_data_table(p, "skt_stats"))
   
-  plot_title <- paste0(parameter,", ",activity_label, ", ",depth_label)
+  skt_stats <- skt_stats %>% filter(ManagedAreaName==ma)
   
-  # Determine upper and lower bounds of time for x-axis
-  plot_data <- data[data$SufficientData==TRUE &
-             data$ManagedAreaName==ma,]
-  year_lower <- min(plot_data$Year)
-  year_upper <- max(plot_data$Year)
+  ### SKT STATS ###
+  # Gets x and y values for starting point for trendline
+  KT.Plot <- skt_stats %>%
+    group_by(MonitoringID) %>%
+    summarize(x=decimal_date(EarliestSampleDate),
+              y=(x-EarliestYear)*SennSlope+SennIntercept)
+  # Gets x and y values for ending point for trendline
+  KT.Plot2 <- skt_stats %>%
+    group_by(MonitoringID) %>%
+    summarize(x=decimal_date(LastSampleDate),
+              y=(x-EarliestYear)*SennSlope+SennIntercept)
+  # Combines the starting and endpoints for plotting the trendline
+  KT.Plot <- bind_rows(KT.Plot, KT.Plot2)
+  rm(KT.Plot2)
+  KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$MonitoringID), ])
+  KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
   
-  # Determine upper and lower bounds of ResultValue for y-axis
-  min_RV <- min(plot_data$ResultValue)
-  mn_RV <- mean(plot_data$ResultValue[plot_data$ResultValue <
-                      quantile(data$ResultValue, 0.98)])
-  sd_RV <- sd(plot_data$ResultValue[plot_data$ResultValue <
-                    quantile(data$ResultValue, 0.98)])
-  # Sets x- and y-axis scale
-  x_scale <- ifelse(year_upper - year_lower > 30, 10, 5)
-  y_scale <- mn_RV + 4 * sd_RV
+  # Checking for missing values
+  check_ym <- Mon_YM_Stats %>%
+    filter(ManagedAreaName == ma)
   
-  ##Year plots
-  # Create plot object for auto-scaled y-axis plot
-  p1 <- ggplot(data=plot_data,
-        aes(x=Year, y=ResultValue, group=Year)) +
-    geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
-           outlier.size=3, outlier.color="#333333",
-           outlier.fill="#cccccc", outlier.alpha=0.75) +
-    labs(subtitle="Autoscale",
-      x="Year", y=y_labels) +
-    scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
-              breaks=rev(seq(year_upper,
-                    year_lower, -x_scale))) +
-    plot_theme
-  # Create plot object for y-axis scaled plot
-  p2 <- ggplot(data=plot_data,
-        aes(x=Year, y=ResultValue, group=Year)) +
-    geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
-           outlier.size=3, outlier.color="#333333",
-           outlier.fill="#cccccc", outlier.alpha=0.75) +
-    labs(subtitle="Scaled to 4x Standard Deviation",
-      x="Year", y=y_labels) +
-    ylim(min_RV, y_scale) +
-    scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
-              breaks=rev(seq(year_upper,
-                    year_lower, -x_scale))) +
-    plot_theme
-  # Create plot object for y-axis scaled plot for past 10 years
-  p3 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
-        aes(x=Year, y=ResultValue, group=Year)) +
-    geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
-           outlier.size=3, outlier.color="#333333",
-           outlier.fill="#cccccc", outlier.alpha=0.75) +
-    labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
-      x="Year", y=y_labels) +
-    ylim(min_RV, y_scale) +
-    scale_x_continuous(limits=c(year_upper - 10.5, year_upper + 1),
-              breaks=rev(seq(year_upper, year_upper - 10,-2))) +
-    plot_theme
-  # Arrange plot objects
-  Yset <- ggarrange(p1, p2, p3, ncol=1)
-  # Create plot title object
-  p0 <- ggplot() + labs(title=plot_title,
-              subtitle="By Year") +
-    plot_theme + theme(panel.border=element_blank(),
-              panel.grid.major=element_blank(),
-              panel.grid.minor=element_blank(),
-              axis.line=element_blank())
+  # unique monitoring location IDs for each managed area
+  MonIDs <- unique(check_ym$MonitoringID)
+  n <- length(MonIDs)
   
+  if (length(MonIDs) == 0){
+    print("There are no monitoring locations that qualify.")
+  } else {
+    # Begins looping through each monitoring location
+    for (id in MonIDs) {
+      # Gets data to be used in plot for monitoring location
+      plot_data <- Mon_YM_Stats[Mon_YM_Stats$MonitoringID==id,] %>% 
+        filter(ManagedAreaName==ma)
+      # Gets trendline data for monitoring location
+      KT.plot_data <- KT.Plot[KT.Plot$MonitoringID==id,]
+      #Determine max and min time (Year) for plot x-axis
+      t_min <- min(plot_data$Year)
+      t_max <- max(plot_data$YearMonthDec)
+      t_max_brk <- as.integer(round(t_max, 0))
+      t <- t_max-t_min
+      min_RV <- min(plot_data$Mean)
+      # Creates break intervals for plots based on number of years of data
+      if(t>=30){
+        # Set breaks to every 10 years if more than 30 years of data
+        brk <- -10
+      }else if(t<30 & t>=10){
+        # Set breaks to every 5 years if between 30 and 10 years of data
+        brk <- -5
+      }else if(t<10 & t>=4){
+        # Set breaks to every 2 years if between 10 and 4 years of data
+        brk <- -2
+      }else if(t<4 & t>=2){
+        # Set breaks to every year if between 4 and 2 years of data
+        brk <- -1
+      }else if(t<2){
+        # Set breaks to every year if less than 2 years of data
+        brk <- -1
+        # Sets t_max to be 1 year greater and t_min to be 1 year lower
+        # Forces graph to have at least 3 tick marks
+        t_max <- t_max+1
+        t_min <- t_min-1
+      }
+      # Get name of managed area
+      MA_name <- skt_stats$ManagedAreaName[skt_stats$MonitoringID==id]
+      # Get program location name
+      Mon_name <- paste0(skt_stats$ProgramID[skt_stats$MonitoringID==id],
+                         "\n", skt_stats$ProgramName[skt_stats$MonitoringID==id], "\n",
+                         skt_stats$ProgramLocationID[skt_stats$MonitoringID==id])
+      # Create plot object with data and trendline
+      p1 <- ggplot(data=plot_data,
+                   aes(x=YearMonthDec, y=Mean)) +
+        geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
+                   alpha=0.75) +
+        geom_line(data=KT.plot_data, aes(x=x, y=y),
+                  color="#000099", size=1.2, alpha=0.7) +
+        labs(title=paste0(MA_name, "\n", Mon_name),
+             subtitle=parameter,
+             x="Year", y=y_labels) +
+        scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
+                           breaks=seq(t_max_brk, t_min, brk)) +
+        plot_theme
+      
+      # Creates ResultTable to display statistics below plot
+      ResultTable <- skt_stats[skt_stats$MonitoringID==id, ] %>%
+        select(RelativeDepth, N_Data, N_Years, Median, Independent, tau, p,
+               SennSlope, SennIntercept, ChiSquared, pChiSquared, Trend)
+      # Create table object
+      t1 <- ggtexttable(ResultTable, rows=NULL,
+                        theme=ttheme(base_size=10)) %>%
+        tab_add_footnote(text="p < 0.00005 appear as 0 due to rounding.\n
+                            SennIntercept is intercept value at beginning of
+                            record for monitoring location",
+                         size=10, face="italic")
+      # Arrange and display plot and statistic table
+      print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
+      # Add extra space at the end to prevent the next figure from being too close
+      cat("\n \n \n") 
   
-  ## Year & Month Plots
-  # Create plot object for auto-scaled y-axis plot
-  p4 <- ggplot(data=plot_data,
-        aes(x=YearMonthDec, y=ResultValue,
-            group=YearMonth, color=as.factor(Month))) +
-    geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
-    labs(subtitle="Autoscale",
-      x="Year", y=y_labels, color="Month") +
-    scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
-              breaks=rev(seq(year_upper,
-                    year_lower, -x_scale))) +
-    plot_theme +
-    theme(legend.position="none")
-  # Create plot object for y-axis scaled plot
-  p5 <- ggplot(data=plot_data,
-        aes(x=YearMonthDec, y=ResultValue,
-            group=YearMonth, color=as.factor(Month))) +
-    geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
-    labs(subtitle="Scaled to 4x Standard Deviation",
-      x="Year", y=y_labels, color="Month") +
-    ylim(min_RV, y_scale) +
-    scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
-              breaks=rev(seq(year_upper,
-                    year_lower, -x_scale))) +
-    plot_theme +
-    theme(legend.position="top", legend.box="horizontal") +
-    guides(color=guide_legend(nrow=1))
-  # Create plot object for y-axis scaled plot for past 10 years
-  p6 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
-        aes(x=YearMonthDec, y=ResultValue,
-            group=YearMonth, color=as.factor(Month))) +
-    geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
-    labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
-      x="Year", y=y_labels, color="Month") +
-    ylim(min_RV, y_scale) +
-    scale_x_continuous(limits=c(year_upper - 10.5, year_upper + 1),
-              breaks=rev(seq(year_upper, year_upper - 10,-2))) +
-    plot_theme +
-    theme(legend.position="none")
-  # Create legend object
-  leg1 <- get_legend(p5)
-  # Arrange plots and legend
-  YMset <- ggarrange(leg1, p4, p5 + theme(legend.position="none"), p6,
-           ncol=1, heights=c(0.1, 1, 1, 1))
-  # Create plot title object
-  p00 <- ggplot() + labs(title=plot_title,
-               subtitle="By Year & Month") + plot_theme +
-    theme(panel.border=element_blank(),
-       panel.grid.major=element_blank(),
-       panel.grid.minor=element_blank(), axis.line=element_blank())
-  
-  ## Month Plots
-  # Create plot object for auto-scaled y-axis plot
-  p7 <- ggplot(data=plot_data,
-        aes(x=Month, y=ResultValue,
-            group=Month, fill=as.factor(Month))) +
-    geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
-           outlier.color="#333333", outlier.alpha=0.75) +
-    labs(subtitle="Autoscale",
-      x="Month", y=y_labels, fill="Month") +
-    scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
-    plot_theme +
-    theme(legend.position="none")
-  # Create plot object for y-axis scaled plot
-  p8 <- ggplot(data=plot_data,
-        aes(x=Month, y=ResultValue,
-            group=Month, fill=as.factor(Month))) +
-    geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
-           outlier.color="#333333", outlier.alpha=0.75) +
-    labs(subtitle="Scaled to 4x Standard Deviation",
-      x="Month", y=y_labels, fill="Month") +
-    ylim(min_RV, y_scale) +
-    scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
-    plot_theme +
-    theme(legend.position="top", legend.box="horizontal") +
-    guides(fill=guide_legend(nrow=1))
-  # Create plot object for y-axis scaled plot for past 10 years
-  p9 <- ggplot(data=plot_data[plot_data$Year >= year_upper - 10, ],
-        aes(x=Month, y=ResultValue,
-            group=Month, fill=as.factor(Month))) +
-    geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
-           outlier.color="#333333", outlier.alpha=0.75) +
-    labs(subtitle="Scaled to 4x Standard Deviation, Last 10 Years",
-      x="Month", y=y_labels, fill="Month") +
-    ylim(min_RV, y_scale) +
-    scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
-    plot_theme +
-    theme(legend.position="none")
-  # Create legend object
-  leg2 <- get_legend(p8)
-  # Arrange plots and legend
-  Mset <- ggarrange(leg2, p7, p8 + theme(legend.position="none"), p9,
-          ncol=1, heights=c(0.1, 1, 1, 1))
-  # Create title object
-  p000 <- ggplot() + labs(title=plot_title,
-             subtitle="By Month") + plot_theme +
-    theme(panel.border=element_blank(),
-       panel.grid.major=element_blank(),
-       panel.grid.minor=element_blank(), axis.line=element_blank())
-  # Arrange and display plots with titles for all combinations
-  print(ggarrange(p0, Yset, ncol=1, heights=c(0.07, 1)))
-  print(ggarrange(p00, YMset, ncol=1, heights=c(0.07, 1)))
-  print(ggarrange(p000, Mset, ncol=1, heights=c(0.07, 1, 0.7)))
-  # Add extra space at the end to prevent the next figure from being too
-  # close.
-  cat("\n \n \n")
-  
-  rm(plot_data)
-  rm(p1, p2, p3, p4, p5, p6, p7, p8, p9, p0, p00, p000, leg1, leg2,
-    Yset, YMset, Mset)
+      rm(plot_data)
+      rm(KTset, leg)
+      rm(plot_data)
+      rm(KTset, leg)
+    }
+  }
 }
 
-```
 
+```
 
 
 ```{r plot_boxplots modified function}
@@ -462,6 +340,7 @@ plot_boxplots <- function(p, a, d, activity_label, depth_label, y_labels, parame
   # Determine upper and lower bounds of time for x-axis
   plot_data <- data[data$Use_In_Analysis==TRUE &
                       data$ManagedAreaName==ma,]
+  # plot_data <- data[data$ManagedAreaName==ma,]
   year_lower <- min(plot_data$Year)
   year_upper <- max(plot_data$Year)
   
@@ -682,8 +561,11 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
 plot_vq_Scatterplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data) {
   
   data <- data %>% filter(!is.na(ValueQualifier)) %>% filter(ManagedAreaName == ma)
+  # data <- data %>% filter(Include == FALSE) %>% filter(ManagedAreaName == ma)
   
-  if (nrow(data) != 0) {
+  if (nrow(data) == 0) {
+    invisible()
+  } else {
 
     inc_H <- ifelse(p=="pH" | p=="DO" |
                       p=="DOS", TRUE, FALSE)
@@ -731,9 +613,7 @@ plot_vq_Scatterplot <- function(p, a, d, activity_label, depth_label, y_labels, 
       scale_fill <- c("U"= "#00BFC4")
     }
     
-    p1 <- ggplot(data=data[data$ManagedAreaName==ma&
-                             data$Include==TRUE, ],
-               aes(x=SampleDate, y=ResultValue, fill=ValueQualifier)) + #fill = VQ_Plot
+    p1 <- ggplot(data=data, aes(x=SampleDate, y=ResultValue, fill=VQ_Plot)) + #fill = VQ_Plot
       geom_point(shape=21, size=3, color="#333333", alpha=0.75) +
       labs(title=paste0(ma),
            subtitle=paste0("Qualified Values for ",parameter), x="Year",
@@ -753,6 +633,88 @@ plot_vq_Scatterplot <- function(p, a, d, activity_label, depth_label, y_labels, 
 
 
 
+```{r data_exclusion_table function}
+# Function to create & display text table of excluded values
+data_exclusion_table <- function(data, parameter) {
+  
+  # Create descriptive info for QAQCFlagCodes below plot
+  qaqc <- list("2Q","6Q","9Q","12Q")
+  qaqc_desc <- list("*2Q* - Exceeds Maximum threshold. Not verified in raw data.",
+                  "*6Q* - Within threshold tolerance",
+                  "*9Q* - Surface Analysis: Activity_Depth <= 1 meter",
+                  "*12Q* - Bottom Analysis: Total_Depth minus Activity_Depth <= 1 meters")
+  # Combine list to allow code to recall dynamically
+  qaqc_list <- setNames(as.list(qaqc_desc), qaqc)
+  
+  # Creates ResultTable to display statistics below plot
+  data_excluded <- data %>% 
+    filter(Use_In_Analysis==FALSE & ManagedAreaName==ma) %>%
+    select(ProgramID, ProgramName, ProgramLocationID, SampleDate, ResultValue, 
+           SEACAR_QAQCFlagCode, Include, ValueQualifier) %>%
+    arrange(SampleDate)
+  
+  # If there is excluded data, provide excluded data table
+  if (nrow(data_excluded) > 0) {
+    
+    # Gather ProgramIDs that contain excluded values
+    excluded_program_id <- unique(data_excluded$ProgramID)
+    
+    # data exclusion header
+    cat("\\newpage")
+    cat("### Excluded Data", "\n\n")
+    
+    # remove ProgramName from data-table display (some are too long)
+    data_for_table <- data_excluded %>% 
+      select(ProgramID, ProgramLocationID, SampleDate, ResultValue, SEACAR_QAQCFlagCode, Include, 
+             ValueQualifier)
+    
+    data_table <- kable(data_for_table, 
+                        format="latex", 
+                        col.names = c("ProgramID", "ProgramLocationID", "SampleDate", "Value", 
+                                      "QAQCFlagCode", "Include", "ValueQualifier"),
+                        caption=paste0("Excluded values for ", parameter)) %>%
+      kable_styling(latex_options="scale_down",
+                    position = "left",
+                    full_width = FALSE)
+    
+    # Print data table
+    print(data_table)
+    
+    cat("\n **Programs containing excluded data:** \n \n")
+    
+    # Display ProgramName below data table
+    for (p_id in excluded_program_id) {
+      p_name <- unlist(unique(data_excluded %>% filter(ProgramID == p_id) %>% select(ProgramName)))
+      cat(paste0("*",p_id,"*", " - ",p_name, "  \n"))
+    }
+    
+    cat("  \n")
+    cat("  \n **SEACAR QAQC codes:**  \n \n")
+    cat("  \n")
+    
+    # list of unique flags for this parameter
+    unique_flags <- unique(data_excluded$SEACAR_QAQCFlagCode)
+    
+    # loop to add description if the corresponding QAQC code is listed above
+    for (code in names(qaqc_list)) {
+      for (flag in unique_flags) {
+        flag_codes <- unlist(strsplit(flag, split="/"))
+        if (code %in% flag_codes) {
+          cat(unlist(qaqc_list[code]), sep = '\n')
+          cat("\n")
+          break
+        }
+      }
+    }
+    
+    cat("\n \n \n")
+  }
+}
+
+```
+
+
+
 ```{r dynamic_variables}
 # Create conditions to determine if plots/text are shown
 dynamic_vars <- list()
@@ -764,12 +726,17 @@ for (param in p_inc) {
 ```
 
 
+
 ```{r Plotting, warning=FALSE, fig.height=9, fig.width=10, results="asis"}
 
 # Start looping for each parameter
 for (param in p_inc) {
   
+  # load discrete data
   data <- as.data.frame(load_data_table(param, table="data"))
+  
+  # load cont data
+  cont_data <- as.data.frame(load_cont_data_table(param, table="data"))
   
   # getting full parameter & unit names
   parameter <- unique(data$ParameterName)
@@ -783,7 +750,6 @@ for (param in p_inc) {
     cat("\\newpage")
     subtitle <- glue("## {parameter}")
     cat(subtitle, "\n\n")
-    cat("Parameter", parameter, "is included.\n\n")
   }
   
   #Because secchi depth is does not have a bottom measurement, this statement skips
@@ -821,11 +787,39 @@ for (param in p_inc) {
     depth_label <- "Surface"
   }
   
+  # Exception to include TN calculation logic
+  # Loads external .Rmd for ease of formatting
+  if (param == "TN") {
+    cat(knitr::knit_child('TN_Calculation_Description.Rmd', quiet=TRUE))
+    cat("\\newpage")
+  }
+  
+  ######################
+  ### Begin Plotting ###
+  ######################
+  
+  ######################
+  ### SKT TRENDPLOTS ###
+  ######################
+  
   # SKT Header (### makes sub-heading)
-  cat(glue("### Seasonal Kendall-Tau Trend Analysis"), "\n\n")
+  cat(glue("### Discrete Seasonal Kendall-Tau Trend Analysis"), "\n\n")
 
-  # Produce SKT-trendplots
+  # Produce discrete SKT-trendplots
   plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter)
+  
+  # Plot trendplots for Continuous data
+  if (param %in% cont_params_short) {
+    cat(glue("### Continuous Seasonal Kendall-Tau Trend Analysis"), "\n\n")
+    plot_trendlines_cont(param, y_labels, parameter)
+  }
+  
+  #################
+  ### BOX PLOTS ###
+  #################
+  
+  # SKT Header (### makes sub-heading)
+  cat(glue("### Discrete Year - Month Analysis"), "\n\n")
   
   # Produce boxplots
   plot_boxplots(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
@@ -837,7 +831,7 @@ for (param in p_inc) {
   data_exclusion_table(data, parameter)
   
   # Produce VQ-scatter-plots
-  plot_vq_Scatterplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
+  # plot_vq_Scatterplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
 }
 
 ```
