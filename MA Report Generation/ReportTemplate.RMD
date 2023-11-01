@@ -27,6 +27,10 @@ library(gridExtra)
 library(ggpubr)
 library(glue)
 library(kableExtra)
+library(leaflet)
+library(mapview)
+library(magick)
+library(cowplot)
 options(scipen=999)
 knitr::opts_chunk$set(
    warning=FALSE,
@@ -45,6 +49,49 @@ cat(knitr::knit_child('snippet.Rmd', quiet=TRUE))
 
 ```
 
+
+```{r station_maps function}
+
+station_maps <- function(ma){
+  
+  map_output <- "output/maps/"
+  
+  # create basemap
+  map <- leaflet() %>% addTiles()
+  
+  df_coord <- coordinates_df %>%
+    filter(ManagedAreaName == ma) %>%
+    select(ProgramLocationID, OriginalLatitude, OriginalLongitude)
+  
+  for (i in 1:nrow(df_coord)){
+    lati <- df_coord$OriginalLatitude[i]
+    long <- df_coord$OriginalLongitude[i]
+    sta_name <- df_coord$ProgramLocationID[i]
+    map <- map %>%
+      addMarkers(lng=long, lat=lati, label = sta_name,
+                 labelOptions = labelOptions(
+                   noHide = T, 
+                   direction = "bottom",
+                   style = list("font-family" = "serif",
+                                "font-style" = "italic",
+                                "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+                                "font-size" = "12px",
+                                "border-color" = "rgba(0,0,0,0.5)"
+                   )))
+  }
+  
+  map_out <- paste0(map_output, ma_abrev, ".png")
+  
+  # save file as png
+  mapshot(map, file = map_out)
+  
+  # draw .png with ggplot
+  p1 <- ggdraw() + draw_image(map_out, scale = 1)
+  
+  print(plot_grid(p1))
+}
+
+```
 
 
 ```{r plotting WQ_Discrete, warning=FALSE, fig.height=9, fig.width=10, results="asis"}
@@ -140,10 +187,12 @@ if(in_discrete){
 ```
 
 
-
-```{r plotting WQ_Continuous, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval = FALSE}
+```{r plotting WQ_Continuous, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval = TRUE}
 
 in_continuous <- TRUE
+
+# extract region for each MA to determine which cont. file to load
+region <- MA_All %>% filter(ManagedAreaName == ma) %>% pull(Region)
 
 if(in_continuous){
   
@@ -168,6 +217,9 @@ if(in_continuous){
     # run first time only to display stations
     if (i==1) {
       station_count_table(cont_data)
+      # Station maps
+      station_maps(ma)
+      cat("  \n")
     }
     
     # getting full parameter & unit names
@@ -193,7 +245,7 @@ if(in_continuous){
 
 
 
-```{r plotting SAV, warning=FALSE, fig.height=9, fig.width=10, results="asis"}
+```{r plotting SAV, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval=FALSE}
 
 
 if(in_sav){
@@ -206,7 +258,8 @@ if(in_sav){
   cat("  \n")
   plot_sav_barplot(ma_abrev)
   cat("  \n")
-  plot_sav_gam(ma_short)
+  #GAM
+  ggplot_gam(ma, "combined")
   cat("  \n")
 }
 
