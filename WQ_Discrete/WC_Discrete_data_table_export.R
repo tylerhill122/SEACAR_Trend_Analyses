@@ -14,10 +14,10 @@ table_types <- c("MA_MMYY_Stats","MA_Mo_Stats","MA_Yr_Stats","MonLoc_Stats","VQS
 create_data_table <- function(table) {
   
   # get list of files
-  files <- list.files(here::here("output/tables"),pattern = "\\.rds$")
+  files <- list.files(here::here("output/tables/disc/"),pattern = "\\.rds$")
   
   # select for given table (KT, MonLoc, etc)
-  table_file <- paste0("output/tables/",str_subset(files, table))
+  table_file <- paste0("output/tables/disc/",str_subset(files, table))
   
   # create data frame by importing RDS files
   df <- lapply(table_file, readRDS)
@@ -34,7 +34,8 @@ create_data_table <- function(table) {
   # Execute condition and filter dataframe, export separate excel file
   if (table == 'VQSummary'){
     filtered_output <- output[vq_condition, ]
-    openxlsx::write.xlsx(filtered_output, here::here(paste0("output/tables/",table,"_Qualified.xlsx")), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
+    # openxlsx::write.xlsx(filtered_output, here::here(paste0("output/tables/disc/",table,"_Qualified.xlsx")), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
+    fwrite(filtered_output, here::here(paste0("output/tables/disc/",table,"_Qualified.txt")), sep="|")
   }
   
   # Get list of managed areas for each output file
@@ -54,21 +55,28 @@ create_data_table <- function(table) {
     ma_output <- output %>% filter(ManagedAreaName == ma)
     
     # write each output to excel for each managed area
-    openxlsx::write.xlsx(ma_output, here::here(paste0(output_path,"/",table,".xlsx")), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
+    # openxlsx::write.xlsx(ma_output, here::here(paste0(output_path,"/",table,".xlsx")), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
+    fwrite(ma_output, here::here(paste0(output_path,"/",table,".txt")), sep="|")
     
-    print(paste0("Wrote ", table, ".xlsx to file for ", ma))
+    print(paste0("Wrote ", table, ".txt to file for ", ma))
     
     # Export separate VQ summary file where VQ values > 0 for each managed area
     if (table == 'VQSummary'){
       ma_filtered_output <- filtered_output %>% filter(ManagedAreaName == ma)
-      openxlsx::write.xlsx(ma_filtered_output, here::here(paste0(output_path,"/",table,"_Qualified.xlsx")), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
+      if (nrow(ma_filtered_output) > 0) {
+        # openxlsx::write.xlsx(ma_filtered_output, here::here(paste0(output_path,"/",table,"_Qualified.xlsx")), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
+        fwrite(ma_filtered_output, here::here(paste0(output_path,"/",table,"_Qualified.txt")), sep="|")
+      } else {
+        print(paste0("NO Qualified Values for ", ma))
+      }
     }
   }
   
   # write overall output for all managed areas to excel file for internal use
-  openxlsx::write.xlsx(output, here::here(paste0("output/tables/",table,".xlsx")), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
+  # openxlsx::write.xlsx(output, here::here(paste0("output/tables/",table,".xlsx")), colNames = c(TRUE, TRUE), colWidths = c("auto", "auto"), firstRow = c(TRUE, TRUE))
+  fwrite(output, here::here(paste0("output/tables/disc/",table,".txt")), sep="|")
   
-  print(paste0("Wrote ", table, ".xlsx to file"))
+  print(paste0("Wrote ", table, ".txt to file"))
   
 }
 

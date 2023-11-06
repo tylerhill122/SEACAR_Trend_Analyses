@@ -24,7 +24,7 @@ params:
   a_inc: included_acts,
   d_inc: included_depths
 title: '`r paste(ma)`'
-subtitle: '`r paste("SEACAR Discrete Water Quality Analysis")`'
+subtitle: '`r paste("SEACAR Water Quality Analysis")`'
 ---
 
 ```{r setup, include=FALSE} 
@@ -50,18 +50,26 @@ library(tidyr)
 library(kableExtra)
 library(glue)
 library(grid)
-library(wqtrends)
+library(stringr)
 options(scipen=999)
 ```
 
 \newpage
 # Seasonal Kendall Tau Analysis
 
-Gets seasonal Kendall Tau statistics using the `kendallSeasonalTrendTest` from the `EnvStats` package. The `Trend` parameter is determined from a user-defined function based on the median, Senn slope, and p values from the data. Analysis modified from code created by Jason Scolaro for The Water Atlas: 
-[https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview](https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview)
+Gets seasonal Kendall Tau statistics using the `kendallSeasonalTrendTest` from the `EnvStats` package. The `Trend` parameter is determined from a user-defined function based on the median, Senn slope, and p values from the data. Analysis modified from code created by Jason Scolaro for the [USF Water Atlas](https://sarasota.wateratlas.usf.edu/water-quality-trends/#analysis-overview)  
 
-\newpage
-# Parameters
+A significant result for the seasonal Kendall test indicates a monotonic increasing or decreasing trend across all seasons. The trend slope estimate is called 
+the Sen slope, or the Theil-Sen estimator, and is calculated as the median of the slopes between all pairs of points within each season. The Sen intercept was
+calculated as the median of *y – mx* for all year-indicator value pairs in the time series, where *y* is the indicator value, *m* is the Sen slope, and *x* is 
+the year corresponding with indicator value *y*.
+
+```{r, results='asis'}
+# Paste in descriptive snippet to provide VQ & threshold filtering info
+cat(knitr::knit_child('snippet.Rmd', quiet=TRUE))
+```
+
+
 
 
 ``` {r load_data_table function}
@@ -95,21 +103,19 @@ load_data_table <- function(p, a="All", d="All", table) {
 ``` {r load_cont_data_table function}
 # For loading continuous data
 # Load Data Table Function
-load_cont_data_table <- function(p, table) {
+load_cont_data_table <- function(param, region, table) {
   
   # Declaring RDS file list of respective tables
   files <- list.files(here::here("output/tables/cont"),pattern = "\\.rds$")
+  file_path <- paste0("_",param,"_", region,"_", table) 
   
   # subset file list to select desired table RDS file
-  table_file <- paste0("output/tables/cont/",str_subset(files, table))
+  table_file <- paste0("output/tables/cont/",str_subset(files, file_path))
   
   # importing RDS files
-  df <- lapply(table_file, readRDS)
+  df <- readRDS(table_file)
   
-  # Combine all regions into 1 single output dataframe
-  output <- do.call(rbind, df)
-  
-  return(output)
+  return(df)
 }
 
 ```
@@ -212,123 +218,6 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
 ```
 
 
-```{r SKT_Trendlines Continuous Function}
-
-plot_trendlines_cont <- function(p, y_labels, parameter) {
-  Mon_YM_Stats <- as.data.frame(load_cont_data_table(p, "Mon_YM_Stats"))
-  skt_stats <- as.data.frame(load_cont_data_table(p, "skt_stats"))
-  
-  skt_stats <- skt_stats %>% filter(ManagedAreaName==ma)
-  
-  ### SKT STATS ###
-  # Gets x and y values for starting point for trendline
-  KT.Plot <- skt_stats %>%
-    group_by(MonitoringID) %>%
-    summarize(x=decimal_date(EarliestSampleDate),
-              y=(x-EarliestYear)*SennSlope+SennIntercept)
-  # Gets x and y values for ending point for trendline
-  KT.Plot2 <- skt_stats %>%
-    group_by(MonitoringID) %>%
-    summarize(x=decimal_date(LastSampleDate),
-              y=(x-EarliestYear)*SennSlope+SennIntercept)
-  # Combines the starting and endpoints for plotting the trendline
-  KT.Plot <- bind_rows(KT.Plot, KT.Plot2)
-  rm(KT.Plot2)
-  KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$MonitoringID), ])
-  KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
-  
-  # Checking for missing values
-  check_ym <- Mon_YM_Stats %>%
-    filter(ManagedAreaName == ma)
-  
-  # unique monitoring location IDs for each managed area
-  MonIDs <- unique(check_ym$MonitoringID)
-  n <- length(MonIDs)
-  
-  if (length(MonIDs) == 0){
-    print("There are no monitoring locations that qualify.")
-  } else {
-    # Begins looping through each monitoring location
-    for (id in MonIDs) {
-      # Gets data to be used in plot for monitoring location
-      plot_data <- Mon_YM_Stats[Mon_YM_Stats$MonitoringID==id,] %>% 
-        filter(ManagedAreaName==ma)
-      # Gets trendline data for monitoring location
-      KT.plot_data <- KT.Plot[KT.Plot$MonitoringID==id,]
-      #Determine max and min time (Year) for plot x-axis
-      t_min <- min(plot_data$Year)
-      t_max <- max(plot_data$YearMonthDec)
-      t_max_brk <- as.integer(round(t_max, 0))
-      t <- t_max-t_min
-      min_RV <- min(plot_data$Mean)
-      # Creates break intervals for plots based on number of years of data
-      if(t>=30){
-        # Set breaks to every 10 years if more than 30 years of data
-        brk <- -10
-      }else if(t<30 & t>=10){
-        # Set breaks to every 5 years if between 30 and 10 years of data
-        brk <- -5
-      }else if(t<10 & t>=4){
-        # Set breaks to every 2 years if between 10 and 4 years of data
-        brk <- -2
-      }else if(t<4 & t>=2){
-        # Set breaks to every year if between 4 and 2 years of data
-        brk <- -1
-      }else if(t<2){
-        # Set breaks to every year if less than 2 years of data
-        brk <- -1
-        # Sets t_max to be 1 year greater and t_min to be 1 year lower
-        # Forces graph to have at least 3 tick marks
-        t_max <- t_max+1
-        t_min <- t_min-1
-      }
-      # Get name of managed area
-      MA_name <- skt_stats$ManagedAreaName[skt_stats$MonitoringID==id]
-      # Get program location name
-      Mon_name <- paste0(skt_stats$ProgramID[skt_stats$MonitoringID==id],
-                         "\n", skt_stats$ProgramName[skt_stats$MonitoringID==id], "\n",
-                         skt_stats$ProgramLocationID[skt_stats$MonitoringID==id])
-      # Create plot object with data and trendline
-      p1 <- ggplot(data=plot_data,
-                   aes(x=YearMonthDec, y=Mean)) +
-        geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
-                   alpha=0.75) +
-        geom_line(data=KT.plot_data, aes(x=x, y=y),
-                  color="#000099", size=1.2, alpha=0.7) +
-        labs(title=paste0(MA_name, "\n", Mon_name),
-             subtitle=parameter,
-             x="Year", y=y_labels) +
-        scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
-                           breaks=seq(t_max_brk, t_min, brk)) +
-        plot_theme
-      
-      # Creates ResultTable to display statistics below plot
-      ResultTable <- skt_stats[skt_stats$MonitoringID==id, ] %>%
-        select(RelativeDepth, N_Data, N_Years, Median, Independent, tau, p,
-               SennSlope, SennIntercept, ChiSquared, pChiSquared, Trend)
-      # Create table object
-      t1 <- ggtexttable(ResultTable, rows=NULL,
-                        theme=ttheme(base_size=10)) %>%
-        tab_add_footnote(text="p < 0.00005 appear as 0 due to rounding.\n
-                            SennIntercept is intercept value at beginning of
-                            record for monitoring location",
-                         size=10, face="italic")
-      # Arrange and display plot and statistic table
-      print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
-      # Add extra space at the end to prevent the next figure from being too close
-      cat("\n \n \n") 
-  
-      rm(plot_data)
-      rm(KTset, leg)
-      rm(plot_data)
-      rm(KTset, leg)
-    }
-  }
-}
-
-
-```
-
 
 ```{r plot_boxplots modified function}
 
@@ -338,7 +227,7 @@ plot_boxplots <- function(p, a, d, activity_label, depth_label, y_labels, parame
   plot_title <- paste0(parameter,", ",activity_label, ", ",depth_label)
   
   # Determine upper and lower bounds of time for x-axis
-  plot_data <- data[data$Use_In_Analysis==TRUE &
+  plot_data <- data[data$Include==TRUE &
                       data$ManagedAreaName==ma,]
   # plot_data <- data[data$ManagedAreaName==ma,]
   year_lower <- min(plot_data$Year)
@@ -419,14 +308,243 @@ plot_boxplots <- function(p, a, d, activity_label, depth_label, y_labels, parame
 
 
 
+```{r plot_all continuous function}
+
+plot_cont <- function(p, y_labels, parameter, cont_data) {
+  data <- cont_data %>% filter(ManagedAreaName == ma)
+  
+  Mon_YM_Stats <- as.data.frame(load_cont_data_table(p, region, "Mon_YM_Stats"))
+  skt_stats <- as.data.frame(load_cont_data_table(p, region, "skt_stats"))
+  
+  skt_stats <- skt_stats %>% 
+    filter(ManagedAreaName==ma)
+  
+  # Checking for missing values
+  Mon_YM_Stats <- Mon_YM_Stats %>%
+    filter(ManagedAreaName == ma & ParameterName == parameter)
+  
+  ### SKT STATS ###
+  # Gets x and y values for starting point for trendline
+  KT.Plot <- skt_stats %>%
+    group_by(MonitoringID) %>%
+    summarize(x=decimal_date(EarliestSampleDate),
+              y=(x-EarliestYear)*SennSlope+SennIntercept)
+  # Gets x and y values for ending point for trendline
+  KT.Plot2 <- skt_stats %>%
+    group_by(MonitoringID) %>%
+    summarize(x=decimal_date(LastSampleDate),
+              y=(x-EarliestYear)*SennSlope+SennIntercept)
+  # Combines the starting and endpoints for plotting the trendline
+  KT.Plot <- bind_rows(KT.Plot, KT.Plot2)
+  rm(KT.Plot2)
+  KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$MonitoringID), ])
+  KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
+  
+  # unique monitoring location IDs for each managed area
+  MonIDs <- unique(data$MonitoringID)
+  n <- length(MonIDs)
+  
+  if (length(MonIDs) == 0){
+    print("There are no monitoring locations that qualify.")
+  } else {
+    # Begins looping through each monitoring location
+    for (id in MonIDs) {
+      
+      ##################
+      ### TRENDPLOTS ###
+      ##################
+      
+      # Gets data to be used in plot for monitoring location
+      plot_data <- Mon_YM_Stats[Mon_YM_Stats$MonitoringID==id,]
+      
+      if (nrow(plot_data) > 0) {
+        # Gets trendline data for monitoring location
+        KT.plot_data <- KT.Plot[KT.Plot$MonitoringID==id,]
+        #Determine max and min time (Year) for plot x-axis
+        t_min <- min(plot_data$Year)
+        t_max <- max(plot_data$YearMonthDec)
+        t_max_brk <- as.integer(round(t_max, 0))
+        t <- t_max-t_min
+        min_RV <- min(plot_data$Mean)
+        # Creates break intervals for plots based on number of years of data
+        if(t>=30){
+          # Set breaks to every 10 years if more than 30 years of data
+          brk <- -10
+        }else if(t<30 & t>=10){
+          # Set breaks to every 5 years if between 30 and 10 years of data
+          brk <- -5
+        }else if(t<10 & t>=4){
+          # Set breaks to every 2 years if between 10 and 4 years of data
+          brk <- -2
+        }else if(t<4 & t>=2){
+          # Set breaks to every year if between 4 and 2 years of data
+          brk <- -1
+        }else if(t<2){
+          # Set breaks to every year if less than 2 years of data
+          brk <- -1
+          # Sets t_max to be 1 year greater and t_min to be 1 year lower
+          # Forces graph to have at least 3 tick marks
+          t_max <- t_max+1
+          t_min <- t_min-1
+        }
+        # Get name of managed area
+        MA_name <- skt_stats$ManagedAreaName[skt_stats$MonitoringID==id]
+        # Get program location name
+        Mon_name <- paste0(skt_stats$ProgramID[skt_stats$MonitoringID==id],
+                           "\n", skt_stats$ProgramName[skt_stats$MonitoringID==id], "\n",
+                           skt_stats$ProgramLocationID[skt_stats$MonitoringID==id])
+        mon_name_short <- skt_stats$ProgramLocationID[skt_stats$MonitoringID==id]
+        # Create plot object with data and trendline
+        p1 <- ggplot(data=plot_data,
+                     aes(x=YearMonthDec, y=Mean)) +
+          geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
+                     alpha=0.75) +
+          geom_line(data=KT.plot_data, aes(x=x, y=y),
+                    color="#000099", size=1.2, alpha=0.7) +
+          labs(title=paste0(MA_name, "\n", Mon_name),
+               subtitle=parameter,
+               x="Year", y=y_labels) +
+          scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
+                             breaks=seq(t_max_brk, t_min, brk)) +
+          plot_theme
+        
+        # Creates ResultTable to display statistics below plot
+        ResultTable <- skt_stats[skt_stats$MonitoringID==id, ] %>%
+          select(RelativeDepth, N_Data, N_Years, Median, Independent, tau, p,
+                 SennSlope, SennIntercept, ChiSquared, pChiSquared, Trend)
+        # Create table object
+        t1 <- ggtexttable(ResultTable, rows=NULL,
+                          theme=ttheme(base_size=10)) %>%
+          tab_add_footnote(text="p < 0.00005 appear as 0 due to rounding.\n
+                              SennIntercept is intercept value at beginning of
+                              record for monitoring location",
+                           size=10, face="italic")
+        
+        ### Monitoring Station Name Label ###
+        mon_title <- glue("### {mon_name_short}")
+        cat(mon_title, "\n\n")
+        
+        # Arrange and display plot and statistic table
+        print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
+        # Add extra space at the end to prevent the next figure from being too close
+        cat("\n \n \n")
+      }
+      
+      ################
+      ### BOXPLOTS ###
+      ################
+      
+      plot_data <- data %>% 
+        filter(Include == TRUE, MonitoringID == id)
+      
+      if (nrow(plot_data) > 0) {
+        
+        # Determine upper and lower bounds of time for x-axis
+        year_lower <- min(plot_data$Year)
+        year_upper <- max(plot_data$Year)
+        
+        # Determine upper and lower bounds of ResultValue for y-axis
+        min_RV <- min(plot_data$ResultValue)
+        mn_RV <- mean(plot_data$ResultValue[plot_data$ResultValue <
+                                              quantile(data$ResultValue, 0.98)])
+        sd_RV <- sd(plot_data$ResultValue[plot_data$ResultValue <
+                                            quantile(data$ResultValue, 0.98)])
+        
+        # Sets x- and y-axis scale
+        x_scale <- ifelse(year_upper - year_lower > 30, 10, 5)
+        y_scale <- mn_RV + 4 * sd_RV
+        
+        # Gets managed area name for title
+        MA_name <- unique(data$ManagedAreaName[data$MonitoringID==id])
+        
+        # Gets program location name for title
+        Mon_name <- unique(paste0(data$ProgramID[data$MonitoringID==id],
+                                  "\n", data$ProgramName[data$MonitoringID==id], "\n",
+                                  data$ProgramLocationID[data$MonitoringID==id]))
+        
+        ##Year plots
+        # Create plot object for auto-scaled y-axis plot
+        p1 <- ggplot(data=plot_data,
+                     aes(x=Year, y=ResultValue, group=Year)) +
+          geom_boxplot(color="#333333", fill="#cccccc", outlier.shape=21,
+                       outlier.size=3, outlier.color="#333333",
+                       outlier.fill="#cccccc", outlier.alpha=0.75) +
+          labs(subtitle="By Year",
+               x="Year", y=y_labels) +
+          scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+                             breaks=rev(seq(year_upper,
+                                            year_lower, -x_scale))) +
+          plot_theme
+        
+        ## Year & Month Plots
+        p4 <- ggplot(data=plot_data,
+                     aes(x=YearMonthDec, y=ResultValue,
+                         group=YearMonth, color=as.factor(Month))) +
+          geom_boxplot(fill="#cccccc", outlier.size=1.5, outlier.alpha=0.75) +
+          labs(subtitle="By Year and Month",
+               x="Year", y=y_labels, color="Month") +
+          scale_x_continuous(limits=c(year_lower - 1, year_upper + 1),
+                             breaks=rev(seq(year_upper,
+                                            year_lower, -x_scale))) +
+          plot_theme +
+          theme(legend.position="none")
+        
+        ## Month Plots
+        # Create plot object for auto-scaled y-axis plot
+        p7 <- ggplot(data=plot_data,
+                     aes(x=Month, y=ResultValue,
+                         group=Month, fill=as.factor(Month))) +
+          geom_boxplot(color="#333333", outlier.shape=21, outlier.size=3,
+                       outlier.color="#333333", outlier.alpha=0.75) +
+          labs(subtitle="By Month",
+               x="Month", y=y_labels, fill="Month") +
+          scale_x_continuous(limits=c(0, 13), breaks=seq(3, 12, 3)) +
+          plot_theme +
+          theme(legend.position="none",
+                axis.text.x=element_text(angle = 0, hjust = 1))
+        
+        set <- ggarrange(p1 + rremove("ylab"), p4 + rremove("ylab"), p7 + rremove("ylab"), ncol=1)
+        
+        # Create title object
+        p0 <- ggplot() + labs(title=Mon_name) + 
+          plot_theme +
+          theme(panel.border=element_blank(),
+                panel.grid.major=element_blank(),
+                panel.grid.minor=element_blank(), 
+                axis.line=element_blank())
+        
+        annotate_figure(p0, left = textGrob(y_labels, rot = 90, vjust = 1, gp = gpar(cex = 1.3)))
+        
+        # Arrange title on plots
+        Yset <- ggarrange(p0, set, ncol=1, heights=c(0.07, 1))
+        Yset_annotated <- annotate_figure(Yset,
+                                          left = text_grob(y_labels, rot = 90, family = "Arial", size = 10))
+        
+        print(Yset_annotated)
+        
+        cat("\n \n \n")
+        
+        rm(plot_data)
+        rm(p1, p4, p7, p0, Yset, Yset_annotated)
+      }
+
+    }
+  }
+}
+
+```
+
+
+
 ```{r VQ_Summary Barplot function, results='asis'}
 
-plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter) {
+plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data) {
+  
   VQ_Summary <- as.data.frame(load_data_table(p, a, d, "VQSummary"))
   
   # Filter and subset dataframe for managed area
   ma_vq_summary <- VQ_Summary %>% filter(ManagedAreaName == ma)
-
+  
   # VQSummary conditions for qualifying VQ values
   vq_condition <- ma_vq_summary$N_H !=0 | ma_vq_summary$N_I != 0 | ma_vq_summary$N_Q != 0 | ma_vq_summary$N_S != 0 | ma_vq_summary$N_U != 0
   
@@ -435,6 +553,7 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
   
   # check to see if there are any qualifying VQ values, if not, skip
   if (nrow(filtered_vq) != 0) {
+    
     # select respective perc_vq columns
     plot_data <- filtered_vq %>% 
       select(Year, N_Total, N_H, perc_H, N_I, perc_I, N_Q, perc_Q, N_S, perc_S, N_U, perc_U) %>%
@@ -505,6 +624,23 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
     cat("  \n")
     print(vq_table)
     
+    # list of programs with VQ data
+    vq <- data %>% 
+      filter(Include==TRUE, ManagedAreaName==ma, ValueQualifier!="NA") %>%
+      select(ProgramID, ProgramName)
+    
+    vq_program_id <- unique(vq$ProgramID)
+
+    cat("\n **Programs containing Value Qualified data:** \n \n")
+
+    # Display ProgramName below data table
+    for (p_id in vq_program_id) {
+      p_name <- unlist(unique(vq %>% filter(ProgramID == p_id) %>% select(ProgramName)))
+      cat(paste0("*",p_id,"*", " - ",p_name, "  \n"))
+    }
+    
+    cat("  \n")
+    
     # add description for each VQ shown
     vq <- list("N_H","N_I","N_Q","N_S","N_U")
     vq_desc <- list("H - Value based on field kit determiniation; results may not be accurate. 
@@ -541,10 +677,6 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
       }
     }
     
-    # Add extra space at the end to prevent the next figure from being too
-    # close.
-    cat("\n \n \n")
-    
     rm(VQ_Summary, filtered_vq, plot_data, plot_data_long, vq_plot)
   } else {
     cat(paste0("There are no qualifying Value Qualifiers for ", parameter, " in ", ma))
@@ -556,167 +688,8 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
 
 
 
-```{r VQ-scatterplot}
-
-plot_vq_Scatterplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data) {
-  
-  data <- data %>% filter(!is.na(ValueQualifier)) %>% filter(ManagedAreaName == ma)
-  # data <- data %>% filter(Include == FALSE) %>% filter(ManagedAreaName == ma)
-  
-  if (nrow(data) == 0) {
-    invisible()
-  } else {
-
-    inc_H <- ifelse(p=="pH" | p=="DO" |
-                      p=="DOS", TRUE, FALSE)
-    
-    if (inc_H==TRUE){
-      # Remove any Value qualifiers that aren't H or U
-      data$VQ_Plot <- gsub("[^HU]+", "", data$VQ_Plot)
-      # Standardize order of qualifiers. Puts UH as HU
-      data$VQ_Plot <- gsub("UH", "HU", data$VQ_Plot)
-      # Remove anything from ValueQualifier that isn't U from programs and that
-      # aren't ProgramID 476
-      data$VQ_Plot[na.omit(data$ProgramID!=476)] <-
-        gsub("[^U]+", "", data$VQ_Plot[na.omit(data$ProgramID!=476)])
-      # Changes blank character strings to NA
-      data$VQ_Plot[data$VQ_Plot==""] <- NA
-      
-      # If Parameter is Secchi_Depth
-    } else if (p=="Secchi") {
-      # Count the number of S ValueQualifier
-      count_S <- length(grep("S", data$ValueQualifier))
-      # Get percentage of S ValueQualifier
-      perc_S <- 100*count_S/length(data$ValueQualifier)
-      # Remove anything from ValueQualifier that isn't S or U
-      data$VQ_Plot <- gsub("[^SU]+", "", data$VQ_Plot)
-      # Change all ValueQualifier that are US to be US, standardizes codes
-      data$VQ_Plot <- gsub("US", "SU", data$VQ_Plot)
-      # Sets any blank character ValueQualifier to be NA
-      data$VQ_Plot[data$VQ_Plot==""] <- NA
-  
-      # For all other scenarios
-    } else{
-      # Remove all ValueQualifier except U
-      data$VQ_Plot <- gsub("[^U]+", "", data$VQ_Plot)
-      # Sets any blank character ValueQualifier to be NA
-      data$VQ_Plot[data$VQ_Plot==""] <- NA
-      # Prints the number and percentage of I, Q, U
-    }
-    
-    
-    if(inc_H==TRUE){
-      scale_fill <- c("H"= "#F8766D", "U"= "#00BFC4", "HU"="#7CAE00")
-    } else if(p=="Secchi"){
-      scale_fill <- c("S"= "#F8766D", "U"= "#00BFC4","SU"="#7CAE00")
-    } else {
-      scale_fill <- c("U"= "#00BFC4")
-    }
-    
-    p1 <- ggplot(data=data, aes(x=SampleDate, y=ResultValue, fill=VQ_Plot)) + #fill = VQ_Plot
-      geom_point(shape=21, size=3, color="#333333", alpha=0.75) +
-      labs(title=paste0(ma),
-           subtitle=paste0("Qualified Values for ",parameter), x="Year",
-           y=y_labels, fill="Value Qualifier") +
-      plot_theme +
-      theme(legend.position="top", legend.box="horizontal",
-            legend.justification="right") +
-      scale_fill_manual(values = scale_fill, na.value="#cccccc")
-    
-    cat("\\newpage")
-    print(p1)
-    cat("\n \n \n")
-  }
-}
-
-```
-
-
-
-```{r data_exclusion_table function}
-# Function to create & display text table of excluded values
-data_exclusion_table <- function(data, parameter) {
-  
-  # Create descriptive info for QAQCFlagCodes below plot
-  qaqc <- list("2Q","6Q","9Q","12Q")
-  qaqc_desc <- list("*2Q* - Exceeds Maximum threshold. Not verified in raw data.",
-                  "*6Q* - Within threshold tolerance",
-                  "*9Q* - Surface Analysis: Activity_Depth <= 1 meter",
-                  "*12Q* - Bottom Analysis: Total_Depth minus Activity_Depth <= 1 meters")
-  # Combine list to allow code to recall dynamically
-  qaqc_list <- setNames(as.list(qaqc_desc), qaqc)
-  
-  # Creates ResultTable to display statistics below plot
-  data_excluded <- data %>% 
-    filter(Use_In_Analysis==FALSE & ManagedAreaName==ma) %>%
-    select(ProgramID, ProgramName, ProgramLocationID, SampleDate, ResultValue, 
-           SEACAR_QAQCFlagCode, Include, ValueQualifier) %>%
-    arrange(SampleDate)
-  
-  # If there is excluded data, provide excluded data table
-  if (nrow(data_excluded) > 0) {
-    
-    # Gather ProgramIDs that contain excluded values
-    excluded_program_id <- unique(data_excluded$ProgramID)
-    
-    # data exclusion header
-    cat("\\newpage")
-    cat("### Excluded Data", "\n\n")
-    
-    # remove ProgramName from data-table display (some are too long)
-    data_for_table <- data_excluded %>% 
-      select(ProgramID, ProgramLocationID, SampleDate, ResultValue, SEACAR_QAQCFlagCode, Include, 
-             ValueQualifier)
-    
-    data_table <- kable(data_for_table, 
-                        format="latex", 
-                        col.names = c("ProgramID", "ProgramLocationID", "SampleDate", "Value", 
-                                      "QAQCFlagCode", "Include", "ValueQualifier"),
-                        caption=paste0("Excluded values for ", parameter)) %>%
-      kable_styling(latex_options="scale_down",
-                    position = "left",
-                    full_width = FALSE)
-    
-    # Print data table
-    print(data_table)
-    
-    cat("\n **Programs containing excluded data:** \n \n")
-    
-    # Display ProgramName below data table
-    for (p_id in excluded_program_id) {
-      p_name <- unlist(unique(data_excluded %>% filter(ProgramID == p_id) %>% select(ProgramName)))
-      cat(paste0("*",p_id,"*", " - ",p_name, "  \n"))
-    }
-    
-    cat("  \n")
-    cat("  \n **SEACAR QAQC codes:**  \n \n")
-    cat("  \n")
-    
-    # list of unique flags for this parameter
-    unique_flags <- unique(data_excluded$SEACAR_QAQCFlagCode)
-    
-    # loop to add description if the corresponding QAQC code is listed above
-    for (code in names(qaqc_list)) {
-      for (flag in unique_flags) {
-        flag_codes <- unlist(strsplit(flag, split="/"))
-        if (code %in% flag_codes) {
-          cat(unlist(qaqc_list[code]), sep = '\n')
-          cat("\n")
-          break
-        }
-      }
-    }
-    
-    cat("\n \n \n")
-  }
-}
-
-```
-
-
-
 ```{r dynamic_variables}
-# Create conditions to determine if plots/text are shown
+# Create conditions to determine if plots/text are shown (Discrete)
 dynamic_vars <- list()
 for (param in p_inc) {
   val <- ifelse(param %in% p_inc, TRUE, FALSE)
@@ -726,17 +699,40 @@ for (param in p_inc) {
 ```
 
 
+\newpage
+# Discrete Parameters
 
-```{r Plotting, warning=FALSE, fig.height=9, fig.width=10, results="asis"}
+Discrete indicators must have a minimum of ten years of data within the geographic range of the analysis in order to assess trends. For the 
+preferred seasonal Kendall Tau analysis to be performed there must be data from at least two months in common across at least two 
+consecutive years within the RCP managed area being analyzed.  
+
+The discrete water quality analysis will include surface and bottom measurements; mid-column data will not be included due to 
+lower confidence that depths were comparable. Upper and lower limits for discrete samples are based on thresholds established by the
+Division of Environmental Assessment and Restoration for WIN.  
+
+Include threshold table??
+
+
+
+```{r discrete file list, results='asis'}
+
+cat("The following files were used in the discrete analysis:  \n\n")
+for (param in p_inc){
+  file_name <- file_list_df[param][[1]]
+  cat(paste0("* ", file_name, "  \n"))
+}
+
+```
+
+
+
+```{r PlottingDiscrete, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval=TRUE}
 
 # Start looping for each parameter
 for (param in p_inc) {
   
-  # load discrete data
+  # load overall discrete data
   data <- as.data.frame(load_data_table(param, table="data"))
-  
-  # load cont data
-  cont_data <- as.data.frame(load_cont_data_table(param, table="data"))
   
   # getting full parameter & unit names
   parameter <- unique(data$ParameterName)
@@ -774,7 +770,7 @@ for (param in p_inc) {
           param == "Sal" |
           param == "TSS" |
           param == "Turb") {activity = "All"}
-    
+  
   if (activity == "All") {
     activity_label <- "Lab and Field Combined"
   } else if (activity == "Field" | activity == "Lab") {
@@ -794,13 +790,9 @@ for (param in p_inc) {
     cat("\\newpage")
   }
   
-  ######################
-  ### Begin Plotting ###
-  ######################
-  
-  ######################
-  ### SKT TRENDPLOTS ###
-  ######################
+  ###############################
+  ### Begin Plotting Discrete ###
+  ###############################
   
   # SKT Header (### makes sub-heading)
   cat(glue("### Discrete Seasonal Kendall-Tau Trend Analysis"), "\n\n")
@@ -808,27 +800,14 @@ for (param in p_inc) {
   # Produce discrete SKT-trendplots
   plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter)
   
-  # Plot trendplots for Continuous data
-  if (param %in% cont_params_short) {
-    cat(glue("### Continuous Seasonal Kendall-Tau Trend Analysis"), "\n\n")
-    plot_trendlines_cont(param, y_labels, parameter)
-  }
-  
-  #################
-  ### BOX PLOTS ###
-  #################
-  
-  # SKT Header (### makes sub-heading)
-  cat(glue("### Discrete Year - Month Analysis"), "\n\n")
-  
   # Produce boxplots
   plot_boxplots(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
 
   # Produce VQ-barplots
-  plot_vq_barplot(param, activity, depth, activity_label, depth_label, y_labels, parameter)
+  plot_vq_barplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
   
   # Produce data-exclusion-tables
-  data_exclusion_table(data, parameter)
+  # data_exclusion_table(data, parameter)
   
   # Produce VQ-scatter-plots
   # plot_vq_Scatterplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
@@ -836,4 +815,115 @@ for (param in p_inc) {
 
 ```
 
+
+\setcounter{tocdepth}{3}
+\newpage
+# Continuous Parameters
+
+Continuous indicators must have a minimum of five years of data within the geographic range of the analysis in order to assess trends. For the 
+preferred seasonal Kendall Tau analysis to be performed there must be data from at least two months in common across at least two 
+consecutive years within the RCP managed area being analyzed.  
+
+The following table shows the continuous stations included in this managed area.
+
+
+```{r continuous file list, results='asis', eval=TRUE}
+# extract region for each MA to determine which cont. file to load
+region <- MA_All %>% filter(ManagedAreaName == ma) %>% pull(Region)
+
+cat("The following files were used in the continuous analysis:  \n\n")
+for (param in cont_params_short){
+  par_reg <- paste0(param, "_", region)
+  try(
+    cat(paste0("* ", cont_file_list_df[par_reg][[1]], "  \n")),
+    silent = TRUE
+  )
+}
+
+```
+
+
+
+```{r, station_count_table, results='asis', eval=TRUE}
+
+station_count_table <- function(cont_data){
+
+  # create frame to show available stations
+  # show how many are included/excluded in the report
+  stations <- cont_data %>% 
+    filter(ManagedAreaName == ma) %>% 
+    distinct(ProgramLocationID, ProgramName, Use_In_Analysis)
+  
+  # table
+  stations_table <- kable(stations,
+                          format="simple",
+                          caption=paste0("Number of Continuous Stations in ", ma)) %>%
+    kable_styling(latex_options="scale_down",
+                  position = "center")
+  
+  print(stations_table)
+  cat("  \n\n")
+  
+  # n stations total, n stations included (Use_In_Analysis)
+  n_stations <- nrow(stations)
+  n_stations_inc <- nrow(stations[stations$Use_In_Analysis==TRUE, ])
+  
+  # print text statement
+  cat(paste0("There are ", n_stations, " stations in ", ma, ".  \n\n"))
+  cat(paste0(n_stations_inc, " out of ", n_stations, " are included in this report."))
+  cat("  \n\n")
+
+}
+
+```
+
+
+
+```{r PlottingContinuous, warning=FALSE, fig.height=9, fig.width=10, results='asis', eval=TRUE}
+
+# Cont. Data exports do not contain full parameter names or units
+# Create dataframe containing that info
+cont_params_long <- c("Dissolved Oxygen","Dissolved Oxygen Saturation","pH",
+                      "Salinity","Turbidity","Water Temperature")
+cont_param_units <- c("mg/L","%","pH","ppt","NTU","Degrees C")
+
+cont_param_df <- data.frame(param_short = cont_params_short,
+                            parameter = cont_params_long,
+                            unit = cont_param_units)
+
+# extract region for each MA to determine which cont. file to load
+region <- MA_All %>% filter(ManagedAreaName == ma) %>% pull(Region)
+
+# loop through cont. params
+for (i in 1:length(cont_params_short)){
+  param <- cont_params_short[i]
+  
+  # load cont data for a given region containing MA
+  cont_data <- as.data.frame(load_cont_data_table(param, region, table="data"))
+  
+  # run first time only to display stations
+  if (i==1) {
+    station_count_table(cont_data)
+  }
+  
+  # getting full parameter & unit names
+  parameter <- cont_param_df %>% filter(param_short == param) %>% pull(parameter)
+  unit <- cont_param_df %>% filter(param_short == param) %>% pull(unit)
+  
+  # defining labels for y-axis
+  y_labels <- ifelse(param == "pH", parameter, paste0(parameter, " (" , unit, ")"))
+  
+  ###########################
+  ### Begin Plotting Cont ###
+  ###########################
+  
+  cat("\\newpage")
+  subtitle <- glue("## {parameter}")
+  cat(subtitle, "\n\n")
+  
+  plot_cont(param, y_labels, parameter, cont_data)
+}
+
+
+```
 

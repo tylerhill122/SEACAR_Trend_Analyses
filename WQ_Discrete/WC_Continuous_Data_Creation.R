@@ -41,11 +41,11 @@ suff_years <- 5
 #Easiest way to edit is to comment out undesired parameters.
 #If only one parameter is desired, comment out all other parameters and delete comma after remaining parameter
 all_params <- c(
-  # "Dissolved_Oxygen",
-  # "Dissolved_Oxygen_Saturation",
-  # "pH",
-  # "Salinity",
-  # "Turbidity",
+  "Dissolved_Oxygen",
+  "Dissolved_Oxygen_Saturation",
+  "pH",
+  "Salinity",
+  "Turbidity",
   "Water_Temperature"
 )
 
@@ -53,21 +53,21 @@ all_params <- c(
 #Easiest way to edit is to comment out undesired parameters.
 #If only one parameter is desired, comment out all other parameters and delete comma after remaining parameter
 all_params_short <- c(
-  # "DO",
-  # "DOS",
-  # "pH",
-  # "Sal",
-  # "Turb",
+  "DO",
+  "DOS",
+  "pH",
+  "Sal",
+  "Turb",
   "TempW"
 )
 
 #Sets the list of regions to cycle through. This can be edited to limit the number of regions.
 #If only one region is desired, comment out the other regions and delete comma after remaining region
 all_regions <- c(
-  # "NE",
-  "NW"
-  # "SE",
-  # "SW"
+  "NE",
+  "NW",
+  "SE",
+  "SW"
 )
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
@@ -101,6 +101,9 @@ plot_theme <- theme_bw() +
         axis.text=element_text(size=10),
         axis.text.x=element_text(angle = 60, hjust = 1))
 
+cont_file_list <- list()
+cont_station_list <- list()
+
 #Starts for loop that cycles through each parameter
 for (j in 1:length(all_params)){
   param_name <- all_params[j]
@@ -124,6 +127,14 @@ for (j in 1:length(all_params)){
     region <- all_regions[i]
     # Uses _[Region Abbreviation]- so that is does not return any coincidental combinations
     file_in <- file_list[grep(paste0("_", region, "-"), file_list)]
+    
+    #create new variable to help store file_names
+    par_region <- paste0(param_abrev, "_", region)
+    
+    # shortened filenames for display in report
+    file_short <- sub("data/cont/", "", file_in)
+    # append filenames to cont_file_list
+    cont_file_list[[par_region]] <- file_short
     
     print(paste0("Starting region: ", region))
     
@@ -484,9 +495,25 @@ for (j in 1:length(all_params)){
     # Saving overall data object for each region
     saveRDS(data, file = paste0(out_dir_tables,"/WC_Continuous_", param_abrev, "_", region, "_data.rds"))
     
+    # Save monitoring station info to show number of cont. stations in report
+    stations <- data %>%
+      group_by(ManagedAreaName) %>%
+      summarise(Stations = unique(ProgramLocationID)) %>%
+      mutate(Region = region)
+    
+    # append stations to list for each region
+    cont_station_list[[region]] <- stations
   }
   
 }
+
+# combine file_lists & write to file
+cont_file_list_df <- bind_rows(cont_file_list)
+fwrite(cont_file_list_df, "output/tables/cont/cont_file_list.txt", sep='|')
+
+# combine all station lists for each region & write to file
+cont_station_df <- bind_rows(cont_station_list)
+fwrite(cont_station_df, "output/tables/cont/cont_station_list.txt", sep='|')
 
 toc()
 End_time <- Sys.time()

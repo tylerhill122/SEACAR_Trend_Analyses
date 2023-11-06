@@ -96,7 +96,7 @@ MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFacto
                 na.strings = "")
 
 # Creates folders for outputs
-folder_paths <- c("output/tables", "output/plots")
+folder_paths <- c("output/tables/disc")
 for (path in folder_paths) {if(!dir.exists(path)){dir.create(path)}}
 
 # Defines standard plot theme: black and white, no major or minor grid lines,
@@ -122,13 +122,15 @@ plot_theme <- theme_bw() +
         axis.text=element_text(size=10),
         axis.text.x=element_text(angle = 60, hjust = 1))
 
+disc_file_list <- list()
+
 #Starts for loop that cycles through each parameter
 for (j in 1:length(all_params)){
   param_name <- all_params[j]
   param_abrev <- all_params_short[j]
   print(paste0("Starting parameter: ", param_name))
   #Gets the file with the filename containing the desired parameter
-  file_in <- list.files("data", pattern=param_name, full=TRUE)
+  file_in <- list.files("data/disc", pattern=param_name, full=TRUE)
   
   #Since Dissolved_Oxygen will return both Dissolved_Oxygen and Dissolved_Oxygen_Saturation,
   #the if statement removes the entry for Dissolved_Oxygen_Saturation when trying to get Dissolved_Oxygen
@@ -136,19 +138,24 @@ for (j in 1:length(all_params)){
         file_in <- file_in[-grep("Saturation", file_in)]
   }
   
-  file_short <- sub("data/", "", file_in)
-  out_dir_tables <- paste0(out_dir, "/tables")
-  out_dir_param <- paste0(out_dir, "/", param_abrev)
+  # shortened filenames for display in report
+  file_short <- sub("data/disc/", "", file_in)
+  # append filenames to disc_file_list
+  disc_file_list[[param_abrev]] <- file_short
+  
+  # output directory (discrete)
+  out_dir_tables <- paste0(out_dir, "/tables/disc")
+  
   #Starts for loop that cycles through each depth
   for (depth in all_depths){
   #Because secchi depth is does not have a bottom measurement, this statement skips
   #Secchi depth for bottom
-  if (param_name=="Secchi_Depth" & (depth=="Bottom" | depth=="All")){
-    next
-    }
+    if (param_name=="Secchi_Depth" & (depth=="Bottom" | depth=="All")){
+      next
+      }
   
-  #Starts for loop that cycles through activity types.
-  for (activity in all_activity){
+    #Starts for loop that cycles through activity types.
+    for (activity in all_activity){
     #Skips Field loops for parameters that only have Lab measurements
     if ((param_name=="Chlorophyll_a_corrected_for_pheophytin" | 
          param_name=="Chlorophyll_a_uncorrected_for_pheophytin" |
@@ -360,8 +367,10 @@ for (j in 1:length(all_params)){
     # Get list of and number of managed areas that are to be used in analysis
     MA_Include <- MA_Summ$ManagedAreaName[MA_Summ$SufficientData==TRUE]
     
+    saveRDS(MA_Include, file = paste0(out_dir_tables,"/WC_Discrete_", param_abrev, "_", activity, "_", depth, "_MA_Include.rds"))
+    
     #################################
-    MA_Include <- MA_Include[c(1,2)]
+    # MA_Include <- MA_Include[c(1,2)]
     #################################
     
     n <- length(MA_Include)
@@ -503,17 +512,18 @@ for (j in 1:length(all_params)){
     MA_YM_Stats <- as.data.table(MA_YM_Stats[order(MA_YM_Stats$ManagedAreaName,
                                                    MA_YM_Stats$Year,
                                                    MA_YM_Stats$Month), ])
-    # Writes summary statistics to file
-    
-    print("Saving MA_YM_Stats.rds")
-    saveRDS(MA_YM_Stats, file = paste0(out_dir_tables,"/WC_Discrete_", param_abrev, "_", activity, "_", depth, "_MA_MMYY_Stats.rds"))
-    
+
     # Get year from start for each managed area to be used in SKT analysis
     MA_YM_Stats <- MA_YM_Stats %>%
       group_by(AreaID, ManagedAreaName) %>%
       mutate(YearFromStart=Year-min(Year))
     # Create decimal value of year and month values
     MA_YM_Stats$YearMonthDec <- MA_YM_Stats$Year + ((MA_YM_Stats$Month-0.5) / 12)
+
+    # Writes summary statistics to file
+    print("Saving MA_YM_Stats.rds")
+    saveRDS(MA_YM_Stats, file = paste0(out_dir_tables,"/WC_Discrete_", param_abrev, "_", activity, "_", depth, "_MA_MMYY_Stats.rds"))
+
     # Create summary statistics for each managed area based on Year intervals.
     MA_Y_Stats <- data[data$Use_In_Analysis==TRUE, ] %>%
       group_by(AreaID, ManagedAreaName, Year) %>%
@@ -594,127 +604,119 @@ for (j in 1:length(all_params)){
     print("Saving Mon_Stats.rds")
     saveRDS(Mon_Stats, file = paste0(out_dir_tables,"/WC_Discrete_", param_abrev, "_", activity, "_", depth, "_MonLoc_Stats.rds"))
     rm(Mon_Stats)
+    
+    ####################
+    ### SKT ANALYSIS ###
+    ####################
+    
+    # List for column names
+    c_names <- c("AreaID", "ManagedAreaName", "Independent", "tau", "p",
+                 "SennSlope", "SennIntercept", "ChiSquared", "pChiSquared", "Trend")
+    
+    skt_stats <- data.frame(matrix(ncol = length(c_names), nrow = n))
+    
+    colnames(skt_stats) <- c_names
+    # Determines if there are any managed areas to analyze
+    if(n==0){
+      print("There are no managed areas that qualify.")
+    } else{
+      # Starts cycling through managed areas to determine seasonal Kendall Tau
+      for (i in 1:n) {
+        # Gets the number of rows of data for the managed area
+        data_SKT <- MA_YM_Stats[MA_YM_Stats$ManagedAreaName==MA_Include[i], ]
+        x <- nrow(data_SKT)
+        # Perform analysis if there is more than 1 row
+        if (x>0) {
+          # Store the managed area summary statistics to be used in
+          # trend analysis
+          SKT.med <- MA_Summ$Median[MA_Summ$ManagedAreaName==MA_Include[i]]
+          SKT.minYr <- MA_Summ$EarliestYear[MA_Summ$ManagedAreaName==MA_Include[i]]
+          SKT.maxYr <- MA_Summ$LatestYear[MA_Summ$ManagedAreaName==MA_Include[i]]
+          SKT.ind <- TRUE
+          SKT <- kendallSeasonalTrendTest(y=data_SKT$Mean,
+                                          season=data_SKT$Month,
+                                          year=data_SKT$YearFromStart,
+                                          independent.obs=SKT.ind)
+          if(is.na(SKT$estimate[1])==TRUE){
+            SKT.ind <- FALSE
+            SKT <- kendallSeasonalTrendTest(y=data_SKT$Mean,
+                                            season=data_SKT$Month,
+                                            year=data_SKT$YearFromStart,
+                                            independent.obs=SKT.ind)
+          }
+          skt_stats$AreaID[i] <-
+            MA_Summ$AreaID[MA_Summ$ManagedAreaName==MA_Include[i]]
+          skt_stats$ManagedAreaName[i] <-
+            MA_Summ$ManagedAreaName[MA_Summ$ManagedAreaName==MA_Include[i]]
+          skt_stats$Independent[i] <- SKT.ind
+          skt_stats$tau[i] <- SKT$estimate[1]
+          skt_stats$p[i] <- SKT$p.value[2]
+          skt_stats$SennSlope[i] <- SKT$estimate[2]
+          skt_stats$SennIntercept[i] <- SKT$estimate[3]
+          skt_stats$ChiSquared[i] <- SKT$statistic[1]
+          skt_stats$pChiSquared[i] <- SKT$p.value[1]
+          # If the p value is less than 5% and the slope is greater than 10% of the
+          # median value, the trend is large (2).
+          if (skt_stats$p[i] < .05 & abs(skt_stats$SennSlope[i]) >
+              abs(SKT.med) / 10.) {
+            skt_stats$Trend[i] <- 2
+            
+            # If the p value is less than 5% and the slope is less than 10% of the
+            # median value, there is a trend (1).
+          }else if (skt_stats$p[i] < .05 & abs(skt_stats$SennSlope[i]) <
+                    abs(SKT.med) / 10.) {
+            skt_stats$Trend[i] <- 1
+            
+            # Otherwise, there is no trend (0)
+          }else {
+            skt_stats$Trend[i] <- 0
+          }
+          # Sets the sign of the trend based on Senn Slope direction
+          if (skt_stats$SennSlope[i] <= 0) {
+            skt_stats$Trend[i] <- -skt_stats$Trend[i]
+          }
+        }
+      }
+      
+      # Stores as data frame
+      skt_stats <- as.data.frame(skt_stats)
+      
+    }
+    # Clears unused variables
+    rm(SKT, data_SKT, x, SKT.med, SKT.minYr, SKT.maxYr, SKT.ind)
+    # Combines the skt_stats with MA_Summ
+    skt_stats <-  merge.data.frame(MA_Summ, skt_stats,
+                                   by=c("AreaID","ManagedAreaName"), all=TRUE)
+    
+    skt_stats <- as.data.table(skt_stats[order(skt_stats$ManagedAreaName), ])
+    
+    # Sets variables to proper format and rounds values if necessary
+    skt_stats$tau <- round(as.numeric(skt_stats$tau), digits=4)
+    skt_stats$p <- format(round(as.numeric(skt_stats$p), digits=4),
+                          scientific=FALSE)
+    skt_stats$SennSlope <- as.numeric(skt_stats$SennSlope)
+    skt_stats$SennIntercept <- as.numeric(skt_stats$SennIntercept)
+    skt_stats$ChiSquared <- round(as.numeric(skt_stats$ChiSquared), digits=4)
+    skt_stats$pChiSquared <- round(as.numeric(skt_stats$pChiSquared), digits=4)
+    skt_stats$Trend <- as.integer(skt_stats$Trend)
+    
+    # Writes combined statistics to file
+    print("Saving SKT_stats.rds")
+    
+    saveRDS(skt_stats, file = paste0(out_dir_tables,"/WC_Discrete_", param_abrev, "_", activity, "_", depth, "_skt_stats.rds"))
+    saveRDS(select(skt_stats, -c(EarliestSampleDate)), file = paste0(out_dir_tables,"/WC_Discrete_", param_abrev, "_", activity, "_", depth, "_KendallTau_Stats.rds"))
     }
   }
+
+  # Removes data rows with no ResultValue (created by merging with MA_All)
+  data <- data[!is.na(data$ResultValue),]
+  
+  # saveRDS(KT.Plot, file = paste0(out_dir_tables,"/WC_Discrete_", param_abrev, "_KT_Plot.rds"))
+  saveRDS(data, file = paste0(out_dir_tables,"/WC_Discrete_", param_abrev, "_data.rds"))
 }
 
-####################
-### SKT ANALYSIS ###
-####################
-
-# List for column names
-c_names <- c("AreaID", "ManagedAreaName", "Independent", "tau", "p",
-             "SennSlope", "SennIntercept", "ChiSquared", "pChiSquared", "Trend")
-
-skt_stats <- data.frame(matrix(ncol = length(c_names), nrow = n))
-
-colnames(skt_stats) <- c_names
-# Determines if there are any managed areas to analyze
-if(n==0){
-  print("There are no managed areas that qualify.")
-} else{
-  # Starts cycling through managed areas to determine seasonal Kendall Tau
-  for (i in 1:n) {
-    # Gets the number of rows of data for the managed area
-    data_SKT <- MA_YM_Stats[MA_YM_Stats$ManagedAreaName==MA_Include[i], ]
-    x <- nrow(data_SKT)
-    # Perform analysis if there is more than 1 row
-    if (x>0) {
-      # Store the managed area summary statistics to be used in
-      # trend analysis
-      SKT.med <- MA_Summ$Median[MA_Summ$ManagedAreaName==MA_Include[i]]
-      SKT.minYr <- MA_Summ$EarliestYear[MA_Summ$ManagedAreaName==MA_Include[i]]
-      SKT.maxYr <- MA_Summ$LatestYear[MA_Summ$ManagedAreaName==MA_Include[i]]
-      SKT.ind <- TRUE
-      SKT <- kendallSeasonalTrendTest(y=data_SKT$Mean,
-                                      season=data_SKT$Month,
-                                      year=data_SKT$YearFromStart,
-                                      independent.obs=SKT.ind)
-      if(is.na(SKT$estimate[1])==TRUE){
-        SKT.ind <- FALSE
-        SKT <- kendallSeasonalTrendTest(y=data_SKT$Mean,
-                                        season=data_SKT$Month,
-                                        year=data_SKT$YearFromStart,
-                                        independent.obs=SKT.ind)
-      }
-      skt_stats$AreaID[i] <-
-        MA_Summ$AreaID[MA_Summ$ManagedAreaName==MA_Include[i]]
-      skt_stats$ManagedAreaName[i] <-
-        MA_Summ$ManagedAreaName[MA_Summ$ManagedAreaName==MA_Include[i]]
-      skt_stats$Independent[i] <- SKT.ind
-      skt_stats$tau[i] <- SKT$estimate[1]
-      skt_stats$p[i] <- SKT$p.value[2]
-      skt_stats$SennSlope[i] <- SKT$estimate[2]
-      skt_stats$SennIntercept[i] <- SKT$estimate[3]
-      skt_stats$ChiSquared[i] <- SKT$statistic[1]
-      skt_stats$pChiSquared[i] <- SKT$p.value[1]
-      # If the p value is less than 5% and the slope is greater than 10% of the
-      # median value, the trend is large (2).
-      if (skt_stats$p[i] < .05 & abs(skt_stats$SennSlope[i]) >
-          abs(SKT.med) / 10.) {
-        skt_stats$Trend[i] <- 2
-        
-        # If the p value is less than 5% and the slope is less than 10% of the
-        # median value, there is a trend (1).
-      }else if (skt_stats$p[i] < .05 & abs(skt_stats$SennSlope[i]) <
-                abs(SKT.med) / 10.) {
-        skt_stats$Trend[i] <- 1
-        
-        # Otherwise, there is no trend (0)
-      }else {
-        skt_stats$Trend[i] <- 0
-      }
-      # Sets the sign of the trend based on Senn Slope direction
-      if (skt_stats$SennSlope[i] <= 0) {
-        skt_stats$Trend[i] <- -skt_stats$Trend[i]
-      }
-    }
-  }
-  
-  # Stores as data frame
-  skt_stats <- as.data.frame(skt_stats)
-  
-}
-# Clears unused variables
-rm(SKT, data_SKT, x, SKT.med, SKT.minYr, SKT.maxYr, SKT.ind)
-# Combines the skt_stats with MA_Summ
-skt_stats <-  merge.data.frame(MA_Summ, skt_stats,
-                               by=c("AreaID","ManagedAreaName"), all=TRUE)
-
-skt_stats <- as.data.table(skt_stats[order(skt_stats$ManagedAreaName), ])
-
-# Sets variables to proper format and rounds values if necessary
-skt_stats$tau <- round(as.numeric(skt_stats$tau), digits=4)
-skt_stats$p <- format(round(as.numeric(skt_stats$p), digits=4),
-                      scientific=FALSE)
-skt_stats$SennSlope <- as.numeric(skt_stats$SennSlope)
-skt_stats$SennIntercept <- as.numeric(skt_stats$SennIntercept)
-skt_stats$ChiSquared <- round(as.numeric(skt_stats$ChiSquared), digits=4)
-skt_stats$pChiSquared <- round(as.numeric(skt_stats$pChiSquared), digits=4)
-skt_stats$Trend <- as.integer(skt_stats$Trend)
-
-# Writes combined statistics to file
-print("Saving SKT_stats.rds")
-saveRDS(select(skt_stats, -c(EarliestSampleDate)), file = paste0(out_dir_tables,"/WC_Discrete_KendallTau_Stats.rds"))
-
-# Removes data rows with no ResultValue (created by merging with MA_All)
-data <- data[!is.na(data$ResultValue),]
-
-# Gets x and y values for starting point for trendline
-KT.Plot <- skt_stats %>%
-  group_by(ManagedAreaName) %>%
-  summarize(x=decimal_date(EarliestSampleDate),
-            y=(x-EarliestYear)*SennSlope+SennIntercept)
-# Gets x and y values for ending point for trendline
-KT.Plot2 <- skt_stats %>%
-  group_by(ManagedAreaName) %>%
-  summarize(x=decimal_date(LastSampleDate),
-            y=(x-EarliestYear)*SennSlope+SennIntercept)
-# Combines the starting and endpoints for plotting the trendline
-KT.Plot <- bind_rows(KT.Plot, KT.Plot2)
-rm(KT.Plot2)
-KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$ManagedAreaName), ])
-KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
+disc_file_list_df <- bind_rows(disc_file_list)
+fwrite(disc_file_list_df, "output/tables/disc/disc_file_list.txt", sep='|')
 
 toc()
 End_time <- Sys.time()

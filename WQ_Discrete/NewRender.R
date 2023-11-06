@@ -2,33 +2,38 @@ library(stringr)
 library(dplyr)
 library(data.table)
 library(ggplot2)
+library(tictoc)
 
 all_depths <- c("Surface","Bottom","All")
 all_activities <- c("Field","Lab","All")
 all_params_short <- c(
-  # "ChlaC",
-  # "Chla",
-  # "CDOM",
-  # "DO",
-  # "DOS",
-  # "pH",
-  # "Sal",
-  # "Secchi",
-  # "TN",
-  # "TP",
-  # "TSS",
-  # "Turb",
+  "ChlaC",
+  "Chla",
+  "CDOM",
+  "DO",
+  "DOS",
+  "pH",
+  "Sal",
+  "Secchi",
+  "TN",
+  "TP",
+  "TSS",
+  "Turb",
   "TempW"
 )
 
 cont_params_short <- c(
-  # "DO",
-  # "DOS",
-  # "pH",
-  # "Sal",
-  # "Turb",
+  "DO",
+  "DOS",
+  "pH",
+  "Sal",
+  "Turb",
   "TempW"
 )
+
+#Loads data file with list on managed area names and corresponding area IDs and short names
+MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
+                na.strings = "")
 
 # function of parameter, activity type, depth, with specified filetype
 # retrieves RDS filepath to be loaded
@@ -121,11 +126,11 @@ for (param in all_params_short) {
                             Depth = depth,
                             Activity = activity,
                             ManagedAreaName = paste(concatenated_names))
-
+    
     # Append the result data frame to the list
     results_list <- c(results_list, list(result_df))
     rm(result_df, concatenated_names, managed_area_names, n)
-
+    
   } else {
     print(0)
   }
@@ -152,8 +157,9 @@ plot_theme <- theme_bw() +
 
 # Get list of managed areas to create reports for
 all_managed_areas <- unique(managed_area_df$ManagedAreaName)
-all_managed_areas <- all_managed_areas[c(3)]
+all_managed_areas <- "Estero Bay Aquatic Preserve"
 
+tic()
 # Loop through list of managed areas
 for (ma in all_managed_areas) {
   print(ma)
@@ -187,3 +193,5 @@ for (ma in all_managed_areas) {
   unlink(paste0(output_path, "/", file_out, ".md"))
   # unlink(paste0(output_path, "/", file_out, "_files"), recursive=TRUE)
 }
+
+toc()
