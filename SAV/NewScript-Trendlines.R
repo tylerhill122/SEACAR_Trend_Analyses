@@ -277,8 +277,10 @@ plot_theme <- theme_bw() +
         axis.text.x = element_text(angle = -45, hjust = 0))
 
 #Managed areas that should have Halophila species combined:
-ma_halspp <- c("Banana River", "Indian River-Malabar to Vero Beach", "Indian River-Vero Beach to Ft. Pierce", "Jensen Beach to Jupiter Inlet",
-               "Loxahatchee River-Lake Worth Creek", "Mosquito Lagoon", "Biscayne Bay", "Florida Keys NMS")
+ma_halspp <- c("Banana River Aquatic Preserve", "Indian River-Malabar to Vero Beach Aquatic Preserve", 
+               "Indian River-Vero Beach to Ft. Pierce Aquatic Preserve", "Jensen Beach to Jupiter Inlet Aquatic Preserve",
+               "Loxahatchee River-Lake Worth Creek Aquatic Preserve", "Mosquito Lagoon Aquatic Preserve", 
+               "Biscayne Bay Aquatic Preserve", "Florida Keys National Marine Sanctuary")
 
 #save summary stats file
 stats_pct <- SAV4[ManagedAreaName %in% ma_halspp, ] %>%
@@ -497,9 +499,7 @@ for(p in parameters$column){
         
         #Save the model object as .rds
         saveRDS(model_j, here::here(paste0("output/models/SAV_", parameters[column == p, type], "_", 
-                                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                           ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
-                                                  ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
+                                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_",
                                            gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE), 
                                            ".rds")))
         
@@ -512,31 +512,25 @@ for(p in parameters$column){
         if(class(try(eval(as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE)))), silent = TRUE)) != "try-error"){
           models <- append(models, as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE))))
           modj_i <- setDT(broom.mixed::tidy(eval(as.name(paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_", gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE))))))
-          modj_i[, `:=` (managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                               ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+          modj_i[, `:=` (managed_area = i,
                          species = j,
-                         filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                           ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
-                                                  ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
+                         filename = paste0("SAV_", parameters[column == p, type], "_", 
+                                           gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_",
                                            gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE), ".rds"))]
           lmemodresults <- rbind(lmemodresults, modj_i)
           
         } else{
           failedmod <- data.table(model = paste0("SAV_", parameters[column == p, type], "_",
-                                                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
-                                                 ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
-                                                        ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
+                                                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_",
                                                  gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE), ".rds"),
                                   error = model_j[1])
           
           failedmods <- rbind(failedmods, failedmod)
           
-          modj_i <- data.table(managed_area = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"), 
-                                                     ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+          modj_i <- data.table(managed_area = i,
                                species = j,
-                               filename = paste0("SAV_", parameters[column == p, type], "_", gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 
-                                                 ifelse(stringr::str_detect(i, "NERR"), "ERR_lme_", 
-                                                        ifelse(stringr::str_detect(i, "NMS"), "MS_lme_", "AP_lme_")), 
+                               filename = paste0("SAV_", parameters[column == p, type], "_", 
+                                                 gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_",
                                                  gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE), ".rds"),
                                effect = NA,
                                group = NA,
@@ -604,8 +598,7 @@ for(p in parameters$column){
                        aes(x = relyear, y = data)) +
         # geom_jitter(shape = 21, alpha=0.9, color="grey50") +
         # geom_bar(stat = "identity") +
-        labs(title = parameters[column == p, name], subtitle = ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
-                                                                      ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve"))),
+        labs(title = parameters[column == p, name], subtitle = i,
              x = "Year",
              y = parameters[column == p, name],
              color = "Species model projections",
@@ -624,20 +617,12 @@ for(p in parameters$column){
       }
 
       #Save the plot object as .rds
-      saveRDS(plot_i, here::here(paste0("output/Figures/BB/SAV_", parameters[column == p, type], "_", 
-                                        ifelse(stringr::str_detect(i, "NERR"), 
-                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_trendplot.rds"),
-                                               ifelse(stringr::str_detect(i, "NMS"), 
-                                                      paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_trendplot.rds"),
-                                                      paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_trendplot.rds"))))))
+      saveRDS(plot_i, here::here(paste0("output/Figures/BB/SAV_", parameters[column == p, type], "_",
+                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -1), "_trendplot.rds"))))
       
       #Save the results table objects as .rds
       saveRDS(lmemodresults, here::here(paste0("output/tables/SAV_", parameters[column == p, type], "_", 
-                                               ifelse(stringr::str_detect(i, "NERR"), 
-                                                      paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NERR_lmeresults.rds"), 
-                                                      ifelse(stringr::str_detect(i, "NMS"),
-                                                             paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -2), "NMS_lmeresults.rds"),
-                                                             paste0(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "AP_lmeresults.rds"))))))
+                                               paste0(str_sub(gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), 1, -1), "_lmeresults.rds"))))
     }
     
     ###### BAR PLOTS ######
@@ -667,8 +652,7 @@ for(p in parameters$column){
           geom_col(color = "grey20") +
           scale_x_continuous(breaks = breaks, labels = labels) +
           plot_theme +
-          labs(title = parameters[column == p, name], subtitle = paste0(ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
-                                                                               ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))),
+          labs(title = parameters[column == p, name], subtitle = i,
                fill = "Species",
                x = "Year",
                y = "Occurrence frequency (%)") +
@@ -690,8 +674,7 @@ for(p in parameters$column){
           geom_col(color = "grey20") +
           scale_x_continuous(breaks = breaks, labels = labels) +
           plot_theme +
-          labs(title = parameters[column == p, name], subtitle = paste0(ifelse(stringr::str_detect(i, "NERR"), paste0(str_sub(i, 1, -6), " National Estuarine Research Reserve"),
-                                                                               ifelse(stringr::str_detect(i, "NMS"), paste0(str_sub(i, 1, -5), " National Marine Sanctuary"), paste0(i, " Aquatic Preserve")))),
+          labs(title = parameters[column == p, name], subtitle = i,
                fill = "Species",
                x = "Year",
                y = "Occurrence frequency (%)") +
@@ -702,10 +685,7 @@ for(p in parameters$column){
         }
 
       saveRDS(barplot_sp, here::here(paste0("output/Figures/BB/SAV_", parameters[column == p, type], "_",
-                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE),
-                                            ifelse(stringr::str_detect(i, "NERR"), "ERR_barplot_sp",
-                                                   ifelse(stringr::str_detect(i, "NMS"), "MS_barplot_sp", "AP_barplot_sp")),
-                                            ".rds")))
+                                            gsub('\\b(\\pL)\\pL{2,}|.','\\U\\1', i, perl = TRUE), "_barplot_sp.rds")))
     }
 
     print(paste0("  Plot objects and results tables saved: ",
@@ -759,7 +739,8 @@ if ("trendplot" %in% plot_type) {
     mods_m <- str_subset(models2, m)
     mods_m <- setdiff(mods_m, failedmodslist$model)
     mods_m <- setdiff(mods_m, subset(mods_m, str_detect(mods_m, "_PC_")))
-    # params <- unique(str_sub(mods_m, 1, str_locate_all(mods_m, "_")[[1]][2] - 1))
+    # params <- unique(str_split(mods_m, "_")[[1]][2])
+    params <- "BBpct"
     
     for(param in params){
       mods_m_p <- str_subset(mods_m, param)
