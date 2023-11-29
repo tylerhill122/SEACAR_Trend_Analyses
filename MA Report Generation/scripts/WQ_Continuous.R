@@ -1,17 +1,12 @@
-cont_params_short <- c(
-  "DO",
-  "DOS",
-  "pH",
-  "Sal",
-  "Turb",
-  "TempW"
-)
+library(geosphere)
 
 # Cont. Data exports do not contain full parameter names or units
 # Create dataframe containing that info
 cont_params_long <- c("Dissolved Oxygen","Dissolved Oxygen Saturation","pH",
                       "Salinity","Turbidity","Water Temperature")
+cont_params_short <- c("DO","DOS","pH","Sal","Turb","TempW")
 cont_param_units <- c("mg/L","%","pH","ppt","NTU","Degrees C")
+cont_regions <- c("NE","NW","SE","SW")
 
 cont_param_df <- data.frame(param_short = cont_params_short,
                             parameter = cont_params_long,
@@ -20,36 +15,6 @@ cont_param_df <- data.frame(param_short = cont_params_short,
 #################
 ### FUNCTIONS ###
 #################
-
-# Provides a table for stations with Cont. Data
-# and which stations passed the tests
-station_count_table <- function(cont_data){
-  
-  # create frame to show available stations
-  # show how many are included/excluded in the report
-  stations <- cont_data %>% 
-    filter(ManagedAreaName == ma) %>% 
-    distinct(ProgramLocationID, ProgramName, Use_In_Analysis)
-  
-  # table
-  stations_table <- kable(stations,
-                          format="simple",
-                          caption=paste0("Number of Continuous Stations in ", ma)) %>%
-    kable_styling(latex_options="scale_down",
-                  position = "center")
-  
-  print(stations_table)
-  cat("  \n\n")
-  
-  # n stations total, n stations included (Use_In_Analysis)
-  n_stations <- nrow(stations)
-  n_stations_inc <- nrow(stations[stations$Use_In_Analysis==TRUE, ])
-  
-  # print text statement
-  cat(paste0("There are ", n_stations, " stations in ", ma, ".  \n\n"))
-  cat(paste0(n_stations_inc, " out of ", n_stations, " are included in this report."))
-  cat("  \n\n")
-}
 
 # For loading continuous data
 # Load Data Table Function
@@ -68,8 +33,163 @@ load_cont_data_table <- function(param, region, table) {
   return(df)
 }
 
+# Station coordinates
+coordinates_df <- list()
+
+for (p in cont_params_short){
+  for (region in cont_regions){
+    # coordinates table
+    df <- load_cont_data_table(p, region, "Station_Coordinates")
+    coordinates_df <- bind_rows(coordinates_df, df)
+  }
+}
+rm(df)
+
+# add 1 to years_of_data (result of subtracting years)
+coordinates_df$years_of_data <- coordinates_df$years_of_data + 1
+
+station_coordinates <- coordinates_df %>% group_by(ManagedAreaName, lat, lon) %>%
+  distinct(ProgramLocationID)
+
+cont_managed_areas <- unique(station_coordinates$ManagedAreaName)
+
+# Provides a table for stations with Cont. Data
+# and which stations passed the tests
+station_count_table <- function(cont_data){
+  
+  cat("\\newpage")
+  
+  # create frame to show available stations
+  # show how many are included/excluded in the report
+  stations <- coordinates_df %>%
+    filter(ManagedAreaName==ma) %>%
+    group_by(ProgramLocationID) %>%
+    ungroup() %>%
+    select(ProgramLocationID, ProgramID, ProgramName, Use_In_Analysis)
+  
+  programs_by_ma <- unique(stations$ProgramID)
+  
+  # table
+  for (prog in programs_by_ma){
+    
+    n_years <- coordinates_df %>% filter(ManagedAreaName==ma, ProgramID==prog) %>%
+      group_by(ProgramLocationID) %>%
+      distinct(ProgramLocationID, years_of_data, Use_In_Analysis, ProgramName) %>%
+      arrange(ProgramLocationID)
+    
+    # n_years$Use_In_Analysis <- cell_spec(n_years$Use_In_Analysis, background = ifelse(n_years$Use_In_Analysis==TRUE, "green", "orange"))
+    
+    p_name <- unique(n_years$ProgramName)
+    caption <- paste0(p_name," (",prog,")")
+    
+    station_kable <- n_years %>% select(-ProgramName) %>%
+      kable(format="simple",caption=caption) %>%
+      kable_styling()
+    
+    print(station_kable)
+    cat("\n")
+  }
+  
+  ## n stations total, n stations included (Use_In_Analysis)
+  # n_stations <- nrow(stations)
+  # n_stations_inc <- nrow(stations[stations$Use_In_Analysis==TRUE, ])
+  
+  ## print text statement
+  # cat(paste0("There are ", n_stations, " stations in ", ma, ".  \n\n"))
+  # cat(paste0(n_stations_inc, " out of ", n_stations, " are included in this report."))
+  # cat("  \n\n")
+  
+  ############
+  ### maps ###
+  ############
+  
+  # function to account for overlapping map labels
+  
+  adjust_label_position <- function(df, buffer_distance) {
+    # Calculate distances between all points
+    distances <- distm(df[, c("lon", "lat")])
+    df$labelDirection <- "right"
+    
+    for (i in 1:nrow(df)) {
+      for (j in 1:nrow(df)) {
+        if (i != j && distances[i, j] < buffer_distance) {
+          if (df$lon[j] > df$lon[i]) {
+            df$labelDirection[i] <- "left"
+            break
+          }
+        }
+      }
+    }
+    return(df)
+  }
+  
+  map_output <- "output/maps/"
+  
+  # create basemap
+  map <- leaflet() %>% addTiles()
+  
+  df_coord <- station_coordinates %>% filter(ManagedAreaName == ma)
+  
+  df_coord <- adjust_label_position(df_coord, buffer_distance = 6000)
+  
+  iconSet <- awesomeIconList(
+    `Use In Analysis` = makeAwesomeIcon(
+      icon = "glyphicon glyphicon-stats", library = "glyphicon", iconColor = "black", markerColor = "green"
+    )
+  )
+  
+  for (i in 1:nrow(df_coord)){
+    lati <- df_coord$lat[i]
+    long <- df_coord$lon[i]
+    sta_name <- df_coord$ProgramLocationID[i]
+    label_dir <- df_coord$labelDirection[i]
+    offset_val <- ifelse(label_dir=="right", 10, -10)
+    
+    icons <- awesomeIcons(
+      icon = ifelse(
+        stations %>% filter(ProgramLocationID==sta_name) %>% pull(Use_In_Analysis) == TRUE, 
+        "glyphicon-stats", 
+        "glyphicon-none"
+      ),
+      iconColor = 'black',
+      library = 'glyphicon',
+      markerColor = ifelse(
+        stations %>% filter(ProgramLocationID==sta_name) %>% pull(Use_In_Analysis) == TRUE, 
+        "green", 
+        "orange"
+      )
+    )
+    
+    map <- map %>%
+      addAwesomeMarkers(lng=long, lat=lati, label=sta_name,icon=icons,
+                        labelOptions = labelOptions(
+                          noHide = T, 
+                          direction = label_dir,
+                          style = list("font-size" = "16px",
+                                       "background-color" = "rgba(255,255,255,.5)"),
+                          offset = c(offset_val, 0)
+                        ))
+  }
+  
+  map <- map %>%
+    addLegendAwesomeIcon(iconSet = iconSet,
+                         position = 'topright')
+  
+  map_out <- paste0(map_output, ma_abrev, ".png")
+  
+  # save file as png
+  mapshot(map, file = map_out)
+  
+  # draw .png with ggplot
+  p1 <- ggdraw() + draw_image(map_out, scale = 1)
+  
+  print(plot_grid(p1))
+  cat("  \n\n")
+}
+
 # Unified continuous plotting function
 plot_cont <- function(p, y_labels, parameter, cont_data) {
+  
   data <- cont_data %>% filter(ManagedAreaName == ma)
   
   Mon_YM_Stats <- as.data.frame(load_cont_data_table(p, region, "Mon_YM_Stats"))
@@ -103,9 +223,18 @@ plot_cont <- function(p, y_labels, parameter, cont_data) {
   MonIDs <- unique(data$MonitoringID)
   n <- length(MonIDs)
   
-  if (length(MonIDs) == 0){
-    print("There are no monitoring locations that qualify.")
-  } else {
+  n_included <- length(data %>%
+                         group_by(MonitoringID) %>%
+                         distinct(Use_In_Analysis) %>% 
+                         filter(Use_In_Analysis == TRUE) %>% 
+                         pull(MonitoringID))
+  
+  if (n_included > 0) {
+    
+    # Add heading for parameter if included
+    subtitle <- glue("## {parameter}")
+    cat(subtitle, "\n\n")
+    
     # Begins looping through each monitoring location
     for (id in MonIDs) {
       
