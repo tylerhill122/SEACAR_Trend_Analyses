@@ -8,6 +8,14 @@ library(purrr)
 library(rstudioapi)
 library(stringr)
 library(utils)
+library(leaflet)
+library(leaflegend)
+library(mapview)
+library(magick)
+library(mgcv)
+library(cowplot)
+library(sf)
+library(fontawesome)
 
 # Gets directory of this script and sets it as the working directory
 wd <- dirname(getActiveDocumentContext()$path)
@@ -18,7 +26,7 @@ folder_paths <- c("output", "output/Figures","output/Figures/BB","output/Reports
   "output/Data", "output/models", "output/tables","output/Data/Nekton", "output/Data/SAV",
   "output/Data/Coral", "output/Data/Coral/PercentCover", "output/Data/Coral/SpeciesRichness",
   "output/tables", "output/tables/disc", "output/tables/cont", "output/tables/SAV", "output/Data/CoastalWetlands",
-  "output/maps")
+  "output/maps", "output/Figures/BB/maps")
 for (path in folder_paths){if(!dir.exists(path)){dir.create(path)}}
 
 #Set output directory
@@ -46,7 +54,7 @@ sav_file_in <- list.files("data", pattern="All_SAV", full=TRUE)
 sav_file_short <- sub("data/", "", sav_file_in)
 
 ############################
-### call in source files ###
+### call in source files ### -----
 ############################
 # creates source files (.rds objects) for discrete WQ
 # source("scripts/WQ_Discrete_Data_Creation.R")
@@ -57,6 +65,7 @@ source("scripts/Nekton.R")
 source("scripts/CoastalWetlands.R")
 # creates source files (.rds objects) for SAV
 # source("scripts/SAV.R")
+# source("scripts/SAV_scope_plots.R")
 source("scripts/SAV-Functions.R")
 source("scripts/Coral.R")
 ############################
@@ -79,8 +88,8 @@ wq_cont_files <- wq_cont_file %>%
 #################
 
 # Subset for MAs
-# MA_All <- MA_All[c(20,14,5,24,32,27,9,33)]
-MA_All <- MA_All[c(14)]
+# MA_All <- MA_All[c(14,5,32,27,9,33)]
+MA_All <- MA_All[c(14,5)]
 
 # iterate through every possible MA
 # apply checks for coral, sav, etc. within .Rmd doc
@@ -90,7 +99,7 @@ for (i in seq_len(nrow(MA_All))) {
   ma_short <- MA_All[i, ]$ShortName
   
   # MA abbreviation
-  ma_abrev <- gsub("[^::A-Z::]","", ma)
+  ma_abrev <- MA_All[i, ]$Abbreviation
   
   # perform checks for habitats in each MA
   # Check which habitats to include in each MA
@@ -99,27 +108,32 @@ for (i in seq_len(nrow(MA_All))) {
   in_coral <- ma %in% coral_managed_areas
   in_cw <- ma %in% cw_managed_areas
   in_discrete <- ma %in% disc_managed_areas
-  # in_continuous <- ma %in% cont_managed_areas
-
+  in_continuous <- ma %in% cont_managed_areas
+  
   #####################
-  ### RENDER REPORT ###
+  ### RENDER REPORT ### ----
   #####################
   
-  if(in_sav | in_nekton | in_coral | in_cw | in_discrete){
+  if(in_sav | in_nekton | in_coral | in_cw | in_discrete | in_continuous){
     
     ma_report_out_dir <- paste0(report_out_dir, "/", ma_abrev)
     
     file_out <-  paste0(ma_abrev, "_Report")
     
-    rmarkdown::render(input = "ReportTemplate.Rmd", 
+    rmarkdown::render(input = "ReportTemplate.Rmd",
                       output_format = "pdf_document",
                       output_file = paste0(file_out, ".pdf"),
                       output_dir = ma_report_out_dir,
                       clean=TRUE)
+    # rmarkdown::render(input = "ReportTemplate.Rmd",
+    #                   output_format = "html_document",
+    #                   output_file = paste0(file_out, ".html"),
+    #                   output_dir = ma_report_out_dir,
+    #                   clean=TRUE)
     
     #Removes unwanted files created in the rendering process
-    unlink(paste0(ma_report_out_dir, "/", file_out, ".md"))
-    unlink(paste0(ma_report_out_dir, "/", file_out, "_files"), recursive=TRUE)
+    # unlink(paste0(ma_report_out_dir, "/", file_out, ".md"))
+    # unlink(paste0(ma_report_out_dir, "/", file_out, "_files"), recursive=TRUE)
     
   }
 }
