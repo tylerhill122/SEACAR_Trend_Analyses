@@ -383,7 +383,7 @@ plot_boxplots <- function(p, a, d, activity_label, depth_label, y_labels, parame
 }
 
 ## VQ Summary Barplot ##
-plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data) {
+plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data, include_plot) {
   
   VQ_Summary <- as.data.frame(load_data_table(p, a, d, "VQSummary"))
   
@@ -445,8 +445,10 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
                         labels=c("H", "I", "Q", "S", "U")) +
       plot_theme
     
-    # print plots
-    print(vq_plot)
+    # print plots if include=TRUE
+    if (include_plot==TRUE){
+      print(vq_plot)
+    }
     
     # Replace 0 values with NA, to be modified to empty string with kable function
     plot_data[plot_data == 0] <- NA
