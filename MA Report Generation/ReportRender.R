@@ -8,6 +8,7 @@ library(purrr)
 library(rstudioapi)
 library(stringr)
 library(utils)
+library(geosphere)
 library(leaflet)
 library(leaflegend)
 library(mapview)
@@ -16,6 +17,10 @@ library(mgcv)
 library(cowplot)
 library(sf)
 library(fontawesome)
+library(gridExtra)
+library(ggpubr)
+library(glue)
+library(kableExtra)
 
 # Gets directory of this script and sets it as the working directory
 wd <- dirname(getActiveDocumentContext()$path)
@@ -89,7 +94,7 @@ wq_cont_files <- wq_cont_file %>%
 
 # Subset for MAs
 # MA_All <- MA_All[c(14,5,32,27,9,33)]
-MA_All <- MA_All[c(14,5)]
+MA_All <- MA_All[c(14,5,32)]
 
 # iterate through every possible MA
 # apply checks for coral, sav, etc. within .Rmd doc
