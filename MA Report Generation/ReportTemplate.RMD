@@ -14,7 +14,7 @@ output:
     toc: TRUE
     toc_depth: 3
     dev: png
-    extra_dependencies: ["float"]
+    extra_dependencies: ["longtable", "float"]
     keep_md: yes
     fig_crop: no
 urlcolor: blue
@@ -24,15 +24,6 @@ geometry: margin=0.75in
 ---
 
 ```{r libraries, message=FALSE, warning=FALSE, echo=FALSE}
-library(knitr)
-library(gridExtra)
-library(ggpubr)
-library(glue)
-library(kableExtra)
-library(leaflet)
-library(mapview)
-library(magick)
-library(cowplot)
 options(scipen=999)
 knitr::opts_chunk$set(
    warning=FALSE,
@@ -137,7 +128,8 @@ if(in_discrete){
     # plot_boxplots(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
   
     # Produce VQ-barplots
-    plot_vq_barplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
+    # Change include_plot to TRUE to include VQ barplot
+    plot_vq_barplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data, include_plot=FALSE)
     
   }
 }
