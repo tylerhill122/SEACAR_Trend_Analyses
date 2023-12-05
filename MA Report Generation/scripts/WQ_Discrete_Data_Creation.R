@@ -23,10 +23,6 @@ library(EnvStats)
 library(tidyr)
 library(kableExtra)
 
-# Gets directory of this script and sets it as the working directory
-wd <- dirname(getActiveDocumentContext()$path)
-setwd(wd)
-
 tic()
 #Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
 APP_Plots <- TRUE
