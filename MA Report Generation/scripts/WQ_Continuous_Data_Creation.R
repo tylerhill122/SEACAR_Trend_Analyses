@@ -23,10 +23,6 @@ library(EnvStats)
 library(tidyr)
 library(kableExtra)
 
-# Gets directory of this script and sets it as the working directory
-wd <- dirname(getActiveDocumentContext()$path)
-setwd(wd)
-
 tic()
 #Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
 APP_Plots <- TRUE
@@ -45,7 +41,7 @@ all_params <- c(
   # "Dissolved_Oxygen_Saturation",
   # "pH",
   # "Salinity",
-  # "Turbidity",
+  "Turbidity",
   "Water_Temperature"
 )
 
@@ -57,16 +53,16 @@ all_params_short <- c(
   # "DOS",
   # "pH",
   # "Sal",
-  # "Turb",
+  "Turb",
   "TempW"
 )
 
 #Sets the list of regions to cycle through. This can be edited to limit the number of regions.
 #If only one region is desired, comment out the other regions and delete comma after remaining region
 all_regions <- c(
-  # "NE",
-  # "NW",
-  # "SE",
+  "NE",
+  "NW",
+  "SE",
   "SW"
 )
 
@@ -157,18 +153,6 @@ for (j in 1:length(all_params)){
     
     parameter <- unique(data$ParameterName)
     unit <- unique(data$ParameterUnits)
-    
-    ###################
-    ### Coordinates ###
-    ###################
-    
-    coordinates <- data %>%
-      group_by(ManagedAreaName, ProgramID, ProgramLocationID) %>%
-      distinct(OriginalLatitude, OriginalLongitude) %>%
-      mutate(param = param_abrev,
-             region = region)
-    
-    coordinates_df <- bind_rows(coordinates, coordinates_df)
     
     #################
     ### FILTERING ###
@@ -306,6 +290,25 @@ for (j in 1:length(all_params)){
     n <- length(Mon_IDs)
     
     saveRDS(Mon_IDs, file = paste0(out_dir_tables,"/WC_Continuous_", param_abrev, "_", region, "_Mon_IDs.rds"))
+    
+    ###################
+    ### Coordinates ###
+    ###################
+    
+    coordinates <- data %>% 
+      group_by(ManagedAreaName, ProgramID, ProgramName, ProgramLocationID, Use_In_Analysis) %>%
+      summarise(n_data = n(),
+                year_min = min(Year),
+                year_max = max(Year),
+                years_of_data = year_max - year_min,
+                lat = mean(OriginalLatitude),
+                lon = mean(OriginalLongitude)) %>%
+      drop_na()
+    
+    coordinates$Parameter <- param_abrev
+    coordinates$Region <- region
+    
+    saveRDS(coordinates, file = paste0(out_dir_tables,"/WC_Continuous_", param_abrev, "_", region, "_Station_Coordinates.rds"))
     
     ############################
     #### MANAGED AREA STATS ####
@@ -518,10 +521,16 @@ for (j in 1:length(all_params)){
     cont_station_list[[region]] <- stations
   }
   
+  cont_file_list_df <- bind_rows(cont_file_list)
 }
 
-# combine file_lists & write to file
-cont_file_list_df <- bind_rows(cont_file_list)
+# bind coordinates together
+coordinates_df <- bind_rows(coordinates, coordinates_df)
+
+# Save Coordinates data frame
+saveRDS(coordinates_df, file = paste0(out_dir_tables,"/WC_Continuous_coordinates.rds"))
+
+# write file_lists to file
 fwrite(cont_file_list_df, "output/tables/cont/cont_file_list.txt", sep='|')
 
 # combine all station lists for each region & write to file
