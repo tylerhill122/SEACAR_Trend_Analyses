@@ -1,5 +1,3 @@
-library(geosphere)
-
 # Cont. Data exports do not contain full parameter names or units
 # Create dataframe containing that info
 cont_params_long <- c("Dissolved Oxygen","Dissolved Oxygen Saturation","pH",
@@ -169,12 +167,22 @@ station_count_table <- function(cont_data){
                                        "background-color" = "rgba(255,255,255,.5)"),
                           offset = c(offset_val, 0)
                         ))
+    
+    # set zoom level if only 1 station available
+    if(nrow(df_coord) == 1) {
+      map <- map %>%
+        setView(lng = long, lat = lati, zoom = 12)
+    }
+    
   }
   
-  map <- map %>%
-    addLegendAwesomeIcon(iconSet = iconSet,
-                         position = 'topright')
-  
+  # add legend for MAs with more than 1 station
+  if(nrow(df_coord) > 1){
+    map <- map %>%
+      addLegendAwesomeIcon(iconSet = iconSet,
+                           position = 'topright')
+  }
+
   map_out <- paste0(map_output, ma_abrev, ".png")
   
   # save file as png
