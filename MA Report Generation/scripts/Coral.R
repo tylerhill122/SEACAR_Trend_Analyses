@@ -569,8 +569,8 @@ plot_coral_pc <- function(ma, data = "data_pc", lme_plot = "lme_plot_pc", MA_Ov_
     geom_point(aes(x=Year, y=ResultValue), 
                position=plot_jitter, shape=21, size=2,
                color="#333333", fill="#cccccc", alpha=1) +
-    geom_line(data=lme_plot_data, aes(x=x, y=y),
-              color="#000099", size=2, alpha=0.8) +
+    # geom_line(data=lme_plot_data, aes(x=x, y=y),
+    #           color="#000099", size=2, alpha=0.8) +
     labs(title="Coral Percent Cover",
          subtitle=ma,
          x="Year", y="Percent cover (%)") +
@@ -681,8 +681,8 @@ plot_coral_sr <- function(ma, MA_Y_Stats = "MA_Y_Stats_sr", MA_Ov_Stats = "MA_Ov
   # Creates plot object using plot_data.
   # Data is plotted as symbols with connected lines.
   p1 <- ggplot(data=plot_data) +
-    geom_line(aes(x=Year, y=Mean), color=color_palette[1],
-              size=0.75, alpha=1) +
+    # geom_line(aes(x=Year, y=Mean), color=color_palette[1],
+    #           size=0.75, alpha=1) +
     geom_point(aes(x=Year, y=Mean), fill=color_palette[1],
                shape=21, size=2, color="#333333", alpha=1) +
     labs(title="Grazers and Reef-Dependent Species Richness",

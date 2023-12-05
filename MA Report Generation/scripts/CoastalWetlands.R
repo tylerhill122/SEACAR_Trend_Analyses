@@ -331,8 +331,8 @@ plot_cw <- function(ma, MA_Ov_Stats = "MA_Ov_Stats_cw", MA_Y_Stats = "MA_Y_Stats
   # Creates plot object using plot_data.
   # Data is plotted as symbols with connected lines.
   p1 <- ggplot(data=plot_data, group=as.factor(SpeciesGroup)) +
-    geom_line(aes(x=Year, y=Mean, color=as.factor(SpeciesGroup)),
-              size=0.75, alpha=1) +
+    # geom_line(aes(x=Year, y=Mean, color=as.factor(SpeciesGroup)),
+    #           size=0.75, alpha=1) +
     geom_point(aes(x=Year, y=Mean, fill=as.factor(SpeciesGroup),
                    shape=as.factor(SpeciesGroup)), size=2,
                color="#333333", alpha=1) +
