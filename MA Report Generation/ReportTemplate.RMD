@@ -17,6 +17,8 @@ output:
     extra_dependencies: ["longtable", "float"]
     keep_md: yes
     fig_crop: no
+    includes:
+      in_header: "preamble.tex"
 urlcolor: blue
 title: '`r paste(ma)`'
 subtitle: "SEACAR Habitat Analyses"
