@@ -89,12 +89,15 @@ rotate_sf <- function(data, x_add = 0, y_add = 0, ma, coast = "Atlantic"){
 
 #Create model objects, tables and plots for all MAs w/ >5 yrs of data-------------------------------------------------
 #Load geospatial data
-GeoDBdate <- "6june2023"
-locs_pts <- st_read(here::here(paste0("data/shapes/SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Point.shp")))
-locs_lns <- st_read(here::here(paste0("data/shapes/SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Line.shp")))
-rcp <- st_read(here::here("data/shapes/orcp_all_sites/ORCP_Managed_Areas.shp"))
-counties <- st_read(here::here("data/shapes/FLCounties/Counties_-_Detailed_Shoreline.shp"))
-corners <- fread(here::here("data/shapes/MApolygons_corners.csv"))
+# GeoDBdate <- "6june2023"
+# locs_pts <- st_read(here::here(paste0("data/shapes/SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Point.shp")))
+# locs_lns <- st_read(here::here(paste0("data/shapes/SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Line.shp")))
+# rcp <- st_read(here::here("data/shapes/orcp_all_sites/ORCP_Managed_Areas.shp"))
+# counties <- st_read(here::here("data/shapes/FLCounties/Counties_-_Detailed_Shoreline.shp"))
+# corners <- fread(here::here("data/shapes/MApolygons_corners.csv"))
+
+# The above lines now loaded uising "load_shape_files.R"
+
 #add 20% of difference (xmax-xmin) to xmax to help prevent year labels from getting cut off map images and 10% to ymax
 corners[, `:=` (xmax = xmax + (xmax-xmin)*0.25, ymax = ymax + (ymax-ymin)*0.1)]
 
