@@ -1,3 +1,10 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+  distill::distill_article: default
+---
+
 **Total Nitrogen Calculation:**
 
 The logic for calculated Total Nitrogen was provided by Kevin O’Donnell and colleagues at FDEP (with the help of Jay Silvanima, Watershed Monitoring Section). The following logic is used, in this order, based on the availability of specific nitrogen components.  
@@ -9,10 +16,9 @@ The logic for calculated Total Nitrogen was provided by Kevin O’Donnell and co
 5)	TN = TKN + NO3;
 6)	TN = ORGN + NH4 + NO3;
 
-```{r echo=FALSE, fig.align='right', eval=FALSE}
-knitr::include_graphics("images/TN_Calculation.png")
+```{r echo=FALSE, out.width='100%', fig.align='right', eval=FALSE}
+knitr::include_graphics(here::here("images/TN_Calculation.png"))
 ```
-
 
 Additional Information:
 
