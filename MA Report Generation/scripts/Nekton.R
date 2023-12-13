@@ -9,8 +9,8 @@ library(gridExtra)
 library(ggpubr)
 library(scales)
 
-#This script is designed to only determine species richness from the Nekton presence data
-param_name <- "Presence"
+#This script is designed to only determine species richness from the Nekton presence/absence data
+param_name <- "Presence/Absence"
 
 #Sets abbreviation or label to be used in file names
 param_file <- "SpeciesRichness"
@@ -19,8 +19,7 @@ param_file <- "SpeciesRichness"
 nek_data_out <- "output/Data/Nekton"
 
 #Import data from nekton file
-data <- fread(here::here(nekton_file_in), sep="|", header=TRUE, stringsAsFactors=FALSE,
-              na.strings=c("NULL","","NA"))
+data <- fread(nekton_file_in, sep="|", header=TRUE)
 
 #################
 ### FILTERING ###
@@ -29,7 +28,7 @@ data <- fread(here::here(nekton_file_in), sep="|", header=TRUE, stringsAsFactors
 # Filter data for the desired parameter
 data <- data[data$ParameterName==param_name, ]
 
-if (param_name=="Presence"){
+if (param_name=="Presence/Absence"){
   parameter <- "Species Richness"
 }
 # Makes sure EffortCorrection is numeric value
