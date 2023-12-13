@@ -172,10 +172,64 @@ load_data_table <- function(p, a="All", d="All", table) {
   return(df)
 }
 
+### Discrete sample location maps
+plot_discrete_maps <- function(ma, data){
+  map_output <- "output/maps/discrete"
+  
+  # Grab a list of programs within {discrete parameter} data for each MA
+  disc_programs <- data %>% filter(ManagedAreaName == ma) %>% distinct(ProgramID, ProgramName)
+  
+  # grab sample coordinates from those programs
+  coord_df <- locs_pts_rcp %>% filter(ProgramID %in% disc_programs$ProgramID)
+  
+  # frame to plot coordinates, allows for bubble size display of n_samples
+  ma_data <- data %>% filter(ManagedAreaName == ma, ProgramID %in% disc_programs$ProgramID) %>%
+    group_by(ProgramLocationID) %>%
+    summarise(n_data = n()) %>%
+    rename(ProgramLoc = ProgramLocationID)
+  
+  # merge frames together prior to plotting
+  discrete_df <- merge(ma_data, coord_df)
+  discrete_df <- discrete_df[order(discrete_df$n_data, decreasing=TRUE), ]
+  
+  # locate shape file for a given MA
+  ma_shape <- find_shape(ma)
+  
+  # get coordinates to set zoom level
+  shape_coordinates <- get_shape_coordinates(ma_shape)
+  
+  # setting color palette
+  pal <- colorFactor("plasma", discrete_df$ProgramID)
+  
+  # leaflet map
+  map <- leaflet(discrete_df, options = leafletOptions(zoomControl = FALSE,attributionControl=FALSE)) %>%
+    addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
+    addPolygons(data=ma_shape, color="#4e809c", weight = 1, smoothFactor = 0.5, opacity = 1.0, fillOpacity = 0.2) %>%
+    addCircleMarkers(lat=~Latitude_D, lng=~Longitude_, color=~pal(ProgramID), weight=0.5, radius=sqrt(discrete_df$n_data), fillOpacity=0.3) %>%
+    addLegend(pal=pal, values=~ProgramID, labFormat=labelFormat(prefix="Program "), title="") %>%
+    fitBounds(lng1=shape_coordinates$xmin,
+              lat1=shape_coordinates$ymin,
+              lng2=shape_coordinates$xmax,
+              lat2=shape_coordinates$ymax)
+  
+  # map output filepath
+  map_out <- paste0(map_output, ma_abrev, "_wc_discrete.png")
+  
+  # save file as png
+  mapshot(map, file = map_out)
+  
+  # draw .png with ggplot
+  p1 <- ggdraw() + draw_image(map_out, scale = 1)
+  
+  print(plot_grid(p1))
+  
+  cat("  \n")
+}
+
 ## Kendall-Tau Trendlines Plot function ##
 plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data) {
   cat("  \n")
-  cat(glue("**Discrete Seasonal Kendall-Tau Trend Analysis**"), "  \n")
+  cat(glue("**Seasonal Kendall-Tau Trend Analysis**"), "  \n")
   
   MA_YM_Stats <- as.data.frame(load_data_table(p, a, d, "MA_MMYY_Stats"))
   skt_stats <- as.data.frame(load_data_table(p, a, d, "skt_stats"))
@@ -254,11 +308,26 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
               SennIntercept is intercept value at beginning of
               record for monitoring location",
                        size=10, face="italic")
+    
+    # result_table <- kable(ResultTable, format="simple", 
+    #                       caption="Seasonal Kendall-Tau Analysis Results",
+    #                       row.names = FALSE) %>%
+    #   kable_styling(font_size=9)
+    
     # Arrange and display plot and statistic table
     print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
-    # Add extra space at the end to prevent the next figure from being too
-    # close.
+    # print(p1)
     cat("  \n")
+    # print(result_table)
+    
+    #####################
+    ### Discrete Maps ###
+    #####################
+    
+    plot_discrete_maps(ma, data)
+    
+    #####################
+    #####################
     
     # Included Programs
     program_table <- data %>%
