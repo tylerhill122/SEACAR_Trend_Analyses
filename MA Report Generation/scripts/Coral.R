@@ -12,28 +12,28 @@ library(ggpubr)
 
 data <- fread(coral_file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
               na.strings=c("NULL","","NA"))
+
 data2 <- data
 
-params_to_plot <- c("PercentCover", "SpeciesRichness")
+params_to_plot <- c("Percent Cover", "Species Richness")
 
 
 ######################
 ### DATA FILTERING ###
 ######################
 
-if("PercentCover" %in% params_to_plot){
+if("Percent Cover" %in% params_to_plot){
   
   out_dir <- "output/Data/Coral/PercentCover"
-  param_name <- "PercentCover"
+  param_name <- "Percent Cover"
   param_file <- "PC"
   seed <- 42
   
   # Only keep data for Percent Cover
-  data <- data[data$ParameterName=="Percent Cover - Species Composition"]
+  data <- data[data$ParameterName==param_name]
   
   # Simplify ParameterName to Percent Cover
-  data$ParameterName <- "Percent Cover"
-  parameter <- "Percent Cover"
+  data$ParameterName <- param_name
   
   # Sets units for percent cover
   unit <- "%"
@@ -87,7 +87,7 @@ if("PercentCover" %in% params_to_plot){
   # intervals.
   MA_YM_Stats <- data %>%
     dplyr::group_by(AreaID, ManagedAreaName, Year, Month) %>%
-    dplyr::summarize(ParameterName=parameter,
+    dplyr::summarize(ParameterName=param_name,
               N_Data=length(na.omit(ResultValue)),
               Min=min(ResultValue),
               Max=max(ResultValue),
@@ -111,7 +111,7 @@ if("PercentCover" %in% params_to_plot){
   # Create summary statistics for each managed area based on Year intervals
   MA_Y_Stats <- data %>%
     dplyr::group_by(AreaID, ManagedAreaName, Year) %>%
-    dplyr::summarize(ParameterName=parameter,
+    dplyr::summarize(ParameterName=param_name,
               N_Data=length(na.omit(ResultValue)),
               Min=min(ResultValue),
               Max=max(ResultValue),
@@ -132,7 +132,7 @@ if("PercentCover" %in% params_to_plot){
   # Create summary statistics for each managed area based on Month intervals.
   MA_M_Stats <- data %>%
     dplyr::group_by(AreaID, ManagedAreaName, Month) %>%
-    dplyr::summarize(ParameterName=parameter,
+    dplyr::summarize(ParameterName=param_name,
               N_Data=length(na.omit(ResultValue)),
               Min=min(ResultValue),
               Max=max(ResultValue),
@@ -155,7 +155,7 @@ if("PercentCover" %in% params_to_plot){
   # Create summary overall statistics for each managed area.
   MA_Ov_Stats <- data %>%
     dplyr::group_by(AreaID, ManagedAreaName) %>%
-    dplyr::summarize(ParameterName=parameter,
+    dplyr::summarize(ParameterName=param_name,
               N_Years=length(unique(na.omit(Year))),
               SufficientData=ifelse(N_Years>=5, TRUE, FALSE),
               EarliestYear=min(Year),
@@ -263,19 +263,20 @@ if("PercentCover" %in% params_to_plot){
 }
 
 
-if("SpeciesRichness" %in% params_to_plot){
+if("Species Richness" %in% params_to_plot){
   
   out_dir <- "output/Data/Coral/SpeciesRichness"
   param_name <- "SpeciesRichness"
   param_file <- "SpeciesRichness"
   
   # Only keep data for Presence of grazers and reef-dependent species
-  data <- data2[data2$ParameterName=="Presence - Grazers and Reef Dependent Species"]
+  data <- data2[data2$ParameterName=="Presence/Absence"]
+  # data <- data[data$SpeciesGroup1=="Grazers and reef dependent species"]
   
   # Create ParameterName Column
   data$ParameterName <- "Species Richness"
   parameter <- "Species Richness"
-  title_param <- "Species Richness - Grazers and Reef-Dependent Species"
+  title_param <- "Species Richness"
   
   # Sets units for species richness
   unit <- "# of species"
@@ -629,11 +630,9 @@ plot_coral_sr <- function(ma, MA_Y_Stats = "MA_Y_Stats_sr", MA_Ov_Stats = "MA_Ov
   # Gets data for target managed area
   plot_data <- MA_Y_Stats[MA_Y_Stats$ManagedAreaName==ma]
   # Determines most recent year with available data for managed area
-  t_max <- max(MA_Ov_Stats$LatestYear[MA_Ov_Stats$ManagedAreaName==
-                                        ma])
+  t_max <- max(MA_Ov_Stats$LatestYear[MA_Ov_Stats$ManagedAreaName==ma])
   # Determines earliest recent year with available data for managed area
-  t_min <- min(MA_Ov_Stats$EarliestYear[MA_Ov_Stats$ManagedAreaName==
-                                          ma])
+  t_min <- min(MA_Ov_Stats$EarliestYear[MA_Ov_Stats$ManagedAreaName==ma])
   # Determines how many years of data are present
   t <- t_max-t_min
   
@@ -685,7 +684,7 @@ plot_coral_sr <- function(ma, MA_Y_Stats = "MA_Y_Stats_sr", MA_Ov_Stats = "MA_Ov
     #           size=0.75, alpha=1) +
     geom_point(aes(x=Year, y=Mean), fill=color_palette[1],
                shape=21, size=2, color="#333333", alpha=1) +
-    labs(title="Grazers and Reef-Dependent Species Richness",
+    labs(title=title_param,
          subtitle=ma,
          x="Year", y="Richness (# of species)") +
     scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
