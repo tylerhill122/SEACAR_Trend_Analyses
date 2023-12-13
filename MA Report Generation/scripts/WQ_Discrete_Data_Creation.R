@@ -21,7 +21,7 @@ library(ggpubr)
 library(scales)
 library(EnvStats)
 library(tidyr)
-library(kableExtra)
+library(stringr)
 
 tic()
 #Sets whether to run documents with plots or not (APP_Plots==TRUE to include plots)
@@ -126,7 +126,8 @@ for (j in 1:length(all_params)){
   param_abrev <- all_params_short[j]
   print(paste0("Starting parameter: ", param_name))
   #Gets the file with the filename containing the desired parameter
-  file_in <- list.files("data/disc", pattern=param_name, full=TRUE)
+  disc_param_pattern <- paste0("NUT_", param_name)
+  file_in <- list.files(here::here(seacar_data_location), pattern=disc_param_pattern, full=TRUE)
   
   #Since Dissolved_Oxygen will return both Dissolved_Oxygen and Dissolved_Oxygen_Saturation,
   #the if statement removes the entry for Dissolved_Oxygen_Saturation when trying to get Dissolved_Oxygen
@@ -135,7 +136,7 @@ for (j in 1:length(all_params)){
   }
   
   # shortened filenames for display in report
-  file_short <- sub("data/disc/", "", file_in)
+  file_short <- tail(str_split(file_in, "/")[[1]],1)
   # append filenames to disc_file_list
   disc_file_list[[param_abrev]] <- file_short
   
