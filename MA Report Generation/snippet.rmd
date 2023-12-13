@@ -7,7 +7,7 @@ output:
 
 # Threshold Filtering
 
-Threshold filters, following Florida Department of Environmental Protection Division of Environmental Assessment and Restoration (DEAR) are used to exclude specific results values from the SEACAR Analysis. Based on the threshold filters, QAQC Flags are inserted into the SEACAR_QAQCFlagCode and SEACAR_QAQC_Description columns of the export data. The Include_YN column indicates whether the QAQC Flag will also indicate that data are excluded from analysis. No data are excluded from the data export, but the analysis scripts can use the Include_YN column to exclude data.
+Threshold filters, following the guidance of Florida Department of Environmental Protection's (*FDEP*) Division of Environmental Assessment and Restoration (*DEAR*) are used to exclude specific results values from the SEACAR Analysis. Based on the threshold filters, Quality Assurance / Quality Control (*QAQC*) Flags are inserted into the *SEACAR_QAQCFlagCode* and *SEACAR_QAQC_Description* columns of the export data. The *Include* column indicates whether the *QAQC* Flag will also indicate that data are excluded from analysis. No data are excluded from the data export, but the analysis scripts can use the *Include* column to exclude data (1 to include, 0 to exclude).
 
 ```{r, results='asis', echo=FALSE, warning=FALSE}
 library(kableExtra)
@@ -25,7 +25,7 @@ cont_threshold_values_df <- data.frame(
     "mg/L","mg/L","mg/L",
     "ppt","ppt","ppt",
     "Degrees C","Degrees C","Degrees C",
-    "","","",
+    "pH","pH","pH",
     "%","%","%",
     "mS/cm","mS/cm",
     "NTU","NTU","NTU"
@@ -61,8 +61,8 @@ disc_threshold_values_df <- data.frame(
   units = c("mg/L","ppt","Degrees C","","%","mS/cm","NTU","mg/L","ug/L","ug/L","m","m^1","PCU","QSE",
             "mg/L","mg/L","mg/L","mg/L","mg/L","mg/L","mg/L","mg/L","mg/L","mg/L"
   ),
-  low_thres = c(">0",0,3,2,">0",">0.005",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
-  high_thres = c(22,70,40,13,310,100,"","","","",50,"","","","","","","","","","","","","")
+  low_thres = c("0.000001",0,3,2,"0.000001","0.005000001",0,0,0,0,"0.000001",0,0,0,0,0,0,0,0,0,0,0,0,0),
+  high_thres = c(22,70,40,13,310,100,"-","-","-","-",50,"-","-","-","-","-","-","-","-","-","-","-","-","-")
 )
 
 kable(disc_threshold_values_df, col.names = c("*Parameter Name*", "*Units*", "*Low Threshold*", "*High Threshold*"), 
@@ -81,10 +81,10 @@ threshold_df <- data.frame(desc = c("Exceeds Maximum threshold. Not verified in 
                           "Below Minimum threshold. Verified in raw data",
                           "Within threshold tolerance",
                           "No defined thresholds for this parameter"),
-                 inc = c("N", "N", "N", "N", "Y", "Y"), 
+                 inc = c("No", "No", "No", "No", "Yes", "Yes"),
                  flag = c("2Q", "3Q", "4Q", "5Q", "6Q", "7Q"))
-kable(threshold_df, col.names = c("*SEACAR QAQC Description*", "*Include YN*", "*SEACAR QAQCFlagCode*"), 
-      escape = F, caption = "QA Flags inserted based on threshold checks",
+kable(threshold_df, col.names = c("*SEACAR QAQC Description*", "*Include*", "*SEACAR QAQCFlagCode*"),
+      escape = F, caption = "Quality Assurance Flags inserted based on threshold checks listed in Table 1 & 2",
       format = "simple") %>%
   kable_styling(latex_options = "scale_down",
                 position = "center")
@@ -92,40 +92,48 @@ kable(threshold_df, col.names = c("*SEACAR QAQC Description*", "*Include YN*", "
 
 # Value Qualifiers
 
-Value qualifier codes included within the data are used to exclude certain results from the analysis. The data are retained in the data export files, but the analysis uses the "Include" column to filter the results.
+Value qualifier codes included within the data are used to exclude certain results from the analysis. The data are retained in the data export files, but the analysis uses the *Include* column to filter the results.
 
 **STORET and WIN value qualifier codes**
 
-Value qualifier codes from STORET and WIN data are examined with the database and used to populate the Include_YN column in data exports.
+Value qualifier codes from *STORET* and *WIN* data are examined with the database and used to populate the *Include* column in data exports.
 
 ```{r, results='asis', echo=FALSE, warning=FALSE}
-vq_df <- data.frame(vq = c("H","J","V","Y"),
-                    inc = c(0, 0, 0, 0), 
+vq_df <- data.frame(qual_soruce = c("STORET-WIN", "STORET-WIN", "STORET-WIN", "STORET-WIN"),
+                    vq = c("H","J","V","Y"),
+                    inc = c("No", "No", "No", "No"), 
                     mdl = c(0, 0, 0, 0),
-                    qual_soruce = c("STORET-WIN", "STORET-WIN", "STORET-WIN", "STORET-WIN"))
-kable(vq_df, col.names = c("*Value Qualifier*", "*Include YN*", "*MDL YN*", "*Qualifier Source*"),
+                    desc = c("Value based on field kit determination; results may not be accurate",
+                             "Estimated value",
+                             "Analyte was detected at or above method detection limit",
+                             "Lab analysis from an improperly preserved sample; \ndata may be inaccurate"))
+
+vq_df$desc = linebreak(vq_df$desc)
+
+kable(vq_df, col.names = c("*Qualifier Source*", "*Value Qualifier*", "*Include*", "*MDL*", "*Description*"),
       escape = F, 
       caption = "Value Qualifier codes excluded from analysis",
       format = "simple") %>%
   kable_styling(latex_options = "scale_down",
-                position = "center")
+                position = "center") %>% 
+  column_spec(1:5, "10em", latex_valign = "t")
 ```
 
 **Systemwide Monitoring Program (SWMP) value qualifier codes**
 
-Value qualifier codes from the SWMP continuous program are examined with the database and used to populate the Include_YN column in data exports. SWMP Qualifier Codes are indicated by QualifierSource=SWMP.
+Value qualifier codes from the *SWMP* continuous program are examined with the database and used to populate the *Include* column in data exports. *SWMP* Qualifier Codes are indicated by *QualifierSource=SWMP*.
 
 ```{r, results='asis', echo=FALSE, warning=FALSE}
 swmp <- data.frame(qs = c("SWMP", "SWMP", "SWMP", "SWMP", "SWMP", "SWMP", "SWMP", "SWMP", "SWMP", "SWMP", "SWMP"),
                    vq = c(-1, -2, -3, -4, -5, 0, 1, 2, 3, 4, 5),
-                   inc = c(1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1),
+                   inc = c("Yes", "No", "No", "No", "No", "Yes", "No", "Yes", "Yes", "Yes", "Yes"),
                    desc = c("Optional parameter not collected","Missing data","Data rejected due to QA/QC","Outside low sensor range",
                             "Outside high sensor range","Passed initial QA/QC checks","Suspect data","Reserved for future use",
                             "Calculated data: non-vented depth/level sensor\ncorrection for changes in barometric pressure",
                             "Historical: Pre-auto QA/QC","Corrected data"))
 swmp$desc <- linebreak(swmp$desc)
 
-swmp %>% kable(col.names = c("*Qualifier Source*", "*ValueQualifier*", "*Include YN*", "*Description*"),
+swmp %>% kable(col.names = c("*Qualifier Source*", "*Value Qualifier*", "*Include*", "*Description*"),
       escape = F, 
       caption = "SWMP Value Qualifier codes",
       format = "simple") %>%
