@@ -275,7 +275,7 @@ sav_maps <- function(ma, ma_abrev){
   map_output <- "output/maps/"
   
   # Grab a list of programs within SAV data for each MA
-  sav_programs <- SAV4 %>% filter(ManagedAreaName == ma) %>% distinct(ProgramID)
+  sav_programs <- SAV4 %>% filter(ManagedAreaName == ma) %>% distinct(ProgramID, ProgramName)
   
   # grab sample coordinates from those programs
   coord_df <- locs_pts_rcp %>% filter(ProgramID %in% sav_programs$ProgramID)
@@ -288,6 +288,7 @@ sav_maps <- function(ma, ma_abrev){
   
   # merge frames together prior to plotting
   sav_df <- merge(sav_df, coord_df)
+  sav_df <- sav_df[order(sav_df$n_data, decreasing=TRUE), ]
   
   # locate shape file for a given MA
   ma_shape <- find_shape(ma)
@@ -319,6 +320,30 @@ sav_maps <- function(ma, ma_abrev){
   p1 <- ggdraw() + draw_image(map_out, scale = 1)
 
   print(plot_grid(p1))
+  
+  cat("  \n")
+  
+  # SAV program data tables
+  # cat(paste0("Programs Containing SAV data: "))
+  cat("  \n")
+  
+  for (p_id in sav_programs$ProgramID){
+    
+    p_name <- sav_programs[ProgramID==p_id, ]$ProgramName
+    
+    caption <- paste0(p_name, " - *Program ", p_id,"*")
+    
+    ma_sav <- SAV4 %>% filter(ManagedAreaName == ma, ProgramID==p_id) %>%
+      summarise(N_Data = n(),
+                YearMin = min(Year),
+                YearMax = max(Year),
+                "Collection Method" = unique(method),
+                "Sample Locations" = length(unique(ProgramLocationID))) %>%
+      kable(format="simple", caption=caption, col.names = c("*N_Data*","*YearMin*","*YearMax*","*Collection Method*","*Sample Locations*")) %>%
+      kable_styling()
+    
+    print(ma_sav)
+  }
 }
 
 sav_scope_plots <- function(ma_abrev){
