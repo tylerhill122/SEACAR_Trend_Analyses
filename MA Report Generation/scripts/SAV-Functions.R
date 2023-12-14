@@ -85,6 +85,9 @@ sav_stats_table <- stats[!apply(stats[, -c(1, 2), drop = FALSE], 1, function(row
 sav_stats_table$years <- paste0(sav_stats_table$EarliestYear," - ",sav_stats_table$LatestYear)
 sav_stats_table$years[sav_stats_table$SufficientData==FALSE] <- NA
 
+# Change Unidentified Halophila to Halophila, unk.
+sav_stats_table[Species=="Unidentified Halophila", Species := "Halophila, unk."]
+
 #Write output table to a pipe-delimited txt file
 # fwrite(stats, "output/tables/SAV/SAV_BBpct_LMEresults_All.txt", sep="|")
 
@@ -169,11 +172,27 @@ plot_sav_barplot <- function(ma_abrev){
   }
 }
 
-sav_managed_areas <- unique(c(malist, malist2))
+# Multiplots
+
+multiplots <- str_subset(files, "_multiplot")
+
+multiplot_list <- c()
+for(pl in multiplots){
+  ma_p <- str_split(pl, "_")[[1]][3]
+  multiplot_list <- append(multiplot_list, ma_p)
+}
+
+plot_sav_multiplot <- function(ma_abrev){
+  if(ma_abrev %in% multiplot_list){
+    plot_file <- lapply(ma_abrev, find_exact_matches, filenames = multiplots)
+    plot <- readRDS(here::here(paste0("output/Figures/BB/", plot_file)))
+    print(plot)
+  }
+}
 
 sp_to_skip <- c("Drift algae", "Total seagrass", "Attached algae", "Total SAV")
 
-ggplot_gam <- function(ma, hal = "all") {
+ggplot_gam <- function(ma, hal = "all", pal = "Dark2") {
   
   data <- SAV4 %>% filter(ManagedAreaName==ma)
   
@@ -202,8 +221,12 @@ ggplot_gam <- function(ma, hal = "all") {
       group_by(!!sym(au_col)) %>% 
       summarise(n = n_distinct(Year)) %>% pull(n) %>% min()
     
+    table_display <- data %>%
+      group_by(!!sym(au_col)) %>%
+      summarise(n = n_distinct(Year),
+                YearRange = paste0(min(Year), " - ", max(Year)))
+    
     # k_value <- ifelse(min_years > 2, min_years - 1, 2)
-    # print(k_value)
     k_value <- 3
     
     model_list <- list()
@@ -255,17 +278,25 @@ ggplot_gam <- function(ma, hal = "all") {
                         by = 3)
       
       plot <- ggplot(predictions, aes(x = relyear, y = fit, color = species)) +
-        geom_ribbon(aes(ymin = lwr, ymax = upr, fill = species), alpha = 0.2) + 
-        # geom_line() +
-        labs(title = paste0("BB_pct over Years for Seagrass Species in ", ma),
-             y = "Braun-Blanquet Percentage",
+        geom_ribbon(aes(ymin = lwr, ymax = upr, fill = species), alpha = 0.3, colour = NA) +
+        geom_line() +
+        labs(title = paste0("Median Percent Cover for seagrass species"),
+             subtitle = ma,
+             y = "Median Percent Cover",
              x = "Year") +
-        color_palette +
-        scale_fill_manual(values = rainbow(length(unique(predictions$species)))) +
+        scale_color_brewer(palette = pal, "Species") +
+        scale_fill_brewer(palette = pal, "Species") +
         scale_x_continuous(breaks = breaks_seq, labels = labels_seq) +
         plot_theme
       
       print(plot)
+      cat("  \n")
+      cat("Species must have at least 10 years of data to be evaluated  \n")
+      cat("*Drift algae*, *Total seagrass*, *Attached algae*, and *Total SAV* are excluded from the analyses  \n")
+      
+      caption <- paste0("Amount of data for each species in ", ma)
+      kable(table_display, format="simple", caption=caption, col.names= c("*Species*", "*Years of Data*", "*Year Range*"))
+      cat("\n")
     }
   }
 }

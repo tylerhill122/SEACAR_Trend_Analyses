@@ -17,6 +17,7 @@ output:
     extra_dependencies: ["longtable", "float"]
     keep_md: yes
     fig_crop: no
+    keep_tex: true
     includes:
       in_header: "preamble.tex"
 urlcolor: blue
@@ -75,7 +76,7 @@ if(in_discrete){
     y_labels <- ifelse(param == "pH", parameter, paste0(parameter, " (" , unit, ")"))
     
     cat("  \n")
-    subtitle <- glue("## {parameter}")
+    subtitle <- glue("## {parameter} - Discrete Water Quality")
     cat(subtitle, "\n\n")
     
     #Because secchi depth is does not have a bottom measurement, this statement skips
@@ -123,8 +124,10 @@ if(in_discrete){
     
     ## Begin Plotting Discrete ##
     
-    # Produce discrete SKT-trendplots
-    plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
+    # Produce discrete SKT-trendplots (with or without sample location maps included)
+    # plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
+    plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter, data, include_map=FALSE)
+    
     
     # Produce boxplots
     # plot_boxplots(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
@@ -149,13 +152,13 @@ if(in_continuous){
   cat("\\newpage")
   cat("# Water Quality - Continuous  \n")
   
-  cont_file_list <- list.files("data/cont", full=TRUE)
   cat("The following files were used in the continuous analysis:  \n\n")
-
+  
   for (param in cont_params_long){
     p <- str_replace_all(param, " ", "_")
     par_reg <- paste0(p, "_", region)
-    file_name <- str_split(str_subset(cont_file_list, par_reg), "data/cont/")[[1]][2]
+    
+    file_name <- str_subset(wq_cont_files_short, par_reg)
     
     cat(paste0("* *", file_name, "*\n"))
     cat("  \n")
@@ -178,7 +181,7 @@ if(in_continuous){
     unit <- cont_param_df %>% filter(param_short == param) %>% pull(unit)
     
     # defining labels for y-axis
-    y_labels <- ifelse(param == "pH", parameter, paste0(parameter, " (" , unit, ")"))
+    y_labels <- ifelse(param == "pH", parameter, paste0(parameter, " (" , unit, ") - Monthly Average"))
     
     ###########################
     ### Begin Plotting Cont ###
@@ -224,6 +227,9 @@ if(in_sav){
 
 
 if(in_sav){
+  
+  cat("  \n")
+  plot_sav_multiplot (ma_abrev)
   
   cat("  \n")
   plot_sav_trendplot(ma, ma_abrev)
