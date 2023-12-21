@@ -146,7 +146,7 @@ plot_sav_trendplot <- function(ma,ma_abrev){
     plot <- readRDS(here::here(paste0("output/Figures/BB/", plot_file)))
     print(plot)
     cat("  \n")
-    
+
     #############
     sav_trend_table(ma)
     cat("  \n")
@@ -169,6 +169,7 @@ plot_sav_barplot <- function(ma_abrev){
     plot_file <- lapply(ma_abrev, find_exact_matches, filenames = barplots)
     plot <- readRDS(here::here(paste0("output/Figures/BB/", plot_file)))
     print(plot)
+    cat("  \n")
   }
 }
 
@@ -182,11 +183,16 @@ for(pl in multiplots){
   multiplot_list <- append(multiplot_list, ma_p)
 }
 
-plot_sav_multiplot <- function(ma_abrev){
+plot_sav_multiplot <- function(ma, ma_abrev){
   if(ma_abrev %in% multiplot_list){
     plot_file <- lapply(ma_abrev, find_exact_matches, filenames = multiplots)
     plot <- readRDS(here::here(paste0("output/Figures/BB/", plot_file)))
+    
+    caption <- paste0("Median percent cover by species in *", ma, "*. Linear mixed-effects models are applied to each species to produce species trends. The trendlines are then isolated and reproduced below for ease of viewing. The LME results are available in table form beneath the supplemental trendplot below.")
+    cat("  \n")
     print(plot)
+    cat("  \n")
+    cat(caption)
   }
 }
 
@@ -291,8 +297,9 @@ ggplot_gam <- function(ma, hal = "all", pal = "Dark2") {
       
       print(plot)
       cat("  \n")
-      cat("Species must have at least 10 years of data to be evaluated  \n")
-      cat("*Drift algae*, *Total seagrass*, *Attached algae*, and *Total SAV* are excluded from the analyses  \n")
+      cat(paste0("Generalized additive models for each species in ", ma, ". Species must have at least 10 years of data to be evaluated.  \n"))
+      cat("  \n")
+      cat("*Drift algae*, *Total seagrass*, *Attached algae*, and *Total SAV* are excluded from the analyses.  \n")
       
       caption <- paste0("Amount of data for each species in ", ma)
       kable(table_display, format="simple", caption=caption, col.names= c("*Species*", "*Years of Data*", "*Year Range*"))
@@ -307,6 +314,7 @@ sav_maps <- function(ma, ma_abrev){
   
   # Grab a list of programs within SAV data for each MA
   sav_programs <- SAV4 %>% filter(ManagedAreaName == ma) %>% distinct(ProgramID, ProgramName)
+  sav_programs$ProgramID <- as.numeric(sav_programs$ProgramID)
   
   # grab sample coordinates from those programs
   coord_df <- locs_pts_rcp %>% filter(ProgramID %in% sav_programs$ProgramID)
@@ -331,7 +339,7 @@ sav_maps <- function(ma, ma_abrev){
   pal <- colorFactor("plasma", sav_df$ProgramID)
   
   # leaflet map
-  map <- leaflet(sav_df, options = leafletOptions(zoomControl = FALSE,attributionControl=FALSE)) %>%
+  map <- leaflet(sav_df, options = leafletOptions(zoomControl = FALSE)) %>%
     addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
     addPolygons(data=ma_shape, color="#4e809c", weight = 1, smoothFactor = 0.5, opacity = 1.0, fillOpacity = 0.2) %>%
     addCircleMarkers(lat=~Latitude_D, lng=~Longitude_, color=~pal(ProgramID), weight=0.5, radius=sqrt(sav_df$n_data), fillOpacity=0.3) %>%
@@ -349,10 +357,13 @@ sav_maps <- function(ma, ma_abrev){
   
   # draw .png with ggplot
   p1 <- ggdraw() + draw_image(map_out, scale = 1)
-
-  print(plot_grid(p1))
   
+  # captions / label
+  caption = paste0("Map showing SAV sampling sites within the boundaries of *", ma, "*. The point size reflects the number of samples at a given sampling site.  \n")
+  
+  print(p1)
   cat("  \n")
+  cat(caption)
   
   # SAV program data tables
   # cat(paste0("Programs Containing SAV data: "))
@@ -377,7 +388,8 @@ sav_maps <- function(ma, ma_abrev){
   }
 }
 
-sav_scope_plots <- function(ma_abrev){
+sav_scope_plots <- function(ma, ma_abrev){
+
   scope_files <- list.files(here::here("output/Figures/BB/maps"))
   
   ma_scope_file <- lapply(ma_abrev, find_exact_matches, filenames = scope_files)
@@ -385,4 +397,9 @@ sav_scope_plots <- function(ma_abrev){
   base <- readRDS(paste0("output/Figures/BB/maps/",ma_scope_file))
   
   print(base)
+  
+  cat("  \n")
+  caption <- paste0("Maps showing the temporal scope of SAV sampling sites within the boundaries of *", ma, "* by Program name.")
+  cat(caption)
+  cat("  \n")
 }
