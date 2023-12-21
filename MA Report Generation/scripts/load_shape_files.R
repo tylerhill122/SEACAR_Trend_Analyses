@@ -1,15 +1,19 @@
 library(sf)
 # AP and NERR shapefiles
+source("scripts/SEACAR_data_location.R")
+shape_files <- list.files(seacar_shape_location, full=TRUE)
 
-AP_shp <- st_read(here::here("data/shapes/APs/Florida_Aquatic_Preserves.shp"))
-NERR_shp <- st_read(here::here("data/shapes/NERRs/Florida_National_Estuarine_Resarch_Reserves__NERR__Boundaries.shp"))
+shape_locate <- function(location){return(paste0(seacar_shape_location, location))}
 
-GeoDBdate <- "6june2023"
-locs_pts <- st_read(here::here(paste0("data/shapes/SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Point.shp")))
-locs_lns <- st_read(here::here(paste0("data/shapes/SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Line.shp")))
-rcp <- st_read(here::here("data/shapes/orcp_all_sites/ORCP_Managed_Areas.shp"))
-counties <- st_read(here::here("data/shapes/FLCounties/Counties_-_Detailed_Shoreline.shp"))
-corners <- fread(here::here("data/shapes/MApolygons_corners.csv"))
+AP_shp <- st_read(shape_locate("APs/Florida_Aquatic_Preserves.shp"))
+NERR_shp <- st_read(shape_locate("NERRs/Florida_National_Estuarine_Resarch_Reserves__NERR__Boundaries.shp"))
+
+GeoDBdate <- "12dec2023"
+locs_pts <- st_read(shape_locate(paste0("SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Point.shp")))
+locs_lns <- st_read(shape_locate(paste0("SampleLocations", GeoDBdate, "/seacar_dbo_vw_SampleLocation_Line.shp")))
+rcp <- st_read(shape_locate("orcp_all_sites/ORCP_Managed_Areas.shp"))
+counties <- st_read(shape_locate("FLCounties/Counties_-_Detailed_Shoreline.shp"))
+corners <- fread(shape_locate("MApolygons_corners.csv"))
 
 ###############
 ## FUNCTIONS ##
