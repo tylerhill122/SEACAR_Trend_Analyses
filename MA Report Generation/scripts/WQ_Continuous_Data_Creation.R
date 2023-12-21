@@ -37,10 +37,10 @@ suff_years <- 5
 #Easiest way to edit is to comment out undesired parameters.
 #If only one parameter is desired, comment out all other parameters and delete comma after remaining parameter
 all_params <- c(
-  # "Dissolved_Oxygen",
-  # "Dissolved_Oxygen_Saturation",
-  # "pH",
-  # "Salinity",
+  "Dissolved_Oxygen",
+  "Dissolved_Oxygen_Saturation",
+  "pH",
+  "Salinity",
   "Turbidity",
   "Water_Temperature"
 )
@@ -49,10 +49,10 @@ all_params <- c(
 #Easiest way to edit is to comment out undesired parameters.
 #If only one parameter is desired, comment out all other parameters and delete comma after remaining parameter
 all_params_short <- c(
-  # "DO",
-  # "DOS",
-  # "pH",
-  # "Sal",
+  "DO",
+  "DOS",
+  "pH",
+  "Sal",
   "Turb",
   "TempW"
 )
@@ -108,8 +108,9 @@ for (j in 1:length(all_params)){
   print(paste0("Starting parameter: ", param_name))
   
   for (i in 1:length(all_regions)){
+    param_file_name <- paste0("cont_",param_name)
     #Gets the files with the file names containing the desired parameter
-    file_list <- list.files("data/cont", pattern=param_name, full=TRUE)
+    file_list <- list.files(seacar_data_location, pattern=param_file_name, full=TRUE)
     
     #Since Dissolved_Oxygen will return both Dissolved_Oxygen and Dissolved_Oxygen_Saturation,
     #the if statement removes the entries for Dissolved_Oxygen_Saturation when trying to get Dissolved_Oxygen
@@ -180,8 +181,11 @@ for (j in 1:length(all_params)){
     MA_All_Region <- MA_All[MA_All$Region==region,]
     
     # Gets AreaID for data by merging data with the managed area list for the region
-    data <- merge.data.frame(MA_All_Region[,c("AreaID", "ManagedAreaName")],
-                             data, by="ManagedAreaName", all=TRUE)
+    # data <- merge.data.frame(MA_All_Region[,c("AreaID", "ManagedAreaName")],
+    #                          data, by="ManagedAreaName", all=TRUE)
+    data <- merge(MA_All_Region[,c("AreaID", "ManagedAreaName")],
+                  data, by="ManagedAreaName", all=TRUE)
+    
     # Creates MonitoringID to more easily cycle through monitoring locations
     data <- data %>%
       group_by(AreaID, ManagedAreaName, ProgramID, ProgramName,
@@ -392,14 +396,15 @@ for (j in 1:length(all_params)){
     # Saving RDS object
     saveRDS(Mon_M_Stats, file = paste0(out_dir_tables,"/WC_Continuous_", param_abrev, "_", region, "_Mon_M_Stats.rds"))
     
-    # Reduces size of data by getting a daily average
-    data <- data %>%
-      group_by(MonitoringID, AreaID, ManagedAreaName, ProgramID, ProgramName,
-               ProgramLocationID, SampleDate) %>%
-      summarise(Year=unique(Year), Month=unique(Month),
-                RelativeDepth=unique(RelativeDepth),
-                ResultValue=mean(ResultValue), Include=unique(Include),
-                Use_In_Analysis=unique(Use_In_Analysis))
+    # Reduces size of data by getting a monthly average
+    # New method uses "Collapse" package to more efficiently group & summarise
+    data_after <- data %>%
+      fgroup_by(MonitoringID, AreaID, ManagedAreaName, ProgramID, ProgramName,
+                ProgramLocationID, SampleDate) %>%
+      fsummarise(Year=funique(Year), Month=funique(Month),
+                 RelativeDepth=funique(RelativeDepth),
+                 ResultValue=fmean(ResultValue), Include=funique(Include),
+                 Use_In_Analysis=funique(Use_In_Analysis))
     # Sets column formats to appropriate types
     data$SampleDate <- as.Date(data$SampleDate)
     data$YearMonth <- format(data$SampleDate, format = "%m-%Y")
