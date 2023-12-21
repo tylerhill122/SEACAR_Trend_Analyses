@@ -10,13 +10,13 @@ library(hrbrthemes)
 library(nlme)
 library(ggpubr)
 
-data <- fread(coral_file_in, sep="|", header=TRUE, stringsAsFactors=FALSE,
-              na.strings=c("NULL","","NA"))
+data <- fread(coral_file_in, sep="|", header=TRUE, stringsAsFactors=FALSE)
 
 data2 <- data
 
 params_to_plot <- c("Percent Cover", "Species Richness")
 
+MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE, na.strings = "")
 
 ######################
 ### DATA FILTERING ###
@@ -262,21 +262,18 @@ if("Percent Cover" %in% params_to_plot){
 
 }
 
-
 if("Species Richness" %in% params_to_plot){
   
   out_dir <- "output/Data/Coral/SpeciesRichness"
-  param_name <- "SpeciesRichness"
   param_file <- "SpeciesRichness"
   
   # Only keep data for Presence of grazers and reef-dependent species
-  data <- data2[data2$ParameterName=="Presence/Absence"]
-  # data <- data[data$SpeciesGroup1=="Grazers and reef dependent species"]
+  data <- data2[data2$ParameterName=="Presence/Absence" & 
+                  data2$SpeciesGroup1 %in% c("Grazers and reef dependent species", "Reef Fish")]
   
   # Create ParameterName Column
   data$ParameterName <- "Species Richness"
   parameter <- "Species Richness"
-  title_param <- "Species Richness"
   
   # Sets units for species richness
   unit <- "# of species"
@@ -286,9 +283,9 @@ if("Species Richness" %in% params_to_plot){
   data <- data[!is.na(data$ManagedAreaName),]
   data <- data[data$ManagedAreaName!="NA",]
   # Remove rows with missing GenusName
-  data <- data[!is.na(data$GenusName),]
+  # data <- data[!is.na(data$GenusName),]
   # Remove rows with missing SpeciesName
-  data <- data[!is.na(data$SpeciesName),]
+  # data <- data[!is.na(data$SpeciesName),]
   # Remove rows with missing Months
   data <- data[!is.na(data$Month),]
   # Remove rows with missing Years
@@ -303,28 +300,17 @@ if("Species Richness" %in% params_to_plot){
   data <- data[data$ResultValue!=0,]
   data <- data[!is.na(data$ResultValue),]
   # Remove duplicate rows
-  data <- data[data$MADup==1,]
+  data <- data[data$MADup==1 & data$Include==1,]
+  
   # Create variable that combines the genus and species name
-  data$gensp <- paste(data$GenusName, data$SpeciesName, sep=" ")
-  # Corrects Managed Area names to be consistent with official names
-  data$ManagedAreaName[data$ManagedAreaName=="Florida Keys NMS"] <-
-    "Florida Keys National Marine Sanctuary"
-  data$ManagedAreaName[data$ManagedAreaName==
-                         "Biscayne Bay-Cape Florida to Monroe County Line"] <-
-    "Biscayne Bay-Cape Florida to Monroe County Line Aquatic Preserve"
-  data$ManagedAreaName[data$ManagedAreaName=="Coupon Bight"] <-
-    "Coupon Bight Aquatic Preserve"
-  data$ManagedAreaName[data$ManagedAreaName=="Coral ECA"] <-
-    "Southeast Florida Coral Reef Ecosystem Conservation Area"
+  # data$gensp <- paste(data$GenusName, data$SpeciesName, sep=" ")
   
   # Create Species Richness values for groups of unique combinations of
   # ManagedAreaName, ProgramID, ProgramName, ProgramLocationID, and SampleDate.
   data <- data[data$ResultValue==1] %>%
-    dplyr::group_by(ManagedAreaName, ProgramID, ProgramName, ProgramLocationID,
-             SampleDate) %>%
-    dplyr::summarise(ParameterName=parameter,
-              Year=unique(Year), Month=unique(Month),
-              SpeciesRichness=length(unique(gensp)))
+    group_by(ManagedAreaName, ProgramID, ProgramName, ProgramLocationID, SampleDate) %>%
+    summarise(ParameterName=parameter, Year=unique(Year), Month=unique(Month), 
+              SpeciesRichness=length(unique(CommonIdentifier))) #CommonIdentifier was gensp
   
   # Adds AreaID for each managed area by combining the MA_All datatable to the
   # data based on ManagedAreaName
@@ -517,17 +503,15 @@ color_palette <- c("#005396", "#0088B1", "#00ADAE", "#65CCB3", "#AEE4C1",
 ### PLOTTING FUNCTIONS ###
 ##########################
 
-plot_coral_pc <- function(ma, data = "data_pc", lme_plot = "lme_plot_pc", MA_Ov_Stats = "MA_Ov_Stats_pc"){
+plot_coral_pc <- function(ma, data = data_pc, lme_plot = lme_plot_pc, MA_Ov_Stats = MA_Ov_Stats_pc){
   # Gets data for target managed area
   plot_data <- data[data$ManagedAreaName==ma,]
   
   lme_plot_data <- lme_plot[lme_plot$ManagedAreaName==ma,]
   # Determines most recent year with available data for managed area
-  t_max <- max(MA_Ov_Stats$LatestYear[MA_Ov_Stats$ManagedAreaName==
-                                        ma])
+  t_max <- max(MA_Ov_Stats$LatestYear[MA_Ov_Stats$ManagedAreaName==ma])
   # Determines earliest recent year with available data for managed area
-  t_min <- min(MA_Ov_Stats$EarliestYear[MA_Ov_Stats$ManagedAreaName==
-                                          ma])
+  t_min <- min(MA_Ov_Stats$EarliestYear[MA_Ov_Stats$ManagedAreaName==ma])
   # Determines how many years of data are present
   t <- t_max-t_min
   
@@ -626,7 +610,7 @@ plot_coral_pc <- function(ma, data = "data_pc", lme_plot = "lme_plot_pc", MA_Ov_
   }
 }
 
-plot_coral_sr <- function(ma, MA_Y_Stats = "MA_Y_Stats_sr", MA_Ov_Stats = "MA_Ov_Stats_sr"){
+plot_coral_sr <- function(ma, MA_Y_Stats = MA_Y_Stats_sr, MA_Ov_Stats = MA_Ov_Stats_sr){
   # Gets data for target managed area
   plot_data <- MA_Y_Stats[MA_Y_Stats$ManagedAreaName==ma]
   # Determines most recent year with available data for managed area
