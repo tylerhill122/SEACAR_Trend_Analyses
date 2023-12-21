@@ -22,6 +22,7 @@ library(glue)
 library(kableExtra)
 library(distill)
 library(dplyr)
+library(RColorBrewer)
 
 # Gets directory of this script and sets it as the working directory
 wd <- dirname(getActiveDocumentContext()$path)
@@ -40,14 +41,13 @@ out_dir <- "output"
 report_out_dir <- "output/Reports"
 
 #Loads data file with list on managed area names and corresponding area IDs and short names
-MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE,
-                na.strings = "")
+MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE, na.strings = "")
 
 #Gets the desired file locations
 #Imports SEACAR data file path information as variable "seacar_data_location"
 source("scripts/SEACAR_data_location.R")
 
-files <- list.files(here::here(seacar_data_location), full=TRUE)
+files <- list.files(seacar_data_location, full=TRUE)
 files <- str_subset(files, "All_")
 
 cw_file_in <- str_subset(files, "CW")
@@ -69,15 +69,15 @@ oyster_file_short <- tail(str_split(oyster_file_in, "/")[[1]],1)
 ### call in source files ### -----
 ############################
 
-source("scripts/load_shape_files.R")
+# source("scripts/load_shape_files.R")
 # source("scripts/WQ_Discrete_Data_Creation.R") # creates source files (.rds objects) for discrete WQ
 # source("scripts/WQ_Continuous_Data_creation.R") # creates source files (.rds objects) for continuous WQ
 source("scripts/WQ_Continuous.R")
 source("scripts/WQ_Discrete.R")
 source("scripts/Nekton.R")
 source("scripts/CoastalWetlands.R")
-source("scripts/SAV.R") # creates source files (.rds objects) for SAV
-source("scripts/SAV_scope_plots.R")
+# source("scripts/SAV.R") # creates source files (.rds objects) for SAV
+# source("scripts/SAV_scope_plots.R")
 source("scripts/SAV-Functions.R")
 source("scripts/Coral.R")
 ############################
@@ -102,7 +102,8 @@ wq_cont_files_short <- lapply(wq_cont_files, function(x){tail(str_split(x, "/")[
 
 # Subset for MAs
 # MA_All <- MA_All[c(14,5,32,27,9,33)]
-MA_All <- MA_All[c(14)]
+# MA_All <- MA_All[c(14)]
+MA_All <- MA_All[c(5,14,20)]
 
 # iterate through every possible MA
 # apply checks for coral, sav, etc. within .Rmd doc
@@ -116,7 +117,7 @@ for (i in seq_len(nrow(MA_All))) {
   
   # perform checks for habitats in each MA
   # Check which habitats to include in each MA
-  in_sav <- ma_abrev %in% sav_managed_areas
+  in_sav <- ma %in% sav_managed_areas
   in_nekton <- ma %in% nekton_managed_areas
   in_coral <- ma %in% coral_managed_areas
   in_cw <- ma %in% cw_managed_areas
@@ -145,8 +146,8 @@ for (i in seq_len(nrow(MA_All))) {
     #                   clean=TRUE)
     
     #Removes unwanted files created in the rendering process
-    # unlink(paste0(ma_report_out_dir, "/", file_out, ".md"))
-    # unlink(paste0(ma_report_out_dir, "/", file_out, "_files"), recursive=TRUE)
+    unlink(paste0(ma_report_out_dir, "/", file_out, ".md"))
+    unlink(paste0(ma_report_out_dir, "/", file_out, "_files"), recursive=TRUE)
     
   }
 }
