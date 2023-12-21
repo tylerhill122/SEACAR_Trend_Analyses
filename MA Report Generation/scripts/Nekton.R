@@ -334,8 +334,8 @@ plot_nekton <- function(ma, MA_Y_Stats = "MA_Y_Stats_nek", MA_Ov_Stats = "MA_Ov_
     # Creates plot object using plot_data and grouping by the plot gear types.
     # Data is plotted as symbols with connected lines.
     p1 <- ggplot(data=plot_data, group=as.factor(GearType_Plot)) +
-      # geom_line(aes(x=Year, y=Mean, color=as.factor(GearType_Plot)),
-      #           size=0.75, alpha=1) +
+      geom_line(aes(x=Year, y=Mean, color=as.factor(GearType_Plot)),
+                size=0.75, alpha=1) +
       geom_point(aes(x=Year, y=Mean, fill=as.factor(GearType_Plot),
                      shape=as.factor(GearType_Plot)), size=2,
                  color="#333333", alpha=1) +
