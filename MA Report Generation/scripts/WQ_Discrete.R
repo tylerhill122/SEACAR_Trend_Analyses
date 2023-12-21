@@ -172,8 +172,22 @@ load_data_table <- function(p, a="All", d="All", table) {
   return(df)
 }
 
+# Pie chart to show Program proportions of VQ data
+vq_piechart <- function(ma, data){
+  # list of programs with VQ data
+  vq <- data %>% 
+    filter(ManagedAreaName==ma, !is.na(ValueQualifier)) %>%
+    group_by(ProgramID, ProgramName) %>%
+    summarise(N_VQ = n())
+  
+  myPalette <- brewer.pal(nrow(vq), "Set2")
+  cat("  \n")
+  pie(vq$N_VQ, labels = vq$ProgramID, border="white", col=myPalette, radius=0.4)
+  cat("  \n")
+}
+
 ### Discrete sample location maps
-plot_discrete_maps <- function(ma, data){
+plot_discrete_maps <- function(ma, data, param_label){
   map_output <- "output/maps/discrete"
   
   # Grab a list of programs within {discrete parameter} data for each MA
@@ -202,7 +216,7 @@ plot_discrete_maps <- function(ma, data){
   pal <- colorFactor("plasma", discrete_df$ProgramID)
   
   # leaflet map
-  map <- leaflet(discrete_df, options = leafletOptions(zoomControl = FALSE,attributionControl=FALSE)) %>%
+  map <- leaflet(discrete_df, options = leafletOptions(zoomControl = FALSE)) %>%
     addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
     addPolygons(data=ma_shape, color="#4e809c", weight = 1, smoothFactor = 0.5, opacity = 1.0, fillOpacity = 0.2) %>%
     addCircleMarkers(lat=~Latitude_D, lng=~Longitude_, color=~pal(ProgramID), weight=0.5, radius=sqrt(discrete_df$n_data), fillOpacity=0.3) %>%
@@ -221,13 +235,26 @@ plot_discrete_maps <- function(ma, data){
   # draw .png with ggplot
   p1 <- ggdraw() + draw_image(map_out, scale = 1)
   
-  print(plot_grid(p1))
+  # captions / label
+  cat("\\newpage")
+  caption = paste0("Map showing location of Discrete sampling sites for ", param_label, "  \n")
+  
+  cat("  \n")
+  cat(caption)
+  print(p1)
+  cat("  \n")
+  cat("The bubble size on the above plots reflects the amount of data available at each sampling site")
+  
+  # print(plot_grid(p1, 
+  #                 labels = caption,
+  #                 label_size = 8,
+  #                 label_y = 0.06))
   
   cat("  \n")
 }
 
 ## Kendall-Tau Trendlines Plot function ##
-plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data) {
+plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data, include_map=TRUE) {
   cat("  \n")
   cat(glue("**Seasonal Kendall-Tau Trend Analysis**"), "  \n")
   
@@ -276,7 +303,7 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
     if(t>=30){
       brk <- -10
     }else if(t<30 & t>=10){
-      brk <- -5
+      brk <- -4
     }else if(t<10 & t>=4){
       brk <- -2
     }else if(t<4){
@@ -324,7 +351,9 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
     ### Discrete Maps ###
     #####################
     
-    plot_discrete_maps(ma, data)
+    if (include_map==TRUE){
+      plot_discrete_maps(ma, data, param_label = parameter)
+    }
     
     #####################
     #####################
@@ -453,7 +482,7 @@ plot_boxplots <- function(p, a, d, activity_label, depth_label, y_labels, parame
 }
 
 ## VQ Summary Barplot ##
-plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data, include_plot) {
+plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, parameter, data, include_plot, pie_chart) {
   
   VQ_Summary <- as.data.frame(load_data_table(p, a, d, "VQSummary"))
   
@@ -518,7 +547,13 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
     # print plots if include=TRUE
     if (include_plot==TRUE){
       print(vq_plot)
+      cat("  \n")
     }
+    
+    if (pie_chart==TRUE){
+      vq_piechart(ma, data)
+    }
+    
     
     # Replace 0 values with NA, to be modified to empty string with kable function
     plot_data[plot_data == 0] <- NA
@@ -532,6 +567,28 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
       col_names <- c(col_names, new_col)
     }
     
+    cat("  \n")
+    cat("**Value Qualifiers**  \n \n")
+    
+    vq_footnotes <- list()
+    # add description for each VQ shown
+    # loop to add description if the corresponding VQ is listed above
+    for (vq in names(vq_list_short)) {
+      if (vq %in% names(plot_data)) {
+        vq_footnote <- unlist(vq_list_short[vq])
+        vq_footnotes <- c(vq_footnotes, vq_footnote)
+        cat("\n")
+      }
+    }
+    
+    vq_footnote_description <- list("*N_Total* is total amount of data for a given year", 
+                                    "*N_* is the total amount of values flagged with the respective value qualifier in a given year",
+                                    "*perc_* is the percent of data flagged with the respective value qualifier as a proportion of *N_Total*")
+    
+    for (desc in vq_footnote_description){
+      cat(paste0("* ",desc, "\n"))
+    }
+    
     # add text table beneath plot
     vq_table <- kable(plot_data, 
                       format="simple",
@@ -542,8 +599,11 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
       kable_styling(latex_options="scale_down",
                     position = "center")
     
-    cat("  \n")
+    vq_table <- vq_table %>% add_footnote(label = vq_footnotes,
+                                          notation = "number")
+    
     print(vq_table)
+    cat(" \n")
     
     # list of programs with VQ data
     vq <- data %>% 
@@ -561,42 +621,6 @@ plot_vq_barplot <- function(p, a, d, activity_label, depth_label, y_labels, para
     }
     
     cat("  \n")
-    
-    # add description for each VQ shown
-    vq <- list("N_H","N_I","N_Q","N_S","N_U")
-    vq_desc <- list("H - Value based on field kit determiniation; results may not be accurate. 
-                This code shall be used if a field screening test (e.g., field gas chromatograph data, 
-                immunoassay, or vendor-supplied field kit) was used to generate the value and the field 
-                kit or method has not been recognized by the Department as equivalent to laboratory methods.",
-                    
-                    "I - The reported value is greater than or equal to the laboratory method detection 
-                limit but less than the laboratory practical quantitation limit.",
-                    
-                    "Q - Sample held beyond the accepted holding time. This code shall be used if the value is derived 
-                from a sample that was prepared or analyzed after the approved holding time restrictions for sample 
-                preparation or analysis.",
-                    
-                    "S - Secchi disk visible to bottom of waterbody. The value reported is the depth of the waterbody 
-                at the location of the Secchi disk measurement.",
-                    
-                    "U - Indicates that the compound was analyzed for but not detected. This symbol shall be used to indicate 
-                that the specified component was not detected. The value associated with the
-                qualifier shall be the laboratory method detection limit. Unless requested by the client, 
-                less than the method detection limit values shall not be reported ")
-    
-    vq_list <- setNames(as.list(vq_desc), vq)
-    
-    cat("  \n")
-    cat("**Value Qualifiers**  \n \n")
-    cat("  \n")
-    
-    # loop to add description if the corresponding VQ is listed above
-    for (vq in names(vq_list)) {
-      if (vq %in% names(plot_data)) {
-        cat(unlist(vq_list[vq]), sep = '\n')
-        cat("\n")
-      }
-    }
     
     rm(VQ_Summary, filtered_vq, plot_data, plot_data_long, vq_plot)
   } else {
