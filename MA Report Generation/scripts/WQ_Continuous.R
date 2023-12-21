@@ -81,7 +81,8 @@ station_count_table <- function(cont_data){
     caption <- paste0(p_name," (",prog,")")
     
     station_kable <- n_years %>% select(-ProgramName) %>%
-      kable(format="simple",caption=caption) %>%
+      kable(format="simple",caption=caption,
+            col.names = c("*ProgramLocationID*","*Years of Data*","*Use in Analysis*")) %>%
       kable_styling()
     
     print(station_kable)
@@ -124,7 +125,8 @@ station_count_table <- function(cont_data){
   map_output <- "output/maps/"
   
   # create basemap
-  map <- leaflet() %>% addTiles()
+  map <- leaflet(options = leafletOptions(zoomControl = FALSE)) %>% 
+    addProviderTiles(providers$CartoDB.PositronNoLabels) # %>% addTiles()
   
   df_coord <- station_coordinates %>% filter(ManagedAreaName == ma)
   
@@ -191,12 +193,16 @@ station_count_table <- function(cont_data){
   # draw .png with ggplot
   p1 <- ggdraw() + draw_image(map_out, scale = 1)
   
-  print(plot_grid(p1))
+  caption <- paste0("Map showing Continuous Water Quality Monitoring sampling locations within the boundaries of ", ma, ". Sites marked as *Use In Analysis* are featured in this report.  \n")
+  
+  print(p1)
+  cat("  \n")
+  cat(caption)
   cat("  \n\n")
 }
 
 # Unified continuous plotting function
-plot_cont <- function(p, y_labels, parameter, cont_data) {
+plot_cont <- function(p, y_labels, parameter, cont_data){
   
   data <- cont_data %>% filter(ManagedAreaName == ma)
   
@@ -240,15 +246,18 @@ plot_cont <- function(p, y_labels, parameter, cont_data) {
   if (n_included > 0) {
     
     # Add heading for parameter if included
-    subtitle <- glue("## {parameter}")
+    subtitle <- glue("## {parameter} - Continuous Water Quality")
     cat(subtitle, "\n\n")
     
     # Begins looping through each monitoring location
-    for (id in MonIDs) {
+    for (i in 1:length(MonIDs)) {
+      id <- MonIDs[i]
       
-      ##################
-      ### TRENDPLOTS ###
-      ##################
+      if (i > 1){
+        cat("\\newpage")
+      }
+      
+      # Plot trendplots
       
       # Gets data to be used in plot for monitoring location
       plot_data <- Mon_YM_Stats[Mon_YM_Stats$MonitoringID==id,]
@@ -267,8 +276,8 @@ plot_cont <- function(p, y_labels, parameter, cont_data) {
           # Set breaks to every 10 years if more than 30 years of data
           brk <- -10
         }else if(t<30 & t>=10){
-          # Set breaks to every 5 years if between 30 and 10 years of data
-          brk <- -5
+          # Set breaks to every 4 years if between 30 and 10 years of data
+          brk <- -4
         }else if(t<10 & t>=4){
           # Set breaks to every 2 years if between 10 and 4 years of data
           brk <- -2
@@ -286,9 +295,9 @@ plot_cont <- function(p, y_labels, parameter, cont_data) {
         # Get name of managed area
         MA_name <- skt_stats$ManagedAreaName[skt_stats$MonitoringID==id]
         # Get program location name
-        Mon_name <- paste0(skt_stats$ProgramID[skt_stats$MonitoringID==id],
-                           "\n", skt_stats$ProgramName[skt_stats$MonitoringID==id], "\n",
-                           skt_stats$ProgramLocationID[skt_stats$MonitoringID==id])
+        Mon_name <- paste0(skt_stats$ProgramName[skt_stats$MonitoringID==id], 
+                           " (", skt_stats$ProgramID[skt_stats$MonitoringID==id], ")")
+        
         mon_name_short <- skt_stats$ProgramLocationID[skt_stats$MonitoringID==id]
         # Create plot object with data and trendline
         p1 <- ggplot(data=plot_data,
@@ -296,8 +305,8 @@ plot_cont <- function(p, y_labels, parameter, cont_data) {
           geom_point(shape=21, size=3, color="#333333", fill="#cccccc",
                      alpha=0.75) +
           geom_line(data=KT.plot_data, aes(x=x, y=y),
-                    color="#000099", size=1.2, alpha=0.7) +
-          labs(title=paste0(MA_name, "\n", Mon_name),
+                    color="#000099", linewidth=1.2, alpha=0.7) +
+          labs(title=paste0(MA_name, "\n", mon_name_short),
                subtitle=parameter,
                x="Year", y=y_labels) +
           scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
@@ -318,13 +327,136 @@ plot_cont <- function(p, y_labels, parameter, cont_data) {
         
         ### Monitoring Station Name Label ###
         mon_title <- glue("### {mon_name_short}")
-        cat(mon_title, "\n\n")
+        cat(paste0(mon_title, "  \n",Mon_name))
+        cat("  \n")
         
         # Arrange and display plot and statistic table
         print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
         # Add extra space at the end to prevent the next figure from being too close
         cat("\n \n \n")
       }
+      
+      
     }
-    }
+    
+    # plot data for all monitoring locations combined
+    # trend_plot("all")
   }
+}
+
+plot_cont_combined <- function(param, y_labels, parameter, cont_data){
+  data <- cont_data %>% filter(ManagedAreaName == ma)
+  
+  Mon_YM_Stats <- as.data.frame(load_cont_data_table(param, region, "Mon_YM_Stats"))
+  skt_stats <- as.data.frame(load_cont_data_table(param, region, "skt_stats"))
+  
+  skt_stats <- skt_stats %>% filter(ManagedAreaName==ma)
+  
+  # Checking for missing values
+  Mon_YM_Stats <- Mon_YM_Stats %>% filter(ManagedAreaName == ma & ParameterName == parameter)
+  
+  ### SKT STATS ###
+  # Gets x and y values for starting point for trendline
+  KT.Plot <- skt_stats %>%
+    group_by(MonitoringID) %>%
+    summarize(x=decimal_date(EarliestSampleDate),
+              y=(x-EarliestYear)*SennSlope+SennIntercept)
+  # Gets x and y values for ending point for trendline
+  KT.Plot2 <- skt_stats %>%
+    group_by(MonitoringID) %>%
+    summarize(x=decimal_date(LastSampleDate),
+              y=(x-EarliestYear)*SennSlope+SennIntercept)
+  # Combines the starting and endpoints for plotting the trendline
+  KT.Plot <- bind_rows(KT.Plot, KT.Plot2)
+  rm(KT.Plot2)
+  KT.Plot <- as.data.table(KT.Plot[order(KT.Plot$MonitoringID), ])
+  KT.Plot <- KT.Plot[!is.na(KT.Plot$y),]
+  
+  # all plots together
+  plot_data <- Mon_YM_Stats[Mon_YM_Stats$ManagedAreaName==ma,]
+  
+  #Determine max and min time (Year) for plot x-axis
+  t_min <- min(plot_data$Year)
+  t_max <- max(plot_data$YearMonthDec)
+  t_max_brk <- as.integer(round(t_max, 0))
+  t <- t_max-t_min
+  min_RV <- min(plot_data$Mean)
+  # Creates break intervals for plots based on number of years of data
+  if(t>=30){
+    # Set breaks to every 10 years if more than 30 years of data
+    brk <- -10
+  }else if(t<30 & t>=10){
+    # Set breaks to every 4 years if between 30 and 10 years of data
+    brk <- -4
+  }else if(t<10 & t>=4){
+    # Set breaks to every 2 years if between 10 and 4 years of data
+    brk <- -2
+  }else if(t<4 & t>=2){
+    # Set breaks to every year if between 4 and 2 years of data
+    brk <- -1
+  }else if(t<2){
+    # Set breaks to every year if less than 2 years of data
+    brk <- -1
+    # Sets t_max to be 1 year greater and t_min to be 1 year lower
+    # Forces graph to have at least 3 tick marks
+    t_max <- t_max+1
+    t_min <- t_min-1
+  }
+  
+  setDT(plot_data)
+  KT.Plot$ProgramLocationID <- ""
+  for (m in unique(KT.Plot$MonitoringID)){
+    PLID <- unique(plot_data[MonitoringID == m, ]$ProgramLocationID)
+    KT.Plot[MonitoringID == m, ProgramLocationID := PLID]
+  }
+  
+  # number of stations for shape-palette
+  n <- length(unique(KT.Plot$MonitoringID))
+  
+  p1 <- ggplot(data=plot_data, aes(x=YearMonthDec, y=Mean, group=factor(ProgramLocationID))) +
+    geom_point(aes(shape=ProgramLocationID), color="#cccccc" ,fill="#444444", size=3,alpha=0.9, show.legend = TRUE) +
+    labs(title=paste0(ma, "\nAll Stations"),
+         subtitle=paste0(parameter, " - Continuous"),
+         x="Year", y=y_labels) +
+    scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
+                       breaks=seq(t_max_brk, t_min, brk)) +
+    plot_theme +
+    geom_line(data=KT.Plot, aes(x=x, y=y, linetype=ProgramLocationID), color="#000099", linewidth=1.2, alpha=0.7) +
+    labs(shape  = "Station ID", linetype = "Station ID") +
+    scale_shape_manual(values=1:n)
+  
+  ResultTable <- skt_stats %>%
+    mutate("Period of Record" = paste0(EarliestYear, " - ", LatestYear)) %>%
+    select(ProgramLocationID, N_Data, N_Years, "Period of Record", Median, tau,
+           SennIntercept, SennSlope, p) %>%
+    rename("Station" = ProgramLocationID) %>%
+    mutate_if(is.numeric, ~round(., 2))
+  
+  # Remove text-based "NA" values in p column
+  if (nrow(ResultTable[ResultTable$p=="    NA", ]) > 0){
+    ResultTable[ResultTable$p=="    NA", ]$p <- "-"
+  }
+  ResultTable[is.na(ResultTable)] <- "-"
+  
+  t1 <- ggtexttable(ResultTable, rows=NULL,
+                    theme=ttheme(base_size=10)) %>%
+    tab_add_footnote(text="p < 0.00005 appear as 0 due to rounding.\n
+                              SennIntercept is intercept value at beginning of
+                              record for monitoring location",
+                     size=10, face="italic")
+  
+  title <- glue("### All Stations Combined")
+  cat("  \n")
+  cat(title)
+  cat("  \n")
+  print(p1)
+  cat("  \n")
+  
+  result_table <- kable(ResultTable, format="simple",
+        caption=paste0("Seasonal Kendall-Tau Results for All Stations - ", parameter),
+        row.names = FALSE, digits = 5) %>%
+    kable_styling(font_size=8)
+  
+  print(result_table)
+  cat("\n \n \n")
+}
