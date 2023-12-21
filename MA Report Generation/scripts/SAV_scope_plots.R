@@ -96,7 +96,7 @@ rotate_sf <- function(data, x_add = 0, y_add = 0, ma, coast = "Atlantic"){
 # counties <- st_read(here::here("data/shapes/FLCounties/Counties_-_Detailed_Shoreline.shp"))
 # corners <- fread(here::here("data/shapes/MApolygons_corners.csv"))
 
-# The above lines now loaded uising "load_shape_files.R"
+# The above lines now loaded using "load_shape_files.R"
 
 #add 20% of difference (xmax-xmin) to xmax to help prevent year labels from getting cut off map images and 10% to ymax
 corners[, `:=` (xmax = xmax + (xmax-xmin)*0.25, ymax = ymax + (ymax-ymin)*0.1)]
@@ -304,14 +304,6 @@ for (i in unique(SAV4$ManagedAreaName)){
   area <- st_area(rcp_i)
   xyratio <- as.numeric((area/maxdist)/maxdist)
   
-  ###############
-  
-  bbox <- st_bbox(rotate_sf(rcp_i, x_add = xadd, y_add = yadd+maxydist, ma = i, coast = corners[LONG_NAME == i, Coast[1]]))
-  max_width <- bbox$xmax - bbox$xmin
-  x_increment <- max_width + 0.5
-  
-  ###############
-  
   MApolycoords <- setDT(as.data.frame(st_coordinates(base$layers[[2]]$data)))
   xmax_y <- MApolycoords[X == max(X), Y]
   base <- base + annotate("text", x = xlab, y = xmax_y, label = paste0(startyear), hjust = "left")
@@ -319,8 +311,15 @@ for (i in unique(SAV4$ManagedAreaName)){
   MApolycoords[, Xrnd := round(X, 3)][, ydists := max(Y) - min(Y), by = Xrnd]
   MApolycoords[, Yrnd := round(Y, 3)][, xdists := max(X) - min(X), by = Yrnd]
   maxydist <- max(MApolycoords$ydists) + ((max(MApolycoords$ydists)/25) / xyratio)
-  
   maxxdist <- 0
+  
+  ###############
+  
+  bbox <- st_bbox(rotate_sf(rcp_i, x_add = xadd, y_add = yadd+maxydist, ma = i, coast = corners[LONG_NAME == i, Coast[1]]))
+  max_width <- bbox$xmax - bbox$xmin
+  x_increment <- max_width + 0.5
+  
+  ###############
   
   if(length(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year == startyear, LocationID]))$LocationID) > 0){
     base <- base +
