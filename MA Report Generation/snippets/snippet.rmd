@@ -113,11 +113,60 @@ vq_df$desc = linebreak(vq_df$desc)
 kable(vq_df, col.names = c("*Qualifier Source*", "*Value Qualifier*", "*Include*", "*MDL*", "*Description*"),
       escape = F, 
       caption = "Value Qualifier codes excluded from analysis",
-      format = "simple") %>%
-  kable_styling(latex_options = "scale_down",
-                position = "center") %>% 
-  column_spec(1:5, "10em", latex_valign = "t")
+      format = "simple",
+      booktabs = T) %>%
+  kable_styling(latex_options = "scale_down")
 ```
+
+
+**Discrete Water Quality Value Qualifiers**  
+
+The following value qualifiers are highlighted in the Discrete Water Quality section of this report. An exception is made for **Program 476** - *Charlotte Harbor Estuaries Volunteer Water Quality Monitoring Network* and data flagged with Value Qualifier **H** are included for this program only.
+
+
+```{r VQ Description table long, results='asis', echo=FALSE, warning=FALSE}
+
+# Add WQ Discrete Full-length Value Qualifier Descriptions
+# add description for each VQ shown
+vq <- list("N_H","N_I","N_Q","N_S","N_U")
+vq_desc <- list("**H** - Value based on field kit determiniation; results may not be accurate. 
+            This code shall be used if a field screening test (e.g., field gas chromatograph data, 
+            immunoassay, or vendor-supplied field kit) was used to generate the value and the field 
+            kit or method has not been recognized by the Department as equivalent to laboratory methods.",
+                
+                "**I** - The reported value is greater than or equal to the laboratory method detection 
+            limit but less than the laboratory practical quantitation limit.",
+                
+                "**Q** - Sample held beyond the accepted holding time. This code shall be used if the value is derived 
+            from a sample that was prepared or analyzed after the approved holding time restrictions for sample 
+            preparation or analysis.",
+                
+                "**S** - Secchi disk visible to bottom of waterbody. The value reported is the depth of the waterbody 
+            at the location of the Secchi disk measurement.",
+                
+                "**U** - Indicates that the compound was analyzed for but not detected. This symbol shall be used to indicate 
+            that the specified component was not detected. The value associated with the
+            qualifier shall be the laboratory method detection limit. Unless requested by the client, 
+            less than the method detection limit values shall not be reported ")
+vq_desc_short <- list("**H** - Value based on field kit determination",
+                      "**I** - Reported value is greater than or equal to lab method detection limit, but less than quantitation limit",
+                      "**Q** - Sample held beyond the accepted holding time",
+                      "**S** - Secchi disk visible to bottom of waterbody",
+                      "**U** - Compound was analyzed for but not detected")
+
+vq_list <- setNames(as.list(vq_desc), vq)
+vq_list_short <- setNames(as.list(vq_desc_short), vq)
+
+cat("  \n  \n  \n")
+cat("  \n")
+for (vq in names(vq_list)) {
+  cat(unlist(vq_list[vq]), sep = '\n')
+  cat("\n")
+}
+cat("  \n")
+
+```
+
 
 **Systemwide Monitoring Program (SWMP) value qualifier codes**
 
@@ -138,5 +187,7 @@ swmp %>% kable(col.names = c("*Qualifier Source*", "*Value Qualifier*", "*Includ
       caption = "SWMP Value Qualifier codes",
       format = "simple") %>%
   kable_styling(latex_options = c("scale_down","HOLD_position"),
-                position = "center")
+                position = "center") %>% 
+  row_spec(1:11,  bold = F, extra_css = 'vertical-align: top !important;')
+cat("  \n")
 ```
