@@ -4,6 +4,7 @@ library(data.table)
 library(ggplot2)
 library(grid)
 library(kableExtra)
+library(cowplot)
 
 all_depths <- c("Surface","Bottom","All")
 all_activities <- c("Field","Lab","All")
@@ -188,7 +189,7 @@ vq_piechart <- function(ma, data){
 
 ### Discrete sample location maps
 plot_discrete_maps <- function(ma, data, param_label){
-  map_output <- "output/maps/discrete"
+  map_output <- "output/maps/discrete/"
   
   # Grab a list of programs within {discrete parameter} data for each MA
   disc_programs <- data %>% filter(ManagedAreaName == ma) %>% distinct(ProgramID, ProgramName)

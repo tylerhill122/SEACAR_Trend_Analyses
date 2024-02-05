@@ -2,6 +2,7 @@
 # Generates LMEresults tables for use in report
 library(mgcv)
 library(tidymv)
+library(tidygam)
 library(data.table)
 library(dplyr)
 
