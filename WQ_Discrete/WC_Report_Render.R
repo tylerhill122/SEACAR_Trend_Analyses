@@ -179,12 +179,12 @@ for (ma in all_managed_areas) {
   
   ### RENDERING ###
   file_out <- paste0(ma_short,"_WC_Report")
-  rmarkdown::render(input = "WC_Discrete2.Rmd", 
+  rmarkdown::render(input = "WC_Discrete.Rmd", 
                     output_format = "pdf_document",
                     output_file = paste0(file_out, ".pdf"),
                     output_dir = output_path,
                     clean=TRUE)
-  # rmarkdown::render(input = "WC_Discrete2.Rmd",
+  # rmarkdown::render(input = "WC_Discrete.Rmd",
   #                   output_format = "html_document",
   #                   output_file = paste0(file_out, ".html"),
   #                   output_dir = output_path,
