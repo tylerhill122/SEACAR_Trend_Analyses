@@ -33,7 +33,8 @@ folder_paths <- c("output", "output/Figures","output/Figures/BB","output/Reports
   "output/Data", "output/models", "output/tables","output/Data/Nekton", "output/Data/SAV",
   "output/Data/Coral", "output/Data/Coral/PercentCover", "output/Data/Coral/SpeciesRichness",
   "output/tables", "output/tables/disc", "output/tables/cont", "output/tables/SAV", "output/Data/CoastalWetlands",
-  "output/maps","output/maps/discrete","output/Figures/BB/maps", "output/Density", "output/Shell_Height", "output/Percent_Live")
+  "output/maps","output/maps/discrete","output/Figures/BB/maps", "output/Density", "output/Shell_Height", "output/Percent_Live",
+  "data/GLMMs","data/GLMMs/AllDates","data/GLMMs/AllDates/Data")
 for (path in folder_paths){if(!dir.exists(path)){dir.create(path)}}
 
 #Set output directory
@@ -48,22 +49,24 @@ MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFacto
 source("scripts/SEACAR_data_location.R")
 
 files <- list.files(seacar_data_location, full=TRUE)
-files <- str_subset(files, "All_")
+hab_files <- str_subset(files, "All_")
 
-cw_file_in <- str_subset(files, "CW")
+cw_file_in <- str_subset(hab_files, "CW")
 cw_file_short <- tail(str_split(cw_file_in, "/")[[1]],1)
 
-coral_file_in <- str_subset(files, "CORAL")
+coral_file_in <- str_subset(hab_files, "CORAL")
 coral_file_short <- tail(str_split(coral_file_in, "/")[[1]],1)
 
-nekton_file_in <- str_subset(files, "NEKTON")
+nekton_file_in <- str_subset(hab_files, "NEKTON")
 nekton_file_short <- tail(str_split(nekton_file_in, "/")[[1]],1)
 
-sav_file_in <- str_subset(files, "SAV")
+sav_file_in <- str_subset(hab_files, "SAV")
 sav_file_short <- tail(str_split(sav_file_in, "/")[[1]],1)
 
-oyster_file_in <- str_subset(files, "Oyster")
+oyster_file_in <- str_subset(hab_files, "Oyster")
 oyster_file_short <- tail(str_split(oyster_file_in, "/")[[1]],1)
+
+cont_files <- str_subset(files, "_NUT_cont")
 
 ############################
 ### call in source files ### -----
