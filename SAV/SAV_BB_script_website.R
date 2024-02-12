@@ -1804,7 +1804,7 @@ for(p in parameters$column){
                y = "Occurrence frequency (%)") +
           theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
           scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)),
-                             labels = str_replace(names(spcols), "Unidentified Halophila", "Halophila spp."), 
+                             labels = subset(names(spcols) ,names(spcols) %in% unique(bpdat$analysisunit)), 
                              aesthetics = c("color", "fill"))
         
       } else{
@@ -1821,7 +1821,7 @@ for(p in parameters$column){
                y = "Occurrence frequency (%)") +
           theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
           scale_color_manual(values = subset(spcols, names(spcols) %in% unique(bpdat$analysisunit)),
-                             labels = str_replace(names(spcols), "Unidentified Halophila", "Halophila spp."),
+                             labels = str_replace(subset(names(spcols) ,names(spcols) %in% unique(bpdat$analysisunit)), "Unidentified Halophila", "Halophila, unk."),
                              aesthetics = c("color", "fill"))
         
       }
