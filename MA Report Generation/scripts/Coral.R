@@ -554,8 +554,8 @@ plot_coral_pc <- function(ma, data = data_pc, lme_plot = lme_plot_pc, MA_Ov_Stat
     geom_point(aes(x=Year, y=ResultValue), 
                position=plot_jitter, shape=21, size=2,
                color="#333333", fill="#cccccc", alpha=1) +
-    # geom_line(data=lme_plot_data, aes(x=x, y=y),
-    #           color="#000099", size=2, alpha=0.8) +
+    geom_line(data=lme_plot_data, aes(x=x, y=y),
+              color="#000099", size=2, alpha=0.8) +
     labs(title="Coral Percent Cover",
          subtitle=ma,
          x="Year", y="Percent cover (%)") +
@@ -668,7 +668,7 @@ plot_coral_sr <- function(ma, MA_Y_Stats = MA_Y_Stats_sr, MA_Ov_Stats = MA_Ov_St
     #           size=0.75, alpha=1) +
     geom_point(aes(x=Year, y=Mean), fill=color_palette[1],
                shape=21, size=2, color="#333333", alpha=1) +
-    labs(title=title_param,
+    labs(title="Grazers and Reef-Dependent Species Richness",
          subtitle=ma,
          x="Year", y="Richness (# of species)") +
     scale_x_continuous(limits=c(t_min-0.25, t_max+0.25),
