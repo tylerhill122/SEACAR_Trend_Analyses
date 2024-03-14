@@ -1,0 +1,393 @@
+---
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+  word_document:
+    toc: TRUE
+    toc_depth: 3
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 3
+    dev: png
+    keep_md: yes
+  pdf_document:
+    toc: TRUE
+    toc_depth: 3
+    dev: png
+    extra_dependencies: ["longtable", "float"]
+    keep_md: yes
+    fig_crop: no
+    fig_caption: no
+    keep_tex: true
+    includes:
+      in_header: "preamble.tex"
+urlcolor: blue
+title: '`r paste(ma)`'
+subtitle: "SEACAR Habitat Analyses"
+geometry: margin=0.75in
+---
+
+```{r libraries, message=FALSE, warning=FALSE, echo=FALSE}
+options(scipen=999)
+knitr::opts_chunk$set(
+   warning=FALSE,
+   message=FALSE,
+   echo=FALSE,
+   dpi=200,
+   fig.pos = 'H'
+   )
+```
+
+
+
+```{r descriptive snippet, results='asis'}
+
+# Descriptive snippet to provide VQ & threshold filtering info
+cat(knitr::knit_child('snippets/snippet.Rmd', quiet=TRUE))
+
+```
+
+
+```{r plotting WQ_Discrete, warning=FALSE, fig.height=9, fig.width=10, results="asis", fig.cap="Discrete Water Quality"}
+
+if(in_discrete){
+  
+  ma_df <- managed_area_df %>% filter(ManagedAreaName == ma)
+  p_inc <- unique(ma_df$Parameter)
+  d_inc <- unique(ma_df$Depth)
+  a_inc <- unique(ma_df$Activity)
+
+  cat("\\newpage")
+  # Paste in descriptive snippet about water column
+  cat(knitr::knit_child('snippets/water_column_snippet.Rmd', quiet=TRUE))
+  cat("  \n\n")
+  
+  cat("# Water Quality - Discrete  \n")
+  
+  cat("The following files were used in the discrete analysis:  \n\n")
+  for(file in wq_discrete_files){
+    cat(paste0("* *", file, "*\n"))
+    cat("  \n")
+  }
+  
+  cat("\\newpage")
+  
+  for (param in p_inc){
+
+    # load overall discrete data
+    data <- as.data.frame(load_data_table(param, table="data"))
+    
+    # getting full parameter & unit names
+    parameter <- unique(data$ParameterName)
+    unit <- unique(data$ParameterUnits)
+  
+    # defining labels for y-axis
+    y_labels <- ifelse(param == "pH", parameter, paste0(parameter, " (" , unit, ")"))
+    
+    cat("  \n")
+    subtitle <- glue("## {parameter} - Discrete Water Quality")
+    cat(subtitle, "\n\n")
+    
+    #Because secchi depth is does not have a bottom measurement, this statement skips
+    #Secchi depth for bottom
+    if (param == "Secchi"){
+      depth <- "Surface"
+    } else {
+      depth <- "All"
+    }
+    
+    # Choosing which analyses to plot, when to combine 
+    if (param == "ChlaC" |
+        param == "Chla" |
+        param == "CDOM" |
+        param == "TN" |
+        param == "TP") {activity = "Lab"} else if (
+          param == "DO" |
+          param == "DOS" |
+          param == "pH" |
+          param == "Secchi" |
+          param == "TempW") {activity = "Field"} else if (
+            param == "Sal" |
+            param == "TSS" |
+            param == "Turb") {activity = "All"}
+  
+    if (activity == "All") {
+      activity_label <- "Lab and Field Combined"
+    } else if (activity == "Field" | activity == "Lab") {
+      activity_label <- activity
+    }
+  
+    if (depth == "All") {
+      depth_label <- "All Depths"
+    } else if (depth == "Surface") {
+      depth_label <- "Surface"
+    }
+    
+    # Discrete parameter descriptions
+    
+    # Exception to include TN calculation logic
+    # Loads external .Rmd for ease of formatting
+    if (param == "TN") {
+      cat("  \n")
+      cat("**Nitrogen** and **Phosphorous** are key nutrients that provide nourishment essential for the growth and maintenance of aquatic plants and animals;
+          however, excess nutrients can cause harmful algal blooms and other water quality concerns. Nutrients enter water bodies several ways, including
+          runoff from rain events and atmospheric deposition from natural and industrial sources.")
+      cat("  \n")
+      cat(knitr::knit_child('snippets/TN_Calculation_Description.Rmd', quiet=TRUE))
+      cat("  \n")
+      cat("\\newpage")
+    }
+    
+    if (param == "ChlaC") {
+      cat("  \n")
+      cat("**Chlorophyll-a** is monitored as a measure of microalgae growing in the water. Algae are a natural part of coastal and aquatic ecosystems but 
+          in excess can cause poor water quality and clarity, and decreased levels of dissolved oxygen.")
+      cat("  \n")
+    }
+    
+    if (param == "CDOM") {
+      cat("  \n")
+      cat("**Colored Dissolved Organic Matter** (*CDOM*) occurs naturally in every water body. It is made up of mainly plant material, algae and bacteria. 
+          The composition is determined by its source; plants, soil, algae, and wastewater are common sources.")
+      cat("  \n")
+    }
+    
+    if (param == "DO") {
+      cat("  \n")
+      cat("**Dissolved Oxygen** (*DO*) is a key indicator of water quality. Oxygen enters surface waters by air-sea gas exchange, by wind action, or as a 
+          byproduct of aquatic plant photosynthesis. The actual quantity of DO in aquatic environments is dependent on the above processes as well as water 
+          temperature and salinity.")
+      cat("  \n")
+    }
+    
+    if (param == "pH") {
+      cat("  \n")
+      cat("The **pH** of water is the measure of how acidic or basic the water body is on a scale of 0-14, with lower readings indicating acidic and 
+          higher readings indicating basic, and a pH of 7 being neutral. Florida’s natural waters fall between 6.5 and 8.5 on this scale. A water body’s pH can 
+          change due to precipitation, geology, vegetation, water pollution and air pollution.")
+      cat("  \n")
+    }
+    
+    if (param == "Sal") {
+      cat("  \n")
+      cat("**Salinity** is a measure of the amount of salt in the water. In estuarine ecosystems, salinity is influenced by precipitation, evaporation, 
+          surface-water inputs, and exchange with coastal waters.")
+      cat("  \n")
+    }
+    
+    if (param == "Secchi") {
+      cat("  \n")
+      cat("**Secchi depth** is a measure of the transparency or clarity of the water by a device called a Secchi disk. A Secchi disk is a black and white 
+          disk that is lowered into the water on a cord. The Secchi depth is the depth at which the disk can no longer be seen. The deeper the Secchi depth, 
+          the greater the water clarity.")
+      cat("  \n")
+    }
+    
+    if (param == "TSS") {
+      cat("  \n")
+      cat("**Total Suspended Solids** (*TSS*) are solid particles suspended in water that exceed 2 microns in size and can be trapped by a filter.")
+      cat("  \n")
+    }
+    
+    if (param == "Turb") {
+      cat("  \n")
+      cat("**Turbidity** results from suspended solids in the water, including silts, clays, tannins, industrial wastes, sewage and plankton, which are all
+          factors that contribute to how clouded or murky a water column is. Turbidity is caused by soil erosion, excess nutrients, pollutants, and physical
+          forces such as winds, currents and bottom feeders.")
+      cat("  \n")
+    }
+    
+    if (param == "TempW") {
+      cat("  \n")
+      cat("**Temperature** determines the capacity of water to hold oxygen. Cooler water can hold more dissolved oxygen because water molecules are more tightly
+          packed, making it harder for oxygen to escape. Additionally, as water temperature increases, fish and other aquatic organisms become more active and
+          consume oxygen at a faster rate.")
+      cat("  \n")
+    }
+    
+    ## Begin Plotting Discrete ##
+    
+    # Produce discrete SKT-trendplots (with or without sample location maps included)
+    # plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
+    plot_trendlines(param, activity, depth, activity_label, depth_label, y_labels, parameter, data, include_map=TRUE)
+    
+    
+    # Produce boxplots
+    # plot_boxplots(param, activity, depth, activity_label, depth_label, y_labels, parameter, data)
+  
+    # Produce VQ-barplots
+    # Change include_plot to TRUE to include VQ barplot
+    plot_vq_barplot(param, activity, depth, activity_label, depth_label, y_labels, parameter, data, include_plot=FALSE, pie_chart=FALSE)
+    
+  }
+}
+
+```
+
+
+```{r plotting WQ_Continuous, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval = TRUE, fig.cap="Continuous Water Quality"}
+
+# extract region for each MA to determine which cont. file to load
+region <- MA_All %>% filter(ManagedAreaName == ma) %>% pull(Region)
+
+if(in_continuous){
+  
+  cat("\\newpage")
+  cat("# Water Quality - Continuous  \n")
+  
+  cat("The following files were used in the continuous analysis:  \n\n")
+  
+  for (param in cont_params_long){
+    p <- str_replace_all(param, " ", "_")
+    par_reg <- paste0(p, "_", region)
+    
+    file_name <- str_subset(wq_cont_files_short, par_reg)
+    
+    cat(paste0("* *", file_name, "*\n"))
+    cat("  \n")
+  }
+  
+  for (i in 1:length(cont_params_short)){
+    param <- cont_params_short[i]
+    
+    # load cont data for a given region containing MA
+    cont_data <- as.data.frame(load_cont_data_table(param, region, table="data"))
+    
+    # run first time only to display stations
+    if (i==1) {
+      station_count_table(cont_data)
+      cat("  \n")
+    }
+    
+    # getting full parameter & unit names
+    parameter <- cont_param_df %>% filter(param_short == param) %>% pull(parameter)
+    unit <- cont_param_df %>% filter(param_short == param) %>% pull(unit)
+    
+    # defining labels for y-axis
+    y_labels <- ifelse(param == "pH", parameter, paste0(parameter, " (" , unit, ") - Monthly Average"))
+    
+    ###########################
+    ### Begin Plotting Cont ###
+    ###########################
+    
+    cat("\\newpage")
+    
+    plot_cont(param, y_labels, parameter, cont_data)
+    plot_cont_combined(param, y_labels, parameter, cont_data)
+  }
+}
+
+```
+
+
+```{r SAV scope_plots, warning=FALSE, results="asis", echo=FALSE, fig.height=18, fig.width=15, fig.cap="SAV - Temporal Scope"}
+
+if(in_sav){
+  cat("\\newpage")
+  cat("# Submerged Aquatic Vegetation  \n")
+  cat(paste0("The data file used is: **", sav_file_short,"**"))
+  
+  cat("  \n")
+  
+  # Paste in descriptive snippet about water column
+  cat(knitr::knit_child('snippets/sav_snippet.Rmd', quiet=TRUE))
+  cat("  \n")
+  
+  cat("\\newpage")
+  cat("  \n")
+  sav_scope_plots(ma, ma_abrev)
+}
+
+```
+
+
+```{r SAV maps, warning=FALSE, fig.height=6, fig.width=10, results="asis", eval=TRUE, echo=FALSE, fig.cap="SAV - Sampling Map"}
+
+if(in_sav){
+  cat("  \n")
+  cat("**Sampling locations by Program:**  \n")
+  cat("  \n")
+  cat("  \n")
+  sav_maps(ma, ma_abrev)
+}
+
+```
+
+
+```{r plotting SAV, warning=FALSE, fig.height=9, fig.width=10, results="asis", eval=TRUE, echo=FALSE, fig.cap="SAV"}
+
+
+if(in_sav){
+  
+  cat("  \n")
+  plot_sav_multiplot(ma, ma_abrev)
+  
+  cat("  \n")
+  plot_sav_trendplot(ma, ma_abrev)
+  
+  cat("  \n")
+  plot_sav_barplot(ma_abrev)
+  
+  cat("  \n")
+  ggplot_gam(ma)
+  cat("  \n")
+}
+
+
+```
+
+
+
+```{r plotting nekton, warning=FALSE, fig.height=6, fig.width=8, results="asis", fig.cap="Nekton"}
+
+
+if(in_nekton){
+  
+  cat("# Nekton  \n")
+  cat(paste0("The data file used is: **", nekton_file_short,"**"))
+  cat("  \n")
+  plot_nekton(ma, MA_Y_Stats_nek, MA_Ov_Stats_nek)
+  cat("  \n")
+  
+}
+
+
+```
+
+
+
+```{r plotting Coral, warning=FALSE, fig.height=6, fig.width=8, results="asis", fig.cap="Coral"}
+
+if(ma %in% coral_pc_MA_Include | ma %in% coral_sr_MA_Include){
+  cat("# Coral Reef \n")
+  cat(paste0("The data file used is: **", coral_file_short,"**"))
+  cat("  \n")
+  
+  if(ma %in% coral_pc_MA_Include){
+    plot_coral_pc(ma, data_pc, lme_plot_pc, MA_Ov_Stats_pc)
+    cat("  \n")
+  }
+  
+  if(ma %in% coral_sr_MA_Include){
+    plot_coral_sr(ma, MA_Y_Stats_sr, MA_Ov_Stats_sr)
+    cat("  \n")
+  }
+}
+
+```
+
+
+
+```{r plotting coastalwetlands, warning=FALSE, fig.height=6, fig.width=8, results="asis", fig.cap="Coastal Wetlands"}
+
+if(in_cw){
+  
+  cat("# Coastal Wetlands  \n")
+  cat(paste0("The data file used is: **", cw_file_short,"**"))
+  cat("  \n")
+  plot_cw(ma, MA_Ov_Stats_cw, MA_Y_Stats_cw)
+  cat("  \n")
+  
+}
+
+```

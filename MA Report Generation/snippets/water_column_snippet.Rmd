@@ -1,0 +1,18 @@
+# Water Column
+
+The water column habitat extends from the surface of all water bodies to the bottom sediments and encompasses the different features found 
+in the water at different depths (National Oceanographic Center, 2016). The water column habitat must be viewed in relation to its interconnectedness 
+with other habitats. A healthy water column is an integral component in ensuring a healthy marine and coastal ecosystem. 
+Having a flourishing marine and coastal ecosystem in Florida is necessary to support a strong economy. 
+The health of the water column is dependent upon factors as diverse as land use (e.g., agriculture, mining, forestry practices); 
+human population growth; emissions, (e.g., power plants, automobiles, wastewater); climate (e.g., rainfall, temperature, winds and currents); 
+and decadal trends (e.g., El Niño/La Niña, Atlantic Multidecadal Oscillation, climate change).
+
+The water column is composed of various physical, chemical and biological features, and only a small number of them are adequately monitored. 
+Features of the water column that are monitored are used as indicators of the water column health and help assess the status of other habitats. 
+These indicators include nutrient concentrations (nitrogen and phosphorus); water quality (dissolved oxygen, temperature, salinity and pH); 
+water clarity (Secchi depth, turbidity, chlorophyll-a and colored dissolved organic matter); and nekton (fish, macroinvertebrates and megafauna).  
+
+# Seasonal Kendall-Tau Analysis
+
+Indicators must have a minimum of five to ten years, depending on the habitat, of data within the geographic range of the analysis to be included in the analysis. Ten years of data are required for discrete parameters, and five years of data are required for continuous parameters. If there are insufficient years of data, the number of years of data available will be noted and labeled as "insufficient data to conduct analysis". Further, for the preferred Seasonal Kendall-Tau test, there must be data from at least two months in common across at least two consecutive years within the RCP managed area being analyzed. Values that pass both of these tests will be included in the analysis and be labeled as *Use_In_Analysis* = **TRUE**. Any that fail either test will be excluded from the analyses and labeled as *Use_In_Analysis* = **FALSE**.
