@@ -95,20 +95,25 @@ sav_stats_table[Species=="Unidentified Halophila", Species := "Halophila, unk."]
 # SAV LMEResults Table Function
 # For use in report generation
 sav_trend_table <- function(ma){
-  table <- sav_stats_table[ManagedAreaName == ma, c("Species","StatisticalTrend","years","LME_Intercept","LME_Slope","p")]
+  table <- sav_stats_table[ManagedAreaName == ma, c("Species","StatisticalTrend","years","LME_Intercept","LME_Slope","p")] %>%
+    mutate(CommonName = modify_species_labels(Species, usenames="common")) %>%
+    mutate(CommonName = ifelse(CommonName==Species, NA, CommonName)) %>%
+    select(Species,CommonName,StatisticalTrend,years,LME_Intercept,LME_Slope,p)
   
   caption <- paste0("Percent Cover Trend Analysis for ", ma)
   
   sav_kable <- table %>%
-    kable(format="simple",caption=caption,
-          col.names = c("*Species*","*Trend Significance* (0.05)","*Period of Record*","*LME_Intercept*","*LME_Slope*","*p*")) %>%
-    kable_styling()
+    kable(format="latex",caption=caption, booktabs = T, linesep = "",
+          col.names = c("Species","CommonName","Trend Significance (0.05)","Period of Record","LME-Intercept","LME-Slope","p")) %>%
+    row_spec(0, italic=TRUE) %>%
+    kable_styling(latex_options=c("scale_down","HOLD_position"),
+                  position = "center")
   
   print(sav_kable)
   cat("\n")
 }
 
-source(here::here("scripts/load_shape_files.R"))
+# source(here::here("scripts/load_shape_files.R"))
 
 ##############################
 ### SAV PLOTTING FUNCTIONS ###
@@ -186,9 +191,9 @@ for(pl in multiplots){
 
 plot_sav_multiplot <- function(ma, ma_abrev){
   if(ma_abrev %in% multiplot_list){
-    plot_file <- lapply(ma_abrev, find_exact_matches, filenames = multiplots)
+    plot_file <- unlist(lapply(ma_abrev, find_exact_matches, filenames = multiplots))
+    if(length(plot_file)>1){plot_file <- str_subset(plot_file, "_BBpct_")}
     plot <- readRDS(here::here(paste0("output/Figures/BB/", plot_file)))
-    
     caption <- paste0("Median percent cover by species in *", ma, "*. Linear mixed-effects models are applied to each species to produce species trends. The trendlines are then isolated and reproduced below for ease of viewing. The LME results are available in table form beneath the supplemental trendplot below.")
     cat("  \n")
     print(plot)
@@ -318,16 +323,23 @@ sav_maps <- function(ma, ma_abrev){
   sav_programs$ProgramID <- as.numeric(sav_programs$ProgramID)
   
   # grab sample coordinates from those programs
-  coord_df <- locs_pts_rcp %>% filter(ProgramID %in% sav_programs$ProgramID)
+  pt_coord_df <- locs_pts_rcp %>% filter(ProgramID %in% sav_programs$ProgramID)
+  ln_coord_df <- locs_lns_rcp %>% filter(ProgramID %in% sav_programs$ProgramID)
   
   # frame to plot coordinates, allows for bubble size display of n_samples
+  # grouping by LocationID yields better results, PLID doesn't always match (BBAP)
   sav_df <- SAV4 %>% filter(ManagedAreaName == ma, ProgramID %in% sav_programs$ProgramID) %>%
-    group_by(ProgramLocationID) %>%
-    summarise(n_data = n()) %>%
-    rename(ProgramLoc = ProgramLocationID)
+    group_by(LocationID) %>%
+    summarise(n_data = n())
   
-  # merge frames together prior to plotting
-  sav_df <- merge(sav_df, coord_df)
+  # sav_df <- SAV4 %>% filter(ManagedAreaName == ma, ProgramID %in% sav_programs$ProgramID) %>%
+  #   group_by(ProgramLocationID) %>%
+  #   summarise(n_data = n()) %>%
+  #   rename(ProgramLoc = ProgramLocationID)
+  
+  pt_ln_df <- bind_rows(pt_coord_df, ln_coord_df)
+  
+  sav_df <- merge(sav_df, pt_ln_df)
   sav_df <- sav_df[order(sav_df$n_data, decreasing=TRUE), ]
   
   # locate shape file for a given MA
@@ -336,19 +348,56 @@ sav_maps <- function(ma, ma_abrev){
   # get coordinates to set zoom level
   shape_coordinates <- get_shape_coordinates(ma_shape)
   
-  # setting color palette
-  pal <- colorFactor("plasma", sav_df$ProgramID)
+  # color palette set up to match coloring on SAV_Scope_plots
+  color_values <- subset(prcols, names(prcols) %in% unique(sav_df$ProgramName))
+  # rename list names as ProgramID instead of ProgramName (display ID in map legend)
+  # names(color_values) <- sapply(
+  #   names(color_values), 
+  #   function(x){sav_df %>% filter(ProgramName==x) %>% distinct(ProgramID)})
   
-  # leaflet map
+  # setting color palette
+  pal <- colorFactor(palette = color_values, levels = names(color_values))
+  
+  # create empty map template with shape file
+  # previous shape col - #4E809C
   map <- leaflet(sav_df, options = leafletOptions(zoomControl = FALSE)) %>%
     addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
-    addPolygons(data=ma_shape, color="#4e809c", weight = 1, smoothFactor = 0.5, opacity = 1.0, fillOpacity = 0.2) %>%
-    addCircleMarkers(lat=~Latitude_D, lng=~Longitude_, color=~pal(ProgramID), weight=0.5, radius=sqrt(sav_df$n_data), fillOpacity=0.3) %>%
-    addLegend(pal=pal, values=~ProgramID, labFormat=labelFormat(prefix="Program "), title="") %>%
+    addPolygons(data=ma_shape, color="black", weight = 1, smoothFactor = 0.5, opacity = 0.8, fillOpacity = 0.1) %>%
+    addLegend(pal=pal, values=~ProgramName, labFormat=labelFormat(prefix=""), title="") %>%
     fitBounds(lng1=shape_coordinates$xmin,
               lat1=shape_coordinates$ymin,
               lng2=shape_coordinates$xmax,
               lat2=shape_coordinates$ymax)
+  
+  # set sav_df as SF geo-object
+  sav_df <- st_as_sf(sav_df)
+  
+  # subsetting for lines vs points (coordinate vs transect)
+  pts <- sav_df %>% filter(!is.na(Longitude_))
+  lns <- sav_df %>% filter(!is.na(RawLineStr))
+  
+  # add transects and points where available
+  if(nrow(pts)>0){
+    # set pt-size weighting (some MAs have large amounts of samples)
+    pt_weight_setting <- ifelse(mean(pts$n_data)>40, 3, 1)
+    map <- map %>%
+      addCircleMarkers(data = pts,
+                       lat=~Latitude_D, lng=~Longitude_,
+                       color=~pal(pts$ProgramName), weight=0.5, 
+                       radius=sqrt(pts$n_data)/pt_weight_setting, 
+                       fillOpacity=0.6)
+  }
+  
+  if(nrow(lns)>0){
+    # set ln-size weighting
+    ln_weight_setting <- ifelse(sqrt(mean(lns$n_data))>100, 10, 
+                                ifelse(sqrt(mean(lns$n_data))>20, 2, 1))
+    map <- map %>%
+      addPolylines(data = lns,
+                   weight = sqrt(lns$n_data)/ln_weight_setting,
+                   color = ~pal(lns$ProgramName),smoothFactor = 0.5,
+                   stroke = TRUE, opacity = 0.6)
+  }
   
   # map output filepath
   map_out <- paste0(map_output, ma_abrev, "_sav.png")
@@ -360,14 +409,15 @@ sav_maps <- function(ma, ma_abrev){
   p1 <- ggdraw() + draw_image(map_out, scale = 1)
   
   # captions / label
-  caption = paste0("Map showing SAV sampling sites within the boundaries of *", ma, "*. The point size reflects the number of samples at a given sampling site.  \n")
+  caption = paste0("Map showing SAV sampling sites within the boundaries of *", 
+                   ma, "*. The point size reflects the number of samples at a given sampling site.  \n")
   
   print(p1)
   cat("  \n")
   cat(caption)
+  cat("  \n")
   
   # SAV program data tables
-  # cat(paste0("Programs Containing SAV data: "))
   cat("  \n")
   
   for (p_id in sav_programs$ProgramID){
@@ -376,12 +426,13 @@ sav_maps <- function(ma, ma_abrev){
     
     caption <- paste0(p_name, " - *Program ", p_id,"*")
     
-    ma_sav <- SAV4 %>% filter(ManagedAreaName == ma, ProgramID==p_id) %>%
+    ma_sav <- SAV4 %>% filter(ManagedAreaName==ma, ProgramID==p_id) %>% 
+      group_by(method) %>% 
       summarise(N_Data = n(),
                 YearMin = min(Year),
                 YearMax = max(Year),
-                "Collection Method" = unique(method),
                 "Sample Locations" = length(unique(ProgramLocationID))) %>%
+      select(N_Data, YearMin, YearMax, method, "Sample Locations") %>%
       kable(format="simple", caption=caption, col.names = c("*N_Data*","*YearMin*","*YearMax*","*Collection Method*","*Sample Locations*")) %>%
       kable_styling()
     
