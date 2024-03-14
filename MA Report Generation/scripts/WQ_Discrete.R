@@ -214,12 +214,13 @@ plot_discrete_maps <- function(ma, data, param_label){
   shape_coordinates <- get_shape_coordinates(ma_shape)
   
   # setting color palette
+  # pal <- colorFactor(seacar_palette, discrete_df$ProgramID)
   pal <- colorFactor("plasma", discrete_df$ProgramID)
   
   # leaflet map
   map <- leaflet(discrete_df, options = leafletOptions(zoomControl = FALSE)) %>%
     addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
-    addPolygons(data=ma_shape, color="#4e809c", weight = 1, smoothFactor = 0.5, opacity = 1.0, fillOpacity = 0.2) %>%
+    addPolygons(data=ma_shape, color="black", weight = 1, smoothFactor = 0.5, opacity = 0.8, fillOpacity = 0.1) %>%
     addCircleMarkers(lat=~Latitude_D, lng=~Longitude_, color=~pal(ProgramID), weight=0.5, radius=sqrt(discrete_df$n_data), fillOpacity=0.3) %>%
     addLegend(pal=pal, values=~ProgramID, labFormat=labelFormat(prefix="Program "), title="") %>%
     fitBounds(lng1=shape_coordinates$xmin,
@@ -245,12 +246,6 @@ plot_discrete_maps <- function(ma, data, param_label){
   print(p1)
   cat("  \n")
   cat("The bubble size on the above plots reflects the amount of data available at each sampling site")
-  
-  # print(plot_grid(p1, 
-  #                 labels = caption,
-  #                 label_size = 8,
-  #                 label_y = 0.06))
-  
   cat("  \n")
 }
 
@@ -337,16 +332,9 @@ plot_trendlines <- function(p, a, d, activity_label, depth_label, y_labels, para
               record for monitoring location",
                        size=10, face="italic")
     
-    # result_table <- kable(ResultTable, format="simple", 
-    #                       caption="Seasonal Kendall-Tau Analysis Results",
-    #                       row.names = FALSE) %>%
-    #   kable_styling(font_size=9)
-    
     # Arrange and display plot and statistic table
     print(ggarrange(p1, t1, ncol=1, heights=c(0.85, 0.15)))
-    # print(p1)
     cat("  \n")
-    # print(result_table)
     
     #####################
     ### Discrete Maps ###
