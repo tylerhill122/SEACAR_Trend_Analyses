@@ -26,6 +26,8 @@ library(ggpubr)
 library(glue)
 library(kableExtra)
 
+data_directory <- list()
+
 SAV <- fread(sav_file_in, sep = "|", header = TRUE, stringsAsFactors = FALSE,
              na.strings=c("NULL","","NA"))
 SAV <- SAV[!is.na(ResultValue), ]
@@ -35,7 +37,6 @@ SAV$BB <- NA
 SAV$mBB <- NA
 SAV$PC <- NA
 SAV$PO <- NA
-SAV$SC <- NA
 SAV$PA <- NA
 
 # Fill created columns with values based on parameter names
@@ -51,17 +52,8 @@ SAV$PC[SAV$ParameterName=="Percent Cover"] <-
 SAV$PO[SAV$ParameterName=="Percent Occurrence"] <-
   SAV$ResultValue[SAV$ParameterName=="Percent Occurrence"]
 
-SAV$SC[SAV$ParameterName=="Shoot Count"] <-
-  SAV$ResultValue[SAV$ParameterName=="Shoot Count"]
-
 SAV$PA[SAV$ParameterName=="Presence/Absence"] <-
   SAV$ResultValue[SAV$ParameterName=="Presence/Absence"]
-
-#Rename "Total_SAV" to "Total SAV"
-SAV$CommonIdentifier[SAV$CommonIdentifier=="Total_SAV"] <- "Total SAV"
-
-# Create a list of n years available for each managed area
-SAV_sum <- SAV %>% group_by(ManagedAreaName) %>% summarize(n_yr = length(unique(Year)), yrs = list(sort(unique(Year))))
 
 # Filtering and subsetting
 SAV2 <- subset(SAV, !is.na(SAV$BB) | !is.na(SAV$mBB) | !is.na(SAV$PC) | !is.na(SAV$PO))
@@ -108,32 +100,31 @@ SAV2[!is.na(PO), PA := ifelse(PO == 0, 0, 1)]
 
 SAV2[, relyear := Year - min(Year)]
 
-SAV3 <- SAV2 %>% filter(SpeciesGroup1 == "Seagrass" | SpeciesGroup1 == "Macroalgae")
-
-#Temporary fix to programs 570 and 571 - Group 1 should be "Total seagrass" instead of "Total SAV"
-SAV3[ProgramID %in% c(570, 571) & CommonIdentifier == "Total SAV", CommonIdentifier := "Total seagrass"]
+SAV3 <- SAV2[SpeciesGroup1 %in% c("Seagrass", "Macroalgae", "Total SAV"), ]
 
 #Temporary fix to cases where analysisunit is NA but CommonIdentifier is "Drift Algae" (and Drift_Attached is also NA); ~6,000 records
 SAV3[CommonIdentifier == "Drift algae", Drift_Attached := "Drift"]
 
-species_reject <- c("All", "NA",
-                    "Vallisneria americana", "Najas guadalupensis",
+species_reject <- c("NA","Vallisneria americana", "Najas guadalupensis",
                     "Hydrilla verticillata", "Potamogeton pusillus",
                     "Zannichellia palustris")
+
 SAV3[, `:=` (analysisunit_halid = ifelse(CommonIdentifier %in% species_reject, NA, 
                                          ifelse(str_detect(CommonIdentifier, "Halophila") & is.na(SpeciesName), "Unidentified Halophila", 
-                                                ifelse(SpeciesGroup1 == "Seagrass", CommonIdentifier, Drift_Attached))),
+                                                ifelse(SpeciesGroup1 %in% c("Seagrass","Total SAV"), CommonIdentifier, Drift_Attached))),
              analysisunit = ifelse(CommonIdentifier %in% species_reject, NA, 
                                    ifelse(str_detect(CommonIdentifier, "Halophila"), "Halophila spp.", 
-                                          ifelse(SpeciesGroup1 == "Seagrass", CommonIdentifier, Drift_Attached))))]
-SAV3[!is.na(Drift_Attached), `:=` (analysisunit_halid = paste0(analysisunit_halid, " algae"),
-                                   analysisunit = paste0(analysisunit, " algae"))]
+                                          ifelse(SpeciesGroup1 %in% c("Seagrass","Total SAV"), CommonIdentifier, Drift_Attached))))]
+
+SAV3[str_detect(analysisunit, "Drift|Attached"), `:=` (analysisunit = paste0(analysisunit, " algae"))]
+SAV3[str_detect(analysisunit_halid, "Drift|Attached"), `:=` (analysisunit_halid = paste0(analysisunit_halid, " algae"))]
 
 SAV4 <- subset(SAV3, !is.na(SAV3$analysisunit))
+saveRDS(SAV4, "output/data/SAV/SAV4.rds")
 
 sav_managed_areas <- unique(SAV4$ManagedAreaName)
 
-rm(SAV, SAV2, SAV3, SAV_sum)
+rm(SAV, SAV2, SAV3)
 
 MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE, na.strings = "")
 
@@ -141,177 +132,29 @@ MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFacto
 ### SAV Plotting Functions ####
 ###############################
 
-# declaring previous addfits_blacktrendlines function to create multi-plots
-addfits_blacktrendlines <- function(models, plot_i, param){
-  aucol <- as.name(names(plot_i$data)[1])
-  ifelse(length(models) == 1,
-         return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                   aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-         ifelse(length(models) == 2,
-                return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                          aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                         geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                   aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                ifelse(length(models) == 3,
-                       return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                 aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                          aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                          aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                       ifelse(length(models) == 4,
-                              return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                        aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                       geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                 aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                       geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                 aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                       geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                 aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                              ifelse(length(models) == 5,
-                                     return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                               aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                        aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                        aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                        aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                              geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[5]], "$data$", aucol, ")"))), ],
-                                                        aes(x = relyear, y = predict(eval(models[[5]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                                     ifelse(length(models) == 6,
-                                            return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                                      aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                               aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                               aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                               aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[5]], "$data$", aucol, ")"))), ],
-                                                               aes(x = relyear, y = predict(eval(models[[5]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                     geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[6]], "$data$", aucol, ")"))), ],
-                                                               aes(x = relyear, y = predict(eval(models[[6]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                                            ifelse(length(models) == 7,
-                                                   return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                                             aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                            geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                                      aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                            geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                                      aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                            geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                                      aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                            geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[5]], "$data$", aucol, ")"))), ],
-                                                                      aes(x = relyear, y = predict(eval(models[[5]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                            geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[6]], "$data$", aucol, ")"))), ],
-                                                                      aes(x = relyear, y = predict(eval(models[[6]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                            geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[7]], "$data$", aucol, ")"))), ],
-                                                                      aes(x = relyear, y = predict(eval(models[[7]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                                                   ifelse(length(models) == 8,
-                                                          return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                   geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                                             aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                   geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                                             aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                   geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                                             aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                   geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[5]], "$data$", aucol, ")"))), ],
-                                                                             aes(x = relyear, y = predict(eval(models[[5]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                   geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[6]], "$data$", aucol, ")"))), ],
-                                                                             aes(x = relyear, y = predict(eval(models[[6]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                   geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[7]], "$data$", aucol, ")"))), ],
-                                                                             aes(x = relyear, y = predict(eval(models[[7]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                   geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[8]], "$data$", aucol, ")"))), ],
-                                                                             aes(x = relyear, y = predict(eval(models[[8]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                                                          ifelse(length(models) == 9,
-                                                                 return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                          geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                          geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                          geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                          geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[5]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[5]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                          geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[6]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[6]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                          geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[7]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[7]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                          geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[8]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[8]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                          geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[9]], "$data$", aucol, ")"))), ],
-                                                                                    aes(x = relyear, y = predict(eval(models[[9]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                                                                 ifelse(length(models) == 10,
-                                                                        return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[5]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[5]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[6]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[6]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[7]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[7]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[8]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[8]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[9]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[9]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                 geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[10]], "$data$", aucol, ")"))), ],
-                                                                                           aes(x = relyear, y = predict(eval(models[[10]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                                                                        ifelse(length(models) == 11,
-                                                                               return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                                                                         aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[5]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[5]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[6]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[6]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[7]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[7]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[8]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[8]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[9]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[9]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[10]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[10]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[11]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[11]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)),
-                                                                               
-                                                                               return(plot_i + geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[1]], "$data$", aucol, ")"))), ],
-                                                                                                         aes(x = relyear, y = predict(eval(models[[1]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[2]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[2]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[3]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[3]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[4]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[4]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[5]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[5]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[6]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[6]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[7]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[7]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[8]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[8]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[9]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[9]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[10]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[10]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[11]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[11]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE) +
-                                                                                        geom_line(data = SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(aucol) == eval(parse(text = paste0("unique(", models[[12]], "$data$", aucol, ")"))), ],
-                                                                                                  aes(x = relyear, y = predict(eval(models[[12]]), level = 0)), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)))))))))))))
+# modified version of previous addfits_blacktrendlines function to create multi-plots
+addfits_multiplots <- function(models, plot_i, param, aucol){
+  for(n in 1:length(models)){
+    model_name <- names(models[n])
+    model <- models[[model_name]]
+    
+    sp <- unique(model$data[[aucol]])
+    
+    species_data <- SAV4[ManagedAreaName == i & !is.na(eval(p)) & eval(as.name(aucol)) == sp, ]
+    species_data$predictions <- predict(model, level = 0)
+    
+    plot_i <- plot_i +
+      geom_line(data = species_data,
+                aes(x = relyear, y = predictions), color="#000099", size=0.75, alpha=0.7, inherit.aes = FALSE)
+  }
+  
+  # order_match <- ifelse(usenames=="common", "order(match(spp_common))", "order(match(spp))")
+  
+  plot_i <- plot_i +
+    facet_wrap(~factor(modify_species_labels(eval(aucol), usenames)), 
+               ncol = 3, strip.position = "top")
+  
+  return(plot_i)
 }
 
 # declaring addfits function which plots Percent Cover models on a single plot
@@ -324,13 +167,13 @@ addfits <- function(models, plot_i, param) {
   
   for (i in seq_along(models)) {
     # finding model name, calling previously created model variable
-    model_name <- models[[i]]
-    model <- get(model_name)
+    model_name <- names(models[i])
+    model <- models[[i]]
     
     # selecting for Total SAV and Total Seagrass to apply aesthetic conditions later
     is_ToSa <- grepl("ToSa", model_name)
     is_ToSe <- grepl("ToSe", model_name)
-    exclude <- c("DrAl")
+    exclude <- c("DrAl","AtAl")
     
     # declaring species & managed area of each model
     species <- unique(model$data[[aucol]])
@@ -352,9 +195,6 @@ addfits <- function(models, plot_i, param) {
         filter(ManagedAreaName == managed_area,
                !is.na({{p}}),
                {{ aucol }} == species)
-      
-      # plot_dat <- plotdat %>%
-      #   filter({{ aucol }} == species)
       
       # create predicted values variable for each model
       predicted_values <- predict(model, level = 0, newdata = species_data)
@@ -403,7 +243,7 @@ addfits <- function(models, plot_i, param) {
   species_list <- species_list[order(match(species_list, names(spcols)))]
   
   # determining if scientific or common names
-  species_labels <- modify_species_labels(species_list)
+  species_labels <- modify_species_labels(species_list, usenames)
   
   plot_i <- plot_i + scale_color_manual(values = subset(spcols, names(spcols) %in% species_list),
                                         breaks = species_list,
@@ -413,18 +253,21 @@ addfits <- function(models, plot_i, param) {
 }
 
 # function to modify species labels prior to plotting (sci vs common names)
-modify_species_labels <- function(species_list) {
-  if(usenames == "common") {
+# also replaces "Unidentified Halophila" with "Halophila, unk."
+modify_species_labels <- function(species_list, usenames) {
+  
+  if(usenames == "scientific") {
     lab <- species_list
   } else {
     lab <- sapply(species_list, function(name) {
-      match_idx <- match(name, spp_common)
+      match_idx <- match(name, spp)
       if (!is.na(match_idx)) {
-        return(spp[match_idx])
+        return(spp_common[match_idx])
       }
       return(name)
     })
   }
+  lab <- str_replace_all(lab, "Unidentified Halophila", "Halophila, unk.")
   return(lab)
 }
 
@@ -482,57 +325,19 @@ spp <- c("Halophila spp.","Unidentified Halophila","Halophila johnsonii","Syring
 spp_common <- c("Halophila spp.", "Unidentified Halophila", "Johnson's seagrass", "Manatee grass", "Paddle grass", 
                 "Shoal grass", "Star grass", "Turtle grass", "Widgeon grass", "Attached algae", "Total SAV", "Total seagrass")
 
-usenames <- "common" #alternative is "scientific"
+usenames <- "scientific" #alternative is "common"
 
-spcols <- setNames(spcollist, spp_common)
-
-SAV4[, `:=` (analysisunit_halid = fcase(analysisunit_halid == "Thalassia testudinum", "Turtle grass",
-                                        analysisunit_halid == "Syringodium filiforme", "Manatee grass",
-                                        analysisunit_halid == "Halodule wrightii", "Shoal grass",
-                                        analysisunit_halid == "Ruppia maritima", "Widgeon grass",
-                                        analysisunit_halid == "Halophila decipiens", "Paddle grass",
-                                        analysisunit_halid == "Halophila engelmannii", "Star grass",
-                                        analysisunit_halid == "Halophila johnsonii", "Johnson's seagrass",
-                                        analysisunit_halid == "Unidentified Halophila", "Unidentified Halophila",
-                                        analysisunit_halid == "Halophila spp.", "Halophila spp.",
-                                        analysisunit_halid == "Total seagrass", "Total seagrass",
-                                        analysisunit_halid == "Attached algae", "Attached algae",
-                                        analysisunit_halid == "Drift algae", "Drift algae",
-                                        analysisunit_halid == "Total SAV", "Total SAV"),
-             analysisunit = fcase(analysisunit == "Thalassia testudinum", "Turtle grass",
-                                  analysisunit == "Syringodium filiforme", "Manatee grass",
-                                  analysisunit == "Halodule wrightii", "Shoal grass",
-                                  analysisunit == "Ruppia maritima", "Widgeon grass",
-                                  analysisunit == "Halophila decipiens", "Paddle grass",
-                                  analysisunit == "Halophila engelmannii", "Star grass",
-                                  analysisunit == "Halophila johnsonii", "Johnson's seagrass",
-                                  analysisunit == "Unidentified Halophila", "Unidentified Halophila",
-                                  analysisunit == "Halophila spp.", "Halophila spp.",
-                                  analysisunit == "Total seagrass", "Total seagrass",
-                                  analysisunit == "Attached algae", "Attached algae",
-                                  analysisunit == "Drift algae", "Drift algae",
-                                  analysisunit == "Total SAV", "Total SAV"))]
-
-props[, analysisunit := fcase(analysisunit == "Thalassia testudinum", "Turtle grass",
-                              analysisunit == "Syringodium filiforme", "Manatee grass",
-                              analysisunit == "Halodule wrightii", "Shoal grass",
-                              analysisunit == "Ruppia maritima", "Widgeon grass",
-                              analysisunit == "Halophila decipiens", "Paddle grass",
-                              analysisunit == "Halophila engelmannii", "Star grass",
-                              analysisunit == "Halophila johnsonii", "Johnson's seagrass",
-                              analysisunit == "Unidentified Halophila", "Unidentified Halophila",
-                              analysisunit == "Halophila spp.", "Halophila spp.",
-                              analysisunit == "Attached algae", "Attached algae")]
+spcols <- setNames(spcollist, spp)
 
 props <- props[, analysisunit := factor(analysisunit, levels = c("Unidentified Halophila",
                                                                  "Halophila spp.",
-                                                                 "Johnson's seagrass",
-                                                                 "Manatee grass",
-                                                                 "Paddle grass",
-                                                                 "Shoal grass",
-                                                                 "Star grass",
-                                                                 "Turtle grass",
-                                                                 "Widgeon grass",
+                                                                 "Halophila johnsonii",
+                                                                 "Syringodium filiforme",
+                                                                 "Halophila decipiens",
+                                                                 "Halodule wrightii",
+                                                                 "Halophila engelmannii",
+                                                                 "Thalassia testudinum",
+                                                                 "Ruppia maritima",
                                                                  "Attached algae"))]
 
 # prcollist <- hcl.colors(n = length(unique(SAV4$ProgramID)), palette = "viridis")
@@ -661,28 +466,27 @@ for(p in parameters$column){
   setnames(nyears2, "analysisunit_halid", "analysisunit")
   nyears <- distinct(rbind(nyears, nyears2))
   ma_include <- unique(subset(nyears, nyears$nyr >= 5)$ManagedAreaName)
+  # ma_include <- c("Banana River Aquatic Preserve", "Biscayne Bay Aquatic Preserve")
   
   #For each managed area, make sure there are multiple levels of BB scores per species; remove ones that don't from further consideration.
+  
   for(i in ma_include){
+  # for(i in ma_include[ma_include %in% ma_halspp]){
     
     ma_abrev <- MA_All %>% filter(ManagedAreaName==i) %>% pull(Abbreviation)
     
     cat(paste0("\nStarting MA: ", i, "\n"))
     
     if(i %in% ma_halspp){
-      species <- subset(nyears, nyears$ManagedAreaName == i & nyears$nyr >= 5 & analysisunit %in% c("Attached algae", "Drift algae", "Halophila spp.", "Manatee grass", 
-                                                                                                    "Shoal grass", "Total seagrass", "Total SAV", "Turtle grass", 
-                                                                                                    "Widgeon grass", "Syringodium filiforme", "Halodule wrightii", "Thalassia testudinum",
+      species <- subset(nyears, nyears$ManagedAreaName == i & nyears$nyr >= 5 & analysisunit %in% c("Attached algae", "Drift algae", "Halophila spp.", "Syringodium filiforme", 
+                                                                                                    "Halodule wrightii", "Total seagrass", "Total SAV", "Thalassia testudinum", 
                                                                                                     "Ruppia maritima"))$analysisunit
     } else{
       species <- subset(nyears, nyears$ManagedAreaName == i & nyears$nyr >= 5 & analysisunit %in% c("Attached algae", "Drift algae", "Unidentified Halophila", 
-                                                                                                    "Johnson's seagrass", "Manatee grass", "Paddle grass", 
-                                                                                                    "Shoal grass", "Star grass", "Total seagrass", "Total SAV", 
-                                                                                                    "Turtle grass", "Widgeon grass", "Syringodium filiforme", 
-                                                                                                    "Halodule wrightii", "Thalassia testudinum","Ruppia maritima"))$analysisunit
+                                                                                                    "Halophila johnsonii", "Syringodium filiforme", "Halophila decipiens", 
+                                                                                                    "Halodule wrightii", "Halophila engelmannii", "Total seagrass", "Total SAV", 
+                                                                                                    "Thalassia testudinum", "Ruppia maritima"))$analysisunit
     }
-    
-    models <- c()
     
     #Create data.tables to hold model results for managed area i----------------------------------------------------
     lmemodresults <- data.table(managed_area = character(),
@@ -759,37 +563,41 @@ for(p in parameters$column){
         
         #Individual model objects are needed for plotting all species together
         ##This allows get(model) functionality within addfits function
-        eval(call("<-", as.name(paste0(ma_abrev, 
-                                       "_", 
-                                       gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE))), 
-                  model_j))
+        # eval(call("<-", as.name(paste0(ma_abrev, 
+        #                                "_", 
+        #                                gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE))), 
+        #           model_j))
+        
+        short_model_name <- gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE)
         
         #Save the model object as .rds
         saveRDS(model_j, here::here(paste0("output/models/SAV_", parameters[column == p, type], "_", 
                                            ma_abrev, "_",
-                                           gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE), 
+                                           short_model_name, 
                                            ".rds")))
         
         print(paste0("  Model object saved: ", 
                      ma_abrev, 
                      "_", 
-                     gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE)))
+                     short_model_name))
         
         #record lme model results------------------------------------------------------
-        if(class(try(eval(as.name(paste0(ma_abrev, "_", gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE)))), silent = TRUE)) != "try-error"){
-          models <- append(models, as.name(paste0(ma_abrev, "_", gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE))))
-          modj_i <- setDT(broom.mixed::tidy(eval(as.name(paste0(ma_abrev, "_", gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE))))))
+        if(class(try(eval(model_j), silent = TRUE)) != "try-error"){
+          # append only the successful models to data_directory object
+          data_directory[[ma_abrev]][[p]][[short_model_name]] <- model_j
+          
+          modj_i <- setDT(broom.mixed::tidy(eval(model_j)))
           modj_i[, `:=` (managed_area = i,
                          species = j,
                          filename = paste0("SAV_", parameters[column == p, type], "_", 
                                            ma_abrev, "_",
-                                           gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE), ".rds"))]
+                                           short_model_name, ".rds"))]
           lmemodresults <- rbind(lmemodresults, modj_i)
           
         } else{
           failedmod <- data.table(model = paste0("SAV_", parameters[column == p, type], "_",
                                                  ma_abrev, "_",
-                                                 gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE), ".rds"),
+                                                 short_model_name, ".rds"),
                                   error = model_j[1])
           
           failedmods <- rbind(failedmods, failedmod)
@@ -798,7 +606,7 @@ for(p in parameters$column){
                                species = j,
                                filename = paste0("SAV_", parameters[column == p, type], "_", 
                                                  ma_abrev, "_",
-                                                 gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE), ".rds"),
+                                                 short_model_name, ".rds"),
                                effect = NA,
                                group = NA,
                                term = NA,
@@ -825,24 +633,8 @@ for(p in parameters$column){
       setnames(plotdat, "eval(p)", "data")
       aucol <- names(plotdat[,1])
       
-      #split modeled vs unmodeled data
-      modeledsp <- c()
-      for(u in seq_along(models)){
-        name_u <- fcase(str_detect(paste0(models[[u]]), "_ShGr"), "Shoal grass",
-                        str_detect(paste0(models[[u]]), "_TuGr"), "Turtle grass",
-                        str_detect(paste0(models[[u]]), "_MaGr"), "Manatee grass",
-                        str_detect(paste0(models[[u]]), "_WiGr"), "Widgeon grass",
-                        str_detect(paste0(models[[u]]), "_PaGr"), "Paddle grass",
-                        str_detect(paste0(models[[u]]), "_StGr"), "Star grass",
-                        str_detect(paste0(models[[u]]), "_JoSe"), "Johnson's seagrass",
-                        str_detect(paste0(models[[u]]), "_UnHa"), "Unidentified Halophila",
-                        str_detect(paste0(models[[u]]), "_HaSp"), "Halophila spp.",
-                        str_detect(paste0(models[[u]]), "_ToSe"), "Total seagrass",
-                        str_detect(paste0(models[[u]]), "_AtAl"), "Attached algae",
-                        str_detect(paste0(models[[u]]), "_DrAl"), "Drift algae",
-                        str_detect(paste0(models[[u]]), "_To"), "Total SAV")
-        modeledsp <- append(modeledsp, name_u)
-      }
+      # declaring available models
+      models <- data_directory[[ma_abrev]][[as.character(p)]]
       
       miny <- c()
       for(v in seq_along(models)){
@@ -859,8 +651,6 @@ for(p in parameters$column){
       labels_seq <- seq(from = min(plotdat$Year),
                         to = max(plotdat$Year),
                         by = 3)
-      
-      plotdat[get(aucol) == "Unidentified Halophila", (aucol) := "Halophila, unk."]
       
       #create base plot of seagrass percent cover data over time for managed area i
       plot_i <- ggplot(data = droplevels(plotdat),
@@ -902,51 +692,9 @@ for(p in parameters$column){
         # trendlines multi-plot (addfits_blacktrendlines function)
         aucol <- as.name(names(plot_i_2$data)[1])
         
-        plot_i_2 <- addfits_blacktrendlines(models, plot_i_2, p) +
-          {if(usenames == "common"){
-            facet_wrap(~factor(eval(aucol), levels = c("Total SAV",
-                                                       "Total seagrass",
-                                                       "Halophila, unk.",
-                                                       "Halophila spp.",
-                                                       "Johnson's seagrass",
-                                                       "Manatee grass",
-                                                       "Paddle grass",
-                                                       "Shoal grass",
-                                                       "Star grass",
-                                                       "Turtle grass",
-                                                       "Widgeon grass",
-                                                       "Attached algae",
-                                                       "Drift algae")),
-                       ncol = 3, strip.position = "top")
-          } else{
-            facet_wrap(~factor(eval(aucol), levels = c("Total SAV",
-                                                       "Total seagrass",
-                                                       "Halodule wrightii",
-                                                       "Halophila decipiens",
-                                                       "Halophila engelmannii",
-                                                       "Halophila johnsonii",
-                                                       "Halophila, unk.",
-                                                       "Halophila spp.",
-                                                       "Ruppia maritima",
-                                                       "Syringodium filiforme",
-                                                       "Thalassia testudinum",
-                                                       "Attached algae",
-                                                       "Drift algae")),
-                       labeller = c("Total SAV",
-                                    "Total seagrass",
-                                    "Halodule wrightii",
-                                    "Halophila decipiens",
-                                    "Halophila engelmannii",
-                                    "Halophila johnsonii",
-                                    "Halophila spp.",
-                                    "Halophila spp.",
-                                    "Ruppia maritima",
-                                    "Syringodium filiforme",
-                                    "Thalassia testudinum",
-                                    "Attached algae",
-                                    "Drift algae"), 
-                       ncol = 3, strip.position = "top")
-          }}
+        # modify_species_labels changes scientific into common if needed
+        # also replaces "Unidentified Halophila" with "Halophila, unk."
+        plot_i_2 <- addfits_multiplots(models, plot_i_2, p, aucol)
       }
       
       #Save the single plot object as .rds
@@ -983,7 +731,7 @@ for(p in parameters$column){
         sp_list <- sp_list[order(match(sp_list, names(spcols)))]
         
         # add color scale, determining if scientific or common names
-        sp_labels <- modify_species_labels(sp_list)
+        sp_labels <- modify_species_labels(sp_list, usenames)
         
         barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
           geom_col(color = "grey20") +
@@ -1004,7 +752,7 @@ for(p in parameters$column){
         sp_list <- sp_list[order(match(sp_list, names(spcols)))]
         
         # add color scale, determining if scientific or common names
-        sp_labels <- modify_species_labels(sp_list)
+        sp_labels <- modify_species_labels(sp_list, usenames)
         
         barplot_sp <- ggplot(data = bpdat, aes(x = relyear, y = sp_pct, fill = analysisunit)) +
           geom_col(color = "grey20") +
@@ -1026,7 +774,7 @@ for(p in parameters$column){
     print(paste0("  Plot objects and results tables saved: ",
                  ma_abrev,
                  "_",
-                 gsub('\\b(\\p{Lu}\\p{Ll})|.','\\1', str_to_title(j), perl = TRUE)))
+                 short_model_name))
   }
 }
 
