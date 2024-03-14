@@ -124,6 +124,7 @@ MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFacto
 #Create map(s) for the managed area-------------------------------------------
 
 for (i in unique(SAV4$ManagedAreaName)){
+# for (i in c("Terra Ceia Aquatic Preserve")){
   
   ma_abrev <- MA_All %>% filter(ManagedAreaName==i) %>% pull(Abbreviation)
   
@@ -275,7 +276,7 @@ for (i in unique(SAV4$ManagedAreaName)){
   
   base <- ggplot() +
     geom_sf(data = rotate_sf(fl_i, ma = i, coast = corners[LONG_NAME == i, Coast[1]]), fill = "beige", color = "navajowhite3", lwd = 0.5, inherit.aes = FALSE) +
-    geom_sf(data = rotate_sf(rcp_i, ma = i, coast = corners[LONG_NAME == i, Coast[1]]), color = "grey50", fill = "powderblue", alpha = 0.35, lwd = 0.5, inherit.aes = FALSE) +
+    geom_sf(data = rotate_sf(rcp_i, ma = i, coast = corners[LONG_NAME == i, Coast[1]]), color = "grey50", fill = "grey70", alpha = 0.15, lwd = 0.5, inherit.aes = FALSE) +
     geom_sf(data = rotate_sf(sbar, ma = i, coast = corners[LONG_NAME == i, Coast[1]]), color = "grey50", linewidth = 1.25, inherit.aes = FALSE) +
     geom_sf(data = rotate_sf(narrow, ma = i, coast = corners[LONG_NAME == i, Coast[1]]), color = "grey50", linewidth = 1, inherit.aes = FALSE) +
     geom_sf_text(data = rotate_sf(sbarlab, ma = i, coast = corners[LONG_NAME == i, Coast[1]]), label = ifelse(wkm < 20, "3 km", ifelse(wkm < 50, "5 km", "10 km")), hjust = 0.5, angle = 4, color = "grey50", size = 3.5, inherit.aes = FALSE) +
@@ -283,7 +284,7 @@ for (i in unique(SAV4$ManagedAreaName)){
     scale_color_manual(values = subset(prcols, names(prcols) %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct), ProgramName])), 
                        aesthetics = c("color", "fill")) +
     labs(title = paste0(i),
-         subtitle = "Sample Locations - SAV Percent Cover",
+         subtitle = "SAV Percent Cover - Sample Locations",
          fill = "Program name", color = "Program name") +
     theme(panel.grid.major = element_line(colour = NA),
           panel.grid.minor = element_line(colour = NA),
@@ -325,40 +326,41 @@ for (i in unique(SAV4$ManagedAreaName)){
     base <- base +
       geom_sf(data = rotate_sf(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year == startyear, LocationID])),
                                ma = i, coast = corners[LONG_NAME == i, Coast[1]]),
-              aes(fill = droplevels(as.factor(ProgramName))), shape = 21, color = "black", size=pt_size, alpha=0.5)
+              aes(fill = droplevels(as.factor(ProgramName))), shape = 21, color = "black", size=pt_size, alpha=0.8)
   }
   
   if(length(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year == startyear, LocationID]))$LocationID) > 0){
     base <- base +
       geom_sf(data = rotate_sf(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year == startyear, LocationID])),
                                ma = i, coast = corners[LONG_NAME == i, Coast[1]]),
-              aes(color = droplevels(as.factor(ProgramName))), shape = 21, size=pt_size, alpha=0.5)
+              aes(color = droplevels(as.factor(ProgramName))), size=0.1, alpha=0.8, linewidth=3, lineend = "round")
   }
   
   years <- sort(unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year != startyear, Year]))
   total_years <- length(years)
-  rows_per_column <- ceiling(total_years / 2)
+  num_col <- ifelse(total_years<=12, 2, ifelse(total_years<=24, 3, 4))
+  rows_per_column <- ceiling(total_years / num_col)
   
   for(index in seq_along(years)){
     y <- years[index]
     
     base <- base +
       geom_sf(data = rotate_sf(rcp_i, x_add = xadd + maxxdist, y_add = yadd + maxydist, ma = i, coast = corners[LONG_NAME == i, Coast[1]]),
-              color = "grey50", fill = "powderblue", alpha = 0.65, lwd = 0.5, inherit.aes = FALSE) +
+              color = "grey50", fill = "grey70", alpha = 0.15, lwd = 0.5, inherit.aes = FALSE) +
       annotate("text", x = xlab + xadd + maxxdist, y = xmax_y + yadd + maxydist, label = y, hjust = "left")
     
     if(length(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year == y, LocationID]))$LocationID) > 0){
       base <- base +
         geom_sf(data = rotate_sf(subset(locs_pts_rcp_i, locs_pts_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year == y, LocationID])),
                                  x_add = xadd + maxxdist, y_add = yadd + maxydist, ma = i, coast = corners[LONG_NAME == i, Coast[1]]), 
-                aes(fill = droplevels(as.factor(ProgramName))), shape = 21, color = "black", size=pt_size, alpha=0.5)
+                aes(fill = droplevels(as.factor(ProgramName))), shape = 21, color = "black", size=pt_size, alpha=0.8)
     }
     
     if(length(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year == startyear, LocationID]))$LocationID) > 0){
       base <- base +
         geom_sf(data = rotate_sf(subset(locs_lns_rcp_i, locs_lns_rcp_i$LocationID %in% unique(SAV4[ManagedAreaName == i & !is.na(BB_pct) & Year == startyear, LocationID])),
                                  x_add = xadd + maxxdist, y_add = yadd + maxydist, ma = i, coast = corners[LONG_NAME == i, Coast[1]]),
-                aes(color = droplevels(as.factor(ProgramName))), shape = 21, size=pt_size, alpha=0.5)
+                aes(color = droplevels(as.factor(ProgramName))), size=0.1, alpha=0.8, linewidth=3, lineend = "round")
     }
     
     yadd <- yadd + maxydist
@@ -385,8 +387,9 @@ for (i in unique(SAV4$ManagedAreaName)){
                                       "_map_bypr.jpg")),
          plot = base,
          dpi = 300,
-         limitsize = FALSE)
-  
+         limitsize = FALSE,
+         width = 15,
+         height = 18)
   rm(base)
   print(paste0(i, " - SAV Scope plot object created"))
 }
@@ -394,12 +397,3 @@ for (i in unique(SAV4$ManagedAreaName)){
 # plotbuild <- ggplot_build(base)
 # hwratio <- (plotbuild$layout$panel_scales_y[[1]]$range$range[2] - plotbuild$layout$panel_scales_y[[1]]$range$range[1]) / (plotbuild$layout$panel_scales_x[[1]]$range$range[2] - plotbuild$layout$panel_scales_x[[1]]$range$range[1])
 # pwidth <- 6
-
-
-
-# ggsave(filename = here::here(paste0("output/Figures/BB/img/SAV_",
-#                                     ma_abrev,
-#                                     "_map_bypr.jpg")),
-#        plot = base,
-#        dpi = 300,
-#        limitsize = FALSE)
