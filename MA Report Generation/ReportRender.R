@@ -48,7 +48,7 @@ MA_All <- fread("data/ManagedArea.csv", sep = ",", header = TRUE, stringsAsFacto
 #Imports SEACAR data file path information as variable "seacar_data_location"
 source("scripts/SEACAR_data_location.R")
 
-files <- list.files(seacar_data_location, full=TRUE)
+files <- list.files(seacar_data_location, full.names=TRUE)
 hab_files <- str_subset(files, "All_")
 
 cw_file_in <- str_subset(hab_files, "CW")
@@ -84,6 +84,9 @@ source("scripts/CoastalWetlands.R")
 source("scripts/SAV-Functions.R")
 source("scripts/Coral.R")
 ############################
+
+seacar_palette <- c("#005396", "#0088B1", "#00ADAE", "#65CCB3", "#AEE4C1", 
+                    "#FDEBA8", "#F8CD6D", "#F5A800", "#F17B00")
 
 ################
 ## file names ##
